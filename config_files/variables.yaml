@@ -1,0 +1,12 @@
+Media Directory: "/var/data/media/video"
+Movie Directories: [movies]
+Movie Extensions: [mkv, mp4, m4v, avi, mov]
+Show Directories: [tv, anime]
+Script Path: "/var/data/scripts/symlink_scripts/movie_tv_pairing"
+PUID: 1001
+PGID: 1001
+# Non-Implemented Variables
+# planning to use these two variables to define whether to dig into the movie / show directory for subpaths, my library
+# uses subpaths so I built it as such but this feature should be expanded because this is not the standard setup
+Show Depth: 1
+Movie Depth: 1
