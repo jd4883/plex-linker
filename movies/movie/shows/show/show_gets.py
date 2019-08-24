@@ -74,4 +74,5 @@ def get_fully_parsed_show_without_absolute_episode(show_object):
 
 
 def get_alphabetical_specials_string():
-	return "Specials"
+	return "Season 00"
+	#return "Specials"

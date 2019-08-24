@@ -67,7 +67,6 @@ def validated_movie_path_is_not_null(movie):
 					or (movie.absolute_movie_path == "" or None \
 					    or movie.absolute_movie_path.endswith("None")):
 				message_no_items_found_to_parse(movie)
-				print(f"Absolute Movie Path not parsed: {movie.absolute_movie_path}")
 				return False
 		except FileNotFoundError:
 			return False
@@ -100,7 +99,4 @@ def validate_path(path,
 def validate_duplicates_and_handle_them_if_needed(list_of_possible_paths1,
                                                   list_of_possible_paths):
 	if len(list_of_possible_paths) > 1:
-		# add real messaging handler here
-		print(f"{list_of_possible_paths1} triggered a duplicate check")
 		jobs.cleanup.remove_duplicates.remove_duplicates(list_of_possible_paths)
-		print("made it past paths")

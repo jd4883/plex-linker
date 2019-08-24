@@ -11,7 +11,6 @@ def validate_show_path_presence(show_object):
 			show_object.path = "/".join((show_path, path,
 			                             show_object.show))
 			if exists(show_object.path):
-				print_absolute_show_path(show_object)
 				return True
 	return False
 

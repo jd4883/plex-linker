@@ -54,3 +54,4 @@ def set_episode_padding(show_object):
 			show_object.episode = "-".join([get_padded_episode_number(e, 3) for e in show_object.episode])
 		else:
 			show_object.episode = "-".join([get_padded_episode_number(e, 2) for e in show_object.episode])
+# investigate logic because this looks perfect but for some reason many specials are 3x padded instead of 2x
