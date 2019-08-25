@@ -1,15 +1,20 @@
 #!/usr/bin/env python3
-from jobs.set_path_permissions import set_permissions
-from movies.movie.shows.show.show_parser import parse_new_show_class_object
+from jobs.set_path_permissions import (set_permissions)
+from jobs.symlinking import (symlink_force)
+
+from movies.movie.shows.show.show_parser import (parse_new_show_class_object)
+from movies.movie.shows.show.show_validation import (validate_ready_to_link_movie_to_show)
+from movies.movies_puts import (set_symlink_status_attributes_for_dictionary)
 
 
 def parse_shows_to_link(shows):
 	for _ in shows.shows:
-		from movies.movie.shows.show.show_validation import validate_ready_to_link_movie_to_show
 		if validate_ready_to_link_movie_to_show(shows.quality):
 			for item in shows.shows:
-				from jobs.symlinking import symlink_force
 				symlink_force(item)
+				set_symlink_status_attributes_for_dictionary(item)
+				#print(shows.movies_dictionary_object[shows.movie_title])
+				# print used for validating inheritence is working for the dictionary ammendments
 				set_permissions(item)
 
 

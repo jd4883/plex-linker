@@ -313,13 +313,9 @@ def print_absolute_media_file_path(log,
 	                  method)
 
 
-def print_linking_show_to_movie(show_class_object):
+def print_linking_show_to_movie(show_class_object,
+                                process):
 	from os.path import relpath
-	print(
-		f'need to put in a link handler {show_class_object.absolute_movie_file_path}'
-	      f' --> {show_class_object.relative_show_path}')
-	show_class_object.log.info(debug_message(826,
-	                                         method,
-	                                         parent_method,
-	                                         f"{show_class_object.absolute_movie_file_path}",
-	                                         show_class_object.relative_show_path))
+	print(f'Link Success: {process}')
+	# need to add log handling for this
+	                                         

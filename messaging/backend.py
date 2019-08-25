@@ -95,11 +95,6 @@ def debug_message(status_code=-1,
 		message3 = format_string(f"has been successfully parsed")
 	
 	# new defined methods are all here
-	elif status_code == 826:
-		message1 = format_string("Linked:")
-		message2 = f"{var1}"
-		message3 = format_string(" -->")
-		message4 = f"{var2}"
 	elif status_code == 825:
 		message1 = format_string("season parsed as:")
 		message2 = f"{var1}"
