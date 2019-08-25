@@ -2,7 +2,9 @@
 from os import chdir
 
 import yaml
-
+from movies.movies_gets import (get_media_collection_parsed_this_time,
+                                get_media_collection_parsed_last_time,
+                                get_media_collection_parsed_archives)
 
 def get_media_path_from_yaml(movies_dictionary):
 	return movies_dictionary["Media Directory"]
@@ -15,7 +17,7 @@ def get_movies_dictionary_from_yaml(movies_dictionary):
 def get_yaml_dictionary():
 	chdir(get_variable_from_yaml('Script Path'))
 	# may be worth making a dynamic by date backup of each config and archive the old ones since they are small
-	with open(f"config_files/collection_parsed_last_run.yaml",
+	with open(get_media_collection_parsed_last_time(),
 	          'r') as f:
 		return yaml.load(f)
 

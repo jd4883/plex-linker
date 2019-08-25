@@ -3,8 +3,14 @@ from os.path import relpath, abspath
 
 
 def get_media_collection_parsed_this_time():
-	return "config_files/collection_parsed_this_run.yaml"
+	return "config_files/media_collection_parsed_this_run.yaml"
 
+
+def get_media_collection_parsed_last_time():
+	return "config_files/media_collection_parsed_last_run.yaml"
+
+def get_media_collection_parsed_archives():
+	return "config_files/archives"
 
 def get_relative_movies_path(self):
 	return relpath(self.absolute_movies_path,
