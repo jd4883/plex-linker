@@ -17,7 +17,7 @@ from movies.movie.movie_validation import (validate_extensions_from_movie_file,
 from movies.movie.shows.shows_puts import (set_shows_dictionary_object)
 from movies.movies_gets import (get_absolute_movies_path,
                                 get_relative_movies_path)
-
+from movies.movies_puts import init_symlink_status_attributes_for_dictionary
 
 class Movies:
 	def __init__(movies):
@@ -86,4 +86,5 @@ class Show(Movie):
 		show_object.live_linked_path = ""
 		show_object.parsed_relative_title = ""
 		show_object.show_dictionary_object = {}
+		init_symlink_status_attributes_for_dictionary(show_object) # sets initial linking status information
 		pass

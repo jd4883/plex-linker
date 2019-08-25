@@ -259,7 +259,7 @@ Batman - Mask of the Phantasm (1993):
       Title: Batman- Mask of the Phantasm
 Batman Beyond- Return of the Joker (2000):
   Shows:
-    Batman- The Animated Series:
+    Batman Beyond:
       Absolute Episode: null
       Anime: false
       Episode: [1]
@@ -3560,14 +3560,6 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Episode: [5]
       Season: 0
       Title: Rou Adayume
-"\u306E\u5DE8\u4EBA ATTACK ON TITAN (2015)":
-  Shows:
-    Attack on Titan:
-      Absolute Episode: null
-      Anime: true
-      Episode: [18]
-      Season: 0
-      Title: Attack on Titan (Live Action Movie)
 "\u306F\u305F\u3089\u304F\u7D30\u80DE \u7279\u5225\u7DE8 \u98A8\u90AA\u75C7\u5019\u7FA4 (2018)":
   Shows:
     Cells at Work!:
@@ -3576,3 +3568,11 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Episode: [1]
       Season: 0
       Title: The Common Cold
+"\u9032\u6483\u306E\u5DE8\u4EBA ATTACK ON TITAN (2015)":
+  Shows:
+    Attack on Titan:
+      Absolute Episode: null
+      Anime: true
+      Episode: [18]
+      Season: 0
+      Title: Attack on Titan (Live Action Movie)
