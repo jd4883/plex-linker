@@ -25,11 +25,11 @@ if __name__ == "__main__":
 	
 	cursor.execute(sql_command)
 	
-	sql_command = """INSERT INTO movies (staff_number, fname, lname, gender, birth_date)
+	sql_command = """INSERT INTO movies (movie, fname, lname, gender, birth_date)
 	    VALUES (NULL, "William", "Shakespeare", "m", "1961-10-25");"""
 	cursor.execute(sql_command)
 	
-	sql_command = """INSERT INTO movies (staff_number, fname, lname, gender, birth_date)
+	sql_command = """INSERT INTO movies (movie, fname, lname, gender, birth_date)
 	    VALUES (NULL, "Frank", "Schiller", "m", "1955-08-17");"""
 	cursor.execute(sql_command)
 	
