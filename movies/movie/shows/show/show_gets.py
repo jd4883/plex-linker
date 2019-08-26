@@ -45,7 +45,7 @@ def get_fully_parsed_show_with_absolute_episode(show_object):
 
 
 def get_fully_parsed_show_without_absolute_episode(show_object):
-	return f"{show_object.path}/{show_object.season_folder}/{show_object.show} - S{show_object.season}E{show_object.episode}} - {show_object.title}"
+	return f"{show_object.path}/{show_object.season_folder}/{show_object.show} - S{show_object.season}E{show_object.episode} - {show_object.title}"
 
 
 def get_alphabetical_specials_string():
