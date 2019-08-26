@@ -12,11 +12,11 @@ if __name__ == "__main__":
 	cursor = connection.cursor()
 	
 	# delete
-	# cursor.execute("""DROP TABLE employee;""")
+	cursor.execute("""DROP TABLE movies;""")
 	
 	sql_command = """
 	CREATE TABLE movies (
-	staff_number INTEGER PRIMARY KEY,
+	movie VARCHAR(50) PRIMARY KEY,
 	fname VARCHAR(20),
 	lname VARCHAR(30),
 	gender CHAR(1),
