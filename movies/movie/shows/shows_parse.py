@@ -13,10 +13,17 @@ def parse_shows_to_link(shows):
 			for item in shows.shows:
 				symlink_force(item)
 				set_symlink_status_attributes_for_dictionary(item)
+				set_link_target(shows)
 				#print(shows.movies_dictionary_object[shows.movie_title])
 				# print used for validating inheritence is working for the dictionary ammendments
 				set_permissions(item)
 
+
+def set_link_target(self):
+	self.movies_dictionary_object[self.movie_title].update({'Link Target': f"{self.absolute_movie_file_path}"})
+	print(self.movies_dictionary_object[self.movie_title])
+	exit(-1)
+	
 
 def parse_shows_dictionary_object(shows_class_object):
 	try:

@@ -13,8 +13,9 @@ def get_absolute_episode_value_from_movies_dictionary(class_object):
 def get_anime_boolean_value_from_movies_dictionary(class_object):
 	if not class_object.movie_dictionary_object['Shows'][class_object.show]['Anime']:
 		class_object.movie_dictionary_object['Shows'][class_object.show]['Anime'] = False
+		return False
 	class_object.movie_dictionary_object['Shows'][class_object.show]['Anime'] = True
-	return class_object.movie_dictionary_object['Shows'][class_object.show]['Anime']
+	return True
 
 
 def get_season(show_object):

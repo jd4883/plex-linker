@@ -40,19 +40,8 @@ def validate_movie_extension(movie):
 	return False
 
 
-def validate_file(file,
-                  log,
-                  parent_method):
-	import sys
+def validate_file(file):
 	from os.path import exists
-	from messaging import debug_message
-	method = logs.bin.get_parameters.format_string(f"{sys._getframe().f_code.co_name}")
-	log.debug(debug_message(991,
-	                        method,
-	                        parent_method))
-	log.debug(debug_message(990,
-	                        method,
-	                        parent_method))
 	if exists(file):
 		return True
 	return False
@@ -73,26 +62,10 @@ def validated_movie_path_is_not_null(movie):
 	return True
 
 
-def validate_path(path,
-                  log,
-                  parent_method):
+def validate_path(path):
 	from os.path import exists
-	from messaging import debug_message
-	import sys
-	method = logs.bin.get_parameters.format_string(f"{sys._getframe().f_code.co_name}")
-	log.debug(debug_message(991,
-	                        method,
-	                        parent_method))
 	if exists(path):
-		from os import listdir
-		for _ in listdir(path):  # this looks redundant to loop
-			log.debug(debug_message(990,
-			                        method,
-			                        parent_method))
-			return True
-	log.debug(debug_message(990,
-	                        method,
-	                        parent_method))
+		return True
 	return False
 
 

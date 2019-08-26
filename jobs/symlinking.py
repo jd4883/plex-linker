@@ -31,6 +31,8 @@ def symlink_force(show_class_object):
 		                            f"{process.communicate()[0].strip()}".replace('b"', '')[:-1])
 	method_exit(show_class_object)
 
+	
+
 
 def get_popen_process_string(process):
 	return f"{process}"
