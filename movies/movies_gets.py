@@ -20,7 +20,8 @@ def get_relative_movies_path(self):
 def get_absolute_movies_path(self):
 	return abspath("/".join((self.MEDIA_PATH,
 	                         self.MOVIES_PATH[0])))
-
-
-def get_intersection_between_lists(a_set, b_set):
-	return a_set & b_set
+#
+#
+# def get_intersection_between_lists(a_set, b_set):
+# 	return a_set & b_set
+# future method for adding movies library from disk

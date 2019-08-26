@@ -38,13 +38,6 @@ def validate_movie_extension(movie):
 				return True
 		message_exiting_function(movie)
 	return False
-#
-#
-# def validate_file(file):
-# 	from os.path import exists
-# 	if exists(file):
-# 		return True
-# 	return False
 
 
 def validated_movie_path_is_not_null(movie):
@@ -60,16 +53,3 @@ def validated_movie_path_is_not_null(movie):
 		except FileNotFoundError:
 			return False
 	return True
-
-#
-# def validate_path(path):
-# 	from os.path import exists
-# 	if exists(path):
-# 		return True
-# 	return False
-#
-#
-# def validate_duplicates_and_handle_them_if_needed(list_of_possible_paths1,
-#                                                   list_of_possible_paths):
-# 	if len(list_of_possible_paths) > 1:
-# 		jobs.cleanup.remove_duplicates.remove_duplicates(list_of_possible_paths)
