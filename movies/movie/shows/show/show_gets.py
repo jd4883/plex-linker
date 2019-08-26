@@ -44,12 +44,12 @@ def create_tv_show_class_object(movie_object,
 	method_exit(movie_object)
 	return tv_show_class_object
 
-
-def get_relative_episode_value_from_movies_dictionary(movies_dictionary_object,
-                                                      show):
-	if not movies_dictionary_object['Shows'][show]['Absolute Episode Path']:
-		movies_dictionary_object['Shows'][show]['Absolute Episode Path'] = ""
-	return movies_dictionary_object['Shows'][show]['Absolute Episode Path']
+#
+# def get_relative_episode_value_from_movies_dictionary(movies_dictionary_object,
+#                                                       show):
+# 	if not movies_dictionary_object['Shows'][show]['Absolute Episode Path']:
+# 		movies_dictionary_object['Shows'][show]['Absolute Episode Path'] = ""
+# 	return movies_dictionary_object['Shows'][show]['Absolute Episode Path']
 
 
 def get_fully_parsed_show_with_absolute_episode(show_object):
@@ -61,5 +61,4 @@ def get_fully_parsed_show_without_absolute_episode(show_object):
 
 
 def get_alphabetical_specials_string():
-	return "Season 00"
-	#return "Specials"
+	return "Season 00" # create sonarr API call here to get the name dynamically
