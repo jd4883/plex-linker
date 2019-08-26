@@ -7,7 +7,7 @@ import sqlite3
 
 
 if __name__ == "__main__":
-	connection = sqlite3.connect("config/movies_collection.db")
+	connection = sqlite3.connect("config_files/movies_collection.db")
 	
 	cursor = connection.cursor()
 	
