@@ -8,19 +8,12 @@ from movies.movie.shows.show.show_puts import set_show
 from movies.movie.shows.show.show_validation import (validate_show_path_presence)
 
 
-# def get_symlink_status_value_from_movies_dictionary(movies_dictionary_object,
-#                                                     show):
-# 	if not movies_dictionary_object['Shows'][show]['Symlink Status']:
-# 		movies_dictionary_object['Shows'][show]['Symlink Status'] = False
-# 	return movies_dictionary_object['Shows'][show]['Symlink Status']
-
-
-def get_show_root_path(show_object):
-	method_launch(show_object)
-	method_exit(show_object)
-	if validate_show_path_presence(show_object):
-		return True
-	return False
+# def get_show_root_path(show_object):
+# 	method_launch(show_object)
+# 	method_exit(show_object)
+# 	if validate_show_path_presence(show_object):
+# 		return True
+# 	return False
 
 
 def get_show(show_object):
@@ -43,14 +36,6 @@ def create_tv_show_class_object(movie_object,
 	print_shows_dictionary(movie_object)
 	method_exit(movie_object)
 	return tv_show_class_object
-
-#
-# def get_relative_episode_value_from_movies_dictionary(movies_dictionary_object,
-#                                                       show):
-# 	if not movies_dictionary_object['Shows'][show]['Absolute Episode Path']:
-# 		movies_dictionary_object['Shows'][show]['Absolute Episode Path'] = ""
-# 	return movies_dictionary_object['Shows'][show]['Absolute Episode Path']
-
 
 def get_fully_parsed_show_with_absolute_episode(show_object):
 	return f"{show_object.path}/{show_object.season_folder}/{show_object.show} - S{show_object.season}E{show_object.episode} (E{show_object.absolute_episode}) - {show_object.title}"
