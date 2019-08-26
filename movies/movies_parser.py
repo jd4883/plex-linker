@@ -10,8 +10,6 @@ def parse_all_movies_from_yaml(movie_class_object):
 	method_launch(movie_class_object)
 	for movie in movie_class_object.movies_dictionary_object:
 		individual_movie_dictionary = Movie(movie)
-		# suspect there is an inheritence issue here preventing the updates from going to the yaml
-		#movie_class_object.movies_dictionary_object.update(individual_movie_dictionary.movies_dictionary_object)
 		try:
 			parse_shows_dictionary_object(individual_movie_dictionary)
 		except AttributeError:
