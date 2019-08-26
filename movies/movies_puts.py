@@ -25,8 +25,6 @@ def get_script_path():
 
 
 def set_symlink_status_attributes_for_dictionary(class_object):
-	set_symlink_target_dictionary_field(class_object)
-	#print(class_object.movies_dictionary_object[class_object.movie_title])
 	#class_object.movies_dictionary_object.update({class_object.movie_title['Shows'][class_object.show] : {'Symlink Target': class_object.absolute_movie_file_path}})
 	#print(class_object.movies_dictionary_object[class_object.movie_title])
 	# class_object.movies_dictionary_object.update(
@@ -36,11 +34,4 @@ def set_symlink_status_attributes_for_dictionary(class_object):
 	#			class_object.show: {'Symlink Destination': class_object.relative_show_path,
 	#			                    'Symlink Status': True}}})
 	return class_object
-
-
-def set_symlink_target_dictionary_field(class_object):
-	#target = {'Symlink Target':  class_object.absolute_movie_file_path}
-	#class_object.movies_dictionary_object.update(
-	#	{class_object.movie_title: {'Symlink Target': class_object.absolute_movie_file_path}})
-	pass
 
