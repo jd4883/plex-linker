@@ -16,23 +16,13 @@ if __name__ == "__main__":
 	
 	sql_command = """
 	CREATE TABLE movies (
-	movie VARCHAR(50) PRIMARY KEY,
-	fname VARCHAR(20),
-	lname VARCHAR(30),
-	gender CHAR(1),
-	joining DATE,
-	birth_date DATE);"""
-	
+	movie_title VARCHAR(50) PRIMARY KEY);"""
 	cursor.execute(sql_command)
 	
-	sql_command = """INSERT INTO movies (movie, fname, lname, gender, birth_date)
-	    VALUES (NULL, "William", "Shakespeare", "m", "1961-10-25");"""
+	sql_command = """INSERT INTO movies (test1);"""
 	cursor.execute(sql_command)
-	
-	sql_command = """INSERT INTO movies (movie, fname, lname, gender, birth_date)
-	    VALUES (NULL, "Frank", "Schiller", "m", "1955-08-17");"""
+	sql_command = """INSERT INTO movies (test2);"""
 	cursor.execute(sql_command)
-	
 	# never forget this, if you want the changes to be saved:
 	connection.commit()
 	
