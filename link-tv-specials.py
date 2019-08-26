@@ -19,9 +19,9 @@ if __name__ == "__main__":
 	movie_title VARCHAR(50) PRIMARY KEY);"""
 	cursor.execute(sql_command)
 	
-	sql_command = """INSERT INTO movies (test1);"""
+	sql_command = """INSERT INTO movies (movie_title) VALUES (test1);"""
 	cursor.execute(sql_command)
-	sql_command = """INSERT INTO movies (test2);"""
+	sql_command = """INSERT INTO movies (movie_title) VALUES (test2);"""
 	cursor.execute(sql_command)
 	# never forget this, if you want the changes to be saved:
 	connection.commit()
