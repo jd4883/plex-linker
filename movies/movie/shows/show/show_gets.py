@@ -52,17 +52,18 @@ def get_relative_episode_value_from_movies_dictionary(movies_dictionary_object,
 	return movies_dictionary_object['Shows'][show]['Absolute Episode Path']
 
 
-def get_populated_show_dictionary_object(show_object):
-	method_launch(show_object)
-	return {[
-		{"Absolute Episode Path": show_object.absolute_movie_path},  # 0
-		{"Relative Episode Path": show_object.relative_show_path},  # 1
-		{"Season": show_object.season},  # 2
-		{"Parsed Title": show_object.title},  # 3
-		{"Absolute Episode Status": show_object.absolute_episode},  # 4
-		{"Anime Status": show_object.anime_status},  # 5
-		{"Linked Path": show_object.live_linked_path},  # 6
-		{"Episode": show_object.episode}]}  # 7
+# def get_populated_show_dictionary_object(show_object):
+# 	method_launch(show_object)
+# 	return {[
+# 		{"Absolute Episode Path": show_object.absolute_movie_path},  # 0
+# 		{"Relative Episode Path": show_object.relative_show_path},  # 1
+# 		{"Season": show_object.season},  # 2
+# 		{"Parsed Title": show_object.title},  # 3
+# 		{"Absolute Episode Status": show_object.absolute_episode},  # 4
+# 		{"Anime Status": show_object.anime_status},  # 5
+# 		{"Linked Path": show_object.live_linked_path},  # 6
+# 		{"Episode": show_object.episode}, #7
+# 		{""}]}  # 8
 
 
 def get_fully_parsed_show_with_absolute_episode(show_object):
