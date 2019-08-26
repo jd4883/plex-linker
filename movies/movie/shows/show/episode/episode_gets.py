@@ -49,12 +49,12 @@ def get_season_folder(show_object):
 	method_exit(show_object)
 	return show_object.season_folder
 
-
-def get_season_folder_value_from_movies_dictionary(movies_dictionary_object,
-                                                   show):
-	if not movies_dictionary_object['Shows'][show]['Season Folder']:
-		movies_dictionary_object['Shows'][show]['Season Folder'] = ""
-	return movies_dictionary_object['Shows'][show]['Season Folder']
+#
+# def get_season_folder_value_from_movies_dictionary(movies_dictionary_object,
+#                                                    show):
+# 	if not movies_dictionary_object['Shows'][show]['Season Folder']:
+# 		movies_dictionary_object['Shows'][show]['Season Folder'] = ""
+# 	return movies_dictionary_object['Shows'][show]['Season Folder']
 
 
 def get_season_value_from_movies_dictionary(movie_dictionary_object,
