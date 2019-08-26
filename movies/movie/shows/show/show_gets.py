@@ -8,11 +8,11 @@ from movies.movie.shows.show.show_puts import set_show
 from movies.movie.shows.show.show_validation import (validate_show_path_presence)
 
 
-def get_symlink_status_value_from_movies_dictionary(movies_dictionary_object,
-                                                    show):
-	if not movies_dictionary_object['Shows'][show]['Symlink Status']:
-		movies_dictionary_object['Shows'][show]['Symlink Status'] = False
-	return movies_dictionary_object['Shows'][show]['Symlink Status']
+# def get_symlink_status_value_from_movies_dictionary(movies_dictionary_object,
+#                                                     show):
+# 	if not movies_dictionary_object['Shows'][show]['Symlink Status']:
+# 		movies_dictionary_object['Shows'][show]['Symlink Status'] = False
+# 	return movies_dictionary_object['Shows'][show]['Symlink Status']
 
 
 def get_show_root_path(show_object):
