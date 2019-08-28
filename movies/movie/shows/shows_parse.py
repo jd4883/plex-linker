@@ -4,7 +4,6 @@ from jobs.symlinking import (symlink_force)
 
 from movies.movie.shows.show.show_parser import (parse_new_show_class_object)
 from movies.movie.shows.show.show_validation import (validate_ready_to_link_movie_to_show)
-from movies.movies_puts import (set_symlink_status_attributes_for_dictionary)
 
 
 def parse_shows_to_link(shows):
@@ -12,6 +11,10 @@ def parse_shows_to_link(shows):
 		if validate_ready_to_link_movie_to_show(shows.quality):
 			for item in shows.shows:
 				symlink_force(item)
+				shows.movies_dictionary_object[shows.movie_title]['Link Target'] = f"{item.absolute_movie_file_path}"
+				shows.movies_dictionary_object[shows.movie_title]['Shows'][shows.show]['Link Destination'] = f"{shows.relative_show_path}"
+				#f"{show_class_object.absolute_movie_file_path}",
+				#f"{show_class_object.relative_show_path}"],
 				#set_symlink_status_attributes_for_dictionary(item)
 				set_link_target(shows)
 				#print(shows.movies_dictionary_object[shows.movie_title])

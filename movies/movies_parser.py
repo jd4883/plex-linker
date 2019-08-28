@@ -29,4 +29,3 @@ def parse_movies_in_library_and_remove_duplicates(var1,
 			path_array,
 			var1,
 			var2)
-	

@@ -28,9 +28,8 @@ class Movies:
 		movies.MOVIES_PATH = get_variable_from_yaml("Movie Directories")
 		movies.MOVIE_EXTENSIONS = get_variable_from_yaml("Movie Extensions")
 		movies.SHOWS_PATH = get_variable_from_yaml("Show Directories")
-		movies.movies_dictionary_object = \
-			movies.INVENTORIED_MOVIES_DICTIONARY_FROM_YAML = \
-			get_yaml_dictionary()
+		movies.movies_dictionary_object = {}
+		movies.movies_dictionary_object.update(get_yaml_dictionary())
 		movies.start_time = time.time()
 		movies.method = get_method_main()
 		movies.parent_method = get_method_main()
@@ -47,6 +46,8 @@ class Movie(Movies):
 		movie.relative_movie_path = ""
 		method_launch(movie)
 		movie.movie_title = title
+		movie.movie_dictionary_object = {}
+		movie.shows_dictionary_object = {}
 		movie.movie_dictionary_object = movie.movies_dictionary_object.get(movie.movie_title)
 		movie.shows_dictionary_object = set_shows_dictionary_object(movie)
 		movie.absolute_movie_path = get_movie_path(movie)
@@ -60,6 +61,10 @@ class Movie(Movies):
 			movie.absolute_movie_file_path = get_absolute_movie_file_path(movie)
 			movie.relative_movie_file_path = get_relative_movie_file_path(movie)
 			movie.shows = []
+			try:
+				movie.movies_dictionary_object[movie.movie_title]['Link Target'] = ""
+			except TypeError:
+				print(f'type error for {movie.movies_dictionary_object[movie.movie_title]}')
 		pass
 
 
