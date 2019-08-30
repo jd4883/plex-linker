@@ -11,11 +11,12 @@ from movies.movie.shows.show.show_validation import (validate_show_path_presence
 
 
 def get_show_root_path(show_object):
-	method_launch(show_object)
-	method_exit(show_object)
-	if validate_show_path_presence(show_object):
-		return True
-	return False
+	try:
+		if validate_show_path_presence(show_object):
+			return True
+		return False
+	except TypeError:
+		return False
 
 
 def get_show(show_object):

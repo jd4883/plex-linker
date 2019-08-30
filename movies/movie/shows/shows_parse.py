@@ -35,7 +35,7 @@ def set_link_target(self):
 
 def parse_shows_dictionary_object(movie_class_object,
                                   movie_dictionary):
-	for show in movie_dictionary['Shows'].keys():  # get_shows_object(movie_class_object)
+	for show in movie_dictionary['Shows'].keys():
 		parse_new_show_class_object(movie_class_object,
 		                            show,
 		                            movie_dictionary['Shows'][show])
