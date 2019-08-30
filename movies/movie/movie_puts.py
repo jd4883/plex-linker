@@ -23,3 +23,9 @@ def set_movie_quality(movie):
 
 def set_relative_movie_path(self):
 	self.movies_dictionary_object[self.movie_title].update({'Relative Movie Path': self.relative_movie_path})
+
+
+def init_link_target_for_movies_dictionary(movie):
+	if not movie['Link Target']:
+		movie['Link Target'] = ""
+	return movie
