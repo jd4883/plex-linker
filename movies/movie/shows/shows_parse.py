@@ -37,8 +37,9 @@ def parse_shows_dictionary_object(movie_class_object,
                                   movie_dictionary):
 	#try:
 	index = 0
-	for show in movie_dictionary['Shows']:  # get_shows_object(movie_class_object)
+	for show in movie_dictionary['Shows'].keys():  # get_shows_object(movie_class_object)
 		try:
+			print(show)
 			print(movie_dictionary['Shows'])
 			parse_new_show_class_object(movie_class_object,
 			                            show,
