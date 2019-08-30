@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 from jobs.set_path_permissions import (set_permissions)
 from jobs.symlinking import (symlink_force)
+from messaging.frontend import method_launch
 from movies.movie.movie_gets import (get_relative_movie_path,
                                      get_movie_path)
-from movies.movie.shows.show.show_parser import (parse_new_show_class_object)
+from movies.movie.shows.show.create_class_object import create_tv_show_class_object
 from movies.movie.shows.show.show_validation import (validate_ready_to_link_movie_to_show)
 
 
@@ -34,8 +35,19 @@ def set_link_target(self):
 
 
 def parse_shows_dictionary_object(movie_class_object,
-                                  movie_dictionary):
-	for show in movie_dictionary['Shows'].keys():
-		parse_new_show_class_object(movie_class_object,
-		                            show,
-		                            movie_dictionary['Shows'][show])
+                                  dictionary):
+	for show in dictionary.keys():
+		dictionary[show]
+		from movies.movie.shows.shows_parse import parse_shows_to_link
+		method_launch(movie_class_object)
+		try:
+			movie_class_object.shows.append(create_tv_show_class_object(movie_class_object,
+			                                                            show))
+			# probably can cut this method if moving fully to dictionaries
+			movie_class_object.show = show
+			print(show, dictionary[show])
+			# probably can factor out show for the dictionary
+			parse_shows_to_link(movie_class_object)
+		except AttributeError:
+			pass  # this may make sense to update with messaging, it should be a normal condition to see when importing movies
+

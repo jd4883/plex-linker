@@ -11,6 +11,6 @@ if __name__ == "__main__":
 		init_link_target_for_movies_dictionary(full_movie_database.movies_dictionary_object[movie])
 		if full_movie_database.movies_dictionary_object[movie]['Shows']:
 			parse_shows_dictionary_object(Movie(movie),
-			                              full_movie_database.movies_dictionary_object[movie])
+			                              full_movie_database.movies_dictionary_object[movie]['Shows'])
 		
 	write_python_dictionary_object_to_yaml_file(full_movie_database)

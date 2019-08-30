@@ -2,7 +2,6 @@
 from messaging.frontend import (print_ready_to_link_absolute_movie_path_to_relative_show_path,
                                 method_exit,
                                 method_launch)
-from movies.movie.shows.show.create_class_object import (create_tv_show_class_object)
 from movies.movie.shows.show.episode.episode_gets import (get_anime_boolean_value_from_movies_dictionary,
                                                           get_season,
                                                           get_season_folder,
@@ -32,23 +31,6 @@ def parse_show(show_object):
 	print_ready_to_link_absolute_movie_path_to_relative_show_path(show_object)
 	method_exit(show_object)
 	return show_object.parsed_relative_title
-
-
-def parse_new_show_class_object(shows_object,
-                                show,
-                                show_dictionary):
-	from movies.movie.shows.shows_parse import parse_shows_to_link
-	method_launch(shows_object)
-	try:
-		shows_object.shows.append(create_tv_show_class_object(shows_object,
-		                                                      show))
-		# probably can cut this method if moving fully to dictionaries
-		shows_object.show = show
-		print(show,show_dictionary)
-		# probably can factor out show for the dictionary
-		parse_shows_to_link(shows_object)
-	except AttributeError:
-		pass  # this may make sense to update with messaging, it should be a normal condition to see when importing movies
 
 
 def parse_show_title_from_show_dictionary(show_object):
