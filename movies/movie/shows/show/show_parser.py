@@ -35,16 +35,18 @@ def parse_show(show_object):
 
 
 def parse_new_show_class_object(shows_object,
-                                show):
+                                show,
+                                show_dictionary):
 	from movies.movie.shows.shows_parse import parse_shows_to_link
 	method_launch(shows_object)
 	try:
 		shows_object.shows.append(create_tv_show_class_object(shows_object,
 		                                                      show))
+		# probably can cut this method if moving fully to dictionaries
 		shows_object.show = show
-		# suspect here is where the inheritence problem begins
+		print(show_dictionary[0])
+		# probably can factor out show for the dictionary
 		parse_shows_to_link(shows_object)
-	# shows_object.movies_dictionary_object.update(show.movies_dictionary_object)
 	except AttributeError:
 		pass  # this may make sense to update with messaging, it should be a normal condition to see when importing movies
 

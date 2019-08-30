@@ -39,7 +39,8 @@ def parse_shows_dictionary_object(movie_class_object,
 	for show in movie_dictionary['Shows']:  # get_shows_object(movie_class_object)
 		try:
 			parse_new_show_class_object(movie_class_object,
-			                            show)
+			                            show,
+			                            movie_dictionary['Shows'][show])
 		except TypeError or AttributeError:
 			continue
 	#except TypeError:
