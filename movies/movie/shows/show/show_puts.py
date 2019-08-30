@@ -6,13 +6,13 @@ from os.path import (abspath,
 from messaging.frontend import (display_show_class_attributes,
                                 method_exit,
                                 method_launch)
-from movies.movie.shows.show.episode.episode_gets import get_padded_episode_number
+from movies.movie.shows.show.episode.episode_gets import (get_padded_episode_number,
+                                                          get_anime_boolean_value_from_movies_dictionary)
 
 
 def set_show_root_path(show_object):
 	method_launch(show_object)
 	from movies.movie.shows.show.show_parser import (get_parsed_show_title,
-	                                                 parse_show_title_from_show_dictionary,
 	                                                 parse_show)
 	show_object.absolute_movie_path = abspath(show_object.path)
 	show_object.parsed_title = parse_show(show_object)
@@ -27,8 +27,11 @@ def set_show(show_object):
 	init_show_object(show_object)
 	display_show_class_attributes(show_object)
 	from movies.movie.shows.show.show_gets import get_show_root_path
-	if get_show_root_path(show_object):  # parent_movie_dictionary_object may be worth adding as an arg here
-		set_show_root_path(show_object)
+	try:
+		if get_show_root_path(show_object):  # parent_movie_dictionary_object may be worth adding as an arg here
+			set_show_root_path(show_object)
+	except TypeError:
+		pass
 	method_exit(show_object)
 
 
@@ -40,20 +43,11 @@ def init_show_object(show_object):  # parent_movie_dictionary_object may be wort
 
 
 def set_episode_padding(show_object):
-	if show_object.absolute_episode:
-		if show_object.anime_status:
-			show_object.absolute_episode = "-".join(
-				[get_padded_episode_number(e, 3) for e in show_object.absolute_episode])
-			show_object.episode = "-".join([get_padded_episode_number(e, 3) for e in show_object.episode])
-		else:
-			show_object.absolute_episode = "-".join([get_padded_episode_number(e,2) for e in show_object.absolute_episode])
-			show_object.episode = "-".join([get_padded_episode_number(e, 2) for e in show_object.episode])
+	if show_object.anime_status:
+		show_object.episode = "-".join(
+			[get_padded_episode_number(e, 3) for e in show_object.episode])
+		show_object.absolute_episode = "-".join(
+			[get_padded_episode_number(e, 3) for e in show_object.absolute_episode])
 	else:
-		if show_object.anime_status:
-			show_object.episode = "-".join([get_padded_episode_number(e, 3) for e in show_object.episode])
-		else:
-			show_object.episode = "-".join([get_padded_episode_number(e, 2) for e in show_object.episode])
-			
-	#return show_object.absolute_episode,\
-	 #      show_object.episode
-# investigate logic because this looks perfect but for some reason many specials are 3x padded instead of 2x
+		show_object.episode = "-".join([get_padded_episode_number(e, 2) for e in show_object.episode])
+		show_object.absolute_episode = "-".join([get_padded_episode_number(e, 2) for e in show_object.absolute_episode])

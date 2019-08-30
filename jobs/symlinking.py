@@ -27,8 +27,7 @@ def symlink_force(show_class_object):
 		                 f"{show_class_object.relative_show_path}"],
 		                stderr=DEVNULL,
 		                stdout=PIPE)
-		print_linking_show_to_movie(show_class_object,
-		                            f"{process.communicate()[0].strip()}".replace('b"', '')[:-1])
+		print_linking_show_to_movie(f"{process.communicate()[0].strip()}".replace('b"', '')[:-1])
 	method_exit(show_class_object)
 
 

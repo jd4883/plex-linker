@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
+from class_objects import Show
 from movies.movie.shows.show.show_gets import *
+from movies.movie.shows.show.show_puts import (init_show_object)
 
 
 def create_tv_show_class_object(movie_object,
                                 show):
-	from class_objects import Show
 	method_launch(movie_object)
 	tv_show_class_object = Show(show,
 	                            movie_object.movie_title)

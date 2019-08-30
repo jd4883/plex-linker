@@ -13,8 +13,9 @@ def get_absolute_episode_value_from_movies_dictionary(class_object):
 def get_anime_boolean_value_from_movies_dictionary(class_object):
 	if not class_object.movie_dictionary_object['Shows'][class_object.show]['Anime']:
 		class_object.movie_dictionary_object['Shows'][class_object.show]['Anime'] = False
+		return False
 	class_object.movie_dictionary_object['Shows'][class_object.show]['Anime'] = True
-	return class_object.movie_dictionary_object['Shows'][class_object.show]['Anime']
+	return True
 
 
 def get_season(show_object):
@@ -47,13 +48,6 @@ def get_season_folder(show_object):
 		return
 	method_exit(show_object)
 	return show_object.season_folder
-
-
-def get_season_folder_value_from_movies_dictionary(movies_dictionary_object,
-                                                   show):
-	if not movies_dictionary_object['Shows'][show]['Season Folder']:
-		movies_dictionary_object['Shows'][show]['Season Folder'] = ""
-	return movies_dictionary_object['Shows'][show]['Season Folder']
 
 
 def get_season_value_from_movies_dictionary(movie_dictionary_object,
