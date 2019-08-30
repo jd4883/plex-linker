@@ -36,8 +36,7 @@ def parse_show(show_object):
 
 def parse_new_show_class_object(shows_object,
                                 show,
-                                shows_dictionary,
-                                index):
+                                show_dictionary):
 	from movies.movie.shows.shows_parse import parse_shows_to_link
 	method_launch(shows_object)
 	try:
@@ -45,9 +44,7 @@ def parse_new_show_class_object(shows_object,
 		                                                      show))
 		# probably can cut this method if moving fully to dictionaries
 		shows_object.show = show
-		print(type(index))
-		for item in shows_dictionary.values():
-			print(item)
+		print(show,show_dictionary)
 		# probably can factor out show for the dictionary
 		parse_shows_to_link(shows_object)
 	except AttributeError:
