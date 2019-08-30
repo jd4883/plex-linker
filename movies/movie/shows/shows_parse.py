@@ -4,7 +4,6 @@ from jobs.symlinking import (symlink_force)
 from messaging.frontend import method_launch
 from movies.movie.movie_gets import (get_relative_movie_path,
                                      get_movie_path)
-from movies.movie.shows.show.create_class_object import create_tv_show_class_object
 from movies.movie.shows.show.show_validation import (validate_ready_to_link_movie_to_show)
 
 
@@ -14,8 +13,7 @@ def parse_shows_to_link(shows):
 			for item in shows.shows:
 				symlink_force(item)
 				shows.movies_dictionary_object[shows.movie_title]['Link Target'] = f"{shows.absolute_movie_file_path}"
-				shows.movies_dictionary_object[shows.movie_title]['Shows'][shows.show][
-					'Link Destination'] = f"{shows.relative_show_path}"
+				shows.movies_dictionary_object[shows.movie_title]['Shows'][shows.show]['Link Destination'] = f"{shows.relative_show_path}"
 				shows.absolute_movie_path = shows.movies_dictionary_object[title]['Absolute Movie Path'] = get_movie_path(
 					movie)
 				shows.relative_movie_path = shows.movies_dictionary_object[title][
@@ -37,12 +35,11 @@ def set_link_target(self):
 def parse_shows_dictionary_object(movie_class_object,
                                   dictionary):
 	for show in dictionary.keys():
-		dictionary[show]
 		from movies.movie.shows.shows_parse import parse_shows_to_link
 		method_launch(movie_class_object)
 		try:
-			movie_class_object.shows.append(create_tv_show_class_object(movie_class_object,
-			                                                            show))
+			# movie_class_object.shows.append(create_tv_show_class_object(movie_class_object,
+			#                                                           show))
 			# probably can cut this method if moving fully to dictionaries
 			movie_class_object.show = show
 			print(show, dictionary[show])

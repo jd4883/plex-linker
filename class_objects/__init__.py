@@ -72,12 +72,6 @@ class Movie(Movies):
 			set_movie_quality(movie)
 			movie.absolute_movie_file_path = get_absolute_movie_file_path(movie)
 			movie.relative_movie_file_path = get_relative_movie_file_path(movie)
-			movie.shows = []
-			try:
-				movie.movies_dictionary_object[movie.movie_title]['Link Target'] = ""
-			except TypeError:
-				print(f'type error for {movie.movies_dictionary_object[movie.movie_title]}')
-		pass
 
 
 class Show(Movie):

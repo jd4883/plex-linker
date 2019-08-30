@@ -12,5 +12,6 @@ if __name__ == "__main__":
 		if full_movie_database.movies_dictionary_object[movie]['Shows']:
 			parse_shows_dictionary_object(Movie(movie),
 			                              full_movie_database.movies_dictionary_object[movie]['Shows'])
-		
+	
+	sorted(full_movie_database.movies_dictionary_object)
 	write_python_dictionary_object_to_yaml_file(full_movie_database)
