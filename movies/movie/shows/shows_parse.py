@@ -36,13 +36,17 @@ def set_link_target(self):
 def parse_shows_dictionary_object(movie_class_object,
                                   movie_dictionary):
 	#try:
+	index = 0
 	for show in movie_dictionary['Shows']:  # get_shows_object(movie_class_object)
 		try:
 			print(movie_dictionary['Shows'])
 			parse_new_show_class_object(movie_class_object,
 			                            show,
-			                            movie_dictionary['Shows'][show])
+			                            movie_dictionary['Shows'],
+			                            index)
 		except TypeError or AttributeError:
 			continue
+		finally:
+			index += 1
 	#except TypeError:
 	#	pass
