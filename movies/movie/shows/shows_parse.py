@@ -33,11 +33,12 @@ def set_link_target(self):
 	self.movies_dictionary_object[self.movie_title].update({'Symlink Target': f"{self.absolute_movie_file_path}"})
 
 
-def parse_shows_dictionary_object(shows_class_object):
+def parse_shows_dictionary_object(movie_class_object,
+                                  movie_dictionary):
 	try:
-		for show in shows_class_object.shows_dictionary_object:  # get_shows_object(shows_class_object)
+		for show in movie_dictionary['Shows']:  # get_shows_object(movie_class_object)
 			try:
-				parse_new_show_class_object(shows_class_object,
+				parse_new_show_class_object(movie_class_object,
 				                            show)
 			except TypeError or AttributeError:
 				continue
