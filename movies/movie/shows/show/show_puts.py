@@ -27,8 +27,11 @@ def set_show(show_object):
 	init_show_object(show_object)
 	display_show_class_attributes(show_object)
 	from movies.movie.shows.show.show_gets import get_show_root_path
-	if get_show_root_path(show_object):  # parent_movie_dictionary_object may be worth adding as an arg here
-		set_show_root_path(show_object)
+	try:
+		if get_show_root_path(show_object):  # parent_movie_dictionary_object may be worth adding as an arg here
+			set_show_root_path(show_object)
+	except TypeError:
+		pass
 	method_exit(show_object)
 
 
