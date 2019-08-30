@@ -22,3 +22,5 @@ def create_directory_if_not_present(path):
 
 def get_script_path():
 	return get_variable_from_yaml("Script Path")
+
+

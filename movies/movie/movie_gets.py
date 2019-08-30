@@ -104,3 +104,14 @@ def get_movie_dictionary_object_parsed_without_shows(title,
 
 def get_movie_directories_from_yaml(inventoried_movies_dictionary_from_yaml):
 	return inventoried_movies_dictionary_from_yaml["Movie Directories"]
+
+
+def get_unparsed_movie_title(movie,
+                             title):
+	try:
+		movie.movies_dictionary_object[title]['Unparsed Movie Title'] = title
+	except KeyError:
+		movie.movies_dictionary_object[title]['Unparsed Movie Title'] = {}
+	finally:
+		unparsed_movie_title = movie.movies_dictionary_object[title]['Unparsed Movie Title']
+		return unparsed_movie_title

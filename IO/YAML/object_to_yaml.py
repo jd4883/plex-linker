@@ -27,5 +27,5 @@ def write_python_dictionary_object_to_yaml_file(self):
 	set_file_mask_with_chmod_on_files_and_links(get_media_collection_parsed_last_time())
 	set_ownership_on_files_and_links(get_media_collection_parsed_archives())
 	set_file_mask_with_chmod_on_files_and_links(get_media_collection_parsed_archives())
-	#set_ownership_on_files_and_links(get_media_collection_parsed_this_time())
-	#set_file_mask_with_chmod_on_files_and_links(get_media_collection_parsed_this_time())
+# set_ownership_on_files_and_links(get_media_collection_parsed_this_time())
+# set_file_mask_with_chmod_on_files_and_links(get_media_collection_parsed_this_time())

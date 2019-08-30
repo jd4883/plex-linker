@@ -44,7 +44,7 @@ def parse_new_show_class_object(shows_object,
 		shows_object.show = show
 		# suspect here is where the inheritence problem begins
 		parse_shows_to_link(shows_object)
-		#shows_object.movies_dictionary_object.update(show.movies_dictionary_object)
+	# shows_object.movies_dictionary_object.update(show.movies_dictionary_object)
 	except AttributeError:
 		pass  # this may make sense to update with messaging, it should be a normal condition to see when importing movies
 
