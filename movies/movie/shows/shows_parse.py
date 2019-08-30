@@ -39,11 +39,12 @@ def parse_shows_dictionary_object(movie_class_object,
 	index = 0
 	for show in movie_dictionary['Shows']:  # get_shows_object(movie_class_object)
 		try:
-			print(movie_dictionary['Shows'])
+			print(movie_dictionary['Shows'][show])
 			parse_new_show_class_object(movie_class_object,
 			                            show,
-			                            movie_dictionary['Shows'],
+			                            movie_dictionary['Shows'][show],
 			                            index)
+			exit(-1)
 		except TypeError or AttributeError:
 			continue
 		finally:
