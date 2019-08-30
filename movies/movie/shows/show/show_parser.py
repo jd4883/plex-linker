@@ -46,7 +46,7 @@ def parse_new_show_class_object(shows_object,
 		# probably can cut this method if moving fully to dictionaries
 		shows_object.show = show
 		print(index)
-		print(shows_dictionary)
+		print(shows_dictionary[index])
 		# probably can factor out show for the dictionary
 		parse_shows_to_link(shows_object)
 	except AttributeError:
