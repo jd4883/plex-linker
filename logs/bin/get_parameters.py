@@ -2,11 +2,9 @@
 import logging
 import sys
 from os.path import exists
-from movies.movies_puts import get_script_path
 
-def get_method_hierarchy_for_current_function(method,
-                                              parent_method):
-	return f"({parent_method} -> {method}):".ljust(75)
+def get_method_hierarchy_for_current_function(g):
+	return f"({g.parent_method} -> {g.method}):".ljust(75)
 
 
 def get_method_main():
@@ -23,16 +21,13 @@ def get_parent_method_string():
 	return format_string(f"{sys._getframe(3).f_code.co_name}")
 
 
-def get_parsed_message(message1,
-                       message2,
-                       message3,
-                       message4,
+def get_parsed_message(g,
                        method_hierarchy):
 	return " ".join((method_hierarchy,
-	                 message1,
-	                 message2,
-	                 message3,
-	                 message4)).rstrip().lstrip()
+	                 g.message1,
+	                 g.message2,
+	                 g.message3,
+	                 g.message4)).rstrip().lstrip()
 
 
 def get_child_method_string():
