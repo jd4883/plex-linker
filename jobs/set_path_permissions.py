@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import os
-
+from pathlib import Path
 from IO.YAML.yaml_to_object import get_variable_from_yaml
 from messaging.frontend import (method_launch,
                                 method_exit)
@@ -9,6 +9,7 @@ from movies.movies_puts import set_working_directory_to_media_path
 
 def set_file_mask_with_chmod_on_files_and_links(path,
                                                 g):
+	Path(str(path)).touch()
 	method_launch(g)
 	os.chmod(path,
 	         0o775)
@@ -27,6 +28,7 @@ def set_permissions(movie_class_object,
 
 
 def set_ownership_on_files_and_links(path):
+	Path(str(path)).touch()
 	fd = os.open(f"{path}",
 	             os.O_RDONLY)
 	os.fchown(fd,
