@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-import jobs.cleanup
-import logs.bin
 from jobs.set_path_permissions import (set_permissions)
 from messaging.frontend import (method_launch,
+                                method_exit,
                                 print_movie_file_quality,
                                 message_no_items_found_to_parse,
                                 debug_message,
@@ -10,46 +9,59 @@ from messaging.frontend import (method_launch,
 from movies.movie.movie_puts import (set_movie_file_and_and_extension)
 
 
-def validate_extensions_from_movie_file(movie):
-	method_launch(movie)
-	if validate_movie_extension(movie):
+def validate_extensions_from_movie_file(movie,
+                                        g):
+	method_launch(g)
+	if validate_movie_extension(movie,
+	                            g):
 		movie.absolute_movie_file_path = "/".join((movie.absolute_movie_path,
 		                                           movie.movie_file))
-		set_permissions(movie)
+		
+		set_permissions(movie,
+		                g)
 		# validate permissions are updating, do some testing here
-		print_movie_file_quality(movie)
+		print_movie_file_quality(movie,
+		                         g)
+	method_exit(g)
 
 
-def validate_movie_extension(movie):
-	method_launch(movie)
+def validate_movie_extension(movie,
+                             g):
+	method_launch(g)
 	from os import listdir
 	for file in listdir(movie.absolute_movie_path):
-		movie.LOG.debug(debug_message(815,
-		                              movie.method,
-		                              movie.parent_method,
-		                              file))
-		for file_extension in movie.MOVIE_EXTENSIONS:
-			movie.LOG.debug(debug_message(813,
-			                              movie.method,
-			                              movie.parent_method,
-			                              file_extension))
+		g.LOG.debug(debug_message(815,
+		                          g,
+		                          file))
+		for file_extension in g.MOVIE_EXTENSIONS:
+			g.LOG.debug(debug_message(813,
+			                          g,
+			                          file_extension))
 			if file.endswith(file_extension):
-				set_movie_file_and_and_extension(file, file_extension, movie)
+				set_movie_file_and_and_extension(file,
+				                                 file_extension,
+				                                 movie,
+				                                 g)
 				return True
-		message_exiting_function(movie)
+	message_exiting_function(g)
 	return False
 
 
-def validated_movie_path_is_not_null(movie):
+def validated_movie_path_is_not_null(movie,
+                                     g):
 	from os import listdir
+	method_launch(g)
 	if movie.absolute_movie_path:
 		try:
 			if len(listdir(movie.absolute_movie_path)) == 0 or \
 					movie.absolute_movie_path.endswith("None" or None) \
 					or (movie.absolute_movie_path == "" or None \
 					    or movie.absolute_movie_path.endswith("None")):
-				message_no_items_found_to_parse(movie)
+				message_no_items_found_to_parse(g)
+				method_exit(g)
 				return False
 		except FileNotFoundError:
+			method_exit(g)
 			return False
+	method_exit(g)
 	return True

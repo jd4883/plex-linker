@@ -1,23 +1,26 @@
 #!/usr/bin/env python3
-from IO.YAML.yaml_to_object import get_variable_from_yaml
-
+from os import chdir
+from os import makedirs
+from messaging.frontend import (method_launch,
+                                method_exit)
+from IO.YAML.yaml_to_object import *
 
 def set_working_directory_to_media_path(media_directory):
-	from os import chdir
 	chdir(media_directory)
 
 
 def set_working_directory_to_script_path():
-	from os import chdir
 	chdir(get_script_path())
 
 
-def create_directory_if_not_present(path):
-	from os import makedirs
+def create_directory_if_not_present(path,
+                                    g):
+	method_launch(g)
 	try:
 		makedirs(path)
 	except FileExistsError:
 		pass
+	method_exit(g)
 
 
 def get_script_path():
