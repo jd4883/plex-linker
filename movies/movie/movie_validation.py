@@ -19,7 +19,6 @@ def validate_extensions_from_movie_file(movie,
 		
 		set_permissions(movie,
 		                g)
-		# validate permissions are updating, do some testing here
 		print_movie_file_quality(movie,
 		                         g)
 	method_exit(g)

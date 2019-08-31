@@ -32,7 +32,7 @@ def get_season(show_object,
 	show_object.season = get_season_value_from_movies_dictionary(show_object.movie_dictionary_object,
 	                                                             show_object.show,
 	                                                             g)
-	if show_object.season is 0 \
+	if show_object.season is int(0) \
 			or get_alphabetical_specials_string(g):
 		show_object.season = get_padded_zero_string(g)
 	elif show_object.season.isdigit():
@@ -43,8 +43,9 @@ def get_season(show_object,
 	# add more logic to prevent non-defined dictionary_for_shows to go through
 	print_season_parsed_value(show_object,
 	                          g)
+	g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season'] = show_object.season
 	method_exit(g)
-	return show_object.season
+	return g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season']
 
 
 def get_season_folder(show_object,
