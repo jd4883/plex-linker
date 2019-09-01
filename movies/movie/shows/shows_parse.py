@@ -18,10 +18,10 @@ def parse_show_to_link(show,
 		                                        g):
 			symlink_force(show,
 			              g)
-			g.movies_dictionary_object[show.movie_title]['Link Target'] = \
+			g.movies_dictionary_object[show.movie_title]['Symlink Target'] = \
 				str(show.absolute_movie_file_path)
 			
-			g.movies_dictionary_object[show.movie_title]['Shows'][show.show]['Link Destination'] = \
+			g.movies_dictionary_object[show.movie_title]['Shows'][show.show]['Symlink Destination'] = \
 				str(show.relative_show_path)
 			
 			show.absolute_movie_path = g.movies_dictionary_object[show.movie_title]['Absolute Movie Path'] = \

@@ -45,8 +45,8 @@ def parse_movie_file_quality(movie_file,
 #
 # def parse_movie_object(movies_dictionary_object,
 #                        shows_dictionary_object,
-#                        g):
-# 	for movie_dict in g["Movies"]:
+#                        globals_class_object):
+# 	for movie_dict in globals_class_object["Movies"]:
 # 		new_dict = dict(movie_dict)
 # 		for item in new_dict.items():
 # 			shows_dictionary_object.append(item)
