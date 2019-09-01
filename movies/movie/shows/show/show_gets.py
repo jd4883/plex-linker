@@ -55,3 +55,16 @@ def get_alphabetical_specials_string(g):
 	method_launch(g)
 	method_exit(g)
 	return "Season 00"  # create sonarr API call here to get the name dynamically
+
+
+def get_show_root_folders_from_parent_dictionary(show_class_object,
+                                                 g):
+	method_launch(g)
+	try:
+		if not g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show]['Parsed Show Root Folder']:
+			g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show]['Parsed Show Root Folder'] = []
+	except KeyError:
+		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show]['Parsed Show Root Folder'] = []
+	finally:
+		method_exit(g)
+		return g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show]['Parsed Show Root Folder']

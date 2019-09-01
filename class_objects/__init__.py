@@ -15,6 +15,8 @@ from movies.movie.movie_puts import (set_movie_quality)
 from movies.movie.movie_validation import (validate_extensions_from_movie_file,
                                            validated_movie_path_is_not_null)
 from movies.movie.shows.show.episode.episode_gets import get_anime_status_from_dictionary
+from movies.movie.shows.show.show_gets import get_show_root_folders_from_parent_dictionary
+from movies.movie.shows.shows_gets import get_shows_dictionary_from_parent_dictionary
 from movies.movie.shows.shows_puts import (set_shows_dictionary_object)
 from movies.movies_gets import (get_absolute_movies_path,
                                 get_relative_movies_path)
@@ -109,28 +111,28 @@ class Show(Movie,
 		from movies.movie.shows.show.show_gets import get_alphabetical_specials_string
 		show_class_object.title = \
 			show_class_object.show = \
-			g.movies_dictionary_object[movie]['Shows'][show]['Title'] = \
-			str(show)
+			g.movies_dictionary_object[movie]['Shows'][show]['Title'] = str(show)
 		show_class_object.season = \
 			g.movies_dictionary_object[movie]['Shows'][show]['Parsed Season Folder'] = \
 			str(get_alphabetical_specials_string(g))
 		show_class_object.episode = \
 			g.movies_dictionary_object[movie]['Shows'][show]['Parsed Episode'] = \
 			str("")
-		show_class_object.absolute_episode =  \
-			g.movies_dictionary_object[movie]['Shows'][show]['Parsed Absolute Episode'] = \
-			str("")
-		
+		from movies.movie.shows.show.episode.episode_gets import get_parsed_absolute_episode_from_parent_dictionary
+		show_class_object.absolute_episode = get_parsed_absolute_episode_from_parent_dictionary(g,
+		                                                                                        movie,
+		                                                                                        show)
 		show_class_object.anime_status = \
 			get_anime_status_from_dictionary(g,
 			                                 movie,
 			                                 show)
-		show_class_object.dictionary_of_shows = {}
-		show_class_object.root_folders = []
+		show_class_object.dictionary_of_shows = get_shows_dictionary_from_parent_dictionary(show_class_object,
+		                                                                                    g)
+		show_class_object.root_folders = get_show_root_folders_from_parent_dictionary(show_class_object,
+		                                                                              g)
 		show_class_object.relative_show_path = ""
 		show_class_object.absolute_show_path = ""
 		show_class_object.parsed_title = ""
 		show_class_object.live_linked_path = ""
 		show_class_object.parsed_relative_title = ""
 		show_class_object.show_dictionary_object = {}
-	

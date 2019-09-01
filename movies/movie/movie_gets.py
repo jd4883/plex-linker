@@ -18,15 +18,16 @@ def get_relative_movie_path(movie,
 		                                    g.MEDIA_PATH)
 	except ValueError:
 		pass
-	if movie.relative_movie_path:
-		set_absolute_movie_path(movie,
-		                        g)
-		set_relative_movie_path(movie,
-		                        g)
+	finally:
+		if movie.relative_movie_path:
+			set_absolute_movie_path(movie,
+			                        g)
+			set_relative_movie_path(movie,
+			                        g)
+			method_exit(g)
+			return str(movie.relative_movie_path)
 		method_exit(g)
-		return str(movie.relative_movie_path)
-	method_exit(g)
-	return str("")
+		return str("")
 
 
 def get_absolute_movie_file_path(movie,
@@ -50,7 +51,8 @@ def get_absolute_movie_path(self,
 def get_relative_movie_file_path(movie,
                                  g):
 	method_launch(g)
-	movie.absolute_movie_path = abspath(str(movie.relative_movie_path))
+	movie.absolute_movie_path = \
+		abspath(str(movie.relative_movie_path))
 	# this is a really hackish way to fix this and should later be done in a non-patching way
 	method_exit(g)
 	return str(relpath(movie.absolute_movie_path,
