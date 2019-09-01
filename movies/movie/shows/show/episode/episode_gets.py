@@ -105,3 +105,12 @@ def get_padded_zero_string(g):
 	method_launch(g)
 	method_exit(g)
 	return '0'.zfill(2)
+
+
+def get_anime_status_from_dictionary(g,
+                                     movie,
+                                     show):
+	if not g.movies_dictionary_object[movie]['Shows'][show]['Anime']:
+		g.movies_dictionary_object[movie]['Shows'][show]['Anime'] = \
+			False
+	return str(g.movies_dictionary_object[movie]['Shows'][show]['Anime'])
