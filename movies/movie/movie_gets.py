@@ -24,17 +24,17 @@ def get_relative_movie_path(movie,
 		set_relative_movie_path(movie,
 		                        g)
 		method_exit(g)
-		return movie.relative_movie_path
+		return str(movie.relative_movie_path)
 	method_exit(g)
-	return ""
+	return str("")
 
 
 def get_absolute_movie_file_path(movie,
                                  g):
 	method_launch(g)
 	method_exit(g)
-	return "/".join((str(movie.absolute_movie_path),
-	                 str(movie.movie_file)))
+	return str("/".join((str(movie.absolute_movie_path),
+	                     str(movie.movie_file))))
 
 
 def get_absolute_movie_path(self,
@@ -42,9 +42,9 @@ def get_absolute_movie_path(self,
                             g):
 	method_launch(g)
 	method_exit(g)
-	return abspath("/".join((self.absolute_movies_path,
-	                         path,
-	                         self.absolute_movie_path)))
+	return str(abspath("/".join((self.absolute_movies_path,
+	                             path,
+	                             self.absolute_movie_path))))
 
 
 def get_relative_movie_file_path(movie,
@@ -53,15 +53,15 @@ def get_relative_movie_file_path(movie,
 	movie.absolute_movie_path = abspath(str(movie.relative_movie_path))
 	# this is a really hackish way to fix this and should later be done in a non-patching way
 	method_exit(g)
-	return relpath(movie.absolute_movie_path,
-	               g.MEDIA_PATH)
+	return str(relpath(movie.absolute_movie_path,
+	                   g.MEDIA_PATH))
 
 
 def get_movie_quality(quality,
                       g):
 	method_launch(g)
 	method_exit(g)
-	return quality
+	return str(quality)
 
 
 def get_movie_path(movie,
@@ -73,25 +73,9 @@ def get_movie_path(movie,
 		                                      movie.movie_title))
 		if exists(movie.absolute_movie_path):
 			method_exit(g)
-			return movie.absolute_movie_path
+			return str(movie.absolute_movie_path)
 	method_exit(g)
-	return ""
-
-
-def get_absolute_movie_subpath(absolute_movies_path,
-                               path,
-                               g):
-	method_launch(g)
-	method_exit(g)
-	return listdir("/".join((absolute_movies_path,
-	                         path)))
-
-
-def get_absolute_movies_parent_path(absolute_movies_path,
-                                    g):
-	method_launch(g)
-	method_exit(g)
-	return listdir(absolute_movies_path)
+	return str("")
 
 
 def get_movie_file(movie,
@@ -106,10 +90,6 @@ def get_movie_extension(extension,
 	method_launch(g)
 	method_exit(g)
 	return extension
-
-#
-# def get_movie_directories_from_yaml(inventoried_movies_dictionary_from_yaml):
-# 	return inventoried_movies_dictionary_from_yaml["Movie Directories"]
 
 
 def get_unparsed_movie_title(title,

@@ -19,31 +19,40 @@ def set_movie_file_and_and_extension(file, file_extension,
 
 
 def set_movie_quality(movie,
-                      g):
+                      globals_class_object):
 	from movies.movie.movie_gets import (get_movie_file,
 	                                     get_movie_extension,
 	                                     get_movie_quality)
-	method_launch(g)
-	movie.movie_file = get_movie_file(movie,
-	                                  g)
-	movie.extension = get_movie_extension(movie.extension,
-	                                      g)
-	movie.quality = get_movie_quality(movie.quality,
-	                                  g)
-	method_exit(g)
+	method_launch(globals_class_object)
+	movie.movie_file = \
+		globals_class_object.movies_dictionary_object[movie.movie_title]['Parsed Movie File'] = \
+		str(get_movie_file(movie,
+		                   globals_class_object))
+	movie.extension = \
+		globals_class_object.movies_dictionary_object[movie.movie_title]['Parsed Movie Extension'] = \
+		str(get_movie_extension(movie.extension,
+		                        globals_class_object))
+	movie.quality = \
+		globals_class_object.movies_dictionary_object[movie.movie_title]['Parsed Movie Quality'] = \
+		str(get_movie_quality(movie.quality,
+		                      globals_class_object))
+	method_exit(globals_class_object)
 
 
 def set_relative_movie_path(self,
-                            g):
-	method_launch(g)
-	g.movies_dictionary_object[self.movie_title].update({'Relative Movie Path': self.relative_movie_path})
-	method_exit(g)
+                            globals_class_object):
+	method_launch(globals_class_object)
+	globals_class_object.movies_dictionary_object[self.movie_title].update({'Relative Movie Path': self.relative_movie_path})
+	method_exit(globals_class_object)
 
 
-def init_link_target_for_movies_dictionary(movie,
-                                           g):
-	method_launch(g)
-	if not movie['Link Target']:
-		movie['Link Target'] = ""
-	method_exit(g)
-	return movie
+def init_link_target_for_movies_dictionary(movie_class_object,
+                                           globals_class_object):
+	method_launch(globals_class_object)
+	movie_class_object['Symlink Target'] = \
+		str("")
+	if not movie_class_object['Symlink Target']:
+		movie_class_object['Symlink Target'] = \
+			str("")
+	method_exit(globals_class_object)
+	return movie_class_object

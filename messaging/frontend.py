@@ -242,5 +242,5 @@ def print_absolute_media_file_path(g,
 
 
 def print_linking_show_to_movie(process):
-	print(f'Link Success: {process}')
+	print(f'Symlink Success: {process}')
 # need to add log handling for this
