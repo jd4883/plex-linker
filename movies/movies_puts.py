@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-from os import chdir
 from os import makedirs
 from messaging.frontend import (method_launch,
                                 method_exit)

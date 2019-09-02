@@ -4,7 +4,6 @@ from os.path import exists
 
 from messaging.frontend import (method_launch,
                                 method_exit)
-from messaging.frontend import (print_absolute_show_path)
 
 
 def validate_show_path_presence(show_object,

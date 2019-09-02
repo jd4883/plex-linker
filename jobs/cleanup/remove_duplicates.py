@@ -2,13 +2,13 @@
 import shutil
 from shutil import (rmtree)
 
-import messaging
 import movies.movies_parser
 from messaging.frontend import (method_launch,
                                 method_exit,
                                 message_no_duplicates_to_remove)
 
 
+# noinspection PyUnusedFunction
 def remove_duplicates(list_of_possible_paths,
                       g):
 	method_launch(g)
@@ -53,5 +53,6 @@ def removing_duplicate_movies_from_staging(possible_duplicate_movie,
 	elif f"/{var1}/" in possible_duplicate_movie[1] and f"/{var2}/" not in possible_duplicate_movie[2]:
 		shutil.rmtree(possible_duplicate_movie[1])
 	else:
-		messaging.message_no_duplicates_to_remove(g)
+		# No duplicates to parse here
+		pass
 	method_exit(g)

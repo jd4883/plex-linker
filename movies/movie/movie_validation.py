@@ -46,6 +46,7 @@ def validate_movie_extension(movie,
 	return False
 
 
+# noinspection PyDeepBugsBinOperand
 def validated_movie_path_is_not_null(movie,
                                      g):
 	from os import listdir
@@ -54,7 +55,7 @@ def validated_movie_path_is_not_null(movie,
 		try:
 			if len(listdir(movie.absolute_movie_path)) == 0 or \
 					movie.absolute_movie_path.endswith("None" or None) \
-					or (movie.absolute_movie_path == "" or None \
+					or (movie.absolute_movie_path == str() or None \
 					    or movie.absolute_movie_path.endswith("None")):
 				message_no_items_found_to_parse(g)
 				method_exit(g)
