@@ -38,5 +38,3 @@ def write_python_dictionary_object_to_yaml_file(g):
 		get_collection_absolute_path_parsed_this_run(),
 		g)
 	method_exit(g)
-
-

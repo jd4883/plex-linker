@@ -41,6 +41,8 @@ def parse_movie_file_quality(movie_file,
 	method_launch(g)
 	method_exit(g)
 	return movie_file.split().pop()
+
+
 #
 #
 # def parse_movie_object(movies_dictionary_object,

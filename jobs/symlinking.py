@@ -28,4 +28,3 @@ def symlink_force(show_class_object,
 		                stdout=PIPE)
 		print_linking_show_to_movie(f"{process.communicate()[0].strip()}".replace('b"', str())[:-1])
 	method_exit(g)
-

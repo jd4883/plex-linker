@@ -92,7 +92,7 @@ def debug_message(status_code,
 		g.message3 = format_string(f"has been successfully parsed")
 	elif status_code == 874:
 		g.message1 = f"edge case hit here boss, we need a better way to " \
-		             f"identify if movies have associated shows"
+		             f"identify if self have associated shows"
 		g.message2 = f"`({var2})`"
 		g.message3 = format_string(f"has been successfully parsed")
 	
@@ -122,10 +122,10 @@ def debug_message(status_code,
 		g.message1 = format_string(f"media path:")
 		g.message2 = f"{var1}"
 	elif status_code == 817:
-		g.message1 = format_string(f"absolute movie file path:")
+		g.message1 = format_string(f"absolute self file path:")
 		g.message2 = f"{var1}"
 	elif status_code == 816:
-		g.message1 = format_string(f"absolute movie folder path:")
+		g.message1 = format_string(f"absolute self folder path:")
 		g.message2 = f"{var1}"
 	elif status_code == 815:
 		g.message1 = format_string(f"checking if this is a video:")
@@ -146,7 +146,7 @@ def debug_message(status_code,
 		g.message1 = format_string(f"parsed absolute path:")
 		g.message2 = f"{var1}"
 	elif status_code == 809:
-		g.message1 = format_string(f"movie dictionary:")
+		g.message1 = format_string(f"self dictionary:")
 		g.message2 = f"{var1}"
 	elif status_code == 808:
 		g.message1 = format_string(f"show(s) dictionary:")
@@ -155,28 +155,28 @@ def debug_message(status_code,
 		g.message1 = format_string(f"show dictionary:")
 		g.message2 = f"{var1}"
 	elif status_code == 806:
-		g.message1 = format_string(f"movie media path:")
+		g.message1 = format_string(f"self media path:")
 		g.message2 = f"{var1}"
 	elif status_code == 805:
-		g.message1 = format_string(f"movie file extension:")
+		g.message1 = format_string(f"self file extension:")
 		g.message2 = f"{var1}"
 	elif status_code == 804:
-		g.message1 = format_string(f"movie file quality:")
+		g.message1 = format_string(f"self file quality:")
 		g.message2 = f"{var1}"
 	elif status_code == 803:
 		g.message1 = format_string(f"shows associated with `{var1}`:")
 		g.message2 = f"{var2}"
 	elif status_code == 802:
-		g.message1 = format_string(f"absolute movie path:")
+		g.message1 = format_string(f"absolute self path:")
 		g.message2 = f"{var1}"
 	elif status_code == 801:
-		g.message1 = format_string(f"relative movies path:")
+		g.message1 = format_string(f"relative self path:")
 		g.message2 = f"{var1}"
 	elif status_code == 800:
-		g.message1 = format_string(f"movie dictionary:")
+		g.message1 = format_string(f"self dictionary:")
 		g.message2 = f"{var1}"
 	elif status_code == 799:
-		g.message1 = format_string(f"movie name:")
+		g.message1 = format_string(f"self name:")
 		g.message2 = f"{var1}"
 	elif status_code == -1:
 		g.message1 = format_string(

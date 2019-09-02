@@ -19,7 +19,7 @@ def set_show_root_path(show_object,
 	                                      g)
 	show_object.parsed_title = get_parsed_show_title(show_object,
 	                                                 g)
-	show_object.absolute_movie_path = abspath(f"{show_object.parsed_title}",)
+	show_object.absolute_movie_path = abspath(f"{show_object.parsed_title}", )
 	show_object.relative_show_path = relpath(f"{show_object.parsed_title}")
 	method_exit(g)
 
@@ -60,5 +60,6 @@ def set_episode_padding(show_object,
 			[get_padded_episode_number(e, 3, g) for e in show_object.absolute_episode])
 	else:
 		show_object.episode = "-".join([get_padded_episode_number(e, 2, g) for e in show_object.episode])
-		show_object.absolute_episode = "-".join([get_padded_episode_number(e, 2, g) for e in show_object.absolute_episode])
+		show_object.absolute_episode = "-".join(
+			[get_padded_episode_number(e, 2, g) for e in show_object.absolute_episode])
 	method_exit(g)

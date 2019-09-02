@@ -3,15 +3,13 @@ from messaging.frontend import (method_exit,
                                 method_launch)
 from movies.movie.shows.show.episode.episode_gets import (get_anime_boolean_value_from_movies_dictionary,
                                                           get_season,
-                                                          get_season_folder,
-                                                          get_show_episode_number_value_from_movies_dictionary,
-                                                          get_show_episode_title_value_from_movies_dictionary,
-                                                          get_absolute_episode_value_from_movies_dictionary)
+                                                          get_season_folder)
 from movies.movie.shows.show.show_gets import (get_fully_parsed_show_with_absolute_episode,
                                                get_fully_parsed_show_without_absolute_episode)
 from movies.movie.shows.show.show_puts import (init_show_object,
                                                set_episode_padding)
-from movies.movies_puts import (create_directory_if_not_present)
+from movies.movies_puts import (create_directory_if_not_present,
+                                set_nested_dictionary_key_value_pair)
 
 
 def parse_show(show_object,
@@ -25,18 +23,29 @@ def parse_show(show_object,
 	                                g)
 	show_object.season_folder = get_season_folder(show_object,
 	                                              g)
-	show_object.episode = get_show_episode_number_value_from_movies_dictionary(show_object.movie_dictionary_object,
-	                                                                           show_object.show,
-	                                                                           g)
-	show_object.absolute_episode = get_absolute_episode_value_from_movies_dictionary(show_object,
-	                                                                                 g)
+	show_object.episode = set_nested_dictionary_key_value_pair(g,
+	                                                           g.movies_dictionary_object[show_object.movie_title][
+		                                                           'Shows'][show_object.show]['Episode'])
+	show_object.absolute_episode = \
+		set_nested_dictionary_key_value_pair(g,
+		                                     g.movies_dictionary_object[show_object.movie_title]['Shows'][
+			                                     show_object.show]['Absolute Episode'],
+		                                     str())
 	set_episode_padding(show_object,
 	                    g)
-	show_object.title = get_show_episode_title_value_from_movies_dictionary(show_object.movie_dictionary_object,
-	                                                                        show_object.show,
-	                                                                        g)
-	show_object.parsed_relative_title = parse_show_title_from_show_dictionary(show_object,
-	                                                                          g)
+	show_object.title = \
+		set_nested_dictionary_key_value_pair(g,
+		                                     g.movies_dictionary_object[show_object.movie_title]['Shows'][
+			                                     show_object.show]['Title'],
+		                                     str(show_object.show))
+	show_object.parsed_relative_title = \
+		set_nested_dictionary_key_value_pair(g,
+		                                     g.movies_dictionary_object[show_object.movie_title]['Shows'][
+			                                     show_object.show][
+			                                     'Parsed Relative Show Title'],
+		                                     parse_show_title_from_show_dictionary(show_object,
+		                                                                           g))
+	
 	method_exit(g)
 	return show_object.parsed_relative_title
 

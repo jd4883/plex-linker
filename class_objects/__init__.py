@@ -14,97 +14,112 @@ from movies.movie.movie_gets import (get_absolute_movie_file_path,
 from movies.movie.movie_puts import (set_movie_quality)
 from movies.movie.movie_validation import (validate_extensions_from_movie_file,
                                            validated_movie_path_is_not_null)
-from movies.movie.shows.show.episode.episode_gets import get_anime_status_from_dictionary
-from movies.movie.shows.show.show_gets import get_show_root_folders_from_parent_dictionary, \
-	get_parsed_relative_show_title_from_parent_dictionary, get_parsed_absolute_show_title_from_parent_dictionary, \
-	get_show_dictionary_object_from_parent_dictionary, get_show_live_linked_path_from_show_dictionary, \
-	get_parsed_show_title_from_show_dictionary
-from movies.movie.shows.shows_gets import get_shows_dictionary_from_parent_dictionary
-from movies.movie.shows.shows_puts import (set_shows_dictionary_object)
 from movies.movies_gets import (get_absolute_movies_path,
                                 get_relative_movies_path)
-from movies.movies_puts import set_working_directory_to_media_path
+from movies.movies_puts import (set_nested_dictionary_key_value_pair,
+                                set_working_directory_to_media_path)
 
 
 class Globals:
 	def __init__(self):
-		self.MEDIA_PATH = get_variable_from_yaml("Media Directory")
-		self.LOG = get_logger(get_log_name())
-		self.MOVIES_PATH = get_variable_from_yaml("Movie Directories")
-		self.MOVIE_EXTENSIONS = get_variable_from_yaml("Movie Extensions")
-		self.MEDIA_DIRECTORY = get_variable_from_yaml("Media Directory")
-		self.SHOWS_PATH = get_variable_from_yaml("Show Directories")
-		self.movies_dictionary_object = get_yaml_dictionary()
-		self.method = get_method_main()
-		self.parent_method = get_method_main()
+		self.MEDIA_PATH = \
+			get_variable_from_yaml("Media Directory")
+		self.LOG = \
+			get_logger(get_log_name())
+		self.MOVIES_PATH = \
+			get_variable_from_yaml("Movie Directories")
+		self.MOVIE_EXTENSIONS = \
+			get_variable_from_yaml("Movie Extensions")
+		self.MEDIA_DIRECTORY = \
+			get_variable_from_yaml("Media Directory")
+		self.SHOWS_PATH = \
+			get_variable_from_yaml("Show Directories")
+		self.movies_dictionary_object = \
+			get_yaml_dictionary()
+		self.method = \
+			get_method_main()
+		self.parent_method = \
+			get_method_main()
 		pass
 
 
 class Movies:
-	def __init__(movies,
+	def __init__(self,
 	             g):
-		movies.start_time = time.time()
-		movies.absolute_movies_path = get_absolute_movies_path(g)
-		movies.relative_movies_path = get_relative_movies_path(movies,
-		                                                       g)
-		movies.list_of_possible_paths = []
+		self.start_time = \
+			time.time()
+		self.absolute_movies_path = \
+			get_absolute_movies_path(g)
+		self.relative_movies_path = \
+			get_relative_movies_path(self,
+			                         g)
+		self.list_of_possible_paths = \
+			[]
 
 
 class Movie(Movies,
             Globals):
-	def __init__(movie,
+	def __init__(self,
 	             title,
 	             g):
 		super().__init__(g)
-		movie.movie_title = \
-			g.movies_dictionary_object[title]['Unparsed Movie Title'] = \
-			get_unparsed_movie_title(title,
-			                         g)
-		movie.absolute_movie_path = \
-			g.movies_dictionary_object[title]['Absolute Movie Path'] = \
-			get_movie_path(movie,
-			               g)
-		movie.shows_dictionary_object = \
-			g.movies_dictionary_object[title]['Shows'] = \
-			set_shows_dictionary_object(movie,
-			                            g)
-		movie.movie_dictionary_object = \
-			g.movies_dictionary_object[title]
-		g.movies_dictionary_object[title]['Absolute Movie Path'] = \
-			get_movie_path(movie,
-			               g)
-		movie.relative_movie_path = \
-			g.movies_dictionary_object[title]['Relative Movie Path'] = \
-			get_relative_movie_path(movie,
-			                        g)
-		movie.quality = \
-			g.movies_dictionary_object[title]['Parsed Movie Quality'] = \
-			str()
-		movie.extension = \
-			g.movies_dictionary_object[title]['Parsed Movie Extension'] = \
-			str()
-		movie.movie_file = \
-			g.movies_dictionary_object[title]['Parsed Movie File'] = \
-			str()
-		if validated_movie_path_is_not_null(movie,
+		self.movie_title = \
+			set_nested_dictionary_key_value_pair(g,
+			                                     g.movies_dictionary_object[title]['Unparsed Movie Title'],
+			                                     get_unparsed_movie_title(title,
+			                                                              g))
+		self.shows_dictionary_object = \
+			set_nested_dictionary_key_value_pair(g,
+			                                     g.movies_dictionary_object[title]['Shows'],
+			                                     [{}])
+		self.movie_dictionary_object = \
+			set_nested_dictionary_key_value_pair(g,
+			                                     g.movies_dictionary_object[title],
+			                                     [{}])
+		self.absolute_movie_path = \
+			set_nested_dictionary_key_value_pair(g,
+			                                     g.movies_dictionary_object[title]['Absolute Movie Path'],
+			                                     get_movie_path(self,
+			                                                    g))
+		self.relative_movie_path = \
+			set_nested_dictionary_key_value_pair(g,
+			                                     g.movies_dictionary_object[title]['Relative Movie Path'],
+			                                     get_relative_movie_path(self,
+			                                                             g))
+		self.quality = \
+			set_nested_dictionary_key_value_pair(g,
+			                                     g.movies_dictionary_object[title]['Parsed Movie Quality'],
+			                                     str())
+		self.extension = \
+			set_nested_dictionary_key_value_pair(g,
+			                                     g.movies_dictionary_object[title]['Parsed Movie Extension'],
+			                                     str())
+		self.movie_file = \
+			set_nested_dictionary_key_value_pair(g,
+			                                     g.movies_dictionary_object[title]['Parsed Movie File'],
+			                                     str())
+		if validated_movie_path_is_not_null(self,
 		                                    g):
-			validate_extensions_from_movie_file(movie,
+			validate_extensions_from_movie_file(self,
 			                                    g)
-			set_movie_quality(movie,
+			set_movie_quality(self,
 			                  g)
-			movie.absolute_movie_file_path = \
-				g.movies_dictionary_object[title]['Absolute Movie File Path'] = \
-				get_absolute_movie_file_path(movie,
-				                             g)
-			movie.relative_movie_file_path = \
-				g.movies_dictionary_object[title]['Relative Movie File Path'] = \
-				get_relative_movie_file_path(movie,
-				                             g)
+			self.absolute_movie_file_path = \
+				set_nested_dictionary_key_value_pair(g,
+				                                     g.movies_dictionary_object[title]['Absolute Movie File Path'],
+				                                     get_absolute_movie_file_path(self,
+				                                                                  g))
+			self.relative_movie_file_path = \
+				set_nested_dictionary_key_value_pair(g,
+				                                     g.movies_dictionary_object[title]['Relative Movie File Path'],
+				                                     get_relative_movie_file_path(self,
+				                                                                  g))
 
 
+# noinspection ProblematicWhitespace
 class Show(Movie,
            Globals):
-	def __init__(show_class_object,
+	def __init__(self,
 	             show,
 	             movie,
 	             g):
@@ -112,45 +127,63 @@ class Show(Movie,
 		                 g)
 		set_working_directory_to_media_path(g.MEDIA_PATH)
 		from movies.movie.shows.show.show_gets import get_alphabetical_specials_string
-		show_class_object.title = \
-			show_class_object.show = \
-			g.movies_dictionary_object[movie]['Shows'][show]['Title'] = str(show)
-		show_class_object.season = \
-			g.movies_dictionary_object[movie]['Shows'][show]['Parsed Season Folder'] = \
-			str(get_alphabetical_specials_string(g))
-		show_class_object.episode = \
-			g.movies_dictionary_object[movie]['Shows'][show]['Parsed Episode'] = \
-			str()
-		from movies.movie.shows.show.episode.episode_gets import get_parsed_absolute_episode_from_parent_dictionary
-		show_class_object.absolute_episode = \
-			g.movies_dictionary_object[movie]['Shows'][show]['Absolute Episode'] = \
-			get_parsed_absolute_episode_from_parent_dictionary(g,
-			                                                   movie,
-			                                                   show)
-		show_class_object.anime_status = get_anime_status_from_dictionary(g,
-		                                                                  movie,
-		                                                                  show)
-		show_class_object.dictionary_of_shows = get_shows_dictionary_from_parent_dictionary(show_class_object,
-		                                                                                    g)
-		show_class_object.root_folders = get_show_root_folders_from_parent_dictionary(show_class_object,
-		                                                                              g)
-		show_class_object.relative_show_path = get_parsed_relative_show_title_from_parent_dictionary(g,
-		                                                                                             movie,
-		                                                                                             show)
-		show_class_object.absolute_show_path = get_parsed_absolute_show_title_from_parent_dictionary(g,
-		                                                                                             movie,
-		                                                                                             show)
-		show_class_object.parsed_title = get_parsed_show_title_from_show_dictionary(g,
-		                                                                            movie,
-		                                                                            show)
-		show_class_object.live_linked_path = get_show_live_linked_path_from_show_dictionary(g,
-		                                                                                    movie,
-		                                                                                    show)
-		show_class_object.parsed_relative_title = get_parsed_relative_show_title_from_parent_dictionary(g,
-		                                                                                                movie,
-		                                                                                                show)
-		show_class_object.show_dictionary_object = get_show_dictionary_object_from_parent_dictionary(g,
-		                                                                                             movie,
-		                                                                                             show)
-
-
+		self.title = \
+			self.show = \
+			set_nested_dictionary_key_value_pair(g,
+			                                     g.movies_dictionary_object[movie]['Shows'][show]['Title'],
+			                                     str(show))
+		self.season = \
+			set_nested_dictionary_key_value_pair(g,
+			                                     g.movies_dictionary_object[movie]['Shows'][show]['Parsed Season Folder'],
+			                                     str(get_alphabetical_specials_string(g)))
+		self.episode = \
+			set_nested_dictionary_key_value_pair(g,
+			                                     g.movies_dictionary_object[movie]['Shows'][show]['Parsed Episode'],
+			                                     str())
+		self.absolute_episode = \
+			set_nested_dictionary_key_value_pair(g,
+			                                     g.movies_dictionary_object[movie]['Shows'][show]['Absolute Episode'],
+			                                     str())
+		self.anime_status = \
+			set_nested_dictionary_key_value_pair(g,
+			                                     g.movies_dictionary_object[movie]['Shows'][show]['Anime'],
+			                                     False)
+		
+		self.dictionary_of_shows = \
+			set_nested_dictionary_key_value_pair(g,
+			                                     g.movies_dictionary_object[self.movie_title]['Shows'],
+			                                     [{}])
+		self.root_folders = \
+			set_nested_dictionary_key_value_pair(g,
+			                                     g.movies_dictionary_object[self.movie_title]['Shows'][
+				                                     self.show]['Parsed Show Root Folder'],
+			                                     str())
+		self.relative_show_path = \
+			set_nested_dictionary_key_value_pair(g,
+			                                     g.movies_dictionary_object[self.movie_title]['Shows'][
+				                                     self.show]['Relative Show Path'],
+			                                     str())
+		self.absolute_show_path = \
+			set_nested_dictionary_key_value_pair(g,
+			                                     g.movies_dictionary_object[movie]['Shows'][show]['Absolute Show Path'],
+			                                     str())
+		self.parsed_title = \
+			set_nested_dictionary_key_value_pair(g,
+			                                     g.movies_dictionary_object[movie]['Shows'][show]['Parsed Show Title'],
+			                                     str())
+		
+		self.live_linked_path = \
+			set_nested_dictionary_key_value_pair(g,
+			                                     g.movies_dictionary_object[movie]['Shows'][show]['Live Linked Path'],
+			                                     str())
+		self.parsed_relative_title = \
+			set_nested_dictionary_key_value_pair(g,
+			                                     g.movies_dictionary_object[movie]['Shows'][show][
+				                                     'Parsed Relative Show Title'],
+			                                     str())
+		
+		self.show_dictionary_object = \
+			set_nested_dictionary_key_value_pair(g,
+			                                     g.movies_dictionary_object[movie]['Shows'][show][
+				                                     'Show Dictionary Object'],
+			                                     {})

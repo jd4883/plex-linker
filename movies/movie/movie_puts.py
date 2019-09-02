@@ -43,7 +43,8 @@ def set_relative_movie_path(self,
                             globals_class_object):
 	method_launch(globals_class_object)
 	# noinspection LongLine
-	globals_class_object.movies_dictionary_object[self.movie_title].update({'Relative Movie Path': self.relative_movie_path})
+	globals_class_object.movies_dictionary_object[self.movie_title].update(
+		{'Relative Movie Path': self.relative_movie_path})
 	method_exit(globals_class_object)
 
 
