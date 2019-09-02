@@ -48,7 +48,7 @@ def get_logger(file):
 	console.setLevel(logging.INFO)
 	formatter = logging.Formatter(f'%(name)-12s:\t%(levelname)-8s\t%(message)s')
 	console.setFormatter(formatter)
-	logging.getLogger('').addHandler(console)
+	logging.getLogger(str()).addHandler(console)
 	return logging.getLogger(f'{file}')  # for now disabling method since it does not dynamically change nicely
 
 

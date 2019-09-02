@@ -42,6 +42,7 @@ def set_movie_quality(movie,
 def set_relative_movie_path(self,
                             globals_class_object):
 	method_launch(globals_class_object)
+	# noinspection LongLine
 	globals_class_object.movies_dictionary_object[self.movie_title].update({'Relative Movie Path': self.relative_movie_path})
 	method_exit(globals_class_object)
 
@@ -50,9 +51,9 @@ def init_link_target_for_movies_dictionary(movie_class_object,
                                            globals_class_object):
 	method_launch(globals_class_object)
 	movie_class_object['Symlink Target'] = \
-		str("")
+		str()
 	if not movie_class_object['Symlink Target']:
 		movie_class_object['Symlink Target'] = \
-			str("")
+			str()
 	method_exit(globals_class_object)
 	return movie_class_object

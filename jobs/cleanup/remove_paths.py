@@ -5,6 +5,7 @@ from messaging.frontend import (method_launch,
                                 method_exit)
 
 
+# noinspection PyUnusedFunction
 def remove_directory_and_contents(path,
                                   g):
 	method_launch(g)
@@ -12,10 +13,3 @@ def remove_directory_and_contents(path,
 	method_exit(g)
 
 
-def remove_blacklsited_items(path,
-                             g):
-	method_launch(g)
-	if path is 'lost+found':
-		remove_directory_and_contents(path,
-		                              g)
-	method_exit(g)

@@ -8,7 +8,7 @@ def get_absolute_episode_value_from_movies_dictionary(class_object,
                                                       g):
 	method_launch(g)
 	if not class_object.movie_dictionary_object['Shows'][class_object.show]['Absolute Episode']:
-		class_object.movie_dictionary_object['Shows'][class_object.show]['Absolute Episode'] = ""
+		class_object.movie_dictionary_object['Shows'][class_object.show]['Absolute Episode'] = str()
 	method_exit(g)
 	return class_object.movie_dictionary_object['Shows'][class_object.show]['Absolute Episode']
 
@@ -36,8 +36,9 @@ def get_season(show_object,
 			or get_alphabetical_specials_string(g):
 		show_object.season = get_padded_zero_string(g)
 	elif show_object.season.isdigit():
-		show_object.season = get_2x_padded_episode_number(show_object.season,
-		                                                  g)
+		show_object.season = get_padded_episode_number(show_object.season,
+		                                               2,
+		                                               g)
 	else:
 		show_object.season = get_alphabetical_specials_string(g)  # play with this
 	# add more logic to prevent non-defined dictionary_for_shows to go through
@@ -55,7 +56,7 @@ def get_season_folder(show_object,
 	if show_object.season is 0 or get_alphabetical_specials_string(g):
 		show_object.season_folder = get_alphabetical_specials_string(g)
 	elif show_object.season:  # add error handling for isdigit
-		show_object.season_folder = f"Season {get_season(show_object,g)}"
+		show_object.season_folder = f"Season {get_season(show_object, g)}"
 	else:
 		method_exit(g)
 		return
@@ -69,9 +70,9 @@ def get_season_value_from_movies_dictionary(movie_dictionary_object,
 	method_launch(g)
 	try:
 		if not movie_dictionary_object['Shows'][show]['Season']:
-			movie_dictionary_object['Shows'][show]['Season'] = ""
+			movie_dictionary_object['Shows'][show]['Season'] = str()
 	except KeyError:
-		movie_dictionary_object['Shows'][show]['Season'] = ""
+		movie_dictionary_object['Shows'][show]['Season'] = str()
 	method_exit(g)
 	return movie_dictionary_object['Shows'][show]['Season']
 
@@ -82,9 +83,9 @@ def get_show_episode_number_value_from_movies_dictionary(movies_dictionary_objec
 	method_launch(g)
 	try:
 		if not movies_dictionary_object['Shows'][show]['Episode']:
-			movies_dictionary_object['Shows'][show]['Episode'] = ""
+			movies_dictionary_object['Shows'][show]['Episode'] = str()
 	except KeyError:
-		movies_dictionary_object['Shows'][show]['Episode'] = ""
+		movies_dictionary_object['Shows'][show]['Episode'] = str()
 	finally:
 		method_exit(g)
 		return movies_dictionary_object['Shows'][show]['Episode']
@@ -96,9 +97,9 @@ def get_show_episode_title_value_from_movies_dictionary(movies_dictionary_object
 	method_launch(g)
 	try:
 		if not movies_dictionary_object['Shows'][show]['Title']:
-			movies_dictionary_object['Shows'][show]['Title'] = ""
+			movies_dictionary_object['Shows'][show]['Title'] = str()
 	except KeyError:
-		movies_dictionary_object['Shows'][show]['Title'] = ""
+		movies_dictionary_object['Shows'][show]['Title'] = str()
 	finally:
 		method_exit(g)
 		return movies_dictionary_object['Shows'][show]['Title']
@@ -138,9 +139,9 @@ def get_parsed_absolute_episode_from_parent_dictionary(g,
 	method_launch(g)
 	try:
 		if not g.movies_dictionary_object[movie]['Shows'][show]['Parsed Absolute Episode']:
-			g.movies_dictionary_object[movie]['Shows'][show]['Parsed Absolute Episode'] = str("")
+			g.movies_dictionary_object[movie]['Shows'][show]['Parsed Absolute Episode'] = str()
 	except KeyError:
-		g.movies_dictionary_object[movie]['Shows'][show]['Parsed Absolute Episode'] = str("")
+		g.movies_dictionary_object[movie]['Shows'][show]['Parsed Absolute Episode'] = str()
 	finally:
 		method_exit(g)
 		return g.movies_dictionary_object[movie]['Shows'][show]['Parsed Absolute Episode']

@@ -9,17 +9,17 @@ from logs.bin.get_parameters import (
 
 def debug_message(status_code,
                   g,
-                  var1="",
-                  var2=""):
+                  var1=str(),
+                  var2=str()):
 	if not status_code:
 		status_code = -1
 	if not g.method:
 		g.method = get_child_method_string()
 		g.parent_method = get_parent_method_string()
-	g.message1 = ""
-	g.message2 = ""
-	g.message3 = ""
-	g.message4 = ""
+	g.message1 = str()
+	g.message2 = str()
+	g.message3 = str()
+	g.message4 = str()
 	from logs.bin.get_parameters import get_method_hierarchy_for_current_function
 	method_hierarchy = get_method_hierarchy_for_current_function(g)
 	if status_code == 1001:
@@ -84,7 +84,7 @@ def debug_message(status_code,
 		g.message1 = format_string(f"we hit an unexpected edge case in this method")
 	elif status_code == 876:
 		g.message1 = format_string(f"method")
-		g.message2 = f"`{parent_method}`"
+		g.message2 = f"`{g.parent_method}`"
 		g.message3 = format_string(f"finished")
 	elif status_code == 875:
 		g.message1 = f"{var1}"
@@ -192,7 +192,7 @@ def debug_message(status_code,
 		g.message3 = format_string(f"appears to have a type error, check your yaml file")
 	else:
 		g.message1 = format_string(f"Uh boss, you may want to refactor your code for a better message \
-                    for code {status_code}. If done this message will go away")
+						  for code {status_code}. If done this message will go away")
 	g.message1 = g.message1.ljust(35)
 	g.message2 = g.message2.ljust(25)
 	g.message3 = g.message3.ljust(25)

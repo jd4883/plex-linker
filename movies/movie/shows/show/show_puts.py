@@ -6,8 +6,7 @@ from os.path import (abspath,
 from messaging.frontend import (display_show_class_attributes,
                                 method_exit,
                                 method_launch)
-from movies.movie.shows.show.episode.episode_gets import (get_padded_episode_number,
-                                                          get_anime_boolean_value_from_movies_dictionary)
+from movies.movie.shows.show.episode.episode_gets import (get_padded_episode_number)
 
 
 def set_show_root_path(show_object,

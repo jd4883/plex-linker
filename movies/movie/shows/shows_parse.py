@@ -5,9 +5,8 @@ from messaging.frontend import (method_launch,
                                 method_exit)
 from movies.movie.movie_gets import (get_relative_movie_path,
                                      get_movie_path)
-from movies.movie.shows.show.show_validation import (validate_ready_to_link_movie_to_show)
-from movies.movies_puts import set_working_directory_to_media_path
 from movies.movie.shows.show.create_class_object import create_tv_show_class_object
+from movies.movie.shows.show.show_validation import (validate_ready_to_link_movie_to_show)
 
 
 def parse_show_to_link(show,
@@ -44,7 +43,6 @@ def set_link_target(self,
 
 def parse_shows_dictionary_object(movie_class_object,
                                   g):
-	from class_objects import Show
 	method_launch(g)
 	for show in g.movies_dictionary_object[movie_class_object.movie_title]['Shows'].keys():
 		tv_show = create_tv_show_class_object(movie_class_object,

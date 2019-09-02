@@ -15,7 +15,10 @@ from movies.movie.movie_puts import (set_movie_quality)
 from movies.movie.movie_validation import (validate_extensions_from_movie_file,
                                            validated_movie_path_is_not_null)
 from movies.movie.shows.show.episode.episode_gets import get_anime_status_from_dictionary
-from movies.movie.shows.show.show_gets import get_show_root_folders_from_parent_dictionary
+from movies.movie.shows.show.show_gets import get_show_root_folders_from_parent_dictionary, \
+	get_parsed_relative_show_title_from_parent_dictionary, get_parsed_absolute_show_title_from_parent_dictionary, \
+	get_show_dictionary_object_from_parent_dictionary, get_show_live_linked_path_from_show_dictionary, \
+	get_parsed_show_title_from_show_dictionary
 from movies.movie.shows.shows_gets import get_shows_dictionary_from_parent_dictionary
 from movies.movie.shows.shows_puts import (set_shows_dictionary_object)
 from movies.movies_gets import (get_absolute_movies_path,
@@ -76,13 +79,13 @@ class Movie(Movies,
 			                        g)
 		movie.quality = \
 			g.movies_dictionary_object[title]['Parsed Movie Quality'] = \
-			str("")
+			str()
 		movie.extension = \
 			g.movies_dictionary_object[title]['Parsed Movie Extension'] = \
-			str("")
+			str()
 		movie.movie_file = \
 			g.movies_dictionary_object[title]['Parsed Movie File'] = \
-			str("")
+			str()
 		if validated_movie_path_is_not_null(movie,
 		                                    g):
 			validate_extensions_from_movie_file(movie,
@@ -117,22 +120,37 @@ class Show(Movie,
 			str(get_alphabetical_specials_string(g))
 		show_class_object.episode = \
 			g.movies_dictionary_object[movie]['Shows'][show]['Parsed Episode'] = \
-			str("")
+			str()
 		from movies.movie.shows.show.episode.episode_gets import get_parsed_absolute_episode_from_parent_dictionary
-		show_class_object.absolute_episode = get_parsed_absolute_episode_from_parent_dictionary(g,
-		                                                                                        movie,
-		                                                                                        show)
-		show_class_object.anime_status = \
-			get_anime_status_from_dictionary(g,
-			                                 movie,
-			                                 show)
+		show_class_object.absolute_episode = \
+			g.movies_dictionary_object[movie]['Shows'][show]['Absolute Episode'] = \
+			get_parsed_absolute_episode_from_parent_dictionary(g,
+			                                                   movie,
+			                                                   show)
+		show_class_object.anime_status = get_anime_status_from_dictionary(g,
+		                                                                  movie,
+		                                                                  show)
 		show_class_object.dictionary_of_shows = get_shows_dictionary_from_parent_dictionary(show_class_object,
 		                                                                                    g)
 		show_class_object.root_folders = get_show_root_folders_from_parent_dictionary(show_class_object,
 		                                                                              g)
-		show_class_object.relative_show_path = ""
-		show_class_object.absolute_show_path = ""
-		show_class_object.parsed_title = ""
-		show_class_object.live_linked_path = ""
-		show_class_object.parsed_relative_title = ""
-		show_class_object.show_dictionary_object = {}
+		show_class_object.relative_show_path = get_parsed_relative_show_title_from_parent_dictionary(g,
+		                                                                                             movie,
+		                                                                                             show)
+		show_class_object.absolute_show_path = get_parsed_absolute_show_title_from_parent_dictionary(g,
+		                                                                                             movie,
+		                                                                                             show)
+		show_class_object.parsed_title = get_parsed_show_title_from_show_dictionary(g,
+		                                                                            movie,
+		                                                                            show)
+		show_class_object.live_linked_path = get_show_live_linked_path_from_show_dictionary(g,
+		                                                                                    movie,
+		                                                                                    show)
+		show_class_object.parsed_relative_title = get_parsed_relative_show_title_from_parent_dictionary(g,
+		                                                                                                movie,
+		                                                                                                show)
+		show_class_object.show_dictionary_object = get_show_dictionary_object_from_parent_dictionary(g,
+		                                                                                             movie,
+		                                                                                             show)
+
+
