@@ -93,7 +93,7 @@ class Movie(Movies,
 			set_nested_dictionary_key_value_pair(g,
 			                                     g.movies_dictionary_object[title]['Parsed Movie Quality'],
 			                                     str())
-		g.movies_dictionary_object[title]['Parsed Movie Extension'] = str()
+		# g.movies_dictionary_object[title]['Parsed Movie Extension'] = str()
 		self.extension = \
 			set_nested_dictionary_key_value_pair(g,
 			                                     g.movies_dictionary_object[title]['Parsed Movie Extension'],
@@ -132,7 +132,7 @@ class Show(Movie,
 		                 g)
 		set_working_directory_to_media_path(g.MEDIA_PATH)
 		from movies.movie.shows.show.show_gets import get_alphabetical_specials_string
-		g.movies_dictionary_object[movie]['Shows'][show]['Parsed Season'] = str()
+		# g.movies_dictionary_object[movie]['Shows'][show]['Parsed Season'] = str()
 		# globals_class_object.movies_dictionary_object[movie]['Shows'][show]['Parsed Season Folder'] = str()
 		# globals_class_object.movies_dictionary_object[movie]['Shows'][show]['Parsed Episode'] = str()
 		# globals_class_object.movies_dictionary_object[movie]['Shows'][show]['Parsed Show Root Folder'] = str()
