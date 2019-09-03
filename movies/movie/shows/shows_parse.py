@@ -49,7 +49,7 @@ def parse_shows_dictionary_object(movie_class_object,
 			# way to know what not to parse each time, ideally without storing variables
 			# g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Symlinked'] = str()
 			# link_status = str(g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Symlinked'])
-			relative_show_path = str(
+		relative_show_path = str(
 			g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Relative Show File Path'])
 		absolute_movie_path = str(
 			g.movies_dictionary_object[movie_class_object.movie_title]["Parsed Movie File"])
