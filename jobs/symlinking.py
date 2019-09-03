@@ -25,9 +25,9 @@ def symlink_force(show_class_object,
 		                stderr=DEVNULL,
 		                stdout=PIPE)
 		print(g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show]['Symlink'])
-		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show]['Symlinked'] = f"{
-		process.communicate()[0].strip()}".replace('b"',
-		                                                                                                                                                      str())[:-1]
+		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show]['Symlinked'] = \
+			f"{process.communicate()[0].strip()}".replace('b"',
+			                                              str())[:-1]
 		g.list_of_linked_movies.append(show_class_object.movie_title)
 	else:
 		print(f'no link created for {show_class_object.absolute_movie_file_path}')
