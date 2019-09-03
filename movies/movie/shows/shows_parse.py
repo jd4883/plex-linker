@@ -52,9 +52,10 @@ def parse_shows_dictionary_object(movie_class_object,
 				g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Relative Show File Path'])
 			absolute_movie_path = str(
 				g.movies_dictionary_object[movie_class_object.movie_title]["Parsed Movie File"])
-			if get_live_link(relative_show_path) and \
-					(check_if_valid_symlink_destination(relative_show_path) and \
-						(check_if_valid_symlink_target(absolute_movie_path))):
+			if str(g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Symlinked']) is not "":
+			#if get_live_link(relative_show_path) and \
+			#		(check_if_valid_symlink_destination(relative_show_path) and \
+			#			(check_if_valid_symlink_target(absolute_movie_path))):
 					print('met inner if condition')
 					print(
 						f"No action required for {movie_class_object.movie_title}")  # make an official message handler here
