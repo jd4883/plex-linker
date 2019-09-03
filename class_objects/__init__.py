@@ -112,6 +112,7 @@ class Movie(Movies,
 				                                     g.movies_dictionary_object[title]['Absolute Movie File Path'],
 				                                     get_absolute_movie_file_path(self,
 				                                                                  g))
+			g.movies_dictionary_object[title]['Relative Movie File Path'] = str()
 			self.relative_movie_file_path = \
 				set_nested_dictionary_key_value_pair(g,
 				                                     g.movies_dictionary_object[title]['Relative Movie File Path'],
