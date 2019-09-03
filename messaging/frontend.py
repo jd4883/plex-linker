@@ -109,7 +109,3 @@ def method_exit(g):
 	set_working_directory_to_script_path()
 	message_exiting_function(g)
 
-
-def print_linking_show_to_movie(process):
-	print(f'Symlink Success: {process}')
-# need to add log handling for this

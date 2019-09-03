@@ -5,15 +5,7 @@ from messaging.frontend import (method_launch,
 
 
 # adjust to work from globals
-def get_anime_boolean_value_from_movies_dictionary(class_object,
-                                                   g):
-	method_launch(g)
-	if not class_object.movie_dictionary_object['Shows'][class_object.show]['Anime']:
-		class_object.movie_dictionary_object['Shows'][class_object.show]['Anime'] = False
-		return False
-	class_object.movie_dictionary_object['Shows'][class_object.show]['Anime'] = True
-	method_exit(g)
-	return True
+from movies.movies_puts import set_nested_dictionary_key_value_pair
 
 
 def get_season(show_object,
@@ -36,8 +28,13 @@ def get_season(show_object,
 	print_season_parsed_value(show_object,
 	                          g)
 	g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season'] = show_object.season
+	show_object.season = set_nested_dictionary_key_value_pair(g,
+	                                                          g.movies_dictionary_object[show_object.movie_title][
+		                                                          'Shows'][show_object.show]['Parsed Season'],
+	                                                          str(show_object.season))
+
 	method_exit(g)
-	return str(g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season'])
+	return str(show_object.season)
 
 
 def get_season_folder(show_object,

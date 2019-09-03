@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 from messaging.frontend import (method_exit,
                                 method_launch)
-from movies.movie.shows.show.episode.episode_gets import (get_anime_boolean_value_from_movies_dictionary,
-                                                          get_season,
+from movies.movie.shows.show.episode.episode_gets import (get_season,
                                                           get_season_folder)
 from movies.movie.shows.show.show_gets import (get_fully_parsed_show_with_absolute_episode,
                                                get_fully_parsed_show_without_absolute_episode)
@@ -17,10 +16,17 @@ def parse_show(show_object,
 	method_launch(g)
 	init_show_object(show_object,
 	                 g)
-	show_object.anime_status = get_anime_boolean_value_from_movies_dictionary(show_object,
-	                                                                          g)
-	show_object.season = get_season(show_object,
-	                                g)
+	show_object.anime_status = set_nested_dictionary_key_value_pair(g,
+	                                                                g.movies_dictionary_object[show_object.movie_title][
+		                                                                'Shows'][show_object.show]['Anime'],
+	                                                                False)
+	show_object.season = \
+		set_nested_dictionary_key_value_pair(g,
+		                                     g.movies_dictionary_object[show_object.movie_title]['Shows'][
+			                                     show_object.show]['Parsed Season'],
+		                                     get_season(show_object,
+		                                                g))
+	
 	show_object.season_folder = get_season_folder(show_object,
 	                                              g)
 	show_object.episode = set_nested_dictionary_key_value_pair(g,
@@ -37,7 +43,7 @@ def parse_show(show_object,
 		set_nested_dictionary_key_value_pair(g,
 		                                     g.movies_dictionary_object[show_object.movie_title]['Shows'][
 			                                     show_object.show]['Title'],
-		                                     str(show_object.show))
+		                                     str(show_object.parsed_title))
 	show_object.parsed_relative_title = \
 		set_nested_dictionary_key_value_pair(g,
 		                                     g.movies_dictionary_object[show_object.movie_title]['Shows'][
