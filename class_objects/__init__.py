@@ -93,6 +93,7 @@ class Movie(Movies,
 			set_nested_dictionary_key_value_pair(g,
 			                                     g.movies_dictionary_object[title]['Parsed Movie Quality'],
 			                                     str())
+		g.movies_dictionary_object[title]['Parsed Movie Extension'] = str()
 		self.extension = \
 			set_nested_dictionary_key_value_pair(g,
 			                                     g.movies_dictionary_object[title]['Parsed Movie Extension'],
