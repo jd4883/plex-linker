@@ -41,14 +41,14 @@ def parse_shows_dictionary_object(movie_class_object,
 		except:
 			pass
 		# create a framework to init any dictionary objects missing for a show
-		g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Parsed Season Folder'] = str()
-		g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Parsed Episode'] = str()
-		g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Parsed Show Root Folder'] = str()
-		g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Relative Show Path'] = str()
-		g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Absolute Show Path'] = str()
-		g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Parsed Relative Show Title'] = str()
-		g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Show Dictionary Object'] = dict()
-		g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Symlinked'] = str()
+		# g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Parsed Season Folder'] = str()
+		# g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Parsed Episode'] = str()
+		# g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Parsed Show Root Folder'] = str()
+		# g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Relative Show Path'] = str()
+		# g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Absolute Show Path'] = str()
+		# g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Parsed Relative Show Title'] = str()
+		# g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Show Dictionary Object'] = dict()
+		# g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Symlinked'] = str()
 		# make try except more specific
 		#try:
 			# this component sort of worked 9-2 but never got fully going. Trying to come up with a reasonably intelligent
@@ -59,10 +59,11 @@ def parse_shows_dictionary_object(movie_class_object,
 			g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Relative Show File Path'])
 		absolute_movie_path = str(
 			g.movies_dictionary_object[movie_class_object.movie_title]["Parsed Movie File"])
-		if str(g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Symlinked']) is not "":
-		#if get_live_link(relative_show_path) and \
-		#		(check_if_valid_symlink_destination(relative_show_path) and \
-		#			(check_if_valid_symlink_target(absolute_movie_path))):
+		if str(g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Symlinked']) is not "" and \
+				get_live_link(relative_show_path) and \
+				(check_if_valid_symlink_destination(relative_show_path) and \
+				 (check_if_valid_symlink_target(
+						absolute_movie_path))):
 				print(
 					f"No action required for {movie_class_object.movie_title}")  # make an official message handler here
 				g.list_of_linked_movies.append(movie_class_object.movie_title)
