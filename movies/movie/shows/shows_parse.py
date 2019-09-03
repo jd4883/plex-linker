@@ -49,10 +49,8 @@ def parse_shows_dictionary_object(movie_class_object,
 				g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Relative Show File Path'])
 			absolute_movie_path = str(
 				g.movies_dictionary_object[movie_class_object.movie_title]["Parsed Movie File"])
-			if get_live_link(relative_show_path):
-				# (str(link_status) is f"{relative_show_path}' -> '{readlink(relative_show_path)}'") \
-				# 						andthis doesnt seem to work as desired unfortunately
-				if (check_if_valid_symlink_destination(relative_show_path) and \
+			if get_live_link(relative_show_path) and \
+					(check_if_valid_symlink_destination(relative_show_path) and \
 						(check_if_valid_symlink_target(absolute_movie_path))):
 					print('met inner if condition')
 					print(

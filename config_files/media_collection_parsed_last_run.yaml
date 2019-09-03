@@ -1646,6 +1646,9 @@ Bleach- Memories in the Rain (2004):
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
+      Symlink: '''anime/staging/Bleach/Season 00/Bleach - S00E001 - Memories in the
+        Rain DVD.mkv'' -> ''../../../../movies/foreign/Bleach- Memories in the Rain
+        (2004)/Bleach- Memories in the Rain (2004) DVD.mkv'''
       Symlink Destination: ''
       Symlinked: ''
       Symlinked Show: false
@@ -13114,6 +13117,10 @@ South Park- Bigger, Longer & Uncut (1999):
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
+      Symlink: '''tv/animated/South Park/Season 00/South Park - S00E06 - South Park-
+        Bigger Longer & Uncut Bluray-1080p.mkv'' -> ''../../../../movies/staging/South
+        Park- Bigger, Longer & Uncut (1999)/South Park- Bigger, Longer & Uncut (1999)
+        Bluray-1080p.mkv'''
       Symlink Destination: ''
       Symlinked: ''
       Symlinked Show: false
