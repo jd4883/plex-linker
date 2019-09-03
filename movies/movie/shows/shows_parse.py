@@ -18,10 +18,8 @@ def parse_show_to_link(show,
 	for _ in g.movies_dictionary_object[show.movie_title]['Shows'].items():
 		if validate_ready_to_link_movie_to_show(show.quality,
 		                                        g):
-			print('should be linking here')
 			symlink_force(show,
 			              g)
-			print('link should have worked')
 			show.absolute_movie_path = g.movies_dictionary_object[show.movie_title]['Absolute Movie Path'] = \
 				str(get_movie_path(show,
 				                   g))
@@ -30,7 +28,6 @@ def parse_show_to_link(show,
 				                            g))
 			set_permissions(show,
 			                g)
-			print('exiting linking')
 	method_exit(g)
 
 
@@ -43,6 +40,7 @@ def parse_shows_dictionary_object(movie_class_object,
 			del g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Absolute Show Path']
 		except:
 			pass
+		# create a framework to init any dictionary objects missing for a show
 		g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Parsed Season Folder'] = str()
 		g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Parsed Episode'] = str()
 		g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Parsed Show Root Folder'] = str()
@@ -68,7 +66,6 @@ def parse_shows_dictionary_object(movie_class_object,
 				print('met inner if condition')
 				print(
 					f"No action required for {movie_class_object.movie_title}")  # make an official message handler here
-				print('condition met for not parsing')
 				g.list_of_linked_movies.append(movie_class_object.movie_title)
 				continue
 		else:
@@ -76,10 +73,8 @@ def parse_shows_dictionary_object(movie_class_object,
 			tv_show = create_tv_show_class_object(movie_class_object,
 			                                      show,
 			                                      g)
-			print('show object created')
 			tv_show.show = show
 			# show object not getting created correctly here
-			print('about to parse show for linking')
 			parse_show_to_link(tv_show,
 			                   g)
 		#except KeyError:

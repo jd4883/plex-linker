@@ -101,7 +101,7 @@ def print_method_shows_dictionary_value(show_object,
 
 def message_no_duplicates_to_remove():
 	# TODO: standardize method
-	print("Nothing to remove here detected as a duplicate")
+	"Nothing to remove here detected as a duplicate")
 
 
 def method_exit(g):
