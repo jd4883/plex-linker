@@ -46,6 +46,7 @@ def parse_shows_dictionary_object(movie_class_object,
 		g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Parsed Season Folder'] = str()
 		g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Parsed Episode'] = str()
 		g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Parsed Show Root Folder'] = str()
+		g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Relative Show Path'] = str()
 		# make try except more specific
 		#try:
 			# this component sort of worked 9-2 but never got fully going. Trying to come up with a reasonably intelligent
