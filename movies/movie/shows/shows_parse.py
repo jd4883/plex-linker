@@ -43,39 +43,39 @@ def parse_shows_dictionary_object(movie_class_object,
 			del g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Absolute Show Path']
 		except:
 			pass
-		try:
+		#try:
 			# this component sort of worked 9-2 but never got fully going. Trying to come up with a reasonably intelligent
 			# way to know what not to parse each time, ideally without storing variables
 			# g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Symlinked'] = str()
 			# link_status = str(g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Symlinked'])
 			relative_show_path = str(
-				g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Relative Show File Path'])
-			absolute_movie_path = str(
-				g.movies_dictionary_object[movie_class_object.movie_title]["Parsed Movie File"])
-			if str(g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Symlinked']) is not "":
-			#if get_live_link(relative_show_path) and \
-			#		(check_if_valid_symlink_destination(relative_show_path) and \
-			#			(check_if_valid_symlink_target(absolute_movie_path))):
-					print('met inner if condition')
-					print(
-						f"No action required for {movie_class_object.movie_title}")  # make an official message handler here
-					print('condition met for not parsing')
-					g.list_of_linked_movies.append(movie_class_object.movie_title)
-					continue
-			else:
-				print(f"Started parsing {movie_class_object.movie_title}")  # make an official message handler here
-				tv_show = create_tv_show_class_object(movie_class_object,
-				                                      show,
-				                                      g)
-				print('show object created')
-				tv_show.show = show
-				# show object not getting created correctly here
-				print('about to parse show for linking')
-				parse_show_to_link(tv_show,
-				                   g)
-		except KeyError:
-			print('hit except condition')
-			g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Symlinked'] = str()
+			g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Relative Show File Path'])
+		absolute_movie_path = str(
+			g.movies_dictionary_object[movie_class_object.movie_title]["Parsed Movie File"])
+		if str(g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Symlinked']) is not "":
+		#if get_live_link(relative_show_path) and \
+		#		(check_if_valid_symlink_destination(relative_show_path) and \
+		#			(check_if_valid_symlink_target(absolute_movie_path))):
+				print('met inner if condition')
+				print(
+					f"No action required for {movie_class_object.movie_title}")  # make an official message handler here
+				print('condition met for not parsing')
+				g.list_of_linked_movies.append(movie_class_object.movie_title)
+				continue
+		else:
+			print(f"Started parsing {movie_class_object.movie_title}")  # make an official message handler here
+			tv_show = create_tv_show_class_object(movie_class_object,
+			                                      show,
+			                                      g)
+			print('show object created')
+			tv_show.show = show
+			# show object not getting created correctly here
+			print('about to parse show for linking')
+			parse_show_to_link(tv_show,
+			                   g)
+		#except KeyError:
+		#	print('hit except condition')
+		#	g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Symlinked'] = str()
 	method_exit(g)
 
 
