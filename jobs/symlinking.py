@@ -24,7 +24,7 @@ def symlink_force(show_class_object,
 		                 f"{show_class_object.relative_show_path}"],
 		                stderr=DEVNULL,
 		                stdout=PIPE)
-		print(process)
+		print(g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show]['Symlink'])
 		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show]['Symlink'] = f"{process.communicate()[0].strip()}".replace('b"',
 		                                                                                                                                                      str())[:-1]
 		g.list_of_linked_movies.append(show_class_object.movie_title)
