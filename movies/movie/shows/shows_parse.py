@@ -18,8 +18,10 @@ def parse_show_to_link(show,
 	for _ in g.movies_dictionary_object[show.movie_title]['Shows'].items():
 		if validate_ready_to_link_movie_to_show(show.quality,
 		                                        g):
+			print('should be linking here')
 			symlink_force(show,
 			              g)
+			print('link should have worked')
 			show.absolute_movie_path = g.movies_dictionary_object[show.movie_title]['Absolute Movie Path'] = \
 				str(get_movie_path(show,
 				                   g))
@@ -28,6 +30,7 @@ def parse_show_to_link(show,
 				                            g))
 			set_permissions(show,
 			                g)
+			print('exiting linking')
 	method_exit(g)
 
 
