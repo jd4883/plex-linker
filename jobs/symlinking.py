@@ -15,7 +15,6 @@ def symlink_force(show_class_object,
 			None or 'None/' or show_class_object.absolute_movie_file_path.endswith(
 		'None') or show_class_object.relative_show_path.endswith('None')):
 		method_launch(g)
-		print('if triggered to create link')
 		# added the popen for relative symlinking because this was not working in the os symlink built in.
 		# have not done any testing in Windows only on Ubuntu 18
 		process = Popen(["ln",

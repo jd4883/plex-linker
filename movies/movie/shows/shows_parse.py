@@ -63,7 +63,6 @@ def parse_shows_dictionary_object(movie_class_object,
 		#if get_live_link(relative_show_path) and \
 		#		(check_if_valid_symlink_destination(relative_show_path) and \
 		#			(check_if_valid_symlink_target(absolute_movie_path))):
-				print('met inner if condition')
 				print(
 					f"No action required for {movie_class_object.movie_title}")  # make an official message handler here
 				g.list_of_linked_movies.append(movie_class_object.movie_title)
