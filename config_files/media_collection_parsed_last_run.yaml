@@ -1650,7 +1650,9 @@ Bleach- Memories in the Rain (2004):
         Rain DVD.mkv'' -> ''../../../../movies/foreign/Bleach- Memories in the Rain
         (2004)/Bleach- Memories in the Rain (2004) DVD.mkv'''
       Symlink Destination: ''
-      Symlinked: ''
+      Symlinked: '''anime/staging/Bleach/Season 00/Bleach - S00E001 - Memories in
+        the Rain DVD.mkv'' -> ''../../../../movies/foreign/Bleach- Memories in the
+        Rain (2004)/Bleach- Memories in the Rain (2004) DVD.mkv'''
       Symlinked Show: false
       Title: Memories in the Rain
   Symlink Target: /var/data/media/video/movies/foreign/Bleach- Memories in the Rain
@@ -3921,7 +3923,7 @@ Fairy Tail the Movie- Phoenix Priestess (2012):
     \ (2012) Bluray-1080p.mkv"
   Unparsed Movie Title: Fairy Tail the Movie- Phoenix Priestess (2012)
   Unparsed Relative Movie Path: ''
-Fairy Tail x Rave (2013):
+Fairy Tail x Rave:
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Fairy Tail x Rave
   Parsed Movie Extension: ''
@@ -3951,7 +3953,7 @@ Fairy Tail x Rave (2013):
       Symlink Destination: ''
       Symlinked: ''
       Symlinked Show: false
-      Title: Fairy Tail x Rave (2013)
+      Title: Fairy Tail x Rave
     Rave Master:
       Absolute Episode: ''
       Absolute Show Path: ''
@@ -13122,7 +13124,10 @@ South Park- Bigger, Longer & Uncut (1999):
         Park- Bigger, Longer & Uncut (1999)/South Park- Bigger, Longer & Uncut (1999)
         Bluray-1080p.mkv'''
       Symlink Destination: ''
-      Symlinked: ''
+      Symlinked: '''tv/animated/South Park/Season 00/South Park - S00E06 - South Park-
+        Bigger Longer & Uncut Bluray-1080p.mkv'' -> ''../../../../movies/staging/South
+        Park- Bigger, Longer & Uncut (1999)/South Park- Bigger, Longer & Uncut (1999)
+        Bluray-1080p.mkv'''
       Symlinked Show: false
       Title: South Park- Bigger Longer & Uncut
   Symlink Target: /var/data/media/video/movies/staging/South Park- Bigger, Longer
