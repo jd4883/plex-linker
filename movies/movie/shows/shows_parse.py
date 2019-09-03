@@ -63,8 +63,10 @@ def parse_shows_dictionary_object(movie_class_object,
 				tv_show = create_tv_show_class_object(movie_class_object,
 				                                      show,
 				                                      g)
+				print('show object created')
 				tv_show.show = show
 				# show object not getting created correctly here
+				print('about to parse show for linking')
 				parse_show_to_link(tv_show,
 				                   g)
 		except KeyError:
