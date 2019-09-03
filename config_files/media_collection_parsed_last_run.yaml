@@ -1650,9 +1650,6 @@ Bleach- Memories in the Rain (2004):
         Rain DVD.mkv'' -> ''../../../../movies/foreign/Bleach- Memories in the Rain
         (2004)/Bleach- Memories in the Rain (2004) DVD.mkv'''
       
-      'anime/staging/Bleach/Season 00/Bleach - S00E001 - Memories in
-        the Rain DVD.mkv'' -> ''../../../../movies/foreign/Bleach- Memories in the
-        Rain (2004)/Bleach- Memories in the Rain (2004) DVD.mkv'''
       
       Title: Memories in the Rain
   Symlink Target: /var/data/media/video/movies/foreign/Bleach- Memories in the Rain
@@ -13124,10 +13121,6 @@ South Park- Bigger, Longer & Uncut (1999):
         Park- Bigger, Longer & Uncut (1999)/South Park- Bigger, Longer & Uncut (1999)
         Bluray-1080p.mkv'''
       
-      'tv/animated/South Park/Season 00/South Park - S00E06 - South Park-
-        Bigger Longer & Uncut Bluray-1080p.mkv'' -> ''../../../../movies/staging/South
-        Park- Bigger, Longer & Uncut (1999)/South Park- Bigger, Longer & Uncut (1999)
-        Bluray-1080p.mkv'''
       
       Title: South Park- Bigger Longer & Uncut
   Symlink Target: /var/data/media/video/movies/staging/South Park- Bigger, Longer
