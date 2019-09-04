@@ -42,18 +42,6 @@ def parse_movie_file_quality(movie_file,
 	method_exit(g)
 	return movie_file.split().pop()
 
-
-#
-#
-# def parse_movie_object(movies_dictionary_object,
-#                        shows_dictionary_object,
-#                        globals_class_object):
-# 	for movie_dict in globals_class_object["Movies"]:
-# 		new_dict = dict(movie_dict)
-# 		for item in new_dict.items():
-# 			shows_dictionary_object.append(item)
-
-
 def parse_proper(movie_class_object,
                  g):
 	method_launch(g)

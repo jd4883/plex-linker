@@ -29,11 +29,11 @@ def validate_movie_extension(movie,
 	method_launch(g)
 	from os import listdir
 	for file in listdir(movie.absolute_movie_path):
-		g.LOG.debug(debug_message(815,
+		g.LOG.debug(debug_message(607,
 		                          g,
 		                          file))
 		for file_extension in g.MOVIE_EXTENSIONS:
-			g.LOG.debug(debug_message(813,
+			g.LOG.debug(debug_message(609,
 			                          g,
 			                          file_extension))
 			if file.endswith(file_extension):
