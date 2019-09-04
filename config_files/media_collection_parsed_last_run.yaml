@@ -41,11 +41,11 @@
   Shows:
     South Park:
       Absolute Episode: ''
-      Absolute Show Path: ''
+      Absolute Show Path: '/var/data/media/video/movies/staging/6 Days to Air- The Making of South Park (2011)'
       Anime: false
       Episode: [41]
       Parsed Episode: ''
-      Parsed Relative Show Title: ''
+      Parsed Relative Show Title: 'movies/staging/6 Days to Air- The Making of South Park (2011)'
       Parsed Season: ''
       Parsed Season Folder: ''
       Parsed Show Root Folder: ''
