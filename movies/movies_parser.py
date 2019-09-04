@@ -28,6 +28,7 @@ def parse_movies_in_library_and_remove_duplicates(var1,
 def parse_all_movies_in_yaml_dictionary(g):
 	method_launch(g)
 	for movie in g.movies_dictionary_object:
+		str(movie).replace(":", "-")
 		try:
 			if sorted(g.movies_dictionary_object[movie]['Shows']):
 				parse_shows_dictionary_object(Movie(movie,

@@ -2639,9 +2639,9 @@ Cowboy Bebop- The Movie (2001):
 Death Note (2006):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Death Note (2006)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "\u30C7\u30B9\u30CE\u30FC\u30C8 (2006) Bluray-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Death Note (2006)
   Relative Movie File Path: ''
   Relative Movie Path: movies/foreign/Death Note (2006)
@@ -2658,11 +2658,15 @@ Death Note (2006):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Death Note/Season 00/Death Note - S00E003 -
         Death Note (Live Action Movie)
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Death Note/Season 00/Death Note - S00E003
+        - Death Note (Live Action Movie) Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Death Note/Season 00/Death Note - S00E003 - Death Note
+        (Live Action Movie) Bluray-1080p.mkv -> ../../../../movies/foreign/Death Note
+        (2006)/\xe3\x83\x87\xe3\x82\xb9\xe3\x83\x8e\xe3\x83\xbc\xe3\x83\x88 (2006)
+        Bluray-1080p.mkv
       Title: Death Note (Live Action Movie)
   Unparsed Movie Title: Death Note (2006)
 Death Note (2017):
@@ -3774,7 +3778,8 @@ Fairy Tail x Rave (2013):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Fairy Tail/Season 00/Fairy Tail - S00E008 -
         Fairy Tail x Rave
-      Relative Show File Path: ''
+      Relative Show File Path: anime/shounen/Fairy Tail/Season 00/Fairy Tail - S00E008
+        - Fairy Tail x Rave DVD.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
@@ -3794,7 +3799,8 @@ Fairy Tail x Rave (2013):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Rave Master/Season 00/Rave Master - S00E001
         - Fairy Tail x Rave
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Rave Master/Season 00/Rave Master - S00E001
+        - Fairy Tail x Rave DVD.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
@@ -6985,9 +6991,10 @@ Merlin- The Return (2000):
   Absolute Movie File Path: ''
   Absolute Movie Path: "/var/data/media/video/movies/foreign/Mob Psycho 100 REIGEN\
     \ \u2013 The Miracle Psychic that Nobody Know (2018)"
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "Mob Psycho 100 REIGEN \u2013 The Miracle Psychic that Nobody\
+    \ Know (2018) WEBDL-1080p.mkv"
+  Parsed Movie Quality: WEBDL-1080p.mkv
   Raw Absolute Movie Path: "/var/data/media/video/movies/foreign/Mob Psycho 100 REIGEN\
     \ \u2013 The Miracle Psychic that Nobody Know (2018)"
   Relative Movie File Path: ''
@@ -7006,11 +7013,16 @@ Merlin- The Return (2000):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Mob Psycho 100/Season 00/Mob Psycho 100 - S00E007
         - Reigen - The Miracle Psychic that Nobody Knows
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Mob Psycho 100/Season 00/Mob Psycho 100
+        - S00E007 - Reigen - The Miracle Psychic that Nobody Knows WEBDL-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Mob Psycho 100/Season 00/Mob Psycho 100 - S00E007 -
+        Reigen - The Miracle Psychic that Nobody Knows WEBDL-1080p.mkv -> ../../../../movies/foreign/Mob
+        Psycho 100 REIGEN \xe2\x80\x93 The Miracle Psychic that Nobody Know (2018)/Mob
+        Psycho 100 REIGEN \xe2\x80\x93 The Miracle Psychic that Nobody Know (2018)
+        WEBDL-1080p.mkv
       Title: Reigen - The Miracle Psychic that Nobody Knows
   Unparsed Movie Title: "Mob Psycho 100 REIGEN \u2013 The Miracle Psychic that Nobody\
     \ Know (2018)"
@@ -9615,15 +9627,17 @@ One Piece Film - Z (2012):
   Symlink Target: /var/data/media/video/movies/foreign/One Piece Film - Z (2012)/One
     Piece Film Z (2012) Bluray-1080p.mkv
   Unparsed Movie Title: One Piece Film - Z (2012)
-One Punch Man- Road To Hero (2015):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/One Punch Man- Road To
+One Punch Man- Road to Hero (2015):
+  Absolute Movie File Path: /var/data/media/video/movies/foreign/One Punch Man- Road
+    to Hero (2015) DVD.mkv
+  Absolute Movie Path: /var/data/media/video/movies/foreign/One Punch Man- Road to
     Hero (2015)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: One Punch Man- Road to Hero (2015) DVD.mkv
+  Parsed Movie Quality: DVD.mkv
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/One Punch Man- Road To Hero (2015)
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/foreign/One Punch Man- Road to Hero (2015)
   Shows:
     One-Punch Man:
       Absolute Episode: ''
@@ -9637,13 +9651,16 @@ One Punch Man- Road To Hero (2015):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/One-Punch Man/Season 00/One-Punch Man - S00E001
         - Road to Hero
-      Relative Show File Path: ''
-      Relative Show Path: ''
+      Relative Show File Path: anime/staging/One-Punch Man/Season 00/One-Punch Man
+        - S00E001 - Road to Hero DVD.mkv
+      Relative Show Path: anime/staging/One-Punch Man/Season 00
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/One-Punch Man/Season 00/One-Punch Man - S00E001 - Road
+        to Hero DVD.mkv -> ../../../../movies/foreign/One Punch Man- Road to Hero
+        (2015)/One Punch Man- Road to Hero (2015) DVD.mkv
       Title: Road to Hero
-  Unparsed Movie Title: One Punch Man- Road To Hero (2015)
+  Unparsed Movie Title: One Punch Man- Road to Hero (2015)
 Overlord Movie 1- The Undead King (2017):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Overlord Movie 1- The
@@ -12575,7 +12592,9 @@ Steins;Gate 0- Valentine's of Crystal Polymorphism - Bittersweet Intermedio (201
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Steins;Gate 0/Season 00/Steins;Gate 0 - S00E002
         (E024) - Valentine's of Crystal Polymorphism -Bittersweet Intermedio-
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Steins;Gate 0/Season 00/Steins;Gate 0
+        - S00E002 (E024) - Valentine's of Crystal Polymorphism -Bittersweet Intermedio-
+        Bluray-1080p Remux.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
@@ -12696,7 +12715,8 @@ Sword Art Online- Extra Edition (2013):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Sword Art Online/Season 00/Sword Art Online
         - S00E010 - Sword Art Online - Extra Edition
-      Relative Show File Path: ''
+      Relative Show File Path: anime/shounen/Sword Art Online/Season 00/Sword Art
+        Online - S00E010 - Sword Art Online - Extra Edition Bluray-1080p Remux.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
@@ -14792,15 +14812,15 @@ Trigun - Badlands Rumble (2010):
   Symlink Target: /var/data/media/video/movies/foreign/Trigun - Badlands Rumble (2010)/Trigun
     - Badlands Rumble (2010) Bluray-1080p.mkv
   Unparsed Movie Title: Trigun - Badlands Rumble (2010)
-'Twilight Zone: The Movie (1983)':
+Twilight Zone- The Movie (1983):
   Absolute Movie File Path: ''
-  Absolute Movie Path: '/var/data/media/video/movies/foreign/Twilight Zone: The Movie
-    (1983)'
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Twilight Zone- The Movie
+    (1983)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
   Raw Absolute Movie Path: ''
-  Relative Movie Path: 'movies/foreign/Twilight Zone: The Movie (1983)'
+  Relative Movie Path: movies/foreign/Twilight Zone- The Movie (1983)
   Shows:
     The Twilight Zone:
       Absolute Episode: ''
@@ -14820,7 +14840,7 @@ Trigun - Badlands Rumble (2010):
       Show Dictionary Object: {}
       Symlinked: ''
       Title: Twilight Zone- The Movie
-  Unparsed Movie Title: 'Twilight Zone: The Movie (1983)'
+  Unparsed Movie Title: Twilight Zone- The Movie (1983)
 Unlocking Sherlock (2014):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/thrillers/Unlocking Sherlock (2014)
@@ -15198,9 +15218,10 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/xxxHOLiC The Movie- A
     Midsummer Night's Dream (2005)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "\u5287\u5834\u7248 \xD7\xD7\xD7HOLiC \u771F\u590F\u30CE\u591C\
+    \u30CE\u5922 (2005) Remux-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/xxxHOLiC The Movie-
     A Midsummer Night's Dream (2005)
   Relative Movie File Path: ''
@@ -15219,19 +15240,24 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/xxxHOLiC/Season 00/xxxHOLiC - S00E001 (E100)
         - A Midsummer Night's Dream
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/xxxHOLiC/Season 00/xxxHOLiC - S00E001
+        (E100) - A Midsummer Night's Dream Bluray-1080p Remux.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/xxxHOLiC/Season 00/xxxHOLiC - S00E001 (E100) - A Midsummer
+        Night\\s Dream Bluray-1080p Remux.mkv -> ../../../../movies/foreign/xxxHOLiC
+        The Movie- A Midsummer Night\\s Dream (2005)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88
+        \xc3\x97\xc3\x97\xc3\x97HOLiC \xe7\x9c\x9f\xe5\xa4\x8f\xe3\x83\x8e\xe5\xa4\x9c\xe3\x83\x8e\xe5\xa4\xa2
+        (2005) Remux-1080p.mkv
       Title: A Midsummer Night's Dream
   Unparsed Movie Title: xxxHOLiC The Movie- A Midsummer Night's Dream (2005)
 "xxxHolic- R\u014D (2010)":
   Absolute Movie File Path: ''
   Absolute Movie Path: "/var/data/media/video/movies/foreign/xxxHolic- R\u014D (2010)"
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "xxxHolic- R\u014D (2010) Bluray-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: "/var/data/media/video/movies/foreign/xxxHolic- R\u014D\
     \ (2010)"
   Relative Movie File Path: ''
@@ -15249,20 +15275,23 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/xxxHOLiC/Season 00/xxxHOLiC - S00E004 (E040)
         - Rou
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/xxxHOLiC/Season 00/xxxHOLiC - S00E004
+        (E040) - Rou Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/xxxHOLiC/Season 00/xxxHOLiC - S00E004 (E040) - Rou
+        Bluray-1080p.mkv -> ../../../../movies/foreign/xxxHolic- R\xc5\x8d (2010)/xxxHolic-
+        R\xc5\x8d (2010) Bluray-1080p.mkv
       Title: Rou
   Unparsed Movie Title: "xxxHolic- R\u014D (2010)"
 "xxxHolic- R\u014D Adayume (2011)":
   Absolute Movie File Path: ''
   Absolute Movie Path: "/var/data/media/video/movies/foreign/xxxHolic- R\u014D Adayume\
     \ (2011)"
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "xxxHolic- R\u014D Adayume (2011) Bluray-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: "/var/data/media/video/movies/foreign/xxxHolic- R\u014D\
     \ Adayume (2011)"
   Relative Movie File Path: ''
@@ -15280,11 +15309,14 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/xxxHOLiC/Season 00/xxxHOLiC - S00E005 (E041)
         - Rou Adayume
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/xxxHOLiC/Season 00/xxxHOLiC - S00E005
+        (E041) - Rou Adayume Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/xxxHOLiC/Season 00/xxxHOLiC - S00E005 (E041) - Rou
+        Adayume Bluray-1080p.mkv -> ../../../../movies/foreign/xxxHolic- R\xc5\x8d
+        Adayume (2011)/xxxHolic- R\xc5\x8d Adayume (2011) Bluray-1080p.mkv
       Title: Rou Adayume
   Unparsed Movie Title: "xxxHolic- R\u014D Adayume (2011)"
 "\u306F\u305F\u3089\u304F\u7D30\u80DE \u7279\u5225\u7DE8 \u98A8\u90AA\u75C7\u5019\u7FA4 (2018)":

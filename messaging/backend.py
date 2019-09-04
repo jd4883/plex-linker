@@ -9,8 +9,7 @@ from logs.bin.get_parameters import (
 
 def debug_message(status_code,
                   g,
-                  var1=str(),
-                  var2=str()):
+                  var1=str()):
 	if not status_code:
 		status_code = -1
 	if not g.method:
