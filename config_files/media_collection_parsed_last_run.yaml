@@ -6718,13 +6718,13 @@ Koukyoushihen- Eureka Seven - Hi-Evolution 1 (2017):
     \ Remux-1080p.mkv"
   Unparsed Movie Title: Koukyoushihen- Eureka Seven - Hi-Evolution 1 (2017)
 L- Change The World (2008):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/L- Change The World (2008)
+  Absolute Movie File Path: /var/data/media/video/movies/foreign/L- Change the World (2008)/Lの本当の秘密 (2008) Bluray-1080p.mkv
+  Absolute Movie Path: /var/data/media/video/movies/foreign/L- Change the World (2008)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/L- Change The World (2008)
+  Relative Movie Path: movies/foreign/L- Change the World (2008)
   Shows:
     Death Note:
       Absolute Episode: ''
@@ -6744,7 +6744,7 @@ L- Change The World (2008):
       Show Dictionary Object: {}
       Symlinked: ''
       Title: Death Note- L, Change the World (Live Action Movie)
-  Unparsed Movie Title: L- Change The World (2008)
+  Unparsed Movie Title: L- Change the World (2008)
 Lupin the Third- Daisuke Jigen's Gravestone (2014):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Lupin the Third- Daisuke
@@ -9404,16 +9404,13 @@ One Piece 3D2Y - Overcome Ace's Death! Luffy's Vow to his Friends (2014):
     Friends (2014)
 One Piece Episode of East Blue Luffy and His 4 Crewmate's Big Adventure (2017):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece Episode of East
-    Blue Luffy and His 4 Crewmate's Big Adventure (2017)
+  Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece Episode of East Blue Luffy and His 4 Crewmate's Big Adventure (2017)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
-  Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece Episode
-    of East Blue Luffy and His 4 Crewmate's Big Adventure (2017)
+  Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece Episode of East Blue Luffy and His 4 Crewmate's Big Adventure (2017)
   Relative Movie File Path: ''
-  Relative Movie Path: movies/foreign/One Piece Episode of East Blue Luffy and His
-    4 Crewmate's Big Adventure (2017)
+  Relative Movie Path: movies/foreign/One Piece Episode of East Blue Luffy and His 4 Crewmate's Big Adventure (2017)
   Shows:
     One Piece:
       Absolute Episode: ''
@@ -9433,8 +9430,7 @@ One Piece Episode of East Blue Luffy and His 4 Crewmate's Big Adventure (2017):
       Show Dictionary Object: {}
       Symlinked: ''
       Title: Episode of East Blue - Luffy and His Four Crewmates' Great Adventure
-  Unparsed Movie Title: One Piece Episode of East Blue Luffy and His 4 Crewmate's
-    Big Adventure (2017)
+  Unparsed Movie Title: One Piece Episode of East Blue Luffy and His 4 Crewmate's Big Adventure (2017)
 One Piece Episode of Merry - The Tale of One More Friend (2013):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece Episode of Merry
