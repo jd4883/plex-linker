@@ -32,20 +32,21 @@
   Unparsed Movie Title: 24- Redemption (2008)
 6 Days To Air- The Making Of South Park (2011):
   Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie Path: '/var/data/media/video/movies/foreign/6 Days To Air: The Making
+    Of South Park (2011)'
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
   Raw Absolute Movie Path: ''
-  Relative Movie Path: ''
+  Relative Movie Path: 'movies/foreign/6 Days To Air: The Making Of South Park (2011)'
   Shows:
     South Park:
       Absolute Episode: ''
-      Absolute Show Path: '/var/data/media/video/movies/staging/6 Days to Air- The Making of South Park (2011)'
+      Absolute Show Path: ''
       Anime: false
       Episode: [41]
       Parsed Episode: ''
-      Parsed Relative Show Title: 'movies/staging/6 Days to Air- The Making of South Park (2011)'
+      Parsed Relative Show Title: ''
       Parsed Season: ''
       Parsed Season Folder: ''
       Parsed Show Root Folder: ''
