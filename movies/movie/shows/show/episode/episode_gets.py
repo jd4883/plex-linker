@@ -4,25 +4,8 @@ from messaging.frontend import (method_launch,
                                 print_season_parsed_value)
 
 
-def get_absolute_episode_value_from_movies_dictionary(class_object,
-                                                      g):
-	method_launch(g)
-	if not class_object.movie_dictionary_object['Shows'][class_object.show]['Absolute Episode']:
-		class_object.movie_dictionary_object['Shows'][class_object.show]['Absolute Episode'] = str()
-	method_exit(g)
-	return class_object.movie_dictionary_object['Shows'][class_object.show]['Absolute Episode']
-
-
 # adjust to work from globals
-def get_anime_boolean_value_from_movies_dictionary(class_object,
-                                                   g):
-	method_launch(g)
-	if not class_object.movie_dictionary_object['Shows'][class_object.show]['Anime']:
-		class_object.movie_dictionary_object['Shows'][class_object.show]['Anime'] = False
-		return False
-	class_object.movie_dictionary_object['Shows'][class_object.show]['Anime'] = True
-	method_exit(g)
-	return True
+from movies.movies_puts import set_nested_dictionary_key_value_pair
 
 
 def get_season(show_object,
@@ -45,8 +28,13 @@ def get_season(show_object,
 	print_season_parsed_value(show_object,
 	                          g)
 	g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season'] = show_object.season
+	show_object.season = set_nested_dictionary_key_value_pair(g,
+	                                                          g.movies_dictionary_object[show_object.movie_title][
+		                                                          'Shows'][show_object.show]['Parsed Season'],
+	                                                          str(show_object.season))
+
 	method_exit(g)
-	return str(g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season'])
+	return str(show_object.season)
 
 
 def get_season_folder(show_object,
@@ -77,34 +65,6 @@ def get_season_value_from_movies_dictionary(movie_dictionary_object,
 	return movie_dictionary_object['Shows'][show]['Season']
 
 
-def get_show_episode_number_value_from_movies_dictionary(movies_dictionary_object,
-                                                         show,
-                                                         g):
-	method_launch(g)
-	try:
-		if not movies_dictionary_object['Shows'][show]['Episode']:
-			movies_dictionary_object['Shows'][show]['Episode'] = str()
-	except KeyError:
-		movies_dictionary_object['Shows'][show]['Episode'] = str()
-	finally:
-		method_exit(g)
-		return movies_dictionary_object['Shows'][show]['Episode']
-
-
-def get_show_episode_title_value_from_movies_dictionary(movies_dictionary_object,
-                                                        show,
-                                                        g):
-	method_launch(g)
-	try:
-		if not movies_dictionary_object['Shows'][show]['Title']:
-			movies_dictionary_object['Shows'][show]['Title'] = str()
-	except KeyError:
-		movies_dictionary_object['Shows'][show]['Title'] = str()
-	finally:
-		method_exit(g)
-		return movies_dictionary_object['Shows'][show]['Title']
-
-
 def get_padded_episode_number(e,
                               num,
                               g):
@@ -117,31 +77,3 @@ def get_padded_zero_string(g):
 	method_launch(g)
 	method_exit(g)
 	return str(0).zfill(2)
-
-
-def get_anime_status_from_dictionary(g,
-                                     movie,
-                                     show):
-	method_exit(g)
-	try:
-		if not g.movies_dictionary_object[movie]['Shows'][show]['Anime']:
-			g.movies_dictionary_object[movie]['Shows'][show]['Anime'] = False
-	except KeyError:
-		g.movies_dictionary_object[movie]['Shows'][show]['Anime'] = False
-	finally:
-		method_exit(g)
-		return str(g.movies_dictionary_object[movie]['Shows'][show]['Anime'])
-
-
-def get_parsed_absolute_episode_from_parent_dictionary(g,
-                                                       movie,
-                                                       show):
-	method_launch(g)
-	try:
-		if not g.movies_dictionary_object[movie]['Shows'][show]['Parsed Absolute Episode']:
-			g.movies_dictionary_object[movie]['Shows'][show]['Parsed Absolute Episode'] = str()
-	except KeyError:
-		g.movies_dictionary_object[movie]['Shows'][show]['Parsed Absolute Episode'] = str()
-	finally:
-		method_exit(g)
-		return g.movies_dictionary_object[movie]['Shows'][show]['Parsed Absolute Episode']

@@ -3,6 +3,7 @@ import logging
 import sys
 from os.path import exists
 
+
 def get_method_hierarchy_for_current_function(g):
 	return f"({g.parent_method} -> {g.method}):".ljust(75)
 

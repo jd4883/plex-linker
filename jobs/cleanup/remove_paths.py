@@ -11,5 +11,3 @@ def remove_directory_and_contents(path,
 	method_launch(g)
 	rmtree(path)
 	method_exit(g)
-
-

@@ -6,21 +6,21 @@ from messaging.backend import debug_message
 
 def print_movie_file_quality(movie,
                              g):
-	g.LOG.debug(debug_message(804,
+	g.LOG.debug(debug_message(612,
 	                          g,
 	                          movie.quality))
 
 
 def print_season_parsed_value(show_object,
                               g):
-	g.LOG.debug(debug_message(825,
+	g.LOG.debug(debug_message(603,
 	                          g,
 	                          show_object.season))
 
 
 def message_exiting_function(g):
 	chdir(g.MEDIA_DIRECTORY)
-	g.LOG.debug(debug_message(990,
+	g.LOG.debug(debug_message(601,
 	                          g))
 
 
@@ -37,40 +37,40 @@ def display_show_class_attributes(show_object,
 
 def print_show_title_value(show_object,
                            g):
-	g.LOG.debug(debug_message(820,
+	g.LOG.debug(debug_message(604,
 	                          g,
 	                          show_object.title))
 
 
 def print_show_path_value(show_object,
                           g):
-	g.LOG.debug(debug_message(819,
+	g.LOG.debug(debug_message(605,
 	                          g,
 	                          show_object.show_paths))
 
 
 def print_media_path_value(g):
-	g.LOG.debug(debug_message(818,
+	g.LOG.debug(debug_message(606,
 	                          g,
 	                          g.MEDIA_PATH))
 
 
 def message_no_items_found_to_parse(g):
-	g.LOG.debug(debug_message(981,
+	g.LOG.debug(debug_message(602,
 	                          g,
 	                          "Nothing to parse in this directory, add handling here, moving on to better things"))
 
 
 def print_movie_extension_found_to_parse(movie,
                                          g):
-	g.LOG.debug(debug_message(814,
+	g.LOG.debug(debug_message(608,
 	                          g,
 	                          movie.extension))
 
 
 def print_movie_file_found_to_parse(movie,
                                     g):
-	g.LOG.debug(debug_message(812,
+	g.LOG.debug(debug_message(610,
 	                          g,
 	                          movie.movie_file))
 
@@ -88,13 +88,13 @@ def method_launch(g):
 
 
 def message_entering_function(g):
-	g.LOG.debug(debug_message(991,
+	g.LOG.debug(debug_message(600,
 	                          g))
 
 
 def print_method_shows_dictionary_value(show_object,
                                         g):
-	g.LOG.debug(debug_message(808,
+	g.LOG.debug(debug_message(611,
 	                          g,
 	                          show_object.shows_dictionary_object))
 
@@ -109,7 +109,3 @@ def method_exit(g):
 	set_working_directory_to_script_path()
 	message_exiting_function(g)
 
-
-def print_linking_show_to_movie(process):
-	print(f'Symlink Success: {process}')
-# need to add log handling for this
