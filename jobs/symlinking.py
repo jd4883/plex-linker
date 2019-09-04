@@ -33,6 +33,7 @@ def symlink_force(show_class_object,
 	method_exit(g)
 
 
+# noinspection PySameParameterValue
 def strip_quotes_from_string(string):
 	string.replace('"', '')
-	return string.replace("'","")
+	return string.replace("'", "")

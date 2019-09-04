@@ -40,11 +40,13 @@ def parse_shows_dictionary_object(movie_class_object,
 		absolute_movie_path = str(g.movies_dictionary_object[movie_class_object.movie_title]["Parsed Movie File"])
 		try:
 			if validate_strings_match(f'{relative_show_path} -> {readlink(relative_show_path)}', \
-			                       g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Symlinked']):
+			                          g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show][
+				                          'Symlinked']):
 				if get_live_link(relative_show_path) and \
 						(check_if_valid_symlink_destination(relative_show_path) and
 						 (check_if_valid_symlink_target(absolute_movie_path))):
-					print(f"No action required for {movie_class_object.movie_title}")  # make an official message handler here
+					print(
+						f"No action required for {movie_class_object.movie_title}")  # make an official message handler here
 					g.list_of_linked_movies.append(movie_class_object.movie_title)
 					continue
 		except FileNotFoundError:
@@ -61,7 +63,7 @@ def parse_shows_dictionary_object(movie_class_object,
 
 def validate_strings_match(string1,
                            string2):
-	if string1 == string2:
+	if str(string1).lower() == str(string2).lower():
 		return True
 	return False
 
