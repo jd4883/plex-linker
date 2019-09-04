@@ -12550,16 +12550,18 @@ Stargate- The Ark Of Truth (2008):
       Symlinked: ''
       Title: The Ark of Truth
   Unparsed Movie Title: Stargate- The Ark Of Truth (2008)
-'Steins;Gate 0: Valentine''s Of Crystal Polymorphism - Bittersweet Intermedio (2018)':
+Steins;Gate 0- Valentine's of Crystal Polymorphism - Bittersweet Intermedio (2018):
   Absolute Movie File Path: ''
-  Absolute Movie Path: '/var/data/media/video/movies/foreign/Steins;Gate 0: Valentine''s
-    Of Crystal Polymorphism - Bittersweet Intermedio (2018)'
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Steins;Gate 0- Valentine's
+    of Crystal Polymorphism - Bittersweet Intermedio (2018)
+  Parsed Movie Extension: mkv
+  Parsed Movie File: Steins;Gate 0- Valentine's of Crystal Polymorphism - Bittersweet
+    Intermedio (2018) Remux-1080p.mkv
+  Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: ''
-  Relative Movie Path: 'movies/foreign/Steins;Gate 0: Valentine''s Of Crystal Polymorphism
-    - Bittersweet Intermedio (2018)'
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/foreign/Steins;Gate 0- Valentine's of Crystal Polymorphism
+    - Bittersweet Intermedio (2018)
   Shows:
     Steins;Gate 0:
       Absolute Episode: [24]
@@ -12577,10 +12579,44 @@ Stargate- The Ark Of Truth (2008):
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Steins;Gate 0/Season 00/Steins;Gate 0 - S00E002 (E024)
+        - Valentine\\s of Crystal Polymorphism -Bittersweet Intermedio- Bluray-1080p
+        Remux.mkv -> ../../../../movies/foreign/Steins;Gate 0- Valentine\\s of Crystal
+        Polymorphism - Bittersweet Intermedio (2018)/Steins;Gate 0- Valentine\\s of
+        Crystal Polymorphism - Bittersweet Intermedio (2018) Remux-1080p.mkv
       Title: Valentine's of Crystal Polymorphism -Bittersweet Intermedio-
-  Unparsed Movie Title: 'Steins;Gate 0: Valentine''s Of Crystal Polymorphism - Bittersweet
-    Intermedio (2018)'
+  Unparsed Movie Title: Steins;Gate 0- Valentine's of Crystal Polymorphism - Bittersweet
+    Intermedio (2018)
+Steins;Gate- Egoistic Poriomania (2012):
+  Absolute Movie File Path: ''
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Steins;Gate- Egoistic
+    Poriomania (2012)
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
+  Raw Absolute Movie Path: ''
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/foreign/Steins;Gate- Egoistic Poriomania (2012)
+  Shows:
+    Steins;Gate:
+      Absolute Episode: [25]
+      Absolute Show Path: ''
+      Anime: true
+      Episode: [1]
+      Parsed Episode: ''
+      Parsed Relative Show Title: ''
+      Parsed Season: ''
+      Parsed Season Folder: ''
+      Parsed Show Root Folder: ''
+      Parsed Show Title: anime/staging/Steins;Gate/Season 00/Steins;Gate - S00E001
+        (E025) - Egoistic Poriomania
+      Relative Show File Path: ''
+      Relative Show Path: ''
+      Season: '00'
+      Show Dictionary Object: {}
+      Symlinked: ''
+      Title: Egoistic Poriomania
+  Unparsed Movie Title: Steins;Gate- Egoistic Poriomania (2012)
 "Steins;Gate- The Movie \u2212 Load Region of D\xE9j\xE0 Vu (2013)":
   Absolute Movie File Path: ''
   Absolute Movie Path: "/var/data/media/video/movies/foreign/Steins;Gate- The Movie\
@@ -12625,35 +12661,6 @@ Stargate- The Ark Of Truth (2008):
     \u9818\u57DF\u306E\u30C7\u30B8\u30E3\u30F4 (2013) Remux-1080p.mkv"
   Unparsed Movie Title: "Steins;Gate- The Movie \u2212 Load Region of D\xE9j\xE0 Vu\
     \ (2013)"
-'Steins;Gate: Egoistic Poriomania (2012)':
-  Absolute Movie File Path: ''
-  Absolute Movie Path: '/var/data/media/video/movies/foreign/Steins;Gate: Egoistic
-    Poriomania (2012)'
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
-  Raw Absolute Movie Path: ''
-  Relative Movie Path: 'movies/foreign/Steins;Gate: Egoistic Poriomania (2012)'
-  Shows:
-    Steins;Gate:
-      Absolute Episode: [25]
-      Absolute Show Path: ''
-      Anime: true
-      Episode: [1]
-      Parsed Episode: ''
-      Parsed Relative Show Title: ''
-      Parsed Season: ''
-      Parsed Season Folder: ''
-      Parsed Show Root Folder: ''
-      Parsed Show Title: anime/staging/Steins;Gate/Season 00/Steins;Gate - S00E001
-        (E025) - Egoistic Poriomania
-      Relative Show File Path: ''
-      Relative Show Path: ''
-      Season: '00'
-      Show Dictionary Object: {}
-      Symlinked: ''
-      Title: Egoistic Poriomania
-  Unparsed Movie Title: 'Steins;Gate: Egoistic Poriomania (2012)'
 Strike The Blood (2013):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Strike The Blood (2013)
@@ -12669,9 +12676,9 @@ Sword Art Online- Extra Edition (2013):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Sword Art Online- Extra
     Edition (2013)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: Sword Art Online- Extra Edition (2013) Remux-1080p.mkv
+  Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Sword Art Online-
     Extra Edition (2013)
   Relative Movie File Path: ''
@@ -12693,7 +12700,9 @@ Sword Art Online- Extra Edition (2013):
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/shounen/Sword Art Online/Season 00/Sword Art Online - S00E010
+        - Sword Art Online - Extra Edition Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Sword
+        Art Online- Extra Edition (2013)/Sword Art Online- Extra Edition (2013) Remux-1080p.mkv
       Title: Sword Art Online - Extra Edition
   Unparsed Movie Title: Sword Art Online- Extra Edition (2013)
 Sword Art Online- The Movie - Ordinal Scale (2017):
