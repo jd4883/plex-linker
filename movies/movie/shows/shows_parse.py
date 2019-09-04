@@ -50,6 +50,10 @@ def parse_shows_dictionary_object(movie_class_object,
 					g.list_of_linked_movies.append(movie_class_object.movie_title)
 					continue
 		except FileNotFoundError:
+			g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Symlinked'] = str()
+			g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Relative Show File Path'] = str()
+			g.movies_dictionary_object[movie_class_object.movie_title]["Parsed Movie File"] = str()
+			# need to add additional resets here to clean up the conditions
 			print(f'Checking for presence of "{movie_class_object.movie_title}"')
 			tv_show = create_tv_show_class_object(movie_class_object,
 			                                      show,

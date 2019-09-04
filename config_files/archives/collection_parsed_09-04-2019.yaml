@@ -2639,9 +2639,9 @@ Cowboy Bebop- The Movie (2001):
 Death Note (2006):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Death Note (2006)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "\u30C7\u30B9\u30CE\u30FC\u30C8 (2006) Bluray-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Death Note (2006)
   Relative Movie File Path: ''
   Relative Movie Path: movies/foreign/Death Note (2006)
@@ -2656,12 +2656,16 @@ Death Note (2006):
       Parsed Season: ''
       Parsed Season Folder: ''
       Parsed Show Root Folder: ''
-      Parsed Show Title: anime/staging/Death Note/Season 00/Death Note - S00E003 - Death Note (Live Action Movie)
+      Parsed Show Title: anime/staging/Death Note/Season 00/Death Note - S00E003 -
+        Death Note (Live Action Movie)
       Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Death Note/Season 00/Death Note - S00E003 - Death Note
+        (Live Action Movie) Bluray-1080p.mkv -> ../../../../movies/foreign/Death Note
+        (2006)/\xe3\x83\x87\xe3\x82\xb9\xe3\x83\x8e\xe3\x83\xbc\xe3\x83\x88 (2006)
+        Bluray-1080p.mkv
       Title: Death Note (Live Action Movie)
   Unparsed Movie Title: Death Note (2006)
 Death Note (2017):
@@ -6984,9 +6988,10 @@ Merlin- The Return (2000):
   Absolute Movie File Path: ''
   Absolute Movie Path: "/var/data/media/video/movies/foreign/Mob Psycho 100 REIGEN\
     \ \u2013 The Miracle Psychic that Nobody Know (2018)"
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "Mob Psycho 100 REIGEN \u2013 The Miracle Psychic that Nobody\
+    \ Know (2018) WEBDL-1080p.mkv"
+  Parsed Movie Quality: WEBDL-1080p.mkv
   Raw Absolute Movie Path: "/var/data/media/video/movies/foreign/Mob Psycho 100 REIGEN\
     \ \u2013 The Miracle Psychic that Nobody Know (2018)"
   Relative Movie File Path: ''
@@ -7009,7 +7014,11 @@ Merlin- The Return (2000):
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Mob Psycho 100/Season 00/Mob Psycho 100 - S00E007 -
+        Reigen - The Miracle Psychic that Nobody Knows WEBDL-1080p.mkv -> ../../../../movies/foreign/Mob
+        Psycho 100 REIGEN \xe2\x80\x93 The Miracle Psychic that Nobody Know (2018)/Mob
+        Psycho 100 REIGEN \xe2\x80\x93 The Miracle Psychic that Nobody Know (2018)
+        WEBDL-1080p.mkv
       Title: Reigen - The Miracle Psychic that Nobody Knows
   Unparsed Movie Title: "Mob Psycho 100 REIGEN \u2013 The Miracle Psychic that Nobody\
     \ Know (2018)"
@@ -9614,15 +9623,15 @@ One Piece Film - Z (2012):
   Symlink Target: /var/data/media/video/movies/foreign/One Piece Film - Z (2012)/One
     Piece Film Z (2012) Bluray-1080p.mkv
   Unparsed Movie Title: One Piece Film - Z (2012)
-One Punch Man- Road To Hero (2015):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/One Punch Man- Road To
-    Hero (2015)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+One Punch Man- Road to Hero (2015):
+  Absolute Movie File Path: /var/data/media/video/movies/foreign/One Punch Man- Road to Hero (2015) DVD.mkv
+  Absolute Movie Path: /var/data/media/video/movies/foreign/One Punch Man- Road to Hero (2015)
+  Parsed Movie Extension: mkv
+  Parsed Movie File: One Punch Man- Road to Hero (2015) DVD.mkv
+  Parsed Movie Quality: DVD.mkv
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/One Punch Man- Road To Hero (2015)
+  Relative Movie File Path: movies/foreign/One Punch Man- Road to Hero (2015) DVD.mkv
+  Relative Movie Path: movies/foreign/One Punch Man- Road to Hero (2015)
   Shows:
     One-Punch Man:
       Absolute Episode: ''
@@ -9636,13 +9645,16 @@ One Punch Man- Road To Hero (2015):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/One-Punch Man/Season 00/One-Punch Man - S00E001
         - Road to Hero
-      Relative Show File Path: ''
-      Relative Show Path: ''
+      Relative Show File Path: anime/staging/One-Punch Man/Season 00/One-Punch Man
+        - S00E001 - Road to Hero DVD.mkv
+      Relative Show Path: anime/staging/One-Punch Man/Season 00
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/One-Punch Man/Season 00/One-Punch Man - S00E001 - Road
+        to Hero DVD.mkv -> ../../../../movies/foreign/One Punch Man- Road to Hero
+        (2015)/One Punch Man- Road to Hero (2015) DVD.mkv
       Title: Road to Hero
-  Unparsed Movie Title: One Punch Man- Road To Hero (2015)
+  Unparsed Movie Title: One Punch Man- Road to Hero (2015)
 Overlord Movie 1- The Undead King (2017):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Overlord Movie 1- The
