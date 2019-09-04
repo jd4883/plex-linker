@@ -35,16 +35,14 @@ def parse_shows_dictionary_object(movie_class_object,
                                   g):
 	method_launch(g)
 	for show in g.movies_dictionary_object[movie_class_object.movie_title]['Shows'].keys():
-		relative_show_path = str(
-			g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Relative Show File Path'])
-		absolute_movie_path = str(g.movies_dictionary_object[movie_class_object.movie_title]["Parsed Movie File"])
+		relative_show_path = str(g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Relative Show File Path'])
 		try:
 			if validate_strings_match(f'{relative_show_path} -> {readlink(relative_show_path)}', \
 			                          g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show][
 				                          'Symlinked']):
-				if get_live_link(relative_show_path) and \
-						(check_if_valid_symlink_destination(relative_show_path) and
-						 (check_if_valid_symlink_target(absolute_movie_path))):
+				if get_live_link(str(g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Relative Show File Path'])) and \
+						(check_if_valid_symlink_destination(str(g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Relative Show File Path'])) and
+						 (check_if_valid_symlink_target(str(g.movies_dictionary_object[movie_class_object.movie_title]["Parsed Movie File"])))):
 					print(
 						f"No action required for {movie_class_object.movie_title}")  # make an official message handler here
 					g.list_of_linked_movies.append(movie_class_object.movie_title)
