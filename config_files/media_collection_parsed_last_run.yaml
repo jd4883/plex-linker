@@ -32,13 +32,13 @@
   Unparsed Movie Title: 24- Redemption (2008)
 6 Days To Air- The Making Of South Park (2011):
   Absolute Movie File Path: ''
-  Absolute Movie Path: '/var/data/media/video/movies/foreign/6 Days To Air: The Making
+  Absolute Movie Path: '/var/data/media/video/movies/staging/6 Days To Air: The Making
     Of South Park (2011)'
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
   Raw Absolute Movie Path: ''
-  Relative Movie Path: 'movies/foreign/6 Days To Air: The Making Of South Park (2011)'
+  Relative Movie Path: 'movies/staging/6 Days To Air: The Making Of South Park (2011)'
   Shows:
     South Park:
       Absolute Episode: ''
@@ -900,8 +900,7 @@ Babylon 5- The Gathering (1993):
   Absolute Movie Path: /var/data/media/video/movies/staging/Babylon 5- The Gathering
     (1993)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/Babylon 5- The Gathering
-    (1993)/Babylon 5- The Gathering (1993) Bluray-2160p.mkv
+  Parsed Movie File: Babylon 5- The Gathering (1993) Bluray-2160p.mkv
   Parsed Movie Quality: Bluray-2160p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Babylon 5- The Gathering
     (1993)
@@ -977,9 +976,7 @@ Babylon 5- The Lost Tales - Voices in the Dark (2007):
   Absolute Movie Path: /var/data/media/video/movies/staging/Babylon 5- The Lost Tales
     - Voices in the Dark (2007)
   Parsed Movie Extension: avi
-  Parsed Movie File: /var/data/media/video/movies/staging/Babylon 5- The Lost Tales
-    - Voices in the Dark (2007)/Babylon 5- The Lost Tales - Voices in the Dark (2007)
-    DVD.avi
+  Parsed Movie File: Babylon 5- The Lost Tales - Voices in the Dark (2007) DVD.avi
   Parsed Movie Quality: DVD.avi
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Babylon 5- The Lost
     Tales - Voices in the Dark (2007)
@@ -2053,15 +2050,18 @@ Christmas Time In South Park (2000):
   Relative Movie Path: movies/staging/Christmas Time In South Park (2000)
   Shows: {South Park: null}
   Unparsed Movie Title: Christmas Time In South Park (2000)
-Chunin Exam On Fire! And Naruto Vs. Konohamaru! (2011):
+Chunin Exam on Fire! and Naruto vs. Konohamaru! (2011):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Chunin Exam On Fire! And
-    Naruto Vs. Konohamaru! (2011)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Chunin Exam on Fire! and
+    Naruto vs. Konohamaru! (2011)
+  Parsed Movie Extension: mkv
+  Parsed Movie File: /var/data/media/video/movies/foreign/Chunin Exam on Fire! and
+    Naruto vs. Konohamaru! (2011)/Chunin Exam on Fire! and Naruto vs. Konohamaru!
+    (2011) Bluray-1080p.mkv
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Chunin Exam On Fire! And Naruto Vs. Konohamaru!
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/foreign/Chunin Exam on Fire! and Naruto vs. Konohamaru!
     (2011)
   Shows:
     Naruto Shippuuden:
@@ -2076,13 +2076,17 @@ Chunin Exam On Fire! And Naruto Vs. Konohamaru! (2011):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Naruto Shippuuden/Season 00/Naruto Shippuuden
         - S00E009 - Naruto vs. Konohamaru!!
-      Relative Show File Path: ''
+      Relative Show File Path: anime/shounen/Naruto Shippuuden/Season 00/Naruto Shippuuden
+        - S00E009 - Naruto vs. Konohamaru!! Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/shounen/Naruto Shippuuden/Season 00/Naruto Shippuuden - S00E009
+        - Naruto vs. Konohamaru!! Bluray-1080p.mkv -> ../../../../movies/foreign/Chunin
+        Exam on Fire! and Naruto vs. Konohamaru! (2011)/Chunin Exam on Fire! and Naruto
+        vs. Konohamaru! (2011) Bluray-1080p.mkv
       Title: Naruto vs. Konohamaru!!
-  Unparsed Movie Title: Chunin Exam On Fire! And Naruto Vs. Konohamaru! (2011)
+  Unparsed Movie Title: Chunin Exam on Fire! and Naruto vs. Konohamaru! (2011)
 Clannad (2007):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Clannad (2007)
@@ -2860,9 +2864,8 @@ Dragon Ball Z- Battle of Gods (2013):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Battle
     of Gods (2013)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Dragon Ball Z- Battle of\
-    \ Gods (2013)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u795E\u3068\u795E (2013)\
-    \ Remux-1080p.mkv"
+  Parsed Movie File: "\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u795E\u3068\u795E\
+    \ (2013) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Battle
     of Gods (2013)
@@ -2897,9 +2900,8 @@ Dragon Ball Z- Bio-Broly (1994):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Bio-Broly
     (1994)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Dragon Ball Z- Bio-Broly\
-    \ (1994)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u8D85\u6226\u58EB\u6483\u7834\
-    !!\u52DD\u3064\u306E\u306F\u30AA\u30EC\u3060 (1994) Remux-1080p.mkv"
+  Parsed Movie File: "\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u8D85\u6226\u58EB\
+    \u6483\u7834!!\u52DD\u3064\u306E\u306F\u30AA\u30EC\u3060 (1994) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Bio-Broly
     (1994)
@@ -2935,9 +2937,9 @@ Dragon Ball Z- Bojack Unbound (1993):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Bojack
     Unbound (1993)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Dragon Ball Z- Bojack Unbound\
-    \ (1993)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u9280\u6CB3\u30AE\u30EA\u30AE\
-    \u30EA!!\u3076\u3063\u3061\u304E\u308A\u306E\u51C4\u3044\u5974 (1993) Remux-1080p.mkv"
+  Parsed Movie File: "\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u9280\u6CB3\u30AE\
+    \u30EA\u30AE\u30EA!!\u3076\u3063\u3061\u304E\u308A\u306E\u51C4\u3044\u5974 (1993)\
+    \ Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Bojack
     Unbound (1993)
@@ -2973,10 +2975,9 @@ Dragon Ball Z- Bojack Unbound (1993):
   Absolute Movie Path: "/var/data/media/video/movies/foreign/Dragon Ball Z- Broly\
     \ \u2013 Second Coming (1994)"
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Dragon Ball Z- Broly \u2013\
-    \ Second Coming (1994)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u5371\u967A\
-    \u306A\u3075\u305F\u308A!\u8D85\u6226\u58EB\u306F\u306D\u3080\u308C\u306A\u3044\
-    \ (1994) Remux-1080p.mkv"
+  Parsed Movie File: "\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u5371\u967A\u306A\
+    \u3075\u305F\u308A!\u8D85\u6226\u58EB\u306F\u306D\u3080\u308C\u306A\u3044 (1994)\
+    \ Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: "/var/data/media/video/movies/foreign/Dragon Ball Z- Broly\
     \ \u2013 Second Coming (1994)"
@@ -3012,10 +3013,8 @@ Dragon Ball Z- Bojack Unbound (1993):
   Absolute Movie Path: "/var/data/media/video/movies/foreign/Dragon Ball Z- Broly\
     \ \u2013 The Legendary Super Saiyan (1993)"
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Dragon Ball Z- Broly \u2013\
-    \ The Legendary Super Saiyan (1993)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EB\
-    Z \u71C3\u3048\u3064\u304D\u308D!!\u71B1\u6226\u30FB\u70C8\u6226\u30FB\u8D85\u6FC0\
-    \u6226 (1993) Remux-1080p.mkv"
+  Parsed Movie File: "\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u71C3\u3048\u3064\
+    \u304D\u308D!!\u71B1\u6226\u30FB\u70C8\u6226\u30FB\u8D85\u6FC0\u6226 (1993) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: "/var/data/media/video/movies/foreign/Dragon Ball Z- Broly\
     \ \u2013 The Legendary Super Saiyan (1993)"
@@ -3052,8 +3051,7 @@ Dragon Ball Z- Dead Zone (1989):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Dead Zone
     (1989)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Dragon Ball Z- Dead Zone
-    (1989)/Dragon Ball Z- Dead Zone (1989) WEBDL-1080p.mkv
+  Parsed Movie File: Dragon Ball Z- Dead Zone (1989) WEBDL-1080p.mkv
   Parsed Movie Quality: WEBDL-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Dead
     Zone (1989)
@@ -3087,10 +3085,9 @@ Dragon Ball Z- Fusion Reborn (1995):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Fusion
     Reborn (1995)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Dragon Ball Z- Fusion Reborn\
-    \ (1995)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EB\uFF3A\u5FA9\u6D3B\u306E\u30D5\
-    \u30E5\u30FC\u30B8\u30E7\u30F3!!\u609F\u7A7A\u3068\u30D9\u30B8\u30FC\u30BF (1995)\
-    \ Remux-1080p.mkv"
+  Parsed Movie File: "\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EB\uFF3A\u5FA9\u6D3B\
+    \u306E\u30D5\u30E5\u30FC\u30B8\u30E7\u30F3!!\u609F\u7A7A\u3068\u30D9\u30B8\u30FC\
+    \u30BF (1995) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Fusion
     Reborn (1995)
@@ -3125,9 +3122,8 @@ Dragon Ball Z- Lord Slug (1991):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Lord Slug
     (1991)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Dragon Ball Z- Lord Slug\
-    \ (1991)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u8D85\u30B5\u30A4\u30E4\u4EBA\
-    \u3060\u5B6B\u609F\u7A7A (1991) Remux-1080p.mkv"
+  Parsed Movie File: "\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u8D85\u30B5\u30A4\
+    \u30E4\u4EBA\u3060\u5B6B\u609F\u7A7A (1991) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Lord
     Slug (1991)
@@ -3199,8 +3195,7 @@ Dragon Ball Z- The Tree of Might (1990):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- The Tree
     of Might (1990)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Dragon Ball Z- The Tree\
-    \ of Might (1990)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u5730\u7403\u307E\
+  Parsed Movie File: "\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u5730\u7403\u307E\
     \u308B\u3054\u3068\u8D85\u6C7A\u6226 (1990) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- The
@@ -3237,8 +3232,7 @@ Dragon Ball Z- The World's Strongest (1990):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- The World's
     Strongest (1990)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Dragon Ball Z- The World's\
-    \ Strongest (1990)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u3053\u306E\u4E16\
+  Parsed Movie File: "\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u3053\u306E\u4E16\
     \u3067\u4E00\u756A\u5F37\u3044\u30E4\u30C4 (1990) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- The
@@ -3275,8 +3269,7 @@ Dragon Ball Z- Wrath of the Dragon (1995):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Wrath of
     the Dragon (1995)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Dragon Ball Z- Wrath of\
-    \ the Dragon (1995)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u9F8D\u62F3\u7206\
+  Parsed Movie File: "\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u9F8D\u62F3\u7206\
     \u767A!!\u609F\u7A7A\u304C\u3084\u3089\u306D\u3070\u8AB0\u304C\u3084\u308B (1995)\
     \ Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
@@ -3314,8 +3307,7 @@ Dragon Ball- Episode of Bardock (2011):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball- Episode of
     Bardock (2011)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Dragon Ball- Episode of\
-    \ Bardock (2011)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EB \u30A8\u30D4\u30BD\
+  Parsed Movie File: "\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EB \u30A8\u30D4\u30BD\
     \u30FC\u30C9 \u30AA\u30D6 \u30D0\u30FC\u30C0\u30C3\u30AF (2011) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball- Episode
@@ -3623,8 +3615,7 @@ Evangelion- 1.0 You Are (Not) Alone (2007):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Evangelion- 1.0 You Are
     (Not) Alone (2007)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Evangelion- 1.0 You Are\
-    \ (Not) Alone (2007)/\u30F1\u30F4\u30A1\u30F3\u30B2\u30EA\u30F2\u30F3\u65B0\u5287\
+  Parsed Movie File: "\u30F1\u30F4\u30A1\u30F3\u30B2\u30EA\u30F2\u30F3\u65B0\u5287\
     \u5834\u7248\uFF1A\u5E8F (2007) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Evangelion- 1.0 You
@@ -3661,8 +3652,7 @@ Evangelion- 2.0 You Can (Not) Advance (2009):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Evangelion- 2.0 You Can
     (Not) Advance (2009)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Evangelion- 2.0 You Can\
-    \ (Not) Advance (2009)/\u30F1\u30F4\u30A1\u30F3\u30B2\u30EA\u30F2\u30F3\u65B0\u5287\
+  Parsed Movie File: "\u30F1\u30F4\u30A1\u30F3\u30B2\u30EA\u30F2\u30F3\u65B0\u5287\
     \u5834\u7248\uFF1A\u7834 (2009) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Evangelion- 2.0 You
@@ -3699,8 +3689,7 @@ Evangelion- 3.0 You Can (Not) Redo (2012):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Evangelion- 3.0 You Can
     (Not) Redo (2012)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Evangelion- 3.0 You Can\
-    \ (Not) Redo (2012)/\u30F1\u30F4\u30A1\u30F3\u30B2\u30EA\u30F2\u30F3\u65B0\u5287\
+  Parsed Movie File: "\u30F1\u30F4\u30A1\u30F3\u30B2\u30EA\u30F2\u30F3\u65B0\u5287\
     \u5834\u7248\uFF1AQ (2012) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Evangelion- 3.0 You
@@ -4531,14 +4520,8 @@ Fullmetal Alchemist The Movie- Conqueror of Shamballa (2005):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Fullmetal Alchemist The
     Movie- Conqueror of Shamballa (2005)
   Parsed Movie Extension: mkv
-<<<<<<< HEAD
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Fullmetal Alchemist The\
-    \ Movie- Conqueror of Shamballa (2005)/\u5287\u5834\u7248 \u92FC\u306E\u932C\u91D1\
-    \u8853\u5E2B \u30B7\u30E3\u30F3\u30D0\u30E9\u3092\u5F81\u304F\u8005 (2005) WEBDL-1080p.mkv"
-=======
   Parsed Movie File: "\u5287\u5834\u7248 \u92FC\u306E\u932C\u91D1\u8853\u5E2B \u30B7\
     \u30E3\u30F3\u30D0\u30E9\u3092\u5F81\u304F\u8005 (2005) WEBDL-1080p.mkv"
->>>>>>> aa04e5c0781927518fc8779a303b2c994d67f621
   Parsed Movie Quality: WEBDL-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Fullmetal Alchemist
     The Movie- Conqueror of Shamballa (2005)
@@ -5222,8 +5205,7 @@ God Eater Prologue (0):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/God Eater Prologue (0)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/God Eater Prologue (0)/God
-    Eater Prologue (0) WEBDL-720p.mkv
+  Parsed Movie File: God Eater Prologue (0) WEBDL-720p.mkv
   Parsed Movie Quality: WEBDL-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/God Eater Prologue
     (0)
@@ -5318,14 +5300,8 @@ Gundam Wing- Endless Waltz (1998):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Gundam Wing- Endless Waltz
     (1998)
   Parsed Movie Extension: mkv
-<<<<<<< HEAD
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Gundam Wing- Endless Waltz\
-    \ (1998)/\u65B0\u6A5F\u52D5\u6226\u8A18\u30AC\u30F3\u30C0\u30E0W Endless Waltz\
-    \ (1998) Bluray-1080p.mkv"
-=======
   Parsed Movie File: "\u65B0\u6A5F\u52D5\u6226\u8A18\u30AC\u30F3\u30C0\u30E0W Endless\
     \ Waltz (1998) Bluray-1080p.mkv"
->>>>>>> aa04e5c0781927518fc8779a303b2c994d67f621
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Gundam Wing- Endless
     Waltz (1998)
@@ -5872,8 +5848,7 @@ Inside The X-Files (1998):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Inside The X-Files (1998)
   Parsed Movie Extension: mp4
-  Parsed Movie File: /var/data/media/video/movies/staging/Inside The X-Files (1998)/Inside
-    The X-Files (1998) DVD.mp4
+  Parsed Movie File: Inside The X-Files (1998) DVD.mp4
   Parsed Movie Quality: DVD.mp4
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Inside The X-Files
     (1998)
@@ -6077,8 +6052,7 @@ Jeff Dunham - All Over the Map (2014):
   Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham - All
     Over the Map (2014)
   Parsed Movie Extension: mp4
-  Parsed Movie File: /var/data/media/video/movies/standup_comedy/Jeff Dunham - All
-    Over the Map (2014)/Jeff Dunham- All Over the Map (2014) Bluray-1080p.mp4
+  Parsed Movie File: Jeff Dunham- All Over the Map (2014) Bluray-1080p.mp4
   Parsed Movie Quality: Bluray-1080p.mp4
   Raw Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham
     - All Over the Map (2014)
@@ -6149,8 +6123,7 @@ Jeff Dunham - Birth of a Dummy (2011):
   Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham - Birth
     of a Dummy (2011)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/standup_comedy/Jeff Dunham - Birth
-    of a Dummy (2011)/Jeff Dunham- Birth of a Dummy (2011) HDTV-720p Proper.mkv
+  Parsed Movie File: Jeff Dunham- Birth of a Dummy (2011) HDTV-720p Proper.mkv
   Parsed Movie Quality: HDTV-720p Proper.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham
     - Birth of a Dummy (2011)
@@ -7022,12 +6995,7 @@ March Comes in Like a Lion (2017):
   Absolute Movie Path: /var/data/media/video/movies/foreign/March Comes in Like a
     Lion (2017)
   Parsed Movie Extension: mkv
-<<<<<<< HEAD
-  Parsed Movie File: "/var/data/media/video/movies/foreign/March Comes in Like a Lion\
-    \ (2017)/3\u6708\u306E\u30E9\u30A4\u30AA\u30F3 \u524D\u7DE8 (2017) Bluray-1080p.mkv"
-=======
   Parsed Movie File: "3\u6708\u306E\u30E9\u30A4\u30AA\u30F3 \u524D\u7DE8 (2017) Bluray-1080p.mkv"
->>>>>>> aa04e5c0781927518fc8779a303b2c994d67f621
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/March Comes in Like
     a Lion (2017)
@@ -7062,8 +7030,7 @@ Merlin's Apprentice (2006):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Merlin's Apprentice (2006)
   Parsed Movie Extension: avi
-  Parsed Movie File: /var/data/media/video/movies/staging/Merlin's Apprentice (2006)/Merlin's
-    Apprentice (2005) DVD.avi
+  Parsed Movie File: Merlin's Apprentice (2005) DVD.avi
   Parsed Movie Quality: DVD.avi
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Merlin's Apprentice
     (2006)
@@ -7171,14 +7138,8 @@ Mobile Suit Gundam 00 Special Edition I- Celestial Being (2009):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam 00
     Special Edition I- Celestial Being (2009)
   Parsed Movie Extension: mp4
-<<<<<<< HEAD
-  Parsed Movie File: /var/data/media/video/movies/foreign/Mobile Suit Gundam 00 Special
-    Edition I- Celestial Being (2009)/Mobile Suit Gundam 00 Special Edition I- Celestial
-    Being (2009) Bluray-1080p.mp4
-=======
   Parsed Movie File: Mobile Suit Gundam 00 Special Edition I- Celestial Being (2009)
     Bluray-1080p.mp4
->>>>>>> aa04e5c0781927518fc8779a303b2c994d67f621
   Parsed Movie Quality: Bluray-1080p.mp4
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam
     00 Special Edition I- Celestial Being (2009)
@@ -7214,14 +7175,8 @@ Mobile Suit Gundam 00 Special Edition II- End of World (2009):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam 00
     Special Edition II- End of World (2009)
   Parsed Movie Extension: mp4
-<<<<<<< HEAD
-  Parsed Movie File: /var/data/media/video/movies/foreign/Mobile Suit Gundam 00 Special
-    Edition II- End of World (2009)/Mobile Suit Gundam 00 Special Edition II- End
-    of World (2009) Bluray-1080p.mp4
-=======
   Parsed Movie File: Mobile Suit Gundam 00 Special Edition II- End of World (2009)
     Bluray-1080p.mp4
->>>>>>> aa04e5c0781927518fc8779a303b2c994d67f621
   Parsed Movie Quality: Bluray-1080p.mp4
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam
     00 Special Edition II- End of World (2009)
@@ -7257,14 +7212,8 @@ Mobile Suit Gundam 00 Special Edition III- Return The World (2010):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam 00
     Special Edition III- Return The World (2010)
   Parsed Movie Extension: mp4
-<<<<<<< HEAD
-  Parsed Movie File: /var/data/media/video/movies/foreign/Mobile Suit Gundam 00 Special
-    Edition III- Return The World (2010)/Mobile Suit Gundam 00 Special Edition III-
-    Return The World (2010) Bluray-1080p.mp4
-=======
   Parsed Movie File: Mobile Suit Gundam 00 Special Edition III- Return The World (2010)
     Bluray-1080p.mp4
->>>>>>> aa04e5c0781927518fc8779a303b2c994d67f621
   Parsed Movie Quality: Bluray-1080p.mp4
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam
     00 Special Edition III- Return The World (2010)
@@ -7997,14 +7946,8 @@ Mobile Suit Gundam- Char's Counterattack (1988):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam- Char's
     Counterattack (1988)
   Parsed Movie Extension: mkv
-<<<<<<< HEAD
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Mobile Suit Gundam- Char's\
-    \ Counterattack (1988)/\u6A5F\u52D5\u6226\u58EB\u30AC\u30F3\u30C0\u30E0 \u9006\
-    \u8972\u306E\u30B7\u30E3\u30A2 (1988) Remux-1080p.mkv"
-=======
   Parsed Movie File: "\u6A5F\u52D5\u6226\u58EB\u30AC\u30F3\u30C0\u30E0 \u9006\u8972\
     \u306E\u30B7\u30E3\u30A2 (1988) Remux-1080p.mkv"
->>>>>>> aa04e5c0781927518fc8779a303b2c994d67f621
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam-
     Char's Counterattack (1988)
@@ -8097,12 +8040,7 @@ Monster Musume no Iru Nichijou OVA (2016):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Monster Musume no Iru
     Nichijou OVA (2016)
   Parsed Movie Extension: mkv
-<<<<<<< HEAD
-  Parsed Movie File: /var/data/media/video/movies/foreign/Monster Musume no Iru Nichijou
-    OVA (2016)/Monster Musume no Iru Nichijou OVA (2016) Bluray-1080p.mkv
-=======
   Parsed Movie File: Monster Musume no Iru Nichijou OVA (2016) Bluray-1080p.mkv
->>>>>>> aa04e5c0781927518fc8779a303b2c994d67f621
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Monster Musume no
     Iru Nichijou OVA (2016)
@@ -9421,12 +9359,7 @@ One Piece - Strong World Episode 0 (2010):
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Strong World
     Episode 0 (2010)
   Parsed Movie Extension: mkv
-<<<<<<< HEAD
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece - Strong World
-    Episode 0 (2010)/One Piece- Strong World Episode 0 (2010) DVD.mkv
-=======
   Parsed Movie File: One Piece- Strong World Episode 0 (2010) DVD.mkv
->>>>>>> aa04e5c0781927518fc8779a303b2c994d67f621
   Parsed Movie Quality: DVD.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Strong
     World Episode 0 (2010)
@@ -9619,14 +9552,8 @@ One Piece Episode of East Blue Luffy and His 4 Crewmate's Big Adventure (2017):
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece Episode of East
     Blue Luffy and His 4 Crewmate's Big Adventure (2017)
   Parsed Movie Extension: mkv
-<<<<<<< HEAD
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece Episode of East
-    Blue Luffy and His 4 Crewmate's Big Adventure (2017)/One Piece Episode of East
-    Blue Luffy and His 4 Crewmate's Big Adventure (2017) Bluray-1080p.mkv
-=======
   Parsed Movie File: One Piece Episode of East Blue Luffy and His 4 Crewmate's Big
     Adventure (2017) Bluray-1080p.mkv
->>>>>>> aa04e5c0781927518fc8779a303b2c994d67f621
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece Episode
     of East Blue Luffy and His 4 Crewmate's Big Adventure (2017)
@@ -10339,12 +10266,7 @@ Prison School- Mad Wax (2016):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Prison School- Mad Wax
     (2016)
   Parsed Movie Extension: mkv
-<<<<<<< HEAD
-  Parsed Movie File: /var/data/media/video/movies/foreign/Prison School- Mad Wax (2016)/Prison
-    School- Mad Wax (2016) DVD.mkv
-=======
   Parsed Movie File: Prison School- Mad Wax (2016) DVD.mkv
->>>>>>> aa04e5c0781927518fc8779a303b2c994d67f621
   Parsed Movie Quality: DVD.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Prison School- Mad
     Wax (2016)
@@ -10479,10 +10401,9 @@ Puella Magi Madoka Magica the Movie Part I- Beginnings (2012):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Puella Magi Madoka Magica
     the Movie Part I- Beginnings (2012)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Puella Magi Madoka Magica\
-    \ the Movie Part I- Beginnings (2012)/\u5287\u5834\u7248 \u9B54\u6CD5\u5C11\u5973\
-    \u307E\u3069\u304B\u2606\u30DE\u30AE\u30AB [\u524D\u7DE8] \u59CB\u307E\u308A\u306E\
-    \u7269\u8A9E (2012) Remux-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248 \u9B54\u6CD5\u5C11\u5973\u307E\u3069\u304B\
+    \u2606\u30DE\u30AE\u30AB [\u524D\u7DE8] \u59CB\u307E\u308A\u306E\u7269\u8A9E (2012)\
+    \ Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Puella Magi Madoka
     Magica the Movie Part I- Beginnings (2012)
@@ -10522,10 +10443,8 @@ Puella Magi Madoka Magica the Movie Part II- Eternal (2012):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Puella Magi Madoka Magica
     the Movie Part II- Eternal (2012)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Puella Magi Madoka Magica\
-    \ the Movie Part II- Eternal (2012)/\u5287\u5834\u7248 \u9B54\u6CD5\u5C11\u5973\
-    \u307E\u3069\u304B\u2606\u30DE\u30AE\u30AB[\u5F8C\u7DE8] \u6C38\u9060\u306E\u7269\
-    \u8A9E (2012) Remux-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248 \u9B54\u6CD5\u5C11\u5973\u307E\u3069\u304B\
+    \u2606\u30DE\u30AE\u30AB[\u5F8C\u7DE8] \u6C38\u9060\u306E\u7269\u8A9E (2012) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Puella Magi Madoka
     Magica the Movie Part II- Eternal (2012)
@@ -10564,10 +10483,8 @@ Puella Magi Madoka Magica the Movie Part III- Rebellion (2013):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Puella Magi Madoka Magica
     the Movie Part III- Rebellion (2013)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Puella Magi Madoka Magica\
-    \ the Movie Part III- Rebellion (2013)/\u5287\u5834\u7248 \u9B54\u6CD5\u5C11\u5973\
-    \u307E\u3069\u304B\u2606\u30DE\u30AE\u30AB[\u65B0\u7DE8]\u53DB\u9006\u306E\u7269\
-    \u8A9E (2013) Remux-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248 \u9B54\u6CD5\u5C11\u5973\u307E\u3069\u304B\
+    \u2606\u30DE\u30AE\u30AB[\u65B0\u7DE8]\u53DB\u9006\u306E\u7269\u8A9E (2013) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Puella Magi Madoka
     Magica the Movie Part III- Rebellion (2013)
@@ -11731,8 +11648,7 @@ Saturday Night Live- Halloween (2003):
   Absolute Movie Path: /var/data/media/video/movies/staging/Saturday Night Live- Halloween
     (2003)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/Saturday Night Live- Halloween
-    (2003)/Saturday Night Live- Halloween (2003) WEBDL-1080p.mkv
+  Parsed Movie File: Saturday Night Live- Halloween (2003) WEBDL-1080p.mkv
   Parsed Movie Quality: WEBDL-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Saturday Night Live-
     Halloween (2003)
@@ -12730,8 +12646,7 @@ Stargate SG-1- True Science (2006):
   Absolute Movie Path: /var/data/media/video/movies/staging/Stargate SG-1- True Science
     (2006)
   Parsed Movie Extension: avi
-  Parsed Movie File: /var/data/media/video/movies/staging/Stargate SG-1- True Science
-    (2006)/Stargate SG-1- True Science (2006) SDTV.avi
+  Parsed Movie File: Stargate SG-1- True Science (2006) SDTV.avi
   Parsed Movie Quality: SDTV.avi
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Stargate SG-1- True
     Science (2006)
@@ -12809,13 +12724,13 @@ Stargate- Continuum (2008):
   Unparsed Movie Title: Stargate- Continuum (2008)
 Stargate- The Ark Of Truth (2008):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Stargate- The Ark Of Truth
+  Absolute Movie Path: /var/data/media/video/movies/staging/Stargate- The Ark Of Truth
     (2008)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Stargate- The Ark Of Truth (2008)
+  Relative Movie Path: movies/staging/Stargate- The Ark Of Truth (2008)
   Shows:
     Stargate SG-1:
       Absolute Episode: ''
@@ -12880,12 +12795,7 @@ Steins;Gate- Egoistic Poriomania (2012):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Steins;Gate- Egoistic
     Poriomania (2012)
   Parsed Movie Extension: mp4
-<<<<<<< HEAD
-  Parsed Movie File: /var/data/media/video/movies/foreign/Steins;Gate- Egoistic Poriomania
-    (2012)/Steins;Gate- Egoistic Poriomania (2012) WEBDL-1080p.mp4
-=======
   Parsed Movie File: Steins;Gate- Egoistic Poriomania (2012) WEBDL-1080p.mp4
->>>>>>> aa04e5c0781927518fc8779a303b2c994d67f621
   Parsed Movie Quality: WEBDL-1080p.mp4
   Raw Absolute Movie Path: ''
   Relative Movie File Path: ''
@@ -13172,12 +13082,7 @@ The Batman vs. Dracula (2005):
   Absolute Movie Path: /var/data/media/video/movies/horror/The Batman vs. Dracula
     (2005)
   Parsed Movie Extension: mkv
-<<<<<<< HEAD
-  Parsed Movie File: /var/data/media/video/movies/horror/The Batman vs. Dracula (2005)/The
-    Batman vs. Dracula (2005) WEBDL-1080p.mkv
-=======
   Parsed Movie File: The Batman vs. Dracula (2005) WEBDL-1080p.mkv
->>>>>>> aa04e5c0781927518fc8779a303b2c994d67f621
   Parsed Movie Quality: WEBDL-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/horror/The Batman vs. Dracula
     (2005)
@@ -13210,8 +13115,7 @@ The Cage (1965):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/The Cage (1965)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/The Cage (1965)/Star Trek-
-    The Cage (1965) Bluray-1080p.mkv
+  Parsed Movie File: Star Trek- The Cage (1965) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/The Cage (1965)
   Relative Movie File Path: ''
@@ -13275,8 +13179,7 @@ The Day Naruto Became Hokage (2016):
   Absolute Movie Path: /var/data/media/video/movies/foreign/The Day Naruto Became
     Hokage (2016)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/The Day Naruto Became Hokage
-    (2016)/The Day Naruto Became Hokage (2016) Bluray-1080p.mkv
+  Parsed Movie File: The Day Naruto Became Hokage (2016) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/The Day Naruto Became
     Hokage (2016)
@@ -13836,14 +13739,8 @@ The Seven Deadly Sins - Prisoners of the Sky (2018):
   Absolute Movie Path: /var/data/media/video/movies/foreign/The Seven Deadly Sins
     - Prisoners of the Sky (2018)
   Parsed Movie Extension: mkv
-<<<<<<< HEAD
-  Parsed Movie File: "/var/data/media/video/movies/foreign/The Seven Deadly Sins -\
-    \ Prisoners of the Sky (2018)/\u5287\u5834\u7248 \u4E03\u3064\u306E\u5927\u7F6A\
-    \ \u5929\u7A7A\u306E\u56DA\u308F\u308C\u4EBA (2018) WEBDL-1080p.mkv"
-=======
   Parsed Movie File: "\u5287\u5834\u7248 \u4E03\u3064\u306E\u5927\u7F6A \u5929\u7A7A\
     \u306E\u56DA\u308F\u308C\u4EBA (2018) WEBDL-1080p.mkv"
->>>>>>> aa04e5c0781927518fc8779a303b2c994d67f621
   Parsed Movie Quality: WEBDL-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/The Seven Deadly Sins
     - Prisoners of the Sky (2018)
@@ -15061,13 +14958,7 @@ Toriko 3D Movie- Kaimaku! Gourmet Adventure!! (2011):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Toriko 3D Movie- Kaimaku!
     Gourmet Adventure!! (2011)
   Parsed Movie Extension: mp4
-<<<<<<< HEAD
-  Parsed Movie File: /var/data/media/video/movies/foreign/Toriko 3D Movie- Kaimaku!
-    Gourmet Adventure!! (2011)/Toriko 3D Movie- Kaimaku! Gourmet Adventure!! (2011)
-    Bluray-1080p.mp4
-=======
   Parsed Movie File: Toriko 3D Movie- Kaimaku! Gourmet Adventure!! (2011) Bluray-1080p.mp4
->>>>>>> aa04e5c0781927518fc8779a303b2c994d67f621
   Parsed Movie Quality: Bluray-1080p.mp4
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Toriko 3D Movie- Kaimaku!
     Gourmet Adventure!! (2011)
@@ -15167,12 +15058,7 @@ Unlocking Sherlock (2014):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/thrillers/Unlocking Sherlock (2014)
   Parsed Movie Extension: mkv
-<<<<<<< HEAD
-  Parsed Movie File: /var/data/media/video/movies/thrillers/Unlocking Sherlock (2014)/Unlocking
-    Sherlock (2014) WEBDL-720p.mkv
-=======
   Parsed Movie File: Unlocking Sherlock (2014) WEBDL-720p.mkv
->>>>>>> aa04e5c0781927518fc8779a303b2c994d67f621
   Parsed Movie Quality: WEBDL-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/thrillers/Unlocking Sherlock
     (2014)
@@ -15265,15 +15151,8 @@ Watashi ga Motenai no wa Dou Kangaetemo Omaera ga Warui!- Motenaishi, Nazomeite 
   Absolute Movie Path: /var/data/media/video/movies/foreign/Watashi ga Motenai no
     wa Dou Kangaetemo Omaera ga Warui!- Motenaishi, Nazomeite Miru (2014)
   Parsed Movie Extension: mkv
-<<<<<<< HEAD
-  Parsed Movie File: /var/data/media/video/movies/foreign/Watashi ga Motenai no wa
-    Dou Kangaetemo Omaera ga Warui!- Motenaishi, Nazomeite Miru (2014)/Watashi ga
-    Motenai no wa Dou Kangaetemo Omaera ga Warui!- Motenaishi, Nazomeite Miru (2014)
-    WEBDL-720p.mkv
-=======
   Parsed Movie File: Watashi ga Motenai no wa Dou Kangaetemo Omaera ga Warui!- Motenaishi,
     Nazomeite Miru (2014) WEBDL-720p.mkv
->>>>>>> aa04e5c0781927518fc8779a303b2c994d67f621
   Parsed Movie Quality: WEBDL-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Watashi ga Motenai
     no wa Dou Kangaetemo Omaera ga Warui!- Motenaishi, Nazomeite Miru (2014)
@@ -15639,13 +15518,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
   Absolute Movie Path: "/var/data/media/video/movies/foreign/\u306F\u305F\u3089\u304F\
     \u7D30\u80DE \u7279\u5225\u7DE8 \u98A8\u90AA\u75C7\u5019\u7FA4 (2018)"
   Parsed Movie Extension: mkv
-<<<<<<< HEAD
-  Parsed Movie File: "/var/data/media/video/movies/foreign/\u306F\u305F\u3089\u304F\
-    \u7D30\u80DE \u7279\u5225\u7DE8 \u98A8\u90AA\u75C7\u5019\u7FA4 (2018)/Hataraku\
-    \ Saibou- Kaze Shoukougun (2018) Bluray-1080p.mkv"
-=======
   Parsed Movie File: Hataraku Saibou- Kaze Shoukougun (2018) Bluray-1080p.mkv
->>>>>>> aa04e5c0781927518fc8779a303b2c994d67f621
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: "/var/data/media/video/movies/foreign/\u306F\u305F\u3089\
     \u304F\u7D30\u80DE \u7279\u5225\u7DE8 \u98A8\u90AA\u75C7\u5019\u7FA4 (2018)"
