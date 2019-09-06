@@ -8636,15 +8636,17 @@ Naruto- The Lost Story- Mission - Protect The Waterfall Village (2003):
   Shows: {Naruto: null}
   Unparsed Movie Title: Naruto- The Lost Story- Mission - Protect The Waterfall Village
     (2003)
-Neon Genesis Evangelion- Death And Rebirth (1997):
+Neon Genesis Evangelion- Death and Rebirth (1997):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Neon Genesis Evangelion-
-    Death And Rebirth (1997)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+    Death and Rebirth (1997)
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "\u65B0\u4E16\u7D00\u30A8\u30F4\u30A1\u30F3\u30B2\u30EA\u30AA\
+    \u30F3\u5287\u5834\u7248 \u30B7\u30C8\u65B0\u751F (1997) Remux-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Neon Genesis Evangelion- Death And Rebirth (1997)
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/foreign/Neon Genesis Evangelion- Death and Rebirth (1997)
   Shows:
     Neon Genesis Evangelion:
       Absolute Episode: ''
@@ -8658,22 +8660,28 @@ Neon Genesis Evangelion- Death And Rebirth (1997):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Neon Genesis Evangelion/Season 00/Neon Genesis
         Evangelion - S00E001 - Death and Rebirth
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Neon Genesis Evangelion/Season 00/Neon
+        Genesis Evangelion - S00E001 - Death and Rebirth Bluray-1080p Remux.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Neon Genesis Evangelion/Season 00/Neon Genesis Evangelion
+        - S00E001 - Death and Rebirth Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Neon
+        Genesis Evangelion- Death and Rebirth (1997)/\xe6\x96\xb0\xe4\xb8\x96\xe7\xb4\x80\xe3\x82\xa8\xe3\x83\xb4\xe3\x82\xa1\xe3\x83\xb3\xe3\x82\xb2\xe3\x83\xaa\xe3\x82\xaa\xe3\x83\xb3\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88
+        \xe3\x82\xb7\xe3\x83\x88\xe6\x96\xb0\xe7\x94\x9f (1997) Remux-1080p.mkv
       Title: Death and Rebirth
-  Unparsed Movie Title: Neon Genesis Evangelion- Death And Rebirth (1997)
-Neon Genesis Evangelion- The End Of Evangelion (1997):
+  Unparsed Movie Title: Neon Genesis Evangelion- Death and Rebirth (1997)
+Neon Genesis Evangelion- The End of Evangelion (1997):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Neon Genesis Evangelion-
-    The End Of Evangelion (1997)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+    The End of Evangelion (1997)
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "\u65B0\u4E16\u7D00\u30A8\u30F4\u30A1\u30F3\u30B2\u30EA\u30AA\
+    \u30F3\u5287\u5834\u7248 THE END OF EVANGELION (1997) Remux-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Neon Genesis Evangelion- The End Of Evangelion
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/foreign/Neon Genesis Evangelion- The End of Evangelion
     (1997)
   Shows:
     Neon Genesis Evangelion:
@@ -8688,13 +8696,17 @@ Neon Genesis Evangelion- The End Of Evangelion (1997):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Neon Genesis Evangelion/Season 00/Neon Genesis
         Evangelion - S00E002 - The End of Evangelion
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Neon Genesis Evangelion/Season 00/Neon
+        Genesis Evangelion - S00E002 - The End of Evangelion Bluray-1080p Remux.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Neon Genesis Evangelion/Season 00/Neon Genesis Evangelion
+        - S00E002 - The End of Evangelion Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Neon
+        Genesis Evangelion- The End of Evangelion (1997)/\xe6\x96\xb0\xe4\xb8\x96\xe7\xb4\x80\xe3\x82\xa8\xe3\x83\xb4\xe3\x82\xa1\xe3\x83\xb3\xe3\x82\xb2\xe3\x83\xaa\xe3\x82\xaa\xe3\x83\xb3\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88
+        THE END OF EVANGELION (1997) Remux-1080p.mkv
       Title: The End of Evangelion
-  Unparsed Movie Title: Neon Genesis Evangelion- The End Of Evangelion (1997)
+  Unparsed Movie Title: Neon Genesis Evangelion- The End of Evangelion (1997)
 New Fist of the North Star- The Cursed City (2003):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/New Fist of the North
@@ -12730,15 +12742,17 @@ Stargate- Continuum (2008):
   Symlink Target: /var/data/media/video/movies/staging/Stargate- Continuum (2008)/Stargate-
     Continuum (2008) Bluray-1080p.mkv
   Unparsed Movie Title: Stargate- Continuum (2008)
-Stargate- The Ark Of Truth (2008):
+Stargate- The Ark of Truth (2008):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/staging/Stargate- The Ark Of Truth
+  Absolute Movie Path: /var/data/media/video/movies/staging/Stargate- The Ark of Truth
     (2008)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: /var/data/media/video/movies/staging/Stargate- The Ark of Truth
+    (2008)/Stargate- The Ark of Truth (2008) Bluray-1080p.mkv
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/staging/Stargate- The Ark Of Truth (2008)
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/staging/Stargate- The Ark of Truth (2008)
   Shows:
     Stargate SG-1:
       Absolute Episode: ''
@@ -12752,13 +12766,16 @@ Stargate- The Ark Of Truth (2008):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/scifi/Stargate SG-1/Season 00/Stargate SG-1 - S00E07 -
         The Ark of Truth
-      Relative Show File Path: ''
+      Relative Show File Path: tv/scifi/Stargate SG-1/Season 00/Stargate SG-1 - S00E07
+        - The Ark of Truth Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: tv/scifi/Stargate SG-1/Season 00/Stargate SG-1 - S00E07 - The Ark
+        of Truth Bluray-1080p.mkv -> ../../../../movies/staging/Stargate- The Ark
+        of Truth (2008)/Stargate- The Ark of Truth (2008) Bluray-1080p.mkv
       Title: The Ark of Truth
-  Unparsed Movie Title: Stargate- The Ark Of Truth (2008)
+  Unparsed Movie Title: Stargate- The Ark of Truth (2008)
 Steins;Gate 0- Valentine's of Crystal Polymorphism - Bittersweet Intermedio (2018):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Steins;Gate 0- Valentine's
@@ -13000,15 +13017,17 @@ Teen Titans Go! Vs Teen Titans (0):
   Shows: {Teen Titans: null, Teen Titans Go!: null}
   Unparsed Movie Title: Teen Titans Go! Vs Teen Titans (0)
 Teen Titans- The Judas Contract (2017): {Shows: null}
-Teen Titans- Trouble In Tokyo (2006):
+Teen Titans- Trouble in Tokyo (2006):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Teen Titans- Trouble In
+  Absolute Movie Path: /var/data/media/video/movies/staging/Teen Titans- Trouble in
     Tokyo (2006)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: /var/data/media/video/movies/staging/Teen Titans- Trouble in
+    Tokyo (2006)/Teen Titans- Trouble in Tokyo (2006) WEBDL-1080p.mkv
+  Parsed Movie Quality: WEBDL-1080p.mkv
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Teen Titans- Trouble In Tokyo (2006)
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/staging/Teen Titans- Trouble in Tokyo (2006)
   Shows:
     Teen Titans:
       Absolute Episode: ''
@@ -13022,13 +13041,16 @@ Teen Titans- Trouble In Tokyo (2006):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/superhero/Teen Titans/Season 00/Teen Titans - S00E02 -
         Trouble in Tokyo
-      Relative Show File Path: ''
+      Relative Show File Path: tv/superhero/Teen Titans/Season 00/Teen Titans - S00E02
+        - Trouble in Tokyo WEBDL-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: tv/superhero/Teen Titans/Season 00/Teen Titans - S00E02 - Trouble
+        in Tokyo WEBDL-1080p.mkv -> ../../../../movies/staging/Teen Titans- Trouble
+        in Tokyo (2006)/Teen Titans- Trouble in Tokyo (2006) WEBDL-1080p.mkv
       Title: Trouble in Tokyo
-  Unparsed Movie Title: Teen Titans- Trouble In Tokyo (2006)
+  Unparsed Movie Title: Teen Titans- Trouble in Tokyo (2006)
 Terra Formars (2016):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Terra Formars (2016)
@@ -14144,13 +14166,14 @@ The Wire- The Last Word (2007):
   Unparsed Movie Title: The Wire- The Last Word (2007)
 The X Files- I Want to Believe (2008):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/The X Files- I Want to
+  Absolute Movie Path: /var/data/media/video/movies/staging/The X Files- I Want to
     Believe (2008)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: The X Files- I Want to Believe (2008) Bluray-1080p.mkv
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/The X Files- I Want to Believe (2008)
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/staging/The X Files- I Want to Believe (2008)
   Shows:
     The X-Files:
       Absolute Episode: ''
@@ -14164,11 +14187,14 @@ The X Files- I Want to Believe (2008):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/scifi/The X-Files/Season 00/The X-Files - S00E06 - The
         X-Files- I Want to Believe
-      Relative Show File Path: ''
+      Relative Show File Path: tv/scifi/The X-Files/Season 00/The X-Files - S00E06
+        - The X-Files- I Want to Believe Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: tv/scifi/The X-Files/Season 00/The X-Files - S00E06 - The X-Files-
+        I Want to Believe Bluray-1080p.mkv -> ../../../../movies/staging/The X Files-
+        I Want to Believe (2008)/The X Files- I Want to Believe (2008) Bluray-1080p.mkv
       Title: The X-Files- I Want to Believe
   Unparsed Movie Title: The X Files- I Want to Believe (2008)
 Thus Spoke Kishibe Rohan 2- Mutsu-kabe Hill (2018):
