@@ -900,9 +900,8 @@ Babylon 5- The Gathering (1993):
   Absolute Movie Path: /var/data/media/video/movies/staging/Babylon 5- The Gathering
     (1993)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/Babylon 5- The Gathering
-    (1993)/Babylon 5- The Gathering (1993) Bluray-2160p.mkv
-  Parsed Movie Quality: Bluray-2160p.mkv
+  Parsed Movie File: Babylon 5- The Gathering (1993) DVD.mkv
+  Parsed Movie Quality: DVD.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Babylon 5- The Gathering
     (1993)
   Relative Movie File Path: ''
@@ -920,13 +919,13 @@ Babylon 5- The Gathering (1993):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E01 - The Gathering
       Relative Show File Path: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E01 - The
-        Gathering Bluray-2160p.mkv
+        Gathering DVD.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E01 - The Gathering Bluray-2160p.mkv
+      Symlinked: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E01 - The Gathering DVD.mkv
         -> ../../../../movies/staging/Babylon 5- The Gathering (1993)/Babylon 5- The
-        Gathering (1993) Bluray-2160p.mkv
+        Gathering (1993) DVD.mkv
       Title: The Gathering
   Symlink Target: /var/data/media/video/movies/staging/Babylon 5- The Gathering (1993)/Babylon
     5- The Gathering (1993) DVD.mkv
@@ -976,11 +975,9 @@ Babylon 5- The Lost Tales - Voices in the Dark (2007):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Babylon 5- The Lost Tales
     - Voices in the Dark (2007)
-  Parsed Movie Extension: avi
-  Parsed Movie File: /var/data/media/video/movies/staging/Babylon 5- The Lost Tales
-    - Voices in the Dark (2007)/Babylon 5- The Lost Tales - Voices in the Dark (2007)
-    DVD.avi
-  Parsed Movie Quality: DVD.avi
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Babylon 5- The Lost
     Tales - Voices in the Dark (2007)
   Relative Movie File Path: ''
@@ -999,14 +996,11 @@ Babylon 5- The Lost Tales - Voices in the Dark (2007):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E07-08 - Voices
         in the Dark
-      Relative Show File Path: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E07-08
-        - Voices in the Dark DVD.avi
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E07-08 - Voices in the
-        Dark DVD.avi -> ../../../../movies/staging/Babylon 5- The Lost Tales - Voices
-        in the Dark (2007)/Babylon 5- The Lost Tales - Voices in the Dark (2007) DVD.avi
+      Symlinked: ''
       Title: Voices in the Dark
   Unparsed Movie Title: Babylon 5- The Lost Tales - Voices in the Dark (2007)
 Babylon 5- The River of Souls (1998):
@@ -2859,11 +2853,9 @@ Dragon Ball Z- Battle of Gods (2013):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Battle
     of Gods (2013)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Dragon Ball Z- Battle of\
-    \ Gods (2013)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u795E\u3068\u795E (2013)\
-    \ Remux-1080p.mkv"
-  Parsed Movie Quality: Bluray-1080p Remux.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Battle
     of Gods (2013)
   Relative Movie File Path: ''
@@ -2881,26 +2873,20 @@ Dragon Ball Z- Battle of Gods (2013):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E022
         - Battle of Gods
-      Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E022 - Battle of Gods Bluray-1080p Remux.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E022 - Battle
-        of Gods Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Dragon Ball Z-
-        Battle of Gods (2013)/\xe3\x83\x89\xe3\x83\xa9\xe3\x82\xb4\xe3\x83\xb3\xe3\x83\x9c\xe3\x83\xbc\xe3\x83\xabZ
-        \xe7\xa5\x9e\xe3\x81\xa8\xe7\xa5\x9e (2013) Remux-1080p.mkv
+      Symlinked: ''
       Title: Battle of Gods
   Unparsed Movie Title: Dragon Ball Z- Battle of Gods (2013)
 Dragon Ball Z- Bio-Broly (1994):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Bio-Broly
     (1994)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Dragon Ball Z- Bio-Broly\
-    \ (1994)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u8D85\u6226\u58EB\u6483\u7834\
-    !!\u52DD\u3064\u306E\u306F\u30AA\u30EC\u3060 (1994) Remux-1080p.mkv"
-  Parsed Movie Quality: Bluray-1080p Remux.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Bio-Broly
     (1994)
   Relative Movie File Path: ''
@@ -2918,27 +2904,20 @@ Dragon Ball Z- Bio-Broly (1994):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E011
         - Bio-Broly
-      Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E011 - Bio-Broly Bluray-1080p Remux.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E011 - Bio-Broly
-        Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Dragon Ball Z- Bio-Broly
-        (1994)/\xe3\x83\x89\xe3\x83\xa9\xe3\x82\xb4\xe3\x83\xb3\xe3\x83\x9c\xe3\x83\xbc\xe3\x83\xabZ
-        \xe8\xb6\x85\xe6\x88\xa6\xe5\xa3\xab\xe6\x92\x83\xe7\xa0\xb4!!\xe5\x8b\x9d\xe3\x81\xa4\xe3\x81\xae\xe3\x81\xaf\xe3\x82\xaa\xe3\x83\xac\xe3\x81\xa0
-        (1994) Remux-1080p.mkv
+      Symlinked: ''
       Title: Bio-Broly
   Unparsed Movie Title: Dragon Ball Z- Bio-Broly (1994)
 Dragon Ball Z- Bojack Unbound (1993):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Bojack
     Unbound (1993)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Dragon Ball Z- Bojack Unbound\
-    \ (1993)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u9280\u6CB3\u30AE\u30EA\u30AE\
-    \u30EA!!\u3076\u3063\u3061\u304E\u308A\u306E\u51C4\u3044\u5974 (1993) Remux-1080p.mkv"
-  Parsed Movie Quality: Bluray-1080p Remux.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Bojack
     Unbound (1993)
   Relative Movie File Path: ''
@@ -2956,28 +2935,20 @@ Dragon Ball Z- Bojack Unbound (1993):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E009
         - Bojack Unbound
-      Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E009 - Bojack Unbound Bluray-1080p Remux.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E009 - Bojack
-        Unbound Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Dragon Ball Z-
-        Bojack Unbound (1993)/\xe3\x83\x89\xe3\x83\xa9\xe3\x82\xb4\xe3\x83\xb3\xe3\x83\x9c\xe3\x83\xbc\xe3\x83\xabZ
-        \xe9\x8a\x80\xe6\xb2\xb3\xe3\x82\xae\xe3\x83\xaa\xe3\x82\xae\xe3\x83\xaa!!\xe3\x81\xb6\xe3\x81\xa3\xe3\x81\xa1\xe3\x81\x8e\xe3\x82\x8a\xe3\x81\xae\xe5\x87\x84\xe3\x81\x84\xe5\xa5\xb4
-        (1993) Remux-1080p.mkv
+      Symlinked: ''
       Title: Bojack Unbound
   Unparsed Movie Title: Dragon Ball Z- Bojack Unbound (1993)
 "Dragon Ball Z- Broly \u2013 Second Coming (1994)":
   Absolute Movie File Path: ''
   Absolute Movie Path: "/var/data/media/video/movies/foreign/Dragon Ball Z- Broly\
     \ \u2013 Second Coming (1994)"
-  Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Dragon Ball Z- Broly \u2013\
-    \ Second Coming (1994)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u5371\u967A\
-    \u306A\u3075\u305F\u308A!\u8D85\u6226\u58EB\u306F\u306D\u3080\u308C\u306A\u3044\
-    \ (1994) Remux-1080p.mkv"
-  Parsed Movie Quality: Bluray-1080p Remux.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: "/var/data/media/video/movies/foreign/Dragon Ball Z- Broly\
     \ \u2013 Second Coming (1994)"
   Relative Movie File Path: ''
@@ -2995,28 +2966,20 @@ Dragon Ball Z- Bojack Unbound (1993):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E010
         - Broly- Second Coming
-      Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E010 - Broly- Second Coming Bluray-1080p Remux.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E010 - Broly-
-        Second Coming Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Dragon
-        Ball Z- Broly \xe2\x80\x93 Second Coming (1994)/\xe3\x83\x89\xe3\x83\xa9\xe3\x82\xb4\xe3\x83\xb3\xe3\x83\x9c\xe3\x83\xbc\xe3\x83\xabZ
-        \xe5\x8d\xb1\xe9\x99\xba\xe3\x81\xaa\xe3\x81\xb5\xe3\x81\x9f\xe3\x82\x8a!\xe8\xb6\x85\xe6\x88\xa6\xe5\xa3\xab\xe3\x81\xaf\xe3\x81\xad\xe3\x82\x80\xe3\x82\x8c\xe3\x81\xaa\xe3\x81\x84
-        (1994) Remux-1080p.mkv
+      Symlinked: ''
       Title: Broly- Second Coming
   Unparsed Movie Title: "Dragon Ball Z- Broly \u2013 Second Coming (1994)"
 "Dragon Ball Z- Broly \u2013 The Legendary Super Saiyan (1993)":
   Absolute Movie File Path: ''
   Absolute Movie Path: "/var/data/media/video/movies/foreign/Dragon Ball Z- Broly\
     \ \u2013 The Legendary Super Saiyan (1993)"
-  Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Dragon Ball Z- Broly \u2013\
-    \ The Legendary Super Saiyan (1993)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EB\
-    Z \u71C3\u3048\u3064\u304D\u308D!!\u71B1\u6226\u30FB\u70C8\u6226\u30FB\u8D85\u6FC0\
-    \u6226 (1993) Remux-1080p.mkv"
-  Parsed Movie Quality: Bluray-1080p Remux.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: "/var/data/media/video/movies/foreign/Dragon Ball Z- Broly\
     \ \u2013 The Legendary Super Saiyan (1993)"
   Relative Movie File Path: ''
@@ -3035,26 +2998,20 @@ Dragon Ball Z- Bojack Unbound (1993):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E008
         - Broly- The Legendary Super Saiyan
-      Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E008 - Broly- The Legendary Super Saiyan Bluray-1080p Remux.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E008 - Broly-
-        The Legendary Super Saiyan Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Dragon
-        Ball Z- Broly \xe2\x80\x93 The Legendary Super Saiyan (1993)/\xe3\x83\x89\xe3\x83\xa9\xe3\x82\xb4\xe3\x83\xb3\xe3\x83\x9c\xe3\x83\xbc\xe3\x83\xabZ
-        \xe7\x87\x83\xe3\x81\x88\xe3\x81\xa4\xe3\x81\x8d\xe3\x82\x8d!!\xe7\x86\xb1\xe6\x88\xa6\xe3\x83\xbb\xe7\x83\x88\xe6\x88\xa6\xe3\x83\xbb\xe8\xb6\x85\xe6\xbf\x80\xe6\x88\xa6
-        (1993) Remux-1080p.mkv
+      Symlinked: ''
       Title: Broly- The Legendary Super Saiyan
   Unparsed Movie Title: "Dragon Ball Z- Broly \u2013 The Legendary Super Saiyan (1993)"
 Dragon Ball Z- Dead Zone (1989):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Dead Zone
     (1989)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Dragon Ball Z- Dead Zone
-    (1989)/Dragon Ball Z- Dead Zone (1989) WEBDL-1080p.mkv
-  Parsed Movie Quality: WEBDL-1080p.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Dead
     Zone (1989)
   Relative Movie File Path: ''
@@ -3072,26 +3029,20 @@ Dragon Ball Z- Dead Zone (1989):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E005
         - Dead Zone
-      Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E005 - Dead Zone WEBDL-1080p.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E005 - Dead
-        Zone WEBDL-1080p.mkv -> ../../../../movies/foreign/Dragon Ball Z- Dead Zone
-        (1989)/Dragon Ball Z- Dead Zone (1989) WEBDL-1080p.mkv
+      Symlinked: ''
       Title: Dead Zone
   Unparsed Movie Title: Dragon Ball Z- Dead Zone (1989)
 Dragon Ball Z- Fusion Reborn (1995):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Fusion
     Reborn (1995)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Dragon Ball Z- Fusion Reborn\
-    \ (1995)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EB\uFF3A\u5FA9\u6D3B\u306E\u30D5\
-    \u30E5\u30FC\u30B8\u30E7\u30F3!!\u609F\u7A7A\u3068\u30D9\u30B8\u30FC\u30BF (1995)\
-    \ Remux-1080p.mkv"
-  Parsed Movie Quality: Bluray-1080p Remux.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Fusion
     Reborn (1995)
   Relative Movie File Path: ''
@@ -3109,26 +3060,20 @@ Dragon Ball Z- Fusion Reborn (1995):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E012
         - Fusion Reborn
-      Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E012 - Fusion Reborn Bluray-1080p Remux.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E012 - Fusion
-        Reborn Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Dragon Ball Z-
-        Fusion Reborn (1995)/\xe3\x83\x89\xe3\x83\xa9\xe3\x82\xb4\xe3\x83\xb3\xe3\x83\x9c\xe3\x83\xbc\xe3\x83\xab\xef\xbc\xba\xe5\xbe\xa9\xe6\xb4\xbb\xe3\x81\xae\xe3\x83\x95\xe3\x83\xa5\xe3\x83\xbc\xe3\x82\xb8\xe3\x83\xa7\xe3\x83\xb3!!\xe6\x82\x9f\xe7\xa9\xba\xe3\x81\xa8\xe3\x83\x99\xe3\x82\xb8\xe3\x83\xbc\xe3\x82\xbf
-        (1995) Remux-1080p.mkv
+      Symlinked: ''
       Title: Fusion Reborn
   Unparsed Movie Title: Dragon Ball Z- Fusion Reborn (1995)
 Dragon Ball Z- Lord Slug (1991):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Lord Slug
     (1991)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Dragon Ball Z- Lord Slug\
-    \ (1991)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u8D85\u30B5\u30A4\u30E4\u4EBA\
-    \u3060\u5B6B\u609F\u7A7A (1991) Remux-1080p.mkv"
-  Parsed Movie Quality: Bluray-1080p Remux.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Lord
     Slug (1991)
   Relative Movie File Path: ''
@@ -3146,16 +3091,11 @@ Dragon Ball Z- Lord Slug (1991):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E004
         - Lord Slug
-      Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E004 - Lord Slug Bluray-1080p Remux.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E004 - Lord
-        Slug Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Dragon Ball Z- Lord
-        Slug (1991)/\xe3\x83\x89\xe3\x83\xa9\xe3\x82\xb4\xe3\x83\xb3\xe3\x83\x9c\xe3\x83\xbc\xe3\x83\xabZ
-        \xe8\xb6\x85\xe3\x82\xb5\xe3\x82\xa4\xe3\x83\xa4\xe4\xba\xba\xe3\x81\xa0\xe5\xad\xab\xe6\x82\x9f\xe7\xa9\xba
-        (1991) Remux-1080p.mkv
+      Symlinked: ''
       Title: Lord Slug
   Unparsed Movie Title: Dragon Ball Z- Lord Slug (1991)
 Dragon Ball Z- Resurrection 'F' (2015):
@@ -3198,11 +3138,9 @@ Dragon Ball Z- The Tree of Might (1990):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- The Tree
     of Might (1990)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Dragon Ball Z- The Tree\
-    \ of Might (1990)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u5730\u7403\u307E\
-    \u308B\u3054\u3068\u8D85\u6C7A\u6226 (1990) Remux-1080p.mkv"
-  Parsed Movie Quality: Bluray-1080p Remux.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- The
     Tree of Might (1990)
   Relative Movie File Path: ''
@@ -3220,27 +3158,20 @@ Dragon Ball Z- The Tree of Might (1990):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E003
         - The Tree of Might
-      Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E003 - The Tree of Might Bluray-1080p Remux.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E003 - The
-        Tree of Might Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Dragon
-        Ball Z- The Tree of Might (1990)/\xe3\x83\x89\xe3\x83\xa9\xe3\x82\xb4\xe3\x83\xb3\xe3\x83\x9c\xe3\x83\xbc\xe3\x83\xabZ
-        \xe5\x9c\xb0\xe7\x90\x83\xe3\x81\xbe\xe3\x82\x8b\xe3\x81\x94\xe3\x81\xa8\xe8\xb6\x85\xe6\xb1\xba\xe6\x88\xa6
-        (1990) Remux-1080p.mkv
+      Symlinked: ''
       Title: The Tree of Might
   Unparsed Movie Title: Dragon Ball Z- The Tree of Might (1990)
 Dragon Ball Z- The World's Strongest (1990):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- The World's
     Strongest (1990)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Dragon Ball Z- The World's\
-    \ Strongest (1990)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u3053\u306E\u4E16\
-    \u3067\u4E00\u756A\u5F37\u3044\u30E4\u30C4 (1990) Remux-1080p.mkv"
-  Parsed Movie Quality: Bluray-1080p Remux.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- The
     World's Strongest (1990)
   Relative Movie File Path: ''
@@ -3258,28 +3189,20 @@ Dragon Ball Z- The World's Strongest (1990):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E002
         - The World's Strongest
-      Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E002 - The World's Strongest Bluray-1080p Remux.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E002 - The
-        World\s Strongest Bluray-1080p Remux.mkv" -> \../../../../movies/foreign/Dragon
-        Ball Z- The World\\\\\s Strongest (1990)/\xe3\x83\x89\xe3\x83\xa9\xe3\x82\xb4\xe3\x83\xb3\xe3\x83\x9c\xe3\x83\xbc\xe3\x83\xabZ
-        \xe3\x81\x93\xe3\x81\xae\xe4\xb8\x96\xe3\x81\xa7\xe4\xb8\x80\xe7\x95\xaa\xe5\xbc\xb7\xe3\x81\x84\xe3\x83\xa4\xe3\x83\x84
-        (1990) Remux-1080p.mkv
+      Symlinked: ''
       Title: The World's Strongest
   Unparsed Movie Title: Dragon Ball Z- The World's Strongest (1990)
 Dragon Ball Z- Wrath of the Dragon (1995):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Wrath of
     the Dragon (1995)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Dragon Ball Z- Wrath of\
-    \ the Dragon (1995)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u9F8D\u62F3\u7206\
-    \u767A!!\u609F\u7A7A\u304C\u3084\u3089\u306D\u3070\u8AB0\u304C\u3084\u308B (1995)\
-    \ Remux-1080p.mkv"
-  Parsed Movie Quality: Bluray-1080p Remux.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball Z- Wrath
     of the Dragon (1995)
   Relative Movie File Path: ''
@@ -3297,27 +3220,20 @@ Dragon Ball Z- Wrath of the Dragon (1995):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E013
         - Wrath of the Dragon
-      Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E013 - Wrath of the Dragon Bluray-1080p Remux.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E013 - Wrath
-        of the Dragon Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Dragon
-        Ball Z- Wrath of the Dragon (1995)/\xe3\x83\x89\xe3\x83\xa9\xe3\x82\xb4\xe3\x83\xb3\xe3\x83\x9c\xe3\x83\xbc\xe3\x83\xabZ
-        \xe9\xbe\x8d\xe6\x8b\xb3\xe7\x88\x86\xe7\x99\xba!!\xe6\x82\x9f\xe7\xa9\xba\xe3\x81\x8c\xe3\x82\x84\xe3\x82\x89\xe3\x81\xad\xe3\x81\xb0\xe8\xaa\xb0\xe3\x81\x8c\xe3\x82\x84\xe3\x82\x8b
-        (1995) Remux-1080p.mkv
+      Symlinked: ''
       Title: Wrath of the Dragon
   Unparsed Movie Title: Dragon Ball Z- Wrath of the Dragon (1995)
 Dragon Ball- Episode of Bardock (2011):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball- Episode of
     Bardock (2011)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Dragon Ball- Episode of\
-    \ Bardock (2011)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EB \u30A8\u30D4\u30BD\
-    \u30FC\u30C9 \u30AA\u30D6 \u30D0\u30FC\u30C0\u30C3\u30AF (2011) Remux-1080p.mkv"
-  Parsed Movie Quality: Bluray-1080p Remux.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Dragon Ball- Episode
     of Bardock (2011)
   Relative Movie File Path: ''
@@ -3335,16 +3251,11 @@ Dragon Ball- Episode of Bardock (2011):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E021
         - Dragon Ball- Episode of Bardock
-      Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E021 - Dragon Ball- Episode of Bardock Bluray-1080p Remux.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E021 - Dragon
-        Ball- Episode of Bardock Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Dragon
-        Ball- Episode of Bardock (2011)/\xe3\x83\x89\xe3\x83\xa9\xe3\x82\xb4\xe3\x83\xb3\xe3\x83\x9c\xe3\x83\xbc\xe3\x83\xab
-        \xe3\x82\xa8\xe3\x83\x94\xe3\x82\xbd\xe3\x83\xbc\xe3\x83\x89 \xe3\x82\xaa\xe3\x83\x96
-        \xe3\x83\x90\xe3\x83\xbc\xe3\x83\x80\xe3\x83\x83\xe3\x82\xaf (2011) Remux-1080p.mkv
+      Symlinked: ''
       Title: Dragon Ball- Episode of Bardock
   Unparsed Movie Title: Dragon Ball- Episode of Bardock (2011)
 Dream 9 Toriko & One Piece & Dragon Ball Z Super Collaboration Special!! (2013):
@@ -3652,11 +3563,9 @@ Evangelion- 1.0 You Are (Not) Alone (2007):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Evangelion- 1.0 You Are
     (Not) Alone (2007)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Evangelion- 1.0 You Are\
-    \ (Not) Alone (2007)/\u30F1\u30F4\u30A1\u30F3\u30B2\u30EA\u30F2\u30F3\u65B0\u5287\
-    \u5834\u7248\uFF1A\u5E8F (2007) Remux-1080p.mkv"
-  Parsed Movie Quality: Bluray-1080p Remux.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Evangelion- 1.0 You
     Are (Not) Alone (2007)
   Relative Movie File Path: ''
@@ -3674,27 +3583,20 @@ Evangelion- 1.0 You Are (Not) Alone (2007):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Neon Genesis Evangelion/Season 00/Neon Genesis
         Evangelion - S00E003 - Evangelion- 1 You Are (Not) Alone
-      Relative Show File Path: anime/staging/Neon Genesis Evangelion/Season 00/Neon
-        Genesis Evangelion - S00E003 - Evangelion- 1 You Are (Not) Alone Bluray-1080p
-        Remux.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/staging/Neon Genesis Evangelion/Season 00/Neon Genesis Evangelion
-        - S00E003 - Evangelion- 1 You Are (Not) Alone Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Evangelion-
-        1.0 You Are (Not) Alone (2007)/\xe3\x83\xb1\xe3\x83\xb4\xe3\x82\xa1\xe3\x83\xb3\xe3\x82\xb2\xe3\x83\xaa\xe3\x83\xb2\xe3\x83\xb3\xe6\x96\xb0\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88\xef\xbc\x9a\xe5\xba\x8f
-        (2007) Remux-1080p.mkv
+      Symlinked: ''
       Title: Evangelion- 1 You Are (Not) Alone
   Unparsed Movie Title: Evangelion- 1.0 You Are (Not) Alone (2007)
 Evangelion- 2.0 You Can (Not) Advance (2009):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Evangelion- 2.0 You Can
     (Not) Advance (2009)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Evangelion- 2.0 You Can\
-    \ (Not) Advance (2009)/\u30F1\u30F4\u30A1\u30F3\u30B2\u30EA\u30F2\u30F3\u65B0\u5287\
-    \u5834\u7248\uFF1A\u7834 (2009) Remux-1080p.mkv"
-  Parsed Movie Quality: Bluray-1080p Remux.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Evangelion- 2.0 You
     Can (Not) Advance (2009)
   Relative Movie File Path: ''
@@ -3712,27 +3614,20 @@ Evangelion- 2.0 You Can (Not) Advance (2009):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Neon Genesis Evangelion/Season 00/Neon Genesis
         Evangelion - S00E004 - Evangelion- 2 You Can (Not) Advance
-      Relative Show File Path: anime/staging/Neon Genesis Evangelion/Season 00/Neon
-        Genesis Evangelion - S00E004 - Evangelion- 2 You Can (Not) Advance Bluray-1080p
-        Remux.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/staging/Neon Genesis Evangelion/Season 00/Neon Genesis Evangelion
-        - S00E004 - Evangelion- 2 You Can (Not) Advance Bluray-1080p Remux.mkv ->
-        ../../../../movies/foreign/Evangelion- 2.0 You Can (Not) Advance (2009)/\xe3\x83\xb1\xe3\x83\xb4\xe3\x82\xa1\xe3\x83\xb3\xe3\x82\xb2\xe3\x83\xaa\xe3\x83\xb2\xe3\x83\xb3\xe6\x96\xb0\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88\xef\xbc\x9a\xe7\xa0\xb4
-        (2009) Remux-1080p.mkv
+      Symlinked: ''
       Title: Evangelion- 2 You Can (Not) Advance
   Unparsed Movie Title: Evangelion- 2.0 You Can (Not) Advance (2009)
 Evangelion- 3.0 You Can (Not) Redo (2012):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Evangelion- 3.0 You Can
     (Not) Redo (2012)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Evangelion- 3.0 You Can\
-    \ (Not) Redo (2012)/\u30F1\u30F4\u30A1\u30F3\u30B2\u30EA\u30F2\u30F3\u65B0\u5287\
-    \u5834\u7248\uFF1AQ (2012) Remux-1080p.mkv"
-  Parsed Movie Quality: Bluray-1080p Remux.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Evangelion- 3.0 You
     Can (Not) Redo (2012)
   Relative Movie File Path: ''
@@ -3750,16 +3645,11 @@ Evangelion- 3.0 You Can (Not) Redo (2012):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Neon Genesis Evangelion/Season 00/Neon Genesis
         Evangelion - S00E005 - Evangelion- 3 You Can (Not) Redo
-      Relative Show File Path: anime/staging/Neon Genesis Evangelion/Season 00/Neon
-        Genesis Evangelion - S00E005 - Evangelion- 3 You Can (Not) Redo Bluray-1080p
-        Remux.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/staging/Neon Genesis Evangelion/Season 00/Neon Genesis Evangelion
-        - S00E005 - Evangelion- 3 You Can (Not) Redo Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Evangelion-
-        3.0 You Can (Not) Redo (2012)/\xe3\x83\xb1\xe3\x83\xb4\xe3\x82\xa1\xe3\x83\xb3\xe3\x82\xb2\xe3\x83\xaa\xe3\x83\xb2\xe3\x83\xb3\xe6\x96\xb0\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88\xef\xbc\x9aQ
-        (2012) Remux-1080p.mkv
+      Symlinked: ''
       Title: Evangelion- 3 You Can (Not) Redo
   Unparsed Movie Title: Evangelion- 3.0 You Can (Not) Redo (2012)
 Evangelion- 3.0+1.0 (2020):
@@ -4560,11 +4450,9 @@ Fullmetal Alchemist The Movie- Conqueror of Shamballa (2005):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Fullmetal Alchemist The
     Movie- Conqueror of Shamballa (2005)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Fullmetal Alchemist The\
-    \ Movie- Conqueror of Shamballa (2005)/\u5287\u5834\u7248 \u92FC\u306E\u932C\u91D1\
-    \u8853\u5E2B \u30B7\u30E3\u30F3\u30D0\u30E9\u3092\u5F81\u304F\u8005 (2005) WEBDL-1080p.mkv"
-  Parsed Movie Quality: WEBDL-1080p.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Fullmetal Alchemist
     The Movie- Conqueror of Shamballa (2005)
   Relative Movie File Path: ''
@@ -4583,18 +4471,11 @@ Fullmetal Alchemist The Movie- Conqueror of Shamballa (2005):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Fullmetal Alchemist/Season 00/Fullmetal Alchemist
         - S00E004 - Fullmetal Alchemist The Movie- Conqueror of Shamballa
-      Relative Show File Path: anime/shounen/Fullmetal Alchemist/Season 00/Fullmetal
-        Alchemist - S00E004 - Fullmetal Alchemist The Movie- Conqueror of Shamballa
-        WEBDL-1080p.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/shounen/Fullmetal Alchemist/Season 00/Fullmetal Alchemist -
-        S00E004 - Fullmetal Alchemist The Movie- Conqueror of Shamballa WEBDL-1080p.mkv
-        -> ../../../../movies/foreign/Fullmetal Alchemist The Movie- Conqueror of
-        Shamballa (2005)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88 \xe9\x8b\xbc\xe3\x81\xae\xe9\x8c\xac\xe9\x87\x91\xe8\xa1\x93\xe5\xb8\xab
-        \xe3\x82\xb7\xe3\x83\xa3\xe3\x83\xb3\xe3\x83\x90\xe3\x83\xa9\xe3\x82\x92\xe5\xbe\x81\xe3\x81\x8f\xe8\x80\x85
-        (2005) WEBDL-1080p.mkv
+      Symlinked: ''
       Title: Fullmetal Alchemist The Movie- Conqueror of Shamballa
   Unparsed Movie Title: Fullmetal Alchemist The Movie- Conqueror of Shamballa (2005)
 Fullmetal Alchemist The Movie- The Sacred Star of Milos (2011):
@@ -5242,10 +5123,9 @@ Gintama- The Movie (2010):
 God Eater Prologue (0):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/God Eater Prologue (0)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/God Eater Prologue (0)/God
-    Eater Prologue (0) WEBDL-720p.mkv
-  Parsed Movie Quality: WEBDL-720p.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/God Eater Prologue
     (0)
   Relative Movie File Path: ''
@@ -5263,14 +5143,11 @@ God Eater Prologue (0):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/God Eater/Season 00/God Eater - S00E001 - Gods
         Eater Burst - Prologue
-      Relative Show File Path: anime/staging/God Eater/Season 00/God Eater - S00E001
-        - Gods Eater Burst - Prologue WEBDL-720p.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/staging/God Eater/Season 00/God Eater - S00E001 - Gods Eater
-        Burst - Prologue WEBDL-720p.mkv -> ../../../../movies/foreign/God Eater Prologue
-        (0)/God Eater Prologue (0) WEBDL-720p.mkv
+      Symlinked: ''
       Title: Gods Eater Burst - Prologue
   Unparsed Movie Title: God Eater Prologue (0)
 Goin' Down To South Park (1999):
@@ -5339,10 +5216,9 @@ Gundam Wing- Endless Waltz (1998):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Gundam Wing- Endless Waltz
     (1998)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Gundam Wing- Endless Waltz\
-    \ (1998)/\u65B0\u6A5F\u52D5\u6226\u8A18\u30AC\u30F3\u30C0\u30E0W Endless Waltz\
-    \ (1998) Bluray-1080p.mkv"
-  Parsed Movie Quality: Bluray-1080p.mkv
+  Parsed Movie File: "\u65B0\u6A5F\u52D5\u6226\u8A18\u30AC\u30F3\u30C0\u30E0W Endless\
+    \ Waltz (1998) Remux-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Gundam Wing- Endless
     Waltz (1998)
   Relative Movie File Path: ''
@@ -5361,14 +5237,14 @@ Gundam Wing- Endless Waltz (1998):
       Parsed Show Title: anime/staging/Mobile Suit Gundam Wing/Season 00/Mobile Suit
         Gundam Wing - S00E008 - Endless Waltz- Movie
       Relative Show File Path: anime/staging/Mobile Suit Gundam Wing/Season 00/Mobile
-        Suit Gundam Wing - S00E008 - Endless Waltz- Movie Bluray-1080p.mkv
+        Suit Gundam Wing - S00E008 - Endless Waltz- Movie Bluray-1080p Remux.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
       Symlinked: anime/staging/Mobile Suit Gundam Wing/Season 00/Mobile Suit Gundam
-        Wing - S00E008 - Endless Waltz- Movie Bluray-1080p.mkv -> ../../../../movies/foreign/Gundam
+        Wing - S00E008 - Endless Waltz- Movie Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Gundam
         Wing- Endless Waltz (1998)/\xe6\x96\xb0\xe6\xa9\x9f\xe5\x8b\x95\xe6\x88\xa6\xe8\xa8\x98\xe3\x82\xac\xe3\x83\xb3\xe3\x83\x80\xe3\x83\xa0W
-        Endless Waltz (1998) Bluray-1080p.mkv
+        Endless Waltz (1998) Remux-1080p.mkv
       Title: Endless Waltz- Movie
   Symlink Target: "/var/data/media/video/movies/foreign/Gundam Wing- Endless Waltz\
     \ (1998)/\u65B0\u6A5F\u52D5\u6226\u8A18\u30AC\u30F3\u30C0\u30E0W Endless Waltz\
@@ -5887,10 +5763,9 @@ Hokuto no Ken - Raoh Den Junai Hen (2006):
 Inside The X-Files (1998):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Inside The X-Files (1998)
-  Parsed Movie Extension: mp4
-  Parsed Movie File: /var/data/media/video/movies/staging/Inside The X-Files (1998)/Inside
-    The X-Files (1998) DVD.mp4
-  Parsed Movie Quality: DVD.mp4
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Inside The X-Files
     (1998)
   Relative Movie File Path: ''
@@ -5908,14 +5783,11 @@ Inside The X-Files (1998):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/scifi/The X-Files/Season 00/The X-Files - S00E04 - Inside
         the X-Files
-      Relative Show File Path: tv/scifi/The X-Files/Season 00/The X-Files - S00E04
-        - Inside the X-Files DVD.mp4
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: tv/scifi/The X-Files/Season 00/The X-Files - S00E04 - Inside the
-        X-Files DVD.mp4 -> ../../../../movies/staging/Inside The X-Files (1998)/Inside
-        The X-Files (1998) DVD.mp4
+      Symlinked: ''
       Title: Inside the X-Files
   Unparsed Movie Title: Inside The X-Files (1998)
 Inuyasha the Movie 2- The Castle Beyond the Looking Glass (2002):
@@ -6092,10 +5964,9 @@ Jeff Dunham - All Over the Map (2014):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham - All
     Over the Map (2014)
-  Parsed Movie Extension: mp4
-  Parsed Movie File: /var/data/media/video/movies/standup_comedy/Jeff Dunham - All
-    Over the Map (2014)/Jeff Dunham- All Over the Map (2014) Bluray-1080p.mp4
-  Parsed Movie Quality: Bluray-1080p.mp4
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham
     - All Over the Map (2014)
   Relative Movie File Path: ''
@@ -6113,14 +5984,11 @@ Jeff Dunham - All Over the Map (2014):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/staging/The Jeff Dunham Show/Season 00/The Jeff Dunham
         Show - S00E08 - All Over the Map
-      Relative Show File Path: tv/staging/The Jeff Dunham Show/Season 00/The Jeff
-        Dunham Show - S00E08 - All Over the Map Bluray-1080p.mp4
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: tv/staging/The Jeff Dunham Show/Season 00/The Jeff Dunham Show -
-        S00E08 - All Over the Map Bluray-1080p.mp4 -> ../../../../movies/standup_comedy/Jeff
-        Dunham - All Over the Map (2014)/Jeff Dunham- All Over the Map (2014) Bluray-1080p.mp4
+      Symlinked: ''
       Title: All Over the Map
   Unparsed Movie Title: Jeff Dunham - All Over the Map (2014)
 Jeff Dunham - Arguing with Myself (2006):
@@ -6164,10 +6032,9 @@ Jeff Dunham - Birth of a Dummy (2011):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham - Birth
     of a Dummy (2011)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/standup_comedy/Jeff Dunham - Birth
-    of a Dummy (2011)/Jeff Dunham- Birth of a Dummy (2011) HDTV-720p Proper.mkv
-  Parsed Movie Quality: HDTV-720p Proper.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham
     - Birth of a Dummy (2011)
   Relative Movie File Path: ''
@@ -6185,15 +6052,11 @@ Jeff Dunham - Birth of a Dummy (2011):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/staging/The Jeff Dunham Show/Season 00/The Jeff Dunham
         Show - S00E05 - Birth of a Dummy
-      Relative Show File Path: tv/staging/The Jeff Dunham Show/Season 00/The Jeff
-        Dunham Show - S00E05 - Birth of a Dummy HDTV-720p Proper.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: tv/staging/The Jeff Dunham Show/Season 00/The Jeff Dunham Show -
-        S00E05 - Birth of a Dummy HDTV-720p Proper.mkv -> ../../../../movies/standup_comedy/Jeff
-        Dunham - Birth of a Dummy (2011)/Jeff Dunham- Birth of a Dummy (2011) HDTV-720p
-        Proper.mkv
+      Symlinked: ''
       Title: Birth of a Dummy
   Unparsed Movie Title: Jeff Dunham - Birth of a Dummy (2011)
 Jeff Dunham - Controlled Chaos (2011):
@@ -7032,10 +6895,9 @@ March Comes in Like a Lion (2017):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/March Comes in Like a
     Lion (2017)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/March Comes in Like a Lion\
-    \ (2017)/3\u6708\u306E\u30E9\u30A4\u30AA\u30F3 \u524D\u7DE8 (2017) Bluray-1080p.mkv"
-  Parsed Movie Quality: Bluray-1080p.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/March Comes in Like
     a Lion (2017)
   Relative Movie File Path: ''
@@ -7053,25 +6915,19 @@ March Comes in Like a Lion (2017):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/March Comes in Like a Lion/Season 00/March
         Comes in Like a Lion - S00E003 - March Comes in Like a Lion Live Action Movie
-      Relative Show File Path: anime/staging/March Comes in Like a Lion/Season 00/March
-        Comes in Like a Lion - S00E003 - March Comes in Like a Lion Live Action Movie
-        Bluray-1080p.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/staging/March Comes in Like a Lion/Season 00/March Comes in
-        Like a Lion - S00E003 - March Comes in Like a Lion Live Action Movie Bluray-1080p.mkv
-        -> ../../../../movies/foreign/March Comes in Like a Lion (2017)/3\xe6\x9c\x88\xe3\x81\xae\xe3\x83\xa9\xe3\x82\xa4\xe3\x82\xaa\xe3\x83\xb3
-        \xe5\x89\x8d\xe7\xb7\xa8 (2017) Bluray-1080p.mkv
+      Symlinked: ''
       Title: March Comes in Like a Lion Live Action Movie
   Unparsed Movie Title: March Comes in Like a Lion (2017)
 Merlin's Apprentice (2006):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Merlin's Apprentice (2006)
-  Parsed Movie Extension: avi
-  Parsed Movie File: /var/data/media/video/movies/staging/Merlin's Apprentice (2006)/Merlin's
-    Apprentice (2005) DVD.avi
-  Parsed Movie Quality: DVD.avi
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Merlin's Apprentice
     (2006)
   Relative Movie File Path: ''
@@ -7089,14 +6945,11 @@ Merlin's Apprentice (2006):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/staging/Merlin (1998)/Season 00/Merlin (1998) - S00E02
         - Merlins Apprentice
-      Relative Show File Path: tv/staging/Merlin (1998)/Season 00/Merlin (1998) -
-        S00E02 - Merlins Apprentice DVD.avi
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: tv/staging/Merlin (1998)/Season 00/Merlin (1998) - S00E02 - Merlins
-        Apprentice DVD.avi -> ../../../../movies/staging/Merlin\\s Apprentice (2006)/Merlin\\s
-        Apprentice (2005) DVD.avi
+      Symlinked: ''
       Title: Merlins Apprentice
   Unparsed Movie Title: Merlin's Apprentice (2006)
 Merlin- The Return (2000):
@@ -7177,11 +7030,9 @@ Mobile Suit Gundam 00 Special Edition I- Celestial Being (2009):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam 00
     Special Edition I- Celestial Being (2009)
-  Parsed Movie Extension: mp4
-  Parsed Movie File: /var/data/media/video/movies/foreign/Mobile Suit Gundam 00 Special
-    Edition I- Celestial Being (2009)/Mobile Suit Gundam 00 Special Edition I- Celestial
-    Being (2009) Bluray-1080p.mp4
-  Parsed Movie Quality: Bluray-1080p.mp4
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam
     00 Special Edition I- Celestial Being (2009)
   Relative Movie File Path: ''
@@ -7200,26 +7051,20 @@ Mobile Suit Gundam 00 Special Edition I- Celestial Being (2009):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Mobile Suit Gundam 00/Season 00/Mobile Suit
         Gundam 00 - S00E004 - Special Edition I- Celestial Being
-      Relative Show File Path: anime/staging/Mobile Suit Gundam 00/Season 00/Mobile
-        Suit Gundam 00 - S00E004 - Special Edition I- Celestial Being Bluray-1080p.mp4
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/staging/Mobile Suit Gundam 00/Season 00/Mobile Suit Gundam
-        00 - S00E004 - Special Edition I- Celestial Being Bluray-1080p.mp4 -> ../../../../movies/foreign/Mobile
-        Suit Gundam 00 Special Edition I- Celestial Being (2009)/Mobile Suit Gundam
-        00 Special Edition I- Celestial Being (2009) Bluray-1080p.mp4
+      Symlinked: ''
       Title: Special Edition I- Celestial Being
   Unparsed Movie Title: Mobile Suit Gundam 00 Special Edition I- Celestial Being (2009)
 Mobile Suit Gundam 00 Special Edition II- End of World (2009):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam 00
     Special Edition II- End of World (2009)
-  Parsed Movie Extension: mp4
-  Parsed Movie File: /var/data/media/video/movies/foreign/Mobile Suit Gundam 00 Special
-    Edition II- End of World (2009)/Mobile Suit Gundam 00 Special Edition II- End
-    of World (2009) Bluray-1080p.mp4
-  Parsed Movie Quality: Bluray-1080p.mp4
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam
     00 Special Edition II- End of World (2009)
   Relative Movie File Path: ''
@@ -7238,26 +7083,20 @@ Mobile Suit Gundam 00 Special Edition II- End of World (2009):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Mobile Suit Gundam 00/Season 00/Mobile Suit
         Gundam 00 - S00E005 - Special Edition II- End of World
-      Relative Show File Path: anime/staging/Mobile Suit Gundam 00/Season 00/Mobile
-        Suit Gundam 00 - S00E005 - Special Edition II- End of World Bluray-1080p.mp4
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/staging/Mobile Suit Gundam 00/Season 00/Mobile Suit Gundam
-        00 - S00E005 - Special Edition II- End of World Bluray-1080p.mp4 -> ../../../../movies/foreign/Mobile
-        Suit Gundam 00 Special Edition II- End of World (2009)/Mobile Suit Gundam
-        00 Special Edition II- End of World (2009) Bluray-1080p.mp4
+      Symlinked: ''
       Title: Special Edition II- End of World
   Unparsed Movie Title: Mobile Suit Gundam 00 Special Edition II- End of World (2009)
 Mobile Suit Gundam 00 Special Edition III- Return The World (2010):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam 00
     Special Edition III- Return The World (2010)
-  Parsed Movie Extension: mp4
-  Parsed Movie File: /var/data/media/video/movies/foreign/Mobile Suit Gundam 00 Special
-    Edition III- Return The World (2010)/Mobile Suit Gundam 00 Special Edition III-
-    Return The World (2010) Bluray-1080p.mp4
-  Parsed Movie Quality: Bluray-1080p.mp4
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam
     00 Special Edition III- Return The World (2010)
   Relative Movie File Path: ''
@@ -7276,16 +7115,11 @@ Mobile Suit Gundam 00 Special Edition III- Return The World (2010):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Mobile Suit Gundam 00/Season 00/Mobile Suit
         Gundam 00 - S00E006 - Special Edition III- Return of the World
-      Relative Show File Path: anime/staging/Mobile Suit Gundam 00/Season 00/Mobile
-        Suit Gundam 00 - S00E006 - Special Edition III- Return of the World Bluray-1080p.mp4
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/staging/Mobile Suit Gundam 00/Season 00/Mobile Suit Gundam
-        00 - S00E006 - Special Edition III- Return of the World Bluray-1080p.mp4 ->
-        ../../../../movies/foreign/Mobile Suit Gundam 00 Special Edition III- Return
-        The World (2010)/Mobile Suit Gundam 00 Special Edition III- Return The World
-        (2010) Bluray-1080p.mp4
+      Symlinked: ''
       Title: Special Edition III- Return of the World
   Unparsed Movie Title: Mobile Suit Gundam 00 Special Edition III- Return The World
     (2010)
@@ -7988,11 +7822,9 @@ Mobile Suit Gundam- Char's Counterattack (1988):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam- Char's
     Counterattack (1988)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Mobile Suit Gundam- Char's\
-    \ Counterattack (1988)/\u6A5F\u52D5\u6226\u58EB\u30AC\u30F3\u30C0\u30E0 \u9006\
-    \u8972\u306E\u30B7\u30E3\u30A2 (1988) Remux-1080p.mkv"
-  Parsed Movie Quality: Bluray-1080p Remux.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam-
     Char's Counterattack (1988)
   Relative Movie File Path: ''
@@ -8010,16 +7842,11 @@ Mobile Suit Gundam- Char's Counterattack (1988):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Mobile Suit Gundam/Season 00/Mobile Suit Gundam
         - S00E004 - Mobile Suit Gundam- Char's Counterattack
-      Relative Show File Path: anime/staging/Mobile Suit Gundam/Season 00/Mobile Suit
-        Gundam - S00E004 - Mobile Suit Gundam- Char's Counterattack Bluray-1080p Remux.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/staging/Mobile Suit Gundam/Season 00/Mobile Suit Gundam - S00E004
-        - Mobile Suit Gundam- Char\s Counterattack Bluray-1080p Remux.mkv" -> \../../../../movies/foreign/Mobile
-        Suit Gundam- Char\\\\\s Counterattack (1988)/\xe6\xa9\x9f\xe5\x8b\x95\xe6\x88\xa6\xe5\xa3\xab\xe3\x82\xac\xe3\x83\xb3\xe3\x83\x80\xe3\x83\xa0
-        \xe9\x80\x86\xe8\xa5\xb2\xe3\x81\xae\xe3\x82\xb7\xe3\x83\xa3\xe3\x82\xa2 (1988)
-        Remux-1080p.mkv
+      Symlinked: ''
       Title: Mobile Suit Gundam- Char's Counterattack
     Mobile Suit Gundam 0079:
       Absolute Episode: ''
@@ -8033,18 +7860,11 @@ Mobile Suit Gundam- Char's Counterattack (1988):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Mobile Suit Gundam 0079/Season 00/Mobile Suit
         Gundam 0079 - S00E004 - Mobile Suit Gundam- Char's Counterattack
-      Relative Show File Path: anime/staging/Mobile Suit Gundam 0079/Season 00/Mobile
-        Suit Gundam 0079 - S00E004 - Mobile Suit Gundam- Char's Counterattack Bluray-1080p
-        Remux.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/staging/Mobile Suit Gundam 0079/Season 00/Mobile Suit Gundam
-        0079 - S00E004 - Mobile Suit Gundam- Char\s Counterattack Bluray-1080p Remux.mkv"
-        -> \../../../../movies/foreign/Mobile Suit Gundam- Char\\\\\s Counterattack
-        (1988)/\xe6\xa9\x9f\xe5\x8b\x95\xe6\x88\xa6\xe5\xa3\xab\xe3\x82\xac\xe3\x83\xb3\xe3\x83\x80\xe3\x83\xa0
-        \xe9\x80\x86\xe8\xa5\xb2\xe3\x81\xae\xe3\x82\xb7\xe3\x83\xa3\xe3\x82\xa2 (1988)
-        Remux-1080p.mkv
+      Symlinked: ''
       Title: Mobile Suit Gundam- Char's Counterattack
   Unparsed Movie Title: Mobile Suit Gundam- Char's Counterattack (1988)
 Mobile Suit Gundam- The 08th MS Team - Miller's Report (1998):
@@ -8083,10 +7903,9 @@ Monster Musume no Iru Nichijou OVA (2016):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Monster Musume no Iru
     Nichijou OVA (2016)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Monster Musume no Iru Nichijou
-    OVA (2016)/Monster Musume no Iru Nichijou OVA (2016) Bluray-1080p.mkv
-  Parsed Movie Quality: Bluray-1080p.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Monster Musume no
     Iru Nichijou OVA (2016)
   Relative Movie File Path: ''
@@ -8105,17 +7924,11 @@ Monster Musume no Iru Nichijou OVA (2016):
       Parsed Show Title: anime/staging/Monster Musume- Everyday Life with Monster
         Girls/Season 00/Monster Musume- Everyday Life with Monster Girls - S00E073
         (E013) - Everyday Life at the Gym's Pool
-      Relative Show File Path: anime/staging/Monster Musume- Everyday Life with Monster
-        Girls/Season 00/Monster Musume- Everyday Life with Monster Girls - S00E073
-        (E013) - Everyday Life at the Gym's Pool Bluray-1080p.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/staging/Monster Musume- Everyday Life with Monster Girls/Season
-        00/Monster Musume- Everyday Life with Monster Girls - S00E073 (E013) - Everyday
-        Life at the Gym\\s Pool Bluray-1080p.mkv -> ../../../../movies/foreign/Monster
-        Musume no Iru Nichijou OVA (2016)/Monster Musume no Iru Nichijou OVA (2016)
-        Bluray-1080p.mkv
+      Symlinked: ''
       Title: Everyday Life at the Gym's Pool
   Unparsed Movie Title: Monster Musume no Iru Nichijou OVA (2016)
 Mushishi- The Next Chapter - Drops of Bells (2015):
@@ -9403,10 +9216,9 @@ One Piece - Strong World Episode 0 (2010):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Strong World
     Episode 0 (2010)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece - Strong World
-    Episode 0 (2010)/One Piece- Strong World Episode 0 (2010) DVD.mkv
-  Parsed Movie Quality: DVD.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Strong
     World Episode 0 (2010)
   Relative Movie File Path: ''
@@ -9424,14 +9236,11 @@ One Piece - Strong World Episode 0 (2010):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/One Piece/Season 00/One Piece - S00E020 - Strong
         World Episode 0
-      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E020
-        - Strong World Episode 0 DVD.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/shounen/One Piece/Season 00/One Piece - S00E020 - Strong World
-        Episode 0 DVD.mkv -> ../../../../movies/foreign/One Piece - Strong World Episode
-        0 (2010)/One Piece- Strong World Episode 0 (2010) DVD.mkv
+      Symlinked: ''
       Title: Strong World Episode 0
   Unparsed Movie Title: One Piece - Strong World Episode 0 (2010)
 One Piece - The Desert Princess and the Pirates - Adventure in Alabasta (2007):
@@ -9597,11 +9406,9 @@ One Piece Episode of East Blue Luffy and His 4 Crewmate's Big Adventure (2017):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece Episode of East
     Blue Luffy and His 4 Crewmate's Big Adventure (2017)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece Episode of East
-    Blue Luffy and His 4 Crewmate's Big Adventure (2017)/One Piece Episode of East
-    Blue Luffy and His 4 Crewmate's Big Adventure (2017) Bluray-1080p.mkv
-  Parsed Movie Quality: Bluray-1080p.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece Episode
     of East Blue Luffy and His 4 Crewmate's Big Adventure (2017)
   Relative Movie File Path: ''
@@ -9620,16 +9427,11 @@ One Piece Episode of East Blue Luffy and His 4 Crewmate's Big Adventure (2017):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/One Piece/Season 00/One Piece - S00E037 - Episode
         of East Blue - Luffy and His Four Crewmates' Great Adventure
-      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E037
-        - Episode of East Blue - Luffy and His Four Crewmates' Great Adventure Bluray-1080p.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/shounen/One Piece/Season 00/One Piece - S00E037 - Episode of
-        East Blue - Luffy and His Four Crewmates\ Great Adventure Bluray-1080p.mkv"
-        -> \../../../../movies/foreign/One Piece Episode of East Blue Luffy and His
-        4 Crewmate\\\\\s Big Adventure (2017)/One Piece Episode of East Blue Luffy
-        and His 4 Crewmate\\\\\s Big Adventure (2017) Bluray-1080p.mkv
+      Symlinked: ''
       Title: Episode of East Blue - Luffy and His Four Crewmates' Great Adventure
   Unparsed Movie Title: One Piece Episode of East Blue Luffy and His 4 Crewmate's
     Big Adventure (2017)
@@ -10312,10 +10114,9 @@ Prison School- Mad Wax (2016):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Prison School- Mad Wax
     (2016)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Prison School- Mad Wax (2016)/Prison
-    School- Mad Wax (2016) DVD.mkv
-  Parsed Movie Quality: DVD.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Prison School- Mad
     Wax (2016)
   Relative Movie File Path: ''
@@ -10333,14 +10134,11 @@ Prison School- Mad Wax (2016):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Prison School/Season 00/Prison School - S00E001
         (E013) - Mad Wax
-      Relative Show File Path: anime/staging/Prison School/Season 00/Prison School
-        - S00E001 (E013) - Mad Wax DVD.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/staging/Prison School/Season 00/Prison School - S00E001 (E013)
-        - Mad Wax DVD.mkv -> ../../../../movies/foreign/Prison School- Mad Wax (2016)/Prison
-        School- Mad Wax (2016) DVD.mkv
+      Symlinked: ''
       Title: Mad Wax
   Unparsed Movie Title: Prison School- Mad Wax (2016)
 Psych- The Movie (2017):
@@ -10448,12 +10246,9 @@ Puella Magi Madoka Magica the Movie Part I- Beginnings (2012):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Puella Magi Madoka Magica
     the Movie Part I- Beginnings (2012)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Puella Magi Madoka Magica\
-    \ the Movie Part I- Beginnings (2012)/\u5287\u5834\u7248 \u9B54\u6CD5\u5C11\u5973\
-    \u307E\u3069\u304B\u2606\u30DE\u30AE\u30AB [\u524D\u7DE8] \u59CB\u307E\u308A\u306E\
-    \u7269\u8A9E (2012) Remux-1080p.mkv"
-  Parsed Movie Quality: Bluray-1080p Remux.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Puella Magi Madoka
     Magica the Movie Part I- Beginnings (2012)
   Relative Movie File Path: ''
@@ -10473,30 +10268,20 @@ Puella Magi Madoka Magica the Movie Part I- Beginnings (2012):
       Parsed Show Title: anime/staging/Puella Magi Madoka Magica/Season 00/Puella
         Magi Madoka Magica - S00E001 (E013) - Madoka Magica the Movie Part I- The
         Beginning Story
-      Relative Show File Path: anime/staging/Puella Magi Madoka Magica/Season 00/Puella
-        Magi Madoka Magica - S00E001 (E013) - Madoka Magica the Movie Part I- The
-        Beginning Story Bluray-1080p Remux.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/staging/Puella Magi Madoka Magica/Season 00/Puella Magi Madoka
-        Magica - S00E001 (E013) - Madoka Magica the Movie Part I- The Beginning Story
-        Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Puella Magi Madoka Magica
-        the Movie Part I- Beginnings (2012)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88 \xe9\xad\x94\xe6\xb3\x95\xe5\xb0\x91\xe5\xa5\xb3\xe3\x81\xbe\xe3\x81\xa9\xe3\x81\x8b\xe2\x98\x86\xe3\x83\x9e\xe3\x82\xae\xe3\x82\xab
-        [\xe5\x89\x8d\xe7\xb7\xa8] \xe5\xa7\x8b\xe3\x81\xbe\xe3\x82\x8a\xe3\x81\xae\xe7\x89\xa9\xe8\xaa\x9e
-        (2012) Remux-1080p.mkv
+      Symlinked: ''
       Title: Madoka Magica the Movie Part I- The Beginning Story
   Unparsed Movie Title: Puella Magi Madoka Magica the Movie Part I- Beginnings (2012)
 Puella Magi Madoka Magica the Movie Part II- Eternal (2012):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Puella Magi Madoka Magica
     the Movie Part II- Eternal (2012)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Puella Magi Madoka Magica\
-    \ the Movie Part II- Eternal (2012)/\u5287\u5834\u7248 \u9B54\u6CD5\u5C11\u5973\
-    \u307E\u3069\u304B\u2606\u30DE\u30AE\u30AB[\u5F8C\u7DE8] \u6C38\u9060\u306E\u7269\
-    \u8A9E (2012) Remux-1080p.mkv"
-  Parsed Movie Quality: Bluray-1080p Remux.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Puella Magi Madoka
     Magica the Movie Part II- Eternal (2012)
   Relative Movie File Path: ''
@@ -10516,29 +10301,20 @@ Puella Magi Madoka Magica the Movie Part II- Eternal (2012):
       Parsed Show Title: anime/staging/Puella Magi Madoka Magica/Season 00/Puella
         Magi Madoka Magica - S00E002 (E013) - Madoka Magica the Movie Part II- The
         Eternal Story
-      Relative Show File Path: anime/staging/Puella Magi Madoka Magica/Season 00/Puella
-        Magi Madoka Magica - S00E002 (E013) - Madoka Magica the Movie Part II- The
-        Eternal Story Bluray-1080p Remux.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/staging/Puella Magi Madoka Magica/Season 00/Puella Magi Madoka
-        Magica - S00E002 (E013) - Madoka Magica the Movie Part II- The Eternal Story
-        Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Puella Magi Madoka Magica
-        the Movie Part II- Eternal (2012)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88 \xe9\xad\x94\xe6\xb3\x95\xe5\xb0\x91\xe5\xa5\xb3\xe3\x81\xbe\xe3\x81\xa9\xe3\x81\x8b\xe2\x98\x86\xe3\x83\x9e\xe3\x82\xae\xe3\x82\xab[\xe5\xbe\x8c\xe7\xb7\xa8]
-        \xe6\xb0\xb8\xe9\x81\xa0\xe3\x81\xae\xe7\x89\xa9\xe8\xaa\x9e (2012) Remux-1080p.mkv
+      Symlinked: ''
       Title: Madoka Magica the Movie Part II- The Eternal Story
   Unparsed Movie Title: Puella Magi Madoka Magica the Movie Part II- Eternal (2012)
 Puella Magi Madoka Magica the Movie Part III- Rebellion (2013):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Puella Magi Madoka Magica
     the Movie Part III- Rebellion (2013)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Puella Magi Madoka Magica\
-    \ the Movie Part III- Rebellion (2013)/\u5287\u5834\u7248 \u9B54\u6CD5\u5C11\u5973\
-    \u307E\u3069\u304B\u2606\u30DE\u30AE\u30AB[\u65B0\u7DE8]\u53DB\u9006\u306E\u7269\
-    \u8A9E (2013) Remux-1080p.mkv"
-  Parsed Movie Quality: Bluray-1080p Remux.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Puella Magi Madoka
     Magica the Movie Part III- Rebellion (2013)
   Relative Movie File Path: ''
@@ -10558,18 +10334,11 @@ Puella Magi Madoka Magica the Movie Part III- Rebellion (2013):
       Parsed Show Title: anime/staging/Puella Magi Madoka Magica/Season 00/Puella
         Magi Madoka Magica - S00E003 (E015) - Madoka Magica the Movie Part III- The
         Rebellion Story
-      Relative Show File Path: anime/staging/Puella Magi Madoka Magica/Season 00/Puella
-        Magi Madoka Magica - S00E003 (E015) - Madoka Magica the Movie Part III- The
-        Rebellion Story Bluray-1080p Remux.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/staging/Puella Magi Madoka Magica/Season 00/Puella Magi Madoka
-        Magica - S00E003 (E015) - Madoka Magica the Movie Part III- The Rebellion
-        Story Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Puella Magi Madoka
-        Magica the Movie Part III- Rebellion (2013)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88
-        \xe9\xad\x94\xe6\xb3\x95\xe5\xb0\x91\xe5\xa5\xb3\xe3\x81\xbe\xe3\x81\xa9\xe3\x81\x8b\xe2\x98\x86\xe3\x83\x9e\xe3\x82\xae\xe3\x82\xab[\xe6\x96\xb0\xe7\xb7\xa8]\xe5\x8f\x9b\xe9\x80\x86\xe3\x81\xae\xe7\x89\xa9\xe8\xaa\x9e
-        (2013) Remux-1080p.mkv
+      Symlinked: ''
       Title: Madoka Magica the Movie Part III- The Rebellion Story
   Unparsed Movie Title: Puella Magi Madoka Magica the Movie Part III- Rebellion (2013)
 Red Vs Blue-The Chorus Trilogy (0):
@@ -11700,10 +11469,9 @@ Saturday Night Live- Halloween (2003):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Saturday Night Live- Halloween
     (2003)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/Saturday Night Live- Halloween
-    (2003)/Saturday Night Live- Halloween (2003) WEBDL-1080p.mkv
-  Parsed Movie Quality: WEBDL-1080p.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Saturday Night Live-
     Halloween (2003)
   Relative Movie File Path: ''
@@ -11721,14 +11489,11 @@ Saturday Night Live- Halloween (2003):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/staging/Saturday Night Live/Season 00/Saturday Night Live
         - S00E21 - Halloween Special
-      Relative Show File Path: tv/staging/Saturday Night Live/Season 00/Saturday Night
-        Live - S00E21 - Halloween Special WEBDL-1080p.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: tv/staging/Saturday Night Live/Season 00/Saturday Night Live - S00E21
-        - Halloween Special WEBDL-1080p.mkv -> ../../../../movies/staging/Saturday
-        Night Live- Halloween (2003)/Saturday Night Live- Halloween (2003) WEBDL-1080p.mkv
+      Symlinked: ''
       Title: Halloween Special
   Unparsed Movie Title: Saturday Night Live- Halloween (2003)
 Saturday Night Live- Thanksgiving (2013):
@@ -12699,10 +12464,9 @@ Stargate SG-1- True Science (2006):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Stargate SG-1- True Science
     (2006)
-  Parsed Movie Extension: avi
-  Parsed Movie File: /var/data/media/video/movies/staging/Stargate SG-1- True Science
-    (2006)/Stargate SG-1- True Science (2006) SDTV.avi
-  Parsed Movie Quality: SDTV.avi
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Stargate SG-1- True
     Science (2006)
   Relative Movie File Path: ''
@@ -12720,14 +12484,11 @@ Stargate SG-1- True Science (2006):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/scifi/Stargate SG-1/Season 00/Stargate SG-1 - S00E04 -
         Stargate SG-1 - True Science
-      Relative Show File Path: tv/scifi/Stargate SG-1/Season 00/Stargate SG-1 - S00E04
-        - Stargate SG-1 - True Science SDTV.avi
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: tv/scifi/Stargate SG-1/Season 00/Stargate SG-1 - S00E04 - Stargate
-        SG-1 - True Science SDTV.avi -> ../../../../movies/staging/Stargate SG-1-
-        True Science (2006)/Stargate SG-1- True Science (2006) SDTV.avi
+      Symlinked: ''
       Title: Stargate SG-1 - True Science
   Unparsed Movie Title: Stargate SG-1- True Science (2006)
 Stargate- Base Gamma (2017):
@@ -12849,10 +12610,9 @@ Steins;Gate- Egoistic Poriomania (2012):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Steins;Gate- Egoistic
     Poriomania (2012)
-  Parsed Movie Extension: mp4
-  Parsed Movie File: /var/data/media/video/movies/foreign/Steins;Gate- Egoistic Poriomania
-    (2012)/Steins;Gate- Egoistic Poriomania (2012) WEBDL-1080p.mp4
-  Parsed Movie Quality: WEBDL-1080p.mp4
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: ''
   Relative Movie File Path: ''
   Relative Movie Path: movies/foreign/Steins;Gate- Egoistic Poriomania (2012)
@@ -12869,14 +12629,11 @@ Steins;Gate- Egoistic Poriomania (2012):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Steins;Gate/Season 00/Steins;Gate - S00E001
         (E025) - Egoistic Poriomania
-      Relative Show File Path: anime/staging/Steins;Gate/Season 00/Steins;Gate - S00E001
-        (E025) - Egoistic Poriomania WEBDL-1080p.mp4
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/staging/Steins;Gate/Season 00/Steins;Gate - S00E001 (E025)
-        - Egoistic Poriomania WEBDL-1080p.mp4 -> ../../../../movies/foreign/Steins;Gate-
-        Egoistic Poriomania (2012)/Steins;Gate- Egoistic Poriomania (2012) WEBDL-1080p.mp4
+      Symlinked: ''
       Title: Egoistic Poriomania
   Unparsed Movie Title: Steins;Gate- Egoistic Poriomania (2012)
 "Steins;Gate- The Movie \u2212 Load Region of D\xE9j\xE0 Vu (2013)":
@@ -13137,10 +12894,9 @@ The Batman vs. Dracula (2005):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/horror/The Batman vs. Dracula
     (2005)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/horror/The Batman vs. Dracula (2005)/The
-    Batman vs. Dracula (2005) WEBDL-1080p.mkv
-  Parsed Movie Quality: WEBDL-1080p.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/horror/The Batman vs. Dracula
     (2005)
   Relative Movie File Path: ''
@@ -13158,23 +12914,19 @@ The Batman vs. Dracula (2005):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/superhero/The Batman/Season 00/The Batman - S00E02 - The
         Batman vs. Dracula
-      Relative Show File Path: tv/superhero/The Batman/Season 00/The Batman - S00E02
-        - The Batman vs. Dracula WEBDL-1080p.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: tv/superhero/The Batman/Season 00/The Batman - S00E02 - The Batman
-        vs. Dracula WEBDL-1080p.mkv -> ../../../../movies/horror/The Batman vs. Dracula
-        (2005)/The Batman vs. Dracula (2005) WEBDL-1080p.mkv
+      Symlinked: ''
       Title: The Batman vs. Dracula
   Unparsed Movie Title: The Batman vs. Dracula (2005)
 The Cage (1965):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/The Cage (1965)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/The Cage (1965)/Star Trek-
-    The Cage (1965) Bluray-1080p.mkv
-  Parsed Movie Quality: Bluray-1080p.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/The Cage (1965)
   Relative Movie File Path: ''
   Relative Movie Path: movies/staging/The Cage (1965)
@@ -13191,14 +12943,11 @@ The Cage (1965):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/scifi/Star Trek/Season 00/Star Trek - S00E01 - The Cage
         (Original Pilot)
-      Relative Show File Path: tv/scifi/Star Trek/Season 00/Star Trek - S00E01 - The
-        Cage (Original Pilot) Bluray-1080p.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: tv/scifi/Star Trek/Season 00/Star Trek - S00E01 - The Cage (Original
-        Pilot) Bluray-1080p.mkv -> ../../../../movies/staging/The Cage (1965)/Star
-        Trek- The Cage (1965) Bluray-1080p.mkv
+      Symlinked: ''
       Title: The Cage (Original Pilot)
   Unparsed Movie Title: The Cage (1965)
 The Dark Knight's First Night (1991):
@@ -13236,10 +12985,9 @@ The Day Naruto Became Hokage (2016):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/The Day Naruto Became
     Hokage (2016)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/The Day Naruto Became Hokage
-    (2016)/The Day Naruto Became Hokage (2016) Bluray-1080p.mkv
-  Parsed Movie Quality: Bluray-1080p.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/The Day Naruto Became
     Hokage (2016)
   Relative Movie File Path: ''
@@ -13257,16 +13005,11 @@ The Day Naruto Became Hokage (2016):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Boruto- Naruto Next Generations/Season 00/Boruto-
         Naruto Next Generations - S00E002 - The Day Naruto Became Hokage
-      Relative Show File Path: anime/shounen/Boruto- Naruto Next Generations/Season
-        00/Boruto- Naruto Next Generations - S00E002 - The Day Naruto Became Hokage
-        Bluray-1080p.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/shounen/Boruto- Naruto Next Generations/Season 00/Boruto- Naruto
-        Next Generations - S00E002 - The Day Naruto Became Hokage Bluray-1080p.mkv
-        -> ../../../../movies/foreign/The Day Naruto Became Hokage (2016)/The Day
-        Naruto Became Hokage (2016) Bluray-1080p.mkv
+      Symlinked: ''
       Title: The Day Naruto Became Hokage
     Naruto Shippuuden:
       Absolute Episode: ''
@@ -13280,14 +13023,11 @@ The Day Naruto Became Hokage (2016):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Naruto Shippuuden/Season 00/Naruto Shippuuden
         - S00E014 - OVA- The Day Naruto Became Hokage
-      Relative Show File Path: anime/shounen/Naruto Shippuuden/Season 00/Naruto Shippuuden
-        - S00E014 - OVA- The Day Naruto Became Hokage Bluray-1080p.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/shounen/Naruto Shippuuden/Season 00/Naruto Shippuuden - S00E014
-        - OVA- The Day Naruto Became Hokage Bluray-1080p.mkv -> ../../../../movies/foreign/The
-        Day Naruto Became Hokage (2016)/The Day Naruto Became Hokage (2016) Bluray-1080p.mkv
+      Symlinked: ''
       Title: OVA- The Day Naruto Became Hokage
   Unparsed Movie Title: The Day Naruto Became Hokage (2016)
 The Dukes of Hazzard- Hazzard in Hollywood (2000):
@@ -13797,11 +13537,9 @@ The Seven Deadly Sins - Prisoners of the Sky (2018):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/The Seven Deadly Sins
     - Prisoners of the Sky (2018)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/The Seven Deadly Sins -\
-    \ Prisoners of the Sky (2018)/\u5287\u5834\u7248 \u4E03\u3064\u306E\u5927\u7F6A\
-    \ \u5929\u7A7A\u306E\u56DA\u308F\u308C\u4EBA (2018) WEBDL-1080p.mkv"
-  Parsed Movie Quality: WEBDL-1080p.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/The Seven Deadly Sins
     - Prisoners of the Sky (2018)
   Relative Movie File Path: ''
@@ -13820,18 +13558,11 @@ The Seven Deadly Sins - Prisoners of the Sky (2018):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/The Seven Deadly Sins/Season 00/The Seven Deadly
         Sins - S00E009 - The Seven Deadly Sins Movie- Prisoners of the Sky
-      Relative Show File Path: anime/shounen/The Seven Deadly Sins/Season 00/The Seven
-        Deadly Sins - S00E009 - The Seven Deadly Sins Movie- Prisoners of the Sky
-        WEBDL-1080p.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/shounen/The Seven Deadly Sins/Season 00/The Seven Deadly Sins
-        - S00E009 - The Seven Deadly Sins Movie- Prisoners of the Sky WEBDL-1080p.mkv
-        -> ../../../../movies/foreign/The Seven Deadly Sins - Prisoners of the Sky
-        (2018)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88 \xe4\xb8\x83\xe3\x81\xa4\xe3\x81\xae\xe5\xa4\xa7\xe7\xbd\xaa
-        \xe5\xa4\xa9\xe7\xa9\xba\xe3\x81\xae\xe5\x9b\x9a\xe3\x82\x8f\xe3\x82\x8c\xe4\xba\xba
-        (2018) WEBDL-1080p.mkv
+      Symlinked: ''
       Title: The Seven Deadly Sins Movie- Prisoners of the Sky
   Unparsed Movie Title: The Seven Deadly Sins - Prisoners of the Sky (2018)
 The Seven Deadly Sins Movie (0):
@@ -15017,11 +14748,9 @@ Toriko 3D Movie- Kaimaku! Gourmet Adventure!! (2011):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Toriko 3D Movie- Kaimaku!
     Gourmet Adventure!! (2011)
-  Parsed Movie Extension: mp4
-  Parsed Movie File: /var/data/media/video/movies/foreign/Toriko 3D Movie- Kaimaku!
-    Gourmet Adventure!! (2011)/Toriko 3D Movie- Kaimaku! Gourmet Adventure!! (2011)
-    Bluray-1080p.mp4
-  Parsed Movie Quality: Bluray-1080p.mp4
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Toriko 3D Movie- Kaimaku!
     Gourmet Adventure!! (2011)
   Relative Movie File Path: ''
@@ -15040,15 +14769,11 @@ Toriko 3D Movie- Kaimaku! Gourmet Adventure!! (2011):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Toriko/Season 00/Toriko - S00E003 - Kaimaku
         Gourmet Adventure!!
-      Relative Show File Path: anime/staging/Toriko/Season 00/Toriko - S00E003 - Kaimaku
-        Gourmet Adventure!! Bluray-1080p.mp4
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/staging/Toriko/Season 00/Toriko - S00E003 - Kaimaku Gourmet
-        Adventure!! Bluray-1080p.mp4 -> ../../../../movies/foreign/Toriko 3D Movie-
-        Kaimaku! Gourmet Adventure!! (2011)/Toriko 3D Movie- Kaimaku! Gourmet Adventure!!
-        (2011) Bluray-1080p.mp4
+      Symlinked: ''
       Title: Kaimaku Gourmet Adventure!!
   Unparsed Movie Title: Toriko 3D Movie- Kaimaku! Gourmet Adventure!! (2011)
 Trigun - Badlands Rumble (2010):
@@ -15119,10 +14844,9 @@ Twilight Zone- The Movie (1983):
 Unlocking Sherlock (2014):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/thrillers/Unlocking Sherlock (2014)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/thrillers/Unlocking Sherlock (2014)/Unlocking
-    Sherlock (2014) WEBDL-720p.mkv
-  Parsed Movie Quality: WEBDL-720p.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/thrillers/Unlocking Sherlock
     (2014)
   Relative Movie File Path: ''
@@ -15140,14 +14864,11 @@ Unlocking Sherlock (2014):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/crime/Sherlock/Season 00/Sherlock - S00E05 - Unlocking
         Sherlock (2013)
-      Relative Show File Path: tv/crime/Sherlock/Season 00/Sherlock - S00E05 - Unlocking
-        Sherlock (2013) WEBDL-720p.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: tv/crime/Sherlock/Season 00/Sherlock - S00E05 - Unlocking Sherlock
-        (2013) WEBDL-720p.mkv -> ../../../../movies/thrillers/Unlocking Sherlock (2014)/Unlocking
-        Sherlock (2014) WEBDL-720p.mkv
+      Symlinked: ''
       Title: Unlocking Sherlock (2013)
   Unparsed Movie Title: Unlocking Sherlock (2014)
 Utawarerumono SUPER LIVE 2016 (2017):
@@ -15213,12 +14934,9 @@ Watashi ga Motenai no wa Dou Kangaetemo Omaera ga Warui!- Motenaishi, Nazomeite 
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Watashi ga Motenai no
     wa Dou Kangaetemo Omaera ga Warui!- Motenaishi, Nazomeite Miru (2014)
-  Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Watashi ga Motenai no wa
-    Dou Kangaetemo Omaera ga Warui!- Motenaishi, Nazomeite Miru (2014)/Watashi ga
-    Motenai no wa Dou Kangaetemo Omaera ga Warui!- Motenaishi, Nazomeite Miru (2014)
-    WEBDL-720p.mkv
-  Parsed Movie Quality: WEBDL-720p.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Watashi ga Motenai
     no wa Dou Kangaetemo Omaera ga Warui!- Motenaishi, Nazomeite Miru (2014)
   Relative Movie File Path: ''
@@ -15237,16 +14955,11 @@ Watashi ga Motenai no wa Dou Kangaetemo Omaera ga Warui!- Motenaishi, Nazomeite 
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/WATAMOTE/Season 00/WATAMOTE - S00E001 - Since
         I'm Not Popular, I'll Become an Enigma
-      Relative Show File Path: anime/staging/WATAMOTE/Season 00/WATAMOTE - S00E001
-        - Since I'm Not Popular, I'll Become an Enigma WEBDL-720p.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/staging/WATAMOTE/Season 00/WATAMOTE - S00E001 - Since I\m Not
-        Popular, I\ll Become an Enigma WEBDL-720p.mkv" -> \../../../../movies/foreign/Watashi
-        ga Motenai no wa Dou Kangaetemo Omaera ga Warui!- Motenaishi, Nazomeite Miru
-        (2014)/Watashi ga Motenai no wa Dou Kangaetemo Omaera ga Warui!- Motenaishi,
-        Nazomeite Miru (2014) WEBDL-720p.mkv
+      Symlinked: ''
       Title: Since I'm Not Popular, I'll Become an Enigma
   Unparsed Movie Title: Watashi ga Motenai no wa Dou Kangaetemo Omaera ga Warui!-
     Motenaishi, Nazomeite Miru (2014)
@@ -15610,11 +15323,9 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
   Absolute Movie File Path: ''
   Absolute Movie Path: "/var/data/media/video/movies/foreign/\u306F\u305F\u3089\u304F\
     \u7D30\u80DE \u7279\u5225\u7DE8 \u98A8\u90AA\u75C7\u5019\u7FA4 (2018)"
-  Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/\u306F\u305F\u3089\u304F\
-    \u7D30\u80DE \u7279\u5225\u7DE8 \u98A8\u90AA\u75C7\u5019\u7FA4 (2018)/Hataraku\
-    \ Saibou- Kaze Shoukougun (2018) Bluray-1080p.mkv"
-  Parsed Movie Quality: Bluray-1080p.mkv
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
   Raw Absolute Movie Path: "/var/data/media/video/movies/foreign/\u306F\u305F\u3089\
     \u304F\u7D30\u80DE \u7279\u5225\u7DE8 \u98A8\u90AA\u75C7\u5019\u7FA4 (2018)"
   Relative Movie File Path: ''
@@ -15633,15 +15344,11 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Cells at Work!/Season 00/Cells at Work! - S00E001
         (E014) - The Common Cold
-      Relative Show File Path: anime/staging/Cells at Work!/Season 00/Cells at Work!
-        - S00E001 (E014) - The Common Cold Bluray-1080p.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/staging/Cells at Work!/Season 00/Cells at Work! - S00E001 (E014)
-        - The Common Cold Bluray-1080p.mkv -> ../../../../movies/foreign/\xe3\x81\xaf\xe3\x81\x9f\xe3\x82\x89\xe3\x81\x8f\xe7\xb4\xb0\xe8\x83\x9e
-        \xe7\x89\xb9\xe5\x88\xa5\xe7\xb7\xa8 \xe9\xa2\xa8\xe9\x82\xaa\xe7\x97\x87\xe5\x80\x99\xe7\xbe\xa4
-        (2018)/Hataraku Saibou- Kaze Shoukougun (2018) Bluray-1080p.mkv
+      Symlinked: ''
       Title: The Common Cold
   Unparsed Movie Title: "\u306F\u305F\u3089\u304F\u7D30\u80DE \u7279\u5225\u7DE8 \u98A8\
     \u90AA\u75C7\u5019\u7FA4 (2018)"
