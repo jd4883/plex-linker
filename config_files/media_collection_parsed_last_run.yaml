@@ -30,15 +30,16 @@
   Symlink Target: /var/data/media/video/movies/thrillers/24- Redemption (2008)/24-
     Redemption (2008) Bluray-1080p.mkv
   Unparsed Movie Title: 24- Redemption (2008)
-6 Days To Air- The Making Of South Park (2011):
+6 Days to Air- The Making of South Park (2011):
   Absolute Movie File Path: ''
-  Absolute Movie Path: '/var/data/media/video/movies/staging/6 Days To Air: The Making
-    Of South Park (2011)'
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Absolute Movie Path: /var/data/media/video/movies/staging/6 Days to Air- The Making
+    of South Park (2011)
+  Parsed Movie Extension: mkv
+  Parsed Movie File: 6 Days to Air- The Making of South Park (2011) Bluray-1080p.mkv
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: ''
-  Relative Movie Path: 'movies/staging/6 Days To Air: The Making Of South Park (2011)'
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/staging/6 Days to Air- The Making of South Park (2011)
   Shows:
     South Park:
       Absolute Episode: ''
@@ -52,13 +53,17 @@
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/animated/South Park/Season 00/South Park - S00E41 - Six
         Days to Air- The Making of South Park
-      Relative Show File Path: ''
+      Relative Show File Path: tv/animated/South Park/Season 00/South Park - S00E41
+        - Six Days to Air- The Making of South Park Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: tv/animated/South Park/Season 00/South Park - S00E41 - Six Days to
+        Air- The Making of South Park Bluray-1080p.mkv -> ../../../../movies/staging/6
+        Days to Air- The Making of South Park (2011)/6 Days to Air- The Making of
+        South Park (2011) Bluray-1080p.mkv
       Title: Six Days to Air- The Making of South Park
-  Unparsed Movie Title: 6 Days To Air- The Making Of South Park (2011)
+  Unparsed Movie Title: 6 Days to Air- The Making of South Park (2011)
 91 Days Special (2017):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/91 Days Special (2017)
@@ -1919,10 +1924,7 @@ Boruto- Naruto the Movie (2015):
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/shounen/Naruto Shippuuden/Season 00/Naruto Shippuuden - S00E012
-        - Boruto - Naruto the Movie Bluray-1080p.mkv -> ../../../../movies/foreign/Boruto-
-        Naruto the Movie (2015)/\xe3\x83\x9c\xe3\x83\xab\xe3\x83\x88 \xe3\x83\x8a\xe3\x83\xab\xe3\x83\x88\xe3\x83\xbb\xe3\x82\xb6\xe3\x83\xbb\xe3\x83\xa0\xe3\x83\xbc\xe3\x83\x93\xe3\x83\xbc
-        (2015) Bluray-1080p.mkv
+      Symlinked: ''
       Title: Boruto - Naruto the Movie
   Symlink Target: "/var/data/media/video/movies/foreign/Boruto- Naruto the Movie (2015)/\u30DC\
     \u30EB\u30C8 \u30CA\u30EB\u30C8\u30FB\u30B6\u30FB\u30E0\u30FC\u30D3\u30FC (2015)\
@@ -2055,9 +2057,7 @@ Chunin Exam on Fire! and Naruto vs. Konohamaru! (2011):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Chunin Exam on Fire! and
     Naruto vs. Konohamaru! (2011)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Chunin Exam on Fire! and
-    Naruto vs. Konohamaru! (2011)/Chunin Exam on Fire! and Naruto vs. Konohamaru!
-    (2011) Bluray-1080p.mkv
+  Parsed Movie File: Chunin Exam on Fire! and Naruto vs. Konohamaru! (2011) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: ''
   Relative Movie File Path: ''
@@ -2081,10 +2081,7 @@ Chunin Exam on Fire! and Naruto vs. Konohamaru! (2011):
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/shounen/Naruto Shippuuden/Season 00/Naruto Shippuuden - S00E009
-        - Naruto vs. Konohamaru!! Bluray-1080p.mkv -> ../../../../movies/foreign/Chunin
-        Exam on Fire! and Naruto vs. Konohamaru! (2011)/Chunin Exam on Fire! and Naruto
-        vs. Konohamaru! (2011) Bluray-1080p.mkv
+      Symlinked: ''
       Title: Naruto vs. Konohamaru!!
   Unparsed Movie Title: Chunin Exam on Fire! and Naruto vs. Konohamaru! (2011)
 Clannad (2007):
@@ -7250,9 +7247,10 @@ Mobile Suit Gundam 00- A Wakening of the Trailblazer (2010):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam 00-
     A Wakening of the Trailblazer (2010)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "\u6A5F\u52D5\u6226\u58EB\u30AC\u30F3\u30C0\u30E000 -A wakening\
+    \ of the Trailblazer- (2010) Remux-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam
     00- A Wakening of the Trailblazer (2010)
   Relative Movie File Path: ''
@@ -7271,11 +7269,17 @@ Mobile Suit Gundam 00- A Wakening of the Trailblazer (2010):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Mobile Suit Gundam 00/Season 00/Mobile Suit
         Gundam 00 - S00E007 (E051) - Awakening of the Trailblazer
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Mobile Suit Gundam 00/Season 00/Mobile
+        Suit Gundam 00 - S00E007 (E051) - Awakening of the Trailblazer Bluray-1080p
+        Remux.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Mobile Suit Gundam 00/Season 00/Mobile Suit Gundam
+        00 - S00E007 (E051) - Awakening of the Trailblazer Bluray-1080p Remux.mkv
+        -> ../../../../movies/foreign/Mobile Suit Gundam 00- A Wakening of the Trailblazer
+        (2010)/\xe6\xa9\x9f\xe5\x8b\x95\xe6\x88\xa6\xe5\xa3\xab\xe3\x82\xac\xe3\x83\xb3\xe3\x83\x80\xe3\x83\xa000
+        -A wakening of the Trailblazer- (2010) Remux-1080p.mkv
       Title: Awakening of the Trailblazer
   Unparsed Movie Title: Mobile Suit Gundam 00- A Wakening of the Trailblazer (2010)
 Mobile Suit Gundam 0083- Stardust Memory - The Mayfly of Space (1992):
@@ -11019,15 +11023,16 @@ Rurouni Kenshin- Trust & Betrayal Director's Cut (0):
       Symlinked: ''
       Title: Trust and Betrayal OAV
   Unparsed Movie Title: Rurouni Kenshin- Trust & Betrayal Director's Cut (0)
-Sacred Seven- Shirogane No Tsubasa (2012):
+Sacred Seven- Shirogane no Tsubasa (2012):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Sacred Seven- Shirogane
-    No Tsubasa (2012)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+    no Tsubasa (2012)
+  Parsed Movie Extension: mkv
+  Parsed Movie File: Sacred Seven- Shirogane no Tsubasa (2012) Bluray-720p.mkv
+  Parsed Movie Quality: Bluray-720p.mkv
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Sacred Seven- Shirogane No Tsubasa (2012)
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/foreign/Sacred Seven- Shirogane no Tsubasa (2012)
   Shows:
     Sacred Seven:
       Absolute Episode: ''
@@ -11041,13 +11046,16 @@ Sacred Seven- Shirogane No Tsubasa (2012):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Sacred Seven/Season 00/Sacred Seven - S00E001
         - Shirogane no Tsubasa
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Sacred Seven/Season 00/Sacred Seven -
+        S00E001 - Shirogane no Tsubasa Bluray-720p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Sacred Seven/Season 00/Sacred Seven - S00E001 - Shirogane
+        no Tsubasa Bluray-720p.mkv -> ../../../../movies/foreign/Sacred Seven- Shirogane
+        no Tsubasa (2012)/Sacred Seven- Shirogane no Tsubasa (2012) Bluray-720p.mkv
       Title: Shirogane no Tsubasa
-  Unparsed Movie Title: Sacred Seven- Shirogane No Tsubasa (2012)
+  Unparsed Movie Title: Sacred Seven- Shirogane no Tsubasa (2012)
 Saga Of Tanya The Evil Movie (2019):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Saga Of Tanya The Evil
@@ -13226,9 +13234,7 @@ The Day Naruto Became Hokage (2016):
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/shounen/Naruto Shippuuden/Season 00/Naruto Shippuuden - S00E014
-        - OVA- The Day Naruto Became Hokage Bluray-1080p.mkv -> ../../../../movies/foreign/The
-        Day Naruto Became Hokage (2016)/The Day Naruto Became Hokage (2016) Bluray-1080p.mkv
+      Symlinked: ''
       Title: OVA- The Day Naruto Became Hokage
   Unparsed Movie Title: The Day Naruto Became Hokage (2016)
 The Dukes of Hazzard- Hazzard in Hollywood (2000):
@@ -13562,7 +13568,7 @@ The Last- Naruto The Movie (2014):
   Raw Absolute Movie Path: ''
   Relative Movie Path: movies/foreign/The Last- Naruto The Movie (2014)
   Shows:
-    Naruto Shippuden:
+    Naruto Shippuuden:
       Absolute Episode: ''
       Absolute Show Path: ''
       Anime: true
@@ -13572,7 +13578,7 @@ The Last- Naruto The Movie (2014):
       Parsed Season: ''
       Parsed Season Folder: ''
       Parsed Show Root Folder: ''
-      Parsed Show Title: anime/staging/Naruto Shippuden/Season 00/Naruto Shippuden
+      Parsed Show Title: anime/staging/Naruto Shippuuden/Season 00/Naruto Shippuuden
         - S00E012 - Naruto Shippuuden 7- The Last
       Relative Show File Path: ''
       Relative Show Path: ''
@@ -14136,15 +14142,15 @@ The Wire- The Last Word (2007):
       Symlinked: ''
       Title: The Wire- The Last Word
   Unparsed Movie Title: The Wire- The Last Word (2007)
-The X Files- I Want To Believe (2008):
+The X Files- I Want to Believe (2008):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/The X Files- I Want To
+  Absolute Movie Path: /var/data/media/video/movies/foreign/The X Files- I Want to
     Believe (2008)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/The X Files- I Want To Believe (2008)
+  Relative Movie Path: movies/foreign/The X Files- I Want to Believe (2008)
   Shows:
     The X-Files:
       Absolute Episode: ''
@@ -14164,7 +14170,7 @@ The X Files- I Want To Believe (2008):
       Show Dictionary Object: {}
       Symlinked: ''
       Title: The X-Files- I Want to Believe
-  Unparsed Movie Title: The X Files- I Want To Believe (2008)
+  Unparsed Movie Title: The X Files- I Want to Believe (2008)
 Thus Spoke Kishibe Rohan 2- Mutsu-kabe Hill (2018):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Thus Spoke Kishibe Rohan
