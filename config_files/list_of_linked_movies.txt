@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Babylon 5- The Gathering (1993)
 Babylon 5- The Lost Tales - Voices in the Dark (2007)
 Dragon Ball Z- Battle of Gods (2013)
@@ -51,3 +52,8 @@ Toriko 3D Movie- Kaimaku! Gourmet Adventure!! (2011)
 Unlocking Sherlock (2014)
 Watashi ga Motenai no wa Dou Kangaetemo Omaera ga Warui!- Motenaishi, Nazomeite Miru (2014)
 はたらく細胞 特別編 風邪症候群 (2018)
+=======
+Puella Magi Madoka Magica the Movie Part I- Beginnings (2012)
+Puella Magi Madoka Magica the Movie Part II- Eternal (2012)
+Puella Magi Madoka Magica the Movie Part III- Rebellion (2013)
+>>>>>>> aa04e5c0781927518fc8779a303b2c994d67f621
