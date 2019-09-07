@@ -4693,12 +4693,8 @@ Futurama - Into the Wild Green Yonder (2009):
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: tv/staging/Futurama/Season 00/Futurama - S00E06 - Into the Wild Green
-        Yonder Bluray-1080p.mkv -> ../../../../movies/staging/Futurama - Into the
-        Wild Green Yonder (2009)/Futurama- Into the Wild Green Yonder (2009) Bluray-1080p.mkv
+      Symlinked: ''
       Title: Into the Wild Green Yonder
-  Symlink Target: /var/data/media/video/movies/staging/Futurama - Into the Wild Green
-    Yonder (2009)/Futurama - Into the Wild Green Yonder (2009) Bluray-1080p Proper.mkv
   Unparsed Movie Title: Futurama - Into the Wild Green Yonder (2009)
 Futurama - The Beast with a Billion Backs (2008):
   Absolute Movie File Path: ''
@@ -10976,15 +10972,18 @@ Rurouni Kenshin- Kyoto Inferno (2014):
   Relative Movie Path: movies/foreign/Rurouni Kenshin- Kyoto Inferno (2014)
   Shows: {Rurouni Kenshin: null}
   Unparsed Movie Title: Rurouni Kenshin- Kyoto Inferno (2014)
-Rurouni Kenshin- New Kyoto Arc- Cage Of Flames (2011):
+Rurouni Kenshin- New Kyoto Arc- Cage of Flames (2011):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Rurouni Kenshin- New Kyoto
-    Arc- Cage Of Flames (2011)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+    Arc- Cage of Flames (2011)
+  Parsed Movie Extension: mp4
+  Parsed Movie File: "/var/data/media/video/movies/foreign/Rurouni Kenshin- New Kyoto\
+    \ Arc- Cage of Flames (2011)/\u308B\u308D\u3046\u306B\u5263\u5FC3 -\u660E\u6CBB\
+    \u5263\u5BA2\u6D6A\u6F2B\u8B5A- \u65B0\u4EAC\u90FD\u7DE8 \u524D\u7DE8 (2011) Bluray-1080p.mp4"
+  Parsed Movie Quality: Bluray-1080p.mp4
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Rurouni Kenshin- New Kyoto Arc- Cage Of Flames
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/foreign/Rurouni Kenshin- New Kyoto Arc- Cage of Flames
     (2011)
   Shows:
     Rurouni Kenshin:
@@ -10999,13 +10998,19 @@ Rurouni Kenshin- New Kyoto Arc- Cage Of Flames (2011):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Rurouni Kenshin/Season 00/Rurouni Kenshin -
         S00E008 - New Kyoto Arc OAV- Act 1 - Cage of Flames
-      Relative Show File Path: ''
+      Relative Show File Path: anime/shounen/Rurouni Kenshin/Season 00/Rurouni Kenshin
+        - S00E008 - New Kyoto Arc OAV- Act 1 - Cage of Flames Bluray-1080p.mp4
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/shounen/Rurouni Kenshin/Season 00/Rurouni Kenshin - S00E008
+        - New Kyoto Arc OAV- Act 1 - Cage of Flames Bluray-1080p.mp4 -> ../../../../movies/foreign/Rurouni
+        Kenshin- New Kyoto Arc- Cage of Flames (2011)/\xe3\x82\x8b\xe3\x82\x8d\xe3\x81\x86\xe3\x81\xab\xe5\x89\xa3\xe5\xbf\x83
+        -\xe6\x98\x8e\xe6\xb2\xbb\xe5\x89\xa3\xe5\xae\xa2\xe6\xb5\xaa\xe6\xbc\xab\xe8\xad\x9a-
+        \xe6\x96\xb0\xe4\xba\xac\xe9\x83\xbd\xe7\xb7\xa8 \xe5\x89\x8d\xe7\xb7\xa8
+        (2011) Bluray-1080p.mp4
       Title: New Kyoto Arc OAV- Act 1 - Cage of Flames
-  Unparsed Movie Title: Rurouni Kenshin- New Kyoto Arc- Cage Of Flames (2011)
+  Unparsed Movie Title: Rurouni Kenshin- New Kyoto Arc- Cage of Flames (2011)
 Rurouni Kenshin- New Kyoto Arc- The Chirps of Light (2012):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Rurouni Kenshin- New Kyoto
@@ -11050,8 +11055,7 @@ Rurouni Kenshin- Reflection Director's Cut (2002):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Rurouni Kenshin- Reflection
     Director's Cut (2002)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Rurouni Kenshin- Reflection
-    Director's Cut (2002)/Rurouni Kenshin- Reflection Director's Cut (2002) Remux-1080p.mkv
+  Parsed Movie File: Rurouni Kenshin- Reflection Director's Cut (2002) Remux-1080p.mkv
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Rurouni Kenshin- Reflection
     Director's Cut (2002)
