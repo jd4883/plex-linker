@@ -11432,42 +11432,13 @@ Saint Seiya- Knights of the Zodiac (2019):
   Relative Movie Path: movies/foreign/Saint Seiya- Knights of the Zodiac (2019)
   Shows: {Saint Seiya: null}
   Unparsed Movie Title: Saint Seiya- Knights of the Zodiac (2019)
-Saint Seiya- Legend of Sanctuary (2014):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- Legend of Sanctuary (2014)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
-  Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Saint Seiya- Legend of Sanctuary (2014)
-  Shows:
-    Saint Seiya:
-      Absolute Episode: ''
-      Absolute Show Path: ''
-      Anime: true
-      Episode: [8]
-      Parsed Episode: ''
-      Parsed Relative Show Title: ''
-      Parsed Season: ''
-      Parsed Season Folder: ''
-      Parsed Show Root Folder: ''
-      Parsed Show Title: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E008
-        - Legend of Sanctuary
-      Relative Show File Path: ''
-      Relative Show Path: ''
-      Season: '00'
-      Show Dictionary Object: {}
-      Symlinked: ''
-      Title: Legend of Sanctuary
-  Unparsed Movie Title: Saint Seiya- Legend of Sanctuary (2014)
 Saint Seiya- Legend of Crimson Youth (1988):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- Legend of
     Crimson Youth (1988)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Saint Seiya- Legend of\
-    \ Crimson Youth (1988)/\u8056\u95D8\u58EB\u661F\u77E2 \u771F\u7D05\u306E\u5C11\
-    \u5E74\u4F1D\u8AAC (1988) Remux-1080p.mkv"
+  Parsed Movie File: "\u8056\u95D8\u58EB\u661F\u77E2 \u771F\u7D05\u306E\u5C11\u5E74\
+    \u4F1D\u8AAC (1988) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: ''
   Relative Movie File Path: ''
@@ -11497,6 +11468,41 @@ Saint Seiya- Legend of Crimson Youth (1988):
         (1988) Remux-1080p.mkv
       Title: Legend of Crimson Youth
   Unparsed Movie Title: Saint Seiya- Legend of Crimson Youth (1988)
+Saint Seiya- Legend of Sanctuary (2014):
+  Absolute Movie File Path: ''
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- Legend of
+    Sanctuary (2014)
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "/var/data/media/video/movies/foreign/Saint Seiya- Legend of\
+    \ Sanctuary (2014)/\u8056\u95D8\u58EB\u661F\u77E2 LEGEND of SANCTUARY (2014) Bluray-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p.mkv
+  Raw Absolute Movie Path: ''
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/foreign/Saint Seiya- Legend of Sanctuary (2014)
+  Shows:
+    Saint Seiya:
+      Absolute Episode: ''
+      Absolute Show Path: ''
+      Anime: true
+      Episode: [8]
+      Parsed Episode: ''
+      Parsed Relative Show Title: ''
+      Parsed Season: ''
+      Parsed Season Folder: ''
+      Parsed Show Root Folder: ''
+      Parsed Show Title: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E008
+        - Legend of Sanctuary
+      Relative Show File Path: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E008
+        - Legend of Sanctuary Bluray-1080p.mkv
+      Relative Show Path: ''
+      Season: '00'
+      Show Dictionary Object: {}
+      Symlinked: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E008 - Legend
+        of Sanctuary Bluray-1080p.mkv -> ../../../../movies/foreign/Saint Seiya- Legend
+        of Sanctuary (2014)/\xe8\x81\x96\xe9\x97\x98\xe5\xa3\xab\xe6\x98\x9f\xe7\x9f\xa2
+        LEGEND of SANCTUARY (2014) Bluray-1080p.mkv
+      Title: Legend of Sanctuary
+  Unparsed Movie Title: Saint Seiya- Legend of Sanctuary (2014)
 Saint Seiya- The Hades Chapter - Elysion (2008):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- The Hades
@@ -11528,15 +11534,18 @@ Saint Seiya- The Hades Chapter - Elysion (2008):
       Symlinked: ''
       Title: The Hades Chapter - Sanctuary- Myth of the resurrected Gold Saints
   Unparsed Movie Title: Saint Seiya- The Hades Chapter - Elysion (2008)
-Saint Seiya- The Heated Battle Of The Gods (1988):
+Saint Seiya- The Heated Battle of the Gods (1988):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- The Heated
-    Battle Of The Gods (1988)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+    Battle of the Gods (1988)
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "/var/data/media/video/movies/foreign/Saint Seiya- The Heated\
+    \ Battle of the Gods (1988)/\u8056\u95D8\u58EB\u661F\u77E2 \u795E\u3005\u306E\u71B1\
+    \u304D\u6226\u3044 (1988) Remux-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Saint Seiya- The Heated Battle Of The Gods (1988)
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/foreign/Saint Seiya- The Heated Battle of the Gods (1988)
   Shows:
     Saint Seiya:
       Absolute Episode: ''
@@ -11550,13 +11559,18 @@ Saint Seiya- The Heated Battle Of The Gods (1988):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E002
         - The Heated Battle of the Gods
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E002
+        - The Heated Battle of the Gods Bluray-1080p Remux.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E002 - The Heated
+        Battle of the Gods Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Saint
+        Seiya- The Heated Battle of the Gods (1988)/\xe8\x81\x96\xe9\x97\x98\xe5\xa3\xab\xe6\x98\x9f\xe7\x9f\xa2
+        \xe7\xa5\x9e\xe3\x80\x85\xe3\x81\xae\xe7\x86\xb1\xe3\x81\x8d\xe6\x88\xa6\xe3\x81\x84
+        (1988) Remux-1080p.mkv
       Title: The Heated Battle of the Gods
-  Unparsed Movie Title: Saint Seiya- The Heated Battle Of The Gods (1988)
+  Unparsed Movie Title: Saint Seiya- The Heated Battle of the Gods (1988)
 Saint Seiya- Warriors Of The Final Holy Battle (1989):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- Warriors
