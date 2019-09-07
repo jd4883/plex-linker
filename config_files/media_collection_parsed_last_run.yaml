@@ -4202,9 +4202,10 @@ Fist of the North Star (1986):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Fist of the North Star
     (1986)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "/var/data/media/video/movies/foreign/Fist of the North Star\
+    \ (1986)/\u5287\u5834\u7248 \u5317\u6597\u306E\u62F3 (1986) Bluray-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Fist of the North
     Star (1986)
   Relative Movie File Path: ''
@@ -4222,11 +4223,15 @@ Fist of the North Star (1986):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Fist of the North Star/Season 00/Fist of the
         North Star - S00E001 - Fist of the North Star
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Fist of the North Star/Season 00/Fist
+        of the North Star - S00E001 - Fist of the North Star Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Fist of the North Star/Season 00/Fist of the North
+        Star - S00E001 - Fist of the North Star Bluray-1080p.mkv -> ../../../../movies/foreign/Fist
+        of the North Star (1986)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88 \xe5\x8c\x97\xe6\x96\x97\xe3\x81\xae\xe6\x8b\xb3
+        (1986) Bluray-1080p.mkv
       Title: Fist of the North Star
   Unparsed Movie Title: Fist of the North Star (1986)
 Fist of the North Star- Legend of Raoh - Chapter of Death in Love (2006):
@@ -4700,9 +4705,10 @@ Futurama - The Beast with a Billion Backs (2008):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Futurama - The Beast with
     a Billion Backs (2008)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: /var/data/media/video/movies/staging/Futurama - The Beast with
+    a Billion Backs (2008)/Futurama- The Beast with a Billion Backs (2008) WEBDL-1080p.mkv
+  Parsed Movie Quality: WEBDL-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Futurama - The Beast
     with a Billion Backs (2008)
   Relative Movie File Path: ''
@@ -4720,11 +4726,15 @@ Futurama - The Beast with a Billion Backs (2008):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/staging/Futurama/Season 00/Futurama - S00E02 - The Beast
         With A Billion Backs
-      Relative Show File Path: ''
+      Relative Show File Path: tv/staging/Futurama/Season 00/Futurama - S00E02 - The
+        Beast With A Billion Backs WEBDL-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: tv/staging/Futurama/Season 00/Futurama - S00E02 - The Beast With
+        A Billion Backs WEBDL-1080p.mkv -> ../../../../movies/staging/Futurama - The
+        Beast with a Billion Backs (2008)/Futurama- The Beast with a Billion Backs
+        (2008) WEBDL-1080p.mkv
       Title: The Beast With A Billion Backs
   Unparsed Movie Title: Futurama - The Beast with a Billion Backs (2008)
 Futurama - The Lost Adventure (2008):
