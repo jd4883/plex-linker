@@ -4669,8 +4669,8 @@ Futurama - Into the Wild Green Yonder (2009):
   Absolute Movie Path: /var/data/media/video/movies/staging/Futurama - Into the Wild
     Green Yonder (2009)
   Parsed Movie Extension: mkv
-  Parsed Movie File: Futurama - Into the Wild Green Yonder (2009) Bluray-1080p Proper.mkv
-  Parsed Movie Quality: Bluray-1080p Proper.mkv
+  Parsed Movie File: Futurama- Into the Wild Green Yonder (2009) Bluray-1080p.mkv
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Futurama - Into the
     Wild Green Yonder (2009)
   Relative Movie File Path: ''
@@ -4689,14 +4689,13 @@ Futurama - Into the Wild Green Yonder (2009):
       Parsed Show Title: tv/staging/Futurama/Season 00/Futurama - S00E06 - Into the
         Wild Green Yonder
       Relative Show File Path: tv/staging/Futurama/Season 00/Futurama - S00E06 - Into
-        the Wild Green Yonder Bluray-1080p Proper.mkv
+        the Wild Green Yonder Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
       Symlinked: tv/staging/Futurama/Season 00/Futurama - S00E06 - Into the Wild Green
-        Yonder Bluray-1080p Proper.mkv -> ../../../../movies/staging/Futurama - Into
-        the Wild Green Yonder (2009)/Futurama - Into the Wild Green Yonder (2009)
-        Bluray-1080p Proper.mkv
+        Yonder Bluray-1080p.mkv -> ../../../../movies/staging/Futurama - Into the
+        Wild Green Yonder (2009)/Futurama- Into the Wild Green Yonder (2009) Bluray-1080p.mkv
       Title: Into the Wild Green Yonder
   Symlink Target: /var/data/media/video/movies/staging/Futurama - Into the Wild Green
     Yonder (2009)/Futurama - Into the Wild Green Yonder (2009) Bluray-1080p Proper.mkv
@@ -8431,14 +8430,17 @@ Naruto Shippuden the Movie The Lost Tower (2010):
       Title: Naruto Shippuden 4- The Lost Tower
   Unparsed Movie Title: Naruto Shippuden the Movie The Lost Tower (2010)
 Naruto Shippuden- The Movie (2007):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The Movie
-    (2007)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Absolute Movie File Path: /var/data/media/video/movies/foreign/Naruto Shippuden-
+    The Movie (2007)/Naruto Shippuden The Movie (2007) Bluray-1080p.mkv
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden- The
+    Movie (2007)
+  Parsed Movie Extension: mkv
+  Parsed Movie File: /var/data/media/video/movies/foreign/Naruto Shippuden- The Movie
+    (2007)/Naruto Shippuden The Movie (2007) Bluray-1080p.mkv
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Naruto Shippuden The Movie (2007)
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/foreign/Naruto Shippuden- The Movie (2007)
   Shows:
     Naruto Shippuden:
       Absolute Episode: ''
@@ -8452,12 +8454,12 @@ Naruto Shippuden- The Movie (2007):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
         - S00E001 - Naruto Shippuden the Movie
-      Relative Show File Path: ''
+      Relative Show File Path: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
+        - S00E001 - Naruto Shippuden the Movie Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
       Symlinked: ''
-      Title: Naruto Shippuden the Movie
   Unparsed Movie Title: Naruto Shippuden- The Movie (2007)
 "Naruto cl\xE1ssico (0)":
   Absolute Movie File Path: ''
@@ -8521,10 +8523,8 @@ Naruto the Movie- Legend of the Stone of Gelel (2005):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto the Movie- Legend
     of the Stone of Gelel (2005)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Naruto the Movie- Legend\
-    \ of the Stone of Gelel (2005)/\u5287\u5834\u7248 NARUTO -\u30CA\u30EB\u30C8-\
-    \ \u5927\u6FC0\u7A81!\u5E7B\u306E\u5730\u5E95\u907A\u8DE1\u3060\u3063\u3066\u3070\
-    \u3088 (2005) Bluray-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248 NARUTO -\u30CA\u30EB\u30C8- \u5927\u6FC0\u7A81\
+    !\u5E7B\u306E\u5730\u5E95\u907A\u8DE1\u3060\u3063\u3066\u3070\u3088 (2005) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: ''
   Relative Movie File Path: ''
@@ -11341,9 +11341,11 @@ Saint Seiya Heaven Chapter- Overture (2004):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya Heaven Chapter-
     Overture (2004)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "/var/data/media/video/movies/foreign/Saint Seiya Heaven Chapter-\
+    \ Overture (2004)/\u8056\u95D8\u58EB\u661F\u77E2 \u5929\u754C\u7DE8 \u5E8F\u594F\
+    \u301Coverture\u301C (2004) Remux-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya Heaven
     Chapter- Overture (2004)
   Relative Movie File Path: ''
@@ -11361,20 +11363,27 @@ Saint Seiya Heaven Chapter- Overture (2004):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E005
         - Heaven Chapter - Overture
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E005
+        - Heaven Chapter - Overture Bluray-1080p Remux.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E005 - Heaven
+        Chapter - Overture Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Saint
+        Seiya Heaven Chapter- Overture (2004)/\xe8\x81\x96\xe9\x97\x98\xe5\xa3\xab\xe6\x98\x9f\xe7\x9f\xa2
+        \xe5\xa4\xa9\xe7\x95\x8c\xe7\xb7\xa8 \xe5\xba\x8f\xe5\xa5\x8f\xe3\x80\x9coverture\xe3\x80\x9c
+        (2004) Remux-1080p.mkv
       Title: Heaven Chapter - Overture
   Unparsed Movie Title: Saint Seiya Heaven Chapter- Overture (2004)
 Saint Seiya- Evil Goddess Eris (1987):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- Evil Goddess
     Eris (1987)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "/var/data/media/video/movies/foreign/Saint Seiya- Evil Goddess\
+    \ Eris (1987)/\u8056\u95D8\u58EB\u661F\u77E2 \u90AA\u795E\u30A8\u30EA\u30B9 (1987)\
+    \ Remux-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- Evil
     Goddess Eris (1987)
   Relative Movie File Path: ''
@@ -11392,11 +11401,15 @@ Saint Seiya- Evil Goddess Eris (1987):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E011
         (E1111) - Evil Goddess Eris
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E011
+        (E1111) - Evil Goddess Eris Bluray-1080p Remux.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E011 (E1111)
+        - Evil Goddess Eris Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Saint
+        Seiya- Evil Goddess Eris (1987)/\xe8\x81\x96\xe9\x97\x98\xe5\xa3\xab\xe6\x98\x9f\xe7\x9f\xa2
+        \xe9\x82\xaa\xe7\xa5\x9e\xe3\x82\xa8\xe3\x83\xaa\xe3\x82\xb9 (1987) Remux-1080p.mkv
       Title: Evil Goddess Eris
   Unparsed Movie Title: Saint Seiya- Evil Goddess Eris (1987)
 Saint Seiya- Knights Of The Zodiac (2018):
@@ -13629,15 +13642,16 @@ The IT Crowd Manual (2014):
   Symlink Target: /var/data/media/video/movies/staging/The IT Crowd Manual (2014)/The
     IT Crowd Manual (2014) HDTV-720p.mkv
   Unparsed Movie Title: The IT Crowd Manual (2014)
-The Last- Naruto The Movie (2014):
+The Last- Naruto the Movie (2014):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/The Last- Naruto The Movie
+  Absolute Movie Path: /var/data/media/video/movies/foreign/The Last- Naruto the Movie
     (2014)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: THE LAST -NARUTO THE MOVIE- (2014) Remux-1080p.mkv
+  Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/The Last- Naruto The Movie (2014)
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/foreign/The Last- Naruto the Movie (2014)
   Shows:
     Naruto Shippuden:
       Absolute Episode: ''
@@ -13649,15 +13663,18 @@ The Last- Naruto The Movie (2014):
       Parsed Season: ''
       Parsed Season Folder: ''
       Parsed Show Root Folder: ''
-      Parsed Show Title: anime/staging/Naruto Shippuden/Season 00/Naruto Shippuden
+      Parsed Show Title: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
         - S00E012 - Naruto Shippuden 7- The Last
-      Relative Show File Path: ''
+      Relative Show File Path: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
+        - S00E012 - Naruto Shippuden 7- The Last Bluray-1080p Remux.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden - S00E012
+        - Naruto Shippuden 7- The Last Bluray-1080p Remux.mkv -> ../../../../movies/foreign/The
+        Last- Naruto the Movie (2014)/THE LAST -NARUTO THE MOVIE- (2014) Remux-1080p.mkv
       Title: Naruto Shippuden 7- The Last
-  Unparsed Movie Title: The Last- Naruto The Movie (2014)
+  Unparsed Movie Title: The Last- Naruto the Movie (2014)
 The Making Of 'The X Files- Fight The Future' (1998):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/The Making Of 'The X Files-

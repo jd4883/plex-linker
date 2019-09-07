@@ -4669,8 +4669,8 @@ Futurama - Into the Wild Green Yonder (2009):
   Absolute Movie Path: /var/data/media/video/movies/staging/Futurama - Into the Wild
     Green Yonder (2009)
   Parsed Movie Extension: mkv
-  Parsed Movie File: Futurama - Into the Wild Green Yonder (2009) Bluray-1080p Proper.mkv
-  Parsed Movie Quality: Bluray-1080p Proper.mkv
+  Parsed Movie File: Futurama- Into the Wild Green Yonder (2009) Bluray-1080p.mkv
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Futurama - Into the
     Wild Green Yonder (2009)
   Relative Movie File Path: ''
@@ -4689,14 +4689,13 @@ Futurama - Into the Wild Green Yonder (2009):
       Parsed Show Title: tv/staging/Futurama/Season 00/Futurama - S00E06 - Into the
         Wild Green Yonder
       Relative Show File Path: tv/staging/Futurama/Season 00/Futurama - S00E06 - Into
-        the Wild Green Yonder Bluray-1080p Proper.mkv
+        the Wild Green Yonder Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
       Symlinked: tv/staging/Futurama/Season 00/Futurama - S00E06 - Into the Wild Green
-        Yonder Bluray-1080p Proper.mkv -> ../../../../movies/staging/Futurama - Into
-        the Wild Green Yonder (2009)/Futurama - Into the Wild Green Yonder (2009)
-        Bluray-1080p Proper.mkv
+        Yonder Bluray-1080p.mkv -> ../../../../movies/staging/Futurama - Into the
+        Wild Green Yonder (2009)/Futurama- Into the Wild Green Yonder (2009) Bluray-1080p.mkv
       Title: Into the Wild Green Yonder
   Symlink Target: /var/data/media/video/movies/staging/Futurama - Into the Wild Green
     Yonder (2009)/Futurama - Into the Wild Green Yonder (2009) Bluray-1080p Proper.mkv
@@ -8431,14 +8430,17 @@ Naruto Shippuden the Movie The Lost Tower (2010):
       Title: Naruto Shippuden 4- The Lost Tower
   Unparsed Movie Title: Naruto Shippuden the Movie The Lost Tower (2010)
 Naruto Shippuden- The Movie (2007):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The Movie
-    (2007)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Absolute Movie File Path: /var/data/media/video/movies/foreign/Naruto Shippuden-
+    The Movie (2007)/Naruto Shippuden The Movie (2007) Bluray-1080p.mkv
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden- The
+    Movie (2007)
+  Parsed Movie Extension: mkv
+  Parsed Movie File: /var/data/media/video/movies/foreign/Naruto Shippuden- The Movie
+    (2007)/Naruto Shippuden The Movie (2007) Bluray-1080p.mkv
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Naruto Shippuden The Movie (2007)
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/foreign/Naruto Shippuden- The Movie (2007)
   Shows:
     Naruto Shippuden:
       Absolute Episode: ''
@@ -8452,41 +8454,13 @@ Naruto Shippuden- The Movie (2007):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
         - S00E001 - Naruto Shippuden the Movie
-      Relative Show File Path: ''
+      Relative Show File Path: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
+        - S00E001 - Naruto Shippuden the Movie Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
       Symlinked: ''
-      Title: Naruto Shippuden the Movie
   Unparsed Movie Title: Naruto Shippuden- The Movie (2007)
-Naruto the Movie- Legend of the Stone of Gelel (2005):
-  Absolute Movie File Path: /var/data/media/video/movies/foreign/Naruto the Movie- Legend of the Stone of Gelel (2005)/劇場版 NARUTO -ナルト- 大激突!幻の地底遺跡だってばよ (2005) Bluray-1080p.mkv
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto the Movie- Legend of the Stone of Gelel (2005)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
-  Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Naruto the Movie- Legend of the Stone of Gelel (2005)
-  Shows:
-    Naruto:
-      Absolute Episode: ''
-      Absolute Show Path: ''
-      Anime: true
-      Episode: [5]
-      Parsed Episode: ''
-      Parsed Relative Show Title: ''
-      Parsed Season: ''
-      Parsed Season Folder: ''
-      Parsed Show Root Folder: ''
-      Parsed Show Title: anime/shounen/Naruto/Season 00/Naruto - S00E005 - Naruto
-        the Movie 2- Legend of the Stone of Gelel
-      Relative Show File Path: ''
-      Relative Show Path: ''
-      Season: '00'
-      Show Dictionary Object: {}
-      Symlinked: ''
-      Title: Naruto the Movie 2- Legend of the Stone of Gelel
-  Unparsed Movie Title: Naruto the Movie- Legend of the Stone of Gelel (2005)
 "Naruto cl\xE1ssico (0)":
   Absolute Movie File Path: ''
   Absolute Movie Path: "/var/data/media/video/movies/foreign/Naruto cl\xE1ssico (0)"
@@ -8541,6 +8515,46 @@ Naruto the Movie- Guardians of the Crescent Moon Kingdom (2006):
       Title: Naruto the Movie 3- Guardians of the Crescent Moon Kingdom
   Symlink Target: ''
   Unparsed Movie Title: Naruto the Movie- Guardians of the Crescent Moon Kingdom (2006)
+Naruto the Movie- Legend of the Stone of Gelel (2005):
+  Absolute Movie File Path: "/var/data/media/video/movies/foreign/Naruto the Movie-\
+    \ Legend of the Stone of Gelel (2005)/\u5287\u5834\u7248 NARUTO -\u30CA\u30EB\u30C8\
+    - \u5927\u6FC0\u7A81!\u5E7B\u306E\u5730\u5E95\u907A\u8DE1\u3060\u3063\u3066\u3070\
+    \u3088 (2005) Bluray-1080p.mkv"
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto the Movie- Legend
+    of the Stone of Gelel (2005)
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "\u5287\u5834\u7248 NARUTO -\u30CA\u30EB\u30C8- \u5927\u6FC0\u7A81\
+    !\u5E7B\u306E\u5730\u5E95\u907A\u8DE1\u3060\u3063\u3066\u3070\u3088 (2005) Bluray-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p.mkv
+  Raw Absolute Movie Path: ''
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/foreign/Naruto the Movie- Legend of the Stone of Gelel
+    (2005)
+  Shows:
+    Naruto:
+      Absolute Episode: ''
+      Absolute Show Path: ''
+      Anime: true
+      Episode: [5]
+      Parsed Episode: ''
+      Parsed Relative Show Title: ''
+      Parsed Season: ''
+      Parsed Season Folder: ''
+      Parsed Show Root Folder: ''
+      Parsed Show Title: anime/shounen/Naruto/Season 00/Naruto - S00E005 - Naruto
+        the Movie 2- Legend of the Stone of Gelel
+      Relative Show File Path: anime/shounen/Naruto/Season 00/Naruto - S00E005 - Naruto
+        the Movie 2- Legend of the Stone of Gelel Bluray-1080p.mkv
+      Relative Show Path: ''
+      Season: '00'
+      Show Dictionary Object: {}
+      Symlinked: anime/shounen/Naruto/Season 00/Naruto - S00E005 - Naruto the Movie
+        2- Legend of the Stone of Gelel Bluray-1080p.mkv -> ../../../../movies/foreign/Naruto
+        the Movie- Legend of the Stone of Gelel (2005)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88
+        NARUTO -\xe3\x83\x8a\xe3\x83\xab\xe3\x83\x88- \xe5\xa4\xa7\xe6\xbf\x80\xe7\xaa\x81!\xe5\xb9\xbb\xe3\x81\xae\xe5\x9c\xb0\xe5\xba\x95\xe9\x81\xba\xe8\xb7\xa1\xe3\x81\xa0\xe3\x81\xa3\xe3\x81\xa6\xe3\x81\xb0\xe3\x82\x88
+        (2005) Bluray-1080p.mkv
+      Title: Naruto the Movie 2- Legend of the Stone of Gelel
+  Unparsed Movie Title: Naruto the Movie- Legend of the Stone of Gelel (2005)
 Naruto the Movie- Ninja Clash in the Land of Snow (2004):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto the Movie- Ninja
@@ -13615,15 +13629,17 @@ The IT Crowd Manual (2014):
   Symlink Target: /var/data/media/video/movies/staging/The IT Crowd Manual (2014)/The
     IT Crowd Manual (2014) HDTV-720p.mkv
   Unparsed Movie Title: The IT Crowd Manual (2014)
-The Last- Naruto The Movie (2014):
+The Last- Naruto the Movie (2014):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/The Last- Naruto The Movie
+  Absolute Movie Path: /var/data/media/video/movies/foreign/The Last- Naruto the Movie
     (2014)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: /var/data/media/video/movies/foreign/The Last- Naruto the Movie
+    (2014)/THE LAST -NARUTO THE MOVIE- (2014) Remux-1080p.mkv
+  Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/The Last- Naruto The Movie (2014)
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/foreign/The Last- Naruto the Movie (2014)
   Shows:
     Naruto Shippuden:
       Absolute Episode: ''
@@ -13635,15 +13651,18 @@ The Last- Naruto The Movie (2014):
       Parsed Season: ''
       Parsed Season Folder: ''
       Parsed Show Root Folder: ''
-      Parsed Show Title: anime/staging/Naruto Shippuden/Season 00/Naruto Shippuden
+      Parsed Show Title: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
         - S00E012 - Naruto Shippuden 7- The Last
-      Relative Show File Path: ''
+      Relative Show File Path: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
+        - S00E012 - Naruto Shippuden 7- The Last Bluray-1080p Remux.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden - S00E012
+        - Naruto Shippuden 7- The Last Bluray-1080p Remux.mkv -> ../../../../movies/foreign/The
+        Last- Naruto the Movie (2014)/THE LAST -NARUTO THE MOVIE- (2014) Remux-1080p.mkv
       Title: Naruto Shippuden 7- The Last
-  Unparsed Movie Title: The Last- Naruto The Movie (2014)
+  Unparsed Movie Title: The Last- Naruto the Movie (2014)
 The Making Of 'The X Files- Fight The Future' (1998):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/The Making Of 'The X Files-
