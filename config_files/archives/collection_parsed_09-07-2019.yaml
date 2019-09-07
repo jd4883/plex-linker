@@ -1876,9 +1876,8 @@ Boruto- Naruto the Movie (2015):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Boruto- Naruto the Movie
     (2015)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Boruto- Naruto the Movie\
-    \ (2015)/\u30DC\u30EB\u30C8 \u30CA\u30EB\u30C8\u30FB\u30B6\u30FB\u30E0\u30FC\u30D3\
-    \u30FC (2015) Bluray-1080p.mkv"
+  Parsed Movie File: "\u30DC\u30EB\u30C8 \u30CA\u30EB\u30C8\u30FB\u30B6\u30FB\u30E0\
+    \u30FC\u30D3\u30FC (2015) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Boruto- Naruto the
     Movie (2015)
@@ -2058,9 +2057,7 @@ Chunin Exam on Fire! and Naruto vs. Konohamaru! (2011):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Chunin Exam on Fire! and
     Naruto vs. Konohamaru! (2011)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Chunin Exam on Fire! and
-    Naruto vs. Konohamaru! (2011)/Chunin Exam on Fire! and Naruto vs. Konohamaru!
-    (2011) Bluray-1080p.mkv
+  Parsed Movie File: Chunin Exam on Fire! and Naruto vs. Konohamaru! (2011) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: ''
   Relative Movie File Path: ''
@@ -4710,7 +4707,7 @@ Futurama - The Beast with a Billion Backs (2008):
     a Billion Backs (2008)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
-  Parsed Movie Quality:
+  Parsed Movie Quality: null
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Futurama - The Beast
     with a Billion Backs (2008)
   Relative Movie File Path: ''
@@ -5407,7 +5404,10 @@ Gurren Lagann The Movie- Childhood's End (2008):
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Gurren Lagann/Season 00/Gurren Lagann - S00E003 - Gurren
+        Lagann the Movie -Childhood\s End- Bluray-1080p.mkv" -> \../../../../movies/foreign/Gurren
+        Lagann The Movie- Childhood\\\\\s End (2008)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88\xe3\x80\x80\xe5\xa4\xa9\xe5\x85\x83\xe7\xaa\x81\xe7\xa0\xb4\xe3\x82\xb0\xe3\x83\xac\xe3\x83\xb3\xe3\x83\xa9\xe3\x82\xac\xe3\x83\xb3\xe3\x80\x80\xe7\xb4\x85\xe8\x93\xae\xe7\xaf\x87
+        (2008) Bluray-1080p.mkv
       Title: Gurren Lagann the Movie -Childhood's End-
   Unparsed Movie Title: Gurren Lagann The Movie- Childhood's End (2008)
 Gurren Lagann The Movie- The Lights in the Sky Are Stars (2009):
@@ -5441,7 +5441,10 @@ Gurren Lagann The Movie- The Lights in the Sky Are Stars (2009):
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Gurren Lagann/Season 00/Gurren Lagann - S00E004 - Gurren
+        Lagann the Movie -The Lights in the Sky Are Stars- WEBDL-1080p.mkv -> ../../../../movies/foreign/Gurren
+        Lagann The Movie- The Lights in the Sky Are Stars (2009)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88\xe3\x80\x80\xe5\xa4\xa9\xe5\x85\x83\xe7\xaa\x81\xe7\xa0\xb4\xe3\x82\xb0\xe3\x83\xac\xe3\x83\xb3\xe3\x83\xa9\xe3\x82\xac\xe3\x83\xb3\xe3\x80\x80\xe8\x9e\xba\xe5\xb7\x8c\xe7\xb7\xa8
+        (2009) WEBDL-1080p.mkv
       Title: Gurren Lagann the Movie -The Lights in the Sky Are Stars-
   Unparsed Movie Title: Gurren Lagann The Movie- The Lights in the Sky Are Stars (2009)
 Haikyuu!! Movie 2- Winners and Losers (2015):
@@ -8237,39 +8240,10 @@ Naruto (0):
   Relative Movie Path: movies/foreign/Naruto (0)
   Shows: {Naruto: null}
   Unparsed Movie Title: Naruto (0)
-Naruto Shippuden The Movie Bonds (2008):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The
-    Movie Bonds (2008)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
-  Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Naruto Shippuden The Movie Bonds (2008)
-  Shows:
-    Naruto Shippuden:
-      Absolute Episode: ''
-      Absolute Show Path: ''
-      Anime: true
-      Episode: [2]
-      Parsed Episode: ''
-      Parsed Relative Show Title: ''
-      Parsed Season: ''
-      Parsed Season Folder: ''
-      Parsed Show Root Folder: ''
-      Parsed Show Title: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
-        - S00E002 - Naruto Shippuden 2- Bonds
-      Relative Show File Path: ''
-      Relative Show Path: ''
-      Season: '00'
-      Show Dictionary Object: {}
-      Symlinked: ''
-      Title: Naruto Shippuden 2- Bonds
-  Unparsed Movie Title: Naruto Shippuden The Movie Bonds (2008)
 Naruto Shippuden The Movie (2007):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The
-    Movie (2007)
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The Movie
+    (2007)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
@@ -8297,8 +8271,8 @@ Naruto Shippuden The Movie (2007):
   Unparsed Movie Title: Naruto Shippuden The Movie (2007)
 Naruto Shippuden The Movie Blood Prison (2011):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The
-    Movie Blood Prison (2011)
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The Movie
+    Blood Prison (2011)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
@@ -8324,10 +8298,39 @@ Naruto Shippuden The Movie Blood Prison (2011):
       Symlinked: ''
       Title: Naruto Shippuden 5- Blood Prison
   Unparsed Movie Title: Naruto Shippuden The Movie Blood Prison (2011)
+Naruto Shippuden The Movie Bonds (2008):
+  Absolute Movie File Path: ''
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The Movie
+    Bonds (2008)
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
+  Raw Absolute Movie Path: ''
+  Relative Movie Path: movies/foreign/Naruto Shippuden The Movie Bonds (2008)
+  Shows:
+    Naruto Shippuden:
+      Absolute Episode: ''
+      Absolute Show Path: ''
+      Anime: true
+      Episode: [2]
+      Parsed Episode: ''
+      Parsed Relative Show Title: ''
+      Parsed Season: ''
+      Parsed Season Folder: ''
+      Parsed Show Root Folder: ''
+      Parsed Show Title: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
+        - S00E002 - Naruto Shippuden 2- Bonds
+      Relative Show File Path: ''
+      Relative Show Path: ''
+      Season: '00'
+      Show Dictionary Object: {}
+      Symlinked: ''
+      Title: Naruto Shippuden 2- Bonds
+  Unparsed Movie Title: Naruto Shippuden The Movie Bonds (2008)
 Naruto Shippuden The Movie Inheritors Of The Will Of Fire (2009):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The
-    Movie Inheritors Of The Will Of Fire (2009)
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The Movie
+    Inheritors Of The Will Of Fire (2009)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
@@ -8357,8 +8360,8 @@ Naruto Shippuden The Movie Inheritors Of The Will Of Fire (2009):
     (2009)
 Naruto Shippuden The Movie Road To Ninja (2012):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The
-    Movie Road To Ninja (2012)
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The Movie
+    Road To Ninja (2012)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
@@ -8386,8 +8389,8 @@ Naruto Shippuden The Movie Road To Ninja (2012):
   Unparsed Movie Title: Naruto Shippuden The Movie Road To Ninja (2012)
 Naruto Shippuden The Movie The Lost Tower (2010):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The
-    Movie The Lost Tower (2010)
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The Movie
+    The Lost Tower (2010)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
@@ -9810,7 +9813,7 @@ One Punch Man- Road to Hero (2015):
       Show Dictionary Object: {}
       Symlinked: anime/staging/One-Punch Man/Season 00/One-Punch Man - S00E001 - Road
         to Hero DVD.mkv -> ../../../../movies/foreign/One Punch Man- Road to Hero
-        (2015)/One Punch Man- Road to Hero (2015) DVD.mkv
+        (2015) DVD.mkv
       Title: Road to Hero
   Unparsed Movie Title: One Punch Man- Road to Hero (2015)
 Overlord Movie 1- The Undead King (2017):
@@ -13195,8 +13198,7 @@ The Day Naruto Became Hokage (2016):
   Absolute Movie Path: /var/data/media/video/movies/foreign/The Day Naruto Became
     Hokage (2016)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/The Day Naruto Became Hokage
-    (2016)/The Day Naruto Became Hokage (2016) Bluray-1080p.mkv
+  Parsed Movie File: The Day Naruto Became Hokage (2016) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/The Day Naruto Became
     Hokage (2016)
@@ -13243,7 +13245,9 @@ The Day Naruto Became Hokage (2016):
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden - S00E014
+        - OVA- The Day Naruto Became Hokage Bluray-1080p.mkv -> ../../../../movies/foreign/The
+        Day Naruto Became Hokage (2016)/The Day Naruto Became Hokage (2016) Bluray-1080p.mkv
       Title: OVA- The Day Naruto Became Hokage
   Unparsed Movie Title: The Day Naruto Became Hokage (2016)
 The Dukes of Hazzard- Hazzard in Hollywood (2000):
@@ -14509,7 +14513,7 @@ Top Gear- Middle East Special (2011):
       Symlinked: ''
       Title: Middle East Special
   Unparsed Movie Title: Top Gear- Middle East Special (2011)
-'Top Gear- Patagonia Special: Part 1 (2014)':
+Top Gear- Patagonia Special- Part 1 (2014):
   Absolute Movie File Path: ''
   Absolute Movie Path: '/var/data/media/video/movies/foreign/Top Gear- Patagonia Special:
     Part 1 (2014)'
@@ -14537,7 +14541,7 @@ Top Gear- Middle East Special (2011):
       Show Dictionary Object: {}
       Symlinked: ''
       Title: Patagonia Special (1)
-  Unparsed Movie Title: 'Top Gear- Patagonia Special: Part 1 (2014)'
+  Unparsed Movie Title: Top Gear- Patagonia Special- Part 1 (2014)
 'Top Gear- Patagonia Special: Part 2 (2014)':
   Absolute Movie File Path: ''
   Absolute Movie Path: '/var/data/media/video/movies/foreign/Top Gear- Patagonia Special:
@@ -15569,21 +15573,15 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Title: The Common Cold
   Unparsed Movie Title: "\u306F\u305F\u3089\u304F\u7D30\u80DE \u7279\u5225\u7DE8 \u98A8\
     \u90AA\u75C7\u5019\u7FA4 (2018)"
-"\u5287\u5834\u7248 \u3042\u306E\u65E5\u898B\u305F\u82B1\u306E\u540D\u524D\u3092\u50D5\u9054\u306F\u307E\u3060\u77E5\u3089\u306A\u3044\u3002 (2013)":
+劇場版 あの日見た花の名前を僕達はまだ知らない。 (2013):
   Absolute Movie File Path: ''
-  Absolute Movie Path: "/var/data/media/video/movies/staging/\u5287\u5834\u7248 \u3042\
-    \u306E\u65E5\u898B\u305F\u82B1\u306E\u540D\u524D\u3092\u50D5\u9054\u306F\u307E\
-    \u3060\u77E5\u3089\u306A\u3044\u3002 (2013)"
+  Absolute Movie Path: /var/data/media/video/movies/foreign/劇場版 あの日見た花の名前を僕達はまだ知らない。 (2013)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
-  Raw Absolute Movie Path: "/var/data/media/video/movies/staging/\u5287\u5834\u7248\
-    \ \u3042\u306E\u65E5\u898B\u305F\u82B1\u306E\u540D\u524D\u3092\u50D5\u9054\u306F\
-    \u307E\u3060\u77E5\u3089\u306A\u3044\u3002 (2013)"
+  Raw Absolute Movie Path: /var/data/media/video/movies/foreign/劇場版 あの日見た花の名前を僕達はまだ知らない。 (2013)
   Relative Movie File Path: ''
-  Relative Movie Path: "movies/staging/\u5287\u5834\u7248 \u3042\u306E\u65E5\u898B\
-    \u305F\u82B1\u306E\u540D\u524D\u3092\u50D5\u9054\u306F\u307E\u3060\u77E5\u3089\
-    \u306A\u3044\u3002 (2013)"
+  Relative Movie Path: movies/foreign/劇場版 あの日見た花の名前を僕達はまだ知らない。 (2013)"
   Shows:
     Anohana- The Flower We Saw That Day:
       Absolute Episode: ''
@@ -15604,9 +15602,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Show Dictionary Object: {}
       Symlinked: ''
       Title: Anohana The Movie - The Flower We Saw That Day
-  Unparsed Movie Title: "\u5287\u5834\u7248 \u3042\u306E\u65E5\u898B\u305F\u82B1\u306E\
-    \u540D\u524D\u3092\u50D5\u9054\u306F\u307E\u3060\u77E5\u3089\u306A\u3044\u3002\
-    \ (2013)"
+  Unparsed Movie Title: 劇場版 あの日見た花の名前を僕達はまだ知らない。 (2013)
 "\u9032\u6483\u306E\u5DE8\u4EBA ATTACK ON TITAN (2015)":
   Absolute Movie File Path: ''
   Absolute Movie Path: "/var/data/media/video/movies/foreign/\u9032\u6483\u306E\u5DE8\
