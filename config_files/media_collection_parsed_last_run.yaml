@@ -4203,8 +4203,7 @@ Fist of the North Star (1986):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Fist of the North Star
     (1986)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Fist of the North Star\
-    \ (1986)/\u5287\u5834\u7248 \u5317\u6597\u306E\u62F3 (1986) Bluray-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248 \u5317\u6597\u306E\u62F3 (1986) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Fist of the North
     Star (1986)
@@ -4706,8 +4705,7 @@ Futurama - The Beast with a Billion Backs (2008):
   Absolute Movie Path: /var/data/media/video/movies/staging/Futurama - The Beast with
     a Billion Backs (2008)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/Futurama - The Beast with
-    a Billion Backs (2008)/Futurama- The Beast with a Billion Backs (2008) WEBDL-1080p.mkv
+  Parsed Movie File: Futurama- The Beast with a Billion Backs (2008) WEBDL-1080p.mkv
   Parsed Movie Quality: WEBDL-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Futurama - The Beast
     with a Billion Backs (2008)
@@ -4772,9 +4770,9 @@ Game of Thrones- The Last Watch (2019):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Game of Thrones- The Last
     Watch (2019)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: Game of Thrones- The Last Watch (2019) WEBDL-1080p.mkv
+  Parsed Movie Quality: WEBDL-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Game of Thrones- The
     Last Watch (2019)
   Relative Movie File Path: ''
@@ -4792,11 +4790,14 @@ Game of Thrones- The Last Watch (2019):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/fantasy/Game of Thrones/Season 00/Game of Thrones - S00E41
         - The Last Watch
-      Relative Show File Path: ''
+      Relative Show File Path: tv/fantasy/Game of Thrones/Season 00/Game of Thrones
+        - S00E41 - The Last Watch WEBDL-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: tv/fantasy/Game of Thrones/Season 00/Game of Thrones - S00E41 - The
+        Last Watch WEBDL-1080p.mkv -> ../../../../movies/staging/Game of Thrones-
+        The Last Watch (2019)/Game of Thrones- The Last Watch (2019) WEBDL-1080p.mkv
       Title: The Last Watch
   Unparsed Movie Title: Game of Thrones- The Last Watch (2019)
 Gantz (2010):
@@ -5728,9 +5729,9 @@ Hokuto no Ken - Raoh Den Junai Hen (2006):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Hokuto no Ken - Raoh Den
     Junai Hen (2006)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: Hokuto no Ken - Raoh Den Junai Hen (2006) Bluray-1080p.mkv
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Hokuto no Ken - Raoh
     Den Junai Hen (2006)
   Relative Movie File Path: ''
@@ -5748,11 +5749,15 @@ Hokuto no Ken - Raoh Den Junai Hen (2006):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Fist of the North Star/Season 00/Fist of the
         North Star - S00E010 - Hokuto no Ken - Legend of Heroes
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Fist of the North Star/Season 00/Fist
+        of the North Star - S00E010 - Hokuto no Ken - Legend of Heroes Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Fist of the North Star/Season 00/Fist of the North
+        Star - S00E010 - Hokuto no Ken - Legend of Heroes Bluray-1080p.mkv -> ../../../../movies/foreign/Hokuto
+        no Ken - Raoh Den Junai Hen (2006)/Hokuto no Ken - Raoh Den Junai Hen (2006)
+        Bluray-1080p.mkv
       Title: Hokuto no Ken - Legend of Heroes
   Unparsed Movie Title: Hokuto no Ken - Raoh Den Junai Hen (2006)
 "Hunter \xD7 Hunter- Phantom Rouge (2013)":
@@ -6574,9 +6579,11 @@ Kabaneri of the Iron Fortress Recap 1- Gathering Light (2016):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Kabaneri of the Iron Fortress
     Recap 1- Gathering Light (2016)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "/var/data/media/video/movies/foreign/Kabaneri of the Iron Fortress\
+    \ Recap 1- Gathering Light (2016)/\u7532\u9244\u57CE\u306E\u30AB\u30D0\u30CD\u30EA\
+    \ \u7DCF\u96C6\u7DE8\uFF5B\u524D\u7DE8\uFF5D\u96C6\u3046\u5149 (2016) WEBDL-720p.mkv"
+  Parsed Movie Quality: WEBDL-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Kabaneri of the Iron
     Fortress Recap 1- Gathering Light (2016)
   Relative Movie File Path: ''
@@ -6596,20 +6603,29 @@ Kabaneri of the Iron Fortress Recap 1- Gathering Light (2016):
       Parsed Show Title: anime/staging/Kabaneri of the Iron Fortress/Season 00/Kabaneri
         of the Iron Fortress - S00E001 - Kabaneri of the Iron Fortress Recap 1- Gathering
         Light
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Kabaneri of the Iron Fortress/Season
+        00/Kabaneri of the Iron Fortress - S00E001 - Kabaneri of the Iron Fortress
+        Recap 1- Gathering Light WEBDL-720p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Kabaneri of the Iron Fortress/Season 00/Kabaneri of
+        the Iron Fortress - S00E001 - Kabaneri of the Iron Fortress Recap 1- Gathering
+        Light WEBDL-720p.mkv -> ../../../../movies/foreign/Kabaneri of the Iron Fortress
+        Recap 1- Gathering Light (2016)/\xe7\x94\xb2\xe9\x89\x84\xe5\x9f\x8e\xe3\x81\xae\xe3\x82\xab\xe3\x83\x90\xe3\x83\x8d\xe3\x83\xaa
+        \xe7\xb7\x8f\xe9\x9b\x86\xe7\xb7\xa8\xef\xbd\x9b\xe5\x89\x8d\xe7\xb7\xa8\xef\xbd\x9d\xe9\x9b\x86\xe3\x81\x86\xe5\x85\x89
+        (2016) WEBDL-720p.mkv
       Title: Kabaneri of the Iron Fortress Recap 1- Gathering Light
   Unparsed Movie Title: Kabaneri of the Iron Fortress Recap 1- Gathering Light (2016)
 Kabaneri of the Iron Fortress Recap 2- Burning Life (2017):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Kabaneri of the Iron Fortress
     Recap 2- Burning Life (2017)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "/var/data/media/video/movies/foreign/Kabaneri of the Iron Fortress\
+    \ Recap 2- Burning Life (2017)/\u7532\u9244\u57CE\u306E\u30AB\u30D0\u30CD\u30EA\
+    \ \u7DCF\u96C6\u7DE8\uFF5B\u5F8C\u7DE8\uFF5D\u71C3\u3048\u308B\u547D (2017) WEBDL-720p.mkv"
+  Parsed Movie Quality: WEBDL-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Kabaneri of the Iron
     Fortress Recap 2- Burning Life (2017)
   Relative Movie File Path: ''
@@ -6629,11 +6645,18 @@ Kabaneri of the Iron Fortress Recap 2- Burning Life (2017):
       Parsed Show Title: anime/staging/Kabaneri of the Iron Fortress/Season 00/Kabaneri
         of the Iron Fortress - S00E002 - Kabaneri of the Iron Fortress Recap 2- Burning
         Life
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Kabaneri of the Iron Fortress/Season
+        00/Kabaneri of the Iron Fortress - S00E002 - Kabaneri of the Iron Fortress
+        Recap 2- Burning Life WEBDL-720p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Kabaneri of the Iron Fortress/Season 00/Kabaneri of
+        the Iron Fortress - S00E002 - Kabaneri of the Iron Fortress Recap 2- Burning
+        Life WEBDL-720p.mkv -> ../../../../movies/foreign/Kabaneri of the Iron Fortress
+        Recap 2- Burning Life (2017)/\xe7\x94\xb2\xe9\x89\x84\xe5\x9f\x8e\xe3\x81\xae\xe3\x82\xab\xe3\x83\x90\xe3\x83\x8d\xe3\x83\xaa
+        \xe7\xb7\x8f\xe9\x9b\x86\xe7\xb7\xa8\xef\xbd\x9b\xe5\xbe\x8c\xe7\xb7\xa8\xef\xbd\x9d\xe7\x87\x83\xe3\x81\x88\xe3\x82\x8b\xe5\x91\xbd
+        (2017) WEBDL-720p.mkv
       Title: Kabaneri of the Iron Fortress Recap 2- Burning Life
   Unparsed Movie Title: Kabaneri of the Iron Fortress Recap 2- Burning Life (2017)
 Kabaneri of the Iron Fortress- The Battle of Unato (2019):
@@ -10429,9 +10452,9 @@ Psych- The Movie (2017):
 Psych- The Musical (2013):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Psych- The Musical (2013)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: Psych- The Musical (2013) WEBDL-1080p.mkv
+  Parsed Movie Quality: WEBDL-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Psych- The Musical
     (2013)
   Relative Movie File Path: ''
@@ -10449,11 +10472,14 @@ Psych- The Musical (2013):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/staging/Psych/Season 00/Psych - S00E02 - The Big Adventures
         of Little Shawn and Gus
-      Relative Show File Path: ''
+      Relative Show File Path: tv/staging/Psych/Season 00/Psych - S00E02 - The Big
+        Adventures of Little Shawn and Gus WEBDL-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: tv/staging/Psych/Season 00/Psych - S00E02 - The Big Adventures of
+        Little Shawn and Gus WEBDL-1080p.mkv -> ../../../../movies/staging/Psych-
+        The Musical (2013)/Psych- The Musical (2013) WEBDL-1080p.mkv
       Title: The Big Adventures of Little Shawn and Gus
   Unparsed Movie Title: Psych- The Musical (2013)
 Psycho-Pass- The Movie (2015):
