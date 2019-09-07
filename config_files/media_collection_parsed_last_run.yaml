@@ -8249,14 +8249,19 @@ Naruto (0):
   Shows: {Naruto: null}
   Unparsed Movie Title: Naruto (0)
 Naruto Shippuden the Movie Blood Prison (2011):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The Movie
+  Absolute Movie File Path: "/var/data/media/video/movies/foreign/Naruto Shippuden\
+    \ the Movie Blood Prison (2011)/\u5287\u5834\u7248 NARUTO -\u30CA\u30EB\u30C8\
+    - \u30D6\u30E9\u30C3\u30C9\u30FB\u30D7\u30EA\u30BA\u30F3 (2011) Bluray-1080p.mkv"
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden the Movie
     Blood Prison (2011)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "/var/data/media/video/movies/foreign/Naruto Shippuden the Movie\
+    \ Blood Prison (2011)/\u5287\u5834\u7248 NARUTO -\u30CA\u30EB\u30C8- \u30D6\u30E9\
+    \u30C3\u30C9\u30FB\u30D7\u30EA\u30BA\u30F3 (2011) Bluray-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Naruto Shippuden The Movie Blood Prison (2011)
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/foreign/Naruto Shippuden the Movie Blood Prison (2011)
   Shows:
     Naruto Shippuden:
       Absolute Episode: ''
@@ -8270,11 +8275,16 @@ Naruto Shippuden the Movie Blood Prison (2011):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
         - S00E007 - Naruto Shippuden 5- Blood Prison
-      Relative Show File Path: ''
+      Relative Show File Path: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
+        - S00E007 - Naruto Shippuden 5- Blood Prison Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden - S00E007
+        - Naruto Shippuden 5- Blood Prison Bluray-1080p.mkv -> ../../../../movies/foreign/Naruto
+        Shippuden the Movie Blood Prison (2011)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88
+        NARUTO -\xe3\x83\x8a\xe3\x83\xab\xe3\x83\x88- \xe3\x83\x96\xe3\x83\xa9\xe3\x83\x83\xe3\x83\x89\xe3\x83\xbb\xe3\x83\x97\xe3\x83\xaa\xe3\x82\xba\xe3\x83\xb3
+        (2011) Bluray-1080p.mkv
       Title: Naruto Shippuden 5- Blood Prison
   Unparsed Movie Title: Naruto Shippuden the Movie Blood Prison (2011)
 Naruto Shippuden the Movie Bonds (2008):
