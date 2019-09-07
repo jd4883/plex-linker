@@ -11010,9 +11010,10 @@ Rurouni Kenshin- New Kyoto Arc- The Chirps of Light (2012):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Rurouni Kenshin- New Kyoto
     Arc- The Chirps of Light (2012)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mp4
+  Parsed Movie File: "\u308B\u308D\u3046\u306B\u5263\u5FC3 -\u660E\u6CBB\u5263\u5BA2\
+    \u6D6A\u6F2B\u8B5A- \u65B0\u4EAC\u90FD\u7DE8 \u5F8C\u7DE8 (2012) Bluray-1080p.mp4"
+  Parsed Movie Quality: Bluray-1080p.mp4
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Rurouni Kenshin- New
     Kyoto Arc- The Chirps of Light (2012)
   Relative Movie File Path: ''
@@ -11031,20 +11032,27 @@ Rurouni Kenshin- New Kyoto Arc- The Chirps of Light (2012):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Rurouni Kenshin/Season 00/Rurouni Kenshin -
         S00E009 - New Kyoto Arc OAV- Act 2 - The Chirps of Light
-      Relative Show File Path: ''
+      Relative Show File Path: anime/shounen/Rurouni Kenshin/Season 00/Rurouni Kenshin
+        - S00E009 - New Kyoto Arc OAV- Act 2 - The Chirps of Light Bluray-1080p.mp4
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/shounen/Rurouni Kenshin/Season 00/Rurouni Kenshin - S00E009
+        - New Kyoto Arc OAV- Act 2 - The Chirps of Light Bluray-1080p.mp4 -> ../../../../movies/foreign/Rurouni
+        Kenshin- New Kyoto Arc- The Chirps of Light (2012)/\xe3\x82\x8b\xe3\x82\x8d\xe3\x81\x86\xe3\x81\xab\xe5\x89\xa3\xe5\xbf\x83
+        -\xe6\x98\x8e\xe6\xb2\xbb\xe5\x89\xa3\xe5\xae\xa2\xe6\xb5\xaa\xe6\xbc\xab\xe8\xad\x9a-
+        \xe6\x96\xb0\xe4\xba\xac\xe9\x83\xbd\xe7\xb7\xa8 \xe5\xbe\x8c\xe7\xb7\xa8
+        (2012) Bluray-1080p.mp4
       Title: New Kyoto Arc OAV- Act 2 - The Chirps of Light
   Unparsed Movie Title: Rurouni Kenshin- New Kyoto Arc- The Chirps of Light (2012)
 Rurouni Kenshin- Reflection Director's Cut (2002):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Rurouni Kenshin- Reflection
     Director's Cut (2002)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: /var/data/media/video/movies/foreign/Rurouni Kenshin- Reflection
+    Director's Cut (2002)/Rurouni Kenshin- Reflection Director's Cut (2002) Remux-1080p.mkv
+  Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Rurouni Kenshin- Reflection
     Director's Cut (2002)
   Relative Movie File Path: ''
@@ -11062,11 +11070,15 @@ Rurouni Kenshin- Reflection Director's Cut (2002):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Rurouni Kenshin/Season 00/Rurouni Kenshin -
         S00E005-006 - Reflections OAV
-      Relative Show File Path: ''
+      Relative Show File Path: anime/shounen/Rurouni Kenshin/Season 00/Rurouni Kenshin
+        - S00E005-006 - Reflections OAV Bluray-1080p Remux.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/shounen/Rurouni Kenshin/Season 00/Rurouni Kenshin - S00E005-006
+        - Reflections OAV Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Rurouni
+        Kenshin- Reflection Director\\s Cut (2002)/Rurouni Kenshin- Reflection Director\\s
+        Cut (2002) Remux-1080p.mkv
       Title: Reflections OAV
   Unparsed Movie Title: Rurouni Kenshin- Reflection Director's Cut (2002)
 Rurouni Kenshin- The Legend Ends (2014):
