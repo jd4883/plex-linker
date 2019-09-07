@@ -8324,12 +8324,18 @@ Naruto Shippuden the Movie Bonds (2008):
       Title: Naruto Shippuden 2- Bonds
   Unparsed Movie Title: Naruto Shippuden the Movie Bonds (2008)
 Naruto Shippuden the Movie Inheritors of the Will of Fire (2009):
-  Absolute Movie File Path: ''
+  Absolute Movie File Path: "/var/data/media/video/movies/foreign/Naruto Shippuden\
+    \ the Movie Inheritors of the Will of Fire (2009)/\u5287\u5834\u7248 NARUTO -\u30CA\
+    \u30EB\u30C8- \u75BE\u98A8\u4F1D \u706B\u306E\u610F\u5FD7\u3092\u7D99\u3050\u8005\
+    \ (2009) Bluray-1080p.mkv"
   Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden the Movie
     Inheritors of the Will of Fire (2009)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "/var/data/media/video/movies/foreign/Naruto Shippuden the Movie\
+    \ Inheritors of the Will of Fire (2009)/\u5287\u5834\u7248 NARUTO -\u30CA\u30EB\
+    \u30C8- \u75BE\u98A8\u4F1D \u706B\u306E\u610F\u5FD7\u3092\u7D99\u3050\u8005 (2009)\
+    \ Bluray-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: ''
   Relative Movie File Path: ''
   Relative Movie Path: movies/foreign/Naruto Shippuden the Movie Inheritors of the
@@ -8347,11 +8353,17 @@ Naruto Shippuden the Movie Inheritors of the Will of Fire (2009):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
         - S00E003 - Naruto Shippuden 3- Inheritors of the Will of Fire
-      Relative Show File Path: ''
+      Relative Show File Path: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
+        - S00E003 - Naruto Shippuden 3- Inheritors of the Will of Fire Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden - S00E003
+        - Naruto Shippuden 3- Inheritors of the Will of Fire Bluray-1080p.mkv -> ../../../../movies/foreign/Naruto
+        Shippuden the Movie Inheritors of the Will of Fire (2009)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88
+        NARUTO -\xe3\x83\x8a\xe3\x83\xab\xe3\x83\x88- \xe7\x96\xbe\xe9\xa2\xa8\xe4\xbc\x9d
+        \xe7\x81\xab\xe3\x81\xae\xe6\x84\x8f\xe5\xbf\x97\xe3\x82\x92\xe7\xb6\x99\xe3\x81\x90\xe8\x80\x85
+        (2009) Bluray-1080p.mkv
       Title: Naruto Shippuden 3- Inheritors of the Will of Fire
   Unparsed Movie Title: Naruto Shippuden the Movie Inheritors of the Will of Fire
     (2009)
@@ -11376,14 +11388,11 @@ Saint Seiya Heaven Chapter- Overture (2004):
   Unparsed Movie Title: Saint Seiya Heaven Chapter- Overture (2004)
 Saint Seiya- Evil Goddess Eris (1987):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- Evil Goddess
-    Eris (1987)
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- Evil Goddess Eris (1987)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "\u8056\u95D8\u58EB\u661F\u77E2 \u90AA\u795E\u30A8\u30EA\u30B9\
-    \ (1987) Remux-1080p.mkv"
-  Parsed Movie Quality: Bluray-1080p Remux.mkv
-  Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- Evil
-    Goddess Eris (1987)
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
+  Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- Evil Goddess Eris (1987)
   Relative Movie File Path: ''
   Relative Movie Path: movies/foreign/Saint Seiya- Evil Goddess Eris (1987)
   Shows:
@@ -11399,15 +11408,11 @@ Saint Seiya- Evil Goddess Eris (1987):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E011
         (E1111) - Evil Goddess Eris
-      Relative Show File Path: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E011
-        (E1111) - Evil Goddess Eris Bluray-1080p Remux.mkv
+      Relative Show File Path: ''
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E011 (E1111)
-        - Evil Goddess Eris Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Saint
-        Seiya- Evil Goddess Eris (1987)/\xe8\x81\x96\xe9\x97\x98\xe5\xa3\xab\xe6\x98\x9f\xe7\x9f\xa2
-        \xe9\x82\xaa\xe7\xa5\x9e\xe3\x82\xa8\xe3\x83\xaa\xe3\x82\xb9 (1987) Remux-1080p.mkv
+      Symlinked: ''
       Title: Evil Goddess Eris
   Unparsed Movie Title: Saint Seiya- Evil Goddess Eris (1987)
 Saint Seiya- Knights Of The Zodiac (2018):
