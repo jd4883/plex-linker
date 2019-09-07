@@ -8255,9 +8255,8 @@ Naruto Shippuden the Movie Blood Prison (2011):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden the Movie
     Blood Prison (2011)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Naruto Shippuden the Movie\
-    \ Blood Prison (2011)/\u5287\u5834\u7248 NARUTO -\u30CA\u30EB\u30C8- \u30D6\u30E9\
-    \u30C3\u30C9\u30FB\u30D7\u30EA\u30BA\u30F3 (2011) Bluray-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248 NARUTO -\u30CA\u30EB\u30C8- \u30D6\u30E9\u30C3\
+    \u30C9\u30FB\u30D7\u30EA\u30BA\u30F3 (2011) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: ''
   Relative Movie File Path: ''
@@ -8288,14 +8287,18 @@ Naruto Shippuden the Movie Blood Prison (2011):
       Title: Naruto Shippuden 5- Blood Prison
   Unparsed Movie Title: Naruto Shippuden the Movie Blood Prison (2011)
 Naruto Shippuden the Movie Bonds (2008):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The Movie
+  Absolute Movie File Path: "/var/data/media/video/movies/foreign/Naruto Shippuden\
+    \ the Movie Bonds (2008)/\u5287\u5834\u7248 NARUTO -\u30CA\u30EB\u30C8- \u75BE\
+    \u98A8\u4F1D \u7D46 (2008) Bluray-1080p.mkv"
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden the Movie
     Bonds (2008)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "\u5287\u5834\u7248 NARUTO -\u30CA\u30EB\u30C8- \u75BE\u98A8\u4F1D\
+    \ \u7D46 (2008) Bluray-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Naruto Shippuden The Movie Bonds (2008)
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/foreign/Naruto Shippuden the Movie Bonds (2008)
   Shows:
     Naruto Shippuden:
       Absolute Episode: ''
@@ -8309,11 +8312,16 @@ Naruto Shippuden the Movie Bonds (2008):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
         - S00E002 - Naruto Shippuden 2- Bonds
-      Relative Show File Path: ''
+      Relative Show File Path: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
+        - S00E002 - Naruto Shippuden 2- Bonds Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden - S00E002
+        - Naruto Shippuden 2- Bonds Bluray-1080p.mkv -> ../../../../movies/foreign/Naruto
+        Shippuden the Movie Bonds (2008)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88 NARUTO
+        -\xe3\x83\x8a\xe3\x83\xab\xe3\x83\x88- \xe7\x96\xbe\xe9\xa2\xa8\xe4\xbc\x9d
+        \xe7\xb5\x86 (2008) Bluray-1080p.mkv
       Title: Naruto Shippuden 2- Bonds
   Unparsed Movie Title: Naruto Shippuden the Movie Bonds (2008)
 Naruto Shippuden the Movie Inheritors of the Will of Fire (2009):
@@ -8349,14 +8357,16 @@ Naruto Shippuden the Movie Inheritors of the Will of Fire (2009):
   Unparsed Movie Title: Naruto Shippuden the Movie Inheritors of the Will of Fire
     (2009)
 Naruto Shippuden the Movie Road to Ninja (2012):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The Movie
-    Road To Ninja (2012)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Absolute Movie File Path: /var/data/media/video/movies/foreign/Naruto Shippuden
+    the Movie Road to Ninja (2012)/ROAD TO NINJA -NARUTO THE MOVIE- (2012) Bluray-1080p.mkv
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden the Movie
+    Road to Ninja (2012)
+  Parsed Movie Extension: mkv
+  Parsed Movie File: ROAD TO NINJA -NARUTO THE MOVIE- (2012) Bluray-1080p.mkv
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Naruto Shippuden The Movie Road To Ninja (2012)
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/foreign/Naruto Shippuden the Movie Road to Ninja (2012)
   Shows:
     Naruto Shippuden:
       Absolute Episode: ''
@@ -8370,22 +8380,30 @@ Naruto Shippuden the Movie Road to Ninja (2012):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
         - S00E010 - Naruto Shippuden 6- Road to Ninja
-      Relative Show File Path: ''
+      Relative Show File Path: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
+        - S00E010 - Naruto Shippuden 6- Road to Ninja Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden - S00E010
+        - Naruto Shippuden 6- Road to Ninja Bluray-1080p.mkv -> ../../../../movies/foreign/Naruto
+        Shippuden the Movie Road to Ninja (2012)/ROAD TO NINJA -NARUTO THE MOVIE-
+        (2012) Bluray-1080p.mkv
       Title: Naruto Shippuden 6- Road to Ninja
   Unparsed Movie Title: Naruto Shippuden the Movie Road to Ninja (2012)
 Naruto Shippuden the Movie The Lost Tower (2010):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The Movie
+  Absolute Movie File Path: "/var/data/media/video/movies/foreign/Naruto Shippuden\
+    \ the Movie The Lost Tower (2010)/\u5287\u5834\u7248 NARUTO -\u30CA\u30EB\u30C8\
+    - \u75BE\u98A8\u4F1D \u30B6\u30FB\u30ED\u30B9\u30C8\u30BF\u30EF\u30FC (2010) Bluray-1080p.mkv"
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden the Movie
     The Lost Tower (2010)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "\u5287\u5834\u7248 NARUTO -\u30CA\u30EB\u30C8- \u75BE\u98A8\u4F1D\
+    \ \u30B6\u30FB\u30ED\u30B9\u30C8\u30BF\u30EF\u30FC (2010) Bluray-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Naruto Shippuden The Movie The Lost Tower (2010)
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/foreign/Naruto Shippuden the Movie The Lost Tower (2010)
   Shows:
     Naruto Shippuden:
       Absolute Episode: ''
@@ -8399,11 +8417,17 @@ Naruto Shippuden the Movie The Lost Tower (2010):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
         - S00E004 - Naruto Shippuden 4- The Lost Tower
-      Relative Show File Path: ''
+      Relative Show File Path: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
+        - S00E004 - Naruto Shippuden 4- The Lost Tower Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden - S00E004
+        - Naruto Shippuden 4- The Lost Tower Bluray-1080p.mkv -> ../../../../movies/foreign/Naruto
+        Shippuden the Movie The Lost Tower (2010)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88
+        NARUTO -\xe3\x83\x8a\xe3\x83\xab\xe3\x83\x88- \xe7\x96\xbe\xe9\xa2\xa8\xe4\xbc\x9d
+        \xe3\x82\xb6\xe3\x83\xbb\xe3\x83\xad\xe3\x82\xb9\xe3\x83\x88\xe3\x82\xbf\xe3\x83\xaf\xe3\x83\xbc
+        (2010) Bluray-1080p.mkv
       Title: Naruto Shippuden 4- The Lost Tower
   Unparsed Movie Title: Naruto Shippuden the Movie The Lost Tower (2010)
 Naruto Shippuden- The Movie (2007):
@@ -8435,16 +8459,14 @@ Naruto Shippuden- The Movie (2007):
       Symlinked: ''
       Title: Naruto Shippuden the Movie
   Unparsed Movie Title: Naruto Shippuden- The Movie (2007)
-Naruto The Movie- Legend Of The Stone Of Gelel (2005):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto The Movie- Legend
-    Of The Stone Of Gelel (2005)
+Naruto the Movie- Legend of the Stone of Gelel (2005):
+  Absolute Movie File Path: /var/data/media/video/movies/foreign/Naruto the Movie- Legend of the Stone of Gelel (2005)/劇場版 NARUTO -ナルト- 大激突!幻の地底遺跡だってばよ (2005) Bluray-1080p.mkv
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto the Movie- Legend of the Stone of Gelel (2005)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Naruto The Movie- Legend Of The Stone Of Gelel
-    (2005)
+  Relative Movie Path: movies/foreign/Naruto the Movie- Legend of the Stone of Gelel (2005)
   Shows:
     Naruto:
       Absolute Episode: ''
@@ -8464,7 +8486,7 @@ Naruto The Movie- Legend Of The Stone Of Gelel (2005):
       Show Dictionary Object: {}
       Symlinked: ''
       Title: Naruto the Movie 2- Legend of the Stone of Gelel
-  Unparsed Movie Title: Naruto The Movie- Legend Of The Stone Of Gelel (2005)
+  Unparsed Movie Title: Naruto the Movie- Legend of the Stone of Gelel (2005)
 "Naruto cl\xE1ssico (0)":
   Absolute Movie File Path: ''
   Absolute Movie Path: "/var/data/media/video/movies/foreign/Naruto cl\xE1ssico (0)"
@@ -8477,7 +8499,10 @@ Naruto The Movie- Legend Of The Stone Of Gelel (2005):
   Shows: {Naruto: null}
   Unparsed Movie Title: "Naruto cl\xE1ssico (0)"
 Naruto the Movie- Guardians of the Crescent Moon Kingdom (2006):
-  Absolute Movie File Path: ''
+  Absolute Movie File Path: "/var/data/media/video/movies/foreign/Naruto the Movie-\
+    \ Guardians of the Crescent Moon Kingdom (2006)/\u5287\u5834\u7248 NARUTO -\u30CA\
+    \u30EB\u30C8- \u5927\u8208\u596E!\u307F\u304B\u3065\u304D\u5CF6\u306E\u30A2\u30CB\
+    \u30DE\u30EB\u9A12\u52D5\u3060\u3063\u3066\u3070\u3088 (2006) Bluray-1080p.mkv"
   Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto the Movie- Guardians
     of the Crescent Moon Kingdom (2006)
   Parsed Movie Extension: mkv
@@ -8514,10 +8539,7 @@ Naruto the Movie- Guardians of the Crescent Moon Kingdom (2006):
         NARUTO -\xe3\x83\x8a\xe3\x83\xab\xe3\x83\x88- \xe5\xa4\xa7\xe8\x88\x88\xe5\xa5\xae!\xe3\x81\xbf\xe3\x81\x8b\xe3\x81\xa5\xe3\x81\x8d\xe5\xb3\xb6\xe3\x81\xae\xe3\x82\xa2\xe3\x83\x8b\xe3\x83\x9e\xe3\x83\xab\xe9\xa8\x92\xe5\x8b\x95\xe3\x81\xa0\xe3\x81\xa3\xe3\x81\xa6\xe3\x81\xb0\xe3\x82\x88
         (2006) Bluray-1080p.mkv
       Title: Naruto the Movie 3- Guardians of the Crescent Moon Kingdom
-  Symlink Target: "/var/data/media/video/movies/foreign/Naruto the Movie- Guardians\
-    \ of the Crescent Moon Kingdom (2006)/\u5287\u5834\u7248 NARUTO -\u30CA\u30EB\u30C8\
-    - \u5927\u8208\u596E!\u307F\u304B\u3065\u304D\u5CF6\u306E\u30A2\u30CB\u30DE\u30EB\
-    \u9A12\u52D5\u3060\u3063\u3066\u3070\u3088 (2006) Bluray-1080p.mkv"
+  Symlink Target: ''
   Unparsed Movie Title: Naruto the Movie- Guardians of the Crescent Moon Kingdom (2006)
 Naruto the Movie- Ninja Clash in the Land of Snow (2004):
   Absolute Movie File Path: ''
@@ -14538,12 +14560,13 @@ Top Gear- Middle East Special (2011):
   Unparsed Movie Title: Top Gear- Middle East Special (2011)
 Top Gear- Patagonia Special- Part 1 (2014):
   Absolute Movie File Path: ''
-  Absolute Movie Path: '/var/data/media/video/movies/foreign/Top Gear- Patagonia Special- Part 1 (2014)'
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Top Gear- Patagonia Special-
+    Part 1 (2014)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
   Raw Absolute Movie Path: ''
-  Relative Movie Path: 'movies/foreign/Top Gear- Patagonia Special- Part 1 (2014)'
+  Relative Movie Path: movies/foreign/Top Gear- Patagonia Special- Part 1 (2014)
   Shows:
     Top Gear:
       Absolute Episode: ''
@@ -14564,7 +14587,7 @@ Top Gear- Patagonia Special- Part 1 (2014):
       Symlinked: ''
       Title: Patagonia Special (1)
   Unparsed Movie Title: Top Gear- Patagonia Special- Part 1 (2014)
-'Top Gear- Patagonia Special- Part 2 (2014)':
+Top Gear- Patagonia Special- Part 2 (2014):
   Absolute Movie File Path: ''
   Absolute Movie Path: '/var/data/media/video/movies/foreign/Top Gear- Patagonia Special:
     Part 2 (2014)'
@@ -14572,7 +14595,7 @@ Top Gear- Patagonia Special- Part 1 (2014):
   Parsed Movie File: ''
   Parsed Movie Quality: ''
   Raw Absolute Movie Path: ''
-  Relative Movie Path: 'movies/foreign/Top Gear- Patagonia Special- Part 2 (2014)'
+  Relative Movie Path: 'movies/foreign/Top Gear- Patagonia Special: Part 2 (2014)'
   Shows:
     Top Gear:
       Absolute Episode: ''
@@ -14592,7 +14615,7 @@ Top Gear- Patagonia Special- Part 1 (2014):
       Show Dictionary Object: {}
       Symlinked: ''
       Title: Patagonia Special (2)
-  Unparsed Movie Title: 'Top Gear- Patagonia Special- Part 2 (2014)'
+  Unparsed Movie Title: Top Gear- Patagonia Special- Part 2 (2014)
 Top Gear- Revved Up (2005):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Top Gear- Revved Up (2005)
