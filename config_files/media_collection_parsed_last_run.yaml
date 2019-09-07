@@ -4698,11 +4698,13 @@ Futurama - Into the Wild Green Yonder (2009):
   Unparsed Movie Title: Futurama - Into the Wild Green Yonder (2009)
 Futurama - The Beast with a Billion Backs (2008):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/staging/Futurama - The Beast with a Billion Backs (2008)
+  Absolute Movie Path: /var/data/media/video/movies/staging/Futurama - The Beast with
+    a Billion Backs (2008)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
-  Raw Absolute Movie Path: /var/data/media/video/movies/staging/Futurama - The Beast with a Billion Backs (2008)
+  Raw Absolute Movie Path: /var/data/media/video/movies/staging/Futurama - The Beast
+    with a Billion Backs (2008)
   Relative Movie File Path: ''
   Relative Movie Path: movies/staging/Futurama - The Beast with a Billion Backs (2008)
   Shows:
@@ -10975,9 +10977,8 @@ Rurouni Kenshin- New Kyoto Arc- Cage of Flames (2011):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Rurouni Kenshin- New Kyoto
     Arc- Cage of Flames (2011)
   Parsed Movie Extension: mp4
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Rurouni Kenshin- New Kyoto\
-    \ Arc- Cage of Flames (2011)/\u308B\u308D\u3046\u306B\u5263\u5FC3 -\u660E\u6CBB\
-    \u5263\u5BA2\u6D6A\u6F2B\u8B5A- \u65B0\u4EAC\u90FD\u7DE8 \u524D\u7DE8 (2011) Bluray-1080p.mp4"
+  Parsed Movie File: "\u308B\u308D\u3046\u306B\u5263\u5FC3 -\u660E\u6CBB\u5263\u5BA2\
+    \u6D6A\u6F2B\u8B5A- \u65B0\u4EAC\u90FD\u7DE8 \u524D\u7DE8 (2011) Bluray-1080p.mp4"
   Parsed Movie Quality: Bluray-1080p.mp4
   Raw Absolute Movie Path: ''
   Relative Movie File Path: ''
