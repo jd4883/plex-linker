@@ -1876,8 +1876,9 @@ Boruto- Naruto the Movie (2015):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Boruto- Naruto the Movie
     (2015)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "\u30DC\u30EB\u30C8 \u30CA\u30EB\u30C8\u30FB\u30B6\u30FB\u30E0\
-    \u30FC\u30D3\u30FC (2015) Bluray-1080p.mkv"
+  Parsed Movie File: "/var/data/media/video/movies/foreign/Boruto- Naruto the Movie\
+    \ (2015)/\u30DC\u30EB\u30C8 \u30CA\u30EB\u30C8\u30FB\u30B6\u30FB\u30E0\u30FC\u30D3\
+    \u30FC (2015) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Boruto- Naruto the
     Movie (2015)
@@ -2057,7 +2058,9 @@ Chunin Exam on Fire! and Naruto vs. Konohamaru! (2011):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Chunin Exam on Fire! and
     Naruto vs. Konohamaru! (2011)
   Parsed Movie Extension: mkv
-  Parsed Movie File: Chunin Exam on Fire! and Naruto vs. Konohamaru! (2011) Bluray-1080p.mkv
+  Parsed Movie File: /var/data/media/video/movies/foreign/Chunin Exam on Fire! and
+    Naruto vs. Konohamaru! (2011)/Chunin Exam on Fire! and Naruto vs. Konohamaru!
+    (2011) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: ''
   Relative Movie File Path: ''
@@ -4707,7 +4710,7 @@ Futurama - The Beast with a Billion Backs (2008):
     a Billion Backs (2008)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
-  Parsed Movie Quality: null
+  Parsed Movie Quality:
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Futurama - The Beast
     with a Billion Backs (2008)
   Relative Movie File Path: ''
@@ -4798,8 +4801,7 @@ Gantz (2010):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Gantz (2010)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Gantz (2010)/GANTZ (2010)
-    Bluray-1080p.mkv
+  Parsed Movie File: GANTZ (2010) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Gantz (2010)
   Relative Movie File Path: ''
@@ -4831,8 +4833,7 @@ Gantz- Perfect Answer (2011):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Gantz- Perfect Answer
     (2011)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Gantz- Perfect Answer (2011)/GANTZ
-    PERFECT ANSWER (2011) Bluray-1080p.mkv
+  Parsed Movie File: GANTZ PERFECT ANSWER (2011) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Gantz- Perfect Answer
     (2011)
@@ -4867,8 +4868,7 @@ Gantz-O (2016):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Gantz-O (2016)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Gantz-O (2016)/GANTZ-O (2016)
-    HDTV-720p.mkv
+  Parsed Movie File: GANTZ-O (2016) HDTV-720p.mkv
   Parsed Movie Quality: HDTV-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Gantz-O (2016)
   Relative Movie File Path: ''
@@ -4900,8 +4900,7 @@ Ghost in the Shell (1995):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Ghost in the Shell (1995)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Ghost in the Shell (1995)/GHOST
-    IN THE SHELL (1995) Remux-1080p.mkv
+  Parsed Movie File: GHOST IN THE SHELL (1995) Remux-1080p.mkv
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Ghost in the Shell
     (1995)
@@ -4939,8 +4938,7 @@ Ghost in the Shell (2017):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Ghost in the Shell (2017)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/Ghost in the Shell (2017)/Ghost
-    in the Shell (2017) Bluray-2160p.mkv
+  Parsed Movie File: Ghost in the Shell (2017) Bluray-2160p.mkv
   Parsed Movie Quality: Bluray-2160p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Ghost in the Shell
     (2017)
@@ -4979,8 +4977,7 @@ Ghost in the Shell 2- Innocence (2004):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Ghost in the Shell 2-
     Innocence (2004)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Ghost in the Shell 2- Innocence\
-    \ (2004)/GHOST IN THE SHELL2 \u30A4\u30CE\u30BB\u30F3\u30B9 (2004) Remux-1080p.mkv"
+  Parsed Movie File: "GHOST IN THE SHELL2 \u30A4\u30CE\u30BB\u30F3\u30B9 (2004) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Ghost in the Shell
     2- Innocence (2004)
@@ -5020,9 +5017,8 @@ Ghost in the Shell- Stand Alone Complex - Solid State Society (2006):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Ghost in the Shell- Stand
     Alone Complex - Solid State Society (2006)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Ghost in the Shell- Stand\
-    \ Alone Complex - Solid State Society (2006)/\u653B\u6BBB\u6A5F\u52D5\u968A STAND\
-    \ ALONE COMPLEX Solid State Society (2006) Remux-1080p.mkv"
+  Parsed Movie File: "\u653B\u6BBB\u6A5F\u52D5\u968A STAND ALONE COMPLEX Solid State\
+    \ Society (2006) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Ghost in the Shell-
     Stand Alone Complex - Solid State Society (2006)
@@ -5064,9 +5060,8 @@ Ghost in the Shell- Stand Alone Complex - The Laughing Man (2005):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Ghost in the Shell- Stand
     Alone Complex - The Laughing Man (2005)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Ghost in the Shell- Stand\
-    \ Alone Complex - The Laughing Man (2005)/\u653B\u6BBB\u6A5F\u52D5\u968A STAND\
-    \ ALONE COMPLEX The Laughing Man (2004) Bluray-1080p.mkv"
+  Parsed Movie File: "\u653B\u6BBB\u6A5F\u52D5\u968A STAND ALONE COMPLEX The Laughing\
+    \ Man (2004) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Ghost in the Shell-
     Stand Alone Complex - The Laughing Man (2005)
@@ -5169,8 +5164,7 @@ Gintama- The Movie (2010):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Gintama- The Movie (2010)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Gintama- The Movie (2010)/\u9280\
-    \u9B42 \u65B0\u8A33\u7D05\u685C\u7BC7 (2010) Bluray-1080p.mkv"
+  Parsed Movie File: "\u9280\u9B42 \u65B0\u8A33\u7D05\u685C\u7BC7 (2010) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Gintama- The Movie
     (2010)
@@ -5205,8 +5199,7 @@ God Eater Prologue (0):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/God Eater Prologue (0)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/God Eater Prologue (0)/God
-    Eater Prologue (0) WEBDL-720p.mkv
+  Parsed Movie File: God Eater Prologue (0) WEBDL-720p.mkv
   Parsed Movie Quality: WEBDL-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/God Eater Prologue
     (0)
@@ -5301,9 +5294,8 @@ Gundam Wing- Endless Waltz (1998):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Gundam Wing- Endless Waltz
     (1998)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Gundam Wing- Endless Waltz\
-    \ (1998)/\u65B0\u6A5F\u52D5\u6226\u8A18\u30AC\u30F3\u30C0\u30E0W Endless Waltz\
-    \ (1998) Bluray-1080p.mkv"
+  Parsed Movie File: "\u65B0\u6A5F\u52D5\u6226\u8A18\u30AC\u30F3\u30C0\u30E0W Endless\
+    \ Waltz (1998) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Gundam Wing- Endless
     Waltz (1998)
@@ -5390,9 +5382,8 @@ Gurren Lagann The Movie- Childhood's End (2008):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Gurren Lagann The Movie-
     Childhood's End (2008)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Gurren Lagann The Movie-\
-    \ Childhood's End (2008)/\u5287\u5834\u7248\u3000\u5929\u5143\u7A81\u7834\u30B0\
-    \u30EC\u30F3\u30E9\u30AC\u30F3\u3000\u7D05\u84EE\u7BC7 (2008) Bluray-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248\u3000\u5929\u5143\u7A81\u7834\u30B0\u30EC\
+    \u30F3\u30E9\u30AC\u30F3\u3000\u7D05\u84EE\u7BC7 (2008) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Gurren Lagann The
     Movie- Childhood's End (2008)
@@ -5416,10 +5407,7 @@ Gurren Lagann The Movie- Childhood's End (2008):
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/staging/Gurren Lagann/Season 00/Gurren Lagann - S00E003 - Gurren
-        Lagann the Movie -Childhood\s End- Bluray-1080p.mkv" -> \../../../../movies/foreign/Gurren
-        Lagann The Movie- Childhood\\\\\s End (2008)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88\xe3\x80\x80\xe5\xa4\xa9\xe5\x85\x83\xe7\xaa\x81\xe7\xa0\xb4\xe3\x82\xb0\xe3\x83\xac\xe3\x83\xb3\xe3\x83\xa9\xe3\x82\xac\xe3\x83\xb3\xe3\x80\x80\xe7\xb4\x85\xe8\x93\xae\xe7\xaf\x87
-        (2008) Bluray-1080p.mkv
+      Symlinked: ''
       Title: Gurren Lagann the Movie -Childhood's End-
   Unparsed Movie Title: Gurren Lagann The Movie- Childhood's End (2008)
 Gurren Lagann The Movie- The Lights in the Sky Are Stars (2009):
@@ -5427,9 +5415,8 @@ Gurren Lagann The Movie- The Lights in the Sky Are Stars (2009):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Gurren Lagann The Movie-
     The Lights in the Sky Are Stars (2009)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Gurren Lagann The Movie-\
-    \ The Lights in the Sky Are Stars (2009)/\u5287\u5834\u7248\u3000\u5929\u5143\u7A81\
-    \u7834\u30B0\u30EC\u30F3\u30E9\u30AC\u30F3\u3000\u87BA\u5DCC\u7DE8 (2009) WEBDL-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248\u3000\u5929\u5143\u7A81\u7834\u30B0\u30EC\
+    \u30F3\u30E9\u30AC\u30F3\u3000\u87BA\u5DCC\u7DE8 (2009) WEBDL-1080p.mkv"
   Parsed Movie Quality: WEBDL-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Gurren Lagann The
     Movie- The Lights in the Sky Are Stars (2009)
@@ -5454,10 +5441,7 @@ Gurren Lagann The Movie- The Lights in the Sky Are Stars (2009):
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/staging/Gurren Lagann/Season 00/Gurren Lagann - S00E004 - Gurren
-        Lagann the Movie -The Lights in the Sky Are Stars- WEBDL-1080p.mkv -> ../../../../movies/foreign/Gurren
-        Lagann The Movie- The Lights in the Sky Are Stars (2009)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88\xe3\x80\x80\xe5\xa4\xa9\xe5\x85\x83\xe7\xaa\x81\xe7\xa0\xb4\xe3\x82\xb0\xe3\x83\xac\xe3\x83\xb3\xe3\x83\xa9\xe3\x82\xac\xe3\x83\xb3\xe3\x80\x80\xe8\x9e\xba\xe5\xb7\x8c\xe7\xb7\xa8
-        (2009) WEBDL-1080p.mkv
+      Symlinked: ''
       Title: Gurren Lagann the Movie -The Lights in the Sky Are Stars-
   Unparsed Movie Title: Gurren Lagann The Movie- The Lights in the Sky Are Stars (2009)
 Haikyuu!! Movie 2- Winners and Losers (2015):
@@ -5465,8 +5449,7 @@ Haikyuu!! Movie 2- Winners and Losers (2015):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Haikyuu!! Movie 2- Winners
     and Losers (2015)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Haikyuu!! Movie 2- Winners
-    and Losers (2015)/Haikyuu!! Movie 2- Winners and Losers (2015) Bluray-1080p.mkv
+  Parsed Movie File: Haikyuu!! Movie 2- Winners and Losers (2015) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Haikyuu!! Movie 2-
     Winners and Losers (2015)
@@ -5503,8 +5486,7 @@ Haikyuu!! Movie 3- Genius and Sense (2017):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Haikyuu!! Movie 3- Genius
     and Sense (2017)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Haikyuu!! Movie 3- Genius
-    and Sense (2017)/Haikyuu!! Movie 3- Genius and Sense (2017) Bluray-1080p.mkv
+  Parsed Movie File: Haikyuu!! Movie 3- Genius and Sense (2017) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Haikyuu!! Movie 3-
     Genius and Sense (2017)
@@ -5541,8 +5523,7 @@ Haikyuu!! Movie 4- Battle of Concepts (2017):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Haikyuu!! Movie 4- Battle
     of Concepts (2017)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Haikyuu!! Movie 4- Battle
-    of Concepts (2017)/Haikyuu!! Movie 4- Battle of Concepts (2017) Bluray-1080p.mkv
+  Parsed Movie File: Haikyuu!! Movie 4- Battle of Concepts (2017) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Haikyuu!! Movie 4-
     Battle of Concepts (2017)
@@ -5579,8 +5560,7 @@ Haikyuu!! The Movie- Beginnings and Endings (2015):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Haikyuu!! The Movie- Beginnings
     and Endings (2015)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Haikyuu!! The Movie- Beginnings
-    and Endings (2015)/Haikyuu!! The Movie- Beginnings and Endings (2015) Bluray-1080p.mkv
+  Parsed Movie File: Haikyuu!! The Movie- Beginnings and Endings (2015) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Haikyuu!! The Movie-
     Beginnings and Endings (2015)
@@ -5618,8 +5598,7 @@ Hajime no Ippo- Champion Road (2003):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Hajime no Ippo- Champion
     Road (2003)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Hajime no Ippo- Champion
-    Road (2003)/Hajime no Ippo- Champion Road (2003) DVD.mkv
+  Parsed Movie File: Hajime no Ippo- Champion Road (2003) DVD.mkv
   Parsed Movie Quality: DVD.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Hajime no Ippo- Champion
     Road (2003)
@@ -5703,9 +5682,7 @@ High School of the Dead OVA- Drifters of the Dead (2011):
   Absolute Movie Path: /var/data/media/video/movies/foreign/High School of the Dead
     OVA- Drifters of the Dead (2011)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/High School of the Dead
-    OVA- Drifters of the Dead (2011)/High School of the Dead OVA- Drifters of the
-    Dead (2011) Remux-1080p.mkv
+  Parsed Movie File: High School of the Dead OVA- Drifters of the Dead (2011) Remux-1080p.mkv
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/High School of the
     Dead OVA- Drifters of the Dead (2011)
@@ -5775,8 +5752,7 @@ Hokuto no Ken - Raoh Den Junai Hen (2006):
   Absolute Movie Path: "/var/data/media/video/movies/foreign/Hunter \xD7 Hunter- Phantom\
     \ Rouge (2013)"
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Hunter \xD7 Hunter- Phantom\
-    \ Rouge (2013)/\u5287\u5834\u7248 HUNTERxHUNTER \u7DCB\u8272\u306E\u5E7B\u5F71\
+  Parsed Movie File: "\u5287\u5834\u7248 HUNTERxHUNTER \u7DCB\u8272\u306E\u5E7B\u5F71\
     (\u30D5\u30A1\u30F3\u30C8\u30E0\u30FB\u30EB\u30FC\u30B8\u30E5) (2013) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: "/var/data/media/video/movies/foreign/Hunter \xD7 Hunter-\
@@ -5816,8 +5792,7 @@ Hokuto no Ken - Raoh Den Junai Hen (2006):
   Absolute Movie Path: "/var/data/media/video/movies/foreign/Hunter \xD7 Hunter- The\
     \ Last Mission (2013)"
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Hunter \xD7 Hunter- The\
-    \ Last Mission (2013)/\u5287\u5834\u7248 HUNTER\xD7HUNTER -The LAST MISSION- (2013)\
+  Parsed Movie File: "\u5287\u5834\u7248 HUNTER\xD7HUNTER -The LAST MISSION- (2013)\
     \ Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: "/var/data/media/video/movies/foreign/Hunter \xD7 Hunter-\
@@ -5855,8 +5830,7 @@ Inside The X-Files (1998):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Inside The X-Files (1998)
   Parsed Movie Extension: mp4
-  Parsed Movie File: /var/data/media/video/movies/staging/Inside The X-Files (1998)/Inside
-    The X-Files (1998) DVD.mp4
+  Parsed Movie File: Inside The X-Files (1998) DVD.mp4
   Parsed Movie Quality: DVD.mp4
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Inside The X-Files
     (1998)
@@ -5890,9 +5864,8 @@ Inuyasha the Movie 2- The Castle Beyond the Looking Glass (2002):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Inuyasha the Movie 2-
     The Castle Beyond the Looking Glass (2002)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Inuyasha the Movie 2- The
-    Castle Beyond the Looking Glass (2002)/Inuyasha the Movie 2- The Castle Beyond
-    the Looking Glass (2002) Bluray-720p.mkv
+  Parsed Movie File: Inuyasha the Movie 2- The Castle Beyond the Looking Glass (2002)
+    Bluray-720p.mkv
   Parsed Movie Quality: Bluray-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Inuyasha the Movie
     2- The Castle Beyond the Looking Glass (2002)
@@ -5932,9 +5905,7 @@ Inuyasha the Movie 3- Swords of an Honorable Ruler (2003):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Inuyasha the Movie 3-
     Swords of an Honorable Ruler (2003)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Inuyasha the Movie 3- Swords
-    of an Honorable Ruler (2003)/Inuyasha the Movie 3- Swords of an Honorable Ruler
-    (2003) Bluray-720p.mkv
+  Parsed Movie File: Inuyasha the Movie 3- Swords of an Honorable Ruler (2003) Bluray-720p.mkv
   Parsed Movie Quality: Bluray-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Inuyasha the Movie
     3- Swords of an Honorable Ruler (2003)
@@ -5973,9 +5944,7 @@ Inuyasha the Movie 4- Fire on the Mystic Island (2004):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Inuyasha the Movie 4-
     Fire on the Mystic Island (2004)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Inuyasha the Movie 4- Fire
-    on the Mystic Island (2004)/Inuyasha the Movie 4- Fire on the Mystic Island (2004)
-    Bluray-720p.mkv
+  Parsed Movie File: Inuyasha the Movie 4- Fire on the Mystic Island (2004) Bluray-720p.mkv
   Parsed Movie Quality: Bluray-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Inuyasha the Movie
     4- Fire on the Mystic Island (2004)
@@ -6014,9 +5983,8 @@ Inuyasha the Movie- Affections Touching Across Time (2001):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Inuyasha the Movie- Affections
     Touching Across Time (2001)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Inuyasha the Movie- Affections\
-    \ Touching Across Time (2001)/\u6620\u753B \u72AC\u591C\u53C9 \u6642\u4EE3\u3092\
-    \u8D8A\u3048\u308B\u60F3\u3044 (2001) Bluray-720p.mkv"
+  Parsed Movie File: "\u6620\u753B \u72AC\u591C\u53C9 \u6642\u4EE3\u3092\u8D8A\u3048\
+    \u308B\u60F3\u3044 (2001) Bluray-720p.mkv"
   Parsed Movie Quality: Bluray-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Inuyasha the Movie-
     Affections Touching Across Time (2001)
@@ -6066,8 +6034,7 @@ Jeff Dunham - All Over the Map (2014):
   Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham - All
     Over the Map (2014)
   Parsed Movie Extension: mp4
-  Parsed Movie File: /var/data/media/video/movies/standup_comedy/Jeff Dunham - All
-    Over the Map (2014)/Jeff Dunham- All Over the Map (2014) Bluray-1080p.mp4
+  Parsed Movie File: Jeff Dunham- All Over the Map (2014) Bluray-1080p.mp4
   Parsed Movie Quality: Bluray-1080p.mp4
   Raw Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham
     - All Over the Map (2014)
@@ -6101,8 +6068,7 @@ Jeff Dunham - Arguing with Myself (2006):
   Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham - Arguing
     with Myself (2006)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/standup_comedy/Jeff Dunham - Arguing
-    with Myself (2006)/Jeff Dunham- Arguing with Myself (2006) Bluray-1080p.mkv
+  Parsed Movie File: Jeff Dunham- Arguing with Myself (2006) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham
     - Arguing with Myself (2006)
@@ -6139,8 +6105,7 @@ Jeff Dunham - Birth of a Dummy (2011):
   Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham - Birth
     of a Dummy (2011)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/standup_comedy/Jeff Dunham - Birth
-    of a Dummy (2011)/Jeff Dunham- Birth of a Dummy (2011) HDTV-720p Proper.mkv
+  Parsed Movie File: Jeff Dunham- Birth of a Dummy (2011) HDTV-720p Proper.mkv
   Parsed Movie Quality: HDTV-720p Proper.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham
     - Birth of a Dummy (2011)
@@ -6175,8 +6140,7 @@ Jeff Dunham - Controlled Chaos (2011):
   Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham - Controlled
     Chaos (2011)
   Parsed Movie Extension: avi
-  Parsed Movie File: /var/data/media/video/movies/standup_comedy/Jeff Dunham - Controlled
-    Chaos (2011)/Jeff Dunham- Controlled Chaos (2011) DVD.avi
+  Parsed Movie File: Jeff Dunham- Controlled Chaos (2011) DVD.avi
   Parsed Movie Quality: DVD.avi
   Raw Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham
     - Controlled Chaos (2011)
@@ -6212,9 +6176,8 @@ Jeff Dunham - Jeff Dunham's Very Special Christmas Special (2008):
   Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham - Jeff
     Dunham's Very Special Christmas Special (2008)
   Parsed Movie Extension: avi
-  Parsed Movie File: /var/data/media/video/movies/standup_comedy/Jeff Dunham - Jeff
-    Dunham's Very Special Christmas Special (2008)/Jeff Dunham- Jeff Dunham's Very
-    Special Christmas Special (2008) DVD.avi
+  Parsed Movie File: Jeff Dunham- Jeff Dunham's Very Special Christmas Special (2008)
+    DVD.avi
   Parsed Movie Quality: DVD.avi
   Raw Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham
     - Jeff Dunham's Very Special Christmas Special (2008)
@@ -6254,8 +6217,7 @@ Jeff Dunham - Minding the Monsters (2012):
   Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham - Minding
     the Monsters (2012)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/standup_comedy/Jeff Dunham - Minding
-    the Monsters (2012)/Jeff Dunham- Minding the Monsters (2012) Bluray-1080p.mkv
+  Parsed Movie File: Jeff Dunham- Minding the Monsters (2012) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham
     - Minding the Monsters (2012)
@@ -6292,8 +6254,7 @@ Jeff Dunham - Relative Disaster (2017):
   Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham - Relative
     Disaster (2017)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/standup_comedy/Jeff Dunham - Relative
-    Disaster (2017)/Jeff Dunham- Relative Disaster (2017) WEBDL-1080p.mkv
+  Parsed Movie File: Jeff Dunham- Relative Disaster (2017) WEBDL-1080p.mkv
   Parsed Movie Quality: WEBDL-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham
     - Relative Disaster (2017)
@@ -6329,8 +6290,7 @@ Jeff Dunham - Spark of Insanity (2007):
   Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham - Spark
     of Insanity (2007)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/standup_comedy/Jeff Dunham - Spark
-    of Insanity (2007)/Jeff Dunham- Spark of Insanity (2007) Bluray-1080p.mkv
+  Parsed Movie File: Jeff Dunham- Spark of Insanity (2007) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham
     - Spark of Insanity (2007)
@@ -6366,8 +6326,7 @@ Jeff Dunham - Unhinged in Hollywood (2015):
   Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham - Unhinged
     in Hollywood (2015)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/standup_comedy/Jeff Dunham - Unhinged
-    in Hollywood (2015)/Jeff Dunham- Unhinged in Hollywood (2015) Bluray-720p.mkv
+  Parsed Movie File: Jeff Dunham- Unhinged in Hollywood (2015) Bluray-720p.mkv
   Parsed Movie Quality: Bluray-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/standup_comedy/Jeff Dunham
     - Unhinged in Hollywood (2015)
@@ -6499,8 +6458,7 @@ Justice League- Crisis on Two Earths (2010):
   Absolute Movie Path: /var/data/media/video/movies/staging/Justice League- Crisis
     on Two Earths (2010)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/Justice League- Crisis on
-    Two Earths (2010)/Justice League- Crisis on Two Earths (2010) Bluray-1080p.mkv
+  Parsed Movie File: Justice League- Crisis on Two Earths (2010) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Justice League- Crisis
     on Two Earths (2010)
@@ -6536,8 +6494,7 @@ Justice League- The Flashpoint Paradox (2013):
   Absolute Movie Path: /var/data/media/video/movies/staging/Justice League- The Flashpoint
     Paradox (2013)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/Justice League- The Flashpoint
-    Paradox (2013)/Justice League- The Flashpoint Paradox (2013) Bluray-1080p.mkv
+  Parsed Movie File: Justice League- The Flashpoint Paradox (2013) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Justice League- The
     Flashpoint Paradox (2013)
@@ -6574,8 +6531,7 @@ Justice League- The New Frontier (2008):
   Absolute Movie Path: /var/data/media/video/movies/staging/Justice League- The New
     Frontier (2008)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/Justice League- The New
-    Frontier (2008)/Justice League- The New Frontier (2008) Bluray-1080p.mkv
+  Parsed Movie File: Justice League- The New Frontier (2008) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Justice League- The
     New Frontier (2008)
@@ -6710,10 +6666,8 @@ Kono Subarashii Sekai ni Shukufuku wo! 2- God's Blessings on This Wonderful Work
   Absolute Movie Path: /var/data/media/video/movies/foreign/Kono Subarashii Sekai
     ni Shukufuku wo! 2- God's Blessings on This Wonderful Work Of Art! (2017)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Kono Subarashii Sekai ni
-    Shukufuku wo! 2- God's Blessings on This Wonderful Work Of Art! (2017)/Kono Subarashii
-    Sekai ni Shukufuku wo! 2- God's Blessings on This Wonderful Work Of Art! (2017)
-    Bluray-1080p.mkv
+  Parsed Movie File: Kono Subarashii Sekai ni Shukufuku wo! 2- God's Blessings on
+    This Wonderful Work Of Art! (2017) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Kono Subarashii Sekai
     ni Shukufuku wo! 2- God's Blessings on This Wonderful Work Of Art! (2017)
@@ -6757,9 +6711,8 @@ Kono Subarashii Sekai ni Shukufuku wo! God's Blessings on This Wonderful Choker!
   Absolute Movie Path: /var/data/media/video/movies/foreign/Kono Subarashii Sekai
     ni Shukufuku wo! God's Blessings on This Wonderful Choker! (2016)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Kono Subarashii Sekai ni
-    Shukufuku wo! God's Blessings on This Wonderful Choker! (2016)/Kono Subarashii
-    Sekai ni Shukufuku wo! God's Blessings on This Wonderful Choker! (2016) Bluray-1080p.mkv
+  Parsed Movie File: Kono Subarashii Sekai ni Shukufuku wo! God's Blessings on This
+    Wonderful Choker! (2016) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Kono Subarashii Sekai
     ni Shukufuku wo! God's Blessings on This Wonderful Choker! (2016)
@@ -6803,10 +6756,8 @@ Koukyoushihen- Eureka Seven - Hi-Evolution 1 (2017):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Koukyoushihen- Eureka
     Seven - Hi-Evolution 1 (2017)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Koukyoushihen- Eureka Seven\
-    \ - Hi-Evolution 1 (2017)/\u4EA4\u97FF\u8A69\u7BC7\u30A8\u30A6\u30EC\u30AB\u30BB\
-    \u30D6\u30F3 \u30CF\u30A4\u30A8\u30DC\u30EA\u30E5\u30FC\u30B7\u30E7\u30F3 1 (2017)\
-    \ Remux-1080p.mkv"
+  Parsed Movie File: "\u4EA4\u97FF\u8A69\u7BC7\u30A8\u30A6\u30EC\u30AB\u30BB\u30D6\
+    \u30F3 \u30CF\u30A4\u30A8\u30DC\u30EA\u30E5\u30FC\u30B7\u30E7\u30F3 1 (2017) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Koukyoushihen- Eureka
     Seven - Hi-Evolution 1 (2017)
@@ -6846,8 +6797,7 @@ L- Change the World (2008):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/L- Change the World (2008)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/L- Change the World (2008)/L\u306E\
-    \u672C\u5F53\u306E\u79D8\u5BC6 (2008) Bluray-1080p.mkv"
+  Parsed Movie File: "L\u306E\u672C\u5F53\u306E\u79D8\u5BC6 (2008) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: ''
   Relative Movie File Path: ''
@@ -6881,9 +6831,8 @@ Lupin the Third- Daisuke Jigen's Gravestone (2014):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Lupin the Third- Daisuke
     Jigen's Gravestone (2014)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Lupin the Third- Daisuke\
-    \ Jigen's Gravestone (2014)/LUPIN THE IIIRD \u6B21\u5143\u5927\u4ECB\u306E\u5893\
-    \u6A19 (2014) Bluray-1080p.mkv"
+  Parsed Movie File: "LUPIN THE IIIRD \u6B21\u5143\u5927\u4ECB\u306E\u5893\u6A19 (2014)\
+    \ Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Lupin the Third- Daisuke
     Jigen's Gravestone (2014)
@@ -6925,9 +6874,8 @@ Lupin the Third- The Blood Spray of Goemon Ishikawa (2017):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Lupin the Third- The Blood
     Spray of Goemon Ishikawa (2017)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Lupin the Third- The Blood\
-    \ Spray of Goemon Ishikawa (2017)/LUPIN THE IIIRD \u8840\u7159\u306E\u77F3\u5DDD\
-    \u4E94\u30A7\u9580 (2017) Bluray-1080p.mkv"
+  Parsed Movie File: "LUPIN THE IIIRD \u8840\u7159\u306E\u77F3\u5DDD\u4E94\u30A7\u9580\
+    \ (2017) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Lupin the Third- The
     Blood Spray of Goemon Ishikawa (2017)
@@ -7029,8 +6977,7 @@ March Comes in Like a Lion (2017):
   Absolute Movie Path: /var/data/media/video/movies/foreign/March Comes in Like a
     Lion (2017)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/March Comes in Like a Lion\
-    \ (2017)/3\u6708\u306E\u30E9\u30A4\u30AA\u30F3 \u524D\u7DE8 (2017) Bluray-1080p.mkv"
+  Parsed Movie File: "3\u6708\u306E\u30E9\u30A4\u30AA\u30F3 \u524D\u7DE8 (2017) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/March Comes in Like
     a Lion (2017)
@@ -7065,8 +7012,7 @@ Merlin's Apprentice (2006):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Merlin's Apprentice (2006)
   Parsed Movie Extension: avi
-  Parsed Movie File: /var/data/media/video/movies/staging/Merlin's Apprentice (2006)/Merlin's
-    Apprentice (2005) DVD.avi
+  Parsed Movie File: Merlin's Apprentice (2005) DVD.avi
   Parsed Movie Quality: DVD.avi
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Merlin's Apprentice
     (2006)
@@ -7099,8 +7045,7 @@ Merlin- The Return (2000):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Merlin- The Return (2000)
   Parsed Movie Extension: mp4
-  Parsed Movie File: /var/data/media/video/movies/staging/Merlin- The Return (2000)/Merlin-
-    The Return (2000) DVD.mp4
+  Parsed Movie File: Merlin- The Return (2000) DVD.mp4
   Parsed Movie Quality: DVD.mp4
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Merlin- The Return
     (2000)
@@ -7136,9 +7081,8 @@ Merlin- The Return (2000):
   Absolute Movie Path: "/var/data/media/video/movies/foreign/Mob Psycho 100 REIGEN\
     \ \u2013 The Miracle Psychic that Nobody Know (2018)"
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Mob Psycho 100 REIGEN \u2013\
-    \ The Miracle Psychic that Nobody Know (2018)/Mob Psycho 100 REIGEN \u2013 The\
-    \ Miracle Psychic that Nobody Know (2018) WEBDL-1080p.mkv"
+  Parsed Movie File: "Mob Psycho 100 REIGEN \u2013 The Miracle Psychic that Nobody\
+    \ Know (2018) WEBDL-1080p.mkv"
   Parsed Movie Quality: WEBDL-1080p.mkv
   Raw Absolute Movie Path: "/var/data/media/video/movies/foreign/Mob Psycho 100 REIGEN\
     \ \u2013 The Miracle Psychic that Nobody Know (2018)"
@@ -7176,9 +7120,8 @@ Mobile Suit Gundam 00 Special Edition I- Celestial Being (2009):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam 00
     Special Edition I- Celestial Being (2009)
   Parsed Movie Extension: mp4
-  Parsed Movie File: /var/data/media/video/movies/foreign/Mobile Suit Gundam 00 Special
-    Edition I- Celestial Being (2009)/Mobile Suit Gundam 00 Special Edition I- Celestial
-    Being (2009) Bluray-1080p.mp4
+  Parsed Movie File: Mobile Suit Gundam 00 Special Edition I- Celestial Being (2009)
+    Bluray-1080p.mp4
   Parsed Movie Quality: Bluray-1080p.mp4
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam
     00 Special Edition I- Celestial Being (2009)
@@ -7214,9 +7157,8 @@ Mobile Suit Gundam 00 Special Edition II- End of World (2009):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam 00
     Special Edition II- End of World (2009)
   Parsed Movie Extension: mp4
-  Parsed Movie File: /var/data/media/video/movies/foreign/Mobile Suit Gundam 00 Special
-    Edition II- End of World (2009)/Mobile Suit Gundam 00 Special Edition II- End
-    of World (2009) Bluray-1080p.mp4
+  Parsed Movie File: Mobile Suit Gundam 00 Special Edition II- End of World (2009)
+    Bluray-1080p.mp4
   Parsed Movie Quality: Bluray-1080p.mp4
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam
     00 Special Edition II- End of World (2009)
@@ -7252,9 +7194,8 @@ Mobile Suit Gundam 00 Special Edition III- Return The World (2010):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam 00
     Special Edition III- Return The World (2010)
   Parsed Movie Extension: mp4
-  Parsed Movie File: /var/data/media/video/movies/foreign/Mobile Suit Gundam 00 Special
-    Edition III- Return The World (2010)/Mobile Suit Gundam 00 Special Edition III-
-    Return The World (2010) Bluray-1080p.mp4
+  Parsed Movie File: Mobile Suit Gundam 00 Special Edition III- Return The World (2010)
+    Bluray-1080p.mp4
   Parsed Movie Quality: Bluray-1080p.mp4
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam
     00 Special Edition III- Return The World (2010)
@@ -7292,9 +7233,8 @@ Mobile Suit Gundam 00- A Wakening of the Trailblazer (2010):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam 00-
     A Wakening of the Trailblazer (2010)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Mobile Suit Gundam 00-\
-    \ A Wakening of the Trailblazer (2010)/\u6A5F\u52D5\u6226\u58EB\u30AC\u30F3\u30C0\
-    \u30E000 -A wakening of the Trailblazer- (2010) Remux-1080p.mkv"
+  Parsed Movie File: "\u6A5F\u52D5\u6226\u58EB\u30AC\u30F3\u30C0\u30E000 -A wakening\
+    \ of the Trailblazer- (2010) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam
     00- A Wakening of the Trailblazer (2010)
@@ -7995,9 +7935,8 @@ Mobile Suit Gundam- Char's Counterattack (1988):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam- Char's
     Counterattack (1988)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Mobile Suit Gundam- Char's\
-    \ Counterattack (1988)/\u6A5F\u52D5\u6226\u58EB\u30AC\u30F3\u30C0\u30E0 \u9006\
-    \u8972\u306E\u30B7\u30E3\u30A2 (1988) Remux-1080p.mkv"
+  Parsed Movie File: "\u6A5F\u52D5\u6226\u58EB\u30AC\u30F3\u30C0\u30E0 \u9006\u8972\
+    \u306E\u30B7\u30E3\u30A2 (1988) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam-
     Char's Counterattack (1988)
@@ -8090,8 +8029,7 @@ Monster Musume no Iru Nichijou OVA (2016):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Monster Musume no Iru
     Nichijou OVA (2016)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Monster Musume no Iru Nichijou
-    OVA (2016)/Monster Musume no Iru Nichijou OVA (2016) Bluray-1080p.mkv
+  Parsed Movie File: Monster Musume no Iru Nichijou OVA (2016) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Monster Musume no
     Iru Nichijou OVA (2016)
@@ -8224,8 +8162,7 @@ My Hero Academia - Two Heroes (2018):
   Absolute Movie Path: /var/data/media/video/movies/foreign/My Hero Academia - Two
     Heroes (2018)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/My Hero Academia - Two Heroes
-    (2018)/My Hero Academia- Two Heroes (2018) Remux-1080p.mkv
+  Parsed Movie File: My Hero Academia- Two Heroes (2018) Remux-1080p.mkv
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/My Hero Academia -
     Two Heroes (2018)
@@ -8260,8 +8197,7 @@ My Name Is Bruce (2007):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/horror/My Name Is Bruce (2007)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/horror/My Name Is Bruce (2007)/My
-    Name Is Bruce (2007) Bluray-1080p.mkv
+  Parsed Movie File: My Name Is Bruce (2007) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/horror/My Name Is Bruce (2007)
   Relative Movie File Path: ''
@@ -8301,10 +8237,39 @@ Naruto (0):
   Relative Movie Path: movies/foreign/Naruto (0)
   Shows: {Naruto: null}
   Unparsed Movie Title: Naruto (0)
+Naruto Shippuden The Movie Bonds (2008):
+  Absolute Movie File Path: ''
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The
+    Movie Bonds (2008)
+  Parsed Movie Extension: ''
+  Parsed Movie File: ''
+  Parsed Movie Quality: ''
+  Raw Absolute Movie Path: ''
+  Relative Movie Path: movies/foreign/Naruto Shippuden The Movie Bonds (2008)
+  Shows:
+    Naruto Shippuden:
+      Absolute Episode: ''
+      Absolute Show Path: ''
+      Anime: true
+      Episode: [2]
+      Parsed Episode: ''
+      Parsed Relative Show Title: ''
+      Parsed Season: ''
+      Parsed Season Folder: ''
+      Parsed Show Root Folder: ''
+      Parsed Show Title: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
+        - S00E002 - Naruto Shippuden 2- Bonds
+      Relative Show File Path: ''
+      Relative Show Path: ''
+      Season: '00'
+      Show Dictionary Object: {}
+      Symlinked: ''
+      Title: Naruto Shippuden 2- Bonds
+  Unparsed Movie Title: Naruto Shippuden The Movie Bonds (2008)
 Naruto Shippuden The Movie (2007):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The Movie
-    (2007)
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The
+    Movie (2007)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
@@ -8332,8 +8297,8 @@ Naruto Shippuden The Movie (2007):
   Unparsed Movie Title: Naruto Shippuden The Movie (2007)
 Naruto Shippuden The Movie Blood Prison (2011):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The Movie
-    Blood Prison (2011)
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The
+    Movie Blood Prison (2011)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
@@ -8359,39 +8324,10 @@ Naruto Shippuden The Movie Blood Prison (2011):
       Symlinked: ''
       Title: Naruto Shippuden 5- Blood Prison
   Unparsed Movie Title: Naruto Shippuden The Movie Blood Prison (2011)
-Naruto Shippuden The Movie Bonds (2008):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The Movie
-    Bonds (2008)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
-  Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Naruto Shippuden The Movie Bonds (2008)
-  Shows:
-    Naruto Shippuden:
-      Absolute Episode: ''
-      Absolute Show Path: ''
-      Anime: true
-      Episode: [2]
-      Parsed Episode: ''
-      Parsed Relative Show Title: ''
-      Parsed Season: ''
-      Parsed Season Folder: ''
-      Parsed Show Root Folder: ''
-      Parsed Show Title: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
-        - S00E002 - Naruto Shippuden 2- Bonds
-      Relative Show File Path: ''
-      Relative Show Path: ''
-      Season: '00'
-      Show Dictionary Object: {}
-      Symlinked: ''
-      Title: Naruto Shippuden 2- Bonds
-  Unparsed Movie Title: Naruto Shippuden The Movie Bonds (2008)
 Naruto Shippuden The Movie Inheritors Of The Will Of Fire (2009):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The Movie
-    Inheritors Of The Will Of Fire (2009)
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The
+    Movie Inheritors Of The Will Of Fire (2009)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
@@ -8421,8 +8357,8 @@ Naruto Shippuden The Movie Inheritors Of The Will Of Fire (2009):
     (2009)
 Naruto Shippuden The Movie Road To Ninja (2012):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The Movie
-    Road To Ninja (2012)
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The
+    Movie Road To Ninja (2012)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
@@ -8450,8 +8386,8 @@ Naruto Shippuden The Movie Road To Ninja (2012):
   Unparsed Movie Title: Naruto Shippuden The Movie Road To Ninja (2012)
 Naruto Shippuden The Movie The Lost Tower (2010):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The Movie
-    The Lost Tower (2010)
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden The
+    Movie The Lost Tower (2010)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
@@ -8523,10 +8459,9 @@ Naruto the Movie- Guardians of the Crescent Moon Kingdom (2006):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto the Movie- Guardians
     of the Crescent Moon Kingdom (2006)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Naruto the Movie- Guardians\
-    \ of the Crescent Moon Kingdom (2006)/\u5287\u5834\u7248 NARUTO -\u30CA\u30EB\u30C8\
-    - \u5927\u8208\u596E!\u307F\u304B\u3065\u304D\u5CF6\u306E\u30A2\u30CB\u30DE\u30EB\
-    \u9A12\u52D5\u3060\u3063\u3066\u3070\u3088 (2006) Bluray-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248 NARUTO -\u30CA\u30EB\u30C8- \u5927\u8208\u596E\
+    !\u307F\u304B\u3065\u304D\u5CF6\u306E\u30A2\u30CB\u30DE\u30EB\u9A12\u52D5\u3060\
+    \u3063\u3066\u3070\u3088 (2006) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto the Movie-
     Guardians of the Crescent Moon Kingdom (2006)
@@ -8567,10 +8502,9 @@ Naruto the Movie- Ninja Clash in the Land of Snow (2004):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto the Movie- Ninja
     Clash in the Land of Snow (2004)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Naruto the Movie- Ninja\
-    \ Clash in the Land of Snow (2004)/\u5287\u5834\u7248 NARUTO-\u30CA\u30EB\u30C8\
-    - \u5927\u6D3B\u5287\uFF01\u96EA\u59EB\u5FCD\u6CD5\u5E16\u3060\u3063\u3066\u3070\
-    \u3088\uFF01\uFF01 (2004) Bluray-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248 NARUTO-\u30CA\u30EB\u30C8- \u5927\u6D3B\u5287\
+    \uFF01\u96EA\u59EB\u5FCD\u6CD5\u5E16\u3060\u3063\u3066\u3070\u3088\uFF01\uFF01\
+    \ (2004) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto the Movie-
     Ninja Clash in the Land of Snow (2004)
@@ -8611,8 +8545,7 @@ Naruto- Find the Crimson Four-leaf Clover! (2003):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto- Find the Crimson
     Four-leaf Clover! (2003)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Naruto- Find the Crimson
-    Four-leaf Clover! (2003)/Naruto- Find the Crimson Four-leaf Clover! (2003) Bluray-720p.mkv
+  Parsed Movie File: Naruto- Find the Crimson Four-leaf Clover! (2003) Bluray-720p.mkv
   Parsed Movie Quality: Bluray-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto- Find the Crimson
     Four-leaf Clover! (2003)
@@ -8693,9 +8626,8 @@ Neon Genesis Evangelion- Death and Rebirth (1997):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Neon Genesis Evangelion-
     Death and Rebirth (1997)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Neon Genesis Evangelion-\
-    \ Death and Rebirth (1997)/\u65B0\u4E16\u7D00\u30A8\u30F4\u30A1\u30F3\u30B2\u30EA\
-    \u30AA\u30F3\u5287\u5834\u7248 \u30B7\u30C8\u65B0\u751F (1997) Remux-1080p.mkv"
+  Parsed Movie File: "\u65B0\u4E16\u7D00\u30A8\u30F4\u30A1\u30F3\u30B2\u30EA\u30AA\
+    \u30F3\u5287\u5834\u7248 \u30B7\u30C8\u65B0\u751F (1997) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: ''
   Relative Movie File Path: ''
@@ -8729,9 +8661,8 @@ Neon Genesis Evangelion- The End of Evangelion (1997):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Neon Genesis Evangelion-
     The End of Evangelion (1997)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Neon Genesis Evangelion-\
-    \ The End of Evangelion (1997)/\u65B0\u4E16\u7D00\u30A8\u30F4\u30A1\u30F3\u30B2\
-    \u30EA\u30AA\u30F3\u5287\u5834\u7248 THE END OF EVANGELION (1997) Remux-1080p.mkv"
+  Parsed Movie File: "\u65B0\u4E16\u7D00\u30A8\u30F4\u30A1\u30F3\u30B2\u30EA\u30AA\
+    \u30F3\u5287\u5834\u7248 THE END OF EVANGELION (1997) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: ''
   Relative Movie File Path: ''
@@ -8766,8 +8697,7 @@ New Fist of the North Star- The Cursed City (2003):
   Absolute Movie Path: /var/data/media/video/movies/foreign/New Fist of the North
     Star- The Cursed City (2003)
   Parsed Movie Extension: mp4
-  Parsed Movie File: /var/data/media/video/movies/foreign/New Fist of the North Star-
-    The Cursed City (2003)/New Fist of the North Star- The Cursed City (2003) DVD.mp4
+  Parsed Movie File: New Fist of the North Star- The Cursed City (2003) DVD.mp4
   Parsed Movie Quality: DVD.mp4
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/New Fist of the North
     Star- The Cursed City (2003)
@@ -8805,9 +8735,7 @@ New Fist of the North Star- The Forbidden Fist (2003):
   Absolute Movie Path: /var/data/media/video/movies/foreign/New Fist of the North
     Star- The Forbidden Fist (2003)
   Parsed Movie Extension: mp4
-  Parsed Movie File: /var/data/media/video/movies/foreign/New Fist of the North Star-
-    The Forbidden Fist (2003)/New Fist of the North Star- The Forbidden Fist (2003)
-    DVD.mp4
+  Parsed Movie File: New Fist of the North Star- The Forbidden Fist (2003) DVD.mp4
   Parsed Movie Quality: DVD.mp4
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/New Fist of the North
     Star- The Forbidden Fist (2003)
@@ -8846,9 +8774,8 @@ New Fist of the North Star- When a Man Carries Sorrow (2004):
   Absolute Movie Path: /var/data/media/video/movies/foreign/New Fist of the North
     Star- When a Man Carries Sorrow (2004)
   Parsed Movie Extension: mp4
-  Parsed Movie File: /var/data/media/video/movies/foreign/New Fist of the North Star-
-    When a Man Carries Sorrow (2004)/New Fist of the North Star- When a Man Carries
-    Sorrow (2004) DVD.mp4
+  Parsed Movie File: New Fist of the North Star- When a Man Carries Sorrow (2004)
+    DVD.mp4
   Parsed Movie Quality: DVD.mp4
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/New Fist of the North
     Star- When a Man Carries Sorrow (2004)
@@ -8887,8 +8814,7 @@ No Game No Life- Zero (2017):
   Absolute Movie Path: /var/data/media/video/movies/foreign/No Game No Life- Zero
     (2017)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/No Game No Life- Zero (2017)/No
-    Game No Life- Zero (2017) Bluray-1080p.mkv
+  Parsed Movie File: No Game No Life- Zero (2017) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/No Game No Life- Zero
     (2017)
@@ -8936,8 +8862,7 @@ One Piece - Adventure of Nebulandia (2015):
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Adventure
     of Nebulandia (2015)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece - Adventure of
-    Nebulandia (2015)/One Piece - Adventure of Nebulandia (2015) Bluray-1080p.mkv
+  Parsed Movie File: One Piece - Adventure of Nebulandia (2015) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Adventure
     of Nebulandia (2015)
@@ -8973,9 +8898,7 @@ One Piece - Baron Omatsuri and the Secret Island (2005):
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Baron Omatsuri
     and the Secret Island (2005)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece - Baron Omatsuri
-    and the Secret Island (2005)/One Piece - Baron Omatsuri and the Secret Island
-    (2005) Bluray-1080p.mkv
+  Parsed Movie File: One Piece - Baron Omatsuri and the Secret Island (2005) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Baron
     Omatsuri and the Secret Island (2005)
@@ -9014,9 +8937,8 @@ One Piece - Chopper's Kingdom on the Island of Strange Animals (2002):
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Chopper's
     Kingdom on the Island of Strange Animals (2002)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece - Chopper's Kingdom
-    on the Island of Strange Animals (2002)/One Piece - Chopper's Kingdom on the Island
-    of Strange Animals (2002) Bluray-1080p.mkv
+  Parsed Movie File: One Piece - Chopper's Kingdom on the Island of Strange Animals
+    (2002) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Chopper's
     Kingdom on the Island of Strange Animals (2002)
@@ -9056,8 +8978,7 @@ One Piece - Clockwork Island Adventure (2001):
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Clockwork
     Island Adventure (2001)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece - Clockwork Island
-    Adventure (2001)/One Piece - Clockwork Island Adventure (2001) Bluray-1080p.mkv
+  Parsed Movie File: One Piece - Clockwork Island Adventure (2001) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Clockwork
     Island Adventure (2001)
@@ -9094,8 +9015,7 @@ One Piece - Curse of the Sacred Sword (2004):
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Curse of the
     Sacred Sword (2004)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece - Curse of the
-    Sacred Sword (2004)/One Piece - Curse of the Sacred Sword (2004) Bluray-1080p.mkv
+  Parsed Movie File: One Piece - Curse of the Sacred Sword (2004) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Curse
     of the Sacred Sword (2004)
@@ -9132,8 +9052,7 @@ One Piece - Dead End Adventure (2003):
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Dead End Adventure
     (2003)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece - Dead End Adventure
-    (2003)/One Piece - Dead End Adventure (2003) Bluray-1080p.mkv
+  Parsed Movie File: One Piece - Dead End Adventure (2003) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Dead End
     Adventure (2003)
@@ -9169,9 +9088,8 @@ One Piece - Episode of Chopper Plus - Bloom in the Winter, Miracle Cherry Blosso
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Episode of
     Chopper Plus - Bloom in the Winter, Miracle Cherry Blossom (2008)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece - Episode of Chopper
-    Plus - Bloom in the Winter, Miracle Cherry Blossom (2008)/One Piece - Episode
-    of Chopper Plus - Bloom in the Winter, Miracle Cherry Blossom (2008) Bluray-1080p.mkv
+  Parsed Movie File: One Piece - Episode of Chopper Plus - Bloom in the Winter, Miracle
+    Cherry Blossom (2008) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Episode
     of Chopper Plus - Bloom in the Winter, Miracle Cherry Blossom (2008)
@@ -9212,10 +9130,9 @@ One Piece - Episode of Luffy - Hand Island Adventure (2012):
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Episode of
     Luffy - Hand Island Adventure (2012)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/One Piece - Episode of\
-    \ Luffy - Hand Island Adventure (2012)/\u30EF\u30F3\u30D4\u30FC\u30B9 \u30A8\u30D4\
-    \u30BD\u30FC\u30C9 \u30AA\u30D6 \u30EB\u30D5\u30A3 \u30CF\u30F3\u30C9\u30A2\u30A4\
-    \u30E9\u30F3\u30C9\u306E\u5192\u967A (2012) Bluray-720p.mkv"
+  Parsed Movie File: "\u30EF\u30F3\u30D4\u30FC\u30B9 \u30A8\u30D4\u30BD\u30FC\u30C9\
+    \ \u30AA\u30D6 \u30EB\u30D5\u30A3 \u30CF\u30F3\u30C9\u30A2\u30A4\u30E9\u30F3\u30C9\
+    \u306E\u5192\u967A (2012) Bluray-720p.mkv"
   Parsed Movie Quality: Bluray-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Episode
     of Luffy - Hand Island Adventure (2012)
@@ -9257,8 +9174,7 @@ One Piece - Episode of Skypiea (2018):
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Episode of
     Skypiea (2018)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece - Episode of Skypiea
-    (2018)/One Piece - Episode of Skypiea (2018) Bluray-1080p.mkv
+  Parsed Movie File: One Piece - Episode of Skypiea (2018) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Episode
     of Skypiea (2018)
@@ -9294,10 +9210,8 @@ One Piece - Giant Mecha Soldier of Karakuri Castle (2006):
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Giant Mecha
     Soldier of Karakuri Castle (2006)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/One Piece - Giant Mecha\
-    \ Soldier of Karakuri Castle (2006)/\u30EF\u30F3\u30D4\u30FC\u30B9 \u30B6 \u30E0\
-    \u30FC\u30D3\u30FC \u30AB\u30E9\u30AF\u30EA\u57CE\u306E\u30E1\u30AB\u5DE8\u5175\
-    \ (2006) WEBDL-1080p.mkv"
+  Parsed Movie File: "\u30EF\u30F3\u30D4\u30FC\u30B9 \u30B6 \u30E0\u30FC\u30D3\u30FC\
+    \ \u30AB\u30E9\u30AF\u30EA\u57CE\u306E\u30E1\u30AB\u5DE8\u5175 (2006) WEBDL-1080p.mkv"
   Parsed Movie Quality: WEBDL-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Giant
     Mecha Soldier of Karakuri Castle (2006)
@@ -9338,8 +9252,7 @@ One Piece - Heart of Gold (2016):
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Heart of Gold
     (2016)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece - Heart of Gold
-    (2016)/One Piece - Heart of Gold (2016) Bluray-1080p.mkv
+  Parsed Movie File: One Piece - Heart of Gold (2016) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Heart
     of Gold (2016)
@@ -9375,8 +9288,7 @@ One Piece - Jango's Dance Carnival (2001):
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Jango's Dance
     Carnival (2001)
   Parsed Movie Extension: avi
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece - Jango's Dance
-    Carnival (2001)/One Piece - Jango's Dance Carnival (2001) DVD.avi
+  Parsed Movie File: One Piece - Jango's Dance Carnival (2001) DVD.avi
   Parsed Movie Quality: DVD.avi
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Jango's
     Dance Carnival (2001)
@@ -9412,8 +9324,7 @@ One Piece - Romance Dawn Story (2008):
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Romance Dawn
     Story (2008)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece - Romance Dawn
-    Story (2008)/One Piece - Romance Dawn Story (2008) Bluray-720p.mkv
+  Parsed Movie File: One Piece - Romance Dawn Story (2008) Bluray-720p.mkv
   Parsed Movie Quality: Bluray-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Romance
     Dawn Story (2008)
@@ -9449,8 +9360,7 @@ One Piece - Strong World Episode 0 (2010):
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Strong World
     Episode 0 (2010)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece - Strong World
-    Episode 0 (2010)/One Piece- Strong World Episode 0 (2010) DVD.mkv
+  Parsed Movie File: One Piece- Strong World Episode 0 (2010) DVD.mkv
   Parsed Movie Quality: DVD.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - Strong
     World Episode 0 (2010)
@@ -9484,9 +9394,8 @@ One Piece - The Desert Princess and the Pirates - Adventure in Alabasta (2007):
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - The Desert
     Princess and the Pirates - Adventure in Alabasta (2007)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece - The Desert Princess
-    and the Pirates - Adventure in Alabasta (2007)/One Piece - The Desert Princess
-    and the Pirates - Adventure in Alabasta (2007) Bluray-1080p.mkv
+  Parsed Movie File: One Piece - The Desert Princess and the Pirates - Adventure in
+    Alabasta (2007) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - The Desert
     Princess and the Pirates - Adventure in Alabasta (2007)
@@ -9527,8 +9436,7 @@ One Piece - The Movie (2000):
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - The Movie
     (2000)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece - The Movie (2000)/One
-    Piece - The Movie (2000) Bluray-1080p.mkv
+  Parsed Movie File: One Piece - The Movie (2000) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece - The Movie
     (2000)
@@ -9564,8 +9472,7 @@ One Piece 3D - Straw Hat Chase (2011):
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece 3D - Straw Hat
     Chase (2011)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece 3D - Straw Hat
-    Chase (2011)/One Piece 3D - Straw Hat Chase (2011) Bluray-1080p.mkv
+  Parsed Movie File: One Piece 3D - Straw Hat Chase (2011) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece 3D - Straw
     Hat Chase (2011)
@@ -9601,9 +9508,8 @@ One Piece 3D2Y - Overcome Ace's Death! Luffy's Vow to his Friends (2014):
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece 3D2Y - Overcome
     Ace's Death! Luffy's Vow to his Friends (2014)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece 3D2Y - Overcome
-    Ace's Death! Luffy's Vow to his Friends (2014)/One Piece 3D2Y - Overcome Ace's
-    Death! Luffy's Vow to his Friends (2014) Bluray-720p.mkv
+  Parsed Movie File: One Piece 3D2Y - Overcome Ace's Death! Luffy's Vow to his Friends
+    (2014) Bluray-720p.mkv
   Parsed Movie Quality: Bluray-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece 3D2Y - Overcome
     Ace's Death! Luffy's Vow to his Friends (2014)
@@ -9647,9 +9553,8 @@ One Piece Episode of East Blue Luffy and His 4 Crewmate's Big Adventure (2017):
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece Episode of East
     Blue Luffy and His 4 Crewmate's Big Adventure (2017)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece Episode of East
-    Blue Luffy and His 4 Crewmate's Big Adventure (2017)/One Piece Episode of East
-    Blue Luffy and His 4 Crewmate's Big Adventure (2017) Bluray-1080p.mkv
+  Parsed Movie File: One Piece Episode of East Blue Luffy and His 4 Crewmate's Big
+    Adventure (2017) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece Episode
     of East Blue Luffy and His 4 Crewmate's Big Adventure (2017)
@@ -9687,9 +9592,8 @@ One Piece Episode of Merry - The Tale of One More Friend (2013):
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece Episode of Merry
     - The Tale of One More Friend (2013)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece Episode of Merry
-    - The Tale of One More Friend (2013)/One Piece Episode of Merry - The Tale of
-    One More Friend (2013) Bluray-720p.mkv
+  Parsed Movie File: One Piece Episode of Merry - The Tale of One More Friend (2013)
+    Bluray-720p.mkv
   Parsed Movie Quality: Bluray-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece Episode
     of Merry - The Tale of One More Friend (2013)
@@ -9728,9 +9632,8 @@ One Piece Episode of Nami - Tears of a Navigator and the Bonds of Friends (2012)
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece Episode of Nami
     - Tears of a Navigator and the Bonds of Friends (2012)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece Episode of Nami
-    - Tears of a Navigator and the Bonds of Friends (2012)/One Piece Episode of Nami
-    - Tears of a Navigator and the Bonds of Friends (2012) Bluray-720p.mkv
+  Parsed Movie File: One Piece Episode of Nami - Tears of a Navigator and the Bonds
+    of Friends (2012) Bluray-720p.mkv
   Parsed Movie Quality: Bluray-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece Episode
     of Nami - Tears of a Navigator and the Bonds of Friends (2012)
@@ -9771,9 +9674,8 @@ One Piece Film - GOLD (2016):
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece Film - GOLD
     (2016)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/One Piece Film - GOLD (2016)/\u30EF\
-    \u30F3\u30D4\u30FC\u30B9 \u30D5\u30A3\u30EB\u30E0 \u30B4\u30FC\u30EB\u30C9 (2016)\
-    \ Bluray-1080p.mkv"
+  Parsed Movie File: "\u30EF\u30F3\u30D4\u30FC\u30B9 \u30D5\u30A3\u30EB\u30E0 \u30B4\
+    \u30FC\u30EB\u30C9 (2016) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece Film - GOLD
     (2016)
@@ -9811,8 +9713,7 @@ One Piece Film - Strong World (2009):
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece Film - Strong
     World (2009)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece Film - Strong
-    World (2009)/One Piece Film - Strong World (2009) Bluray-1080p.mkv
+  Parsed Movie File: One Piece Film - Strong World (2009) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece Film - Strong
     World (2009)
@@ -9847,8 +9748,7 @@ One Piece Film - Z (2012):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece Film - Z (2012)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Piece Film - Z (2012)/One
-    Piece Film Z (2012) Bluray-1080p.mkv
+  Parsed Movie File: One Piece Film Z (2012) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/One Piece Film - Z
     (2012)
@@ -9885,8 +9785,7 @@ One Punch Man- Road to Hero (2015):
   Absolute Movie Path: /var/data/media/video/movies/foreign/One Punch Man- Road to
     Hero (2015)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/One Punch Man- Road to Hero
-    (2015) DVD.mkv
+  Parsed Movie File: One Punch Man- Road to Hero (2015) DVD.mkv
   Parsed Movie Quality: DVD.mkv
   Raw Absolute Movie Path: ''
   Relative Movie File Path: ''
@@ -9911,7 +9810,7 @@ One Punch Man- Road to Hero (2015):
       Show Dictionary Object: {}
       Symlinked: anime/staging/One-Punch Man/Season 00/One-Punch Man - S00E001 - Road
         to Hero DVD.mkv -> ../../../../movies/foreign/One Punch Man- Road to Hero
-        (2015) DVD.mkv
+        (2015)/One Punch Man- Road to Hero (2015) DVD.mkv
       Title: Road to Hero
   Unparsed Movie Title: One Punch Man- Road to Hero (2015)
 Overlord Movie 1- The Undead King (2017):
@@ -9919,9 +9818,9 @@ Overlord Movie 1- The Undead King (2017):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Overlord Movie 1- The
     Undead King (2017)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Overlord Movie 1- The Undead\
-    \ King (2017)/\u5287\u5834\u7248\u7DCF\u96C6\u7DE8 \u30AA\u30FC\u30D0\u30FC\u30ED\
-    \u30FC\u30C9 \u4E0D\u6B7B\u8005\u306E\u738B\u3010\u524D\u7DE8\u3011 (2017) Remux-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248\u7DCF\u96C6\u7DE8 \u30AA\u30FC\u30D0\u30FC\
+    \u30ED\u30FC\u30C9 \u4E0D\u6B7B\u8005\u306E\u738B\u3010\u524D\u7DE8\u3011 (2017)\
+    \ Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Overlord Movie 1-
     The Undead King (2017)
@@ -9961,8 +9860,7 @@ Overlord Movie 2- The Dark Warrior (2017):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Overlord Movie 2- The
     Dark Warrior (2017)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Overlord Movie 2- The Dark\
-    \ Warrior (2017)/\u5287\u5834\u7248\u7DCF\u96C6\u7DE8 \u30AA\u30FC\u30D0\u30FC\
+  Parsed Movie File: "\u5287\u5834\u7248\u7DCF\u96C6\u7DE8 \u30AA\u30FC\u30D0\u30FC\
     \u30ED\u30FC\u30C9 \u6F06\u9ED2\u306E\u82F1\u96C4\u3010\u5F8C\u7DE8\u3011 (2017)\
     \ Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
@@ -10004,8 +9902,7 @@ Parasyte- Part 1 (2014):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Parasyte- Part 1 (2014)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Parasyte- Part 1 (2014)/\u5BC4\
-    \u751F\u7363 (2014) Bluray-1080p.mkv"
+  Parsed Movie File: "\u5BC4\u751F\u7363 (2014) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Parasyte- Part 1 (2014)
   Relative Movie File Path: ''
@@ -10039,8 +9936,7 @@ Parasyte- Part 2 (2015):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Parasyte- Part 2 (2015)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Parasyte- Part 2 (2015)/\u5BC4\
-    \u751F\u7363 \u5B8C\u7D50\u7DE8 (2015) Bluray-1080p.mkv"
+  Parsed Movie File: "\u5BC4\u751F\u7363 \u5B8C\u7D50\u7DE8 (2015) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Parasyte- Part 2 (2015)
   Relative Movie File Path: ''
@@ -10263,8 +10159,7 @@ Persona 4 the Animation- No One is Alone (0):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Persona 4 the Animation-
     No One is Alone (0)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Persona 4 the Animation-
-    No One is Alone (0)/Persona 4 the Animation- No One is Alone (0) Bluray-1080p.mkv
+  Parsed Movie File: Persona 4 the Animation- No One is Alone (0) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Persona 4 the Animation-
     No One is Alone (0)
@@ -10372,8 +10267,7 @@ Prison School- Mad Wax (2016):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Prison School- Mad Wax
     (2016)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Prison School- Mad Wax (2016)/Prison
-    School- Mad Wax (2016) DVD.mkv
+  Parsed Movie File: Prison School- Mad Wax (2016) DVD.mkv
   Parsed Movie Quality: DVD.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Prison School- Mad
     Wax (2016)
@@ -10406,8 +10300,7 @@ Psych- The Movie (2017):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Psych- The Movie (2017)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/Psych- The Movie (2017)/Psych-
-    The Movie (2017) WEBDL-1080p.mkv
+  Parsed Movie File: Psych- The Movie (2017) WEBDL-1080p.mkv
   Parsed Movie Quality: WEBDL-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Psych- The Movie (2017)
   Relative Movie File Path: ''
@@ -10471,9 +10364,8 @@ Psycho-Pass- The Movie (2015):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Psycho-Pass- The Movie
     (2015)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Psycho-Pass- The Movie\
-    \ (2015)/\u5287\u5834\u7248 PSYCHO-PASS \u30B5\u30A4\u30B3\u30D1\u30B9 (2015)\
-    \ Bluray-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248 PSYCHO-PASS \u30B5\u30A4\u30B3\u30D1\u30B9\
+    \ (2015) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Psycho-Pass- The Movie
     (2015)
@@ -10510,10 +10402,9 @@ Puella Magi Madoka Magica the Movie Part I- Beginnings (2012):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Puella Magi Madoka Magica
     the Movie Part I- Beginnings (2012)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Puella Magi Madoka Magica\
-    \ the Movie Part I- Beginnings (2012)/\u5287\u5834\u7248 \u9B54\u6CD5\u5C11\u5973\
-    \u307E\u3069\u304B\u2606\u30DE\u30AE\u30AB [\u524D\u7DE8] \u59CB\u307E\u308A\u306E\
-    \u7269\u8A9E (2012) Remux-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248 \u9B54\u6CD5\u5C11\u5973\u307E\u3069\u304B\
+    \u2606\u30DE\u30AE\u30AB [\u524D\u7DE8] \u59CB\u307E\u308A\u306E\u7269\u8A9E (2012)\
+    \ Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Puella Magi Madoka
     Magica the Movie Part I- Beginnings (2012)
@@ -10553,10 +10444,8 @@ Puella Magi Madoka Magica the Movie Part II- Eternal (2012):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Puella Magi Madoka Magica
     the Movie Part II- Eternal (2012)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Puella Magi Madoka Magica\
-    \ the Movie Part II- Eternal (2012)/\u5287\u5834\u7248 \u9B54\u6CD5\u5C11\u5973\
-    \u307E\u3069\u304B\u2606\u30DE\u30AE\u30AB[\u5F8C\u7DE8] \u6C38\u9060\u306E\u7269\
-    \u8A9E (2012) Remux-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248 \u9B54\u6CD5\u5C11\u5973\u307E\u3069\u304B\
+    \u2606\u30DE\u30AE\u30AB[\u5F8C\u7DE8] \u6C38\u9060\u306E\u7269\u8A9E (2012) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Puella Magi Madoka
     Magica the Movie Part II- Eternal (2012)
@@ -10595,10 +10484,8 @@ Puella Magi Madoka Magica the Movie Part III- Rebellion (2013):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Puella Magi Madoka Magica
     the Movie Part III- Rebellion (2013)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Puella Magi Madoka Magica\
-    \ the Movie Part III- Rebellion (2013)/\u5287\u5834\u7248 \u9B54\u6CD5\u5C11\u5973\
-    \u307E\u3069\u304B\u2606\u30DE\u30AE\u30AB[\u65B0\u7DE8]\u53DB\u9006\u306E\u7269\
-    \u8A9E (2013) Remux-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248 \u9B54\u6CD5\u5C11\u5973\u307E\u3069\u304B\
+    \u2606\u30DE\u30AE\u30AB[\u65B0\u7DE8]\u53DB\u9006\u306E\u7269\u8A9E (2013) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Puella Magi Madoka
     Magica the Movie Part III- Rebellion (2013)
@@ -11138,8 +11025,7 @@ Sacred Seven- Shirogane no Tsubasa (2012):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Sacred Seven- Shirogane
     no Tsubasa (2012)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Sacred Seven- Shirogane
-    no Tsubasa (2012)/Sacred Seven- Shirogane no Tsubasa (2012) Bluray-720p.mkv
+  Parsed Movie File: Sacred Seven- Shirogane no Tsubasa (2012) Bluray-720p.mkv
   Parsed Movie Quality: Bluray-720p.mkv
   Raw Absolute Movie Path: ''
   Relative Movie File Path: ''
@@ -11767,8 +11653,7 @@ Saturday Night Live- Halloween (2003):
   Absolute Movie Path: /var/data/media/video/movies/staging/Saturday Night Live- Halloween
     (2003)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/Saturday Night Live- Halloween
-    (2003)/Saturday Night Live- Halloween (2003) WEBDL-1080p.mkv
+  Parsed Movie File: Saturday Night Live- Halloween (2003) WEBDL-1080p.mkv
   Parsed Movie Quality: WEBDL-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Saturday Night Live-
     Halloween (2003)
@@ -12252,9 +12137,7 @@ Scooby-Doo! & Batman- The Brave and the Bold (2018):
   Absolute Movie Path: /var/data/media/video/movies/thrillers/Scooby-Doo! & Batman-
     The Brave and the Bold (2018)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/thrillers/Scooby-Doo! & Batman-
-    The Brave and the Bold (2018)/Scooby-Doo! & Batman- The Brave and the Bold (2018)
-    WEBDL-1080p.mkv
+  Parsed Movie File: Scooby-Doo! & Batman- The Brave and the Bold (2018) WEBDL-1080p.mkv
   Parsed Movie Quality: WEBDL-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/thrillers/Scooby-Doo! & Batman-
     The Brave and the Bold (2018)
@@ -12337,8 +12220,7 @@ Serenity (2005):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/thrillers/Serenity (2005)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/thrillers/Serenity (2005)/Serenity
-    (2005) Bluray-2160p.mkv
+  Parsed Movie File: Serenity (2005) Bluray-2160p.mkv
   Parsed Movie Quality: Bluray-2160p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/thrillers/Serenity (2005)
   Relative Movie File Path: ''
@@ -12385,8 +12267,7 @@ Sherlock- The Abominable Bride (2016):
   Absolute Movie Path: /var/data/media/video/movies/thrillers/Sherlock- The Abominable
     Bride (2016)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/thrillers/Sherlock- The Abominable
-    Bride (2016)/Sherlock- The Abominable Bride (2015) Bluray-1080p.mkv
+  Parsed Movie File: Sherlock- The Abominable Bride (2015) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/thrillers/Sherlock- The Abominable
     Bride (2016)
@@ -12420,8 +12301,7 @@ South Park- Bigger, Longer & Uncut (1999):
   Absolute Movie Path: /var/data/media/video/movies/staging/South Park- Bigger, Longer
     & Uncut (1999)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/South Park- Bigger, Longer
-    & Uncut (1999)/South Park- Bigger, Longer & Uncut (1999) Bluray-1080p.mkv
+  Parsed Movie File: South Park- Bigger, Longer & Uncut (1999) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/South Park- Bigger,
     Longer & Uncut (1999)
@@ -12716,8 +12596,7 @@ Stargate (1994):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Stargate (1994)
   Parsed Movie Extension: mp4
-  Parsed Movie File: /var/data/media/video/movies/staging/Stargate (1994)/Stargate
-    (1994) Bluray-1080p.mp4
+  Parsed Movie File: Stargate (1994) Bluray-1080p.mp4
   Parsed Movie Quality: Bluray-1080p.mp4
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Stargate (1994)
   Relative Movie File Path: ''
@@ -12775,8 +12654,7 @@ Stargate SG-1- True Science (2006):
   Absolute Movie Path: /var/data/media/video/movies/staging/Stargate SG-1- True Science
     (2006)
   Parsed Movie Extension: avi
-  Parsed Movie File: /var/data/media/video/movies/staging/Stargate SG-1- True Science
-    (2006)/Stargate SG-1- True Science (2006) SDTV.avi
+  Parsed Movie File: Stargate SG-1- True Science (2006) SDTV.avi
   Parsed Movie Quality: SDTV.avi
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Stargate SG-1- True
     Science (2006)
@@ -12821,8 +12699,7 @@ Stargate- Continuum (2008):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Stargate- Continuum (2008)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/Stargate- Continuum (2008)/Stargate-
-    Continuum (2008) Bluray-1080p.mkv
+  Parsed Movie File: Stargate- Continuum (2008) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Stargate- Continuum
     (2008)
@@ -12858,8 +12735,7 @@ Stargate- The Ark of Truth (2008):
   Absolute Movie Path: /var/data/media/video/movies/staging/Stargate- The Ark of Truth
     (2008)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/Stargate- The Ark of Truth
-    (2008)/Stargate- The Ark of Truth (2008) Bluray-1080p.mkv
+  Parsed Movie File: Stargate- The Ark of Truth (2008) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: ''
   Relative Movie File Path: ''
@@ -12892,9 +12768,8 @@ Steins;Gate 0- Valentine's of Crystal Polymorphism - Bittersweet Intermedio (201
   Absolute Movie Path: /var/data/media/video/movies/foreign/Steins;Gate 0- Valentine's
     of Crystal Polymorphism - Bittersweet Intermedio (2018)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Steins;Gate 0- Valentine's
-    of Crystal Polymorphism - Bittersweet Intermedio (2018)/Steins;Gate 0- Valentine's
-    of Crystal Polymorphism - Bittersweet Intermedio (2018) Remux-1080p.mkv
+  Parsed Movie File: Steins;Gate 0- Valentine's of Crystal Polymorphism - Bittersweet
+    Intermedio (2018) Remux-1080p.mkv
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: ''
   Relative Movie File Path: ''
@@ -12932,8 +12807,7 @@ Steins;Gate- Egoistic Poriomania (2012):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Steins;Gate- Egoistic
     Poriomania (2012)
   Parsed Movie Extension: mp4
-  Parsed Movie File: /var/data/media/video/movies/foreign/Steins;Gate- Egoistic Poriomania
-    (2012)/Steins;Gate- Egoistic Poriomania (2012) WEBDL-1080p.mp4
+  Parsed Movie File: Steins;Gate- Egoistic Poriomania (2012) WEBDL-1080p.mp4
   Parsed Movie Quality: WEBDL-1080p.mp4
   Raw Absolute Movie Path: ''
   Relative Movie File Path: ''
@@ -12966,9 +12840,8 @@ Steins;Gate- Egoistic Poriomania (2012):
   Absolute Movie Path: "/var/data/media/video/movies/foreign/Steins;Gate- The Movie\
     \ \u2212 Load Region of D\xE9j\xE0 Vu (2013)"
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Steins;Gate- The Movie\
-    \ \u2212 Load Region of D\xE9j\xE0 Vu (2013)/\u5287\u5834\u7248 STEINS;GATE \u8CA0\
-    \u8377\u9818\u57DF\u306E\u30C7\u30B8\u30E3\u30F4 (2013) Remux-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248 STEINS;GATE \u8CA0\u8377\u9818\u57DF\u306E\
+    \u30C7\u30B8\u30E3\u30F4 (2013) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: "/var/data/media/video/movies/foreign/Steins;Gate- The\
     \ Movie \u2212 Load Region of D\xE9j\xE0 Vu (2013)"
@@ -13022,8 +12895,7 @@ Sword Art Online- Extra Edition (2013):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Sword Art Online- Extra
     Edition (2013)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Sword Art Online- Extra
-    Edition (2013)/Sword Art Online- Extra Edition (2013) Remux-1080p.mkv
+  Parsed Movie File: Sword Art Online- Extra Edition (2013) Remux-1080p.mkv
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Sword Art Online-
     Extra Edition (2013)
@@ -13057,10 +12929,9 @@ Sword Art Online- The Movie - Ordinal Scale (2017):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Sword Art Online- The
     Movie - Ordinal Scale (2017)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Sword Art Online- The Movie\
-    \ - Ordinal Scale (2017)/\u5287\u5834\u7248 \u30BD\u30FC\u30C9\u30A2\u30FC\u30C8\
-    \u30FB\u30AA\u30F3\u30E9\u30A4\u30F3 -\u30AA\u30FC\u30C7\u30A3\u30CA\u30EB\u30FB\
-    \u30B9\u30B1\u30FC\u30EB- (2017) Bluray-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248 \u30BD\u30FC\u30C9\u30A2\u30FC\u30C8\u30FB\
+    \u30AA\u30F3\u30E9\u30A4\u30F3 -\u30AA\u30FC\u30C7\u30A3\u30CA\u30EB\u30FB\u30B9\
+    \u30B1\u30FC\u30EB- (2017) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Sword Art Online-
     The Movie - Ordinal Scale (2017)
@@ -13138,8 +13009,7 @@ Teen Titans- Trouble in Tokyo (2006):
   Absolute Movie Path: /var/data/media/video/movies/staging/Teen Titans- Trouble in
     Tokyo (2006)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/Teen Titans- Trouble in
-    Tokyo (2006)/Teen Titans- Trouble in Tokyo (2006) WEBDL-1080p.mkv
+  Parsed Movie File: Teen Titans- Trouble in Tokyo (2006) WEBDL-1080p.mkv
   Parsed Movie Quality: WEBDL-1080p.mkv
   Raw Absolute Movie Path: ''
   Relative Movie File Path: ''
@@ -13182,8 +13052,7 @@ The A-Team (2010):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/The A-Team (2010)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/The A-Team (2010)/The A-Team
-    (2010) Bluray-1080p.mkv
+  Parsed Movie File: The A-Team (2010) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/The A-Team (2010)
   Relative Movie File Path: ''
@@ -13229,8 +13098,7 @@ The Batman vs. Dracula (2005):
   Absolute Movie Path: /var/data/media/video/movies/horror/The Batman vs. Dracula
     (2005)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/horror/The Batman vs. Dracula (2005)/The
-    Batman vs. Dracula (2005) WEBDL-1080p.mkv
+  Parsed Movie File: The Batman vs. Dracula (2005) WEBDL-1080p.mkv
   Parsed Movie Quality: WEBDL-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/horror/The Batman vs. Dracula
     (2005)
@@ -13263,8 +13131,7 @@ The Cage (1965):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/The Cage (1965)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/The Cage (1965)/Star Trek-
-    The Cage (1965) Bluray-1080p.mkv
+  Parsed Movie File: Star Trek- The Cage (1965) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/The Cage (1965)
   Relative Movie File Path: ''
@@ -13376,9 +13243,7 @@ The Day Naruto Became Hokage (2016):
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden - S00E014
-        - OVA- The Day Naruto Became Hokage Bluray-1080p.mkv -> ../../../../movies/foreign/The
-        Day Naruto Became Hokage (2016)/The Day Naruto Became Hokage (2016) Bluray-1080p.mkv
+      Symlinked: ''
       Title: OVA- The Day Naruto Became Hokage
   Unparsed Movie Title: The Day Naruto Became Hokage (2016)
 The Dukes of Hazzard- Hazzard in Hollywood (2000):
@@ -13386,8 +13251,7 @@ The Dukes of Hazzard- Hazzard in Hollywood (2000):
   Absolute Movie Path: /var/data/media/video/movies/staging/The Dukes of Hazzard-
     Hazzard in Hollywood (2000)
   Parsed Movie Extension: avi
-  Parsed Movie File: /var/data/media/video/movies/staging/The Dukes of Hazzard- Hazzard
-    in Hollywood (2000)/The Dukes of Hazzard- Hazzard in Hollywood (2000) DVD.avi
+  Parsed Movie File: The Dukes of Hazzard- Hazzard in Hollywood (2000) DVD.avi
   Parsed Movie Quality: DVD.avi
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/The Dukes of Hazzard-
     Hazzard in Hollywood (2000)
@@ -13424,8 +13288,7 @@ The Dukes of Hazzard- Reunion! (1997):
   Absolute Movie Path: /var/data/media/video/movies/staging/The Dukes of Hazzard-
     Reunion! (1997)
   Parsed Movie Extension: avi
-  Parsed Movie File: /var/data/media/video/movies/staging/The Dukes of Hazzard- Reunion!
-    (1997)/The Dukes of Hazzard- Reunion! (1997) DVD.avi
+  Parsed Movie File: The Dukes of Hazzard- Reunion! (1997) DVD.avi
   Parsed Movie Quality: DVD.avi
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/The Dukes of Hazzard-
     Reunion! (1997)
@@ -13491,8 +13354,7 @@ The Evil Dead (1981):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/horror/The Evil Dead (1981)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/horror/The Evil Dead (1981)/The
-    Evil Dead (1981) Bluray-1080p.mkv
+  Parsed Movie File: The Evil Dead (1981) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/horror/The Evil Dead (1981)
   Relative Movie File Path: ''
@@ -13527,8 +13389,7 @@ The Future Diary- Redial (2013):
   Absolute Movie Path: /var/data/media/video/movies/foreign/The Future Diary- Redial
     (2013)
   Parsed Movie Extension: mp4
-  Parsed Movie File: /var/data/media/video/movies/foreign/The Future Diary- Redial
-    (2013)/The Future Diary- Redial (2013) Bluray-720p.mp4
+  Parsed Movie File: The Future Diary- Redial (2013) Bluray-720p.mp4
   Parsed Movie Quality: Bluray-720p.mp4
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/The Future Diary-
     Redial (2013)
@@ -13564,9 +13425,8 @@ The Garden of Sinners - Remix- Gate of Seventh Heaven (2009):
   Absolute Movie Path: /var/data/media/video/movies/foreign/The Garden of Sinners
     - Remix- Gate of Seventh Heaven (2009)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/The Garden of Sinners -\
-    \ Remix- Gate of Seventh Heaven (2009)/\u5287\u5834\u7248\u300C\u7A7A\u306E\u5883\
-    \u754C\u300DRemix -Gate of seventh heaven- (2009) Bluray-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248\u300C\u7A7A\u306E\u5883\u754C\u300DRemix\
+    \ -Gate of seventh heaven- (2009) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/The Garden of Sinners
     - Remix- Gate of Seventh Heaven (2009)
@@ -13636,9 +13496,8 @@ The Garden of Sinners- Future Gospel - Extra Chorus (2013):
   Absolute Movie Path: /var/data/media/video/movies/foreign/The Garden of Sinners-
     Future Gospel - Extra Chorus (2013)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/The Garden of Sinners-\
-    \ Future Gospel - Extra Chorus (2013)/\u5287\u5834\u7248\u300C\u7A7A\u306E\u5883\
-    \u754C\u300D\u672A\u6765\u798F\u97F3 extra chorus (2013) Bluray-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248\u300C\u7A7A\u306E\u5883\u754C\u300D\u672A\
+    \u6765\u798F\u97F3 extra chorus (2013) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/The Garden of Sinners-
     Future Gospel - Extra Chorus (2013)
@@ -13677,8 +13536,7 @@ The IT Crowd Manual (2014):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/The IT Crowd Manual (2014)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/The IT Crowd Manual (2014)/The
-    IT Crowd Manual (2014) HDTV-720p.mkv
+  Parsed Movie File: The IT Crowd Manual (2014) HDTV-720p.mkv
   Parsed Movie Quality: HDTV-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/The IT Crowd Manual
     (2014)
@@ -13896,9 +13754,8 @@ The Seven Deadly Sins - Prisoners of the Sky (2018):
   Absolute Movie Path: /var/data/media/video/movies/foreign/The Seven Deadly Sins
     - Prisoners of the Sky (2018)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/The Seven Deadly Sins -\
-    \ Prisoners of the Sky (2018)/\u5287\u5834\u7248 \u4E03\u3064\u306E\u5927\u7F6A\
-    \ \u5929\u7A7A\u306E\u56DA\u308F\u308C\u4EBA (2018) WEBDL-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248 \u4E03\u3064\u306E\u5927\u7F6A \u5929\u7A7A\
+    \u306E\u56DA\u308F\u308C\u4EBA (2018) WEBDL-1080p.mkv"
   Parsed Movie Quality: WEBDL-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/The Seven Deadly Sins
     - Prisoners of the Sky (2018)
@@ -14122,8 +13979,7 @@ The Simpsons Movie (2007):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/The Simpsons Movie (2007)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/The Simpsons Movie (2007)/The
-    Simpsons Movie (2007) Bluray-1080p Proper.mkv
+  Parsed Movie File: The Simpsons Movie (2007) Bluray-1080p Proper.mkv
   Parsed Movie Quality: Bluray-1080p Proper.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/The Simpsons Movie
     (2007)
@@ -14300,8 +14156,7 @@ The X Files- I Want to Believe (2008):
   Absolute Movie Path: /var/data/media/video/movies/staging/The X Files- I Want to
     Believe (2008)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/The X Files- I Want to Believe
-    (2008)/The X Files- I Want to Believe (2008) Bluray-1080p.mkv
+  Parsed Movie File: The X Files- I Want to Believe (2008) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: ''
   Relative Movie File Path: ''
@@ -14376,8 +14231,7 @@ Tiger & Bunny - The Movie- The Rising (2014):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Tiger & Bunny - The Movie-
     The Rising (2014)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Tiger & Bunny - The Movie-\
-    \ The Rising (2014)/\u5287\u5834\u7248 Tiger & Bunny -the Rising- (2014) Bluray-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248 Tiger & Bunny -the Rising- (2014) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Tiger & Bunny - The
     Movie- The Rising (2014)
@@ -14414,8 +14268,7 @@ Tiger & Bunny- The Beginning (2012):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Tiger & Bunny- The Beginning
     (2012)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Tiger & Bunny- The Beginning\
-    \ (2012)/\u5287\u5834\u7248 Tiger & Bunny -the Beginning- (2012) Bluray-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248 Tiger & Bunny -the Beginning- (2012) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Tiger & Bunny- The
     Beginning (2012)
@@ -14492,8 +14345,7 @@ Top Gear- Apocalypse (2010):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Top Gear- Apocalypse (2010)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/Top Gear- Apocalypse (2010)/Top
-    Gear- Apocalypse (2010) Bluray-720p.mkv
+  Parsed Movie File: Top Gear- Apocalypse (2010) Bluray-720p.mkv
   Parsed Movie Quality: Bluray-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Top Gear- Apocalypse
     (2010)
@@ -14806,8 +14658,7 @@ Top Gear- The Great African Adventure (2013):
   Absolute Movie Path: /var/data/media/video/movies/staging/Top Gear- The Great African
     Adventure (2013)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/Top Gear- The Great African
-    Adventure (2013)/Top Gear- The Great African Adventure (2013) Bluray-720p.mkv
+  Parsed Movie File: Top Gear- The Great African Adventure (2013) Bluray-720p.mkv
   Parsed Movie Quality: Bluray-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Top Gear- The Great
     African Adventure (2013)
@@ -14873,8 +14724,7 @@ Top Gear- The Perfect Road Trip (2013):
   Absolute Movie Path: /var/data/media/video/movies/staging/Top Gear- The Perfect
     Road Trip (2013)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/Top Gear- The Perfect Road
-    Trip (2013)/Top Gear- The Perfect Road Trip (2013) Bluray-720p.mkv
+  Parsed Movie File: Top Gear- The Perfect Road Trip (2013) Bluray-720p.mkv
   Parsed Movie Quality: Bluray-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Top Gear- The Perfect
     Road Trip (2013)
@@ -14910,8 +14760,7 @@ Top Gear- The Perfect Road Trip 2 (2014):
   Absolute Movie Path: /var/data/media/video/movies/staging/Top Gear- The Perfect
     Road Trip 2 (2014)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/Top Gear- The Perfect Road
-    Trip 2 (2014)/Top Gear- The Perfect Road Trip 2 (2014) Bluray-1080p.mkv
+  Parsed Movie File: Top Gear- The Perfect Road Trip 2 (2014) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Top Gear- The Perfect
     Road Trip 2 (2014)
@@ -15128,9 +14977,7 @@ Toriko 3D Movie- Kaimaku! Gourmet Adventure!! (2011):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Toriko 3D Movie- Kaimaku!
     Gourmet Adventure!! (2011)
   Parsed Movie Extension: mp4
-  Parsed Movie File: /var/data/media/video/movies/foreign/Toriko 3D Movie- Kaimaku!
-    Gourmet Adventure!! (2011)/Toriko 3D Movie- Kaimaku! Gourmet Adventure!! (2011)
-    Bluray-1080p.mp4
+  Parsed Movie File: Toriko 3D Movie- Kaimaku! Gourmet Adventure!! (2011) Bluray-1080p.mp4
   Parsed Movie Quality: Bluray-1080p.mp4
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Toriko 3D Movie- Kaimaku!
     Gourmet Adventure!! (2011)
@@ -15166,8 +15013,7 @@ Trigun - Badlands Rumble (2010):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Trigun - Badlands Rumble
     (2010)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Trigun - Badlands Rumble
-    (2010)/Trigun - Badlands Rumble (2010) Bluray-1080p.mkv
+  Parsed Movie File: Trigun - Badlands Rumble (2010) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Trigun - Badlands
     Rumble (2010)
@@ -15231,8 +15077,7 @@ Unlocking Sherlock (2014):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/thrillers/Unlocking Sherlock (2014)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/thrillers/Unlocking Sherlock (2014)/Unlocking
-    Sherlock (2014) WEBDL-720p.mkv
+  Parsed Movie File: Unlocking Sherlock (2014) WEBDL-720p.mkv
   Parsed Movie Quality: WEBDL-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/thrillers/Unlocking Sherlock
     (2014)
@@ -15278,8 +15123,7 @@ Vixen- The Movie (2017):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Vixen- The Movie (2017)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/staging/Vixen- The Movie (2017)/Vixen-
-    The Movie (2017) Bluray-1080p.mkv
+  Parsed Movie File: Vixen- The Movie (2017) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Vixen- The Movie (2017)
   Relative Movie File Path: ''
@@ -15326,10 +15170,8 @@ Watashi ga Motenai no wa Dou Kangaetemo Omaera ga Warui!- Motenaishi, Nazomeite 
   Absolute Movie Path: /var/data/media/video/movies/foreign/Watashi ga Motenai no
     wa Dou Kangaetemo Omaera ga Warui!- Motenaishi, Nazomeite Miru (2014)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Watashi ga Motenai no wa
-    Dou Kangaetemo Omaera ga Warui!- Motenaishi, Nazomeite Miru (2014)/Watashi ga
-    Motenai no wa Dou Kangaetemo Omaera ga Warui!- Motenaishi, Nazomeite Miru (2014)
-    WEBDL-720p.mkv
+  Parsed Movie File: Watashi ga Motenai no wa Dou Kangaetemo Omaera ga Warui!- Motenaishi,
+    Nazomeite Miru (2014) WEBDL-720p.mkv
   Parsed Movie Quality: WEBDL-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Watashi ga Motenai
     no wa Dou Kangaetemo Omaera ga Warui!- Motenaishi, Nazomeite Miru (2014)
@@ -15409,8 +15251,7 @@ Your Lie in April (2016):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Your Lie in April (2016)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Your Lie in April (2016)/\u56DB\
-    \u6708\u306F\u541B\u306E\u5618 (2016) Bluray-1080p.mkv"
+  Parsed Movie File: "\u56DB\u6708\u306F\u541B\u306E\u5618 (2016) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: ''
   Relative Movie File Path: ''
@@ -15444,8 +15285,7 @@ Yu Yu Hakusho- The Movie (1993):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Yu Yu Hakusho- The Movie
     (1993)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Yu Yu Hakusho- The Movie
-    (1993)/Yu Yu Hakusho- The Movie (1993) Remux-1080p.mkv
+  Parsed Movie File: Yu Yu Hakusho- The Movie (1993) Remux-1080p.mkv
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Yu Yu Hakusho- The
     Movie (1993)
@@ -15481,9 +15321,7 @@ Yu Yu Hakusho- The Movie - Poltergeist Report (1994):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Yu Yu Hakusho- The Movie
     - Poltergeist Report (1994)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Yu Yu Hakusho- The Movie
-    - Poltergeist Report (1994)/Yu Yu Hakusho- The Movie - Poltergeist Report (1994)
-    DVD.mkv
+  Parsed Movie File: Yu Yu Hakusho- The Movie - Poltergeist Report (1994) DVD.mkv
   Parsed Movie Quality: DVD.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Yu Yu Hakusho- The
     Movie - Poltergeist Report (1994)
@@ -15521,8 +15359,7 @@ Yu Yu Hakusho- Two Shots (2018):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Yu Yu Hakusho- Two Shots
     (2018)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /var/data/media/video/movies/foreign/Yu Yu Hakusho- Two Shots
-    (2018)/Yu Yu Hakusho- Two Shots (2018) Bluray-1080p.mkv
+  Parsed Movie File: Yu Yu Hakusho- Two Shots (2018) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Yu Yu Hakusho- Two
     Shots (2018)
@@ -15558,8 +15395,7 @@ Yu Yu Hakusho- Two Shots (2018):
   Absolute Movie Path: "/var/data/media/video/movies/foreign/Y\xFB Y\xFB Hakusho-\
     \ Eiz\xF4 Hakusho (0)"
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Y\xFB Y\xFB Hakusho- Eiz\xF4\
-    \ Hakusho (0)/Y\xFB Y\xFB Hakusho- Eiz\xF4 Hakusho (0) Bluray-1080p.mkv"
+  Parsed Movie File: "Y\xFB Y\xFB Hakusho- Eiz\xF4 Hakusho (0) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: "/var/data/media/video/movies/foreign/Y\xFB Y\xFB Hakusho-\
     \ Eiz\xF4 Hakusho (0)"
@@ -15596,9 +15432,8 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
   Absolute Movie Path: /var/data/media/video/movies/foreign/xxxHOLiC The Movie- A
     Midsummer Night's Dream (2005)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/xxxHOLiC The Movie- A Midsummer\
-    \ Night's Dream (2005)/\u5287\u5834\u7248 \xD7\xD7\xD7HOLiC \u771F\u590F\u30CE\
-    \u591C\u30CE\u5922 (2005) Remux-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248 \xD7\xD7\xD7HOLiC \u771F\u590F\u30CE\u591C\
+    \u30CE\u5922 (2005) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/xxxHOLiC The Movie-
     A Midsummer Night's Dream (2005)
@@ -15634,8 +15469,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
   Absolute Movie File Path: ''
   Absolute Movie Path: "/var/data/media/video/movies/foreign/xxxHolic- R\u014D (2010)"
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/xxxHolic- R\u014D (2010)/xxxHolic-\
-    \ R\u014D (2010) Bluray-1080p.mkv"
+  Parsed Movie File: "xxxHolic- R\u014D (2010) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: "/var/data/media/video/movies/foreign/xxxHolic- R\u014D\
     \ (2010)"
@@ -15669,8 +15503,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
   Absolute Movie Path: "/var/data/media/video/movies/foreign/xxxHolic- R\u014D Adayume\
     \ (2011)"
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/xxxHolic- R\u014D Adayume\
-    \ (2011)/xxxHolic- R\u014D Adayume (2011) Bluray-1080p.mkv"
+  Parsed Movie File: "xxxHolic- R\u014D Adayume (2011) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: "/var/data/media/video/movies/foreign/xxxHolic- R\u014D\
     \ Adayume (2011)"
@@ -15704,9 +15537,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
   Absolute Movie Path: "/var/data/media/video/movies/foreign/\u306F\u305F\u3089\u304F\
     \u7D30\u80DE \u7279\u5225\u7DE8 \u98A8\u90AA\u75C7\u5019\u7FA4 (2018)"
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/\u306F\u305F\u3089\u304F\
-    \u7D30\u80DE \u7279\u5225\u7DE8 \u98A8\u90AA\u75C7\u5019\u7FA4 (2018)/Hataraku\
-    \ Saibou- Kaze Shoukougun (2018) Bluray-1080p.mkv"
+  Parsed Movie File: Hataraku Saibou- Kaze Shoukougun (2018) Bluray-1080p.mkv
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: "/var/data/media/video/movies/foreign/\u306F\u305F\u3089\
     \u304F\u7D30\u80DE \u7279\u5225\u7DE8 \u98A8\u90AA\u75C7\u5019\u7FA4 (2018)"
@@ -15781,9 +15612,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
   Absolute Movie Path: "/var/data/media/video/movies/foreign/\u9032\u6483\u306E\u5DE8\
     \u4EBA ATTACK ON TITAN (2015)"
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/\u9032\u6483\u306E\u5DE8\
-    \u4EBA ATTACK ON TITAN (2015)/\u9032\u6483\u306E\u5DE8\u4EBA ATTACK ON TITAN (2015)\
-    \ Bluray-1080p.mkv"
+  Parsed Movie File: "\u9032\u6483\u306E\u5DE8\u4EBA ATTACK ON TITAN (2015) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: "/var/data/media/video/movies/foreign/\u9032\u6483\u306E\
     \u5DE8\u4EBA ATTACK ON TITAN (2015)"
