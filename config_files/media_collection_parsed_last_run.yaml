@@ -7273,9 +7273,10 @@ Mobile Suit Gundam 0083- Stardust Memory - The Mayfly of Space (1992):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam 0083-
     Stardust Memory - The Mayfly of Space (1992)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: Mobile Suit Gundam 0083- Stardust Memory - The Mayfly of Space
+    (1992) Bluray-1080p.mkv
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam
     0083- Stardust Memory - The Mayfly of Space (1992)
   Relative Movie File Path: ''
@@ -7294,11 +7295,17 @@ Mobile Suit Gundam 0083- Stardust Memory - The Mayfly of Space (1992):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Mobile Suit Gundam 0083- Stardust Memory/Season
         00/Mobile Suit Gundam 0083- Stardust Memory - S00E002 - The Mayfly of Space
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Mobile Suit Gundam 0083- Stardust Memory/Season
+        00/Mobile Suit Gundam 0083- Stardust Memory - S00E002 - The Mayfly of Space
+        Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Mobile Suit Gundam 0083- Stardust Memory/Season 00/Mobile
+        Suit Gundam 0083- Stardust Memory - S00E002 - The Mayfly of Space Bluray-1080p.mkv
+        -> ../../../../movies/foreign/Mobile Suit Gundam 0083- Stardust Memory - The
+        Mayfly of Space (1992)/Mobile Suit Gundam 0083- Stardust Memory - The Mayfly
+        of Space (1992) Bluray-1080p.mkv
       Title: The Mayfly of Space
   Unparsed Movie Title: Mobile Suit Gundam 0083- Stardust Memory - The Mayfly of Space
     (1992)
@@ -7370,9 +7377,9 @@ Mobile Suit Gundam F91 (1991):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam F91
     (1991)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "\u6A5F\u52D5\u6226\u58EB\u30AC\u30F3\u30C0\u30E0F91 (1991) Bluray-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam
     F91 (1991)
   Relative Movie File Path: ''
@@ -7390,11 +7397,15 @@ Mobile Suit Gundam F91 (1991):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Mobile Suit Gundam/Season 00/Mobile Suit Gundam
         - S00E005 - Mobile Suit Gundam F91
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Mobile Suit Gundam/Season 00/Mobile Suit
+        Gundam - S00E005 - Mobile Suit Gundam F91 Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Mobile Suit Gundam/Season 00/Mobile Suit Gundam - S00E005
+        - Mobile Suit Gundam F91 Bluray-1080p.mkv -> ../../../../movies/foreign/Mobile
+        Suit Gundam F91 (1991)/\xe6\xa9\x9f\xe5\x8b\x95\xe6\x88\xa6\xe5\xa3\xab\xe3\x82\xac\xe3\x83\xb3\xe3\x83\x80\xe3\x83\xa0F91
+        (1991) Bluray-1080p.mkv
       Title: Mobile Suit Gundam F91
   Unparsed Movie Title: Mobile Suit Gundam F91 (1991)
 Mobile Suit Gundam I (1981):
@@ -7998,9 +8009,10 @@ Mobile Suit Gundam- The 08th MS Team - Miller's Report (1998):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam- The
     08th MS Team - Miller's Report (1998)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "\u6A5F\u52D5\u6226\u58EB\u30AC\u30F3\u30C0\u30E0 \u7B2C08MS\u5C0F\
+    \u968A \u30DF\u30E9\u30FC\u30BA\u30FB\u30EA\u30DD\u30FC\u30C8 (1998) Remux-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Mobile Suit Gundam-
     The 08th MS Team - Miller's Report (1998)
   Relative Movie File Path: ''
@@ -8019,11 +8031,18 @@ Mobile Suit Gundam- The 08th MS Team - Miller's Report (1998):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Mobile Suit Gundam- The 08th MS Team/Season
         00/Mobile Suit Gundam- The 08th MS Team - S00E001 - Miller's Report
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Mobile Suit Gundam- The 08th MS Team/Season
+        00/Mobile Suit Gundam- The 08th MS Team - S00E001 - Miller's Report Bluray-1080p
+        Remux.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Mobile Suit Gundam- The 08th MS Team/Season 00/Mobile
+        Suit Gundam- The 08th MS Team - S00E001 - Miller\s Report Bluray-1080p Remux.mkv"
+        -> \../../../../movies/foreign/Mobile Suit Gundam- The 08th MS Team - Miller\\\\\s
+        Report (1998)/\xe6\xa9\x9f\xe5\x8b\x95\xe6\x88\xa6\xe5\xa3\xab\xe3\x82\xac\xe3\x83\xb3\xe3\x83\x80\xe3\x83\xa0
+        \xe7\xac\xac08MS\xe5\xb0\x8f\xe9\x9a\x8a \xe3\x83\x9f\xe3\x83\xa9\xe3\x83\xbc\xe3\x82\xba\xe3\x83\xbb\xe3\x83\xaa\xe3\x83\x9d\xe3\x83\xbc\xe3\x83\x88
+        (1998) Remux-1080p.mkv
       Title: Miller's Report
   Unparsed Movie Title: Mobile Suit Gundam- The 08th MS Team - Miller's Report (1998)
 Monster Musume no Iru Nichijou OVA (2016):
@@ -12497,9 +12516,9 @@ Star Trek 25th Anniversary Special (1991):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/documentaries/Star Trek 25th Anniversary
     Special (1991)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: avi
+  Parsed Movie File: Star Trek 25th Anniversary Special (1991) DVD.avi
+  Parsed Movie Quality: DVD.avi
   Raw Absolute Movie Path: /var/data/media/video/movies/documentaries/Star Trek 25th
     Anniversary Special (1991)
   Relative Movie File Path: ''
@@ -12517,20 +12536,25 @@ Star Trek 25th Anniversary Special (1991):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/scifi/Star Trek/Season 00/Star Trek - S00E02 - Star Trek's
         25th Anniversary Special
-      Relative Show File Path: ''
+      Relative Show File Path: tv/scifi/Star Trek/Season 00/Star Trek - S00E02 - Star
+        Trek's 25th Anniversary Special DVD.avi
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: tv/scifi/Star Trek/Season 00/Star Trek - S00E02 - Star Trek\s 25th
+        Anniversary Special DVD.avi" -> \../../../../movies/documentaries/Star Trek
+        25th Anniversary Special (1991)/Star Trek 25th Anniversary Special (1991)
+        DVD.avi
       Title: Star Trek's 25th Anniversary Special
   Unparsed Movie Title: Star Trek 25th Anniversary Special (1991)
 Star Trek Secret Voyage- Whose Birth These Triumphs Are (2012):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Star Trek Secret Voyage-
     Whose Birth These Triumphs Are (2012)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mp4
+  Parsed Movie File: Star Trek Secret Voyage- Whose Birth These Triumphs Are (2012)
+    DVD.mp4
+  Parsed Movie Quality: DVD.mp4
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Star Trek Secret Voyage-
     Whose Birth These Triumphs Are (2012)
   Relative Movie File Path: ''
@@ -12549,11 +12573,15 @@ Star Trek Secret Voyage- Whose Birth These Triumphs Are (2012):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/scifi/Star Trek- Secret Voyage/Season 00/Star Trek- Secret
         Voyage - S00E01 - Whose Birth These Triumphs Are
-      Relative Show File Path: ''
+      Relative Show File Path: tv/scifi/Star Trek- Secret Voyage/Season 00/Star Trek-
+        Secret Voyage - S00E01 - Whose Birth These Triumphs Are DVD.mp4
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: tv/scifi/Star Trek- Secret Voyage/Season 00/Star Trek- Secret Voyage
+        - S00E01 - Whose Birth These Triumphs Are DVD.mp4 -> ../../../../movies/staging/Star
+        Trek Secret Voyage- Whose Birth These Triumphs Are (2012)/Star Trek Secret
+        Voyage- Whose Birth These Triumphs Are (2012) DVD.mp4
       Title: Whose Birth These Triumphs Are
   Unparsed Movie Title: Star Trek Secret Voyage- Whose Birth These Triumphs Are (2012)
 Star Trek- 30 Years And Beyond (1996):
@@ -12589,9 +12617,9 @@ Star Trek- A Captain's Log (1994):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Star Trek- A Captain's
     Log (1994)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: avi
+  Parsed Movie File: Star Trek- A Captain's Log (1994) DVD.avi
+  Parsed Movie Quality: DVD.avi
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Star Trek- A Captain's
     Log (1994)
   Relative Movie File Path: ''
@@ -12609,11 +12637,14 @@ Star Trek- A Captain's Log (1994):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/scifi/Star Trek/Season 00/Star Trek - S00E03 - Star Trek-
         A Captain's Log
-      Relative Show File Path: ''
+      Relative Show File Path: tv/scifi/Star Trek/Season 00/Star Trek - S00E03 - Star
+        Trek- A Captain's Log DVD.avi
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: tv/scifi/Star Trek/Season 00/Star Trek - S00E03 - Star Trek- A Captain\s
+        Log DVD.avi" -> \../../../../movies/staging/Star Trek- A Captain\\\\\s Log
+        (1994)/Star Trek- A Captain\\\\\s Log (1994) DVD.avi
       Title: Star Trek- A Captain's Log
   Unparsed Movie Title: Star Trek- A Captain's Log (1994)
 Star Trek- Axanar (2015):
@@ -12648,9 +12679,9 @@ Star Trek- Of Gods And Men (2007):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Star Trek- Of Gods And
     Men (2007)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: Star Trek- Of Gods And Men (2007) DVD.mkv
+  Parsed Movie Quality: DVD.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Star Trek- Of Gods
     And Men (2007)
   Relative Movie File Path: ''
@@ -12668,11 +12699,14 @@ Star Trek- Of Gods And Men (2007):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/scifi/Star Trek- Of Gods and Men/Season 00/Star Trek-
         Of Gods and Men - S00E01-02-03 - Star Trek- Of Gods and Men
-      Relative Show File Path: ''
+      Relative Show File Path: tv/scifi/Star Trek- Of Gods and Men/Season 00/Star
+        Trek- Of Gods and Men - S00E01-02-03 - Star Trek- Of Gods and Men DVD.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: tv/scifi/Star Trek- Of Gods and Men/Season 00/Star Trek- Of Gods
+        and Men - S00E01-02-03 - Star Trek- Of Gods and Men DVD.mkv -> ../../../../movies/staging/Star
+        Trek- Of Gods And Men (2007)/Star Trek- Of Gods And Men (2007) DVD.mkv
       Title: Star Trek- Of Gods and Men
   Unparsed Movie Title: Star Trek- Of Gods And Men (2007)
 Star Trek- Voyager - Inside The New Adventure (1995):
@@ -13437,9 +13471,9 @@ The Dukes of Hazzard- The Beginning (2007):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/The Dukes of Hazzard-
     The Beginning (2007)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: avi
+  Parsed Movie File: The Dukes of Hazzard- The Beginning (2007) DVD.avi
+  Parsed Movie Quality: DVD.avi
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/The Dukes of Hazzard-
     The Beginning (2007)
   Relative Movie File Path: ''
@@ -13457,11 +13491,15 @@ The Dukes of Hazzard- The Beginning (2007):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/staging/The Dukes of Hazzard/Season 00/The Dukes of Hazzard
         - S00E22 - The Dukes of Hazzard- The Beginning
-      Relative Show File Path: ''
+      Relative Show File Path: tv/staging/The Dukes of Hazzard/Season 00/The Dukes
+        of Hazzard - S00E22 - The Dukes of Hazzard- The Beginning DVD.avi
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: tv/staging/The Dukes of Hazzard/Season 00/The Dukes of Hazzard -
+        S00E22 - The Dukes of Hazzard- The Beginning DVD.avi -> ../../../../movies/staging/The
+        Dukes of Hazzard- The Beginning (2007)/The Dukes of Hazzard- The Beginning
+        (2007) DVD.avi
       Title: The Dukes of Hazzard- The Beginning
   Unparsed Movie Title: The Dukes of Hazzard- The Beginning (2007)
 The Evil Dead (1981):
