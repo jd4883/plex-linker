@@ -10031,19 +10031,20 @@ Parasyte- Part 2 (2015):
         Part 2 Bluray-1080p.mkv -> ../../../../movies/foreign/Parasyte- Part 2 (2015)/\xe5\xaf\x84\xe7\x94\x9f\xe7\x8d\xa3
         \xe5\xae\x8c\xe7\xb5\x90\xe7\xb7\xa8 (2015) Bluray-1080p.mkv
       Title: Parasyte - Part 2
-  Symlink Target: "/var/data/media/video/movies/foreign/Parasyte- Part 2 (2015)/\u5BC4\
-    \u751F\u7363 \u5B8C\u7D50\u7DE8 (2015) Bluray-1080p.mkv"
   Unparsed Movie Title: Parasyte- Part 2 (2015)
-Parks And Recreation- Cast And Creators Live At PALEYFEST 2014 (2014):
+Parks and Recreation- Cast and Creators Live at PALEYFEST 2014 (2014):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Parks And Recreation-
-    Cast And Creators Live At PALEYFEST 2014 (2014)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Absolute Movie Path: /var/data/media/video/movies/staging/Parks and Recreation-
+    Cast and Creators Live at PALEYFEST 2014 (2014)
+  Parsed Movie Extension: mp4
+  Parsed Movie File: /var/data/media/video/movies/staging/Parks and Recreation- Cast
+    and Creators Live at PALEYFEST 2014 (2014)/Parks and Recreation- Cast and Creators
+    Live at PALEYFEST 2014 (2014) HDTV-1080p.mp4
+  Parsed Movie Quality: HDTV-1080p.mp4
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Parks And Recreation- Cast And Creators Live
-    At PALEYFEST 2014 (2014)
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/staging/Parks and Recreation- Cast and Creators Live
+    at PALEYFEST 2014 (2014)
   Shows:
     Parks and Recreation:
       Absolute Episode: ''
@@ -10057,13 +10058,17 @@ Parks And Recreation- Cast And Creators Live At PALEYFEST 2014 (2014):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/sitcom/Parks and Recreation/Season 00/Parks and Recreation
         - S00E10 - PaleyFest LA - 10th Anniversary Reunion
-      Relative Show File Path: ''
+      Relative Show File Path: tv/sitcom/Parks and Recreation/Season 00/Parks and
+        Recreation - S00E10 - PaleyFest LA - 10th Anniversary Reunion HDTV-1080p.mp4
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: tv/sitcom/Parks and Recreation/Season 00/Parks and Recreation - S00E10
+        - PaleyFest LA - 10th Anniversary Reunion HDTV-1080p.mp4 -> ../../../../movies/staging/Parks
+        and Recreation- Cast and Creators Live at PALEYFEST 2014 (2014)/Parks and
+        Recreation- Cast and Creators Live at PALEYFEST 2014 (2014) HDTV-1080p.mp4
       Title: PaleyFest LA - 10th Anniversary Reunion
-  Unparsed Movie Title: Parks And Recreation- Cast And Creators Live At PALEYFEST
+  Unparsed Movie Title: Parks and Recreation- Cast and Creators Live at PALEYFEST
     2014 (2014)
 'Persona 3 the Movie- #1 Spring of Birth (2013)':
   Absolute Movie File Path: ''
@@ -11504,11 +11509,13 @@ Saint Seiya- Legend of Sanctuary (2014):
   Unparsed Movie Title: Saint Seiya- Legend of Sanctuary (2014)
 Saint Seiya- The Hades Chapter - Elysion (2008):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- The Hades Chapter - Elysion (2008)
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- The Hades
+    Chapter - Elysion (2008)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
-  Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- The Hades Chapter - Elysion (2008)
+  Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- The Hades
+    Chapter - Elysion (2008)
   Relative Movie File Path: ''
   Relative Movie Path: movies/foreign/Saint Seiya- The Hades Chapter - Elysion (2008)
   Shows:
@@ -11569,12 +11576,17 @@ Saint Seiya- The Heated Battle of the Gods (1988):
   Unparsed Movie Title: Saint Seiya- The Heated Battle of the Gods (1988)
 Saint Seiya- Warriors of the Final Holy Battle (1989):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- Warriors of the Final Holy Battle (1989)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- Warriors
+    of the Final Holy Battle (1989)
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "/var/data/media/video/movies/foreign/Saint Seiya- Warriors of\
+    \ the Final Holy Battle (1989)/\u8056\u95D8\u58EB\u661F\u77E2 \u6700\u7D42\u8056\
+    \u6226\u306E\u6226\u58EB\u305F\u3061 (1989) Remux-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Saint Seiya- Warriors of the Final Holy Battle (1989)
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/foreign/Saint Seiya- Warriors of the Final Holy Battle
+    (1989)
   Shows:
     Saint Seiya:
       Absolute Episode: ''
@@ -11588,11 +11600,16 @@ Saint Seiya- Warriors of the Final Holy Battle (1989):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E004
         - Warriors of the Final Holy Battle
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E004
+        - Warriors of the Final Holy Battle Bluray-1080p Remux.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E004 - Warriors
+        of the Final Holy Battle Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Saint
+        Seiya- Warriors of the Final Holy Battle (1989)/\xe8\x81\x96\xe9\x97\x98\xe5\xa3\xab\xe6\x98\x9f\xe7\x9f\xa2
+        \xe6\x9c\x80\xe7\xb5\x82\xe8\x81\x96\xe6\x88\xa6\xe3\x81\xae\xe6\x88\xa6\xe5\xa3\xab\xe3\x81\x9f\xe3\x81\xa1
+        (1989) Remux-1080p.mkv
       Title: Warriors of the Final Holy Battle
   Unparsed Movie Title: Saint Seiya- Warriors of the Final Holy Battle (1989)
 Samurai Jack- Digital Animation Test (2000):
