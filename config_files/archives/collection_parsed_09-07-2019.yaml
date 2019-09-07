@@ -8069,9 +8069,10 @@ Mushishi- The Next Chapter - Drops of Bells (2015):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Mushishi- The Next Chapter
     - Drops of Bells (2015)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: /var/data/media/video/movies/foreign/Mushishi- The Next Chapter
+    - Drops of Bells (2015)/Mushishi- The Next Chapter - Drops of Bells (2015) Bluray-1080p.mkv
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Mushishi- The Next
     Chapter - Drops of Bells (2015)
   Relative Movie File Path: ''
@@ -8090,11 +8091,15 @@ Mushishi- The Next Chapter - Drops of Bells (2015):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Mushi-Shi/Season 00/Mushi-Shi - S00E006 (E050)
         - Bell Droplets
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Mushi-Shi/Season 00/Mushi-Shi - S00E006
+        (E050) - Bell Droplets Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Mushi-Shi/Season 00/Mushi-Shi - S00E006 (E050) - Bell
+        Droplets Bluray-1080p.mkv -> ../../../../movies/foreign/Mushishi- The Next
+        Chapter - Drops of Bells (2015)/Mushishi- The Next Chapter - Drops of Bells
+        (2015) Bluray-1080p.mkv
       Title: Bell Droplets
   Unparsed Movie Title: Mushishi- The Next Chapter - Drops of Bells (2015)
 Mushishi- The Next Chapter - Path of Thorns (2014):
@@ -8133,9 +8138,10 @@ Mushishi- The Shadow That Devours the Sun (2014):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Mushishi- The Shadow That
     Devours the Sun (2014)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: /var/data/media/video/movies/foreign/Mushishi- The Shadow That
+    Devours the Sun (2014)/Mushishi- The Shadow That Devours the Sun (2014) Bluray-1080p.mkv
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Mushishi- The Shadow
     That Devours the Sun (2014)
   Relative Movie File Path: ''
@@ -8153,11 +8159,15 @@ Mushishi- The Shadow That Devours the Sun (2014):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Mushi-Shi/Season 00/Mushi-Shi - S00E001 - The
         Shadow That Devours the Sun
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Mushi-Shi/Season 00/Mushi-Shi - S00E001
+        - The Shadow That Devours the Sun Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Mushi-Shi/Season 00/Mushi-Shi - S00E001 - The Shadow
+        That Devours the Sun Bluray-1080p.mkv -> ../../../../movies/foreign/Mushishi-
+        The Shadow That Devours the Sun (2014)/Mushishi- The Shadow That Devours the
+        Sun (2014) Bluray-1080p.mkv
       Title: The Shadow That Devours the Sun
   Unparsed Movie Title: Mushishi- The Shadow That Devours the Sun (2014)
 My Hero Academia - Two Heroes (2018):
@@ -10693,9 +10703,10 @@ Robot Chicken- DC Comics Special (2012):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Robot Chicken- DC Comics
     Special (2012)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: /var/data/media/video/movies/staging/Robot Chicken- DC Comics
+    Special (2012)/Robot Chicken- DC Comics Special (2012) WEBDL-1080p.mkv
+  Parsed Movie Quality: WEBDL-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/staging/Robot Chicken- DC
     Comics Special (2012)
   Relative Movie File Path: ''
@@ -10713,11 +10724,14 @@ Robot Chicken- DC Comics Special (2012):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/animated/Robot Chicken/Season 00/Robot Chicken - S00E12
         - DC Comics Special
-      Relative Show File Path: ''
+      Relative Show File Path: tv/animated/Robot Chicken/Season 00/Robot Chicken -
+        S00E12 - DC Comics Special WEBDL-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: tv/animated/Robot Chicken/Season 00/Robot Chicken - S00E12 - DC Comics
+        Special WEBDL-1080p.mkv -> ../../../../movies/staging/Robot Chicken- DC Comics
+        Special (2012)/Robot Chicken- DC Comics Special (2012) WEBDL-1080p.mkv
       Title: DC Comics Special
   Unparsed Movie Title: Robot Chicken- DC Comics Special (2012)
 Robot Chicken- Star Wars (2007):
@@ -14085,17 +14099,18 @@ The Simpsons- The Dark Secrets Of The Simpsons (2003):
     (2003)
   Shows: {The Simpsons: null}
   Unparsed Movie Title: The Simpsons- The Dark Secrets Of The Simpsons (2003)
-The Twilight Zone Christmas Classics:
+The Twilight Zone Christmas Classics (0):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/The Twilight Zone Christmas
-    Classics
+  Absolute Movie Path: /var/data/media/video/movies/staging/The Twilight Zone Christmas
+    Classics (0)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/The Twilight Zone Christmas Classics
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/staging/The Twilight Zone Christmas Classics (0)
   Shows: {The Twilight Zone: null}
-  Unparsed Movie Title: The Twilight Zone Christmas Classics
+  Unparsed Movie Title: The Twilight Zone Christmas Classics (0)
 The Wire Odyssey (2007):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/documentaries/The Wire Odyssey
@@ -15050,13 +15065,14 @@ Trigun - Badlands Rumble (2010):
   Unparsed Movie Title: Trigun - Badlands Rumble (2010)
 Twilight Zone- The Movie (1983):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Twilight Zone- The Movie
+  Absolute Movie Path: /var/data/media/video/movies/horror/Twilight Zone- The Movie
     (1983)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: Twilight Zone- The Movie (1983) Bluray-1080p.mkv
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Twilight Zone- The Movie (1983)
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/horror/Twilight Zone- The Movie (1983)
   Shows:
     The Twilight Zone:
       Absolute Episode: ''
@@ -15070,11 +15086,14 @@ Twilight Zone- The Movie (1983):
       Parsed Show Root Folder: ''
       Parsed Show Title: tv/scifi/The Twilight Zone/Season 00/The Twilight Zone -
         S00E04 - Twilight Zone- The Movie
-      Relative Show File Path: ''
+      Relative Show File Path: tv/scifi/The Twilight Zone/Season 00/The Twilight Zone
+        - S00E04 - Twilight Zone- The Movie Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: tv/scifi/The Twilight Zone/Season 00/The Twilight Zone - S00E04 -
+        Twilight Zone- The Movie Bluray-1080p.mkv -> ../../../../movies/horror/Twilight
+        Zone- The Movie (1983)/Twilight Zone- The Movie (1983) Bluray-1080p.mkv
       Title: Twilight Zone- The Movie
   Unparsed Movie Title: Twilight Zone- The Movie (1983)
 Unlocking Sherlock (2014):
@@ -15573,15 +15592,23 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Title: The Common Cold
   Unparsed Movie Title: "\u306F\u305F\u3089\u304F\u7D30\u80DE \u7279\u5225\u7DE8 \u98A8\
     \u90AA\u75C7\u5019\u7FA4 (2018)"
-劇場版 あの日見た花の名前を僕達はまだ知らない。 (2013):
+"\u5287\u5834\u7248 \u3042\u306E\u65E5\u898B\u305F\u82B1\u306E\u540D\u524D\u3092\u50D5\u9054\u306F\u307E\u3060\u77E5\u3089\u306A\u3044\u3002 (2013)":
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/劇場版 あの日見た花の名前を僕達はまだ知らない。 (2013)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
-  Raw Absolute Movie Path: /var/data/media/video/movies/foreign/劇場版 あの日見た花の名前を僕達はまだ知らない。 (2013)
+  Absolute Movie Path: "/var/data/media/video/movies/foreign/\u5287\u5834\u7248 \u3042\
+    \u306E\u65E5\u898B\u305F\u82B1\u306E\u540D\u524D\u3092\u50D5\u9054\u306F\u307E\
+    \u3060\u77E5\u3089\u306A\u3044\u3002 (2013)"
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "\u5287\u5834\u7248 \u3042\u306E\u65E5\u898B\u305F\u82B1\u306E\
+    \u540D\u524D\u3092\u50D5\u9054\u306F\u307E\u3060\u77E5\u3089\u306A\u3044\u3002\
+    \ (2013) Bluray-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p.mkv
+  Raw Absolute Movie Path: "/var/data/media/video/movies/foreign/\u5287\u5834\u7248\
+    \ \u3042\u306E\u65E5\u898B\u305F\u82B1\u306E\u540D\u524D\u3092\u50D5\u9054\u306F\
+    \u307E\u3060\u77E5\u3089\u306A\u3044\u3002 (2013)"
   Relative Movie File Path: ''
-  Relative Movie Path: movies/foreign/劇場版 あの日見た花の名前を僕達はまだ知らない。 (2013)"
+  Relative Movie Path: "movies/foreign/\u5287\u5834\u7248 \u3042\u306E\u65E5\u898B\
+    \u305F\u82B1\u306E\u540D\u524D\u3092\u50D5\u9054\u306F\u307E\u3060\u77E5\u3089\
+    \u306A\u3044\u3002 (2013)"
   Shows:
     Anohana- The Flower We Saw That Day:
       Absolute Episode: ''
@@ -15596,13 +15623,22 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Parsed Show Title: anime/staging/Anohana- The Flower We Saw That Day/Season
         00/Anohana- The Flower We Saw That Day - S00E002 - Anohana The Movie - The
         Flower We Saw That Day
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Anohana- The Flower We Saw That Day/Season
+        00/Anohana- The Flower We Saw That Day - S00E002 - Anohana The Movie - The
+        Flower We Saw That Day Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Anohana- The Flower We Saw That Day/Season 00/Anohana-
+        The Flower We Saw That Day - S00E002 - Anohana The Movie - The Flower We Saw
+        That Day Bluray-1080p.mkv -> ../../../../movies/foreign/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88
+        \xe3\x81\x82\xe3\x81\xae\xe6\x97\xa5\xe8\xa6\x8b\xe3\x81\x9f\xe8\x8a\xb1\xe3\x81\xae\xe5\x90\x8d\xe5\x89\x8d\xe3\x82\x92\xe5\x83\x95\xe9\x81\x94\xe3\x81\xaf\xe3\x81\xbe\xe3\x81\xa0\xe7\x9f\xa5\xe3\x82\x89\xe3\x81\xaa\xe3\x81\x84\xe3\x80\x82
+        (2013)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88 \xe3\x81\x82\xe3\x81\xae\xe6\x97\xa5\xe8\xa6\x8b\xe3\x81\x9f\xe8\x8a\xb1\xe3\x81\xae\xe5\x90\x8d\xe5\x89\x8d\xe3\x82\x92\xe5\x83\x95\xe9\x81\x94\xe3\x81\xaf\xe3\x81\xbe\xe3\x81\xa0\xe7\x9f\xa5\xe3\x82\x89\xe3\x81\xaa\xe3\x81\x84\xe3\x80\x82
+        (2013) Bluray-1080p.mkv
       Title: Anohana The Movie - The Flower We Saw That Day
-  Unparsed Movie Title: 劇場版 あの日見た花の名前を僕達はまだ知らない。 (2013)
+  Unparsed Movie Title: "\u5287\u5834\u7248 \u3042\u306E\u65E5\u898B\u305F\u82B1\u306E\
+    \u540D\u524D\u3092\u50D5\u9054\u306F\u307E\u3060\u77E5\u3089\u306A\u3044\u3002\
+    \ (2013)"
 "\u9032\u6483\u306E\u5DE8\u4EBA ATTACK ON TITAN (2015)":
   Absolute Movie File Path: ''
   Absolute Movie Path: "/var/data/media/video/movies/foreign/\u9032\u6483\u306E\u5DE8\

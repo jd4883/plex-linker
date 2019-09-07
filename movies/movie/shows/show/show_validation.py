@@ -4,6 +4,7 @@ from os.path import exists
 
 from messaging.frontend import (method_launch,
                                 method_exit)
+from string_manipulation.string_methods import getCaseInsensitivePath
 
 
 def validate_show_path_presence(show_object,
@@ -13,7 +14,7 @@ def validate_show_path_presence(show_object,
 		for path in listdir(show_path):
 			show_object.path = "/".join((show_path, path,
 			                             show_object.show))
-			if exists(show_object.path):
+			if exists(getCaseInsensitivePath(show_object.path)):
 				method_exit(g)
 				return True
 	method_exit(g)
