@@ -8255,9 +8255,8 @@ Naruto Shippuden the Movie Blood Prison (2011):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden the Movie
     Blood Prison (2011)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Naruto Shippuden the Movie\
-    \ Blood Prison (2011)/\u5287\u5834\u7248 NARUTO -\u30CA\u30EB\u30C8- \u30D6\u30E9\
-    \u30C3\u30C9\u30FB\u30D7\u30EA\u30BA\u30F3 (2011) Bluray-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248 NARUTO -\u30CA\u30EB\u30C8- \u30D6\u30E9\u30C3\
+    \u30C9\u30FB\u30D7\u30EA\u30BA\u30F3 (2011) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: ''
   Relative Movie File Path: ''
@@ -14538,13 +14537,13 @@ Top Gear- Middle East Special (2011):
   Unparsed Movie Title: Top Gear- Middle East Special (2011)
 Top Gear- Patagonia Special- Part 1 (2014):
   Absolute Movie File Path: ''
-  Absolute Movie Path: '/var/data/media/video/movies/foreign/Top Gear- Patagonia Special:
-    Part 1 (2014)'
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Top Gear- Patagonia Special-
+    Part 1 (2014)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
   Raw Absolute Movie Path: ''
-  Relative Movie Path: 'movies/foreign/Top Gear- Patagonia Special: Part 1 (2014)'
+  Relative Movie Path: movies/foreign/Top Gear- Patagonia Special- Part 1 (2014)
   Shows:
     Top Gear:
       Absolute Episode: ''
@@ -14565,7 +14564,7 @@ Top Gear- Patagonia Special- Part 1 (2014):
       Symlinked: ''
       Title: Patagonia Special (1)
   Unparsed Movie Title: Top Gear- Patagonia Special- Part 1 (2014)
-'Top Gear- Patagonia Special: Part 2 (2014)':
+Top Gear- Patagonia Special- Part 2 (2014):
   Absolute Movie File Path: ''
   Absolute Movie Path: '/var/data/media/video/movies/foreign/Top Gear- Patagonia Special:
     Part 2 (2014)'
@@ -14593,7 +14592,7 @@ Top Gear- Patagonia Special- Part 1 (2014):
       Show Dictionary Object: {}
       Symlinked: ''
       Title: Patagonia Special (2)
-  Unparsed Movie Title: 'Top Gear- Patagonia Special: Part 2 (2014)'
+  Unparsed Movie Title: Top Gear- Patagonia Special- Part 2 (2014)
 Top Gear- Revved Up (2005):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Top Gear- Revved Up (2005)

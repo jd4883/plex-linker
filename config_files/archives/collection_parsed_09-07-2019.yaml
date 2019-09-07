@@ -8249,12 +8249,18 @@ Naruto (0):
   Shows: {Naruto: null}
   Unparsed Movie Title: Naruto (0)
 Naruto Shippuden the Movie Blood Prison (2011):
-  Absolute Movie File Path: /var/data/media/video/movies/foreign/Naruto Shippuden the Movie Blood Prison (2011)/劇場版 NARUTO -ナルト- ブラッド・プリズン (2011) Bluray-1080p.mkv
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden the Movie Blood Prison (2011)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Absolute Movie File Path: "/var/data/media/video/movies/foreign/Naruto Shippuden\
+    \ the Movie Blood Prison (2011)/\u5287\u5834\u7248 NARUTO -\u30CA\u30EB\u30C8\
+    - \u30D6\u30E9\u30C3\u30C9\u30FB\u30D7\u30EA\u30BA\u30F3 (2011) Bluray-1080p.mkv"
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Naruto Shippuden the Movie
+    Blood Prison (2011)
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "/var/data/media/video/movies/foreign/Naruto Shippuden the Movie\
+    \ Blood Prison (2011)/\u5287\u5834\u7248 NARUTO -\u30CA\u30EB\u30C8- \u30D6\u30E9\
+    \u30C3\u30C9\u30FB\u30D7\u30EA\u30BA\u30F3 (2011) Bluray-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: ''
+  Relative Movie File Path: ''
   Relative Movie Path: movies/foreign/Naruto Shippuden the Movie Blood Prison (2011)
   Shows:
     Naruto Shippuden:
@@ -8269,11 +8275,16 @@ Naruto Shippuden the Movie Blood Prison (2011):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
         - S00E007 - Naruto Shippuden 5- Blood Prison
-      Relative Show File Path: ''
+      Relative Show File Path: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
+        - S00E007 - Naruto Shippuden 5- Blood Prison Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden - S00E007
+        - Naruto Shippuden 5- Blood Prison Bluray-1080p.mkv -> ../../../../movies/foreign/Naruto
+        Shippuden the Movie Blood Prison (2011)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88
+        NARUTO -\xe3\x83\x8a\xe3\x83\xab\xe3\x83\x88- \xe3\x83\x96\xe3\x83\xa9\xe3\x83\x83\xe3\x83\x89\xe3\x83\xbb\xe3\x83\x97\xe3\x83\xaa\xe3\x82\xba\xe3\x83\xb3
+        (2011) Bluray-1080p.mkv
       Title: Naruto Shippuden 5- Blood Prison
   Unparsed Movie Title: Naruto Shippuden the Movie Blood Prison (2011)
 Naruto Shippuden the Movie Bonds (2008):
@@ -14527,13 +14538,12 @@ Top Gear- Middle East Special (2011):
   Unparsed Movie Title: Top Gear- Middle East Special (2011)
 Top Gear- Patagonia Special- Part 1 (2014):
   Absolute Movie File Path: ''
-  Absolute Movie Path: '/var/data/media/video/movies/foreign/Top Gear- Patagonia Special:
-    Part 1 (2014)'
+  Absolute Movie Path: '/var/data/media/video/movies/foreign/Top Gear- Patagonia Special- Part 1 (2014)'
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
   Raw Absolute Movie Path: ''
-  Relative Movie Path: 'movies/foreign/Top Gear- Patagonia Special: Part 1 (2014)'
+  Relative Movie Path: 'movies/foreign/Top Gear- Patagonia Special- Part 1 (2014)'
   Shows:
     Top Gear:
       Absolute Episode: ''
@@ -14554,7 +14564,7 @@ Top Gear- Patagonia Special- Part 1 (2014):
       Symlinked: ''
       Title: Patagonia Special (1)
   Unparsed Movie Title: Top Gear- Patagonia Special- Part 1 (2014)
-'Top Gear- Patagonia Special: Part 2 (2014)':
+'Top Gear- Patagonia Special- Part 2 (2014)':
   Absolute Movie File Path: ''
   Absolute Movie Path: '/var/data/media/video/movies/foreign/Top Gear- Patagonia Special:
     Part 2 (2014)'
@@ -14562,7 +14572,7 @@ Top Gear- Patagonia Special- Part 1 (2014):
   Parsed Movie File: ''
   Parsed Movie Quality: ''
   Raw Absolute Movie Path: ''
-  Relative Movie Path: 'movies/foreign/Top Gear- Patagonia Special: Part 2 (2014)'
+  Relative Movie Path: 'movies/foreign/Top Gear- Patagonia Special- Part 2 (2014)'
   Shows:
     Top Gear:
       Absolute Episode: ''
@@ -14582,7 +14592,7 @@ Top Gear- Patagonia Special- Part 1 (2014):
       Show Dictionary Object: {}
       Symlinked: ''
       Title: Patagonia Special (2)
-  Unparsed Movie Title: 'Top Gear- Patagonia Special: Part 2 (2014)'
+  Unparsed Movie Title: 'Top Gear- Patagonia Special- Part 2 (2014)'
 Top Gear- Revved Up (2005):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Top Gear- Revved Up (2005)
