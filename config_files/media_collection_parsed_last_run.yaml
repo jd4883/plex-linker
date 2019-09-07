@@ -11569,15 +11569,18 @@ Saint Seiya- The Heated Battle of the Gods (1988):
         (1988) Remux-1080p.mkv
       Title: The Heated Battle of the Gods
   Unparsed Movie Title: Saint Seiya- The Heated Battle of the Gods (1988)
-Saint Seiya- Warriors Of The Final Holy Battle (1989):
+Saint Seiya- Warriors of the Final Holy Battle (1989):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- Warriors
-    Of The Final Holy Battle (1989)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+    of the Final Holy Battle (1989)
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "/var/data/media/video/movies/foreign/Saint Seiya- Warriors of\
+    \ the Final Holy Battle (1989)/\u8056\u95D8\u58EB\u661F\u77E2 \u6700\u7D42\u8056\
+    \u6226\u306E\u6226\u58EB\u305F\u3061 (1989) Remux-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Saint Seiya- Warriors Of The Final Holy Battle
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/foreign/Saint Seiya- Warriors of the Final Holy Battle
     (1989)
   Shows:
     Saint Seiya:
@@ -11592,13 +11595,18 @@ Saint Seiya- Warriors Of The Final Holy Battle (1989):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E004
         - Warriors of the Final Holy Battle
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E004
+        - Warriors of the Final Holy Battle Bluray-1080p Remux.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E004 - Warriors
+        of the Final Holy Battle Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Saint
+        Seiya- Warriors of the Final Holy Battle (1989)/\xe8\x81\x96\xe9\x97\x98\xe5\xa3\xab\xe6\x98\x9f\xe7\x9f\xa2
+        \xe6\x9c\x80\xe7\xb5\x82\xe8\x81\x96\xe6\x88\xa6\xe3\x81\xae\xe6\x88\xa6\xe5\xa3\xab\xe3\x81\x9f\xe3\x81\xa1
+        (1989) Remux-1080p.mkv
       Title: Warriors of the Final Holy Battle
-  Unparsed Movie Title: Saint Seiya- Warriors Of The Final Holy Battle (1989)
+  Unparsed Movie Title: Saint Seiya- Warriors of the Final Holy Battle (1989)
 Samurai Jack- Digital Animation Test (2000):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Samurai Jack- Digital

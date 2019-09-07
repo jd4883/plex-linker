@@ -11473,8 +11473,7 @@ Saint Seiya- Legend of Sanctuary (2014):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- Legend of
     Sanctuary (2014)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Saint Seiya- Legend of\
-    \ Sanctuary (2014)/\u8056\u95D8\u58EB\u661F\u77E2 LEGEND of SANCTUARY (2014) Bluray-1080p.mkv"
+  Parsed Movie File: "\u8056\u95D8\u58EB\u661F\u77E2 LEGEND of SANCTUARY (2014) Bluray-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: ''
   Relative Movie File Path: ''
@@ -11505,13 +11504,11 @@ Saint Seiya- Legend of Sanctuary (2014):
   Unparsed Movie Title: Saint Seiya- Legend of Sanctuary (2014)
 Saint Seiya- The Hades Chapter - Elysion (2008):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- The Hades
-    Chapter - Elysion (2008)
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- The Hades Chapter - Elysion (2008)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
-  Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- The Hades
-    Chapter - Elysion (2008)
+  Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- The Hades Chapter - Elysion (2008)
   Relative Movie File Path: ''
   Relative Movie Path: movies/foreign/Saint Seiya- The Hades Chapter - Elysion (2008)
   Shows:
@@ -11539,9 +11536,8 @@ Saint Seiya- The Heated Battle of the Gods (1988):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- The Heated
     Battle of the Gods (1988)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Saint Seiya- The Heated\
-    \ Battle of the Gods (1988)/\u8056\u95D8\u58EB\u661F\u77E2 \u795E\u3005\u306E\u71B1\
-    \u304D\u6226\u3044 (1988) Remux-1080p.mkv"
+  Parsed Movie File: "\u8056\u95D8\u58EB\u661F\u77E2 \u795E\u3005\u306E\u71B1\u304D\
+    \u6226\u3044 (1988) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: ''
   Relative Movie File Path: ''
@@ -11571,16 +11567,14 @@ Saint Seiya- The Heated Battle of the Gods (1988):
         (1988) Remux-1080p.mkv
       Title: The Heated Battle of the Gods
   Unparsed Movie Title: Saint Seiya- The Heated Battle of the Gods (1988)
-Saint Seiya- Warriors Of The Final Holy Battle (1989):
+Saint Seiya- Warriors of the Final Holy Battle (1989):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- Warriors
-    Of The Final Holy Battle (1989)
+  Absolute Movie Path: /var/data/media/video/movies/foreign/Saint Seiya- Warriors of the Final Holy Battle (1989)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Saint Seiya- Warriors Of The Final Holy Battle
-    (1989)
+  Relative Movie Path: movies/foreign/Saint Seiya- Warriors of the Final Holy Battle (1989)
   Shows:
     Saint Seiya:
       Absolute Episode: ''
@@ -11600,7 +11594,7 @@ Saint Seiya- Warriors Of The Final Holy Battle (1989):
       Show Dictionary Object: {}
       Symlinked: ''
       Title: Warriors of the Final Holy Battle
-  Unparsed Movie Title: Saint Seiya- Warriors Of The Final Holy Battle (1989)
+  Unparsed Movie Title: Saint Seiya- Warriors of the Final Holy Battle (1989)
 Samurai Jack- Digital Animation Test (2000):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/staging/Samurai Jack- Digital
