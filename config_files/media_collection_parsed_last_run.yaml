@@ -3542,9 +3542,9 @@ Escaflowne- The Movie (2000):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Escaflowne- The Movie
     (2000)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "\u30A8\u30B9\u30AB\u30D5\u30ED\u30FC\u30CD (2000) Bluray-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Escaflowne- The Movie
     (2000)
   Relative Movie File Path: ''
@@ -3562,11 +3562,15 @@ Escaflowne- The Movie (2000):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Vision of Escaflowne/Season 00/Vision of Escaflowne
         - S00E001 - Escaflowne The Movie
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Vision of Escaflowne/Season 00/Vision
+        of Escaflowne - S00E001 - Escaflowne The Movie Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Vision of Escaflowne/Season 00/Vision of Escaflowne
+        - S00E001 - Escaflowne The Movie Bluray-1080p.mkv -> ../../../../movies/foreign/Escaflowne-
+        The Movie (2000)/\xe3\x82\xa8\xe3\x82\xb9\xe3\x82\xab\xe3\x83\x95\xe3\x83\xad\xe3\x83\xbc\xe3\x83\x8d
+        (2000) Bluray-1080p.mkv
       Title: Escaflowne The Movie
   Unparsed Movie Title: Escaflowne- The Movie (2000)
 Eureka Seven AO- Jungfrau no Hanabana-tachi (2012):
@@ -5104,9 +5108,9 @@ Gintama- The Best of Gintama on Theater 2D (2012):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Gintama- The Best of Gintama
     on Theater 2D (2012)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: Gintama- The Best of Gintama on Theater 2D (2012) DVD.mkv
+  Parsed Movie Quality: DVD.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Gintama- The Best
     of Gintama on Theater 2D (2012)
   Relative Movie File Path: ''
@@ -5124,20 +5128,25 @@ Gintama- The Best of Gintama on Theater 2D (2012):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Gintama/Season 00/Gintama - S00E010-011 - The
         Best of Gintama on Theater 2D
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Gintama/Season 00/Gintama - S00E010-011
+        - The Best of Gintama on Theater 2D DVD.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Gintama/Season 00/Gintama - S00E010-011 - The Best
+        of Gintama on Theater 2D DVD.mkv -> ../../../../movies/foreign/Gintama- The
+        Best of Gintama on Theater 2D (2012)/Gintama- The Best of Gintama on Theater
+        2D (2012) DVD.mkv
       Title: The Best of Gintama on Theater 2D
   Unparsed Movie Title: Gintama- The Best of Gintama on Theater 2D (2012)
 Gintama- The Final Chapter - Be Forever Yorozuya (2013):
   Absolute Movie File Path: ''
   Absolute Movie Path: /var/data/media/video/movies/foreign/Gintama- The Final Chapter
     - Be Forever Yorozuya (2013)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mkv
+  Parsed Movie File: "\u9280\u9B42 \u5B8C\u7D50\u7BC7 \u4E07\u4E8B\u5C4B\u3088\u6C38\
+    \u9060\u306A\u308C (2013) Bluray-1080p.mkv"
+  Parsed Movie Quality: Bluray-1080p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Gintama- The Final
     Chapter - Be Forever Yorozuya (2013)
   Relative Movie File Path: ''
@@ -5156,11 +5165,16 @@ Gintama- The Final Chapter - Be Forever Yorozuya (2013):
       Parsed Show Root Folder: ''
       Parsed Show Title: anime/staging/Gintama/Season 00/Gintama - S00E007 - Gintama-
         The Movie- The Final Chapter- Odd Jobs Forever
-      Relative Show File Path: ''
+      Relative Show File Path: anime/staging/Gintama/Season 00/Gintama - S00E007 -
+        Gintama- The Movie- The Final Chapter- Odd Jobs Forever Bluray-1080p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: anime/staging/Gintama/Season 00/Gintama - S00E007 - Gintama- The
+        Movie- The Final Chapter- Odd Jobs Forever Bluray-1080p.mkv -> ../../../../movies/foreign/Gintama-
+        The Final Chapter - Be Forever Yorozuya (2013)/\xe9\x8a\x80\xe9\xad\x82 \xe5\xae\x8c\xe7\xb5\x90\xe7\xaf\x87
+        \xe4\xb8\x87\xe4\xba\x8b\xe5\xb1\x8b\xe3\x82\x88\xe6\xb0\xb8\xe9\x81\xa0\xe3\x81\xaa\xe3\x82\x8c
+        (2013) Bluray-1080p.mkv
       Title: Gintama- The Movie- The Final Chapter- Odd Jobs Forever
   Unparsed Movie Title: Gintama- The Final Chapter - Be Forever Yorozuya (2013)
 Gintama- The Movie (2010):
@@ -6580,9 +6594,8 @@ Kabaneri of the Iron Fortress Recap 1- Gathering Light (2016):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Kabaneri of the Iron Fortress
     Recap 1- Gathering Light (2016)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Kabaneri of the Iron Fortress\
-    \ Recap 1- Gathering Light (2016)/\u7532\u9244\u57CE\u306E\u30AB\u30D0\u30CD\u30EA\
-    \ \u7DCF\u96C6\u7DE8\uFF5B\u524D\u7DE8\uFF5D\u96C6\u3046\u5149 (2016) WEBDL-720p.mkv"
+  Parsed Movie File: "\u7532\u9244\u57CE\u306E\u30AB\u30D0\u30CD\u30EA \u7DCF\u96C6\
+    \u7DE8\uFF5B\u524D\u7DE8\uFF5D\u96C6\u3046\u5149 (2016) WEBDL-720p.mkv"
   Parsed Movie Quality: WEBDL-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Kabaneri of the Iron
     Fortress Recap 1- Gathering Light (2016)
@@ -6622,9 +6635,8 @@ Kabaneri of the Iron Fortress Recap 2- Burning Life (2017):
   Absolute Movie Path: /var/data/media/video/movies/foreign/Kabaneri of the Iron Fortress
     Recap 2- Burning Life (2017)
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Kabaneri of the Iron Fortress\
-    \ Recap 2- Burning Life (2017)/\u7532\u9244\u57CE\u306E\u30AB\u30D0\u30CD\u30EA\
-    \ \u7DCF\u96C6\u7DE8\uFF5B\u5F8C\u7DE8\uFF5D\u71C3\u3048\u308B\u547D (2017) WEBDL-720p.mkv"
+  Parsed Movie File: "\u7532\u9244\u57CE\u306E\u30AB\u30D0\u30CD\u30EA \u7DCF\u96C6\
+    \u7DE8\uFF5B\u5F8C\u7DE8\uFF5D\u71C3\u3048\u308B\u547D (2017) WEBDL-720p.mkv"
   Parsed Movie Quality: WEBDL-720p.mkv
   Raw Absolute Movie Path: /var/data/media/video/movies/foreign/Kabaneri of the Iron
     Fortress Recap 2- Burning Life (2017)
