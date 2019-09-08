@@ -132,13 +132,6 @@ class Show(Movie,
 		                 g)
 		set_working_directory_to_media_path(g.MEDIA_PATH)
 		from movies.movie.shows.show.show_gets import get_alphabetical_specials_string
-		# g.movies_dictionary_object[movie]['Shows'][show]['Parsed Season'] = str()
-		# globals_class_object.movies_dictionary_object[movie]['Shows'][show]['Parsed Season Folder'] = str()
-		# globals_class_object.movies_dictionary_object[movie]['Shows'][show]['Parsed Episode'] = str()
-		# globals_class_object.movies_dictionary_object[movie]['Shows'][show]['Parsed Show Root Folder'] = str()
-		# globals_class_object.movies_dictionary_object[movie]['Shows'][show]['Absolute Show Path'] = str()
-		# globals_class_object.movies_dictionary_object[movie]['Shows'][show]['Parsed Relative Show Title'] = str()
-		# globals_class_object.movies_dictionary_object[movie]['Shows'][show]['Show Dictionary Object'] = {}
 		
 		self.show = show
 		self.title = \
@@ -146,17 +139,14 @@ class Show(Movie,
 			                                     g.movies_dictionary_object[movie]['Shows'][show]['Title'],
 			                                     str(show))
 		self.season = \
-			set_nested_dictionary_key_value_pair(g,
-			                                     g.movies_dictionary_object[movie]['Shows'][show]['Parsed Season Folder'],
-			                                     str(get_alphabetical_specials_string(g)))
+			g.movies_dictionary_object[movie]['Shows'][show]['Parsed Season Folder'] = \
+			str(get_alphabetical_specials_string(g))
 		self.episode = \
-			set_nested_dictionary_key_value_pair(g,
-			                                     g.movies_dictionary_object[movie]['Shows'][show]['Parsed Episode'],
-			                                     str())
+			g.movies_dictionary_object[movie]['Shows'][show]['Parsed Episode'] = \
+			str()
 		self.parsed_season = \
-			set_nested_dictionary_key_value_pair(g,
-			                                     g.movies_dictionary_object[movie]['Shows'][show]['Parsed Season'],
-			                                     str())
+			g.movies_dictionary_object[movie]['Shows'][show]['Parsed Season'] = \
+			str()
 		self.absolute_episode = \
 			set_nested_dictionary_key_value_pair(g,
 			                                     g.movies_dictionary_object[movie]['Shows'][show]['Absolute Episode'],
@@ -171,6 +161,7 @@ class Show(Movie,
 			                                     g.movies_dictionary_object[movie]['Shows'],
 			                                     [{}])
 		self.root_folders = str()
+		
 		self.parsed_title = \
 			set_nested_dictionary_key_value_pair(g,
 			                                     g.movies_dictionary_object[movie]['Shows'][show]['Parsed Show Title'],

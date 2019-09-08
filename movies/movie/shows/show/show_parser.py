@@ -21,17 +21,17 @@ def parse_show(show_object,
 		                                                                'Shows'][show_object.show]['Anime'],
 	                                                                False)
 	show_object.season = \
-		set_nested_dictionary_key_value_pair(g,
-		                                     g.movies_dictionary_object[show_object.movie_title]['Shows'][
-			                                     show_object.show]['Parsed Season'],
-		                                     get_season(show_object,
-		                                                g))
+		get_season(show_object,
+		           g)
 	
-	show_object.season_folder = get_season_folder(show_object,
-	                                              g)
+	show_object.season_folder = \
+		g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Parsed Season Folder'] = \
+		get_season_folder(show_object,
+		                  g)
 	show_object.episode = set_nested_dictionary_key_value_pair(g,
 	                                                           g.movies_dictionary_object[show_object.movie_title][
-		                                                           'Shows'][show_object.show]['Episode'])
+		                                                           'Shows'][show_object.show]['Episode'],
+	                                                           str())
 	show_object.absolute_episode = \
 		set_nested_dictionary_key_value_pair(g,
 		                                     g.movies_dictionary_object[show_object.movie_title]['Shows'][

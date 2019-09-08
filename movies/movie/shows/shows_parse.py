@@ -35,13 +35,10 @@ def parse_shows_dictionary_object(movie_class_object,
                                   g):
 	method_launch(g)
 	for show in g.movies_dictionary_object[movie_class_object.movie_title]['Shows'].keys():
-		master_dictionary_cleanup(g,
-		                          movie_class_object,
-		                          show)
-		relative_show_path = str(g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Relative Show File Path'])
 		try:
-			if validate_strings_match(f'{relative_show_path} -> {readlink(relative_show_path)}', \
-			                          g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show][
+			if validate_strings_match(
+					f'{str(g.movies_dictionary_object[movie_class_object.movie_title]["Shows"][show]["Relative Show File Path"])} -> {readlink(str(g.movies_dictionary_object[movie_class_object.movie_title]["Shows"][show]["Relative Show File Path"]))}', \
+					g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show][
 				                          'Symlinked']):
 				if get_live_link(str(g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Relative Show File Path'])) and \
 						(check_if_valid_symlink_destination(str(g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Relative Show File Path'])) and
@@ -59,18 +56,10 @@ def parse_shows_dictionary_object(movie_class_object,
 			tv_show = create_tv_show_class_object(movie_class_object,
 			                                      show,
 			                                      g)
-			tv_show.show = show
 			parse_show_to_link(tv_show,
 			                   g)
 		finally:
 			method_exit(g)
-
-
-def master_dictionary_cleanup(g, movie_class_object, show):
-	try:
-		del g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Parsed Show Root Folder']
-	except:
-		pass
 
 
 # noinspection PySameParameterValue
