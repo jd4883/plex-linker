@@ -4148,9 +4148,8 @@ Fate+stay night- Heaven's Feel I. presage flower (2017):
   Absolute Movie Path: "/var/data/media/video/movies/foreign/Fate+stay night- Heaven\u2019\
     s Feel II. lost butterfly (2019)"
   Parsed Movie Extension: mkv
-  Parsed Movie File: "/var/data/media/video/movies/foreign/Fate+stay night- Heaven\u2019\
-    s Feel II. lost butterfly (2019)/\u5287\u5834\u7248 Fate\uFF0Fstay night [Heaven's\
-    \ Feel] II. lost butterfly (2019) Remux-1080p.mkv"
+  Parsed Movie File: "\u5287\u5834\u7248 Fate\uFF0Fstay night [Heaven's Feel] II.\
+    \ lost butterfly (2019) Remux-1080p.mkv"
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Raw Absolute Movie Path: "/var/data/media/video/movies/foreign/Fate+stay night-\
     \ Heaven\u2019s Feel II. lost butterfly (2019)"
@@ -6452,15 +6451,18 @@ Jerry Seinfeld- Stand-Up Confidential (1987):
     (1987)
   Shows: {Seinfeld: null}
   Unparsed Movie Title: Jerry Seinfeld- Stand-Up Confidential (1987)
-Journey's End- The Saga Of Star Trek - The Next Generation (1994):
+Journey's End- The Saga of Star Trek - The Next Generation (1994):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /var/data/media/video/movies/foreign/Journey's End- The Saga
-    Of Star Trek - The Next Generation (1994)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Absolute Movie Path: /var/data/media/video/movies/staging/Journey's End- The Saga
+    of Star Trek - The Next Generation (1994)
+  Parsed Movie Extension: mkv
+  Parsed Movie File: /var/data/media/video/movies/staging/Journey's End- The Saga
+    of Star Trek - The Next Generation (1994)/Journey's End- The Saga of Star Trek
+    - The Next Generation (1994) WEBDL-720p.mkv
+  Parsed Movie Quality: WEBDL-720p.mkv
   Raw Absolute Movie Path: ''
-  Relative Movie Path: movies/foreign/Journey's End- The Saga Of Star Trek - The Next
+  Relative Movie File Path: ''
+  Relative Movie Path: movies/staging/Journey's End- The Saga of Star Trek - The Next
     Generation (1994)
   Shows:
     Star Trek- The Next Generation:
@@ -6476,13 +6478,19 @@ Journey's End- The Saga Of Star Trek - The Next Generation (1994):
       Parsed Show Title: tv/scifi/Star Trek- The Next Generation/Season 00/Star Trek-
         The Next Generation - S00E01 - Journey's End- The Saga of Star Trek The Next
         Generation
-      Relative Show File Path: ''
+      Relative Show File Path: tv/scifi/Star Trek- The Next Generation/Season 00/Star
+        Trek- The Next Generation - S00E01 - Journey's End- The Saga of Star Trek
+        The Next Generation WEBDL-720p.mkv
       Relative Show Path: ''
       Season: '00'
       Show Dictionary Object: {}
-      Symlinked: ''
+      Symlinked: tv/scifi/Star Trek- The Next Generation/Season 00/Star Trek- The
+        Next Generation - S00E01 - Journey\s End- The Saga of Star Trek The Next Generation
+        WEBDL-720p.mkv" -> \../../../../movies/staging/Journey\\\\\s End- The Saga
+        of Star Trek - The Next Generation (1994)/Journey\\\\\s End- The Saga of Star
+        Trek - The Next Generation (1994) WEBDL-720p.mkv
       Title: Journey's End- The Saga of Star Trek The Next Generation
-  Unparsed Movie Title: Journey's End- The Saga Of Star Trek - The Next Generation
+  Unparsed Movie Title: Journey's End- The Saga of Star Trek - The Next Generation
     (1994)
 Justice League Vs. Teen Titans (2016):
   Absolute Movie File Path: ''
