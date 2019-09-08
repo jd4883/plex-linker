@@ -13,7 +13,6 @@ def symlink_force(show_class_object,
 	# move these to a better location when the values initialize
 	g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show]['Relative Show File Path'] = show_class_object.relative_show_path
 	g.movies_dictionary_object[show_class_object.movie_title]["Parsed Movie File"] = show_class_object.absolute_movie_file_path
-	show_class_object.absolute_movie_file_path
 	if (show_class_object.absolute_movie_file_path or show_class_object.relative_show_path) is not (
 			None or 'None/' or show_class_object.absolute_movie_file_path.endswith(
 		'None') or show_class_object.relative_show_path.endswith('None')):

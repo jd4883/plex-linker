@@ -1,12 +1,12 @@
 def getCaseInsensitivePath(path,
                            RET_FOUND=False):
-	'''
+	"""
 	Get a case insensitive path on a case sensitive system
 
 	RET_FOUND is for internal use only, to avoid too many calls to os.path.exists
 	# Example usage
 	getCaseInsensitivePath('/hOmE/mE/sOmEpAtH.tXt')
-	'''
+	"""
 	import os
 	
 	if path == '' or os.path.exists(path):

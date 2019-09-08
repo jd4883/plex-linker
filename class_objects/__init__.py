@@ -170,15 +170,7 @@ class Show(Movie,
 			set_nested_dictionary_key_value_pair(g,
 			                                     g.movies_dictionary_object[movie]['Shows'],
 			                                     [{}])
-		self.root_folders = \
-			set_nested_dictionary_key_value_pair(g,
-			                                     g.movies_dictionary_object[movie]['Shows'][
-				                                     show]['Parsed Show Root Folder'],
-			                                     str())
-		self.absolute_show_path = \
-			set_nested_dictionary_key_value_pair(g,
-			                                     g.movies_dictionary_object[movie]['Shows'][show]['Absolute Show Path'],
-			                                     str())
+		self.root_folders = str()
 		self.parsed_title = \
 			set_nested_dictionary_key_value_pair(g,
 			                                     g.movies_dictionary_object[movie]['Shows'][show]['Parsed Show Title'],

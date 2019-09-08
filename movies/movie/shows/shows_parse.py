@@ -68,12 +68,12 @@ def parse_shows_dictionary_object(movie_class_object,
 
 def master_dictionary_cleanup(g, movie_class_object, show):
 	try:
-		del g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Absolute Show Path']
-		#del g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Parsed Show Root Folder']
+		del g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Parsed Show Root Folder']
 	except:
 		pass
 
 
+# noinspection PySameParameterValue
 def validate_strings_match(string1,
                            string2):
 	if str(string1).lower() == str(string2).lower():
