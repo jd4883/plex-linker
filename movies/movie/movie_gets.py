@@ -3,7 +3,7 @@ from os import (listdir)
 from os.path import (relpath,
                      abspath,
                      exists)
-
+from string_manipulation.string_methods import getCaseInsensitivePath
 from messaging.frontend import (method_launch,
                                 method_exit)
 from movies.movie.movie_puts import (set_absolute_movie_path,
@@ -55,7 +55,7 @@ def get_movie_quality(quality,
 	method_exit(g)
 	return str(quality)
 
-
+# in theory this checks case combinations and titles correct, however, I am not seeing the desired results
 def get_movie_path(movie,
                    g):
 	method_launch(g)
@@ -63,7 +63,9 @@ def get_movie_path(movie,
 		movie.absolute_movie_path = '/'.join((movie.absolute_movies_path,
 		                                      path,
 		                                      movie.movie_title))
-		if exists(movie.absolute_movie_path):
+		movie_string = getCaseInsensitivePath(movie.absolute_movie_path)
+		if exists(movie_string):
+			movie.absolute_movie_path = movie_string
 			method_exit(g)
 			return str(movie.absolute_movie_path)
 	method_exit(g)
