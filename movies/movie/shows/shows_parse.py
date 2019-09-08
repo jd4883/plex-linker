@@ -35,6 +35,9 @@ def parse_shows_dictionary_object(movie_class_object,
                                   g):
 	method_launch(g)
 	for show in g.movies_dictionary_object[movie_class_object.movie_title]['Shows'].keys():
+		master_dictionary_cleanup(g,
+		                          movie_class_object,
+		                          show)
 		relative_show_path = str(g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Relative Show File Path'])
 		try:
 			if validate_strings_match(f'{relative_show_path} -> {readlink(relative_show_path)}', \
@@ -61,6 +64,15 @@ def parse_shows_dictionary_object(movie_class_object,
 			                   g)
 		finally:
 			method_exit(g)
+
+
+def master_dictionary_cleanup(g, movie_class_object, show):
+	try:
+		del g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Relative Show Path']
+		#del g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Absolute Show Path']
+		#del g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Parsed Show Root Folder']
+	except:
+		pass
 
 
 def validate_strings_match(string1,

@@ -136,7 +136,6 @@ class Show(Movie,
 		# globals_class_object.movies_dictionary_object[movie]['Shows'][show]['Parsed Season Folder'] = str()
 		# globals_class_object.movies_dictionary_object[movie]['Shows'][show]['Parsed Episode'] = str()
 		# globals_class_object.movies_dictionary_object[movie]['Shows'][show]['Parsed Show Root Folder'] = str()
-		# globals_class_object.movies_dictionary_object[movie]['Shows'][show]['Relative Show Path'] = str()
 		# globals_class_object.movies_dictionary_object[movie]['Shows'][show]['Absolute Show Path'] = str()
 		# globals_class_object.movies_dictionary_object[movie]['Shows'][show]['Parsed Relative Show Title'] = str()
 		# globals_class_object.movies_dictionary_object[movie]['Shows'][show]['Show Dictionary Object'] = {}
@@ -176,10 +175,6 @@ class Show(Movie,
 			                                     g.movies_dictionary_object[movie]['Shows'][
 				                                     show]['Parsed Show Root Folder'],
 			                                     str())
-		self.relative_show_path = \
-			set_nested_dictionary_key_value_pair(g,
-			                                     g.movies_dictionary_object[movie]['Shows'][show]['Relative Show Path'],
-			                                     str())
 		self.absolute_show_path = \
 			set_nested_dictionary_key_value_pair(g,
 			                                     g.movies_dictionary_object[movie]['Shows'][show]['Absolute Show Path'],
@@ -194,9 +189,3 @@ class Show(Movie,
 			                                     g.movies_dictionary_object[movie]['Shows'][show][
 				                                     'Parsed Relative Show Title'],
 			                                     str())
-		
-		self.show_dictionary_object = \
-			set_nested_dictionary_key_value_pair(g,
-			                                     g.movies_dictionary_object[movie]['Shows'][show][
-				                                     'Show Dictionary Object'],
-			                                     {})

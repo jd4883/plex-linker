@@ -74,7 +74,5 @@ def parse_show_title_from_show_dictionary(show_object,
 
 def get_parsed_show_title(show_object,
                           g):
-	method_launch(g)
-	method_exit(g)
 	return " ".join((show_object.parsed_title,
 	                 show_object.quality))
