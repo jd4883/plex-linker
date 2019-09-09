@@ -1,6 +1,6 @@
 #!/usr/bin/env python3.7
 import time
-
+from string_manipulation.api_calls import *
 from IO.YAML.yaml_to_object import (get_yaml_dictionary,
                                     get_variable_from_yaml)
 from logs.bin.get_parameters import (get_method_main,
@@ -71,6 +71,7 @@ class Movie(Movies,
 			                                     g.movies_dictionary_object[title]['Unparsed Movie Title'],
 			                                     get_unparsed_movie_title(title,
 			                                                              g))
+		#lookup_movie_from_radarr(g,self.movie_title) # in testing but this will replace many static variables with API calls
 		self.shows_dictionary_object = \
 			set_nested_dictionary_key_value_pair(g,
 			                                     g.movies_dictionary_object[title]['Shows'],
