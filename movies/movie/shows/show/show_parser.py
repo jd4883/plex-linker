@@ -39,11 +39,6 @@ def parse_show(show_object,
 		                                     str())
 	set_episode_padding(show_object,
 	                    g)
-	show_object.title = \
-		set_nested_dictionary_key_value_pair(g,
-		                                     g.movies_dictionary_object[show_object.movie_title]['Shows'][
-			                                     show_object.show]['Title'],
-		                                     str(show_object.parsed_title))
 	show_object.parsed_relative_title = \
 		set_nested_dictionary_key_value_pair(g,
 		                                     g.movies_dictionary_object[show_object.movie_title]['Shows'][
@@ -62,6 +57,10 @@ def parse_show_title_from_show_dictionary(show_object,
 	create_directory_if_not_present("/".join((show_object.path,
 	                                          show_object.season_folder)),
 	                                g)
+	if not show_object.title: # adjust to be an api call for sonarr
+		show_object.title = \
+			g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Title'] = \
+			show_object.movie_title
 	if show_object.absolute_episode:
 		show_object.parsed_title = get_fully_parsed_show_with_absolute_episode(show_object,
 		                                                                       g)

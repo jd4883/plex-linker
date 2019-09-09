@@ -134,13 +134,10 @@ class Show(Movie,
 		from movies.movie.shows.show.show_gets import get_alphabetical_specials_string
 		
 		self.show = show
-		self.title = \
-			set_nested_dictionary_key_value_pair(g,
-			                                     g.movies_dictionary_object[movie]['Shows'][show]['Title'],
-			                                     str(show))
 		self.season = \
-			g.movies_dictionary_object[movie]['Shows'][show]['Parsed Season Folder'] = \
-			str(get_alphabetical_specials_string(g))
+			set_nested_dictionary_key_value_pair(g,
+			                                     g.movies_dictionary_object[movie]['Shows'][show]['Parsed Season Folder'],
+			                                     str(get_alphabetical_specials_string(g)))
 		self.episode = \
 			g.movies_dictionary_object[movie]['Shows'][show]['Parsed Episode'] = \
 			str()
