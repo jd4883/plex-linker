@@ -11,12 +11,14 @@ def get_yaml_dictionary():
 	set_working_directory_to_script_path()
 	# may be worth making a dynamic by date backup of each config and archive the old ones since they are small
 	with open(get_media_collection_parsed_last_time()) as f:
-		return yaml.load(f)
+		return yaml.load(f,
+		                 Loader=yaml.FullLoader)
 
 
 def get_variable_from_yaml(category):
 	chdir('/var/data/scripts/symlink_scripts/movie_tv_pairing')
 	# need to correct to relative pathing, suspect the method entry points screw this up
 	with open("config_files/variables.yaml") as f:
-		dictionary_object = yaml.load(f)
+		dictionary_object = yaml.load(f,
+		                              Loader=yaml.FullLoader)
 		return dictionary_object[category]
