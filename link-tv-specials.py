@@ -1,8 +1,8 @@
 #!/usr/bin/env python3.7
 
 from IO.YAML.object_to_yaml import write_python_dictionary_object_to_yaml_file
-from class_objects import Globals
-from class_objects import Movies
+from class_objects import Globals, \
+	Movies
 from movies.movies_parser import parse_all_movies_in_yaml_dictionary
 
 def write_linked_movies(globals_class_object):
