@@ -22,7 +22,7 @@ RUN apk add --no-cache bash git openssh &wait
 # RUN git checkout "develop-docker-prototype"
 COPY . ${app}/
 RUN pip install --upgrade pip; pip install -r requirements.txt
-RUN ls ${app}; pwd
+RUN ls -hla ${app}
 #RUN chmod 775 -R ${app}
 RUN ["chmod", "+x", "link-tv-specials.py"]
 CMD python ./link-tv-specials.py

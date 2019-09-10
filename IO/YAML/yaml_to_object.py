@@ -16,7 +16,7 @@ def get_yaml_dictionary():
 
 
 def get_variable_from_yaml(category):
-	chdir('/var/data/scripts/symlink_scripts/movie_tv_pairing')
+	chdir('/plex_linker')
 	# need to correct to relative pathing, suspect the method entry points screw this up
 	with open("config_files/variables.yaml") as f:
 		dictionary_object = yaml.load(f,
