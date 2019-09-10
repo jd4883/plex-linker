@@ -16,7 +16,7 @@ RUN apk add --no-cache bash git openssh &wait
 # recommended git clone approach online
 # https://stackoverflow.com/questions/33682123/dockerfile-strategies-for-git
 # or
-RUN git clone git clone ${GIT_REPO} && cd ${app}/ && git checkout ${GIT_BRANCH}
+RUN cd ${app}/; git clone git clone ${GIT_REPO} &wait; git checkout ${GIT_BRANCH}
 # or
 #RUN cd ${APP}; git clone ${GIT_REPO} &wait; echo 'git clone completed'
 COPY . ${app}/
