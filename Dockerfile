@@ -26,3 +26,8 @@ RUN ls -hla ${app}
 #RUN chmod 775 -R ${app}
 RUN ["chmod", "+x", "link-tv-specials.py"]
 CMD python ./link-tv-specials.py
+
+
+
+# this docker file works, need to figure out how to make output go to dockers log
+# need to improve pathing and figure out how to publish the container, looking good for API testing though
