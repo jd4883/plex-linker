@@ -16,10 +16,11 @@ RUN apk add --no-cache bash git openssh &wait
 # recommended git clone approach online
 # https://stackoverflow.com/questions/33682123/dockerfile-strategies-for-git
 # or
-RUN cd ${app}/; git clone "https://github.com/jd4883/plex-linker-beta.git" # git checkout "develop-docker-prototype"
+RUN cd ${app}/; git clone "https://github.com/jd4883/plex-linker-beta.git"
 # or
 #RUN cd ${APP}; git clone ${GIT_REPO} &wait; echo 'git clone completed'
-COPY . ${app}/
+#COPY . ${app}/
+#RUN git checkout "develop-docker-prototype"
 RUN pip install --upgrade pip; pip install -r requirements.txt
 RUN ls ${app}; pwd
 # ENTRYPOINT = python
