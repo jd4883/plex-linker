@@ -22,4 +22,5 @@ RUN git clone git clone ${GIT_REPO} && cd ${app}/ && git checkout ${GIT_BRANCH}
 COPY . ${app}/
 RUN pip install --upgrade pip; pip install -r requirements.txt
 RUN ls ${app}; pwd
-CMD [ chmod +x link-tv-specials.py; python ./link-tv-specials.py ]
+ENTRYPOINT = python
+CMD ./link-tv-specials.py
