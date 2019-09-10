@@ -7,7 +7,7 @@ ENV RADARR_API_KEY=$(RADARR_API_KEY)
 ENV SONARR_API_KEY=$(RADARR_API_KEY)
 ENV PLEX_API_KEY=$(PLEX_API_KEY)
 ENV GIT_REPO="https://github.com/jd4883/plex-linker-beta.git"
-
+ENV GIT_BRANCH="develop-docker-prototype"
 VOLUME /plex_linker /media
 ENV app /plex_linker
 WORKDIR ${app}
@@ -16,7 +16,7 @@ RUN apk add --no-cache bash git openssh &wait
 # recommended git clone approach online
 # https://stackoverflow.com/questions/33682123/dockerfile-strategies-for-git
 # or
-# RUN git clone https://github.com/example/example.git && cd example && git checkout 0123abcdef
+RUN git clone git clone ${GIT_REPO} && cd ${app}/ && git checkout ${GIT_BRANCH}
 # or
 #RUN cd ${APP}; git clone ${GIT_REPO} &wait; echo 'git clone completed'
 COPY . ${app}/
