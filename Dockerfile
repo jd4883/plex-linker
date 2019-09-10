@@ -24,5 +24,5 @@ COPY . ${app}/
 RUN pip install --upgrade pip; pip install -r requirements.txt
 RUN ls ${app}; pwd
 #RUN chmod 775 -R ${app}
-RUN ["chmod", "+x", "${app}/link-tv-specials.py"]
+RUN ["chmod", "+x", "link-tv-specials.py"]
 CMD python ./link-tv-specials.py
