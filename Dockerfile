@@ -1,17 +1,25 @@
 FROM python:alpine3.7
-mkdir -p /plex_linker
-mkdir -p /plex_linker/class_objects /plex_linker/config_files /plex_linker/IO /plex_linker/jobs /plex_linker/logs /plex_linker/messaging /plex_linker/movies /plex_linker/string_manipulation
-COPY class_objects/* /plex_linker/class_objects/
-COPY config_files/* /plex_linker/config_files/
-COPY IO/* /plex_linker/IO/
-COPY jobs/* /plex_linker/jobs/
-COPY logs/* /plex_linker/logs/
-COPY messaging/* /plex_linker/messaging/
-COPY movies/* /plex_linker/
-COPY string_manipulation/* /plex_linker/string_manipulation/
-COPY link-tv-specials.py Dockerfile README.md requirements.txt /plex_linker/
-WORKDIR /plex_linker
-RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
-# EXPOSE 5000
-CMD python ./link-tv-specials.py
+MAINTAINER 'Jacob Dresdale'
+LABEL name=plex_linker version=1.5
+USER root
+
+ENV RADARR_API_KEY=$(RADARR_API_KEY)
+ENV SONARR_API_KEY=$(RADARR_API_KEY)
+ENV PLEX_API_KEY=$(PLEX_API_KEY)
+ENV GIT_REPO="https://github.com/jd4883/plex-linker-beta.git"
+
+VOLUME /plex_linker /media
+ENV app /plex_linker
+WORKDIR ${app}
+RUN apk add --no-cache bash git openssh &wait
+# cut clone temporarily in favor of copy as clone was not working
+# recommended git clone approach online
+# https://stackoverflow.com/questions/33682123/dockerfile-strategies-for-git
+# or
+# RUN git clone https://github.com/example/example.git && cd example && git checkout 0123abcdef
+# or
+#RUN cd ${APP}; git clone ${GIT_REPO} &wait; echo 'git clone completed'
+COPY . ${app}/
+RUN pip install --upgrade pip; pip install -r requirements.txt
+RUN ls ${app}; pwd
+CMD [ chmod +x link-tv-specials.py; python ./link-tv-specials.py ]
