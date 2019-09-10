@@ -23,6 +23,6 @@ RUN apk add --no-cache bash git openssh &wait
 COPY . ${app}/
 RUN pip install --upgrade pip; pip install -r requirements.txt
 RUN ls ${app}; pwd
-RUN chmod 775 -R ${app}
-# ENTRYPOINT = python
+#RUN chmod 775 -R ${app}
+RUN ["chmod", "+x", "${app}/link-tv-specials.py"]
 CMD python ./link-tv-specials.py
