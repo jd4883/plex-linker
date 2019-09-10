@@ -2,7 +2,7 @@ Media Directory: "/var/data/media/video"
 Movie Directories: [movies]
 Movie Extensions: [mkv, mp4, m4v, avi, mov]
 Show Directories: [tv, anime]
-Script Path: "/var/data/scripts/symlink_scripts/movie_tv_pairing"
+Script Path: "/plex_linker"
 PUID: 1001
 PGID: 1001
 # Non-Implemented Variables
