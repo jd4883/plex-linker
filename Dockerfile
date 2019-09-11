@@ -18,3 +18,8 @@ RUN apk add --no-cache bash git openssh &wait
 RUN pip install --upgrade pip; pip install -r requirements.txt
 RUN ["chmod", "+x", "link-tv-specials.py"]
 CMD python ./link-tv-specials.py
+
+
+
+# this docker file works, need to figure out how to make output go to dockers log
+# need to improve pathing and figure out how to publish the container, looking good for API testing though
