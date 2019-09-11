@@ -23,7 +23,7 @@ from movies.movies_puts import (set_nested_dictionary_key_value_pair,
 class Globals:
 	def __init__(self):
 		self.MEDIA_PATH = \
-			get_variable_from_yaml("Media Directory")
+			"/var/data/media/video"
 		self.LOG = \
 			get_logger(get_log_name())
 		self.MOVIES_PATH = \
@@ -31,7 +31,7 @@ class Globals:
 		self.MOVIE_EXTENSIONS = \
 			get_variable_from_yaml("Movie Extensions")
 		self.MEDIA_DIRECTORY = \
-			get_variable_from_yaml("Media Directory")
+			"/var/data/media/video"
 		self.SHOWS_PATH = \
 			get_variable_from_yaml("Show Directories")
 		self.movies_dictionary_object = \

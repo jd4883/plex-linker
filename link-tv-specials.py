@@ -6,14 +6,14 @@ from class_objects import Globals, \
 from movies.movies_parser import parse_all_movies_in_yaml_dictionary
 
 def write_linked_movies(globals_class_object):
-	with open(str('/plex_linker/config_files/list_of_linked_movies.txt'),
+	with open(str('/config/config_files/list_of_linked_movies.txt'),
 	          'w+') as filehandle:
 		for item in globals_class_object.list_of_linked_movies:
 			filehandle.write('%s\n' % item)
 
 
 def write_movies_to_find(globals_class_object):
-	with open(str('/plex_linker/config_files/list_of_movies_to_find.txt'),
+	with open(str('/config/config_files/list_of_movies_to_find.txt'),
 	          'w+') as filehandle:
 		for item in globals_class_object.list_of_movies_to_locate:
 			filehandle.write('%s\n' % item)

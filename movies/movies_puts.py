@@ -25,8 +25,7 @@ def create_directory_if_not_present(path,
 
 
 def get_script_path():
-	from IO.YAML.yaml_to_object import get_variable_from_yaml
-	return get_variable_from_yaml("Script Path")
+	return '/config'
 
 
 def set_nested_dictionary_key_value_pair(g,
