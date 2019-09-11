@@ -17,13 +17,13 @@ RUN apk add --no-cache bash git openssh &wait
 # RUN cd ${app}/; git clone "https://github.com/jd4883/plex-linker-beta.git"
 # or
 COPY . /config/
-RUN cd /config; git clone ${GIT_REPO} &wait; echo 'git clone completed'
+# RUN cd /config; git clone ${GIT_REPO} &wait; echo 'git clone completed'
 # git checkout "develop-docker-prototype"
 RUN pip install --upgrade pip; pip install -r requirements.txt
 RUN echo '*/15  *  *  *  *    /config/link-tv-specials.py' > /etc/crontabs/root; cat /etc/crontabs/root
 RUN ls -hla /config
 # RUN chmod 775 -R ${app}
-RUN ["chmod", "+x", "link-tv-specials.py"]
+RUN ["chmod", "+x", "/config/link-tv-specials.py"]
 CMD python ./link-tv-specials.py
 
 
