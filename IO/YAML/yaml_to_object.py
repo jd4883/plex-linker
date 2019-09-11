@@ -4,6 +4,7 @@ from os import chdir
 import yaml
 
 from movies.movies_gets import (get_media_collection_parsed_last_time)
+from movies.movies_puts import get_script_path
 
 
 def get_yaml_dictionary():

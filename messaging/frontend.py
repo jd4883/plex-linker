@@ -2,6 +2,7 @@
 from os import chdir
 
 from messaging.backend import debug_message
+from movies.movies_puts import get_script_path
 
 
 def print_movie_file_quality(movie,

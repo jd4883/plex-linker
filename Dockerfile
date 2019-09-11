@@ -8,8 +8,7 @@ ENV PLEX_API_KEY="${PLEX_API_KEY}"
 ENV GIT_REPO="https://github.com/jd4883/plex-linker-beta.git"
 ENV GIT_BRANCH="develop-docker-prototype"
 VOLUME /config /media /var/data/media/video
-ENV app /config
-WORKDIR ${app}
+WORKDIR /config
 RUN apk add --no-cache bash git openssh &wait
 # cut clone temporarily in favor of copy as clone was not working
 # recommended git clone approach online
@@ -17,12 +16,12 @@ RUN apk add --no-cache bash git openssh &wait
 # or
 # RUN cd ${app}/; git clone "https://github.com/jd4883/plex-linker-beta.git"
 # or
-#RUN cd ${APP}; git clone ${GIT_REPO} &wait; echo 'git clone completed'
-# RUN git checkout "develop-docker-prototype"
-COPY . ${app}/
+COPY . /config/
+RUN cd /config; git clone ${GIT_REPO} &wait; echo 'git clone completed'
+# git checkout "develop-docker-prototype"
 RUN pip install --upgrade pip; pip install -r requirements.txt
-RUN echo '*/15  *  *  *  *    ${app}/link-tv-specials.py' > /etc/crontabs/root; cat /etc/crontabs/root
-RUN ls -hla ${app}
+RUN echo '*/15  *  *  *  *    /config/link-tv-specials.py' > /etc/crontabs/root; cat /etc/crontabs/root
+RUN ls -hla /config
 # RUN chmod 775 -R ${app}
 RUN ["chmod", "+x", "link-tv-specials.py"]
 CMD python ./link-tv-specials.py

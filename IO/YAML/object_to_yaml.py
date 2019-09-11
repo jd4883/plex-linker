@@ -8,8 +8,7 @@ import yaml
 from IO.gets import get_collection_absolute_path_parsed_this_run, get_collection_absolute_path_parsed_last_run
 from jobs.set_path_permissions import (set_file_mask_with_chmod_on_files_and_links,
                                        set_ownership_on_files_and_links)
-from messaging.frontend import (method_launch,
-                                method_exit)
+from messaging.frontend import method_launch, method_exit
 from movies.movies_gets import (get_media_collection_parsed_archives)
 
 
