@@ -7,7 +7,7 @@ ENV SONARR_API_KEY="${RADARR_API_KEY}"
 ENV PLEX_API_KEY="${PLEX_API_KEY}"
 ENV GIT_REPO="https://github.com/jd4883/plex-linker-beta.git"
 ENV GIT_BRANCH="develop-docker-prototype"
-VOLUME /config /media /var/data/media/video
+VOLUME /config /media /var/data/media
 WORKDIR /config
 RUN apk add --no-cache bash git openssh &wait
 # cut clone temporarily in favor of copy as clone was not working
@@ -20,11 +20,17 @@ COPY . /config/
 # RUN cd /config; git clone ${GIT_REPO} &wait; echo 'git clone completed'
 # git checkout "develop-docker-prototype"
 RUN pip install --upgrade pip; pip install -r requirements.txt
-RUN echo '*/15  *  *  *  *    /config/link-tv-specials.py' > /etc/crontabs/root; cat /etc/crontabs/root
+RUN echo '*/15  *  *  *  * python /config/link-tv-specials.py' > /etc/crontabs/root; cat /etc/crontabs/root
 RUN ls -hla /config
 # RUN chmod 775 -R ${app}
 RUN ["chmod", "+x", "/config/link-tv-specials.py"]
-CMD python ./link-tv-specials.py
+#CMD python ./link-tv-specials.py
+CMD ["/usr/sbin/crond", "-f", "-d", "0"]
+
+
+
+#CMD ['crond', '-l 2', '-f']
+
 
 
 
