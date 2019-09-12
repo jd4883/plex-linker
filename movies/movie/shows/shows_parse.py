@@ -38,11 +38,15 @@ def parse_shows_dictionary_object(movie_class_object,
 		try:
 			if validate_strings_match(
 					f'{str(g.movies_dictionary_object[movie_class_object.movie_title]["Shows"][show]["Relative Show File Path"])} -> {readlink(str(g.movies_dictionary_object[movie_class_object.movie_title]["Shows"][show]["Relative Show File Path"]))}', \
-					g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show][
-				                          'Symlinked']):
-				if get_live_link(str(g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Relative Show File Path'])) and \
-						(check_if_valid_symlink_destination(str(g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Relative Show File Path'])) and
-						 (check_if_valid_symlink_target(str(g.movies_dictionary_object[movie_class_object.movie_title]["Parsed Movie File"])))):
+					g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Symlinked']):
+				if get_live_link(str(g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show][
+					                     'Relative Show File Path'])) and \
+						(check_if_valid_symlink_destination(str(
+							g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show][
+								'Relative Show File Path'])) and
+						 (check_if_valid_symlink_target(str(
+							 g.movies_dictionary_object[movie_class_object.movie_title]["Parsed Movie File"].replace(
+								 '/var/data.media/video', '/media'))))):
 					print(
 						f"No action required for {movie_class_object.movie_title}")  # make an official message handler here
 					g.list_of_linked_movies.append(movie_class_object.movie_title)

@@ -10,8 +10,7 @@ from messaging.frontend import (method_launch,
 def parse_extension(movie,
                     g):
 	method_launch(g)
-	movie.quality = parse_movie_file_quality(movie.movie_file,
-	                                         g)
+	movie.quality = parse_movie_file_quality(movie.movie_file)
 	movie.quality = parse_remux_in_quality(movie.quality,
 	                                       g)
 	movie.quality = parse_proper(movie,
@@ -36,10 +35,7 @@ def parse_remux_in_quality(quality,
 	return quality
 
 
-def parse_movie_file_quality(movie_file,
-                             g):
-	method_launch(g)
-	method_exit(g)
+def parse_movie_file_quality(movie_file):
 	return movie_file.split().pop()
 
 def parse_proper(movie_class_object,

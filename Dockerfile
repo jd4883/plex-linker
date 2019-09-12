@@ -11,6 +11,7 @@ ENV FREQUENCY=15
 ENV PLEX_LINKER=/config
 VOLUME /config /media /var/data/media
 WORKDIR /config
+ENV CONFIG_ARCHIVES=/config/config_files/archives
 # ; echo "*/5  *  *  *  * python /config/link-tv-specials.py"
 RUN apk add --no-cache bash openssh &wait
 

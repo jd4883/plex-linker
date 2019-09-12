@@ -53,7 +53,7 @@ def print_show_path_value(show_object,
 def print_media_path_value(g):
 	g.LOG.debug(debug_message(606,
 	                          g,
-	                          g.MEDIA_PATH))
+	                          str(environ['DOCKER_MEDIA_PATH'])))
 
 
 def message_no_items_found_to_parse(g):
@@ -80,10 +80,10 @@ def method_launch(g):
 	from logs.bin.get_parameters import (get_child_method_string,
 	                                     get_parent_method_string)
 	from movies.movies_puts import (set_working_directory_to_media_path)
-	chdir(environ['PLEX_LINKER'])
+	chdir(g.MEDIA_DIRECTORY)
 	g.parent_method = get_parent_method_string()
 	g.method = get_child_method_string()
-	set_working_directory_to_media_path(g.MEDIA_PATH)
+	set_working_directory_to_media_path(str(environ['DOCKER_MEDIA_PATH']))
 	message_entering_function(g)
 
 
@@ -105,5 +105,5 @@ def message_no_duplicates_to_remove():
 
 
 def method_exit(g):
-	chdir(environ['PLEX_LINKER'])
+	chdir(g.MEDIA_DIRECTORY)
 	message_exiting_function(g)

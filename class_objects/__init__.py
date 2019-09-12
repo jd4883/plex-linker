@@ -23,20 +23,13 @@ from movies.movies_puts import (set_nested_dictionary_key_value_pair,
 
 class Globals:
 	def __init__(self):
-		self.MEDIA_PATH = \
-			environ["DOCKER_MEDIA_PATH"]  # "/var/data/media"
-		self.LOG = \
-			get_logger(get_log_name())
-		self.MOVIES_PATH = \
-			get_variable_from_yaml("Movie Directories")
-		self.MOVIE_EXTENSIONS = \
-			get_variable_from_yaml("Movie Extensions")
-		self.MEDIA_DIRECTORY = \
-			environ["HOST_MEDIA_PATH"]
-		self.SHOWS_PATH = \
-			get_variable_from_yaml("Show Directories")
-		self.movies_dictionary_object = \
-			get_yaml_dictionary()
+		self.MEDIA_PATH = str(environ['DOCKER_MEDIA_PATH'])
+		self.MEDIA_DIRECTORY = str(environ["HOST_MEDIA_PATH"])
+		self.LOG = get_logger(get_log_name())
+		self.MOVIES_PATH = get_variable_from_yaml("Movie Directories")
+		self.MOVIE_EXTENSIONS = get_variable_from_yaml("Movie Extensions")
+		self.SHOWS_PATH = get_variable_from_yaml("Show Directories")
+		self.movies_dictionary_object = get_yaml_dictionary()
 		self.list_of_linked_movies = list()
 		self.list_of_movies_to_locate = list()
 		self.method = \
@@ -48,15 +41,10 @@ class Globals:
 class Movies:
 	def __init__(self,
 	             g):
-		self.start_time = \
-			time.time()
-		self.absolute_movies_path = \
-			get_absolute_movies_path(g)
-		self.relative_movies_path = \
-			get_relative_movies_path(self,
-			                         g)
-		self.list_of_possible_paths = \
-			[]
+		self.start_time = time.time()
+		self.absolute_movies_path = get_absolute_movies_path(g)
+		self.relative_movies_path = get_relative_movies_path(self)
+		self.list_of_possible_paths = []
 
 
 class Movie(Movies,
@@ -118,7 +106,7 @@ class Show(Movie,
 	             g):
 		super().__init__(movie,
 		                 g)
-		set_working_directory_to_media_path(g.MEDIA_PATH)
+		set_working_directory_to_media_path(str(environ['DOCKER_MEDIA_PATH']))
 		from movies.movie.shows.show.show_gets import get_alphabetical_specials_string
 		
 		self.show = show

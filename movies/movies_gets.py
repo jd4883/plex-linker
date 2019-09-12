@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
-from os.path import (relpath,
-                     abspath)
 from os import (chdir,
                 environ)
-
-from messaging.frontend import (method_launch,
-                                method_exit)
+from os.path import (relpath,
+                     abspath)
 
 
 def get_media_collection_parsed_last_time():
@@ -15,21 +12,16 @@ def get_media_collection_parsed_last_time():
 
 def get_media_collection_parsed_archives():
 	chdir(environ['PLEX_LINKER'])
-	return "config_files/archives"
+	return str(environ['CONFIG_ARCHIVES'])
 
 
-def get_relative_movies_path(self,
-                             g):
-	method_launch(g)
-	method_exit(g)
+def get_relative_movies_path(self):
 	return relpath(self.absolute_movies_path,
-	               g.MEDIA_PATH)
+	               str(environ['DOCKER_MEDIA_PATH']))
 
 
 def get_absolute_movies_path(g):
-	method_launch(g)
-	method_exit(g)
-	return abspath("/".join((g.MEDIA_PATH,
+	return abspath("/".join((str(environ['DOCKER_MEDIA_PATH']),
 	                         g.MOVIES_PATH[0])))
 #
 #

@@ -14,8 +14,7 @@ from movies.movies_puts import (create_directory_if_not_present,
 def parse_show(show_object,
                g):
 	method_launch(g)
-	init_show_object(show_object,
-	                 g)
+	init_show_object(show_object)
 	show_object.anime_status = set_nested_dictionary_key_value_pair(g.movies_dictionary_object[show_object.movie_title][
 		                                                                'Shows'][show_object.show]['Anime'],
 	                                                                False)
