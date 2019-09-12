@@ -8,7 +8,7 @@ ENV PLEX_API_KEY=${PLEX_API_KEY}
 ENV GIT_REPO=https://github.com/jd4883/plex-linker-beta.git
 ENV GIT_BRANCH=develop-docker-prototype
 ENV FREQUENCY=15
-ENV APP_ROOT_PATH=/config
+ENV PLEX_LINKER=/config
 VOLUME /config /media /var/data/media
 WORKDIR /config
 # ; echo "*/5  *  *  *  * python /config/link-tv-specials.py"

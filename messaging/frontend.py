@@ -1,8 +1,8 @@
 #!/usr/bin/env python3.7
-from os import chdir
+from os import (chdir,
+                environ)
 
 from messaging.backend import debug_message
-from movies.movies_puts import get_script_path
 
 
 def print_movie_file_quality(movie,
@@ -80,7 +80,7 @@ def method_launch(g):
 	from logs.bin.get_parameters import (get_child_method_string,
 	                                     get_parent_method_string)
 	from movies.movies_puts import (set_working_directory_to_media_path)
-	chdir(get_script_path())
+	chdir(environ['PLEX_LINKER'])
 	g.parent_method = get_parent_method_string()
 	g.method = get_child_method_string()
 	set_working_directory_to_media_path(g.MEDIA_PATH)
@@ -105,6 +105,5 @@ def message_no_duplicates_to_remove():
 
 
 def method_exit(g):
-	chdir(get_script_path())
+	chdir(environ['PLEX_LINKER'])
 	message_exiting_function(g)
-
