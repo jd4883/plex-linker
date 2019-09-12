@@ -20,7 +20,7 @@ def set_show_root_path(show_object,
 	show_object.parsed_title = get_parsed_show_title(show_object)
 	show_object.absolute_movie_path = abspath(f"{show_object.parsed_title}", )
 	show_object.relative_show_path = \
-		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_object.show]['Relative Show File Path'] = \
+		g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Relative Show File Path'] = \
 		relpath(f"{show_object.parsed_title}")
 	method_exit(g)
 
