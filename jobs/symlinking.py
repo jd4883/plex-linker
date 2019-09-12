@@ -13,8 +13,12 @@ def symlink_force(show_class_object,
 	method_launch(g)
 	# move these to a better location when the values initialize
 	chdir(environ['DOCKER_MEDIA_PATH'])
-	g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show][
-		'Relative Show File Path'] = show_class_object.relative_show_path
+	try:
+		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show][
+			'Relative Show File Path'] = show_class_object.relative_show_path
+	except AttributeError:
+		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show][
+			'Relative Show File Path'] = str()
 	g.movies_dictionary_object[show_class_object.movie_title][
 		"Parsed Movie File"] = show_class_object.absolute_movie_file_path
 	print(g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show][
