@@ -1,7 +1,8 @@
 #!/bin/bash
 # source ~/.bashrc
 rebuild-symlinks
-docker container rm plex_linker 2>& 1
+docker service rm plex_scripts_plex-linker 2>& 1
+docker container rm  plex_scripts_plex-linker* 2>& 1
 docker image rm -f plex_linker 2>& 1
 docker build --rm --tag plex_linker .
 #docker run --name plex_linker plex_linker
