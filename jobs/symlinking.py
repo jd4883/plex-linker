@@ -19,8 +19,6 @@ def symlink_force(show_class_object,
 		"Parsed Movie File"] = show_class_object.absolute_movie_file_path
 	print(g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show][
 		      'Relative Show File Path'])
-	print(g.movies_dictionary_object[show_class_object.movie_title]["Parsed Movie File"].replace('/var/data/media/video',
-	                                                                                             '/media'))
 	if ((str(show_class_object.absolute_movie_file_path).replace('/var/data/media/video',
 	                                                             '/media') or show_class_object.absolute_movie_file_path) or
 	    show_class_object.relative_show_path) \
