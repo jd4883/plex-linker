@@ -2,37 +2,27 @@ FROM python:alpine3.7
 MAINTAINER 'Jacob Dresdale'
 LABEL name=plex_linker version=1.5
 USER root
-ENV RADARR_API_KEY="${RADARR_API_KEY}"
-ENV SONARR_API_KEY="${RADARR_API_KEY}"
-ENV PLEX_API_KEY="${PLEX_API_KEY}"
-ENV GIT_REPO="https://github.com/jd4883/plex-linker-beta.git"
-ENV GIT_BRANCH="develop-docker-prototype"
+ENV RADARR_API_KEY=${RADARR_API_KEY}
+ENV SONARR_API_KEY=${RADARR_API_KEY}
+ENV PLEX_API_KEY=${PLEX_API_KEY}
+ENV GIT_REPO=https://github.com/jd4883/plex-linker-beta.git
+ENV GIT_BRANCH=develop-docker-prototype
+ENV FREQUENCY=15
+ENV APP_ROOT_PATH=/config
 VOLUME /config /media /var/data/media
 WORKDIR /config
-RUN apk add --no-cache bash git openssh &wait
-# cut clone temporarily in favor of copy as clone was not working
-# recommended git clone approach online
-# https://stackoverflow.com/questions/33682123/dockerfile-strategies-for-git
-# or
-# RUN cd ${app}/; git clone "https://github.com/jd4883/plex-linker-beta.git"
-# or
+# ; echo "*/5  *  *  *  * python /config/link-tv-specials.py"
+RUN apk add --no-cache bash openssh &wait
+
 COPY . /config/
-# RUN cd /config; git clone ${GIT_REPO} &wait; echo 'git clone completed'
-# git checkout "develop-docker-prototype"
 RUN pip install --upgrade pip; pip install -r requirements.txt
-RUN echo '*/15  *  *  *  * python /config/link-tv-specials.py' > /etc/crontabs/root; cat /etc/crontabs/root
-RUN ls -hla /config
-# RUN chmod 775 -R ${app}
+# need to build the string a bit cleaner for this rather than use the flat 15 mins
+RUN echo '*/5 *  *  *  * python /config/link-tv-specials.py' > /etc/crontabs/root; cat /etc/crontabs/root
 RUN ["chmod", "+x", "/config/link-tv-specials.py"]
-#CMD python ./link-tv-specials.py
+
+ENV SHOW_FOLDER_DEPTH=1
+ENV MOVIE_FOLDER_DEPTH=1
+ENV DOCKER_MEDIA_PATH=/media/video
+ENV HOST_MEDIA_PATH=/var/data/media/video
+
 CMD ["/usr/sbin/crond", "-f", "-d", "0"]
-
-
-
-#CMD ['crond', '-l 2', '-f']
-
-
-
-
-# this docker file works, need to figure out how to make output go to dockers log
-# need to improve pathing and figure out how to publish the container, looking good for API testing though

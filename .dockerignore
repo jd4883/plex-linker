@@ -5,3 +5,4 @@
 README-secret.md
 **/*.log
 config_files/archives/*
+.env

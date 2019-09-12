@@ -17,8 +17,7 @@ def set_show_root_path(show_object,
 	show_object.absolute_movie_path = abspath(show_object.path)
 	show_object.parsed_title = parse_show(show_object,
 	                                      g)
-	show_object.parsed_title = get_parsed_show_title(show_object,
-	                                                 g)
+	show_object.parsed_title = get_parsed_show_title(show_object)
 	show_object.absolute_movie_path = abspath(f"{show_object.parsed_title}", )
 	show_object.relative_show_path = relpath(f"{show_object.parsed_title}")
 	method_exit(g)
