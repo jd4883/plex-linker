@@ -10,6 +10,7 @@ from movies.movies_puts import set_working_directory_to_media_path
 
 def set_file_mask_with_chmod_on_files_and_links(path,
                                                 g):
+	path = str(path).replace('/video/video/','/video/')
 	Path(str(path)).touch()
 	method_launch(g)
 	os.chmod(path,
@@ -20,12 +21,9 @@ def set_file_mask_with_chmod_on_files_and_links(path,
 def set_permissions(movie_class_object,
                     g):
 	set_working_directory_to_media_path(str(environ['DOCKER_MEDIA_PATH']))
-	set_file_mask_with_chmod_on_files_and_links(movie_class_object.absolute_movie_path,
+	set_file_mask_with_chmod_on_files_and_links(movie_class_object.absolute_movie_file_path,
 	                                            g)
-	set_ownership_on_files_and_links(movie_class_object.absolute_movie_path)
-	if movie_class_object.absolute_movie_file_path:
-		set_working_directory_to_media_path(str(environ['DOCKER_MEDIA_PATH']))
-		set_ownership_on_files_and_links(movie_class_object.absolute_movie_file_path)
+	set_ownership_on_files_and_links(movie_class_object.absolute_movie_file_path)
 
 
 def set_ownership_on_files_and_links(path):

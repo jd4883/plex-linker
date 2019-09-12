@@ -34,7 +34,7 @@ def get_absolute_movie_file_path(movie,
                                  g):
 	method_launch(g)
 	method_exit(g)
-	return str("/".join((str(movie.absolute_movie_path),
+	return str("/".join((str(movie.absolute_movie_path).replace('/video/video/','/video/'),
 	                     str(movie.movie_file))))
 
 

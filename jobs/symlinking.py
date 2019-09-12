@@ -28,9 +28,9 @@ def symlink_force(show_class_object,
 		method_launch(g)
 		# added the popen for relative symlinking because this was not working in the os symlink built in.
 		# have not done any testing in Windows only on Ubuntu 18
-		if str(show_class_object.absolute_movie_file_path).startswith('/media'):
+		if str(show_class_object.absolute_movie_file_path).startswith('/media/video'):
 			show_class_object.absolute_movie_file_path = \
-				str(show_class_object.absolute_movie_file_path).replace('/media',
+				str(show_class_object.absolute_movie_file_path).replace('/media/video',
 				                                                        '/var/data/media/video')
 		process = Popen(["ln",
 		                 "-fsvr",
