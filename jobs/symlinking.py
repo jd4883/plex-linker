@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-
+from os import (chdir,
+                environ)
 from subprocess import (Popen,
                         DEVNULL,
                         PIPE)
@@ -11,6 +12,7 @@ def symlink_force(show_class_object,
                   g):
 	method_launch(g)
 	# move these to a better location when the values initialize
+	chdir(environ['DOCKER_MEDIA_PATH'])
 	g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show][
 		'Relative Show File Path'] = show_class_object.relative_show_path
 	g.movies_dictionary_object[show_class_object.movie_title][
