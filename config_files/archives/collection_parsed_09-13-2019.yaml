@@ -3180,14 +3180,13 @@ Fairy Tail x Rave (2013):
       Parsed Relative Show Title: ''
       Parsed Season: '00'
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/shounen/Fairy Tail/Season 00/Fairy Tail - S00E008 -
-        Fairy Tail x Rave
+      Parsed Show Title: ''
       Relative Show File Path: anime/shounen/Fairy Tail/Season 00/Fairy Tail - S00E008
-        - Fairy Tail x Rave DVD.mkv
+        - Fairy Tail DVD.mkv
       Season: '00'
       Symlinked: anime/shounen/Fairy Tail/Season 00/Fairy Tail - S00E008 - Fairy Tail
-        x Rave DVD.mkv -> ../../../../movies/foreign/Fairy Tail x Rave (2013)/Fairy
-        Tail x Rave (2013) DVD.mkv
+        DVD.mkv -> ../../../../movies/foreign/Fairy Tail x Rave (2013)/Fairy Tail
+        x Rave (2013) DVD.mkv
       Title: Fairy Tail x Rave
     Rave Master:
       Absolute Episode: ''
@@ -3198,8 +3197,7 @@ Fairy Tail x Rave (2013):
       Parsed Relative Show Title: ''
       Parsed Season: ''
       Parsed Season Folder: ''
-      Parsed Show Title: anime/staging/Rave Master/Season 00/Rave Master - S00E001
-        - Fairy Tail x Rave
+      Parsed Show Title: ''
       Relative Show File Path: ''
       Season: '00'
       Symlinked: ''

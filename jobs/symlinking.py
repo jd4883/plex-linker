@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-from os import (chdir,
-                environ)
-from os.path import relpath
+from os import (chdir)
 from subprocess import (Popen,
                         PIPE,
                         DEVNULL)
