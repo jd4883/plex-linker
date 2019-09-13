@@ -36,6 +36,8 @@ def parse_shows_dictionary_object(movie_class_object,
 	method_launch(g)
 	for show in g.movies_dictionary_object[movie_class_object.movie_title]['Shows'].keys():
 		try:
+			print(f'COMPARING PATH STRINGS: {str(g.movies_dictionary_object[movie_class_object.movie_title]["Shows"][show]["Relative Show File Path"])} -> {readlink(str(g.movies_dictionary_object[movie_class_object.movie_title]["Shows"][show]["Relative Show File Path"]))}')
+			print(f"CHECKING RECORDED LINK STATUS: {g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Symlinked']}")
 			if validate_strings_match(
 					f'{str(g.movies_dictionary_object[movie_class_object.movie_title]["Shows"][show]["Relative Show File Path"])} -> {readlink(str(g.movies_dictionary_object[movie_class_object.movie_title]["Shows"][show]["Relative Show File Path"]))}', \
 					g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Symlinked']):

@@ -34,7 +34,7 @@ def get_absolute_movie_file_path(movie,
                                  g):
 	method_launch(g)
 	method_exit(g)
-	return str("/".join((str(movie.absolute_movie_path).replace('/video/video/','/video/'),
+	return str("/".join((str(movie.absolute_movie_path).replace('/video/video/', '/video/'),
 	                     str(movie.movie_file))))
 
 
@@ -54,6 +54,7 @@ def get_movie_quality(quality,
 	method_launch(g)
 	method_exit(g)
 	return str(quality)
+
 
 # in theory this checks case combinations and titles correct, however, I am not seeing the desired results
 def get_movie_path(movie,

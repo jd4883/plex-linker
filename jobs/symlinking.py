@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 from os import (chdir,
-                environ)
+                environ,
+                symlink,
+                system)
+from os.path import exists
 from subprocess import (Popen,
                         DEVNULL,
                         PIPE)
@@ -24,12 +27,12 @@ def symlink_force(show_class_object,
 	print(g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show][
 		      'Relative Show File Path'])
 	if ((str(show_class_object.absolute_movie_file_path).replace('/var/data/media/video',
-	                                                             '/media') or show_class_object.absolute_movie_file_path) or
+	                                                             '/media') or
+	     show_class_object.absolute_movie_file_path) or
 	    show_class_object.relative_show_path) \
 			is not (None or 'None/'
 			        or show_class_object.absolute_movie_file_path.endswith('None')
 			        or show_class_object.relative_show_path.endswith('None')):
-		method_launch(g)
 		# added the popen for relative symlinking because this was not working in the os symlink built in.
 		# have not done any testing in Windows only on Ubuntu 18
 		if str(show_class_object.absolute_movie_file_path).startswith('/media/video'):

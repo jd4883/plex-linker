@@ -136,8 +136,10 @@ class Show(Movie,
 			                                     str())
 		
 		self.parsed_relative_title = \
-			set_nested_dictionary_key_value_pair(g.movies_dictionary_object[movie]['Shows'][show]['Parsed Relative Show Title'],
-			                                     str())
+			set_nested_dictionary_key_value_pair(
+				g.movies_dictionary_object[movie]['Shows'][show]['Parsed Relative Show Title'],
+				str())
 		self.relative_show_path = \
-			set_nested_dictionary_key_value_pair(g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Relative Show File Path'],
-			                                     str())
+			set_nested_dictionary_key_value_pair(
+				g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Relative Show File Path'],
+				str())
