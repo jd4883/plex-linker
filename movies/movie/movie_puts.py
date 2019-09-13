@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from movies.movie.movie_parser import *
-
-
+from messaging.frontend import (method_launch,
+                                method_exit)
 def set_absolute_movie_path(self,
                             g):
 	g.movies_dictionary_object[self.movie_title].update({'Absolute Movie Path': self.absolute_movie_path})

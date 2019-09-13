@@ -36,8 +36,7 @@ def get_child_method_string():
 
 
 def get_logger(file):
-	from movies.movies_puts import get_script_path
-	filename = f'{get_script_path()}/logs/{file}.log'
+	filename = f'/config/logs/{file}.log'
 	mode = 'a+' if exists(filename) else 'w+'
 	logging.basicConfig(level=logging.DEBUG,
 	                    format='%(asctime)s\t%(name)-12s\t%(levelname)-8s\t%(message)s',
