@@ -26,4 +26,4 @@ ENV MOVIE_FOLDER_DEPTH=1
 ENV DOCKER_MEDIA_PATH=/media/video
 ENV HOST_MEDIA_PATH=/media/video
 
-CMD ["/usr/sbin/crond", "-f", "-d", "0"]
+CMD ["/usr/sbin/crond", "-f", "-d", "3"]
