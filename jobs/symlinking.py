@@ -23,17 +23,12 @@ def symlink_force(show_class_object,
 			'Relative Show File Path'] = str()
 	g.movies_dictionary_object[show_class_object.movie_title][
 		"Parsed Movie File"] = show_class_object.absolute_movie_file_path
-	print(g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show][
-		      'Relative Show File Path'])
 	if show_class_object.absolute_movie_file_path or \
 			show_class_object.relative_show_path is not \
 			(None or 'None/' or \
 			 show_class_object.absolute_movie_file_path.endswith('None') or \
 			 show_class_object.relative_show_path.endswith('None')):
 		chdir('/media/video')
-		print(f"SHOW TO LINK: {show_class_object.relative_show_path}")
-		print(f"MOVIE TO LINK: {show_class_object.absolute_movie_file_path}")
-		print(f"MOVIE RELPATH: {relpath(show_class_object.absolute_movie_file_path, '/media/video')}")
 		process = Popen(["ln",
 		                 "-fsvr",
 		                 f"{show_class_object.absolute_movie_file_path}",
