@@ -39,16 +39,14 @@ def get_fully_parsed_show_with_absolute_episode(show_object,
 	                                            f"{show_object.path}/{show_object.season_folder}/{show_object.show} - S{show_object.season}E{show_object.episode} (E{show_object.absolute_episode}) - {show_object.title}")
 
 
-def get_fully_parsed_show_without_absolute_episode(show_object,
+def get_fully_parsed_show_without_absolute_episode(self,
                                                    g):
-	return set_nested_dictionary_key_value_pair(g.movies_dictionary_object[show_object.movie_title]['Shows'][
-		                                            show_object.show]['Parsed Show Title'],
-	                                            f"{show_object.path}/{show_object.season_folder}/{show_object.show} - " \
-	                                            f"S{show_object.season}E{show_object.episode} - {show_object.title}")
+	return set_nested_dictionary_key_value_pair(g.movies_dictionary_object[self.movie_title]['Shows'][
+		                                            self.show]['Parsed Show Title'],
+	                                            f"{self.path}/{self.season_folder}/{self.show} - " \
+	                                            f"S{self.season}E{self.episode} - {self.title}")
 
 def get_alphabetical_specials_string(g):
-	method_launch(g)
-	method_exit(g)
 	return "Season 00"  # create sonarr API call here to get the name dynamically
 
 

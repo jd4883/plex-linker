@@ -15,20 +15,26 @@ def parse_show(show_object,
                g):
 	method_launch(g)
 	init_show_object(show_object)
-	show_object.anime_status = set_nested_dictionary_key_value_pair(g.movies_dictionary_object[show_object.movie_title][
-		                                                                'Shows'][show_object.show]['Anime'],
-	                                                                False)
-	show_object.season = \
-		get_season(show_object,
-		           g)
 	
+	# should be removable
+	if not show_object.anime_status:
+		show_object.anime_status = g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Anime']
+		print('SET ANIME STATUS FIELD: this should go away when the class object is instantiated each run')
+	if not show_object.season:
+		if g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season']:
+			show_object.season = \
+				g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season']
+		else:
+			show_object.season = \
+				g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season'] = 0
+		print('SET SEASON FIELD: this should go away when the class object is instantiated each run')
 	show_object.season_folder = \
 		g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Parsed Season Folder'] = \
 		get_season_folder(show_object,
 		                  g)
-	show_object.episode = set_nested_dictionary_key_value_pair(g.movies_dictionary_object[show_object.movie_title][
-		                                                           'Shows'][show_object.show]['Episode'],
-	                                                           str())
+	show_object.episode = \
+		set_nested_dictionary_key_value_pair(g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Episode'],
+		                                     str())
 	show_object.absolute_episode = \
 		set_nested_dictionary_key_value_pair(g.movies_dictionary_object[show_object.movie_title]['Shows'][
 			                                     show_object.show]['Absolute Episode'],
@@ -37,8 +43,7 @@ def parse_show(show_object,
 	                    g)
 	show_object.parsed_relative_title = \
 		set_nested_dictionary_key_value_pair(g.movies_dictionary_object[show_object.movie_title]['Shows'][
-			                                     show_object.show][
-			                                     'Parsed Relative Show Title'],
+			                                     show_object.show]['Parsed Relative Show Title'],
 		                                     parse_show_title_from_show_dictionary(show_object,
 		                                                                           g))
 	

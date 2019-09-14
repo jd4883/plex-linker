@@ -3,31 +3,23 @@ from messaging.frontend import (method_launch,
                                 method_exit,
                                 print_season_parsed_value)
 
-def get_season(show_object,
+def get_season(self,
                g):
 	method_launch(g)
 	from movies.movie.shows.show.show_gets import (get_alphabetical_specials_string)
-	show_object.season = get_season_value_from_movies_dictionary(show_object.movie_dictionary_object,
-	                                                             show_object.show,
-	                                                             g)
-	if show_object.season is int(0) \
-			or get_alphabetical_specials_string(g):
-		show_object.season = get_padded_zero_string(g)
-	elif show_object.season.isdigit():
-		show_object.season = get_padded_episode_number(show_object.season,
-		                                               2,
-		                                               g)
+	if not g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Season'] and \
+			self.season:
+		self.parsed_season = get_season_value_from_movies_dictionary(self.movie_dictionary_object,
+		                                                             self.show,
+		                                                             g)
+	if (self.season is int(0)) or \
+			str(self.season).isdigit():
+		self.parsed_season = str(get_padded_episode_number(self.season, 2, g))
 	else:
-		show_object.season = str(get_alphabetical_specials_string(g))  # play with this
+		self.parsed_season = str(get_alphabetical_specials_string(g))  # play with this
 	# add more logic to prevent non-defined dictionary_for_shows to go through
-	print_season_parsed_value(show_object,
-	                          g)
-	g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season'] = show_object.season
-	show_object.season = \
-		g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Parsed Season'] = \
-		show_object.season
 	method_exit(g)
-	return show_object.season
+	return self.parsed_season
 
 
 def get_season_folder(show_object,

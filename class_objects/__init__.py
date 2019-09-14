@@ -20,7 +20,7 @@ from movies.movies_gets import (get_absolute_movies_path,
 from movies.movies_puts import (set_nested_dictionary_key_value_pair,
                                 set_working_directory_to_media_path)
 from class_objects.sonarr_api import *
-
+from movies.movie.shows.show.episode.episode_gets import (get_season)
 
 class Globals:
 	def __init__(self):
@@ -112,44 +112,51 @@ class Show(Movie,
 		from movies.movie.shows.show.show_gets import get_alphabetical_specials_string
 
 		self.show = str(show)
-		self.show_lookup = g.sonarr.lookup_series(str(self.show))[0]
+		self.sonarr_api_query = g.sonarr.lookup_series(str(self.show))[0]
 		# remove monitored status)
 		# tag with genre names
-		print(self.show_lookup)
+		print(self.sonarr_api_query)
 		try:
-			print(str(self.show_lookup['path']).replace(str(environ['SONARR_ROOT_PATH_PREFIX']),
+			print(str(self.sonarr_api_query['path']).replace(str(environ['SONARR_ROOT_PATH_PREFIX']),
 			                                            ''))
 		except:
 			pass
-		print(f"SHOW TVDB ID: {self.show_lookup['tvdbId']}")
-		# print(f"SHOW SERIES TYPE: {self.show_lookup['seriesType']}")  # if anime else
-		print(f"SHOW SEASON: {self.show_lookup['seasons'][0]}")
-		print(f"SHOW GENRES: {self.show_lookup['genres']}")
-		
-		self.season = \
-			set_nested_dictionary_key_value_pair(g.movies_dictionary_object[movie]['Shows'][show]['Parsed Season Folder'],
-			                                     str(get_alphabetical_specials_string(g)))
-		self.episode = \
-			g.movies_dictionary_object[movie]['Shows'][show]['Parsed Episode'] = \
-			str()
+		print(f"SHOW TVDB ID: {self.sonarr_api_query['tvdbId']}")
+		# print(f"SHOW SERIES TYPE: {self.sonarr_api_query['seriesType']}")  # if anime else
+		print(f"SHOW GENRES: {self.sonarr_api_query['genres']}")
+		#print(f"SHOW ID: {self.sonarr_api_query['id']}") # need to figure out the correct way to do this
+		self.season = self.set_season_dictionary_value(g, movie)
 		self.parsed_season = \
-			g.movies_dictionary_object[movie]['Shows'][show]['Parsed Season'] = \
+			g.movies_dictionary_object[movie]['Shows'][self.show]['Parsed Season'] = \
+			get_season(self, g)
+		self.episode = \
+			g.movies_dictionary_object[movie]['Shows'][self.show]['Parsed Episode'] = \
 			str()
 		self.absolute_episode = \
-			set_nested_dictionary_key_value_pair(g.movies_dictionary_object[movie]['Shows'][show]['Absolute Episode'],
+			set_nested_dictionary_key_value_pair(g.movies_dictionary_object[movie]['Shows'][self.show]['Absolute Episode'],
 			                                     str())
 		self.anime_status = \
-			g.movies_dictionary_object[movie]['Shows'][show]['Anime'] = \
-			get_anime_status_from_api(self.show_lookup)
+			g.movies_dictionary_object[movie]['Shows'][self.show]['Anime'] = \
+			get_anime_status_from_api(self.sonarr_api_query)
 		self.parsed_title = \
-			set_nested_dictionary_key_value_pair(g.movies_dictionary_object[movie]['Shows'][show]['Parsed Show Title'],
+			set_nested_dictionary_key_value_pair(g.movies_dictionary_object[movie]['Shows'][self.show]['Parsed Show Title'],
 			                                     str())
 		
 		self.parsed_relative_title = \
 			set_nested_dictionary_key_value_pair(
-				g.movies_dictionary_object[movie]['Shows'][show]['Parsed Relative Show Title'],
+				g.movies_dictionary_object[movie]['Shows'][self.show]['Parsed Relative Show Title'],
 				str())
 		self.relative_show_path = \
 			set_nested_dictionary_key_value_pair(
 				g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Relative Show File Path'],
 				str())
+	
+	def set_season_dictionary_value(self,
+	                                g,
+	                                movie):
+		if self.sonarr_api_query['seasons'][0]['seasonNumber'] != 0:
+			g.movies_dictionary_object[movie]['Shows'][self.show]['Season'] = 0
+		else:
+			g.movies_dictionary_object[movie]['Shows'][self.show]['Season'] = \
+				self.sonarr_api_query['seasons'][0].pop('seasonNumber')
+		return g.movies_dictionary_object[movie]['Shows'][self.show]['Season']
