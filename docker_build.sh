@@ -1,5 +1,6 @@
 #!/bin/bash
 # source ~/.bashrc
+rebuid-docker-stacks
 rebuild-symlinks
 docker service rm plex_scripts_plex-linker 2>& 1
 docker container rm  plex_scripts_plex-linker* 2>& 1

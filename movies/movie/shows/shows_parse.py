@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from class_objects.sonarr_api import *
 from os import readlink
 
 from jobs.set_path_permissions import (set_permissions)

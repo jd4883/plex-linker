@@ -4,13 +4,13 @@ LABEL name=plex_linker version=1.5
 USER root
 
 ENV RADARR_API_KEY=${RADARR_API_KEY}
-ENV RADARR_URL=http://localhost:7878/api
+ENV RADARR_URL=http://127.0.0.1:7878/api
 
 ENV SONARR_API_KEY=${RADARR_API_KEY}
-ENV SOANRR_URL=http://localhost:8989/api
+ENV SOANRR_URL=http://127.0.0.1:8989/api
 
 ENV PLEX_API_KEY=${PLEX_API_KEY}
-ENV PLEX_API_URL=http://localhost:32400
+ENV PLEX_API_URL=http://127.0.0.1:32400
 
 ENV GIT_REPO=https://github.com/jd4883/plex-linker-beta.git
 ENV GIT_BRANCH=develop-docker-prototype
@@ -18,6 +18,8 @@ ENV GIT_BRANCH=develop-docker-prototype
 ENV FREQUENCY=15
 ENV PLEX_LINKER=/config
 
+ENV SONARR_ROOT_PATH_PREFIX=/
+# come up with a dynamic way to dif the path from the linkers path
 
 VOLUME /config /media
 # /var/data/media

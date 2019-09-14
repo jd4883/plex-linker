@@ -8686,9 +8686,10 @@ Persona 5 the Animation- The Day Breakers (2016):
 Prelude to Axanar (2014):
   Absolute Movie File Path: ''
   Absolute Movie Path: /media/video/movies/staging/Prelude to Axanar (2014)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
+  Parsed Movie Extension: mp4
+  Parsed Movie File: Prelude to Axanar (2014) WEBDL-1080p.mp4
+  Parsed Movie Quality: WEBDL-1080p.mp4
+  Relative Movie File Path: ''
   Relative Movie Path: movies/staging/Prelude to Axanar (2014)
   Shows:
     Star Trek- Axanar:
@@ -8700,10 +8701,14 @@ Prelude to Axanar (2014):
       Parsed Relative Show Title: ''
       Parsed Season: '00'
       Parsed Season Folder: Season 00
-      Parsed Show Title: tv/scifi/Star Trek- Axanar/Season 00/Star Trek- Axanar - S00E01 - Prelude to Axanar
-      Relative Show File Path: ''
+      Parsed Show Title: tv/scifi/Star Trek- Axanar/Season 00/Star Trek- Axanar -
+        S00E01 - Prelude to Axanar
+      Relative Show File Path: tv/scifi/Star Trek- Axanar/Season 00/Star Trek- Axanar
+        - S00E01 - Prelude to Axanar WEBDL-1080p.mp4
       Season: '00'
-      Symlinked: ''
+      Symlinked: tv/scifi/Star Trek- Axanar/Season 00/Star Trek- Axanar - S00E01 -
+        Prelude to Axanar WEBDL-1080p.mp4 -> ../../../../movies/staging/Prelude to
+        Axanar (2014)/Prelude to Axanar (2014) WEBDL-1080p.mp4
       Title: Prelude to Axanar
   Unparsed Movie Title: Prelude to Axanar (2014)
 Prison School- Mad Wax (2016):
