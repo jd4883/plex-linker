@@ -8683,25 +8683,23 @@ Persona 5 the Animation- The Day Breakers (2016):
       Symlinked: ''
       Title: Persona 5 - The Day Breakers
   Unparsed Movie Title: Persona 5 the Animation- The Day Breakers (2016)
-'Platinum Comedy Series- Vol. 1: Jerry Seinfeld (2009)':
+Platinum Comedy Series- Vol. 1- Jerry Seinfeld (2009):
   Absolute Movie File Path: ''
-  Absolute Movie Path: '/media/video/movies/foreign/Platinum Comedy Series- Vol. 1:
-    Jerry Seinfeld (2009)'
+  Absolute Movie Path: /media/video/movies/standup_comedy/Platinum Comedy Series- Vol. 1- Jerry Seinfeld (2009)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
-  Relative Movie Path: 'movies/foreign/Platinum Comedy Series- Vol. 1: Jerry Seinfeld
-    (2009)'
+  Relative Movie Path: movies/standup_comedy/Platinum Comedy Series- Vol. 1- Jerry Seinfeld (2009)
   Shows:
     Seinfeld: null
-  Unparsed Movie Title: 'Platinum Comedy Series- Vol. 1: Jerry Seinfeld (2009)'
+  Unparsed Movie Title: Platinum Comedy Series- Vol. 1- Jerry Seinfeld (2009)
 Prelude To Axanar (2014):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: /media/video/movies/foreign/Prelude To Axanar (2014)
-  Parsed Movie Extension: ''
-  Parsed Movie File: ''
-  Parsed Movie Quality: ''
-  Relative Movie Path: movies/foreign/Prelude To Axanar (2014)
+  Absolute Movie File Path: /media/video/movies/staging/Prelude to Axanar (2014)/Prelude to Axanar (2014) WEBDL-1080p.mp4
+  Absolute Movie Path: /media/video/movies/staging/Prelude to Axanar (2014)
+  Parsed Movie Extension: mp4
+  Parsed Movie File: Prelude to Axanar (2014) WEBDL-1080p.mp4
+  Parsed Movie Quality: WEBDL-1080p
+  Relative Movie Path: movies/staging/Prelude to Axanar (2014)
   Shows:
     Star Trek- Axanar:
       Absolute Episode: ''
@@ -8712,14 +8710,12 @@ Prelude To Axanar (2014):
       Parsed Relative Show Title: ''
       Parsed Season: '00'
       Parsed Season Folder: Season 00
-      Parsed Show Title: tv/scifi/Star Trek- Axanar/Season 00/Star Trek- Axanar -
-        S00E01 - Prelude to Axanar
-      Relative Show File Path: 'tv/scifi/Star Trek- Axanar/Season 00/Star Trek- Axanar
-        - S00E01 - Prelude to Axanar '
+      Parsed Show Title: tv/scifi/Star Trek- Axanar/Season 00/Star Trek- Axanar - S00E01 - Prelude to Axanar
+      Relative Show File Path:  tv/scifi/Star Trek- Axanar/Season 00/Star Trek- Axanar - S00E01 - Prelude to Axanar WEBDL-1080p.mp4
       Season: '00'
       Symlinked: ''
       Title: Prelude to Axanar
-  Unparsed Movie Title: Prelude To Axanar (2014)
+  Unparsed Movie Title: Prelude to Axanar (2014)
 Prison School- Mad Wax (2016):
   Absolute Movie File Path: ''
   Absolute Movie Path: /media/video/movies/foreign/Prison School- Mad Wax (2016)
