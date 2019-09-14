@@ -4694,7 +4694,7 @@ Hajime no Ippo- Mashiba vs. Kimura (2003):
   Shows:
     Hajime no Ippo:
       Absolute Episode: ''
-      Anime: true
+      Anime: false
       Episode:
       - 3
       Parsed Episode: ''
@@ -6346,7 +6346,7 @@ Mobile Suit Gundam MS IGLOO- The Hidden One Year War (2004):
   Shows:
     Mobile Suit Gundam- MS IGLOO - The Hidden One-Year War:
       Absolute Episode: ''
-      Anime: true
+      Anime: false
       Episode:
       - 1
       Parsed Episode: ''
@@ -6376,7 +6376,7 @@ Mobile Suit Gundam SEED Destiny- Special Edition I - The Broken World (2006):
   Shows:
     Mobile Suit Gundam SEED (2012):
       Absolute Episode: ''
-      Anime: true
+      Anime: false
       Episode:
       - 7
       Parsed Episode: ''
@@ -6423,7 +6423,7 @@ Mobile Suit Gundam SEED Destiny- Special Edition II - Their Respective Swords (2
   Shows:
     Mobile Suit Gundam SEED (2012):
       Absolute Episode: ''
-      Anime: true
+      Anime: false
       Episode:
       - 8
       Parsed Episode: ''
@@ -6471,7 +6471,7 @@ Mobile Suit Gundam SEED Destiny- Special Edition III - Flames of Destiny (2006):
   Shows:
     Mobile Suit Gundam SEED (2012):
       Absolute Episode: ''
-      Anime: true
+      Anime: false
       Episode:
       - 9
       Parsed Episode: ''
@@ -6518,7 +6518,7 @@ Mobile Suit Gundam SEED Destiny- Special Edition IV - The Cost of Freedom (2007)
   Shows:
     Mobile Suit Gundam SEED (2012):
       Absolute Episode: ''
-      Anime: true
+      Anime: false
       Episode:
       - 10
       Parsed Episode: ''
@@ -6565,7 +6565,7 @@ Mobile Suit Gundam SEED Movie I- The Empty Battlefield (2004):
   Shows:
     Mobile Suit Gundam SEED:
       Absolute Episode: ''
-      Anime: true
+      Anime: false
       Episode:
       - 2
       Parsed Episode: ''
@@ -6581,7 +6581,7 @@ Mobile Suit Gundam SEED Movie I- The Empty Battlefield (2004):
       Title: Special Edition I- The Empty Battlefield
     Mobile Suit Gundam SEED (2012):
       Absolute Episode: ''
-      Anime: true
+      Anime: false
       Episode:
       - 2
       Parsed Episode: ''
@@ -6610,7 +6610,7 @@ Mobile Suit Gundam SEED Movie II- The Far-Away Dawn (2004):
   Shows:
     Mobile Suit Gundam SEED:
       Absolute Episode: ''
-      Anime: true
+      Anime: false
       Episode:
       - 3
       Parsed Episode: ''
@@ -6626,7 +6626,7 @@ Mobile Suit Gundam SEED Movie II- The Far-Away Dawn (2004):
       Title: Special Edition II- The Far-Away Dawn
     Mobile Suit Gundam SEED (2012):
       Absolute Episode: ''
-      Anime: true
+      Anime: false
       Episode:
       - 3
       Parsed Episode: ''
@@ -6655,7 +6655,7 @@ Mobile Suit Gundam SEED Movie III- The Rumbling Sky (2004):
   Shows:
     Mobile Suit Gundam SEED:
       Absolute Episode: ''
-      Anime: true
+      Anime: false
       Episode:
       - 4
       Parsed Episode: ''
@@ -6671,7 +6671,7 @@ Mobile Suit Gundam SEED Movie III- The Rumbling Sky (2004):
       Title: Special Edition III- The Rumbling Sky
     Mobile Suit Gundam SEED (2012):
       Absolute Episode: ''
-      Anime: true
+      Anime: false
       Episode:
       - 4
       Parsed Episode: ''

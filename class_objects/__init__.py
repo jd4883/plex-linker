@@ -1,6 +1,5 @@
 #!/usr/bin/env python3.7
 import time
-from os import environ
 from class_objects.sonarr_api import *
 from IO.YAML.yaml_to_object import (get_yaml_dictionary,
                                     get_variable_from_yaml)
@@ -15,6 +14,7 @@ from movies.movie.movie_gets import (get_absolute_movie_file_path,
 from movies.movie.movie_puts import (set_movie_quality)
 from movies.movie.movie_validation import (validate_extensions_from_movie_file,
                                            validated_movie_path_is_not_null)
+from movies.movie.shows.show.show_gets import get_anime_status_from_api
 from movies.movies_gets import (get_absolute_movies_path,
                                 get_relative_movies_path)
 from movies.movies_puts import (set_nested_dictionary_key_value_pair,
@@ -24,9 +24,7 @@ from class_objects.sonarr_api import *
 
 class Globals:
 	def __init__(self):
-		print('hit show lookups')
 		self.sonarr = SonarrAPI()
-		print('api object made')
 		self.MEDIA_PATH = str(environ['DOCKER_MEDIA_PATH'])
 		self.MEDIA_DIRECTORY = str(environ["HOST_MEDIA_PATH"])
 		self.LOG = get_logger(get_log_name())
@@ -118,9 +116,13 @@ class Show(Movie,
 		# remove monitored status)
 		# tag with genre names
 		print(self.show_lookup)
-		print(f"SHOW ROOT FOLDER: {self.show_lookup['path']}".replace(str(environ['SONARR_ROOT_PATH_PREFIX'],'')))
+		try:
+			print(str(self.show_lookup['path']).replace(str(environ['SONARR_ROOT_PATH_PREFIX']),
+			                                            ''))
+		except:
+			pass
 		print(f"SHOW TVDB ID: {self.show_lookup['tvdbId']}")
-		print(f"SHOW SERIES TYPE: {self.show_lookup['seriesType']}")  # if anime else
+		# print(f"SHOW SERIES TYPE: {self.show_lookup['seriesType']}")  # if anime else
 		print(f"SHOW SEASON: {self.show_lookup['seasons'][0]}")
 		print(f"SHOW GENRES: {self.show_lookup['genres']}")
 		
@@ -137,14 +139,8 @@ class Show(Movie,
 			set_nested_dictionary_key_value_pair(g.movies_dictionary_object[movie]['Shows'][show]['Absolute Episode'],
 			                                     str())
 		self.anime_status = \
-			set_nested_dictionary_key_value_pair(g.movies_dictionary_object[movie]['Shows'][show]['Anime'],
-			                                     False)
-		
-		self.dictionary_of_shows = \
-			set_nested_dictionary_key_value_pair(g.movies_dictionary_object[movie]['Shows'],
-			                                     [{}])
-		self.root_folders = str()
-		
+			g.movies_dictionary_object[movie]['Shows'][show]['Anime'] = \
+			get_anime_status_from_api(self.show_lookup)
 		self.parsed_title = \
 			set_nested_dictionary_key_value_pair(g.movies_dictionary_object[movie]['Shows'][show]['Parsed Show Title'],
 			                                     str())

@@ -51,3 +51,10 @@ def get_alphabetical_specials_string(g):
 	method_exit(g)
 	return "Season 00"  # create sonarr API call here to get the name dynamically
 
+
+def get_anime_status_from_api(show_lookup):
+	if show_lookup['seriesType'] == 'anime':
+		status = True
+	else:
+		status = False
+	return status

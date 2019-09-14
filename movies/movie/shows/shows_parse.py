@@ -36,6 +36,7 @@ def parse_shows_dictionary_object(movie_class_object,
                                   g):
 	method_launch(g)
 	for show in g.movies_dictionary_object[movie_class_object.movie_title]['Shows'].keys():
+		show = str(show)
 		try:
 			if validate_strings_match(
 					f'{str(g.movies_dictionary_object[movie_class_object.movie_title]["Shows"][show]["Relative Show File Path"])} -> {readlink(str(g.movies_dictionary_object[movie_class_object.movie_title]["Shows"][show]["Relative Show File Path"]))}', \
