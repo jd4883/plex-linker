@@ -10,7 +10,7 @@ from movies.movies_puts import set_working_directory_to_media_path
 
 def set_file_mask_with_chmod_on_files_and_links(path,
                                                 g):
-	path = str(path).replace('/video/video/', '/video/')
+	path = str(path)
 	Path(str(path)).touch()
 	method_launch(g)
 	os.chmod(path,

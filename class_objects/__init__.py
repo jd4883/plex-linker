@@ -122,10 +122,23 @@ class Show(Movie,
 			self.sonarr_api_query = g.sonarr.lookup_series(str(self.show))[0]
 		except IndexError or FileNotFoundError:
 			return
-		set_dictionary_show_root_path(self.sonarr_api_query, self.show, g,
+		set_dictionary_show_root_path(self.sonarr_api_query,
+		                              self.show,
+		                              g,
 		                              movie)
-		self.show_root_path = set_show_root_folder_path(self.show, g, movie)
-		self.season = set_season_dictionary_value(self.sonarr_api_query, self.show, g, movie)
+		self.show_root_path = set_show_root_folder_path(self.show,
+		                                                g,
+		                                                movie)
+		self.season = set_season_dictionary_value(self.sonarr_api_query,
+		                                          self.show,
+		                                          g,
+		                                          movie)
+		try:
+			self.raw_episodes = \
+				g.sonarr.get_episodes_by_series_id()
+			print(self.raw_episodes)
+		except:
+			print('exception hit instead of hitting the API endpoint for episodes')
 		self.parsed_season = \
 			g.movies_dictionary_object[movie]['Shows'][self.show]['Parsed Season'] = str(get_season(self, g)).zfill(2)
 		self.episode = \
