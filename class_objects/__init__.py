@@ -16,7 +16,9 @@ from movies.movie.movie_puts import (set_movie_quality)
 from movies.movie.movie_validation import (validate_extensions_from_movie_file,
                                            validated_movie_path_is_not_null)
 from movies.movie.shows.show.episode.episode_gets import (get_season)
-from movies.movie.shows.show.show_gets import get_anime_status_from_api
+from movies.movie.shows.show.show_gets import get_anime_status_from_api, get_show_id
+from movies.movie.shows.show.show_puts import set_season_dictionary_value, set_show_root_folder_path, \
+	set_dictionary_show_root_path
 from movies.movies_gets import (get_absolute_movies_path,
                                 get_relative_movies_path)
 from movies.movies_puts import (set_nested_dictionary_key_value_pair,
@@ -114,30 +116,20 @@ class Show(Movie,
 		set_working_directory_to_media_path(str(environ['DOCKER_MEDIA_PATH']))
 		
 		self.show = str(show)
-		self.series_id = self.get_show_id(g,
-		                                  movie)
+		self.series_id = get_show_id(self.show, g,
+		                             movie)
 		try:
 			self.sonarr_api_query = g.sonarr.lookup_series(str(self.show))[0]
 		except IndexError or FileNotFoundError:
 			return
-		try:
-			g.movies_dictionary_object[movie]['Shows'][self.show]['Show Root Path'] = \
-				str(self.sonarr_api_query['path']).replace(str(environ['SONARR_ROOT_PATH_PREFIX']),
-				                                           '')
-		except:
-			g.movies_dictionary_object[movie]['Shows'][self.show]['Show Root Path'] = str()
-		self.show_root_path = g.movies_dictionary_object[movie]['Shows'][self.show]['Show Root Path']
-		print(f"SHOW TVDB ID: {self.sonarr_api_query['tvdbId']}")
-		# print(f"SHOW SERIES TYPE: {self.sonarr_api_query['seriesType']}")  # if anime else
-		
-		#print(f"Show ID: {self.sonarr_api_query['id']}") # need to figure out the correct way to do this
-		self.season = self.set_season_dictionary_value(g, movie)
+		set_dictionary_show_root_path(self.sonarr_api_query, self.show, g,
+		                              movie)
+		self.show_root_path = set_show_root_folder_path(self.show, g, movie)
+		self.season = set_season_dictionary_value(self.sonarr_api_query, self.show, g, movie)
 		self.parsed_season = \
-			g.movies_dictionary_object[movie]['Shows'][self.show]['Parsed Season'] = \
-			str(get_season(self, g)).zfill(2)
+			g.movies_dictionary_object[movie]['Shows'][self.show]['Parsed Season'] = str(get_season(self, g)).zfill(2)
 		self.episode = \
-			g.movies_dictionary_object[movie]['Shows'][self.show]['Parsed Episode'] = \
-			str()
+			g.movies_dictionary_object[movie]['Shows'][self.show]['Parsed Episode'] = str()
 		self.absolute_episode = \
 			set_nested_dictionary_key_value_pair(g.movies_dictionary_object[movie]['Shows'][self.show]['Absolute Episode'],
 			                                     str())
@@ -156,21 +148,3 @@ class Show(Movie,
 			set_nested_dictionary_key_value_pair(
 				g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Relative Show File Path'],
 				str())
-	
-	def get_show_id(self,
-	                g,
-	                movie):
-		for item in g.shows_dictionary:
-			if item['title'] == self.show:
-				g.movies_dictionary_object[movie]['Shows'][self.show]['Show ID'] = int(item['id'])
-				return g.movies_dictionary_object[movie]['Shows'][self.show]['Show ID']
-	
-	def set_season_dictionary_value(self,
-	                                g,
-	                                movie):
-		if self.sonarr_api_query['seasons'][0]['seasonNumber'] != 0:
-			g.movies_dictionary_object[movie]['Shows'][self.show]['Season'] = 0
-		else:
-			g.movies_dictionary_object[movie]['Shows'][self.show]['Season'] = \
-				self.sonarr_api_query['seasons'][0].pop('seasonNumber')
-		return g.movies_dictionary_object[movie]['Shows'][self.show]['Season']

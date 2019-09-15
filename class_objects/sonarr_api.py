@@ -40,6 +40,7 @@ class SonarrAPI(object):
 	
 	def set_series_tags(self,
 	                    label):
+		label = str(label).lower()
 		return self.request_put(f"{self.host_url}/series/{self.series_id}/tag&label={label}").json()
 	
 	def constuct_series_json(self,
@@ -63,7 +64,8 @@ class SonarrAPI(object):
 		}
 	
 	# ENDPOINT SERIES LOOKUP
-	def lookup_series(self, query):
+	def lookup_series(self,
+	                  query):
 		return self.request_get(f"{self.host_url}/series/lookup?term={query}").json()
 	
 	# REQUESTS STUFF

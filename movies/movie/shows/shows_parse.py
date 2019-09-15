@@ -36,9 +36,15 @@ def parse_shows_dictionary_object(self,
 	method_launch(g)
 	for show in g.movies_dictionary_object[self.movie_title]['Shows'].keys():
 		show = str(show)
-		# for genre in self.sonarr_api_query['genres']:
-		# 	g.sonarr.set_series_tags(self.series_id,
-		# 	                         str(genre).lower())
+		try:
+			tv_show = create_tv_show_class_object(self,
+			                                      show,
+			                                      g)
+		except:
+			continue
+		# for genre in tv_show.sonarr_api_query['genres']:
+		# 	g.sonarr.set_series_tags(tv_show.series_id,
+		# 	                         genre)
 		# 	print(f'Genre set with API: {str(genre).lower()}')
 		try:
 			if validate_strings_match(
@@ -60,12 +66,6 @@ def parse_shows_dictionary_object(self,
 			g.movies_dictionary_object[self.movie_title]["Parsed Movie File"] = str()
 			# need to add additional resets here to clean up the conditions
 			print(f'Checking for presence of "{self.movie_title}"')
-			try:
-				tv_show = create_tv_show_class_object(self,
-				                                      show,
-				                                      g)
-			except:
-				continue
 			parse_show_to_link(tv_show,
 			                   g)
 

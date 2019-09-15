@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
+from os import environ
+
 from messaging.frontend import (method_exit,
                                 method_launch)
-from movies.movie.shows.show.episode.episode_gets import (get_season,
-                                                          get_season_folder)
+from methods_to_deprecate.init_value import deprecated_set_season_value, deprecated_set_anime_status
+from movies.movie.shows.show.episode.episode_gets import (get_season_folder)
 from movies.movie.shows.show.show_gets import (get_fully_parsed_show_with_absolute_episode,
                                                get_fully_parsed_show_without_absolute_episode)
 from movies.movie.shows.show.show_puts import (init_show_object,
@@ -15,19 +17,8 @@ def parse_show(show_object,
                g):
 	method_launch(g)
 	init_show_object(show_object)
-	
-	# should be removable
-	if not show_object.anime_status:
-		show_object.anime_status = g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Anime']
-		print('SET ANIME STATUS FIELD: this should go away when the class object is instantiated each run')
-	if not show_object.season:
-		if g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season']:
-			show_object.season = \
-				g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season']
-		else:
-			show_object.season = \
-				g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season'] = str(0)
-		print('SET SEASON FIELD: this should go away when the class object is instantiated each run')
+	deprecated_set_anime_status(g, show_object)
+	deprecated_set_season_value(g, show_object)
 	show_object.season_folder = \
 		g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Parsed Season Folder'] = \
 		get_season_folder(show_object,
@@ -73,3 +64,7 @@ def parse_show_title_from_show_dictionary(show_object,
 def get_parsed_show_title(show_object):
 	return " ".join((show_object.parsed_title,
 	                 show_object.quality))
+
+
+def parse_root_path_string(sonarr_api_query):
+	return str(sonarr_api_query['path']).replace(str(environ['SONARR_ROOT_PATH_PREFIX']), '')

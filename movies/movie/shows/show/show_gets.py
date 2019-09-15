@@ -56,3 +56,11 @@ def get_anime_status_from_api(show_lookup):
 	else:
 		status = False
 	return status
+
+
+def get_show_id(show, g,
+                movie):
+	for item in g.shows_dictionary:
+		if item['title'] == show:
+			g.movies_dictionary_object[movie]['Shows'][show]['Show ID'] = int(item['id'])
+			return g.movies_dictionary_object[movie]['Shows'][show]['Show ID']

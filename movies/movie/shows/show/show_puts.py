@@ -7,6 +7,7 @@ from messaging.frontend import (display_show_class_attributes,
                                 method_exit,
                                 method_launch)
 from movies.movie.shows.show.episode.episode_gets import (get_padded_episode_number)
+from movies.movie.shows.show.show_parser import parse_root_path_string
 
 
 def set_show_root_path(show_object,
@@ -60,3 +61,26 @@ def set_episode_padding(show_object,
 		show_object.absolute_episode = "-".join(
 			[get_padded_episode_number(e, 2, g) for e in show_object.absolute_episode])
 	method_exit(g)
+
+
+def set_season_dictionary_value(sonarr_api_query, show, g,
+                                movie):
+	if sonarr_api_query['seasons'][0]['seasonNumber'] != 0:
+		g.movies_dictionary_object[movie]['Shows'][show]['Season'] = 0
+	else:
+		g.movies_dictionary_object[movie]['Shows'][show]['Season'] = \
+			sonarr_api_query['seasons'][0].pop('seasonNumber')
+	return g.movies_dictionary_object[movie]['Shows'][show]['Season']
+
+
+def set_show_root_folder_path(show, g, movie):
+	return g.movies_dictionary_object[movie]['Shows'][show]['Show Root Path']
+
+
+def set_dictionary_show_root_path(sonarr_api_query, show, g,
+                                  movie):
+	try:
+		g.movies_dictionary_object[movie]['Shows'][show]['Show Root Path'] = \
+			parse_root_path_string(sonarr_api_query)
+	except KeyError:
+		g.movies_dictionary_object[movie]['Shows'][show]['Show Root Path'] = str()
