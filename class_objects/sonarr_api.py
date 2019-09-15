@@ -12,26 +12,16 @@ class SonarrAPI(object):
 		self.host_url = str(environ['SONARR_URL'])
 		self.api_key = str(environ['SONARR_API_KEY'])
 	
-	# ENDPOINT COMMAND
-	def command(self):
-		pass
-	
-	# ENDPOINT DISKSPACE
-	def get_diskspace(self):
-		return self.request_get(f"{self.host_url}/diskspace").json()
-	
 	# ENDPOINT EPISODE
-	def get_episodes_by_series_id(self,
-	                              series_id):
-		return self.request_get(f"{self.host_url}/episode?seriesId={series_id}").json()
+	def get_episodes_by_series_id(self):
+		return self.request_get(f"{self.host_url}/episode?seriesId={self.series_id}").json()
 	
 	def get_episode_by_episode_id(self,
 	                              episode_id):
 		return self.request_get(f"{self.host_url}/episode/{episode_id}").json()
 	
-	def get_episode_files_by_series_id(self,
-	                                   series_id):
-		return self.request_get(f"{self.host_url}/episodefile?seriesId={series_id}").json()
+	def get_episode_files_by_series_id(self):
+		return self.request_get(f"{self.host_url}/episodefile?seriesId={self.series_id}").json()
 	
 	def get_episode_file_by_episode_id(self,
 	                                   episode_id):
@@ -45,24 +35,27 @@ class SonarrAPI(object):
 	def get_series(self):
 		return self.request_get(f"{self.host_url}/series").json()
 	
-	def get_series_by_series_id(self,
-	                            series_id):
-		return self.request_get(f"{self.host_url}/series/{series_id}").json()
+	def get_series_by_series_id(self):
+		return self.request_get(f"{self.host_url}/series/{self.series_id}").json()
 	
-	def constuct_series_json(self, tvdbId, quality_profile):
-		res = self.request_get("{}/series/lookup?term={}".format(self.host_url, 'tvdbId:' + str(tvdbId)))
-		s_dict = res.json()[0]
-		root = self.get_root_folder()[0]['path']
+	def set_series_tags(self,
+	                    label):
+		return self.request_put(f"{self.host_url}/series/{self.series_id}/tag&label={label}").json()
+	
+	def constuct_series_json(self,
+	                         tvdbId,
+	                         quality_profile):
+		res = self.request_get(f"{self.host_url}/series/lookup?term={'tvdbId:' + str(tvdbId)}")
 		return {
-			'title': s_dict['title'],
-			'seasons': s_dict['seasons'],
-			'path': root + s_dict['title'],
+			'title': res.json()[0]['title'],
+			'seasons': res.json()[0]['seasons'],
+			'path': self.get_root_folder()[0]['path'] + res.json()[0]['title'],
 			'qualityProfileId': quality_profile,
 			'seasonFolder': True,
 			'monitored': True,
 			'tvdbId': tvdbId,
-			'images': s_dict['images'],
-			'titleSlug': s_dict['titleSlug'],
+			'images': res.json()[0]['images'],
+			'titleSlug': res.json()[0]['titleSlug'],
 			"addOptions": {
 				"ignoreEpisodesWithFiles": False,
 				"ignoreEpisodesWithoutFiles": False

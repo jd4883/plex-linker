@@ -46,8 +46,8 @@ def get_fully_parsed_show_without_absolute_episode(self,
 	                                            f"{self.path}/{self.season_folder}/{self.show} - " \
 	                                            f"S{self.season}E{self.episode} - {self.title}")
 
-def get_alphabetical_specials_string(g):
-	return "Season 00"  # create sonarr API call here to get the name dynamically
+def get_alphabetical_specials_string():
+	return f"Season {str(0).zfill(2)}"  # create sonarr API call here to get the name dynamically
 
 
 def get_anime_status_from_api(show_lookup):

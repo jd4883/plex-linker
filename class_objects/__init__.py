@@ -1,8 +1,9 @@
 #!/usr/bin/env python3.7
 import time
-from class_objects.sonarr_api import *
+
 from IO.YAML.yaml_to_object import (get_yaml_dictionary,
                                     get_variable_from_yaml)
+from class_objects.sonarr_api import *
 from logs.bin.get_parameters import (get_method_main,
                                      get_logger,
                                      get_log_name)
@@ -14,17 +15,19 @@ from movies.movie.movie_gets import (get_absolute_movie_file_path,
 from movies.movie.movie_puts import (set_movie_quality)
 from movies.movie.movie_validation import (validate_extensions_from_movie_file,
                                            validated_movie_path_is_not_null)
+from movies.movie.shows.show.episode.episode_gets import (get_season)
 from movies.movie.shows.show.show_gets import get_anime_status_from_api
 from movies.movies_gets import (get_absolute_movies_path,
                                 get_relative_movies_path)
 from movies.movies_puts import (set_nested_dictionary_key_value_pair,
                                 set_working_directory_to_media_path)
-from class_objects.sonarr_api import *
-from movies.movie.shows.show.episode.episode_gets import (get_season)
+
 
 class Globals:
 	def __init__(self):
 		self.sonarr = SonarrAPI()
+		self.shows_dictionary = self.sonarr.get_series()
+		#self.movies_dictionary = self.radarr # get full library
 		self.MEDIA_PATH = str(environ['DOCKER_MEDIA_PATH'])
 		self.MEDIA_DIRECTORY = str(environ["HOST_MEDIA_PATH"])
 		self.LOG = get_logger(get_log_name())
@@ -109,26 +112,29 @@ class Show(Movie,
 		super().__init__(movie,
 		                 g)
 		set_working_directory_to_media_path(str(environ['DOCKER_MEDIA_PATH']))
-		from movies.movie.shows.show.show_gets import get_alphabetical_specials_string
-
+		
 		self.show = str(show)
-		self.sonarr_api_query = g.sonarr.lookup_series(str(self.show))[0]
-		# remove monitored status)
-		# tag with genre names
-		print(self.sonarr_api_query)
+		self.series_id = self.get_show_id(g,
+		                                  movie)
 		try:
-			print(str(self.sonarr_api_query['path']).replace(str(environ['SONARR_ROOT_PATH_PREFIX']),
-			                                            ''))
+			self.sonarr_api_query = g.sonarr.lookup_series(str(self.show))[0]
+		except IndexError or FileNotFoundError:
+			return
+		try:
+			g.movies_dictionary_object[movie]['Shows'][self.show]['Show Root Path'] = \
+				str(self.sonarr_api_query['path']).replace(str(environ['SONARR_ROOT_PATH_PREFIX']),
+				                                           '')
 		except:
-			pass
+			g.movies_dictionary_object[movie]['Shows'][self.show]['Show Root Path'] = str()
+		self.show_root_path = g.movies_dictionary_object[movie]['Shows'][self.show]['Show Root Path']
 		print(f"SHOW TVDB ID: {self.sonarr_api_query['tvdbId']}")
 		# print(f"SHOW SERIES TYPE: {self.sonarr_api_query['seriesType']}")  # if anime else
-		print(f"SHOW GENRES: {self.sonarr_api_query['genres']}")
-		#print(f"SHOW ID: {self.sonarr_api_query['id']}") # need to figure out the correct way to do this
+		
+		#print(f"Show ID: {self.sonarr_api_query['id']}") # need to figure out the correct way to do this
 		self.season = self.set_season_dictionary_value(g, movie)
 		self.parsed_season = \
 			g.movies_dictionary_object[movie]['Shows'][self.show]['Parsed Season'] = \
-			get_season(self, g)
+			str(get_season(self, g)).zfill(2)
 		self.episode = \
 			g.movies_dictionary_object[movie]['Shows'][self.show]['Parsed Episode'] = \
 			str()
@@ -150,6 +156,14 @@ class Show(Movie,
 			set_nested_dictionary_key_value_pair(
 				g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Relative Show File Path'],
 				str())
+	
+	def get_show_id(self,
+	                g,
+	                movie):
+		for item in g.shows_dictionary:
+			if item['title'] == self.show:
+				g.movies_dictionary_object[movie]['Shows'][self.show]['Show ID'] = int(item['id'])
+				return g.movies_dictionary_object[movie]['Shows'][self.show]['Show ID']
 	
 	def set_season_dictionary_value(self,
 	                                g,

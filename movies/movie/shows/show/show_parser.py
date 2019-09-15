@@ -26,7 +26,7 @@ def parse_show(show_object,
 				g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season']
 		else:
 			show_object.season = \
-				g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season'] = 0
+				g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season'] = str(0)
 		print('SET SEASON FIELD: this should go away when the class object is instantiated each run')
 	show_object.season_folder = \
 		g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Parsed Season Folder'] = \

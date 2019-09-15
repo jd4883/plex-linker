@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-from class_objects.sonarr_api import *
 from os import readlink
 
 from jobs.set_path_permissions import (set_permissions)
@@ -32,38 +31,43 @@ def parse_show_to_link(show,
 	method_exit(g)
 
 
-def parse_shows_dictionary_object(movie_class_object,
+def parse_shows_dictionary_object(self,
                                   g):
 	method_launch(g)
-	for show in g.movies_dictionary_object[movie_class_object.movie_title]['Shows'].keys():
+	for show in g.movies_dictionary_object[self.movie_title]['Shows'].keys():
 		show = str(show)
+		# for genre in self.sonarr_api_query['genres']:
+		# 	g.sonarr.set_series_tags(self.series_id,
+		# 	                         str(genre).lower())
+		# 	print(f'Genre set with API: {str(genre).lower()}')
 		try:
 			if validate_strings_match(
-					f'{str(g.movies_dictionary_object[movie_class_object.movie_title]["Shows"][show]["Relative Show File Path"])} -> {readlink(str(g.movies_dictionary_object[movie_class_object.movie_title]["Shows"][show]["Relative Show File Path"]))}', \
-					g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Symlinked']):
-				if get_live_link(str(g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show][
-					                     'Relative Show File Path'])) and \
-						(check_if_valid_symlink_destination(str(
-							g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show][
-								'Relative Show File Path'])) and
-						 (check_if_valid_symlink_target(str(g.movies_dictionary_object[movie_class_object.movie_title]["Parsed Movie File"])))):
-					print(f"No action required for {movie_class_object.movie_title}")
+					f'{str(g.movies_dictionary_object[self.movie_title]["Shows"][show]["Relative Show File Path"])} -> {readlink(str(g.movies_dictionary_object[self.movie_title]["Shows"][show]["Relative Show File Path"]))}', \
+					g.movies_dictionary_object[self.movie_title]['Shows'][show]['Symlinked']):
+				if get_live_link(
+						str(g.movies_dictionary_object[self.movie_title]['Shows'][show]['Relative Show File Path'])) and \
+						(check_if_valid_symlink_destination(
+							str(g.movies_dictionary_object[self.movie_title]['Shows'][show]['Relative Show File Path'])) and
+						 (check_if_valid_symlink_target(
+							 str(g.movies_dictionary_object[self.movie_title]["Parsed Movie File"])))):
+					print(f"No action required for {self.movie_title}")
 					# make an official message handler here
-					g.list_of_linked_movies.append(movie_class_object.movie_title)
+					g.list_of_linked_movies.append(self.movie_title)
 					continue
 		except FileNotFoundError:
-			g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Symlinked'] = str()
-			g.movies_dictionary_object[movie_class_object.movie_title]['Shows'][show]['Relative Show File Path'] = str()
-			g.movies_dictionary_object[movie_class_object.movie_title]["Parsed Movie File"] = str()
+			g.movies_dictionary_object[self.movie_title]['Shows'][show]['Symlinked'] = str()
+			g.movies_dictionary_object[self.movie_title]['Shows'][show]['Relative Show File Path'] = str()
+			g.movies_dictionary_object[self.movie_title]["Parsed Movie File"] = str()
 			# need to add additional resets here to clean up the conditions
-			print(f'Checking for presence of "{movie_class_object.movie_title}"')
-			tv_show = create_tv_show_class_object(movie_class_object,
-			                                      show,
-			                                      g)
+			print(f'Checking for presence of "{self.movie_title}"')
+			try:
+				tv_show = create_tv_show_class_object(self,
+				                                      show,
+				                                      g)
+			except:
+				continue
 			parse_show_to_link(tv_show,
 			                   g)
-		finally:
-			method_exit(g)
 
 
 # noinspection PySameParameterValue
