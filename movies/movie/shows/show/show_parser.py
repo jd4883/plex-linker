@@ -4,17 +4,14 @@ from os import environ
 from messaging.frontend import (method_exit,
                                 method_launch)
 from methods_to_deprecate.init_value import deprecated_set_season_value, deprecated_set_anime_status
-from movies.movie.shows.show.episode.episode_gets import (get_season_folder)
-from movies.movie.shows.show.show_gets import (get_fully_parsed_show_with_absolute_episode,
-                                               get_fully_parsed_show_without_absolute_episode)
-from movies.movie.shows.show.show_puts import (init_show_object,
-                                               set_episode_padding)
+from movies.movie.shows.show.episode.episode_gets import (get_season_folder, get_padded_episode_number)
 from movies.movies_puts import (create_directory_if_not_present,
                                 set_nested_dictionary_key_value_pair)
 
 
 def parse_show(show_object,
                g):
+	from movies.movie.shows.show.show_puts import init_show_object
 	method_launch(g)
 	init_show_object(show_object)
 	deprecated_set_anime_status(g, show_object)
@@ -24,14 +21,24 @@ def parse_show(show_object,
 		get_season_folder(show_object,
 		                  g)
 	show_object.episode = \
-		set_nested_dictionary_key_value_pair(g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Episode'],
-		                                     str())
+		set_nested_dictionary_key_value_pair(
+			g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Episode'],
+			str())
 	show_object.absolute_episode = \
 		set_nested_dictionary_key_value_pair(g.movies_dictionary_object[show_object.movie_title]['Shows'][
 			                                     show_object.show]['Absolute Episode'],
 		                                     str())
-	set_episode_padding(show_object,
-	                    g)
+	method_launch(g)
+	if show_object.anime_status:
+		show_object.episode = "-".join(
+			[get_padded_episode_number(e, 3, g) for e in show_object.episode])
+		show_object.absolute_episode = "-".join(
+			[get_padded_episode_number(e, 3, g) for e in show_object.absolute_episode])
+	else:
+		show_object.episode = "-".join([get_padded_episode_number(e, 2, g) for e in show_object.episode])
+		show_object.absolute_episode = "-".join(
+			[get_padded_episode_number(e, 2, g) for e in show_object.absolute_episode])
+	method_exit(g)
 	show_object.parsed_relative_title = \
 		set_nested_dictionary_key_value_pair(g.movies_dictionary_object[show_object.movie_title]['Shows'][
 			                                     show_object.show]['Parsed Relative Show Title'],
@@ -52,11 +59,14 @@ def parse_show_title_from_show_dictionary(show_object,
 			g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Title'] = \
 			show_object.movie_title
 	if show_object.absolute_episode:
-		show_object.parsed_title = get_fully_parsed_show_with_absolute_episode(show_object,
-		                                                                       g)
+		show_object.parsed_title = set_nested_dictionary_key_value_pair(
+			g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Parsed Show Title'],
+			f"{show_object.path}/{show_object.season_folder}/{show_object.show} - S{show_object.season}E{show_object.episode} (E{show_object.absolute_episode}) - {show_object.title}")
 	else:
-		show_object.parsed_title = get_fully_parsed_show_without_absolute_episode(show_object,
-		                                                                          g)
+		show_object.parsed_title = set_nested_dictionary_key_value_pair(
+			g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Parsed Show Title'],
+			f"{show_object.path}/{show_object.season_folder}/{show_object.show} - " \
+			f"S{show_object.season}E{show_object.episode} - {show_object.title}")
 	method_exit(g)
 	return show_object.parsed_title
 

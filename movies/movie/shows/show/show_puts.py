@@ -6,7 +6,6 @@ from os.path import (abspath,
 from messaging.frontend import (display_show_class_attributes,
                                 method_exit,
                                 method_launch)
-from movies.movie.shows.show.episode.episode_gets import (get_padded_episode_number)
 from movies.movie.shows.show.show_parser import parse_root_path_string
 
 
@@ -46,21 +45,6 @@ def set_show(show_object,
 def init_show_object(show_object):
 	show_object.title = show_object.show
 	chdir(str(environ['DOCKER_MEDIA_PATH']))
-
-
-def set_episode_padding(show_object,
-                        g):
-	method_launch(g)
-	if show_object.anime_status:
-		show_object.episode = "-".join(
-			[get_padded_episode_number(e, 3, g) for e in show_object.episode])
-		show_object.absolute_episode = "-".join(
-			[get_padded_episode_number(e, 3, g) for e in show_object.absolute_episode])
-	else:
-		show_object.episode = "-".join([get_padded_episode_number(e, 2, g) for e in show_object.episode])
-		show_object.absolute_episode = "-".join(
-			[get_padded_episode_number(e, 2, g) for e in show_object.absolute_episode])
-	method_exit(g)
 
 
 def set_season_dictionary_value(sonarr_api_query, show, g,
