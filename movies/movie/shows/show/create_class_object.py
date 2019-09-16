@@ -19,20 +19,21 @@ def create_tv_show_class_object(self,
 	# fields from here are all valid from the API call to parse out
 	
 	# need to play with radarr as well as plex API calls for more functionality and cleaning up functions
-	print(f"episode to compare: {tv_show_class_object.episode}")
-	print(f'season to compare: {tv_show_class_object.season}')
-	for episode in tv_show_class_object.raw_episodes:
-		# print(f"Season number to potentially parse: {episode['seasonNumber']}")
-		if (int(episode['seasonNumber']) == int(tv_show_class_object.season)) and (int(episode['episodeNumber']) == int(
-				tv_show_class_object.episode)):
-			print(tv_show_class_object.raw_episodes[episode])
-			exit(-1)
-		# if str(episode['episodeNumber']) == str(tv_show_class_object.episode):
-		# 	print(f"Episode found: {episode['episodeNumber']}")
-		# else:
-		# 	print(f"episode is not a match: {episode['episodeNumber']}")
-	exit(-1)
-	# tv_show_class_object.raw_episodes[show]['seasonNumber']
+	# print(f"episode to compare: {tv_show_class_object.episode}")
+	# print(f'season to compare: {tv_show_class_object.season}')
+	# this area is ugly but it works, need to get the episode ID and parse it out later
+	# for episode in tv_show_class_object.raw_episodes:
+	# 	# print(f"Season number to potentially parse: {episode['seasonNumber']}")
+	# 	if (int(episode['seasonNumber']) == int(tv_show_class_object.season)) and (int(episode['episodeNumber']) == int(
+	# 			tv_show_class_object.episode)):
+	# 		print(tv_show_class_object.raw_episodes[episode])
+	# 		exit(-1)
+	# 	# if str(episode['episodeNumber']) == str(tv_show_class_object.episode):
+	# 	# 	print(f"Episode found: {episode['episodeNumber']}")
+	# 	# else:
+	# 	# 	print(f"episode is not a match: {episode['episodeNumber']}")
+	# exit(-1)
+	# # tv_show_class_object.raw_episodes[show]['seasonNumber']
 	# tv_show_class_object.raw_episodes[show]['episodeNumber']
 	# tv_show_class_object.raw_episodes[show]['title']
 	# tv_show_class_object.raw_episodes[show]['episodeFile']['relativePath']
