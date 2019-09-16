@@ -22,6 +22,8 @@ def create_tv_show_class_object(self,
 	for episode in tv_show_class_object.raw_episodes:
 		if episode['episodeNumber'] == tv_show_class_object.episode:
 			print(f"Episode found: {episode}")
+		else:
+			print(f"episode is not a match: {episode}")
 	exit(-1)
 	# tv_show_class_object.raw_episodes[show]['seasonNumber']
 	# tv_show_class_object.raw_episodes[show]['episodeNumber']
