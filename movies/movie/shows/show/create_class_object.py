@@ -20,7 +20,6 @@ def create_tv_show_class_object(self,
 	
 	# need to play with radarr as well as plex API calls for more functionality and cleaning up functions
 	try:
-		print(f"Theoretically this is the show via API call: {tv_show_class_object.raw_episodes['title'][show]}")
 		print(f"Theoretically this is the show via API call: {tv_show_class_object.raw_episodes[show]}")
 		print(f"Theoretically this is the show via API call: {tv_show_class_object.raw_episodes[show]['episodeNumber']}")
 	except KeyError as err:
