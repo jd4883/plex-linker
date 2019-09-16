@@ -10,12 +10,16 @@ from movies.movies_puts import set_working_directory_to_media_path
 
 def set_file_mask_with_chmod_on_files_and_links(path,
                                                 g):
-	path = str(path)
-	Path(str(path)).touch()
 	method_launch(g)
-	os.chmod(path,
-	         0o775)
+	try:
+		path = str(path)
+		Path(str(path)).touch()
+		os.chmod(path,
+		         0o775)
+	except FileNotFoundError:
+		pass
 	method_exit(g)
+	
 
 
 def set_permissions(movie_class_object,
@@ -27,10 +31,13 @@ def set_permissions(movie_class_object,
 
 
 def set_ownership_on_files_and_links(path):
-	Path(str(path)).touch()
-	fd = os.open(f"{path}",
-	             os.O_RDONLY)
-	os.fchown(fd,
-	          int(environ['PUID']),
-	          int(environ['PGID']))
-	os.close(fd)
+	try:
+		Path(str(path)).touch()
+		fd = os.open(f"{path}",
+		             os.O_RDONLY)
+		os.fchown(fd,
+		          int(environ['PUID']),
+		          int(environ['PGID']))
+		os.close(fd)
+	except FileNotFoundError:
+		pass

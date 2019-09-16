@@ -43,6 +43,11 @@ class SonarrAPI(object):
 		label = str(label).lower()
 		return self.request_put(f"{self.host_url}/series/{self.series_id}/tag&label={label}").json()
 	
+	def set_new_tag_for_sonarr(self,
+	                           label):
+		label = str(label).lower()
+		return self.request_put(f"{self.host_url}/tag&label={label}").json()
+	
 	def constuct_series_json(self,
 	                         tvdbId,
 	                         quality_profile):

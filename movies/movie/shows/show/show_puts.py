@@ -57,10 +57,6 @@ def set_season_dictionary_value(sonarr_api_query, show, g,
 	return g.movies_dictionary_object[movie]['Shows'][show]['Season']
 
 
-def set_show_root_folder_path(show, g, movie):
-	return g.movies_dictionary_object[movie]['Shows'][show]['Show Root Path']
-
-
 def set_dictionary_show_root_path(sonarr_api_query, show, g,
                                   movie):
 	try:

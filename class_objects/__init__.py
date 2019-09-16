@@ -17,8 +17,7 @@ from movies.movie.movie_validation import (validate_extensions_from_movie_file,
                                            validated_movie_path_is_not_null)
 from movies.movie.shows.show.episode.episode_gets import (get_season)
 from movies.movie.shows.show.show_gets import get_anime_status_from_api, get_show_id
-from movies.movie.shows.show.show_puts import set_season_dictionary_value, set_show_root_folder_path, \
-	set_dictionary_show_root_path
+from movies.movie.shows.show.show_puts import set_season_dictionary_value, set_dictionary_show_root_path
 from movies.movies_gets import (get_absolute_movies_path,
                                 get_relative_movies_path)
 from movies.movies_puts import (set_nested_dictionary_key_value_pair,
@@ -28,6 +27,7 @@ from movies.movies_puts import (set_nested_dictionary_key_value_pair,
 class Globals:
 	def __init__(self):
 		self.sonarr = SonarrAPI()
+		self.sonarr_genres = []
 		self.shows_dictionary = self.sonarr.get_series()
 		#self.movies_dictionary = self.radarr # get full library
 		self.MEDIA_PATH = str(environ['DOCKER_MEDIA_PATH'])
@@ -37,8 +37,8 @@ class Globals:
 		self.MOVIE_EXTENSIONS = get_variable_from_yaml("Movie Extensions")
 		self.SHOWS_PATH = get_variable_from_yaml("Show Directories")
 		self.movies_dictionary_object = get_yaml_dictionary()
-		self.list_of_linked_movies = list()
-		self.list_of_movies_to_locate = list()
+		self.list_of_linked_movies = []
+		self.list_of_movies_to_locate = []
 		self.method = \
 			self.parent_method = \
 			get_method_main()
@@ -122,23 +122,22 @@ class Show(Movie,
 			self.sonarr_api_query = g.sonarr.lookup_series(str(self.show))[0]
 		except IndexError or FileNotFoundError:
 			return
-		set_dictionary_show_root_path(self.sonarr_api_query,
-		                              self.show,
-		                              g,
-		                              movie)
-		self.show_root_path = set_show_root_folder_path(self.show,
-		                                                g,
-		                                                movie)
+		self.show_root_path = self.set_show_root_path(g,
+		                                              movie)
 		self.season = set_season_dictionary_value(self.sonarr_api_query,
 		                                          self.show,
 		                                          g,
 		                                          movie)
-		try:
-			self.raw_episodes = \
-				g.sonarr.get_episodes_by_series_id()
-			print(self.raw_episodes)
-		except:
-			print('exception hit instead of hitting the API endpoint for episodes')
+		self.raw_episodes = self.api_test_get_episodes_from_series(g)
+		# print(f'API Output to Parse: {self.sonarr_api_query}')
+		for genre in self.sonarr_api_query['genres']:
+			if str(genre).lower() not in g.sonarr_genres:
+				g.sonarr_genres.append(str(genre).lower())
+			# try:
+			# 	g.sonarr.set_new_tag_for_sonarr(str(genre).lower())
+			# except:
+			# 	print('tag probably already exists and the API call failed')
+		
 		self.parsed_season = \
 			g.movies_dictionary_object[movie]['Shows'][self.show]['Parsed Season'] = str(get_season(self, g)).zfill(2)
 		self.episode = \
@@ -161,3 +160,19 @@ class Show(Movie,
 			set_nested_dictionary_key_value_pair(
 				g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Relative Show File Path'],
 				str())
+	
+	def set_show_root_path(self, g, movie):
+		set_dictionary_show_root_path(self.sonarr_api_query,
+		                              self.show,
+		                              g,
+		                              movie)
+		return  g.movies_dictionary_object[movie]['Shows'][self.show]['Show Root Path']
+	
+	def api_test_get_episodes_from_series(self, g):
+		try:
+			api_output = g.sonarr.get_episode_files_by_series_id()
+			# print(api_output)
+		except:
+			#print('exception hit instead of hitting the API endpoint for episodes')
+			api_output = str()
+		return api_output
