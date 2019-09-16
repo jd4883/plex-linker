@@ -38,12 +38,9 @@ def get_absolute_movie_file_path(movie):
 # noinspection PyUnusedLocal
 def get_relative_movie_file_path(movie,
                                  g):
-	method_launch(g)
 	try:
 		movie.absolute_movie_path = \
 			abspath(str(movie.relative_movie_path))
-		# this is a really hackish way to fix this and should later be done in a non-patching way
-		method_exit(g)
 		return str(relpath(movie.absolute_movie_path, str(environ['DOCKER_MEDIA_PATH'])))
 	except AttributeError:
 		pass
