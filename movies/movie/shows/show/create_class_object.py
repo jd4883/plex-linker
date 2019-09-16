@@ -19,7 +19,7 @@ def create_tv_show_class_object(self,
 	# fields from here are all valid from the API call to parse out
 	
 	# need to play with radarr as well as plex API calls for more functionality and cleaning up functions
-	
+	print(tv_show_class_object.raw_episodes[show])
 	# tv_show_class_object.raw_episodes[index]['episodeNumber']
 	# tv_show_class_object.raw_episodes[index]['seasonNumber']
 	# tv_show_class_object.raw_episodes[index]['episodeNumber']
