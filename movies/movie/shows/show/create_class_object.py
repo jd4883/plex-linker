@@ -23,8 +23,8 @@ def create_tv_show_class_object(self,
 		print(f"Theoretically this is the show via API call: {tv_show_class_object.raw_episodes['title'][show]}")
 		print(f"Theoretically this is the show via API call: {tv_show_class_object.raw_episodes[show]}")
 		print(f"Theoretically this is the show via API call: {tv_show_class_object.raw_episodes[show]['episodeNumber']}")
-	except:
-		print('except hit sorry bro not the correct API call syntax')
+	except KeyError as err:
+		print(f'except hit sorry bro not the correct API call syntax, error {err}')
 	# tv_show_class_object.raw_episodes[show]['seasonNumber']
 	# tv_show_class_object.raw_episodes[show]['episodeNumber']
 	# tv_show_class_object.raw_episodes[show]['title']
