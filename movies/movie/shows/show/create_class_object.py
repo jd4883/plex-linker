@@ -26,6 +26,7 @@ def create_tv_show_class_object(self,
 		if (int(episode['seasonNumber']) == int(tv_show_class_object.season)) and (int(episode['episodeNumber']) == int(
 				tv_show_class_object.episode)):
 			print('we should parse an episode')
+			exit(-1)
 		# if str(episode['episodeNumber']) == str(tv_show_class_object.episode):
 		# 	print(f"Episode found: {episode['episodeNumber']}")
 		# else:
