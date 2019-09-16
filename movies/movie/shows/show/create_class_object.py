@@ -19,13 +19,10 @@ def create_tv_show_class_object(self,
 	# fields from here are all valid from the API call to parse out
 	
 	# need to play with radarr as well as plex API calls for more functionality and cleaning up functions
-	try:
-		for episode in tv_show_class_object.raw_episodes:
-			print(f"Episode from API: {episode}")
-			print(episode['episodeNumber'])
-		# print(f"Theoretically this is the show via API call: {tv_show_class_object.raw_episodes['episodeNumber']['1']}")
-	except KeyError as err:
-		print(f'except hit sorry bro not the correct API call syntax, error {err}')
+	# for episode in tv_show_class_object.raw_episodes:
+	# 	if episode['episodeNumber'] == tv_show_class_object.episode:
+	# 		print(f"Episode found: {episode}")
+	# exit(-1)
 	# tv_show_class_object.raw_episodes[show]['seasonNumber']
 	# tv_show_class_object.raw_episodes[show]['episodeNumber']
 	# tv_show_class_object.raw_episodes[show]['title']
