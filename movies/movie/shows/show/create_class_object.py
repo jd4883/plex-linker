@@ -19,22 +19,26 @@ def create_tv_show_class_object(self,
 	# fields from here are all valid from the API call to parse out
 	
 	# need to play with radarr as well as plex API calls for more functionality and cleaning up functions
-	print(tv_show_class_object.raw_episodes[show])
-	# tv_show_class_object.raw_episodes[index]['episodeNumber']
-	# tv_show_class_object.raw_episodes[index]['seasonNumber']
-	# tv_show_class_object.raw_episodes[index]['episodeNumber']
-	# tv_show_class_object.raw_episodes[index]['title']
-	# tv_show_class_object.raw_episodes[index]['episodeFile']['relativePath']
-	# tv_show_class_object.raw_episodes[index]['path']
-	# tv_show_class_object.raw_episode_files[index]['quality']['quality']['name']
-	# tv_show_class_object.raw_episode_files[index]['monitored'] = False
-	# tv_show_class_object.raw_episode_files[index]['hasfile']
-	# tv_show_class_object.raw_episode_files[index]['episodeid']
-	# tv_show_class_object.raw_episode_files[index]['absoluteEpisodeNumber']
-	# tv_show_class_object.raw_episode_files[index]['mediaInfo']['videoCodec']
-	# tv_show_class_object.raw_episode_files[index]['mediaInfo']['audioCodec']
-	# tv_show_class_object.raw_episode_files[index]['mediaInfo']['audioChannels']
-	
+	try:
+		print(f"Theoretically this is the show via API call: {tv_show_class_object.raw_episodes['title'][show]}")
+		print(f"Theoretically this is the show via API call: {tv_show_class_object.raw_episodes[show]}")
+		print(f"Theoretically this is the show via API call: {tv_show_class_object.raw_episodes[show]['episodeNumber']}")
+	except:
+		print('except hit sorry bro not the correct API call syntax')
+	# tv_show_class_object.raw_episodes[show]['seasonNumber']
+	# tv_show_class_object.raw_episodes[show]['episodeNumber']
+	# tv_show_class_object.raw_episodes[show]['title']
+	# tv_show_class_object.raw_episodes[show]['episodeFile']['relativePath']
+	# tv_show_class_object.raw_episodes[show]['path']
+	# tv_show_class_object.raw_episode_files[show]['quality']['quality']['name']
+	# tv_show_class_object.raw_episode_files[show]['monitored'] = False
+	# tv_show_class_object.raw_episode_files[show]['hasfile']
+	# tv_show_class_object.raw_episode_files[show]['episodeid']
+	# tv_show_class_object.raw_episode_files[show]['absoluteEpisodeNumber']
+	# tv_show_class_object.raw_episode_files[show]['mediaInfo']['videoCodec']
+	# tv_show_class_object.raw_episode_files[show]['mediaInfo']['audioCodec']
+	# tv_show_class_object.raw_episode_files[show]['mediaInfo']['audioChannels']
+	#
 	
 	
 	for genre in sorted(g.sonarr_genres):
