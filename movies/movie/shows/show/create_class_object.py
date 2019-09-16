@@ -19,13 +19,11 @@ def create_tv_show_class_object(self,
 	# fields from here are all valid from the API call to parse out
 	
 	# need to play with radarr as well as plex API calls for more functionality and cleaning up functions
-	for key,value in tv_show_class_object.raw_episodes.items():
-		if str(key['episodeNumber']) == str(tv_show_class_object.episode):
-			print(f"Episode found: {key}")
-			print(f'value: {value}')
+	for episode in tv_show_class_object.raw_episodes.items():
+		if str(episode['episodeNumber']) == str(tv_show_class_object.episode):
+			print(f"Episode found: {episode['episodeNumber']}")
 		else:
-			print(f"episode is not a match: {key}")
-			print(f'value: {value}')
+			print(f"episode is not a match: {episode['episodeNumber']}")
 	exit(-1)
 	# tv_show_class_object.raw_episodes[show]['seasonNumber']
 	# tv_show_class_object.raw_episodes[show]['episodeNumber']
