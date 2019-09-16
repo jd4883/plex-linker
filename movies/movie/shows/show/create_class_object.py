@@ -25,7 +25,7 @@ def create_tv_show_class_object(self,
 		# print(f"Season number to potentially parse: {episode['seasonNumber']}")
 		if (int(episode['seasonNumber']) == int(tv_show_class_object.season)) and (int(episode['episodeNumber']) == int(
 				tv_show_class_object.episode)):
-			print(f'we should parse an episode {episode}')
+			print(tv_show_class_object.raw_episodes[episode])
 			exit(-1)
 		# if str(episode['episodeNumber']) == str(tv_show_class_object.episode):
 		# 	print(f"Episode found: {episode['episodeNumber']}")
