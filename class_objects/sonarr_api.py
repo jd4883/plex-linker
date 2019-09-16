@@ -6,6 +6,7 @@ from os import environ
 import requests
 
 
+# noinspection PyDefaultArgument,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction
 class SonarrAPI(object):
 	
 	def __init__(self):
@@ -13,15 +14,20 @@ class SonarrAPI(object):
 		self.api_key = str(environ['SONARR_API_KEY'])
 	
 	# ENDPOINT EPISODE
-	def get_episodes_by_series_id(self):
-		return self.request_get(f"{self.host_url}/episode?seriesId={self.series_id}").json()
+	def get_episodes_by_series_id(self,
+	                              series_id):
+		return self.request_get(f"{self.host_url}/episode?seriesId={series_id}").json()
 	
 	def get_episode_by_episode_id(self,
 	                              episode_id):
 		return self.request_get(f"{self.host_url}/episode/{episode_id}").json()
 	
-	def get_episode_files_by_series_id(self):
-		return self.request_get(f"{self.host_url}/episodefile?seriesId={self.series_id}").json()
+	def get_all_tag_ids(self):
+		return self.request_get(f"{self.host_url}/tag").json()
+	
+	def get_episode_files_by_series_id(self,
+	                                   series_id):
+		return self.request_get(f"{self.host_url}/episodefile?seriesId={series_id}").json()
 	
 	def get_episode_file_by_episode_id(self,
 	                                   episode_id):
@@ -35,23 +41,31 @@ class SonarrAPI(object):
 	def get_series(self):
 		return self.request_get(f"{self.host_url}/series").json()
 	
-	def get_series_by_series_id(self):
-		return self.request_get(f"{self.host_url}/series/{self.series_id}").json()
+	def get_series_by_series_id(self,
+	                            series_id):
+		return self.request_get(f"{self.host_url}/series/{series_id}").json()
 	
+	# noinspection PyDefaultArgument
 	def set_series_tags(self,
-	                    label):
+	                    label,
+	                    series_id,
+	                    data={}):
 		label = str(label).lower()
-		return self.request_put(f"{self.host_url}/series/{self.series_id}/tag&label={label}").json()
+		return self.request_post(f"{self.host_url}/series/{series_id}/tag&label={label}",
+		                         data).json()
 	
+	# noinspection PyDefaultArgument
 	def set_new_tag_for_sonarr(self,
-	                           label):
+	                           label,
+	                           data={}):
 		label = str(label).lower()
-		return self.request_put(f"{self.host_url}/tag&label={label}").json()
+		return self.request_post(f"{self.host_url}/tag&label={label}",
+		                         data).json()
 	
 	def constuct_series_json(self,
-	                         tvdbId,
+	                         tvdbid,
 	                         quality_profile):
-		res = self.request_get(f"{self.host_url}/series/lookup?term={'tvdbId:' + str(tvdbId)}")
+		res = self.request_get(f"{self.host_url}/series/lookup?term={'tvdbId:' + str(tvdbid)}")
 		return {
 			'title': res.json()[0]['title'],
 			'seasons': res.json()[0]['seasons'],
@@ -59,7 +73,7 @@ class SonarrAPI(object):
 			'qualityProfileId': quality_profile,
 			'seasonFolder': True,
 			'monitored': True,
-			'tvdbId': tvdbId,
+			'tvdbId': tvdbid,
 			'images': res.json()[0]['images'],
 			'titleSlug': res.json()[0]['titleSlug'],
 			"addOptions": {

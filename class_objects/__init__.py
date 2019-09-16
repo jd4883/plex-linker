@@ -16,8 +16,10 @@ from movies.movie.movie_puts import (set_movie_quality)
 from movies.movie.movie_validation import (validate_extensions_from_movie_file,
                                            validated_movie_path_is_not_null)
 from movies.movie.shows.show.episode.episode_gets import (get_season)
-from movies.movie.shows.show.show_gets import get_anime_status_from_api, get_show_id
-from movies.movie.shows.show.show_puts import set_season_dictionary_value, set_dictionary_show_root_path
+from movies.movie.shows.show.show_gets import (get_anime_status_from_api,
+                                               get_show_id)
+from movies.movie.shows.show.show_puts import set_season_dictionary_value
+from movies.movie.shows.shows_parse import set_show_root_path
 from movies.movies_gets import (get_absolute_movies_path,
                                 get_relative_movies_path)
 from movies.movies_puts import (set_nested_dictionary_key_value_pair,
@@ -29,7 +31,7 @@ class Globals:
 		self.sonarr = SonarrAPI()
 		self.sonarr_genres = []
 		self.shows_dictionary = self.sonarr.get_series()
-		#self.movies_dictionary = self.radarr # get full library
+		# self.movies_dictionary = self.radarr # get full library
 		self.MEDIA_PATH = str(environ['DOCKER_MEDIA_PATH'])
 		self.MEDIA_DIRECTORY = str(environ["HOST_MEDIA_PATH"])
 		self.LOG = get_logger(get_log_name())
@@ -95,8 +97,7 @@ class Movie(Movies,
 			                  g)
 			self.absolute_movie_file_path = \
 				set_nested_dictionary_key_value_pair(g.movies_dictionary_object[title]['Absolute Movie File Path'],
-				                                     get_absolute_movie_file_path(self,
-				                                                                  g))
+				                                     get_absolute_movie_file_path(self))
 			g.movies_dictionary_object[title]['Relative Movie File Path'] = str()
 			self.relative_movie_file_path = \
 				set_nested_dictionary_key_value_pair(g.movies_dictionary_object[title]['Relative Movie File Path'],
@@ -104,9 +105,9 @@ class Movie(Movies,
 				                                                                  g))
 
 
-# noinspection ProblematicWhitespace
 class Show(Movie,
            Globals):
+	# noinspection PyDeepBugsBinOperand
 	def __init__(self,
 	             show,
 	             movie,
@@ -116,28 +117,24 @@ class Show(Movie,
 		set_working_directory_to_media_path(str(environ['DOCKER_MEDIA_PATH']))
 		
 		self.show = str(show)
-		self.series_id = get_show_id(self.show, g,
-		                             movie)
+		g.movies_dictionary_object[movie]['Shows'][show]['Show ID'] = \
+			get_show_id(self.show,
+			            g)
 		try:
 			self.sonarr_api_query = g.sonarr.lookup_series(str(self.show))[0]
-		except IndexError or FileNotFoundError:
+		except (IndexError or FileNotFoundError) as err:
+			print(f"{g.method} had a IndexError or FileNotFoundError: {err}")  # testing
+			self.sonarr_api_query = str()
 			return
-		self.show_root_path = self.set_show_root_path(g,
-		                                              movie)
+		g.movies_dictionary_object[movie]['Shows'][self.show]['Anime'] = get_anime_status_from_api(self.sonarr_api_query)
+		self.show_root_path = set_show_root_path(self.sonarr_api_query,
+		                                         self.show,
+		                                         g,
+		                                         movie)
 		self.season = set_season_dictionary_value(self.sonarr_api_query,
 		                                          self.show,
 		                                          g,
 		                                          movie)
-		self.raw_episodes = self.api_test_get_episodes_from_series(g)
-		# print(f'API Output to Parse: {self.sonarr_api_query}')
-		for genre in self.sonarr_api_query['genres']:
-			if str(genre).lower() not in g.sonarr_genres:
-				g.sonarr_genres.append(str(genre).lower())
-			# try:
-			# 	g.sonarr.set_new_tag_for_sonarr(str(genre).lower())
-			# except:
-			# 	print('tag probably already exists and the API call failed')
-		
 		self.parsed_season = \
 			g.movies_dictionary_object[movie]['Shows'][self.show]['Parsed Season'] = str(get_season(self, g)).zfill(2)
 		self.episode = \
@@ -145,12 +142,11 @@ class Show(Movie,
 		self.absolute_episode = \
 			set_nested_dictionary_key_value_pair(g.movies_dictionary_object[movie]['Shows'][self.show]['Absolute Episode'],
 			                                     str())
-		self.anime_status = \
-			g.movies_dictionary_object[movie]['Shows'][self.show]['Anime'] = \
-			get_anime_status_from_api(self.sonarr_api_query)
+		
 		self.parsed_title = \
-			set_nested_dictionary_key_value_pair(g.movies_dictionary_object[movie]['Shows'][self.show]['Parsed Show Title'],
-			                                     str())
+			set_nested_dictionary_key_value_pair(
+				g.movies_dictionary_object[movie]['Shows'][self.show]['Parsed Show Title'],
+				str())
 		
 		self.parsed_relative_title = \
 			set_nested_dictionary_key_value_pair(
@@ -160,19 +156,3 @@ class Show(Movie,
 			set_nested_dictionary_key_value_pair(
 				g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Relative Show File Path'],
 				str())
-	
-	def set_show_root_path(self, g, movie):
-		set_dictionary_show_root_path(self.sonarr_api_query,
-		                              self.show,
-		                              g,
-		                              movie)
-		return  g.movies_dictionary_object[movie]['Shows'][self.show]['Show Root Path']
-	
-	def api_test_get_episodes_from_series(self, g):
-		try:
-			api_output = g.sonarr.get_episode_files_by_series_id()
-			# print(api_output)
-		except:
-			#print('exception hit instead of hitting the API endpoint for episodes')
-			api_output = str()
-		return api_output

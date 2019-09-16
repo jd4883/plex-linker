@@ -32,12 +32,14 @@ def set_show(show_object,
 	init_show_object(show_object)
 	display_show_class_attributes(show_object,
 	                              g)
+	# noinspection PyUnusedLocal
 	try:
 		if get_show_root_path(show_object,
 		                      g):  # parent_movie_dictionary_object may be worth adding as an arg here
 			set_show_root_path(show_object,
 			                   g)
-	except TypeError:
+	except TypeError as err:
+		# print(f"{g.method} had an error: {err}")  # testing
 		pass
 	method_exit(g)
 
@@ -50,7 +52,7 @@ def init_show_object(show_object):
 def set_season_dictionary_value(sonarr_api_query, show, g,
                                 movie):
 	if sonarr_api_query['seasons'][0]['seasonNumber'] != 0:
-		g.movies_dictionary_object[movie]['Shows'][show]['Season'] = 0
+		g.movies_dictionary_object[movie]['Shows'][show]['Season'] = str(0)
 	else:
 		g.movies_dictionary_object[movie]['Shows'][show]['Season'] = \
 			sonarr_api_query['seasons'][0].pop('seasonNumber')
@@ -62,5 +64,6 @@ def set_dictionary_show_root_path(sonarr_api_query, show, g,
 	try:
 		g.movies_dictionary_object[movie]['Shows'][show]['Show Root Path'] = \
 			parse_root_path_string(sonarr_api_query)
-	except KeyError:
+	except KeyError as err:
+		print(f"{g.method} had a AttributeError: {err}")  # testing
 		g.movies_dictionary_object[movie]['Shows'][show]['Show Root Path'] = str()

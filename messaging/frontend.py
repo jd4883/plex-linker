@@ -12,13 +12,6 @@ def print_movie_file_quality(movie,
 	                          movie.quality))
 
 
-def print_season_parsed_value(show_object,
-                              g):
-	g.LOG.debug(debug_message(603,
-	                          g,
-	                          show_object.season))
-
-
 def message_exiting_function(g):
 	chdir(g.MEDIA_DIRECTORY)
 	g.LOG.debug(debug_message(601,

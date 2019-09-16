@@ -29,12 +29,14 @@ def parse_all_movies_in_yaml_dictionary(g):
 	method_launch(g)
 	for movie in g.movies_dictionary_object:
 		str(movie).replace(":", "-")
+		# noinspection PyUnusedLocal
 		try:
 			if sorted(g.movies_dictionary_object[movie]['Shows']):
 				parse_shows_dictionary_object(Movie(movie,
 				                                    g),
 				                              g)
-		except TypeError:
-			continue
+		except TypeError as err:
+			# print(f"{g.method} had a TypeError{err}")  # testing
+			pass
 	sorted(g.movies_dictionary_object)
 	method_exit(g)

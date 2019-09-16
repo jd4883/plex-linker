@@ -50,8 +50,8 @@ def validate_movie_extension(movie,
 def validated_movie_path_is_not_null(movie,
                                      g):
 	from os import listdir
-	method_launch(g)
 	if movie.absolute_movie_path:
+		# noinspection PyUnusedLocal
 		try:
 			if len(listdir(movie.absolute_movie_path)) == 0 or \
 					movie.absolute_movie_path.endswith("None" or None) \
@@ -60,8 +60,8 @@ def validated_movie_path_is_not_null(movie,
 				message_no_items_found_to_parse(g)
 				method_exit(g)
 				return False
-		except FileNotFoundError:
-			method_exit(g)
+		except FileNotFoundError as err:
+			# print(f"{g.method} had an error: {err}")  # testing
 			return False
 	method_exit(g)
 	return True

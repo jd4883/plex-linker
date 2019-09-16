@@ -26,23 +26,16 @@ def set_movie_quality(movie,
 	method_launch(globals_class_object)
 	movie.movie_file = \
 		globals_class_object.movies_dictionary_object[movie.movie_title]['Parsed Movie File'] = \
-		str(get_movie_file(movie,
-		                   globals_class_object))
+		str(get_movie_file(movie))
 	movie.extension = \
 		globals_class_object.movies_dictionary_object[movie.movie_title]['Parsed Movie Extension'] = \
-		str(get_movie_extension(movie.extension,
-		                        globals_class_object))
+		str(get_movie_extension(movie.extension))
 	movie.quality = \
 		globals_class_object.movies_dictionary_object[movie.movie_title]['Parsed Movie Quality'] = \
-		str(get_movie_quality(movie.quality,
-		                      globals_class_object))
+		str(get_movie_quality(movie.quality))
 	method_exit(globals_class_object)
 
 
 def set_relative_movie_path(self,
-                            globals_class_object):
-	method_launch(globals_class_object)
-	# noinspection LongLine
-	globals_class_object.movies_dictionary_object[self.movie_title].update(
-		{'Relative Movie Path': self.relative_movie_path})
-	method_exit(globals_class_object)
+                            g):
+	g.movies_dictionary_object[self.movie_title].update({'Relative Movie Path': self.relative_movie_path})

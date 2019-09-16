@@ -16,7 +16,8 @@ def symlink_force(show_class_object,
 	try:
 		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show][
 			'Relative Show File Path'] = show_class_object.relative_show_path
-	except AttributeError:
+	except AttributeError as err:
+		print(f"{g.method} had a AttributeError: {err}")  # testing
 		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show][
 			'Relative Show File Path'] = str()
 	g.movies_dictionary_object[show_class_object.movie_title][
@@ -35,7 +36,8 @@ def symlink_force(show_class_object,
 		                stdout=PIPE)
 		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show]['Symlinked'] = \
 			strip_quotes_from_string(f"{process.communicate()[0].strip()}").replace('b"', str())[:-1].rstrip()
-		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show]['Relative Show File Path'] = \
+		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show][
+			'Relative Show File Path'] = \
 			show_class_object.relative_show_path
 		g.list_of_linked_movies.append(show_class_object.movie_title)
 	else:

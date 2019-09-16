@@ -1,18 +1,14 @@
 #!/usr/bin/env python3
 
-from messaging.frontend import (
-	method_exit,
-	method_launch,
-	print_method_shows_dictionary_value,
-)
-from movies.movie.shows.show.show_puts import set_show
+from messaging.frontend import (method_exit,
+                                method_launch,
+                                print_method_shows_dictionary_value)
+from movies.movie.shows.show.show_puts import (set_show)
 from movies.movie.shows.show.show_validation import (validate_show_path_presence)
 
 
 def get_show_root_path(show_object,
                        g):
-	method_launch(g)
-	method_exit(g)
 	if validate_show_path_presence(show_object,
 	                               g):
 		return True
@@ -43,9 +39,21 @@ def get_anime_status_from_api(show_lookup):
 	return status
 
 
-def get_show_id(show, g,
-                movie):
+def get_show_id(show,
+                g):
 	for item in g.shows_dictionary:
 		if item['title'] == show:
-			g.movies_dictionary_object[movie]['Shows'][show]['Show ID'] = int(item['id'])
-			return g.movies_dictionary_object[movie]['Shows'][show]['Show ID']
+			return int(item['id'])
+	return str()
+
+
+def get_tag_id(show,
+               g,
+               movie,
+               tag):
+	api_results = g.sonarr.get_all_tag_ids()['id']
+	if not g.movies_dictionary_object[movie]['Shows'][show]['Show Tags']:
+		g.movies_dictionary_object[movie]['Shows'][show]['Show Tags'] = list()
+	if tag not in g.movies_dictionary_object[movie]['Shows'][show]['Show Tags'] and api_results[tag]:
+		g.movies_dictionary_object[movie]['Shows'][show]['Show Tags'].append(api_results[tag])
+	return api_results[tag]

@@ -7,7 +7,8 @@ from messaging.frontend import (method_launch,
                                 method_exit)
 from movies.movie.movie_gets import (get_relative_movie_path,
                                      get_movie_path)
-from movies.movie.shows.show.create_class_object import create_tv_show_class_object
+from movies.movie.shows.show.create_class_object import create_tv_show_class_object, get_tag_id
+from movies.movie.shows.show.show_puts import set_dictionary_show_root_path
 from movies.movie.shows.show.show_validation import (validate_ready_to_link_movie_to_show)
 from movies.movie.shows.shows_validation import check_if_valid_symlink_destination, check_if_valid_symlink_target
 
@@ -31,21 +32,16 @@ def parse_show_to_link(show,
 	method_exit(g)
 
 
+# noinspection PyUnusedLocal
 def parse_shows_dictionary_object(self,
                                   g):
 	method_launch(g)
 	for show in g.movies_dictionary_object[self.movie_title]['Shows'].keys():
 		show = str(show)
-		try:
-			tv_show = create_tv_show_class_object(self,
-			                                      show,
-			                                      g)
-		except:
-			continue
-		# for genre in tv_show.sonarr_api_query['genres']:
-		# 	g.sonarr.set_series_tags(tv_show.series_id,
-		# 	                         genre)
-		# 	print(f'Genre set with API: {str(genre).lower()}')
+		tv_show = create_tv_show_class_object(self,
+		                                      show,
+		                                      g)
+		
 		try:
 			if validate_strings_match(
 					f'{str(g.movies_dictionary_object[self.movie_title]["Shows"][show]["Relative Show File Path"])} -> {readlink(str(g.movies_dictionary_object[self.movie_title]["Shows"][show]["Relative Show File Path"]))}', \
@@ -64,10 +60,20 @@ def parse_shows_dictionary_object(self,
 			g.movies_dictionary_object[self.movie_title]['Shows'][show]['Symlinked'] = str()
 			g.movies_dictionary_object[self.movie_title]['Shows'][show]['Relative Show File Path'] = str()
 			g.movies_dictionary_object[self.movie_title]["Parsed Movie File"] = str()
-			# need to add additional resets here to clean up the conditions
 			print(f'Checking for presence of "{self.movie_title}"')
 			parse_show_to_link(tv_show,
 			                   g)
+		try:
+			for genre in tv_show.sonarr_api_query['genres']:
+				g.sonarr.set_series_tags({'label': str(genre).lower()},
+				                         g.movies_dictionary_object[self.movie_title]['Shows'][show]['Show ID'])
+				tag_id = get_tag_id(show,
+				                    g,
+				                    self.movie_title,
+				                    genre)
+		except AttributeError:
+			# this should trigger if the API query is empty, seems to once in a while be the case
+			continue
 
 
 # noinspection PySameParameterValue
@@ -81,8 +87,19 @@ def validate_strings_match(string1,
 def get_live_link(relative_show_path):
 	# probably can make the logic a bit more clever here and check if the path put together from the parsed elements
 	# already has a valid link, if not parse else continue to next item
+	# noinspection PyUnusedLocal
 	try:
 		readlink(relative_show_path)
-	except FileNotFoundError:
+	except FileNotFoundError as err:
+		# print(f"{g.method} had a AttributeError: {err}") # testing
 		return False
 	return True
+
+
+def set_show_root_path(sonarr_api_query, show, g,
+                       movie):
+	set_dictionary_show_root_path(sonarr_api_query,
+	                              show,
+	                              g,
+	                              movie)
+	return g.movies_dictionary_object[movie]['Shows'][show]['Show Root Path']
