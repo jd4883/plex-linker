@@ -17,8 +17,8 @@ def parse_show(show_object,
 		g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Anime'] = False
 	if not g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season']:
 		g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season'] = str(0)
-	show_object.season_folder = \
-		g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Parsed Season Folder'] = \
+	#show_object.season_folder = \
+	g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Parsed Season Folder'] = \
 		get_season_folder(show_object,
 		                  g)
 	show_object.episode = \
@@ -54,7 +54,7 @@ def parse_show_title_from_show_dictionary(show_object,
                                           g):
 	method_launch(g)
 	create_directory_if_not_present("/".join((show_object.path,
-	                                          show_object.season_folder)))
+	                                          g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Parsed Season Folder'])))
 	if not show_object.title:  # adjust to be an api call for sonarr
 		show_object.title = \
 			g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Title'] = \
@@ -62,11 +62,11 @@ def parse_show_title_from_show_dictionary(show_object,
 	if show_object.absolute_episode:
 		show_object.parsed_title = set_nested_dictionary_key_value_pair(
 			g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Parsed Show Title'],
-			f"{show_object.path}/{show_object.season_folder}/{show_object.show} - S{g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season']}E{show_object.episode} (E{show_object.absolute_episode}) - {show_object.title}")
+			f"{show_object.path}/{g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Parsed Season Folder']}/{show_object.show} - S{g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season']}E{show_object.episode} (E{show_object.absolute_episode}) - {show_object.title}")
 	else:
 		show_object.parsed_title = set_nested_dictionary_key_value_pair(
 			g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Parsed Show Title'],
-			f"{show_object.path}/{show_object.season_folder}/{show_object.show} - " \
+			f"{show_object.path}/{g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Parsed Season Folder']}/{show_object.show} - " \
 			f"S{g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season']}E{show_object.episode} - {show_object.title}")
 	method_exit(g)
 	return show_object.parsed_title

@@ -116,3 +116,12 @@ class SonarrAPI(object):
 		return requests.delete(url,
 		                       headers={'X-Api-Key': self.api_key},
 		                       json=data)
+
+
+def sonarr_api_set_tag(g):
+	for genre in sorted(g.sonarr_genres):
+		output = g.sonarr.set_new_tag_for_sonarr({"label": genre})
+		try:
+			g.sonarr.set_new_tag_for_sonarr(str(genre).lower())
+		except:
+			pass
