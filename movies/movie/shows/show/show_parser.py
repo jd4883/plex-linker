@@ -17,7 +17,6 @@ def parse_show(show_object,
 		g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Anime'] = False
 	if not g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season']:
 		g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season'] = str(0)
-	#show_object.season_folder = \
 	g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Parsed Season Folder'] = \
 		get_season_folder(show_object,
 		                  g)
