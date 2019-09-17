@@ -9,21 +9,22 @@ def get_season(self,
 	from movies.movie.shows.show.show_gets import (get_alphabetical_specials_string)
 	if not g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Season'] and \
 			g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Season']:
-		self.parsed_season = get_season_value_from_movies_dictionary(self.movie_dictionary_object,
+		g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Parsed Season'] = \
+			get_season_value_from_movies_dictionary(self.movie_dictionary_object,
 		                                                             self.show,
 		                                                             g)
 	# noinspection PyDeepBugsBinOperand
 	if (g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Season'] is int(0)) or \
 			str(g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Season']).isdigit():
-		self.parsed_season = \
+		g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Parsed Season'] = \
 			str(get_padded_episode_number(g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Season'],
 			                              2))
 	else:
-		self.parsed_season = \
+		g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Parsed Season'] = \
 			str(get_alphabetical_specials_string())  # play with this
 	# add more logic to prevent non-defined dictionary_for_shows to go through
 	method_exit(g)
-	return self.parsed_season
+	return g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Parsed Season']
 
 
 def get_season_folder(self,

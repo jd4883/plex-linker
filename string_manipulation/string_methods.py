@@ -1,4 +1,4 @@
-# noinspection PyBroadException,PyBroadException,PyPep8Naming,PyPep8Naming,PySameParameterValue
+# noinspection PyBroadException,PyBroadException,PyPep8Naming,PyPep8Naming,PySameParameterValue,SpellCheckingInspection
 def getCaseInsensitivePath(path,
                            RET_FOUND=False):
 	"""

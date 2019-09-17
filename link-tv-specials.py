@@ -9,5 +9,4 @@ if __name__ == "__main__":
 	g = Globals()
 	full_movie_database = Movies(g)
 	parse_all_movies_in_yaml_dictionary(g)
-	print(sorted(g.sonarr_genres))
 	write_python_dictionary_object_to_yaml_file(g)

@@ -17,7 +17,7 @@ def symlink_force(show_class_object,
 		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show][
 			'Relative Show File Path'] = show_class_object.relative_show_path
 	except AttributeError as err:
-		print(f"{g.method} had a AttributeError: {err}")  # testing
+		# print(f"{g.method} had a AttributeError: {err}")  # testing
 		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show][
 			'Relative Show File Path'] = str()
 	g.movies_dictionary_object[show_class_object.movie_title][
@@ -28,6 +28,7 @@ def symlink_force(show_class_object,
 			 show_class_object.absolute_movie_file_path.endswith('None') or \
 			 show_class_object.relative_show_path.endswith('None')):
 		chdir('/media/video')
+		# noinspection SpellCheckingInspection
 		process = Popen(["ln",
 		                 "-fsvr",
 		                 f"{show_class_object.absolute_movie_file_path}",

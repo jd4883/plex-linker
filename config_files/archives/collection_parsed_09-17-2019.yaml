@@ -4046,9 +4046,44 @@ Futurama - Bender's Big Score (2007):
   Absolute Movie File Path: ''
   Absolute Movie Path: /media/video/movies/staging/Futurama - Bender's Big Score (2007)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /media/video/movies/staging/Futurama - Bender's Big Score (2007)/Futurama - Bender's Big Score (2007) Bluray-1080p Remux.mkv
+  Parsed Movie File: /media/video/movies/staging/Futurama - Bender's Big Score (2007)//media/video/movies/staging/Futurama
+    - Bender's Big Score (2007)//media/video/movies/staging/Futurama - Bender's Big
+    Score (2007)//media/video/movies/staging/Futurama - Bender's Big Score (2007)//media/video/movies/staging/Futurama
+    - Bender's Big Score (2007)//media/video/movies/staging/Futurama - Bender's Big
+    Score (2007)//media/video/movies/staging/Futurama - Bender's Big Score (2007)//media/video/movies/staging/Futurama
+    - Bender's Big Score (2007)//media/video/movies/staging/Futurama - Bender's Big
+    Score (2007)//media/video/movies/staging/Futurama - Bender's Big Score (2007)//media/video/movies/staging/Futurama
+    - Bender's Big Score (2007)//media/video/movies/staging/Futurama - Bender's Big
+    Score (2007)//media/video/movies/staging/Futurama - Bender's Big Score (2007)//media/video/movies/staging/Futurama
+    - Bender's Big Score (2007)//media/video/movies/staging/Futurama - Bender's Big
+    Score (2007)//media/video/movies/staging/Futurama - Bender's Big Score (2007)//media/video/movies/staging/Futurama
+    - Bender's Big Score (2007)//media/video/movies/staging/Futurama - Bender's Big
+    Score (2007)//media/video/movies/staging/Futurama - Bender's Big Score (2007)//media/video/movies/staging/Futurama
+    - Bender's Big Score (2007)//media/video/movies/staging/Futurama - Bender's Big
+    Score (2007)//media/video/movies/staging/Futurama - Bender's Big Score (2007)//media/video/movies/staging/Futurama
+    - Bender's Big Score (2007)//media/video/movies/staging/Futurama - Bender's Big
+    Score (2007)//media/video/movies/staging/Futurama - Bender's Big Score (2007)//media/video/movies/staging/Futurama
+    - Bender's Big Score (2007)//media/video/movies/staging/Futurama - Bender's Big
+    Score (2007)//media/video/movies/staging/Futurama - Bender's Big Score (2007)//media/video/movies/staging/Futurama
+    - Bender's Big Score (2007)//media/video/movies/staging/Futurama - Bender's Big
+    Score (2007)//media/video/movies/staging/Futurama - Bender's Big Score (2007)//media/video/movies/staging/Futurama
+    - Bender's Big Score (2007)//media/video/movies/staging/Futurama - Bender's Big
+    Score (2007)//media/video/movies/staging/Futurama - Bender's Big Score (2007)//media/video/movies/staging/Futurama
+    - Bender's Big Score (2007)//media/video/movies/staging/Futurama - Bender's Big
+    Score (2007)//media/video/movies/staging/Futurama - Bender's Big Score (2007)//media/video/movies/staging/Futurama
+    - Bender's Big Score (2007)//media/video/movies/staging/Futurama - Bender's Big
+    Score (2007)//media/video/movies/staging/Futurama - Bender's Big Score (2007)//media/video/movies/staging/Futurama
+    - Bender's Big Score (2007)//media/video/movies/staging/Futurama - Bender's Big
+    Score (2007)//media/video/movies/staging/Futurama - Bender's Big Score (2007)//media/video/movies/staging/Futurama
+    - Bender's Big Score (2007)//media/video/movies/staging/Futurama - Bender's Big
+    Score (2007)//media/video/movies/staging/Futurama - Bender's Big Score (2007)//media/video/movies/staging/Futurama
+    - Bender's Big Score (2007)//media/video/movies/staging/Futurama - Bender's Big
+    Score (2007)//media/video/movies/staging/Futurama - Bender's Big Score (2007)//media/video/movies/staging/Futurama
+    - Bender's Big Score (2007)//media/video/movies/staging/Futurama - Bender's Big
+    Score (2007)//media/video/movies/staging/Futurama - Bender's Big Score (2007)//media/video/movies/staging/Futurama
+    - Bender's Big Score (2007)/
   Parsed Movie Quality: Bluray-1080p Remux.mkv
-  Relative Movie File Path: movies/staging/Futurama - Bender's Big Score (2007)/Futurama - Bender's Big Score (2007) Bluray-1080p Remux.mkv
+  Relative Movie File Path: ''
   Relative Movie Path: movies/staging/Futurama - Bender's Big Score (2007)
   Shows:
     Futurama:
@@ -4067,7 +4102,48 @@ Futurama - Bender's Big Score (2007):
       Season: '0'
       Show ID: 284
       Show Root Path: tv/staging/Futurama
-      Symlinked: ''
+      Symlinked: tv/staging/Futurama/Season 00/Futurama - S00E01 - Bender\s Big Score
+        Bluray-1080p Remux.mkv" -> \../../../../movies/staging/Futurama - Bender\\\\\s
+        Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score
+        (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama
+        - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s
+        Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score
+        (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama
+        - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s
+        Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score
+        (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama
+        - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s
+        Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score
+        (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama
+        - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s
+        Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score
+        (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama
+        - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s
+        Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score
+        (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama
+        - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s
+        Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score
+        (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama
+        - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s
+        Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score
+        (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama
+        - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s
+        Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score
+        (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama
+        - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s
+        Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score
+        (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama
+        - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s
+        Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score
+        (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama
+        - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s
+        Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score
+        (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama
+        - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s
+        Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score
+        (2007)/media/video/movies/staging/Futurama - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama
+        - Bender\\\\\s Big Score (2007)/media/video/movies/staging/Futurama - Bender\\\\\s
+        Big Score (2007)
       Title: Bender's Big Score
   Unparsed Movie Title: Futurama - Bender's Big Score (2007)
 Futurama - Bender's Game (2008):

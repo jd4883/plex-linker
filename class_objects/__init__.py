@@ -1,5 +1,6 @@
 #!/usr/bin/env python3.7
 import time
+from os import chdir
 
 from IO.YAML.yaml_to_object import (get_yaml_dictionary,
                                     get_variable_from_yaml)
@@ -16,14 +17,12 @@ from movies.movie.movie_puts import (set_movie_quality)
 from movies.movie.movie_validation import (validate_extensions_from_movie_file,
                                            validated_movie_path_is_not_null)
 from movies.movie.shows.show.episode.episode_gets import (get_season)
-from movies.movie.shows.show.show_gets import (get_anime_status_from_api,
-                                               get_show_id)
-from movies.movie.shows.show.show_puts import set_season_dictionary_value
+from movies.movie.shows.show.show_gets import (get_anime_status_from_api)
+from movies.movie.shows.show.show_puts import set_season_dictionary_value, set_show_id
 from movies.movie.shows.shows_parse import set_show_root_path
 from movies.movies_gets import (get_absolute_movies_path,
                                 get_relative_movies_path)
-from movies.movies_puts import (set_nested_dictionary_key_value_pair,
-                                set_working_directory_to_media_path)
+from movies.movies_puts import (set_nested_dictionary_key_value_pair)
 
 
 class Globals:
@@ -114,16 +113,13 @@ class Show(Movie,
 	             g):
 		super().__init__(movie,
 		                 g)
-		set_working_directory_to_media_path(str(environ['DOCKER_MEDIA_PATH']))
-		
+		chdir(str(environ['DOCKER_MEDIA_PATH']))
 		self.show = str(show)
-		g.movies_dictionary_object[movie]['Shows'][show]['Show ID'] = \
-			get_show_id(self.show,
-			            g)
+		set_show_id(self.show, g)
 		try:
 			self.sonarr_api_query = g.sonarr.lookup_series(str(self.show))[0]
-		except (IndexError or FileNotFoundError) as err:
-			print(f"{g.method} had a IndexError or FileNotFoundError: {err}")  # testing
+		except (IndexError or FileNotFoundError or KeyError) as err:
+			print(f"{g.method} had a IndexError or KeyError or FileNotFoundError: {err}")  # testing
 			self.sonarr_api_query = str()
 			return
 		g.movies_dictionary_object[movie]['Shows'][self.show]['Anime'] = get_anime_status_from_api(self.sonarr_api_query)
@@ -135,8 +131,7 @@ class Show(Movie,
 		                                          self.show,
 		                                          g,
 		                                          movie)
-		self.parsed_season = \
-			g.movies_dictionary_object[movie]['Shows'][self.show]['Parsed Season'] = str(get_season(self, g)).zfill(2)
+		g.movies_dictionary_object[movie]['Shows'][self.show]['Parsed Season'] = str(get_season(self, g)).zfill(2)
 		self.episode = \
 			g.movies_dictionary_object[movie]['Shows'][self.show]['Parsed Episode'] = str()
 		self.absolute_episode = \

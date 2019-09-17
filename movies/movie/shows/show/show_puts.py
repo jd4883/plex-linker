@@ -59,11 +59,16 @@ def set_season_dictionary_value(sonarr_api_query, show, g,
 	return g.movies_dictionary_object[movie]['Shows'][show]['Season']
 
 
-def set_dictionary_show_root_path(sonarr_api_query, show, g,
+def set_dictionary_show_root_path(sonarr_api_query,
+                                  show,
+                                  g,
                                   movie):
 	try:
-		g.movies_dictionary_object[movie]['Shows'][show]['Show Root Path'] = \
-			parse_root_path_string(sonarr_api_query)
-	except KeyError as err:
-		print(f"{g.method} had a AttributeError: {err}")  # testing
+		g.movies_dictionary_object[movie]['Shows'][show]['Show Root Path'] = parse_root_path_string(sonarr_api_query)
+	except KeyError:
 		g.movies_dictionary_object[movie]['Shows'][show]['Show Root Path'] = str()
+
+
+def set_show_id(show, g):
+	from movies.movie.shows.show.show_gets import get_show_id
+	return get_show_id(show, g)
