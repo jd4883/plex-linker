@@ -146,8 +146,11 @@ class Show(Movie,
 			                                         movie)
 		except TypeError:
 			self.show_root_path = str()
-		self.season = set_season_dictionary_value(g.movies_dictionary_object[movie]['Shows'][self.show],
-		                                          self.sonarr_api_query)
+		try:
+			self.season = set_season_dictionary_value(g.movies_dictionary_object[movie]['Shows'][self.show],
+			                                          self.sonarr_api_query)
+		except TypeError:
+			self.season = int(0)
 		self.episode = \
 			g.movies_dictionary_object[movie]['Shows'][self.show]['Parsed Episode'] = str()
 		self.absolute_episode = \
