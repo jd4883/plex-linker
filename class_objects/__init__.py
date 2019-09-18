@@ -128,8 +128,8 @@ class Show(Movie,
 			# condition will always hit if the API returns an empty dictionary
 			self.sonarr_api_query = str()
 			return
-		print(type(g.movies_dictionary_object[self.movie_title])
-		print(type(g.movies_dictionary_object[self.movie_title][self.show])
+		print(type(g.movies_dictionary_object[self.movie_title]))
+		print(type(g.movies_dictionary_object[self.movie_title][self.show]))
 		g.sonarr.get_episodes_by_series_id(g.movies_dictionary_object[self.movie_title][self.show])
 		self.raw_episodes = g.sonarr.get_episodes_by_series_id(g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Show ID'])
 		try:
