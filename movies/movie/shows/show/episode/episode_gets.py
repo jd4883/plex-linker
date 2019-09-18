@@ -7,8 +7,7 @@ def get_season(self,
                g):
 	method_launch(g)
 	from movies.movie.shows.show.show_gets import (get_alphabetical_specials_string)
-	if not g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Season'] and \
-			g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Season']:
+	if g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Season']:
 		g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Parsed Season'] = \
 			get_season_value_from_movies_dictionary(self.movie_dictionary_object,
 		                                                             self.show,

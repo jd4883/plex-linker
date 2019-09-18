@@ -49,14 +49,17 @@ def init_show_object(show_object):
 	chdir(str(environ['DOCKER_MEDIA_PATH']))
 
 
-def set_season_dictionary_value(sonarr_api_query, show, g,
-                                movie):
-	if sonarr_api_query['seasons'][0]['seasonNumber'] != 0:
-		g.movies_dictionary_object[movie]['Shows'][show]['Season'] = str(0)
-	else:
-		g.movies_dictionary_object[movie]['Shows'][show]['Season'] = \
-			sonarr_api_query['seasons'][0].pop('seasonNumber')
-	return g.movies_dictionary_object[movie]['Shows'][show]['Season']
+def set_season_dictionary_value(show,
+                                sonarr_api_query):
+	show['Season'] = str(0)
+	if sonarr_api_query['seasons'][0]['seasonNumber'] == 0:
+		try:
+			result = sonarr_api_query['seasons'][0].pop('seasonNumber')
+			show['Season'] = result
+			return show['Season']
+		except TypeError:
+			pass
+	return show['Season']
 
 
 def set_dictionary_show_root_path(sonarr_api_query,
@@ -65,7 +68,7 @@ def set_dictionary_show_root_path(sonarr_api_query,
                                   movie):
 	try:
 		g.movies_dictionary_object[movie]['Shows'][show]['Show Root Path'] = parse_root_path_string(sonarr_api_query)
-	except KeyError:
+	except KeyError or TypeError:
 		g.movies_dictionary_object[movie]['Shows'][show]['Show Root Path'] = str()
 
 

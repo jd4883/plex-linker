@@ -29,7 +29,7 @@ RUN apk add --no-cache bash openssh libc6-compat util-linux pciutils usbutils co
 COPY . /config/
 RUN pip install --upgrade pip; pip install -r requirements.txt
 # need to build the string a bit cleaner for this rather than use the flat 15 mins
-RUN echo '*/2 *  *  *  * python /config/link-tv-specials.py' > /etc/crontabs/root; cat /etc/crontabs/root
+RUN echo '*/15 *  *  *  * python /config/link-tv-specials.py' > /etc/crontabs/root; cat /etc/crontabs/root
 RUN ["chmod", "+x", "/config/link-tv-specials.py"]
 
 ENV SHOW_FOLDER_DEPTH=1
@@ -38,5 +38,5 @@ ENV MOVIE_FOLDER_DEPTH=1
 ENV DOCKER_MEDIA_PATH=/media/video
 ENV HOST_MEDIA_PATH=/media/video
 
-CMD ["/usr/sbin/crond", "-f", "-d", "3"]
+CMD ["/usr/sbin/crond", "-f", "-d", "8"]
 

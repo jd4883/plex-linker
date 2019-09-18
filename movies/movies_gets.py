@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 from os import (chdir,
                 environ)
-from os.path import (relpath,
-                     abspath)
+from os.path import (relpath)
 
 
 def get_media_collection_parsed_last_time():
@@ -19,10 +18,6 @@ def get_relative_movies_path(self):
 	return relpath(self.absolute_movies_path,
 	               str(environ['DOCKER_MEDIA_PATH']))
 
-
-def get_absolute_movies_path(g):
-	return abspath("/".join((str(environ['DOCKER_MEDIA_PATH']),
-	                         g.MOVIES_PATH[0])))
 #
 #
 # def get_intersection_between_lists(a_set, b_set):

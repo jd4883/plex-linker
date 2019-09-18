@@ -21,6 +21,7 @@ def parse_show_to_link(show,
 		                                        g):
 			symlink_force(show,
 			              g)
+			print('symlink finished supposedly')
 			show.absolute_movie_path = g.movies_dictionary_object[show.movie_title]['Absolute Movie Path'] = \
 				str(get_movie_path(show,
 				                   g))
@@ -36,25 +37,24 @@ def parse_show_to_link(show,
 def parse_shows_dictionary_object(self,
                                   g):
 	method_launch(g)
+	self.movie_dictionary = g.radarr.lookup_movie(self.movie_title)
 	for show in g.movies_dictionary_object[self.movie_title]['Shows'].keys():
 		show = str(show)
 		tv_show = create_tv_show_class_object(self,
 		                                      show,
 		                                      g)
 		
+		tv_show.show_dictionary = g.sonarr.lookup_series(show)
+		
 		try:
 			if validate_strings_match(
 					f'{str(g.movies_dictionary_object[self.movie_title]["Shows"][show]["Relative Show File Path"])} -> {readlink(str(g.movies_dictionary_object[self.movie_title]["Shows"][show]["Relative Show File Path"]))}', \
 					g.movies_dictionary_object[self.movie_title]['Shows'][show]['Symlinked']):
-				if get_live_link(
-						str(g.movies_dictionary_object[self.movie_title]['Shows'][show]['Relative Show File Path'])) and \
-						(check_if_valid_symlink_destination(
-							str(g.movies_dictionary_object[self.movie_title]['Shows'][show]['Relative Show File Path'])) and
-						 (check_if_valid_symlink_target(
-							 str(g.movies_dictionary_object[self.movie_title]["Parsed Movie File"])))):
+				if get_live_link(str(g.movies_dictionary_object[self.movie_title]['Shows'][show]['Relative Show File Path'])) and \
+						(check_if_valid_symlink_destination(str(g.movies_dictionary_object[self.movie_title]['Shows'][show]['Relative Show File Path'])) and
+						 (check_if_valid_symlink_target(str(g.movies_dictionary_object[self.movie_title]["Parsed Movie File"])))):
 					print(f"No action required for {self.movie_title}")
 					# make an official message handler here
-					g.list_of_linked_movies.append(self.movie_title)
 					continue
 		except FileNotFoundError:
 			g.movies_dictionary_object[self.movie_title]['Shows'][show]['Symlinked'] = str()
@@ -63,17 +63,20 @@ def parse_shows_dictionary_object(self,
 			print(f'Checking for presence of "{self.movie_title}"')
 			parse_show_to_link(tv_show,
 			                   g)
-		try:
-			for genre in tv_show.sonarr_api_query['genres']:
-				g.sonarr.set_series_tags({'label': str(genre).lower()},
-				                         g.movies_dictionary_object[self.movie_title]['Shows'][show]['Show ID'])
-				tag_id = get_tag_id(show,
-				                    g,
-				                    self.movie_title,
-				                    genre)
-		except AttributeError:
-			# this should trigger if the API query is empty, seems to once in a while be the case
-			continue
+		# try:
+		# 	for genre in tv_show.sonarr_api_query['genres']:
+		# 		# [g.sonarr.set_new_tag_for_sonarr({"label": str(genre).lower()}) for genre in sorted(tv_show.sonarr)]
+		# 		# [g.sonarr.set_new_tag_for_sonarr(str(genre).lower()) for genre in sorted(g.sonarr_genres)]
+		# 		# definitely need to validate this workas as intended
+		# 		g.sonarr.set_series_tags({'label': str(genre).lower()},
+		# 		                         g.movies_dictionary_object[self.movie_title]['Shows'][show]['Show ID'])
+		# 		tag_id = get_tag_id(show,
+		# 		                    g,
+		# 		                    self.movie_title,
+		# 		                    genre)
+		# except AttributeError:
+		# 	# this should trigger if the API query is empty, seems to once in a while be the case
+		# 	continue
 
 
 # noinspection PySameParameterValue
