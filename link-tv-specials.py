@@ -10,6 +10,8 @@ from class_objects.radarr_api import *
 
 if __name__ == "__main__":
 	g = Globals()
+	# need to work on assignments here, planning to pass the raw Movies, Movie, Shows, and Show dictionary respectfully
+	# towards class objects for reference at init
 	full_movie_database = Movies(g,
 	                             abspath("/".join((str(environ['DOCKER_MEDIA_PATH']),
 	                                                      g.MOVIES_PATH[0]))))
