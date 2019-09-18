@@ -129,11 +129,8 @@ class Show(Movie,
 			self.sonarr_api_query = str()
 			return
 		print(type(g.sonarr.get_episodes_by_series_id(g.movies_dictionary_object[self.movie_title]))
-		try:
-			self.raw_episodes = \
-				g.sonarr.get_episodes_by_series_id(g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Show ID'])
-		except TypeError:
-			pass
+		g.sonarr.get_episodes_by_series_id(g.movies_dictionary_object[self.movie_title].append(self.show)
+		self.raw_episodes = g.sonarr.get_episodes_by_series_id(g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Show ID'])
 		try:
 			self.raw_episode_files = \
 				g.sonarr.get_episode_files_by_series_id(g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Show ID'])
