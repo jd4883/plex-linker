@@ -51,7 +51,12 @@ def init_show_object(show_object):
 
 def set_season_dictionary_value(show,
                                 sonarr_api_query):
-	show['Season'] = str(0)
+	try:
+		show['Season'] = str(0)
+	except TypeError:
+		del show['Season']
+		dict(show)
+		show['Season'] = str(0)
 	if sonarr_api_query['seasons'][0]['seasonNumber'] == 0:
 		try:
 			result = sonarr_api_query['seasons'][0].pop('seasonNumber')

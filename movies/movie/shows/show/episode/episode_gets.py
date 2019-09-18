@@ -13,7 +13,7 @@ def get_season(self,
 		                                                             self.show,
 		                                                             g)
 	# noinspection PyDeepBugsBinOperand
-	if (g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Season'] is int(0)) or \
+	if (g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Season'] == int(0)) or \
 			str(g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Season']).isdigit():
 		g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Parsed Season'] = \
 			str(get_padded_episode_number(g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Season'],
