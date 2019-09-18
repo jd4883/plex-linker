@@ -129,12 +129,16 @@ class Show(Movie,
 			self.sonarr_api_query = str()
 			return
 		g.sonarr.get_episodes_by_series_id(g.movies_dictionary_object[self.movie_title]['Shows'][self.show])
-		self.raw_episodes = g.sonarr.get_episodes_by_series_id(g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Show ID'])
+		try:
+			self.raw_episodes = g.sonarr.get_episodes_by_series_id(g.movies_dictionary_object[self.movie_title]['Shows'][
+			                                                        self.show]['Show ID'])
+		except TypeError:
+			return
 		try:
 			self.raw_episode_files = \
 				g.sonarr.get_episode_files_by_series_id(g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Show ID'])
 		except TypeError:
-			pass
+			return
 		
 		try:
 			self.show_root_path = set_show_root_path(self.sonarr_api_query,
