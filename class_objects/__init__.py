@@ -112,7 +112,6 @@ class Show(Movie,
 		self.show = str(show)
 		self.show_dictionary = self.movie_dictionary['Shows'][self.show]
 		self.sonarr_show_dictionary = g.sonarr.lookup_series(self.show)
-		print(f"show dictionary created: {self.show_dictionary}")
 		set_show_id(self.show, g)
 		try:
 			self.sonarr_api_query = g.sonarr.lookup_series(str(self.show))[0]

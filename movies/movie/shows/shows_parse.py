@@ -42,8 +42,9 @@ def parse_shows_dictionary_object(self,
 		                                      show,
 		                                      g)
 		try:
-			if validate_strings_match(
-					f'{str(tv_show.show_dictionary["Relative Show File Path"])}', \
+			print(f'seeing if bypassing parsing {show} is possible')
+			if tv_show.show_dictionary and tv_show.show_dictionary['Relative Show File Path'] and \
+					validate_strings_match(f'{str(tv_show.show_dictionary["Relative Show File Path"])}', \
 					tv_show.show_dictionary['Symlinked']):
 				if get_live_link(str(tv_show.show_dictionary['Relative Show File Path'])) and \
 						(check_if_valid_symlink_destination(str(tv_show.show_dictionary['Relative Show File Path'])) and
@@ -52,12 +53,14 @@ def parse_shows_dictionary_object(self,
 					# make an official message handler here
 					continue
 		except FileNotFoundError or TypeError:
-			self.movie_dictionary[show]['Symlinked'] = str()
-			self.movie_dictionary[show]['Relative Show File Path'] = str()
-			self.movie_dictionary["Parsed Movie File"] = str()
-			print(f'Checking for presence of "{self.movie_title}"')
-			parse_show_to_link(tv_show,
-			                   g)
+			pass
+		print('about to parse the movie')
+		tv_show.show_dictionary['Symlinked'] = str()
+		tv_show.show_dictionary['Relative Show File Path'] = str()
+		self.movie_dictionary["Parsed Movie File"] = str()
+		print(f'Checking for presence of "{self.movie_title}"')
+		parse_show_to_link(tv_show,
+		                   g)
 		# try:
 		# 	for genre in tv_show.sonarr_api_query['genres']:
 		# 		# [g.sonarr.set_new_tag_for_sonarr({"label": str(genre).lower()}) for genre in sorted(tv_show.sonarr)]
