@@ -16,8 +16,7 @@ def symlink_force(show_class_object,
 	try:
 		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show][
 			'Relative Show File Path'] = show_class_object.relative_show_path
-	except AttributeError as err:
-		# print(f"{g.method} had a AttributeError: {err}")  # testing
+	except AttributeError:
 		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show][
 			'Relative Show File Path'] = str()
 	g.movies_dictionary_object[show_class_object.movie_title][

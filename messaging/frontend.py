@@ -76,18 +76,6 @@ def method_launch(g):
 	g.parent_method = get_parent_method_string()
 	g.method = get_child_method_string()
 
-#
-# def message_entering_function(g):
-# 	g.LOG.debug(debug_message(600,
-# 	                          g))
-
-
-def print_method_shows_dictionary_value(show_object,
-                                        g):
-	g.LOG.debug(debug_message(611,
-	                          g,
-	                          show_object.shows_dictionary_object))
-
 
 def message_no_duplicates_to_remove():
 	# TODO: standardize method

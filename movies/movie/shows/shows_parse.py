@@ -21,7 +21,6 @@ def parse_show_to_link(show,
 		                                        g):
 			symlink_force(show,
 			              g)
-			print('symlink finished supposedly')
 			show.absolute_movie_path = g.movies_dictionary_object[show.movie_title]['Absolute Movie Path'] = \
 				str(get_movie_path(show,
 				                   g))
@@ -37,29 +36,25 @@ def parse_show_to_link(show,
 def parse_shows_dictionary_object(self,
                                   g):
 	method_launch(g)
-	self.movie_dictionary = g.radarr.lookup_movie(self.movie_title)
-	for show in g.movies_dictionary_object[self.movie_title]['Shows'].keys():
+	for show in self.shows_dictionary.keys():
 		show = str(show)
 		tv_show = create_tv_show_class_object(self,
 		                                      show,
 		                                      g)
-		
-		tv_show.show_dictionary = g.sonarr.lookup_series(show)
-		
 		try:
 			if validate_strings_match(
-					f'{str(g.movies_dictionary_object[self.movie_title]["Shows"][show]["Relative Show File Path"])} -> {readlink(str(g.movies_dictionary_object[self.movie_title]["Shows"][show]["Relative Show File Path"]))}', \
-					g.movies_dictionary_object[self.movie_title]['Shows'][show]['Symlinked']):
-				if get_live_link(str(g.movies_dictionary_object[self.movie_title]['Shows'][show]['Relative Show File Path'])) and \
-						(check_if_valid_symlink_destination(str(g.movies_dictionary_object[self.movie_title]['Shows'][show]['Relative Show File Path'])) and
-						 (check_if_valid_symlink_target(str(g.movies_dictionary_object[self.movie_title]["Parsed Movie File"])))):
+					f'{str(tv_show.show_dictionary["Relative Show File Path"])}', \
+					tv_show.show_dictionary['Symlinked']):
+				if get_live_link(str(tv_show.show_dictionary['Relative Show File Path'])) and \
+						(check_if_valid_symlink_destination(str(tv_show.show_dictionary['Relative Show File Path'])) and
+						 (check_if_valid_symlink_target(str(self.movie_dictionary["Parsed Movie File"])))):
 					print(f"No action required for {self.movie_title}")
 					# make an official message handler here
 					continue
-		except FileNotFoundError:
-			g.movies_dictionary_object[self.movie_title]['Shows'][show]['Symlinked'] = str()
-			g.movies_dictionary_object[self.movie_title]['Shows'][show]['Relative Show File Path'] = str()
-			g.movies_dictionary_object[self.movie_title]["Parsed Movie File"] = str()
+		except FileNotFoundError or TypeError:
+			self.movie_dictionary[show]['Symlinked'] = str()
+			self.movie_dictionary[show]['Relative Show File Path'] = str()
+			self.movie_dictionary["Parsed Movie File"] = str()
 			print(f'Checking for presence of "{self.movie_title}"')
 			parse_show_to_link(tv_show,
 			                   g)

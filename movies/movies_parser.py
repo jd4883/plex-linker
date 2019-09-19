@@ -28,9 +28,11 @@ def parse_movies_in_library_and_remove_duplicates(var1,
 def parse_all_movies_in_yaml_dictionary(g):
 	method_launch(g)
 	for movie in g.movies_dictionary_object:
-		parse_shows_dictionary_object(Movie(str(movie).replace(":", "-"),
-		                                    g,
-		                                    g.movies_dictionary_object[movie]),
+		movie = str(movie).replace(":", "-")
+		movie_object = Movie(movie,
+		                     g.movies_dictionary_object[movie],
+		                     g)
+		parse_shows_dictionary_object(movie_object,
 		                              g)
 	sorted(g.movies_dictionary_object)
 	method_exit(g)

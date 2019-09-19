@@ -63,6 +63,25 @@ def get_movie_path(movie,
 		movie.absolute_movie_path = '/'.join((movie.absolute_movies_path,
 		                                      path,
 		                                      movie.movie_title))
+		# for item in g.radarr.get_movie_library():
+		# 	print(f"ITEM TITLE {item['title']}")
+		# 	if (str(item['title']).lower() ==
+		# 	    movie.movie_title.lower()) or \
+		# 			(str(item['title']).lower() ==
+		# 			 ' '.join(str(movie.movie_title).split(' ')[:-1]).lower()) \
+		# 			or ' '.join(str(item['title']).split(' ')[:-1]).lower() == \
+		# 		' '.join(str(movie.movie_title).split(' ')[:-1]).lower():
+		# 		print('we have a match')
+		# 		print(f"PARSED TITLE: {item['title']} ({item['year']})")
+		# 		break
+		# 		# idea here is to replace the base title with whatever is in radarr and not care about the year initally input
+				#movie.movie_title = f"{k} ({k['year']})"
+		
+		#print(f"TITLE: {g.movies_dictionary[0]['title']}")
+		#print(f"TITLE: {movie.movie_title}")
+		#for key, value in g.movies_dictionary[0].items():
+		#	print(f"{key}: {value}")
+		#exit(-1)
 		movie_string = getCaseInsensitivePath(movie.absolute_movie_path)
 		if exists(movie_string):
 			movie.absolute_movie_path = movie_string
@@ -79,16 +98,3 @@ def get_movie_file(movie):
 def get_movie_extension(extension):
 	return extension
 
-
-def get_unparsed_movie_title(title,
-                             g):
-	method_launch(g)
-	try:
-		g.movies_dictionary_object[title]['Unparsed Movie Title'] = title
-	except KeyError as err:
-		print(f"{g.method} had a KeyError: {err}")  # testing
-		g.movies_dictionary_object[title]['Unparsed Movie Title'] = {}
-		g.movies_dictionary_object[title]['Unparsed Movie Title'] = str()
-	finally:
-		method_exit(g)
-		return g.movies_dictionary_object[title]['Unparsed Movie Title']

@@ -13,8 +13,7 @@ from logs.bin.get_parameters import (get_method_main,
 from movies.movie.movie_gets import (get_absolute_movie_file_path,
                                      get_relative_movie_file_path,
                                      get_movie_path,
-                                     get_relative_movie_path,
-                                     get_unparsed_movie_title)
+                                     get_relative_movie_path)
 from movies.movie.movie_puts import (set_movie_quality)
 from movies.movie.movie_validation import (validate_extensions_from_movie_file,
                                            validated_movie_path_is_not_null)
@@ -49,7 +48,6 @@ class Globals:
 
 class Movies:
 	def __init__(self,
-	             g,
 	             absolute_movies_path=abspath("/".join((str(environ['DOCKER_MEDIA_PATH']),
 	                                                    get_variable_from_yaml("Movie Directories")[0])))):
 		self.start_time = time.time()
@@ -60,37 +58,27 @@ class Movies:
 class Movie(Movies,
             Globals):
 	def __init__(self,
-	             title,
-	             g,
-	             movie_dictionary):
-		super().__init__(g)
+	             movie,
+	             movie_dictionary,
+	             g):
+		super().__init__()
 		self.movie_dictionary = movie_dictionary
-		self.movie_title = \
-			set_nested_dictionary_key_value_pair(g.movies_dictionary_object[title]['Unparsed Movie Title'],
-			                                     get_unparsed_movie_title(title,
-			                                                              g))
-		self.shows_dictionary_object = \
-			set_nested_dictionary_key_value_pair(g.movies_dictionary_object[title]['Shows'],
-			                                     [{}])
-		self.movie_dictionary_object = \
-			set_nested_dictionary_key_value_pair(g.movies_dictionary_object[title],
-			                                     [{}])
-		self.absolute_movie_path = \
-			set_nested_dictionary_key_value_pair(g.movies_dictionary_object[title]['Absolute Movie Path'],
-			                                     get_movie_path(self,
-			                                                    g))
+		self.movie_dictionary['Unparsed Movie Title'] = self.movie_title = str(movie)
+		self.radarr_dictionary = g.radarr.lookup_movie(self.movie_title)
+		self.shows_dictionary = self.movie_dictionary['Shows']
+		# self.absolute_movie_path =
+		self.movie_dictionary['Absolute Movie Path'] = \
+			get_movie_path(self,
+			               g)
 		self.relative_movie_path = \
-			set_nested_dictionary_key_value_pair(g.movies_dictionary_object[title]['Relative Movie Path'],
+			set_nested_dictionary_key_value_pair(self.movie_dictionary['Relative Movie Path'],
 			                                     get_relative_movie_path(self,
 			                                                             g))
-		self.quality = \
-			set_nested_dictionary_key_value_pair(g.movies_dictionary_object[title]['Parsed Movie Quality'],
+		self.quality = set_nested_dictionary_key_value_pair(self.movie_dictionary['Parsed Movie Quality'],
 			                                     str())
-		self.extension = \
-			set_nested_dictionary_key_value_pair(g.movies_dictionary_object[title]['Parsed Movie Extension'],
-			                                     str())
+		self.extension = set_nested_dictionary_key_value_pair(self.movie_dictionary['Parsed Movie Extension'])
 		self.movie_file = \
-			set_nested_dictionary_key_value_pair(g.movies_dictionary_object[title]['Parsed Movie File'],
+			set_nested_dictionary_key_value_pair(self.movie_dictionary['Parsed Movie File'],
 			                                     str())
 		if validated_movie_path_is_not_null(self,
 		                                    g):
@@ -99,11 +87,11 @@ class Movie(Movies,
 			set_movie_quality(self,
 			                  g)
 			self.absolute_movie_file_path = \
-				set_nested_dictionary_key_value_pair(g.movies_dictionary_object[title]['Absolute Movie File Path'],
+				set_nested_dictionary_key_value_pair(self.movie_dictionary['Absolute Movie File Path'],
 				                                     get_absolute_movie_file_path(self))
-			g.movies_dictionary_object[title]['Relative Movie File Path'] = str()
+			self.movie_dictionary['Relative Movie File Path'] = str()
 			self.relative_movie_file_path = \
-				set_nested_dictionary_key_value_pair(g.movies_dictionary_object[title]['Relative Movie File Path'],
+				set_nested_dictionary_key_value_pair(self.movie_dictionary['Relative Movie File Path'],
 				                                     get_relative_movie_file_path(self,
 				                                                                  g))
 
@@ -114,29 +102,31 @@ class Show(Movie,
 	def __init__(self,
 	             show,
 	             movie,
+	             movie_dictionary,
 	             g):
 		super().__init__(movie,
-		                 g,
-		                 g.movies_dictionary_object[movie])
+		                 movie_dictionary,
+		                 g)
 		chdir(str(environ['DOCKER_MEDIA_PATH']))
+		self.movie_dictionary = movie_dictionary
 		self.show = str(show)
-		self.show_dictionary = dict()
+		self.show_dictionary = self.movie_dictionary['Shows'][self.show]
+		self.sonarr_show_dictionary = g.sonarr.lookup_series(self.show)
+		print(f"show dictionary created: {self.show_dictionary}")
 		set_show_id(self.show, g)
 		try:
 			self.sonarr_api_query = g.sonarr.lookup_series(str(self.show))[0]
-		except (IndexError or FileNotFoundError or KeyError) as err:
-			# condition will always hit if the API returns an empty dictionary
+		except (IndexError or FileNotFoundError or KeyError):
 			self.sonarr_api_query = str()
 			return
-		g.sonarr.get_episodes_by_series_id(g.movies_dictionary_object[self.movie_title]['Shows'][self.show])
+		g.sonarr.get_episodes_by_series_id(self.show_dictionary)
 		try:
-			self.raw_episodes = g.sonarr.get_episodes_by_series_id(g.movies_dictionary_object[self.movie_title]['Shows'][
-			                                                        self.show]['Show ID'])
+			self.raw_episodes = g.sonarr.get_episodes_by_series_id(self.show_dictionary['Show ID'])
 		except TypeError:
 			return
 		try:
 			self.raw_episode_files = \
-				g.sonarr.get_episode_files_by_series_id(g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Show ID'])
+				g.sonarr.get_episode_files_by_series_id(self.show_dictionary['Show ID'])
 		except TypeError:
 			return
 		
@@ -148,34 +138,35 @@ class Show(Movie,
 		except TypeError:
 			self.show_root_path = str()
 		try:
-			self.season = set_season_dictionary_value(g.movies_dictionary_object[movie]['Shows'][self.show],
+			self.season = set_season_dictionary_value(self.show_dictionary,
 			                                          self.sonarr_api_query)
 		except TypeError:
 			self.season = int(0)
 		self.episode = \
-			g.movies_dictionary_object[movie]['Shows'][self.show]['Parsed Episode'] = str()
+			self.show_dictionary['Parsed Episode'] = str()
 		self.absolute_episode = \
-			set_nested_dictionary_key_value_pair(g.movies_dictionary_object[movie]['Shows'][self.show]['Absolute Episode'],
+			set_nested_dictionary_key_value_pair(self.show_dictionary['Absolute Episode'],
 			                                     str())
 		try:
-			parse_season_using_sonarr_api(g.movies_dictionary_object[movie]['Shows'][self.show], self.raw_episode_files)
+			parse_season_using_sonarr_api(self.show_dictionary,
+			                              self.raw_episode_files)
 		except TypeError as err:
 			pass
-		# parse_episode_using_sonarr_api(g.movies_dictionary_object[movie]['Shows'][self.show], self.raw_episode_files)
+		# parse_episode_using_sonarr_api(self.show_dictionary, self.raw_episode_files)
 		# print('this is the new parse season and episode segment')
 		
 		self.parsed_title = \
 			set_nested_dictionary_key_value_pair(
-				g.movies_dictionary_object[movie]['Shows'][self.show]['Parsed Show Title'],
+				self.show_dictionary['Parsed Show Title'],
 				str())
 		
 		self.parsed_relative_title = \
 			set_nested_dictionary_key_value_pair(
-				g.movies_dictionary_object[movie]['Shows'][self.show]['Parsed Relative Show Title'],
+				self.show_dictionary['Parsed Relative Show Title'],
 				str())
 		self.relative_show_path = \
 			set_nested_dictionary_key_value_pair(
-				g.movies_dictionary_object[self.movie_title]['Shows'][self.show]['Relative Show File Path'],
+				self.show_dictionary['Relative Show File Path'],
 				str())
 
 

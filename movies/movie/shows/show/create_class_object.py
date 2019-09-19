@@ -9,6 +9,7 @@ def create_tv_show_class_object(self,
 	method_launch(g)
 	tv_show_class_object = Show(show,
 	                            self.movie_title,
+	                            self.movie_dictionary,
 	                            g)
 	tv_show_class_object.show = show
 	get_show(tv_show_class_object,

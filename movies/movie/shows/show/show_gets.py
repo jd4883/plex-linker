@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 
 from messaging.frontend import (method_exit,
-                                method_launch,
-                                print_method_shows_dictionary_value)
+                                method_launch)
 from movies.movie.shows.show.show_puts import (set_show)
 from movies.movie.shows.show.show_validation import (validate_show_path_presence)
 
@@ -21,8 +20,6 @@ def get_show(show_object,
 	show_object.show_paths = g.SHOWS_PATH
 	set_show(show_object,
 	         g)
-	print_method_shows_dictionary_value(show_object,
-	                                    g)
 	method_exit(g)
 	return show_object
 
