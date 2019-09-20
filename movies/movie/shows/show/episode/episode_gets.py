@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import messaging.frontend as message
-from movies.movie.shows.show.show_gets import get_alphabetical_specials_string
+
 
 
 def get_season(self, g):
@@ -20,6 +20,7 @@ def get_season(self, g):
 
 def get_season_folder(self, g):
 	message.method_launch(g)
+	from movies.movie.shows.show.show_gets import get_alphabetical_specials_string
 	if self.show_dictionary['Season'] is 0 or get_alphabetical_specials_string():
 		self.season_folder = get_alphabetical_specials_string()
 	elif self.show_dictionary['Season']:
