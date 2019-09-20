@@ -41,17 +41,11 @@ def parse_shows_dictionary_object(movie,
 		except (FileNotFoundError or TypeError or KeyError) as err:
 			pass
 		# investigate this area about using the stop condition
-		try:
-			show.show_dictionary['Symlinked'] = str()
-			show.show_dictionary['Relative Show File Path'] = str()
-			movie.movie_dictionary["Parsed Movie File"] = str()
-			print(f'Checking for presence of "{movie.movie_title}"')
-			parse_show_to_link(show,
-			                   g)
-		except TypeError or KeyError as err:
-			print(f"ERROR PARSING {series} with message {err} in parse shows dictionary object - you should probably change "
-			      f"the logic here to make this try statement go away")
-			exit(-1)
+		show.show_dictionary['Symlinked'] = str()
+		show.show_dictionary['Relative Show File Path'] = str()
+		movie.movie_dictionary["Parsed Movie File"] = str()
+		print(f'Checking for presence of "{movie.movie_title}"')
+		parse_show_to_link(show, g)
 
 
 # try:
