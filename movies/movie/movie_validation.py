@@ -23,7 +23,8 @@ def validate_movie_extension(movie, g):
 				if file.endswith(file_extension):
 					set_movie_file_and_extension(file, file_extension, movie, g)
 					return True
-	return False
+	except KeyError:
+		return False
 
 
 # noinspection PyDeepBugsBinOperand
