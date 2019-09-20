@@ -41,11 +41,14 @@ def parse_shows_dictionary_object(movie, g):
 			pass
 			# investigate this area about using the stop condition
 			# theoretically moving these actions here should make things work again, may need revision on the except
-		show.show_dictionary['Symlinked'] = str()
-		show.show_dictionary['Relative Show File Path'] = str()
-		movie.movie_dictionary["Parsed Movie File"] = str()
-		print(f'Checking for presence of "{movie.movie_title}"')
-		parse_show_to_link(show, g)
+		try:
+			show.show_dictionary['Symlinked'] = str()
+			show.show_dictionary['Relative Show File Path'] = str()
+			movie.movie_dictionary["Parsed Movie File"] = str()
+			print(f'Checking for presence of "{movie.movie_title}"')
+			parse_show_to_link(show, g)
+		except TypeError:
+			continue
 
 
 # try:
