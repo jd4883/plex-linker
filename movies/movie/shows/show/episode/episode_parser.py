@@ -7,6 +7,6 @@ def parse_season_using_sonarr_api(show,
 			if item == {'monitored': True} or show[item]['seasonNumber'] == 0:
 				show['Season'] = int(0)
 				break
-	except KeyError or TypeError:
+	except (KeyError or TypeError):
 		pass
 	show['Parsed Season'] = str(show['Season']).zfill(2)

@@ -64,7 +64,7 @@ def set_dictionary_show_root_path(sonarr_api_query,
                                   movie):
 	try:
 		g.movies_dictionary_object[movie]['Shows'][show]['Show Root Path'] = parse_root_path_string(sonarr_api_query)
-	except KeyError or TypeError:
+	except (KeyError or TypeError):
 		g.movies_dictionary_object[movie]['Shows'][show]['Show Root Path'] = str()
 
 

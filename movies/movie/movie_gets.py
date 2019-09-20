@@ -77,11 +77,6 @@ def get_movie_path(movie,
 		# 		# idea here is to replace the base title with whatever is in radarr and not care about the year initally input
 				#movie.movie_title = f"{k} ({k['year']})"
 		
-		#print(f"TITLE: {g.movies_dictionary[0]['title']}")
-		#print(f"TITLE: {movie.movie_title}")
-		#for key, value in g.movies_dictionary[0].items():
-		#	print(f"{key}: {value}")
-		#exit(-1)
 		movie_string = getCaseInsensitivePath(movie.absolute_movie_path)
 		if exists(movie_string):
 			movie.absolute_movie_path = movie_string
