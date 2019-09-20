@@ -23,8 +23,7 @@ def parse_show_to_link(show, g):
 
 
 # noinspection PyUnusedLocal
-def parse_shows_dictionary_object(movie,
-                                  g):
+def parse_shows_dictionary_object(movie, g):
 	message.method_launch(g)
 	for series in movie.shows_dictionary.keys():
 		series = str(series)
