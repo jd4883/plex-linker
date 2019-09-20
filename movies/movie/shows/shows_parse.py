@@ -47,7 +47,7 @@ def parse_shows_dictionary_object(movie, g):
 			movie.movie_dictionary["Parsed Movie File"] = str()
 			print(f'Checking for presence of "{movie.movie_title}"')
 			parse_show_to_link(show, g)
-		except TypeError:
+		except TypeError or FileNotFoundError:
 			continue
 
 
