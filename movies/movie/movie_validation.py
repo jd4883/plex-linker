@@ -16,7 +16,6 @@ def validate_extensions_from_movie_file(movie,
 
 
 def validate_movie_extension(movie, g):
-	message.method_launch(g)
 	from os import listdir
 	try:
 		for file in listdir(movie.absolute_movie_path):
@@ -24,7 +23,6 @@ def validate_movie_extension(movie, g):
 				if file.endswith(file_extension):
 					set_movie_file_and_extension(file, file_extension, movie, g)
 					return True
-	message.method_exit(g)
 	return False
 
 
