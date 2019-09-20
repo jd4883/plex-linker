@@ -3,20 +3,28 @@ import time
 from os import chdir
 from os.path import abspath
 
-from IO.YAML.yaml_to_object import (get_yaml_dictionary,
-                                    get_variable_from_yaml)
+from IO.YAML.yaml_to_object import (
+	get_yaml_dictionary,
+	get_variable_from_yaml,
+	)
 from class_objects.radarr_api import *
 from class_objects.sonarr_api import *
-from logs.bin.get_parameters import (get_method_main,
-                                     get_logger,
-                                     get_log_name)
-from movies.movie.movie_gets import (get_absolute_movie_file_path,
-                                     get_relative_movie_file_path,
-                                     get_movie_path,
-                                     get_relative_movie_path)
+from logs.bin.get_parameters import (
+	get_method_main,
+	get_logger,
+	get_log_name,
+	)
+from movies.movie.movie_gets import (
+	get_absolute_movie_file_path,
+	get_relative_movie_file_path,
+	get_movie_path,
+	get_relative_movie_path,
+	)
 from movies.movie.movie_puts import (set_movie_quality)
-from movies.movie.movie_validation import (validate_extensions_from_movie_file,
-                                           validated_movie_path_is_not_null)
+from movies.movie.movie_validation import (
+	validate_extensions_from_movie_file,
+	validated_movie_path_is_not_null,
+	)
 from movies.movie.shows.show.episode.episode_parser import parse_season_using_sonarr_api
 from movies.movie.shows.show.show_gets import (get_anime_status_from_api)
 from movies.movie.shows.show.show_puts import set_season_dictionary_value, set_show_id
@@ -40,16 +48,16 @@ class Globals:
 		self.movies_dictionary_object = get_yaml_dictionary()
 		self.list_of_linked_movies = []
 		self.list_of_movies_to_locate = []
-		self.method = \
-			self.parent_method = \
+		self.method =\
+			self.parent_method =\
 			get_method_main()
 		pass
 
 
 class Movies:
 	def __init__(self,
-	             absolute_movies_path=abspath("/".join((str(environ['DOCKER_MEDIA_PATH']),
-	                                                    get_variable_from_yaml("Movie Directories")[0])))):
+	             absolute_movies_path = abspath("/".join((str(environ['DOCKER_MEDIA_PATH']),
+	                                                      get_variable_from_yaml("Movie Directories")[0])))):
 		self.start_time = time.time()
 		self.absolute_movies_path = absolute_movies_path
 		self.relative_movies_path = get_relative_movies_path(self)
@@ -67,10 +75,10 @@ class Movie(Movies,
 		self.radarr_dictionary = g.radarr.lookup_movie(self.movie_title)
 		self.shows_dictionary = self.movie_dictionary['Shows']
 		# self.absolute_movie_path =
-		self.movie_dictionary['Absolute Movie Path'] = \
+		self.movie_dictionary['Absolute Movie Path'] =\
 			get_movie_path(self,
 			               g)
-		self.relative_movie_path = \
+		self.relative_movie_path =\
 			set_nested_dictionary_key_value_pair(self.movie_dictionary['Relative Movie Path'],
 			                                     get_relative_movie_path(self,
 			                                                             g))
@@ -80,22 +88,17 @@ class Movie(Movies,
 		if validated_movie_path_is_not_null(self, g):
 			validate_extensions_from_movie_file(self, g)
 			set_movie_quality(self, g)
-			self.absolute_movie_file_path = set_nested_dictionary_key_value_pair(self.movie_dictionary['Absolute Movie File Path'], get_absolute_movie_file_path(self))
+			self.absolute_movie_file_path = set_nested_dictionary_key_value_pair(
+					self.movie_dictionary['Absolute Movie File Path'], get_absolute_movie_file_path(self))
 			self.movie_dictionary['Relative Movie File Path'] = str()
-			self.relative_movie_file_path = set_nested_dictionary_key_value_pair(self.movie_dictionary['Relative Movie File Path'], get_relative_movie_file_path(self, g))
+			self.relative_movie_file_path = set_nested_dictionary_key_value_pair(
+					self.movie_dictionary['Relative Movie File Path'], get_relative_movie_file_path(self, g))
 
 
 class Show(Movie,
            Globals):
-	# noinspection PyDeepBugsBinOperand
-	def __init__(self,
-	             show,
-	             movie,
-	             movie_dictionary,
-	             g):
-		super().__init__(movie,
-		                 movie_dictionary,
-		                 g)
+	def __init__(self, show, movie, movie_dictionary, g):
+		super().__init__(movie, movie_dictionary, g)
 		chdir(str(environ['DOCKER_MEDIA_PATH']))
 		self.movie_dictionary = movie_dictionary
 		self.show = str(show)
@@ -119,10 +122,7 @@ class Show(Movie,
 			return
 		
 		try:
-			self.show_root_path = set_show_root_path(self.sonarr_api_query,
-			                                         self.show,
-			                                         g,
-			                                         movie)
+			self.show_root_path = set_show_root_path(self.sonarr_api_query, self.show, g, movie)
 		except TypeError:
 			self.show_root_path = str()
 		try:
@@ -136,8 +136,11 @@ class Show(Movie,
 		except TypeError:
 			pass
 		self.parsed_title = set_nested_dictionary_key_value_pair(self.show_dictionary['Parsed Show Title'], str())
-		self.parsed_relative_title = set_nested_dictionary_key_value_pair(self.show_dictionary['Parsed Relative Show Title'], str())
-		self.relative_show_path = set_nested_dictionary_key_value_pair(self.show_dictionary['Relative Show File Path'], str())
+		self.parsed_relative_title = set_nested_dictionary_key_value_pair(
+				self.show_dictionary['Parsed Relative Show Title'], str())
+		self.relative_show_path = set_nested_dictionary_key_value_pair(self.show_dictionary['Relative Show File Path'],
+		                                                               str())
+
 
 def parse_episode_using_sonarr_api(show,
                                    query):
@@ -163,4 +166,3 @@ def parse_episode_using_sonarr_api(show,
 		print(f"Episode parsed as {show['Episode']}")
 		print(f"Parsed Episode {show['Parsed Episode']} for Show")
 		break
-		

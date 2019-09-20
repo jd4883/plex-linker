@@ -3,9 +3,11 @@ import shutil
 from shutil import (rmtree)
 
 import movies.movies_parser
-from messaging.frontend import (method_launch,
-                                method_exit,
-                                message_no_duplicates_to_remove)
+from messaging.frontend import (
+	method_launch,
+	method_exit,
+	message_no_duplicates_to_remove,
+	)
 
 
 # noinspection PyUnusedFunction
@@ -13,12 +15,12 @@ def remove_duplicates(list_of_possible_paths,
                       g):
 	method_launch(g)
 	genres = {
-		'staging': 'staging',
-		'standup_comedy': 'horror',
-		'horror': 'thrillers',
-		'thrillers': 'foreign',
-		'foreign': 'horror'
-	}
+			'staging':        'staging',
+			'standup_comedy': 'horror',
+			'horror':         'thrillers',
+			'thrillers':      'foreign',
+			'foreign':        'horror'
+			}
 	while True:
 		for key, value in genres.items():
 			movies.movies_parser.parse_movies_in_library_and_remove_duplicates(key,

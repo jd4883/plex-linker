@@ -6,7 +6,6 @@ from os import environ
 from plexapi.server import PlexServer
 
 
-# noinspection PyDefaultArgument,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction
 class PlexAPI(object):
 	
 	def __init__(self):

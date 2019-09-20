@@ -1,6 +1,8 @@
 #!/usr/bin/env python3.7
-from os import (chdir,
-                environ)
+from os import (
+	chdir,
+	environ,
+	)
 
 from messaging.backend import debug_message
 
@@ -70,8 +72,10 @@ def print_movie_file_found_to_parse(movie,
 
 
 def method_launch(g):
-	from logs.bin.get_parameters import (get_child_method_string,
-	                                     get_parent_method_string)
+	from logs.bin.get_parameters import (
+		get_child_method_string,
+		get_parent_method_string,
+		)
 	chdir(str(environ['DOCKER_MEDIA_PATH']))
 	g.parent_method = get_parent_method_string()
 	g.method = get_child_method_string()

@@ -4,8 +4,10 @@ from os import environ, chdir
 from os.path import exists
 from pathlib import Path
 
-from messaging.frontend import (method_launch,
-                                method_exit)
+from messaging.frontend import (
+	method_launch,
+	method_exit,
+	)
 
 
 def set_file_mask_with_chmod_on_files_and_links(path,

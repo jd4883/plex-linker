@@ -4,7 +4,9 @@
 from os import environ
 import requests
 
-# noinspection PyDefaultArgument,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction
+
+# noinspection PyDefaultArgument,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,
+# PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction
 class RadarrAPI(object):
 	
 	def __init__(self):
@@ -23,29 +25,29 @@ class RadarrAPI(object):
 	# REQUESTS STUFF
 	def request_get(self,
 	                url,
-	                data={}):
+	                data = {}):
 		headers = {'X-Api-Key': self.api_key}
 		return requests.get(url,
-		                    headers=headers,
-		                    json=data)
+		                    headers = headers,
+		                    json = data)
 	
 	def request_post(self,
 	                 url,
 	                 data):
 		return requests.post(url,
-		                     headers={'X-Api-Key': self.api_key},
-		                     json=data)
+		                     headers = {'X-Api-Key': self.api_key},
+		                     json = data)
 	
 	def request_put(self,
 	                url,
 	                data):
 		return requests.put(url,
-		                    headers={'X-Api-Key': self.api_key},
-		                    json=data)
+		                    headers = {'X-Api-Key': self.api_key},
+		                    json = data)
 	
 	def request_delete(self,
 	                   url,
 	                   data):
 		return requests.delete(url,
-		                       headers={'X-Api-Key': self.api_key},
-		                       json=data)
+		                       headers = {'X-Api-Key': self.api_key},
+		                       json = data)

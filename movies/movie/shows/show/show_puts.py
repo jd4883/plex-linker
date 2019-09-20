@@ -2,60 +2,55 @@
 from os import (chdir, environ)
 from os.path import (abspath,
                      relpath)
-
-from messaging.frontend import (method_exit,
-                                method_launch)
-from movies.movie.shows.show.show_parser import parse_root_path_string
+from movies.movie.shows.show.show_parser import (get_parsed_show_title, parse_show, parse_root_path_string)
+import messaging.frontend as message
 
 
-def set_show_root_path(show_object,
+def set_show_root_path(show,
                        g):
-	method_launch(g)
-	from movies.movie.shows.show.show_parser import (get_parsed_show_title,
-	                                                 parse_show)
-	show_object.absolute_movie_path = abspath(show_object.path)
-	show_object.parsed_title = parse_show(show_object,
-	                                      g)
-	show_object.parsed_title = get_parsed_show_title(show_object)
-	show_object.absolute_movie_path = abspath(f"{show_object.parsed_title}", )
-	show_object.relative_show_path = \
-		g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Relative Show File Path'] = \
-		relpath(f"{show_object.parsed_title}")
-	method_exit(g)
+	message.method_launch(g)
+	show.absolute_movie_path = abspath(show.path)
+	show.parsed_title = parse_show(show,
+	                               g)
+	show.parsed_title = get_parsed_show_title(show)
+	show.absolute_movie_path = abspath(f"{show.parsed_title}")
+	show.relative_show_path = \
+		show.show_dictionary['Relative Show File Path'] = relpath(f"{show.parsed_title}")
+	message.method_exit(g)
 
 
-def set_show(show_object,
+def set_show(show,
              g):
 	from movies.movie.shows.show.show_gets import get_show_root_path
-	method_launch(g)
-	init_show_object(show_object)
+	message.method_launch(g)
+	init_show_object(show)
 	# noinspection PyUnusedLocal
 	try:
-		if get_show_root_path(show_object,
+		if get_show_root_path(show,
 		                      g):  # parent_movie_dictionary_object may be worth adding as an arg here
-			set_show_root_path(show_object,
+			set_show_root_path(show,
 			                   g)
 	except TypeError as err:
 		# print(f"{g.method} had an error: {err}")  # testing
 		pass
-	method_exit(g)
+	message.method_exit(g)
 
 
-def init_show_object(self):
-	self.title = self.show
+def init_show_object(show):
+	show.title = show.show
 	chdir(str(environ['DOCKER_MEDIA_PATH']))
 
 
-def set_season_dictionary_value(self):
-	self.show['Season'] = str(0)
-	if self.sonarr_api_query['seasons'][0]['seasonNumber'] == 0:
+def set_season_dictionary_value(show):
+	show.show['Season'] = str(0)
+	if show.sonarr_api_query['seasons'][0]['seasonNumber'] == 0:
 		try:
-			result = self.sonarr_api_query['seasons'][0].pop('seasonNumber')
-			self.show['Season'] = result
-			return self.show['Season']
+			result = show.sonarr_api_query['seasons'][0].pop('seasonNumber')
+			show.show['Season'] = result
+			return show.show['Season']
 		except TypeError:
 			pass
-	return self.show['Season']
+	return show.show['Season']
 
 
 def set_dictionary_show_root_path(sonarr_api_query,

@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
-from os import (chdir,
-                environ)
+from os import (
+	chdir,
+	environ,
+	)
 from os.path import (relpath)
 
 

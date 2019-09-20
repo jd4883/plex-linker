@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 
-from messaging.frontend import (method_launch,
-                                print_movie_file_quality,
-                                print_movie_file_found_to_parse,
-                                print_movie_extension_found_to_parse,
-                                method_exit)
+from messaging.frontend import (
+	method_launch,
+	print_movie_file_quality,
+	print_movie_file_found_to_parse,
+	print_movie_extension_found_to_parse,
+	method_exit,
+	)
 
 
 def parse_extension(movie,
@@ -37,6 +39,7 @@ def parse_remux_in_quality(quality,
 
 def parse_movie_file_quality(movie_file):
 	return movie_file.split().pop()
+
 
 def parse_proper(movie_class_object,
                  g):

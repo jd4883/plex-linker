@@ -1,13 +1,19 @@
 #!/usr/bin/env python3
 from os import (listdir, environ)
-from os.path import (relpath,
-                     abspath,
-                     exists)
+from os.path import (
+	relpath,
+	abspath,
+	exists,
+	)
 from string_manipulation.string_methods import getCaseInsensitivePath
-from messaging.frontend import (method_launch,
-                                method_exit)
-from movies.movie.movie_puts import (set_absolute_movie_path,
-                                     set_relative_movie_path)
+from messaging.frontend import (
+	method_launch,
+	method_exit,
+	)
+from movies.movie.movie_puts import (
+	set_absolute_movie_path,
+	set_relative_movie_path,
+	)
 
 
 def get_relative_movie_path(movie,
@@ -39,7 +45,7 @@ def get_absolute_movie_file_path(movie):
 def get_relative_movie_file_path(movie,
                                  g):
 	try:
-		movie.absolute_movie_path = \
+		movie.absolute_movie_path =\
 			abspath(str(movie.relative_movie_path))
 		return str(relpath(movie.absolute_movie_path, str(environ['DOCKER_MEDIA_PATH'])))
 	except AttributeError:
@@ -75,7 +81,7 @@ def get_movie_path(movie,
 		# 		print(f"PARSED TITLE: {item['title']} ({item['year']})")
 		# 		break
 		# 		# idea here is to replace the base title with whatever is in radarr and not care about the year initally input
-				#movie.movie_title = f"{k} ({k['year']})"
+		# movie.movie_title = f"{k} ({k['year']})"
 		
 		movie_string = getCaseInsensitivePath(movie.absolute_movie_path)
 		if exists(movie_string):
@@ -92,4 +98,3 @@ def get_movie_file(movie):
 
 def get_movie_extension(extension):
 	return extension
-

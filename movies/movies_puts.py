@@ -13,7 +13,7 @@ def create_directory_if_not_present(path):
 
 # noinspection PyUnusedLocal
 def set_nested_dictionary_key_value_pair(dictionary_position_key,
-                                         value=str()):
+                                         value = str()):
 	try:
 		if not dictionary_position_key:
 			dictionary_position_key = value

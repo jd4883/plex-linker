@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
-from messaging.frontend import (method_exit,
-                                method_launch)
+from messaging.frontend import (
+	method_exit,
+	method_launch,
+	)
 from movies.movie.shows.show.show_puts import (set_show)
 from movies.movie.shows.show.show_validation import (validate_show_path_presence)
 
