@@ -2,7 +2,6 @@
 import messaging.frontend as message
 
 
-
 def get_season(self, g):
 	message.method_launch(g)
 	from movies.movie.shows.show.show_gets import (get_alphabetical_specials_string)
@@ -26,8 +25,7 @@ def get_season_folder(self, g):
 	elif self.show_dictionary['Season']:
 		self.season_folder = f"Season {get_season(self, g)}"
 	else:
-		message.method_exit(g)
-		return
+		self.season_folder = str()
 	message.method_exit(g)
 	self.show_dictionary['Parsed Season Folder'] = self.season_folder
 	return self.season_folder
@@ -39,7 +37,8 @@ def get_season_value_from_movies_dictionary(movie, show, g):
 		if not movie['Shows'][show]['Season']:
 			movie['Shows'][show]['Season'] = str()
 	except KeyError as err:
-		print(f"{g.method} had a KeyError{err}")  # testing
+		print(f"{g.method} had a KeyError{err}. If not seen this should go away")  # testing
+		exit(-1)
 		movie['Shows'][show]['Season'] = str()
 	message.method_exit(g)
 	return movie['Shows'][show]['Season']
