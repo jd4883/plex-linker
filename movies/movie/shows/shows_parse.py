@@ -38,14 +38,17 @@ def parse_shows_dictionary_object(movie,
 								check_if_valid_symlink_target(str(movie.movie_dictionary["Parsed Movie File"])))):
 					print(f"No action required for {movie.movie_title}")
 					continue
+			else:
+				show.show_dictionary['Symlinked'] = str()
+				show.show_dictionary['Relative Show File Path'] = str()
+				movie.movie_dictionary["Parsed Movie File"] = str()
+				print(f'Checking for presence of "{movie.movie_title}"')
+				parse_show_to_link(show, g)
 		except (FileNotFoundError or TypeError or KeyError) as err:
 			pass
-		# investigate this area about using the stop condition
-		show.show_dictionary['Symlinked'] = str()
-		show.show_dictionary['Relative Show File Path'] = str()
-		movie.movie_dictionary["Parsed Movie File"] = str()
-		print(f'Checking for presence of "{movie.movie_title}"')
-		parse_show_to_link(show, g)
+			# investigate this area about using the stop condition
+			# theoretically moving these actions here should make things work again, may need revision on the except
+			
 
 
 # try:
