@@ -2,9 +2,8 @@
 # using https://github.com/pkkid/python-plexapi to mess with watch status
 # -*- coding: utf-8 -*-
 from os import environ
-from plexapi.server import PlexServer
 
-import requests
+from plexapi.server import PlexServer
 
 
 # noinspection PyDefaultArgument,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction

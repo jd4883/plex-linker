@@ -121,12 +121,12 @@ class Show(Movie,
 		g.sonarr.get_episodes_by_series_id(self.show_dictionary)
 		try:
 			self.raw_episodes = g.sonarr.get_episodes_by_series_id(self.show_dictionary['Show ID'])
-		except TypeError:
+		except TypeError or KeyError as err:
+			print(f'not yet resolved but needs some fixings, error message {err}')
 			return
 		try:
-			self.raw_episode_files = \
-				g.sonarr.get_episode_files_by_series_id(self.show_dictionary['Show ID'])
-		except TypeError:
+			self.raw_episode_files = g.sonarr.get_episode_files_by_series_id(self.show_dictionary['Show ID'])
+		except TypeError or KeyError:
 			return
 		
 		try:
@@ -137,37 +137,18 @@ class Show(Movie,
 		except TypeError:
 			self.show_root_path = str()
 		try:
-			self.season = set_season_dictionary_value(self.show_dictionary,
-			                                          self.sonarr_api_query)
+			self.season = set_season_dictionary_value(self)
 		except TypeError:
 			self.season = int(0)
-		self.episode = \
-			self.show_dictionary['Parsed Episode'] = str()
-		self.absolute_episode = \
-			set_nested_dictionary_key_value_pair(self.show_dictionary['Absolute Episode'],
-			                                     str())
+		self.episode = self.show_dictionary['Parsed Episode'] = str()
+		self.absolute_episode = set_nested_dictionary_key_value_pair(self.show_dictionary['Absolute Episode'], str())
 		try:
-			parse_season_using_sonarr_api(self.show_dictionary,
-			                              self.raw_episode_files)
-		except TypeError as err:
+			parse_season_using_sonarr_api(self.show_dictionary, self.raw_episode_files)
+		except TypeError:
 			pass
-		# parse_episode_using_sonarr_api(self.show_dictionary, self.raw_episode_files)
-		# print('this is the new parse season and episode segment')
-		
-		self.parsed_title = \
-			set_nested_dictionary_key_value_pair(
-				self.show_dictionary['Parsed Show Title'],
-				str())
-		
-		self.parsed_relative_title = \
-			set_nested_dictionary_key_value_pair(
-				self.show_dictionary['Parsed Relative Show Title'],
-				str())
-		self.relative_show_path = \
-			set_nested_dictionary_key_value_pair(
-				self.show_dictionary['Relative Show File Path'],
-				str())
-
+		self.parsed_title = set_nested_dictionary_key_value_pair(self.show_dictionary['Parsed Show Title'], str())
+		self.parsed_relative_title = set_nested_dictionary_key_value_pair(self.show_dictionary['Parsed Relative Show Title'], str())
+		self.relative_show_path = set_nested_dictionary_key_value_pair(self.show_dictionary['Relative Show File Path'], str())
 
 def parse_episode_using_sonarr_api(show,
                                    query):
@@ -193,7 +174,4 @@ def parse_episode_using_sonarr_api(show,
 		print(f"Episode parsed as {show['Episode']}")
 		print(f"Parsed Episode {show['Parsed Episode']} for Show")
 		break
-	
-
-
-# tv_show_class_object.raw_episode_files
+		

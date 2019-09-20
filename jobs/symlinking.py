@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os
 from os import (chdir)
 from subprocess import (Popen,
                         PIPE,
@@ -8,50 +9,30 @@ from messaging.frontend import (method_exit,
                                 method_launch)
 
 
-def symlink_force(show_class_object,
+def symlink_force(self,
                   g):
 	method_launch(g)
-	# move these to a better location when the values initialize
-	chdir('/media/video')
 	try:
-		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show][
-			'Relative Show File Path'] = show_class_object.relative_show_path
+		self.show_dictionary['Relative Show File Path'] = self.relative_show_path
 	except AttributeError:
-		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show][
-			'Relative Show File Path'] = str()
-	g.movies_dictionary_object[show_class_object.movie_title][
-		"Parsed Movie File"] = show_class_object.absolute_movie_file_path
-	if show_class_object.absolute_movie_file_path or \
-			show_class_object.relative_show_path is not \
-			(None or 'None/' or \
-			 show_class_object.absolute_movie_file_path.endswith('None') or \
-			 show_class_object.relative_show_path.endswith('None')):
-		chdir('/media/video')
-		# noinspection SpellCheckingInspection
-		process = Popen(["ln",
-		                 "-fsvr",
-		                 f"{show_class_object.absolute_movie_file_path}",
-		                 f"{show_class_object.relative_show_path}"],
-		                stderr=DEVNULL,
-		                stdout=PIPE)
-		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show]['Symlinked'] = \
-			strip_quotes_from_string(f"{process.communicate()[0].strip()}").replace('b"', str())[:-1].rstrip()
-		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show][
-			'Relative Show File Path'] = \
-			show_class_object.relative_show_path
-		g.list_of_linked_movies.append(show_class_object.movie_title)
+		self.show_dictionary['Relative Show File Path'] = str()
+	self.movie_dictionary["Parsed Movie File"] = self.absolute_movie_file_path
+	if (self.absolute_movie_file_path or self.relative_show_path) is not \
+			(None or 'None/' or (self.absolute_movie_file_path.endswith('None') or self.relative_show_path.endswith('None'))):
+		chdir(str(os.environ['HOST_MEDIA_PATH']))
+		process = Popen(["ln", "-fsvr", f"{self.absolute_movie_file_path}", f"{self.relative_show_path}"], stderr=DEVNULL, stdout=PIPE)
+		self.show_dictionary['Symlinked'] = strip_quotes_from_string(f"{process.communicate()[0].strip()}").replace('b"', str())[:-1].rstrip()
+		self.show_dictionary['Relative Show File Path'] = self.relative_show_path
+		g.list_of_linked_movies.append(self.movie_title)
+		print(self.show_dictionary['Symlinked'])
 	else:
-		print(f'no link created for {show_class_object.absolute_movie_file_path}')
-		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show]['Symlinked'] = str()
-		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show][
-			'Relative Show File Path'] = str()
-		g.movies_dictionary_object[show_class_object.movie_title][
-			"Parsed Movie File"] = str()
-		g.list_of_movies_to_locate.append(show_class_object.movie_title)
+		print(f'no link created for {self.absolute_movie_file_path}')
+		self.show_dictionary['Symlinked'] = str()
+		self.show_dictionary['Relative Show File Path'] = str()
+		self.movie_dictionary["Parsed Movie File"] = str()
+		g.list_of_movies_to_locate.append(self.movie_title)
 	method_exit(g)
 
-
-# noinspection PySameParameterValue
 def strip_quotes_from_string(string):
 	string.replace('"', '')
 	return string.replace("'", "")

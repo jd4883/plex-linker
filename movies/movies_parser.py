@@ -29,10 +29,17 @@ def parse_all_movies_in_yaml_dictionary(g):
 	method_launch(g)
 	for movie in g.movies_dictionary_object:
 		movie = str(movie).replace(":", "-")
-		movie_object = Movie(movie,
-		                     g.movies_dictionary_object[movie],
-		                     g)
-		parse_shows_dictionary_object(movie_object,
-		                              g)
+		try:
+			movie_object = Movie(movie,
+			                     g.movies_dictionary_object[movie],
+			                     g)
+		except KeyError as err:
+			print(f"Key Error detected in parse all movies in yaml: {err}")
+			continue
+		try:
+			parse_shows_dictionary_object(movie_object,
+			                              g)
+		except KeyError:
+			continue
 	sorted(g.movies_dictionary_object)
 	method_exit(g)

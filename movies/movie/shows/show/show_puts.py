@@ -3,8 +3,7 @@ from os import (chdir, environ)
 from os.path import (abspath,
                      relpath)
 
-from messaging.frontend import (display_show_class_attributes,
-                                method_exit,
+from messaging.frontend import (method_exit,
                                 method_launch)
 from movies.movie.shows.show.show_parser import parse_root_path_string
 
@@ -30,8 +29,6 @@ def set_show(show_object,
 	from movies.movie.shows.show.show_gets import get_show_root_path
 	method_launch(g)
 	init_show_object(show_object)
-	display_show_class_attributes(show_object,
-	                              g)
 	# noinspection PyUnusedLocal
 	try:
 		if get_show_root_path(show_object,
@@ -44,22 +41,21 @@ def set_show(show_object,
 	method_exit(g)
 
 
-def init_show_object(show_object):
-	show_object.title = show_object.show
+def init_show_object(self):
+	self.title = self.show
 	chdir(str(environ['DOCKER_MEDIA_PATH']))
 
 
-def set_season_dictionary_value(show,
-                                sonarr_api_query):
-	show['Season'] = str(0)
-	if sonarr_api_query['seasons'][0]['seasonNumber'] == 0:
+def set_season_dictionary_value(self):
+	self.show['Season'] = str(0)
+	if self.sonarr_api_query['seasons'][0]['seasonNumber'] == 0:
 		try:
-			result = sonarr_api_query['seasons'][0].pop('seasonNumber')
-			show['Season'] = result
-			return show['Season']
+			result = self.sonarr_api_query['seasons'][0].pop('seasonNumber')
+			self.show['Season'] = result
+			return self.show['Season']
 		except TypeError:
 			pass
-	return show['Season']
+	return self.show['Season']
 
 
 def set_dictionary_show_root_path(sonarr_api_query,

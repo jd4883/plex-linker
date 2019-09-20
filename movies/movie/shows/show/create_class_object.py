@@ -2,16 +2,16 @@
 from movies.movie.shows.show.show_gets import *
 
 
-def create_tv_show_class_object(self,
-                                show,
-                                g):
+def init_show_object(self,
+                     show,
+                     g):
 	from class_objects import Show
 	method_launch(g)
 	tv_show_class_object = Show(show,
 	                            self.movie_title,
 	                            self.movie_dictionary,
 	                            g)
-	tv_show_class_object.show = show
+	# tv_show_class_object.show = show
 	get_show(tv_show_class_object,
 	         g)
 	# try:

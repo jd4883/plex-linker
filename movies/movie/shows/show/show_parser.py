@@ -49,26 +49,19 @@ def parse_show(show_object,
 	return show_object.parsed_relative_title
 
 
-def parse_show_title_from_show_dictionary(show_object,
+def parse_show_title_from_show_dictionary(self,
                                           g):
 	method_launch(g)
-	create_directory_if_not_present("/".join((show_object.path,
-	                                          g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Parsed Season Folder'])))
-	if not show_object.title:  # adjust to be an api call for sonarr
-		show_object.title = \
-			g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Title'] = \
-			show_object.movie_title
-	if show_object.absolute_episode:
-		show_object.parsed_title = set_nested_dictionary_key_value_pair(
-			g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Parsed Show Title'],
-			f"{show_object.path}/{g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Parsed Season Folder']}/{show_object.show} - S{g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season']}E{show_object.episode} (E{show_object.absolute_episode}) - {show_object.title}")
+	create_directory_if_not_present("/".join((self.path,
+	                                          self.show_dictionary['Parsed Season Folder'])))
+	if self.absolute_episode:
+		self.parsed_title = set_nested_dictionary_key_value_pair(self.show_dictionary['Parsed Show Title'],
+		                                                         f"{self.path}/{self.show_dictionary['Parsed Season Folder']}/{self.show} - S{self.show_dictionary['Season']}E{self.episode} (E{self.absolute_episode}) - {self.title}")
 	else:
-		show_object.parsed_title = set_nested_dictionary_key_value_pair(
-			g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Parsed Show Title'],
-			f"{show_object.path}/{g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Parsed Season Folder']}/{show_object.show} - " \
-			f"S{g.movies_dictionary_object[show_object.movie_title]['Shows'][show_object.show]['Season']}E{show_object.episode} - {show_object.title}")
+		self.parsed_title = set_nested_dictionary_key_value_pair(self.show_dictionary['Parsed Show Title'],
+		                                                         f"{self.path}/{self.show_dictionary['Parsed Season Folder']}/{self.show} - S{self.show_dictionary['Season']}E{self.episode} - {self.title}")
 	method_exit(g)
-	return show_object.parsed_title
+	return self.parsed_title
 
 
 def get_parsed_show_title(show_object):

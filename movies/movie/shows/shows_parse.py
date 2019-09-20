@@ -7,7 +7,7 @@ from messaging.frontend import (method_launch,
                                 method_exit)
 from movies.movie.movie_gets import (get_relative_movie_path,
                                      get_movie_path)
-from movies.movie.shows.show.create_class_object import create_tv_show_class_object, get_tag_id
+from movies.movie.shows.show.create_class_object import init_show_object
 from movies.movie.shows.show.show_puts import set_dictionary_show_root_path
 from movies.movie.shows.show.show_validation import (validate_ready_to_link_movie_to_show)
 from movies.movie.shows.shows_validation import check_if_valid_symlink_destination, check_if_valid_symlink_target
@@ -38,11 +38,8 @@ def parse_shows_dictionary_object(self,
 	method_launch(g)
 	for show in self.shows_dictionary.keys():
 		show = str(show)
-		tv_show = create_tv_show_class_object(self,
-		                                      show,
-		                                      g)
+		tv_show = init_show_object(self, show, g)
 		try:
-			print(f'seeing if bypassing parsing {show} is possible')
 			if tv_show.show_dictionary and tv_show.show_dictionary['Relative Show File Path'] and \
 					validate_strings_match(f'{str(tv_show.show_dictionary["Relative Show File Path"])}', \
 					tv_show.show_dictionary['Symlinked']):
@@ -50,17 +47,18 @@ def parse_shows_dictionary_object(self,
 						(check_if_valid_symlink_destination(str(tv_show.show_dictionary['Relative Show File Path'])) and
 						 (check_if_valid_symlink_target(str(self.movie_dictionary["Parsed Movie File"])))):
 					print(f"No action required for {self.movie_title}")
-					# make an official message handler here
 					continue
-		except FileNotFoundError or TypeError:
+		except (FileNotFoundError or TypeError or KeyError) as err:
 			pass
-		print('about to parse the movie')
-		tv_show.show_dictionary['Symlinked'] = str()
-		tv_show.show_dictionary['Relative Show File Path'] = str()
-		self.movie_dictionary["Parsed Movie File"] = str()
-		print(f'Checking for presence of "{self.movie_title}"')
-		parse_show_to_link(tv_show,
-		                   g)
+		try:
+			tv_show.show_dictionary['Symlinked'] = str()
+			tv_show.show_dictionary['Relative Show File Path'] = str()
+			self.movie_dictionary["Parsed Movie File"] = str()
+			print(f'Checking for presence of "{self.movie_title}"')
+			parse_show_to_link(tv_show,
+			                   g)
+		except TypeError or KeyError as err:
+			print(f"ERROR PARSING {show} with message {err}")
 		# try:
 		# 	for genre in tv_show.sonarr_api_query['genres']:
 		# 		# [g.sonarr.set_new_tag_for_sonarr({"label": str(genre).lower()}) for genre in sorted(tv_show.sonarr)]
