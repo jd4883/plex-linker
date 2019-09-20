@@ -24,7 +24,7 @@ def validate_movie_extension(movie, g):
 				if file.endswith(file_extension):
 					set_movie_file_and_extension(file, file_extension, movie, g)
 					return True
-	message.message_exiting_function(g)
+	message.method_exit(g)
 	return False
 
 
