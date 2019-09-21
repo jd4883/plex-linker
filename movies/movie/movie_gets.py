@@ -80,7 +80,8 @@ def get_movie_path(movie,
 		# 		print('we have a match')
 		# 		print(f"PARSED TITLE: {item['title']} ({item['year']})")
 		# 		break
-		# 		# idea here is to replace the base title with whatever is in radarr and not care about the year initally input
+		# 		# idea here is to replace the base title with whatever is in radarr and not care about the year initally
+		# 		input
 		# movie.movie_title = f"{k} ({k['year']})"
 		
 		movie_string = getCaseInsensitivePath(movie.absolute_movie_path)

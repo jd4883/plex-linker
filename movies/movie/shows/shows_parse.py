@@ -29,9 +29,10 @@ def parse_shows_dictionary_object(movie, g):
 		series = str(series)
 		show = init_show_object(movie, series, g)
 		try:
-			if show.show_dictionary and show.show_dictionary['Relative Show File Path'] and \
-					validate_strings_match(f'{str(show.show_dictionary["Relative Show File Path"])}',
-					                       show.show_dictionary['Symlinked']):
+			if show.show_dictionary and \
+					show.show_dictionary['Relative Show File Path'] \
+					and validate_strings_match(f'{str(show.show_dictionary["Relative Show File Path"])}', \
+					                           show.show_dictionary["Symlinked"]):
 				if get_live_link(str(show.show_dictionary['Relative Show File Path'])) and \
 						(check_if_valid_symlink_destination(str(show.show_dictionary['Relative Show File Path'])) and (
 								check_if_valid_symlink_target(str(movie.movie_dictionary["Parsed Movie File"])))):
@@ -39,8 +40,6 @@ def parse_shows_dictionary_object(movie, g):
 					continue
 		except (FileNotFoundError or TypeError or KeyError) as err:
 			pass
-			# investigate this area about using the stop condition
-			# theoretically moving these actions here should make things work again, may need revision on the except
 		try:
 			show.show_dictionary['Symlinked'] = str()
 			show.show_dictionary['Relative Show File Path'] = str()
