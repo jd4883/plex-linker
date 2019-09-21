@@ -42,14 +42,14 @@ def init_show_object(show):
 
 
 def set_season_dictionary_value(show):
-	show.show['Season'] = str(0)
-	if show.sonarr_api_query['seasons'][0]['seasonNumber'] == 0:
-		try:
+	try:
+		if show.sonarr_api_query['seasons'][0]['seasonNumber'] == 0:
 			result = show.sonarr_api_query['seasons'][0].pop('seasonNumber')
 			show.show['Season'] = result
-			return show.show['Season']
-		except TypeError:
-			pass
+		else:
+			show.show['Season'] = str(0)
+	except TypeError:
+		show.show['Season'] = str(0)
 	return show.show['Season']
 
 
