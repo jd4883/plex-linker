@@ -22,13 +22,11 @@ def parse_show_to_link(show, g):
 	message.method_exit(g)
 
 
-# noinspection PyUnusedLocal
 def parse_shows_dictionary_object(movie, g):
 	message.method_launch(g)
 	for series in movie.shows_dictionary.keys():
 		series = str(series)
 		show = init_show_object(movie, series, g)
-		#try:
 		if show.show_dictionary and \
 				show.show_dictionary['Relative Show File Path'] \
 				and validate_strings_match(f'{str(show.show_dictionary["Relative Show File Path"])}', \
@@ -38,17 +36,15 @@ def parse_shows_dictionary_object(movie, g):
 							check_if_valid_symlink_target(str(movie.movie_dictionary["Parsed Movie File"])))):
 				print(f"No action required for {movie.movie_title}")
 				continue
-		#except (FileNotFoundError or TypeError or KeyError) as err:
-		#	pass
-		#try:
-		else:
+		try:
 			show.show_dictionary['Symlinked'] = str()
-			show.show_dictionary['Relative Show File Path'] = str()
-			movie.movie_dictionary["Parsed Movie File"] = str()
-			print(f'Checking for presence of "{movie.movie_title}"')
-			parse_show_to_link(show, g)
-		#except TypeError or FileNotFoundError:
-		#	continue
+		except TypeError:
+			continue
+		show.show_dictionary['Relative Show File Path'] = str()
+		movie.movie_dictionary["Parsed Movie File"] = str()
+		print(f'Checking for presence of "{movie.movie_title}"')
+		parse_show_to_link(show, g)
+		
 
 
 # try:
