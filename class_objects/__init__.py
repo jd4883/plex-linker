@@ -111,24 +111,14 @@ class Show(Movie,
 			self.sonarr_api_query = str()
 			return
 		g.sonarr.get_episodes_by_series_id(self.show_dictionary)
-		try:
+		if self.show_dictionary['Show ID']:
 			self.raw_episodes = g.sonarr.get_episodes_by_series_id(self.show_dictionary['Show ID'])
-		except TypeError or KeyError as err:
-			print(f'not yet resolved but needs some fixings, error message {err}')
-			return
-		try:
 			self.raw_episode_files = g.sonarr.get_episode_files_by_series_id(self.show_dictionary['Show ID'])
-		except TypeError or KeyError:
-			return
-		
 		try:
 			self.show_root_path = set_show_root_path(self.sonarr_api_query, self.show, g, movie)
 		except TypeError:
 			self.show_root_path = str()
-		try:
-			self.season = set_season_dictionary_value(self)
-		except TypeError:
-			self.season = int(0)
+		self.season = set_season_dictionary_value(self)
 		self.episode = self.show_dictionary['Parsed Episode'] = str()
 		self.absolute_episode = set_nested_dictionary_key_value_pair(self.show_dictionary['Absolute Episode'], str())
 		try:

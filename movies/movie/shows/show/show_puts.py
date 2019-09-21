@@ -53,10 +53,7 @@ def set_season_dictionary_value(show):
 	return show.show['Season']
 
 
-def set_dictionary_show_root_path(sonarr_api_query,
-                                  show,
-                                  g,
-                                  movie):
+def set_dictionary_show_root_path(sonarr_api_query, show, g, movie):
 	try:
 		g.movies_dictionary_object[movie]['Shows'][show]['Show Root Path'] = parse_root_path_string(sonarr_api_query)
 	except (KeyError or TypeError):
