@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+import os.path
+
 from jobs.set_path_permissions import (set_permissions)
 import messaging.frontend as message
 from movies.movie.movie_puts import (set_movie_file_and_extension)
@@ -16,15 +18,13 @@ def validate_extensions_from_movie_file(movie,
 
 
 def validate_movie_extension(movie, g):
-	from os import listdir
-	try:
-		for file in listdir(movie.absolute_movie_path):
+	if os.path.exists(movie.absolute_movie_path):
+		for file in os.listdir(movie.absolute_movie_path):
 			for file_extension in g.MOVIE_EXTENSIONS:
 				if file.endswith(file_extension):
 					set_movie_file_and_extension(file, file_extension, movie, g)
 					return True
-	except KeyError or FileNotFoundError:
-		return False
+	return False
 
 
 # noinspection PyDeepBugsBinOperand
