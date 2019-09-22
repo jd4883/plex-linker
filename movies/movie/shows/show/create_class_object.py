@@ -7,7 +7,10 @@ def init_show_object(movie,
                      g):
 	from class_objects import Show
 	method_launch(g)
-	show = Show(series, movie.movie_title, movie.movie_dictionary, g)
+	try:
+		show = Show(series, movie.movie_title, movie.movie_dictionary, g)
+	except AttributeError:
+		return
 	get_show(show, g)
 	# try:
 	# 	tv_show_class_object.raw_episodes = g.sonarr.get_episodes_by_series_id(g.movies_dictionary_object[movie.movie_title]['Shows'][tv_show_class_object.movie]['Show ID'])
