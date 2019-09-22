@@ -123,7 +123,7 @@ class Show(Movie,
 		self.absolute_episode = set_nested_dictionary_key_value_pair(self.show_dictionary['Absolute Episode'], str())
 		try:
 			parse_season_using_sonarr_api(self.show_dictionary, self.raw_episode_files)
-		except TypeError:
+		except TypeError or AttributeError:
 			pass
 		self.parsed_title = set_nested_dictionary_key_value_pair(self.show_dictionary['Parsed Show Title'], str())
 		self.parsed_relative_title = set_nested_dictionary_key_value_pair(
