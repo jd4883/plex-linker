@@ -121,13 +121,11 @@ class Show(Movie,
 		self.season = set_season_dictionary_value(self)
 		self.episode = self.show_dictionary['Parsed Episode'] = str()
 		self.absolute_episode = set_nested_dictionary_key_value_pair(self.show_dictionary['Absolute Episode'], str())
-		try:
+		if self.raw_episode_files:
 			parse_season_using_sonarr_api(self.show_dictionary, self.raw_episode_files)
-		except TypeError or AttributeError:
-			pass
 		self.parsed_title = set_nested_dictionary_key_value_pair(self.show_dictionary['Parsed Show Title'], str())
-		self.parsed_relative_title = set_nested_dictionary_key_value_pair(
-				self.show_dictionary['Parsed Relative Show Title'], str())
+		self.parsed_relative_title = set_nested_dictionary_key_value_pair(self.show_dictionary['Parsed Relative Show Title'],
+		                                                                  str())
 		self.relative_show_path = set_nested_dictionary_key_value_pair(self.show_dictionary['Relative Show File Path'],
 		                                                               str())
 
