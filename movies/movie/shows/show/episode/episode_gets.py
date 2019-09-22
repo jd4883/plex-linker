@@ -11,8 +11,8 @@ def get_season(self, g):
 	if (self.show_dictionary['Season'] == int(0)) or str(self.show_dictionary['Season']).isdigit():
 		self.show_dictionary['Parsed Season'] = str(get_padded_episode_number(self.show_dictionary['Season'], 2))
 	else:
-		self.show_dictionary['Parsed Season'] =\
-			str(get_alphabetical_specials_string())  # try to get to the class object level
+		self.show_dictionary['Parsed Season'] = str(get_alphabetical_specials_string())  # try to get to the class object
+	# level
 	message.method_exit(g)
 	return self.show_dictionary['Parsed Season']
 
