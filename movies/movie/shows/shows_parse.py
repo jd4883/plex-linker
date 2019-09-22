@@ -27,14 +27,17 @@ def parse_shows_dictionary_object(movie, g):
 	for series in movie.shows_dictionary.keys():
 		series = str(series)
 		show = init_show_object(movie, series, g)
-		if show.show_dictionary and show.show_dictionary['Relative Show File Path'] \
-				and validate_strings_match(f'{str(show.show_dictionary["Relative Show File Path"])}', \
-				                           show.show_dictionary["Symlinked"]):
-			if get_live_link(str(show.show_dictionary['Relative Show File Path'])) and \
-					(check_if_valid_symlink_destination(str(show.show_dictionary['Relative Show File Path'])) and (
-							check_if_valid_symlink_target(str(movie.movie_dictionary["Parsed Movie File"])))):
-				print(f"No action required for {movie.movie_title}")
-				continue
+		try:
+			if show.show_dictionary and show.show_dictionary['Relative Show File Path'] \
+					and validate_strings_match(f'{str(show.show_dictionary["Relative Show File Path"])}', \
+					                           show.show_dictionary["Symlinked"]):
+				if get_live_link(str(show.show_dictionary['Relative Show File Path'])) and \
+						(check_if_valid_symlink_destination(str(show.show_dictionary['Relative Show File Path'])) and (
+								check_if_valid_symlink_target(str(movie.movie_dictionary["Parsed Movie File"])))):
+					print(f"No action required for {movie.movie_title}")
+					continue
+		except AttributeError:
+			continue
 		try:
 			show.show_dictionary['Symlinked'] = str()
 		except TypeError:
