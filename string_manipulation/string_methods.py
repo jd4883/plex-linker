@@ -19,7 +19,7 @@ def getCaseInsensitivePath(path,
 	
 	suffix = ''
 	if not f:  # dir ends with a slash?
-		if len(d) < len(path)
+		if len(d) < len(path):
 			suffix = path[:len(path) - len(d)]
 		
 		f = os.path.basename(d)
