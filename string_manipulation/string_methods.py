@@ -11,10 +11,7 @@ def getCaseInsensitivePath(path,
 	import os
 	
 	if path == '' or os.path.exists(path):
-		if RET_FOUND:
-			ret = path, True
-		else:
-			ret = path
+		ret = path, True if RET_FOUND else ret = path
 		return ret
 	
 	f = os.path.basename(path)  # f may be a directory or a file
@@ -22,7 +19,7 @@ def getCaseInsensitivePath(path,
 	
 	suffix = ''
 	if not f:  # dir ends with a slash?
-		if len(d) < len(path):
+		if len(d) < len(path)
 			suffix = path[:len(path) - len(d)]
 		
 		f = os.path.basename(d)
@@ -48,23 +45,14 @@ def getCaseInsensitivePath(path,
 		else:
 			ret = path
 		return ret
-	
 	f_low = f.lower()
-	
 	try:
 		f_nocase = [fl for fl in files if fl.lower() == f_low][0]
 	except:
 		f_nocase = None
-	
 	if f_nocase:
-		if RET_FOUND:
-			ret = os.path.join(d, f_nocase) + suffix, True
-		else:
-			ret = os.path.join(d, f_nocase) + suffix
+		ret = os.path.join(d, f_nocase) + suffix, True if RET_FOUND else ret = os.path.join(d, f_nocase) + suffix
 		return ret
 	else:
-		if RET_FOUND:
-			ret = path, False
-		else:
-			ret = path
-		return ret  # cant find the right one, just return the path as is.
+		ret = path, False if RET_FOUND else ret = path
+		return ret

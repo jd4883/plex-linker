@@ -10,16 +10,14 @@ from messaging.frontend import (
 	)
 
 
-def set_file_mask_with_chmod_on_files_and_links(path,
-                                                g):
+def set_file_mask_with_chmod_on_files_and_links(path, g):
 	method_launch(g)
 	try:
 		path = str(path)
 		Path(str(path)).touch()
-		os.chmod(path,
-		         0o775)
+		os.chmod(path, 0o775)
 	except FileNotFoundError as err:
-		print(f"{g.method} had a FileNotFoundError{err}")  # testing
+		pass
 	method_exit(g)
 
 
@@ -38,12 +36,8 @@ def set_ownership_on_files_and_links(path):
 		path = str(path)
 		if not exists(path):
 			Path(path).touch()
-		fd = os.open(f"{path}",
-		             os.O_RDONLY)
-		os.fchown(fd,
-		          int(environ['PUID']),
-		          int(environ['PGID']))
+		fd = os.open(f"{path}", os.O_RDONLY)
+		os.fchown(fd, int(environ['PUID']), int(environ['PGID']))
 		os.close(fd)
 	except FileNotFoundError as err:
-		# print(f"{g.method} had an error: {err}")  # testing
 		pass

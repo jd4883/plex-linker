@@ -78,18 +78,15 @@ class Movie(Movies,
 		self.movie_dictionary['Absolute Movie Path'] =\
 			get_movie_path(self,
 			               g)
-		self.relative_movie_path =\
-			set_nested_dictionary_key_value_pair(self.movie_dictionary['Relative Movie Path'],
-			                                     get_relative_movie_path(self,
-			                                                             g))
+		self.relative_movie_path = set_nested_dictionary_key_value_pair(self.movie_dictionary['Relative Movie Path'],
+		                                                                get_relative_movie_path(self, g))
 		self.quality = set_nested_dictionary_key_value_pair(self.movie_dictionary['Parsed Movie Quality'], str())
 		self.extension = set_nested_dictionary_key_value_pair(self.movie_dictionary['Parsed Movie Extension'])
 		self.movie_file = set_nested_dictionary_key_value_pair(self.movie_dictionary['Parsed Movie File'], str())
 		if validated_movie_path_is_not_null(self, g):
 			validate_extensions_from_movie_file(self, g)
 			set_movie_quality(self, g)
-			self.absolute_movie_file_path = set_nested_dictionary_key_value_pair(
-					self.movie_dictionary['Absolute Movie File Path'], get_absolute_movie_file_path(self))
+			self.absolute_movie_file_path = set_nested_dictionary_key_value_pair(self.movie_dictionary['Absolute Movie File Path'], get_absolute_movie_file_path(self))
 			self.movie_dictionary['Relative Movie File Path'] = str()
 			self.relative_movie_file_path = set_nested_dictionary_key_value_pair(
 					self.movie_dictionary['Relative Movie File Path'], get_relative_movie_file_path(self, g))

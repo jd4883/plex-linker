@@ -19,6 +19,13 @@ ENV FREQUENCY=15
 ENV PLEX_LINKER=/config
 
 ENV SONARR_ROOT_PATH_PREFIX=/
+ENV YAML_FILE_CURRENT=/config/config_files/media_collection_parsed_this_run.yaml
+ENV YAML_FILE_PREVIOUS=/config/config_files/media_collection_parsed_last_run.yaml
+ENV LOG_NAME=plex_linker
+ENV LOGS=/config/logs
+
+ENV SEASON_INT = 0
+ENV SEASON_STR = '00'
 # come up with a dynamic way to dif the path from the linkers path
 
 VOLUME /config /media

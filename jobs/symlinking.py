@@ -31,6 +31,7 @@ def symlink_force(show, g):
 		g.list_of_movies_to_locate.append(show.movie_title)
 	message.method_exit(g)
 
+
 def strip_quotes_from_string(string):
 	string.replace('"', '')
 	return string.replace("'", "")
