@@ -51,7 +51,10 @@ def getCaseInsensitivePath(path,
 	except:
 		f_nocase = None
 	if f_nocase:
-		ret = os.path.join(d, f_nocase) + suffix, True if RET_FOUND else ret = os.path.join(d, f_nocase) + suffix
+		if RET_FOUND:
+			ret = os.path.join(d, f_nocase) + suffix, True
+		else:
+			ret = os.path.join(d, f_nocase) + suffix
 		return ret
 	else:
 		ret = path, False if RET_FOUND else ret = path
