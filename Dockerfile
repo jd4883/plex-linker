@@ -7,7 +7,7 @@ ENV RADARR_API_KEY=${RADARR_API_KEY}
 ENV RADARR_URL=http://127.0.0.1:7878/api
 
 ENV SONARR_API_KEY=${RADARR_API_KEY}
-ENV SOANRR_URL=http://127.0.0.1:8989/api
+ENV SONARR_URL=http://127.0.0.1:8989/api
 
 ENV PLEX_API_KEY=${PLEX_API_KEY}
 ENV PLEX_API_URL=http://127.0.0.1:32400
@@ -24,8 +24,8 @@ ENV YAML_FILE_PREVIOUS=/config/config_files/media_collection_parsed_last_run.yam
 ENV LOG_NAME=plex_linker
 ENV LOGS=/config/logs
 
-ENV SEASON_INT = 0
-ENV SEASON_STR = '00'
+ENV SEASON_INT=0
+ENV SEASON_STR='00'
 # come up with a dynamic way to dif the path from the linkers path
 
 VOLUME /config /media
