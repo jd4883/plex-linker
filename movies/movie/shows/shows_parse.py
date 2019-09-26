@@ -27,31 +27,27 @@ def parse_shows_dictionary_object(movie, g):
 	for series in movie.shows_dictionary.keys():
 		show = init_show_object(movie, str(series), g)
 		try:
-			if show.show_dictionary and show.show_dictionary['Relative Show File Path'] \
-					and validate_strings_match(f'{str(show.show_dictionary["Relative Show File Path"])}', show.show_dictionary["Symlinked"]):
-				print(f'outer if condition met for {series}')
-				if get_live_link(str(show.show_dictionary['Relative Show File Path'])) and \
-						(check_if_valid_symlink_destination(str(show.show_dictionary['Relative Show File Path'])) and (
-								check_if_valid_symlink_target(str(movie.movie_dictionary["Parsed Movie File"])))):
-					print(f'inner if condition met for {series}')
-					print(f"No action required for {movie.movie_title}")
-					continue
-				else:
-					print(f'else condition met for {series}')
-					try:
-						show.show_dictionary['Symlinked'] = str()
-					except TypeError:
-						continue
-					show.show_dictionary['Relative Show File Path'] = str()
-					movie.movie_dictionary["Parsed Movie File"] = str()
-					parse_show_to_link(show, g)
-			else:
-				print(f'Checking for presence of "{movie.movie_title}"')
-		except AttributeError or TypeError:
-			print(f'Except hit for {series}, will not attempt to parse a link')
-		
-		
-		
+			if not show.show_dictionary:
+				continue
+		except AttributeError:
+			continue
+		if show.show_dictionary and show.show_dictionary['Relative Show File Path'] \
+				and validate_strings_match(f'{str(show.show_dictionary["Relative Show File Path"])}',
+				                           show.show_dictionary["Symlinked"]) and \
+				get_live_link(str(show.show_dictionary['Relative Show File Path'])) and \
+				(check_if_valid_symlink_destination(str(show.show_dictionary['Relative Show File Path'])) and (
+						check_if_valid_symlink_target(str(movie.movie_dictionary["Parsed Movie File"])))):
+			print(f'Link Present for {show.show_dictionary["Symlinked"]}, no need to parse files here')
+			continue
+		else:
+			show.show_dictionary['Symlinked'] = str()
+			show.show_dictionary['Relative Show File Path'] = str()
+			movie.movie_dictionary["Parsed Movie File"] = str()
+			parse_show_to_link(show, g)
+
+# except AttributeError or TypeError: \
+# 	# continue
+# print(f'Except hit for {series}, will not attempt to parse a link')
 
 
 # try:
