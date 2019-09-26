@@ -108,16 +108,28 @@ class Show(Movie,
 			self.sonarr_api_query = str()
 			return
 		g.sonarr.get_episodes_by_series_id(self.show_dictionary)
-		if self.show_dictionary['Show ID']:
-			self.raw_episodes = g.sonarr.get_episodes_by_series_id(self.show_dictionary['Show ID'])
-			self.raw_episode_files = g.sonarr.get_episode_files_by_series_id(self.show_dictionary['Show ID'])
+		try:
+			if self.show_dictionary['Show ID']:
+				self.raw_episodes = g.sonarr.get_episodes_by_series_id(self.show_dictionary['Show ID'])
+				self.raw_episode_files = g.sonarr.get_episode_files_by_series_id(self.show_dictionary['Show ID'])
+		except TypeError:
+			pass
 		try:
 			self.show_root_path = set_show_root_path(self.sonarr_api_query, self.show, g, movie)
 		except TypeError:
 			self.show_root_path = str()
-		self.season = set_season_dictionary_value(self)
-		self.episode = self.show_dictionary['Parsed Episode'] = str()
-		self.absolute_episode = set_nested_dictionary_key_value_pair(self.show_dictionary['Absolute Episode'], str())
+		try:
+			self.season = set_season_dictionary_value(self)
+		except TypeError:
+			self.season = str('00')
+		try:
+			self.episode = self.show_dictionary['Parsed Episode'] = str()
+		except TypeError:
+			self.episode = str()
+		try:
+			self.absolute_episode = set_nested_dictionary_key_value_pair(self.show_dictionary['Absolute Episode'], str())
+		except TypeError:
+			self.absolute_episode = str()
 		try:
 			parse_season_using_sonarr_api(self.show_dictionary, self.raw_episode_files)
 		except TypeError:
