@@ -5,6 +5,8 @@ import logs.bin.get_parameters as parameters
 from messaging.backend import debug_message
 
 
+# TODO: standardize all frontend / backend calls
+
 def print_movie_file_quality(movie, g):
 	g.LOG.debug(debug_message(612, g, movie.quality))
 
@@ -12,15 +14,6 @@ def print_movie_file_quality(movie, g):
 def message_exiting_function(g):
 	os.chdir(g.MEDIA_DIRECTORY)
 	g.LOG.debug(debug_message(601, g))
-
-
-# def display_show_class_attributes(show_object,
-#                                   g):
-# 	method_launch(g)
-# 	print_media_path_value(g)
-# 	print_show_path_value(show_object, g)
-# 	print_show_title_value(show_object, g)
-# 	method_exit(g)
 
 
 def print_show_title_value(show_object, g):
@@ -54,7 +47,6 @@ def method_launch(g):
 
 
 def message_no_duplicates_to_remove():
-	# TODO: standardize method
 	print("Nothing to remove here detected as a duplicate")
 
 

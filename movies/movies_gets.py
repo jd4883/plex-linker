@@ -17,11 +17,4 @@ def get_media_collection_parsed_archives():
 
 
 def get_relative_movies_path(self):
-	return relpath(self.absolute_movies_path,
-	               str(environ['DOCKER_MEDIA_PATH']))
-
-#
-#
-# def get_intersection_between_lists(a_set, b_set):
-# 	return a_set & b_set
-# future method for adding movies library from disk
+	return relpath(self.absolute_movies_path, str(environ['DOCKER_MEDIA_PATH']))
