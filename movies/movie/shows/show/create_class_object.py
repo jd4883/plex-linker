@@ -1,9 +1,7 @@
 from movies.movie.shows.show.show_gets import *
 
 
-def init_show_object(movie,
-                     series,
-                     g):
+def init_show_object(movie, series, g):
 	from class_objects import Show
 	try:
 		show = Show(series, movie.movie_title, movie.movie_dictionary, g)
