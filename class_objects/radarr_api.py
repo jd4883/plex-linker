@@ -16,14 +16,14 @@ class RadarrAPI(object):
 	def lookup_movie(self, query):
 		return self.request_get(f"{self.host_url}/movie/lookup?term={query}").json()
 	
-	def request_get(self, url, data = {}):
+	def request_get(self, url, data = dict()):
 		return requests.get(url, headers = {'X-Api-Key': self.api_key}, json = data)
 	
-	def request_post(self, url, data):
+	def request_post(self, url, data = dict()):
 		return requests.post(url, headers = {'X-Api-Key': self.api_key}, json = data)
 	
-	def request_put(self, url, data):
+	def request_put(self, url, data = dict()):
 		return requests.put(url, headers = {'X-Api-Key': self.api_key}, json = data)
 	
-	def request_delete(self, url, data):
+	def request_delete(self, url, data = dict()):
 		return requests.delete(url, headers = {'X-Api-Key': self.api_key}, json = data)

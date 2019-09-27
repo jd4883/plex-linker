@@ -6,9 +6,9 @@ from os import (
 from os.path import (relpath)
 
 
-def get_media_collection_parsed_last_time():
+def parsed_collection():
 	chdir(environ['PLEX_LINKER'])
-	return "config_files/media_collection_parsed_last_run.yaml"
+	return "config_files/parsed_collection.yaml"
 
 
 def get_media_collection_parsed_archives():

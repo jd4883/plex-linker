@@ -83,7 +83,7 @@ class Movie(Movies,
 		self.quality = set_nested_dictionary_key_value_pair(self.movie_dictionary['Parsed Movie Quality'], str())
 		self.extension = set_nested_dictionary_key_value_pair(self.movie_dictionary['Parsed Movie Extension'])
 		self.movie_file = set_nested_dictionary_key_value_pair(self.movie_dictionary['Parsed Movie File'], str())
-		if validated_movie_path_is_not_null(self, g):
+		if validated_movie_path_is_not_null(self):
 			validate_extensions_from_movie_file(self, g)
 			set_movie_quality(self, g)
 			self.absolute_movie_file_path = set_nested_dictionary_key_value_pair(self.movie_dictionary['Absolute Movie File Path'], get_absolute_movie_file_path(self))

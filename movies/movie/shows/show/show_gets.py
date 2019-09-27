@@ -27,7 +27,7 @@ def get_show(show_object,
 
 
 def get_alphabetical_specials_string():
-	return f"Season {str(0).zfill(2)}"  # create sonarr API call here to get the name dynamically
+	return f"Season {str(0).zfill(2)}"  # create sonarr API call here to movies_gets the name dynamically
 
 
 def get_anime_status_from_api(show_lookup):

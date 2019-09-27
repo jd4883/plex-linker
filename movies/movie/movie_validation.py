@@ -23,7 +23,7 @@ def validate_movie_extension(movie, g):
 	return False
 
 
-def validated_movie_path_is_not_null(movie, g):
+def validated_movie_path_is_not_null(movie):
 	if movie.absolute_movie_path:
 		return True
 	return False

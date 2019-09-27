@@ -15,17 +15,17 @@ class PlexAPI(object):
 	
 	# going to add some combination of example 2 and example 4 or example #6
 	# Example 2: Mark all Game of Thrones episodes watched.
-	# plex.library.section('TV Shows').get('Game of Thrones').markWatched()
+	# plex.library.section('TV Shows').movies_gets('Game of Thrones').markWatched()
 	# Example 6: List all movies directed by the same person as Elephants Dream.
 	
 	# movies = plex.library.section('Movies')
-	# die_hard = movies.get('Elephants Dream')
+	# die_hard = movies.movies_gets('Elephants Dream')
 	# director = die_hard.directors[0]
 	# for movie in movies.search(None, director=director):
 	# 	print(movie.title)
 	
 	# Example 4: Play the movie Cars on another client.
 	# Note: Client must be on same network as server.
-	# cars = plex.library.section('Movies').get('Cars')
+	# cars = plex.library.section('Movies').movies_gets('Cars')
 	# client = plex.client("Michael's iPhone")
 	# client.playMedia(cars)

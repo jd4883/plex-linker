@@ -20,7 +20,7 @@ ENV PLEX_LINKER=/config
 
 ENV SONARR_ROOT_PATH_PREFIX=/
 ENV YAML_FILE_CURRENT=/config/config_files/media_collection_parsed_this_run.yaml
-ENV YAML_FILE_PREVIOUS=/config/config_files/media_collection_parsed_last_run.yaml
+ENV YAML_FILE_PREVIOUS=/config/config_files/parsed_collection.yaml
 ENV LOG_NAME=plex_linker
 ENV LOGS=/config/logs
 
