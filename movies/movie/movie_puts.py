@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 from movies.movie.movie_parser import *
 from messaging.frontend import (
 	method_launch,

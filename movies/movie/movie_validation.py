@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import os.path
 
 from jobs.set_path_permissions import (set_permissions)

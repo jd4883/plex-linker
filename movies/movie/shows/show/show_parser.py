@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 from os import environ
 import movies.movie.shows.show.show_puts as sets
 import messaging.frontend as message

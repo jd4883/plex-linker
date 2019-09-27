@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 # api_key #= FILL_IN_THIS_VALUE
 # movie = str(movie).replace(' ',
 #                          '%20')

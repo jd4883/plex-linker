@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import messaging.frontend as message
 import os
 

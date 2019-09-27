@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 from os import readlink
 
 import messaging.frontend as message

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import os
 def get_collection_absolute_path_parsed_this_run():
 	return str(os.environ['YAML_FILE_CURRENT'])

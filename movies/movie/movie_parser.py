@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 from messaging.frontend import (
 	method_launch,
 	print_movie_file_quality,

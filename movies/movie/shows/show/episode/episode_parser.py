@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 def parse_season_using_sonarr_api(show, query, padding = 2, season_default = 0):
 	show['Season'] = int(season_default) if not show['Season'] else show['Season']
 	try:
