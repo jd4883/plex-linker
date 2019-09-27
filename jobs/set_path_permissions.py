@@ -26,7 +26,6 @@ def set_permissions(movie_class_object, g):
 	message.method_exit(g)
 
 def set_ownership_on_files_and_links(path):
-	message.method_launch(g)
 	try:
 		path = str(path)
 		if not exists(path):
@@ -36,4 +35,3 @@ def set_ownership_on_files_and_links(path):
 		os.close(fd)
 	except FileNotFoundError:
 		pass
-	message.method_exit(g)
