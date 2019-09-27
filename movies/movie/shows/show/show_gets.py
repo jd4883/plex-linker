@@ -18,8 +18,10 @@ def get_show(show_object, g):
 
 
 def get_anime_status_from_api(show_lookup):
-	status = True if show_lookup['seriesType'] == 'anime' else status = False
-	return status
+	if show_lookup['seriesType'] == 'anime':
+		return True
+	else:
+		return False
 
 
 def get_show_id(show, g):
