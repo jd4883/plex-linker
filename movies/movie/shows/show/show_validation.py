@@ -4,8 +4,8 @@ from os.path import exists
 import messaging.frontend as message
 
 
-def validate_show_path_presence(show_object,
-                                g):
+def show_path_presence(show_object,
+                       g):
 	message.method_launch(g)
 	chdir('/media')
 	for show_path in show_object.show_paths:
