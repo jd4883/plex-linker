@@ -77,7 +77,7 @@ class Show(Movie, Globals):
 	             film = str(),
 	             movie_dictionary = dict(),
 	             show_dictionary = dict(),
-	             query = dict(g.sonarr.lookup_series(self.show))):
+	             query = dict()):
 		super().__init__(film, movie_dictionary, g)
 		chdir(str(environ['DOCKER_MEDIA_PATH']))
 		self.movie_dictionary = movie_dictionary

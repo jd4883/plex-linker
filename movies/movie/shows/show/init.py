@@ -12,7 +12,8 @@ def init_show_object(movie, series, g):
 		            series,
 		            str(movie.movie_dictionary['Unparsed Movie Title']),
 		            dict(movie.movie_dictionary),
-		            dict(movie.movie_dictionary['Shows'][series]))
+		            dict(movie.movie_dictionary['Shows'][series]),
+		            dict(g.sonarr.lookup_series(self.show)))
 	except AttributeError:
 		return
 	get.get_show(show, g)
