@@ -75,31 +75,23 @@ class Show(Movie, Globals):
 	             g,
 	             series = str(),
 	             film = str(),
-	             movie_dictionary = dict(),
-	             show_dictionary = dict(),
-	             query = dict()):
-		super().__init__(film, movie_dictionary, g)
+	             movie_dict = dict(),
+	             show_dict = dict(),
+	             series_lookup = dict()):
+		super().__init__(film, movie_dict, g)
 		chdir(str(environ['DOCKER_MEDIA_PATH']))
-		self.movie_dictionary = movie_dictionary
+		self.movie_dictionary = movie_dict
 		self.show = series
-		self.show_dictionary = show_dictionary
-		self.sonarr_show_dictionary = query
-		set_show_id(self.show, g)
-		#try:
+		self.show_dictionary = show_dict
+		self.sonarr_show_dictionary = series_lookup
+		self.sonarr_api_query = str()
 		if self.sonarr_show_dictionary:
 			self.sonarr_api_query = self.sonarr_show_dictionary[0]
-		else:
-			self.sonarr_api_query = query
-		#except (IndexError or FileNotFoundError or KeyError):
-		#	self.sonarr_api_query = str()
-		#	return
+		set_show_id(self.show, g)
 		g.sonarr.get_episodes_by_series_id(self.show_dictionary)
-		try:
-			if self.show_dictionary['Show ID']:
-				self.raw_episodes = g.sonarr.get_episodes_by_series_id(self.show_dictionary['Show ID'])
-				self.raw_episode_files = g.sonarr.get_episode_files_by_series_id(self.show_dictionary['Show ID'])
-		except TypeError:
-			pass
+		if self.show_dictionary['Show ID']:
+			self.raw_episodes = g.sonarr.get_episodes_by_series_id(self.show_dictionary['Show ID'])
+			self.raw_episode_files = g.sonarr.get_episode_files_by_series_id(self.show_dictionary['Show ID'])
 		try:
 			self.show_root_path = set_show_root_path(self.sonarr_api_query, self.show, g, film)
 		except TypeError:
