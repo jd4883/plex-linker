@@ -12,7 +12,6 @@ from logs.bin.get_parameters import (get_method_main, get_logger, get_log_name)
 from movies.movie.movie_gets import (get_absolute_movie_file_path, get_relative_movie_file_path, get_movie_path, get_relative_movie_path)
 from movies.movie.movie_puts import (set_movie_quality)
 from movies.movie.movie_validation import (validate_extensions_from_movie_file, validated_movie_path_is_not_null)
-from movies.movie.shows.show.get import get_anime_status_from_api
 from movies.movie.shows.show.show_puts import set_season_dictionary_value, set_show_id
 from movies.movie.shows.shows_parse import set_show_root_path
 from movies.movies_gets import (get_relative_movies_path)
@@ -47,8 +46,7 @@ class Movies:
 		self.relative_movies_path = get_relative_movies_path(self)
 
 
-class Movie(Movies,
-            Globals):
+class Movie(Movies, Globals):
 	def __init__(self, movie, movie_dictionary, g):
 		super().__init__()
 		self.movie_dictionary = movie_dictionary
@@ -72,14 +70,13 @@ class Movie(Movies,
 				self.movie_dictionary['Relative Movie File Path'], get_relative_movie_file_path(self, g))
 
 
-class Show(Movie,
-           Globals):
-	def __init__(self, show, movie, movie_dictionary, g):
+class Show(Movie, Globals):
+	def __init__(self, show, movie, movie_dictionary, show_dictionary, g):
 		super().__init__(movie, movie_dictionary, g)
 		chdir(str(environ['DOCKER_MEDIA_PATH']))
 		self.movie_dictionary = movie_dictionary
 		self.show = str(show)
-		self.show_dictionary = self.movie_dictionary['Shows'][self.show]
+		self.show_dictionary = show_dictionary
 		self.sonarr_show_dictionary = g.sonarr.lookup_series(self.show)
 		set_show_id(self.show, g)
 		try:
@@ -118,29 +115,3 @@ class Show(Movie,
 		self.parsed_relative_title = set_nested_dictionary_key_value_pair(self.show_dictionary['Parsed Relative Show Title'], str())
 		self.relative_show_path = set_nested_dictionary_key_value_pair(self.show_dictionary['Relative Show File Path'], str())
 
-
-# noinspection PyUnusedFunction
-# work in progress hopefully will. replace all current parsing for episodes out of a show
-def parse_episode_using_sonarr_api(show, query):
-	padding = 2
-	if not show['Episode']:
-		show['episode'] = str()
-		show['Parsed Episode'] = str()
-	for item in query:
-		try:
-			if query[item]['episodeNumber'] == show['Episode']:
-				show['Episode'] = query[item]['episodeNumber']
-				show['Episode ID'] = int(query[item]['id'])
-				if get_anime_status_from_api(query[item]):
-					show['Anime'] = True
-					padding = 3
-				if query['absoluteEpisodeNumber']:
-					show['Absolute Episode'] = int(query['absoluteEpisodeNumber'])
-					show['Parsed Absolute Episode'] = str(show['Absolute Episode']).zfill(padding)
-		except KeyError:
-			continue
-		show['Parsed Episode'] = str(show['Episode']).zfill(padding)
-		print(f"Parsed Episode ID {show['Episode ID']} for Show")
-		print(f"Episode parsed as {show['Episode']}")
-		print(f"Parsed Episode {show['Parsed Episode']} for Show")
-		break

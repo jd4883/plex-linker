@@ -8,7 +8,7 @@ def anime_status(self):
 def init_show_object(movie, series, g):
 	from class_objects import Show
 	try:
-		show = Show(series, movie.movie_title, movie.movie_dictionary, g)
+		show = Show(series, movie.movie_title, movie.movie_dictionary, movie.movie_dictionary['Shows'][series], g)
 	except AttributeError:
 		return
 	get.get_show(show, g)
