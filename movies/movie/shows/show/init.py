@@ -7,7 +7,9 @@ def anime_status(self):
 
 def init_show_object(movie, series, g):
 	from class_objects import Show
-	print(type(movie.movie_dictionary['Shows'][series]))
+	if type(movie.movie_dictionary['Shows'][series]) != "<class 'dict'>":
+		print("type error for nonetype")
+		return
 	show = Show(g,
 	            series,
 	            str(movie.movie_dictionary['Unparsed Movie Title']),
