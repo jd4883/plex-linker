@@ -8,6 +8,7 @@ def symlink_force(show, g):
 	if (show.absolute_movie_file_path or show.relative_show_path) is not \
 			(None or 'None/' or (show.absolute_movie_file_path.endswith('None') or show.relative_show_path.endswith('None'))):
 		os.chdir(str(os.environ['HOST_MEDIA_PATH']))
+		# noinspection SpellCheckingInspection
 		process = subprocess.Popen(["ln", "-fsvr", f"{show.absolute_movie_file_path}", f"{show.relative_show_path}"],
 		                           stderr=subprocess.DEVNULL, stdout=subprocess.PIPE)
 		show.show_dictionary['Symlinked'] = strip_quotes_from_string(f"{process.communicate()[0].strip()}").replace('b"', str())[:-1].rstrip()

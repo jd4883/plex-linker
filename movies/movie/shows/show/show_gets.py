@@ -36,6 +36,8 @@ def get_show_id(show, g):
 	return show_id
 
 
+# noinspection PyUnusedFunction
+# WIP to leverage the API from sonarr
 def get_tag_id(show, g, movie, tag):
 	api_results = g.sonarr.get_all_tag_ids()['id']
 	if not show.show_dictionary['Show Tags']:

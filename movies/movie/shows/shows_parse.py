@@ -44,16 +44,12 @@ def parse_shows_dictionary_object(movie, g):
 			movie.movie_dictionary["Parsed Movie File"] = str()
 			parse_show_to_link(show, g)
 
-# except AttributeError or TypeError: \
-# 	# continue
-# print(f'Except hit for {series}, will not attempt to parse a link')
-
 
 # try:
 # 	for genre in tv_show.sonarr_api_query['genres']:
 # 		# [g.sonarr.set_new_tag_for_sonarr({"label": str(genre).lower()}) for genre in sorted(tv_show.sonarr)]
 # 		# [g.sonarr.set_new_tag_for_sonarr(str(genre).lower()) for genre in sorted(g.sonarr_genres)]
-# 		# definitely need to validate this workas as intended
+# 		# definitely need to validate this works as intended
 # 		g.sonarr.set_series_tags({'label': str(genre).lower()},
 # 		                         g.movies_dictionary_object[self.movie_title]['Shows'][self]['Show ID'])
 # 		tag_id = get_tag_id(self,

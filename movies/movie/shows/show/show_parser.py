@@ -1,7 +1,7 @@
 from os import environ
 import movies.movie.shows.show.show_puts as sets
 import messaging.frontend as message
-from movies.movie.shows.show.episode.episode_gets import (get_padded_episode_number, get_season_folder)
+from movies.movie.shows.show.episode.gets import (get_padded_episode_number, season_folder_key)
 from movies.movies_puts import (
 	create_directory_if_not_present,
 	set_nested_dictionary_key_value_pair,
@@ -17,7 +17,7 @@ def parse_show(self,
 	if not self.show_dictionary['Season']:
 		self.show_dictionary['Season'] = str(0)
 	self.show_dictionary['Parsed Season Folder'] =\
-		get_season_folder(self,
+		season_folder_key(self,
 		                  g)
 	self.episode =\
 		set_nested_dictionary_key_value_pair(

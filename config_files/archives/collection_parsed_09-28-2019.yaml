@@ -4424,7 +4424,10 @@ Ghost in the Shell (2017):
       Season: '0'
       Show ID: ''
       Show Root Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture
-      Symlinked: ''
+      Symlinked: anime/staging/Ghost in the Shell- Arise - Alternative Architecture/Season
+        00/Ghost in the Shell- Arise - Alternative Architecture - S00E001 - Ghost
+        in the Shell New Movie Bluray-2160p.mkv -> ../../../../movies/staging/Ghost
+        in the Shell (2017)/Ghost in the Shell (2017) Bluray-2160p.mkv
       Title: Ghost in the Shell New Movie
   Unparsed Movie Title: Ghost in the Shell (2017)
 Ghost in the Shell 2- Innocence (2004):
@@ -4484,8 +4487,8 @@ Ghost in the Shell Arise - Border 1- Ghost Pain (2013):
       - 4
       Parsed Episode: ''
       Parsed Relative Show Title: ''
-      Parsed Season: '01'
-      Parsed Season Folder: Season 01
+      Parsed Season: ''
+      Parsed Season Folder: ''
       Parsed Show Title: ''
       Relative Show File Path: ''
       Season: '1'
@@ -4515,8 +4518,8 @@ Ghost in the Shell Arise - Border 2- Ghost Whispers (2013):
       - 6
       Parsed Episode: ''
       Parsed Relative Show Title: ''
-      Parsed Season: '01'
-      Parsed Season Folder: Season 01
+      Parsed Season: ''
+      Parsed Season Folder: ''
       Parsed Show Title: ''
       Relative Show File Path: ''
       Season: '1'
@@ -4529,11 +4532,12 @@ Ghost in the Shell Arise - Border 3- Ghost Tears (2014):
   Absolute Movie File Path: ''
   Absolute Movie Path: /media/video/movies/foreign/Ghost in the Shell Arise - Border
     3- Ghost Tears (2014)
-  Parsed Movie Extension: ''
+  Parsed Movie Extension: mkv
   Parsed Movie File: Ghost in the Shell Arise - Border 3- Ghost Tears (2014) Remux-1080p.mkv
-  Parsed Movie Quality: ''
+  Parsed Movie Quality: Bluray-1080p Remux.mkv
   Relative Movie File Path: ''
-  Relative Movie Path: movies/foreign/Ghost in the Shell Arise - Border 3- Ghost Tears (2014)
+  Relative Movie Path: movies/foreign/Ghost in the Shell Arise - Border 3- Ghost Tears
+    (2014)
   Shows:
     Ghost in the Shell- Arise - Alternative Architecture:
       Absolute Episode:
@@ -4545,8 +4549,8 @@ Ghost in the Shell Arise - Border 3- Ghost Tears (2014):
       - 8
       Parsed Episode: ''
       Parsed Relative Show Title: ''
-      Parsed Season: '01'
-      Parsed Season Folder: Season 01
+      Parsed Season: ''
+      Parsed Season Folder: ''
       Parsed Show Title: ''
       Relative Show File Path: ''
       Season: '1'
@@ -4577,8 +4581,8 @@ Ghost in the Shell Arise - Border 4- Ghost Stands Alone (2014):
       - 2
       Parsed Episode: ''
       Parsed Relative Show Title: ''
-      Parsed Season: '01'
-      Parsed Season Folder: Season 01
+      Parsed Season: ''
+      Parsed Season Folder: ''
       Parsed Show Title: ''
       Relative Show File Path: ''
       Season: '1'
@@ -4608,8 +4612,8 @@ Ghost in the Shell Arise - Border 5- Pyrophoric Cult (2015):
       - 10
       Parsed Episode: ''
       Parsed Relative Show Title: ''
-      Parsed Season: '01'
-      Parsed Season Folder: Season 01
+      Parsed Season: ''
+      Parsed Season Folder: ''
       Parsed Show Title: ''
       Relative Show File Path: ''
       Season: '1'
@@ -4635,8 +4639,8 @@ Ghost in the Shell Arise- Another Mission (2013):
       - 11
       Parsed Episode: ''
       Parsed Relative Show Title: ''
-      Parsed Season: '00'
-      Parsed Season Folder: Season 00
+      Parsed Season: ''
+      Parsed Season Folder: ''
       Parsed Show Title: ''
       Relative Show File Path: ''
       Season: '0'
@@ -4738,7 +4742,11 @@ Ghost in the Shell- Stand Alone Complex - The Laughing Man (2005):
       Season: '0'
       Show ID: ''
       Show Root Path: anime/staging/Ghost in the Shell- Stand Alone Complex
-      Symlinked: ''
+      Symlinked: anime/staging/Ghost in the Shell- Stand Alone Complex/Season 00/Ghost
+        in the Shell- Stand Alone Complex - S00E003 - The Laughing Man Bluray-1080p.mkv
+        -> ../../../../movies/foreign/Ghost in the Shell- Stand Alone Complex - The
+        Laughing Man (2005)/\xe6\x94\xbb\xe6\xae\xbb\xe6\xa9\x9f\xe5\x8b\x95\xe9\x9a\x8a
+        STAND ALONE COMPLEX The Laughing Man (2004) Bluray-1080p.mkv
       Title: The Laughing Man
   Unparsed Movie Title: Ghost in the Shell- Stand Alone Complex - The Laughing Man
     (2005)
@@ -6447,10 +6455,52 @@ Maggie Simpson In The Longest Daycare (2012):
   Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: movies/staging/Maggie Simpson in The Longest Daycare (2012)/Maggie Simpson in The Longest Daycare (2012) HDTV-720p.mkv
+  Parsed Movie File: /media/video/movies/foreign/Maggie Simpson In The Longest Daycare
+    (2012)//media/video/movies/foreign/Maggie Simpson In The Longest Daycare (2012)//media/video/movies/foreign/Maggie
+    Simpson In The Longest Daycare (2012)//media/video/movies/foreign/Maggie Simpson
+    In The Longest Daycare (2012)//media/video/movies/foreign/Maggie Simpson In The
+    Longest Daycare (2012)//media/video/movies/foreign/Maggie Simpson In The Longest
+    Daycare (2012)//media/video/movies/foreign/Maggie Simpson In The Longest Daycare
+    (2012)//media/video/movies/foreign/Maggie Simpson In The Longest Daycare (2012)//media/video/movies/foreign/Maggie
+    Simpson In The Longest Daycare (2012)//media/video/movies/foreign/Maggie Simpson
+    In The Longest Daycare (2012)//media/video/movies/foreign/Maggie Simpson In The
+    Longest Daycare (2012)//media/video/movies/foreign/Maggie Simpson In The Longest
+    Daycare (2012)//media/video/movies/foreign/Maggie Simpson In The Longest Daycare
+    (2012)//media/video/movies/foreign/Maggie Simpson In The Longest Daycare (2012)//media/video/movies/foreign/Maggie
+    Simpson In The Longest Daycare (2012)//media/video/movies/foreign/Maggie Simpson
+    In The Longest Daycare (2012)//media/video/movies/foreign/Maggie Simpson In The
+    Longest Daycare (2012)//media/video/movies/foreign/Maggie Simpson In The Longest
+    Daycare (2012)//media/video/movies/foreign/Maggie Simpson In The Longest Daycare
+    (2012)//media/video/movies/foreign/Maggie Simpson In The Longest Daycare (2012)//media/video/movies/foreign/Maggie
+    Simpson In The Longest Daycare (2012)//media/video/movies/foreign/Maggie Simpson
+    In The Longest Daycare (2012)//media/video/movies/foreign/Maggie Simpson In The
+    Longest Daycare (2012)//media/video/movies/foreign/Maggie Simpson In The Longest
+    Daycare (2012)//media/video/movies/foreign/Maggie Simpson In The Longest Daycare
+    (2012)//media/video/movies/foreign/Maggie Simpson In The Longest Daycare (2012)//media/video/movies/foreign/Maggie
+    Simpson In The Longest Daycare (2012)//media/video/movies/foreign/Maggie Simpson
+    In The Longest Daycare (2012)//media/video/movies/foreign/Maggie Simpson In The
+    Longest Daycare (2012)//media/video/movies/foreign/Maggie Simpson In The Longest
+    Daycare (2012)//media/video/movies/foreign/Maggie Simpson In The Longest Daycare
+    (2012)//media/video/movies/foreign/Maggie Simpson In The Longest Daycare (2012)//media/video/movies/foreign/Maggie
+    Simpson In The Longest Daycare (2012)//media/video/movies/foreign/Maggie Simpson
+    In The Longest Daycare (2012)//media/video/movies/foreign/Maggie Simpson In The
+    Longest Daycare (2012)//media/video/movies/foreign/Maggie Simpson In The Longest
+    Daycare (2012)//media/video/movies/foreign/Maggie Simpson In The Longest Daycare
+    (2012)//media/video/movies/foreign/Maggie Simpson In The Longest Daycare (2012)//media/video/movies/foreign/Maggie
+    Simpson In The Longest Daycare (2012)//media/video/movies/foreign/Maggie Simpson
+    In The Longest Daycare (2012)//media/video/movies/foreign/Maggie Simpson In The
+    Longest Daycare (2012)//media/video/movies/foreign/Maggie Simpson In The Longest
+    Daycare (2012)//media/video/movies/foreign/Maggie Simpson In The Longest Daycare
+    (2012)//media/video/movies/foreign/Maggie Simpson In The Longest Daycare (2012)//media/video/movies/foreign/Maggie
+    Simpson In The Longest Daycare (2012)//media/video/movies/foreign/Maggie Simpson
+    In The Longest Daycare (2012)//media/video/movies/foreign/Maggie Simpson In The
+    Longest Daycare (2012)//media/video/movies/foreign/Maggie Simpson In The Longest
+    Daycare (2012)//media/video/movies/foreign/Maggie Simpson In The Longest Daycare
+    (2012)//media/video/movies/staging/Maggie Simpson in The Longest Daycare (2012)/Maggie
+    Simpson in The Longest Daycare (2012) HDTV-720p.mkv
   Parsed Movie Quality: HDTV-720p.mkv
   Relative Movie File Path: ''
-  Relative Movie Path: movies/staging/Maggie Simpson In The Longest Daycare (2012)
+  Relative Movie Path: movies/foreign/Maggie Simpson In The Longest Daycare (2012)
   Shows:
     The Simpsons:
       Absolute Episode: ''
@@ -6468,7 +6518,51 @@ Maggie Simpson In The Longest Daycare (2012):
       Season: '0'
       Show ID: 455
       Show Root Path: tv/sitcom/The Simpsons
-      Symlinked: ''
+      Symlinked: tv/sitcom/The Simpsons/Season 00/The Simpsons - S00E61 - The Longest
+        Daycare HDTV-720p.mkv -> ../../../../movies/foreign/Maggie Simpson In The
+        Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson In The Longest
+        Daycare (2012)/media/video/movies/foreign/Maggie Simpson In The Longest Daycare
+        (2012)/media/video/movies/foreign/Maggie Simpson In The Longest Daycare (2012)/media/video/movies/foreign/Maggie
+        Simpson In The Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson
+        In The Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson In
+        The Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson In The
+        Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson In The Longest
+        Daycare (2012)/media/video/movies/foreign/Maggie Simpson In The Longest Daycare
+        (2012)/media/video/movies/foreign/Maggie Simpson In The Longest Daycare (2012)/media/video/movies/foreign/Maggie
+        Simpson In The Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson
+        In The Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson In
+        The Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson In The
+        Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson In The Longest
+        Daycare (2012)/media/video/movies/foreign/Maggie Simpson In The Longest Daycare
+        (2012)/media/video/movies/foreign/Maggie Simpson In The Longest Daycare (2012)/media/video/movies/foreign/Maggie
+        Simpson In The Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson
+        In The Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson In
+        The Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson In The
+        Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson In The Longest
+        Daycare (2012)/media/video/movies/foreign/Maggie Simpson In The Longest Daycare
+        (2012)/media/video/movies/foreign/Maggie Simpson In The Longest Daycare (2012)/media/video/movies/foreign/Maggie
+        Simpson In The Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson
+        In The Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson In
+        The Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson In The
+        Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson In The Longest
+        Daycare (2012)/media/video/movies/foreign/Maggie Simpson In The Longest Daycare
+        (2012)/media/video/movies/foreign/Maggie Simpson In The Longest Daycare (2012)/media/video/movies/foreign/Maggie
+        Simpson In The Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson
+        In The Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson In
+        The Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson In The
+        Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson In The Longest
+        Daycare (2012)/media/video/movies/foreign/Maggie Simpson In The Longest Daycare
+        (2012)/media/video/movies/foreign/Maggie Simpson In The Longest Daycare (2012)/media/video/movies/foreign/Maggie
+        Simpson In The Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson
+        In The Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson In
+        The Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson In The
+        Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson In The Longest
+        Daycare (2012)/media/video/movies/foreign/Maggie Simpson In The Longest Daycare
+        (2012)/media/video/movies/foreign/Maggie Simpson In The Longest Daycare (2012)/media/video/movies/foreign/Maggie
+        Simpson In The Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson
+        In The Longest Daycare (2012)/media/video/movies/foreign/Maggie Simpson In
+        The Longest Daycare (2012)/media/video/movies/staging/Maggie Simpson in The
+        Longest Daycare (2012)/Maggie Simpson in The Longest Daycare (2012) HDTV-720p.mkv
       Title: The Longest Daycare
   Unparsed Movie Title: Maggie Simpson In The Longest Daycare (2012)
 March Comes in Like a Lion (2017):
@@ -8304,16 +8398,18 @@ No Game No Life- Zero (2017):
         No Life- Zero (2017)/No Game No Life- Zero (2017) Bluray-1080p.mkv
       Title: No Game No Life Zero
   Unparsed Movie Title: No Game No Life- Zero (2017)
-Of Moose and Men- The Rocky and Bullwinkle Story (1990):
+'Of Moose And Men: The Rocky And Bullwinkle Story (1989)':
   Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie Path: '/media/video/movies/foreign/Of Moose And Men: The Rocky And
+    Bullwinkle Story (1989)'
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
-  Relative Movie Path: ''
+  Relative Movie Path: 'movies/foreign/Of Moose And Men: The Rocky And Bullwinkle
+    Story (1989)'
   Shows:
     The Rocky and Bullwinkle Show: null
-  Unparsed Movie Title: Of Moose and Men- The Rocky and Bullwinkle Story (1990)
+  Unparsed Movie Title: 'Of Moose And Men: The Rocky And Bullwinkle Story (1989)'
 One Piece - Adventure of Nebulandia (2015):
   Absolute Movie File Path: ''
   Absolute Movie Path: /media/video/movies/foreign/One Piece - Adventure of Nebulandia
@@ -11360,10 +11456,61 @@ Saturday Night Live- The Best Of Will Ferrell (2002):
   Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: ''
+  Parsed Movie File: /media/video/movies/foreign/Saturday Night Live- The Best Of
+    Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/foreign/Saturday Night Live- The Best
+    Of Will Ferrell (2002)//media/video/movies/staging/Saturday Night Live- The Best
+    of Will Ferrell (2002)/Saturday Night Live- The Best of Will Ferrell (2002) DVD.mkv
   Parsed Movie Quality: DVD.mkv
   Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie Path: movies/foreign/Saturday Night Live- The Best Of Will Ferrell
+    (2002)
   Shows:
     Saturday Night Live:
       Absolute Episode: ''
@@ -11381,17 +11528,71 @@ Saturday Night Live- The Best Of Will Ferrell (2002):
       Season: '0'
       Show ID: 219
       Show Root Path: tv/staging/Saturday Night Live
-      Symlinked: ''
+      Symlinked: tv/staging/Saturday Night Live/Season 00/Saturday Night Live - S00E210
+        - Best of Will Ferrell DVD.mkv -> ../../../../movies/foreign/Saturday Night
+        Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/foreign/Saturday
+        Night Live- The Best Of Will Ferrell (2002)/media/video/movies/staging/Saturday
+        Night Live- The Best of Will Ferrell (2002)/Saturday Night Live- The Best
+        of Will Ferrell (2002) DVD.mkv
       Title: Best of Will Ferrell
   Unparsed Movie Title: Saturday Night Live- The Best Of Will Ferrell (2002)
-Saturday Night Live- The Best of Will Ferrell - Volume 2 (2004):
+Saturday Night Live- The Best Of Will Ferrell - Volume 2 (2004):
   Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie Path: /media/video/movies/foreign/Saturday Night Live- The Best Of
+    Will Ferrell - Volume 2 (2004)
   Parsed Movie Extension: ''
   Parsed Movie File: ''
   Parsed Movie Quality: ''
   Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie Path: movies/foreign/Saturday Night Live- The Best Of Will Ferrell
+    - Volume 2 (2004)
   Shows:
     Saturday Night Live:
       Absolute Episode: ''
@@ -11410,7 +11611,7 @@ Saturday Night Live- The Best of Will Ferrell - Volume 2 (2004):
       Show Root Path: tv/staging/Saturday Night Live
       Symlinked: ''
       Title: Best of Will Ferrell 2
-  Unparsed Movie Title: Saturday Night Live- The Best of Will Ferrell - Volume 2 (2004)
+  Unparsed Movie Title: Saturday Night Live- The Best Of Will Ferrell - Volume 2 (2004)
 Scooby-Doo! & Batman- The Brave and the Bold (2018):
   Absolute Movie File Path: ''
   Absolute Movie Path: /media/video/movies/thrillers/Scooby-Doo! & Batman- The Brave

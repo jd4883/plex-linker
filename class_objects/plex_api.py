@@ -6,6 +6,7 @@ from os import environ
 from plexapi.server import PlexServer
 
 
+# noinspection PyUnusedClass
 class PlexAPI(object):
 	
 	def __init__(self):
