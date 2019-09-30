@@ -7,7 +7,7 @@ def anime_status(self):
 
 def init_show_object(movie, series, g):
 	from class_objects import Show
-	if not type(movie.movie_dictionary['Shows'][series]):
+	if type(movie.movie_dictionary['Shows'][series] == 'NoneType'):
 		return
 	try:
 		show = Show(g,
