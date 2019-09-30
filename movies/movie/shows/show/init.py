@@ -14,7 +14,7 @@ def init_show_object(movie, series, g):
 		            dict(movie.movie_dictionary),
 		            dict(movie.movie_dictionary['Shows'][series]),
 		            g.sonarr.lookup_series(series))
-	except AttributeError:
+	except AttributeError or TypeError:
 		return
 	get.get_show(show, g)
 	try:
