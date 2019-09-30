@@ -110,7 +110,9 @@ class Show(Movie, Globals):
 			self.absolute_episode = str()
 		try:
 			movies.movie.shows.show.episode.parser.season_from_api(self.show_dictionary, self.raw_episode_files)
-		except TypeError or AttributeError:
+		except TypeError:
+			pass
+		except AttributeError:
 			pass
 		self.parsed_title = set_nested_dictionary_key_value_pair(self.show_dictionary['Parsed Show Title'], str())
 		self.parsed_relative_title = set_nested_dictionary_key_value_pair(self.show_dictionary['Parsed Relative Show Title'], str())
