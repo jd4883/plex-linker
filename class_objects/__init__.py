@@ -83,6 +83,8 @@ class Show(Movie, Globals):
 		self.movie_dictionary = movie_dict
 		self.show = series
 		self.show_dictionary = show_dict
+		if not self.show_dictionary:
+			return
 		self.sonarr_show_dictionary = series_lookup
 		self.sonarr_api_query = str()
 		if self.sonarr_show_dictionary:
