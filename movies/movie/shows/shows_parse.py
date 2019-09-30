@@ -4,9 +4,9 @@ import messaging.frontend as message
 from jobs.set_path_permissions import (set_permissions)
 from jobs.symlinking import (symlink_force)
 from movies.movie.movie_gets import (get_movie_path, get_relative_movie_path)
-from movies.movie.shows.show.create_class_object import init_show_object
+from movies.movie.shows.show.init import init_show_object
 from movies.movie.shows.show.show_puts import set_dictionary_show_root_path
-from movies.movie.shows.show.show_validation import (validate_ready_to_link_movie_to_show)
+from movies.movie.shows.show.validate import validate_ready_to_link_movie_to_show
 from movies.movie.shows.shows_validation import check_if_valid_symlink_destination, check_if_valid_symlink_target
 
 

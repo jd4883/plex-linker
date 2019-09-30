@@ -28,7 +28,7 @@ def season_folder_key(self, g, season=int(os.environ['SEASON_INT']), padding=2):
 		self.season_folder = str()
 	message.method_exit(g)
 	self.show_dictionary['Parsed Season Folder'] = self.season_folder
-	cleanup.local_variables(list(season, season_folder))
+	cleanup.local_variables([season, season_folder])
 	return self.season_folder
 
 
