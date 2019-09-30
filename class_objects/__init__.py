@@ -71,12 +71,18 @@ class Movie(Movies, Globals):
 
 
 class Show(Movie, Globals):
-	def __init__(self, show, movie, g):
-		super().__init__(movie, movie.movie_dictionary, g)
+	def __init__(self,
+	             g,
+	             show = str(),
+	             movie = str(),
+	             movie_dictionary = dict(),
+	             show_dictionary = dict(),
+	             query = dict()):
+		super().__init__(movie, movie_dictionary, g)
 		chdir(str(environ['DOCKER_MEDIA_PATH']))
-		self.movie_dictionary = dict(movie.movie_dictionary)
-		self.show = str(show)
-		self.show_dictionary = dict(movie.show_dictionary['Shows'][show])
+		self.movie_dictionary = movie_dictionary
+		self.show = show
+		self.show_dictionary = show_dictionary
 		self.sonarr_show_dictionary = g.sonarr.lookup_series(self.show)
 		set_show_id(self.show, g)
 		try:
