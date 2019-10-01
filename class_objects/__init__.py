@@ -9,7 +9,8 @@ from IO.YAML.yaml_to_object import (get_yaml_dictionary, get_variable_from_yaml)
 from class_objects.radarr_api import *
 from class_objects.sonarr_api import *
 from logs.bin.get_parameters import (get_method_main, get_logger, get_log_name)
-from movies.movie.movie_gets import (get_absolute_movie_file_path, get_relative_movie_file_path, get_movie_path, get_relative_movie_path)
+from movies.movie.movie_gets import (get_absolute_movie_file_path, get_relative_movie_file_path, get_movie_path,
+                                     get_relative_movie_path)
 from movies.movie.movie_puts import (set_movie_quality)
 from movies.movie.movie_validation import (validate_extensions_from_movie_file, validated_movie_path_is_not_null)
 from movies.movie.shows.show.show_puts import set_season_dictionary_value, set_show_id
@@ -56,7 +57,8 @@ class Movie(Movies, Globals):
 		# self.absolute_movie_path =
 		self.movie_dictionary['Absolute Movie Path'] = get_movie_path(self, g)
 		self.relative_movie_path = \
-			set_nested_dictionary_key_value_pair(self.movie_dictionary['Relative Movie Path'], get_relative_movie_path(self, g))
+			set_nested_dictionary_key_value_pair(self.movie_dictionary['Relative Movie Path'],
+			                                     get_relative_movie_path(self, g))
 		self.quality = set_nested_dictionary_key_value_pair(self.movie_dictionary['Parsed Movie Quality'], str())
 		self.extension = set_nested_dictionary_key_value_pair(self.movie_dictionary['Parsed Movie Extension'])
 		self.movie_file = set_nested_dictionary_key_value_pair(self.movie_dictionary['Parsed Movie File'], str())
@@ -73,11 +75,11 @@ class Movie(Movies, Globals):
 class Show(Movie, Globals):
 	def __init__(self,
 	             g,
-	             series = str(),
-	             film = str(),
-	             movie_dict = dict(),
-	             show_dict = dict(),
-	             series_lookup = dict()):
+	             series=str(),
+	             film=str(),
+	             movie_dict=dict(),
+	             show_dict=dict(),
+	             series_lookup=dict()):
 		super().__init__(film, movie_dict, g)
 		chdir(str(environ['DOCKER_MEDIA_PATH']))
 		self.movie_dictionary = movie_dict
@@ -115,6 +117,7 @@ class Show(Movie, Globals):
 		except AttributeError:
 			pass
 		self.parsed_title = set_nested_dictionary_key_value_pair(self.show_dictionary['Parsed Show Title'], str())
-		self.parsed_relative_title = set_nested_dictionary_key_value_pair(self.show_dictionary['Parsed Relative Show Title'], str())
-		self.relative_show_path = set_nested_dictionary_key_value_pair(self.show_dictionary['Relative Show File Path'], str())
-
+		self.parsed_relative_title = set_nested_dictionary_key_value_pair(
+			self.show_dictionary['Parsed Relative Show Title'], str())
+		self.relative_show_path = set_nested_dictionary_key_value_pair(self.show_dictionary['Relative Show File Path'],
+		                                                               str())

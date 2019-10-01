@@ -37,4 +37,3 @@ def parse_episode_using_sonarr_api(show, query):
 		print(f"Episode parsed as {show['Episode']}")
 		print(f"Parsed Episode {show['Parsed Episode']} for Show")
 		break
-		

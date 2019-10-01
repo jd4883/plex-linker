@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 import os
 
-import movies.movie.shows.show.validate
 from messaging import frontend as message
-from movies.movie.shows.show import (validate, show_puts as set_show)
+from movies.movie.shows.show import (show_puts as set_show)
 
 
 def get_anime_status_from_api(show_lookup):
