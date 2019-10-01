@@ -6,10 +6,13 @@ from movies.movie.movie_puts import (set_movie_file_and_extension)
 
 
 def validate_extensions_from_movie_file(movie, g):
-	if validate_movie_extension(movie, g):
-		movie.absolute_movie_file_path = "/".join((movie.absolute_movie_path, movie.movie_file))
-		set_permissions(movie, g)
-		message.print_movie_file_quality(movie, g)
+	try:
+		if validate_movie_extension(movie, g):
+			movie.absolute_movie_file_path = "/".join((movie.absolute_movie_path, movie.movie_file))
+			set_permissions(movie, g)
+			message.print_movie_file_quality(movie, g)
+	except NotADirectoryError:
+		pass
 
 
 def validate_movie_extension(movie, g):
