@@ -1,3 +1,4 @@
+import os
 from os import environ
 
 import messaging.frontend as message
@@ -7,11 +8,11 @@ from movies.movie.shows.show.episode.gets import (get_padded_episode_number, sea
 from movies.movies_puts import (set_nested_dictionary_key_value_pair)
 
 
-def parse_show(self, g):
+def parse_show(self, g, season=str(os.environ['SEASON_INT'])):
 	message.method_launch(g)
 	init.anime_status(self)
 	if not self.show_dictionary['Season']:
-		self.show_dictionary['Season'] = str(0)
+		self.show_dictionary['Season'] = season
 	self.show_dictionary['Parsed Season Folder'] = season_folder_key(self, g)
 	self.episode = set_nested_dictionary_key_value_pair(self.show_dictionary['Episode'], str())
 	self.absolute_episode = set_nested_dictionary_key_value_pair(self.show_dictionary['Absolute Episode'], str())

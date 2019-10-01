@@ -5,9 +5,13 @@ import messaging.frontend as message
 
 def set_file_mask_with_chmod_on_files_and_links(path, g):
 	message.method_launch(g)
-	path = str(path)
-	Path(str(path)).touch()
-	os.chmod(path, 0o775)
+	try:
+		
+		path = str(path)
+		Path(str(path)).touch()
+		os.chmod(path, 0o775)
+	except NotADirectoryError:
+		pass
 	message.method_exit(g)
 
 
@@ -24,9 +28,12 @@ def set_permissions(movie_class_object, g):
 	
 
 def set_ownership_on_files_and_links(path):
-	path = str(path)
-	if not os.path.exists(path):
-		Path(path).touch()
-	fd = os.open(f"{path}", os.O_RDONLY)
-	os.fchown(fd, int(os.environ['PUID']), int(os.environ['PGID']))
-	os.close(fd)
+	try:
+		path = str(path)
+		if not os.path.exists(path):
+			Path(path).touch()
+		fd = os.open(f"{path}", os.O_RDONLY)
+		os.fchown(fd, int(os.environ['PUID']), int(os.environ['PGID']))
+		os.close(fd)
+	except NotADirectoryError:
+		pass

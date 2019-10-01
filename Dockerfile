@@ -18,6 +18,7 @@ ENV GIT_BRANCH=develop-docker-prototype
 ENV FREQUENCY=15
 ENV PLEX_LINKER=/config
 
+ENV RADARR_ROOT_PATH_PREFIX=/
 ENV SONARR_ROOT_PATH_PREFIX=/
 ENV YAML_FILE_CURRENT=/config/config_files/media_collection_parsed_this_run.yaml
 ENV YAML_FILE_PREVIOUS=/config/config_files/parsed_collection.yaml
@@ -26,15 +27,15 @@ ENV LOGS=/config/logs
 
 ENV SEASON_INT=0
 ENV SEASON_STR='00'
-# come up with a dynamic way to dif the path from the linkers path
 
 VOLUME /config /media
-# /var/data/media
 WORKDIR /config
-ENV CONFIG_ARCHIVES=/config/config_files/archives
-RUN apk add --no-cache bash openssh libc6-compat util-linux pciutils usbutils coreutils binutils findutils grep
-COPY . /config/
+COPY requirements.txt /config/
 RUN pip install --upgrade pip; pip install -r requirements.txt
+RUN apk add --no-cache bash openssh libc6-compat util-linux pciutils usbutils coreutils binutils findutils grep
+
+ENV CONFIG_ARCHIVES=/config/config_files/archives
+COPY . /config/
 # need to build the string a bit cleaner for this rather than use the flat 15 mins
 RUN echo '*/15 *  *  *  * python /config/link-tv-specials.py' > /etc/crontabs/root; cat /etc/crontabs/root
 RUN ["chmod", "+x", "/config/link-tv-specials.py"]
