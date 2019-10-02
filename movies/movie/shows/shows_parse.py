@@ -23,6 +23,9 @@ def parse_show_to_link(show, g):
 def parse_shows_dictionary_object(movie, g):
 	message.method_launch(g)
 	for series in sorted(movie.shows_dictionary.keys()):
+		if str(type(movie.movie_dictionary['Shows'][series])) != "<class 'dict'>":
+			# skips show processing when it should be impossible
+			return
 		show = init_show_object(movie, str(series), g)
 		try:
 			if not show.show_dictionary:
