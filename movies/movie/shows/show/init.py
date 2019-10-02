@@ -8,8 +8,7 @@ def anime_status(self):
 def init_show_object(movie, series, g):
 	from class_objects import Show
 	if str(type(movie.movie_dictionary['Shows'][series])) != "<class 'dict'>":
-		print(f"type error for nonetype when trying to parse {movie.movie_title}")
-		print(f"Raw dictionary at failure point:\t{movie.movie_dictionary}")
+		# this handles any show with a value of None for the key value pair
 		return
 	show = Show(g,
 	            series,
