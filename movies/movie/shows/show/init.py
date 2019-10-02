@@ -16,6 +16,8 @@ def init_show_object(movie, series, g):
 	            dict(movie.movie_dictionary),
 	            dict(movie.movie_dictionary['Shows'][series]),
 	            g.sonarr.lookup_series(series))
+	print(g.sonarr.lookup_series)
+	exit(-1)
 	get.get_show(show, g)
 	try:
 		show.raw_episodes = g.sonarr.get_episodes_by_series_id(show.show_dictionary['Show ID'])
