@@ -12,7 +12,7 @@ from logs.bin.get_parameters import (get_method_main, get_logger, get_log_name)
 from movies.movie.movie_gets import (get_absolute_movie_file_path, get_relative_movie_file_path, get_movie_path,
                                      get_relative_movie_path)
 from movies.movie.movie_puts import (set_movie_quality)
-from movies.movie.movie_validation import (validate_extensions_from_movie_file, validated_movie_path_is_not_null)
+from movies.movie.movie_validation import (validate_extensions_from_movie_file)
 from movies.movie.shows.show.show_puts import set_season_dictionary_value, set_show_id
 from movies.movie.shows.sets import set_show_root_path
 from movies.movies_gets import (get_relative_movies_path)
@@ -62,14 +62,15 @@ class Movie(Movies, Globals):
 		self.quality = set_nested_dictionary_key_value_pair(self.movie_dictionary['Parsed Movie Quality'], str())
 		self.extension = set_nested_dictionary_key_value_pair(self.movie_dictionary['Parsed Movie Extension'])
 		self.movie_file = set_nested_dictionary_key_value_pair(self.movie_dictionary['Parsed Movie File'], str())
-		if validated_movie_path_is_not_null(self):
-			validate_extensions_from_movie_file(self, g)
-			set_movie_quality(self, g)
-			self.absolute_movie_file_path = set_nested_dictionary_key_value_pair(
-				self.movie_dictionary['Absolute Movie File Path'], get_absolute_movie_file_path(self))
-			self.movie_dictionary['Relative Movie File Path'] = str()
-			self.relative_movie_file_path = set_nested_dictionary_key_value_pair(
-				self.movie_dictionary['Relative Movie File Path'], get_relative_movie_file_path(self, g))
+		validate_extensions_from_movie_file(self, g)
+		set_movie_quality(self, g)
+		self.absolute_movie_file_path = \
+			self.movie_dictionary['Absolute Movie File Path'] = \
+			set_nested_dictionary_key_value_pair(self.movie_dictionary['Absolute Movie File Path'],
+			                                     get_absolute_movie_file_path(self))
+		self.movie_dictionary['Relative Movie File Path'] = str()
+		self.relative_movie_file_path = set_nested_dictionary_key_value_pair(
+			self.movie_dictionary['Relative Movie File Path'], get_relative_movie_file_path(self, g))
 
 
 class Show(Movie, Globals):

@@ -6,7 +6,7 @@ from jobs.symlinking import (symlink_force)
 from movies.movie.movie_gets import (get_movie_path, get_relative_movie_path)
 from movies.movie.shows.show.init import init_show_object
 import movies.movie.shows.show.validate as validate
-from movies.movie.shows.shows_validation import validate_if_linking_can_be_skipped
+from movies.movie.shows.shows_validation import linking_can_be_skipped
 
 
 def parse_show_to_link(show, g):
@@ -30,7 +30,7 @@ def parse_shows_dictionary_object(movie, g):
 		except AttributeError:
 			continue
 		episode_parser.sonarr_query(show.show_dictionary, show.sonarr_api_query)
-		if validate_if_linking_can_be_skipped(show, movie):
+		if linking_can_be_skipped(show, movie):
 			print(f'Link Present for {show.show_dictionary["Symlinked"]}, no need to parse files here')
 			continue
 		else:
