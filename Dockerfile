@@ -3,7 +3,7 @@ MAINTAINER 'Jacob Dresdale'
 LABEL name=plex_linker version=1.5
 USER root
 
-VOLUME /config /media /scripts
+VOLUME /config /media
 WORKDIR /config
 COPY requirements.txt /config/
 RUN pip install --upgrade pip; pip install -r requirements.txt

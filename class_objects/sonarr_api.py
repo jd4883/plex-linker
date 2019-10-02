@@ -5,6 +5,9 @@ import requests
 
 
 # noinspection PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction
+from jobs.cleanup.cleanup import cleanup_sonarr_api_query
+
+
 class SonarrAPI(object):
 	def __init__(self):
 		self.host_url = str(environ['SONARR_URL'])
@@ -59,7 +62,7 @@ class SonarrAPI(object):
 		}
 	
 	def lookup_series(self, query):
-		return self.request_get(f"{self.host_url}/series/lookup?term={query}").json()
+		return cleanup_sonarr_api_query(self.request_get(f"{self.host_url}/series/lookup?term={query}").json())
 	
 	def request_get(self, url, data=dict()):
 		return requests.get(url, headers={'X-Api-Key': self.api_key}, json=data)

@@ -14,7 +14,7 @@ def season_from_api(show, query, padding=2):
 	show['Parsed Season'] = str(show['Season']).zfill(padding)
 
 
-def parse_episode_using_sonarr_api(show, query):
+def sonarr_query(show, query):
 	padding = 2
 	if not show['Episode']:
 		show['episode'] = str()
@@ -31,6 +31,8 @@ def parse_episode_using_sonarr_api(show, query):
 					show['Absolute Episode'] = int(query['absoluteEpisodeNumber'])
 					show['Parsed Absolute Episode'] = str(show['Absolute Episode']).zfill(padding)
 		except KeyError:
+			continue
+		except TypeError:
 			continue
 		show['Parsed Episode'] = str(show['Episode']).zfill(padding)
 		print(f"Parsed Episode ID {show['Episode ID']} for Show")

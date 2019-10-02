@@ -14,7 +14,7 @@ from movies.movie.movie_gets import (get_absolute_movie_file_path, get_relative_
 from movies.movie.movie_puts import (set_movie_quality)
 from movies.movie.movie_validation import (validate_extensions_from_movie_file, validated_movie_path_is_not_null)
 from movies.movie.shows.show.show_puts import set_season_dictionary_value, set_show_id
-from movies.movie.shows.shows_parse import set_show_root_path
+from movies.movie.shows.sets import set_show_root_path
 from movies.movies_gets import (get_relative_movies_path)
 from movies.movies_puts import (set_nested_dictionary_key_value_pair)
 
@@ -90,7 +90,6 @@ class Show(Movie, Globals):
 		if self.sonarr_show_dictionary:
 			self.sonarr_api_query = self.sonarr_show_dictionary[0]
 		set_show_id(self.show, g)
-		g.sonarr.get_episodes_by_series_id(self.show_dictionary)
 		if self.show_dictionary['Show ID']:
 			self.raw_episodes = g.sonarr.get_episodes_by_series_id(self.show_dictionary['Show ID'])
 			self.raw_episode_files = g.sonarr.get_episode_files_by_series_id(self.show_dictionary['Show ID'])
@@ -121,3 +120,4 @@ class Show(Movie, Globals):
 			self.show_dictionary['Parsed Relative Show Title'], str())
 		self.relative_show_path = set_nested_dictionary_key_value_pair(self.show_dictionary['Relative Show File Path'],
 		                                                               str())
+

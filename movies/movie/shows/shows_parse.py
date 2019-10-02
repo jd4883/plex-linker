@@ -1,19 +1,18 @@
-from os import readlink
-
+import movies.movie.shows.show.episode.parser as episode_parser
 import messaging.frontend as message
+import jobs.cleanup.cleanup as cleanup
 from jobs.set_path_permissions import (set_permissions)
 from jobs.symlinking import (symlink_force)
 from movies.movie.movie_gets import (get_movie_path, get_relative_movie_path)
 from movies.movie.shows.show.init import init_show_object
-from movies.movie.shows.show.show_puts import set_dictionary_show_root_path
-from movies.movie.shows.show.validate import validate_ready_to_link_movie_to_show
-from movies.movie.shows.shows_validation import check_if_valid_symlink_destination, check_if_valid_symlink_target
+import movies.movie.shows.show.validate as validate
+from movies.movie.shows.shows_validation import validate_if_linking_can_be_skipped
 
 
 def parse_show_to_link(show, g):
 	message.method_launch(g)
 	for _ in show.shows_dictionary.items():
-		if validate_ready_to_link_movie_to_show(show.quality):
+		if validate.link_ready(show.quality):
 			symlink_force(show, g)
 			show.absolute_movie_path = show.movie_dictionary['Absolute Movie Path'] = str(get_movie_path(show, g))
 			show.relative_movie_path = show.movie_dictionary['Relative Movie Path'] = str(get_relative_movie_path(show, g))
@@ -23,33 +22,26 @@ def parse_show_to_link(show, g):
 
 def parse_shows_dictionary_object(movie, g):
 	message.method_launch(g)
-	for series in movie.shows_dictionary.keys():
+	for series in sorted(movie.shows_dictionary.keys()):
 		show = init_show_object(movie, str(series), g)
 		try:
 			if not show.show_dictionary:
 				continue
 		except AttributeError:
 			continue
-		if show.show_dictionary and show.show_dictionary['Relative Show File Path'] \
-				and validate_strings_match(f'{str(show.show_dictionary["Relative Show File Path"])}',
-				                           show.show_dictionary["Symlinked"]) and \
-				get_live_link(str(show.show_dictionary['Relative Show File Path'])) and \
-				(check_if_valid_symlink_destination(str(show.show_dictionary['Relative Show File Path'])) and (
-						check_if_valid_symlink_target(str(movie.movie_dictionary["Parsed Movie File"])))):
+		episode_parser.sonarr_query(show.show_dictionary, show.sonarr_api_query)
+		if validate_if_linking_can_be_skipped(show, movie):
 			print(f'Link Present for {show.show_dictionary["Symlinked"]}, no need to parse files here')
 			continue
 		else:
-			show.show_dictionary['Symlinked'] = str()
-			show.show_dictionary['Relative Show File Path'] = str()
-			movie.movie_dictionary["Parsed Movie File"] = str()
+			cleanup.link_properties(movie, show)
 			parse_show_to_link(show, g)
-
 
 # try:
 # 	for genre in tv_show.sonarr_api_query['genres']:
 # 		# [g.sonarr.set_new_tag_for_sonarr({"label": str(genre).lower()}) for genre in sorted(tv_show.sonarr)]
 # 		# [g.sonarr.set_new_tag_for_sonarr(str(genre).lower()) for genre in sorted(g.sonarr_genres)]
-# 		# definitely need to validate this works as intended
+# 		# definitely need to validate_show this works as intended
 # 		g.sonarr.set_series_tags({'label': str(genre).lower()},
 # 		                         g.movies_dictionary_object[self.movie_title]['Shows'][self]['Show ID'])
 # 		tag_id = get_tag_id(self,
@@ -62,18 +54,7 @@ def parse_shows_dictionary_object(movie, g):
 
 
 # noinspection PySameParameterValue
-def validate_strings_match(string1, string2):
-	if str(string1).lower() == str(string2).lower():
-		return True
-	return False
 
 
-def get_live_link(relative_show_path):
-	if readlink(relative_show_path):
-		return True
-	return False
 
 
-def set_show_root_path(api_query, show, g, movie):
-	set_dictionary_show_root_path(api_query, show, g, movie)
-	return g.movies_dictionary_object[movie]['Shows'][show]['Show Root Path']

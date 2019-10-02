@@ -20,14 +20,3 @@ clean:
 	docker container prune -f
 	docker image prune -f
 	docker volume prune -f
-
-#	docker service rm "$(docker service list | grep plex_linker | awk '{print $2}')" 2&>1
-#	docker volume prune -f
-#	rebuild-symlinks
-#	rebuid-docker-stacks
-#	docker rmi -f "$(docker image list | grep $(IMAGE_NAME) | awk '{print $3}')" &wait
-#	rebuild-docker-stacks	# relevant to my setup please feel free to comment this out
-#	docker service rm aggregators_pubhydra2_proxy aggregators_pubhydra2
-	# relevant to my setup please feel free to comment this out
-	####################################################################################################################
-
