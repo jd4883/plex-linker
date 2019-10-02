@@ -54,6 +54,7 @@ def cleanup_sonarr_api_query(result):
 		# result[i].pop('languageProfileId')
 		# result[i].pop('seasonFolder')
 		i += 1
+	print(result)
 	return result
 
 
