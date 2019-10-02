@@ -54,8 +54,7 @@ def cleanup_sonarr_api_query(result):
 		# result[i].pop('languageProfileId')
 		# result[i].pop('seasonFolder')
 		i += 1
-		print(result)
-		exit(-1)
+	return result
 
 
 def link_properties(movie, show):
