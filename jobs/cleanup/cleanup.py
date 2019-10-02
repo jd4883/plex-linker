@@ -26,6 +26,7 @@ def cleanup_sonarr_api_query(result):
 	# need to make this a dynamic alternative to the ugly code here
 	i = 0
 	while i < len(result):
+		j = 0
 		while j < len(cleanup_list):
 			result[i].pop(j)
 			j += 1
