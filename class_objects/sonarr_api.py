@@ -62,7 +62,7 @@ class SonarrAPI(object):
 		}
 	
 	def lookup_series(self, query):
-		return cleanup_sonarr_api_query(self.request_get(f"{self.host_url}/series/lookup?term={query}").json())
+		return cleanup_sonarr_api_query(self.request_get(f"{self.host_url}/series/lookup?term={query}").json()).json()
 	
 	def request_get(self, url, data=dict()):
 		return requests.get(url, headers={'X-Api-Key': self.api_key}, json=data)

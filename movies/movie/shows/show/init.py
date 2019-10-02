@@ -16,7 +16,7 @@ def init_show_object(movie, series, g):
 	            dict(movie.movie_dictionary),
 	            dict(movie.movie_dictionary['Shows'][series]),
 	            g.sonarr.lookup_series(series))
-	print(g.sonarr.lookup_series.json())
+	print(show.sonarr_show_dictionary)
 	exit(-1)
 	get.get_show(show, g)
 	try:
