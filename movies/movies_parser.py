@@ -14,6 +14,6 @@ def parse_all_movies_in_yaml_dictionary(g):
 			except KeyError:
 				continue
 		except KeyError as err:
-			print(f"Key Error detected in parse all movies in yaml: {err}")
+			self.movie_dictionary['Relative Movie Path'] = str()
 			continue
 	message.method_exit(g)

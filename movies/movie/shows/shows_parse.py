@@ -34,7 +34,6 @@ def parse_shows_dictionary_object(movie, g):
 			continue
 		episode_parser.sonarr_query(show.show_dictionary, show.sonarr_api_query)
 		if linking_can_be_skipped(show, movie):
-			print(f'Link Present for {show.show_dictionary["Symlinked"]}, no need to parse files here')
 			continue
 		else:
 			cleanup.link_properties(movie, show)

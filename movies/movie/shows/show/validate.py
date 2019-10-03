@@ -8,7 +8,7 @@ def link_ready(quality):
 
 
 def compare_symlink_to_relpath(show):
-	comparison = f"{show.show_dictionary['Relative Show File Path']} -> {os.readlink(str(show.show_dictionary['Relative Show File Path']))}"
+	comparison = f"{show.relative_show_path} -> {os.readlink(show.relative_show_path)}"
 	if str(comparison) == str(show.show_dictionary["Symlinked"]):
 		return True
 	return False
