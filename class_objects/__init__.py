@@ -18,6 +18,7 @@ from movies.movie.shows.sets import set_show_root_path
 from movies.movies_gets import (get_relative_movies_path)
 from movies.movies_puts import (set_nested_dictionary_key_value_pair)
 
+# TODO: play with marshmallow across the board for class objects, want to be able to go to and from a dictionary easily
 
 class Globals:
 	def __init__(self):
