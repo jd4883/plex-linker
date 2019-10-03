@@ -1,4 +1,6 @@
-import marshmallow
+from datetime import date
+from marshmallow import Schema, fields, pprint
+
 
 class ArtistSchema(Schema):
     name = fields.Str()
@@ -16,3 +18,6 @@ album = dict(artist=bowie, title="Hunky Dory", release_date=date(1971, 12, 17))
 schema = AlbumSchema()
 result = schema.dump(album)
 pprint(result, indent=2)
+# { 'artist': {'name': 'David Bowie'},
+#   'release_date': '1971-12-17',
+#   'title': 'Hunky Dory'}

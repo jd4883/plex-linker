@@ -6,6 +6,7 @@ import jobs.path_handling as paths
 from movies.movie.shows.show import init
 from movies.movie.shows.show.episode.gets import (get_padded_episode_number, season_folder_key)
 from movies.movies_puts import (set_nested_dictionary_key_value_pair)
+from marshmallow import Schema, fields, pprint
 
 
 def parse_show(self, g, season=str(os.environ['SEASON_INT'])):
@@ -14,6 +15,9 @@ def parse_show(self, g, season=str(os.environ['SEASON_INT'])):
 	if not self.show_dictionary['Season']:
 		self.show_dictionary['Season'] = season
 	self.show_dictionary['Parsed Season Folder'] = season_folder_key(self, g)
+	schema = Schema.from_dict(self.show_dictionary)
+	result = schema.dump(self.show_dictionary)
+	print(result)
 	self.episode = set_nested_dictionary_key_value_pair(self.show_dictionary['Episode'], str())
 	self.absolute_episode = set_nested_dictionary_key_value_pair(self.show_dictionary['Absolute Episode'], str())
 	message.method_launch(g)
