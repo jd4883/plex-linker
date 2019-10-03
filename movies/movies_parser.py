@@ -11,7 +11,8 @@ def parse_all_movies_in_yaml_dictionary(g):
 			self = media.Movie(movie, g.movies_dictionary_object[movie], g)
 			from marshmallow import Schema, fields, pprint
 			schema = Schema.from_dict(self.movie_dictionary)
-			result = schema.dump(self)
+			test = dict()
+			result = schema.dump(test)
 			print(result)
 			try:
 				parse_shows(self, g)
