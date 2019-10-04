@@ -41,7 +41,6 @@ def cleanup_sonarr_api_query(result):
 		result[i].pop('remotePoster')
 		result[i].pop('added')
 		result[i].pop('sortTitle')
-		result[i].pop('lastInfoSync')
 		result[i].pop('titleSlug')
 		result[i].pop('certification')
 		result[i].pop('profileId')
@@ -53,6 +52,10 @@ def cleanup_sonarr_api_query(result):
 		result[i].pop('firstAired')
 		result[i].pop('languageProfileId')
 		result[i].pop('seasonFolder')
+		try:
+			result[i].pop('lastInfoSync')
+		except KeyError as err:
+			print(f"KEY ERROR POPPING UNWANTED FIELDS {err}")
 		i += 1
 	return result
 
