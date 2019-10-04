@@ -11,3 +11,5 @@ def season_value(query, show, season_default=int(os.environ['SEASON_INT'])):
 				break
 	except AttributeError:
 		pass
+	except KeyError:
+		pass
