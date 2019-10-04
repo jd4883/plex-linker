@@ -60,7 +60,10 @@ class Movie(Movies, Globals):
 		self.relative_movie_path = \
 			set_nested_dictionary_key_value_pair(self.movie_dictionary['Relative Movie Path'],
 			                                     get_relative_movie_path(self, g))
-		self.quality = set_nested_dictionary_key_value_pair(self.movie_dictionary['Parsed Movie Quality'], str())
+		try:
+			self.quality = set_nested_dictionary_key_value_pair(self.movie_dictionary['Parsed Movie Quality'], str())
+		except KeyError:
+			self.quality = str()
 		self.extension = set_nested_dictionary_key_value_pair(self.movie_dictionary['Parsed Movie Extension'])
 		self.movie_file = set_nested_dictionary_key_value_pair(self.movie_dictionary['Parsed Movie File'], str())
 		validate_extensions_from_movie_file(self, g)
