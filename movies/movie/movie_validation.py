@@ -20,6 +20,7 @@ def validate_movie_extension(movie, g):
 		for file in os.listdir(movie.absolute_movie_path):
 			for file_extension in g.MOVIE_EXTENSIONS:
 				if file.endswith(file_extension):
+					print("FILE EXTENSION MATCHED ABOUT TO SET FILE EXTENSION")
 					set_movie_file_and_extension(file, file_extension, movie, g)
 					return True
 	return False

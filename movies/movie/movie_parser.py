@@ -16,9 +16,7 @@ def extension_from_movie_file(movie,
 def parse_remux_in_quality(quality, g):
 	message.method_launch(g)
 	if str(quality).lower() == "Remux-1080p.mkv".lower():
-		quality = "Bluray-1080p Remux.mkv"  # sonarr compatible format for remux bluray quality
-	# consider making a framework with this API from sonarr using the ID to identify, if the quality does not match
-	# a sonarr or radarr profile it should reject and throw an except: https://github.com/Sonarr/Sonarr/wiki/Profile
+		quality = "Bluray-1080p Remux.mkv"
 	message.method_exit(g)
 	return quality
 

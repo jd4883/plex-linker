@@ -64,6 +64,7 @@ class Movie(Movies, Globals):
 		self.extension = set_nested_dictionary_key_value_pair(self.movie_dictionary['Parsed Movie Extension'])
 		self.movie_file = set_nested_dictionary_key_value_pair(self.movie_dictionary['Parsed Movie File'], str())
 		validate_extensions_from_movie_file(self, g)
+		print('about to set movie quality')
 		set_movie_quality(self, g)
 		self.absolute_movie_file_path = \
 			self.movie_dictionary['Absolute Movie File Path'] = \
@@ -72,6 +73,7 @@ class Movie(Movies, Globals):
 		self.movie_dictionary['Relative Movie File Path'] = str()
 		self.relative_movie_file_path = set_nested_dictionary_key_value_pair(
 			self.movie_dictionary['Relative Movie File Path'], get_relative_movie_file_path(self, g))
+		print('exiting movie class object creation')
 
 
 class Show(Movie, Globals):
