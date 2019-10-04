@@ -9,14 +9,17 @@ from IO.YAML.yaml_to_object import (get_yaml_dictionary, get_variable_from_yaml)
 from class_objects.radarr_api import *
 from class_objects.sonarr_api import *
 from logs.bin.get_parameters import (get_method_main, get_logger, get_log_name)
-from movies.movie.movie_gets import (get_absolute_movie_file_path, get_relative_movie_file_path, get_movie_path,
-                                     get_relative_movie_path)
+from movies.movie.movie_gets import (
+	get_absolute_movie_file_path, get_relative_movie_file_path, get_movie_path,
+	get_relative_movie_path,
+	)
 from movies.movie.movie_puts import (set_movie_quality)
 from movies.movie.movie_validation import (validate_extensions_from_movie_file)
 from movies.movie.shows.show.show_puts import set_season_dictionary_value, set_show_id
 from movies.movie.shows.sets import set_show_root_path
 from movies.movies_gets import (get_relative_movies_path)
 from movies.movies_puts import (set_nested_dictionary_key_value_pair)
+
 
 # TODO: play with marshmallow across the board for class objects, want to be able to go to and from a dictionary easily
 
@@ -41,8 +44,8 @@ class Globals:
 
 class Movies:
 	def __init__(self,
-	             absolute_movies_path=abspath("/".join((str(environ['DOCKER_MEDIA_PATH']),
-	                                                    get_variable_from_yaml("Movie Directories")[0])))):
+	             absolute_movies_path = abspath("/".join((str(environ['DOCKER_MEDIA_PATH']),
+	                                                      get_variable_from_yaml("Movie Directories")[0])))):
 		self.start_time = time.time()
 		self.absolute_movies_path = absolute_movies_path
 		self.relative_movies_path = get_relative_movies_path(self)
@@ -57,7 +60,7 @@ class Movie(Movies, Globals):
 		self.shows_dictionary = self.movie_dictionary['Shows']
 		# self.absolute_movie_path =
 		self.movie_dictionary['Absolute Movie Path'] = get_movie_path(self, g)
-		self.relative_movie_path = \
+		self.relative_movie_path =\
 			set_nested_dictionary_key_value_pair(self.movie_dictionary['Relative Movie Path'],
 			                                     get_relative_movie_path(self, g))
 		try:
@@ -67,26 +70,24 @@ class Movie(Movies, Globals):
 		self.extension = set_nested_dictionary_key_value_pair(self.movie_dictionary['Parsed Movie Extension'])
 		self.movie_file = set_nested_dictionary_key_value_pair(self.movie_dictionary['Parsed Movie File'], str())
 		validate_extensions_from_movie_file(self, g)
-		print('about to set movie quality')
 		set_movie_quality(self, g)
-		self.absolute_movie_file_path = \
-			self.movie_dictionary['Absolute Movie File Path'] = \
+		self.absolute_movie_file_path =\
+			self.movie_dictionary['Absolute Movie File Path'] =\
 			set_nested_dictionary_key_value_pair(self.movie_dictionary['Absolute Movie File Path'],
 			                                     get_absolute_movie_file_path(self))
 		self.movie_dictionary['Relative Movie File Path'] = str()
 		self.relative_movie_file_path = set_nested_dictionary_key_value_pair(
-			self.movie_dictionary['Relative Movie File Path'], get_relative_movie_file_path(self, g))
-		print('exiting movie class object creation')
+				self.movie_dictionary['Relative Movie File Path'], get_relative_movie_file_path(self, g))
 
 
 class Show(Movie, Globals):
 	def __init__(self,
 	             g,
-	             series=str(),
-	             film=str(),
-	             movie_dict=dict(),
-	             show_dict=dict(),
-	             series_lookup=dict()):
+	             series = str(),
+	             film = str(),
+	             movie_dict = dict(),
+	             show_dict = dict(),
+	             series_lookup = dict()):
 		super().__init__(film, movie_dict, g)
 		chdir(str(environ['DOCKER_MEDIA_PATH']))
 		self.movie_dictionary = movie_dict
@@ -99,7 +100,7 @@ class Show(Movie, Globals):
 			self.sonarr_api_query = self.sonarr_show_dictionary[0]
 		set_show_id(self.show, g)
 		if 'Show ID' in self.show_dictionary:
-		#if self.show_dictionary['Show ID']:
+			# if self.show_dictionary['Show ID']:
 			self.raw_episodes = g.sonarr.get_episodes_by_series_id(self.show_dictionary['Show ID'])
 			self.raw_episode_files = g.sonarr.get_episode_files_by_series_id(self.show_dictionary['Show ID'])
 		try:
@@ -126,7 +127,6 @@ class Show(Movie, Globals):
 			pass
 		self.parsed_title = set_nested_dictionary_key_value_pair(self.show_dictionary['Parsed Show Title'], str())
 		self.parsed_relative_title = set_nested_dictionary_key_value_pair(
-			self.show_dictionary['Parsed Relative Show Title'], str())
+				self.show_dictionary['Parsed Relative Show Title'], str())
 		self.relative_show_path = set_nested_dictionary_key_value_pair(self.show_dictionary['Relative Show File Path'],
 		                                                               str())
-

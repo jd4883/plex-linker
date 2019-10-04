@@ -35,7 +35,4 @@ def sonarr_query(show, query):
 		except TypeError:
 			continue
 		show['Parsed Episode'] = str(show['Episode']).zfill(padding)
-		print(f"Parsed Episode ID {show['Episode ID']} for Show")
-		print(f"Episode parsed as {show['Episode']}")
-		print(f"Parsed Episode {show['Parsed Episode']} for Show")
 		break

@@ -53,8 +53,8 @@ def cleanup_sonarr_api_query(result):
 			result[i].pop('firstAired')
 			result[i].pop('languageProfileId')
 			result[i].pop('seasonFolder')
-		except KeyError as err:
-			print(f"KEY ERROR POPPING UNWANTED FIELDS {err}")
+		except KeyError:
+			pass
 		i += 1
 	return result
 
