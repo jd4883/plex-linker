@@ -10,12 +10,16 @@ def init_show_object(movie, series, g):
 	# if str(type(movie.movie_dictionary['Shows'][series])) != "<class 'dict'>":
 	# 	# this handles any show with a value of None for the key value pair
 	# 	return
-	show = Show(g,
-	            series,
-	            str(movie.movie_dictionary['Unparsed Movie Title']),
-	            dict(movie.movie_dictionary),
-	            dict(movie.movie_dictionary['Shows'][series]),
-	            g.sonarr.lookup_series(series))
+	try:
+		show = Show(g,
+		            series,
+		            str(movie.movie_dictionary['Unparsed Movie Title']),
+		            dict(movie.movie_dictionary),
+		            dict(movie.movie_dictionary['Shows'][series]),
+		            g.sonarr.lookup_series(series))
+	except TypeError:
+		print(f'TypeError for {movie.movie_title}')
+		return
 	get.get_show(show, g)
 	try:
 		show.raw_episodes = g.sonarr.get_episodes_by_series_id(show.show_dictionary['Show ID'])

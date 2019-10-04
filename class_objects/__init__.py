@@ -85,8 +85,10 @@ class Show(Movie, Globals):
 		super().__init__(film, movie_dict, g)
 		chdir(str(environ['DOCKER_MEDIA_PATH']))
 		self.movie_dictionary = movie_dict
+		print(f'ATTEMPTING TO CREATE {series}')
 		self.show = series
 		self.show_dictionary = show_dict
+		self.show_dictionary['Symlinked'] = str()
 		self.sonarr_show_dictionary = series_lookup
 		self.sonarr_api_query = str()
 		if self.sonarr_show_dictionary:
