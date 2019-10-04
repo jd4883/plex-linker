@@ -95,7 +95,8 @@ class Show(Movie, Globals):
 		if self.sonarr_show_dictionary:
 			self.sonarr_api_query = self.sonarr_show_dictionary[0]
 		set_show_id(self.show, g)
-		if self.show_dictionary['Show ID']:
+		if 'Show ID' in self.show_dictionary:
+		#if self.show_dictionary['Show ID']:
 			self.raw_episodes = g.sonarr.get_episodes_by_series_id(self.show_dictionary['Show ID'])
 			self.raw_episode_files = g.sonarr.get_episode_files_by_series_id(self.show_dictionary['Show ID'])
 		try:
