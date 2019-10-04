@@ -15,14 +15,15 @@ def parse_all_movies_in_yaml_dictionary(g):
 		# g.movies_dictionary_object[movie]['Parsed Movie File'] = str()
 		# g.movies_dictionary_object[movie]['Parsed Movie Extension'] = str()
 		self = media.Movie(movie, g.movies_dictionary_object[movie], g)
-		try:
-			parse_shows(self, g)
-		except KeyError as err:
-			print(f'key error: {err}')
-			print(f"MOVIE DICT: {g.movies_dictionary_object[movie]}")
-			print(f"MOVIE NAME: {movie}")
-			self.movie_dictionary['Relative Movie Path'] = str()
-			pass
-		print('made it through movie loop iteration 0')
+		parse_shows(self, g)
+		# try:
+		# 	parse_shows(self, g)
+		# except KeyError as err:
+		# 	print(f'key error: {err}')
+		# 	print(f"MOVIE DICT: {g.movies_dictionary_object[movie]}")
+		# 	print(f"MOVIE NAME: {movie}")
+		# 	self.movie_dictionary['Relative Movie Path'] = str()
+		# 	pass
+		# print('made it through movie loop iteration 0')
 		exit(-1)
 	message.method_exit(g)
