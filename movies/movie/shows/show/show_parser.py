@@ -12,8 +12,6 @@ from movies.movies_puts import (set_nested_dictionary_key_value_pair)
 def parse_show(self, g, season=str(os.environ['SEASON_INT'])):
 	message.method_launch(g)
 	init.anime_status(self)
-	print('at show parser')
-	print(self.show_dictionary)
 	if not self.show_dictionary['Season']:
 		self.show_dictionary['Season'] = season
 	self.show_dictionary['Parsed Season Folder'] = season_folder_key(self, g)
@@ -30,8 +28,6 @@ def parse_show(self, g, season=str(os.environ['SEASON_INT'])):
 	self.parsed_relative_title = set_nested_dictionary_key_value_pair(self.show_dictionary['Parsed Relative Show Title'],
 	                                                                  parse_show_title_from_show_dictionary(self, g))
 	message.method_exit(g)
-	print("ABOUT TO RETURN THE RELATIVE PARSED TITLE")
-	print(self.parsed_relative_title)
 	return self.parsed_relative_title
 
 
