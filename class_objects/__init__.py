@@ -52,6 +52,7 @@ class Movie(Movies, Globals):
 	def __init__(self, movie, movie_dictionary, g):
 		super().__init__()
 		self.movie_dictionary = movie_dictionary
+		print(f'base movie dict: {self.movie_dictionary}')
 		self.movie_dictionary['Unparsed Movie Title'] = self.movie_title = str(movie)
 		self.radarr_dictionary = g.radarr.lookup_movie(self.movie_title)
 		self.shows_dictionary = self.movie_dictionary['Shows']
@@ -88,6 +89,7 @@ class Show(Movie, Globals):
 		print(f'ATTEMPTING TO CREATE {series}')
 		self.show = series
 		self.show_dictionary = show_dict
+		print(f'base show dict: {self.show_dictionary}')
 		self.show_dictionary['Symlinked'] = str()
 		self.sonarr_show_dictionary = series_lookup
 		self.sonarr_api_query = str()
