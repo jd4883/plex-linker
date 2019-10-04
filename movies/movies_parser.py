@@ -19,6 +19,8 @@ def parse_all_movies_in_yaml_dictionary(g):
 			parse_shows(self, g)
 		except KeyError as err:
 			print(f'key error: {err}')
+			print(f"MOVIE DICT: {g.movies_dictionary_object[movie]}")
+			print(f"MOVIE NAME: {movie}")
 			self.movie_dictionary['Relative Movie Path'] = str()
 			pass
 		print('made it through movie loop iteration 0')
