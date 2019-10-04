@@ -18,8 +18,8 @@ def parse_all_movies_in_yaml_dictionary(g):
 			self = media.Movie(movie, g.movies_dictionary_object[movie], g)
 			try:
 				parse_shows(self, g)
-			except KeyError:
-				print('key error')
+			except KeyError as err:
+				print(f'key error: {err}')
 				pass
 				#continue
 		except KeyError as err:
