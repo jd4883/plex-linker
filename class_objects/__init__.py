@@ -123,6 +123,4 @@ class Show(Movie, Globals):
 			self.show_dictionary['Parsed Relative Show Title'], str())
 		self.relative_show_path = set_nested_dictionary_key_value_pair(self.show_dictionary['Relative Show File Path'],
 		                                                               str())
-		print('problem spot here')
-		print(self.show_dictionary)
 
