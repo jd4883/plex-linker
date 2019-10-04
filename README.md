@@ -1,5 +1,13 @@
 # Plex Linker
 
+**Note:** this is a work in progress and documentation has been lagging behind. I'll get this updated more formally and accurately in the near future as I find time, but for now the TLDR of useful info is provided here:
+
+**Docker Hub Download:** docker pull jb6magic/plex_linker:latest
+- more tags will be added but for now I am not separating dev and master here. I'll be revising this down the line to give the option to test different versions and align naming with github
+
+**Functional Updates:**
+- While not perfect, the program works quite well in an alpine docker container. I am gradually implementing more API functionality and will be tweaking performance. I need to add in some time tracking and statistics to get a better idea of how optimizations improve performance.
+
 Plex Assist Script - allows users to track movies with radarr and have them automatically link to the appropriate TV show as a special, regardless of directory
 
 As a plex enthusiast, I found myself regularly consuming more disk space than preferable due to having duplications of data. Additionally, I find that anime specials are often logged in tmdb and are easier to find with radarr than with sonarr. Why not meld the two a bit better to share namespace data and be able to use links instead of separate files with no linking provided. Shouldn't the two be able to understand the linkage and use both engines to try and find the best possible files? This is where my program hopefully fills in the blanks.

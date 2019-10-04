@@ -1,55 +1,44 @@
-#!/usr/bin/env python3
-from os import (chdir)
-from subprocess import (Popen,
-                        PIPE,
-                        DEVNULL)
+import os
+import subprocess
 
-from messaging.frontend import (method_exit,
-                                method_launch)
+import messaging.frontend as message
 
 
-def symlink_force(show_class_object,
-                  g):
-	method_launch(g)
-	# move these to a better location when the values initialize
-	chdir('/media/video')
-	try:
-		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show][
-			'Relative Show File Path'] = show_class_object.relative_show_path
-	except AttributeError:
-		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show][
-			'Relative Show File Path'] = str()
-	g.movies_dictionary_object[show_class_object.movie_title][
-		"Parsed Movie File"] = show_class_object.absolute_movie_file_path
-	if show_class_object.absolute_movie_file_path or \
-			show_class_object.relative_show_path is not \
-			(None or 'None/' or \
-			 show_class_object.absolute_movie_file_path.endswith('None') or \
-			 show_class_object.relative_show_path.endswith('None')):
-		chdir('/media/video')
-		process = Popen(["ln",
-		                 "-fsvr",
-		                 f"{show_class_object.absolute_movie_file_path}",
-		                 f"{show_class_object.relative_show_path}"],
-		                stderr=DEVNULL,
-		                stdout=PIPE)
-		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show]['Symlinked'] = \
-			strip_quotes_from_string(f"{process.communicate()[0].strip()}").replace('b"', str())[:-1].rstrip()
-		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show]['Relative Show File Path'] = \
-			show_class_object.relative_show_path
-		g.list_of_linked_movies.append(show_class_object.movie_title)
+def symlink_force(show, g):
+	message.method_launch(g)
+	if validate_link_ready(show):
+		os.chdir(str(os.environ['HOST_MEDIA_PATH']))
+		# noinspection SpellCheckingInspection
+		process = subprocess.Popen(["ln", "-fsvr", f"{show.absolute_movie_file_path}", f"{show.relative_show_path}"],
+		                           stderr = subprocess.DEVNULL, stdout = subprocess.PIPE)
+		show.show_dictionary['Symlinked'] = strip_quotes_from_string(f"{process.communicate()[0].strip()}").replace('b"',
+		                                                                                                            str())[
+		                                    :-1].rstrip()
+		show.show_dictionary['Relative Show File Path'] = show.relative_show_path
+		g.list_of_linked_movies.append(show.movie_title)
+		show.show_dictionary['Relative Show File Path'] = show.relative_show_path
+		show.movie_dictionary["Parsed Movie File"] = show.absolute_movie_file_path
+		print(f"Created new Show Link: {show.show_dictionary['Symlinked']}")
 	else:
-		print(f'no link created for {show_class_object.absolute_movie_file_path}')
-		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show]['Symlinked'] = str()
-		g.movies_dictionary_object[show_class_object.movie_title]['Shows'][show_class_object.show][
-			'Relative Show File Path'] = str()
-		g.movies_dictionary_object[show_class_object.movie_title][
-			"Parsed Movie File"] = str()
-		g.list_of_movies_to_locate.append(show_class_object.movie_title)
-	method_exit(g)
+		print(f'no link created for {show.absolute_movie_file_path}')
+		show.show_dictionary['Symlinked'] = str()
+		show.show_dictionary['Relative Show File Path'] = str()
+		show.movie_dictionary["Parsed Movie File"] = str()
+		g.list_of_movies_to_locate.append(show.movie_title)
+	message.method_exit(g)
 
 
-# noinspection PySameParameterValue
+# cleanup this method along with others and try to segment where they are stored
+def validate_link_ready(show):
+	try:
+		if (show.absolute_movie_file_path and show.relative_show_path) is not (None or 'None/' or (
+				show.absolute_movie_file_path.endswith('None') or show.relative_show_path.endswith('None'))):
+			return True
+	except AttributeError as err:
+		print(f"ERROR VALIDATING LINK READY for {show.show}. ERROR CODE {err}")
+		return False
+
+
 def strip_quotes_from_string(string):
 	string.replace('"', '')
 	return string.replace("'", "")

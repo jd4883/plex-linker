@@ -1,40 +1,26 @@
-#!/usr/bin/env python3
-import jobs.cleanup.remove_duplicates
-from class_objects import Movie
-
-from messaging.frontend import (method_launch,
-                                method_exit)
-from movies.movie.shows.shows_parse import parse_shows_dictionary_object
-
-
-def parse_movies_in_library_and_remove_duplicates(var1,
-                                                  var2,
-                                                  path_array,
-                                                  g):
-	method_launch(g)
-	if var1 or var2 is 'staging':
-		jobs.cleanup.remove_duplicates.removing_duplicate_movies_from_staging(path_array,
-		                                                                      var1,
-		                                                                      var2,
-		                                                                      g)
-	else:
-		jobs.cleanup.remove_duplicates.remove_duplicate_movies_that_are_not_from_staging(path_array,
-		                                                                                 var1,
-		                                                                                 var2,
-		                                                                                 g)
-	method_exit(g)
+import class_objects as media
+import messaging.frontend as message
+from movies.movie.shows.shows_parse import parse_shows_dictionary_object as parse_shows
 
 
 def parse_all_movies_in_yaml_dictionary(g):
-	method_launch(g)
-	for movie in g.movies_dictionary_object:
-		str(movie).replace(":", "-")
-		try:
-			if sorted(g.movies_dictionary_object[movie]['Shows']):
-				parse_shows_dictionary_object(Movie(movie,
-				                                    g),
-				                              g)
-		except TypeError:
-			continue
-	sorted(g.movies_dictionary_object)
-	method_exit(g)
+	message.method_launch(g)
+	for movie in sorted(g.movies_dictionary_object):
+		movie = str(movie).replace(":", "-")
+		# g.movies_dictionary_object[movie]['Absolute Movie File Path'] = str()
+		# g.movies_dictionary_object[movie]['Parsed Movie Extension'] = str()
+		# g.movies_dictionary_object[movie]['Absolute Movie Path'] = str()
+		# g.movies_dictionary_object[movie]['Relative Movie File Path'] = str()
+		# g.movies_dictionary_object[movie]['Relative Movie Path'] = str()
+		# g.movies_dictionary_object[movie]['Parsed Movie File'] = str()
+		# g.movies_dictionary_object[movie]['Parsed Movie Extension'] = str()
+		self = media.Movie(movie, g.movies_dictionary_object[movie], g)
+		# try:
+		parse_shows(self, g)
+		# except KeyError as err:
+		# 	print(f'key error: {err}')
+		# 	print(f"MOVIE DICT: {g.movies_dictionary_object[movie]}")
+		# 	print(f"MOVIE NAME: {movie}")
+		# 	self.movie_dictionary['Relative Movie Path'] = str()
+		# 	pass
+	message.method_exit(g)
