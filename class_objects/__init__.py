@@ -52,7 +52,6 @@ class Movie(Movies, Globals):
 	def __init__(self, movie, movie_dictionary, g):
 		super().__init__()
 		self.movie_dictionary = movie_dictionary
-		print(f'base movie dict: {self.movie_dictionary}')
 		self.movie_dictionary['Unparsed Movie Title'] = self.movie_title = str(movie)
 		self.radarr_dictionary = g.radarr.lookup_movie(self.movie_title)
 		self.shows_dictionary = self.movie_dictionary['Shows']
@@ -86,10 +85,8 @@ class Show(Movie, Globals):
 		super().__init__(film, movie_dict, g)
 		chdir(str(environ['DOCKER_MEDIA_PATH']))
 		self.movie_dictionary = movie_dict
-		print(f'ATTEMPTING TO CREATE {series}')
 		self.show = series
 		self.show_dictionary = show_dict
-		print(f'base show dict: {self.show_dictionary}')
 		self.show_dictionary['Symlinked'] = str()
 		self.sonarr_show_dictionary = series_lookup
 		self.sonarr_api_query = str()
@@ -126,4 +123,6 @@ class Show(Movie, Globals):
 			self.show_dictionary['Parsed Relative Show Title'], str())
 		self.relative_show_path = set_nested_dictionary_key_value_pair(self.show_dictionary['Relative Show File Path'],
 		                                                               str())
+		print('problem spot here')
+		print(self.show_dictionary)
 
