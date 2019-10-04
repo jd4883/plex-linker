@@ -30,6 +30,7 @@ def parse_show(self, g, season=str(os.environ['SEASON_INT'])):
 	self.parsed_relative_title = set_nested_dictionary_key_value_pair(self.show_dictionary['Parsed Relative Show Title'],
 	                                                                  parse_show_title_from_show_dictionary(self, g))
 	message.method_exit(g)
+	print("ABOUT TO RETURN THE RELATIVE PARSED TITLE")
 	print(self.parsed_relative_title)
 	return self.parsed_relative_title
 
