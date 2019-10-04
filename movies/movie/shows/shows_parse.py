@@ -25,15 +25,12 @@ def parse_shows_dictionary_object(movie, g):
 	try:
 		for series in movie.shows_dictionary.keys():
 			if str(type(movie.movie_dictionary['Shows'][series])) != "<class 'dict'>":
-				# skips show processing when it should be impossible
-				print(f'met break condition with {movie.movie_title}')
 				break
 			show = init_show_object(movie, str(series), g)
 			try:
 				if not show.show_dictionary:
 					continue
 			except AttributeError:
-				print(f'met attribute error condition with {movie.movie_title}')
 				continue
 			try:
 				episode_parser.sonarr_query(show.show_dictionary, show.sonarr_api_query)

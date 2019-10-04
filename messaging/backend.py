@@ -4,10 +4,10 @@ from logs.bin.get_parameters import *
 from logs.bin.get_parameters import (
 	get_parent_method_string,
 	get_parsed_message,
-)
+	)
 
 
-def debug_message(status_code, g, var1=str()):
+def debug_message(status_code, g, var1 = str()):
 	if not status_code:
 		status_code = -1
 	if not g.method:
@@ -59,7 +59,7 @@ def debug_message(status_code, g, var1=str()):
 		g.message2 = f"{var1}"
 	elif status_code == -1:
 		g.message1 = format_string(
-			f"boss, you've indicated this {status_code} is an error that warrants exiting. check yo code!!")
+				f"boss, you've indicated this {status_code} is an error that warrants exiting. check yo code!!")
 		exit(-1)
 	else:
 		g.message1 = format_string(f"Uh boss, you may want to refactor your code for a better message \

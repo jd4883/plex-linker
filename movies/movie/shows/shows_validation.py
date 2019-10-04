@@ -1,6 +1,7 @@
 import os
 from movies.movie.shows.show import validate as validate_show
 
+
 # confirmed working
 def symlink_destination_exists(show):
 	if os.path.exists(str(show.show_dictionary['Relative Show File Path'])):
@@ -15,6 +16,7 @@ def symlink_destination_in_dictionary(movie):
 	if os.path.exists(movie.relative_movie_file_path) and os.path.isfile(movie.relative_movie_file_path):
 		return True
 	return False
+
 
 # confirmed working
 def live_link_status(show):

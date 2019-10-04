@@ -10,7 +10,7 @@ def symlink_force(show, g):
 		os.chdir(str(os.environ['HOST_MEDIA_PATH']))
 		# noinspection SpellCheckingInspection
 		process = subprocess.Popen(["ln", "-fsvr", f"{show.absolute_movie_file_path}", f"{show.relative_show_path}"],
-		                           stderr=subprocess.DEVNULL, stdout=subprocess.PIPE)
+		                           stderr = subprocess.DEVNULL, stdout = subprocess.PIPE)
 		show.show_dictionary['Symlinked'] = strip_quotes_from_string(f"{process.communicate()[0].strip()}").replace('b"',
 		                                                                                                            str())[
 		                                    :-1].rstrip()
@@ -32,7 +32,7 @@ def symlink_force(show, g):
 def validate_link_ready(show):
 	try:
 		if (show.absolute_movie_file_path and show.relative_show_path) is not (None or 'None/' or (
-			show.absolute_movie_file_path.endswith('None') or show.relative_show_path.endswith('None'))):
+				show.absolute_movie_file_path.endswith('None') or show.relative_show_path.endswith('None'))):
 			return True
 	except AttributeError as err:
 		print(f"ERROR VALIDATING LINK READY for {show.show}. ERROR CODE {err}")
