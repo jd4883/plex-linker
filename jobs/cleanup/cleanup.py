@@ -42,7 +42,6 @@ def cleanup_sonarr_api_query(result):
 		result[i].pop('added')
 		result[i].pop('sortTitle')
 		result[i].pop('titleSlug')
-		result[i].pop('certification')
 		result[i].pop('profileId')
 		result[i].pop('tags')
 		result[i].pop('ratings')
@@ -56,6 +55,11 @@ def cleanup_sonarr_api_query(result):
 			result[i].pop('lastInfoSync')
 		except KeyError as err:
 			print(f"KEY ERROR POPPING UNWANTED FIELDS {err}")
+		try:
+			result[i].pop('certification')
+		except KeyError as err:
+			print(f"KEY ERROR POPPING UNWANTED FIELDS {err}")
+		
 		i += 1
 	return result
 
