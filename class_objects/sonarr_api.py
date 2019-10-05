@@ -11,7 +11,8 @@ from jobs.cleanup.cleanup import cleanup_sonarr_api_query
 class SonarrAPI(object):
 	def __init__(self):
 		self.host_url = str(environ['SONARR_URL'])
-		self.api_key = str(environ['SONARR_API_KEY'])
+		with open('/run/secrets/sonarr_api_key', 'r') as f:
+			self.api_key = token = str(f.read()).lstrip("b'").rstrip("\n'")
 	
 	def get_episodes_by_series_id(self, series_id):
 		return self.request_get(f"{self.host_url}/episode?seriesId={series_id}").json()

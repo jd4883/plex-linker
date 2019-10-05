@@ -9,7 +9,8 @@ class RadarrAPI(object):
 	
 	def __init__(self):
 		self.host_url = str(environ['RADARR_URL'])
-		self.api_key = str(environ['RADARR_API_KEY'])
+		with open('/run/secrets/radarr_api_key', 'r') as f:
+			self.api_key = token = str(f.read()).lstrip("b'").rstrip("\n'")
 	
 	def get_movie_library(self):
 		return self.request_get(f"{self.host_url}/movie").json()

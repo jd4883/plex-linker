@@ -11,7 +11,8 @@ class PlexAPI(object):
 	
 	def __init__(self):
 		self.host_url = baseurl = str(environ['PLEX_URL'])
-		self.api_key = token = str(environ['PLEX_API_KEY'])
+		with open('/run/secrets/plex_api_key', 'r') as f:
+			self.api_key = token = str(f.read()).lstrip("b'").rstrip("\n'")
 		self.plex = PlexServer(baseurl, token)
 	
 	# going to add some combination of example 2 and example 4 or example #6
