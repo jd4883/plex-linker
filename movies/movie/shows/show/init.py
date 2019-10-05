@@ -8,14 +8,18 @@ def anime_status(self):
 
 def init_show_object(movie, series, g):
 	from class_objects import Show
-	if str(type(movie.movie_dictionary['Shows'][series])) != "<class 'dict'>":
+	if str(type(movie.shows_dictionary[series])) != "<class 'dict'>":
 		# this handles any show with a value of None for the key value pair
 		return
 	try:
-		show = Show(g, series, str(movie.movie_dictionary['Unparsed Movie Title']), dict(movie.movie_dictionary),
-		            dict(movie.movie_dictionary['Shows'][series]), g.sonarr.lookup_series(series))
+		show = Show(g,
+		            series,
+		            str(movie.movie_title),
+		            dict(movie.movie_dictionary),
+		            dict(movie.movie_dictionary['Shows'][series]),
+		            g.sonarr.lookup_series(series))
 	except TypeError:
-		print(f'TypeError for {movie.movie_title}')
+		f'TypeError for {movie.movie_title}'.print
 		return
 	get.get_show(show, g)
 	try:

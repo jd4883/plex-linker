@@ -49,4 +49,6 @@ def get_parsed_show_title(show):
 
 
 def parse_root_path_string(api_query):
-	return str(api_query['path']).replace(str(environ['SONARR_ROOT_PATH_PREFIX']), '')
+	if 'path' in api_query:
+		return str(api_query['path']).replace(str(environ['SONARR_ROOT_PATH_PREFIX']), '')
+	return str()

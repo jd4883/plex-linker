@@ -24,4 +24,5 @@ def set_movie_quality(movie, g):
 
 
 def relative_movie_directory(self, g):
-	g.movies_dictionary_object[self.movie_title].update({'Relative Movie Path': self.relative_movie_path})
+	return g.movies_dictionary_object[self.movie_title]['Relative Movie Path']
+	

@@ -22,27 +22,24 @@ def parse_show_to_link(show, g):
 
 def parse_shows_dictionary_object(movie, g):
 	message.method_launch(g)
-	try:
-		for series in movie.shows_dictionary.keys():
-			if str(type(movie.movie_dictionary['Shows'][series])) != "<class 'dict'>":
-				break
-			show = init_show_object(movie, str(series), g)
-			try:
-				if not show.show_dictionary:
-					continue
-			except AttributeError:
-				continue
-			try:
-				episode_parser.sonarr_query(show.show_dictionary, show.sonarr_api_query)
-			except AttributeError:
-				pass
-			if linking_can_be_skipped(show, movie):
-				continue
-			cleanup.link_properties(movie, show)
-			parse_show_to_link(show, g)
-	except AttributeError:
-		pass
-
+	if not movie.shows_dictionary:
+		return
+	for series in movie.shows_dictionary.keys():
+		if series not in movie.shows_dictionary:
+			continue
+		if str(type(movie.shows_dictionary[series])) != "<class 'dict'>":
+			# no shows to associate with the movie
+			break
+		show = init_show_object(movie, str(series), g)
+		if linking_can_be_skipped(show, movie):
+			continue
+		episode_parser.sonarr_query(show.show_dictionary,
+		                            show.sonarr_api_query,
+		                            show.padding)
+		
+		cleanup.link_properties(movie, show)
+		parse_show_to_link(show, g)
+	
 # try:
 # 	for genre in tv_show.sonarr_api_query['genres']:
 # 		# [g.sonarr.set_new_tag_for_sonarr({"label": str(genre).lower()}) for genre in sorted(tv_show.sonarr)]
