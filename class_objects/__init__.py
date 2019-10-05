@@ -1,4 +1,5 @@
 #!/usr/bin/env python3.7
+import os
 import time
 from os import chdir
 from os.path import abspath
@@ -76,12 +77,13 @@ class Movie(Movies, Globals):
 		return movie_title
 	
 	def parse_relpath(self, g, media_path):
+		relpath = str()
 		try:
 			relpath = str(os.path.relpath(get_movie_path(self, g), media_path))
 		except KeyError:
-			relpath = str()
+			pass
 		except ValueError:
-			relpath = str()
+			pass
 		return relpath
 
 

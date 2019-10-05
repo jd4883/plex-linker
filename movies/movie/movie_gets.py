@@ -11,7 +11,7 @@ def get_relative_movie_path(movie, g):
 		relative_movie_path = str()
 	except KeyError:
 		relative_movie_path = str()
-	sets.absolute_movie_directory(movie, g)
+	sets.absolute_movie_directory(movie)
 	# sets.relative_movie_directory(movie, g)
 	message.method_exit(g)
 	return relative_movie_path
