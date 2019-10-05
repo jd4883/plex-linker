@@ -5,7 +5,12 @@ import movies.movie.movie_puts as sets
 
 def get_relative_movie_path(movie, g):
 	message.method_launch(g)
-	relative_movie_path = str(os.path.relpath(movie.absolute_movie_path, str(os.environ['DOCKER_MEDIA_PATH'])))
+	try:
+		relative_movie_path = str(os.path.relpath(movie.absolute_movie_path, str(os.environ['DOCKER_MEDIA_PATH'])))
+	except ValueError:
+		relative_movie_path = str()
+	except KeyError:
+		relative_movie_path = str()
 	sets.absolute_movie_directory(movie, g)
 	#sets.relative_movie_directory(movie, g)
 	message.method_exit(g)
@@ -18,7 +23,10 @@ def get_absolute_movie_file_path(movie):
 
 
 def get_relative_movie_file_path(movie):
-	return os.path.relpath(movie.absolute_movie_path, str(os.environ['DOCKER_MEDIA_PATH']))
+	try:
+		return os.path.relpath(movie.absolute_movie_path, str(os.environ['DOCKER_MEDIA_PATH']))
+	except ValueError:
+		return str()
 
 
 def movie_quality(quality):

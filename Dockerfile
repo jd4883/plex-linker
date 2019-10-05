@@ -10,12 +10,9 @@ RUN pip install --upgrade pip; pip install -r requirements.txt
 RUN apk add --no-cache bash openssh libc6-compat util-linux pciutils usbutils coreutils binutils findutils grep
 
 COPY . /config/
-# need to build the string a bit cleaner for this rather than use the flat 15 mins
-RUN echo '*/15 *  *  *  * python /config/link-tv-specials.py' > /etc/crontabs/root; cat
-/etc/crontabs/root
-# this is uniquely for testing, I will probably migrate to exclusively using secrets if I can get it working right
+RUN echo '*/15 *  *  *  * python /config/link-tv-specials.py' > /etc/crontabs/root; cat /etc/crontabs/root
 
-RUN ["chmod", "+x", "/config/link-tv-specials.py", "/config/scripts/launcher.sh"]
+RUN ["chmod", "+x", "/config/link-tv-specials.py", "/config/launcher.sh"]
 
 ENV SCRIPTS=$SCRIPTS/bin
 

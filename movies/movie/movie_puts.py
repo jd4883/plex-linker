@@ -4,7 +4,11 @@ from messaging.frontend import (method_launch, method_exit)
 
 
 def absolute_movie_directory(self, g):
-	g.movies_dictionary_object[self.movie_title].update({'Absolute Movie Path': self.absolute_movie_path})
+	#self.movie_dictionary['Absolute Movie Path'] =
+	try:
+		self.movie_dictionary.update({'Absolute Movie Path': self.absolute_movie_path})
+	except KeyError:
+		self.movie_dictionary['Absolute Movie Path'] = str()
 
 
 def set_movie_file_and_extension(file, file_extension, movie, g):
@@ -17,7 +21,10 @@ def set_movie_file_and_extension(file, file_extension, movie, g):
 
 def set_movie_quality(movie, g):
 	method_launch(g)
-	movie.movie_file = g.movies_dictionary_object[movie.movie_title]['Parsed Movie File'] = get.movie_file(movie)
+	try:
+		movie.movie_file = g.movies_dictionary_object[movie.movie_title]['Parsed Movie File'] = get.movie_file(movie)
+	except KeyError:
+		return
 	movie.extension = g.movies_dictionary_object[movie.movie_title]['Parsed Movie Extension'] = get.movie_extension(movie.extension)
 	movie.quality = g.movies_dictionary_object[movie.movie_title]['Parsed Movie Quality'] = get.movie_quality(movie.quality)
 	method_exit(g)

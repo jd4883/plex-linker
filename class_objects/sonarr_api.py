@@ -1,18 +1,20 @@
 #!/usr/bin/env python3.7
+import os
+import pathlib
 from os import environ
+from pathlib import Path
 
 import requests
 
 
 # noinspection PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction
 from jobs.cleanup.cleanup import cleanup_sonarr_api_query
-
+import os
 
 class SonarrAPI(object):
 	def __init__(self):
 		self.host_url = str(environ['SONARR_URL'])
-		with open('/run/secrets/sonarr_api_key', 'r') as f:
-			self.api_key = token = str(f.read()).lstrip("b'").rstrip("\n'")
+		self.api_key = pathlib.Path('/run/secrets/sonarr_api_key').read_text().replace('\n', '')
 	
 	def get_episodes_by_series_id(self, series_id):
 		return self.request_get(f"{self.host_url}/episode?seriesId={series_id}").json()

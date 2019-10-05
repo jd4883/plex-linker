@@ -1,6 +1,9 @@
 #!/usr/bin/env python3.7
 # using https://github.com/pkkid/python-plexapi to mess with watch status
 # -*- coding: utf-8 -*-
+import os
+import pathlib
+import subprocess
 from os import environ
 
 from plexapi.server import PlexServer
@@ -11,8 +14,7 @@ class PlexAPI(object):
 	
 	def __init__(self):
 		self.host_url = baseurl = str(environ['PLEX_URL'])
-		with open('/run/secrets/plex_api_key', 'r') as f:
-			self.api_key = token = str(f.read()).lstrip("b'").rstrip("\n'")
+		self.api_key = token = pathlib.Path('/run/secrets/plex_api_key').read_text().replace('\n','')
 		self.plex = PlexServer(baseurl, token)
 	
 	# going to add some combination of example 2 and example 4 or example #6

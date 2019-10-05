@@ -30,13 +30,10 @@ def symlink_force(show, g):
 
 # cleanup this method along with others and try to segment where they are stored
 def validate_link_ready(show):
-	try:
-		if (show.absolute_movie_file_path and show.relative_show_path) is not (None or 'None/' or (
-				show.absolute_movie_file_path.endswith('None') or show.relative_show_path.endswith('None'))):
-			return True
-	except AttributeError as err:
-		print(f"ERROR VALIDATING LINK READY for {show.show}. ERROR CODE {err}")
-		return False
+	if (show.absolute_movie_file_path and show.relative_show_path) is not (None or 'None/' or (
+			show.absolute_movie_file_path.endswith('None') or show.relative_show_path.endswith('None'))):
+		return True
+	return False
 
 
 def strip_quotes_from_string(string):

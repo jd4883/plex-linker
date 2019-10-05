@@ -57,12 +57,7 @@ class Movie(Movies, Globals):
 		self.movie_dictionary = movie_dictionary
 		self.movie_dictionary['Unparsed Movie Title'] = self.movie_title = str(movie)
 		self.radarr_dictionary = g.radarr.lookup_movie(self.movie_title)
-		print("NEXT VALUE IS TESTING")
-		base = str(self.radarr_dictionary[0].pop('title', str(movie)))
-		year = str(self.radarr_dictionary[0].pop('year', str())).replace(":", "-")
-		self.movie_title = f"{base} ({year})".replace(" ()", "").replace(":", "-")
-		print(self.movie_title)
-		print(self.radarr_dictionary)
+		self.movie_title = self.parse_movie_title(movie)
 		self.shows_dictionary = self.movie_dictionary['Shows']
 		self.absolute_movie_path = self.movie_dictionary['Absolute Movie Path'] = get_movie_path(self, g) # add or get
 		# from API
@@ -76,10 +71,21 @@ class Movie(Movies, Globals):
 		self.relative_movie_file_path = self.movie_dictionary['Relative Movie File Path'] = str(get_relative_movie_file_path(self))
 		
 	
+	def parse_movie_title(self, movie):
+		try:
+			base = str(self.radarr_dictionary[0].pop('title', str(movie)))
+			year = str(self.radarr_dictionary[0].pop('year', str())).replace(":", "-")
+			movie_title = f"{base} ({year})".replace(" ()", "").replace(":", "-")
+		except IndexError:
+			movie_title = movie
+		return movie_title
+	
 	def parse_relpath(self, g, media_path):
 		try:
 			relpath = str(os.path.relpath(get_movie_path(self, g), media_path))
-		except KeyError:
+		except KeyError :
+			relpath = str()
+		except ValueError:
 			relpath = str()
 		return relpath
 
@@ -94,6 +100,7 @@ class Show(Movie, Globals):
 	             series_lookup = dict()):
 		super().__init__(film, movie_dict, g)
 		chdir(g.MEDIA_PATH)
+		
 		self.movie_dictionary = movie_dict
 		self.padding = int(os.environ['EPISODE_PADDING'])
 		self.show = series
@@ -105,36 +112,25 @@ class Show(Movie, Globals):
 			if self.sonarr_show_dictionary:
 				self.sonarr_api_query = self.sonarr_show_dictionary[0]
 		except KeyError:
-			return
+			pass
+		self.parsed_title = str(self.show_dictionary['Parsed Show Title'])
+		self.relative_show_path = str(self.show_dictionary['Relative Show File Path'])
+		self.parsed_relative_title = self.show_dictionary['Parsed Relative Show Title'], str()
 		set_show_id(self.show, g)
 		if 'Show ID' in self.show_dictionary:
-			# if self.show_dictionary['Show ID']:
 			self.raw_episodes = g.sonarr.get_episodes_by_series_id(self.show_dictionary['Show ID'])
 			self.raw_episode_files = g.sonarr.get_episode_files_by_series_id(self.show_dictionary['Show ID'])
-		try:
-			self.show_root_path = set_show_root_path(self.sonarr_api_query, self.show, g, film)
-		except TypeError:
-			self.show_root_path = str()
+		self.show_root_path = str(set_show_root_path(self.sonarr_api_query, self.show, g, film))
 		try:
 			self.season = set_season_dictionary_value(self)
 		except TypeError:
 			self.season = str('00')
-		try:
-			self.episode = self.show_dictionary['Parsed Episode'] = str()
-		except TypeError:
-			self.episode = str()
-		try:
-			self.absolute_episode = set_nested_dictionary_key_value_pair(self.show_dictionary['Absolute Episode'], str())
-		except TypeError:
-			self.absolute_episode = str()
+		self.episode = str(self.show_dictionary['Parsed Episode'])
+		self.absolute_episode = str(self.show_dictionary['Absolute Episode'])
 		try:
 			parse_episode.season_from_api(self.show_dictionary, self.raw_episode_files)
 		except TypeError:
 			pass
 		except AttributeError:
 			pass
-		self.parsed_title = set_nested_dictionary_key_value_pair(self.show_dictionary['Parsed Show Title'], str())
-		self.parsed_relative_title = set_nested_dictionary_key_value_pair(
-				self.show_dictionary['Parsed Relative Show Title'], str())
-		self.relative_show_path = set_nested_dictionary_key_value_pair(self.show_dictionary['Relative Show File Path'],
-		                                                               str())
+		
