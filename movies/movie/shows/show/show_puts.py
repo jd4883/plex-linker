@@ -28,24 +28,20 @@ def set_show(show, g):
 
 
 def set_season_dictionary_value(show):
+	result = str(0)
 	if show.sonarr_api_query['seasons'][0]['seasonNumber'] == 0:
-		try:
-			result = show.sonarr_api_query['seasons'][0].pop('seasonNumber')
-			show.show['Season'] = result
-			return show.show['Season']
-		except TypeError:
-			return str(0)
-	return show.show['Season']
+		result = show.sonarr_api_query['seasons'][0].pop('seasonNumber', str(0))
+	return result
 
 
 def set_dictionary_show_root_path(sonarr_api_query, show, g, movie):
-	# try:
-	# 	g.movies_dictionary_object[movie]['Shows'][show]['Show Root Path'] = parse_root_path_string(sonarr_api_query)
-	# except (KeyError or TypeError):
-	# 	g.movies_dictionary_object[movie]['Shows'][show]['Show Root Path'] = str()
-	if 'Show Root Path' not in g.movies_dictionary_object[movie]['Shows'][show]:
+	try:
+		g.movies_dictionary_object[movie]['Shows'][show]['Show Root Path'] = parse_root_path_string(sonarr_api_query)
+	except (KeyError or TypeError):
 		g.movies_dictionary_object[movie]['Shows'][show]['Show Root Path'] = str()
-	g.movies_dictionary_object[movie]['Shows'][show]['Show Root Path'] = parse_root_path_string(sonarr_api_query)
+	# if 'Show Root Path' not in g.movies_dictionary_object[movie]['Shows'][show]:
+	# 	g.movies_dictionary_object[movie]['Shows'][show]['Show Root Path'] = str()
+	# g.movies_dictionary_object[movie]['Shows'][show]['Show Root Path'] = parse_root_path_string(sonarr_api_query)
 
 def set_show_id(show, g):
 	from movies.movie.shows.show.get import get_show_id

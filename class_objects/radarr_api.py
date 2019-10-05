@@ -1,8 +1,7 @@
 #!/usr/bin/env python3.7
-import os
 import pathlib
-import subprocess
 from os import environ
+
 import requests
 
 

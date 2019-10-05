@@ -1,24 +1,18 @@
 #!/usr/bin/env python3.7
-import os
 import time
-import movies.movie.shows.show.episode.parser as parse_episode
 from os import chdir
 from os.path import abspath
 
-from IO.YAML.yaml_to_object import (get_yaml_dictionary, get_variable_from_yaml)
+import movies.movie.shows.show.episode.parser as parse_episode
 from class_objects.radarr_api import *
 from class_objects.sonarr_api import *
-from logs.bin.get_parameters import (get_method_main, get_logger, get_log_name)
-from movies.movie.movie_gets import (
-	get_absolute_movie_file_path, get_relative_movie_file_path, get_movie_path,
-	get_relative_movie_path,
-	)
+from IO.YAML.yaml_to_object import (get_variable_from_yaml, get_yaml_dictionary)
+from logs.bin.get_parameters import (get_log_name, get_logger, get_method_main)
+from movies.movie.movie_gets import (get_absolute_movie_file_path, get_movie_path, get_relative_movie_file_path)
 from movies.movie.movie_puts import (set_movie_quality)
 from movies.movie.movie_validation import (validate_extensions_from_movie_file)
 from movies.movie.shows.show.show_puts import set_season_dictionary_value, set_show_id
-from movies.movie.shows.sets import set_show_root_path
 from movies.movies_gets import (get_relative_movies_path)
-from movies.movies_puts import (set_nested_dictionary_key_value_pair)
 
 
 # TODO: play with marshmallow across the board for class objects, want to be able to go to and from a dictionary easily
@@ -59,7 +53,7 @@ class Movie(Movies, Globals):
 		self.radarr_dictionary = g.radarr.lookup_movie(self.movie_title)
 		self.movie_title = self.parse_movie_title(movie)
 		self.shows_dictionary = self.movie_dictionary['Shows']
-		self.absolute_movie_path = self.movie_dictionary['Absolute Movie Path'] = get_movie_path(self, g) # add or get
+		self.absolute_movie_path = self.movie_dictionary['Absolute Movie Path'] = get_movie_path(self, g)  # add or get
 		# from API
 		self.relative_movie_path = self.movie_dictionary['Relative Movie Path'] = self.parse_relpath(g, media_path)
 		self.quality = str(self.movie_dictionary['Parsed Movie Quality'])
@@ -67,9 +61,10 @@ class Movie(Movies, Globals):
 		self.movie_file = str(self.movie_dictionary['Parsed Movie File'])
 		validate_extensions_from_movie_file(self, g)
 		set_movie_quality(self, g)
-		self.absolute_movie_file_path = self.movie_dictionary['Absolute Movie File Path'] = str(get_absolute_movie_file_path(self))
-		self.relative_movie_file_path = self.movie_dictionary['Relative Movie File Path'] = str(get_relative_movie_file_path(self))
-		
+		self.absolute_movie_file_path = self.movie_dictionary['Absolute Movie File Path'] = str(
+				get_absolute_movie_file_path(self))
+		self.relative_movie_file_path = self.movie_dictionary['Relative Movie File Path'] = str(
+				get_relative_movie_file_path(self))
 	
 	def parse_movie_title(self, movie):
 		try:
@@ -83,7 +78,7 @@ class Movie(Movies, Globals):
 	def parse_relpath(self, g, media_path):
 		try:
 			relpath = str(os.path.relpath(get_movie_path(self, g), media_path))
-		except KeyError :
+		except KeyError:
 			relpath = str()
 		except ValueError:
 			relpath = str()
@@ -107,23 +102,32 @@ class Show(Movie, Globals):
 		self.show_dictionary = show_dict
 		self.show_dictionary['Symlinked'] = str()
 		self.sonarr_show_dictionary = series_lookup
-		self.sonarr_api_query = str()
+		self.sonarr_api_query = dict()
 		try:
 			if self.sonarr_show_dictionary:
 				self.sonarr_api_query = self.sonarr_show_dictionary[0]
 		except KeyError:
-			pass
+			# add error handling to not use the API
+			return
+		self.show_root_path = self.show_dictionary['Show Root Path'] = str(self.sonarr_api_query.pop('path', '').replace(
+				'/data/', str()))
 		self.parsed_title = str(self.show_dictionary['Parsed Show Title'])
 		self.relative_show_path = str(self.show_dictionary['Relative Show File Path'])
 		self.parsed_relative_title = self.show_dictionary['Parsed Relative Show Title'], str()
 		set_show_id(self.show, g)
-		if 'Show ID' in self.show_dictionary:
-			self.raw_episodes = g.sonarr.get_episodes_by_series_id(self.show_dictionary['Show ID'])
-			self.raw_episode_files = g.sonarr.get_episode_files_by_series_id(self.show_dictionary['Show ID'])
-		self.show_root_path = str(set_show_root_path(self.sonarr_api_query, self.show, g, film))
 		try:
-			self.season = set_season_dictionary_value(self)
+			if 'Show ID' in self.show_dictionary:
+				self.raw_episodes = g.sonarr.get_episodes_by_series_id(self.show_dictionary['Show ID'])
+				self.raw_episode_files = g.sonarr.get_episode_files_by_series_id(self.show_dictionary['Show ID'])
 		except TypeError:
+			print('error getting raw episode info from show ID')
+			self.raw_episodes = int()
+			self.raw_episode_files = str()
+		try:
+			self.season = self.show_dictionary['Season'] = set_season_dictionary_value(self)
+		except TypeError:
+			self.season = str('00')
+		except KeyError:
 			self.season = str('00')
 		self.episode = str(self.show_dictionary['Parsed Episode'])
 		self.absolute_episode = str(self.show_dictionary['Absolute Episode'])
@@ -133,4 +137,3 @@ class Show(Movie, Globals):
 			pass
 		except AttributeError:
 			pass
-		

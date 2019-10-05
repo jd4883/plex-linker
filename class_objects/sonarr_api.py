@@ -1,15 +1,13 @@
 #!/usr/bin/env python3.7
-import os
 import pathlib
 from os import environ
-from pathlib import Path
 
 import requests
 
-
-# noinspection PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction
+# noinspection PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,
+# PyUnusedFunction,PyUnusedFunction
 from jobs.cleanup.cleanup import cleanup_sonarr_api_query
-import os
+
 
 class SonarrAPI(object):
 	def __init__(self):

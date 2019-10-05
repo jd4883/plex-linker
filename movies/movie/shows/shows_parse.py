@@ -11,6 +11,7 @@ from movies.movie.shows.shows_validation import linking_can_be_skipped
 
 def parse_show_to_link(show, g):
 	message.method_launch(g)
+	
 	for _ in show.shows_dictionary.items():
 		if validate.link_ready(show.quality):
 			symlink_force(show, g)

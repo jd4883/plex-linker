@@ -12,14 +12,13 @@ def get_relative_movie_path(movie, g):
 	except KeyError:
 		relative_movie_path = str()
 	sets.absolute_movie_directory(movie, g)
-	#sets.relative_movie_directory(movie, g)
+	# sets.relative_movie_directory(movie, g)
 	message.method_exit(g)
 	return relative_movie_path
 
 
 def get_absolute_movie_file_path(movie):
 	return "/".join((movie.absolute_movie_path, movie.movie_file))
-
 
 
 def get_relative_movie_file_path(movie):
@@ -54,7 +53,7 @@ def get_movie_path(movie, g):
 		# 		input
 		# movie.movie_title = f"{k} ({k['year']})"
 		
-		#movie_string = movie.absolute_movie_path
+		# movie_string = movie.absolute_movie_path
 		if os.path.exists(movie_string):
 			movie.absolute_movie_path = movie_string
 			message.method_exit(g)

@@ -6,6 +6,9 @@ import messaging.frontend as message
 
 def symlink_force(show, g):
 	message.method_launch(g)
+	if not show.absolute_movie_file_path or show.absolute_movie_file_path == "" or show.relative_show_path == "":
+		# really primitive way to indicate if the movie value is blank we dont link
+		return
 	if validate_link_ready(show):
 		os.chdir(str(os.environ['HOST_MEDIA_PATH']))
 		# noinspection SpellCheckingInspection
