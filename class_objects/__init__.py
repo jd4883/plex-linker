@@ -57,10 +57,11 @@ class Movie(Movies, Globals):
 		self.movie_dictionary = movie_dictionary
 		self.movie_dictionary['Unparsed Movie Title'] = self.movie_title = str(movie)
 		self.radarr_dictionary = g.radarr.lookup_movie(self.movie_title)
-		# print("NEXT VALUE IS TESTING")
-		# print(str(self.radarr_dictionary[0].pop('title', str(movie)) +
-		#       self.radarr_dictionary[0].pop('year', str())).replace(" ()", ""))
-		#print(f"{} ({self.radarr_dictionary[0]['year']})")
+		print("NEXT VALUE IS TESTING")
+		base = str(self.radarr_dictionary[0].pop('title', str(movie)))
+		year = str(self.radarr_dictionary[0].pop('year', str())).replace(":", "-")
+		self.movie_title = f"{base} ({year})".replace(" ()", "").replace(":", "-")
+		print(self.movie_title)
 		print(self.radarr_dictionary)
 		self.shows_dictionary = self.movie_dictionary['Shows']
 		self.absolute_movie_path = self.movie_dictionary['Absolute Movie Path'] = get_movie_path(self, g) # add or get
