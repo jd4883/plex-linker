@@ -17,9 +17,9 @@ def symlink_force(show, g):
 		show.link_status = strip_quotes_from_string(f"{process.communicate()[0].strip()}").replace('b"',
 		                                                                                                            str())[
 		                                    :-1].rstrip()
-		show.show_dictionary['Relative Show File Path'] = show.relative_show_path
-		g.list_of_linked_movies.append(show.movie_title)
-		show.show_dictionary['Relative Show File Path'] = show.relative_show_path
+		#show.show_dictionary['Relative Show File Path'] = show.relative_show_path
+		#g.list_of_linked_movies.append(show.movie_title)
+		#show.show_dictionary['Relative Show File Path'] = show.relative_show_path
 		show.movie_dictionary["Parsed Movie File"] = show.absolute_movie_file_path
 		if show.link_status:
 			print(f"Created new Show Link: {show.link_status}")
