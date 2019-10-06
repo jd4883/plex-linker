@@ -28,6 +28,6 @@ def cleanup_sonarr_api_query(result):
 
 
 def link_properties(movie, show):
-	show.show_dictionary['Symlinked'] = str()
+	show.link_status = str()
 	show.show_dictionary['Relative Show File Path'] = str()
 	movie.movie_dictionary["Parsed Movie File"] = str()

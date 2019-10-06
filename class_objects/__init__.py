@@ -97,12 +97,11 @@ class Show(Movie, Globals):
 	             series_lookup = dict()):
 		super().__init__(film, movie_dict, g)
 		chdir(g.MEDIA_PATH)
-		
 		self.movie_dictionary = movie_dict
 		self.padding = int(os.environ['EPISODE_PADDING'])
 		self.show = series
 		self.show_dictionary = show_dict
-		self.show_dictionary['Symlinked'] = str()
+		self.link_status = str(self.show_dictionary['Symlinked'])
 		self.sonarr_show_dictionary = series_lookup
 		self.sonarr_api_query = dict()
 		if self.sonarr_show_dictionary:
