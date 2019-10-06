@@ -1,15 +1,7 @@
 import os
 
-from movies.movie.shows.show.episode import validate
 
-
-def season_value(query, show, season_default=int(os.environ['SEASON_INT'])):
-	try:
-		for item in query['seasons']:
-			if validate.season_value(item, season_default, show):
-				show['Season'] = int(season_default)
-				break
-	except AttributeError:
-		pass
-	except KeyError:
-		pass
+def season_dictionary(show):
+	if ('seasons' in show.sonarr_api_query) and (show.sonarr_api_query['seasons'][0]['seasonNumber'] == int(os.environ['SEASON_INT'])):
+		return show.sonarr_api_query['seasons'][0].pop('seasonNumber', str(os.environ['SEASON_STR']))
+	return str(os.environ['SEASON_STR'])

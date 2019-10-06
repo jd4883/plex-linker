@@ -8,9 +8,11 @@ def set_file_mask_with_chmod_on_files_and_links(path, g):
 	try:
 		
 		path = str(path)
-		Path(str(path)).touch()
+		# Path(str(path)).touch()
 		os.chmod(path, 0o775)
 	except NotADirectoryError:
+		pass
+	except OSError:
 		pass
 	message.method_exit(g)
 
@@ -24,8 +26,10 @@ def set_permissions(movie_class_object, g):
 		set_ownership_on_files_and_links(movie_class_object.absolute_movie_file_path)
 	except FileNotFoundError or NotADirectoryError:
 		pass
+	except OSError:
+		pass
 	message.method_exit(g)
-	
+
 
 def set_ownership_on_files_and_links(path):
 	try:

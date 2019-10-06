@@ -14,7 +14,6 @@ def validate_extensions_from_movie_file(movie, g):
 	except NotADirectoryError:
 		pass
 
-
 def validate_movie_extension(movie, g):
 	if os.path.exists(movie.absolute_movie_path):
 		for file in os.listdir(movie.absolute_movie_path):
@@ -24,8 +23,3 @@ def validate_movie_extension(movie, g):
 					return True
 	return False
 
-
-def validated_movie_path_is_not_null(movie):
-	if movie.absolute_movie_path:
-		return True
-	return False

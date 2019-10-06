@@ -6,10 +6,10 @@ import messaging.frontend as message
 
 def symlink_force(show, g):
 	message.method_launch(g)
-	if not show.absolute_movie_file_path or show.absolute_movie_file_path == "" or show.relative_show_path == "":
-		# really primitive way to indicate if the movie value is blank we dont link
-		return
-	if validate_link_ready(show):
+	if (show.absolute_movie_file_path or show.absolute_movie_file_path) == ("/'" or"" or None or "/"):
+		# really primitive way to indicate if the movie value is blank we do not link
+		pass
+	elif validate_link_ready(show):
 		os.chdir(str(os.environ['HOST_MEDIA_PATH']))
 		# noinspection SpellCheckingInspection
 		process = subprocess.Popen(["ln", "-fsvr", f"{show.absolute_movie_file_path}", f"{show.relative_show_path}"],
@@ -21,7 +21,8 @@ def symlink_force(show, g):
 		g.list_of_linked_movies.append(show.movie_title)
 		show.show_dictionary['Relative Show File Path'] = show.relative_show_path
 		show.movie_dictionary["Parsed Movie File"] = show.absolute_movie_file_path
-		print(f"Created new Show Link: {show.show_dictionary['Symlinked']}")
+		if show.show_dictionary['Symlinked']:
+			print(f"Created new Show Link: {show.show_dictionary['Symlinked']}")
 	else:
 		print(f'no link created for {show.absolute_movie_file_path}')
 		show.show_dictionary['Symlinked'] = str()

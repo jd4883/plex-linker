@@ -9,14 +9,12 @@ def symlink_destination_exists(show):
 			return True
 	return False
 
-
 def symlink_destination_in_dictionary(movie):
 	# this calculation should be much further up but i'll move it later
 	movie.relative_movie_file_path = "/".join((movie.relative_movie_file_path, movie.movie_file))
 	if os.path.exists(movie.relative_movie_file_path) and os.path.isfile(movie.relative_movie_file_path):
 		return True
 	return False
-
 
 # confirmed working
 def live_link_status(show):
@@ -27,14 +25,12 @@ def live_link_status(show):
 		pass
 	return False
 
-
 def link_status(movie, show):
 	if live_link_status(show):
 		if symlink_destination_exists(show):
 			if symlink_destination_in_dictionary(movie):
 				return True
 	return False
-
 
 def linking_can_be_skipped(show, movie):
 	if show.show_dictionary:

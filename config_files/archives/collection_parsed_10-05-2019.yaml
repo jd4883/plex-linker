@@ -223,10 +223,10 @@ Achmed Saves America (2014):
       Title: Achmed Saves America
   Unparsed Movie Title: Achmed Saves America (2014)
 Ajin- Demi-Human (2017):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -415,10 +415,10 @@ Aqua Teen Hunger Force Colon Movie Film for Theaters (2007):
       Title: Aqua Teen Hunger Force Colon Movie Film for Theaters
   Unparsed Movie Title: Aqua Teen Hunger Force Colon Movie Film for Theaters (2007)
 Army of Darkness (1992):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -1015,10 +1015,10 @@ Batman & Mr. Freeze- SubZero (1998):
       Title: Batman & Mr. Freeze- SubZero
   Unparsed Movie Title: Batman (1989)
 Batman - Mask of the Phantasm (1993):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -1141,10 +1141,10 @@ Batman- Mystery of the Batwoman (2003):
       Title: Batman- Mystery of the Batwoman
   Unparsed Movie Title: Batman- Mystery of the Batwoman (2003)
 Battlestar Galactica (1978):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -1202,10 +1202,10 @@ Battlestar Galactica- The Plan (2009):
       Title: The Plan
   Unparsed Movie Title: Battlestar Galactica- The Plan (2009)
 Berserk - The Golden Age Arc 1 - The Egg of the King (2012):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -1230,10 +1230,10 @@ Berserk - The Golden Age Arc 1 - The Egg of the King (2012):
       Title: Golden Age Arc I- Egg of the King
   Unparsed Movie Title: Berserk- The Golden Age Arc 1 - The Egg of the King (2012)
 Berserk - The Golden Age Arc 2 - The Battle for Doldrey (2012):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -1258,10 +1258,10 @@ Berserk - The Golden Age Arc 2 - The Battle for Doldrey (2012):
       Title: Golden Age Arc II- The Battle for Doldrey
   Unparsed Movie Title: Berserk- The Golden Age Arc 2 - The Battle for Doldrey (2012)
 Berserk - The Golden Age Arc 3 - The Advent (2013):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -1614,10 +1614,10 @@ Blue Exorcist- Runaway Kuro (2011):
       Title: Blue Exorcist OVA - Runaway Kuro
   Unparsed Movie Title: Blue Exorcist- Runaway Kuro (2011)
 Blue Exorcist- The Movie (2012):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -1642,10 +1642,10 @@ Blue Exorcist- The Movie (2012):
       Title: Blue Exorcist - The Movie
   Unparsed Movie Title: Blue Exorcist- The Movie (2013)
 Boruto- Naruto the Movie (2015):
-  Absolute Movie File Path: //
+  Absolute Movie File Path: ''''''/
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: //
+  Parsed Movie File: ''''''/
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -1722,10 +1722,10 @@ Bungo Stray Dogs- Dead Apple (2018):
       Title: Dead Apple
   Unparsed Movie Title: Bungo Stray Dogs- Dead Apple (2018)
 Burn Notice - The Fall of Sam Axe (2011):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -1831,10 +1831,10 @@ Chunin Exam on Fire! and Naruto vs. Konohamaru! (2011):
       Title: Naruto vs. Konohamaru!!
   Unparsed Movie Title: Chunin Exam on Fire! and Naruto vs. Konohamaru! (2011)
 Clannad (2007):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: DVD.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -2300,13 +2300,13 @@ Constantine- City of Demons - The Movie (2018):
       - 2
       Parsed Episode: '[2]'
       Parsed Relative Show Title: ''
-      Parsed Season: '00'
+      Parsed Season: None
       Parsed Season Folder: Season 00
       Parsed Show Title: tv/superhero/Constantine (2018)/Season 00/Constantine (2018)
         - S00E02 - Constantine- City Of Demons The Movie
       Relative Show File Path: tv/superhero/Constantine (2018)/Season 00/Constantine
         (2018) - S00E02 - Constantine- City Of Demons The Movie Bluray-1080p.mkv
-      Season: '0'
+      Season: None
       Show ID: ''
       Show Root Path: tv/superhero/Constantine
       Symlinked: tv/superhero/Constantine (2018)/Season 00/Constantine (2018) - S00E02
@@ -2316,10 +2316,10 @@ Constantine- City of Demons - The Movie (2018):
       Title: Constantine- City Of Demons The Movie
   Unparsed Movie Title: Constantine- City of Demons - The Movie (2018)
 Cowboy Bebop- The Movie (2001):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: HDTV-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -2410,10 +2410,10 @@ Death Note (2017):
       Title: Death Note (Netflix Live Action Movie)
   Unparsed Movie Title: Death Note (2017)
 Death Note Relight 1- Visions of a God (2007):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -2535,10 +2535,10 @@ Dexter's Laboratory- Ego Trip (1999):
       Title: Ego Trip
   Unparsed Movie Title: Dexter's Laboratory- Ego Trip (1999)
 Dragon Ball Z- Battle of Gods (2013):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -2853,10 +2853,10 @@ Dragon Ball Z- Resurrection 'F' (2015):
       Title: Resurrection 'F'
   Unparsed Movie Title: Dragon Ball Z- Resurrection 'F' (2015)
 Dragon Ball Z- The Tree of Might (1990):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -3149,10 +3149,10 @@ Entourage (2015):
       Title: Entourage The Movie
   Unparsed Movie Title: Entourage (2015)
 Episode of Sabo - The Three Brothers' Bond - The Miraculous Reunion (2015):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -3178,10 +3178,10 @@ Episode of Sabo - The Three Brothers' Bond - The Miraculous Reunion (2015):
   Unparsed Movie Title: Episode of Sabo- The Three Brothers' Bond - The Miraculous
     Reunion (2015)
 Escaflowne- The Movie (2000):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -3242,10 +3242,10 @@ Eureka Seven AO- Jungfrau no Hanabana-tachi (2012):
       Title: The Flowers of Jungfrau
   Unparsed Movie Title: Eureka Seven AO- Jungfrau no Hanabana-tachi (2012)
 Evangelion- 1.0 You Are (Not) Alone (2007):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -3308,10 +3308,10 @@ Evangelion- 2.0 You Can (Not) Advance (2009):
       Title: Evangelion- 2 You Can (Not) Advance
   Unparsed Movie Title: Evangelion- 2.0 You Can (Not) Advance (2009)
 Evangelion- 3.0 You Can (Not) Redo (2012):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -3396,10 +3396,10 @@ Evil Dead II (1987):
       Title: Evil Dead II
   Unparsed Movie Title: Evil Dead II (1987)
 Fairy Tail the Movie- Phoenix Priestess (2012):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -3464,7 +3464,7 @@ Fairy Tail x Rave (2013):
       Parsed Show Title: anime/staging/Rave Master/Season 00/Rave Master - S00E001
         - Fairy Tail x Rave
       Relative Show File Path: ''
-      Season: 0
+      Season: '0'
       Show ID: 573
       Show Root Path: anime/staging/Rave Master
       Symlinked: ''
@@ -3503,10 +3503,10 @@ Fairy Tail- Dragon Cry (2017):
       Title: Fairy Tail- Dragon Cry
   Unparsed Movie Title: Fairy Tail- Dragon Cry (2017)
 Family Guy Presents Stewie Griffin - The Untold Story (2005):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: DVD.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -3590,10 +3590,10 @@ Family Guy Presents- Seth and Alex's almost live comedy show (2009):
   Unparsed Movie Title: Family Guy Presents- Seth and Alex's almost live comedy show
     (2009)
 Fate+Stay Night- Unlimited Blade Works (2010):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: ''
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: WEBDL-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -3618,10 +3618,10 @@ Fate+Stay Night- Unlimited Blade Works (2010):
       Title: Fate+Stay Night - S00E004 - Unlimited Blade Works
   Unparsed Movie Title: Fate/Stay Night- Unlimited Blade Works (2010)
 "Fate+kaleid liner Prisma\u2606Illya Movie- Oath Under Snow (2017)":
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -3648,10 +3648,10 @@ Fate+Stay Night- Unlimited Blade Works (2010):
   Unparsed Movie Title: "Fate/Kaleid Liner Prisma\u2606Illya Movie- Oath Under Snow\
     \ (2017)"
 Fate+stay night- Heaven's Feel I. presage flower (2017):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -3678,10 +3678,10 @@ Fate+stay night- Heaven's Feel I. presage flower (2017):
       Title: Fate+Stay Night- Heaven's Feel - I. Presage Flower
   Unparsed Movie Title: Fate/stay night- Heaven's Feel I. presage flower (2017)
 "Fate+stay night- Heaven\u2019s Feel II. lost butterfly (2019)":
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -3736,10 +3736,10 @@ Fate+stay night- Heaven's Feel I. presage flower (2017):
       Title: Fate+Stay Night- Heaven's Feel - III. Spring Song
   Unparsed Movie Title: "Fate/stay night- Heaven\u2019s Feel III. spring song (2020)"
 Fist of the North Star (1986):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -3998,10 +3998,10 @@ Freedom Fighters- The Ray (2018):
       Title: Freedom Fighters- The Ray (feature-length release)
   Unparsed Movie Title: Freedom Fighters- The Ray (2018)
 Fullmetal Alchemist (2017):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: WEBDL-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -4026,10 +4026,10 @@ Fullmetal Alchemist (2017):
       Title: Fullmetal Alchemist (Live Action)
   Unparsed Movie Title: Fullmetal Alchemist (2018)
 Fullmetal Alchemist The Movie- Conqueror of Shamballa (2005):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: WEBDL-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -4055,10 +4055,10 @@ Fullmetal Alchemist The Movie- Conqueror of Shamballa (2005):
       Title: Fullmetal Alchemist The Movie- Conqueror of Shamballa
   Unparsed Movie Title: Fullmetal Alchemist The Movie- Conqueror of Shamballa (2006)
 Fullmetal Alchemist The Movie- The Sacred Star of Milos (2011):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -4109,10 +4109,10 @@ Futurama - Bender's Big Score (2007):
       Title: Bender's Big Score
   Unparsed Movie Title: Futurama- Bender's Big Score (2007)
 Futurama - Bender's Game (2008):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -4137,10 +4137,10 @@ Futurama - Bender's Game (2008):
       Title: Bender's Game
   Unparsed Movie Title: Futurama- Bender's Game (2008)
 Futurama - Into the Wild Green Yonder (2009):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -4165,10 +4165,10 @@ Futurama - Into the Wild Green Yonder (2009):
       Title: Into the Wild Green Yonder
   Unparsed Movie Title: Futurama- Into the Wild Green Yonder (2009)
 Futurama - The Beast with a Billion Backs (2008):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: WEBDL-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -4343,10 +4343,10 @@ Gantz-O (2016):
       Title: Gantz-O
   Unparsed Movie Title: Gantz-O (2016)
 Ghost in the Shell (1995):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -4730,10 +4730,10 @@ Ghost in the Shell Arise- Another Mission (2013):
   Unparsed Movie Title: "Ghost in the Shell- S.A.C. 2nd GIG \u2013 Individual Eleven\
     \ (2006)"
 Ghost in the Shell- Stand Alone Complex - Solid State Society (2006):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -4760,10 +4760,10 @@ Ghost in the Shell- Stand Alone Complex - Solid State Society (2006):
   Unparsed Movie Title: Ghost in the Shell- Stand Alone Complex - Solid State Society
     (2007)
 Ghost in the Shell- Stand Alone Complex - The Laughing Man (2005):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -5293,13 +5293,13 @@ Hajime no Ippo- Champion Road (2003):
       - 2
       Parsed Episode: '[2]'
       Parsed Relative Show Title: ''
-      Parsed Season: '00'
+      Parsed Season: None
       Parsed Season Folder: Season 00
       Parsed Show Title: anime/staging/Hajime no Ippo/Season 00/Hajime no Ippo - S00E002
         - Champion Road
       Relative Show File Path: anime/staging/Hajime no Ippo/Season 00/Hajime no Ippo
         - S00E002 - Champion Road DVD.mkv
-      Season: '0'
+      Season: None
       Show ID: ''
       Show Root Path: ''
       Symlinked: anime/staging/Hajime no Ippo/Season 00/Hajime no Ippo - S00E002 -
@@ -5325,12 +5325,12 @@ Hajime no Ippo- Mashiba vs. Kimura (2003):
       - 3
       Parsed Episode: '[3]'
       Parsed Relative Show Title: ''
-      Parsed Season: '00'
+      Parsed Season: None
       Parsed Season Folder: Season 00
       Parsed Show Title: anime/staging/Hajime no Ippo/Season 00/Hajime no Ippo - S00E003
         - Kimura vs Mashiba
       Relative Show File Path: ''
-      Season: '0'
+      Season: None
       Show ID: ''
       Show Root Path: ''
       Symlinked: ''
@@ -5524,10 +5524,10 @@ Inside The X-Files (1998):
       Title: Inside the X-Files
   Unparsed Movie Title: Inside The X-Files (1998)
 Inuyasha the Movie 2- The Castle Beyond the Looking Glass (2002):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-720p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -5591,10 +5591,10 @@ Inuyasha the Movie 3- Swords of an Honorable Ruler (2003):
       Title: Movie 3- Swords of an Honorable Ruler
   Unparsed Movie Title: Inuyasha the Movie 3- Swords of an Honorable Ruler (2003)
 Inuyasha the Movie 4- Fire on the Mystic Island (2004):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-720p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -5619,10 +5619,10 @@ Inuyasha the Movie 4- Fire on the Mystic Island (2004):
       Title: Movie 4- Fire on the Mystic Island
   Unparsed Movie Title: Inuyasha the Movie 4- Fire on the Mystic Island (2006)
 Inuyasha the Movie- Affections Touching Across Time (2001):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-720p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -5658,10 +5658,10 @@ Is There A Stargate? (2003):
     Stargate SG-1: null
   Unparsed Movie Title: Is There A Stargate? (2003)
 Jeff Dunham - All Over the Map (2014):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mp4
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mp4
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -5686,10 +5686,10 @@ Jeff Dunham - All Over the Map (2014):
       Title: All Over the Map
   Unparsed Movie Title: Jeff Dunham- All Over the Map (2014)
 Jeff Dunham - Arguing with Myself (2006):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -5714,10 +5714,10 @@ Jeff Dunham - Arguing with Myself (2006):
       Title: Arguing with Myself
   Unparsed Movie Title: Jeff Dunham- Arguing with Myself (2006)
 Jeff Dunham - Birth of a Dummy (2011):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: HDTV-720p Proper.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -5742,10 +5742,10 @@ Jeff Dunham - Birth of a Dummy (2011):
       Title: Birth of a Dummy
   Unparsed Movie Title: Jeff Dunham- Birth of a Dummy (2011)
 Jeff Dunham - Controlled Chaos (2011):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: avi
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: DVD.avi
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -5770,10 +5770,10 @@ Jeff Dunham - Controlled Chaos (2011):
       Title: Controlled Chaos
   Unparsed Movie Title: Jeff Dunham- Controlled Chaos (2011)
 Jeff Dunham - Jeff Dunham's Very Special Christmas Special (2008):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: avi
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: DVD.avi
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -5799,10 +5799,10 @@ Jeff Dunham - Jeff Dunham's Very Special Christmas Special (2008):
   Unparsed Movie Title: Jeff Dunham- Jeff Dunham's Very Special Christmas Special
     (2008)
 Jeff Dunham - Minding the Monsters (2012):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -5827,10 +5827,10 @@ Jeff Dunham - Minding the Monsters (2012):
       Title: Minding the Monsters
   Unparsed Movie Title: Jeff Dunham- Minding the Monsters (2012)
 Jeff Dunham - Relative Disaster (2017):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: WEBDL-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -5855,10 +5855,10 @@ Jeff Dunham - Relative Disaster (2017):
       Title: Relative Disaster
   Unparsed Movie Title: Jeff Dunham- Relative Disaster (2017)
 Jeff Dunham - Spark of Insanity (2007):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -5883,10 +5883,10 @@ Jeff Dunham - Spark of Insanity (2007):
       Title: Spark of Insanity
   Unparsed Movie Title: Jeff Dunham- Spark of Insanity (2007)
 Jeff Dunham - Unhinged in Hollywood (2015):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-720p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -6322,10 +6322,10 @@ Kono Subarashii Sekai ni Shukufuku wo! God's Blessings on This Wonderful Choker!
   Unparsed Movie Title: Kono Subarashii Sekai ni Shukufuku wo! God's Blessings on
     This Wonderful Choker! (2016)
 Koukyoushihen- Eureka Seven - Hi-Evolution 1 (2017):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -6346,8 +6346,7 @@ Koukyoushihen- Eureka Seven - Hi-Evolution 1 (2017):
       Season: '0'
       Show ID: 145
       Show Root Path: anime/staging/Eureka Seven
-      Symlinked: anime/staging/Eureka Seven/Season 00/Eureka Seven - S00E021 - Hi-Evolution
-        1 Bluray-1080p Remux.mkv -> ../../../../../..
+      Symlinked: ''
       Title: Hi-Evolution 1
   Unparsed Movie Title: Koukyoushihen- Eureka Seven - Hi-Evolution 1 (2018)
 L- Change the World (2008):
@@ -6426,10 +6425,10 @@ Lupin the Third- Daisuke Jigen's Gravestone (2014):
       Title: Daisuke Jigen's Gravestone
   Unparsed Movie Title: Lupin the Third- Daisuke Jigen's Gravestone (2014)
 Lupin the Third- The Blood Spray of Goemon Ishikawa (2017):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -6453,9 +6452,7 @@ Lupin the Third- The Blood Spray of Goemon Ishikawa (2017):
       Season: '0'
       Show ID: ''
       Show Root Path: anime/staging/Lupin the Third- The Woman Called Fujiko Mine
-      Symlinked: anime/staging/Lupin the Third- The Woman Called Fujiko Mine/Season
-        00/Lupin the Third- The Woman Called Fujiko Mine - S00E003-004 - The Blood
-        Spray of Goemon Ishikawa Bluray-1080p.mkv -> ../../../../../..
+      Symlinked: ''
       Title: The Blood Spray of Goemon Ishikawa
   Unparsed Movie Title: Lupin the Third- Goemon Ishikawa's Spray of Blood (2017)
 Made in Abyss- Dawn of the Deep Soul (2020):
@@ -7138,12 +7135,12 @@ Mobile Suit Gundam SEED Destiny- Special Edition I - The Broken World (2006):
       - 7
       Parsed Episode: '[7]'
       Parsed Relative Show Title: ''
-      Parsed Season: '00'
+      Parsed Season: None
       Parsed Season Folder: Season 00
       Parsed Show Title: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00/Mobile
         Suit Gundam SEED (2012) - S00E007 - Special Edition I- The Shattered World
       Relative Show File Path: ''
-      Season: '0'
+      Season: None
       Show ID: ''
       Show Root Path: ''
       Symlinked: ''
@@ -7187,12 +7184,12 @@ Mobile Suit Gundam SEED Destiny- Special Edition II - Their Respective Swords (2
       - 8
       Parsed Episode: '[8]'
       Parsed Relative Show Title: ''
-      Parsed Season: '00'
+      Parsed Season: None
       Parsed Season Folder: Season 00
       Parsed Show Title: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00/Mobile
         Suit Gundam SEED (2012) - S00E008 - Special Edition II- Their Respective Swords
       Relative Show File Path: ''
-      Season: '0'
+      Season: None
       Show ID: ''
       Show Root Path: ''
       Symlinked: ''
@@ -7237,12 +7234,12 @@ Mobile Suit Gundam SEED Destiny- Special Edition III - Flames of Destiny (2006):
       - 9
       Parsed Episode: '[9]'
       Parsed Relative Show Title: ''
-      Parsed Season: '00'
+      Parsed Season: None
       Parsed Season Folder: Season 00
       Parsed Show Title: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00/Mobile
         Suit Gundam SEED (2012) - S00E009 - Special Edition III- Flames Of Destiny
       Relative Show File Path: ''
-      Season: '0'
+      Season: None
       Show ID: ''
       Show Root Path: ''
       Symlinked: ''
@@ -7286,12 +7283,12 @@ Mobile Suit Gundam SEED Destiny- Special Edition IV - The Cost of Freedom (2007)
       - 10
       Parsed Episode: '[10]'
       Parsed Relative Show Title: ''
-      Parsed Season: '00'
+      Parsed Season: None
       Parsed Season Folder: Season 00
       Parsed Show Title: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00/Mobile
         Suit Gundam SEED (2012) - S00E010 - Special Edition IV- The Cost of Freedom
       Relative Show File Path: ''
-      Season: '0'
+      Season: None
       Show ID: ''
       Show Root Path: ''
       Symlinked: ''
@@ -7340,7 +7337,7 @@ Mobile Suit Gundam SEED Movie I- The Empty Battlefield (2004):
       Parsed Show Title: anime/staging/Mobile Suit Gundam SEED/Season 00/Mobile Suit
         Gundam SEED - S00E002 - Special Edition I- The Empty Battlefield
       Relative Show File Path: ''
-      Season: '0'
+      Season: None
       Show ID: 163
       Show Root Path: ''
       Symlinked: ''
@@ -7352,12 +7349,13 @@ Mobile Suit Gundam SEED Movie I- The Empty Battlefield (2004):
       - 2
       Parsed Episode: '[2]'
       Parsed Relative Show Title: ''
-      Parsed Season: '00'
+      Parsed Season: None
       Parsed Season Folder: Season 00
       Parsed Show Title: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00/Mobile
         Suit Gundam SEED (2012) - S00E002 - Special Edition I- The Empty Battlefield
       Relative Show File Path: ''
-      Season: '0'
+      Season: None
+      Show ID: ''
       Show Root Path: ''
       Symlinked: ''
       Title: Special Edition I- The Empty Battlefield
@@ -7387,7 +7385,7 @@ Mobile Suit Gundam SEED Movie II- The Far-Away Dawn (2004):
       Parsed Show Title: anime/staging/Mobile Suit Gundam SEED/Season 00/Mobile Suit
         Gundam SEED - S00E003 - Special Edition II- The Far-Away Dawn
       Relative Show File Path: ''
-      Season: '0'
+      Season: None
       Show ID: 163
       Show Root Path: ''
       Symlinked: ''
@@ -7399,12 +7397,13 @@ Mobile Suit Gundam SEED Movie II- The Far-Away Dawn (2004):
       - 3
       Parsed Episode: '[3]'
       Parsed Relative Show Title: ''
-      Parsed Season: '00'
+      Parsed Season: None
       Parsed Season Folder: Season 00
       Parsed Show Title: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00/Mobile
         Suit Gundam SEED (2012) - S00E003 - Special Edition II- The Far-Away Dawn
       Relative Show File Path: ''
-      Season: '0'
+      Season: None
+      Show ID: ''
       Show Root Path: ''
       Symlinked: ''
       Title: Special Edition II- The Far-Away Dawn
@@ -7434,7 +7433,7 @@ Mobile Suit Gundam SEED Movie III- The Rumbling Sky (2004):
       Parsed Show Title: anime/staging/Mobile Suit Gundam SEED/Season 00/Mobile Suit
         Gundam SEED - S00E004 - Special Edition III- The Rumbling Sky
       Relative Show File Path: ''
-      Season: '0'
+      Season: None
       Show ID: 163
       Show Root Path: ''
       Symlinked: ''
@@ -7446,21 +7445,22 @@ Mobile Suit Gundam SEED Movie III- The Rumbling Sky (2004):
       - 4
       Parsed Episode: '[4]'
       Parsed Relative Show Title: ''
-      Parsed Season: '00'
+      Parsed Season: None
       Parsed Season Folder: Season 00
       Parsed Show Title: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00/Mobile
         Suit Gundam SEED (2012) - S00E004 - Special Edition III- The Rumbling Sky
       Relative Show File Path: ''
-      Season: '0'
+      Season: None
+      Show ID: ''
       Show Root Path: ''
       Symlinked: ''
       Title: Special Edition III- The Rumbling Sky
   Unparsed Movie Title: Mobile Suit Gundam SEED Movie III- The Rumbling Sky (2004)
 Mobile Suit Gundam- Char's Counterattack (1988):
-  Absolute Movie File Path: //
+  Absolute Movie File Path: ''''''/
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: //
+  Parsed Movie File: ''''''/
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -7691,10 +7691,10 @@ Mushishi- The Shadow That Devours the Sun (2014):
       Title: The Shadow That Devours the Sun
   Unparsed Movie Title: Mushishi- The Shadow That Devours the Sun (2014)
 My Hero Academia - Two Heroes (2018):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -7762,10 +7762,10 @@ Naruto (0):
     Naruto: null
   Unparsed Movie Title: Naruto (0)
 Naruto Shippuden the Movie Blood Prison (2011):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -7790,10 +7790,10 @@ Naruto Shippuden the Movie Blood Prison (2011):
       Title: Naruto Shippuden 5- Blood Prison
   Unparsed Movie Title: Naruto Shippuden the Movie Blood Prison (2019)
 Naruto Shippuden the Movie Bonds (2008):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -7860,10 +7860,10 @@ Naruto Shippuden the Movie Inheritors of the Will of Fire (2009):
   Unparsed Movie Title: Naruto Shippuden the Movie Inheritors of the Will of Fire
     (2009)
 Naruto Shippuden the Movie Road to Ninja (2012):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -7927,10 +7927,10 @@ Naruto Shippuden the Movie The Lost Tower (2010):
       Title: Naruto Shippuden 4- The Lost Tower
   Unparsed Movie Title: Naruto Shippuden the Movie The Lost Tower (2010)
 Naruto Shippuden- The Movie (2007):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -7951,8 +7951,7 @@ Naruto Shippuden- The Movie (2007):
       Season: '0'
       Show ID: 168
       Show Root Path: anime/shounen/Naruto Shippuden
-      Symlinked: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden - S00E001
-        - Naruto Shippuden the Movie Bluray-1080p.mkv -> ../../../../../..
+      Symlinked: ''
   Unparsed Movie Title: Naruto Shippuden The Movie (2007)
 "Naruto cl\xE1ssico (0)":
   Absolute Movie File Path: /
@@ -8048,10 +8047,10 @@ Naruto the Movie- Legend of the Stone of Gelel (2005):
       Title: Naruto the Movie 2- Legend of the Stone of Gelel
   Unparsed Movie Title: Naruto the Movie- Legend of the Stone of Gelel (2005)
 Naruto the Movie- Ninja Clash in the Land of Snow (2004):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -8170,10 +8169,10 @@ Naruto- The Lost Story- Mission - Protect the Waterfall Village (2003):
   Unparsed Movie Title: Naruto- The Lost Story- Mission - Protect the Waterfall Village
     (2003)
 Neon Genesis Evangelion- Death and Rebirth (1997):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -8394,10 +8393,10 @@ Of Moose and Men- The Rocky and Bullwinkle Story (1990):
     The Rocky and Bullwinkle Show: null
   Unparsed Movie Title: Of Moose and Men- The Rocky and Bullwinkle Story (1990)
 One Piece - Adventure of Nebulandia (2015):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -8422,10 +8421,10 @@ One Piece - Adventure of Nebulandia (2015):
       Title: Adventure of Nebulandia
   Unparsed Movie Title: One Piece- Adventure of Nebulandia (2015)
 One Piece - Baron Omatsuri and the Secret Island (2005):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -8450,10 +8449,10 @@ One Piece - Baron Omatsuri and the Secret Island (2005):
       Title: Baron Omatsuri and the Secret Island
   Unparsed Movie Title: One Piece- Baron Omatsuri and the Secret Island (2005)
 One Piece - Chopper's Kingdom on the Island of Strange Animals (2002):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -8479,10 +8478,10 @@ One Piece - Chopper's Kingdom on the Island of Strange Animals (2002):
   Unparsed Movie Title: One Piece- Chopper's Kingdom on the Island of Strange Animals
     (2002)
 One Piece - Clockwork Island Adventure (2001):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -8507,10 +8506,10 @@ One Piece - Clockwork Island Adventure (2001):
       Title: Clockwork Island Adventure
   Unparsed Movie Title: One Piece- Clockwork Island Adventure (2001)
 One Piece - Curse of the Sacred Sword (2004):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -8531,15 +8530,14 @@ One Piece - Curse of the Sacred Sword (2004):
       Season: '0'
       Show ID: 86
       Show Root Path: anime/shounen/One Piece
-      Symlinked: anime/shounen/One Piece/Season 00/One Piece - S00E011 - Curse of
-        the Sacred Sword Bluray-1080p.mkv -> ../../../../../..
+      Symlinked: ''
       Title: Curse of the Sacred Sword
   Unparsed Movie Title: One Piece- Curse of the Sacred Sword (2004)
 One Piece - Dead End Adventure (2003):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -8560,15 +8558,14 @@ One Piece - Dead End Adventure (2003):
       Season: '0'
       Show ID: 86
       Show Root Path: anime/shounen/One Piece
-      Symlinked: anime/shounen/One Piece/Season 00/One Piece - S00E008 - Dead End
-        Adventure Bluray-1080p.mkv -> ../../../../../..
+      Symlinked: ''
       Title: Dead End Adventure
   Unparsed Movie Title: One Piece- Dead End Adventure (2003)
 One Piece - Episode of Chopper Plus - Bloom in the Winter, Miracle Cherry Blossom (2008):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -8589,16 +8586,15 @@ One Piece - Episode of Chopper Plus - Bloom in the Winter, Miracle Cherry Blosso
       Season: '0'
       Show ID: 86
       Show Root Path: anime/shounen/One Piece
-      Symlinked: anime/shounen/One Piece/Season 00/One Piece - S00E017 - Episode of
-        Chopper - Bloom in the Winter, Miracle Sakura Bluray-1080p.mkv -> ../../../../../..
+      Symlinked: ''
       Title: Episode of Chopper - Bloom in the Winter, Miracle Sakura
   Unparsed Movie Title: One Piece- Episode of Chopper Plus- Bloom in the Winter, Miracle
     Cherry Blossom (2008)
 One Piece - Episode of Luffy - Hand Island Adventure (2012):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-720p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -8619,15 +8615,14 @@ One Piece - Episode of Luffy - Hand Island Adventure (2012):
       Season: '0'
       Show ID: 86
       Show Root Path: anime/shounen/One Piece
-      Symlinked: anime/shounen/One Piece/Season 00/One Piece - S00E024 - Episode of
-        Luffy - The Hand Island Adventure Bluray-720p.mkv -> ../../../../../..
+      Symlinked: ''
       Title: Episode of Luffy - The Hand Island Adventure
   Unparsed Movie Title: One Piece- Episode of Luffy - Hand Island Adventure (2012)
 One Piece - Episode of Skypiea (2018):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -8648,15 +8643,14 @@ One Piece - Episode of Skypiea (2018):
       Season: '0'
       Show ID: 86
       Show Root Path: anime/shounen/One Piece
-      Symlinked: anime/shounen/One Piece/Season 00/One Piece - S00E038 - Episode of
-        Skypiea Bluray-1080p.mkv -> ../../../../../..
+      Symlinked: ''
       Title: Episode of Skypiea
   Unparsed Movie Title: One Piece- Episode of Skypiea (2018)
 One Piece - Giant Mecha Soldier of Karakuri Castle (2006):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: WEBDL-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -8677,15 +8671,14 @@ One Piece - Giant Mecha Soldier of Karakuri Castle (2006):
       Season: '0'
       Show ID: 86
       Show Root Path: anime/shounen/One Piece
-      Symlinked: anime/shounen/One Piece/Season 00/One Piece - S00E015 - The Giant
-        Mechanical Soldier of Karakuri Castle WEBDL-1080p.mkv -> ../../../../../..
+      Symlinked: ''
       Title: The Giant Mechanical Soldier of Karakuri Castle
   Unparsed Movie Title: One Piece- Giant Mecha Soldier of Karakuri Castle (2006)
 One Piece - Heart of Gold (2016):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -8710,10 +8703,10 @@ One Piece - Heart of Gold (2016):
       Title: One Piece - Heart of Gold
   Unparsed Movie Title: One Piece- Heart of Gold (2016)
 One Piece - Jango's Dance Carnival (2001):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: avi
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: DVD.avi
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -8738,10 +8731,10 @@ One Piece - Jango's Dance Carnival (2001):
       Title: Jango's Dance Carnival
   Unparsed Movie Title: One Piece- Jango's Dance Carnival (2001)
 One Piece - Romance Dawn Story (2008):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-720p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -8766,10 +8759,10 @@ One Piece - Romance Dawn Story (2008):
       Title: Romance Dawn Story (OVA 2)
   Unparsed Movie Title: One Piece- Romance Dawn Story (2008)
 One Piece - Strong World Episode 0 (2010):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: DVD.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -8794,10 +8787,10 @@ One Piece - Strong World Episode 0 (2010):
       Title: Strong World Episode 0
   Unparsed Movie Title: One Piece- Strong World Episode 0 (2010)
 One Piece - The Desert Princess and the Pirates - Adventure in Alabasta (2007):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -8823,10 +8816,10 @@ One Piece - The Desert Princess and the Pirates - Adventure in Alabasta (2007):
   Unparsed Movie Title: One Piece- The Desert Princess and the Pirates- Adventure
     in Alabasta (2007)
 One Piece - The Movie (2000):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -8851,10 +8844,10 @@ One Piece - The Movie (2000):
       Title: One Piece - The Movie
   Unparsed Movie Title: One Piece- The Movie (2011)
 One Piece 3D - Straw Hat Chase (2011):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -8879,10 +8872,10 @@ One Piece 3D - Straw Hat Chase (2011):
       Title: One Piece 3D - Mugiwara Chase
   Unparsed Movie Title: One Piece 3D- Straw Hat Chase (2011)
 One Piece 3D2Y - Overcome Ace's Death! Luffy's Vow to his Friends (2014):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-720p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -8951,10 +8944,10 @@ One Piece Episode of East Blue Luffy and His 4 Crewmate's Big Adventure (2017):
   Unparsed Movie Title: One Piece Episode of East Blue Luffy and His 4 Crewmate's
     Big Adventure (2017)
 One Piece Episode of Merry - The Tale of One More Friend (2013):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-720p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -8979,10 +8972,10 @@ One Piece Episode of Merry - The Tale of One More Friend (2013):
       Title: Episode of Merry - The Tale of One More Friend
   Unparsed Movie Title: One Piece Episode of Merry- The Tale of One More Friend (2013)
 One Piece Episode of Nami - Tears of a Navigator and the Bonds of Friends (2012):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-720p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -9008,10 +9001,10 @@ One Piece Episode of Nami - Tears of a Navigator and the Bonds of Friends (2012)
   Unparsed Movie Title: One Piece Episode of Nami- Tears of a Navigator and the Bonds
     of Friends (2012)
 One Piece Film - GOLD (2016):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -9036,10 +9029,10 @@ One Piece Film - GOLD (2016):
       Title: One Piece Film Gold
   Unparsed Movie Title: One Piece Film- GOLD (2016)
 One Piece Film - Strong World (2009):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -9064,10 +9057,10 @@ One Piece Film - Strong World (2009):
       Title: Strong World
   Unparsed Movie Title: One Piece Film- Strong World (2009)
 One Piece Film - Z (2012):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -9642,10 +9635,10 @@ Psych- The Musical (2013):
       Title: The Big Adventures of Little Shawn and Gus
   Unparsed Movie Title: Psych- The Musical (2013)
 Psycho-Pass- The Movie (2015):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -10686,10 +10679,10 @@ Saint Seiya- Legend of Crimson Youth (1988):
       Title: Legend of Crimson Youth
   Unparsed Movie Title: Saint Seiya- Legend of Crimson Youth (1988)
 Saint Seiya- Legend of Sanctuary (2014):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -11460,10 +11453,10 @@ Saturday Night Live- The Best of Will Ferrell - Volume 2 (2004):
       Title: Best of Will Ferrell 2
   Unparsed Movie Title: Saturday Night Live- The Best of Will Ferrell - Volume 2 (2004)
 Scooby-Doo! & Batman- The Brave and the Bold (2018):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: WEBDL-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -11485,9 +11478,7 @@ Scooby-Doo! & Batman- The Brave and the Bold (2018):
       Season: '0'
       Show ID: ''
       Show Root Path: tv/superhero/Batman- The Brave and the Bold
-      Symlinked: tv/superhero/Batman- The Brave and the Bold/Season 00/Batman- The
-        Brave and the Bold - S00E01 - Scooby-Doo & Batman- The Brave and the Bold
-        WEBDL-1080p.mkv -> ../../../../../..
+      Symlinked: ''
       Title: Scooby-Doo & Batman- The Brave and the Bold
   Unparsed Movie Title: Scooby-Doo (2002)
 Seinfeld Lost Episode - Kramer at the Laugh Factory (2006):
@@ -12146,10 +12137,10 @@ Steins;Gate- Egoistic Poriomania (2012):
       Title: Egoistic Poriomania
   Unparsed Movie Title: Steins;Gate- Egoistic Poriomania (2012)
 "Steins;Gate- The Movie \u2212 Load Region of D\xE9j\xE0 Vu (2013)":
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -12437,10 +12428,10 @@ The Batman vs. Dracula (2005):
       Title: The Batman vs. Dracula
   Unparsed Movie Title: The Batman vs. Dracula (2005)
 The Cage (1965):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -12461,8 +12452,7 @@ The Cage (1965):
       Season: '0'
       Show ID: 374
       Show Root Path: tv/scifi/Star Trek
-      Symlinked: tv/scifi/Star Trek/Season 00/Star Trek - S00E01 - The Cage (Original
-        Pilot) Bluray-1080p.mkv -> ../../../../../..
+      Symlinked: ''
       Title: The Cage (Original Pilot)
   Unparsed Movie Title: Star Trek- The Cage (1965)
 The Dark Knight's First Night (1991):
@@ -12855,10 +12845,10 @@ The IT Crowd Manual (2014):
       Title: The IT Crowd Manual
   Unparsed Movie Title: The IT Crowd Manual (2014)
 The Last- Naruto the Movie (2014):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -13068,10 +13058,10 @@ The Seinfeld Story (2004):
       Title: The Seinfeld Story
   Unparsed Movie Title: The Seinfeld Story (2004)
 The Seven Deadly Sins - Prisoners of the Sky (2018):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: WEBDL-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -13531,10 +13521,14 @@ Tiger & Bunny (0):
     Tiger & Bunny: null
   Unparsed Movie Title: Tiger & Bunny (0)
 Tiger & Bunny - The Movie- The Rising (2014):
-  Absolute Movie File Path: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)/
+  Absolute Movie File Path: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)//media/video/movies/staging/Bill
+    Burr- Paper Tiger (2019)//media/video/movies/staging/Bill Burr- Paper Tiger (2019)//media/video/movies/staging/Bill
+    Burr- Paper Tiger (2019)//media/video/movies/staging/Bill Burr- Paper Tiger (2019)/
   Absolute Movie Path: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)/
+  Parsed Movie File: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)//media/video/movies/staging/Bill
+    Burr- Paper Tiger (2019)//media/video/movies/staging/Bill Burr- Paper Tiger (2019)//media/video/movies/staging/Bill
+    Burr- Paper Tiger (2019)//media/video/movies/staging/Bill Burr- Paper Tiger (2019)/
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: movies/staging/Bill Burr- Paper Tiger (2019)
   Relative Movie Path: movies/staging/Bill Burr- Paper Tiger (2019)
@@ -13552,19 +13546,25 @@ Tiger & Bunny - The Movie- The Rising (2014):
         - Tiger & Bunny- The Beginning
       Relative Show File Path: anime/staging/Tiger & Bunny/Season 00/Tiger & Bunny
         - S00E002 - Tiger & Bunny- The Beginning Bluray-1080p.mkv
-      Season: '0'
+      Season: None
       Show ID: 109
       Show Root Path: ''
       Symlinked: anime/staging/Tiger & Bunny/Season 00/Tiger & Bunny - S00E002 - Tiger
-        & Bunny- The Beginning Bluray-1080p.mkv -> ../../../../movies/staging/Bill
+        & Bunny- The Beginning Bluray-1080p.mkv/Bill Burr- Paper Tiger (2019) -> media/video/movies/staging/Bill
+        Burr- Paper Tiger (2019)/media/video/movies/staging/Bill Burr- Paper Tiger
+        (2019)/media/video/movies/staging/Bill Burr- Paper Tiger (2019)/media/video/movies/staging/Bill
         Burr- Paper Tiger (2019)
       Title: Tiger & Bunny- The Beginning
   Unparsed Movie Title: Bill Burr- Paper Tiger (2019)
 Tiger & Bunny- The Beginning (2012):
-  Absolute Movie File Path: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)/
+  Absolute Movie File Path: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)//media/video/movies/staging/Bill
+    Burr- Paper Tiger (2019)//media/video/movies/staging/Bill Burr- Paper Tiger (2019)//media/video/movies/staging/Bill
+    Burr- Paper Tiger (2019)//media/video/movies/staging/Bill Burr- Paper Tiger (2019)/
   Absolute Movie Path: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)/
+  Parsed Movie File: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)//media/video/movies/staging/Bill
+    Burr- Paper Tiger (2019)//media/video/movies/staging/Bill Burr- Paper Tiger (2019)//media/video/movies/staging/Bill
+    Burr- Paper Tiger (2019)//media/video/movies/staging/Bill Burr- Paper Tiger (2019)/
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: movies/staging/Bill Burr- Paper Tiger (2019)
   Relative Movie Path: movies/staging/Bill Burr- Paper Tiger (2019)
@@ -13582,11 +13582,14 @@ Tiger & Bunny- The Beginning (2012):
         - Tiger & Bunny- The Rising
       Relative Show File Path: anime/staging/Tiger & Bunny/Season 00/Tiger & Bunny
         - S00E003 - Tiger & Bunny- The Rising Bluray-1080p.mkv
-      Season: '0'
+      Season: None
       Show ID: 109
       Show Root Path: ''
       Symlinked: anime/staging/Tiger & Bunny/Season 00/Tiger & Bunny - S00E003 - Tiger
-        & Bunny- The Rising Bluray-1080p.mkv/Bill Burr- Paper Tiger (2019) -> .
+        & Bunny- The Rising Bluray-1080p.mkv/Bill Burr- Paper Tiger (2019) -> media/video/movies/staging/Bill
+        Burr- Paper Tiger (2019)/media/video/movies/staging/Bill Burr- Paper Tiger
+        (2019)/media/video/movies/staging/Bill Burr- Paper Tiger (2019)/media/video/movies/staging/Bill
+        Burr- Paper Tiger (2019)
       Title: Tiger & Bunny- The Rising
   Unparsed Movie Title: Bill Burr- Paper Tiger (2019)
 Tiger & Bunny- Too Many Cooks Spoil the Broth (2015):
@@ -13631,10 +13634,15 @@ Top Gear- 50 Years Of Bond Cars (2012):
   Unparsed Movie Title: Top Gear- 50 Years of Bond Cars (2012)
 Top Gear- Apocalypse (2010):
   Absolute Movie File Path: /media/video/movies/documentaries/Top Gear- Apocalypse
-    (2010)/
+    (2010)//media/video/movies/documentaries/Top Gear- Apocalypse (2010)//media/video/movies/documentaries/Top
+    Gear- Apocalypse (2010)//media/video/movies/documentaries/Top Gear- Apocalypse
+    (2010)//media/video/movies/documentaries/Top Gear- Apocalypse (2010)/
   Absolute Movie Path: /media/video/movies/documentaries/Top Gear- Apocalypse (2010)
   Parsed Movie Extension: ''
-  Parsed Movie File: /media/video/movies/documentaries/Top Gear- Apocalypse (2010)/
+  Parsed Movie File: /media/video/movies/documentaries/Top Gear- Apocalypse (2010)//media/video/movies/documentaries/Top
+    Gear- Apocalypse (2010)//media/video/movies/documentaries/Top Gear- Apocalypse
+    (2010)//media/video/movies/documentaries/Top Gear- Apocalypse (2010)//media/video/movies/documentaries/Top
+    Gear- Apocalypse (2010)/
   Parsed Movie Quality: Bluray-720p.mkv
   Relative Movie File Path: movies/documentaries/Top Gear- Apocalypse (2010)
   Relative Movie Path: movies/documentaries/Top Gear- Apocalypse (2010)
@@ -13654,8 +13662,11 @@ Top Gear- Apocalypse (2010):
       Season: '0'
       Show ID: 355
       Show Root Path: tv/reality/Top Gear
-      Symlinked: tv/reality/Top Gear/Season 00/Top Gear - S00E32 - Apocalypse Bluray-720p.mkv
-        -> ../../../../movies/documentaries/Top Gear- Apocalypse (2010)
+      Symlinked: tv/reality/Top Gear/Season 00/Top Gear - S00E32 - Apocalypse Bluray-720p.mkv/Top
+        Gear- Apocalypse (2010) -> media/video/movies/documentaries/Top Gear- Apocalypse
+        (2010)/media/video/movies/documentaries/Top Gear- Apocalypse (2010)/media/video/movies/documentaries/Top
+        Gear- Apocalypse (2010)/media/video/movies/documentaries/Top Gear- Apocalypse
+        (2010)
       Title: Apocalypse
   Unparsed Movie Title: Top Gear- Apocalypse (2010)
 Top Gear- At the Movies (2011):
@@ -13929,11 +13940,19 @@ Top Gear- The Challenges 4 (2010):
   Unparsed Movie Title: Top Gear- The Challenges 4 (2010)
 Top Gear- The Great African Adventure (2013):
   Absolute Movie File Path: /media/video/movies/documentaries/Top Gear- The Great
+    African Adventure (2013)//media/video/movies/documentaries/Top Gear- The Great
+    African Adventure (2013)//media/video/movies/documentaries/Top Gear- The Great
+    African Adventure (2013)//media/video/movies/documentaries/Top Gear- The Great
+    African Adventure (2013)//media/video/movies/documentaries/Top Gear- The Great
     African Adventure (2013)/
   Absolute Movie Path: /media/video/movies/documentaries/Top Gear- The Great African
     Adventure (2013)
   Parsed Movie Extension: ''
   Parsed Movie File: /media/video/movies/documentaries/Top Gear- The Great African
+    Adventure (2013)//media/video/movies/documentaries/Top Gear- The Great African
+    Adventure (2013)//media/video/movies/documentaries/Top Gear- The Great African
+    Adventure (2013)//media/video/movies/documentaries/Top Gear- The Great African
+    Adventure (2013)//media/video/movies/documentaries/Top Gear- The Great African
     Adventure (2013)/
   Parsed Movie Quality: Bluray-720p.mkv
   Relative Movie File Path: movies/documentaries/Top Gear- The Great African Adventure
@@ -13959,8 +13978,11 @@ Top Gear- The Great African Adventure (2013):
       Show ID: 355
       Show Root Path: tv/reality/Top Gear
       Symlinked: tv/reality/Top Gear/Season 00/Top Gear - S00E06-07 - Africa Special
-        Bluray-720p.mkv -> ../../../../movies/documentaries/Top Gear- The Great African
-        Adventure (2013)
+        Bluray-720p.mkv/Top Gear- The Great African Adventure (2013) -> media/video/movies/documentaries/Top
+        Gear- The Great African Adventure (2013)/media/video/movies/documentaries/Top
+        Gear- The Great African Adventure (2013)/media/video/movies/documentaries/Top
+        Gear- The Great African Adventure (2013)/media/video/movies/documentaries/Top
+        Gear- The Great African Adventure (2013)
       Title: Africa Special
   Unparsed Movie Title: Top Gear- The Great African Adventure (2013)
 Top Gear- The India Special (2011):
@@ -13992,10 +14014,10 @@ Top Gear- The India Special (2011):
       Title: India Special
   Unparsed Movie Title: Top Gear- The India Special (2011)
 Top Gear- The Perfect Road Trip (2013):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: ''
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-720p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -14016,18 +14038,23 @@ Top Gear- The Perfect Road Trip (2013):
       Season: '0'
       Show ID: 355
       Show Root Path: tv/reality/Top Gear
-      Symlinked: tv/reality/Top Gear/Season 00/Top Gear - S00E47 - The Perfect Road
-        Trip Bluray-720p.mkv -> ../../../../../..
+      Symlinked: ''
       Title: The Perfect Road Trip
   Unparsed Movie Title: Top Gear- The Perfect Road Trip (2014)
 Top Gear- The Perfect Road Trip 2 (2014):
   Absolute Movie File Path: /media/video/movies/documentaries/Top Gear- The Perfect
-    Road Trip 2 (2014)/
+    Road Trip 2 (2014)//media/video/movies/documentaries/Top Gear- The Perfect Road
+    Trip 2 (2014)//media/video/movies/documentaries/Top Gear- The Perfect Road Trip
+    2 (2014)//media/video/movies/documentaries/Top Gear- The Perfect Road Trip 2 (2014)//media/video/movies/documentaries/Top
+    Gear- The Perfect Road Trip 2 (2014)/
   Absolute Movie Path: /media/video/movies/documentaries/Top Gear- The Perfect Road
     Trip 2 (2014)
   Parsed Movie Extension: ''
   Parsed Movie File: /media/video/movies/documentaries/Top Gear- The Perfect Road
-    Trip 2 (2014)/
+    Trip 2 (2014)//media/video/movies/documentaries/Top Gear- The Perfect Road Trip
+    2 (2014)//media/video/movies/documentaries/Top Gear- The Perfect Road Trip 2 (2014)//media/video/movies/documentaries/Top
+    Gear- The Perfect Road Trip 2 (2014)//media/video/movies/documentaries/Top Gear-
+    The Perfect Road Trip 2 (2014)/
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: movies/documentaries/Top Gear- The Perfect Road Trip 2
     (2014)
@@ -14050,8 +14077,11 @@ Top Gear- The Perfect Road Trip 2 (2014):
       Show ID: 355
       Show Root Path: tv/reality/Top Gear
       Symlinked: tv/reality/Top Gear/Season 00/Top Gear - S00E66 - The Perfect Road
-        Trip 2 Bluray-1080p.mkv -> ../../../../movies/documentaries/Top Gear- The
-        Perfect Road Trip 2 (2014)
+        Trip 2 Bluray-1080p.mkv/Top Gear- The Perfect Road Trip 2 (2014) -> media/video/movies/documentaries/Top
+        Gear- The Perfect Road Trip 2 (2014)/media/video/movies/documentaries/Top
+        Gear- The Perfect Road Trip 2 (2014)/media/video/movies/documentaries/Top
+        Gear- The Perfect Road Trip 2 (2014)/media/video/movies/documentaries/Top
+        Gear- The Perfect Road Trip 2 (2014)
       Title: The Perfect Road Trip 2
   Unparsed Movie Title: Top Gear- The Perfect Road Trip 2 (2014)
 Top Gear- The Worst Car In the History of the World (2012):
@@ -14273,10 +14303,10 @@ Toriko 3D Movie- Kaimaku! Gourmet Adventure!! (2011):
       Title: Kaimaku Gourmet Adventure!!
   Unparsed Movie Title: Toriko 3D Movie- Kaimaku! Gourmet Adventure!! (2011)
 Trigun - Badlands Rumble (2010):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -14681,10 +14711,10 @@ Yu Yu Hakusho- Two Shots (2018):
       Title: Eizou Hakusho - Dark Tournament
   Unparsed Movie Title: "Y\xFB Y\xFB Hakusho- Eiz\xF4 Hakusho (0)"
 xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p Remux.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -14706,8 +14736,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Season: '0'
       Show ID: 194
       Show Root Path: anime/staging/xxxHOLiC
-      Symlinked: anime/staging/xxxHOLiC/Season 00/xxxHOLiC - S00E001 (E100) - A Midsummer
-        Night\\s Dream Bluray-1080p Remux.mkv -> ../../../../../..
+      Symlinked: ''
       Title: A Midsummer Night's Dream
   Unparsed Movie Title: xxxHOLiC The Movie- A Midsummer Night's Dream (2008)
 "xxxHolic- R\u014D (2010)":
@@ -14777,10 +14806,10 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Title: Rou Adayume
   Unparsed Movie Title: "xxxHolic- R\u014D Adayume (2011)"
 "\u306F\u305F\u3089\u304F\u7D30\u80DE \u7279\u5225\u7DE8 \u98A8\u90AA\u75C7\u5019\u7FA4 (2018)":
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -14806,10 +14835,10 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Title: The Common Cold
   Unparsed Movie Title: Hataraku Saibou- Kaze Shoukougun (2018)
 "\u5287\u5834\u7248 \u3042\u306E\u65E5\u898B\u305F\u82B1\u306E\u540D\u524D\u3092\u50D5\u9054\u306F\u307E\u3060\u77E5\u3089\u306A\u3044\u3002 (2013)":
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -14836,10 +14865,10 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Title: Anohana The Movie - The Flower We Saw That Day
   Unparsed Movie Title: anohana- The Flower We Saw That Day - The Movie (2014)
 "\u9032\u6483\u306E\u5DE8\u4EBA ATTACK ON TITAN (2015)":
-  Absolute Movie File Path: /
+  Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Parsed Movie Extension: mkv
-  Parsed Movie File: /
+  Parsed Movie File: ''
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: ''
   Relative Movie Path: ''
@@ -14861,65 +14890,5 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Show ID: 121
       Show Root Path: anime/staging/Attack on Titan
       Symlinked: ''
-      Title: Attack on Titan (Live Action Movie)
-  Unparsed Movie Title: Attack on Titan (2015)
-"\u5287\u5834\u7248 \u3042\u306E\u65E5\u898B\u305F\u82B1\u306E\u540D\u524D\u3092\u50D5\u9054\u306F\u307E\u3060\u77E5\u3089\u306A\u3044\u3002 (2013)":
-  Absolute Movie Path: ''
-  Parsed Movie Extension: mkv
-  Parsed Movie File: /
-  Parsed Movie Quality: Bluray-1080p.mkv
-  Relative Movie File Path: ''
-  Relative Movie Path: ''
-  Shows:
-    Anohana- The Flower We Saw That Day:
-      Absolute Episode: ''
-      Anime: true
-      Episode:
-      - 2
-      Parsed Episode: '[2]'
-      Parsed Relative Show Title: ''
-      Parsed Season: '00'
-      Parsed Season Folder: Season 00
-      Parsed Show Title: anime/staging/Anohana- The Flower We Saw That Day/Season
-        00/Anohana- The Flower We Saw That Day - S00E002 - Anohana The Movie - The
-        Flower We Saw That Day
-      Relative Show File Path: anime/staging/Anohana- The Flower We Saw That Day/Season
-        00/Anohana- The Flower We Saw That Day - S00E002 - Anohana The Movie - The
-        Flower We Saw That Day Bluray-1080p.mkv
-      Season: '0'
-      Show ID: ''
-      Show Root Path: anime/staging/Anohana- The Flower We Saw That Day
-      Symlinked: anime/staging/Anohana- The Flower We Saw That Day/Season 00/Anohana-
-        The Flower We Saw That Day - S00E002 - Anohana The Movie - The Flower We Saw
-        That Day Bluray-1080p.mkv -> ../../../../../..
-      Title: Anohana The Movie - The Flower We Saw That Day
-  Unparsed Movie Title: anohana- The Flower We Saw That Day - The Movie (2014)
-"\u9032\u6483\u306E\u5DE8\u4EBA ATTACK ON TITAN (2015)":
-  Absolute Movie File Path: /
-  Absolute Movie Path: ''
-  Parsed Movie Extension: mkv
-  Parsed Movie File: /
-  Parsed Movie Quality: Bluray-1080p.mkv
-  Relative Movie File Path: ''
-  Relative Movie Path: ''
-  Shows:
-    Attack on Titan:
-      Absolute Episode: ''
-      Anime: true
-      Episode:
-      - 18
-      Parsed Episode: '[18]'
-      Parsed Relative Show Title: ''
-      Parsed Season: '00'
-      Parsed Season Folder: Season 00
-      Parsed Show Title: anime/staging/Attack on Titan/Season 00/Attack on Titan -
-        S00E018 - Attack on Titan (Live Action Movie)
-      Relative Show File Path: anime/staging/Attack on Titan/Season 00/Attack on Titan
-        - S00E018 - Attack on Titan (Live Action Movie) Bluray-1080p.mkv
-      Season: '0'
-      Show ID: 121
-      Show Root Path: anime/staging/Attack on Titan
-      Symlinked: anime/staging/Attack on Titan/Season 00/Attack on Titan - S00E018
-        - Attack on Titan (Live Action Movie) Bluray-1080p.mkv -> ../../../../../..
       Title: Attack on Titan (Live Action Movie)
   Unparsed Movie Title: Attack on Titan (2015)

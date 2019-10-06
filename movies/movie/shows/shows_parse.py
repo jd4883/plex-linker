@@ -16,7 +16,7 @@ def parse_show_to_link(show, g):
 		if validate.link_ready(show.quality):
 			symlink_force(show, g)
 			show.absolute_movie_path = show.movie_dictionary['Absolute Movie Path'] = str(get_movie_path(show, g))
-			show.relative_movie_path = show.movie_dictionary['Relative Movie Path'] = str(get_relative_movie_path(show, g))
+			show.relative_movie_path = show.movie_dictionary['Relative Movie Path'] = str(get_relative_movie_path(show))
 			set_permissions(show, g)
 	message.method_exit(g)
 
