@@ -29,5 +29,5 @@ def cleanup_sonarr_api_query(result):
 
 def link_properties(movie, show):
 	show.link_status = str()
-	show.show_dictionary['Relative Show File Path'] = str()
-	movie.movie_dictionary["Parsed Movie File"] = str()
+	show.relative_show_path = str()
+	movie.movie_file = str()

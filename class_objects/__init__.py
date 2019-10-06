@@ -1,13 +1,28 @@
 #!/usr/bin/env python3.7
-import os
 import time
 from os import chdir
 from os.path import abspath
-
-import movies.movie.shows.show.episode.sets as set_episode
+import class_objects.sonarr_api
+import class_objects.sonarr_class_methods
+from class_objects.misc_get_methods import (
+	get_movies_dictionary_object,
+	get_shows_path,
+	get_movie_extensions,
+	get_movies_path,
+	get_host_media_path,
+	get_docker_media_path,
+	get_shows_dictionary,
+	)
 from class_objects.radarr_api import *
 from class_objects.sonarr_api import *
-from IO.YAML.yaml_to_object import (get_variable_from_yaml, get_yaml_dictionary)
+from class_objects.radarr_class_methods import parse_movie_title, parse_relpath
+from class_objects.sonarr_class_methods import (
+	get_parsed_relative_show_title,
+	get_relative_show_path,
+	get_parsed_show_title,
+	set_root_path,
+	)
+from IO.YAML.yaml_to_object import (get_variable_from_yaml)
 from logs.bin.get_parameters import (get_log_name, get_logger, get_method_main)
 from movies.movie.movie_gets import (get_absolute_movie_file_path, get_movie_path, get_relative_movie_file_path)
 from movies.movie.movie_validation import (validate_extensions_from_movie_file)
@@ -23,23 +38,20 @@ class Globals:
 		self.radarr = RadarrAPI()
 		self.shows_dictionary = self.sonarr.get_series()
 		self.movies_dictionary = self.radarr.get_movie_library()
-		self.MEDIA_PATH = str(environ['DOCKER_MEDIA_PATH'])
-		self.MEDIA_DIRECTORY = str(environ["HOST_MEDIA_PATH"])
+		self.MEDIA_PATH = str(get_docker_media_path())
+		self.MEDIA_DIRECTORY = str(get_host_media_path())
 		self.LOG = get_logger(get_log_name())
-		self.MOVIES_PATH = get_variable_from_yaml("Movie Directories")
-		self.MOVIE_EXTENSIONS = get_variable_from_yaml("Movie Extensions")
-		self.SHOWS_PATH = get_variable_from_yaml("Show Directories")
-		self.movies_dictionary_object = get_yaml_dictionary()
-		self.list_of_linked_movies = []
-		self.list_of_movies_to_locate = []
+		self.MOVIES_PATH = get_movies_path()
+		self.MOVIE_EXTENSIONS = get_movie_extensions()
+		self.SHOWS_PATH = get_shows_path()
+		self.movies_dictionary_object = get_movies_dictionary_object()
 		self.method = self.parent_method = get_method_main()
 		pass
 
 
 class Movies:
-	def __init__(self,
-	             absolute_movies_path = abspath("/".join((str(environ['DOCKER_MEDIA_PATH']),
-	                                                      get_variable_from_yaml("Movie Directories")[0])))):
+	def __init__(self, absolute_movies_path = abspath("/".join((str(environ['DOCKER_MEDIA_PATH']),
+	                                                            get_variable_from_yaml("Movie Directories")[0])))):
 		self.start_time = time.time()
 		self.absolute_movies_path = absolute_movies_path
 		self.relative_movies_path = get_relative_movies_path(self)
@@ -49,16 +61,18 @@ class Movie(Movies, Globals):
 	def __init__(self, movie, movie_dictionary, g, media_path = str(os.environ['DOCKER_MEDIA_PATH'])):
 		super().__init__()
 		self.movie_dictionary = movie_dictionary
-		self.movie_dictionary['Unparsed Movie Title'] = self.movie_title = str(movie)
-		self.radarr_dictionary = g.radarr.lookup_movie(self.movie_title)
-		self.movie_title = str(self.parse_movie_title(movie))
-		self.shows_dictionary = self.movie_dictionary['Shows']
+		self.radarr_dictionary = g.radarr.lookup_movie(movie)
+		self.movie_title = \
+			self.movie_dictionary['Title'] = \
+			self.movie_dictionary['Unparsed Movie Title'] = \
+			str(parse_movie_title(self.radarr_dictionary, movie))
+		self.shows_dictionary = get_shows_dictionary(self.movie_dictionary)
 		self.absolute_movie_path = \
 			self.movie_dictionary['Absolute Movie Path'] = str(get_movie_path(self, g))
 		# from API
 		# seem to be having buggy behavior with aphrodite API, all my API calls give inaccurate info about files on disk
 		# print(self.radarr_dictionary)
-		self.relative_movie_path = self.movie_dictionary['Relative Movie Path'] = str(self.parse_relpath(g, media_path))
+		self.relative_movie_path = self.movie_dictionary['Relative Movie Path'] = str(parse_relpath(self, g, media_path))
 		self.quality = str(self.movie_dictionary['Parsed Movie Quality'])
 		self.extension = str(self.movie_dictionary['Parsed Movie Extension'])
 		self.movie_file = str(self.movie_dictionary['Parsed Movie File'])
@@ -67,24 +81,6 @@ class Movie(Movies, Globals):
 			self.movie_dictionary['Absolute Movie File Path'] = str(get_absolute_movie_file_path(self))
 		self.relative_movie_file_path = \
 			self.movie_dictionary['Relative Movie File Path'] = str(get_relative_movie_file_path(self))
-	
-	def parse_movie_title(self, movie):
-		movie_title = movie.replace(":", "-")
-		try:
-			base = str(self.radarr_dictionary[0].pop('title', str(movie)))
-			year = str(self.radarr_dictionary[0].pop('year', str())).replace(":", "-")
-			movie_title = f"{base} ({year})".replace(" ()", str()).replace(":", "-")
-		except IndexError:
-			pass
-		except KeyError:
-			pass
-		return movie_title
-	
-	
-	def parse_relpath(self, g, media_path):
-		film = get_movie_path(self, g)
-		if os.path.exists(film):
-			return os.path.relpath(film, media_path)
 
 
 class Show(Movie, Globals):
@@ -106,18 +102,14 @@ class Show(Movie, Globals):
 		self.sonarr_api_query = dict()
 		if self.sonarr_show_dictionary:
 			self.sonarr_api_query = self.sonarr_show_dictionary[0]
-		self.show_root_path = self.show_dictionary['Show Root Path'] = self.set_root_path()
-		self.parsed_title = str(self.show_dictionary['Parsed Show Title'])
-		self.relative_show_path = str(self.show_dictionary['Relative Show File Path'])
-		self.parsed_relative_title = self.show_dictionary['Parsed Relative Show Title'], str()
+		self.show_root_path = self.show_dictionary['Show Root Path'] = set_root_path(self.sonarr_api_query)
+		self.parsed_title = str(get_parsed_show_title(self.show_dictionary))
+		self.relative_show_path = str(get_relative_show_path(self.show_dictionary))
+		self.parsed_relative_title = str(get_parsed_relative_show_title(self.show_dictionary))
 		# assign at class object level and return
 		self.show_id = self.show_dictionary['Show ID'] = parse_show_id(self.show, g)
 		self.raw_episodes = list(g.sonarr.get_episodes_by_series_id(self.show_dictionary['Show ID']))
 		self.raw_episode_files = g.sonarr.get_episode_files_by_series_id(self.show_dictionary['Show ID'])
-		self.season = self.show_dictionary['Season'] = str(set_episode.season_dictionary(self)).zfill(2)
+		self.season = self.show_dictionary['Season'] = str(class_objects.sonarr_class_methods.season_dictionary(self)).zfill(2)
 		self.episode = str(self.show_dictionary['Parsed Episode'])
 		self.absolute_episode = str(self.show_dictionary['Absolute Episode'])
-	
-	def set_root_path(self):
-		prefix = str(environ['SONARR_ROOT_PATH_PREFIX'])
-		return str(self.sonarr_api_query.pop('path', '')).replace(prefix, str())

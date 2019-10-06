@@ -36,12 +36,7 @@ ENV LOGS=/config/logs
 
 ENV SEASON_INT=0
 ENV SEASON_STR='00'
-
 ENV EPISODE_PADDING=2
-
-# remove these once sonarr integration is done
-ENV SHOW_FOLDER_DEPTH=1
-ENV MOVIE_FOLDER_DEPTH=1
 
 ENV DOCKER_MEDIA_PATH=/media/video
 ENV HOST_MEDIA_PATH=/media/video

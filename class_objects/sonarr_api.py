@@ -1,7 +1,6 @@
 #!/usr/bin/env python3.7
 import pathlib
-from os import environ
-
+import os
 import requests
 
 # noinspection PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,
@@ -12,9 +11,14 @@ from jobs.cleanup.cleanup import cleanup_sonarr_api_query
 # noinspection PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,
 # PyUnusedFunction
 # noinspection PyUnusedFunction
+
+
+# noinspection PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,
+# PyUnusedFunction
+# noinspection PyUnusedFunction
 class SonarrAPI(object):
 	def __init__(self):
-		self.host_url = str(environ['SONARR_URL'])
+		self.host_url = str(os.environ['SONARR_URL'])
 		self.api_key = pathlib.Path('/run/secrets/sonarr_api_key').read_text().replace('\n', '')
 	
 	def get_episodes_by_series_id(self, series_id):
@@ -79,3 +83,5 @@ class SonarrAPI(object):
 	
 	def request_delete(self, url, data = dict()):
 		return requests.delete(url, headers = {'X-Api-Key': self.api_key}, json = data)
+
+

@@ -17,17 +17,14 @@ def symlink_force(show, g):
 		show.link_status = strip_quotes_from_string(f"{process.communicate()[0].strip()}").replace('b"',
 		                                                                                                            str())[
 		                                    :-1].rstrip()
-		#show.show_dictionary['Relative Show File Path'] = show.relative_show_path
-		#g.list_of_linked_movies.append(show.movie_title)
-		#show.show_dictionary['Relative Show File Path'] = show.relative_show_path
-		show.movie_dictionary["Parsed Movie File"] = show.absolute_movie_file_path
+		show.movie_file = show.absolute_movie_file_path
 		if show.link_status:
 			print(f"Created new Show Link: {show.link_status}")
 	else:
 		print(f'no link created for {show.absolute_movie_file_path}')
 		show.link_status = str()
-		show.show_dictionary['Relative Show File Path'] = str()
-		show.movie_dictionary["Parsed Movie File"] = str()
+		show.relative_show_path = str()
+		show.movie_file = str()
 		g.list_of_movies_to_locate.append(show.movie_title)
 	message.method_exit(g)
 

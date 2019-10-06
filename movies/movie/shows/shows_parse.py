@@ -1,4 +1,5 @@
-import movies.movie.shows.show.episode.parser as episode_parser
+import class_objects.sonarr_api
+import class_objects.sonarr_class_methods
 import messaging.frontend as message
 import jobs.cleanup.cleanup as cleanup
 from jobs.set_path_permissions import (set_permissions)
@@ -27,16 +28,19 @@ def parse_shows_dictionary_object(movie, g):
 		return
 	for series in movie.shows_dictionary.keys():
 		if series not in movie.shows_dictionary:
+			print(f'conditional triggered for no series found to link to {movie.movie_title}')
 			continue
 		if str(type(movie.shows_dictionary[series])) != "<class 'dict'>":
 			# no shows to associate with the movie
+			print(f'conditional triggered for no series not set as a dictionary {movie.movie_title}')
 			break
 		show = init_show_object(movie, str(series), g)
 		if linking_can_be_skipped(show, movie):
+			print(f'conditional triggered for linking already completed {movie.movie_title}')
 			continue
-		episode_parser.sonarr_query(show.show_dictionary,
-		                            show.sonarr_api_query,
-		                            show.padding)
+		class_objects.sonarr_class_methods.sonarr_query(show.show_dictionary,
+		                                                show.sonarr_api_query,
+		                                                show.padding)
 		
 		cleanup.link_properties(movie, show)
 		parse_show_to_link(show, g)
