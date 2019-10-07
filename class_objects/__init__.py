@@ -59,6 +59,7 @@ class Movie(Movies, Globals):
 		self.radarr_dictionary = g.radarr.lookup_movie(movie)
 		self.movie_title = \
 			self.movie_dictionary['Title'] = str(parse_movie_title(self.radarr_dictionary, movie))
+		self.movie_file = str()
 		self.shows_dictionary = get_shows_dictionary(self.movie_dictionary)
 		self.absolute_movie_path = \
 			self.movie_dictionary['Absolute Movie Path'] = str(get_movie_path(self, g))
@@ -66,14 +67,23 @@ class Movie(Movies, Globals):
 		# seem to be having buggy behavior with aphrodite API, all my API calls give inaccurate info about files on disk
 		# print(self.radarr_dictionary)
 		self.relative_movie_path = self.movie_dictionary['Relative Movie Path'] = str(parse_relpath(self, g, media_path))
-		self.quality = str(self.movie_dictionary['Parsed Movie Quality'])
+		self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(self.parse_quality())
 		self.extension = str(self.movie_dictionary['Parsed Movie Extension'])
-		self.movie_file = str()
+		
 		validate_extensions_from_movie_file(self, g)
 		self.absolute_movie_file_path = \
 			self.movie_dictionary['Absolute Movie File Path'] = str(get_absolute_movie_file_path(self))
 		self.relative_movie_file_path = \
 			self.movie_dictionary['Relative Movie File Path'] = str(get_relative_movie_file_path(self))
+	
+	def parse_quality(self):
+		if str(movie.quality).lower() == "Remux-1080p.mkv".lower():
+			quality.replace("Remux-1080p.mkv", "Bluray-1080p Remux.mkv")
+		if quality.endswith(f"Proper.{self.extension}"):
+			quality = f"{self.movie_file.split().pop(-2)} {self.quality}"
+		else:
+			quality = movie_file.split().pop()
+		return quality
 
 
 class Show(Movie, Globals):
