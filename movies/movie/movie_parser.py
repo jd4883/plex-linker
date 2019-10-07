@@ -4,8 +4,7 @@ import messaging.frontend as message
 def extension_from_movie_file(movie,
                               g):
 	message.method_launch(g)
-	movie.quality = parse_movie_file_quality(movie.movie_file)
-	movie.quality = parse_remux_in_quality(movie.quality, g)
+	movie.quality = parse_remux_in_quality(parse_movie_file_quality(movie.movie_file), g)
 	movie.quality = parse_proper(movie)
 	message.print_movie_file_found_to_parse(movie, g)
 	message.print_movie_extension_found_to_parse(movie, g)
