@@ -87,7 +87,7 @@ class Movie(Movies, Globals):
 		if quality.endswith(f"Proper.{self.extension}"):
 			quality = f"{self.movie_file.split().pop(-2)} {self.quality}"
 		else:
-			quality = self.movie_file.split().pop()
+			quality = str(self.movie_file.split().pop())
 		return quality
 
 
