@@ -67,10 +67,11 @@ class Movie(Movies, Globals):
 		self.relative_movie_path = self.movie_dictionary['Relative Movie Path'] = str(parse_relpath(self, g, media_path))
 		self.extension = str(self.movie_dictionary['Parsed Movie Extension'])
 		self.quality = str(self.movie_dictionary['Parsed Movie Quality'])
-		self.quality = str(self.parse_quality())
 		
 		
 		validate_extensions_from_movie_file(self, g)
+		self.quality = str(self.parse_quality())
+		
 		self.absolute_movie_file_path = \
 			self.movie_dictionary['Absolute Movie File Path'] = str(get_absolute_movie_file_path(self))
 		self.relative_movie_file_path = \
@@ -86,7 +87,7 @@ class Movie(Movies, Globals):
 		if quality.endswith(f"Proper.{self.extension}"):
 			quality = f"{self.movie_file.split().pop(-2)} {self.quality}"
 		else:
-			quality = movie_file.split().pop()
+			quality = self.movie_file.split().pop()
 		return quality
 
 
