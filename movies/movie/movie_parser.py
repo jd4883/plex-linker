@@ -23,8 +23,8 @@ def parse_movie_file_quality(movie_file):
 	return movie_file.split().pop()
 
 
-def parse_proper(movie_class_object):
+def parse_proper(movie):
 	movie.quality = parse_remux_in_quality(parse_movie_file_quality(movie.movie_file), g)
-	if movie_class_object.quality.endswith(f"Proper.{movie_class_object.extension}"):
-		movie_class_object.quality = f"{movie_class_object.movie_file.split().pop(-2)} {movie_class_object.quality}"
-	return movie_class_object.quality
+	if movie.quality.endswith(f"Proper.{movie.extension}"):
+		movie.quality = f"{movie.movie_file.split().pop(-2)} {movie.quality}"
+	return movie.quality
