@@ -16,12 +16,7 @@ from class_objects.misc_get_methods import (
 from class_objects.radarr_api import *
 from class_objects.sonarr_api import *
 from class_objects.radarr_class_methods import parse_movie_title, parse_relpath
-from class_objects.sonarr_class_methods import (
-	get_parsed_relative_show_title,
-	get_relative_show_path,
-	get_parsed_show_title,
-	set_root_path,
-	)
+from class_objects.sonarr_class_methods import (get_parsed_relative_show_title)
 from IO.YAML.yaml_to_object import (get_variable_from_yaml)
 from logs.bin.get_parameters import (get_log_name, get_logger, get_method_main)
 from movies.movie.movie_gets import (get_absolute_movie_file_path, get_movie_path, get_relative_movie_file_path)
@@ -63,9 +58,7 @@ class Movie(Movies, Globals):
 		self.movie_dictionary = movie_dictionary
 		self.radarr_dictionary = g.radarr.lookup_movie(movie)
 		self.movie_title = \
-			self.movie_dictionary['Title'] = \
-			self.movie_dictionary['Unparsed Movie Title'] = \
-			str(parse_movie_title(self.radarr_dictionary, movie))
+			self.movie_dictionary['Title'] = str(parse_movie_title(self.radarr_dictionary, movie))
 		self.shows_dictionary = get_shows_dictionary(self.movie_dictionary)
 		self.absolute_movie_path = \
 			self.movie_dictionary['Absolute Movie Path'] = str(get_movie_path(self, g))
@@ -75,7 +68,7 @@ class Movie(Movies, Globals):
 		self.relative_movie_path = self.movie_dictionary['Relative Movie Path'] = str(parse_relpath(self, g, media_path))
 		self.quality = str(self.movie_dictionary['Parsed Movie Quality'])
 		self.extension = str(self.movie_dictionary['Parsed Movie Extension'])
-		self.movie_file = str(self.movie_dictionary['Parsed Movie File'])
+		self.movie_file = str()
 		validate_extensions_from_movie_file(self, g)
 		self.absolute_movie_file_path = \
 			self.movie_dictionary['Absolute Movie File Path'] = str(get_absolute_movie_file_path(self))
@@ -92,24 +85,125 @@ class Show(Movie, Globals):
 	             show_dict = dict(),
 	             series_lookup = dict()):
 		super().__init__(film, movie_dict, g)
-		chdir(g.MEDIA_PATH)
+		os.chdir(str(os.environ['DOCKER_MEDIA_PATH']))
+		prefix = str(environ['SONARR_ROOT_PATH_PREFIX'])
+		self.parsed_episode = list()
+		self.parsed_episode = list()
 		self.movie_dictionary = movie_dict
-		self.padding = int(os.environ['EPISODE_PADDING'])
 		self.show = series
 		self.show_dictionary = show_dict
-		self.link_status = str(self.show_dictionary['Symlinked'])
+		self.link_status = \
+			str(self.show_dictionary['Symlinked'])
+		
 		self.sonarr_show_dictionary = series_lookup
-		self.sonarr_api_query = dict()
+		
+		self.sonarr_api_query = \
+			self.lookup_episode_index(self.sonarr_show_dictionary[0]) if \
+			self.sonarr_show_dictionary else dict()
+		
+		self.show_id = \
+			self.show_dictionary['Show ID'] = \
+			parse_show_id(self.show, g)
+
+		self.episode_id = \
+			self.show_dictionary['Episode ID'] = \
+			self.parse_episode_id(g.sonarr.get_episodes_by_series_id(self.show_id))
+
+		self.anime_status = \
+			self.lookup_anime_status()
+		
+		self.padding = \
+			int(3) if self.anime_status else int(os.environ['EPISODE_PADDING'])
+
+		self.episode_dict = \
+			g.sonarr.get_episode_by_episode_id(self.episode_id)
+		
+		self.episode_file_dict = \
+			g.sonarr.get_episode_file_by_episode_id(self.episode_id)
+		
+		self.episode = \
+			self.show_dictionary['Episode'] = \
+			self.episode_dict.pop('episodeNumber', int())
+
+		self.absolute_episode = \
+			self.show_dictionary['Absolute Episode'] = \
+			self.episode_dict.pop('absoluteEpisodeNumber', int())
+		
+		self.parsed_relative_title = \
+			str(get_parsed_relative_show_title(self.show_dictionary))
+		
+		self.season = \
+			self.show_dictionary['Season'] = \
+			str(self.episode_dict.pop('seasonNumber', str())).zfill(2)
+			
+		self.season_folder = \
+			self.show_dictionary['Parsed Season Folder'] = \
+			f"Season {self.season}"
+		
+		self.show_root_path = \
+			self.show_dictionary['Show Root Path'] = \
+			str(self.episode_dict.pop('path', f"{self.get_path()}/{self.show}")).replace(prefix, str())
+		
+		try:
+			self.relative_show_path = \
+				self.show_dictionary['Relative Show File Path'] = \
+				str(self.episode_dict['episodeFile']['path']).replace(prefix, str())
+		except KeyError:
+			self.relative_show_path = \
+				str(self.show_dictionary['Relative Show File Path'])
+		
+		self.parsed_episode = \
+			self.show_dictionary['Parsed Episode'] = \
+			str(self.episode).zfill(self.padding)
+		
+		self.parsed_absolute_episode = \
+			self.show_dictionary['Parsed Absolute Episode'] = \
+			str(self.absolute_episode).zfill(self.padding)
+			
+		self.episode_title = \
+			self.show_dictionary['Title'] = \
+			str(self.episode_dict.pop('title', self.movie_title))
+		
+		self.parsed_title = \
+			self.show_dictionary['Parsed Show Title'] = \
+			f"{self.show_root_path}/{self.season_folder}/{self.show} - S{self.season}E{self.parsed_episode} - {self.episode_title}"
+		
+		
+			
+	def get_path(self):
+		if self.anime_status:
+			return 'anime'
+		return 'tv'
+	# make this segment dynamic
+	
+	def lookup_anime_status(self):
+		try:
+			if self.sonarr_api_query['seriesType'] == 'anime':
+				return True
+		except KeyError:
+			pass
+		except ValueError:
+			pass
+		except IndexError:
+			pass
+		return False
+	
+	def lookup_episode_index(self, query=dict()):
 		if self.sonarr_show_dictionary:
-			self.sonarr_api_query = self.sonarr_show_dictionary[0]
-		self.show_root_path = self.show_dictionary['Show Root Path'] = set_root_path(self.sonarr_api_query)
-		self.parsed_title = str(get_parsed_show_title(self.show_dictionary))
-		self.relative_show_path = str(get_relative_show_path(self.show_dictionary))
-		self.parsed_relative_title = str(get_parsed_relative_show_title(self.show_dictionary))
-		# assign at class object level and return
-		self.show_id = self.show_dictionary['Show ID'] = parse_show_id(self.show, g)
-		self.raw_episodes = list(g.sonarr.get_episodes_by_series_id(self.show_dictionary['Show ID']))
-		self.raw_episode_files = g.sonarr.get_episode_files_by_series_id(self.show_dictionary['Show ID'])
-		self.season = self.show_dictionary['Season'] = str(class_objects.sonarr_class_methods.season_dictionary(self)).zfill(2)
-		self.episode = str(self.show_dictionary['Parsed Episode'])
-		self.absolute_episode = str(self.show_dictionary['Absolute Episode'])
+			for item in query:
+				if ('episodeNumber' in query) and (query[item]['episodeNumber'] == self.episode) and (self.season ==
+				                                                                                      query[item]['seasonNumber']):
+					query = query[item]
+		return query
+	
+	def parse_episode_id(self, query):
+		try:
+			for i in query:
+				if int(i['seasonNumber']) == int(self.show_dictionary['Season']):
+					if int(i['episodeNumber']) == int(self.show_dictionary['Episode'][0]):
+					   return i['id']
+		except TypeError:
+			pass
+		except KeyError:
+			pass
+		return int()

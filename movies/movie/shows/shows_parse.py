@@ -35,14 +35,17 @@ def parse_shows_dictionary_object(movie, g):
 			print(f'conditional triggered for no series not set as a dictionary {movie.movie_title}')
 			break
 		show = init_show_object(movie, str(series), g)
-		if linking_can_be_skipped(show, movie):
+		# print(show.season)
+		# print(show.relative_show_path)
+		# print(g.sonarr.get_episode_files_by_series_id(2))
+		# exit(-1)
+		
+		if linking_can_be_skipped(show, movie, g):
 			print(f'conditional triggered for linking already completed {movie.movie_title}')
 			continue
-		class_objects.sonarr_class_methods.sonarr_query(show.show_dictionary,
-		                                                show.sonarr_api_query,
-		                                                show.padding)
-		
-		cleanup.link_properties(movie, show)
+		# class_objects.sonarr_class_methods.sonarr_query(show.show_dictionary,
+		#                                                 show.sonarr_api_query,
+		#                                                 show.padding)
 		parse_show_to_link(show, g)
 	
 # try:

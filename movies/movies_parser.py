@@ -7,7 +7,7 @@ def parse_all_movies_in_yaml_dictionary(g):
 	message.method_launch(g)
 	for movie in sorted(g.movies_dictionary_object):
 		movie = str(movie).replace(":", "-")
-		print(f'about to check movie {movie}')
+		print(f'Checking Link status for {movie}')
 		self = media.Movie(movie, g.movies_dictionary_object[movie], g)
 		parse_shows(self, g)
 	message.method_exit(g)

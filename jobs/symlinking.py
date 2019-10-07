@@ -12,12 +12,10 @@ def symlink_force(show, g):
 	elif validate_link_ready(show):
 		os.chdir(str(os.environ['HOST_MEDIA_PATH']))
 		# noinspection SpellCheckingInspection
-		process = subprocess.Popen(["ln", "-fsvr", f"{show.absolute_movie_file_path}", f"{show.relative_show_path}"],
-		                           stderr = subprocess.DEVNULL, stdout = subprocess.PIPE)
-		show.link_status = strip_quotes_from_string(f"{process.communicate()[0].strip()}").replace('b"',
-		                                                                                                            str())[
-		                                    :-1].rstrip()
-		show.movie_file = show.absolute_movie_file_path
+		process = subprocess.Popen(get_symlink_command_string(show), stderr = subprocess.DEVNULL,
+		                           stdout = subprocess.PIPE)
+		show.link_status = strip_quotes_from_string(get_symlink_string(process)).replace('b"', str())[:-3].rstrip()
+		# -3 covers the link not having the newline character at the end, if this is fixed this should be -1 instead
 		if show.link_status:
 			print(f"Created new Show Link: {show.link_status}")
 	else:
@@ -27,6 +25,15 @@ def symlink_force(show, g):
 		show.movie_file = str()
 		g.list_of_movies_to_locate.append(show.movie_title)
 	message.method_exit(g)
+
+
+def get_symlink_command_string(show):
+	return ["ln", "-fsvr", f"{show.absolute_movie_file_path}", f"{show.relative_show_path}"]
+
+
+def get_symlink_string(process):
+	return strip_quotes_from_string(str(process.communicate()[0])).strip()
+	
 
 
 # cleanup this method along with others and try to segment where they are stored
@@ -39,4 +46,5 @@ def validate_link_ready(show):
 
 def strip_quotes_from_string(string):
 	string.replace('"', '')
+	string.replace('\n', '')
 	return string.replace("'", "")

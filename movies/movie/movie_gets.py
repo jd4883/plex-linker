@@ -7,7 +7,8 @@ def get_relative_movie_path(movie):
 		return str(os.path.relpath(movie.absolute_movie_path, str(os.environ['DOCKER_MEDIA_PATH'])))
 
 def get_absolute_movie_file_path(movie):
-	return "/".join((movie.absolute_movie_path, movie.movie_file))
+	if movie.absolute_movie_path:
+		return "/".join((movie.absolute_movie_path, movie.movie_file))
 
 def get_relative_movie_file_path(movie):
 	try:

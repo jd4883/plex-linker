@@ -8,6 +8,8 @@ def link_ready(quality):
 
 
 def compare_symlink_to_relpath(show):
+	if not show.link_status:
+		return False
 	try:
 		comparison = f"{show.relative_show_path} -> {os.readlink(show.relative_show_path)}"
 	except AttributeError:
