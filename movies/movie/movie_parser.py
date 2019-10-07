@@ -4,7 +4,7 @@ import messaging.frontend as message
 def extension_from_movie_file(movie,
                               g):
 	message.method_launch(g)
-	movie.quality = movie.parse_quality()
+	movie.quality = movie.parse_quality
 	message.print_movie_file_found_to_parse(movie, g)
 	message.print_movie_extension_found_to_parse(movie, g)
 	message.print_movie_file_quality(movie, g)

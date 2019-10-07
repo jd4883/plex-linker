@@ -70,7 +70,7 @@ class Movie(Movies, Globals):
 		
 		
 		validate_extensions_from_movie_file(self, g)
-		self.quality = str(self.parse_quality())
+		self.quality = str(self.parse_quality)
 		
 		self.absolute_movie_file_path = \
 			self.movie_dictionary['Absolute Movie File Path'] = str(get_absolute_movie_file_path(self))
@@ -79,13 +79,15 @@ class Movie(Movies, Globals):
 	
 	def parse_quality(self):
 		if self.quality:
-			quality = self.quality
+			quality = str(self.quality)
 		else:
 			return
 		if str(self.quality).lower() == "Remux-1080p.mkv".lower():
 			quality.replace("Remux-1080p.mkv", "Bluray-1080p Remux.mkv")
 		if quality.endswith(f"Proper.{self.extension}"):
 			quality = f"{self.movie_file.split().pop(-2)} {self.quality}"
+		elif not quality:
+			quality = str()
 		else:
 			quality = str(self.movie_file.split().pop())
 		return quality
