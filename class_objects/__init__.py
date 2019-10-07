@@ -65,6 +65,7 @@ class Movie(Movies, Globals):
 			self.movie_dictionary['Absolute Movie Path'] = str(get_movie_path(self, g))
 		# from API
 		self.relative_movie_path = self.movie_dictionary['Relative Movie Path'] = str(parse_relpath(self, g, media_path))
+		self.quality = str()
 		self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(self.parse_quality())
 		self.extension = str(self.movie_dictionary['Parsed Movie Extension'])
 		
