@@ -76,6 +76,10 @@ class Movie(Movies, Globals):
 			self.movie_dictionary['Relative Movie File Path'] = str(get_relative_movie_file_path(self))
 	
 	def parse_quality(self):
+		if self.quality:
+			quality = self.quality
+		else:
+			return
 		if str(self.quality).lower() == "Remux-1080p.mkv".lower():
 			quality.replace("Remux-1080p.mkv", "Bluray-1080p Remux.mkv")
 		if quality.endswith(f"Proper.{self.extension}"):
