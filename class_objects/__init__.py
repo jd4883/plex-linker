@@ -283,7 +283,7 @@ class Show(Movie, Globals):
 			item = item['path'].replace(prefix, str())
 			potential = f"{item}/{self.show}/{self.season_folder}"
 			if os.path.exists(potential) and os.path.isdir(potential):
-				return f"{item}/{self.show}"
+				return f"{item}{self.show}"
 		return str()
 	
 	# make this segment dynamic
