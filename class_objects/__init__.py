@@ -234,6 +234,8 @@ class Show(Movie, Globals):
 		self.show_root_path =\
 			self.show_dictionary['Show Root Path'] =\
 			str(patched_path).replace(prefix, str())
+		# TODO: create logic to parse the path if pop fails this should fix most issues
+		
 		# need to add a conditional exit out if no path to find
 		# f"{self.get_path()}/{self.show}" needs to be parsed out the old way
 		g.LOG.info(backend.debug_message(632, g, self.show_root_path))
