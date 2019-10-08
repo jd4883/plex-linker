@@ -163,7 +163,7 @@ class Show(Movie, Globals):
 		
 		self.sonarr_show_dictionary = \
 			series_lookup
-		#  g.LOG.debug(backend.debug_message(625, g, self.sonarr_show_dictionary))
+		g.LOG.debug(backend.debug_message(625, g, self.sonarr_show_dictionary))
 			
 		self.sonarr_api_query = \
 			self.lookup_episode_index(self.sonarr_show_dictionary[0]) if \
@@ -198,8 +198,6 @@ class Show(Movie, Globals):
 			g.sonarr.get_episode_by_episode_id(self.episode_id)
 		g.LOG.debug(backend.debug_message(623, g, self.episode_dict))
 		
-		
-		
 		self.episode_file_dict = \
 			g.sonarr.get_episode_file_by_episode_id(self.episode_id)
 		
@@ -212,34 +210,24 @@ class Show(Movie, Globals):
 			self.show_dictionary['Absolute Episode'] = \
 			str(self.episode_dict.pop('absoluteEpisodeNumber', str()))
 		g.LOG.info(backend.debug_message(628, g, self.absolute_episode))
-		print(f"ABSOLUTE EPISODE: {self.absolute_episode}")
 		
 		self.parsed_relative_title = \
 			str(self.show_dictionary['Parsed Relative Show Title'])
-		print(f"PARSED RELATIVE TITLE: {self.parsed_relative_title}")
 		g.LOG.info(backend.debug_message(629, g, self.parsed_relative_title))
 		
 		self.season = \
 			self.show_dictionary['Season'] = \
 			str(self.episode_dict.pop('seasonNumber', str())).zfill(2)
 		g.LOG.info(backend.debug_message(630, g, self.season))
-		print(f"SEASON: {self.season}")
 		
 		self.season_folder = \
 			self.show_dictionary['Parsed Season Folder'] = \
 			f"Season {self.season}"
-		print(f"SEASON FOLDER: {self.season_folder}")
 		g.LOG.info(backend.debug_message(631, g, self.season_folder))
 		
 		self.show_root_path =\
 			self.show_dictionary['Show Root Path'] =\
 			str(self.episode_dict.pop('path', self.parse_show_root_path(g, prefix))).replace(prefix, str())
-		
-		#self.get_root_folder()[0]['path']
-		# TODO: create logic to parse the path if pop fails this should fix most issues
-		# should be able to grab all root folders from the api endpoint and test each for a valid path
-		# need to add a conditional exit out if no path to find
-		# f"{self.parse_show_root_path()}/{self.show}" needs to be parsed out the old way
 		g.LOG.info(backend.debug_message(632, g, self.show_root_path))
 		
 		self.relative_show_path = str(self.set_relative_show_path(g, prefix))
@@ -247,13 +235,11 @@ class Show(Movie, Globals):
 		self.parsed_episode = \
 			self.show_dictionary['Parsed Episode'] = \
 			str(self.episode).zfill(self.padding) if self.episode else str()
-		print(f"PARSED EPISODE: {self.parsed_episode}")
 		g.LOG.info(backend.debug_message(634, g, self.parsed_episode))
 		
 		self.parsed_absolute_episode = \
 			self.show_dictionary['Parsed Absolute Episode'] = \
 			str(self.absolute_episode).zfill(self.padding) if self.absolute_episode else str()
-		print(f"PARSED ABSOLUTE EPISODE: {self.parsed_absolute_episode}")
 		g.LOG.info(backend.debug_message(635, g, self.parsed_absolute_episode))
 		
 		self.episode_title = \
