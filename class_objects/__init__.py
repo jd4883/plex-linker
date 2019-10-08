@@ -281,7 +281,7 @@ class Show(Movie, Globals):
 	def get_show_root_path(self):
 		for item in g.sonarr.get_root_folder():
 			item = item['path'].replace(prefix, str())
-			if exists(f"{item}/{self.show}/{self.season_folder}")
+			if exists(f"{item}/{self.show}/{self.season_folder}"):
 				return item
 		return str()
 	
