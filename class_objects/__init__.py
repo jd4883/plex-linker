@@ -233,12 +233,7 @@ class Show(Movie, Globals):
 		# f"{self.get_path()}/{self.show}" needs to be parsed out the old way
 		g.LOG.info(backend.debug_message(632, g, self.show_root_path))
 		
-		self.relative_show_path = \
-			self.show_dictionary['Relative Show File Path'] = \
-			str(self.parse_relative_episode_file_path(prefix)) if self.relative_show_path else str()
-		print(f"RELATIVE SHOW PATH: {self.relative_movie_path}")
-		g.LOG.info(backend.debug_message(633, g, self.relative_show_path))
-		
+		self.relative_show_path = str(self.set_relative_show_path(g, prefix))
 		
 		self.parsed_episode = \
 			self.show_dictionary['Parsed Episode'] = \
@@ -255,15 +250,19 @@ class Show(Movie, Globals):
 		self.episode_title = \
 			self.show_dictionary['Title'] = \
 			str(self.episode_dict.pop('title', self.movie_title)).replace(":", "")
-		print(f"EPISODE TITLE: {self.episode_title}")
 		g.LOG.info(backend.debug_message(636, g, self.episode_title))
 		
 		self.parsed_title = \
 			self.show_dictionary['Parsed Show Title'] = \
 			f"{self.show_root_path}/{self.season_folder}/{self.show} - S{self.season}E{self.parsed_episode} - " \
 			f"{self.episode_title}"
-		print(f"PARSED TITLE: {self.parsed_title}")
 		g.LOG.info(backend.debug_message(637, g, self.parsed_title))
+	
+	def set_relative_show_path(self, g, prefix):
+		self.show_dictionary['Relative Show File Path'] =\
+			str(self.parse_relative_episode_file_path(prefix)) if self.relative_show_path else str()
+		g.LOG.info(backend.debug_message(633, g, self.relative_show_path))
+		return self.show_dictionary['Relative Show File Path'
 	
 	def parse_relative_episode_file_path(self, prefix):
 		if 'hasFile' not in self.episode_dict or not bool(self.episode_dict['hasFile']):
