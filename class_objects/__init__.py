@@ -259,15 +259,12 @@ class Show(Movie, Globals):
 		g.LOG.info(backend.debug_message(637, g, self.parsed_title))
 	
 	def set_relative_show_path(self, g, prefix):
-		self.show_dictionary['Relative Show File Path'] =\
-			str(self.parse_relative_episode_file_path(prefix)) if self.relative_show_path else str()
-		g.LOG.info(backend.debug_message(633, g, self.relative_show_path))
-		return self.show_dictionary['Relative Show File Path']
+		path = self.show_dictionary['Relative Show File Path'] = str(self.parse_relative_episode_file_path(prefix))
+		g.LOG.info(backend.debug_message(633, g, path))
+		return path
 	
 	def parse_relative_episode_file_path(self, prefix):
-		if 'hasFile' not in self.episode_dict or not bool(self.episode_dict['hasFile']):
-			return str()
-		else:
+		if ('hasFile' in self.episode_dict) and (bool(self.episode_dict['hasFile'])):
 			return str(self.episode_dict['episodeFile']['path']).replace(prefix, str())
 	
 	def get_path(self):
