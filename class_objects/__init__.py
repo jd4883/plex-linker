@@ -194,7 +194,7 @@ class Show(Movie, Globals):
 		
 		self.episode_dict = \
 			g.sonarr.get_episode_by_episode_id(self.episode_id)
-		g.LOG.info(backend.debug_message(613, g, self.episode_dict))
+		g.LOG.info(backend.debug_message(623, g, self.episode_dict))
 		
 		self.episode_file_dict = \
 			g.sonarr.get_episode_file_by_episode_id(self.episode_id)
