@@ -44,7 +44,7 @@ def get_movie_path(movie, g):
 		if os.path.exists(movie_string):
 			movie.absolute_movie_path = movie_string
 			message.method_exit(g)
-			return movie.absolute_movie_path
+			break
 	message.method_exit(g)
 	print("TESTING BEFORE MOVIE PATH RETURNS")
 	return str(movie.absolute_movie_path)
