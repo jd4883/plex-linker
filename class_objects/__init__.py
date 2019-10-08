@@ -155,7 +155,7 @@ class Show(Movie, Globals):
 		
 		self.show_dictionary = \
 			show_dict
-		g.LOG.info(backend.debug_message(624, g, self.show_dictionary))
+		g.LOG.debug(backend.debug_message(624, g, self.show_dictionary))
 		
 		self.link_status = \
 			self.show_dictionary['Symlinked'] = \
