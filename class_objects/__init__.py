@@ -163,7 +163,7 @@ class Show(Movie, Globals):
 		
 		self.sonarr_show_dictionary = \
 			series_lookup
-		g.LOG.info(backend.debug_message(625, g, self.sonarr_show_dictionary))
+		g.LOG.debug(backend.debug_message(625, g, self.sonarr_show_dictionary))
 			
 		self.sonarr_api_query = \
 			self.lookup_episode_index(self.sonarr_show_dictionary[0]) if \
