@@ -79,6 +79,11 @@ class Movie(Movies, Globals):
 		self.shows_dictionary = \
 			get_shows_dictionary(self.movie_dictionary)
 		
+		self.absolute_movie_path =\
+			self.movie_dictionary['Absolute Movie Path'] =\
+			str(get_movie_path(self, g))
+		
+		g.LOG.info(backend.debug_message(614, g, str(self.absolute_movie_path)))
 		self.extension = self.movie_dictionary['Parsed Movie Extension'] = str()
 		self.quality = self.movie_dictionary['Parsed Movie Quality'] = str()
 		validate_extensions_from_movie_file(self, g)
@@ -87,10 +92,7 @@ class Movie(Movies, Globals):
 		g.LOG.debug(backend.debug_message(612, g, str(self.quality)))
 		g.LOG.debug(backend.debug_message(610, g, str(self.movie_file)))
 		
-		self.absolute_movie_path = \
-			self.movie_dictionary['Absolute Movie Path'] = \
-			str(get_movie_path(self, g))
-		g.LOG.info(backend.debug_message(614, g, str(self.absolute_movie_path)))
+		
 		
 		# from API
 		self.relative_movie_path = \
@@ -227,8 +229,8 @@ class Show(Movie, Globals):
 		print(f"SEASON FOLDER: {self.season_folder}")
 		g.LOG.info(backend.debug_message(631, g, self.season_folder))
 		
-		self.show_root_path = \
-			self.show_dictionary['Show Root Path'] = \
+		self.show_root_path =\
+			self.show_dictionary['Show Root Path'] =\
 			str(self.episode_dict.pop('path', str())).replace(prefix, str())
 		# f"{self.get_path()}/{self.show}" needs to be parsed out the old way
 		g.LOG.info(backend.debug_message(632, g, self.show_root_path))
