@@ -146,8 +146,6 @@ class Show(Movie, Globals):
 		prefix = str(os.environ['SONARR_ROOT_PATH_PREFIX'])
 		self.parsed_episode = \
 			list()
-		for item in g.sonarr.get_root_folder():
-			print(item['path'])
 		
 		self.movie_dictionary = \
 			movie_dict
@@ -235,13 +233,13 @@ class Show(Movie, Globals):
 		
 		self.show_root_path =\
 			self.show_dictionary['Show Root Path'] =\
-			str(self.episode_dict.pop('path')).replace(prefix, str())
+			str(self.episode_dict.pop('path', self.get_show_root_path())).replace(prefix, str())
 		
 		#self.get_root_folder()[0]['path']
 		# TODO: create logic to parse the path if pop fails this should fix most issues
 		# should be able to grab all root folders from the api endpoint and test each for a valid path
 		# need to add a conditional exit out if no path to find
-		# f"{self.get_path()}/{self.show}" needs to be parsed out the old way
+		# f"{self.get_show_root_path()}/{self.show}" needs to be parsed out the old way
 		g.LOG.info(backend.debug_message(632, g, self.show_root_path))
 		
 		self.relative_show_path = str(self.set_relative_show_path(g, prefix))
@@ -280,10 +278,12 @@ class Show(Movie, Globals):
 		if ('hasFile' in self.episode_dict) and (bool(self.episode_dict['hasFile'])):
 			return str(self.episode_dict['episodeFile']['path']).replace(prefix, str())
 	
-	def get_path(self):
-		if self.anime_status:
-			return 'anime'
-		return 'tv'
+	def get_show_root_path(self):
+		for item in g.sonarr.get_root_folder():
+			item = item['path'].replace(prefix, str())
+			if exists(f"{item}/{self.show}/{self.season_folder}")
+				return item
+		return str()
 	
 	# make this segment dynamic
 	
