@@ -173,7 +173,7 @@ class Show(Movie, Globals):
 		self.show_id = \
 			self.show_dictionary['Show ID'] = \
 			str(parse_show_id(self.show, g))
-		g.LOG.info(backend.debug_message(618, g,self.show_id))
+		g.LOG.info(backend.debug_message(618, g, self.show_id))
 		
 		self.episode_id = \
 			self.show_dictionary['Episode ID'] = \
