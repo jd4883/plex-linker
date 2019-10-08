@@ -281,7 +281,8 @@ class Show(Movie, Globals):
 	def parse_show_root_path(self, g, prefix):
 		for item in g.sonarr.get_root_folder():
 			item = item['path'].replace(prefix, str())
-			if exists(f"{item}/{self.show}/{self.season_folder}"):
+			potential = f"{item}/{self.show}/{self.season_folder}"
+			if os.path.exists(potential) and os.path.isdir(potential):
 				return item
 		return str()
 	
