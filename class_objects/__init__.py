@@ -147,7 +147,7 @@ class Show(Movie, Globals):
 		self.parsed_episode = \
 			list()
 		for item in g.sonarr.get_root_folder():
-			print(item)
+			print(item['path'])
 		
 		self.movie_dictionary = \
 			movie_dict
@@ -239,7 +239,7 @@ class Show(Movie, Globals):
 		
 		#self.get_root_folder()[0]['path']
 		# TODO: create logic to parse the path if pop fails this should fix most issues
-		
+		# should be able to grab all root folders from the api endpoint and test each for a valid path
 		# need to add a conditional exit out if no path to find
 		# f"{self.get_path()}/{self.show}" needs to be parsed out the old way
 		g.LOG.info(backend.debug_message(632, g, self.show_root_path))
