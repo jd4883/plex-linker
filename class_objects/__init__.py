@@ -146,6 +146,7 @@ class Show(Movie, Globals):
 		prefix = str(os.environ['SONARR_ROOT_PATH_PREFIX'])
 		self.parsed_episode = \
 			list()
+		print(f"SONARR ROOT FOLDER FROM API: {g.sonarr.get_root_folder()}")
 		
 		self.movie_dictionary = \
 			movie_dict
@@ -198,7 +199,7 @@ class Show(Movie, Globals):
 			g.sonarr.get_episode_by_episode_id(self.episode_id)
 		g.LOG.debug(backend.debug_message(623, g, self.episode_dict))
 		
-		patched_path = self.episode_dict['path']   # fix logic instead of bandaging this way
+		
 		
 		self.episode_file_dict = \
 			g.sonarr.get_episode_file_by_episode_id(self.episode_id)
@@ -233,8 +234,8 @@ class Show(Movie, Globals):
 		
 		self.show_root_path =\
 			self.show_dictionary['Show Root Path'] =\
-			str(patched_path).replace(prefix, str())
-		print(g.sonarr.get_root_folder())
+			str(self.episode_dict.pop('path')).replace(prefix, str())
+		
 		#self.get_root_folder()[0]['path']
 		# TODO: create logic to parse the path if pop fails this should fix most issues
 		
