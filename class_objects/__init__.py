@@ -231,7 +231,7 @@ class Show(Movie, Globals):
 		
 		self.show_root_path =\
 			self.show_dictionary['Show Root Path'] =\
-			str(self.episode_dict.pop('path', str())).replace(prefix, str())
+			str(self.episode_dict['path']).replace(prefix, str())
 		# need to add a conditional exit out if no path to find
 		# f"{self.get_path()}/{self.show}" needs to be parsed out the old way
 		g.LOG.info(backend.debug_message(632, g, self.show_root_path))
