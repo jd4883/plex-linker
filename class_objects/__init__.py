@@ -235,20 +235,20 @@ class Show(Movie, Globals):
 		
 		self.relative_show_path = \
 			self.show_dictionary['Relative Show File Path'] = \
-			str(self.parse_relative_episode_file_path(prefix))
+			str(self.parse_relative_episode_file_path(prefix)) if self.relative_show_path else str()
 		print(f"RELATIVE SHOW PATH: {self.relative_movie_path}")
 		g.LOG.info(backend.debug_message(633, g, self.relative_show_path))
 		
 		
 		self.parsed_episode = \
 			self.show_dictionary['Parsed Episode'] = \
-			str(self.episode).zfill(self.padding)
+			str(self.episode).zfill(self.padding) if self.episode else str()
 		print(f"PARSED EPISODE: {self.parsed_episode}")
 		g.LOG.info(backend.debug_message(634, g, self.parsed_episode))
 		
 		self.parsed_absolute_episode = \
 			self.show_dictionary['Parsed Absolute Episode'] = \
-			str(self.absolute_episode).zfill(self.padding)
+			str(self.absolute_episode).zfill(self.padding) if self.absolute_episode else str()
 		print(f"PARSED ABSOLUTE EPISODE: {self.parsed_absolute_episode}")
 		g.LOG.info(backend.debug_message(635, g, self.parsed_absolute_episode))
 		
