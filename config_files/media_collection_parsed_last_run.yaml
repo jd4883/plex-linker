@@ -1358,8 +1358,7 @@ Bleach- Memories of Nobody (2006):
       Parsed Relative Show Title: ''
       Parsed Season Folder: Season 00
       Parsed Show Title: anime/Bleach/Season 00/Bleach - S00E003 - Memories of Nobody
-      Relative Show File Path: anime/staging/Bleach/Season 00/Bleach - S00E003 - Memories
-        of Nobody Bluray-1080p.mkv
+      Relative Show File Path: ''
       Season: '00'
       Show ID: '123'
       Show Root Path: anime/Bleach
@@ -1387,8 +1386,7 @@ Bleach- The DiamondDust Rebellion (2007):
       Parsed Season Folder: Season 00
       Parsed Show Title: anime/Bleach/Season 00/Bleach - S00E004 - The Diamond Dust
         Rebellion
-      Relative Show File Path: anime/staging/Bleach/Season 00/Bleach - S00E004 - The
-        Diamond Dust Rebellion Bluray-1080p.mkv
+      Relative Show File Path: ''
       Season: '00'
       Show ID: '123'
       Show Root Path: anime/Bleach
@@ -9530,27 +9528,26 @@ Rocky and Bullwinkle (2014):
     The Rocky and Bullwinkle Show: null
   Title: Rocky and Bullwinkle (2014)
 Rurouni Kenshin (2012):
-  Absolute Movie File Path: /media/video/movies/foreign/Rurouni Kenshin (2012)/
-  Absolute Movie Path: /media/video/movies/foreign/Rurouni Kenshin (2012)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 127533
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
   Relative Movie File Path: ''
-  Relative Movie Path: movies/foreign/Rurouni Kenshin (2012)
+  Relative Movie Path: ''
   Shows:
     Rurouni Kenshin: null
-  Title: Rurouni Kenshin (2012)
+  Title: Rurouni Kenshin- Origins (2016)
 Rurouni Kenshin The Movie (1997):
-  Absolute Movie File Path: /media/video/movies/foreign/Rurouni Kenshin The Movie
-    (1997)/
-  Absolute Movie Path: /media/video/movies/foreign/Rurouni Kenshin The Movie (1997)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 39977
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
   Relative Movie File Path: ''
-  Relative Movie Path: movies/foreign/Rurouni Kenshin The Movie (1997)
+  Relative Movie Path: ''
   Shows:
     Rurouni Kenshin:
       Absolute Episode: ''
@@ -9569,7 +9566,7 @@ Rurouni Kenshin The Movie (1997):
       Show Root Path: anime/Rurouni Kenshin
       Symlinked: ''
       Title: Requiem for Patriots (The Movie)
-  Title: Rurouni Kenshin The Movie (1997)
+  Title: Rurouni Kenshin- Requiem for the Ishin Patriots (1997)
 Rurouni Kenshin- Final Chapter (0):
   Absolute Movie File Path: /media/video/movies/foreign/Rurouni Kenshin- Final Chapter
     (0)/
