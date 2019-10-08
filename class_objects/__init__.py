@@ -146,7 +146,8 @@ class Show(Movie, Globals):
 		prefix = str(os.environ['SONARR_ROOT_PATH_PREFIX'])
 		self.parsed_episode = \
 			list()
-		print(f"SONARR ROOT FOLDER FROM API: {g.sonarr.get_root_folder()['path']}")
+		for item in g.sonarr.get_root_folder():
+			print(item)
 		
 		self.movie_dictionary = \
 			movie_dict
