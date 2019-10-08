@@ -163,7 +163,7 @@ class Show(Movie, Globals):
 		
 		self.sonarr_show_dictionary = \
 			series_lookup
-		g.LOG.debug(backend.debug_message(625, g, self.sonarr_show_dictionary))
+		g.LOG.info(backend.debug_message(625, g, self.sonarr_show_dictionary))
 			
 		self.sonarr_api_query = \
 			self.lookup_episode_index(self.sonarr_show_dictionary[0]) if \
@@ -232,6 +232,7 @@ class Show(Movie, Globals):
 		self.show_root_path =\
 			self.show_dictionary['Show Root Path'] =\
 			str(self.episode_dict.pop('path', str())).replace(prefix, str())
+		# need to add a conditional exit out if no path to find
 		# f"{self.get_path()}/{self.show}" needs to be parsed out the old way
 		g.LOG.info(backend.debug_message(632, g, self.show_root_path))
 		
@@ -262,6 +263,8 @@ class Show(Movie, Globals):
 	
 	def set_relative_show_path(self, g, prefix):
 		path = self.show_dictionary['Relative Show File Path'] = str(self.parse_relative_episode_file_path(prefix))
+		if path == None:
+			path = str()
 		g.LOG.info(backend.debug_message(633, g, path))
 		return path
 	
