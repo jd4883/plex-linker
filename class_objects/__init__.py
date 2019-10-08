@@ -198,6 +198,8 @@ class Show(Movie, Globals):
 			g.sonarr.get_episode_by_episode_id(self.episode_id)
 		g.LOG.debug(backend.debug_message(623, g, self.episode_dict))
 		
+		patched_path = self.episode_dict['path']   # fix logic instead of bandaging this way
+		
 		self.episode_file_dict = \
 			g.sonarr.get_episode_file_by_episode_id(self.episode_id)
 		
@@ -231,7 +233,7 @@ class Show(Movie, Globals):
 		
 		self.show_root_path =\
 			self.show_dictionary['Show Root Path'] =\
-			str(self.episode_dict['path']).replace(prefix, str())
+			str(patched_path).replace(prefix, str())
 		# need to add a conditional exit out if no path to find
 		# f"{self.get_path()}/{self.show}" needs to be parsed out the old way
 		g.LOG.info(backend.debug_message(632, g, self.show_root_path))
