@@ -209,7 +209,8 @@ class Show(Movie, Globals):
 		self.absolute_episode = \
 			self.show_dictionary['Absolute Episode'] = \
 			str(self.episode_dict.pop('absoluteEpisodeNumber', str()))
-		g.LOG.info(backend.debug_message(628, g, self.absolute_episode))
+		if self.absolute_episode:
+			g.LOG.info(backend.debug_message(628, g, self.absolute_episode))
 		
 		self.parsed_relative_title = \
 			str(self.show_dictionary['Parsed Relative Show Title'])
@@ -240,7 +241,8 @@ class Show(Movie, Globals):
 		self.parsed_absolute_episode = \
 			self.show_dictionary['Parsed Absolute Episode'] = \
 			str(self.absolute_episode).zfill(self.padding) if self.absolute_episode else str()
-		g.LOG.info(backend.debug_message(635, g, self.parsed_absolute_episode))
+		if self.parsed_absolute_episode:
+			g.LOG.info(backend.debug_message(635, g, self.parsed_absolute_episode))
 		
 		self.episode_title = \
 			self.show_dictionary['Title'] = \
@@ -267,12 +269,11 @@ class Show(Movie, Globals):
 	def parse_show_root_path(self, g, prefix):
 		for item in g.sonarr.get_root_folder():
 			item = item['path'].replace(prefix, str())
-			potential = f"{item}/{self.show}/{self.season_folder}"
+			print(f"RAW ITEM: {item}")
+			potential = f"{item}{self.show}/{self.season_folder}"
 			if os.path.exists(potential) and os.path.isdir(potential):
 				return f"{item}{self.show}"
 		return str()
-	
-	# make this segment dynamic
 	
 	def lookup_anime_status(self):
 		try:
