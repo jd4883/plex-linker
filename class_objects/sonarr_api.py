@@ -51,6 +51,12 @@ class SonarrAPI(object):
 	def set_new_tag_for_sonarr(self, label, data = dict()):
 		return self.request_post(f"{self.host_url}/tag&label={str(label).lower()}", data).json()
 	
+	def refresh_series(self, series_id, data = dict()):
+		return self.request_post(f"{self.host_url}/command/RefreshSeries&seriesId={series_id}", data).json()
+	
+	def rescan_series(self, series_id, data = dict()):
+		return self.request_post(f"{self.host_url}/command/RescanSeries&seriesId={series_id}", data).json()
+	
 	def constuct_series_json(self, tvdbid, quality_profile):
 		res = self.request_get(f"{self.host_url}/series/lookup?term={'tvdbId:' + str(tvdbid)}")
 		return {

@@ -7,7 +7,7 @@ from logs.bin.get_parameters import (
 	)
 
 
-def debug_message(status_code, g, var1 = str()):
+def debug_message(status_code, g, var1 = str(), var2 = str()):
 	if not status_code:
 		status_code = -1
 	if not g.method:
@@ -40,22 +40,56 @@ def debug_message(status_code, g, var1 = str()):
 		g.message1 = format_string(f"media path:")
 		g.message2 = f"{var1}"
 	elif status_code == 607:
-		g.message1 = format_string(f"checking if this is a video:")
+		g.message1 = format_string(f"checking if this is a video file:")
 		g.message2 = f"{var1}"
 	elif status_code == 608:
-		g.message1 = format_string(f"video extension found:")
+		g.message1 = format_string(f"movie extension found:")
 		g.message2 = f"{var1}"
 	elif status_code == 609:
 		g.message1 = format_string(f"checking directory for files with extension:")
 		g.message2 = f"{var1}"
 	elif status_code == 610:
-		g.message1 = format_string(f"video file found:")
+		g.message1 = format_string(f"movie file found:")
 		g.message2 = f"{var1}"
 	elif status_code == 611:
 		g.message1 = format_string(f"show(s) dictionary:")
 		g.message2 = f"{var1}"
 	elif status_code == 612:
-		g.message1 = format_string(f"self file quality:")
+		g.message1 = format_string(f"movie quality:")
+		g.message2 = f"{var1}"
+	elif status_code == 613:
+		g.message1 = format_string(f"movie title:")
+		g.message2 = f"{var1}"
+	elif status_code == 614:
+		g.message1 = format_string(f"parsed absolute movie path:")
+		g.message2 = f"{var1}"
+	elif status_code == 615:
+		g.message1 = format_string(f"parsed absolute movie file path:")
+		g.message2 = f"{var1}"
+	elif status_code == 616:
+		g.message1 = format_string(f"parsed relative movie file path:")
+		g.message2 = f"{var1}"
+	elif status_code == 617:
+		g.message1 = format_string(f"parsed relative movie path:")
+		g.message2 = f"{var1}"
+	elif status_code == 618:
+		g.message1 = format_string(f"parsed show id:")
+		g.message2 = f"{var1}"
+	elif status_code == 619:
+		g.message1 = format_string(f"parsed episode id:")
+		g.message2 = f"{var1}"
+	elif status_code == 620:
+		g.message1 = format_string(f"failed to parse episode ID from show (SHOW | ID):")
+		g.message2 = f"{var1}"
+		g.message3 = f"{var2}"
+	elif status_code == 621:
+		g.message1 = format_string(f"parsed anime status:")
+		g.message2 = f"{var1}"
+	elif status_code == 621:
+		g.message1 = format_string(f"parsed padding:")
+		g.message2 = f"{var1}"
+	elif status_code == 622:
+		g.message1 = format_string(f"raw episode:")
 		g.message2 = f"{var1}"
 	elif status_code == -1:
 		g.message1 = format_string(

@@ -6,7 +6,7 @@ import messaging.frontend as message
 
 def symlink_force(show, g):
 	message.method_launch(g)
-	if (show.absolute_movie_file_path or show.absolute_movie_file_path) == ("/'" or"" or None or "/"):
+	if (show.absolute_movie_file_path or show.absolute_movie_file_path) == ("/'" or "" or None or "/"):
 		# really primitive way to indicate if the movie value is blank we do not link
 		pass
 	elif validate_link_ready(show):
@@ -33,7 +33,6 @@ def get_symlink_command_string(show):
 
 def get_symlink_string(process):
 	return strip_quotes_from_string(str(process.communicate()[0])).strip()
-	
 
 
 # cleanup this method along with others and try to segment where they are stored

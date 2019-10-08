@@ -27,7 +27,3 @@ def cleanup_sonarr_api_query(result):
 	return result
 
 
-def link_properties(movie, show):
-	show.link_status = str()
-	show.relative_show_path = str()
-	movie.absolute_movie_file_path = str()

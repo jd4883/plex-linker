@@ -5,15 +5,18 @@ import messaging.frontend as message
 def get_relative_movie_path(movie):
 	if os.path.exists(movie.absolute_movie_path):
 		return str(os.path.relpath(movie.absolute_movie_path, str(os.environ['DOCKER_MEDIA_PATH'])))
+	return str()
 
 def get_absolute_movie_file_path(movie):
 	if movie.absolute_movie_path:
 		return "/".join((movie.absolute_movie_path, movie.movie_file))
+	return str()
 
 def get_relative_movie_file_path(movie):
-	try:
-		return os.path.relpath(movie.absolute_movie_path, str(os.environ['DOCKER_MEDIA_PATH']))
-	except ValueError:
+	relpath = "/".join((movie.relative_movie_path, movie.movie_file))
+	if movie.movie_file and os.path.exists(relpath):
+		return relpath
+	else:
 		return str()
 
 # in theory this checks case combinations and titles correct, however, I am not seeing the desired results
@@ -43,4 +46,4 @@ def get_movie_path(movie, g):
 			message.method_exit(g)
 			return movie.absolute_movie_path
 	message.method_exit(g)
-	return movie.absolute_movie_path
+	return str(movie.absolute_movie_path)

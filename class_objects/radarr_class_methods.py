@@ -7,7 +7,8 @@ from movies.movie.movie_gets import get_movie_path
 def parse_relpath(self, g, media_path):
 	film = get_movie_path(self, g)
 	if os.path.exists(film):
-		return os.path.relpath(film, media_path)
+		return str(os.path.relpath(film, media_path))
+	return str()
 
 
 def parse_movie_title(radarr_dictionary, movie):
@@ -20,4 +21,4 @@ def parse_movie_title(radarr_dictionary, movie):
 		pass
 	except KeyError:
 		pass
-	return movie_title
+	return str(movie_title)

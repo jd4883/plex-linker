@@ -14,7 +14,7 @@ def symlink_destination_in_dictionary(movie):
 		return True
 	return False
 
-def live_link_status(show, g):
+def live_link_status(show):
 	os.chdir(str(os.environ['DOCKER_MEDIA_PATH']))
 	try:
 		if not os.path.isdir(str(show.relative_show_path)) and os.readlink(str(show.relative_show_path)):
@@ -25,16 +25,16 @@ def live_link_status(show, g):
 		pass
 	return False
 
-def link_status(movie, show, g):
-	if live_link_status(show, g):
+def link_status(movie, show):
+	if live_link_status(show):
 		if symlink_destination_exists(show):
 			if symlink_destination_in_dictionary(movie):
 				return True
 	return False
 
-def linking_can_be_skipped(show, movie, g):
+def linking_can_be_skipped(show, movie):
 	if show.show_dictionary:
-		if link_status(movie, show, g):
+		if link_status(movie, show):
 			if validate_show.compare_symlink_to_relpath(show):
 				return True
 	return False

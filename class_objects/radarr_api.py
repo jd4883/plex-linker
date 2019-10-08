@@ -12,6 +12,15 @@ class RadarrAPI(object):
 		self.host_url = str(environ['RADARR_URL'])
 		self.api_key = pathlib.Path('/run/secrets/radarr_api_key').read_text().replace('\n', '')
 	
+	def refresh_movie(self, movie_id):
+		return self.request_post(f"{self.host_url}/command/RefreshMovie&seriesId={movie_id}").json()
+	
+	def rescan_movie(self, movie_id):
+		return self.request_post(f"{self.host_url}/command/RescanMovie&seriesId={movie_id}").json()
+	
+	def movie_search(self, movie_id):
+		return self.request_post(f"{self.host_url}/command/MoviesSearch&seriesId={movie_id}").json()
+	
 	def get_movie_library(self):
 		return self.request_get(f"{self.host_url}/movie").json()
 	
