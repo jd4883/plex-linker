@@ -46,4 +46,5 @@ def get_movie_path(movie, g):
 			message.method_exit(g)
 			return movie.absolute_movie_path
 	message.method_exit(g)
+	print("TESTING BEFORE MOVIE PATH RETURNS")
 	return str(movie.absolute_movie_path)
