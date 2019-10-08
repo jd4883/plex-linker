@@ -75,10 +75,17 @@ class Movie(Movies, Globals):
 		self.movie_file = \
 			self.movie_dictionary['Movie File'] = \
 			str()
-		g.LOG.debug(backend.debug_message(610, g, str(self.movie_file)))
 		
 		self.shows_dictionary = \
 			get_shows_dictionary(self.movie_dictionary)
+		
+		self.extension = self.movie_dictionary['Parsed Movie Extension'] = str()
+		self.quality = self.movie_dictionary['Parsed Movie Quality'] = str()
+		validate_extensions_from_movie_file(self, g)
+		self.quality = str(self.parse_quality())
+		g.LOG.debug(backend.debug_message(608, g, str(self.extension)))
+		g.LOG.debug(backend.debug_message(612, g, str(self.quality)))
+		g.LOG.debug(backend.debug_message(610, g, str(self.movie_file)))
 		
 		self.absolute_movie_path = \
 			self.movie_dictionary['Absolute Movie Path'] = \
@@ -90,13 +97,6 @@ class Movie(Movies, Globals):
 			self.movie_dictionary['Relative Movie Path'] = \
 			str(parse_relpath(self, g, media_path))
 		g.LOG.debug(backend.debug_message(617, g, self.relative_movie_path))
-		
-		self.extension = self.movie_dictionary['Parsed Movie Extension'] = str()
-		self.quality = self.movie_dictionary['Parsed Movie Quality'] = str()
-		validate_extensions_from_movie_file(self, g)
-		self.quality = str(self.parse_quality())
-		g.LOG.debug(backend.debug_message(608, g, str(self.extension)))
-		g.LOG.debug(backend.debug_message(612, g, str(self.quality)))
 		
 		self.absolute_movie_file_path = self.movie_dictionary['Absolute Movie File Path'] = str(
 				get_absolute_movie_file_path(self))
@@ -194,7 +194,7 @@ class Show(Movie, Globals):
 		
 		self.episode_dict = \
 			g.sonarr.get_episode_by_episode_id(self.episode_id)
-		g.LOG.info(backend.debug_message(623, g, self.episode_dict))
+		g.LOG.debug(backend.debug_message(623, g, self.episode_dict))
 		
 		self.episode_file_dict = \
 			g.sonarr.get_episode_file_by_episode_id(self.episode_id)
@@ -250,7 +250,7 @@ class Show(Movie, Globals):
 		self.episode_title = \
 			self.show_dictionary['Title'] = \
 			str(self.episode_dict.pop('title', self.movie_title)).replace(":", "")
-		g.LOG.info(backend.debug_message(636, g, self.episode_title))
+		g.LOG.debug(backend.debug_message(636, g, self.episode_title))
 		
 		self.parsed_title = \
 			self.show_dictionary['Parsed Show Title'] = \
