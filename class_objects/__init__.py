@@ -234,6 +234,8 @@ class Show(Movie, Globals):
 		self.show_root_path =\
 			self.show_dictionary['Show Root Path'] =\
 			str(patched_path).replace(prefix, str())
+		print(g.sonarr.get_root_folder())
+		#self.get_root_folder()[0]['path']
 		# TODO: create logic to parse the path if pop fails this should fix most issues
 		
 		# need to add a conditional exit out if no path to find
