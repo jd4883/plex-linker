@@ -56,8 +56,9 @@ class Movie(Movies, Globals):
 	def __init__(self, movie, movie_dict, g, media_path = str(os.environ['DOCKER_MEDIA_PATH'])):
 		super().__init__()
 		self.movie_dictionary = movie_dict
+		g.LOG.debug(backend.debug_message(627, g, self.movie_dictionary))
 		self.radarr_dictionary = g.radarr.lookup_movie(movie)
-		print(self.radarr_dictionary)
+		g.LOG.debug(backend.debug_message(628, g, self.radarr_dictionary))
 		self.tmbdid = str()
 		if 'tmdbId' in self.radarr_dictionary:
 			self.tmbdid = self.movie_dictionary['Movie DB ID'] = int(self.radarr_dictionary[0]['tmdbId']) if len(self.radarr_dictionary) > 0 else str()
@@ -152,6 +153,7 @@ class Show(Movie, Globals):
 		
 		self.show_dictionary = \
 			show_dict
+		g.LOG.info(backend.debug_message(624, g, self.show_dictionary))
 		
 		self.link_status = \
 			self.show_dictionary['Symlinked'] = \
@@ -159,10 +161,12 @@ class Show(Movie, Globals):
 		
 		self.sonarr_show_dictionary = \
 			series_lookup
+		g.LOG.info(backend.debug_message(625, g, self.sonarr_show_dictionary))
 			
 		self.sonarr_api_query = \
 			self.lookup_episode_index(self.sonarr_show_dictionary[0]) if \
 				self.sonarr_show_dictionary else dict()
+		g.LOG.info(backend.debug_message(626, g, self.sonarr_api_query))
 		
 		self.show_id = \
 			self.show_dictionary['Show ID'] = \
@@ -190,6 +194,7 @@ class Show(Movie, Globals):
 		
 		self.episode_dict = \
 			g.sonarr.get_episode_by_episode_id(self.episode_id)
+		g.LOG.info(backend.debug_message(613, g, self.episode_dict))
 		
 		self.episode_file_dict = \
 			g.sonarr.get_episode_file_by_episode_id(self.episode_id)
@@ -202,53 +207,62 @@ class Show(Movie, Globals):
 		self.absolute_episode = \
 			self.show_dictionary['Absolute Episode'] = \
 			str(self.episode_dict.pop('absoluteEpisodeNumber', str()))
+		g.LOG.info(backend.debug_message(628, g, self.absolute_episode))
 		print(f"ABSOLUTE EPISODE: {self.absolute_episode}")
 		
 		self.parsed_relative_title = \
 			str(self.show_dictionary['Parsed Relative Show Title'])
 		print(f"PARSED RELATIVE TITLE: {self.parsed_relative_title}")
+		g.LOG.info(backend.debug_message(629, g, self.parsed_relative_title))
 		
 		self.season = \
 			self.show_dictionary['Season'] = \
 			str(self.episode_dict.pop('seasonNumber', str())).zfill(2)
+		g.LOG.info(backend.debug_message(630, g, self.season))
 		print(f"SEASON: {self.season}")
 		
 		self.season_folder = \
 			self.show_dictionary['Parsed Season Folder'] = \
 			f"Season {self.season}"
 		print(f"SEASON FOLDER: {self.season_folder}")
+		g.LOG.info(backend.debug_message(631, g, self.season_folder))
 		
 		self.show_root_path = \
 			self.show_dictionary['Show Root Path'] = \
 			str(self.episode_dict.pop('path', f"{self.get_path()}/{self.show}")).replace(prefix, str())
+		g.LOG.info(backend.debug_message(632, g, self.show_root_path))
 		
 		self.relative_show_path = \
 			self.show_dictionary['Relative Show File Path'] = \
 			str(self.parse_relative_episode_file_path(prefix))
 		print(f"RELATIVE SHOW PATH: {self.relative_movie_path}")
-		
+		g.LOG.info(backend.debug_message(633, g, self.relative_show_path))
 		
 		
 		self.parsed_episode = \
 			self.show_dictionary['Parsed Episode'] = \
 			str(self.episode).zfill(self.padding)
 		print(f"PARSED EPISODE: {self.parsed_episode}")
+		g.LOG.info(backend.debug_message(634, g, self.parsed_episode))
 		
 		self.parsed_absolute_episode = \
 			self.show_dictionary['Parsed Absolute Episode'] = \
 			str(self.absolute_episode).zfill(self.padding)
 		print(f"PARSED ABSOLUTE EPISODE: {self.parsed_absolute_episode}")
+		g.LOG.info(backend.debug_message(635, g, self.parsed_absolute_episode))
 		
 		self.episode_title = \
 			self.show_dictionary['Title'] = \
 			str(self.episode_dict.pop('title', self.movie_title)).replace(":", "")
 		print(f"EPISODE TITLE: {self.episode_title}")
+		g.LOG.info(backend.debug_message(636, g, self.episode_title))
 		
 		self.parsed_title = \
 			self.show_dictionary['Parsed Show Title'] = \
 			f"{self.show_root_path}/{self.season_folder}/{self.show} - S{self.season}E{self.parsed_episode} - " \
 			f"{self.episode_title}"
 		print(f"PARSED TITLE: {self.parsed_title}")
+		g.LOG.info(backend.debug_message(637, g, self.parsed_title))
 	
 	def parse_relative_episode_file_path(self, prefix):
 		if 'hasFile' not in self.episode_dict or not bool(self.episode_dict['hasFile']):

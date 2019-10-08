@@ -91,6 +91,51 @@ def debug_message(status_code, g, var1 = str(), var2 = str()):
 	elif status_code == 622:
 		g.message1 = format_string(f"raw episode:")
 		g.message2 = f"{var1}"
+	elif status_code == 623:
+		g.message1 = format_string(f"episode dictionary:")
+		g.message2 = f"{var1}"
+	elif status_code == 624:
+		g.message1 = format_string(f"show dictionary:")
+		g.message2 = f"{var1}"
+	elif status_code == 625:
+		g.message1 = format_string(f"sonarr show dictionary:")
+		g.message2 = f"{var1}"
+	elif status_code == 626:
+		g.message1 = format_string(f"sonarr api query dictionary:")
+		g.message2 = f"{var1}"
+	elif status_code == 627:
+		g.message1 = format_string(f"movie dictionary:")
+		g.message2 = f"{var1}"
+	elif status_code == 628:
+		g.message1 = format_string(f"absolute episode:")
+		g.message2 = f"{var1}"
+	elif status_code == 629:
+		g.message1 = format_string(f"parsed relative show title:")
+		g.message2 = f"{var1}"
+	elif status_code == 630:
+		g.message1 = format_string(f"show season number:")
+		g.message2 = f"{var1}"
+	elif status_code == 631:
+		g.message1 = format_string(f"show season folder:")
+		g.message2 = f"{var1}"
+	elif status_code == 632:
+		g.message1 = format_string(f"show root path:")
+		g.message2 = f"{var1}"
+	elif status_code == 633:
+		g.message1 = format_string(f"relative show path:")
+		g.message2 = f"{var1}"
+	elif status_code == 634:
+		g.message1 = format_string(f"show parsed episode:")
+		g.message2 = f"{var1}"
+	elif status_code == 635:
+		g.message1 = format_string(f"parsed absolute episode:")
+		g.message2 = f"{var1}"
+	elif status_code == 636:
+		g.message1 = format_string(f"show episode title:")
+		g.message2 = f"{var1}"
+	elif status_code == 637:
+		g.message1 = format_string(f"parsed show title:")
+		g.message2 = f"{var1}"
 	elif status_code == -1:
 		g.message1 = format_string(
 				f"boss, you've indicated this {status_code} is an error that warrants exiting. check yo code!!")
