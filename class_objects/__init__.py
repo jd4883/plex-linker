@@ -24,7 +24,8 @@ from movies.movie.movie_validation import (validate_extensions_from_movie_file)
 from movies.movie.shows.show.show_parser import parse_show_id
 from movies.movies_gets import (get_relative_movies_path)
 
-
+# TODO: create an automatic list of all active, ping Many J for list of active certificates
+# TODO: try to get this done sooner than later
 # TODO: play with marshmallow across the board for class objects, want to be able to go to and from a dictionary easily
 
 class Globals:
@@ -83,7 +84,7 @@ class Movie(Movies, Globals):
 			self.movie_dictionary['Absolute Movie Path'] =\
 			str(get_movie_path(self, g))
 		
-		g.LOG.info(backend.debug_message(614, g, str(self.absolute_movie_path)))
+		g.LOG.debug(backend.debug_message(614, g, str(self.absolute_movie_path)))
 		self.extension = self.movie_dictionary['Parsed Movie Extension'] = str()
 		self.quality = self.movie_dictionary['Parsed Movie Quality'] = str()
 		validate_extensions_from_movie_file(self, g)
@@ -144,35 +145,24 @@ class Show(Movie, Globals):
 		super().__init__(film, movie_dict, g)
 		os.chdir(str(os.environ['DOCKER_MEDIA_PATH']))
 		prefix = str(os.environ['SONARR_ROOT_PATH_PREFIX'])
-		self.parsed_episode = \
-			list()
+		self.parsed_episode = list()
 		
-		self.movie_dictionary = \
-			movie_dict
+		self.movie_dictionary = movie_dict
 		
-		self.show = \
-			series
+		self.show = series
 		
-		self.show_dictionary = \
-			show_dict
+		self.show_dictionary = show_dict
 		g.LOG.debug(backend.debug_message(624, g, self.show_dictionary))
 		
-		self.link_status = \
-			self.show_dictionary['Symlinked'] = \
-			str()
+		self.link_status = self.show_dictionary['Symlinked'] = str()
 		
-		self.sonarr_show_dictionary = \
-			series_lookup
+		self.sonarr_show_dictionary = series_lookup
 		g.LOG.debug(backend.debug_message(625, g, self.sonarr_show_dictionary))
 			
-		self.sonarr_api_query = \
-			self.lookup_episode_index(self.sonarr_show_dictionary[0]) if \
-				self.sonarr_show_dictionary else dict()
+		self.sonarr_api_query = self.lookup_episode_index(self.sonarr_show_dictionary[0]) if self.sonarr_show_dictionary else dict()
 		g.LOG.debug(backend.debug_message(626, g, self.sonarr_api_query))
 		
-		self.show_id = \
-			self.show_dictionary['Show ID'] = \
-			str(parse_show_id(self.show, g))
+		self.show_id = self.show_dictionary['Show ID'] = str(parse_show_id(self.show, g))
 		g.LOG.info(backend.debug_message(618, g, self.show_id))
 		
 		self.episode_id = \
