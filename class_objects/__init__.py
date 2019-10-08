@@ -233,7 +233,7 @@ class Show(Movie, Globals):
 		
 		self.show_root_path =\
 			self.show_dictionary['Show Root Path'] =\
-			str(self.episode_dict.pop('path', self.get_show_root_path())).replace(prefix, str())
+			str(self.episode_dict.pop('path', self.get_show_root_path(g))).replace(prefix, str())
 		
 		#self.get_root_folder()[0]['path']
 		# TODO: create logic to parse the path if pop fails this should fix most issues
@@ -277,8 +277,8 @@ class Show(Movie, Globals):
 	def parse_relative_episode_file_path(self, prefix):
 		if ('hasFile' in self.episode_dict) and (bool(self.episode_dict['hasFile'])):
 			return str(self.episode_dict['episodeFile']['path']).replace(prefix, str())
-	
-	def get_show_root_path(self):
+		
+	def get_show_root_path(self, g):
 		for item in g.sonarr.get_root_folder():
 			item = item['path'].replace(prefix, str())
 			if exists(f"{item}/{self.show}/{self.season_folder}"):
