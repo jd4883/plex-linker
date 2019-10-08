@@ -161,12 +161,12 @@ class Show(Movie, Globals):
 		
 		self.sonarr_show_dictionary = \
 			series_lookup
-		g.LOG.info(backend.debug_message(625, g, self.sonarr_show_dictionary))
+		g.LOG.debug(backend.debug_message(625, g, self.sonarr_show_dictionary))
 			
 		self.sonarr_api_query = \
 			self.lookup_episode_index(self.sonarr_show_dictionary[0]) if \
 				self.sonarr_show_dictionary else dict()
-		g.LOG.info(backend.debug_message(626, g, self.sonarr_api_query))
+		g.LOG.debug(backend.debug_message(626, g, self.sonarr_api_query))
 		
 		self.show_id = \
 			self.show_dictionary['Show ID'] = \
@@ -181,7 +181,7 @@ class Show(Movie, Globals):
 		try:
 			g.sonarr.rescan_series(int(self.show_id))  # rescan movie in case it was picked up since last scan
 			g.sonarr.refresh_series(int(self.show_id))  # to ensure metadata is up to date
-		except ValueError as err:
+		except ValueError:
 			g.LOG.error(backend.debug_message(620, g, self.show, self.episode_id))
 		
 		self.anime_status = \
