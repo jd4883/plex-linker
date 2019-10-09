@@ -4062,7 +4062,7 @@ Ghost in the Shell (1995):
       Absolute Episode: ''
       Anime: true
       Episode: ''
-      Episode ID: ''
+      Episode ID: '4451'
       Parsed Absolute Episode: ''
       Parsed Episode: ''
       Parsed Relative Show Title: ''
@@ -4071,7 +4071,7 @@ Ghost in the Shell (1995):
         00/Ghost in the Shell- Stand Alone Complex - S00E - Ghost in the Shell (1996)
       Relative Show File Path: ''
       Season: '00'
-      Show ID: ''
+      Show ID: '150'
       Show Root Path: anime/staging/Ghost in the Shell- Stand Alone Complex
       Symlinked: ''
       Title: Ghost in the Shell (1996)
@@ -4092,7 +4092,7 @@ Ghost in the Shell (2017):
       Absolute Episode: ''
       Anime: true
       Episode: ''
-      Episode ID: ''
+      Episode ID: '19'
       Parsed Absolute Episode: ''
       Parsed Episode: ''
       Parsed Relative Show Title: ''
@@ -4102,7 +4102,7 @@ Ghost in the Shell (2017):
         the Shell (2017)
       Relative Show File Path: ''
       Season: '00'
-      Show ID: ''
+      Show ID: '46'
       Show Root Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture
       Symlinked: ''
       Title: Ghost in the Shell (2017)
@@ -4124,7 +4124,7 @@ Ghost in the Shell 2- Innocence (2004):
       Absolute Episode: ''
       Anime: true
       Episode: ''
-      Episode ID: ''
+      Episode ID: '4452'
       Parsed Absolute Episode: ''
       Parsed Episode: ''
       Parsed Relative Show Title: ''
@@ -4134,7 +4134,7 @@ Ghost in the Shell 2- Innocence (2004):
         Innocence (2004)
       Relative Show File Path: ''
       Season: '00'
-      Show ID: ''
+      Show ID: '150'
       Show Root Path: anime/staging/Ghost in the Shell- Stand Alone Complex
       Symlinked: ''
       Title: Ghost in the Shell 2- Innocence (2004)
@@ -4158,18 +4158,15 @@ Ghost in the Shell Arise - Border 1- Ghost Pain (2013):
     Ghost in the Shell- Arise - Alternative Architecture:
       Absolute Episode: ''
       Anime: true
-      Episode: ''
-      Episode ID: ''
+      Episode: [1,2]
+      Episode ID: [1959, 1960]
       Parsed Absolute Episode: ''
       Parsed Episode: ''
-      Parsed Relative Show Title: ''
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/staging/Ghost in the Shell- Arise - Alternative Architecture/Season
-        00/Ghost in the Shell- Arise - Alternative Architecture - S00E - Ghost in
-        the Shell Arise - Border 1- Ghost Pain (2013)
+      Parsed Show Title: anime/staging/Ghost in the Shell- Arise - Alternative Architecture/Season 01/Ghost in the Shell- Arise - Alternative Architecture - S01E003-004 (E003-004) - Ghost Pain - Bluray-1080p Remux.mkv
       Relative Show File Path: ''
-      Season: '00'
-      Show ID: ''
+      Season: '01'
+      Show ID: '46'
       Show Root Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture
       Symlinked: ''
       Title: Ghost in the Shell Arise - Border 1- Ghost Pain (2013)
@@ -4193,7 +4190,7 @@ Ghost in the Shell Arise - Border 2- Ghost Whispers (2013):
       Absolute Episode: ''
       Anime: true
       Episode: ''
-      Episode ID: ''
+      Episode ID: [1961, 1962]
       Parsed Absolute Episode: ''
       Parsed Episode: ''
       Parsed Relative Show Title: ''
@@ -4203,7 +4200,7 @@ Ghost in the Shell Arise - Border 2- Ghost Whispers (2013):
         the Shell Arise - Border 2- Ghost Whispers (2013)
       Relative Show File Path: ''
       Season: '00'
-      Show ID: ''
+      Show ID: '46'
       Show Root Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture
       Symlinked: ''
       Title: Ghost in the Shell Arise - Border 2- Ghost Whispers (2013)
@@ -4227,7 +4224,7 @@ Ghost in the Shell Arise - Border 3- Ghost Tears (2014):
       Absolute Episode: ''
       Anime: true
       Episode: ''
-      Episode ID: ''
+      Episode ID: [1963, 1964]
       Parsed Absolute Episode: ''
       Parsed Episode: ''
       Parsed Relative Show Title: ''
@@ -4237,7 +4234,7 @@ Ghost in the Shell Arise - Border 3- Ghost Tears (2014):
         the Shell Arise - Border 3- Ghost Tears (2014)
       Relative Show File Path: ''
       Season: '00'
-      Show ID: ''
+      Show ID: '46'
       Show Root Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture
       Symlinked: ''
       Title: Ghost in the Shell Arise - Border 3- Ghost Tears (2014)
@@ -4262,7 +4259,7 @@ Ghost in the Shell Arise - Border 4- Ghost Stands Alone (2014):
       Absolute Episode: ''
       Anime: true
       Episode: ''
-      Episode ID: ''
+      Episode ID: [1957, 1958]
       Parsed Absolute Episode: ''
       Parsed Episode: ''
       Parsed Relative Show Title: ''
@@ -4272,7 +4269,7 @@ Ghost in the Shell Arise - Border 4- Ghost Stands Alone (2014):
         the Shell Arise - Border 4- Ghost Stands Alone (2014)
       Relative Show File Path: ''
       Season: '00'
-      Show ID: ''
+      Show ID: '46'
       Show Root Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture
       Symlinked: ''
       Title: Ghost in the Shell Arise - Border 4- Ghost Stands Alone (2014)
@@ -4296,7 +4293,7 @@ Ghost in the Shell Arise - Border 5- Pyrophoric Cult (2015):
       Absolute Episode: ''
       Anime: true
       Episode: ''
-      Episode ID: ''
+      Episode ID: [1965, 1966]
       Parsed Absolute Episode: ''
       Parsed Episode: ''
       Parsed Relative Show Title: ''
@@ -4306,7 +4303,7 @@ Ghost in the Shell Arise - Border 5- Pyrophoric Cult (2015):
         the Shell Arise - Border 5- Pyrophoric Cult (2015)
       Relative Show File Path: ''
       Season: '00'
-      Show ID: ''
+      Show ID: '46'
       Show Root Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture
       Symlinked: ''
       Title: Ghost in the Shell Arise - Border 5- Pyrophoric Cult (2015)
@@ -4327,7 +4324,7 @@ Ghost in the Shell Arise- Another Mission (2013):
       Absolute Episode: ''
       Anime: true
       Episode: ''
-      Episode ID: ''
+      Episode ID: '1977'
       Parsed Absolute Episode: ''
       Parsed Episode: ''
       Parsed Relative Show Title: ''
@@ -4337,7 +4334,7 @@ Ghost in the Shell Arise- Another Mission (2013):
         the Shell Arise- Another Mission (2013)
       Relative Show File Path: ''
       Season: '00'
-      Show ID: ''
+      Show ID: '46'
       Show Root Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture
       Symlinked: ''
       Title: Ghost in the Shell Arise- Another Mission (2013)
@@ -4362,7 +4359,7 @@ Ghost in the Shell Arise- Another Mission (2013):
       Absolute Episode: ''
       Anime: true
       Episode: ''
-      Episode ID: ''
+      Episode ID: '4454'
       Parsed Absolute Episode: ''
       Parsed Episode: ''
       Parsed Relative Show Title: ''
@@ -4372,7 +4369,7 @@ Ghost in the Shell Arise- Another Mission (2013):
         \ S.A.C. 2nd GIG \u2013 Individual Eleven (2006)"
       Relative Show File Path: ''
       Season: '00'
-      Show ID: ''
+      Show ID: '150'
       Show Root Path: anime/staging/Ghost in the Shell- Stand Alone Complex
       Symlinked: ''
       Title: "Ghost in the Shell- S.A.C. 2nd GIG \u2013 Individual Eleven (2006)"
@@ -4391,7 +4388,7 @@ Ghost in the Shell- Stand Alone Complex - Solid State Society (2006):
       Absolute Episode: ''
       Anime: true
       Episode: ''
-      Episode ID: ''
+      Episode ID: '4455'
       Parsed Absolute Episode: ''
       Parsed Episode: ''
       Parsed Relative Show Title: ''
@@ -4401,7 +4398,7 @@ Ghost in the Shell- Stand Alone Complex - Solid State Society (2006):
         Alone Complex - Solid State Society (2007)
       Relative Show File Path: ''
       Season: '00'
-      Show ID: ''
+      Show ID: '150'
       Show Root Path: anime/staging/Ghost in the Shell- Stand Alone Complex
       Symlinked: ''
       Title: Ghost in the Shell- Stand Alone Complex - Solid State Society (2007)
@@ -4420,7 +4417,7 @@ Ghost in the Shell- Stand Alone Complex - The Laughing Man (2005):
       Absolute Episode: ''
       Anime: true
       Episode: ''
-      Episode ID: ''
+      Episode ID: '4453'
       Parsed Absolute Episode: ''
       Parsed Episode: ''
       Parsed Relative Show Title: ''
@@ -4430,7 +4427,7 @@ Ghost in the Shell- Stand Alone Complex - The Laughing Man (2005):
         Alone Complex - The Laughing Man (2007)
       Relative Show File Path: ''
       Season: '00'
-      Show ID: ''
+      Show ID: '150'
       Show Root Path: anime/staging/Ghost in the Shell- Stand Alone Complex
       Symlinked: ''
       Title: Ghost in the Shell- Stand Alone Complex - The Laughing Man (2007)
