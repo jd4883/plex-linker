@@ -206,7 +206,7 @@ class Show(Movie, Globals):
 		
 		self.episode = \
 			self.show_dictionary['Episode'] \
-				if 'Episode' in self.show_dictionary \
+				if 'Episode' in self.show_dictionary and self.show_dictionary['Episode']\
 				else str(self.episode_dict.pop('episodeNumber', str()))
 		g.LOG.debug(backend.debug_message(622, g, self.episode))
 		
@@ -246,7 +246,7 @@ class Show(Movie, Globals):
 			self.path_str(self.absolute_episode).zfill(self.padding) if self.absolute_episode else str()
 		if 'Parsed Absolute Episode' in self.show_dictionary and not self.parsed_absolute_episode:
 			del self.show_dictionary['Parsed Absolute Episode']
-		g.LOG.info(backend.debug_message(635, g, self.parsed_absolute_episode))
+		g.LOG.debug(backend.debug_message(635, g, self.parsed_absolute_episode))
 		self.episode_title = self.show_dictionary['Title'] = self.path_str(self.episode_dict.pop('title', self.movie_title))
 		g.LOG.debug(backend.debug_message(636, g, self.episode_title))
 		
