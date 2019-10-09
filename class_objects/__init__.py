@@ -294,15 +294,10 @@ class Show(Movie, Globals):
 		return str(default_root)
 	
 	def lookup_anime_status(self):
-		try:
-			if self.sonarr_api_query['seriesType'] == 'anime':
+		if 'Anime' in self.show_dictionary and self.show_dictionary['Anime']:
+			return bool(self.show_dictionary['Anime'])
+		elif ['seriesType'] in self.sonarr_api_query and self.sonarr_api_query['seriesType'] == 'anime':
 				return True
-		except KeyError:
-			pass
-		except ValueError:
-			pass
-		except IndexError:
-			pass
 		return False
 	
 	def lookup_episode_index(self, query = dict()):
