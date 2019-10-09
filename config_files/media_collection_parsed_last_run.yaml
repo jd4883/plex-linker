@@ -2133,20 +2133,20 @@ Constantine- City of Demons - The Movie (2018):
     (2018)/Constantine- City of Demons - The Movie (2018) Bluray-1080p.mkv
   Relative Movie Path: movies/horror/Constantine- City of Demons - The Movie (2018)
   Shows:
-    Constantine (2018):
+    Constantine- City of Demons:
       Absolute Episode: ''
       Anime: false
-      Episode: ''
-      Episode ID: ''
+      Episode: '2'
+      Episode ID: '41751'
       Parsed Absolute Episode: ''
-      Parsed Episode: ''
+      Parsed Episode: '02'
       Parsed Relative Show Title: ''
       Parsed Season Folder: Season 00
       Parsed Show Title: tv/superhero/Constantine (2018)/Season 00/Constantine (2018)
-        - S00E - Constantine- City of Demons - The Movie (2018)
+        - S00E02 - Constantine- City Of Demons The Movie
       Relative Show File Path: ''
       Season: '00'
-      Show ID: ''
+      Show ID: '467'
       Show Root Path: tv/superhero/Constantine (2018)
       Symlinked: ''
       Title: Constantine- City of Demons - The Movie (2018)
@@ -2164,20 +2164,19 @@ Cowboy Bebop- The Movie (2001):
     Cowboy Bebop:
       Absolute Episode: ''
       Anime: true
-      Episode: ''
-      Episode ID: ''
+      Episode: '1'
+      Episode ID: '44925'
       Parsed Absolute Episode: ''
       Parsed Episode: ''
       Parsed Relative Show Title: ''
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/staging/Cowboy Bebop/Season 00/Cowboy Bebop - S00E
-        - Cowboy Bebop- The Movie (2002)
+      Parsed Show Title: anime/staging/Cowboy Bebop/Season 00/Cowboy Bebop - S00E001 - Knockin' on Heaven's Door
       Relative Show File Path: ''
       Season: '00'
       Show ID: '15'
       Show Root Path: anime/staging/Cowboy Bebop
       Symlinked: ''
-      Title: Cowboy Bebop- The Movie (2002)
+      Title: Knockin' on Heaven's Door
   Title: Cowboy Bebop- The Movie (2002)
 Death Note (2006):
   Absolute Movie File Path: "/media/video/movies/foreign/Death Note (2006)/\u30C7\u30B9\
@@ -3350,8 +3349,8 @@ Fate+Stay Night- Unlimited Blade Works (2010):
     Fate+Stay Night:
       Absolute Episode: ''
       Anime: true
-      Episode: ''
-      Episode ID: ''
+      Episode: '4'
+      Episode ID: '45457'
       Parsed Absolute Episode: ''
       Parsed Episode: ''
       Parsed Relative Show Title: ''
@@ -3360,7 +3359,7 @@ Fate+Stay Night- Unlimited Blade Works (2010):
         S00E - Fate/Stay Night- Unlimited Blade Works (2010)
       Relative Show File Path: ''
       Season: '00'
-      Show ID: ''
+      Show ID: '129'
       Show Root Path: anime/staging/Fate+Stay Night
       Symlinked: ''
       Title: Fate/Stay Night- Unlimited Blade Works (2010)
