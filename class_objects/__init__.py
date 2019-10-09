@@ -65,8 +65,8 @@ class Movie(Movies, Globals):
 		self.radarr_dictionary = g.radarr.lookup_movie(movie)
 		
 		g.LOG.debug(backend.debug_message(628, g, self.radarr_dictionary))
-		self.tmbdid = str(self.parse_tmdbID(g))
-		print(g.radarr.get_movie_file(self.tmbdid))
+		self.tmbdid = str(self.parse_tmdbid(g))
+		#print(g.radarr.get_movie_file(self.tmbdid))
 		self.movie_title = \
 			self.movie_dictionary['Title'] = str(parse_movie_title(self.radarr_dictionary, movie))
 		g.LOG.debug(backend.debug_message(613, g, str(self.movie_title)))
@@ -107,26 +107,26 @@ class Movie(Movies, Globals):
 			self.movie_dictionary['Relative Movie File Path'] = str(get_relative_movie_file_path(self))
 		g.LOG.debug(backend.debug_message(616, g, self.relative_movie_file_path))
 	
-	def parse_tmdbID(self, g):
-		id = str()
+	def parse_tmdbid(self, g):
+		tmdbID = str()
 		if 'tmdbId' in self.radarr_dictionary:
-			id = self.movie_dictionary['Movie DB ID'] = int(self.radarr_dictionary[0]['tmdbId']) if len(
+			tmdbID = self.movie_dictionary['Movie DB ID'] = int(self.radarr_dictionary[0]['tmdbId']) if len(
 				self.radarr_dictionary) > 0 else str()
 			#print(g.radarr.get_movie_file(int(id))) if len(self.radarr_dictionary) > 0 else str()
-			g.radarr.rescan_movie(int(id)) if len(self.radarr_dictionary) > 0 else str()
+			g.radarr.rescan_movie(int(tmdbID)) if len(self.radarr_dictionary) > 0 else str()
 				# rescan movie in case it was picked up since last scan
-			g.radarr.refresh_movie(int(id)) if len(self.radarr_dictionary) > 0 else str()
+			g.radarr.refresh_movie(int(tmdbID)) if len(self.radarr_dictionary) > 0 else str()
 				# to ensure metadata is up to date
 			if len(self.radarr_dictionary) > 0 and self.radarr_dictionary[0]['monitored']:
-				g.radarr.movie_search(int(id))
-		return id
+				g.radarr.movie_search(int(tmdbID))
+		return tmdbID
 	
 	def parse_quality(self):
 		if self.quality:
 			quality = str(self.quality)
 		else:
 			return str()
-		if (str(self.quality).lower() == "Remux-1080p.mkv".lower()):
+		if str(self.quality).lower() == "Remux-1080p.mkv".lower():
 			try:
 				quality.replace("Remux-1080p.mkv", "Bluray-1080p Remux.mkv")
 			except IndexError:
@@ -155,12 +155,13 @@ class Show(Movie, Globals):
 	             show_dict = dict(),
 	             series_lookup = dict()):
 		super().__init__(film, movie_dict, g)
-<<<<<<< HEAD
 		os.chdir(self.path_str(os.environ['DOCKER_MEDIA_PATH']))
 		self.parsed_episode = list()
 		self.movie_dictionary = movie_dict
 		self.show = series
 		self.show_dictionary = show_dict
+		if 'Parsed Relative Show Title' in self.show_dictionary:
+			del self.show_dictionary['Parsed Relative Show Title']
 		g.LOG.debug(backend.debug_message(624, g, self.show_dictionary))
 		self.sonarr_show_dictionary = series_lookup
 		self.sonarr_api_query = self.parse_sonarr_api_query_results(g)
@@ -169,35 +170,12 @@ class Show(Movie, Globals):
 		g.LOG.debug(backend.debug_message(625, g, self.sonarr_show_dictionary))
 		
 		self.show_id = self.show_dictionary['Show ID'] = str(parse_show_id(self.show, g))
-		g.LOG.info(backend.debug_message(618, g,self.show_id))
-=======
-		os.chdir(str(os.environ['DOCKER_MEDIA_PATH']))
-		prefix = str(os.environ['SONARR_ROOT_PATH_PREFIX'])
-		self.parsed_episode = list()
-		
-		self.movie_dictionary = movie_dict
-		
-		self.show = series
-		
-		self.show_dictionary = show_dict
-		g.LOG.debug(backend.debug_message(624, g, self.show_dictionary))
-		
-		self.link_status = self.show_dictionary['Symlinked'] = str()
-		
-		self.sonarr_show_dictionary = series_lookup
-		g.LOG.debug(backend.debug_message(625, g, self.sonarr_show_dictionary))
-			
-		self.sonarr_api_query = self.lookup_episode_index(self.sonarr_show_dictionary[0]) if self.sonarr_show_dictionary else dict()
-		g.LOG.debug(backend.debug_message(626, g, self.sonarr_api_query))
-		
-		self.show_id = self.show_dictionary['Show ID'] = str(parse_show_id(self.show, g))
-		g.LOG.info(backend.debug_message(618, g, self.show_id))
->>>>>>> 56d631f7b86a5670f0002890a05ad013b1e8e85e
-		
-		self.episode_id = \
-			self.show_dictionary['Episode ID'] = \
-			str(self.parse_episode_id(g.sonarr.get_episodes_by_series_id(self.show_id)))
-		g.LOG.info(backend.debug_message(619, g, self.episode_id))
+		g.LOG.debug(backend.debug_message(618, g,self.show_id))
+		self.episode_id = self.show_dictionary['Episode ID'] = self.set_episode_id(g)
+		g.LOG.debug(backend.debug_message(619, g, self.episode_id))
+		if not self.episode_id:
+			print(f"EPISODE ID FAILED TO PROCESS FOR {self.show}")
+			raise
 		
 		try:
 			g.sonarr.rescan_series(int(self.show_id))  # rescan movie in case it was picked up since last scan
@@ -216,35 +194,29 @@ class Show(Movie, Globals):
 		self.episode_dict = \
 			g.sonarr.get_episode_by_episode_id(self.episode_id)
 		g.LOG.debug(backend.debug_message(623, g, self.episode_dict))
-		
 		self.episode_file_dict = \
 			g.sonarr.get_episode_file_by_episode_id(self.episode_id)
 		
 		self.episode = \
-			self.show_dictionary['Episode'] = \
-			str(self.episode_dict.pop('episodeNumber', str()))
-		g.LOG.info(backend.debug_message(622, g, self.episode))
+			self.show_dictionary['Episode'] \
+				if 'Episode' in self.show_dictionary \
+				else str(self.episode_dict.pop('episodeNumber', str()))
+		g.LOG.debug(backend.debug_message(622, g, self.episode))
+		
+		if not self.episode:
+			print(f"NO EPISODE SET FOR {self.show}")
+			raise
 		
 		self.absolute_episode = \
 			self.show_dictionary['Absolute Episode'] = \
 			str(self.episode_dict.pop('absoluteEpisodeNumber', str()))
 		if self.absolute_episode:
-			g.LOG.info(backend.debug_message(628, g, self.absolute_episode))
-		
-		self.parsed_relative_title = \
-<<<<<<< HEAD
-			self.path_str(self.show_dictionary['Parsed Relative Show Title'])
-		if self.parsed_relative_title:
-			g.LOG.info(backend.debug_message(629, g, self.parsed_relative_title))
-=======
-			str(self.show_dictionary['Parsed Relative Show Title'])
-		g.LOG.info(backend.debug_message(629, g, self.parsed_relative_title))
->>>>>>> 56d631f7b86a5670f0002890a05ad013b1e8e85e
-		
+			g.LOG.debug(backend.debug_message(628, g, self.absolute_episode))
+		elif 'Absolute Episode' in self.show_dictionary:
+			del self.show_dictionary['Absolute Episode']
 		self.season = \
 			self.show_dictionary['Season'] = \
 			str(self.episode_dict.pop('seasonNumber', str())).zfill(2)
-<<<<<<< HEAD
 		g.LOG.debug(backend.debug_message(630, g, self.season))
 		
 		self.season_folder = self.show_dictionary['Parsed Season Folder'] = f"Season {self.season}"
@@ -254,42 +226,20 @@ class Show(Movie, Globals):
 			self.show_dictionary['Show Root Path'] =\
 			self.path_str(self.episode_dict.pop('path', self.path_str(self.parse_show_root_path(g))))
 		# confirm this is always calculating correctly
-=======
-		g.LOG.info(backend.debug_message(630, g, self.season))
-		
-		self.season_folder = \
-			self.show_dictionary['Parsed Season Folder'] = \
-			f"Season {self.season}"
-		g.LOG.info(backend.debug_message(631, g, self.season_folder))
-		
-		self.show_root_path =\
-			self.show_dictionary['Show Root Path'] =\
-			str(self.episode_dict.pop('path', self.parse_show_root_path(g, prefix))).replace(prefix, str())
->>>>>>> 56d631f7b86a5670f0002890a05ad013b1e8e85e
-		g.LOG.info(backend.debug_message(632, g, self.show_root_path))
-		
+		g.LOG.debug(backend.debug_message(632, g, self.show_root_path))
 		self.relative_show_path = self.path_str(self.set_relative_show_path(g))
+		if 'Relative Show Path' in self.show_dictionary and not self.relative_show_path:
+			print(self.show_dictionary)
+			raise
 		
-<<<<<<< HEAD
 		self.parsed_episode = self.show_dictionary['Parsed Episode'] = str(self.episode).zfill(self.padding) if self.episode else str()
-		g.LOG.info(backend.debug_message(634, g, self.parsed_episode))
+		g.LOG.debug(backend.debug_message(634, g, self.parsed_episode))
 		
 		self.parsed_absolute_episode = self.show_dictionary['Parsed Absolute Episode'] = \
 			self.path_str(self.absolute_episode).zfill(self.padding) if self.absolute_episode else str()
+		if 'Parsed Absolute Episode' in self.show_dictionary and not self.parsed_absolute_episode:
+			del self.show_dictionary['Parsed Absolute Episode']
 		g.LOG.info(backend.debug_message(635, g, self.parsed_absolute_episode))
-=======
-		self.parsed_episode = \
-			self.show_dictionary['Parsed Episode'] = \
-			str(self.episode).zfill(self.padding) if self.episode else str()
-		g.LOG.info(backend.debug_message(634, g, self.parsed_episode))
-		
-		self.parsed_absolute_episode = \
-			self.show_dictionary['Parsed Absolute Episode'] = \
-			str(self.absolute_episode).zfill(self.padding) if self.absolute_episode else str()
-		if self.parsed_absolute_episode:
-			g.LOG.info(backend.debug_message(635, g, self.parsed_absolute_episode))
->>>>>>> 56d631f7b86a5670f0002890a05ad013b1e8e85e
-		
 		self.episode_title = self.show_dictionary['Title'] = self.path_str(self.episode_dict.pop('title', self.movie_title))
 		g.LOG.debug(backend.debug_message(636, g, self.episode_title))
 		
@@ -297,7 +247,13 @@ class Show(Movie, Globals):
 			self.show_dictionary['Parsed Show Title'] = \
 			self.path_str(f"{self.show_root_path}/{self.season_folder}/{self.show} - S{self.season}E{self.parsed_episode} "
 			            f"- {self.episode_title}")
-		g.LOG.info(backend.debug_message(637, g, self.parsed_show_title))
+		g.LOG.debug(backend.debug_message(637, g, self.parsed_show_title))
+	
+	def set_episode_id(self, g):
+		
+		return self.show_dictionary['Episode ID'] \
+			if 'Episode ID' in self.show_dictionary \
+			else str(self.parse_episode_id(g.sonarr.get_episodes_by_series_id(int(self.show_id))))
 	
 	def path_str(self, string):
 		return str((str(string).replace('//','/')
@@ -310,38 +266,25 @@ class Show(Movie, Globals):
 		return query
 	
 	def set_relative_show_path(self, g):
-		path = self.show_dictionary['Relative Show File Path'] = self.path_str(parse_relative_episode_file_path(self, self.episode_dict))
-		print(type(path))
+		path = self.show_dictionary['Relative Show File Path'] \
+			if self.show_dictionary \
+			else self.path_str(parse_relative_episode_file_path(self, self.episode_dict))
+		print(path)
 		if (not path) or (path == (None or str(None) or str())):
 			return str()
-		print(f"PARSED PATH {path}")
-		g.LOG.info(backend.debug_message(633, g, path))
+		g.LOG.debug(backend.debug_message(633, g, path))
 		return path
 	
-<<<<<<< HEAD
 	def parse_show_root_path(self, g):
+		default_root = f"tv/staging/{self.show}"        # adjust to be an environ
+		#default_root = f"{os.environ['SONARR_DEFAULT_ROOT']}/{self.show}"
+		
 		for item in g.sonarr_root_folders:
 			item = self.path_str(item['path'])
 			potential = self.path_str(f"{item}{self.show}/{self.season_folder}")
-			print(f"ITEM: {item}")
-			print(f"POTENTIAL: {potential}")
 			if os.path.exists(potential) and os.path.isdir(potential):
 				return self.path_str(f"{item}{self.show}")
-=======
-	def parse_relative_episode_file_path(self, prefix):
-		if ('hasFile' in self.episode_dict) and (bool(self.episode_dict['hasFile'])):
-			return str(self.episode_dict['episodeFile']['path']).replace(prefix, str())
-		
-	def parse_show_root_path(self, g, prefix):
-		for item in g.sonarr.get_root_folder():
-			item = item['path'].replace(prefix, str())
-			print(f"RAW ITEM: {item}")
-			potential = f"{item}{self.show}/{self.season_folder}"
-			if os.path.exists(potential) and os.path.isdir(potential):
-				return f"{item}{self.show}"
->>>>>>> 56d631f7b86a5670f0002890a05ad013b1e8e85e
-		return str()
-		# THIS IS THE PROBLEM POINT NEED TO FIGURE OUT WHY OTHER CONDITIONS ARE NOT HIT
+		return str(default_root)
 	
 	def lookup_anime_status(self):
 		try:

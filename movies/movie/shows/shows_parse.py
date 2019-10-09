@@ -36,5 +36,5 @@ def parse_shows_dictionary_object(movie, g):
 			g.LOG.warn(backend.debug_message(640, g, movie.movie_title))
 			continue
 		else:
-			g.LOG.info(backend.debug_message(641, g, movie.movie_title, show.show))
+			g.LOG.debug(backend.debug_message(641, g, movie.movie_title, show.show))
 			parse_show_to_link(show, g)

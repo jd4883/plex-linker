@@ -2300,13 +2300,13 @@ Constantine- City of Demons - The Movie (2018):
       - 2
       Parsed Episode: '[2]'
       Parsed Relative Show Title: ''
-      Parsed Season: None
+      Parsed Season: ''
       Parsed Season Folder: Season 00
       Parsed Show Title: tv/superhero/Constantine (2018)/Season 00/Constantine (2018)
         - S00E02 - Constantine- City Of Demons The Movie
       Relative Show File Path: tv/superhero/Constantine (2018)/Season 00/Constantine
         (2018) - S00E02 - Constantine- City Of Demons The Movie Bluray-1080p.mkv
-      Season: None
+      Season: ''
       Show ID: ''
       Show Root Path: tv/superhero/Constantine
       Symlinked: tv/superhero/Constantine (2018)/Season 00/Constantine (2018) - S00E02
@@ -5293,13 +5293,13 @@ Hajime no Ippo- Champion Road (2003):
       - 2
       Parsed Episode: '[2]'
       Parsed Relative Show Title: ''
-      Parsed Season: None
+      Parsed Season: ''
       Parsed Season Folder: Season 00
       Parsed Show Title: anime/staging/Hajime no Ippo/Season 00/Hajime no Ippo - S00E002
         - Champion Road
       Relative Show File Path: anime/staging/Hajime no Ippo/Season 00/Hajime no Ippo
         - S00E002 - Champion Road DVD.mkv
-      Season: None
+      Season: ''
       Show ID: ''
       Show Root Path: ''
       Symlinked: anime/staging/Hajime no Ippo/Season 00/Hajime no Ippo - S00E002 -
@@ -5325,12 +5325,12 @@ Hajime no Ippo- Mashiba vs. Kimura (2003):
       - 3
       Parsed Episode: '[3]'
       Parsed Relative Show Title: ''
-      Parsed Season: None
+      Parsed Season: ''
       Parsed Season Folder: Season 00
       Parsed Show Title: anime/staging/Hajime no Ippo/Season 00/Hajime no Ippo - S00E003
         - Kimura vs Mashiba
       Relative Show File Path: ''
-      Season: None
+      Season: ''
       Show ID: ''
       Show Root Path: ''
       Symlinked: ''
@@ -7135,12 +7135,12 @@ Mobile Suit Gundam SEED Destiny- Special Edition I - The Broken World (2006):
       - 7
       Parsed Episode: '[7]'
       Parsed Relative Show Title: ''
-      Parsed Season: None
+      Parsed Season: ''
       Parsed Season Folder: Season 00
       Parsed Show Title: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00/Mobile
         Suit Gundam SEED (2012) - S00E007 - Special Edition I- The Shattered World
       Relative Show File Path: ''
-      Season: None
+      Season: ''
       Show ID: ''
       Show Root Path: ''
       Symlinked: ''
@@ -7184,12 +7184,12 @@ Mobile Suit Gundam SEED Destiny- Special Edition II - Their Respective Swords (2
       - 8
       Parsed Episode: '[8]'
       Parsed Relative Show Title: ''
-      Parsed Season: None
+      Parsed Season: ''
       Parsed Season Folder: Season 00
       Parsed Show Title: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00/Mobile
         Suit Gundam SEED (2012) - S00E008 - Special Edition II- Their Respective Swords
       Relative Show File Path: ''
-      Season: None
+      Season: ''
       Show ID: ''
       Show Root Path: ''
       Symlinked: ''
@@ -7234,12 +7234,12 @@ Mobile Suit Gundam SEED Destiny- Special Edition III - Flames of Destiny (2006):
       - 9
       Parsed Episode: '[9]'
       Parsed Relative Show Title: ''
-      Parsed Season: None
+      Parsed Season: ''
       Parsed Season Folder: Season 00
       Parsed Show Title: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00/Mobile
         Suit Gundam SEED (2012) - S00E009 - Special Edition III- Flames Of Destiny
       Relative Show File Path: ''
-      Season: None
+      Season: ''
       Show ID: ''
       Show Root Path: ''
       Symlinked: ''
@@ -7283,12 +7283,12 @@ Mobile Suit Gundam SEED Destiny- Special Edition IV - The Cost of Freedom (2007)
       - 10
       Parsed Episode: '[10]'
       Parsed Relative Show Title: ''
-      Parsed Season: None
+      Parsed Season: ''
       Parsed Season Folder: Season 00
       Parsed Show Title: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00/Mobile
         Suit Gundam SEED (2012) - S00E010 - Special Edition IV- The Cost of Freedom
       Relative Show File Path: ''
-      Season: None
+      Season: ''
       Show ID: ''
       Show Root Path: ''
       Symlinked: ''
@@ -7337,7 +7337,7 @@ Mobile Suit Gundam SEED Movie I- The Empty Battlefield (2004):
       Parsed Show Title: anime/staging/Mobile Suit Gundam SEED/Season 00/Mobile Suit
         Gundam SEED - S00E002 - Special Edition I- The Empty Battlefield
       Relative Show File Path: ''
-      Season: None
+      Season: ''
       Show ID: 163
       Show Root Path: ''
       Symlinked: ''
@@ -7349,12 +7349,12 @@ Mobile Suit Gundam SEED Movie I- The Empty Battlefield (2004):
       - 2
       Parsed Episode: '[2]'
       Parsed Relative Show Title: ''
-      Parsed Season: None
+      Parsed Season: ''
       Parsed Season Folder: Season 00
       Parsed Show Title: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00/Mobile
         Suit Gundam SEED (2012) - S00E002 - Special Edition I- The Empty Battlefield
       Relative Show File Path: ''
-      Season: None
+      Season: ''
       Show ID: ''
       Show Root Path: ''
       Symlinked: ''
@@ -7385,7 +7385,7 @@ Mobile Suit Gundam SEED Movie II- The Far-Away Dawn (2004):
       Parsed Show Title: anime/staging/Mobile Suit Gundam SEED/Season 00/Mobile Suit
         Gundam SEED - S00E003 - Special Edition II- The Far-Away Dawn
       Relative Show File Path: ''
-      Season: None
+      Season: ''
       Show ID: 163
       Show Root Path: ''
       Symlinked: ''
@@ -7397,12 +7397,12 @@ Mobile Suit Gundam SEED Movie II- The Far-Away Dawn (2004):
       - 3
       Parsed Episode: '[3]'
       Parsed Relative Show Title: ''
-      Parsed Season: None
+      Parsed Season: ''
       Parsed Season Folder: Season 00
       Parsed Show Title: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00/Mobile
         Suit Gundam SEED (2012) - S00E003 - Special Edition II- The Far-Away Dawn
       Relative Show File Path: ''
-      Season: None
+      Season: ''
       Show ID: ''
       Show Root Path: ''
       Symlinked: ''
@@ -7433,7 +7433,7 @@ Mobile Suit Gundam SEED Movie III- The Rumbling Sky (2004):
       Parsed Show Title: anime/staging/Mobile Suit Gundam SEED/Season 00/Mobile Suit
         Gundam SEED - S00E004 - Special Edition III- The Rumbling Sky
       Relative Show File Path: ''
-      Season: None
+      Season: ''
       Show ID: 163
       Show Root Path: ''
       Symlinked: ''
@@ -7445,12 +7445,12 @@ Mobile Suit Gundam SEED Movie III- The Rumbling Sky (2004):
       - 4
       Parsed Episode: '[4]'
       Parsed Relative Show Title: ''
-      Parsed Season: None
+      Parsed Season: ''
       Parsed Season Folder: Season 00
       Parsed Show Title: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00/Mobile
         Suit Gundam SEED (2012) - S00E004 - Special Edition III- The Rumbling Sky
       Relative Show File Path: ''
-      Season: None
+      Season: ''
       Show ID: ''
       Show Root Path: ''
       Symlinked: ''
@@ -13521,14 +13521,14 @@ Tiger & Bunny (0):
     Tiger & Bunny: null
   Unparsed Movie Title: Tiger & Bunny (0)
 Tiger & Bunny - The Movie- The Rising (2014):
-  Absolute Movie File Path: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)//media/video/movies/staging/Bill
-    Burr- Paper Tiger (2019)//media/video/movies/staging/Bill Burr- Paper Tiger (2019)//media/video/movies/staging/Bill
-    Burr- Paper Tiger (2019)//media/video/movies/staging/Bill Burr- Paper Tiger (2019)/
+  Absolute Movie File Path: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)/media/video/movies/staging/Bill
+    Burr- Paper Tiger (2019)/media/video/movies/staging/Bill Burr- Paper Tiger (2019)/media/video/movies/staging/Bill
+    Burr- Paper Tiger (2019)/media/video/movies/staging/Bill Burr- Paper Tiger (2019)/
   Absolute Movie Path: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)//media/video/movies/staging/Bill
-    Burr- Paper Tiger (2019)//media/video/movies/staging/Bill Burr- Paper Tiger (2019)//media/video/movies/staging/Bill
-    Burr- Paper Tiger (2019)//media/video/movies/staging/Bill Burr- Paper Tiger (2019)/
+  Parsed Movie File: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)/media/video/movies/staging/Bill
+    Burr- Paper Tiger (2019)/media/video/movies/staging/Bill Burr- Paper Tiger (2019)/media/video/movies/staging/Bill
+    Burr- Paper Tiger (2019)/media/video/movies/staging/Bill Burr- Paper Tiger (2019)/
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: movies/staging/Bill Burr- Paper Tiger (2019)
   Relative Movie Path: movies/staging/Bill Burr- Paper Tiger (2019)
@@ -13546,7 +13546,7 @@ Tiger & Bunny - The Movie- The Rising (2014):
         - Tiger & Bunny- The Beginning
       Relative Show File Path: anime/staging/Tiger & Bunny/Season 00/Tiger & Bunny
         - S00E002 - Tiger & Bunny- The Beginning Bluray-1080p.mkv
-      Season: None
+      Season: ''
       Show ID: 109
       Show Root Path: ''
       Symlinked: anime/staging/Tiger & Bunny/Season 00/Tiger & Bunny - S00E002 - Tiger
@@ -13557,14 +13557,14 @@ Tiger & Bunny - The Movie- The Rising (2014):
       Title: Tiger & Bunny- The Beginning
   Unparsed Movie Title: Bill Burr- Paper Tiger (2019)
 Tiger & Bunny- The Beginning (2012):
-  Absolute Movie File Path: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)//media/video/movies/staging/Bill
-    Burr- Paper Tiger (2019)//media/video/movies/staging/Bill Burr- Paper Tiger (2019)//media/video/movies/staging/Bill
-    Burr- Paper Tiger (2019)//media/video/movies/staging/Bill Burr- Paper Tiger (2019)/
+  Absolute Movie File Path: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)/media/video/movies/staging/Bill
+    Burr- Paper Tiger (2019)/media/video/movies/staging/Bill Burr- Paper Tiger (2019)/media/video/movies/staging/Bill
+    Burr- Paper Tiger (2019)/media/video/movies/staging/Bill Burr- Paper Tiger (2019)/
   Absolute Movie Path: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)
   Parsed Movie Extension: mkv
-  Parsed Movie File: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)//media/video/movies/staging/Bill
-    Burr- Paper Tiger (2019)//media/video/movies/staging/Bill Burr- Paper Tiger (2019)//media/video/movies/staging/Bill
-    Burr- Paper Tiger (2019)//media/video/movies/staging/Bill Burr- Paper Tiger (2019)/
+  Parsed Movie File: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)/media/video/movies/staging/Bill
+    Burr- Paper Tiger (2019)/media/video/movies/staging/Bill Burr- Paper Tiger (2019)/media/video/movies/staging/Bill
+    Burr- Paper Tiger (2019)/media/video/movies/staging/Bill Burr- Paper Tiger (2019)/
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: movies/staging/Bill Burr- Paper Tiger (2019)
   Relative Movie Path: movies/staging/Bill Burr- Paper Tiger (2019)
@@ -13582,7 +13582,7 @@ Tiger & Bunny- The Beginning (2012):
         - Tiger & Bunny- The Rising
       Relative Show File Path: anime/staging/Tiger & Bunny/Season 00/Tiger & Bunny
         - S00E003 - Tiger & Bunny- The Rising Bluray-1080p.mkv
-      Season: None
+      Season: ''
       Show ID: 109
       Show Root Path: ''
       Symlinked: anime/staging/Tiger & Bunny/Season 00/Tiger & Bunny - S00E003 - Tiger
@@ -13634,14 +13634,14 @@ Top Gear- 50 Years Of Bond Cars (2012):
   Unparsed Movie Title: Top Gear- 50 Years of Bond Cars (2012)
 Top Gear- Apocalypse (2010):
   Absolute Movie File Path: /media/video/movies/documentaries/Top Gear- Apocalypse
-    (2010)//media/video/movies/documentaries/Top Gear- Apocalypse (2010)//media/video/movies/documentaries/Top
-    Gear- Apocalypse (2010)//media/video/movies/documentaries/Top Gear- Apocalypse
-    (2010)//media/video/movies/documentaries/Top Gear- Apocalypse (2010)/
+    (2010)/media/video/movies/documentaries/Top Gear- Apocalypse (2010)/media/video/movies/documentaries/Top
+    Gear- Apocalypse (2010)/media/video/movies/documentaries/Top Gear- Apocalypse
+    (2010)/media/video/movies/documentaries/Top Gear- Apocalypse (2010)/
   Absolute Movie Path: /media/video/movies/documentaries/Top Gear- Apocalypse (2010)
   Parsed Movie Extension: ''
-  Parsed Movie File: /media/video/movies/documentaries/Top Gear- Apocalypse (2010)//media/video/movies/documentaries/Top
-    Gear- Apocalypse (2010)//media/video/movies/documentaries/Top Gear- Apocalypse
-    (2010)//media/video/movies/documentaries/Top Gear- Apocalypse (2010)//media/video/movies/documentaries/Top
+  Parsed Movie File: /media/video/movies/documentaries/Top Gear- Apocalypse (2010)/media/video/movies/documentaries/Top
+    Gear- Apocalypse (2010)/media/video/movies/documentaries/Top Gear- Apocalypse
+    (2010)/media/video/movies/documentaries/Top Gear- Apocalypse (2010)/media/video/movies/documentaries/Top
     Gear- Apocalypse (2010)/
   Parsed Movie Quality: Bluray-720p.mkv
   Relative Movie File Path: movies/documentaries/Top Gear- Apocalypse (2010)
@@ -13940,19 +13940,19 @@ Top Gear- The Challenges 4 (2010):
   Unparsed Movie Title: Top Gear- The Challenges 4 (2010)
 Top Gear- The Great African Adventure (2013):
   Absolute Movie File Path: /media/video/movies/documentaries/Top Gear- The Great
-    African Adventure (2013)//media/video/movies/documentaries/Top Gear- The Great
-    African Adventure (2013)//media/video/movies/documentaries/Top Gear- The Great
-    African Adventure (2013)//media/video/movies/documentaries/Top Gear- The Great
-    African Adventure (2013)//media/video/movies/documentaries/Top Gear- The Great
+    African Adventure (2013)/media/video/movies/documentaries/Top Gear- The Great
+    African Adventure (2013)/media/video/movies/documentaries/Top Gear- The Great
+    African Adventure (2013)/media/video/movies/documentaries/Top Gear- The Great
+    African Adventure (2013)/media/video/movies/documentaries/Top Gear- The Great
     African Adventure (2013)/
   Absolute Movie Path: /media/video/movies/documentaries/Top Gear- The Great African
     Adventure (2013)
   Parsed Movie Extension: ''
   Parsed Movie File: /media/video/movies/documentaries/Top Gear- The Great African
-    Adventure (2013)//media/video/movies/documentaries/Top Gear- The Great African
-    Adventure (2013)//media/video/movies/documentaries/Top Gear- The Great African
-    Adventure (2013)//media/video/movies/documentaries/Top Gear- The Great African
-    Adventure (2013)//media/video/movies/documentaries/Top Gear- The Great African
+    Adventure (2013)/media/video/movies/documentaries/Top Gear- The Great African
+    Adventure (2013)/media/video/movies/documentaries/Top Gear- The Great African
+    Adventure (2013)/media/video/movies/documentaries/Top Gear- The Great African
+    Adventure (2013)/media/video/movies/documentaries/Top Gear- The Great African
     Adventure (2013)/
   Parsed Movie Quality: Bluray-720p.mkv
   Relative Movie File Path: movies/documentaries/Top Gear- The Great African Adventure
@@ -14043,17 +14043,17 @@ Top Gear- The Perfect Road Trip (2013):
   Unparsed Movie Title: Top Gear- The Perfect Road Trip (2014)
 Top Gear- The Perfect Road Trip 2 (2014):
   Absolute Movie File Path: /media/video/movies/documentaries/Top Gear- The Perfect
-    Road Trip 2 (2014)//media/video/movies/documentaries/Top Gear- The Perfect Road
-    Trip 2 (2014)//media/video/movies/documentaries/Top Gear- The Perfect Road Trip
-    2 (2014)//media/video/movies/documentaries/Top Gear- The Perfect Road Trip 2 (2014)//media/video/movies/documentaries/Top
+    Road Trip 2 (2014)/media/video/movies/documentaries/Top Gear- The Perfect Road
+    Trip 2 (2014)/media/video/movies/documentaries/Top Gear- The Perfect Road Trip
+    2 (2014)/media/video/movies/documentaries/Top Gear- The Perfect Road Trip 2 (2014)/media/video/movies/documentaries/Top
     Gear- The Perfect Road Trip 2 (2014)/
   Absolute Movie Path: /media/video/movies/documentaries/Top Gear- The Perfect Road
     Trip 2 (2014)
   Parsed Movie Extension: ''
   Parsed Movie File: /media/video/movies/documentaries/Top Gear- The Perfect Road
-    Trip 2 (2014)//media/video/movies/documentaries/Top Gear- The Perfect Road Trip
-    2 (2014)//media/video/movies/documentaries/Top Gear- The Perfect Road Trip 2 (2014)//media/video/movies/documentaries/Top
-    Gear- The Perfect Road Trip 2 (2014)//media/video/movies/documentaries/Top Gear-
+    Trip 2 (2014)/media/video/movies/documentaries/Top Gear- The Perfect Road Trip
+    2 (2014)/media/video/movies/documentaries/Top Gear- The Perfect Road Trip 2 (2014)/media/video/movies/documentaries/Top
+    Gear- The Perfect Road Trip 2 (2014)/media/video/movies/documentaries/Top Gear-
     The Perfect Road Trip 2 (2014)/
   Parsed Movie Quality: Bluray-1080p.mkv
   Relative Movie File Path: movies/documentaries/Top Gear- The Perfect Road Trip 2
