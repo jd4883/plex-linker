@@ -191,7 +191,7 @@ class Show(Movie, Globals):
 			g.LOG.error(backend.debug_message(620, g, self.show, self.episode_id))
 		
 		self.anime_status = \
-			bool()bool(self.lookup_anime_status())
+			bool(self.lookup_anime_status())
 		g.LOG.debug(backend.debug_message(621, g, self.anime_status))
 		
 		self.padding = \
