@@ -146,6 +146,7 @@ class Movie(Movies, Globals):
 				quality = str()
 		return str(quality)
 
+# TODO: make sure order allows everything to calculate from the API if not well defined
 
 class Show(Movie, Globals):
 	def __init__(self,
@@ -179,7 +180,7 @@ class Show(Movie, Globals):
 		self.episode_id = self.show_dictionary['Episode ID'] \
 			if 'Episode ID' in self.show_dictionary else self.set_episode_id(g)
 		g.LOG.debug(backend.debug_message(619, g, self.episode_id))
-		print(self.episode_id)
+		#print(self.episode_id)
 		if not self.episode_id:
 			print(f"EPISODE ID FAILED TO PROCESS FOR {self.show}")
 			raise
@@ -276,7 +277,7 @@ class Show(Movie, Globals):
 		path = self.show_dictionary['Relative Show File Path'] \
 			if self.show_dictionary \
 			else self.path_str(parse_relative_episode_file_path(self, self.episode_dict))
-		print(path)
+		#print(path)
 		if (not path) or (path == (None or str(None) or str())):
 			return str()
 		g.LOG.debug(backend.debug_message(633, g, path))
