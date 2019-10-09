@@ -3364,7 +3364,7 @@ Fate+Stay Night- Unlimited Blade Works (2010):
       Symlinked: ''
       Title: Fate/Stay Night- Unlimited Blade Works (2010)
   Title: Fate/Stay Night- Unlimited Blade Works (2010)
-"Fate+kaleid liner Prisma\u2606Illya Movie- Oath Under Snow (2017)":
+Fate+Kaleid Liner Prisma☆Illya Movie: Oath Under Snow (2017):
   Absolute Movie File Path: ''
   Absolute Movie Path: ''
   Movie DB ID: 461083
@@ -3375,24 +3375,22 @@ Fate+Stay Night- Unlimited Blade Works (2010):
   Relative Movie Path: ''
   Shows:
     Fate+Kaleid Liner Prisma Illya:
-      Absolute Episode: ''
+      Absolute Episode: '43'
       Anime: true
-      Episode: ''
+      Episode: '24'
       Episode ID: ''
-      Parsed Absolute Episode: ''
-      Parsed Episode: ''
+      Parsed Absolute Episode: '043'
+      Parsed Episode: '042'
       Parsed Relative Show Title: ''
       Parsed Season Folder: Season 00
-      Parsed Show Title: "anime/staging/Fate+Kaleid Liner Prisma Illya/Season 00/Fate+Kaleid\
-        \ Liner Prisma Illya - S00E - Fate/Kaleid Liner Prisma\u2606Illya Movie- Oath\
-        \ Under Snow (2017)"
+      Parsed Show Title: anime/staging/Fate+Kaleid Liner Prisma Illya/Season 00/Fate+Kaleid Liner Prisma Illya - S00E024 (E043) - Oath Under Snow
       Relative Show File Path: ''
       Season: '00'
       Show ID: ''
       Show Root Path: anime/staging/Fate+Kaleid Liner Prisma Illya
       Symlinked: ''
-      Title: "Fate/Kaleid Liner Prisma\u2606Illya Movie- Oath Under Snow (2017)"
-  Title: "Fate/Kaleid Liner Prisma\u2606Illya Movie- Oath Under Snow (2017)"
+      Title: Oath Under Snow
+  Title: Fate+Kaleid Liner Prisma☆Illya Movie: Oath Under Snow (2017)
 Fate+stay night- Heaven's Feel I. presage flower (2017):
   Absolute Movie File Path: ''
   Absolute Movie Path: ''
@@ -3406,21 +3404,20 @@ Fate+stay night- Heaven's Feel I. presage flower (2017):
     Fate+Stay Night- Unlimited Blade Works:
       Absolute Episode: ''
       Anime: true
-      Episode: ''
-      Episode ID: ''
+      Episode: '3'
+      Episode ID: '51924'
       Parsed Absolute Episode: ''
-      Parsed Episode: ''
+      Parsed Episode: '003'
       Parsed Relative Show Title: ''
       Parsed Season Folder: Season 00
       Parsed Show Title: anime/staging/Fate+Stay Night- Unlimited Blade Works/Season
-        00/Fate+Stay Night- Unlimited Blade Works - S00E - Fate/stay night- Heaven's
-        Feel I. presage flower (2017)
+        00/Fate+Stay Night- Unlimited Blade Works - S00E003 - Fate+Stay Night- Heaven's Feel - I. Presage Flower
       Relative Show File Path: ''
       Season: '00'
-      Show ID: ''
+      Show ID: '148'
       Show Root Path: anime/staging/Fate+Stay Night- Unlimited Blade Works
       Symlinked: ''
-      Title: Fate/stay night- Heaven's Feel I. presage flower (2017)
+      Title: Fate+Stay Night- Heaven's Feel - I. Presage Flower
   Title: Fate/stay night- Heaven's Feel I. presage flower (2017)
 "Fate+stay night- Heaven\u2019s Feel II. lost butterfly (2019)":
   Absolute Movie File Path: ''
@@ -3436,7 +3433,7 @@ Fate+stay night- Heaven's Feel I. presage flower (2017):
       Absolute Episode: ''
       Anime: true
       Episode: ''
-      Episode ID: ''
+      Episode ID: '4327'
       Parsed Absolute Episode: ''
       Parsed Episode: ''
       Parsed Relative Show Title: ''
@@ -3446,7 +3443,7 @@ Fate+stay night- Heaven's Feel I. presage flower (2017):
         s Feel II. lost butterfly (2019)"
       Relative Show File Path: ''
       Season: '00'
-      Show ID: ''
+      Show ID: '148'
       Show Root Path: anime/staging/Fate+Stay Night- Unlimited Blade Works
       Symlinked: ''
       Title: "Fate/stay night- Heaven\u2019s Feel II. lost butterfly (2019)"
@@ -3465,7 +3462,7 @@ Fate+stay night- Heaven's Feel I. presage flower (2017):
       Absolute Episode: ''
       Anime: true
       Episode: ''
-      Episode ID: ''
+      Episode ID: '51925'
       Parsed Absolute Episode: ''
       Parsed Episode: ''
       Parsed Relative Show Title: ''
@@ -3475,7 +3472,7 @@ Fate+stay night- Heaven's Feel I. presage flower (2017):
         s Feel III. spring song (2020)"
       Relative Show File Path: ''
       Season: '00'
-      Show ID: ''
+      Show ID: '148'
       Show Root Path: anime/staging/Fate+Stay Night- Unlimited Blade Works
       Symlinked: ''
       Title: "Fate/stay night- Heaven\u2019s Feel III. spring song (2020)"

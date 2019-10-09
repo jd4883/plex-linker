@@ -110,9 +110,10 @@ class Movie(Movies, Globals):
 	def parse_tmdbid(self, g):
 		tmdbID = str()
 		if 'tmdbId' in self.radarr_dictionary:
-			tmdbID = self.movie_dictionary['Movie DB ID'] = int(self.radarr_dictionary[0]['tmdbId']) if len(
-				self.radarr_dictionary) > 0 else str()
-			#print(g.radarr.get_movie_file(int(id))) if len(self.radarr_dictionary) > 0 else str()
+			if 'Movie DB ID' in self.movie_dictionary and self.movie_dictionary['Movie DB ID']:
+				tmdbID = self.movie_dictionary['Movie DB ID']
+			elif (int(self.radarr_dictionary[0][self.radarr_dictionary) > 0):
+				tmdbID = int(self.radarr_dictionary[0][self.radarr_dictionary)
 			g.radarr.rescan_movie(int(tmdbID)) if len(self.radarr_dictionary) > 0 else str()
 				# rescan movie in case it was picked up since last scan
 			g.radarr.refresh_movie(int(tmdbID)) if len(self.radarr_dictionary) > 0 else str()
@@ -155,6 +156,9 @@ class Show(Movie, Globals):
 	             show_dict = dict(),
 	             series_lookup = dict()):
 		super().__init__(film, movie_dict, g)
+		
+		# add better handling for titles with : and/or / in them from the API processing
+		
 		os.chdir(self.path_str(os.environ['DOCKER_MEDIA_PATH']))
 		self.parsed_episode = list()
 		self.movie_dictionary = movie_dict
@@ -169,7 +173,9 @@ class Show(Movie, Globals):
 		
 		g.LOG.debug(backend.debug_message(625, g, self.sonarr_show_dictionary))
 		
-		self.show_id = self.show_dictionary['Show ID'] = str(parse_show_id(self.show, g))
+		self.show_id = self.show_dictionary['Show ID'] \
+			if 'Show ID' in self.show_dictionary \
+			else str(parse_show_id(self.show, g))
 		g.LOG.debug(backend.debug_message(618, g,self.show_id))
 		self.episode_id = self.show_dictionary['Episode ID'] = self.set_episode_id(g)
 		g.LOG.debug(backend.debug_message(619, g, self.episode_id))
