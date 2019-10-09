@@ -2,7 +2,7 @@ import os
 import subprocess
 
 import messaging.frontend as message
-
+import messaging.backend as backend
 
 def symlink_force(show, g):
 	message.method_launch(g)
@@ -17,7 +17,7 @@ def symlink_force(show, g):
 		show.link_status = strip_quotes_from_string(get_symlink_string(process)).replace('b"', str())[:-3].rstrip()
 		# -3 covers the link not having the newline character at the end, if this is fixed this should be -1 instead
 		if show.link_status:
-			print(f"Created new Show Link: {show.link_status}")
+			g.LOG.info(backend.debug_message(642, g, show.link_status))
 	else:
 		print(f'no link created for {show.absolute_movie_file_path}')
 		show.link_status = str()

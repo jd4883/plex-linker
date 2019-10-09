@@ -136,6 +136,22 @@ def debug_message(status_code, g, var1 = str(), var2 = str()):
 	elif status_code == 637:
 		g.message1 = format_string(f"parsed show title:")
 		g.message2 = f"{var1}"
+	elif status_code == 638:
+		g.message1 = format_string(f"conditional met - no series found to link:")
+		g.message2 = f"{var1}"
+	elif status_code == 639:
+		g.message1 = format_string(f"conditional met - no series found in dictionary:")
+		g.message2 = f"{var1}"
+	elif status_code == 640:
+		g.message1 = format_string(f"conditional met - linking already completed:")
+		g.message2 = f"{var1}"
+	elif status_code == 641:
+		g.message1 = format_string(f"generating new link:")
+		g.message2 = f"{var1}"
+		g.message3 = f"--> {var2}"
+	elif status_code == 642:
+		g.message1 = format_string(f"Checking Link status for:")
+		g.message2 = f"{var1}"
 	elif status_code == -1:
 		g.message1 = format_string(
 				f"boss, you've indicated this {status_code} is an error that warrants exiting. check yo code!!")

@@ -13,6 +13,7 @@ class PlexAPI(object):
 	def __init__(self):
 		self.host_url = baseurl = str(environ['PLEX_URL'])
 		self.api_key = token = pathlib.Path('/run/secrets/plex_api_key').read_text().replace('\n', '')
+		# make a method to handle either secrets or envars
 		self.plex = PlexServer(baseurl, token)
 
 # going to add some combination of example 2 and example 4 or example #6
@@ -24,7 +25,6 @@ class PlexAPI(object):
 # die_hard = movies.movies_gets('Elephants Dream')
 # director = die_hard.directors[0]
 # for movie in movies.search(None, director=director):
-# 	print(movie.title)
 
 # Example 4: Play the movie Cars on another client.
 # Note: Client must be on same network as server.
