@@ -170,7 +170,6 @@ class Show(Movie, Globals):
 		self.sonarr_show_dictionary = series_lookup
 		self.sonarr_api_query = self.parse_sonarr_api_query_results(g)
 		self.link_status = str(self.show_dictionary['Symlinked'])
-		
 		g.LOG.debug(backend.debug_message(625, g, self.sonarr_show_dictionary))
 		
 		self.show_id = self.show_dictionary['Show ID'] \
@@ -180,6 +179,7 @@ class Show(Movie, Globals):
 		self.episode_id = self.show_dictionary['Episode ID'] \
 			if 'Episode ID' in self.show_dictionary else self.set_episode_id(g)
 		g.LOG.debug(backend.debug_message(619, g, self.episode_id))
+		print(self.episode_id)
 		if not self.episode_id:
 			print(f"EPISODE ID FAILED TO PROCESS FOR {self.show}")
 			raise
@@ -191,7 +191,7 @@ class Show(Movie, Globals):
 			g.LOG.error(backend.debug_message(620, g, self.show, self.episode_id))
 		
 		self.anime_status = \
-			bool(self.lookup_anime_status())
+			bool()bool(self.lookup_anime_status())
 		g.LOG.debug(backend.debug_message(621, g, self.anime_status))
 		
 		self.padding = \
