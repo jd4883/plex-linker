@@ -112,8 +112,8 @@ class Movie(Movies, Globals):
 		if 'tmdbId' in self.radarr_dictionary:
 			if 'Movie DB ID' in self.movie_dictionary and self.movie_dictionary['Movie DB ID']:
 				tmdbID = self.movie_dictionary['Movie DB ID']
-			elif (int(self.radarr_dictionary[0][self.radarr_dictionary) > 0):
-				tmdbID = int(self.radarr_dictionary[0][self.radarr_dictionary)
+			elif 'tmdbId' in self.radarr_dictionary[0] and int(self.radarr_dictionary[0]['tmdbId']) > 0:
+				tmdbID = int(self.radarr_dictionary[0]['tmdbId'])
 			g.radarr.rescan_movie(int(tmdbID)) if len(self.radarr_dictionary) > 0 else str()
 				# rescan movie in case it was picked up since last scan
 			g.radarr.refresh_movie(int(tmdbID)) if len(self.radarr_dictionary) > 0 else str()
