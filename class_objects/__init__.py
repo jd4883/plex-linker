@@ -177,7 +177,8 @@ class Show(Movie, Globals):
 			if 'Show ID' in self.show_dictionary \
 			else str(parse_show_id(self.show, g))
 		g.LOG.debug(backend.debug_message(618, g,self.show_id))
-		self.episode_id = self.show_dictionary['Episode ID'] = self.set_episode_id(g)
+		self.episode_id = self.show_dictionary['Episode ID'] \
+			if 'Episode ID' in self.show_dictionary else self.set_episode_id(g)
 		g.LOG.debug(backend.debug_message(619, g, self.episode_id))
 		if not self.episode_id:
 			print(f"EPISODE ID FAILED TO PROCESS FOR {self.show}")
