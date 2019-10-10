@@ -150,7 +150,7 @@ def debug_message(status_code, g, var1 = str(), var2 = str()):
 		g.message2 = f"{var1}"
 		g.message3 = f"--> {var2}"
 	elif status_code == 642:
-		g.message1 = format_string(f"Checking Link status for:")
+		g.message1 = format_string(f"Link Created:")
 		g.message2 = f"{var1}"
 	elif status_code == -1:
 		g.message1 = format_string(
