@@ -62,14 +62,13 @@ class Movie(Movies, Globals):
 		super().__init__()
 		self.movie_dictionary = movie_dict
 		g.LOG.debug(backend.debug_message(627, g, self.movie_dictionary))
-		self.radarr_dictionary = g.radarr.lookup_movie(movie)
+		self.radarr_dictionary = g.radarr.lookup_movie(movie, g)
 		
 		g.LOG.debug(backend.debug_message(628, g, self.radarr_dictionary))
 		self.tmbdid = str(self.parse_tmdbid(g))
-		#print(g.radarr.get_movie_file(self.tmbdid))
 		self.movie_title = \
 			self.movie_dictionary['Title'] = str(parse_movie_title(self.radarr_dictionary, movie))
-		g.LOG.debug(backend.debug_message(613, g, str(self.movie_title)))
+		g.LOG.info(backend.debug_message(613, g, str(self.movie_title)))
 		
 		self.movie_file = \
 			self.movie_dictionary['Movie File'] = \
@@ -80,32 +79,32 @@ class Movie(Movies, Globals):
 		
 		self.absolute_movie_path =\
 			self.movie_dictionary['Absolute Movie Path'] =\
-			str(get_movie_path(self, g))
-		
-		g.LOG.debug(backend.debug_message(614, g, str(self.absolute_movie_path)))
-		self.extension = self.movie_dictionary['Parsed Movie Extension'] = str()
-		self.quality = self.movie_dictionary['Parsed Movie Quality'] = str()
+			str(os.environ['DOCKER_MEDIA_PATH']) + str(g.radarr_dictionary['path']) if 'path' in self.radarr_dictionary \
+				else str(get_movie_path(self, g))
+		g.LOG.info(backend.debug_message(614, g, str(self.absolute_movie_path)))
+		self.extension = self.movie_dictionary['Parsed Movie Extension'] = str()  # drop in values or remove
+		self.quality = self.movie_dictionary['Parsed Movie Quality'] = str() # drop in values or remove
 		validate_extensions_from_movie_file(self, g)
 		self.quality = str(self.parse_quality())
-		g.LOG.debug(backend.debug_message(608, g, str(self.extension)))
-		g.LOG.debug(backend.debug_message(612, g, str(self.quality)))
-		g.LOG.debug(backend.debug_message(610, g, str(self.movie_file)))
+		g.LOG.info(backend.debug_message(608, g, str(self.extension)))
+		g.LOG.info(backend.debug_message(612, g, str(self.quality)))
+		g.LOG.info(backend.debug_message(610, g, str(self.movie_file)))
 		
-		
+		# TODO: Make sure that these still align with the API from what I've grabebed with the globals dict
 		
 		# from API
 		self.relative_movie_path = \
 			self.movie_dictionary['Relative Movie Path'] = \
 			str(parse_relpath(self, g, media_path))
-		g.LOG.debug(backend.debug_message(617, g, self.relative_movie_path))
+		g.LOG.info(backend.debug_message(617, g, self.relative_movie_path))
 		
 		self.absolute_movie_file_path = self.movie_dictionary['Absolute Movie File Path'] = str(
 				get_absolute_movie_file_path(self))
-		g.LOG.debug(backend.debug_message(615, g, str(self.absolute_movie_file_path)))
+		g.LOG.info(backend.debug_message(615, g, str(self.absolute_movie_file_path)))
 		
 		self.relative_movie_file_path = \
 			self.movie_dictionary['Relative Movie File Path'] = str(get_relative_movie_file_path(self))
-		g.LOG.debug(backend.debug_message(616, g, self.relative_movie_file_path))
+		g.LOG.info(backend.debug_message(616, g, self.relative_movie_file_path))
 	
 	def parse_tmdbid(self, g):
 		tmdbID = str()
@@ -159,37 +158,34 @@ class Show(Movie, Globals):
 		super().__init__(film, movie_dict, g)
 		
 		# add better handling for titles with : and/or / in them from the API processing
-		
-		os.chdir(self.path_str(os.environ['DOCKER_MEDIA_PATH']))
-		self.parsed_episode = list()
-		self.movie_dictionary = movie_dict
-		self.show = series
-		self.show_dictionary = show_dict
-		if 'Parsed Relative Show Title' in self.show_dictionary:
-			del self.show_dictionary['Parsed Relative Show Title']
-		g.LOG.debug(backend.debug_message(624, g, self.show_dictionary))
 		self.sonarr_show_dictionary = series_lookup
 		self.sonarr_api_query = self.parse_sonarr_api_query_results(g)
-		self.link_status = str(self.show_dictionary['Symlinked'])
-		g.LOG.debug(backend.debug_message(625, g, self.sonarr_show_dictionary))
+		self.show = series
+		self.movie_dictionary = movie_dict
+		self.show_dictionary = show_dict
 		
 		self.show_id = self.show_dictionary['Show ID'] \
 			if 'Show ID' in self.show_dictionary \
 			else str(parse_show_id(self.show, g))
-		g.LOG.debug(backend.debug_message(618, g,self.show_id))
+		g.LOG.debug(backend.debug_message(618, g, self.show_id))
 		self.episode_id = self.show_dictionary['Episode ID'] \
 			if 'Episode ID' in self.show_dictionary else self.set_episode_id(g)
 		g.LOG.debug(backend.debug_message(619, g, self.episode_id))
-		#print(self.episode_id)
-		if not self.episode_id:
-			print(f"EPISODE ID FAILED TO PROCESS FOR {self.show}")
-			raise
-		
 		try:
 			g.sonarr.rescan_series(int(self.show_id))  # rescan movie in case it was picked up since last scan
 			g.sonarr.refresh_series(int(self.show_id))  # to ensure metadata is up to date
 		except ValueError:
 			g.LOG.error(backend.debug_message(620, g, self.show, self.episode_id))
+		
+		os.chdir(self.path_str(os.environ['DOCKER_MEDIA_PATH']))
+		self.parsed_episode = list()
+		g.LOG.debug(backend.debug_message(624, g, self.show_dictionary))
+		
+		self.link_status = \
+			str(self.show_dictionary['Symlinked']) \
+				if ('Symlinked' in self.show_dictionary) \
+				   and self.show_dictionary['Symlinked'] else str()
+		g.LOG.debug(backend.debug_message(625, g, self.sonarr_show_dictionary))
 		
 		self.anime_status = \
 			bool(self.lookup_anime_status())

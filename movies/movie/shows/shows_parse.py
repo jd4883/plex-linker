@@ -9,12 +9,9 @@ from movies.movie.shows.shows_validation import linking_can_be_skipped
 
 def parse_show_to_link(show, g):
 	message.method_launch(g)
-	
 	for _ in show.shows_dictionary.items():
 		if validate.link_ready(show.quality):
 			symlink_force(show, g)
-			#show.absolute_movie_path = show.movie_dict['Absolute Movie Path'] = str(get_movie_path(show, g))
-			#show.relative_movie_path = show.movie_dict['Relative Movie Path'] = str(get_relative_movie_path(show))
 			set_permissions(show, g)
 	message.method_exit(g)
 

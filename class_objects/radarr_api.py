@@ -28,8 +28,15 @@ class RadarrAPI(object):
 	def get_movie_library(self):
 		return self.request_get(f"{self.host_url}/movie").json()
 	
-	def lookup_movie(self, query):
-		return self.request_get(f"{self.host_url}/movie/lookup?term={query}").json()
+	def lookup_movie(self, query, g):
+		query = self.request_get(f"{self.host_url}/movie/lookup?term={query}").json()
+		for i in g.movies_dictionary:
+			# checks global movie dictionary and takes more accurate entry until the Radarr API lookup endpoint is
+			# updated to reflect a users library rather than IMDB
+			if 'tmdbId' in query and i['tmdbId'] == query[0]['tmdbId']:
+				query[0] = i
+				break
+		return query
 	
 	def request_get(self, url, data=dict()):
 		return requests.get(url, headers={'X-Api-Key': self.api_key}, json=data)

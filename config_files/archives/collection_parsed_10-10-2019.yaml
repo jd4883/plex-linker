@@ -2697,17 +2697,17 @@ Dream 9 Toriko & One Piece & Dragon Ball Z Super Collaboration Special!! (2013):
     Dragon Ball Z:
       Anime: true
       Episode: '2'
-      Episode ID: '669'
+      Episode ID: '689'
       Parsed Episode: '002'
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E002
-        - The World's Strongest
+      Parsed Show Title: "anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E002\
+        \ - Dream 9 Toriko & One Piece & Dragon Ball Z Ch\u014D Collaboration Special!!"
       Relative Show File Path: ''
       Season: '00'
       Show ID: '37'
       Show Root Path: anime/shounen/Dragon Ball Z
       Symlinked: ''
-      Title: The World's Strongest
+      Title: "Dream 9 Toriko & One Piece & Dragon Ball Z Ch\u014D Collaboration Special!!"
     One Piece:
       Absolute Episode: '590'
       Anime: true
@@ -2826,7 +2826,10 @@ Episode of Sabo - The Three Brothers' Bond - The Miraculous Reunion (2015):
       Season: '00'
       Show ID: '86'
       Show Root Path: anime/shounen/One Piece
-      Symlinked: ''
+      Symlinked: anime/shounen/One Piece/Season 00/One Piece - S00E03 - Adventure
+        in the Ocean\s Navel SDTV.avi" -> \../../../../movies/foreign/Episode of Sabo
+        - The Three Brothers\\\\\ Bond - The Miraculous Reunion (2015)/Episode of
+        Sabo- The Three Brothers\\\\\ Bond - The Miraculous Reunion (2015) Bluray-1080p.mkv
       Title: Adventure in the Ocean's Navel
   Title: Episode of Sabo- The Three Brothers' Bond - The Miraculous Reunion (2015)
 Escaflowne- The Movie (2000):
@@ -4197,20 +4200,14 @@ Ghost in the Shell- Stand Alone Complex - Solid State Society (2006):
       Title: Solid State Society
   Title: Ghost in the Shell- Stand Alone Complex - Solid State Society (2007)
 Ghost in the Shell- Stand Alone Complex - The Laughing Man (2005):
-  Absolute Movie File Path: "/media/video/movies/foreign/Ghost in the Shell- Stand\
-    \ Alone Complex - The Laughing Man (2005)/\u653B\u6BBB\u6A5F\u52D5\u968A STAND\
-    \ ALONE COMPLEX The Laughing Man (2004) Bluray-1080p.mkv"
-  Absolute Movie Path: /media/video/movies/foreign/Ghost in the Shell- Stand Alone
-    Complex - The Laughing Man (2005)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 18839
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: "movies/foreign/Ghost in the Shell- Stand Alone Complex\
-    \ - The Laughing Man (2005)/\u653B\u6BBB\u6A5F\u52D5\u968A STAND ALONE COMPLEX\
-    \ The Laughing Man (2004) Bluray-1080p.mkv"
-  Relative Movie Path: movies/foreign/Ghost in the Shell- Stand Alone Complex - The
-    Laughing Man (2005)
+  Relative Movie File Path: ''
+  Relative Movie Path: ''
   Shows:
     Ghost in the Shell- Stand Alone Complex:
       Anime: true
@@ -4226,7 +4223,7 @@ Ghost in the Shell- Stand Alone Complex - The Laughing Man (2005):
       Show Root Path: anime/staging/Ghost in the Shell- Stand Alone Complex
       Symlinked: ''
       Title: The Laughing Man
-  Title: Ghost in the Shell- Stand Alone Complex - The Laughing Man (2005)
+  Title: Ghost in the Shell- Stand Alone Complex - The Laughing Man (2007)
 Gintama- The Best of Gintama on Theater 2D (2012):
   Absolute Movie File Path: /media/video/movies/foreign/Gintama- The Best of Gintama
     on Theater 2D (2012)/Gintama- The Best of Gintama on Theater 2D (2012) DVD.mkv
@@ -4715,23 +4712,18 @@ Hajime no Ippo- Mashiba vs. Kimura (2003):
       Title: Kimura vs Mashiba
   Title: Hajime no Ippo- Mashiba vs. Kimura (2003)
 "Hayate the Combat Butler \xD7 The World God Only Knows\xB7 Joint Concert 2013 Today, full bloom Sakura color! (2013)":
-  Absolute Movie File Path: "/media/video/movies/foreign/Hayate the Combat Butler\
-    \ \xD7 The World God Only Knows\xB7 Joint Concert 2013 Today, full bloom Sakura\
-    \ color! (2013)/"
-  Absolute Movie Path: "/media/video/movies/foreign/Hayate the Combat Butler \xD7\
-    \ The World God Only Knows\xB7 Joint Concert 2013 Today, full bloom Sakura color!\
-    \ (2013)"
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 483487
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
   Relative Movie File Path: ''
-  Relative Movie Path: "movies/foreign/Hayate the Combat Butler \xD7 The World God\
-    \ Only Knows\xB7 Joint Concert 2013 Today, full bloom Sakura color! (2013)"
+  Relative Movie Path: ''
   Shows:
     The World God Only Knows: null
   Title: "Hayate the Combat Butler \xD7 The World God Only Knows\xB7 Joint Concert\
-    \ 2013 Today, full bloom Sakura color! (2013)"
+    \ 2013 \"Today, full bloom Sakura color!\" (2013)"
 High School of the Dead OVA- Drifters of the Dead (2011):
   Absolute Movie File Path: /media/video/movies/foreign/High School of the Dead OVA-
     Drifters of the Dead (2011)/High School of the Dead OVA- Drifters of the Dead
@@ -4998,17 +4990,14 @@ Jeff Dunham - All Over the Map (2014):
       Title: All Over the Map
   Title: Jeff Dunham- All Over the Map (2014)
 Jeff Dunham - Arguing with Myself (2006):
-  Absolute Movie File Path: /media/video/movies/standup_comedy/Jeff Dunham - Arguing
-    with Myself (2006)/Jeff Dunham- Arguing with Myself (2006) Bluray-1080p.mkv
-  Absolute Movie Path: /media/video/movies/standup_comedy/Jeff Dunham - Arguing with
-    Myself (2006)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 14542
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: movies/standup_comedy/Jeff Dunham - Arguing with Myself
-    (2006)/Jeff Dunham- Arguing with Myself (2006) Bluray-1080p.mkv
-  Relative Movie Path: movies/standup_comedy/Jeff Dunham - Arguing with Myself (2006)
+  Relative Movie File Path: ''
+  Relative Movie Path: ''
   Shows:
     The Jeff Dunham Show:
       Anime: false
@@ -5024,19 +5013,16 @@ Jeff Dunham - Arguing with Myself (2006):
       Show Root Path: tv/staging/The Jeff Dunham Show
       Symlinked: ''
       Title: Arguing with Myself
-  Title: Jeff Dunham - Arguing with Myself (2006)
+  Title: Jeff Dunham- Arguing with Myself (2006)
 Jeff Dunham - Birth of a Dummy (2011):
-  Absolute Movie File Path: /media/video/movies/standup_comedy/Jeff Dunham - Birth
-    of a Dummy (2011)/Jeff Dunham- Birth of a Dummy (2011) HDTV-720p Proper.mkv
-  Absolute Movie Path: /media/video/movies/standup_comedy/Jeff Dunham - Birth of a
-    Dummy (2011)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 88902
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: movies/standup_comedy/Jeff Dunham - Birth of a Dummy (2011)/Jeff
-    Dunham- Birth of a Dummy (2011) HDTV-720p Proper.mkv
-  Relative Movie Path: movies/standup_comedy/Jeff Dunham - Birth of a Dummy (2011)
+  Relative Movie File Path: ''
+  Relative Movie Path: ''
   Shows:
     The Jeff Dunham Show:
       Anime: false
@@ -5052,7 +5038,7 @@ Jeff Dunham - Birth of a Dummy (2011):
       Show Root Path: tv/staging/The Jeff Dunham Show
       Symlinked: ''
       Title: Birth of a Dummy
-  Title: Jeff Dunham - Birth of a Dummy (2011)
+  Title: Jeff Dunham- Birth of a Dummy (2011)
 Jeff Dunham - Controlled Chaos (2011):
   Absolute Movie File Path: ''
   Absolute Movie Path: ''
@@ -5564,21 +5550,14 @@ Kono Subarashii Sekai ni Shukufuku wo! God's Blessings on This Wonderful Choker!
   Title: Kono Subarashii Sekai ni Shukufuku wo! God's Blessings on This Wonderful
     Choker! (2016)
 Koukyoushihen- Eureka Seven - Hi-Evolution 1 (2017):
-  Absolute Movie File Path: "/media/video/movies/foreign/Koukyoushihen- Eureka Seven\
-    \ - Hi-Evolution 1 (2017)/\u4EA4\u97FF\u8A69\u7BC7\u30A8\u30A6\u30EC\u30AB\u30BB\
-    \u30D6\u30F3 \u30CF\u30A4\u30A8\u30DC\u30EA\u30E5\u30FC\u30B7\u30E7\u30F3 1 (2017)\
-    \ Remux-1080p.mkv"
-  Absolute Movie Path: /media/video/movies/foreign/Koukyoushihen- Eureka Seven - Hi-Evolution
-    1 (2017)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 467169
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: "movies/foreign/Koukyoushihen- Eureka Seven - Hi-Evolution\
-    \ 1 (2017)/\u4EA4\u97FF\u8A69\u7BC7\u30A8\u30A6\u30EC\u30AB\u30BB\u30D6\u30F3\
-    \ \u30CF\u30A4\u30A8\u30DC\u30EA\u30E5\u30FC\u30B7\u30E7\u30F3 1 (2017) Remux-1080p.mkv"
-  Relative Movie Path: movies/foreign/Koukyoushihen- Eureka Seven - Hi-Evolution 1
-    (2017)
+  Relative Movie File Path: ''
+  Relative Movie Path: ''
   Shows:
     Eureka Seven:
       Anime: true
@@ -5599,7 +5578,7 @@ Koukyoushihen- Eureka Seven - Hi-Evolution 1 (2017):
         \xe3\x83\x8f\xe3\x82\xa4\xe3\x82\xa8\xe3\x83\x9c\xe3\x83\xaa\xe3\x83\xa5\xe3\x83\xbc\xe3\x82\xb7\xe3\x83\xa7\xe3\x83\xb3
         1 (2017) Remux-1080p.mkv
       Title: Navigation ray=out
-  Title: Koukyoushihen- Eureka Seven - Hi-Evolution 1 (2017)
+  Title: Koukyoushihen- Eureka Seven - Hi-Evolution 1 (2018)
 L- Change the World (2008):
   Absolute Movie File Path: "/media/video/movies/foreign/L- Change the World (2008)/L\u306E\
     \u672C\u5F53\u306E\u79D8\u5BC6 (2008) Bluray-1080p.mkv"
@@ -6766,18 +6745,14 @@ Mushishi- The Shadow That Devours the Sun (2014):
       Title: The Shadow That Devours the Sun
   Title: Mushishi- The Shadow That Devours the Sun (2014)
 My Hero Academia - Two Heroes (2018):
-  Absolute Movie File Path: "/media/video/movies/foreign/My Hero Academia - Two Heroes\
-    \ (2018)/\u50D5\u306E\u30D2\u30FC\u30ED\u30FC\u30A2\u30AB\u30C7\u30DF\u30A2 THE\
-    \ MOVIE \uFF5E2\u4EBA\u306E\u82F1\u96C4\uFF5E (2018) Remux-1080p.mkv"
-  Absolute Movie Path: /media/video/movies/foreign/My Hero Academia - Two Heroes (2018)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 505262
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: "movies/foreign/My Hero Academia - Two Heroes (2018)/\u50D5\
-    \u306E\u30D2\u30FC\u30ED\u30FC\u30A2\u30AB\u30C7\u30DF\u30A2 THE MOVIE \uFF5E\
-    2\u4EBA\u306E\u82F1\u96C4\uFF5E (2018) Remux-1080p.mkv"
-  Relative Movie Path: movies/foreign/My Hero Academia - Two Heroes (2018)
+  Relative Movie File Path: ''
+  Relative Movie Path: ''
   Shows:
     My Hero Academia:
       Anime: true
@@ -6793,7 +6768,7 @@ My Hero Academia - Two Heroes (2018):
       Show Root Path: anime/shounen/My Hero Academia
       Symlinked: ''
       Title: My Hero Academia the Movie The Two Heroes
-  Title: My Hero Academia - Two Heroes (2018)
+  Title: My Hero Academia- Two Heroes (2018)
 My Name Is Bruce (2007):
   Absolute Movie File Path: /media/video/movies/horror/My Name Is Bruce (2007)/My
     Name Is Bruce (2007) Bluray-1080p.mkv
@@ -7057,22 +7032,14 @@ Naruto the Movie- Legend of the Stone of Gelel (2005):
       Title: Naruto the Movie 2 Legend of the Stone of Gelel
   Title: Naruto the Movie- Legend of the Stone of Gelel (2005)
 Naruto the Movie- Ninja Clash in the Land of Snow (2004):
-  Absolute Movie File Path: "/media/video/movies/foreign/Naruto the Movie- Ninja Clash\
-    \ in the Land of Snow (2004)/\u5287\u5834\u7248 NARUTO-\u30CA\u30EB\u30C8- \u5927\
-    \u6D3B\u5287\uFF01\u96EA\u59EB\u5FCD\u6CD5\u5E16\u3060\u3063\u3066\u3070\u3088\
-    \uFF01\uFF01 (2004) Bluray-1080p.mkv"
-  Absolute Movie Path: /media/video/movies/foreign/Naruto the Movie- Ninja Clash in
-    the Land of Snow (2004)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 16907
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: "movies/foreign/Naruto the Movie- Ninja Clash in the Land\
-    \ of Snow (2004)/\u5287\u5834\u7248 NARUTO-\u30CA\u30EB\u30C8- \u5927\u6D3B\u5287\
-    \uFF01\u96EA\u59EB\u5FCD\u6CD5\u5E16\u3060\u3063\u3066\u3070\u3088\uFF01\uFF01\
-    \ (2004) Bluray-1080p.mkv"
-  Relative Movie Path: movies/foreign/Naruto the Movie- Ninja Clash in the Land of
-    Snow (2004)
+  Relative Movie File Path: ''
+  Relative Movie Path: ''
   Shows:
     Naruto:
       Anime: true
@@ -7088,7 +7055,7 @@ Naruto the Movie- Ninja Clash in the Land of Snow (2004):
       Show Root Path: anime/shounen/Naruto
       Symlinked: ''
       Title: Naruto the Movie Ninja Clash in the Land of Snow
-  Title: Naruto the Movie- Ninja Clash in the Land of Snow (2004)
+  Title: Naruto the Movie- Ninja Clash in the Land of Snow (2007)
 Naruto- Find the Crimson Four-leaf Clover! (2003):
   Absolute Movie File Path: /media/video/movies/foreign/Naruto- Find the Crimson Four-leaf
     Clover! (2003)/Naruto- Find the Crimson Four-leaf Clover! (2003) Bluray-720p.mkv
@@ -7459,19 +7426,14 @@ One Piece - Chopper's Kingdom on the Island of Strange Animals (2002):
       Title: Chopper's Kingdom on the Island of Strange Animals
   Title: One Piece- Chopper's Kingdom on the Island of Strange Animals (2002)
 One Piece - Clockwork Island Adventure (2001):
-  Absolute Movie File Path: "/media/video/movies/foreign/One Piece - Clockwork Island\
-    \ Adventure (2001)/\u30EF\u30F3\u30D4\u30FC\u30B9 \u30B6 \u30E0\u30FC\u30D3\u30FC\
-    \ \u306D\u3058\u307E\u304D\u5CF6\u306E\u5192\u967A (2001) Bluray-1080p.mkv"
-  Absolute Movie Path: /media/video/movies/foreign/One Piece - Clockwork Island Adventure
-    (2001)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 23446
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: "movies/foreign/One Piece - Clockwork Island Adventure\
-    \ (2001)/\u30EF\u30F3\u30D4\u30FC\u30B9 \u30B6 \u30E0\u30FC\u30D3\u30FC \u306D\
-    \u3058\u307E\u304D\u5CF6\u306E\u5192\u967A (2001) Bluray-1080p.mkv"
-  Relative Movie Path: movies/foreign/One Piece - Clockwork Island Adventure (2001)
+  Relative Movie File Path: ''
+  Relative Movie Path: ''
   Shows:
     One Piece:
       Anime: true
@@ -7487,21 +7449,16 @@ One Piece - Clockwork Island Adventure (2001):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: Clockwork Island Adventure
-  Title: One Piece - Clockwork Island Adventure (2001)
+  Title: One Piece- Clockwork Island Adventure (2001)
 One Piece - Curse of the Sacred Sword (2004):
-  Absolute Movie File Path: "/media/video/movies/foreign/One Piece - Curse of the\
-    \ Sacred Sword (2004)/\u30EF\u30F3\u30D4\u30FC\u30B9 \u546A\u308F\u308C\u305F\u8056\
-    \u5263 (2004) Bluray-1080p.mkv"
-  Absolute Movie Path: /media/video/movies/foreign/One Piece - Curse of the Sacred
-    Sword (2004)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 44728
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: "movies/foreign/One Piece - Curse of the Sacred Sword\
-    \ (2004)/\u30EF\u30F3\u30D4\u30FC\u30B9 \u546A\u308F\u308C\u305F\u8056\u5263 (2004)\
-    \ Bluray-1080p.mkv"
-  Relative Movie Path: movies/foreign/One Piece - Curse of the Sacred Sword (2004)
+  Relative Movie File Path: ''
+  Relative Movie Path: ''
   Shows:
     One Piece:
       Anime: true
@@ -7516,13 +7473,9 @@ One Piece - Curse of the Sacred Sword (2004):
       Season: '00'
       Show ID: '86'
       Show Root Path: anime/shounen/One Piece
-      Symlinked: anime/shounen/One Piece/Season 00/One Piece - S00E01 - One Piece
-        - Defeat the Pirate Ganzack! (OVA 1) DVD.avi -> ../../../../movies/foreign/One
-        Piece - Curse of the Sacred Sword (2004)/\xe3\x83\xaf\xe3\x83\xb3\xe3\x83\x94\xe3\x83\xbc\xe3\x82\xb9
-        \xe5\x91\xaa\xe3\x82\x8f\xe3\x82\x8c\xe3\x81\x9f\xe8\x81\x96\xe5\x89\xa3 (2004)
-        Bluray-1080p.mkv
+      Symlinked: ''
       Title: One Piece Defeat the Pirate Ganzack! (OVA 1)
-  Title: One Piece - Curse of the Sacred Sword (2004)
+  Title: One Piece- Curse of the Sacred Sword (2004)
 One Piece - Dead End Adventure (2003):
   Absolute Movie File Path: ''
   Absolute Movie Path: ''
@@ -7623,7 +7576,9 @@ One Piece - Episode of Skypiea (2018):
       Season: '00'
       Show ID: '86'
       Show Root Path: anime/shounen/One Piece
-      Symlinked: ''
+      Symlinked: anime/shounen/One Piece/Season 00/One Piece - S00E03 - Adventure
+        in the Ocean\s Navel SDTV.avi" -> \../../../../movies/foreign/One Piece -
+        Episode of Skypiea (2018)/One Piece- Episode of Skypiea (2018) Bluray-1080p.mkv
       Title: Adventure in the Ocean's Navel
   Title: One Piece- Episode of Skypiea (2018)
 One Piece - Giant Mecha Soldier of Karakuri Castle (2006):
@@ -7704,19 +7659,14 @@ One Piece - Jango's Dance Carnival (2001):
       Title: Jango's Dance Carnival
   Title: One Piece- Jango's Dance Carnival (2001)
 One Piece - Romance Dawn Story (2008):
-  Absolute Movie File Path: "/media/video/movies/foreign/One Piece - Romance Dawn\
-    \ Story (2008)/\u30EF\u30F3\u30D4\u30FC\u30B9 \u30ED\u30DE\u30F3\u30B9\u30C9\u30FC\
-    \u30F3\u30B9\u30C8\u30FC\u30EA\u30FC (2008) Bluray-720p.mkv"
-  Absolute Movie Path: /media/video/movies/foreign/One Piece - Romance Dawn Story
-    (2008)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 422807
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: "movies/foreign/One Piece - Romance Dawn Story (2008)/\u30EF\
-    \u30F3\u30D4\u30FC\u30B9 \u30ED\u30DE\u30F3\u30B9\u30C9\u30FC\u30F3\u30B9\u30C8\
-    \u30FC\u30EA\u30FC (2008) Bluray-720p.mkv"
-  Relative Movie Path: movies/foreign/One Piece - Romance Dawn Story (2008)
+  Relative Movie File Path: ''
+  Relative Movie Path: ''
   Shows:
     One Piece:
       Anime: true
@@ -7731,25 +7681,18 @@ One Piece - Romance Dawn Story (2008):
       Season: '00'
       Show ID: '86'
       Show Root Path: anime/shounen/One Piece
-      Symlinked: anime/shounen/One Piece/Season 00/One Piece - S00E01 - One Piece
-        - Defeat the Pirate Ganzack! (OVA 1) DVD.avi -> ../../../../movies/foreign/One
-        Piece - Romance Dawn Story (2008)/\xe3\x83\xaf\xe3\x83\xb3\xe3\x83\x94\xe3\x83\xbc\xe3\x82\xb9
-        \xe3\x83\xad\xe3\x83\x9e\xe3\x83\xb3\xe3\x82\xb9\xe3\x83\x89\xe3\x83\xbc\xe3\x83\xb3\xe3\x82\xb9\xe3\x83\x88\xe3\x83\xbc\xe3\x83\xaa\xe3\x83\xbc
-        (2008) Bluray-720p.mkv
+      Symlinked: ''
       Title: One Piece Defeat the Pirate Ganzack! (OVA 1)
-  Title: One Piece - Romance Dawn Story (2008)
+  Title: One Piece- Romance Dawn Story (2008)
 One Piece - Strong World Episode 0 (2010):
-  Absolute Movie File Path: /media/video/movies/foreign/One Piece - Strong World Episode
-    0 (2010)/One Piece- Strong World Episode 0 (2010) DVD.mkv
-  Absolute Movie Path: /media/video/movies/foreign/One Piece - Strong World Episode
-    0 (2010)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 270413
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: movies/foreign/One Piece - Strong World Episode 0 (2010)/One
-    Piece- Strong World Episode 0 (2010) DVD.mkv
-  Relative Movie Path: movies/foreign/One Piece - Strong World Episode 0 (2010)
+  Relative Movie File Path: ''
+  Relative Movie Path: ''
   Shows:
     One Piece:
       Anime: true
@@ -7765,24 +7708,16 @@ One Piece - Strong World Episode 0 (2010):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: One Piece The Movie
-  Title: One Piece - Strong World Episode 0 (2010)
+  Title: One Piece- Strong World Episode 0 (2010)
 One Piece - The Desert Princess and the Pirates - Adventure in Alabasta (2007):
-  Absolute Movie File Path: "/media/video/movies/foreign/One Piece - The Desert Princess\
-    \ and the Pirates - Adventure in Alabasta (2007)/\u30EF\u30F3\u30D4\u30FC\u30B9\
-    \ \u30A8\u30D4\u30BD\u30FC\u30C9 \u30AA\u30D6 \u30A2\u30E9\u30D0\u30B9\u30BF \u7802\
-    \u6F20\u306E\u738B\u5973\u3068\u6D77\u8CCA\u305F\u3061 (2007) Bluray-1080p.mkv"
-  Absolute Movie Path: /media/video/movies/foreign/One Piece - The Desert Princess
-    and the Pirates - Adventure in Alabasta (2007)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 25278
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: "movies/foreign/One Piece - The Desert Princess and the\
-    \ Pirates - Adventure in Alabasta (2007)/\u30EF\u30F3\u30D4\u30FC\u30B9 \u30A8\
-    \u30D4\u30BD\u30FC\u30C9 \u30AA\u30D6 \u30A2\u30E9\u30D0\u30B9\u30BF \u7802\u6F20\
-    \u306E\u738B\u5973\u3068\u6D77\u8CCA\u305F\u3061 (2007) Bluray-1080p.mkv"
-  Relative Movie Path: movies/foreign/One Piece - The Desert Princess and the Pirates
-    - Adventure in Alabasta (2007)
+  Relative Movie File Path: ''
+  Relative Movie Path: ''
   Shows:
     One Piece:
       Anime: true
@@ -7797,14 +7732,9 @@ One Piece - The Desert Princess and the Pirates - Adventure in Alabasta (2007):
       Season: '00'
       Show ID: '86'
       Show Root Path: anime/shounen/One Piece
-      Symlinked: anime/shounen/One Piece/Season 00/One Piece - S00E01 - One Piece
-        - Defeat the Pirate Ganzack! (OVA 1) DVD.avi -> ../../../../movies/foreign/One
-        Piece - The Desert Princess and the Pirates - Adventure in Alabasta (2007)/\xe3\x83\xaf\xe3\x83\xb3\xe3\x83\x94\xe3\x83\xbc\xe3\x82\xb9
-        \xe3\x82\xa8\xe3\x83\x94\xe3\x82\xbd\xe3\x83\xbc\xe3\x83\x89 \xe3\x82\xaa\xe3\x83\x96
-        \xe3\x82\xa2\xe3\x83\xa9\xe3\x83\x90\xe3\x82\xb9\xe3\x82\xbf \xe7\xa0\x82\xe6\xbc\xa0\xe3\x81\xae\xe7\x8e\x8b\xe5\xa5\xb3\xe3\x81\xa8\xe6\xb5\xb7\xe8\xb3\x8a\xe3\x81\x9f\xe3\x81\xa1
-        (2007) Bluray-1080p.mkv
+      Symlinked: ''
       Title: One Piece Defeat the Pirate Ganzack! (OVA 1)
-  Title: One Piece - The Desert Princess and the Pirates - Adventure in Alabasta (2007)
+  Title: One Piece- The Desert Princess and the Pirates- Adventure in Alabasta (2007)
 One Piece - The Movie (2000):
   Absolute Movie File Path: ''
   Absolute Movie Path: ''
@@ -7878,7 +7808,10 @@ One Piece 3D2Y - Overcome Ace's Death! Luffy's Vow to his Friends (2014):
       Season: '00'
       Show ID: '86'
       Show Root Path: anime/shounen/One Piece
-      Symlinked: ''
+      Symlinked: anime/shounen/One Piece/Season 00/One Piece - S00E03 - Adventure
+        in the Ocean\s Navel SDTV.avi" -> \../../../../movies/foreign/One Piece 3D2Y
+        - Overcome Ace\\\\\s Death! Luffy\\\\\s Vow to his Friends (2014)/One Piece
+        3D2Y - Overcome Ace\\\\\s Death! Luffy\\\\\s Vow to his Friends (2014) Bluray-720p.mkv
       Title: Adventure in the Ocean's Navel
   Title: One Piece "3D2Y"- Overcome Ace's Death! Luffy's Vow to his Friends (2014)
 One Piece Episode of East Blue Luffy and His 4 Crewmate's Big Adventure (2017):
@@ -7994,18 +7927,14 @@ One Piece Film - GOLD (2016):
       Title: Adventure in the Ocean's Navel
   Title: One Piece Film- GOLD (2016)
 One Piece Film - Strong World (2009):
-  Absolute Movie File Path: "/media/video/movies/foreign/One Piece Film - Strong World\
-    \ (2009)/\u30EF\u30F3\u30D4\u30FC\u30B9 \u30D5\u30A3\u30EB\u30E0 \u30B9\u30C8\u30ED\
-    \u30F3\u30B0\u30EF\u30FC\u30EB\u30C9 (2009) Bluray-1080p.mkv"
-  Absolute Movie Path: /media/video/movies/foreign/One Piece Film - Strong World (2009)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 41498
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: "movies/foreign/One Piece Film - Strong World (2009)/\u30EF\
-    \u30F3\u30D4\u30FC\u30B9 \u30D5\u30A3\u30EB\u30E0 \u30B9\u30C8\u30ED\u30F3\u30B0\
-    \u30EF\u30FC\u30EB\u30C9 (2009) Bluray-1080p.mkv"
-  Relative Movie Path: movies/foreign/One Piece Film - Strong World (2009)
+  Relative Movie File Path: ''
+  Relative Movie Path: ''
   Shows:
     One Piece:
       Anime: true
@@ -8020,24 +7949,18 @@ One Piece Film - Strong World (2009):
       Season: '00'
       Show ID: '86'
       Show Root Path: anime/shounen/One Piece
-      Symlinked: anime/shounen/One Piece/Season 00/One Piece - S00E01 - One Piece
-        - Defeat the Pirate Ganzack! (OVA 1) DVD.avi -> ../../../../movies/foreign/One
-        Piece Film - Strong World (2009)/\xe3\x83\xaf\xe3\x83\xb3\xe3\x83\x94\xe3\x83\xbc\xe3\x82\xb9
-        \xe3\x83\x95\xe3\x82\xa3\xe3\x83\xab\xe3\x83\xa0 \xe3\x82\xb9\xe3\x83\x88\xe3\x83\xad\xe3\x83\xb3\xe3\x82\xb0\xe3\x83\xaf\xe3\x83\xbc\xe3\x83\xab\xe3\x83\x89
-        (2009) Bluray-1080p.mkv
+      Symlinked: ''
       Title: One Piece Defeat the Pirate Ganzack! (OVA 1)
-  Title: One Piece Film - Strong World (2009)
+  Title: One Piece Film- Strong World (2009)
 One Piece Film - Z (2012):
-  Absolute Movie File Path: "/media/video/movies/foreign/One Piece Film - Z (2012)/\u30EF\
-    \u30F3\u30D4\u30FC\u30B9 \u30D5\u30A3\u30EB\u30E0 \u30BC\u30C3\u30C8 (2012) Bluray-1080p.mkv"
-  Absolute Movie Path: /media/video/movies/foreign/One Piece Film - Z (2012)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 176983
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: "movies/foreign/One Piece Film - Z (2012)/\u30EF\u30F3\
-    \u30D4\u30FC\u30B9 \u30D5\u30A3\u30EB\u30E0 \u30BC\u30C3\u30C8 (2012) Bluray-1080p.mkv"
-  Relative Movie Path: movies/foreign/One Piece Film - Z (2012)
+  Relative Movie File Path: ''
+  Relative Movie Path: ''
   Shows:
     One Piece:
       Anime: true
@@ -8053,7 +7976,7 @@ One Piece Film - Z (2012):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: One Piece The Movie
-  Title: One Piece Film - Z (2012)
+  Title: One Piece Film- Z (2012)
 One Punch Man- Road to Hero (2015):
   Absolute Movie File Path: /media/video/movies/foreign/One Punch Man- Road to Hero
     (2015)/One Punch Man- Road to Hero (2015) DVD.mkv
@@ -8270,17 +8193,16 @@ Parks and Recreation- Cast and Creators Live at PALEYFEST 2014 (2014):
       Title: 'Persona 3 The Movie #1 Spring of Birth'
   Title: 'Persona 3 the Movie- #3 Falling Down (2015)'
 'Persona 3 the Movie- #2 Midsummer Knight''s Dream (2014)':
-  Absolute Movie File Path: '/media/video/movies/foreign/Persona 3 the Movie- #2 Midsummer
-    Knight''s Dream (2014)/'
-  Absolute Movie Path: '/media/video/movies/foreign/Persona 3 the Movie- #2 Midsummer
-    Knight''s Dream (2014)'
+  Absolute Movie File Path: '/media/video/movies/foreign/Persona 3 the Movie- #3 Falling
+    Down (2015)/'
+  Absolute Movie Path: '/media/video/movies/foreign/Persona 3 the Movie- #3 Falling
+    Down (2015)'
   Movie DB ID: 297189
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
   Relative Movie File Path: ''
-  Relative Movie Path: 'movies/foreign/Persona 3 the Movie- #2 Midsummer Knight''s
-    Dream (2014)'
+  Relative Movie Path: 'movies/foreign/Persona 3 the Movie- #3 Falling Down (2015)'
   Shows:
     Persona 4- The Animation:
       Absolute Episode: '4'
@@ -8298,7 +8220,7 @@ Parks and Recreation- Cast and Creators Live at PALEYFEST 2014 (2014):
       Show Root Path: tv/staging/Persona 4- The Animation
       Symlinked: ''
       Title: Losing to Win, and What Comes After
-  Title: 'Persona 3 the Movie- #2 Midsummer Knight''s Dream (2014)'
+  Title: 'Persona 3 the Movie- #3 Falling Down (2015)'
 'Persona 3 the Movie- #3 Falling Down (2015)':
   Absolute Movie File Path: '/media/video/movies/foreign/Persona 3 the Movie- #3 Falling
     Down (2015)/'
@@ -8327,16 +8249,16 @@ Parks and Recreation- Cast and Creators Live at PALEYFEST 2014 (2014):
       Title: 'Persona 3 The Movie #3 Falling Down'
   Title: 'Persona 3 the Movie- #3 Falling Down (2015)'
 'Persona 3 the Movie- #4 Winter of Rebirth (2016)':
-  Absolute Movie File Path: '/media/video/movies/foreign/Persona 3 the Movie- #4 Winter
-    of Rebirth (2016)/'
-  Absolute Movie Path: '/media/video/movies/foreign/Persona 3 the Movie- #4 Winter
-    of Rebirth (2016)'
+  Absolute Movie File Path: '/media/video/movies/foreign/Persona 3 the Movie- #3 Falling
+    Down (2015)/'
+  Absolute Movie Path: '/media/video/movies/foreign/Persona 3 the Movie- #3 Falling
+    Down (2015)'
   Movie DB ID: '372761'
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
   Relative Movie File Path: ''
-  Relative Movie Path: 'movies/foreign/Persona 3 the Movie- #4 Winter of Rebirth (2016)'
+  Relative Movie Path: 'movies/foreign/Persona 3 the Movie- #3 Falling Down (2015)'
   Shows:
     Persona 4- The Animation:
       Anime: true
@@ -8352,7 +8274,7 @@ Parks and Recreation- Cast and Creators Live at PALEYFEST 2014 (2014):
       Show Root Path: tv/staging/Persona 4- The Animation
       Symlinked: ''
       Title: 'Persona 3 The Movie #4 Winter of Rebirth'
-  Title: 'Persona 3 the Movie- #4 Winter of Rebirth (2016)'
+  Title: 'Persona 3 the Movie- #3 Falling Down (2015)'
 Persona 4 the Animation- No One is Alone (0):
   Absolute Movie File Path: /media/video/movies/foreign/Persona 4 the Animation- No
     One is Alone (0)/Persona 4 the Animation- No One is Alone (0) Bluray-1080p.mkv
@@ -8561,16 +8483,14 @@ Psych- The Musical (2013):
       Title: The Big Adventures of Little Shawn and Gus
   Title: Psych- The Musical (2013)
 Psycho-Pass- The Movie (2015):
-  Absolute Movie File Path: "/media/video/movies/foreign/Psycho-Pass- The Movie (2015)/\u5287\
-    \u5834\u7248 PSYCHO-PASS \u30B5\u30A4\u30B3\u30D1\u30B9 (2015) Bluray-1080p.mkv"
-  Absolute Movie Path: /media/video/movies/foreign/Psycho-Pass- The Movie (2015)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 296917
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: "movies/foreign/Psycho-Pass- The Movie (2015)/\u5287\u5834\
-    \u7248 PSYCHO-PASS \u30B5\u30A4\u30B3\u30D1\u30B9 (2015) Bluray-1080p.mkv"
-  Relative Movie Path: movies/foreign/Psycho-Pass- The Movie (2015)
+  Relative Movie File Path: ''
+  Relative Movie Path: ''
   Shows:
     Psycho-Pass:
       Anime: true
@@ -8586,7 +8506,7 @@ Psycho-Pass- The Movie (2015):
       Show Root Path: anime/staging/Psycho-Pass
       Symlinked: ''
       Title: Criminal Coefficient / Those Capable (Extended)
-  Title: Psycho-Pass- The Movie (2015)
+  Title: Psycho-Pass- The Movie (2016)
 Puella Magi Madoka Magica the Movie Part I- Beginnings (2012):
   Absolute Movie File Path: "/media/video/movies/foreign/Puella Magi Madoka Magica\
     \ the Movie Part I- Beginnings (2012)/\u5287\u5834\u7248 \u9B54\u6CD5\u5C11\u5973\
@@ -9133,19 +9053,17 @@ Rurouni Kenshin- Reflection Director's Cut (2002):
       Title: Reflections OAV Act 1 - Beginnings
   Title: Rurouni Kenshin- Reflection Director's Cut (2002)
 Rurouni Kenshin- The Legend Ends (2014):
-  Absolute Movie File Path: /media/video/movies/foreign/Rurouni Kenshin- The Legend
-    Ends (2014)/
-  Absolute Movie Path: /media/video/movies/foreign/Rurouni Kenshin- The Legend Ends
-    (2014)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 221732
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
   Relative Movie File Path: ''
-  Relative Movie Path: movies/foreign/Rurouni Kenshin- The Legend Ends (2014)
+  Relative Movie Path: ''
   Shows:
     Rurouni Kenshin: null
-  Title: Rurouni Kenshin- The Legend Ends (2014)
+  Title: Rurouni Kenshin- The Legend Ends (2015)
 Rurouni Kenshin- Trust & Betrayal Director's Cut (0):
   Absolute Movie File Path: /media/video/movies/foreign/Rurouni Kenshin- Trust & Betrayal
     Director's Cut (0)/
@@ -9283,14 +9201,14 @@ Sailor Moon - Sailor Stars (Revision) (1997):
       Title: Sailor Moon R The Movie Special Make Up! Sailor Soldiers
   Title: Sailor Moon - Sailor Stars (Revision) (1997)
 Sailor Moon R- The Movie (1993):
-  Absolute Movie File Path: /media/video/movies/foreign/Sailor Moon R- The Movie (1993)/
-  Absolute Movie Path: /media/video/movies/foreign/Sailor Moon R- The Movie (1993)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 37100
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
   Relative Movie File Path: ''
-  Relative Movie Path: movies/foreign/Sailor Moon R- The Movie (1993)
+  Relative Movie Path: ''
   Shows:
     Sailor Moon:
       Anime: true
@@ -9306,7 +9224,7 @@ Sailor Moon R- The Movie (1993):
       Show Root Path: anime/staging/Sailor Moon
       Symlinked: ''
       Title: Sailor Moon R The Movie Special Make Up! Sailor Soldiers
-  Title: Sailor Moon R- The Movie (1993)
+  Title: Sailor Moon R- The Movie (2017)
 Sailor Moon S The Movie- Hearts In Ice (1994):
   Absolute Movie File Path: ''
   Absolute Movie Path: ''
@@ -9331,7 +9249,7 @@ Sailor Moon S The Movie- Hearts In Ice (1994):
       Show Root Path: anime/staging/Sailor Moon
       Symlinked: ''
       Title: Sailor Moon S The Movie Hearts in Ice
-  Title: Sailor Moon S The Movie- Hearts In Ice (1994)
+  Title: Sailor Moon S the Movie- Hearts in Ice (2000)
 Sailor Moon Super S- Ami's First Love (1995):
   Absolute Movie File Path: /media/video/movies/foreign/Sailor Moon Super S- Ami's
     First Love (1995)/
@@ -10586,14 +10504,17 @@ Star Trek- Of Gods And Men (2007):
       Title: Act 1
   Title: Star Trek- Of Gods And Men (2007)
 Star Trek- Voyager - Inside The New Adventure (1995):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: /media/video/movies/staging/Star Trek- Voyager - Inside
+    the New Adventure (1995)/
+  Absolute Movie Path: /media/video/movies/staging/Star Trek- Voyager - Inside the
+    New Adventure (1995)
   Movie DB ID: 529408
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
   Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie Path: movies/staging/Star Trek- Voyager - Inside the New Adventure
+    (1995)
   Shows:
     Star Trek- Voyager:
       Anime: false
@@ -10609,7 +10530,7 @@ Star Trek- Voyager - Inside The New Adventure (1995):
       Show Root Path: tv/staging/Star Trek- Voyager
       Symlinked: ''
       Title: Star Trek Inside The New Adventure
-  Title: Star Trek- Voyager - Inside The New Adventure (1995)
+  Title: Star Trek- Voyager - Inside the New Adventure (1995)
 Stargate (1994):
   Absolute Movie File Path: /media/video/movies/staging/Stargate (1994)/Stargate (1994)
     Bluray-1080p.mp4
@@ -10836,20 +10757,14 @@ Steins;Gate- Egoistic Poriomania (2012):
       Title: Egoistic Poriomania
   Title: Steins;Gate- Egoistic Poriomania (2012)
 "Steins;Gate- The Movie \u2212 Load Region of D\xE9j\xE0 Vu (2013)":
-  Absolute Movie File Path: "/media/video/movies/foreign/Steins;Gate- The Movie \u2212\
-    \ Load Region of D\xE9j\xE0 Vu (2013)/\u5287\u5834\u7248 STEINS;GATE \u8CA0\u8377\
-    \u9818\u57DF\u306E\u30C7\u30B8\u30E3\u30F4 (2013) Remux-1080p.mkv"
-  Absolute Movie Path: "/media/video/movies/foreign/Steins;Gate- The Movie \u2212\
-    \ Load Region of D\xE9j\xE0 Vu (2013)"
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 225745
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: "movies/foreign/Steins;Gate- The Movie \u2212 Load Region\
-    \ of D\xE9j\xE0 Vu (2013)/\u5287\u5834\u7248 STEINS;GATE \u8CA0\u8377\u9818\u57DF\
-    \u306E\u30C7\u30B8\u30E3\u30F4 (2013) Remux-1080p.mkv"
-  Relative Movie Path: "movies/foreign/Steins;Gate- The Movie \u2212 Load Region of\
-    \ D\xE9j\xE0 Vu (2013)"
+  Relative Movie File Path: ''
+  Relative Movie Path: ''
   Shows:
     Steins;Gate:
       Anime: true
@@ -10865,19 +10780,20 @@ Steins;Gate- Egoistic Poriomania (2012):
       Show Root Path: anime/staging/Steins;Gate
       Symlinked: ''
       Title: "Steins;Gate the Movie Loading Area of D\xE9j\xE0 vu"
-  Title: "Steins;Gate- The Movie \u2212 Load Region of D\xE9j\xE0 Vu (2013)"
+  Title: "Steins;Gate- The Movie \u2212 Load Region of D\xE9j\xE0 Vu (2017)"
 Strike The Blood (2013):
-  Absolute Movie File Path: /media/video/movies/foreign/Strike The Blood (2013)/
-  Absolute Movie Path: /media/video/movies/foreign/Strike The Blood (2013)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 296092
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
   Relative Movie File Path: ''
-  Relative Movie Path: movies/foreign/Strike The Blood (2013)
+  Relative Movie Path: ''
   Shows:
     Strike the Blood: null
-  Title: Strike The Blood (2013)
+  Title: "\u30B9\u30C8\u30E9\u30A4\u30AF\u30FB\u30B6\u30FB\u30D6\u30E9\u30C3\u30C9\
+    \ (2013)"
 Sword Art Online- Extra Edition (2013):
   Absolute Movie File Path: /media/video/movies/foreign/Sword Art Online- Extra Edition
     (2013)/Sword Art Online- Extra Edition (2013) Remux-1080p.mkv
@@ -11469,16 +11385,14 @@ The IT Crowd Manual (2014):
       Title: The IT Crowd Manual
   Title: The IT Crowd Manual (2014)
 The Last- Naruto the Movie (2014):
-  Absolute Movie File Path: /media/video/movies/foreign/The Last- Naruto the Movie
-    (2014)/THE LAST -NARUTO THE MOVIE- (2014) Remux-1080p.mkv
-  Absolute Movie Path: /media/video/movies/foreign/The Last- Naruto the Movie (2014)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 317442
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: movies/foreign/The Last- Naruto the Movie (2014)/THE LAST
-    -NARUTO THE MOVIE- (2014) Remux-1080p.mkv
-  Relative Movie Path: movies/foreign/The Last- Naruto the Movie (2014)
+  Relative Movie File Path: ''
+  Relative Movie Path: ''
   Shows:
     Naruto Shippuden:
       Anime: true
@@ -11494,7 +11408,7 @@ The Last- Naruto the Movie (2014):
       Show Root Path: anime/shounen/Naruto Shippuden
       Symlinked: ''
       Title: Naruto Shippuuden the Movie
-  Title: The Last- Naruto the Movie (2014)
+  Title: The Last- Naruto the Movie (2015)
 The Making of 'King of the Hill' (2003):
   Absolute Movie File Path: /media/video/movies/documentaries/The Making of 'King
     of the Hill' (2003)/
@@ -12079,17 +11993,17 @@ Thus Spoke Kishibe Rohan 2- Mutsu-kabe Hill (2018):
       Title: Thus Spoke Kishibe Rohan Mutsukabe Hill
   Title: Thus Spoke Kishibe Rohan 2- Mutsu-kabe Hill (2018)
 Tiger & Bunny (0):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)/
+  Absolute Movie Path: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)
   Movie DB ID: 625128
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
   Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie Path: movies/staging/Bill Burr- Paper Tiger (2019)
   Shows:
     Tiger & Bunny: null
-  Title: Tiger & Bunny (0)
+  Title: Bill Burr- Paper Tiger (2019)
 Tiger & Bunny - The Movie- The Rising (2014):
   Absolute Movie File Path: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)/
   Absolute Movie Path: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)
@@ -13189,20 +13103,14 @@ Yu Yu Hakusho- Two Shots (2018):
       Title: Eizou Hakusho Dark Tournament, vol. 1
   Title: "Y\xFB Y\xFB Hakusho- Eiz\xF4 Hakusho (0)"
 xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
-  Absolute Movie File Path: "/media/video/movies/foreign/xxxHOLiC The Movie- A Midsummer\
-    \ Night's Dream (2005)/\u5287\u5834\u7248 \xD7\xD7\xD7HOLiC \u771F\u590F\u30CE\
-    \u591C\u30CE\u5922 (2005) Remux-1080p.mkv"
-  Absolute Movie Path: /media/video/movies/foreign/xxxHOLiC The Movie- A Midsummer
-    Night's Dream (2005)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 38567
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: "movies/foreign/xxxHOLiC The Movie- A Midsummer Night's\
-    \ Dream (2005)/\u5287\u5834\u7248 \xD7\xD7\xD7HOLiC \u771F\u590F\u30CE\u591C\u30CE\
-    \u5922 (2005) Remux-1080p.mkv"
-  Relative Movie Path: movies/foreign/xxxHOLiC The Movie- A Midsummer Night's Dream
-    (2005)
+  Relative Movie File Path: ''
+  Relative Movie Path: ''
   Shows:
     xxxHOLiC:
       Absolute Episode: '100'
@@ -13220,7 +13128,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Show Root Path: anime/staging/xxxHOLiC
       Symlinked: ''
       Title: A Midsummer Night's Dream
-  Title: xxxHOLiC The Movie- A Midsummer Night's Dream (2005)
+  Title: xxxHOLiC The Movie- A Midsummer Night's Dream (2008)
 "xxxHolic- R\u014D (2010)":
   Absolute Movie File Path: "/media/video/movies/foreign/xxxHolic- R\u014D (2010)/xxxHolic-\
     \ R\u014D (2010) Bluray-1080p.mkv"
