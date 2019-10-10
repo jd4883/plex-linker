@@ -21,7 +21,9 @@
       Season: '00'
       Show ID: '196'
       Show Root Path: tv/staging/24
-      Symlinked: ''
+      Symlinked: tv/staging/24/Season 00/24 - S00E09 - Redemption Bluray-1080p.mkv
+        -> ../../../../movies/thrillers/24- Redemption (2008)/24- Redemption (2008)
+        Bluray-1080p.mkv
       Title: Redemption
   Title: 24- Redemption (2008)
 6 Days to Air- The Making of South Park (2011):
@@ -50,7 +52,10 @@
       Season: '00'
       Show ID: '293'
       Show Root Path: tv/animated/South Park
-      Symlinked: ''
+      Symlinked: tv/animated/South Park/Season 00/South Park - S00E41 - Six Days to
+        Air- The Making of South Park Bluray-1080p.mkv -> ../../../../movies/staging/6
+        Days to Air- The Making of South Park (2011)/6 Days to Air- The Making of
+        South Park (2011) Bluray-1080p.mkv
       Title: 6 Days to Air- The Making of South Park (2011)
   Title: 6 Days to Air- The Making of South Park (2011)
 91 Days Special (2017):
@@ -81,7 +86,10 @@
       Season: '00'
       Show ID: '2'
       Show Root Path: anime/staging/91 Days
-      Symlinked: ''
+      Symlinked: anime/staging/91 Days/Season 00/91 Days - S00E001 (E013) - Shoal
+        of Time + All Our Yesterdays + Tomorrow, and Tomorrow Bluray-1080p Remux.mkv
+        -> ../../../../movies/foreign/91 Days Special (2017)/91 Days Special (2017)
+        Remux-1080p.mkv
       Title: Shoal of Time / All Our Yesterdays / Tomorrow, and Tomorrow
   Title: 91 Days Special (2017)
 ANOTHER GANTZ (2011):
@@ -109,7 +117,8 @@ ANOTHER GANTZ (2011):
       Season: '00'
       Show ID: '45'
       Show Root Path: anime/staging/Gantz
-      Symlinked: ''
+      Symlinked: anime/staging/Gantz/Season 00/Gantz - S00E004 - ANOTHER Gantz DVD.mkv
+        -> ../../../../movies/foreign/ANOTHER GANTZ (2011)/ANOTHER GANTZ (2011) DVD.mkv
       Title: ANOTHER GANTZ (2011)
   Title: ANOTHER GANTZ (2011)
 Absolutely Fabulous- The Last Shout (1996):
@@ -167,7 +176,9 @@ Absolutely Fabulous- The Movie (2016):
       Season: '00'
       Show ID: '416'
       Show Root Path: tv/sitcom/Absolutely Fabulous
-      Symlinked: ''
+      Symlinked: tv/sitcom/Absolutely Fabulous/Season 00/Absolutely Fabulous - S00E08
+        - Absolutely Fabulous The Movie Bluray-1080p.mp4 -> ../../../../movies/staging/Absolutely
+        Fabulous- The Movie (2016)/Absolutely Fabulous- The Movie (2016) Bluray-1080p.mp4
       Title: Absolutely Fabulous The Movie
   Title: Absolutely Fabulous- The Movie (2016)
 Achmed Saves America (2014):
@@ -248,7 +259,9 @@ Ajin- Demi-Human - Compel (2015):
       Season: '00'
       Show ID: '25'
       Show Root Path: anime/staging/Ajin
-      Symlinked: ''
+      Symlinked: anime/staging/Ajin/Specials/Ajin - S00E01 - Ajin, Part 1 - Shoudou
+        Bluray-1080p.mkv -> ../../../../movies/foreign/Ajin- Demi-Human - Compel (2015)/\xe4\xba\x9c\xe4\xba\xba
+        \xe7\xac\xac1\xe9\x83\xa8 -\xe8\xa1\x9d\xe5\x8b\x95- (2015) Bluray-1080p.mkv
       Title: Ajin, Part 1 Shoudou
   Title: Ajin- Demi-Human - Compel (2015)
 Anemone- Eureka Seven Hi-Evolution (2018):
@@ -333,7 +346,10 @@ Anohana- The Flower We Saw That Day (2015):
       Season: '00'
       Show ID: '134'
       Show Root Path: anime/staging/Anohana- The Flower We Saw That Day
-      Symlinked: ''
+      Symlinked: anime/staging/Anohana- The Flower We Saw That Day/Season 00/Anohana-
+        The Flower We Saw That Day - S00E003 - Live-Action TV Drama Bluray-1080p.mkv
+        -> ../../../../movies/foreign/Anohana- The Flower We Saw That Day (2015)/Anohana-
+        The Flower We Saw That Day (2015) Bluray-1080p.mkv
       Title: Live-Action TV Drama
   Title: Anohana- The Flower We Saw That Day (2015)
 Another Live Action (2012):
@@ -532,7 +548,10 @@ Assassination Classroom- Jump Festa 2013 Special (2013):
       Season: '00'
       Show ID: '5'
       Show Root Path: anime/shounen/Assassination Classroom
-      Symlinked: ''
+      Symlinked: anime/shounen/Assassination Classroom/Season 00/Assassination Classroom
+        - S00E001 - Jump Festa 2013 Special Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Assassination
+        Classroom- Jump Festa 2013 Special (2013)/Assassination Classroom- Jump Festa
+        2013 Special (2013) Remux-1080p.mkv
       Title: Jump Festa 2013 Special
   Title: Assassination Classroom- Jump Festa 2013 Special (2013)
 Attack on Titan II- End of the World (2015):
@@ -563,7 +582,11 @@ Attack on Titan II- End of the World (2015):
       Season: '00'
       Show ID: '121'
       Show Root Path: anime/staging/Attack on Titan
-      Symlinked: ''
+      Symlinked: anime/staging/Attack on Titan/Season 00/Attack on Titan - S00E01
+        - Since That Day WEBRip-1080p v2 REAL.mkv -> ../../../../movies/foreign/Attack
+        on Titan II- End of the World (2015)/\xe9\x80\xb2\xe6\x92\x83\xe3\x81\xae\xe5\xb7\xa8\xe4\xba\xba
+        ATTACK ON TITAN \xe3\x82\xa8\xe3\x83\xb3\xe3\x83\x89 \xe3\x82\xaa\xe3\x83\x96
+        \xe3\x82\xb6 \xe3\x83\xaf\xe3\x83\xbc\xe3\x83\xab\xe3\x83\x89 (2015) Bluray-1080p.mkv
       Title: Since That Day
   Title: Attack on Titan II- End of the World (2015)
 Attack on Titan- Crimson Bow and Arrow (2014):
@@ -594,7 +617,12 @@ Attack on Titan- Crimson Bow and Arrow (2014):
       Season: '00'
       Show ID: '121'
       Show Root Path: anime/staging/Attack on Titan
-      Symlinked: ''
+      Symlinked: anime/staging/Attack on Titan/Season 00/Attack on Titan - S00E01
+        - Since That Day WEBRip-1080p v2 REAL.mkv -> ../../../../movies/foreign/Attack
+        on Titan- Crimson Bow and Arrow (2014)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88
+        \xe9\x80\xb2\xe6\x92\x83\xe3\x81\xae\xe5\xb7\xa8\xe4\xba\xba \xe5\x89\x8d\xe7\xb7\xa8
+        \xef\xbd\x9e\xe7\xb4\x85\xe8\x93\xae\xe3\x81\xae\xe5\xbc\x93\xe7\x9f\xa2\xef\xbd\x9e
+        (2014) Bluray-1080p.mkv
       Title: Since That Day
   Title: Attack on Titan- Crimson Bow and Arrow (2014)
 Attack on Titan- The Roar of Awakening (2018):
@@ -626,7 +654,11 @@ Attack on Titan- The Roar of Awakening (2018):
       Season: '00'
       Show ID: '121'
       Show Root Path: anime/staging/Attack on Titan
-      Symlinked: ''
+      Symlinked: anime/staging/Attack on Titan/Season 00/Attack on Titan - S00E02
+        - Ilse\s Notebook - Memoirs of a Recon Corps Member WEBDL-720p v2 REAL.mkv"
+        -> \../../../../movies/foreign/Attack on Titan- The Roar of Awakening (2018)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88
+        \xe9\x80\xb2\xe6\x92\x83\xe3\x81\xae\xe5\xb7\xa8\xe4\xba\xba Season2 \xef\xbd\x9e\xe8\xa6\x9a\xe9\x86\x92\xe3\x81\xae\xe5\x92\x86\xe5\x93\xae\xef\xbd\x9e
+        (2018) Bluray-1080p.mkv
       Title: Ilse's Notebook Memoirs of a Recon Corps Member
   Title: Attack on Titan- The Roar of Awakening (2018)
 Attack on Titan- Wings of Freedom (2015):
@@ -657,7 +689,11 @@ Attack on Titan- Wings of Freedom (2015):
       Season: '00'
       Show ID: '121'
       Show Root Path: anime/staging/Attack on Titan
-      Symlinked: ''
+      Symlinked: anime/staging/Attack on Titan/Season 00/Attack on Titan - S00E01
+        - Since That Day WEBRip-1080p v2 REAL.mkv -> ../../../../movies/foreign/Attack
+        on Titan- Wings of Freedom (2015)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88 \xe9\x80\xb2\xe6\x92\x83\xe3\x81\xae\xe5\xb7\xa8\xe4\xba\xba
+        \xe5\xbe\x8c\xe7\xb7\xa8 \xef\xbd\x9e\xe8\x87\xaa\xe7\x94\xb1\xe3\x81\xae\xe7\xbf\xbc\xef\xbd\x9e
+        (2015) Bluray-1080p.mkv
       Title: Since That Day
   Title: Attack on Titan- Wings of Freedom (2015)
 Babylon 5- A Call to Arms (1999):
@@ -687,7 +723,9 @@ Babylon 5- A Call to Arms (1999):
       Season: '00'
       Show ID: '357'
       Show Root Path: tv/scifi/Babylon 5
-      Symlinked: ''
+      Symlinked: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E05 - A Call to Arms
+        Bluray-1080p.mkv -> ../../../../movies/staging/Babylon 5- A Call to Arms (1999)/Babylon
+        5- A Call to Arms (1999) Bluray-1080p.mkv
       Title: A Call to Arms
   Title: Babylon 5- A Call to Arms (1999)
 Babylon 5- In the Beginning (1998):
@@ -717,7 +755,9 @@ Babylon 5- In the Beginning (1998):
       Season: '00'
       Show ID: '357'
       Show Root Path: tv/scifi/Babylon 5
-      Symlinked: ''
+      Symlinked: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E02 - In the Beginning
+        HDTV-1080p.mkv -> ../../../../movies/staging/Babylon 5- In the Beginning (1998)/Babylon
+        5- In the Beginning (1998) HDTV-1080p.mkv
       Title: In the Beginning
   Title: Babylon 5- In the Beginning (1998)
 Babylon 5- The Gathering (1993):
@@ -746,7 +786,9 @@ Babylon 5- The Gathering (1993):
       Season: '00'
       Show ID: '357'
       Show Root Path: tv/scifi/Babylon 5
-      Symlinked: ''
+      Symlinked: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E01 - The Gathering Bluray-2160p.mkv
+        -> ../../../../movies/staging/Babylon 5- The Gathering (1993)/Babylon 5- The
+        Gathering (1993) Bluray-2160p.mkv
       Title: The Gathering
   Title: Babylon 5- The Gathering (1993)
 Babylon 5- The Legend of the Rangers - To Live and Die in Starlight (2002):
@@ -780,7 +822,10 @@ Babylon 5- The Legend of the Rangers - To Live and Die in Starlight (2002):
       Season: '00'
       Show ID: '357'
       Show Root Path: tv/scifi/Babylon 5
-      Symlinked: ''
+      Symlinked: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E06 - The Legend of the
+        Rangers Bluray-1080p.mkv -> ../../../../movies/staging/Babylon 5- The Legend
+        of the Rangers - To Live and Die in Starlight (2002)/Babylon 5- The Legend
+        of the Rangers - To Live and Die in Starlight (2002) Bluray-1080p.mkv
       Title: The Legend of the Rangers
   Title: Babylon 5- The Legend of the Rangers - To Live and Die in Starlight (2002)
 Babylon 5- The Lost Tales - Voices in the Dark (2007):
@@ -813,7 +858,9 @@ Babylon 5- The Lost Tales - Voices in the Dark (2007):
       Season: '00'
       Show ID: '357'
       Show Root Path: tv/scifi/Babylon 5
-      Symlinked: ''
+      Symlinked: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E07-08 - Voices in the
+        Dark DVD.mkv -> ../../../../movies/staging/Babylon 5- The Lost Tales - Voices
+        in the Dark (2007)/Babylon 5- The Lost Tales - Voices in the Dark (2007) DVD.mkv
       Title: Voices in the Dark Over Here
   Title: Babylon 5- The Lost Tales - Voices in the Dark (2007)
 Babylon 5- The River of Souls (1998):
@@ -843,7 +890,9 @@ Babylon 5- The River of Souls (1998):
       Season: '00'
       Show ID: '357'
       Show Root Path: tv/scifi/Babylon 5
-      Symlinked: ''
+      Symlinked: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E04 - River of Souls
+        Bluray-1080p.mkv -> ../../../../movies/staging/Babylon 5- The River of Souls
+        (1998)/Babylon 5- The River of Souls (1998) Bluray-1080p.mkv
       Title: River of Souls
   Title: Babylon 5- The River of Souls (1998)
 Babylon 5- Thirdspace (1998):
@@ -872,7 +921,9 @@ Babylon 5- Thirdspace (1998):
       Season: '00'
       Show ID: '357'
       Show Root Path: tv/scifi/Babylon 5
-      Symlinked: ''
+      Symlinked: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E03 - Thirdspace DVD.mkv
+        -> ../../../../movies/staging/Babylon 5- Thirdspace (1998)/Babylon 5- Thirdspace
+        (1998) DVD.mkv
       Title: Thirdspace
   Title: Babylon 5- Thirdspace (1998)
 Bart Wars- The Simpsons Strike Back (2004):
@@ -913,7 +964,9 @@ Batman & Mr. Freeze- SubZero (1998):
       Season: '00'
       Show ID: '463'
       Show Root Path: tv/superhero/Batman- The Animated Series
-      Symlinked: ''
+      Symlinked: tv/superhero/Batman- The Animated Series/Season 00/Batman- The Animated
+        Series - S00E02 - Batman & Mr. Freeze- SubZero Bluray-1080p.mkv -> ../../../../movies/thrillers/Batman
+        (1989)/Batman (1989) Bluray-1080p.mkv
       Title: Batman & Mr. Freeze SubZero
   Title: Batman (1989)
 Batman - Mask of the Phantasm (1993):
@@ -967,7 +1020,9 @@ Batman Beyond- Return of the Joker (2000):
       Season: '00'
       Show ID: '462'
       Show Root Path: tv/superhero/Batman Beyond
-      Symlinked: ''
+      Symlinked: tv/superhero/Batman Beyond/Season 00/Batman Beyond - S00E01 - Return
+        of the Joker Bluray-1080p.mkv -> ../../../../movies/thrillers/Batman Beyond-
+        Return of the Joker (2000)/Batman Beyond- Return of the Joker (2000) Bluray-1080p.mkv
       Title: Return of the Joker
   Title: Batman Beyond- Return of the Joker (2000)
 Batman and Harley Quinn (2017):
@@ -1076,18 +1131,27 @@ Battlestar Galactica- The Plan (2009):
       Season: '00'
       Show ID: '359'
       Show Root Path: tv/scifi/Battlestar Galactica (2003)
-      Symlinked: ''
+      Symlinked: tv/scifi/Battlestar Galactica (2003)/Season 00/Battlestar Galactica
+        (2003) - S00E02 - Battlestar Galactica - The Miniseries (2) Bluray-1080p.mkv
+        -> ../../../../movies/staging/Battlestar Galactica- The Plan (2009)/Battlestar
+        Galactica- The Plan (2009) Bluray-720p.mkv
       Title: Battlestar Galactica The Miniseries (2)
   Title: Battlestar Galactica- The Plan (2009)
 Berserk - The Golden Age Arc 1 - The Egg of the King (2012):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: "/media/video/movies/foreign/Berserk - The Golden Age\
+    \ Arc 1 - The Egg of the King (2012)/\u30D9\u30EB\u30BB\u30EB\u30AF \u9EC4\u91D1\
+    \u6642\u4EE3\u7BC7I \u8987\u738B\u306E\u5375 (2012) Remux-1080p.mkv"
+  Absolute Movie Path: /media/video/movies/foreign/Berserk - The Golden Age Arc 1
+    - The Egg of the King (2012)
   Movie DB ID: 113082
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie File Path: "movies/foreign/Berserk - The Golden Age Arc 1 - The Egg\
+    \ of the King (2012)/\u30D9\u30EB\u30BB\u30EB\u30AF \u9EC4\u91D1\u6642\u4EE3\u7BC7\
+    I \u8987\u738B\u306E\u5375 (2012) Remux-1080p.mkv"
+  Relative Movie Path: movies/foreign/Berserk - The Golden Age Arc 1 - The Egg of
+    the King (2012)
   Shows:
     Berserk (2016):
       Anime: true
@@ -1103,16 +1167,22 @@ Berserk - The Golden Age Arc 1 - The Egg of the King (2012):
       Show Root Path: anime/shounen/Berserk (2016)
       Symlinked: ''
       Title: Golden Age Arc I Egg of the King
-  Title: Berserk- The Golden Age Arc 1 - The Egg of the King (2012)
+  Title: Berserk - The Golden Age Arc 1 - The Egg of the King (2012)
 Berserk - The Golden Age Arc 2 - The Battle for Doldrey (2012):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: "/media/video/movies/foreign/Berserk - The Golden Age\
+    \ Arc 2 - The Battle for Doldrey (2012)/\u30D9\u30EB\u30BB\u30EB\u30AF \u9EC4\u91D1\
+    \u6642\u4EE3\u7BC7II \u30C9\u30EB\u30C9\u30EC\u30A4\u653B\u7565 (2012) Remux-1080p.mkv"
+  Absolute Movie Path: /media/video/movies/foreign/Berserk - The Golden Age Arc 2
+    - The Battle for Doldrey (2012)
   Movie DB ID: 118412
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie File Path: "movies/foreign/Berserk - The Golden Age Arc 2 - The Battle\
+    \ for Doldrey (2012)/\u30D9\u30EB\u30BB\u30EB\u30AF \u9EC4\u91D1\u6642\u4EE3\u7BC7\
+    II \u30C9\u30EB\u30C9\u30EC\u30A4\u653B\u7565 (2012) Remux-1080p.mkv"
+  Relative Movie Path: movies/foreign/Berserk - The Golden Age Arc 2 - The Battle
+    for Doldrey (2012)
   Shows:
     Berserk (2016):
       Anime: true
@@ -1128,7 +1198,7 @@ Berserk - The Golden Age Arc 2 - The Battle for Doldrey (2012):
       Show Root Path: anime/shounen/Berserk (2016)
       Symlinked: ''
       Title: Golden Age Arc II The Battle for Doldrey
-  Title: Berserk- The Golden Age Arc 2 - The Battle for Doldrey (2012)
+  Title: Berserk - The Golden Age Arc 2 - The Battle for Doldrey (2012)
 Berserk - The Golden Age Arc 3 - The Advent (2013):
   Absolute Movie File Path: ''
   Absolute Movie Path: ''
@@ -1208,7 +1278,10 @@ Bleach- Fade to Black (2008):
       Season: '00'
       Show ID: '123'
       Show Root Path: anime/staging/Bleach
-      Symlinked: ''
+      Symlinked: anime/staging/Bleach/Season 00/Bleach - S00E005 - Fade to Black Bluray-1080p.mkv
+        -> ../../../../movies/foreign/Bleach- Fade to Black (2008)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88
+        BLEACH \xe3\x83\x96\xe3\x83\xaa\xe3\x83\xbc\xe3\x83\x81 Fade to Black \xe5\x90\x9b\xe3\x81\xae\xe5\x90\x8d\xe3\x82\x92\xe5\x91\xbc\xe3\x81\xb6
+        (2008) Bluray-1080p.mkv
       Title: Fade to Black
   Title: Bleach- Fade to Black (2008)
 Bleach- Hell Verse (2010):
@@ -1236,7 +1309,10 @@ Bleach- Hell Verse (2010):
       Season: '00'
       Show ID: '123'
       Show Root Path: anime/staging/Bleach
-      Symlinked: ''
+      Symlinked: anime/staging/Bleach/Season 00/Bleach - S00E006 - Bleach- Hell Chapter
+        Bluray-1080p.mkv -> ../../../../movies/foreign/Bleach- Hell Verse (2010)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88
+        BLEACH \xe3\x83\x96\xe3\x83\xaa\xe3\x83\xbc\xe3\x83\x81 \xe5\x9c\xb0\xe7\x8d\x84\xe7\xaf\x87
+        (2010) Bluray-1080p.mkv
       Title: Bleach Hell Chapter
   Title: Bleach- Hell Verse (2010)
 Bleach- Memories in the Rain (2004):
@@ -1264,7 +1340,9 @@ Bleach- Memories in the Rain (2004):
       Season: '00'
       Show ID: '123'
       Show Root Path: anime/staging/Bleach
-      Symlinked: ''
+      Symlinked: anime/staging/Bleach/Season 00/Bleach - S00E001 - Memories in the
+        Rain DVD.mkv -> ../../../../movies/foreign/Bleach- Memories in the Rain (2004)/Bleach-
+        Memories in the Rain (2004) DVD.mkv
       Title: Memories in the Rain
   Title: Bleach- Memories in the Rain (2004)
 Bleach- Memories of Nobody (2006):
@@ -1343,7 +1421,9 @@ Bleach- The Sealed Sword Frenzy (2005):
       Season: '00'
       Show ID: '123'
       Show Root Path: anime/staging/Bleach
-      Symlinked: ''
+      Symlinked: anime/staging/Bleach/Season 00/Bleach - S00E002 - The Sealed Sword
+        Frenzy DVD.mkv -> ../../../../movies/foreign/Bleach- The Sealed Sword Frenzy
+        (2005)/Bleach- The Sealed Sword Frenzy (2005) DVD.mkv
       Title: The Sealed Sword Frenzy
   Title: Bleach- The Sealed Sword Frenzy (2005)
 Blue Exorcist - Kyoto Saga- Snake and Poison (2017):
@@ -1373,7 +1453,10 @@ Blue Exorcist - Kyoto Saga- Snake and Poison (2017):
       Season: '00'
       Show ID: '28'
       Show Root Path: anime/shounen/Blue Exorcist
-      Symlinked: ''
+      Symlinked: anime/shounen/Blue Exorcist/Season 00/Blue Exorcist - S00E01 - Special
+        1 Bluray-1080p v2.mkv -> ../../../../movies/foreign/Blue Exorcist - Kyoto
+        Saga- Snake and Poison (2017)/Blue Exorcist - Kyoto Saga- Snake and Poison
+        (2017) DVD.mkv
       Title: Special 1
   Title: Blue Exorcist - Kyoto Saga- Snake and Poison (2017)
 Blue Exorcist - Kyoto Saga- Spy Game (2017):
@@ -1402,7 +1485,9 @@ Blue Exorcist - Kyoto Saga- Spy Game (2017):
       Season: '00'
       Show ID: '28'
       Show Root Path: anime/shounen/Blue Exorcist
-      Symlinked: ''
+      Symlinked: anime/shounen/Blue Exorcist/Season 00/Blue Exorcist - S00E01 - Special
+        1 Bluray-1080p v2.mkv -> ../../../../movies/foreign/Blue Exorcist - Kyoto
+        Saga- Spy Game (2017)/Blue Exorcist - Kyoto Saga- Spy Game (2017) DVD.mkv
       Title: Special 1
   Title: Blue Exorcist - Kyoto Saga- Spy Game (2017)
 Blue Exorcist- Runaway Kuro (2011):
@@ -1430,7 +1515,9 @@ Blue Exorcist- Runaway Kuro (2011):
       Season: '00'
       Show ID: '28'
       Show Root Path: anime/shounen/Blue Exorcist
-      Symlinked: ''
+      Symlinked: anime/shounen/Blue Exorcist/Season 00/Blue Exorcist - S00E01 - Special
+        1 Bluray-1080p v2.mkv -> ../../../../movies/foreign/Blue Exorcist- Runaway
+        Kuro (2011)/Blue Exorcist- Runaway Kuro (2011) Bluray-1080p.mkv
       Title: Special 1
   Title: Blue Exorcist- Runaway Kuro (2011)
 Blue Exorcist- The Movie (2012):
@@ -1618,18 +1705,23 @@ Chunin Exam on Fire! and Naruto vs. Konohamaru! (2011):
       Season: '00'
       Show ID: '168'
       Show Root Path: anime/shounen/Naruto Shippuden
-      Symlinked: ''
+      Symlinked: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden - S00E009
+        - Naruto vs. Konohamaru!! Bluray-1080p.mkv -> ../../../../movies/foreign/Chunin
+        Exam on Fire! and Naruto vs. Konohamaru! (2011)/Chunin Exam on Fire! and Naruto
+        vs. Konohamaru! (2011) Bluray-1080p.mkv
       Title: Naruto vs. Konohamaru!!
   Title: Chunin Exam on Fire! and Naruto vs. Konohamaru! (2011)
 Clannad (2007):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: "/media/video/movies/foreign/Clannad (2007)/\u5287\u5834\
+    \u7248 Clannad -\u30AF\u30E9\u30CA\u30C9- (2007) DVD.mkv"
+  Absolute Movie Path: /media/video/movies/foreign/Clannad (2007)
   Movie DB ID: 16516
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie File Path: "movies/foreign/Clannad (2007)/\u5287\u5834\u7248 Clannad\
+    \ -\u30AF\u30E9\u30CA\u30C9- (2007) DVD.mkv"
+  Relative Movie Path: movies/foreign/Clannad (2007)
   Shows:
     Clannad:
       Anime: true
@@ -1645,7 +1737,7 @@ Clannad (2007):
       Show Root Path: anime/staging/Clannad
       Symlinked: ''
       Title: Clannad the Motion Picture
-  Title: Clannad (2011)
+  Title: Clannad (2007)
 Clannad- After Story - Another World, Kyou Chapter (0):
   Absolute Movie File Path: /media/video/movies/foreign/Clannad- After Story - Another
     World, Kyou Chapter (0)/Clannad- After Story - Another World, Kyou Chapter (0)
@@ -1676,7 +1768,10 @@ Clannad- After Story - Another World, Kyou Chapter (0):
       Season: '00'
       Show ID: '29'
       Show Root Path: anime/staging/Clannad
-      Symlinked: ''
+      Symlinked: anime/staging/Clannad/Season 00/Clannad - S00E003 (E049) - Another
+        World - Kyou Chapter Bluray-1080p.mkv -> ../../../../movies/foreign/Clannad-
+        After Story - Another World, Kyou Chapter (0)/Clannad- After Story - Another
+        World, Kyou Chapter (0) Bluray-1080p.mkv
       Title: Another World Kyou Chapter
   Title: Clannad- After Story - Another World, Kyou Chapter (0)
 Clannad- Another World - Tomoyo Chapter (0):
@@ -1707,7 +1802,10 @@ Clannad- Another World - Tomoyo Chapter (0):
       Season: '00'
       Show ID: '29'
       Show Root Path: anime/staging/Clannad
-      Symlinked: ''
+      Symlinked: anime/staging/Clannad/Season 00/Clannad - S00E002 (E024) - Another
+        World - Tomoyo Chapter Bluray-1080p.mkv -> ../../../../movies/foreign/Clannad-
+        Another World - Tomoyo Chapter (0)/Clannad- Another World - Tomoyo Chapter
+        (0) Bluray-1080p.mkv
       Title: Another World Tomoyo Chapter
   Title: Clannad- Another World - Tomoyo Chapter (0)
 Code Geass- Akito the Exiled 1- The Wyvern Arrives (2012):
@@ -1907,14 +2005,17 @@ Code Geass- Lelouch of the Re;Surrection (2019):
       Title: Code Geass Lelouch of the Resurrection
   Title: Code Geass- Lelouch of the Re;Surrection (2019)
 Code Geass- Lelouch of the Rebellion - Awakening (2017):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: /media/video/movies/foreign/Code Geass- Lelouch of the
+    Rebellion - Awakening (2017)/
+  Absolute Movie Path: /media/video/movies/foreign/Code Geass- Lelouch of the Rebellion
+    - Awakening (2017)
   Movie DB ID: 477776
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
   Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie Path: movies/foreign/Code Geass- Lelouch of the Rebellion - Awakening
+    (2017)
   Shows:
     Code Geass- Lelouch of the Rebellion:
       Anime: true
@@ -1931,16 +2032,19 @@ Code Geass- Lelouch of the Rebellion - Awakening (2017):
       Show Root Path: anime/staging/Code Geass- Lelouch of the Rebellion
       Symlinked: ''
       Title: Code Geass Lelouch of the Revolution The Awakening Path
-  Title: Code Geass- Lelouch of the Rebellion - Initiation (2017)
+  Title: Code Geass- Lelouch of the Rebellion - Awakening (2017)
 Code Geass- Lelouch of the Rebellion - Emperor (2018):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: /media/video/movies/foreign/Code Geass- Lelouch of the
+    Rebellion - Emperor (2018)/
+  Absolute Movie Path: /media/video/movies/foreign/Code Geass- Lelouch of the Rebellion
+    - Emperor (2018)
   Movie DB ID: 477779
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
   Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie Path: movies/foreign/Code Geass- Lelouch of the Rebellion - Emperor
+    (2018)
   Shows:
     Code Geass- Lelouch of the Rebellion:
       Anime: true
@@ -1956,16 +2060,19 @@ Code Geass- Lelouch of the Rebellion - Emperor (2018):
       Show Root Path: anime/staging/Code Geass- Lelouch of the Rebellion
       Symlinked: ''
       Title: Tachikomatic Days EP26
-  Title: Code Geass- Lelouch of the Rebellion - Glorification (2018)
+  Title: Code Geass- Lelouch of the Rebellion - Emperor (2018)
 Code Geass- Lelouch of the Rebellion - Rebellion (2018):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: /media/video/movies/foreign/Code Geass- Lelouch of the
+    Rebellion - Rebellion (2018)/
+  Absolute Movie Path: /media/video/movies/foreign/Code Geass- Lelouch of the Rebellion
+    - Rebellion (2018)
   Movie DB ID: 477777
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
   Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie Path: movies/foreign/Code Geass- Lelouch of the Rebellion - Rebellion
+    (2018)
   Shows:
     Code Geass- Lelouch of the Rebellion:
       Anime: true
@@ -1981,7 +2088,7 @@ Code Geass- Lelouch of the Rebellion - Rebellion (2018):
       Show Root Path: anime/staging/Code Geass- Lelouch of the Rebellion
       Symlinked: ''
       Title: Uchikomatic Days
-  Title: Code Geass- Lelouch of the Rebellion - Transgression (2018)
+  Title: Code Geass- Lelouch of the Rebellion - Rebellion (2018)
 Comedian (2002):
   Absolute Movie File Path: /media/video/movies/standup_comedy/Comedian (2002)/
   Absolute Movie Path: /media/video/movies/standup_comedy/Comedian (2002)
@@ -2213,14 +2320,17 @@ Dexter's Laboratory- Ego Trip (1999):
       Title: Ego Trip
   Title: Dexter's Laboratory- Ego Trip (1999)
 Dragon Ball Z- Battle of Gods (2013):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: "/media/video/movies/foreign/Dragon Ball Z- Battle of\
+    \ Gods (2013)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u795E\u3068\u795E (2013)\
+    \ Remux-1080p.mkv"
+  Absolute Movie Path: /media/video/movies/foreign/Dragon Ball Z- Battle of Gods (2013)
   Movie DB ID: 126963
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie File Path: "movies/foreign/Dragon Ball Z- Battle of Gods (2013)/\u30C9\
+    \u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u795E\u3068\u795E (2013) Remux-1080p.mkv"
+  Relative Movie Path: movies/foreign/Dragon Ball Z- Battle of Gods (2013)
   Shows:
     Dragon Ball Z:
       Anime: true
@@ -2236,7 +2346,7 @@ Dragon Ball Z- Battle of Gods (2013):
       Show Root Path: anime/shounen/Dragon Ball Z
       Symlinked: ''
       Title: The World's Strongest
-  Title: Dragon Ball Z- Battle of Gods (2014)
+  Title: Dragon Ball Z- Battle of Gods (2013)
 Dragon Ball Z- Bio-Broly (1994):
   Absolute Movie File Path: "/media/video/movies/foreign/Dragon Ball Z- Bio-Broly\
     \ (1994)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u8D85\u6226\u58EB\u6483\u7834\
@@ -2384,7 +2494,9 @@ Dragon Ball Z- Dead Zone (1989):
       Season: '00'
       Show ID: '37'
       Show Root Path: anime/shounen/Dragon Ball Z
-      Symlinked: ''
+      Symlinked: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E005 - Dead
+        Zone WEBDL-1080p.mkv -> ../../../../movies/foreign/Dragon Ball Z- Dead Zone
+        (1989)/Dragon Ball Z- Dead Zone (1989) WEBDL-1080p.mkv
       Title: Cooler's Revenge
   Title: Dragon Ball Z- Dead Zone (1989)
 Dragon Ball Z- Fusion Reborn (1995):
@@ -2477,14 +2589,19 @@ Dragon Ball Z- Resurrection 'F' (2015):
       Title: The World's Strongest
   Title: Dragon Ball Z- Resurrection 'F' (2015)
 Dragon Ball Z- The Tree of Might (1990):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: "/media/video/movies/foreign/Dragon Ball Z- The Tree of\
+    \ Might (1990)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u5730\u7403\u307E\u308B\
+    \u3054\u3068\u8D85\u6C7A\u6226 (1990) Remux-1080p.mkv"
+  Absolute Movie Path: /media/video/movies/foreign/Dragon Ball Z- The Tree of Might
+    (1990)
   Movie DB ID: 39101
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie File Path: "movies/foreign/Dragon Ball Z- The Tree of Might (1990)/\u30C9\
+    \u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u5730\u7403\u307E\u308B\u3054\u3068\u8D85\
+    \u6C7A\u6226 (1990) Remux-1080p.mkv"
+  Relative Movie Path: movies/foreign/Dragon Ball Z- The Tree of Might (1990)
   Shows:
     Dragon Ball Z:
       Anime: true
@@ -2500,7 +2617,7 @@ Dragon Ball Z- The Tree of Might (1990):
       Show Root Path: anime/shounen/Dragon Ball Z
       Symlinked: ''
       Title: The Tree of Might
-  Title: Dragon Ball Z- The Tree of Might (2006)
+  Title: Dragon Ball Z- The Tree of Might (1990)
 Dragon Ball Z- The World's Strongest (1990):
   Absolute Movie File Path: "/media/video/movies/foreign/Dragon Ball Z- The World's\
     \ Strongest (1990)/\u30C9\u30E9\u30B4\u30F3\u30DC\u30FC\u30EBZ \u3053\u306E\u4E16\
@@ -2611,31 +2728,33 @@ Dream 9 Toriko & One Piece & Dragon Ball Z Super Collaboration Special!! (2013):
     Dragon Ball Z:
       Anime: true
       Episode: '2'
-      Episode ID: '669'
+      Episode ID: '689'
       Parsed Episode: '002'
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E002
-        - The World's Strongest
+      Parsed Show Title: "anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z - S00E002\
+        \ - Dream 9 Toriko & One Piece & Dragon Ball Z Ch\u014D Collaboration Special!!"
       Relative Show File Path: ''
       Season: '00'
       Show ID: '37'
       Show Root Path: anime/shounen/Dragon Ball Z
       Symlinked: ''
-      Title: The World's Strongest
+      Title: "Dream 9 Toriko & One Piece & Dragon Ball Z Ch\u014D Collaboration Special!!"
     One Piece:
+      Absolute Episode: '590'
       Anime: true
       Episode: '2'
-      Episode ID: '3935'
+      Episode ID: '3656'
+      Parsed Absolute Episode: '590'
       Parsed Episode: '002'
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/shounen/One Piece/Season 00/One Piece - S00E002 - One
-        Piece The Movie
+      Parsed Show Title: "anime/shounen/One Piece/Season 00/One Piece - S00E002 -\
+        \ Dream 9 Toriko & One Piece & Dragon Ball Z Ch\u014D Collaboration Special!!"
       Relative Show File Path: ''
       Season: '00'
       Show ID: '86'
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
-      Title: One Piece The Movie
+      Title: "Dream 9 Toriko & One Piece & Dragon Ball Z Ch\u014D Collaboration Special!!"
     Toriko:
       Absolute Episode: '99'
       Anime: true
@@ -2681,7 +2800,9 @@ Elfen Lied Special (2005):
       Season: '00'
       Show ID: '35'
       Show Root Path: anime/staging/Elfen Lied
-      Symlinked: ''
+      Symlinked: anime/staging/Elfen Lied/Season 00/Elfen Lied - S00E001 (E014) -
+        In the Passing Rain Bluray-1080p.mkv -> ../../../../movies/foreign/Elfen Lied
+        Special (2005)/Elfen Lied Special (2005) Bluray-1080p.mkv
       Title: In the Passing Rain
   Title: Elfen Lied Special (2005)
 Entourage (2015):
@@ -2708,7 +2829,9 @@ Entourage (2015):
       Season: '00'
       Show ID: '206'
       Show Root Path: tv/staging/Entourage
-      Symlinked: ''
+      Symlinked: tv/staging/Entourage/Season 00/Entourage - S00E09 - Entourage The
+        Movie Bluray-1080p.mkv -> ../../../../movies/staging/Entourage (2015)/Entourage
+        (2015) Bluray-1080p.mkv
       Title: Entourage The Movie
   Title: Entourage (2015)
 Episode of Sabo - The Three Brothers' Bond - The Miraculous Reunion (2015):
@@ -2789,18 +2912,26 @@ Eureka Seven AO- Jungfrau no Hanabana-tachi (2012):
       Season: '00'
       Show ID: '145'
       Show Root Path: anime/staging/Eureka Seven
-      Symlinked: ''
+      Symlinked: anime/staging/Eureka Seven/Season 00/Eureka Seven - S00E004 - The
+        Flowers of Jungfrau Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Eureka
+        Seven AO- Jungfrau no Hanabana-tachi (2012)/Eureka Seven AO- Jungfrau no Hanabana-tachi
+        (2012) Remux-1080p.mkv
       Title: The Flowers of Jungfrau
   Title: Eureka Seven AO- Jungfrau no Hanabana-tachi (2012)
 Evangelion- 1.0 You Are (Not) Alone (2007):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: "/media/video/movies/foreign/Evangelion- 1.0 You Are (Not)\
+    \ Alone (2007)/\u30F1\u30F4\u30A1\u30F3\u30B2\u30EA\u30F2\u30F3\u65B0\u5287\u5834\
+    \u7248\uFF1A\u5E8F (2007) Remux-1080p.mkv"
+  Absolute Movie Path: /media/video/movies/foreign/Evangelion- 1.0 You Are (Not) Alone
+    (2007)
   Movie DB ID: 15137
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie File Path: "movies/foreign/Evangelion- 1.0 You Are (Not) Alone (2007)/\u30F1\
+    \u30F4\u30A1\u30F3\u30B2\u30EA\u30F2\u30F3\u65B0\u5287\u5834\u7248\uFF1A\u5E8F\
+    \ (2007) Remux-1080p.mkv"
+  Relative Movie Path: movies/foreign/Evangelion- 1.0 You Are (Not) Alone (2007)
   Shows:
     Neon Genesis Evangelion:
       Anime: true
@@ -2816,7 +2947,7 @@ Evangelion- 1.0 You Are (Not) Alone (2007):
       Show Root Path: anime/staging/Neon Genesis Evangelion
       Symlinked: ''
       Title: Evangelion 1 You Are (Not) Alone
-  Title: Evangelion- 1.0 You Are (Not) Alone (2008)
+  Title: Evangelion- 1.0 You Are (Not) Alone (2007)
 Evangelion- 2.0 You Can (Not) Advance (2009):
   Absolute Movie File Path: "/media/video/movies/foreign/Evangelion- 2.0 You Can (Not)\
     \ Advance (2009)/\u30F1\u30F4\u30A1\u30F3\u30B2\u30EA\u30F2\u30F3\u65B0\u5287\u5834\
@@ -2922,7 +3053,9 @@ Evil Dead II (1987):
       Season: '00'
       Show ID: '332'
       Show Root Path: tv/fantasy/Ash vs Evil Dead
-      Symlinked: ''
+      Symlinked: tv/fantasy/Ash vs Evil Dead/Season 00/Ash vs Evil Dead - S00E02 -
+        Evil Dead II Bluray-1080p.mkv -> ../../../../movies/horror/Evil Dead II (1987)/Evil
+        Dead II (1987) Bluray-1080p.mkv
       Title: Evil Dead II
   Title: Evil Dead II (1987)
 Fairy Tail the Movie- Phoenix Priestess (2012):
@@ -2975,7 +3108,9 @@ Fairy Tail x Rave (2013):
       Season: '00'
       Show ID: '38'
       Show Root Path: anime/shounen/Fairy Tail
-      Symlinked: ''
+      Symlinked: anime/shounen/Fairy Tail/Season 00/Fairy Tail - S0E008 - Fairy Tail
+        DVD.mkv -> ../../../../movies/foreign/Fairy Tail x Rave (2013)/Fairy Tail
+        x Rave (2013) DVD.mkv
       Title: Fairy Tail x Rave
     Rave Master:
       Anime: true
@@ -3017,18 +3152,26 @@ Fairy Tail- Dragon Cry (2017):
       Season: '00'
       Show ID: '38'
       Show Root Path: anime/shounen/Fairy Tail
-      Symlinked: ''
+      Symlinked: anime/shounen/Fairy Tail/Season 00/Fairy Tail - S00E01 - Welcome
+        to Fairy Hills!! DVD.mkv -> ../../../../movies/foreign/Fairy Tail- Dragon
+        Cry (2017)/Fairy Tail- Dragon Cry (2017) Bluray-1080p.mkv
       Title: Welcome to Fairy Hills!!
   Title: Fairy Tail- Dragon Cry (2017)
 Family Guy Presents Stewie Griffin - The Untold Story (2005):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: /media/video/movies/staging/Family Guy Presents Stewie
+    Griffin - The Untold Story (2005)/Family Guy Presents Stewie Griffin- The Untold
+    Story (2005) DVD.mkv
+  Absolute Movie Path: /media/video/movies/staging/Family Guy Presents Stewie Griffin
+    - The Untold Story (2005)
   Movie DB ID: 65215
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie File Path: movies/staging/Family Guy Presents Stewie Griffin - The
+    Untold Story (2005)/Family Guy Presents Stewie Griffin- The Untold Story (2005)
+    DVD.mkv
+  Relative Movie Path: movies/staging/Family Guy Presents Stewie Griffin - The Untold
+    Story (2005)
   Shows:
     Family Guy:
       Anime: false
@@ -3044,7 +3187,7 @@ Family Guy Presents Stewie Griffin - The Untold Story (2005):
       Show Root Path: tv/staging/Family Guy
       Symlinked: ''
       Title: Stewie Griffin The Untold Story
-  Title: Family Guy Presents Stewie Griffin- The Untold Story (2005)
+  Title: Family Guy Presents Stewie Griffin - The Untold Story (2005)
 Family Guy Presents- Road to the North Pole (2011):
   Absolute Movie File Path: /media/video/movies/staging/Family Guy Presents- Road
     to the North Pole (2011)/
@@ -3561,14 +3704,17 @@ Futurama - Bender's Game (2008):
       Title: Bender's Game
   Title: Futurama- Bender's Game (2008)
 Futurama - Into the Wild Green Yonder (2009):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: /media/video/movies/staging/Futurama - Into the Wild Green
+    Yonder (2009)/Futurama- Into the Wild Green Yonder (2009) Bluray-1080p.mkv
+  Absolute Movie Path: /media/video/movies/staging/Futurama - Into the Wild Green
+    Yonder (2009)
   Movie DB ID: 15060
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie File Path: movies/staging/Futurama - Into the Wild Green Yonder (2009)/Futurama-
+    Into the Wild Green Yonder (2009) Bluray-1080p.mkv
+  Relative Movie Path: movies/staging/Futurama - Into the Wild Green Yonder (2009)
   Shows:
     Futurama:
       Anime: false
@@ -3584,16 +3730,19 @@ Futurama - Into the Wild Green Yonder (2009):
       Show Root Path: tv/staging/Futurama
       Symlinked: ''
       Title: Into the Wild Green Yonder
-  Title: Futurama- Into the Wild Green Yonder (2009)
+  Title: Futurama - Into the Wild Green Yonder (2009)
 Futurama - The Beast with a Billion Backs (2008):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: /media/video/movies/staging/Futurama - The Beast with
+    a Billion Backs (2008)/Futurama- The Beast with a Billion Backs (2008) WEBDL-1080p.mkv
+  Absolute Movie Path: /media/video/movies/staging/Futurama - The Beast with a Billion
+    Backs (2008)
   Movie DB ID: 12889
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie File Path: movies/staging/Futurama - The Beast with a Billion Backs
+    (2008)/Futurama- The Beast with a Billion Backs (2008) WEBDL-1080p.mkv
+  Relative Movie Path: movies/staging/Futurama - The Beast with a Billion Backs (2008)
   Shows:
     Futurama:
       Anime: false
@@ -3609,16 +3758,17 @@ Futurama - The Beast with a Billion Backs (2008):
       Show Root Path: tv/staging/Futurama
       Symlinked: ''
       Title: The Beast With A Billion Backs
-  Title: Futurama- The Beast with a Billion Backs (2008)
+  Title: Futurama - The Beast with a Billion Backs (2008)
 Futurama - The Lost Adventure (2008):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: /media/video/movies/staging/Futurama - The Lost Adventure
+    (2008)/
+  Absolute Movie Path: /media/video/movies/staging/Futurama - The Lost Adventure (2008)
   Movie DB ID: 279687
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
   Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie Path: movies/staging/Futurama - The Lost Adventure (2008)
   Shows:
     Futurama:
       Anime: false
@@ -3634,7 +3784,7 @@ Futurama - The Lost Adventure (2008):
       Show Root Path: tv/staging/Futurama
       Symlinked: ''
       Title: The Lost Adventure
-  Title: Futurama- The Lost Adventure (2008)
+  Title: Futurama - The Lost Adventure (2008)
 Game of Thrones- The Last Watch (2019):
   Absolute Movie File Path: /media/video/movies/staging/Game of Thrones- The Last
     Watch (2019)/Game of Thrones- The Last Watch (2019) WEBDL-1080p.mkv
@@ -3686,7 +3836,8 @@ Gantz (2010):
       Season: '00'
       Show ID: '45'
       Show Root Path: anime/staging/Gantz
-      Symlinked: ''
+      Symlinked: anime/staging/Gantz/Season 00/Gantz - S00E001 - Gantz Bluray-1080p.mkv
+        -> ../../../../movies/foreign/Gantz (2010)/GANTZ (2010) Bluray-1080p.mkv
       Title: Gantz
   Title: Gantz (2010)
 Gantz- Perfect Answer (2011):
@@ -3714,7 +3865,9 @@ Gantz- Perfect Answer (2011):
       Season: '00'
       Show ID: '45'
       Show Root Path: anime/staging/Gantz
-      Symlinked: ''
+      Symlinked: anime/staging/Gantz/Season 00/Gantz - S00E002 - Gantz- Perfect Answer
+        Bluray-1080p.mkv -> ../../../../movies/foreign/Gantz- Perfect Answer (2011)/GANTZ
+        PERFECT ANSWER (2011) Bluray-1080p.mkv
       Title: Gantz Perfect Answer
   Title: Gantz- Perfect Answer (2011)
 Gantz-O (2016):
@@ -3740,7 +3893,8 @@ Gantz-O (2016):
       Season: '00'
       Show ID: '45'
       Show Root Path: anime/staging/Gantz
-      Symlinked: ''
+      Symlinked: anime/staging/Gantz/Season 00/Gantz - S00E003 - Gantz-O HDTV-720p.mkv
+        -> ../../../../movies/foreign/Gantz-O (2016)/GANTZ-O (2016) HDTV-720p.mkv
       Title: GantzO
   Title: Gantz-O (2016)
 Ghost in the Shell (1995):
@@ -4227,7 +4381,9 @@ God Eater Prologue (0):
       Season: '00'
       Show ID: '49'
       Show Root Path: anime/staging/God Eater
-      Symlinked: ''
+      Symlinked: anime/staging/God Eater/Season 00/God Eater - S00E001 - Gods Eater
+        Burst - Prologue WEBDL-720p.mkv -> ../../../../movies/foreign/God Eater Prologue
+        (0)/God Eater Prologue (0) WEBDL-720p.mkv
       Title: Gods Eater Burst - Prologue
   Title: God Eater Prologue (0)
 Goin' Down To South Park (1999):
@@ -4438,7 +4594,10 @@ Haikyuu!! Movie 2- Winners and Losers (2015):
       Season: '00'
       Show ID: '137'
       Show Root Path: anime/staging/Haikyuu!!
-      Symlinked: ''
+      Symlinked: anime/staging/Haikyuu!!/Season 00/Haikyuu!! - S0E004 - Haikyu!! Movie
+        2- Shousha to Haisha Bluray-1080p.mkv -> ../../../../movies/foreign/Haikyuu!!
+        Movie 2- Winners and Losers (2015)/Haikyuu!! Movie 2- Winners and Losers (2015)
+        Bluray-1080p.mkv
       Title: Haikyu!! Movie 2 Shousha to Haisha
   Title: Haikyuu!! Movie 2- Winners and Losers (2015)
 Haikyuu!! Movie 3- Genius and Sense (2017):
@@ -4467,7 +4626,10 @@ Haikyuu!! Movie 3- Genius and Sense (2017):
       Season: '00'
       Show ID: '137'
       Show Root Path: anime/staging/Haikyuu!!
-      Symlinked: ''
+      Symlinked: anime/staging/Haikyuu!!/Season 00/Haikyuu!! - S00E006 - Haikyuu!!
+        Movie 3- Sainou to Sense Bluray-1080p.mkv -> ../../../../movies/foreign/Haikyuu!!
+        Movie 3- Genius and Sense (2017)/Haikyuu!! Movie 3- Genius and Sense (2017)
+        Bluray-1080p.mkv
       Title: Haikyu!! Movie 3 Sainou to Sense
   Title: Haikyuu!! Movie 3- Genius and Sense (2017)
 Haikyuu!! Movie 4- Battle of Concepts (2017):
@@ -4496,7 +4658,10 @@ Haikyuu!! Movie 4- Battle of Concepts (2017):
       Season: '00'
       Show ID: '137'
       Show Root Path: anime/staging/Haikyuu!!
-      Symlinked: ''
+      Symlinked: anime/staging/Haikyuu!!/Season 00/Haikyuu!! - S00E007 - Haikyuu!!
+        Movie 4- Concept no Tatakai Bluray-1080p.mkv -> ../../../../movies/foreign/Haikyuu!!
+        Movie 4- Battle of Concepts (2017)/Haikyuu!! Movie 4- Battle of Concepts (2017)
+        Bluray-1080p.mkv
       Title: Haikyu!! Movie 4 Concept no Tatakai
   Title: Haikyuu!! Movie 4- Battle of Concepts (2017)
 Haikyuu!! The Movie- Beginnings and Endings (2015):
@@ -4528,7 +4693,10 @@ Haikyuu!! The Movie- Beginnings and Endings (2015):
       Season: '01'
       Show ID: '137'
       Show Root Path: anime/staging/Haikyuu!!
-      Symlinked: ''
+      Symlinked: anime/staging/Haikyuu!!/Season 01/Haikyu!! - S01E001 (E001) - The
+        End and the Beginning Bluray-1080p Remux v2 REAL.mkv -> ../../../../movies/foreign/Haikyuu!!
+        The Movie- Beginnings and Endings (2015)/Haikyuu!! The Movie- Beginnings and
+        Endings (2015) Bluray-1080p.mkv
       Title: The End and the Beginning
   Title: Haikyuu!! The Movie- Beginnings and Endings (2015)
 Hajime no Ippo- Champion Road (2003):
@@ -4556,7 +4724,9 @@ Hajime no Ippo- Champion Road (2003):
       Season: '00'
       Show ID: '152'
       Show Root Path: anime/staging/Hajime no Ippo
-      Symlinked: ''
+      Symlinked: anime/staging/Hajime no Ippo/Season 00/Hajime no Ippo - S00E002 -
+        Champion Road DVD.mkv -> ../../../../movies/foreign/Hajime no Ippo- Champion
+        Road (2003)/Hajime no Ippo- Champion Road (2003) DVD.mkv
       Title: Champion Road
   Title: Hajime no Ippo- Champion Road (2003)
 Hajime no Ippo- Mashiba vs. Kimura (2003):
@@ -4588,18 +4758,23 @@ Hajime no Ippo- Mashiba vs. Kimura (2003):
       Title: Kimura vs Mashiba
   Title: Hajime no Ippo- Mashiba vs. Kimura (2003)
 "Hayate the Combat Butler \xD7 The World God Only Knows\xB7 Joint Concert 2013 Today, full bloom Sakura color! (2013)":
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: "/media/video/movies/foreign/Hayate the Combat Butler\
+    \ \xD7 The World God Only Knows\xB7 Joint Concert 2013 Today, full bloom Sakura\
+    \ color! (2013)/"
+  Absolute Movie Path: "/media/video/movies/foreign/Hayate the Combat Butler \xD7\
+    \ The World God Only Knows\xB7 Joint Concert 2013 Today, full bloom Sakura color!\
+    \ (2013)"
   Movie DB ID: 483487
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
   Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie Path: "movies/foreign/Hayate the Combat Butler \xD7 The World God\
+    \ Only Knows\xB7 Joint Concert 2013 Today, full bloom Sakura color! (2013)"
   Shows:
     The World God Only Knows: null
   Title: "Hayate the Combat Butler \xD7 The World God Only Knows\xB7 Joint Concert\
-    \ 2013 \"Today, full bloom Sakura color!\" (2013)"
+    \ 2013 Today, full bloom Sakura color! (2013)"
 High School of the Dead OVA- Drifters of the Dead (2011):
   Absolute Movie File Path: /media/video/movies/foreign/High School of the Dead OVA-
     Drifters of the Dead (2011)/High School of the Dead OVA- Drifters of the Dead
@@ -4714,7 +4889,9 @@ Inside The X-Files (1998):
       Season: '00'
       Show ID: '409'
       Show Root Path: tv/scifi/The X-Files
-      Symlinked: ''
+      Symlinked: tv/scifi/The X-Files/Season 00/The X-Files - S00E04 - Inside the
+        X-Files DVD.mp4 -> ../../../../movies/staging/Inside The X-Files (1998)/Inside
+        The X-Files (1998) DVD.mp4
       Title: Inside the X-Files
   Title: Inside The X-Files (1998)
 Inuyasha the Movie 2- The Castle Beyond the Looking Glass (2002):
@@ -4770,7 +4947,10 @@ Inuyasha the Movie 3- Swords of an Honorable Ruler (2003):
       Season: '00'
       Show ID: '55'
       Show Root Path: anime/shounen/InuYasha
-      Symlinked: ''
+      Symlinked: anime/shounen/InuYasha/Season 00/InuYasha - S00E003 - Movie 3- Swords
+        of an Honorable Ruler Bluray-720p.mkv -> ../../../../movies/foreign/Inuyasha
+        the Movie 3- Swords of an Honorable Ruler (2003)/Inuyasha the Movie 3- Swords
+        of an Honorable Ruler (2003) Bluray-720p.mkv
       Title: Movie 3 Swords of an Honorable Ruler
   Title: Inuyasha the Movie 3- Swords of an Honorable Ruler (2003)
 Inuyasha the Movie 4- Fire on the Mystic Island (2004):
@@ -4799,14 +4979,20 @@ Inuyasha the Movie 4- Fire on the Mystic Island (2004):
       Title: Movie 4 Fire on the Mystic Island
   Title: Inuyasha the Movie 4- Fire on the Mystic Island (2006)
 Inuyasha the Movie- Affections Touching Across Time (2001):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: "/media/video/movies/foreign/Inuyasha the Movie- Affections\
+    \ Touching Across Time (2001)/\u6620\u753B \u72AC\u591C\u53C9 \u6642\u4EE3\u3092\
+    \u8D8A\u3048\u308B\u60F3\u3044 (2001) Bluray-720p.mkv"
+  Absolute Movie Path: /media/video/movies/foreign/Inuyasha the Movie- Affections
+    Touching Across Time (2001)
   Movie DB ID: 42360
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie File Path: "movies/foreign/Inuyasha the Movie- Affections Touching\
+    \ Across Time (2001)/\u6620\u753B \u72AC\u591C\u53C9 \u6642\u4EE3\u3092\u8D8A\u3048\
+    \u308B\u60F3\u3044 (2001) Bluray-720p.mkv"
+  Relative Movie Path: movies/foreign/Inuyasha the Movie- Affections Touching Across
+    Time (2001)
   Shows:
     InuYasha:
       Anime: true
@@ -4822,7 +5008,7 @@ Inuyasha the Movie- Affections Touching Across Time (2001):
       Show Root Path: anime/shounen/InuYasha
       Symlinked: ''
       Title: Movie 1 Affections Touching Across Time
-  Title: Inuyasha the Movie- Affections Touching Across Time (2005)
+  Title: Inuyasha the Movie- Affections Touching Across Time (2001)
 Is There A Stargate? (2003):
   Absolute Movie File Path: ''
   Absolute Movie Path: ''
@@ -4834,16 +5020,19 @@ Is There A Stargate? (2003):
   Relative Movie Path: ''
   Shows:
     Stargate SG-1: null
-  Title: Is There a Stargate? (2003)
+  Title: Is There A Stargate? (2003)
 Jeff Dunham - All Over the Map (2014):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: /media/video/movies/standup_comedy/Jeff Dunham - All Over
+    the Map (2014)/Jeff Dunham- All Over the Map (2014) Bluray-1080p.mp4
+  Absolute Movie Path: /media/video/movies/standup_comedy/Jeff Dunham - All Over the
+    Map (2014)
   Movie DB ID: 300685
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie File Path: movies/standup_comedy/Jeff Dunham - All Over the Map (2014)/Jeff
+    Dunham- All Over the Map (2014) Bluray-1080p.mp4
+  Relative Movie Path: movies/standup_comedy/Jeff Dunham - All Over the Map (2014)
   Shows:
     The Jeff Dunham Show:
       Anime: false
@@ -4859,7 +5048,7 @@ Jeff Dunham - All Over the Map (2014):
       Show Root Path: tv/staging/The Jeff Dunham Show
       Symlinked: ''
       Title: All Over the Map
-  Title: Jeff Dunham- All Over the Map (2014)
+  Title: Jeff Dunham - All Over the Map (2014)
 Jeff Dunham - Arguing with Myself (2006):
   Absolute Movie File Path: ''
   Absolute Movie Path: ''
@@ -5099,7 +5288,7 @@ Jerry Seinfeld- I'm Telling You For The Last Time (1998):
   Relative Movie Path: ''
   Shows:
     Seinfeld: null
-  Title: Jerry Seinfeld- I'm Telling You for the Last Time (1998)
+  Title: Jerry Seinfeld- I'm Telling You For The Last Time (1998)
 Jerry Seinfeld- Stand-Up Confidential (1987):
   Absolute Movie File Path: /media/video/movies/standup_comedy/Jerry Seinfeld- Stand-Up
     Confidential (1987)/
@@ -5189,7 +5378,9 @@ Justice League- Crisis on Two Earths (2010):
       Season: '00'
       Show ID: '473'
       Show Root Path: tv/superhero/Justice League
-      Symlinked: ''
+      Symlinked: tv/superhero/Justice League/Season 00/Justice League - S00E05 - Crisis
+        on Two Earths Bluray-1080p.mkv -> ../../../../movies/staging/Justice League-
+        Crisis on Two Earths (2010)/Justice League- Crisis on Two Earths (2010) Bluray-1080p.mkv
       Title: Crisis on Two Earths
   Title: Justice League- Crisis on Two Earths (2010)
 Justice League- The Flashpoint Paradox (2013):
@@ -5218,7 +5409,10 @@ Justice League- The Flashpoint Paradox (2013):
       Season: '00'
       Show ID: '473'
       Show Root Path: tv/superhero/Justice League
-      Symlinked: ''
+      Symlinked: tv/superhero/Justice League/Season 00/Justice League - S00E06 - The
+        Flashpoint Paradox Bluray-1080p.mkv -> ../../../../movies/staging/Justice
+        League- The Flashpoint Paradox (2013)/Justice League- The Flashpoint Paradox
+        (2013) Bluray-1080p.mkv
       Title: The Flashpoint Paradox
   Title: Justice League- The Flashpoint Paradox (2013)
 Justice League- The New Frontier (2008):
@@ -5247,7 +5441,9 @@ Justice League- The New Frontier (2008):
       Season: '00'
       Show ID: '473'
       Show Root Path: tv/superhero/Justice League
-      Symlinked: ''
+      Symlinked: tv/superhero/Justice League/Season 00/Justice League - S00E04 - The
+        New Frontier Bluray-1080p.mkv -> ../../../../movies/staging/Justice League-
+        The New Frontier (2008)/Justice League- The New Frontier (2008) Bluray-1080p.mkv
       Title: The New Frontier
   Title: Justice League- The New Frontier (2008)
 Kabaneri of the Iron Fortress Recap 1- Gathering Light (2016):
@@ -5414,14 +5610,21 @@ Kono Subarashii Sekai ni Shukufuku wo! God's Blessings on This Wonderful Choker!
   Title: Kono Subarashii Sekai ni Shukufuku wo! God's Blessings on This Wonderful
     Choker! (2016)
 Koukyoushihen- Eureka Seven - Hi-Evolution 1 (2017):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: "/media/video/movies/foreign/Koukyoushihen- Eureka Seven\
+    \ - Hi-Evolution 1 (2017)/\u4EA4\u97FF\u8A69\u7BC7\u30A8\u30A6\u30EC\u30AB\u30BB\
+    \u30D6\u30F3 \u30CF\u30A4\u30A8\u30DC\u30EA\u30E5\u30FC\u30B7\u30E7\u30F3 1 (2017)\
+    \ Remux-1080p.mkv"
+  Absolute Movie Path: /media/video/movies/foreign/Koukyoushihen- Eureka Seven - Hi-Evolution
+    1 (2017)
   Movie DB ID: 467169
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie File Path: "movies/foreign/Koukyoushihen- Eureka Seven - Hi-Evolution\
+    \ 1 (2017)/\u4EA4\u97FF\u8A69\u7BC7\u30A8\u30A6\u30EC\u30AB\u30BB\u30D6\u30F3\
+    \ \u30CF\u30A4\u30A8\u30DC\u30EA\u30E5\u30FC\u30B7\u30E7\u30F3 1 (2017) Remux-1080p.mkv"
+  Relative Movie Path: movies/foreign/Koukyoushihen- Eureka Seven - Hi-Evolution 1
+    (2017)
   Shows:
     Eureka Seven:
       Anime: true
@@ -5436,9 +5639,13 @@ Koukyoushihen- Eureka Seven - Hi-Evolution 1 (2017):
       Season: '00'
       Show ID: '145'
       Show Root Path: anime/staging/Eureka Seven
-      Symlinked: ''
+      Symlinked: anime/staging/Eureka Seven/Season 00/Eureka Seven - S00E02 - Navigation
+        ray=out Bluray-720p.mkv -> ../../../../movies/foreign/Koukyoushihen- Eureka
+        Seven - Hi-Evolution 1 (2017)/\xe4\xba\xa4\xe9\x9f\xbf\xe8\xa9\xa9\xe7\xaf\x87\xe3\x82\xa8\xe3\x82\xa6\xe3\x83\xac\xe3\x82\xab\xe3\x82\xbb\xe3\x83\x96\xe3\x83\xb3
+        \xe3\x83\x8f\xe3\x82\xa4\xe3\x82\xa8\xe3\x83\x9c\xe3\x83\xaa\xe3\x83\xa5\xe3\x83\xbc\xe3\x82\xb7\xe3\x83\xa7\xe3\x83\xb3
+        1 (2017) Remux-1080p.mkv
       Title: Navigation ray=out
-  Title: Koukyoushihen- Eureka Seven - Hi-Evolution 1 (2018)
+  Title: Koukyoushihen- Eureka Seven - Hi-Evolution 1 (2017)
 L- Change the World (2008):
   Absolute Movie File Path: "/media/video/movies/foreign/L- Change the World (2008)/L\u306E\
     \u672C\u5F53\u306E\u79D8\u5BC6 (2008) Bluray-1080p.mkv"
@@ -5731,7 +5938,10 @@ Mobile Suit Gundam 00 Special Edition I- Celestial Being (2009):
       Season: '00'
       Show ID: '67'
       Show Root Path: anime/staging/Mobile Suit Gundam 00
-      Symlinked: ''
+      Symlinked: anime/staging/Mobile Suit Gundam 00/Season 00/Mobile Suit Gundam
+        00 - S00E004 - Special Edition I- Celestial Being Bluray-1080p.mp4 -> ../../../../movies/foreign/Mobile
+        Suit Gundam 00 Special Edition I- Celestial Being (2009)/Mobile Suit Gundam
+        00 Special Edition I- Celestial Being (2009) Bluray-1080p.mp4
       Title: Special Edition I Celestial Being
   Title: Mobile Suit Gundam 00 Special Edition I- Celestial Being (2009)
 Mobile Suit Gundam 00 Special Edition II- End of World (2009):
@@ -5763,7 +5973,10 @@ Mobile Suit Gundam 00 Special Edition II- End of World (2009):
       Season: '00'
       Show ID: '67'
       Show Root Path: anime/staging/Mobile Suit Gundam 00
-      Symlinked: ''
+      Symlinked: anime/staging/Mobile Suit Gundam 00/Season 00/Mobile Suit Gundam
+        00 - S00E005 - Special Edition II- End of World Bluray-1080p.mp4 -> ../../../../movies/foreign/Mobile
+        Suit Gundam 00 Special Edition II- End of World (2009)/Mobile Suit Gundam
+        00 Special Edition II- End of World (2009) Bluray-1080p.mp4
       Title: Special Edition II End of World
   Title: Mobile Suit Gundam 00 Special Edition II- End of World (2009)
 Mobile Suit Gundam 00 Special Edition III- Return The World (2010):
@@ -5795,7 +6008,11 @@ Mobile Suit Gundam 00 Special Edition III- Return The World (2010):
       Season: '00'
       Show ID: '67'
       Show Root Path: anime/staging/Mobile Suit Gundam 00
-      Symlinked: ''
+      Symlinked: anime/staging/Mobile Suit Gundam 00/Season 00/Mobile Suit Gundam
+        00 - S00E006 - Special Edition III- Return of the World Bluray-1080p.mp4 ->
+        ../../../../movies/foreign/Mobile Suit Gundam 00 Special Edition III- Return
+        The World (2010)/Mobile Suit Gundam 00 Special Edition III- Return The World
+        (2010) Bluray-1080p.mp4
       Title: Special Edition III Return of the World
   Title: Mobile Suit Gundam 00 Special Edition III- Return The World (2010)
 Mobile Suit Gundam 00- A Wakening of the Trailblazer (2010):
@@ -6526,7 +6743,10 @@ Mushishi- The Next Chapter - Drops of Bells (2015):
       Season: '00'
       Show ID: '81'
       Show Root Path: anime/staging/Mushi-Shi
-      Symlinked: ''
+      Symlinked: anime/staging/Mushi-Shi/Season 00/Mushi-Shi - S00E006 (E050) - Bell
+        Droplets Bluray-1080p.mkv -> ../../../../movies/foreign/Mushishi- The Next
+        Chapter - Drops of Bells (2015)/Mushishi- The Next Chapter - Drops of Bells
+        (2015) Bluray-1080p.mkv
       Title: Bell Droplets
   Title: Mushishi- The Next Chapter - Drops of Bells (2015)
 Mushishi- The Next Chapter - Path of Thorns (2014):
@@ -6585,7 +6805,10 @@ Mushishi- The Shadow That Devours the Sun (2014):
       Season: '00'
       Show ID: '81'
       Show Root Path: anime/staging/Mushi-Shi
-      Symlinked: ''
+      Symlinked: anime/staging/Mushi-Shi/Season 00/Mushi-Shi - S00E001 - The Shadow
+        That Devours the Sun Bluray-1080p.mkv -> ../../../../movies/foreign/Mushishi-
+        The Shadow That Devours the Sun (2014)/Mushishi- The Shadow That Devours the
+        Sun (2014) Bluray-1080p.mkv
       Title: The Shadow That Devours the Sun
   Title: Mushishi- The Shadow That Devours the Sun (2014)
 My Hero Academia - Two Heroes (2018):
@@ -6638,7 +6861,9 @@ My Name Is Bruce (2007):
       Season: '00'
       Show ID: '332'
       Show Root Path: tv/fantasy/Ash vs Evil Dead
-      Symlinked: ''
+      Symlinked: tv/fantasy/Ash vs Evil Dead/Season 00/Ash vs Evil Dead - S00E04 -
+        My Name Is Bruce Bluray-1080p.mkv -> ../../../../movies/horror/My Name Is
+        Bruce (2007)/My Name Is Bruce (2007) Bluray-1080p.mkv
       Title: My Name Is Bruce
   Title: My Name Is Bruce (2007)
 Naruto Shippuden the Movie Blood Prison (2011):
@@ -6779,14 +7004,16 @@ Naruto Shippuden the Movie The Lost Tower (2010):
       Title: Naruto Shippuuden 4 The Lost Tower
   Title: Naruto Shippuden the Movie The Lost Tower (2010)
 Naruto Shippuden- The Movie (2007):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: /media/video/movies/staging/Naruto Shippuden- The Movie
+    (2007)/Naruto Shippuden The Movie (2007) Bluray-1080p.mkv
+  Absolute Movie Path: /media/video/movies/staging/Naruto Shippuden- The Movie (2007)
   Movie DB ID: 20982
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie File Path: movies/staging/Naruto Shippuden- The Movie (2007)/Naruto
+    Shippuden The Movie (2007) Bluray-1080p.mkv
+  Relative Movie Path: movies/staging/Naruto Shippuden- The Movie (2007)
   Shows:
     Naruto Shippuden:
       Anime: true
@@ -6802,7 +7029,7 @@ Naruto Shippuden- The Movie (2007):
       Show Root Path: anime/shounen/Naruto Shippuden
       Symlinked: ''
       Title: Naruto Shippuuden the Movie
-  Title: Naruto Shippuden The Movie (2007)
+  Title: Naruto Shippuden- The Movie (2007)
 Naruto the Movie- Guardians of the Crescent Moon Kingdom (2006):
   Absolute Movie File Path: "/media/video/movies/foreign/Naruto the Movie- Guardians\
     \ of the Crescent Moon Kingdom (2006)/\u5287\u5834\u7248 NARUTO -\u30CA\u30EB\u30C8\
@@ -6866,7 +7093,11 @@ Naruto the Movie- Legend of the Stone of Gelel (2005):
       Season: '00'
       Show ID: '83'
       Show Root Path: anime/shounen/Naruto
-      Symlinked: ''
+      Symlinked: anime/shounen/Naruto/Season 00/Naruto - S00E05 - Naruto the Movie
+        2 - Legend of the Stone of Gelel DVD.mkv -> ../../../../movies/foreign/Naruto
+        the Movie- Legend of the Stone of Gelel (2005)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88
+        NARUTO -\xe3\x83\x8a\xe3\x83\xab\xe3\x83\x88- \xe5\xa4\xa7\xe6\xbf\x80\xe7\xaa\x81!\xe5\xb9\xbb\xe3\x81\xae\xe5\x9c\xb0\xe5\xba\x95\xe9\x81\xba\xe8\xb7\xa1\xe3\x81\xa0\xe3\x81\xa3\xe3\x81\xa6\xe3\x81\xb0\xe3\x82\x88
+        (2005) Bluray-1080p.mkv
       Title: Naruto the Movie 2 Legend of the Stone of Gelel
   Title: Naruto the Movie- Legend of the Stone of Gelel (2005)
 Naruto the Movie- Ninja Clash in the Land of Snow (2004):
@@ -6920,7 +7151,10 @@ Naruto- Find the Crimson Four-leaf Clover! (2003):
       Season: '00'
       Show ID: '83'
       Show Root Path: anime/shounen/Naruto
-      Symlinked: ''
+      Symlinked: anime/shounen/Naruto/Season 00/Naruto - S00E001 - Naruto OVA- Find
+        the Crimson Four-Leaf Clover! Bluray-720p.mkv -> ../../../../movies/foreign/Naruto-
+        Find the Crimson Four-leaf Clover! (2003)/Naruto- Find the Crimson Four-leaf
+        Clover! (2003) Bluray-720p.mkv
       Title: Naruto OVA Find the Crimson Four-Leaf Clover!
   Title: Naruto- Find the Crimson Four-leaf Clover! (2003)
 Naruto- Gentle Breeze Chronicles the Film- Naruto, the Genie, and the Three Wishes Dattebayo!! (2010):
@@ -6955,7 +7189,11 @@ Naruto- Gentle Breeze Chronicles the Film- Naruto, the Genie, and the Three Wish
       Season: '00'
       Show ID: '168'
       Show Root Path: anime/shounen/Naruto Shippuden
-      Symlinked: ''
+      Symlinked: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden - S00E008
+        - Naruto, the Genie, and the Three Wishes, Believe It! Bluray-1080p Remux.mkv
+        -> ../../../../movies/foreign/Naruto- Gentle Breeze Chronicles the Film- Naruto,
+        the Genie, and the Three Wishes Dattebayo!! (2010)/Naruto- Gentle Breeze Chronicles
+        the Film- Naruto, the Genie, and the Three Wishes Dattebayo!! (2010) Remux-1080p.mkv
       Title: Naruto, the Genie, and the Three Wishes, Believe It!
   Title: Naruto- Gentle Breeze Chronicles the Film- Naruto, the Genie, and the Three
     Wishes Dattebayo!! (2010)
@@ -7057,7 +7295,10 @@ New Fist of the North Star- The Cursed City (2003):
       Season: '00'
       Show ID: '42'
       Show Root Path: anime/staging/Fist of the North Star
-      Symlinked: ''
+      Symlinked: anime/staging/Fist of the North Star/Season 00/Fist of the North
+        Star - S00E002 - The Cursed City! DVD.mp4 -> ../../../../movies/foreign/New
+        Fist of the North Star- The Cursed City (2003)/New Fist of the North Star-
+        The Cursed City (2003) DVD.mp4
       Title: The Cursed City!
   Title: New Fist of the North Star- The Cursed City (2003)
 New Fist of the North Star- The Forbidden Fist (2003):
@@ -7088,7 +7329,10 @@ New Fist of the North Star- The Forbidden Fist (2003):
       Season: '00'
       Show ID: '42'
       Show Root Path: anime/staging/Fist of the North Star
-      Symlinked: ''
+      Symlinked: anime/staging/Fist of the North Star/Season 00/Fist of the North
+        Star - S00E003 - The Forbidden Fist DVD.mp4 -> ../../../../movies/foreign/New
+        Fist of the North Star- The Forbidden Fist (2003)/New Fist of the North Star-
+        The Forbidden Fist (2003) DVD.mp4
       Title: The Forbidden Fist
   Title: New Fist of the North Star- The Forbidden Fist (2003)
 New Fist of the North Star- When a Man Carries Sorrow (2004):
@@ -7120,7 +7364,10 @@ New Fist of the North Star- When a Man Carries Sorrow (2004):
       Season: '00'
       Show ID: '42'
       Show Root Path: anime/staging/Fist of the North Star
-      Symlinked: ''
+      Symlinked: anime/staging/Fist of the North Star/Season 00/Fist of the North
+        Star - S00E004 - When a Man Carries Sorrow DVD.mp4 -> ../../../../movies/foreign/New
+        Fist of the North Star- When a Man Carries Sorrow (2004)/New Fist of the North
+        Star- When a Man Carries Sorrow (2004) DVD.mp4
       Title: When a Man Carries Sorrow
   Title: New Fist of the North Star- When a Man Carries Sorrow (2004)
 No Game No Life- Zero (2017):
@@ -7149,7 +7396,10 @@ No Game No Life- Zero (2017):
       Season: '00'
       Show ID: '169'
       Show Root Path: anime/staging/No Game No Life
-      Symlinked: ''
+      Symlinked: anime/staging/No Game No Life/Season 00/No Game No Life - S00E007
+        - No Game No Life Zero Bluray-1080p.mkv -> ../../../../movies/foreign/No Game
+        No Life- Zero (2017)/\xe3\x83\x8e\xe3\x83\xbc\xe3\x82\xb2\xe3\x83\xbc\xe3\x83\xa0\xe3\x83\xbb\xe3\x83\x8e\xe3\x83\xbc\xe3\x83\xa9\xe3\x82\xa4\xe3\x83\x95
+        \xe3\x82\xbc\xe3\x83\xad (2017) Bluray-1080p.mkv
       Title: No Game No Life Zero
   Title: No Game No Life- Zero (2017)
 Of Moose and Men- The Rocky and Bullwinkle Story (1990):
@@ -7348,14 +7598,22 @@ One Piece - Episode of Chopper Plus - Bloom in the Winter, Miracle Cherry Blosso
   Title: One Piece- Episode of Chopper Plus- Bloom in the Winter, Miracle Cherry Blossom
     (2008)
 One Piece - Episode of Luffy - Hand Island Adventure (2012):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: "/media/video/movies/foreign/One Piece - Episode of Luffy\
+    \ - Hand Island Adventure (2012)/\u30EF\u30F3\u30D4\u30FC\u30B9 \u30A8\u30D4\u30BD\
+    \u30FC\u30C9 \u30AA\u30D6 \u30EB\u30D5\u30A3 \u30CF\u30F3\u30C9\u30A2\u30A4\u30E9\
+    \u30F3\u30C9\u306E\u5192\u967A (2012) Bluray-720p.mkv"
+  Absolute Movie Path: /media/video/movies/foreign/One Piece - Episode of Luffy -
+    Hand Island Adventure (2012)
   Movie DB ID: 172329
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie File Path: "movies/foreign/One Piece - Episode of Luffy - Hand Island\
+    \ Adventure (2012)/\u30EF\u30F3\u30D4\u30FC\u30B9 \u30A8\u30D4\u30BD\u30FC\u30C9\
+    \ \u30AA\u30D6 \u30EB\u30D5\u30A3 \u30CF\u30F3\u30C9\u30A2\u30A4\u30E9\u30F3\u30C9\
+    \u306E\u5192\u967A (2012) Bluray-720p.mkv"
+  Relative Movie Path: movies/foreign/One Piece - Episode of Luffy - Hand Island Adventure
+    (2012)
   Shows:
     One Piece:
       Anime: true
@@ -7371,16 +7629,19 @@ One Piece - Episode of Luffy - Hand Island Adventure (2012):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: One Piece The Movie
-  Title: One Piece- Episode of Luffy - Hand Island Adventure (2012)
+  Title: One Piece - Episode of Luffy - Hand Island Adventure (2012)
 One Piece - Episode of Skypiea (2018):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: /media/video/movies/foreign/One Piece - Episode of Skypiea
+    (2018)/One Piece- Episode of Skypiea (2018) Bluray-1080p.mkv
+  Absolute Movie Path: /media/video/movies/foreign/One Piece - Episode of Skypiea
+    (2018)
   Movie DB ID: 545742
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie File Path: movies/foreign/One Piece - Episode of Skypiea (2018)/One
+    Piece- Episode of Skypiea (2018) Bluray-1080p.mkv
+  Relative Movie Path: movies/foreign/One Piece - Episode of Skypiea (2018)
   Shows:
     One Piece:
       Anime: true
@@ -7395,9 +7656,11 @@ One Piece - Episode of Skypiea (2018):
       Season: '00'
       Show ID: '86'
       Show Root Path: anime/shounen/One Piece
-      Symlinked: ''
+      Symlinked: anime/shounen/One Piece/Season 00/One Piece - S00E03 - Adventure
+        in the Ocean\s Navel SDTV.avi" -> \../../../../movies/foreign/One Piece -
+        Episode of Skypiea (2018)/One Piece- Episode of Skypiea (2018) Bluray-1080p.mkv
       Title: Adventure in the Ocean's Navel
-  Title: One Piece- Episode of Skypiea (2018)
+  Title: One Piece - Episode of Skypiea (2018)
 One Piece - Giant Mecha Soldier of Karakuri Castle (2006):
   Absolute Movie File Path: ''
   Absolute Movie Path: ''
@@ -7603,14 +7866,20 @@ One Piece 3D - Straw Hat Chase (2011):
       Title: One Piece The Movie
   Title: One Piece 3D- Straw Hat Chase (2011)
 One Piece 3D2Y - Overcome Ace's Death! Luffy's Vow to his Friends (2014):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: /media/video/movies/foreign/One Piece 3D2Y - Overcome
+    Ace's Death! Luffy's Vow to his Friends (2014)/One Piece 3D2Y - Overcome Ace's
+    Death! Luffy's Vow to his Friends (2014) Bluray-720p.mkv
+  Absolute Movie Path: /media/video/movies/foreign/One Piece 3D2Y - Overcome Ace's
+    Death! Luffy's Vow to his Friends (2014)
   Movie DB ID: 290271
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie File Path: movies/foreign/One Piece 3D2Y - Overcome Ace's Death!
+    Luffy's Vow to his Friends (2014)/One Piece 3D2Y - Overcome Ace's Death! Luffy's
+    Vow to his Friends (2014) Bluray-720p.mkv
+  Relative Movie Path: movies/foreign/One Piece 3D2Y - Overcome Ace's Death! Luffy's
+    Vow to his Friends (2014)
   Shows:
     One Piece:
       Anime: true
@@ -7625,9 +7894,12 @@ One Piece 3D2Y - Overcome Ace's Death! Luffy's Vow to his Friends (2014):
       Season: '00'
       Show ID: '86'
       Show Root Path: anime/shounen/One Piece
-      Symlinked: ''
+      Symlinked: anime/shounen/One Piece/Season 00/One Piece - S00E03 - Adventure
+        in the Ocean\s Navel SDTV.avi" -> \../../../../movies/foreign/One Piece 3D2Y
+        - Overcome Ace\\\\\s Death! Luffy\\\\\s Vow to his Friends (2014)/One Piece
+        3D2Y - Overcome Ace\\\\\s Death! Luffy\\\\\s Vow to his Friends (2014) Bluray-720p.mkv
       Title: Adventure in the Ocean's Navel
-  Title: One Piece "3D2Y"- Overcome Ace's Death! Luffy's Vow to his Friends (2014)
+  Title: One Piece 3D2Y - Overcome Ace's Death! Luffy's Vow to his Friends (2014)
 One Piece Episode of East Blue Luffy and His 4 Crewmate's Big Adventure (2017):
   Absolute Movie File Path: /media/video/movies/foreign/One Piece Episode of East
     Blue Luffy and His 4 Crewmate's Big Adventure (2017)/One Piece Episode of East
@@ -7657,18 +7929,27 @@ One Piece Episode of East Blue Luffy and His 4 Crewmate's Big Adventure (2017):
       Season: '00'
       Show ID: '86'
       Show Root Path: anime/shounen/One Piece
-      Symlinked: ''
+      Symlinked: anime/shounen/One Piece/Season 00/One Piece - S00E03 - Adventure
+        in the Ocean\s Navel SDTV.avi" -> \../../../../movies/foreign/One Piece Episode
+        of East Blue Luffy and His 4 Crewmate\\\\\s Big Adventure (2017)/One Piece
+        Episode of East Blue Luffy and His 4 Crewmate\\\\\s Big Adventure (2017) Bluray-1080p.mkv
       Title: Adventure in the Ocean's Navel
   Title: One Piece Episode of East Blue Luffy and His 4 Crewmate's Big Adventure (2017)
 One Piece Episode of Merry - The Tale of One More Friend (2013):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: /media/video/movies/foreign/One Piece Episode of Merry
+    - The Tale of One More Friend (2013)/One Piece Episode of Merry - The Tale of
+    One More Friend (2013) Bluray-720p.mkv
+  Absolute Movie Path: /media/video/movies/foreign/One Piece Episode of Merry - The
+    Tale of One More Friend (2013)
   Movie DB ID: 245538
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie File Path: movies/foreign/One Piece Episode of Merry - The Tale of
+    One More Friend (2013)/One Piece Episode of Merry - The Tale of One More Friend
+    (2013) Bluray-720p.mkv
+  Relative Movie Path: movies/foreign/One Piece Episode of Merry - The Tale of One
+    More Friend (2013)
   Shows:
     One Piece:
       Anime: true
@@ -7684,7 +7965,7 @@ One Piece Episode of Merry - The Tale of One More Friend (2013):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: One Piece The Movie
-  Title: One Piece Episode of Merry- The Tale of One More Friend (2013)
+  Title: One Piece Episode of Merry - The Tale of One More Friend (2013)
 One Piece Episode of Nami - Tears of a Navigator and the Bonds of Friends (2012):
   Absolute Movie File Path: ''
   Absolute Movie Path: ''
@@ -7813,7 +8094,9 @@ One Punch Man- Road to Hero (2015):
       Season: '00'
       Show ID: '171'
       Show Root Path: anime/staging/One-Punch Man
-      Symlinked: ''
+      Symlinked: anime/staging/One-Punch Man/Season 00/One-Punch Man - S00E001 - Road
+        to Hero DVD.mkv -> ../../../../movies/foreign/One Punch Man- Road to Hero
+        (2015)/One Punch Man- Road to Hero (2015) DVD.mkv
       Title: Road to Hero
   Title: One Punch Man- Road to Hero (2015)
 Overlord Movie 1- The Undead King (2017):
@@ -7844,7 +8127,12 @@ Overlord Movie 1- The Undead King (2017):
       Season: '00'
       Show ID: '88'
       Show Root Path: anime/staging/Overlord
-      Symlinked: ''
+      Symlinked: anime/staging/Overlord/Season 00/Overlord - S00E01 - Pure Pure Pleiades
+        - Play 1 - Overlord and Beginning Bluray-1080p.mkv -> ../../../../movies/foreign/Overlord
+        Movie 1- The Undead King (2017)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88\xe7\xb7\x8f\xe9\x9b\x86\xe7\xb7\xa8
+        \xe3\x82\xaa\xe3\x83\xbc\xe3\x83\x90\xe3\x83\xbc\xe3\x83\xad\xe3\x83\xbc\xe3\x83\x89
+        \xe4\xb8\x8d\xe6\xad\xbb\xe8\x80\x85\xe3\x81\xae\xe7\x8e\x8b\xe3\x80\x90\xe5\x89\x8d\xe7\xb7\xa8\xe3\x80\x91
+        (2017) Remux-1080p.mkv
       Title: Pure Pure Pleiades - Play 1 Overlord and Beginning
   Title: Overlord Movie 1- The Undead King (2017)
 Overlord Movie 2- The Dark Warrior (2017):
@@ -7876,7 +8164,12 @@ Overlord Movie 2- The Dark Warrior (2017):
       Season: '00'
       Show ID: '88'
       Show Root Path: anime/staging/Overlord
-      Symlinked: ''
+      Symlinked: anime/staging/Overlord/Season 00/Overlord - S00E01 - Pure Pure Pleiades
+        - Play 1 - Overlord and Beginning Bluray-1080p.mkv -> ../../../../movies/foreign/Overlord
+        Movie 2- The Dark Warrior (2017)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88\xe7\xb7\x8f\xe9\x9b\x86\xe7\xb7\xa8
+        \xe3\x82\xaa\xe3\x83\xbc\xe3\x83\x90\xe3\x83\xbc\xe3\x83\xad\xe3\x83\xbc\xe3\x83\x89
+        \xe6\xbc\x86\xe9\xbb\x92\xe3\x81\xae\xe8\x8b\xb1\xe9\x9b\x84\xe3\x80\x90\xe5\xbe\x8c\xe7\xb7\xa8\xe3\x80\x91
+        (2017) Remux-1080p.mkv
       Title: Pure Pure Pleiades - Play 1 Overlord and Beginning
   Title: Overlord Movie 2- The Dark Warrior (2017)
 Parasyte- Part 1 (2014):
@@ -7965,16 +8258,16 @@ Parks and Recreation- Cast and Creators Live at PALEYFEST 2014 (2014):
       Title: April & Andy's Road Trip (1) Spider
   Title: Parks and Recreation- Cast and Creators Live at PALEYFEST 2014 (2014)
 'Persona 3 the Movie- #1 Spring of Birth (2013)':
-  Absolute Movie File Path: '/media/video/movies/foreign/Persona 3 the Movie- #1 Spring
-    of Birth (2013)/'
-  Absolute Movie Path: '/media/video/movies/foreign/Persona 3 the Movie- #1 Spring
-    of Birth (2013)'
+  Absolute Movie File Path: '/media/video/movies/foreign/Persona 3 the Movie- #3 Falling
+    Down (2015)/'
+  Absolute Movie Path: '/media/video/movies/foreign/Persona 3 the Movie- #3 Falling
+    Down (2015)'
   Movie DB ID: 212153
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
   Relative Movie File Path: ''
-  Relative Movie Path: 'movies/foreign/Persona 3 the Movie- #1 Spring of Birth (2013)'
+  Relative Movie Path: 'movies/foreign/Persona 3 the Movie- #3 Falling Down (2015)'
   Shows:
     Persona 4- The Animation:
       Anime: true
@@ -7990,7 +8283,7 @@ Parks and Recreation- Cast and Creators Live at PALEYFEST 2014 (2014):
       Show Root Path: tv/staging/Persona 4- The Animation
       Symlinked: ''
       Title: 'Persona 3 The Movie #1 Spring of Birth'
-  Title: 'Persona 3 the Movie- #1 Spring of Birth (2013)'
+  Title: 'Persona 3 the Movie- #3 Falling Down (2015)'
 'Persona 3 the Movie- #2 Midsummer Knight''s Dream (2014)':
   Absolute Movie File Path: '/media/video/movies/foreign/Persona 3 the Movie- #3 Falling
     Down (2015)/'
@@ -8102,7 +8395,10 @@ Persona 4 the Animation- No One is Alone (0):
       Season: '00'
       Show ID: '174'
       Show Root Path: tv/staging/Persona 4- The Animation
-      Symlinked: ''
+      Symlinked: anime/staging/Persona 4 The Animation/Season 00/Persona 4 The Animation
+        - S00E002 - True End- No One is Alone -> ../../../../movies/foreign/Persona
+        4 the Animation- No One is Alone (0)/Persona 4 the Animation- No One is Alone
+        (0) Bluray-1080p.mkv
       Title: True End No One is Alone
   Title: Persona 4 the Animation- No One is Alone (0)
 Persona 4- The Animation -The Factor of Hope- (2012):
@@ -8184,7 +8480,7 @@ Prelude to Axanar (2014):
       Season: '01'
       Show ID: '377'
       Show Root Path: tv/staging/Star Trek- Axanar
-      Symlinked: '377'
+      Symlinked: ''
       Title: Prelude to Axanar
   Title: Prelude to Axanar (2014)
 Prison School- Mad Wax (2016):
@@ -8214,7 +8510,9 @@ Prison School- Mad Wax (2016):
       Season: '00'
       Show ID: '90'
       Show Root Path: anime/staging/Prison School
-      Symlinked: ''
+      Symlinked: anime/staging/Prison School/Season 00/Prison School - S00E001 (E013)
+        - Mad Wax DVD.mkv -> ../../../../movies/foreign/Prison School- Mad Wax (2016)/Prison
+        School- Mad Wax (2016) DVD.mkv
       Title: Mad Wax
   Title: Prison School- Mad Wax (2016)
 Psych- The Movie (2017):
@@ -8241,7 +8539,9 @@ Psych- The Movie (2017):
       Season: '00'
       Show ID: '216'
       Show Root Path: tv/staging/Psych
-      Symlinked: ''
+      Symlinked: tv/staging/Psych/Season 00/Psych - S00E05 - Psych- The Movie WEBDL-1080p.mkv
+        -> ../../../../movies/staging/Psych- The Movie (2017)/Psych- The Movie (2017)
+        WEBDL-1080p.mkv
       Title: Psych The Movie
   Title: Psych- The Movie (2017)
 Psych- The Musical (2013):
@@ -8269,7 +8569,9 @@ Psych- The Musical (2013):
       Season: '00'
       Show ID: '216'
       Show Root Path: tv/staging/Psych
-      Symlinked: ''
+      Symlinked: tv/staging/Psych/Season 00/Psych - S00E02 - The Big Adventures of
+        Little Shawn and Gus WEBDL-1080p.mkv -> ../../../../movies/staging/Psych-
+        The Musical (2013)/Psych- The Musical (2013) WEBDL-1080p.mkv
       Title: The Big Adventures of Little Shawn and Gus
   Title: Psych- The Musical (2013)
 Psycho-Pass- The Movie (2015):
@@ -9070,16 +9372,14 @@ Sailor Moon Super S- Ami's First Love (1995):
       Title: Sailor Moon Super S The Movie Short Ami's First Love
   Title: Sailor Moon Super S- Ami's First Love (1995)
 Sailor Moon Super S- The Movie (1995):
-  Absolute Movie File Path: /media/video/movies/foreign/Sailor Moon Super S- The Movie
-    (1995)/
-  Absolute Movie Path: /media/video/movies/foreign/Sailor Moon Super S- The Movie
-    (1995)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 28460
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
   Relative Movie File Path: ''
-  Relative Movie Path: movies/foreign/Sailor Moon Super S- The Movie (1995)
+  Relative Movie Path: ''
   Shows:
     Sailor Moon:
       Anime: true
@@ -9095,7 +9395,7 @@ Sailor Moon Super S- The Movie (1995):
       Show Root Path: anime/staging/Sailor Moon
       Symlinked: ''
       Title: Sailor Moon Super S The Movie Miracle of the Black Dream Hole
-  Title: Sailor Moon Super S- The Movie (1995)
+  Title: Sailor Moon Super S- The Movie (2000)
 Saint Seiya (0):
   Absolute Movie File Path: ''
   Absolute Movie Path: ''
@@ -9342,19 +9642,17 @@ Samurai Jack- Digital Animation Test (2000):
     Samurai Jack: null
   Title: Samurai Jack- Digital Animation Test (2000)
 Samurai Jack- The Premiere Movie (2001):
-  Absolute Movie File Path: /media/video/movies/staging/Samurai Jack- The Premiere
-    Movie (2001)/
-  Absolute Movie Path: /media/video/movies/staging/Samurai Jack- The Premiere Movie
-    (2001)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 47388
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
   Relative Movie File Path: ''
-  Relative Movie Path: movies/staging/Samurai Jack- The Premiere Movie (2001)
+  Relative Movie Path: ''
   Shows:
     Samurai Jack: null
-  Title: Samurai Jack- The Premiere Movie (2001)
+  Title: Samurai Jack- The Premiere Movie (2002)
 Saturday Night Live 25th Anniversary (1999):
   Absolute Movie File Path: /media/video/movies/standup_comedy/Saturday Night Live-
     Christmas (1999)/
@@ -10002,7 +10300,8 @@ Serenity (2005):
       Season: '00'
       Show ID: '368'
       Show Root Path: tv/scifi/Firefly
-      Symlinked: ''
+      Symlinked: tv/scifi/Firefly/Season 00/Firefly - S00E01 - Serenity Bluray-2160p.mkv
+        -> ../../../../movies/thrillers/Serenity (2005)/Serenity (2005) Bluray-2160p.mkv
       Title: Serenity
   Title: Serenity (2005)
 Shark Week- The Great Bites Collection (2009):
@@ -10046,7 +10345,9 @@ Sherlock- The Abominable Bride (2016):
       Season: '00'
       Show ID: '319'
       Show Root Path: tv/crime/Sherlock
-      Symlinked: ''
+      Symlinked: tv/crime/Sherlock/Season 00/Sherlock - S00E09 - The Abominable Bride
+        Bluray-1080p.mkv -> ../../../../movies/thrillers/Sherlock- The Abominable
+        Bride (2016)/Sherlock- The Abominable Bride (2015) Bluray-1080p.mkv
       Title: The Abominable Bride
   Title: Sherlock- The Abominable Bride (2016)
 South Park- Bigger, Longer & Uncut (1999):
@@ -10075,7 +10376,10 @@ South Park- Bigger, Longer & Uncut (1999):
       Season: '00'
       Show ID: '293'
       Show Root Path: tv/animated/South Park
-      Symlinked: ''
+      Symlinked: tv/animated/South Park/Season 00/South Park - S00E06 - South Park-
+        Bigger Longer & Uncut Bluray-1080p.mkv -> ../../../../movies/staging/South
+        Park- Bigger, Longer & Uncut (1999)/South Park- Bigger, Longer & Uncut (1999)
+        Bluray-1080p.mkv
       Title: South Park Bigger Longer & Uncut
   Title: South Park- Bigger, Longer & Uncut (1999)
 South Park- Imaginationland (2008):
@@ -10294,14 +10598,17 @@ Star Trek- Of Gods And Men (2007):
       Title: Act 1
   Title: Star Trek- Of Gods And Men (2007)
 Star Trek- Voyager - Inside The New Adventure (1995):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: /media/video/movies/staging/Star Trek- Voyager - Inside
+    the New Adventure (1995)/
+  Absolute Movie Path: /media/video/movies/staging/Star Trek- Voyager - Inside the
+    New Adventure (1995)
   Movie DB ID: 529408
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
   Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie Path: movies/staging/Star Trek- Voyager - Inside the New Adventure
+    (1995)
   Shows:
     Star Trek- Voyager:
       Anime: false
@@ -10317,7 +10624,7 @@ Star Trek- Voyager - Inside The New Adventure (1995):
       Show Root Path: tv/staging/Star Trek- Voyager
       Symlinked: ''
       Title: Star Trek Inside The New Adventure
-  Title: Star Trek- Voyager - Inside The New Adventure (1995)
+  Title: Star Trek- Voyager - Inside the New Adventure (1995)
 Stargate (1994):
   Absolute Movie File Path: /media/video/movies/staging/Stargate (1994)/Stargate (1994)
     Bluray-1080p.mp4
@@ -10342,7 +10649,9 @@ Stargate (1994):
       Season: '00'
       Show ID: '400'
       Show Root Path: tv/scifi/Stargate SG-1
-      Symlinked: ''
+      Symlinked: tv/scifi/Stargate SG-1/Season 00/Stargate SG-1 - S00E01 - Stargate
+        SG-1 - Stargate- The Movie Bluray-1080p.mp4 -> ../../../../movies/staging/Stargate
+        (1994)/Stargate (1994) Bluray-1080p.mp4
       Title: Stargate The Movie
   Title: Stargate (1994)
 Stargate Atlantis- Rising (2006):
@@ -10358,20 +10667,17 @@ Stargate Atlantis- Rising (2006):
     Stargate SG-1: null
   Title: Stargate Atlantis- Rising (2006)
 Stargate SG-1- Children Of The Gods (2009):
-  Absolute Movie File Path: /media/video/movies/staging/Stargate SG-1- Children of
-    the Gods (2009)/Stargate SG-1- Children of the Gods (2009) DVD.mkv
-  Absolute Movie Path: /media/video/movies/staging/Stargate SG-1- Children of the
-    Gods (2009)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 80527
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: movies/staging/Stargate SG-1- Children of the Gods (2009)/Stargate
-    SG-1- Children of the Gods (2009) DVD.mkv
-  Relative Movie Path: movies/staging/Stargate SG-1- Children of the Gods (2009)
+  Relative Movie File Path: ''
+  Relative Movie Path: ''
   Shows:
     Stargate SG-1: null
-  Title: Stargate SG-1- Children of the Gods (2009)
+  Title: Stargate SG-1- Children Of The Gods (2009)
 Stargate SG-1- True Science (2006):
   Absolute Movie File Path: /media/video/movies/staging/Stargate SG-1- True Science
     (2006)/Stargate SG-1- True Science (2006) SDTV.avi
@@ -10397,7 +10703,9 @@ Stargate SG-1- True Science (2006):
       Season: '00'
       Show ID: '400'
       Show Root Path: tv/scifi/Stargate SG-1
-      Symlinked: ''
+      Symlinked: tv/scifi/Stargate SG-1/Season 00/Stargate SG-1 - S00E04 - Stargate
+        SG-1 - True Science SDTV.avi -> ../../../../movies/staging/Stargate SG-1-
+        True Science (2006)/Stargate SG-1- True Science (2006) SDTV.avi
       Title: Stargate SG-1 True Science
   Title: Stargate SG-1- True Science (2006)
 Stargate- Base Gamma (2017):
@@ -10437,7 +10745,9 @@ Stargate- Continuum (2008):
       Season: '00'
       Show ID: '400'
       Show Root Path: tv/scifi/Stargate SG-1
-      Symlinked: ''
+      Symlinked: tv/scifi/Stargate SG-1/Season 00/Stargate SG-1 - S00E08 - Stargate
+        SG-1 - Continuum Bluray-1080p.mkv -> ../../../../movies/staging/Stargate-
+        Continuum (2008)/Stargate- Continuum (2008) Bluray-1080p.mkv
       Title: Continuum
   Title: Stargate- Continuum (2008)
 Stargate- The Ark of Truth (2008):
@@ -10465,7 +10775,9 @@ Stargate- The Ark of Truth (2008):
       Season: '00'
       Show ID: '400'
       Show Root Path: tv/scifi/Stargate SG-1
-      Symlinked: ''
+      Symlinked: tv/scifi/Stargate SG-1/Season 00/Stargate SG-1 - S00E07 - The Ark
+        of Truth Bluray-1080p.mkv -> ../../../../movies/staging/Stargate- The Ark
+        of Truth (2008)/Stargate- The Ark of Truth (2008) Bluray-1080p.mkv
       Title: The Ark of Truth
   Title: Stargate- The Ark of Truth (2008)
 Steins;Gate 0- Valentine's of Crystal Polymorphism - Bittersweet Intermedio (2018):
@@ -10530,24 +10842,20 @@ Steins;Gate- Egoistic Poriomania (2012):
       Season: '00'
       Show ID: '185'
       Show Root Path: anime/staging/Steins;Gate
-      Symlinked: ''
+      Symlinked: anime/staging/Steins;Gate/Season 00/Steins;Gate - S00E001 (E025)
+        - Egoistic Poriomania WEBDL-1080p.mp4 -> ../../../../movies/foreign/Steins;Gate-
+        Egoistic Poriomania (2012)/Steins;Gate- Egoistic Poriomania (2012) WEBDL-1080p.mp4
       Title: Egoistic Poriomania
   Title: Steins;Gate- Egoistic Poriomania (2012)
 "Steins;Gate- The Movie \u2212 Load Region of D\xE9j\xE0 Vu (2013)":
-  Absolute Movie File Path: "/media/video/movies/foreign/Steins;Gate- The Movie \u2212\
-    \ Load Region of D\xE9j\xE0 Vu (2013)/\u5287\u5834\u7248 STEINS;GATE \u8CA0\u8377\
-    \u9818\u57DF\u306E\u30C7\u30B8\u30E3\u30F4 (2013) Remux-1080p.mkv"
-  Absolute Movie Path: "/media/video/movies/foreign/Steins;Gate- The Movie \u2212\
-    \ Load Region of D\xE9j\xE0 Vu (2013)"
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 225745
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: "movies/foreign/Steins;Gate- The Movie \u2212 Load Region\
-    \ of D\xE9j\xE0 Vu (2013)/\u5287\u5834\u7248 STEINS;GATE \u8CA0\u8377\u9818\u57DF\
-    \u306E\u30C7\u30B8\u30E3\u30F4 (2013) Remux-1080p.mkv"
-  Relative Movie Path: "movies/foreign/Steins;Gate- The Movie \u2212 Load Region of\
-    \ D\xE9j\xE0 Vu (2013)"
+  Relative Movie File Path: ''
+  Relative Movie Path: ''
   Shows:
     Steins;Gate:
       Anime: true
@@ -10563,19 +10871,20 @@ Steins;Gate- Egoistic Poriomania (2012):
       Show Root Path: anime/staging/Steins;Gate
       Symlinked: ''
       Title: "Steins;Gate the Movie Loading Area of D\xE9j\xE0 vu"
-  Title: "Steins;Gate- The Movie \u2212 Load Region of D\xE9j\xE0 Vu (2013)"
+  Title: "Steins;Gate- The Movie \u2212 Load Region of D\xE9j\xE0 Vu (2017)"
 Strike The Blood (2013):
-  Absolute Movie File Path: /media/video/movies/foreign/Strike The Blood (2013)/
-  Absolute Movie Path: /media/video/movies/foreign/Strike The Blood (2013)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 296092
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
   Relative Movie File Path: ''
-  Relative Movie Path: movies/foreign/Strike The Blood (2013)
+  Relative Movie Path: ''
   Shows:
     Strike the Blood: null
-  Title: Strike The Blood (2013)
+  Title: "\u30B9\u30C8\u30E9\u30A4\u30AF\u30FB\u30B6\u30FB\u30D6\u30E9\u30C3\u30C9\
+    \ (2013)"
 Sword Art Online- Extra Edition (2013):
   Absolute Movie File Path: /media/video/movies/foreign/Sword Art Online- Extra Edition
     (2013)/Sword Art Online- Extra Edition (2013) Remux-1080p.mkv
@@ -10602,7 +10911,9 @@ Sword Art Online- Extra Edition (2013):
       Season: '00'
       Show ID: '105'
       Show Root Path: anime/shounen/Sword Art Online
-      Symlinked: ''
+      Symlinked: anime/shounen/Sword Art Online/Season 00/Sword Art Online - S00E01
+        - Sword Art Offline 1 Bluray-1080p.mkv -> ../../../../movies/foreign/Sword
+        Art Online- Extra Edition (2013)/Sword Art Online- Extra Edition (2013) Remux-1080p.mkv
       Title: Sword Art Offline 1
   Title: Sword Art Online- Extra Edition (2013)
 Sword Art Online- The Movie - Ordinal Scale (2017):
@@ -10636,7 +10947,12 @@ Sword Art Online- The Movie - Ordinal Scale (2017):
       Season: '00'
       Show ID: '105'
       Show Root Path: anime/shounen/Sword Art Online
-      Symlinked: ''
+      Symlinked: anime/shounen/Sword Art Online/Season 00/Sword Art Online - S00E02
+        - Sword Art Offline 2 Bluray-1080p.mkv -> ../../../../movies/foreign/Sword
+        Art Online- The Movie - Ordinal Scale (2017)/\xe5\x8a\x87\xe5\xa0\xb4\xe7\x89\x88
+        \xe3\x82\xbd\xe3\x83\xbc\xe3\x83\x89\xe3\x82\xa2\xe3\x83\xbc\xe3\x83\x88\xe3\x83\xbb\xe3\x82\xaa\xe3\x83\xb3\xe3\x83\xa9\xe3\x82\xa4\xe3\x83\xb3
+        -\xe3\x82\xaa\xe3\x83\xbc\xe3\x83\x87\xe3\x82\xa3\xe3\x83\x8a\xe3\x83\xab\xe3\x83\xbb\xe3\x82\xb9\xe3\x82\xb1\xe3\x83\xbc\xe3\x83\xab-
+        (2017) Bluray-1080p.mkv
       Title: Sword Art Offline 2
   Title: Sword Art Online- The Movie - Ordinal Scale (2017)
 Takarazuka Revue - Rurouni Kenshin - The Romantic Story Of A Meiji Swordsman- (2016):
@@ -10723,7 +11039,9 @@ Teen Titans- Trouble in Tokyo (2006):
       Season: '00'
       Show ID: '495'
       Show Root Path: tv/superhero/Teen Titans
-      Symlinked: ''
+      Symlinked: tv/superhero/Teen Titans/Season 00/Teen Titans - S00E02 - Trouble
+        in Tokyo WEBDL-1080p.mkv -> ../../../../movies/staging/Teen Titans- Trouble
+        in Tokyo (2006)/Teen Titans- Trouble in Tokyo (2006) WEBDL-1080p.mkv
       Title: Trouble in Tokyo
   Title: Teen Titans- Trouble in Tokyo (2006)
 Terra Formars (2016):
@@ -10762,7 +11080,9 @@ The A-Team (2010):
       Season: '00'
       Show ID: '221'
       Show Root Path: tv/staging/The A-Team
-      Symlinked: ''
+      Symlinked: tv/staging/The A-Team/Season 00/The A-Team - S00E02 - The A-Team
+        (2010) Bluray-1080p.mkv -> ../../../../movies/staging/The A-Team (2010)/The
+        A-Team (2010) Bluray-1080p.mkv
       Title: The A-Team (2010)
   Title: The A-Team (2010)
 The Adventures of Rocky & Bullwinkle (2000):
@@ -10805,7 +11125,9 @@ The Batman vs. Dracula (2005):
       Season: '00'
       Show ID: '497'
       Show Root Path: tv/superhero/The Batman
-      Symlinked: ''
+      Symlinked: tv/superhero/The Batman/Season 00/The Batman - S00E02 - The Batman
+        vs. Dracula WEBDL-1080p.mkv -> ../../../../movies/horror/The Batman vs. Dracula
+        (2005)/The Batman vs. Dracula (2005) WEBDL-1080p.mkv
       Title: The Batman vs. Dracula
   Title: The Batman vs. Dracula (2005)
 The Cage (1965):
@@ -10998,7 +11320,9 @@ The Evil Dead (1981):
       Season: '00'
       Show ID: '332'
       Show Root Path: tv/fantasy/Ash vs Evil Dead
-      Symlinked: ''
+      Symlinked: tv/fantasy/Ash vs Evil Dead/Season 00/Ash vs Evil Dead - S00E01 -
+        The Evil Dead Bluray-1080p.mkv -> ../../../../movies/horror/The Evil Dead
+        (1981)/The Evil Dead (1981) Bluray-1080p.mkv
       Title: The Evil Dead
   Title: The Evil Dead (1981)
 The Future Diary- Redial (2013):
@@ -11026,7 +11350,9 @@ The Future Diary- Redial (2013):
       Season: '00'
       Show ID: '188'
       Show Root Path: anime/staging/The Future Diary
-      Symlinked: ''
+      Symlinked: anime/staging/The Future Diary/Season 00/The Future Diary - S00E002
+        - Mirai Nikki Redial Bluray-720p.mp4 -> ../../../../movies/foreign/The Future
+        Diary- Redial (2013)/The Future Diary- Redial (2013) Bluray-720p.mp4
       Title: Mirai Nikki Redial
   Title: The Future Diary- Redial (2013)
 The Garden of Sinners - Remix- Gate of Seventh Heaven (2009):
@@ -11150,16 +11476,14 @@ The IT Crowd Manual (2014):
       Title: The IT Crowd Manual
   Title: The IT Crowd Manual (2014)
 The Last- Naruto the Movie (2014):
-  Absolute Movie File Path: /media/video/movies/foreign/The Last- Naruto the Movie
-    (2014)/THE LAST -NARUTO THE MOVIE- (2014) Remux-1080p.mkv
-  Absolute Movie Path: /media/video/movies/foreign/The Last- Naruto the Movie (2014)
+  Absolute Movie File Path: ''
+  Absolute Movie Path: ''
   Movie DB ID: 317442
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
-  Relative Movie File Path: movies/foreign/The Last- Naruto the Movie (2014)/THE LAST
-    -NARUTO THE MOVIE- (2014) Remux-1080p.mkv
-  Relative Movie Path: movies/foreign/The Last- Naruto the Movie (2014)
+  Relative Movie File Path: ''
+  Relative Movie Path: ''
   Shows:
     Naruto Shippuden:
       Anime: true
@@ -11175,7 +11499,7 @@ The Last- Naruto the Movie (2014):
       Show Root Path: anime/shounen/Naruto Shippuden
       Symlinked: ''
       Title: Naruto Shippuuden the Movie
-  Title: The Last- Naruto the Movie (2014)
+  Title: The Last- Naruto the Movie (2015)
 The Making of 'King of the Hill' (2003):
   Absolute Movie File Path: /media/video/movies/documentaries/The Making of 'King
     of the Hill' (2003)/
@@ -11725,7 +12049,9 @@ The X Files- I Want to Believe (2008):
       Season: '00'
       Show ID: '409'
       Show Root Path: tv/scifi/The X-Files
-      Symlinked: ''
+      Symlinked: tv/scifi/The X-Files/Season 00/The X-Files - S00E06 - The X-Files-
+        I Want to Believe Bluray-1080p.mkv -> ../../../../movies/staging/The X Files-
+        I Want to Believe (2008)/The X Files- I Want to Believe (2008) Bluray-1080p.mkv
       Title: The X-Files I Want to Believe
   Title: The X Files- I Want to Believe (2008)
 Thus Spoke Kishibe Rohan 2- Mutsu-kabe Hill (2018):
@@ -11758,17 +12084,17 @@ Thus Spoke Kishibe Rohan 2- Mutsu-kabe Hill (2018):
       Title: Thus Spoke Kishibe Rohan Mutsukabe Hill
   Title: Thus Spoke Kishibe Rohan 2- Mutsu-kabe Hill (2018)
 Tiger & Bunny (0):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: ''
+  Absolute Movie File Path: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)/
+  Absolute Movie Path: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)
   Movie DB ID: 625128
   Movie File: ''
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
   Relative Movie File Path: ''
-  Relative Movie Path: ''
+  Relative Movie Path: movies/staging/Bill Burr- Paper Tiger (2019)
   Shows:
     Tiger & Bunny: null
-  Title: Tiger & Bunny (0)
+  Title: Bill Burr- Paper Tiger (2019)
 Tiger & Bunny - The Movie- The Rising (2014):
   Absolute Movie File Path: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)/
   Absolute Movie Path: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)
@@ -12478,7 +12804,10 @@ Toriko 3D Movie- Kaimaku! Gourmet Adventure!! (2011):
       Season: '00'
       Show ID: '111'
       Show Root Path: anime/staging/Toriko
-      Symlinked: ''
+      Symlinked: anime/staging/Toriko/Season 00/Toriko - S00E003 - Kaimaku Gourmet
+        Adventure!! Bluray-1080p.mp4 -> ../../../../movies/foreign/Toriko 3D Movie-
+        Kaimaku! Gourmet Adventure!! (2011)/Toriko 3D Movie- Kaimaku! Gourmet Adventure!!
+        (2011) Bluray-1080p.mp4
       Title: Kaimaku Gourmet Adventure!!
   Title: Toriko 3D Movie- Kaimaku! Gourmet Adventure!! (2011)
 Trigun - Badlands Rumble (2010):
@@ -12531,7 +12860,9 @@ Twilight Zone- The Movie (1983):
       Season: '00'
       Show ID: '406'
       Show Root Path: tv/scifi/The Twilight Zone
-      Symlinked: ''
+      Symlinked: tv/scifi/The Twilight Zone/Season 00/The Twilight Zone - S00E04 -
+        Twilight Zone- The Movie Bluray-1080p.mkv -> ../../../../movies/horror/Twilight
+        Zone- The Movie (1983)/Twilight Zone- The Movie (1983) Bluray-1080p.mkv
       Title: Twilight Zone The Movie
   Title: Twilight Zone- The Movie (1983)
 Unlocking Sherlock (2014):
@@ -12559,7 +12890,9 @@ Unlocking Sherlock (2014):
       Season: '00'
       Show ID: '319'
       Show Root Path: tv/crime/Sherlock
-      Symlinked: ''
+      Symlinked: tv/crime/Sherlock/Season 00/Sherlock - S00E05 - Unlocking Sherlock
+        (2013) WEBDL-720p.mkv -> ../../../../movies/thrillers/Unlocking Sherlock (2014)/Unlocking
+        Sherlock (2014) WEBDL-720p.mkv
       Title: Unlocking Sherlock (2013)
   Title: Unlocking Sherlock (2014)
 Utawarerumono SUPER LIVE 2016 (2017):
@@ -12764,7 +13097,9 @@ Yu Yu Hakusho- The Movie (1993):
       Season: '00'
       Show ID: '128'
       Show Root Path: anime/staging/Yu Yu Hakusho
-      Symlinked: ''
+      Symlinked: anime/staging/Yu Yu Hakusho/Season 00/Yu Yu Hakusho - S00E001 - The
+        Golden Seal Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Yu Yu Hakusho-
+        The Movie (1993)/Yu Yu Hakusho- The Movie (1993) Remux-1080p.mkv
       Title: The Golden Seal
   Title: Yu Yu Hakusho- The Movie (1993)
 Yu Yu Hakusho- The Movie - Poltergeist Report (1994):
@@ -12795,7 +13130,9 @@ Yu Yu Hakusho- The Movie - Poltergeist Report (1994):
       Season: '00'
       Show ID: '128'
       Show Root Path: anime/staging/Yu Yu Hakusho
-      Symlinked: ''
+      Symlinked: anime/staging/Yu Yu Hakusho/Season 00/Yu Yu Hakusho - S00E002 - Poltergeist
+        Report DVD.mkv -> ../../../../movies/foreign/Yu Yu Hakusho- The Movie - Poltergeist
+        Report (1994)/Yu Yu Hakusho- The Movie - Poltergeist Report (1994) DVD.mkv
       Title: Poltergeist Report
   Title: Yu Yu Hakusho- The Movie - Poltergeist Report (1994)
 Yu Yu Hakusho- Two Shots (2018):
@@ -12823,7 +13160,9 @@ Yu Yu Hakusho- Two Shots (2018):
       Season: '00'
       Show ID: '128'
       Show Root Path: anime/staging/Yu Yu Hakusho
-      Symlinked: ''
+      Symlinked: anime/staging/Yu Yu Hakusho/Season 00/Yu Yu Hakusho - S00E001 - The
+        Golden Seal Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Yu Yu Hakusho-
+        Two Shots (2018)/Yu Yu Hakusho- Two Shots (2018) Bluray-1080p.mkv
       Title: The Golden Seal
   Title: Yu Yu Hakusho- Two Shots (2018)
 "Y\xFB Y\xFB Hakusho- Eiz\xF4 Hakusho (0)":

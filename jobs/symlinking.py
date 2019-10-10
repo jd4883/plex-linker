@@ -14,7 +14,9 @@ def symlink_force(show, g):
 		# noinspection SpellCheckingInspection
 		process = subprocess.Popen(get_symlink_command_string(show), stderr = subprocess.DEVNULL,
 		                           stdout = subprocess.PIPE)
-		show.link_status = strip_quotes_from_string(get_symlink_string(process)).replace('b"', str())[:-3].rstrip()
+		show.link_status = \
+			show.show_dictionary['Symlinked'] = \
+			strip_quotes_from_string(get_symlink_string(process)).replace('b"', str())[:-3].rstrip()
 		# -3 covers the link not having the newline character at the end, if this is fixed this should be -1 instead
 		if show.link_status:
 			g.LOG.info(backend.debug_message(642, g, show.link_status))

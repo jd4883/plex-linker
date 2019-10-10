@@ -167,19 +167,19 @@ class Show(Movie, Globals):
 		self.show_dictionary = show_dict
 		if 'Parsed Relative Show Title' in self.show_dictionary:
 			del self.show_dictionary['Parsed Relative Show Title']
-		g.LOG.info(backend.debug_message(624, g, self.show_dictionary))
+		g.LOG.debug(backend.debug_message(624, g, self.show_dictionary))
 		self.sonarr_show_dictionary = series_lookup
 		self.sonarr_api_query = self.parse_sonarr_api_query_results(g)
 		self.link_status = str(self.show_dictionary['Symlinked'])
-		g.LOG.info(backend.debug_message(625, g, self.sonarr_show_dictionary))
+		g.LOG.debug(backend.debug_message(625, g, self.sonarr_show_dictionary))
 		
 		self.show_id = self.show_dictionary['Show ID'] \
 			if 'Show ID' in self.show_dictionary \
 			else str(parse_show_id(self.show, g))
-		g.LOG.info(backend.debug_message(618, g,self.show_id))
+		g.LOG.debug(backend.debug_message(618, g,self.show_id))
 		self.episode_id = self.show_dictionary['Episode ID'] \
 			if 'Episode ID' in self.show_dictionary else self.set_episode_id(g)
-		g.LOG.info(backend.debug_message(619, g, self.episode_id))
+		g.LOG.debug(backend.debug_message(619, g, self.episode_id))
 		#print(self.episode_id)
 		if not self.episode_id:
 			print(f"EPISODE ID FAILED TO PROCESS FOR {self.show}")
