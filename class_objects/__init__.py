@@ -77,13 +77,12 @@ class Movie(Movies, Globals):
 			if not self.unparsed_title else g.radarr.lookup_movie(self.unparsed_title, g)
 		self.shows_dictionary = get_shows_dictionary(self.movie_dictionary)
 		g.LOG.debug(backend.debug_message(628, g, self.radarr_dictionary))
-		
-		#self.unparsed_title = self.movie_dictionary['Unparsed Title'] = build_movie_name_from_lookup(
-		#	self.radarr_dictionary, self.movie_title)
+		self.unparsed_title = self.movie_dictionary['Unparsed Title'] = \
+			build_movie_name_from_lookup(self.radarr_dictionary, self.movie_title)
 		#self.unparsed_title = schema.load("unparsed_title")
-		self.unparsed_title = self.radarr_dictionary, str(self.movie_title) \
-			if 'Unparsed Title' in self.movie_dictionary \
-			else str()
+		#self.unparsed_title = self.radarr_dictionary, str(self.movie_title) \
+		#	if 'Unparsed Title' in self.movie_dictionary \
+		#	else str()
 		self.movie_title = self.movie_dictionary['Title'] = parse_movie_title(self)
 		
 		g.LOG.info(backend.debug_message(643, g, str(self.unparsed_title)))
