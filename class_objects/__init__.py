@@ -123,12 +123,14 @@ class Movie(Movies, Globals):
 	
 	def init_absolute_movie_path(self, g):
 		 #if not self.relative_movie_path:
+		 print(self.radarr_dictionary)
 		 payload = os.environ['DOCKER_MEDIA_PATH'] + self.relative_movie_path #\
 			 #if 'payload' in self.radarr_dictionary else str(get_movie_path(self, g))
 		 g.LOG.info(backend.debug_message(614, g, str(payload)))
 		 return payload
 	
 	def init_relative_movie_path(self, g):
+		 print(self.radarr_dictionary)
 		 payload = str(self.radarr_dictionary[0].pop('path', str()))
 		 g.LOG.info(backend.debug_message(614, g, payload))
 		 return payload
