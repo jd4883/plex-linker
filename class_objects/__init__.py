@@ -73,8 +73,8 @@ class Movie(Movies, Globals):
 		self.movie_title = str(self.movie_dictionary['Title'])
 		g.LOG.debug(backend.debug_message(627, g, self.movie_dictionary))
 		
-		self.radarr_dictionary = g.radarr.lookup_movie(movie, g) \
-			if not self.unparsed_title else g.radarr.lookup_movie(self.unparsed_title, g)
+		self.radarr_dictionary = g.radarr.lookup_movie(movie, g) #\
+			#if not self.unparsed_title else g.radarr.lookup_movie(self.unparsed_title, g)
 		self.shows_dictionary = get_shows_dictionary(self.movie_dictionary)
 		g.LOG.debug(backend.debug_message(628, g, self.radarr_dictionary))
 		self.unparsed_title = self.movie_dictionary['Unparsed Title'] = \
