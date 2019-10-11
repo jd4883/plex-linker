@@ -33,12 +33,10 @@ class RadarrAPI(object):
 		for i in g.movies_dictionary:
 			if 'tmdbId' in query and i['tmdbId'] == query[0]['tmdbId']:
 				query[0] = i
-				del g.movies_dictionary[i]
-				print(f"MODIFIED QUERY: {query}")
-				break
-			else:
-				raise KeyError
-		return query
+				#del g.movies_dictionary[i]
+				#print(f"MODIFIED QUERY: {query}")
+				return query
+		raise KeyError
 	
 	def request_get(self, url, data=dict()):
 		return requests.get(url, headers={'X-Api-Key': self.api_key}, json=data)
