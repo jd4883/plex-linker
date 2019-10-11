@@ -58,7 +58,7 @@ def debug_message(status_code, g, var1 = str(), var2 = str()):
 		g.message1 = format_string(f"movie quality:")
 		g.message2 = f"{var1}"
 	elif status_code == 613:
-		g.message1 = format_string(f"movie title:")
+		g.message1 = format_string(f"parsed movie title:")
 		g.message2 = f"{var1}"
 	elif status_code == 614:
 		g.message1 = format_string(f"parsed absolute movie path:")
@@ -146,11 +146,14 @@ def debug_message(status_code, g, var1 = str(), var2 = str()):
 		g.message1 = format_string(f"conditional met - linking already completed:")
 		g.message2 = f"{var1}"
 	elif status_code == 641:
-		g.message1 = format_string(f"generating new link:")
+		g.message1 = format_string(f"attempting to pair and link:")
 		g.message2 = f"{var1}"
 		g.message3 = f"--> {var2}"
 	elif status_code == 642:
 		g.message1 = format_string(f"Link Created:")
+		g.message2 = f"{var1}"
+	elif status_code == 643:
+		g.message1 = format_string(f"raw movie title:")
 		g.message2 = f"{var1}"
 	elif status_code == -1:
 		g.message1 = format_string(

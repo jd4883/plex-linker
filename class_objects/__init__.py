@@ -1,7 +1,7 @@
 #!/usr/bin/env python3.7
 import time
 from os.path import abspath
-
+from marshmallow import Schema, fields
 import class_objects.sonarr_api
 import class_objects.sonarr_class_methods
 import messaging.backend as backend
@@ -19,7 +19,7 @@ from class_objects.radarr_class_methods import parse_movie_title, parse_relpath
 from class_objects.sonarr_api import *
 from IO.YAML.yaml_to_object import (get_variable_from_yaml)
 from logs.bin.get_parameters import (get_log_name, get_logger, get_method_main)
-from movies.movie.movie_gets import (get_absolute_movie_file_path, get_movie_path, get_relative_movie_file_path)
+from movies.movie.movie_gets import (get_absolute_movie_file_path, get_relative_movie_file_path)
 from movies.movie.movie_validation import (validate_extensions_from_movie_file)
 from movies.movie.shows.show.show_parser import parse_show_id
 from movies.movies_gets import (get_relative_movies_path)
@@ -27,6 +27,7 @@ from movies.movies_gets import (get_relative_movies_path)
 # TODO: create an automatic list of all active, ping Many J for list of active certificates
 # TODO: try to get this done sooner than later
 # TODO: play with marshmallow across the board for class objects, want to be able to go to and from a dictionary easily
+from plex_linker.constructors.builds import build_movie_name_from_lookup
 from plex_linker.parser.parser import parse_relative_episode_file_path
 
 
@@ -56,55 +57,82 @@ class Movies:
 		self.absolute_movies_path = absolute_movies_path
 		self.relative_movies_path = get_relative_movies_path(self)
 
+class MovieSchema(Schema):
+	unparsed_title = fields.Function()
+	# movie_dictionary = fields.Movie.movie_dictionary()
 
 class Movie(Movies, Globals):
-	def __init__(self, movie, movie_dict, g, media_path = str(os.environ['DOCKER_MEDIA_PATH'])):
+	def __init__(self,
+	             movie,
+	             movie_dict,
+	             g):
 		super().__init__()
+		schema = MovieSchema()
 		self.movie_dictionary = movie_dict
+		self.unparsed_title = None
+		self.movie_title = str(self.movie_dictionary['Title'])
 		g.LOG.debug(backend.debug_message(627, g, self.movie_dictionary))
-		self.radarr_dictionary = g.radarr.lookup_movie(movie, g)
 		
+		self.radarr_dictionary = g.radarr.lookup_movie(movie, g) \
+			if not self.unparsed_title else g.radarr.lookup_movie(self.unparsed_title, g)
+		self.shows_dictionary = get_shows_dictionary(self.movie_dictionary)
 		g.LOG.debug(backend.debug_message(628, g, self.radarr_dictionary))
-		self.tmbdid = str(self.parse_tmdbid(g))
-		self.movie_title = \
-			self.movie_dictionary['Title'] = str(parse_movie_title(self.radarr_dictionary, movie))
+		
+		#self.unparsed_title = self.movie_dictionary['Unparsed Title'] = build_movie_name_from_lookup(
+		#	self.radarr_dictionary, self.movie_title)
+		#self.unparsed_title = schema.load("unparsed_title")
+		self.unparsed_title = self.radarr_dictionary, str(self.movie_title) \
+			if 'Unparsed Title' in self.movie_dictionary \
+			else str()
+		self.movie_title = self.movie_dictionary['Title'] = parse_movie_title(self)
+		
+		g.LOG.info(backend.debug_message(643, g, str(self.unparsed_title)))
 		g.LOG.info(backend.debug_message(613, g, str(self.movie_title)))
+		self.tmbdid = str(self.parse_tmdbid(g))
 		
-		self.movie_file = \
-			self.movie_dictionary['Movie File'] = \
-			str()
+		self.relative_movie_path = self.movie_dictionary['Relative Movie Path'] = self.init_relative_movie_path(g)
+		self.absolute_movie_path = self.movie_dictionary['Absolute Movie Path'] = self.init_absolute_movie_path(g)
 		
-		self.shows_dictionary = \
-			get_shows_dictionary(self.movie_dictionary)
+		print(self.relative_movie_path)
+		print(self.absolute_movie_path)
 		
-		self.absolute_movie_path =\
-			self.movie_dictionary['Absolute Movie Path'] =\
-			str(os.environ['DOCKER_MEDIA_PATH']) + str(g.radarr_dictionary['path']) if 'path' in self.radarr_dictionary \
-				else str(get_movie_path(self, g))
-		g.LOG.info(backend.debug_message(614, g, str(self.absolute_movie_path)))
+		self.movie_file = self.movie_dictionary['Movie File'] = str()
+		
 		self.extension = self.movie_dictionary['Parsed Movie Extension'] = str()  # drop in values or remove
 		self.quality = self.movie_dictionary['Parsed Movie Quality'] = str() # drop in values or remove
 		validate_extensions_from_movie_file(self, g)
-		self.quality = str(self.parse_quality())
-		g.LOG.info(backend.debug_message(608, g, str(self.extension)))
-		g.LOG.info(backend.debug_message(612, g, str(self.quality)))
+		self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(self.parse_quality())
+		self.extension = self.movie_dictionary['Parsed Movie Extension'] = str(self.extension)
+		self.movie_file = self.movie_dictionary['Movie File'] = str(self.movie_file)
+		g.LOG.debug(backend.debug_message(608, g, str(self.extension)))
+		g.LOG.debug(backend.debug_message(612, g, str(self.quality)))
 		g.LOG.info(backend.debug_message(610, g, str(self.movie_file)))
+		
 		
 		# TODO: Make sure that these still align with the API from what I've grabebed with the globals dict
 		
 		# from API
-		self.relative_movie_path = \
-			self.movie_dictionary['Relative Movie Path'] = \
-			str(parse_relpath(self, g, media_path))
+		
 		g.LOG.info(backend.debug_message(617, g, self.relative_movie_path))
 		
 		self.absolute_movie_file_path = self.movie_dictionary['Absolute Movie File Path'] = str(
 				get_absolute_movie_file_path(self))
 		g.LOG.info(backend.debug_message(615, g, str(self.absolute_movie_file_path)))
 		
-		self.relative_movie_file_path = \
-			self.movie_dictionary['Relative Movie File Path'] = str(get_relative_movie_file_path(self))
+		self.relative_movie_file_path = self.movie_dictionary['Relative Movie File Path'] = str(get_relative_movie_file_path(self))
 		g.LOG.info(backend.debug_message(616, g, self.relative_movie_file_path))
+	
+	def init_absolute_movie_path(self, g):
+		 #if not self.relative_movie_path:
+		 payload = os.environ['DOCKER_MEDIA_PATH'] + self.relative_movie_path #\
+			 #if 'payload' in self.radarr_dictionary else str(get_movie_path(self, g))
+		 g.LOG.info(backend.debug_message(614, g, str(payload)))
+		 return payload
+	
+	def init_relative_movie_path(self, g):
+		 payload = str(self.radarr_dictionary[0].pop('path', str()))
+		 g.LOG.info(backend.debug_message(614, g, payload))
+		 return payload
 	
 	def parse_tmdbid(self, g):
 		tmdbID = str()
@@ -136,6 +164,11 @@ class Movie(Movies, Globals):
 				quality = f"{self.movie_file.split().pop(-2)} {self.quality}"
 			except IndexError:
 				pass
+		if quality.endswith(f"REAL.{self.extension}"):
+			try:
+				quality = f"{self.movie_file.split().pop(-2)} {self.quality}"
+			except IndexError:
+				pass
 		elif not quality:
 			quality = str()
 		else:
@@ -143,7 +176,7 @@ class Movie(Movies, Globals):
 				quality = str(self.movie_file.split().pop())
 			else:
 				quality = str()
-		return str(quality)
+		return str(quality)  # .rsplit( ".", 1 )[ 0 ] ) if it the extension is parsed separately
 
 # TODO: make sure order allows everything to calculate from the API if not well defined
 
@@ -233,8 +266,7 @@ class Show(Movie, Globals):
 		g.LOG.debug(backend.debug_message(632, g, self.show_root_path))
 		self.relative_show_path = self.path_str(self.set_relative_show_path(g))
 		if 'Relative Show Path' in self.show_dictionary and not self.relative_show_path:
-			print(self.show_dictionary)
-			raise
+			self.relative_show_path = str(self.show_dictionary['Relative Show Path'])
 		
 		self.parsed_episode = self.show_dictionary['Parsed Episode'] = str(self.episode).zfill(self.padding) if self.episode else str()
 		g.LOG.debug(backend.debug_message(634, g, self.parsed_episode))

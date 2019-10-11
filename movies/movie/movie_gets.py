@@ -17,28 +17,12 @@ def get_relative_movie_file_path(movie):
 # in theory this checks case combinations and titles correct, however, I am not seeing the desired results
 def get_movie_path(movie, g):
 	message.method_launch(g)
-	movie.absolute_movie_path = str()
+	absolute_movie_path = movie.absolute_movie_path
 	for path in os.listdir(movie.absolute_movies_path):
 		movie_string = '/'.join((movie.absolute_movies_path, path, movie.movie_title))
-		# TODO: this method was really slow so need to come up with a more clever way to handle it
-		# for item in g.radarr.get_movie_library():
-		# 	item['title'].replace(":", "")
-		# 	if (str(item['title']).lower() ==
-		# 	    movie.movie_title.lower()) or \
-		# 			(str(item['title']).lower() ==
-		# 			 ' '.join(str(movie.movie_title).split(' ')[:-1]).lower()) \
-		# 			or ' '.join(str(item['title']).split(' ')[:-1]).lower() == \
-		# 		' '.join(str(movie.movie_title).split(' ')[:-1]).lower():
-		# 		print('we have a match')
-		# 		print(f"PARSED TITLE: {item['title']} ({item['year']})")
-		# 		movie.movie_title = f"{item['title']} ({item['year']}"
-		# 		break
-		# # 		# idea here is to replace the base title with whatever is in radarr and not care about the year initially
-		# # 		input
-		# # movie_string = movie.absolute_movie_path
 		if os.path.exists(movie_string):
-			movie.absolute_movie_path = movie_string
+			absolute_movie_path = movie_string
 			message.method_exit(g)
 			break
 	message.method_exit(g)
-	return str(movie.absolute_movie_path)
+	return str(absolute_movie_path)

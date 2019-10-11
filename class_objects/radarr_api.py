@@ -31,10 +31,10 @@ class RadarrAPI(object):
 	def lookup_movie(self, query, g):
 		query = self.request_get(f"{self.host_url}/movie/lookup?term={query}").json()
 		for i in g.movies_dictionary:
-			# checks global movie dictionary and takes more accurate entry until the Radarr API lookup endpoint is
-			# updated to reflect a users library rather than IMDB
 			if 'tmdbId' in query and i['tmdbId'] == query[0]['tmdbId']:
 				query[0] = i
+				del g.movies_dictionary[i]
+				print(f"MODIFIED QUERY: {query}")
 				break
 		return query
 	

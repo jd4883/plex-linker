@@ -10,15 +10,21 @@ def parse_relpath(self, g, media_path):
 		return str(os.path.relpath(film, media_path))
 	return str()
 
-
-def parse_movie_title(radarr_dictionary, movie):
-	movie_title = movie.replace(":", "-")
-	try:
-		base = str(radarr_dictionary[0].pop('title', str(movie)))
-		year = str(radarr_dictionary[0].pop('year', str())).replace(":", "-")
-		movie_title = f"{base} ({year})".replace(" ()", str()).replace(":", "-")
-	except IndexError:
-		pass
-	except KeyError:
-		pass
-	return str(movie_title)
+#radarr_dictionary, movie, unparsed_title
+def parse_movie_title(self):
+	title=\
+		str(self.radarr_dictionary[0].pop('title',
+		                                  str(self.movie_title))).replace('((0)', '(')
+	year = f"{str(self.radarr_dictionary[0].pop('year', str()))}".replace(" ()", str())
+	return title + year
+	#movie_title = str(self.movie_title).replace(":", "-")
+	# try:
+	# 	return str(self.radarr_dictionary[0].pop('title', str(self.movie_title))) + \
+	# 	f"({str(self.radarr_dictionary[0].pop('year', str(0)))})".replace(" ()", str())
+	#
+	# 	#self.movie_title = f"{base} ({year})".replace(" ()", str()).replace(":", "-")
+	# except IndexError:
+	# 	pass
+	# except KeyError:
+	# 	pass
+	# return str(self.movie_title), str(self.unparsed_title)
