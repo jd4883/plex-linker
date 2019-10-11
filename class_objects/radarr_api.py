@@ -36,6 +36,8 @@ class RadarrAPI(object):
 				del g.movies_dictionary[i]
 				print(f"MODIFIED QUERY: {query}")
 				break
+			else:
+				raise KeyError
 		return query
 	
 	def request_get(self, url, data=dict()):
