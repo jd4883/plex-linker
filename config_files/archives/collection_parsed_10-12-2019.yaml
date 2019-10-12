@@ -2080,10 +2080,10 @@ Clannad (2007):
   Year: 2007
 Clannad- After Story - Another World, Kyou Chapter (0):
   Absolute Movie File Path: /media/video/movies/foreign/Clannad- After Story - Another
-    World, Kyou Chapter (0)/Clannad- After Story - Another World, Kyou Chapter
+    World, Kyou Chapter (0)/Clannad- After Story - Another World, Kyou Chapter (0)
     Bluray-1080p.mkv
   Absolute Movie Path: /media/video/movies/foreign/Clannad- After Story - Another
-    World, Kyou Chapter
+    World, Kyou Chapter (0)
   Has File: true
   Monitored: true
   Movie DB ID: 582081
@@ -2094,7 +2094,7 @@ Clannad- After Story - Another World, Kyou Chapter (0):
   Relative Movie File Path: movies/foreign/Clannad- After Story - Another World, Kyou
     Chapter (0)/Clannad- After Story - Another World, Kyou Chapter (0) Bluray-1080p.mkv
   Relative Movie Path: movies/foreign/Clannad- After Story - Another World, Kyou Chapter
-   
+    (0)
   Shows:
     Clannad:
       Absolute Episode: '49'
@@ -2153,8 +2153,8 @@ Clannad- Another World - Tomoyo Chapter (0):
         Another World - Tomoyo Chapter (0)/Clannad- Another World - Tomoyo Chapter
         (0) Bluray-1080p.mkv
       Title: Another World Tomoyo Chapter
-  Title: Clannad- Another World - Tomoyo Chapter
-  Unparsed Title: Clannad- Another World - Tomoyo Chapter
+  Title: Clannad- Another World - Tomoyo Chapter (0) (0)
+  Unparsed Title: Clannad- Another World - Tomoyo Chapter (0)
   Year: 0
 Code Geass- Akito the Exiled 1- The Wyvern Arrives (2012):
   Absolute Movie File Path: "/media/video/movies/foreign/Code Geass- Akito the Exiled\
@@ -2395,8 +2395,8 @@ Code Geass- Lelouch of the Re;Surrection (2019):
       Show Root Path: anime/staging/Code Geass- Lelouch of the Rebellion
       Symlinked: ''
       Title: Code Geass Lelouch of the Resurrection
-  Title: Code Geass- Lelouch of the Re;Surrection (2019)
-  Unparsed Title: Code Geass- Lelouch of the Re;Surrection (2019)
+  Title: Code Geass- Lelouch of the Re;Surrection (2019) (0) (0)
+  Unparsed Title: Code Geass- Lelouch of the Re;Surrection (2019) (0)
   Year: 0
 Code Geass- Lelouch of the Rebellion - Awakening (2017):
   Absolute Movie File Path: ''
@@ -5357,8 +5357,8 @@ God Eater Prologue (0):
         Burst - Prologue WEBDL-720p.mkv -> ../../../../movies/foreign/God Eater Prologue
         (0)/God Eater Prologue (0) WEBDL-720p.mkv
       Title: Gods Eater Burst - Prologue
-  Title: God Eater Prologue
-  Unparsed Title: God Eater Prologue
+  Title: God Eater Prologue (0) (0)
+  Unparsed Title: God Eater Prologue (0)
   Year: 0
 Goin' Down To South Park (1999):
   Absolute Movie File Path: /media/video/movies/staging/Goin' Down to South Park (1999)/
@@ -5416,8 +5416,8 @@ Granblue Fantasy The Animation- Kabocha no Lantern (0):
       Show Root Path: tv/staging/Granblue Fantasy The Animation
       Symlinked: ''
       Title: Jack O'Lantern
-  Title: Granblue Fantasy The Animation- Kabocha no Lantern
-  Unparsed Title: Granblue Fantasy The Animation- Kabocha no Lantern
+  Title: Granblue Fantasy The Animation- Kabocha no Lantern (0) (0)
+  Unparsed Title: Granblue Fantasy The Animation- Kabocha no Lantern (0)
   Year: 0
 Gundam Wing- Endless Waltz (1998):
   Absolute Movie File Path: "/media/video/movies/foreign/Gundam Wing- Endless Waltz\
@@ -7146,8 +7146,8 @@ Merlin's Apprentice (2006):
       Show Root Path: tv/staging/Merlin (1998)
       Symlinked: ''
       Title: Merlins Apprentice
-  Title: Merlin's Apprentice (2006)
-  Unparsed Title: Merlin's Apprentice (2006)
+  Title: Merlin's Apprentice (2006) (0) (0)
+  Unparsed Title: Merlin's Apprentice (2006) (0)
   Year: 0
 Merlin- The Return (2000):
   Absolute Movie File Path: /media/video/movies/staging/Merlin- The Return (2000)/Merlin-
@@ -10303,8 +10303,8 @@ Parks and Recreation- Cast and Creators Live at PALEYFEST 2014 (2014):
       Show Root Path: tv/staging/Persona 4- The Animation
       Symlinked: ''
       Title: 'Persona 3 The Movie #4 Winter of Rebirth'
-  Title: 'Persona 3 the Movie- #3 Falling Down (2015) (0) (0)'
-  Unparsed Title: 'Persona 3 the Movie- #3 Falling Down (2015) (0)'
+  Title: 'Persona 3 the Movie- #3 Falling Down (2015) (0) (0) (0) (0) (0) (0)'
+  Unparsed Title: 'Persona 3 the Movie- #3 Falling Down (2015) (0) (0) (0) (0) (0)'
   Year: 0
 Persona 4 the Animation- No One is Alone (0):
   Absolute Movie File Path: /media/video/movies/foreign/Persona 4 the Animation- No
@@ -10340,8 +10340,8 @@ Persona 4 the Animation- No One is Alone (0):
         4 the Animation- No One is Alone (0)/Persona 4 the Animation- No One is Alone
         (0) Bluray-1080p.mkv
       Title: True End No One is Alone
-  Title: Persona 4 the Animation- No One is Alone
-  Unparsed Title: Persona 4 the Animation- No One is Alone
+  Title: Persona 4 the Animation- No One is Alone (0) (0)
+  Unparsed Title: Persona 4 the Animation- No One is Alone (0)
   Year: 0
 Persona 4- The Animation -The Factor of Hope- (2012):
   Absolute Movie File Path: /media/video/movies/foreign/Persona 4 The Animation -The
@@ -10723,7 +10723,7 @@ Red vs Blue-The Chorus Trilogy (0):
   Relative Movie Path: ''
   Shows:
     Red vs. Blue: null
-  Title: Red vs Blue-The Chorus Trilogy
+  Title: Red vs Blue-The Chorus Trilogy (0)
   Unparsed Title: Red vs Blue-The Chorus Trilogy
   Year: 0
 Red vs. Blue- Out of Mind (2006):
@@ -10752,8 +10752,8 @@ Red vs. Blue- Out of Mind (2006):
       Show Root Path: tv/staging/Red vs. Blue
       Symlinked: ''
       Title: Episode 0 - The Cast
-  Title: Red vs. Blue- Out of Mind (2006)
-  Unparsed Title: Red vs. Blue- Out of Mind (2006)
+  Title: Red vs. Blue- Out of Mind (2006) (0) (0)
+  Unparsed Title: Red vs. Blue- Out of Mind (2006) (0)
   Year: 0
 Red vs. Blue- Project Freelancer (0):
   Absolute Movie File Path: /media/video/movies/staging/Red vs. Blue- Project Freelancer
@@ -10769,7 +10769,7 @@ Red vs. Blue- Project Freelancer (0):
   Relative Movie Path: ''
   Shows:
     Red vs. Blue: null
-  Title: Red vs. Blue- Project Freelancer
+  Title: Red vs. Blue- Project Freelancer (0)
   Unparsed Title: Red vs. Blue- Project Freelancer
   Year: 0
 Red vs. Blue- The Blood Gulch Chronicles (0):
@@ -10786,7 +10786,7 @@ Red vs. Blue- The Blood Gulch Chronicles (0):
   Relative Movie Path: ''
   Shows:
     Red vs. Blue: null
-  Title: Red vs. Blue- The Blood Gulch Chronicles
+  Title: Red vs. Blue- The Blood Gulch Chronicles (0)
   Unparsed Title: Red vs. Blue- The Blood Gulch Chronicles
   Year: 0
 Red vs. Blue- The Recollection (0):
@@ -10803,7 +10803,7 @@ Red vs. Blue- The Recollection (0):
   Relative Movie Path: ''
   Shows:
     Red vs. Blue: null
-  Title: Red vs. Blue- The Recollection
+  Title: Red vs. Blue- The Recollection (0)
   Unparsed Title: Red vs. Blue- The Recollection
   Year: 0
 Robot Chicken DC Comics Special II- Villains in Paradise (2014):
@@ -11107,7 +11107,7 @@ Rurouni Kenshin- Final Chapter (0):
   Relative Movie Path: ''
   Shows:
     Rurouni Kenshin: null
-  Title: Rurouni Kenshin- Final Chapter
+  Title: Rurouni Kenshin- Final Chapter (0)
   Unparsed Title: Rurouni Kenshin- Final Chapter
   Year: 0
 Rurouni Kenshin- Kyoto Inferno (2014):
@@ -11286,8 +11286,8 @@ Rurouni Kenshin- Trust & Betrayal Director's Cut (0):
       Show Root Path: tv/staging/Rurouni Kenshin
       Symlinked: ''
       Title: Trust and Betrayal OAV Act 1 - The Man of the Slashing Sword
-  Title: Rurouni Kenshin- Trust & Betrayal Director's Cut
-  Unparsed Title: Rurouni Kenshin- Trust & Betrayal Director's Cut
+  Title: Rurouni Kenshin- Trust & Betrayal Director's Cut (0) (0)
+  Unparsed Title: Rurouni Kenshin- Trust & Betrayal Director's Cut (0)
   Year: 0
 Sacred Seven- Shirogane no Tsubasa (2012):
   Absolute Movie File Path: /media/video/movies/foreign/Sacred Seven- Shirogane no
@@ -11548,7 +11548,7 @@ Saint Seiya (0):
   Relative Movie Path: ''
   Shows:
     Saint Seiya: null
-  Title: Saint Seiya
+  Title: Saint Seiya (0)
   Unparsed Title: Saint Seiya
   Year: 0
 Saint Seiya Heaven Chapter- Overture (2004):
@@ -11640,7 +11640,7 @@ Saint Seiya- Knights of the Zodiac (2019):
   Relative Movie Path: ''
   Shows:
     Saint Seiya: null
-  Title: Saint Seiya- Knights of the Zodiac (2019)
+  Title: Saint Seiya- Knights of the Zodiac (2019) (0)
   Unparsed Title: Saint Seiya- Knights of the Zodiac (2019)
   Year: 0
 Saint Seiya- Legend of Crimson Youth (1988):
@@ -13215,9 +13215,9 @@ Steins;Gate 0- Valentine's of Crystal Polymorphism - Bittersweet Intermedio (201
       Symlinked: ''
       Title: Valentine's of Crystal Polymorphism -Bittersweet Intermedio-
   Title: Steins;Gate 0- Valentine's of Crystal Polymorphism - Bittersweet Intermedio
-    (2018)
+    (2018) (0) (0)
   Unparsed Title: Steins;Gate 0- Valentine's of Crystal Polymorphism - Bittersweet
-    Intermedio (2018)
+    Intermedio (2018) (0)
   Year: 0
 Steins;Gate- Egoistic Poriomania (2012):
   Absolute Movie File Path: /media/video/movies/foreign/Steins;Gate- Egoistic Poriomania
@@ -13455,7 +13455,7 @@ Teen Titans Go! vs Teen Titans (0):
   Shows:
     Teen Titans: null
     Teen Titans Go!: null
-  Title: Teen Titans Go! vs Teen Titans
+  Title: Teen Titans Go! vs Teen Titans (0)
   Unparsed Title: Teen Titans Go! vs Teen Titans
   Year: 0
 Teen Titans- The Judas Contract (2017):
@@ -14307,7 +14307,7 @@ The Seven Deadly Sins Movie (0):
   Relative Movie Path: ''
   Shows:
     The Seven Deadly Sins: null
-  Title: The Seven Deadly Sins Movie
+  Title: The Seven Deadly Sins Movie (0)
   Unparsed Title: The Seven Deadly Sins Movie
   Year: 0
 The Simpsons - Christmas (2003):
@@ -14553,7 +14553,7 @@ The Simpsons Movie 2 (0):
   Relative Movie Path: ''
   Shows:
     The Simpsons: null
-  Title: The Simpsons Movie 2
+  Title: The Simpsons Movie 2 (0)
   Unparsed Title: The Simpsons Movie 2
   Year: 0
 The Simpsons Ride (2008):
@@ -14773,7 +14773,7 @@ Thus Spoke Kishibe Rohan 2- Mutsu-kabe Hill (2018):
   Year: 2018
 Tiger & Bunny (0):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /media/video/movies/foreign/Tiger & Bunny
+  Absolute Movie Path: /media/video/movies/foreign/Tiger & Bunny (0)
   Has File: false
   Monitored: true
   Movie DB ID: 523112
@@ -14781,10 +14781,10 @@ Tiger & Bunny (0):
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
   Relative Movie File Path: ''
-  Relative Movie Path: movies/foreign/Tiger & Bunny
+  Relative Movie Path: movies/foreign/Tiger & Bunny (0)
   Shows:
     Tiger & Bunny: null
-  Title: Tiger & Bunny
+  Title: Tiger & Bunny (0)
   Unparsed Title: Tiger & Bunny
   Year: 0
 Tiger & Bunny - The Movie- The Rising (2014):
@@ -15447,8 +15447,8 @@ Top Gear- Top Gear Of The Pops (0):
       Show Root Path: tv/reality/Top Gear
       Symlinked: ''
       Title: Series 1 Best of
-  Title: Top Gear- Top Gear Of The Pops
-  Unparsed Title: Top Gear- Top Gear Of The Pops
+  Title: Top Gear- Top Gear Of The Pops (0) (0)
+  Unparsed Title: Top Gear- Top Gear Of The Pops (0)
   Year: 0
 Top Gear- Top Ground Gear Force (0):
   Absolute Movie File Path: ''
@@ -15478,8 +15478,8 @@ Top Gear- Top Ground Gear Force (0):
       Show Root Path: tv/reality/Top Gear
       Symlinked: ''
       Title: Series 2 Best of
-  Title: Top Gear- Top Ground Gear Force
-  Unparsed Title: Top Gear- Top Ground Gear Force
+  Title: Top Gear- Top Ground Gear Force (0) (0)
+  Unparsed Title: Top Gear- Top Ground Gear Force (0)
   Year: 0
 Top Gear- Uncovered (2009):
   Absolute Movie File Path: /media/video/movies/documentaries/Top Gear- Uncovered
@@ -15782,7 +15782,7 @@ Watamote (2013):
   Relative Movie Path: ''
   Shows:
     WATAMOTE: null
-  Title: Watamote
+  Title: Watamote (0)
   Unparsed Title: Watamote
   Year: 0
 Watashi ga Motenai no wa Dou Kangaetemo Omaera ga Warui!- Motenaishi, Nazomeite Miru (2014):
@@ -16066,8 +16066,8 @@ Yu Yu Hakusho- Two Shots (2018):
       Show Root Path: anime/staging/Yu Yu Hakusho
       Symlinked: ''
       Title: Eizou Hakusho Dark Tournament, vol. 1
-  Title: "Y\xFB Y\xFB Hakusho- Eiz\xF4 Hakusho (0) (0)"
-  Unparsed Title: "Y\xFB Y\xFB Hakusho- Eiz\xF4 Hakusho (0)"
+  Title: "Y\xFB Y\xFB Hakusho- Eiz\xF4 Hakusho (0) (0) (0) (0) (0) (0)"
+  Unparsed Title: "Y\xFB Y\xFB Hakusho- Eiz\xF4 Hakusho (0) (0) (0) (0) (0)"
   Year: 0
 anohana- The Flower We Saw That Day - The Movie (2013):
   Absolute Movie File Path: ''
