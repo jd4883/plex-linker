@@ -31,7 +31,7 @@ def parse_shows_dictionary_object(movie, g):
 		show = init_show_object(movie, str(series), g)
 		if linking_can_be_skipped(show, movie):
 			# not sure why but something is up with this method and it is not doing its job
-			g.LOG.warn(backend.debug_message(640, g, movie.movie_title))
+			g.LOG.debug(backend.debug_message(640, g, movie.movie_title))
 			continue
 		g.LOG.info(backend.debug_message(641, g, movie.movie_title, show.show))
 		parse_show_to_link(show, g)

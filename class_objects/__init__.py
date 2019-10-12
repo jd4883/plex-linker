@@ -26,7 +26,7 @@ from movies.movies_gets import (get_relative_movies_path)
 # TODO: create an automatic list of all active, ping Many J for list of active certificates
 # TODO: try to get this done sooner than later
 # TODO: play with marshmallow across the board for class objects, want to be able to go to and from a dictionary easily
-from plex_linker.parser.parser import parse_relative_episode_file_path
+from plex_linker.parser.path import parse_relative_episode_file_path
 
 
 class Globals:
