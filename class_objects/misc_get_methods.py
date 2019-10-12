@@ -28,5 +28,3 @@ def get_docker_media_path():
 	return environ['DOCKER_MEDIA_PATH']
 
 
-def get_shows_dictionary(movie_dictionary):
-	return movie_dictionary['Shows']

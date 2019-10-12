@@ -13,6 +13,8 @@ def debug_message(status_code, g, var1 = str(), var2 = str()):
 	if not g.method:
 		g.method = get_child_method_string()
 		g.parent_method = get_parent_method_string()
+	if g.parent_method == "<Module>":
+		g.parent_method = str("Main")
 	g.message1 = str()
 	g.message2 = str()
 	g.message3 = str()
@@ -154,6 +156,21 @@ def debug_message(status_code, g, var1 = str(), var2 = str()):
 		g.message2 = f"{var1}"
 	elif status_code == 643:
 		g.message1 = format_string(f"raw movie title:")
+		g.message2 = f"{var1}"
+	elif status_code == 644:
+		g.message1 = format_string(f"radarr movie dictionary:")
+		g.message2 = f"{var1}"
+	elif status_code == 645:
+		g.message1 = format_string(f"shows dictionary:")
+		g.message2 = f"{var1}"
+	elif status_code == 646:
+		g.message1 = format_string(f"monitored status:")
+		g.message2 = f"{var1}"
+	elif status_code == 647:
+		g.message1 = format_string(f"file presence:")
+		g.message2 = f"{var1}"
+	elif status_code == 648:
+		g.message1 = format_string(f"movie db id:")
 		g.message2 = f"{var1}"
 	elif status_code == -1:
 		g.message1 = format_string(

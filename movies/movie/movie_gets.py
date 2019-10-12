@@ -1,18 +1,18 @@
 import os
+
+import messaging.backend as backend
 import messaging.frontend as message
 
 
-def get_absolute_movie_file_path(movie):
-	if movie.absolute_movie_path:
-		return "/".join((movie.absolute_movie_path, movie.movie_file))
-	return str()
+def get_absolute_movie_file_path(movie, g):
+	abspath =  "/".join((movie.absolute_movie_path, movie.movie_file))
+	g.LOG.info(backend.debug_message(615, g, abspath))
+	return abspath
 
-def get_relative_movie_file_path(movie):
+def get_relative_movie_file_path(movie, g):
 	relpath = "/".join((movie.relative_movie_path, movie.movie_file))
-	if movie.movie_file and os.path.exists(relpath):
-		return relpath
-	else:
-		return str()
+	g.LOG.info(backend.debug_message(616, g, relpath))
+	return relpath
 
 # in theory this checks case combinations and titles correct, however, I am not seeing the desired results
 def get_movie_path(movie, g):

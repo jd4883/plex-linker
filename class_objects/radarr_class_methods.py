@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import os
 
+import messaging.backend
 from movies.movie.movie_gets import get_movie_path
 
 
@@ -11,20 +12,8 @@ def parse_relpath(self, g, media_path):
 	return str()
 
 #radarr_dictionary, movie, unparsed_title
-def parse_movie_title(self):
-	title=\
-		str(self.radarr_dictionary[0].pop('title',
-		                                  str(self.movie_title))).replace('((0)', '(')
-	year = f"{str(self.radarr_dictionary[0].pop('year', str()))}".replace(" ()", str())
-	return title + year
-	#movie_title = str(self.movie_title).replace(":", "-")
-	# try:
-	# 	return str(self.radarr_dictionary[0].pop('title', str(self.movie_title))) + \
-	# 	f"({str(self.radarr_dictionary[0].pop('year', str(0)))})".replace(" ()", str())
-	#
-	# 	#self.movie_title = f"{base} ({year})".replace(" ()", str()).replace(":", "-")
-	# except IndexError:
-	# 	pass
-	# except KeyError:
-	# 	pass
-	# return str(self.movie_title), str(self.unparsed_title)
+def get_parsed_movie_title(self, g):
+	file = f"{self.unparsed_title} ({self.year})".replace(":", "-")
+	result = file.replace("/", "+")
+	g.LOG.info(messaging.backend.debug_message(613, g, result))
+	return result
