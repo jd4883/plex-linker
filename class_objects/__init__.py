@@ -110,9 +110,9 @@ class Movie(Movies, Globals):
 			return
 		file_dict = self.radarr_dictionary['movieFile']
 		self.movie_file = self.movie_dictionary['Movie File'] = str(file_dict['relativePath'])
-		g.LOG.info(backend.debug_message(610, g, self.movie_file))
+		g.LOG.debug(backend.debug_message(610, g, self.movie_file))
 		self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(file_dict['quality']['quality']['name'])
-		g.LOG.info(backend.debug_message(612, g, self.quality))
+		g.LOG.debug(backend.debug_message(612, g, self.quality))
 		self.extension = self.movie_dictionary['Parsed Extension'] = str(self.movie_file.split().pop()).replace(self.quality, str())[1:]
 		self.absolute_movie_file_path = self.movie_dictionary['Absolute Movie File Path'] = str(
 				get_absolute_movie_file_path(self, g))
@@ -124,7 +124,7 @@ class Movie(Movies, Globals):
 	def get_unparsed_movie_title(self, g):
 		result = str(self.radarr_dictionary['title']) \
 			if 'title' in self.radarr_dictionary else self.movie_dictionary['Title']
-		g.LOG.info(backend.debug_message(643, g, result))
+		g.LOG.debug(backend.debug_message(643, g, result))
 		return result
 	
 	def parse_dict_from_radarr(self, g):
@@ -135,18 +135,8 @@ class Movie(Movies, Globals):
 				g.LOG.debug(backend.debug_message(644, g, g.movies_dictionary[index]))
 				return g.movies_dictionary[index]
 			except IndexError:
-				print(self.movie_dictionary)
+				pass
 		return dict()
-		# 		raise IndexError(f"API Index Error: Failed to Lookup Title using tmdbId for"
-		# 		                 f" {self.movie_dictionary['Movie DB ID']}")
-		# print(self.movie_dictionary)
-		# raise ValueError(f"API Value Error: Failed to Lookup Title using tmdbId for"
-		#                  f" {self.movie_dictionary['Movie DB ID']}")
-	
-			# turn into a try except statement that looks up the movie ID if it is missing
-			
-		# self.radarr_dictionary = g.radarr.lookup_movie(movie, g) \
-		# if not self.unparsed_title else g.radarr.lookup_movie(self.unparsed_title, g)
 	
 	def init_absolute_movie_path(self, g):
 		result = self.movie_dictionary['Absolute Movie Path'] = "/".join((os.environ['DOCKER_MEDIA_PATH'], self.relative_movie_path))
@@ -265,10 +255,6 @@ class Show(Movie, Globals):
 				else str(self.episode_dict.pop('episodeNumber', str()))
 		g.LOG.debug(backend.debug_message(622, g, self.episode))
 		
-		if not self.episode:
-			print(f"NO EPISODE SET FOR {self.show}")
-			raise
-		
 		self.absolute_episode = \
 			self.show_dictionary['Absolute Episode'] = \
 			str(self.episode_dict.pop('absoluteEpisodeNumber', str()))
@@ -330,7 +316,6 @@ class Show(Movie, Globals):
 		path = self.show_dictionary['Relative Show File Path'] \
 			if self.show_dictionary \
 			else self.path_str(parse_relative_episode_file_path(self, self.episode_dict))
-		#print(path)
 		if (not path) or (path == (None or str(None) or str())):
 			return str()
 		g.LOG.debug(backend.debug_message(633, g, path))

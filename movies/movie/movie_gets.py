@@ -6,12 +6,12 @@ import messaging.frontend as message
 
 def get_absolute_movie_file_path(movie, g):
 	abspath =  "/".join((movie.absolute_movie_path, movie.movie_file))
-	g.LOG.info(backend.debug_message(615, g, abspath))
+	g.LOG.debug(backend.debug_message(615, g, abspath))
 	return abspath
 
 def get_relative_movie_file_path(movie, g):
 	relpath = "/".join((movie.relative_movie_path, movie.movie_file))
-	g.LOG.info(backend.debug_message(616, g, relpath))
+	g.LOG.debug(backend.debug_message(616, g, relpath))
 	return relpath
 
 # in theory this checks case combinations and titles correct, however, I am not seeing the desired results
