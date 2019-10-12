@@ -1,14 +1,11 @@
 import os
 from movies.movie.shows.show import validate as validate_show
 
-
-# confirmed working
 def symlink_destination_exists(show):
-	if os.path.exists(str(show.show_dictionary['Relative Show File Path'])):
-		if os.path.islink(str(show.show_dictionary['Relative Show File Path'])):
+	if os.path.exists(str(show.relative_show_path)):
+		if os.path.islink(str(show.relative_show_path)):
 			return True
 	return False
-
 
 def symlink_destination_in_dictionary(movie):
 	# this calculation should be much further up but i'll move it later
@@ -17,16 +14,16 @@ def symlink_destination_in_dictionary(movie):
 		return True
 	return False
 
-
-# confirmed working
 def live_link_status(show):
+	os.chdir(str(os.environ['DOCKER_MEDIA_PATH']))
 	try:
-		if os.readlink(str(show.show_dictionary['Relative Show File Path'])):
+		if not os.path.isdir(str(show.relative_show_path)) and os.readlink(str(show.relative_show_path)):
 			return True
 	except FileNotFoundError:
 		pass
+	except OSError:
+		pass
 	return False
-
 
 def link_status(movie, show):
 	if live_link_status(show):
@@ -34,7 +31,6 @@ def link_status(movie, show):
 			if symlink_destination_in_dictionary(movie):
 				return True
 	return False
-
 
 def linking_can_be_skipped(show, movie):
 	if show.show_dictionary:
