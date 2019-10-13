@@ -5,7 +5,6 @@ def init_show_object(movie, series, g):
 	show = Show(g,
 	            series,
 	            str(movie.movie_title),
-	            movie.movie_dictionary,
-	            movie.movie_dictionary['Shows'][series],
-	            g.sonarr.lookup_series(series))
+	            movie.shows_dictionary[series],
+	            movie.movie_dictionary)
 	return show

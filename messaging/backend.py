@@ -75,7 +75,7 @@ def debug_message(status_code, g, var1 = str(), var2 = str()):
 		g.message1 = format_string(f"parsed relative movie path:")
 		g.message2 = f"{var1}"
 	elif status_code == 618:
-		g.message1 = format_string(f"parsed show id:")
+		g.message1 = format_string(f"Parsed tvdbId:")
 		g.message2 = f"{var1}"
 	elif status_code == 619:
 		g.message1 = format_string(f"parsed episode id:")
@@ -91,7 +91,7 @@ def debug_message(status_code, g, var1 = str(), var2 = str()):
 		g.message1 = format_string(f"parsed padding:")
 		g.message2 = f"{var1}"
 	elif status_code == 622:
-		g.message1 = format_string(f"raw episode:")
+		g.message1 = format_string(f"episode parsed from sonarr api:")
 		g.message2 = f"{var1}"
 	elif status_code == 623:
 		g.message1 = format_string(f"episode dictionary:")
@@ -100,10 +100,10 @@ def debug_message(status_code, g, var1 = str(), var2 = str()):
 		g.message1 = format_string(f"show dictionary:")
 		g.message2 = f"{var1}"
 	elif status_code == 625:
-		g.message1 = format_string(f"sonarr show dictionary:")
+		g.message1 = format_string(f"sonarr api series lookup:")
 		g.message2 = f"{var1}"
 	elif status_code == 626:
-		g.message1 = format_string(f"sonarr api query dictionary:")
+		g.message1 = format_string(f"sonarr api series parsed lookup:")
 		g.message2 = f"{var1}"
 	elif status_code == 627:
 		g.message1 = format_string(f"movie dictionary:")
@@ -171,6 +171,21 @@ def debug_message(status_code, g, var1 = str(), var2 = str()):
 		g.message2 = f"{var1}"
 	elif status_code == 648:
 		g.message1 = format_string(f"movie db id:")
+		g.message2 = f"{var1}"
+	elif status_code == 649:
+		g.message1 = format_string(f"list of parsed show genres:")
+		g.message2 = f"{var1}"
+	elif status_code == 650:
+		g.message1 = format_string(f"imdb id:")
+		g.message2 = f"{var1}"
+	elif status_code == 651:
+		g.message1 = format_string(f"current recorded link status:")
+		g.message2 = f"{var1}"
+	elif status_code == 652:
+		g.message1 = format_string(f"episode file dictionary:")
+		g.message2 = f"{var1}"
+	elif status_code == 653:
+		g.message1 = format_string(f"sonarr episode file id:")
 		g.message2 = f"{var1}"
 	elif status_code == -1:
 		g.message1 = format_string(
