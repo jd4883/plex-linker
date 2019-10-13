@@ -11,7 +11,8 @@ def parse_relpath(self, g, media_path):
 		return str(os.path.relpath(film, media_path))
 	return str()
 
-#radarr_dictionary, movie, unparsed_title
+
+# radarr_dictionary, movie, unparsed_title
 def get_parsed_movie_title(self, g):
 	file = f"{self.unparsed_title} ({self.year})".replace(":", "-")
 	result = file.replace("/", "+")

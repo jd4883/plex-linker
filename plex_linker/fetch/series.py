@@ -10,7 +10,8 @@ def symlink_status(self, g):
 		else str()
 	g.LOG.debug(backend.debug_message(651, g, result))
 	return result
-	
+
+
 def show_path_string(self, string):
-	return str((str(string).replace('//','/')).replace(":", "")).replace(str(os.environ['SONARR_ROOT_PATH_PREFIX']),
-	                                                                     str())
+	return str((str(string).replace('//', '/')).replace(":", "")).replace(str(os.environ['SONARR_ROOT_PATH_PREFIX']),
+	                                                                      str())

@@ -1,7 +1,6 @@
 #!/usr/bin/env python3.7
 import time
 import plex_linker.parser.series as parse_series
-import plex_linker.sets.series as set_series
 from os.path import abspath
 from marshmallow import Schema, fields
 import class_objects.sonarr_api
@@ -23,7 +22,7 @@ from logs.bin.get_parameters import (get_log_name, get_logger, get_method_main)
 from movies.movie.movie_gets import (get_absolute_movie_file_path, get_relative_movie_file_path)
 from movies.movies_gets import (get_relative_movies_path)
 import plex_linker.fetch.series as fetch_series
-from plex_linker.parser.series import show_root_folder
+from plex_linker.parser.series import padded_absolute_episode, parsed_show_title, episode_title
 
 
 class Globals:
@@ -31,7 +30,7 @@ class Globals:
 		self.sonarr = SonarrAPI()
 		self.radarr = RadarrAPI()
 		self.sonarr_root_folders = self.sonarr.get_root_folder()
-		#self.radarr_root_folders = self.radarr.get_root_folder() # fairly sure this isnt a radarr endpoint
+		# self.radarr_root_folders = self.radarr.get_root_folder() # fairly sure this isnt a radarr endpoint
 		self.shows_dictionary = self.sonarr.get_series()
 		self.movies_dictionary = self.radarr.get_movie_library()
 		self.MEDIA_PATH = str(get_docker_media_path())
@@ -52,9 +51,11 @@ class Movies:
 		self.absolute_movies_path = absolute_movies_path
 		self.relative_movies_path = get_relative_movies_path(self)
 
+
 class MovieSchema(Schema):
 	unparsed_title = fields.Function()
-	# movie_dictionary = fields.Movie.movie_dictionary()
+# movie_dictionary = fields.Movie.movie_dictionary()
+
 
 class Movie(Movies, Globals):
 	def __init__(self,
@@ -62,7 +63,7 @@ class Movie(Movies, Globals):
 	             movie_dict,
 	             g):
 		super().__init__()
-		#schema = MovieSchema()
+		# schema = MovieSchema()
 		self.movie_dictionary = movie_dict
 		g.LOG.debug(backend.debug_message(627, g, self.movie_dictionary))
 		
@@ -90,7 +91,8 @@ class Movie(Movies, Globals):
 			self.year = int(self.movie_dictionary['Year'])
 		else:
 			self.year = self.movie_dictionary['Year'] = int(self.radarr_dictionary.pop('year', 0))
-		self.unparsed_title = self.movie_dictionary['Unparsed Title'] = self.get_unparsed_movie_title(g).replace(' (0)', str())
+		self.unparsed_title = self.movie_dictionary['Unparsed Title'] = self.get_unparsed_movie_title(g).replace(' (0)',
+		                                                                                                         str())
 		self.movie_title = self.movie_dictionary['Title'] = str(get_parsed_movie_title(self, g)).replace(' (0)', str())
 		self.relative_movie_path = self.init_relative_movie_path(g)
 		self.absolute_movie_path = self.init_absolute_movie_path(g)
@@ -99,18 +101,19 @@ class Movie(Movies, Globals):
 			self.quality = self.movie_dictionary['Parsed Movie Quality'] = str()
 			self.extension = self.movie_dictionary['Parsed Movie Extension'] = str()
 			self.absolute_movie_file_path = str(self.movie_dictionary['Absolute Movie File Path'])
-			self.relative_movie_file_path =  str(self.movie_dictionary['Relative Movie File Path'])
+			self.relative_movie_file_path = str(self.movie_dictionary['Relative Movie File Path'])
 			return
 		file_dict = self.radarr_dictionary['movieFile']
 		self.movie_file = self.movie_dictionary['Movie File'] = str(file_dict['relativePath'])
 		g.LOG.debug(backend.debug_message(610, g, self.movie_file))
 		self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(file_dict['quality']['quality']['name'])
 		g.LOG.debug(backend.debug_message(612, g, self.quality))
-		self.extension = self.movie_dictionary['Parsed Extension'] = str(self.movie_file.split().pop()).replace(self.quality, str())[1:]
+		self.extension = self.movie_dictionary['Parsed Extension'] = str(self.movie_file.split().pop()).replace(
+				self.quality, str())[1:]
 		self.absolute_movie_file_path = self.movie_dictionary['Absolute Movie File Path'] = str(
 				get_absolute_movie_file_path(self, g))
 		self.relative_movie_file_path = self.movie_dictionary['Relative Movie File Path'] = str(
-			get_relative_movie_file_path(self, g))
+				get_relative_movie_file_path(self, g))
 	
 	def get_unparsed_movie_title(self, g):
 		result = str(self.radarr_dictionary['title']) \
@@ -119,10 +122,12 @@ class Movie(Movies, Globals):
 		return result
 	
 	def parse_dict_from_radarr(self, g):
-		if str(self.movie_dictionary['Movie DB ID']).isdigit() and str(self.movie_dictionary['Movie DB ID']).isdigit() != 0:
+		if str(self.movie_dictionary['Movie DB ID']).isdigit() and str(
+				self.movie_dictionary['Movie DB ID']).isdigit() != 0:
 			try:
-				index = [i for i, d in enumerate(g.movies_dictionary) if (self.movie_dictionary['Movie DB ID'] in d.values())
-				         and ("tmdbId" in d.keys() and d['tmdbId'] == self.movie_dictionary['Movie DB ID'])][0]
+				index = \
+					[i for i, d in enumerate(g.movies_dictionary) if (self.movie_dictionary['Movie DB ID'] in d.values())
+					 and ("tmdbId" in d.keys() and d['tmdbId'] == self.movie_dictionary['Movie DB ID'])][0]
 				g.LOG.debug(backend.debug_message(644, g, g.movies_dictionary[index]))
 				return g.movies_dictionary[index]
 			except IndexError:
@@ -130,7 +135,8 @@ class Movie(Movies, Globals):
 		return dict()
 	
 	def init_absolute_movie_path(self, g):
-		result = self.movie_dictionary['Absolute Movie Path'] = "/".join((os.environ['DOCKER_MEDIA_PATH'], self.relative_movie_path))
+		result = self.movie_dictionary['Absolute Movie Path'] = "/".join(
+				(os.environ['DOCKER_MEDIA_PATH'], self.relative_movie_path))
 		g.LOG.debug(backend.debug_message(614, g, str(result)))
 		return result
 	
@@ -148,9 +154,9 @@ class Movie(Movies, Globals):
 			elif 'tmdbId' in self.radarr_dictionary[0] and int(self.radarr_dictionary[0]['tmdbId']) > 0:
 				tmdbID = int(self.radarr_dictionary[0]['tmdbId'])
 			g.radarr.rescan_movie(int(tmdbID)) if len(self.radarr_dictionary) > 0 else str()
-				# rescan movie in case it was picked up since last scan
+			# rescan movie in case it was picked up since last scan
 			g.radarr.refresh_movie(int(tmdbID)) if len(self.radarr_dictionary) > 0 else str()
-				# to ensure metadata is up to date
+			# to ensure metadata is up to date
 			if len(self.radarr_dictionary) > 0 and self.radarr_dictionary[0]['monitored']:
 				g.radarr.movie_search(int(tmdbID))
 		return tmdbID
@@ -184,6 +190,7 @@ class Movie(Movies, Globals):
 				quality = str()
 		return str(quality)  # .rsplit( ".", 1 )[ 0 ] ) if it the extension is parsed separately
 
+
 # TODO: make sure order allows everything to calculate from the API if not well defined
 
 class Show(Movie, Globals):
@@ -195,9 +202,12 @@ class Show(Movie, Globals):
 	             movie_dict = dict()):
 		super().__init__(film, movie_dict, g)
 		# passed values
-		self.show = series; g.LOG.debug(backend.debug_message(604, g, self.show))
-		self.movie_dictionary = movie_dict; g.LOG.debug(backend.debug_message(627, g, self.movie_dictionary))
-		self.series_dict = show_dict; g.LOG.debug(backend.debug_message(624, g, self.series_dict))
+		self.show = series;
+		g.LOG.debug(backend.debug_message(604, g, self.show))
+		self.movie_dictionary = movie_dict;
+		g.LOG.debug(backend.debug_message(627, g, self.movie_dictionary))
+		self.series_dict = show_dict;
+		g.LOG.debug(backend.debug_message(624, g, self.series_dict))
 		# sonarr api info
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
 		self.tvdbId = parse_series.tvdb_id(self.sonarr_series_dict, self.series_dict, g)
@@ -215,38 +225,13 @@ class Show(Movie, Globals):
 		# technically not in use but could be really useful as a means of checking if a link is needed
 		self.episode = parse_series.episode_number(self, g)
 		self.absolute_episode = parse_series.absolute_episode_number(self, g)
+		self.parsed_absolute_episode = padded_absolute_episode(self, g)
 		self.season = parse_series.season_from_sonarr(self, g)
 		self.season_folder = parse_series.season_folder_from_api(self, g)
 		self.show_root_path = parse_series.show_root_folder(self, g)
-		
-		
-		breakpoint()
-		#self.parsed_episode = list()
-		self.relative_show_path = relative_show_path(self, g)
-		
-		self.parsed_episode = self.series_dict['Parsed Episode'] = str(self.episode).zfill(self.padding) if self.episode else str()
-		g.LOG.debug(backend.debug_message(634, g, self.parsed_episode))
-		
-		self.parsed_absolute_episode = self.series_dict['Parsed Absolute Episode'] = \
-			fetch_series.show_path_string(self.absolute_episode).zfill(self.padding) if self.absolute_episode else str()
-		if 'Parsed Absolute Episode' in self.series_dict and not self.parsed_absolute_episode:
-			del self.series_dict['Parsed Absolute Episode']
-		g.LOG.debug(backend.debug_message(635, g, self.parsed_absolute_episode))
-		self.episode_title = self.series_dict['Title'] = fetch_series.show_path_string(self.episode_dict.pop('title', self.movie_title))
-		g.LOG.debug(backend.debug_message(636, g, self.episode_title))
-		
-		self.parsed_show_title = \
-			self.series_dict['Parsed Show Title'] = \
-			fetch_series.show_path_string(self, f"{self.show_root_path}/{self.season_folder}/{self.show} - S{self.season}"
-			                        f"E{self.parsed_episode} "
-			            f"- {self.episode_title}")
-		g.LOG.debug(backend.debug_message(637, g, self.parsed_show_title))
-		g.sonarr.rescan_series(int(self.tvdbId))  # rescan movie in case it was picked up since last scan
-		g.sonarr.refresh_series(int(self.tvdbId))  # to ensure metadata is up to date
-	
-def relative_show_path(self, g):
-	result = fetch_series.show_path_string(set_series.set_relative_show_path(self, g))
-	if 'Relative Show Path' in self.series_dict and not self.relative_show_path:
-		result = str(self.series_dict['Relative Show Path'])
-	g.LOG.info(backend.debug_message(633, g, result))
-	return str(result)
+		self.relative_show_path = parse_series.relative_show_path(self, g)
+		self.parsed_episode = parse_series.padded_episode_number(self, g)
+		self.episode_title = episode_title(self, g)
+		self.parsed_show_title = parsed_show_title(self, g)
+		g.sonarr.rescan_series(self.tvdbId)  # rescan movie in case it was picked up since last scan
+		g.sonarr.refresh_series(self.tvdbId)  # to ensure metadata is up to date
