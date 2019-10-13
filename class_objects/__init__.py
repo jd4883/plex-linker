@@ -1,11 +1,13 @@
 #!/usr/bin/env python3.7
 import time
 import plex_linker.parser.series as parse_series
-from os.path import abspath
-from marshmallow import Schema, fields
+import plex_linker.fetch.series as fetch_series
 import class_objects.sonarr_api
 import class_objects.sonarr_class_methods
 import messaging.backend as backend
+
+from os.path import abspath
+from marshmallow import Schema, fields
 from class_objects.misc_get_methods import (
 	get_docker_media_path,
 	get_host_media_path,
@@ -21,7 +23,6 @@ from IO.YAML.yaml_to_object import (get_variable_from_yaml)
 from logs.bin.get_parameters import (get_log_name, get_logger, get_method_main)
 from movies.movie.movie_gets import (get_absolute_movie_file_path, get_relative_movie_file_path)
 from movies.movies_gets import (get_relative_movies_path)
-import plex_linker.fetch.series as fetch_series
 from plex_linker.parser.series import padded_absolute_episode, parsed_show_title, episode_title
 
 
@@ -31,15 +32,15 @@ class Globals:
 		self.radarr = RadarrAPI()
 		self.sonarr_root_folders = self.sonarr.get_root_folder()
 		# self.radarr_root_folders = self.radarr.get_root_folder() # fairly sure this isnt a radarr endpoint
-		self.shows_dictionary = self.sonarr.get_series()
-		self.movies_dictionary = self.radarr.get_movie_library()
+		self.full_sonarr_dict = self.sonarr.get_series()
+		self.full_radarr_dict = self.radarr.get_movie_library()
 		self.MEDIA_PATH = str(get_docker_media_path())
 		self.MEDIA_DIRECTORY = str(get_host_media_path())
 		self.LOG = get_logger(get_log_name())
 		self.MOVIES_PATH = get_movies_path()
 		self.MOVIE_EXTENSIONS = get_movie_extensions()
 		self.SHOWS_PATH = get_shows_path()
-		self.movies_dictionary_object = get_movies_dictionary_object()
+		self.movies_dict = get_movies_dictionary_object()
 		self.method = self.parent_method = get_method_main()
 		pass
 
@@ -126,10 +127,10 @@ class Movie(Movies, Globals):
 				self.movie_dictionary['Movie DB ID']).isdigit() != 0:
 			try:
 				index = \
-					[i for i, d in enumerate(g.movies_dictionary) if (self.movie_dictionary['Movie DB ID'] in d.values())
+					[i for i, d in enumerate(g.full_radarr_dict) if (self.movie_dictionary['Movie DB ID'] in d.values())
 					 and ("tmdbId" in d.keys() and d['tmdbId'] == self.movie_dictionary['Movie DB ID'])][0]
-				g.LOG.debug(backend.debug_message(644, g, g.movies_dictionary[index]))
-				return g.movies_dictionary[index]
+				g.LOG.debug(backend.debug_message(644, g, g.full_radarr_dict[index]))
+				return g.full_radarr_dict[index]
 			except IndexError:
 				pass
 		return dict()
@@ -210,6 +211,7 @@ class Show(Movie, Globals):
 		g.LOG.debug(backend.debug_message(624, g, self.series_dict))
 		# sonarr api info
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
+		self.series_id = parse_series.series_id(self.sonarr_series_dict, self.series_dict, g)
 		self.tvdbId = parse_series.tvdb_id(self.sonarr_series_dict, self.series_dict, g)
 		self.imdbId = parse_series.imdb_id(self.sonarr_series_dict, self.series_dict, g)
 		self.show_genres = parse_series.parse_series_genres(self.sonarr_series_dict, self.series_dict, g)
@@ -220,6 +222,7 @@ class Show(Movie, Globals):
 		self.anime_status = bool(parse_series.anime_status(self, g))
 		self.padding = parse_series.episode_padding(self, g)
 		self.link_status = fetch_series.symlink_status(self, g)
+		# need to add monitored and file status info for episodes to determine this part
 		self.episode_file_id = parse_series.episode_file_id(self, g)
 		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)
 		# technically not in use but could be really useful as a means of checking if a link is needed

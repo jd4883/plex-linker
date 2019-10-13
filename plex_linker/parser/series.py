@@ -14,11 +14,36 @@ def parse_series_genres(sonarr_series_dict, series_dict, g):
 
 
 def tvdb_id(sonarr_series_dict, series_dict, g):
+	result = 0
 	if type(sonarr_series_dict) == dict:
 		result = series_dict['tvdbId'] = sonarr_series_dict.pop('tvdbId')
-		g.LOG.debug(backend.debug_message(618, g, result))
-		return str(result)
-	return str()
+	if result == 0:
+		result = str()
+		#raise ValueError("TVDB ID MUST BE SET")
+		# breakpoint()
+	g.LOG.debug(backend.debug_message(618, g, result))
+	return str(result)
+
+
+def series_id(sonarr_series_dict, series_dict, g):
+	result = 0
+	if type(sonarr_series_dict) == dict:
+		if 'seriesId' in sonarr_series_dict and str(sonarr_series_dict['seriesId']).isdigit():
+			result = series_dict['seriesId'] = sonarr_series_dict.pop('id')
+		elif 'seriesId' in series_dict and str(series_dict['seriesId']).isdigit():
+			result = series_dict['seriesId']
+		# elif 'seriesId' in series_dict and series_dict['']:
+		# 	result = series_dict['seriesId'] =
+		else:
+			print(sonarr_series_dict)
+			print(series_dict)
+			raise ValueError("SERIES ID MUST BE SET")
+	if result == 0:
+		result = str()
+		# need to readd this raise condition after dict is set, manually correct errors
+		
+	g.LOG.debug(backend.debug_message(618, g, result))
+	return result
 
 
 def imdb_id(sonarr_series_dict, series_dict, g):
@@ -28,7 +53,7 @@ def imdb_id(sonarr_series_dict, series_dict, g):
 		except KeyError:
 			result = str()
 		g.LOG.debug(backend.debug_message(650, g, result))
-		return str(result)
+		return result
 	return str()
 
 
@@ -39,8 +64,8 @@ def episode_dict_from_lookup(self, g):
 
 
 def root_folder(self, g):
-	default_root = f"tv/staging/{self.show}"  # adjust to be an environ
-	# default_root = f"{os.environ['SONARR_DEFAULT_ROOT']}/{self.show}"
+	# default_root = f"tv/staging/{self.show}"  # adjust to be an environ
+	default_root = f"{os.environ['SONARR_DEFAULT_ROOT']}/{self.show}"
 	
 	for item in g.sonarr_root_folders:
 		item = fetch_series.show_path_string(self, str(item['path']))
@@ -75,6 +100,8 @@ def episode_id(self, g):
 	result = self.series_dict['Episode ID'] \
 		if 'Episode ID' in self.series_dict and str(self.series_dict['Episode ID']).isdigit() \
 		else sets.set_episode_id(self, g)
+	if result == 0:
+		raise ValueError("EPISODE ID MUST BE SET")
 	g.LOG.debug(backend.debug_message(619, g, result))
 	return result
 
@@ -92,6 +119,8 @@ def episode_padding(self, g):
 
 def parse_episode_file_id_dict(self, g):
 	result = g.sonarr.get_episode_file_by_episode_id(self.episode_file_id);
+	if result == 0:
+		result = str()
 	g.LOG.debug(backend.debug_message(652, g, result))
 	return result
 
@@ -104,6 +133,10 @@ def parse_episode_dict(self, g):
 
 def episode_file_id(self, g):
 	result = self.series_dict['episodeFileId'] = self.episode_dict.pop('episodeFileId', str())
+	if result == 0:
+		result = self.series_dict['episodeFileId'] = str()
+		# need episode file presence info for this check to work
+		#raise ValueError("EPISODE FILE ID MUST BE SET")
 	g.LOG.debug(backend.debug_message(653, g, result))
 	return result
 
