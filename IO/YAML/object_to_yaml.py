@@ -28,7 +28,4 @@ def write_python_dictionary_object_to_yaml_file(g):
 	set_file_mask_with_chmod_on_files_and_links(get_media_collection_parsed_archives(), g)
 	set_ownership_on_files_and_links(get_collection_absolute_path_parsed_this_run())
 	set_file_mask_with_chmod_on_files_and_links(get_collection_absolute_path_parsed_this_run(), g)
-	# for i, j in g.movies_dictionary_object.items():
-	# 	anohana- The Flower We Saw That Day - The Movie (2013)i)
-	# 	anohana- The Flower We Saw That Day - The Movie (2013)j)
 	method_exit(g)

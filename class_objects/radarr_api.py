@@ -15,7 +15,6 @@ class RadarrAPI(object):
 	# def get_movie_file(self, movie_id):
 	# 	return self.request_get(f"{self.host_url}/GetMovieFile&seriesId={movie_id}").json()
 	
-	
 	def refresh_movie(self, movie_id):
 		return self.request_post(f"{self.host_url}/command/RefreshMovie&seriesId={movie_id}").json()
 	
@@ -36,14 +35,14 @@ class RadarrAPI(object):
 				return i
 		return query
 	
-	def request_get(self, url, data=dict()):
-		return requests.get(url, headers={'X-Api-Key': self.api_key}, json=data)
+	def request_get(self, url, data = dict()):
+		return requests.get(url, headers = { 'X-Api-Key': self.api_key }, json = data)
 	
-	def request_post(self, url, data=dict()):
-		return requests.post(url, headers={'X-Api-Key': self.api_key}, json=data)
+	def request_post(self, url, data = dict()):
+		return requests.post(url, headers = { 'X-Api-Key': self.api_key }, json = data)
 	
-	def request_put(self, url, data=dict()):
-		return requests.put(url, headers={'X-Api-Key': self.api_key}, json=data)
+	def request_put(self, url, data = dict()):
+		return requests.put(url, headers = { 'X-Api-Key': self.api_key }, json = data)
 	
-	def request_delete(self, url, data=dict()):
-		return requests.delete(url, headers={'X-Api-Key': self.api_key}, json=data)
+	def request_delete(self, url, data = dict()):
+		return requests.delete(url, headers = { 'X-Api-Key': self.api_key }, json = data)

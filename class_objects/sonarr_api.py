@@ -1,21 +1,10 @@
-#!/usr/bin/env python3.7
 import pathlib
 import os
 import requests
-
-# noinspection PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,
-# PyUnusedFunction,PyUnusedFunction
+import messaging.backend
 from jobs.cleanup.cleanup import cleanup_sonarr_api_query
 
 
-# noinspection PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,
-# PyUnusedFunction
-# noinspection PyUnusedFunction
-
-
-# noinspection PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,PyUnusedFunction,
-# PyUnusedFunction
-# noinspection PyUnusedFunction
 class SonarrAPI(object):
 	def __init__(self):
 		self.host_url = str(os.environ['SONARR_URL'])
@@ -75,8 +64,14 @@ class SonarrAPI(object):
 						}
 				}
 	
-	def lookup_series(self, query):
-		return cleanup_sonarr_api_query(self.request_get(f"{self.host_url}/series/lookup?term={query}").json())
+	def lookup_series(self, query, g):
+		payload = cleanup_sonarr_api_query(self.request_get(f"{self.host_url}/series/lookup?term={query}").json())
+		try:
+			g.LOG.debug(messaging.backend.debug_message(625, g, payload[0]))
+			return payload[0]
+		except IndexError:
+			g.LOG.debug(messaging.backend.debug_message(625, g, payload))
+			return payload
 	
 	def request_get(self, url, data = dict()):
 		return requests.get(url, headers = {'X-Api-Key': self.api_key}, json = data)
