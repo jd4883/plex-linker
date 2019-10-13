@@ -218,12 +218,11 @@ class Show(Movie, Globals):
 		self.season = parse_series.season_from_sonarr(self, g)
 		self.season_folder = parse_series.season_folder_from_api(self, g)
 		self.show_root_path = parse_series.show_root_folder(self, g)
-		breakpoint()
-		self.parsed_episode = list()
 		
-		self.relative_show_path = fetch_series.show_path_string(set_series.set_relative_show_path(self, g))
-		if 'Relative Show Path' in self.series_dict and not self.relative_show_path:
-			self.relative_show_path = str(self.series_dict['Relative Show Path'])
+		
+		breakpoint()
+		#self.parsed_episode = list()
+		self.relative_show_path = relative_show_path(self, g)
 		
 		self.parsed_episode = self.series_dict['Parsed Episode'] = str(self.episode).zfill(self.padding) if self.episode else str()
 		g.LOG.debug(backend.debug_message(634, g, self.parsed_episode))
@@ -244,3 +243,10 @@ class Show(Movie, Globals):
 		g.LOG.debug(backend.debug_message(637, g, self.parsed_show_title))
 		g.sonarr.rescan_series(int(self.tvdbId))  # rescan movie in case it was picked up since last scan
 		g.sonarr.refresh_series(int(self.tvdbId))  # to ensure metadata is up to date
+	
+def relative_show_path(self, g):
+	result = fetch_series.show_path_string(set_series.set_relative_show_path(self, g))
+	if 'Relative Show Path' in self.series_dict and not self.relative_show_path:
+		result = str(self.series_dict['Relative Show Path'])
+	g.LOG.info(backend.debug_message(633, g, result))
+	return str(result)
