@@ -30,7 +30,7 @@ def symlink_force(show, g):
 		show.link_status = str()
 		show.relative_show_path = str()
 		show.movie_file = str()
-		g.list_of_movies_to_locate.append(show.movie_title)
+		#g.list_of_movies_to_locate.append(show.movie_title)
 	message.method_exit(g)
 
 
