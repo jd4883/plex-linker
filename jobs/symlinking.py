@@ -14,18 +14,21 @@ def symlink_force(show, g):
 		show.has_link = bool()
 		pass
 	# improve logic here to also validate the link is in place in addition to the flag
-	#if not show.has_link: #validate_link_ready(show):
 	os.chdir(str(os.environ['HOST_MEDIA_PATH']))
-	# noinspection SpellCheckingInspection
 	process = subprocess.Popen(get_symlink_command_string(show), stderr = subprocess.DEVNULL,
 	                           stdout = subprocess.PIPE)
-	# print(show.has_link)
-	#
-	#
-	# show.link_status = \
-	# 	strip_quotes_from_string(get_symlink_string(process)).replace('b"', str())[:-3].rstrip()
-	# # -3 covers the link not having the newline character at the end, if this is fixed this should be -1 instead
-	g.LOG.info(backend.debug_message(642, g, show.has_link))
+	if not show.has_link: #validate_link_ready(show):
+		os.chdir(str(os.environ['HOST_MEDIA_PATH']))
+		# noinspection SpellCheckingInspection
+		process = subprocess.Popen(get_symlink_command_string(show), stderr = subprocess.DEVNULL,
+		                           stdout = subprocess.PIPE)
+		# print(show.has_link)
+		#
+		#
+		# show.link_status = \
+		# 	strip_quotes_from_string(get_symlink_string(process)).replace('b"', str())[:-3].rstrip()
+		# # -3 covers the link not having the newline character at the end, if this is fixed this should be -1 instead
+		g.LOG.info(backend.debug_message(642, g, show.has_link))
 	else:
 		print(f'Link not created for {show.absolute_movie_file_path}')
 		show.link_status = str()
