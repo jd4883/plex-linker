@@ -118,7 +118,8 @@ def episode_padding(self, g):
 
 
 def parse_episode_file_id_dict(self, g):
-	if self.episode_file_id == 0:
+	if self.episode_file_id == 0 or not self.episode_file_id:
+		print("File not found should be parsing out a link")
 		return str()
 	result = g.sonarr.get_episode_file_by_episode_id(self.episode_file_id);
 	if result == 0:
@@ -129,7 +130,7 @@ def parse_episode_file_id_dict(self, g):
 
 def parse_episode_dict(self, g):
 	result = g.sonarr.get_episode_by_episode_id(self.episode_id);
-	g.LOG.debug(backend.debug_message(623, g, result))
+	g.LOG.info(backend.debug_message(623, g, result))
 	return result
 
 
@@ -139,7 +140,7 @@ def episode_file_id(self, g):
 		result = self.series_dict['episodeFileId'] = str()
 		# need episode file presence info for this check to work
 		#raise ValueError("EPISODE FILE ID MUST BE SET")
-	g.LOG.debug(backend.debug_message(653, g, result))
+	g.LOG.info(backend.debug_message(653, g, result))
 	return result
 
 
