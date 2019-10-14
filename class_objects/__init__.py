@@ -221,6 +221,8 @@ class Show(Movie, Globals):
 		self.episode_file_id = parse_series.episode_file_id(self, g)
 		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)
 		link = str(self.episode_file_dict['path']).replace(str(os.environ['SONARR_ROOT_PATH_PREFIX']), str())
+		print(os.readlink(link))
+		print(os.path.islink(link))
 		self.has_link = \
 			self.series_dict['Show Link Status'] = True if os.path.islink(str(os.path.exists(link))) else bool()
 		self.link_status = fetch_series.symlink_status(self, g)
