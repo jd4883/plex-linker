@@ -6,6 +6,7 @@ import messaging.backend as backend
 
 def symlink_force(show, g):
 	message.method_launch(g)
+	# TODO: add method to handle deleting dead links and files instead of links
 	if (show.absolute_movie_path or show.absolute_movie_file_path) == ("/'" or "" or None or "/") \
 			or str(show.absolute_movie_path or show.absolute_movie_file_path).endswith("/'" or "" or None or "/"):
 		# really primitive way to indicate if the movie value is blank we do not link
@@ -16,14 +17,14 @@ def symlink_force(show, g):
 		# noinspection SpellCheckingInspection
 		process = subprocess.Popen(get_symlink_command_string(show), stderr = subprocess.DEVNULL,
 		                           stdout = subprocess.PIPE)
-		print(show.has_link)
-		
-		
-		show.link_status = \
-			strip_quotes_from_string(get_symlink_string(process)).replace('b"', str())[:-3].rstrip()
-		# -3 covers the link not having the newline character at the end, if this is fixed this should be -1 instead
+		# print(show.has_link)
+		#
+		#
+		# show.link_status = \
+		# 	strip_quotes_from_string(get_symlink_string(process)).replace('b"', str())[:-3].rstrip()
+		# # -3 covers the link not having the newline character at the end, if this is fixed this should be -1 instead
 		if show.link_status:
-			g.LOG.info(backend.debug_message(642, g, show.link_status))
+			g.LOG.info(backend.debug_message(642, g, show.has_link))
 	else:
 		print(f'no link created for {show.absolute_movie_file_path}')
 		show.link_status = str()
