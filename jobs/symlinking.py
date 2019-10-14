@@ -13,6 +13,8 @@ def symlink_force(show, g):
 		show.absolute_movie_file_path = str()
 		show.has_link = bool()
 		pass
+	show.has_link = False
+	# improve logic here to also validate the link is in place in addition to the flag
 	if not show.has_link: #validate_link_ready(show):
 		os.chdir(str(os.environ['HOST_MEDIA_PATH']))
 		# noinspection SpellCheckingInspection
