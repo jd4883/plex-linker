@@ -220,11 +220,7 @@ class Show(Movie, Globals):
 		self.padding = parse_series.episode_padding(self, g)
 		self.episode_file_id = parse_series.episode_file_id(self, g)
 		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)
-		self.has_link = False
-		link = str(self.episode_file_dict['path']).replace(str(os.environ['SONARR_ROOT_PATH_PREFIX']), str())
-		parsed_link = str(os.readlink(link)).replace('../', str())
-		if str(self.relative_movie_file_path) == parsed_link:
-			self.has_link = os.path.islink(link)
+		self.has_link = bool(self.fetch_link_status())
 		self.link_status = fetch_series.symlink_status(self, g)
 		print(self.has_link)
 		breakpoint()
@@ -243,3 +239,11 @@ class Show(Movie, Globals):
 		self.parsed_show_title = parsed_show_title(self, g)
 		g.sonarr.rescan_series(self.tvdbId)  # rescan movie in case it was picked up since last scan
 		g.sonarr.refresh_series(self.tvdbId)  # to ensure metadata is up to date
+	
+	def fetch_link_status(self):
+		result = bool()
+		link = str(self.episode_file_dict['path']).replace(str(os.environ['SONARR_ROOT_PATH_PREFIX']), str())
+		parsed_link = str(os.readlink(link)).replace('../', str())
+		if str(self.relative_movie_file_path) == parsed_link:
+			result = os.path.islink(link)
+		return result
