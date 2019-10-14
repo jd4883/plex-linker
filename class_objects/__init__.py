@@ -224,6 +224,10 @@ class Show(Movie, Globals):
 		link_abspath = str(os.readlink(link).replace('../', str())).replace(str(os.environ['SONARR_ROOT_PATH_PREFIX']), str())
 		if str(self.absolute_movie_file_path) == link_abspath:
 			print("we have a match")
+		else:
+			print("no match")
+		print(f"LINK ABSOLUTE PATH CALCULATION FROM SYMLINK: {link_abspath}")
+		print(f"LINK ABSOLUTE PATH FROM RADARR: {self.absolute_movie_file_path}")
 		self.has_link = self.series_dict['Show Link Status'] = bool(os.path.islink(link))
 		self.link_status = fetch_series.symlink_status(self, g)
 		print(self.absolute_movie_file_path)
