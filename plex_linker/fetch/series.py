@@ -17,10 +17,11 @@ def show_path_string(string):
 	                                                                      str())
 
 
-def fetch_link_status(episode_file_dict, relative_movie_file_path):
+def fetch_link_status(self, episode_file_dict, relative_movie_file_path):
 	print(episode_file_dict)
 	result = bool()
-	link = str(episode_file_dict['path']).replace(os.environ['SONARR_ROOT_PATH_PREFIX'], str())
+	link = str(episode_file_dict['path']).replace(os.environ['SONARR_ROOT_PATH_PREFIX'],
+	                                                                          str())
 	parsed_link = str(os.readlink(link)).replace('../', str())
 	if str(relative_movie_file_path) == parsed_link:
 		result = os.path.islink(link)

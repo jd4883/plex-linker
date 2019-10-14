@@ -221,7 +221,7 @@ class Show(Movie, Globals):
 		self.padding = parse_series.episode_padding(self, g)
 		self.episode_file_id = parse_series.episode_file_id(self, g)
 		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)
-		self.has_link = bool(fetch_link_status(self.episode_file_dict, self.relative_movie_file_path))
+		self.has_link = bool(fetch_link_status(self, self.episode_file_dict, self.relative_movie_file_path))
 		self.link_status = fetch_series.symlink_status(self, g)
 		self.sonarr_monitored = not bool() # if linked monitoring should be false
 		# need to push this status to Sonarr via API
