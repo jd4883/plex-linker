@@ -118,10 +118,12 @@ def episode_padding(self, g):
 
 
 def parse_episode_file_id_dict(self, g):
+	if self.episode_file_id == 0:
+		return str()
 	result = g.sonarr.get_episode_file_by_episode_id(self.episode_file_id);
 	if result == 0:
 		result = str()
-	g.LOG.debug(backend.debug_message(652, g, result))
+	g.LOG.info(backend.debug_message(652, g, result))
 	return result
 
 

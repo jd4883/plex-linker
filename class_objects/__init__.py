@@ -222,7 +222,6 @@ class Show(Movie, Globals):
 		self.episode_file_id = parse_series.episode_file_id(self, g)
 		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)
 		# need to add monitored and file status info for episodes to determine this part
-		print(self.episode_file_dict)
 		# self.has_link =
 		# technically not in use but could be really useful as a means of checking if a link is needed
 		self.episode = [parse_series.episode_number(self, g)]
