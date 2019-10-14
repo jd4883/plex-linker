@@ -238,6 +238,7 @@ def parsed_show_title(self, g):
 
 def episode_title(self, g):
 	title = str()
+	# not sure why i cant pop here this was a hacky way to get around it, suspecting a datatype error
 	for k,v in self.episode_dict.items():
 		if k == 'title':
 			title = v
