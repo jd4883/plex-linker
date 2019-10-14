@@ -219,6 +219,8 @@ class Show(Movie, Globals):
 		self.anime_status = bool(parse_series.anime_status(self, g))
 		self.padding = parse_series.episode_padding(self, g)
 		self.link_status = fetch_series.symlink_status(self, g)
+		print(self.episode_dict)
+		#self.has_link =
 		# need to add monitored and file status info for episodes to determine this part
 		self.episode_file_id = parse_series.episode_file_id(self, g)
 		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)
