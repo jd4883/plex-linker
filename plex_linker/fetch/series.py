@@ -20,7 +20,7 @@ def show_path_string(string):
 def fetch_link_status(self, episode_file_dict, relative_movie_file_path):
 	print(episode_file_dict)
 	result = bool()
-	link = episode_file_dict.pop(str('path'), self.relative_show_file_path).replace(os.environ['SONARR_ROOT_PATH_PREFIX'],
+	link = episode_file_dict.pop(str('path')).replace(os.environ['SONARR_ROOT_PATH_PREFIX'],
 	                                                                          str())
 	parsed_link = str(os.readlink(link)).replace('../', str())
 	if str(relative_movie_file_path) == parsed_link:
