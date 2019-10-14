@@ -224,7 +224,7 @@ class Show(Movie, Globals):
 		self.has_link = self.series_dict['Show Link Status'] = bool(os.path.islink(link))
 		self.link_status = fetch_series.symlink_status(self, g)
 		print(self.absolute_movie_file_path)
-		print("we have a match") if self.absolute_movie_file_path in self.has_link else print("no match")
+		print("we have a match") if self.absolute_movie_file_path in os.readlink(link) else print("no match")
 		print(self.has_link)
 		print(self.absolute_movie_file_path)
 		breakpoint()
