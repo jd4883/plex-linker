@@ -222,7 +222,7 @@ class Show(Movie, Globals):
 		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)
 		link = str(self.episode_file_dict['path']).replace(str(os.environ['SONARR_ROOT_PATH_PREFIX']), str())
 		link_abspath = str(os.readlink(link)).replace('../', str())
-		if str(self.absolute_movie_file_path) == link_abspath:
+		if str(self.relative_movie_file_path) == link_abspath:
 			print("we have a match")
 		else:
 			print("no match")
