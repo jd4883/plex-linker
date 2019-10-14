@@ -68,10 +68,10 @@ def root_folder(self, g):
 	default_root = f"{os.environ['SONARR_DEFAULT_ROOT']}/{self.show}"
 	
 	for item in g.sonarr_root_folders:
-		item = fetch_series.show_path_string(self, str(item['path']))
-		potential = fetch_series.show_path_string(self, f"{item}{self.show}/{self.season_folder}")
+		item = fetch_series.show_path_string(str(item['path']))
+		potential = fetch_series.show_path_string(f"{item}{self.show}/{self.season_folder}")
 		if os.path.exists(potential) and os.path.isdir(potential):
-			return fetch_series.show_path_string(self, f"{item}{self.show}")
+			return fetch_series.show_path_string(f"{item}{self.show}")
 	return str(default_root)
 
 
@@ -174,9 +174,9 @@ def season_folder_from_api(self, g):
 
 def show_root_folder(self, g):
 	result = self.series_dict['Show Root Path'] = \
-		fetch_series.show_path_string(self, self.episode_dict.pop('path', fetch_series.show_path_string(
-				self, root_folder(self, g))))
-	path = os.path.join(fetch_series.show_path_string(self, os.environ['DOCKER_MEDIA_PATH']), result, self.season_folder)
+		fetch_series.show_path_string(self.episode_dict.pop('path', fetch_series.show_path_string(
+				root_folder(self, g))))
+	path = os.path.join(fetch_series.show_path_string(os.environ['DOCKER_MEDIA_PATH']), result, self.season_folder)
 	os.makedirs(path, exist_ok = True)
 	g.LOG.debug(backend.debug_message(632, g, result))
 	return result
@@ -230,14 +230,13 @@ def padded_absolute_episode(self, g):
 
 def parsed_show_title(self, g):
 	result = self.series_dict['Parsed Show Title'] = \
-		fetch_series.show_path_string(self, f"{self.show_root_path}/{self.season_folder}/{self.show} - S{self.season}"
+		fetch_series.show_path_string(f"{self.show_root_path}/{self.season_folder}/{self.show} - S{self.season}"
 		                                    f"E{self.parsed_episode} - {self.episode_title}")
 	g.LOG.debug(backend.debug_message(637, g, result))
 	return result
 
 
 def episode_title(self, g):
-	result = self.series_dict['Title'] = fetch_series.show_path_string(self,
-	                                                                   self.episode_dict.pop('title', self.movie_title))
+	result = self.series_dict['Title'] = fetch_series.show_path_string(self.episode_dict.pop('title', self.movie_title))
 	g.LOG.debug(backend.debug_message(636, g, result))
 	return result
