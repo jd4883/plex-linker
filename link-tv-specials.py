@@ -10,3 +10,4 @@ if __name__ == "__main__":
 	master_dictionary = media.Movies(str(os.path.abspath(get_docker_media_path(g))))
 	parse_movies(g)
 	dict_to_yaml(g)
+	# write a cleanup method that looks at all links and if they are not in our setup they get removed

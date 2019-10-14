@@ -23,7 +23,11 @@ def fetch_link_status(self, episode_file_dict, relative_movie_file_path):
 		link = str(episode_file_dict.pop(str('path'))).replace(os.environ['SONARR_ROOT_PATH_PREFIX'],str())
 	except AttributeError:
 		return bool()
-	parsed_link = str(os.readlink(link)).replace('../', str())
+	try:
+		parsed_link = str(os.readlink(link)).replace('../', str())
+	except OSError:
+		print("OS ERROR TO CLEANUP FROM LINK FETCH METHOD")
+		return bool()
 	if str(relative_movie_file_path) == parsed_link:
 		result = os.path.islink(link)
 	return result
