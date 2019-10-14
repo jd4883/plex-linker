@@ -237,7 +237,7 @@ def parsed_show_title(self, g):
 
 
 def episode_title(self, g):
-	print(self.episode_dict[0])
+	print(self.episode_dict['title'])
 	result = self.series_dict['Title'] = fetch_series.show_path_string(self.episode_dict.pop('title', self.series_dict['Title']))
 	g.LOG.info(backend.debug_message(636, g, result))
 	return result
