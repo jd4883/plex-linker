@@ -240,8 +240,8 @@ def episode_title(self, g):
 	title = str()
 	for k,v in self.episode_dict.items():
 		if k == 'title':
-			print(v)
-			breakpoint()
-	result = self.series_dict['Title'] = fetch_series.show_path_string(self.episode_dict.pop('title', self.series_dict['Title']))
+			title = v
+			break
+	result = self.series_dict['Title'] = fetch_series.show_path_string(self.episode_dict.pop('title', title))
 	g.LOG.info(backend.debug_message(636, g, result))
 	return result
