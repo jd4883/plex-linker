@@ -11,7 +11,7 @@ def symlink_force(show, g):
 			or str(show.absolute_movie_path or show.absolute_movie_file_path).endswith("/'" or "" or None or "/"):
 		# really primitive way to indicate if the movie value is blank we do not link
 		show.absolute_movie_file_path = str()
-		show.has_link = False
+		show.has_link = bool()
 		pass
 	if show.has_link: #validate_link_ready(show):
 		os.chdir(str(os.environ['HOST_MEDIA_PATH']))
