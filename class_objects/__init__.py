@@ -224,7 +224,7 @@ class Show(Movie, Globals):
 		link = str(self.episode_file_dict['path']).replace(str(os.environ['SONARR_ROOT_PATH_PREFIX']), str())
 		link = str(os.readlink(link)).replace('../', str())
 		if str(self.relative_movie_file_path) == link:
-			self.has_link = bool(os.path.islink(link))
+			self.has_link = os.path.islink(link)
 		self.link_status = fetch_series.symlink_status(self, g)
 		print(self.has_link)
 		breakpoint()
