@@ -221,7 +221,7 @@ class Show(Movie, Globals):
 		self.episode_file_id = parse_series.episode_file_id(self, g)
 		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)
 		link = str(self.episode_file_dict['path']).replace(str(os.environ['SONARR_ROOT_PATH_PREFIX']), str())
-		link_abspath = str(os.readlink(link).replace('../', str())).replace(str(os.environ['SONARR_ROOT_PATH_PREFIX']), str())
+		link_abspath = str(os.readlink(link)).replace('../', str())
 		if str(self.absolute_movie_file_path) == link_abspath:
 			print("we have a match")
 		else:
@@ -230,10 +230,6 @@ class Show(Movie, Globals):
 		print(f"LINK ABSOLUTE PATH FROM RADARR: {self.absolute_movie_file_path}")
 		self.has_link = self.series_dict['Show Link Status'] = bool(os.path.islink(link))
 		self.link_status = fetch_series.symlink_status(self, g)
-		print(self.absolute_movie_file_path)
-		print("we have a match") if self.absolute_movie_file_path in str(os.readlink(link)) else print("no match")
-		print(self.has_link)
-		print(self.absolute_movie_file_path)
 		breakpoint()
 		# need to add monitored and file status info for episodes to determine this part
 		# self.has_link =
