@@ -14,9 +14,6 @@ def symlink_force(show, g):
 		show.has_link = bool()
 		pass
 	# improve logic here to also validate the link is in place in addition to the flag
-	os.chdir(str(os.environ['HOST_MEDIA_PATH']))
-	process = subprocess.Popen(get_symlink_command_string(show), stderr = subprocess.DEVNULL,
-	                           stdout = subprocess.PIPE)
 	if not show.has_link: #validate_link_ready(show):
 		os.chdir(str(os.environ['HOST_MEDIA_PATH']))
 		# noinspection SpellCheckingInspection
