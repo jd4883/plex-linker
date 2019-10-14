@@ -6,14 +6,19 @@ import messaging.backend as backend
 
 def symlink_force(show, g):
 	message.method_launch(g)
-	if (show.absolute_movie_file_path or show.absolute_movie_file_path) == ("/'" or "" or None or "/"):
+	if (show.absolute_movie_path or show.absolute_movie_file_path) == ("/'" or "" or None or "/") \
+			or str(show.absolute_movie_path or show.absolute_movie_file_path).endswith("/'" or "" or None or "/"):
 		# really primitive way to indicate if the movie value is blank we do not link
+		show.absolute_movie_file_path = str()
 		pass
-	elif validate_link_ready(show):
+	elif show.has_link: #validate_link_ready(show):
 		os.chdir(str(os.environ['HOST_MEDIA_PATH']))
 		# noinspection SpellCheckingInspection
 		process = subprocess.Popen(get_symlink_command_string(show), stderr = subprocess.DEVNULL,
 		                           stdout = subprocess.PIPE)
+		print(show.has_link)
+		
+		
 		show.link_status = \
 			strip_quotes_from_string(get_symlink_string(process)).replace('b"', str())[:-3].rstrip()
 		# -3 covers the link not having the newline character at the end, if this is fixed this should be -1 instead
@@ -25,6 +30,7 @@ def symlink_force(show, g):
 		show.relative_show_path = str()
 		show.movie_file = str()
 		g.list_of_movies_to_locate.append(show.movie_title)
+	breakpoint()
 	message.method_exit(g)
 
 

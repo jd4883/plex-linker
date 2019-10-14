@@ -23,6 +23,7 @@ from IO.YAML.yaml_to_object import (get_variable_from_yaml)
 from logs.bin.get_parameters import (get_log_name, get_logger, get_method_main)
 from movies.movie.movie_gets import (get_absolute_movie_file_path, get_relative_movie_file_path)
 from movies.movies_gets import (get_relative_movies_path)
+from plex_linker.fetch.series import fetch_link_status
 from plex_linker.parser.series import padded_absolute_episode, parsed_show_title, episode_title
 
 
@@ -220,10 +221,11 @@ class Show(Movie, Globals):
 		self.padding = parse_series.episode_padding(self, g)
 		self.episode_file_id = parse_series.episode_file_id(self, g)
 		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)
-		self.has_link = bool(self.fetch_link_status())
+		self.has_link = bool(fetch_link_status(self.episode_file_dict, self.relative_movie_file_path))
 		self.link_status = fetch_series.symlink_status(self, g)
-		print(self.has_link)
-		breakpoint()
+		self.sonarr_monitored = not bool() # if linked monitoring should be false
+		# need to push this status to Sonarr via API
+		
 		# need to add monitored and file status info for episodes to determine this part
 		# self.has_link =
 		# technically not in use but could be really useful as a means of checking if a link is needed
@@ -239,11 +241,4 @@ class Show(Movie, Globals):
 		self.parsed_show_title = parsed_show_title(self, g)
 		g.sonarr.rescan_series(self.tvdbId)  # rescan movie in case it was picked up since last scan
 		g.sonarr.refresh_series(self.tvdbId)  # to ensure metadata is up to date
-	
-	def fetch_link_status(self):
-		result = bool()
-		link = str(self.episode_file_dict['path']).replace(str(os.environ['SONARR_ROOT_PATH_PREFIX']), str())
-		parsed_link = str(os.readlink(link)).replace('../', str())
-		if str(self.relative_movie_file_path) == parsed_link:
-			result = os.path.islink(link)
-		return result
+
