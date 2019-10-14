@@ -203,12 +203,9 @@ class Show(Movie, Globals):
 	             movie_dict = dict()):
 		super().__init__(film, movie_dict, g)
 		# passed values
-		self.show = series;
-		g.LOG.debug(backend.debug_message(604, g, self.show))
-		self.movie_dictionary = movie_dict;
-		g.LOG.debug(backend.debug_message(627, g, self.movie_dictionary))
-		self.series_dict = show_dict;
-		g.LOG.debug(backend.debug_message(624, g, self.series_dict))
+		self.show = series; g.LOG.debug(backend.debug_message(604, g, self.show))
+		self.movie_dictionary = movie_dict; g.LOG.debug(backend.debug_message(627, g, self.movie_dictionary))
+		self.series_dict = show_dict; g.LOG.debug(backend.debug_message(624, g, self.series_dict))
 		# sonarr api info
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
 		self.series_id = parse_series.series_id(self.sonarr_series_dict, self.series_dict, g)
@@ -226,14 +223,14 @@ class Show(Movie, Globals):
 		self.episode_file_id = parse_series.episode_file_id(self, g)
 		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)
 		# technically not in use but could be really useful as a means of checking if a link is needed
-		self.episode = parse_series.episode_number(self, g)
-		self.absolute_episode = parse_series.absolute_episode_number(self, g)
+		self.episode = [parse_series.episode_number(self, g)]
+		self.parsed_episode = parse_series.padded_episode_number(self, g)
+		self.absolute_episode = [parse_series.absolute_episode_number(self, g)]
 		self.parsed_absolute_episode = padded_absolute_episode(self, g)
 		self.season = parse_series.season_from_sonarr(self, g)
 		self.season_folder = parse_series.season_folder_from_api(self, g)
 		self.show_root_path = parse_series.show_root_folder(self, g)
 		self.relative_show_path = parse_series.relative_show_path(self, g)
-		self.parsed_episode = parse_series.padded_episode_number(self, g)
 		self.episode_title = episode_title(self, g)
 		self.parsed_show_title = parsed_show_title(self, g)
 		g.sonarr.rescan_series(self.tvdbId)  # rescan movie in case it was picked up since last scan

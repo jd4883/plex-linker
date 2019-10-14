@@ -144,13 +144,13 @@ def episode_file_id(self, g):
 def episode_number(self, g):
 	result = self.series_dict['Episode'] \
 		if 'Episode' in self.series_dict and self.series_dict['Episode'] \
-		else str(self.episode_dict.pop('episodeNumber', str()))
+		else self.episode_dict.pop('episodeNumber', str())
 	g.LOG.debug(backend.debug_message(622, g, result))
 	return result
 
 
 def absolute_episode_number(self, g):
-	result = self.series_dict['Absolute Episode'] = str(self.episode_dict.pop('absoluteEpisodeNumber', str()))
+	result = self.series_dict['Absolute Episode'] = (self.episode_dict.pop('absoluteEpisodeNumber', str()))
 	if not result and 'Absolute Episode' in self.series_dict:
 		del self.series_dict['Absolute Episode']
 	g.LOG.debug(backend.debug_message(628, g, result))
@@ -186,19 +186,40 @@ def relative_show_path(self, g):
 
 
 def padded_episode_number(self, g):
-	result = self.series_dict['Parsed Episode'] = str(self.episode).zfill(
-			self.padding) if self.episode else str()
-	g.LOG.debug(backend.debug_message(634, g, result))
+	list = []
+	if self.episode:
+		for item in self.episode:
+			if type(item) == "<class 'list'>":
+				for i in item:
+					list.append(str(i).zfill(self.padding))
+			else:
+				list.append(str(item).zfill(self.padding))
+		result = "-".join(list)
+		if result == ('00' or '000'):
+			return str()
+	else:
+		result = str()
+	
+	g.LOG.info(backend.debug_message(634, g, result))
 	return str(result)
 
 
 def padded_absolute_episode(self, g):
-	result = self.series_dict['Parsed Absolute Episode'] = \
-		fetch_series.show_path_string(self, self.absolute_episode).zfill(self.padding) if self.absolute_episode else str()
-	if not result and 'Parsed Absolute Episode' in self.series_dict:
+	if not self.absolute_episode:
+		return str()
+	if 'Parsed Absolute Episode' in self.series_dict:
 		del self.series_dict['Parsed Absolute Episode']
 		return str()
-	g.LOG.debug(backend.debug_message(635, g, result))
+	list = []
+	for item in self.absolute_episode:
+		if type(item) == "<class 'list'>":
+			for i in item:
+				list.append(str(i).zfill(self.padding))
+		list.append(str(item).zfill(self.padding))
+	result = "-".join(str(i).zfill(self.padding) for i in list)
+	if result == ('00' or '000'):
+		return str()
+	g.LOG.info(backend.debug_message(635, g, result))
 	return result
 
 

@@ -126,7 +126,7 @@
         -> ../../../../movies/foreign/91 Days Special (2017)/91 Days Special (2017)
         Remux-1080p.mkv
       Title: Shoal of Time / All Our Yesterdays / Tomorrow, and Tomorrow
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt5839706
       seriesId: 2
       tvdbId: 309530
@@ -205,7 +205,7 @@ Absolutely Fabulous- The Last Shout (1996):
       Show Root Path: tv/sitcom/Absolutely Fabulous
       Symlinked: ''
       Title: The Last Shout (1)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0105929
       seriesId: 416
       tvdbId: 73314
@@ -247,7 +247,7 @@ Absolutely Fabulous- The Movie (2016):
         - Absolutely Fabulous The Movie Bluray-1080p.mp4 -> ../../../../movies/staging/Absolutely
         Fabulous- The Movie (2016)/Absolutely Fabulous- The Movie (2016) Bluray-1080p.mp4
       Title: Absolutely Fabulous The Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0105929
       seriesId: 416
       tvdbId: 73314
@@ -286,7 +286,7 @@ Achmed Saves America (2014):
       Show Root Path: tv/staging/The Jeff Dunham Show
       Symlinked: ''
       Title: Achmed Saves America
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1483024
       seriesId: 224
       tvdbId: 119761
@@ -329,7 +329,7 @@ Ajin- Demi-Human (2017):
       Show Root Path: anime/staging/Ajin
       Symlinked: ''
       Title: Ajin Demi-Human (Live Action)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt5537534
       seriesId: 25
       tvdbId: 300835
@@ -375,7 +375,7 @@ Ajin- Demi-Human - Compel (2015):
         Bluray-1080p.mkv -> ../../../../movies/foreign/Ajin- Demi-Human - Compel (2015)/\xe4\xba\x9c\xe4\xba\xba
         \xe7\xac\xac1\xe9\x83\xa8 -\xe8\xa1\x9d\xe5\x8b\x95- (2015) Bluray-1080p.mkv
       Title: Ajin, Part 1 Shoudou
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt5537534
       seriesId: 25
       tvdbId: 300835
@@ -416,7 +416,7 @@ Anemone- Eureka Seven Hi-Evolution (2018):
       Show Root Path: anime/staging/Eureka Seven
       Symlinked: ''
       Title: Navigation ray=out
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0765491
       seriesId: 145
       tvdbId: 79360
@@ -464,7 +464,7 @@ Anohana- The Flower We Saw That Day (2015):
         -> ../../../../movies/foreign/Anohana- The Flower We Saw That Day (2015)/Anohana-
         The Flower We Saw That Day (2015) Bluray-1080p.mkv
       Title: Live-Action TV Drama
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1913273
       seriesId: 134
       tvdbId: 247958
@@ -502,7 +502,7 @@ Another Live Action (2012):
       Show Root Path: anime/staging/Another
       Symlinked: ''
       Title: Another (Live Action Movie)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt2176165
       seriesId: 143
       tvdbId: 254349
@@ -547,7 +547,7 @@ Aqua Teen Hunger Force Colon Movie Film for Theaters (2007):
       Show Root Path: tv/staging/Aqua Teen Hunger Force
       Symlinked: ''
       Title: Aqua Teen Hunger Force Colon Movie Film for Theaters
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0297494
       seriesId: 273
       tvdbId: 77120
@@ -587,7 +587,7 @@ Army of Darkness (1992):
       Show Root Path: tv/fantasy/Ash vs Evil Dead
       Symlinked: ''
       Title: Army of Darkness
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt4189022
       seriesId: 332
       tvdbId: 296295
@@ -627,7 +627,7 @@ Assassination Classroom (2015):
       Show Root Path: anime/shounen/Assassination Classroom
       Symlinked: ''
       Title: Assassination Classroom
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt3837246
       seriesId: 5
       tvdbId: 283947
@@ -672,7 +672,7 @@ Assassination Classroom The Movie- 365 Days (2016):
       Show Root Path: anime/shounen/Assassination Classroom
       Symlinked: ''
       Title: Assassination Classroom The Movie 365 Days
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt3837246
       seriesId: 5
       tvdbId: 283947
@@ -711,7 +711,7 @@ Assassination Classroom- Graduation (2016):
       Show Root Path: anime/shounen/Assassination Classroom
       Symlinked: ''
       Title: Assassination Classroom Graduation
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt3837246
       seriesId: 5
       tvdbId: 283947
@@ -758,7 +758,7 @@ Assassination Classroom- Jump Festa 2013 Special (2013):
         Classroom- Jump Festa 2013 Special (2013)/Assassination Classroom- Jump Festa
         2013 Special (2013) Remux-1080p.mkv
       Title: Jump Festa 2013 Special
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt3837246
       seriesId: 5
       tvdbId: 283947
@@ -809,7 +809,7 @@ Attack on Titan II- End of the World (2015):
         ATTACK ON TITAN \xe3\x82\xa8\xe3\x83\xb3\xe3\x83\x89 \xe3\x82\xaa\xe3\x83\x96
         \xe3\x82\xb6 \xe3\x83\xaf\xe3\x83\xbc\xe3\x83\xab\xe3\x83\x89 (2015) Bluray-1080p.mkv
       Title: Since That Day
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt2560140
       seriesId: 121
       tvdbId: 267440
@@ -863,7 +863,7 @@ Attack on Titan- Crimson Bow and Arrow (2014):
         \xef\xbd\x9e\xe7\xb4\x85\xe8\x93\xae\xe3\x81\xae\xe5\xbc\x93\xe7\x9f\xa2\xef\xbd\x9e
         (2014) Bluray-1080p.mkv
       Title: Since That Day
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt2560140
       seriesId: 121
       tvdbId: 267440
@@ -917,7 +917,7 @@ Attack on Titan- The Roar of Awakening (2018):
         \xe9\x80\xb2\xe6\x92\x83\xe3\x81\xae\xe5\xb7\xa8\xe4\xba\xba Season2 \xef\xbd\x9e\xe8\xa6\x9a\xe9\x86\x92\xe3\x81\xae\xe5\x92\x86\xe5\x93\xae\xef\xbd\x9e
         (2018) Bluray-1080p.mkv
       Title: Ilse's Notebook Memoirs of a Recon Corps Member
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt2560140
       seriesId: 121
       tvdbId: 267440
@@ -970,7 +970,7 @@ Attack on Titan- Wings of Freedom (2015):
         \xe5\xbe\x8c\xe7\xb7\xa8 \xef\xbd\x9e\xe8\x87\xaa\xe7\x94\xb1\xe3\x81\xae\xe7\xbf\xbc\xef\xbd\x9e
         (2015) Bluray-1080p.mkv
       Title: Since That Day
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt2560140
       seriesId: 121
       tvdbId: 267440
@@ -1015,7 +1015,7 @@ Babylon 5- A Call to Arms (1999):
         Bluray-1080p.mkv -> ../../../../movies/staging/Babylon 5- A Call to Arms (1999)/Babylon
         5- A Call to Arms (1999) Bluray-1080p.mkv
       Title: A Call to Arms
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0105946
       seriesId: 357
       tvdbId: 70726
@@ -1058,7 +1058,7 @@ Babylon 5- In the Beginning (1998):
         HDTV-1080p.mkv -> ../../../../movies/staging/Babylon 5- In the Beginning (1998)/Babylon
         5- In the Beginning (1998) HDTV-1080p.mkv
       Title: In the Beginning
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0105946
       seriesId: 357
       tvdbId: 70726
@@ -1100,7 +1100,7 @@ Babylon 5- The Gathering (1993):
         -> ../../../../movies/staging/Babylon 5- The Gathering (1993)/Babylon 5- The
         Gathering (1993) Bluray-2160p.mkv
       Title: The Gathering
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0105946
       seriesId: 357
       tvdbId: 70726
@@ -1149,7 +1149,7 @@ Babylon 5- The Legend of the Rangers - To Live and Die in Starlight (2002):
         of the Rangers - To Live and Die in Starlight (2002)/Babylon 5- The Legend
         of the Rangers - To Live and Die in Starlight (2002) Bluray-1080p.mkv
       Title: The Legend of the Rangers
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0105946
       seriesId: 357
       tvdbId: 70726
@@ -1195,7 +1195,7 @@ Babylon 5- The Lost Tales - Voices in the Dark (2007):
         Dark DVD.mkv -> ../../../../movies/staging/Babylon 5- The Lost Tales - Voices
         in the Dark (2007)/Babylon 5- The Lost Tales - Voices in the Dark (2007) DVD.mkv
       Title: Voices in the Dark Over Here
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0105946
       seriesId: 357
       tvdbId: 70726
@@ -1238,7 +1238,7 @@ Babylon 5- The River of Souls (1998):
         Bluray-1080p.mkv -> ../../../../movies/staging/Babylon 5- The River of Souls
         (1998)/Babylon 5- The River of Souls (1998) Bluray-1080p.mkv
       Title: River of Souls
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0105946
       seriesId: 357
       tvdbId: 70726
@@ -1280,7 +1280,7 @@ Babylon 5- Thirdspace (1998):
         -> ../../../../movies/staging/Babylon 5- Thirdspace (1998)/Babylon 5- Thirdspace
         (1998) DVD.mkv
       Title: Thirdspace
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0105946
       seriesId: 357
       tvdbId: 70726
@@ -1343,7 +1343,7 @@ Batman & Mr. Freeze- SubZero (1998):
         Series - S00E02 - Batman & Mr. Freeze- SubZero Bluray-1080p.mkv -> ../../../../movies/thrillers/Batman
         (1989)/Batman (1989) Bluray-1080p.mkv
       Title: Batman & Mr. Freeze SubZero
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0103359
       seriesId: 463
       tvdbId: 76168
@@ -1385,7 +1385,7 @@ Batman - Mask of the Phantasm (1993):
       Show Root Path: tv/superhero/Batman- The Animated Series
       Symlinked: ''
       Title: Batman Mask of the Phantasm
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0103359
       seriesId: 463
       tvdbId: 76168
@@ -1430,7 +1430,7 @@ Batman Beyond- Return of the Joker (2000):
         of the Joker Bluray-1080p.mkv -> ../../../../movies/thrillers/Batman Beyond-
         Return of the Joker (2000)/Batman Beyond- Return of the Joker (2000) Bluray-1080p.mkv
       Title: Return of the Joker
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0147746
       seriesId: 462
       tvdbId: 75417
@@ -1471,7 +1471,7 @@ Batman and Harley Quinn (2017):
       Show Root Path: tv/superhero/Batman- The Animated Series
       Symlinked: ''
       Title: Batman and Harley Quinn
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0103359
       seriesId: 463
       tvdbId: 76168
@@ -1513,7 +1513,7 @@ Batman- Mystery of the Batwoman (2003):
       Show Root Path: tv/superhero/Batman- The Animated Series
       Symlinked: ''
       Title: Batman Mystery of the Batwoman
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0103359
       seriesId: 463
       tvdbId: 76168
@@ -1551,7 +1551,7 @@ Battlestar Galactica (1978):
       Show Root Path: tv/scifi/Battlestar Galactica
       Symlinked: ''
       Title: Battlestar Galactica The Moving Picture
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0076984
       seriesId: 358
       tvdbId: 71173
@@ -1597,7 +1597,7 @@ Battlestar Galactica- The Plan (2009):
         -> ../../../../movies/staging/Battlestar Galactica- The Plan (2009)/Battlestar
         Galactica- The Plan (2009) Bluray-720p.mkv
       Title: Battlestar Galactica The Miniseries (2)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0407362
       seriesId: 359
       tvdbId: 73545
@@ -1645,7 +1645,7 @@ Berserk - The Golden Age Arc 1 - The Egg of the King (2012):
       Show Root Path: anime/shounen/Berserk (2016)
       Symlinked: ''
       Title: Golden Age Arc I Egg of the King
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt5847454
       seriesId: 7
       tvdbId: 307111
@@ -1695,7 +1695,7 @@ Berserk - The Golden Age Arc 2 - The Battle for Doldrey (2012):
       Show Root Path: anime/shounen/Berserk (2016)
       Symlinked: ''
       Title: Golden Age Arc II The Battle for Doldrey
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt5847454
       seriesId: 7
       tvdbId: 307111
@@ -1745,7 +1745,7 @@ Berserk - The Golden Age Arc 3 - The Advent (2013):
       Show Root Path: anime/shounen/Berserk (2016)
       Symlinked: ''
       Title: Golden Age Arc III The Advent
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt5847454
       seriesId: 7
       tvdbId: 307111
@@ -1788,7 +1788,7 @@ Bishokushin's Special Menu (2013):
       Show Root Path: anime/staging/Toriko
       Symlinked: ''
       Title: Bishokushin's Special Menu
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1899047
       seriesId: 111
       tvdbId: 247231
@@ -1837,7 +1837,7 @@ Bleach- Fade to Black (2008):
         BLEACH \xe3\x83\x96\xe3\x83\xaa\xe3\x83\xbc\xe3\x83\x81 Fade to Black \xe5\x90\x9b\xe3\x81\xae\xe5\x90\x8d\xe3\x82\x92\xe5\x91\xbc\xe3\x81\xb6
         (2008) Bluray-1080p.mkv
       Title: Fade to Black
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0434665
       seriesId: 123
       tvdbId: 74796
@@ -1886,7 +1886,7 @@ Bleach- Hell Verse (2010):
         BLEACH \xe3\x83\x96\xe3\x83\xaa\xe3\x83\xbc\xe3\x83\x81 \xe5\x9c\xb0\xe7\x8d\x84\xe7\xaf\x87
         (2010) Bluray-1080p.mkv
       Title: Bleach Hell Chapter
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0434665
       seriesId: 123
       tvdbId: 74796
@@ -1932,7 +1932,7 @@ Bleach- Memories in the Rain (2004):
         Rain DVD.mkv -> ../../../../movies/foreign/Bleach- Memories in the Rain (2004)/Bleach-
         Memories in the Rain (2004) DVD.mkv
       Title: Memories in the Rain
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0434665
       seriesId: 123
       tvdbId: 74796
@@ -1979,7 +1979,7 @@ Bleach- Memories of Nobody (2006):
       Show Root Path: anime/staging/Bleach
       Symlinked: ''
       Title: Memories of Nobody
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0434665
       seriesId: 123
       tvdbId: 74796
@@ -2032,7 +2032,7 @@ Bleach- The DiamondDust Rebellion (2007):
       Show Root Path: anime/staging/Bleach
       Symlinked: ''
       Title: The Diamond Dust Rebellion
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0434665
       seriesId: 123
       tvdbId: 74796
@@ -2080,7 +2080,7 @@ Bleach- The Sealed Sword Frenzy (2005):
         Frenzy DVD.mkv -> ../../../../movies/foreign/Bleach- The Sealed Sword Frenzy
         (2005)/Bleach- The Sealed Sword Frenzy (2005) DVD.mkv
       Title: The Sealed Sword Frenzy
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0434665
       seriesId: 123
       tvdbId: 74796
@@ -2127,7 +2127,7 @@ Blue Exorcist - Kyoto Saga- Snake and Poison (2017):
         Saga- Snake and Poison (2017)/Blue Exorcist - Kyoto Saga- Snake and Poison
         (2017) DVD.mkv
       Title: Special 1
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1799631
       seriesId: 28
       tvdbId: 248035
@@ -2172,7 +2172,7 @@ Blue Exorcist - Kyoto Saga- Spy Game (2017):
         1 Bluray-1080p v2.mkv -> ../../../../movies/foreign/Blue Exorcist - Kyoto
         Saga- Spy Game (2017)/Blue Exorcist - Kyoto Saga- Spy Game (2017) DVD.mkv
       Title: Special 1
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1799631
       seriesId: 28
       tvdbId: 248035
@@ -2216,7 +2216,7 @@ Blue Exorcist- Runaway Kuro (2011):
         1 Bluray-1080p v2.mkv -> ../../../../movies/foreign/Blue Exorcist- Runaway
         Kuro (2011)/Blue Exorcist- Runaway Kuro (2011) Bluray-1080p.mkv
       Title: Special 1
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1799631
       seriesId: 28
       tvdbId: 248035
@@ -2258,7 +2258,7 @@ Blue Exorcist- The Movie (2012):
       Show Root Path: anime/shounen/Blue Exorcist
       Symlinked: ''
       Title: Special 1
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1799631
       seriesId: 28
       tvdbId: 248035
@@ -2302,7 +2302,7 @@ Boruto- Naruto the Movie (2015):
       Show Root Path: anime/shounen/Boruto- Naruto Next Generations
       Symlinked: ''
       Title: The Day Naruto Became Hokage
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt6342474
       seriesId: 8
       tvdbId: 321285
@@ -2327,7 +2327,7 @@ Boruto- Naruto the Movie (2015):
       Show Root Path: anime/shounen/Naruto Shippuden
       Symlinked: ''
       Title: Naruto Shippuuden the Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0988824
       seriesId: 168
       tvdbId: 79824
@@ -2374,7 +2374,7 @@ Bungo Stray Dogs- Dead Apple (2018):
       Show Root Path: anime/staging/Bungo Stray Dogs
       Symlinked: ''
       Title: Dead Apple
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt5679720
       seriesId: 11
       tvdbId: 305075
@@ -2419,7 +2419,7 @@ Burn Notice - The Fall of Sam Axe (2011):
       Show Root Path: tv/crime/Burn Notice
       Symlinked: ''
       Title: Burn Notice The Fall of Sam Axe
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0810788
       seriesId: 301
       tvdbId: 80270
@@ -2459,7 +2459,7 @@ Chase Me (2003):
       Show Root Path: tv/superhero/Batman- The Animated Series
       Symlinked: ''
       Title: Chase Me
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0103359
       seriesId: 463
       tvdbId: 76168
@@ -2526,7 +2526,7 @@ Chunin Exam on Fire! and Naruto vs. Konohamaru! (2011):
         Exam on Fire! and Naruto vs. Konohamaru! (2011)/Chunin Exam on Fire! and Naruto
         vs. Konohamaru! (2011) Bluray-1080p.mkv
       Title: Naruto vs. Konohamaru!!
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0988824
       seriesId: 168
       tvdbId: 79824
@@ -2568,7 +2568,7 @@ Clannad (2007):
       Show Root Path: anime/staging/Clannad
       Symlinked: ''
       Title: Clannad the Motion Picture
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1118804
       seriesId: 29
       tvdbId: 80644
@@ -2616,7 +2616,7 @@ Clannad- After Story - Another World, Kyou Chapter (0):
         After Story - Another World, Kyou Chapter (0)/Clannad- After Story - Another
         World, Kyou Chapter (0) Bluray-1080p.mkv
       Title: Another World Kyou Chapter
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1118804
       seriesId: 29
       tvdbId: 80644
@@ -2663,7 +2663,7 @@ Clannad- Another World - Tomoyo Chapter (0):
         Another World - Tomoyo Chapter (0)/Clannad- Another World - Tomoyo Chapter
         (0) Bluray-1080p.mkv
       Title: Another World Tomoyo Chapter
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1118804
       seriesId: 29
       tvdbId: 80644
@@ -2715,7 +2715,7 @@ Code Geass- Akito the Exiled 1- The Wyvern Arrives (2012):
       Show Root Path: anime/staging/Code Geass- Lelouch of the Rebellion
       Symlinked: ''
       Title: Akito the Exiled The Wyvern Has Landed
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0994314
       seriesId: 21
       tvdbId: 79525
@@ -2769,7 +2769,7 @@ Code Geass- Akito the Exiled 2- The Wyvern Divided (2013):
       Show Root Path: anime/staging/Code Geass- Lelouch of the Rebellion
       Symlinked: ''
       Title: Akito the Exiled The Torn Wyvern
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0994314
       seriesId: 21
       tvdbId: 79525
@@ -2824,7 +2824,7 @@ Code Geass- Akito the Exiled 3- The Brightness Falls (2015):
       Show Root Path: anime/staging/Code Geass- Lelouch of the Rebellion
       Symlinked: ''
       Title: Akito the Exiled The Brightness Falls
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0994314
       seriesId: 21
       tvdbId: 79525
@@ -2878,7 +2878,7 @@ Code Geass- Akito the Exiled 4- Memories of Hatred (2015):
       Show Root Path: anime/staging/Code Geass- Lelouch of the Rebellion
       Symlinked: ''
       Title: Akito the Exiled Memories of Hatred
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0994314
       seriesId: 21
       tvdbId: 79525
@@ -2933,7 +2933,7 @@ Code Geass- Akito the Exiled 5- To Beloved Ones (2016):
       Show Root Path: anime/staging/Code Geass- Lelouch of the Rebellion
       Symlinked: ''
       Title: Akito the Exiled To Those Who are Precious
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0994314
       seriesId: 21
       tvdbId: 79525
@@ -2977,7 +2977,7 @@ Code Geass- Lelouch of the Re;Surrection (2019):
       Show Root Path: anime/staging/Code Geass- Lelouch of the Rebellion
       Symlinked: ''
       Title: Code Geass Lelouch of the Resurrection
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0994314
       seriesId: 21
       tvdbId: 79525
@@ -3021,7 +3021,7 @@ Code Geass- Lelouch of the Rebellion - Awakening (2017):
       Show Root Path: anime/staging/Code Geass- Lelouch of the Rebellion
       Symlinked: ''
       Title: Code Geass Lelouch of the Revolution The Awakening Path
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0994314
       seriesId: 21
       tvdbId: 79525
@@ -3170,7 +3170,7 @@ Constantine- City of Demons - The Movie (2018):
       Show Root Path: tv/staging/Constantine- City of Demons
       Symlinked: ''
       Title: Constantine City Of Demons The Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt6404896
       seriesId: 467
       tvdbId: 336139
@@ -3212,7 +3212,7 @@ Cowboy Bebop- The Movie (2001):
       Show Root Path: anime/staging/Cowboy Bebop
       Symlinked: ''
       Title: Knockin' on Heaven's Door
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0213338
       seriesId: 15
       tvdbId: 76885
@@ -3256,7 +3256,7 @@ Death Note (2006):
       Show Root Path: anime/staging/Death Note
       Symlinked: ''
       Title: Death Note (Live Action Movie)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0877057
       seriesId: 117
       tvdbId: 79481
@@ -3298,7 +3298,7 @@ Death Note (2017):
       Show Root Path: anime/staging/Death Note
       Symlinked: ''
       Title: Death Note (Netflix Live Action Movie)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0877057
       seriesId: 117
       tvdbId: 79481
@@ -3343,7 +3343,7 @@ Death Note Relight 1- Visions of a God (2007):
       Show Root Path: anime/staging/Death Note
       Symlinked: ''
       Title: Death Note Rewrite The Visualizing God
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0877057
       seriesId: 117
       tvdbId: 79481
@@ -3390,7 +3390,7 @@ Death Note Relight 2- L's Successors (2009):
       Show Root Path: anime/staging/Death Note
       Symlinked: ''
       Title: Death Note Rewrite 2 L's Successors
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0877057
       seriesId: 117
       tvdbId: 79481
@@ -3432,7 +3432,7 @@ Death Note- The Last Name (2006):
       Show Root Path: anime/staging/Death Note
       Symlinked: ''
       Title: Death Note The Last Name (Live Action Movie)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0877057
       seriesId: 117
       tvdbId: 79481
@@ -3469,7 +3469,7 @@ Dexter's Laboratory- Ego Trip (1999):
       Show Root Path: tv/staging/Dexter's Laboratory
       Symlinked: ''
       Title: Ego Trip
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0115157
       seriesId: 280
       tvdbId: 77992
@@ -3512,7 +3512,7 @@ Dragon Ball Z- Battle of Gods (2013):
       Show Root Path: anime/shounen/Dragon Ball Z
       Symlinked: ''
       Title: The World's Strongest
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -3556,7 +3556,7 @@ Dragon Ball Z- Bio-Broly (1994):
       Show Root Path: anime/shounen/Dragon Ball Z
       Symlinked: ''
       Title: Dead Zone
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -3602,7 +3602,7 @@ Dragon Ball Z- Bojack Unbound (1993):
       Show Root Path: anime/shounen/Dragon Ball Z
       Symlinked: ''
       Title: Bojack Unbound
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -3650,7 +3650,7 @@ Dragon Ball Z- Bojack Unbound (1993):
       Show Root Path: anime/shounen/Dragon Ball Z
       Symlinked: ''
       Title: Dead Zone
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -3700,7 +3700,7 @@ Dragon Ball Z- Bojack Unbound (1993):
       Show Root Path: anime/shounen/Dragon Ball Z
       Symlinked: ''
       Title: Broly The Legendary Super Saiyan
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -3746,7 +3746,7 @@ Dragon Ball Z- Dead Zone (1989):
         Zone WEBDL-1080p.mkv -> ../../../../movies/foreign/Dragon Ball Z- Dead Zone
         (1989)/Dragon Ball Z- Dead Zone (1989) WEBDL-1080p.mkv
       Title: Cooler's Revenge
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -3792,7 +3792,7 @@ Dragon Ball Z- Fusion Reborn (1995):
       Show Root Path: anime/shounen/Dragon Ball Z
       Symlinked: ''
       Title: Dead Zone
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -3838,7 +3838,7 @@ Dragon Ball Z- Lord Slug (1991):
       Show Root Path: anime/shounen/Dragon Ball Z
       Symlinked: ''
       Title: Lord Slug
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -3885,7 +3885,7 @@ Dragon Ball Z- Resurrection 'F' (2015):
       Show Root Path: anime/shounen/Dragon Ball Z
       Symlinked: ''
       Title: The World's Strongest
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -3932,7 +3932,7 @@ Dragon Ball Z- The Tree of Might (1990):
       Show Root Path: anime/shounen/Dragon Ball Z
       Symlinked: ''
       Title: The Tree of Might
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -3979,7 +3979,7 @@ Dragon Ball Z- The World's Strongest (1990):
       Show Root Path: anime/shounen/Dragon Ball Z
       Symlinked: ''
       Title: The World's Strongest
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -4027,7 +4027,7 @@ Dragon Ball Z- Wrath of the Dragon (1995):
       Show Root Path: anime/shounen/Dragon Ball Z
       Symlinked: ''
       Title: Dead Zone
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -4074,7 +4074,7 @@ Dragon Ball- Episode of Bardock (2011):
       Show Root Path: anime/shounen/Dragon Ball Z
       Symlinked: ''
       Title: The World's Strongest
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -4122,7 +4122,7 @@ Dream 9 Toriko & One Piece & Dragon Ball Z Super Collaboration Special!! (2013):
       Show Root Path: anime/shounen/Dragon Ball Z
       Symlinked: ''
       Title: "Dream 9 Toriko & One Piece & Dragon Ball Z Ch\u014D Collaboration Special!!"
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -4151,7 +4151,7 @@ Dream 9 Toriko & One Piece & Dragon Ball Z Super Collaboration Special!! (2013):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: "Dream 9 Toriko & One Piece & Dragon Ball Z Ch\u014D Collaboration Special!!"
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -4176,7 +4176,7 @@ Dream 9 Toriko & One Piece & Dragon Ball Z Super Collaboration Special!! (2013):
       Show Root Path: anime/staging/Toriko
       Symlinked: ''
       Title: "Dream 9 Toriko & One Piece & Dragon Ball Z Ch\u014D Collaboration Special!!"
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1899047
       seriesId: 111
       tvdbId: 247231
@@ -4223,7 +4223,7 @@ Elfen Lied Special (2005):
         In the Passing Rain Bluray-1080p.mkv -> ../../../../movies/foreign/Elfen Lied
         Special (2005)/Elfen Lied Special (2005) Bluray-1080p.mkv
       Title: In the Passing Rain
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0480489
       seriesId: 35
       tvdbId: 75941
@@ -4264,7 +4264,7 @@ Entourage (2015):
         Movie Bluray-1080p.mkv -> ../../../../movies/staging/Entourage (2015)/Entourage
         (2015) Bluray-1080p.mkv
       Title: Entourage The Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0387199
       seriesId: 206
       tvdbId: 74543
@@ -4318,7 +4318,7 @@ Episode of Sabo - The Three Brothers' Bond - The Miraculous Reunion (2015):
         - The Three Brothers\\\\\ Bond - The Miraculous Reunion (2015)/Episode of
         Sabo- The Three Brothers\\\\\ Bond - The Miraculous Reunion (2015) Bluray-1080p.mkv
       Title: Adventure in the Ocean's Navel
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -4361,7 +4361,7 @@ Escaflowne- The Movie (2000):
       Show Root Path: anime/staging/Vision of Escaflowne
       Symlinked: ''
       Title: Escaflowne The Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0138919
       seriesId: 549
       tvdbId: 77248
@@ -4408,7 +4408,7 @@ Eureka Seven AO- Jungfrau no Hanabana-tachi (2012):
         Seven AO- Jungfrau no Hanabana-tachi (2012)/Eureka Seven AO- Jungfrau no Hanabana-tachi
         (2012) Remux-1080p.mkv
       Title: The Flowers of Jungfrau
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0765491
       seriesId: 145
       tvdbId: 79360
@@ -4453,7 +4453,7 @@ Evangelion- 1.0 You Are (Not) Alone (2007):
       Show Root Path: anime/staging/Neon Genesis Evangelion
       Symlinked: ''
       Title: Evangelion 1 You Are (Not) Alone
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0112159
       seriesId: 84
       tvdbId: 70350
@@ -4500,7 +4500,7 @@ Evangelion- 2.0 You Can (Not) Advance (2009):
       Show Root Path: anime/staging/Neon Genesis Evangelion
       Symlinked: ''
       Title: Evangelion 2 You Can (Not) Advance
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0112159
       seriesId: 84
       tvdbId: 70350
@@ -4547,7 +4547,7 @@ Evangelion- 3.0 You Can (Not) Redo (2012):
       Show Root Path: anime/staging/Neon Genesis Evangelion
       Symlinked: ''
       Title: Evangelion 3 You Can (Not) Redo
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0112159
       seriesId: 84
       tvdbId: 70350
@@ -4587,7 +4587,7 @@ Evangelion- 3.0+1.0 (2020):
       Show Root Path: anime/staging/Neon Genesis Evangelion
       Symlinked: ''
       Title: Evangelion 4
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0112159
       seriesId: 84
       tvdbId: 70350
@@ -4632,7 +4632,7 @@ Evil Dead II (1987):
         Evil Dead II Bluray-1080p.mkv -> ../../../../movies/horror/Evil Dead II (1987)/Evil
         Dead II (1987) Bluray-1080p.mkv
       Title: Evil Dead II
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt4189022
       seriesId: 332
       tvdbId: 296295
@@ -4678,7 +4678,7 @@ Fairy Tail the Movie- Phoenix Priestess (2012):
       Show Root Path: anime/shounen/Fairy Tail
       Symlinked: ''
       Title: Fairy Tail the Movie The Phoenix Priestess
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1528406
       seriesId: 38
       tvdbId: 114801
@@ -4724,7 +4724,7 @@ Fairy Tail x Rave (2013):
         DVD.mkv -> ../../../../movies/foreign/Fairy Tail x Rave (2013)/Fairy Tail
         x Rave (2013) DVD.mkv
       Title: Fairy Tail x Rave
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1528406
       seriesId: 38
       tvdbId: 114801
@@ -4744,7 +4744,7 @@ Fairy Tail x Rave (2013):
       Show Root Path: tv/staging/Rave Master
       Symlinked: ''
       Title: Fairy Tail x Rave
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0414763
       seriesId: 573
       tvdbId: 72973
@@ -4790,7 +4790,7 @@ Fairy Tail- Dragon Cry (2017):
         to Fairy Hills!! DVD.mkv -> ../../../../movies/foreign/Fairy Tail- Dragon
         Cry (2017)/Fairy Tail- Dragon Cry (2017) Bluray-1080p.mkv
       Title: Welcome to Fairy Hills!!
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1528406
       seriesId: 38
       tvdbId: 114801
@@ -4832,7 +4832,7 @@ Family Guy Presents Stewie Griffin - The Untold Story (2005):
       Show Root Path: tv/staging/Family Guy
       Symlinked: ''
       Title: Stewie Griffin The Untold Story
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0182576
       seriesId: 282
       tvdbId: 75978
@@ -4870,7 +4870,7 @@ Family Guy Presents- Road to the North Pole (2011):
       Show Root Path: tv/staging/Family Guy
       Symlinked: ''
       Title: Family Guy Live In Vegas The Making Of Stewie's Sexy Party
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0182576
       seriesId: 282
       tvdbId: 75978
@@ -4907,7 +4907,7 @@ Family Guy Presents- Seth and Alex's almost live comedy show (2009):
       Show Root Path: tv/staging/Family Guy
       Symlinked: ''
       Title: Stewie Griffin The Untold Story
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0182576
       seriesId: 282
       tvdbId: 75978
@@ -4957,7 +4957,7 @@ Family Guy Presents- Seth and Alex's almost live comedy show (2009):
       Show Root Path: anime/staging/Fate+Kaleid Liner Prisma Illya
       Symlinked: ''
       Title: Oath Under Snow
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt2904426
       seriesId: 147
       tvdbId: 269319
@@ -4999,7 +4999,7 @@ Fate+Stay Night- Unlimited Blade Works (2010):
       Show Root Path: anime/staging/Fate+Stay Night
       Symlinked: ''
       Title: Unlimited Blade Works
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0774809
       seriesId: 129
       tvdbId: 79151
@@ -5051,7 +5051,7 @@ Fate+stay night- Heaven's Feel I. presage flower (2017):
       Show Root Path: anime/staging/Fate+Stay Night- Unlimited Blade Works
       Symlinked: ''
       Title: Fate/Stay Night Heaven's Feel - I. Presage Flower
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt3621796
       seriesId: 148
       tvdbId: 278626
@@ -5101,7 +5101,7 @@ Fate+stay night- Heaven's Feel I. presage flower (2017):
       Show Root Path: anime/staging/Fate+Stay Night- Unlimited Blade Works
       Symlinked: ''
       Title: Fate/Stay Night Heaven's Feel - II. Lost Butterfly
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt3621796
       seriesId: 148
       tvdbId: 278626
@@ -5146,7 +5146,7 @@ Fate+stay night- Heaven's Feel I. presage flower (2017):
       Show Root Path: anime/staging/Fate+Stay Night- Unlimited Blade Works
       Symlinked: ''
       Title: Fate/Stay Night Heaven's Feel - III. Spring Song
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt3621796
       seriesId: 148
       tvdbId: 278626
@@ -5187,7 +5187,7 @@ Fist of the North Star (1986):
       Show Root Path: anime/staging/Fist of the North Star
       Symlinked: ''
       Title: Fist of the North Star
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0091211
       seriesId: 42
       tvdbId: 79156
@@ -5234,7 +5234,7 @@ Fist of the North Star- Legend of Raoh - Chapter of Death in Love (2006):
       Show Root Path: anime/staging/Fist of the North Star
       Symlinked: ''
       Title: Legend of Raoh Chapter of Death in Love
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0091211
       seriesId: 42
       tvdbId: 79156
@@ -5283,7 +5283,7 @@ Fist of the North Star- Legend of Raoh - Chapter of Fierce Fight (2007):
       Show Root Path: anime/staging/Fist of the North Star
       Symlinked: ''
       Title: Legend of Raoh Chapter of Fierce Fight
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0091211
       seriesId: 42
       tvdbId: 79156
@@ -5330,7 +5330,7 @@ Fist of the North Star- Legend of Toki (2008):
       Show Root Path: anime/staging/Fist of the North Star
       Symlinked: ''
       Title: Legend of Toki
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0091211
       seriesId: 42
       tvdbId: 79156
@@ -5377,7 +5377,7 @@ Fist of the North Star- Legend of Yuria (2007):
       Show Root Path: anime/staging/Fist of the North Star
       Symlinked: ''
       Title: Legend of Yuria
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0091211
       seriesId: 42
       tvdbId: 79156
@@ -5425,7 +5425,7 @@ Fist of the North Star- The Legend of Kenshiro (2008):
       Show Root Path: anime/staging/Fist of the North Star
       Symlinked: ''
       Title: Zero Legend of Kenshiro
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0091211
       seriesId: 42
       tvdbId: 79156
@@ -5467,7 +5467,7 @@ Freedom Fighters- The Ray (2018):
       Show Root Path: tv/superhero/Freedom Fighters- The Ray
       Symlinked: ''
       Title: Freedom Fighters The Ray (feature-length release)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt5957358
       seriesId: 470
       tvdbId: 328982
@@ -5508,7 +5508,7 @@ Fullmetal Alchemist (2017):
       Show Root Path: anime/staging/Fist of the North Star
       Symlinked: ''
       Title: Fist of the North Star
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0091211
       seriesId: 42
       tvdbId: 79156
@@ -5556,7 +5556,7 @@ Fullmetal Alchemist The Movie- Conqueror of Shamballa (2005):
       Show Root Path: anime/shounen/Fullmetal Alchemist
       Symlinked: ''
       Title: Fullmetal Alchemist The Movie Conqueror of Shamballa
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0421357
       seriesId: 43
       tvdbId: 75579
@@ -5606,7 +5606,7 @@ Fullmetal Alchemist The Movie- The Sacred Star of Milos (2011):
       Show Root Path: anime/shounen/Fullmetal Alchemist
       Symlinked: ''
       Title: Interactive Experience - Preshow
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0421357
       seriesId: 43
       tvdbId: 75579
@@ -5648,7 +5648,7 @@ Futurama - Bender's Big Score (2007):
       Show Root Path: tv/staging/Futurama
       Symlinked: ''
       Title: Bender's Big Score
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0149460
       seriesId: 284
       tvdbId: 73871
@@ -5688,7 +5688,7 @@ Futurama - Bender's Game (2008):
       Show Root Path: tv/staging/Futurama
       Symlinked: ''
       Title: Bender's Game
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0149460
       seriesId: 284
       tvdbId: 73871
@@ -5729,7 +5729,7 @@ Futurama - Into the Wild Green Yonder (2009):
       Show Root Path: tv/staging/Futurama
       Symlinked: ''
       Title: Into the Wild Green Yonder
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0149460
       seriesId: 284
       tvdbId: 73871
@@ -5770,7 +5770,7 @@ Futurama - The Beast with a Billion Backs (2008):
       Show Root Path: tv/staging/Futurama
       Symlinked: ''
       Title: The Beast With A Billion Backs
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0149460
       seriesId: 284
       tvdbId: 73871
@@ -5807,7 +5807,7 @@ Futurama - The Lost Adventure (2008):
       Show Root Path: tv/staging/Futurama
       Symlinked: ''
       Title: The Lost Adventure
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0149460
       seriesId: 284
       tvdbId: 73871
@@ -5848,7 +5848,7 @@ Game of Thrones- The Last Watch (2019):
       Show Root Path: tv/fantasy/Game of Thrones
       Symlinked: ''
       Title: El Juego Comienza
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0944947
       seriesId: 337
       tvdbId: 121361
@@ -5886,7 +5886,7 @@ Gantz (2010):
       Symlinked: anime/staging/Gantz/Season 00/Gantz - S00E001 - Gantz Bluray-1080p.mkv
         -> ../../../../movies/foreign/Gantz (2010)/GANTZ (2010) Bluray-1080p.mkv
       Title: Gantz
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0434685
       seriesId: 45
       tvdbId: 78916
@@ -5927,7 +5927,7 @@ Gantz- Perfect Answer (2011):
         Bluray-1080p.mkv -> ../../../../movies/foreign/Gantz- Perfect Answer (2011)/GANTZ
         PERFECT ANSWER (2011) Bluray-1080p.mkv
       Title: Gantz Perfect Answer
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0434685
       seriesId: 45
       tvdbId: 78916
@@ -5965,7 +5965,7 @@ Gantz-O (2016):
       Symlinked: anime/staging/Gantz/Season 00/Gantz - S00E003 - Gantz-O HDTV-720p.mkv
         -> ../../../../movies/foreign/Gantz-O (2016)/GANTZ-O (2016) HDTV-720p.mkv
       Title: GantzO
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0434685
       seriesId: 45
       tvdbId: 78916
@@ -6008,7 +6008,7 @@ Ghost in the Shell (1995):
       Show Root Path: anime/staging/Ghost in the Shell- Stand Alone Complex
       Symlinked: ''
       Title: Ghost in the Shell Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0346314
       seriesId: 150
       tvdbId: 73749
@@ -6096,7 +6096,7 @@ Ghost in the Shell 2- Innocence (2004):
       Show Root Path: anime/staging/Ghost in the Shell- Stand Alone Complex
       Symlinked: ''
       Title: Ghost in the Shell Movie 2  Innocence
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0346314
       seriesId: 150
       tvdbId: 73749
@@ -6149,7 +6149,7 @@ Ghost in the Shell Arise - Border 1- Ghost Pain (2013):
       Show Root Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture
       Symlinked: ''
       Title: Ghost Pain (1)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt4508686
       seriesId: 46
       tvdbId: 293491
@@ -6198,7 +6198,7 @@ Ghost in the Shell Arise - Border 2- Ghost Whispers (2013):
       Show Root Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture
       Symlinked: ''
       Title: Ghost Whispers (1)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt4508686
       seriesId: 46
       tvdbId: 293491
@@ -6247,7 +6247,7 @@ Ghost in the Shell Arise - Border 3- Ghost Tears (2014):
       Show Root Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture
       Symlinked: ''
       Title: Ghost Tears (1)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt4508686
       seriesId: 46
       tvdbId: 293491
@@ -6347,7 +6347,7 @@ Ghost in the Shell Arise - Border 5- Pyrophoric Cult (2015):
       Show Root Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture
       Symlinked: ''
       Title: Pyrophoric Cult (1)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt4508686
       seriesId: 46
       tvdbId: 293491
@@ -6388,7 +6388,7 @@ Ghost in the Shell Arise- Another Mission (2013):
       Show Root Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture
       Symlinked: ''
       Title: Another Mission
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt4508686
       seriesId: 46
       tvdbId: 293491
@@ -6435,7 +6435,7 @@ Ghost in the Shell Arise- Another Mission (2013):
       Show Root Path: anime/staging/Ghost in the Shell- Stand Alone Complex
       Symlinked: ''
       Title: Individual Eleven
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0346314
       seriesId: 150
       tvdbId: 73749
@@ -6482,7 +6482,7 @@ Ghost in the Shell- Stand Alone Complex - Solid State Society (2006):
       Show Root Path: anime/staging/Ghost in the Shell- Stand Alone Complex
       Symlinked: ''
       Title: Solid State Society
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0346314
       seriesId: 150
       tvdbId: 73749
@@ -6530,7 +6530,7 @@ Ghost in the Shell- Stand Alone Complex - The Laughing Man (2005):
       Show Root Path: anime/staging/Ghost in the Shell- Stand Alone Complex
       Symlinked: ''
       Title: The Laughing Man
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0346314
       seriesId: 150
       tvdbId: 73749
@@ -6574,7 +6574,7 @@ Gintama- The Best of Gintama on Theater 2D (2012):
       Show Root Path: anime/staging/Gintama
       Symlinked: ''
       Title: Jump Festa 2005 Special
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0988818
       seriesId: 151
       tvdbId: 79895
@@ -6621,7 +6621,7 @@ Gintama- The Final Chapter - Be Forever Yorozuya (2013):
       Show Root Path: anime/staging/Gintama
       Symlinked: ''
       Title: Gintama The Movie The Final Chapter Odd Jobs Forever
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0988818
       seriesId: 151
       tvdbId: 79895
@@ -6665,7 +6665,7 @@ Gintama- The Movie (2010):
       Show Root Path: anime/staging/Gintama
       Symlinked: ''
       Title: Gintama The Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0988818
       seriesId: 151
       tvdbId: 79895
@@ -6708,7 +6708,7 @@ God Eater Prologue (0):
         Burst - Prologue WEBDL-720p.mkv -> ../../../../movies/foreign/God Eater Prologue
         (0)/God Eater Prologue (0) WEBDL-720p.mkv
       Title: Gods Eater Burst - Prologue
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt5240222
       seriesId: 49
       tvdbId: 295224
@@ -6744,7 +6744,7 @@ Goin' Down To South Park (1999):
       Show Root Path: tv/animated/South Park
       Symlinked: ''
       Title: The Spirit Of Christmas (Jesus vs. Frosty)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0121955
       seriesId: 293
       tvdbId: 75897
@@ -6780,7 +6780,7 @@ Granblue Fantasy The Animation- Kabocha no Lantern (0):
       Show Root Path: tv/staging/Granblue Fantasy The Animation
       Symlinked: ''
       Title: Jack O'Lantern
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt6138612
       seriesId: 50
       tvdbId: 319981
@@ -6822,7 +6822,7 @@ Gundam Wing- Endless Waltz (1998):
       Show Root Path: anime/staging/Mobile Suit Gundam Wing
       Symlinked: ''
       Title: Endless Waltz Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0159193
       seriesId: 78
       tvdbId: 79327
@@ -6861,7 +6861,7 @@ Gundam- Mission to the Rise (1998):
       Show Root Path: anime/staging/Mobile Suit Gundam
       Symlinked: ''
       Title: Gundam Mission to the Rise
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0159172
       seriesId: 160
       tvdbId: 76547
@@ -6883,7 +6883,7 @@ Gundam- Mission to the Rise (1998):
       Show Root Path: anime/staging/Mobile Suit Gundam 0079
       Symlinked: ''
       Title: 20th Anniversary Short - Mission To The Rise
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0159172
       seriesId: 160
       tvdbId: 76547
@@ -6929,7 +6929,7 @@ Gurren Lagann The Movie- Childhood's End (2008):
       Show Root Path: anime/staging/Gurren Lagann
       Symlinked: ''
       Title: Gurren Lagann the Movie -Childhood's End-
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0948103
       seriesId: 52
       tvdbId: 80096
@@ -6978,7 +6978,7 @@ Gurren Lagann The Movie- The Lights in the Sky Are Stars (2009):
       Show Root Path: anime/staging/Gurren Lagann
       Symlinked: ''
       Title: Gurren Lagann the Movie -The Lights in the Sky Are Stars-
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0948103
       seriesId: 52
       tvdbId: 80096
@@ -7021,7 +7021,7 @@ Haikyuu!! Movie 2- Winners and Losers (2015):
         Movie 2- Winners and Losers (2015)/Haikyuu!! Movie 2- Winners and Losers (2015)
         Bluray-1080p.mkv
       Title: Haikyu!! Movie 2 Shousha to Haisha
-      episodeFileId: 0
+      episodeFileId: ''
       tvdbId: '137'
   Title: Haikyuu!! Movie 2- Winners and Losers (2015)
   Unparsed Title: 'Haikyuu!! Movie 2: Winners and Losers'
@@ -7060,7 +7060,7 @@ Haikyuu!! Movie 3- Genius and Sense (2017):
         Movie 3- Genius and Sense (2017)/Haikyuu!! Movie 3- Genius and Sense (2017)
         Bluray-1080p.mkv
       Title: Haikyu!! Movie 3 Sainou to Sense
-      episodeFileId: 0
+      episodeFileId: ''
       tvdbId: '137'
   Title: Haikyuu!! Movie 3- Genius and Sense (2017)
   Unparsed Title: 'Haikyuu!! Movie 3: Genius and Sense'
@@ -7099,7 +7099,7 @@ Haikyuu!! Movie 4- Battle of Concepts (2017):
         Movie 4- Battle of Concepts (2017)/Haikyuu!! Movie 4- Battle of Concepts (2017)
         Bluray-1080p.mkv
       Title: Haikyu!! Movie 4 Concept no Tatakai
-      episodeFileId: 0
+      episodeFileId: ''
       tvdbId: '137'
   Title: Haikyuu!! Movie 4- Battle of Concepts (2017)
   Unparsed Title: 'Haikyuu!! Movie 4: Battle of Concepts'
@@ -7165,28 +7165,27 @@ Hajime no Ippo- Champion Road (2003):
       Anime: false
       Episode: '2'
       Episode ID: '5018'
-      Parsed Episode: '02'
+      Parsed Episode: '002'
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/staging/Hajime no Ippo/Season 00/Hajime no Ippo - S00E02
-        - Champion Road
+      Parsed Show Title: tv/staging/Hajime no Ippo- The Fighting!/Season 00/Hajime
+        no Ippo- The Fighting! - S00E002 - Champion Road
       Relative Show File Path: anime/staging/Hajime no Ippo/Season 00/Hajime no Ippo
         - S00E002 - Champion Road DVD.mkv
-      Relative Show Path: anime/staging/Hajime no Ippo/Season 00
+      Relative Show Path: tv/staging/Hajime no Ippo- The Fighting!/Season 00
       Season: '00'
       Show Genres:
+      - Animation
       - Anime
-      - Comedy
-      - Drama
       - Sport
-      Show Root Path: anime/staging/Hajime no Ippo
+      Show Root Path: tv/staging/Hajime no Ippo- The Fighting!
       Symlinked: anime/staging/Hajime no Ippo/Season 00/Hajime no Ippo - S00E002 -
         Champion Road DVD.mkv -> ../../../../movies/foreign/Hajime no Ippo- Champion
         Road (2003)/Hajime no Ippo- Champion Road (2003) DVD.mkv
       Title: Champion Road
-      episodeFileId: 0
+      episodeFileId: ''
+      imdbId: tt0481256
       seriesId: 152
-      imdbId: tt1992744
-      tvdbId: 362874
+      tvdbId: 79685
   Title: Hajime no Ippo- Champion Road (2003)
   Unparsed Title: 'Hajime no Ippo: Champion Road'
   Year: 2003
@@ -7208,26 +7207,25 @@ Hajime no Ippo- Mashiba vs. Kimura (2003):
       Anime: false
       Episode: '3'
       Episode ID: '5019'
-      Parsed Episode: '03'
+      Parsed Episode: '003'
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/staging/Hajime no Ippo/Season 00/Hajime no Ippo - S00E03
-        - Kimura vs Mashiba
+      Parsed Show Title: tv/staging/Hajime no Ippo- The Fighting!/Season 00/Hajime
+        no Ippo- The Fighting! - S00E003 - Kimura vs Mashiba
       Relative Show File Path: anime/staging/Hajime no Ippo/Season 01/Hajime no Ippo
         - The Fighting! - S01E001 (E001) - The First Step DVD.mkv
-      Relative Show Path: anime/staging/Hajime no Ippo/Season 00
+      Relative Show Path: tv/staging/Hajime no Ippo- The Fighting!/Season 00
       Season: '00'
       Show Genres:
+      - Animation
       - Anime
-      - Comedy
-      - Drama
       - Sport
-      Show Root Path: anime/staging/Hajime no Ippo
-      seriesId: 152
+      Show Root Path: tv/staging/Hajime no Ippo- The Fighting!
       Symlinked: ''
       Title: Kimura vs Mashiba
-      episodeFileId: 0
-      imdbId: tt1992744
-      tvdbId: 362874
+      episodeFileId: ''
+      imdbId: tt0481256
+      seriesId: 152
+      tvdbId: 79685
   Title: Hajime no Ippo- Mashiba vs. Kimura (2003)
   Unparsed Title: 'Hajime no Ippo: Mashiba vs. Kimura'
   Year: 2003
@@ -7289,7 +7287,7 @@ High School of the Dead OVA- Drifters of the Dead (2011):
       Show Root Path: tv/staging/High School of the Dead
       Symlinked: ''
       Title: Drifters of the Dead
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1685401
       seriesId: 585
       tvdbId: 171591
@@ -7335,7 +7333,7 @@ High School of the Dead OVA- Drifters of the Dead (2011):
       Show Root Path: anime/staging/Hunter x Hunter (2011)
       Symlinked: ''
       Title: Phantom Rouge
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt2098220
       seriesId: 140
       tvdbId: 252322
@@ -7381,7 +7379,7 @@ High School of the Dead OVA- Drifters of the Dead (2011):
       Show Root Path: anime/staging/Hunter x Hunter (2011)
       Symlinked: ''
       Title: The Last Mission
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt2098220
       seriesId: 140
       tvdbId: 252322
@@ -7423,7 +7421,7 @@ Inside The X-Files (1998):
         X-Files DVD.mp4 -> ../../../../movies/staging/Inside The X-Files (1998)/Inside
         The X-Files (1998) DVD.mp4
       Title: Inside the X-Files
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0106179
       seriesId: 409
       tvdbId: 77398
@@ -7469,7 +7467,7 @@ Inuyasha the Movie 2- The Castle Beyond the Looking Glass (2002):
       Show Root Path: anime/shounen/InuYasha
       Symlinked: ''
       Title: Movie 2 The Castle Beyond the Looking Glass
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0290223
       seriesId: 55
       tvdbId: 71361
@@ -7518,7 +7516,7 @@ Inuyasha the Movie 3- Swords of an Honorable Ruler (2003):
         the Movie 3- Swords of an Honorable Ruler (2003)/Inuyasha the Movie 3- Swords
         of an Honorable Ruler (2003) Bluray-720p.mkv
       Title: Movie 3 Swords of an Honorable Ruler
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0290223
       seriesId: 55
       tvdbId: 71361
@@ -7563,7 +7561,7 @@ Inuyasha the Movie 4- Fire on the Mystic Island (2004):
       Show Root Path: anime/shounen/InuYasha
       Symlinked: ''
       Title: Movie 4 Fire on the Mystic Island
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0290223
       seriesId: 55
       tvdbId: 71361
@@ -7610,7 +7608,7 @@ Inuyasha the Movie- Affections Touching Across Time (2001):
       Show Root Path: anime/shounen/InuYasha
       Symlinked: ''
       Title: Movie 1 Affections Touching Across Time
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0290223
       seriesId: 55
       tvdbId: 71361
@@ -7667,7 +7665,7 @@ Jeff Dunham - All Over the Map (2014):
       Show Root Path: tv/staging/The Jeff Dunham Show
       Symlinked: ''
       Title: All Over the Map
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1483024
       seriesId: 224
       tvdbId: 119761
@@ -7706,7 +7704,7 @@ Jeff Dunham - Arguing with Myself (2006):
       Show Root Path: tv/staging/The Jeff Dunham Show
       Symlinked: ''
       Title: Arguing with Myself
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1483024
       seriesId: 224
       tvdbId: 119761
@@ -7745,7 +7743,7 @@ Jeff Dunham - Birth of a Dummy (2011):
       Show Root Path: tv/staging/The Jeff Dunham Show
       Symlinked: ''
       Title: Birth of a Dummy
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1483024
       seriesId: 224
       tvdbId: 119761
@@ -7784,7 +7782,7 @@ Jeff Dunham - Controlled Chaos (2011):
       Show Root Path: tv/staging/The Jeff Dunham Show
       Symlinked: ''
       Title: Controlled Chaos
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1483024
       seriesId: 224
       tvdbId: 119761
@@ -7826,7 +7824,7 @@ Jeff Dunham - Jeff Dunham's Very Special Christmas Special (2008):
       Show Root Path: tv/staging/The Jeff Dunham Show
       Symlinked: ''
       Title: Very Special Christmas Special
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1483024
       seriesId: 224
       tvdbId: 119761
@@ -7865,7 +7863,7 @@ Jeff Dunham - Minding the Monsters (2012):
       Show Root Path: tv/staging/The Jeff Dunham Show
       Symlinked: ''
       Title: Minding the Monsters
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1483024
       seriesId: 224
       tvdbId: 119761
@@ -7904,7 +7902,7 @@ Jeff Dunham - Relative Disaster (2017):
       Show Root Path: tv/staging/The Jeff Dunham Show
       Symlinked: ''
       Title: Arguing with Myself
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1483024
       seriesId: 224
       tvdbId: 119761
@@ -7943,7 +7941,7 @@ Jeff Dunham - Spark of Insanity (2007):
       Show Root Path: tv/staging/The Jeff Dunham Show
       Symlinked: ''
       Title: Spark of Insanity
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1483024
       seriesId: 224
       tvdbId: 119761
@@ -7982,7 +7980,7 @@ Jeff Dunham - Unhinged in Hollywood (2015):
       Show Root Path: tv/staging/The Jeff Dunham Show
       Symlinked: ''
       Title: Unhinged in Hollywood
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1483024
       seriesId: 224
       tvdbId: 119761
@@ -8102,7 +8100,7 @@ Journey's End- The Saga of Star Trek - The Next Generation (1994):
       Show Root Path: tv/scifi/Star Trek- The Next Generation
       Symlinked: ''
       Title: Journey's End The Saga of Star Trek The Next Generation
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0092455
       seriesId: 394
       tvdbId: 71470
@@ -8169,7 +8167,7 @@ Justice League- Crisis on Two Earths (2010):
         on Two Earths Bluray-1080p.mkv -> ../../../../movies/staging/Justice League-
         Crisis on Two Earths (2010)/Justice League- Crisis on Two Earths (2010) Bluray-1080p.mkv
       Title: Crisis on Two Earths
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0275137
       seriesId: 473
       tvdbId: 76320
@@ -8216,7 +8214,7 @@ Justice League- The Flashpoint Paradox (2013):
         League- The Flashpoint Paradox (2013)/Justice League- The Flashpoint Paradox
         (2013) Bluray-1080p.mkv
       Title: The Flashpoint Paradox
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0275137
       seriesId: 473
       tvdbId: 76320
@@ -8262,7 +8260,7 @@ Justice League- The New Frontier (2008):
         New Frontier Bluray-1080p.mkv -> ../../../../movies/staging/Justice League-
         The New Frontier (2008)/Justice League- The New Frontier (2008) Bluray-1080p.mkv
       Title: The New Frontier
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0275137
       seriesId: 473
       tvdbId: 76320
@@ -8310,7 +8308,7 @@ Kabaneri of the Iron Fortress Recap 1- Gathering Light (2016):
       Show Root Path: anime/staging/Kabaneri of the Iron Fortress
       Symlinked: ''
       Title: Kabaneri of the Iron Fortress Recap 1 Gathering Light
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt5556656
       seriesId: 60
       tvdbId: 305082
@@ -8360,7 +8358,7 @@ Kabaneri of the Iron Fortress Recap 2- Burning Life (2017):
       Show Root Path: anime/staging/Kabaneri of the Iron Fortress
       Symlinked: ''
       Title: Kabaneri of the Iron Fortress Recap 2 Burning Life
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt5556656
       seriesId: 60
       tvdbId: 305082
@@ -8407,7 +8405,7 @@ Kabaneri of the Iron Fortress- The Battle of Unato (2019):
       Show Root Path: anime/staging/Kabaneri of the Iron Fortress
       Symlinked: ''
       Title: Kabaneri of the Iron Fortress The Battle of Unato
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt5556656
       seriesId: 60
       tvdbId: 305082
@@ -8441,7 +8439,7 @@ Kono Subarashii Sekai ni Shukufuku wo! 2- God's Blessings on This Wonderful Work
       Parsed Episode: '004'
       Parsed Season Folder: Season 00
       Parsed Show Title: anime/staging/KONOSUBA - God's blessing on this wonderful
-        world!/Season 00/KONOSUBA - God's blessing on this wonderful world! - S00E006
+        world!/Season 00/KONOSUBA - God's blessing on this wonderful world! - S00E004
         - A Blessing to This Wonderful Work of Art!
       Relative Show File Path: ''
       Relative Show Path: anime/staging/KONOSUBA - God's blessing on this wonderful
@@ -8490,17 +8488,23 @@ Kono Subarashii Sekai ni Shukufuku wo! God's Blessings on This Wonderful Choker!
       Episode: '4'
       Episode ID: '5249'
       Parsed Episode: '004'
-      Parsed Season Folder: Season 21
-      Parsed Show Title: tv/staging/KONOSUBA - God's blessing on this wonderful world!/Season
-        21/KONOSUBA - God's blessing on this wonderful world! - S21E004 - A Climatic
-        Sumo Battle! Straw Hat vs. the Strongest Ever Yokozuna!
+      Parsed Season Folder: Season 00
+      Parsed Show Title: anime/staging/KONOSUBA - God's blessing on this wonderful
+        world!/Season 00/KONOSUBA - God's blessing on this wonderful world! - S00E004
+        - A Blessing to This Wonderful Choker!
       Relative Show File Path: ''
-      Relative Show Path: ''
-      Season: '0'
-      Show Genres: []
-      Show Root Path: tv/staging/KONOSUBA - God's blessing on this wonderful world!
+      Relative Show Path: anime/staging/KONOSUBA - God's blessing on this wonderful
+        world!/Season 00
+      Season: '00'
+      Show Genres:
+      - Adventure
+      - Animation
+      - Anime
+      - Comedy
+      - Fantasy
+      Show Root Path: anime/staging/KONOSUBA - God's blessing on this wonderful world!
       Symlinked: ''
-      Title: ''
+      Title: A Blessing to This Wonderful Choker!
       episodeFileId: ''
       imdbId: tt5370118
       seriesId: 155
@@ -8555,7 +8559,7 @@ Koukyoushihen- Eureka Seven - Hi-Evolution 1 (2017):
         \xe3\x83\x8f\xe3\x82\xa4\xe3\x82\xa8\xe3\x83\x9c\xe3\x83\xaa\xe3\x83\xa5\xe3\x83\xbc\xe3\x82\xb7\xe3\x83\xa7\xe3\x83\xb3
         1 (2017) Remux-1080p.mkv
       Title: Navigation ray=out
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0765491
       seriesId: 145
       tvdbId: 79360
@@ -8599,7 +8603,7 @@ L- Change the World (2008):
       Show Root Path: anime/staging/Death Note
       Symlinked: ''
       Title: Death Note L, Change the World (Live Action Movie)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0877057
       seriesId: 117
       tvdbId: 79481
@@ -8650,7 +8654,7 @@ Lupin the Third- Daisuke Jigen's Gravestone (2014):
       Show Root Path: anime/staging/Lupin the Third- The Woman Called Fujiko Mine
       Symlinked: ''
       Title: Daisuke Jigen's Gravestone, Part 1
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt2298919
       seriesId: 156
       tvdbId: 257875
@@ -8703,7 +8707,7 @@ Lupin the Third- The Blood Spray of Goemon Ishikawa (2017):
       Show Root Path: anime/staging/Lupin the Third- The Woman Called Fujiko Mine
       Symlinked: ''
       Title: The Blood Spray of Goemon Ishikawa, Part 1
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt2298919
       seriesId: 156
       tvdbId: 257875
@@ -8746,7 +8750,7 @@ Made in Abyss- Dawn of the Deep Soul (2020):
       Show Root Path: tv/staging/Made in Abyss
       Symlinked: ''
       Title: Movie Dawn of a Deep Soul
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt7222086
       seriesId: 64
       tvdbId: 326109
@@ -8786,7 +8790,7 @@ Maggie Simpson in The Longest Daycare (2012):
       Show Root Path: tv/sitcom/The Simpsons
       Symlinked: ''
       Title: Burping Contest
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0096697
       seriesId: 455
       tvdbId: 71663
@@ -8825,7 +8829,7 @@ March Comes in Like a Lion (2017):
       Show Root Path: anime/staging/March Comes in Like a Lion
       Symlinked: ''
       Title: March Comes in Like a Lion Live Action Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt6074794
       seriesId: 157
       tvdbId: 306269
@@ -8865,7 +8869,7 @@ Merlin's Apprentice (2006):
       Show Root Path: tv/staging/Merlin (1998)
       Symlinked: ''
       Title: Merlins Apprentice
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0130414
       seriesId: 512
       tvdbId: 83269
@@ -8906,7 +8910,7 @@ Merlin- The Return (2000):
       Show Root Path: tv/staging/Merlin (1998)
       Symlinked: ''
       Title: Merlin - The Return
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0130414
       seriesId: 512
       tvdbId: 83269
@@ -8953,7 +8957,7 @@ Merlin- The Return (2000):
       Show Root Path: anime/staging/Mob Psycho 100
       Symlinked: ''
       Title: Reigen - The Miracle Psychic that Nobody Knows
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt5897304
       seriesId: 66
       tvdbId: 307375
@@ -9001,7 +9005,7 @@ Mobile Suit Gundam 00 Special Edition I- Celestial Being (2009):
         Suit Gundam 00 Special Edition I- Celestial Being (2009)/Mobile Suit Gundam
         00 Special Edition I- Celestial Being (2009) Bluray-1080p.mp4
       Title: Special Edition I Celestial Being
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1134000
       seriesId: 67
       tvdbId: 80675
@@ -9049,7 +9053,7 @@ Mobile Suit Gundam 00 Special Edition II- End of World (2009):
         Suit Gundam 00 Special Edition II- End of World (2009)/Mobile Suit Gundam
         00 Special Edition II- End of World (2009) Bluray-1080p.mp4
       Title: Special Edition II End of World
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1134000
       seriesId: 67
       tvdbId: 80675
@@ -9098,7 +9102,7 @@ Mobile Suit Gundam 00 Special Edition III- Return The World (2010):
         The World (2010)/Mobile Suit Gundam 00 Special Edition III- Return The World
         (2010) Bluray-1080p.mp4
       Title: Special Edition III Return of the World
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1134000
       seriesId: 67
       tvdbId: 80675
@@ -9145,7 +9149,7 @@ Mobile Suit Gundam 00- A Wakening of the Trailblazer (2010):
       Show Root Path: anime/staging/Mobile Suit Gundam 00
       Symlinked: ''
       Title: Awakening of the Trailblazer
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1134000
       seriesId: 67
       tvdbId: 80675
@@ -9192,7 +9196,7 @@ Mobile Suit Gundam 0083- Stardust Memory - The Mayfly of Space (1992):
       Show Root Path: anime/staging/Mobile Suit Gundam 0083- Stardust Memory
       Symlinked: ''
       Title: The Mayfly of Space
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0159567
       seriesId: 69
       tvdbId: 80783
@@ -9233,7 +9237,7 @@ Mobile Suit Gundam 0083- The Last Blitz of Zeon (1992):
       Show Root Path: anime/staging/Mobile Suit Gundam 0083- Stardust Memory
       Symlinked: ''
       Title: The Fading Light of Zeon
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0159567
       seriesId: 69
       tvdbId: 80783
@@ -9262,20 +9266,20 @@ Mobile Suit Gundam AGE- Memory of Eden (2013):
       Episode ID: '46438'
       Parsed Episode: '001'
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/staging/Mobile Suit Gundam AGE/Season 00/Mobile Suit Gundam
+      Parsed Show Title: tv/staging/Mobile Suit Gundam AGE/Season 00/Mobile Suit Gundam
         AGE - S00E001 - Memory of Eden - OVA 1
       Relative Show File Path: ''
-      Relative Show Path: anime/staging/Mobile Suit Gundam AGE/Season 00
+      Relative Show Path: tv/staging/Mobile Suit Gundam AGE/Season 00
       Season: '00'
       Show Genres:
       - Action
       - Adventure
       - Animation
       - Science-Fiction
-      Show Root Path: anime/staging/Mobile Suit Gundam AGE
+      Show Root Path: tv/staging/Mobile Suit Gundam AGE
       Symlinked: ''
       Title: Memory of Eden - OVA 1
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt2193783
       seriesId: 70
       tvdbId: 252621
@@ -9315,7 +9319,7 @@ Mobile Suit Gundam F91 (1991):
       Show Root Path: anime/staging/Mobile Suit Gundam
       Symlinked: ''
       Title: Mobile Suit Gundam F91
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0159172
       seriesId: 160
       tvdbId: 76547
@@ -9352,7 +9356,7 @@ Mobile Suit Gundam I (1981):
       Show Root Path: anime/staging/Mobile Suit Gundam
       Symlinked: ''
       Title: Mobile Suit Gundam
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0159172
       seriesId: 160
       tvdbId: 76547
@@ -9374,7 +9378,7 @@ Mobile Suit Gundam I (1981):
       Show Root Path: anime/staging/Mobile Suit Gundam 0079
       Symlinked: ''
       Title: Mobile Suit Gundam I
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0159172
       seriesId: 160
       tvdbId: 76547
@@ -9413,7 +9417,7 @@ Mobile Suit Gundam II- Soldiers of Sorrow (1981):
       Show Root Path: anime/staging/Mobile Suit Gundam
       Symlinked: ''
       Title: Mobile Suit Gundam Soldiers of Sorrow
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0159172
       seriesId: 160
       tvdbId: 76547
@@ -9435,7 +9439,7 @@ Mobile Suit Gundam II- Soldiers of Sorrow (1981):
       Show Root Path: anime/staging/Mobile Suit Gundam 0079
       Symlinked: ''
       Title: Mobile Suit Gundam II Soldiers of Sorrow
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0159172
       seriesId: 160
       tvdbId: 76547
@@ -9477,7 +9481,7 @@ Mobile Suit Gundam III- Encounters in Space (1982):
       Show Root Path: anime/staging/Mobile Suit Gundam
       Symlinked: ''
       Title: Mobile Suit Gundam Encounters in Space
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0159172
       seriesId: 160
       tvdbId: 76547
@@ -9499,7 +9503,7 @@ Mobile Suit Gundam III- Encounters in Space (1982):
       Show Root Path: anime/staging/Mobile Suit Gundam 0079
       Symlinked: ''
       Title: Mobile Suit Gundam III Encounters in Space
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0159172
       seriesId: 160
       tvdbId: 76547
@@ -9527,22 +9531,22 @@ Mobile Suit Gundam MS IGLOO- The Hidden One Year War (2004):
       Anime: true
       Episode: '1'
       Episode ID: '46448'
-      Parsed Episode: '01'
+      Parsed Episode: '001'
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/staging/Mobile Suit Gundam- MS IGLOO - The Hidden One-Year War/Season 00/Mobile Suit Gundam- MS IGLOO - The Hidden One-Year War - S00E01
-        - The Hidden One-Year War Preview
+      Parsed Show Title: tv/staging/Mobile Suit Gundam- MS IGLOO/Season 00/Mobile
+        Suit Gundam- MS IGLOO - S00E001 - The Hidden One-Year War Preview
       Relative Show File Path: ''
-      Relative Show Path: anime/staging/Mobile Suit Gundam- MS IGLOO - The Hidden One-Year War/Season 00
+      Relative Show Path: tv/staging/Mobile Suit Gundam- MS IGLOO/Season 00
       Season: '00'
       Show Genres:
       - Animation
       - Science-Fiction
-      Show Root Path: anime/staging/Mobile Suit Gundam- MS IGLOO - The Hidden One-Year War
+      Show Root Path: tv/staging/Mobile Suit Gundam- MS IGLOO
       Symlinked: ''
       Title: The Hidden One-Year War Preview
+      episodeFileId: ''
       seriesId: 71
-      episodeFileId: 0
-      tvdbId: 85443
+      tvdbId: 81104
   Title: Mobile Suit Gundam MS IGLOO- The Hidden One Year War (2004)
   Unparsed Title: 'Mobile Suit Gundam MS IGLOO: The Hidden One Year War'
   Year: 2004
@@ -9565,41 +9569,46 @@ Mobile Suit Gundam SEED Destiny- Special Edition I - The Broken World (2006):
       Anime: true
       Episode: '7'
       Episode ID: '5572'
-      Parsed Episode: '07'
+      Parsed Episode: '007'
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00/Mobile
-        Suit Gundam SEED (2012) - S00E07 - Special Edition I The Shattered World
+      Parsed Show Title: tv/staging/Mobile Suit Gundam SEED (2012) - HD Remaster/Season
+        00/Mobile Suit Gundam SEED (2012) - HD Remaster - S00E007 - Special Edition
+        I The Shattered World
       Relative Show File Path: ''
-      Relative Show Path: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00
+      Relative Show Path: tv/staging/Mobile Suit Gundam SEED (2012) - HD Remaster/Season
+        00
       Season: '00'
       Show Genres:
-      - Anime
-      Show Root Path: anime/staging/Mobile Suit Gundam SEED (2012)
+      - Action
+      - Adventure
+      - Animation
+      - Science-Fiction
+      Show Root Path: tv/staging/Mobile Suit Gundam SEED (2012) - HD Remaster
       Symlinked: ''
       Title: Special Edition I The Shattered World
-      episodeFileId: 0
-      seriesId: 164
-      tvdbId: 368524
+      episodeFileId: ''
       imdbId: tt0434694
+      seriesId: 164
+      tvdbId: 254931
     Mobile Suit Gundam SEED Destiny:
       Anime: true
       Episode: '3'
       Episode ID: '5636'
       Parsed Episode: '003'
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/staging/Mobile Suit Gundam SEED Destiny/Season 00/Mobile
+      Parsed Show Title: tv/staging/Mobile Suit Gundam SEED Destiny/Season 00/Mobile
         Suit Gundam SEED Destiny - S00E003 - Special Edition I The Shattered World
       Relative Show File Path: ''
-      Relative Show Path: anime/staging/Mobile Suit Gundam SEED Destiny/Season 00
+      Relative Show Path: tv/staging/Mobile Suit Gundam SEED Destiny/Season 00
       Season: '00'
       Show Genres:
       - Action
       - Adventure
       - Animation
-      Show Root Path: anime/staging/Mobile Suit Gundam SEED Destiny
+      Show Root Path: tv/staging/Mobile Suit Gundam SEED Destiny
       Symlinked: ''
       Title: Special Edition I The Shattered World
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0434694
       seriesId: 165
       tvdbId: 74890
@@ -9626,40 +9635,45 @@ Mobile Suit Gundam SEED Destiny- Special Edition II - Their Respective Swords (2
       Anime: true
       Episode: '8'
       Episode ID: '5573'
-      Parsed Episode: 08
+      Parsed Episode: 008
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00/Mobile
-        Suit Gundam SEED (2012) - S00E08 - Special Edition II Their Respective Swords
+      Parsed Show Title: tv/staging/Mobile Suit Gundam SEED (2012) - HD Remaster/Season
+        00/Mobile Suit Gundam SEED (2012) - HD Remaster - S00E008 - Special Edition
+        II Their Respective Swords
       Relative Show File Path: ''
-      Relative Show Path: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00
+      Relative Show Path: tv/staging/Mobile Suit Gundam SEED (2012) - HD Remaster/Season
+        00
       Season: '00'
       Show Genres:
-      - Anime
-      Show Root Path: anime/staging/Mobile Suit Gundam SEED (2012)
+      - Action
+      - Adventure
+      - Animation
+      - Science-Fiction
+      Show Root Path: tv/staging/Mobile Suit Gundam SEED (2012) - HD Remaster
       Symlinked: ''
-      seriesId: 164
       Title: Special Edition II Their Respective Swords
-      episodeFileId: 0
-      tvdbId: 368524
+      episodeFileId: ''
+      seriesId: 164
+      tvdbId: 254931
     Mobile Suit Gundam SEED Destiny:
       Anime: true
       Episode: '4'
       Episode ID: '5637'
       Parsed Episode: '004'
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/staging/Mobile Suit Gundam SEED Destiny/Season 00/Mobile
+      Parsed Show Title: tv/staging/Mobile Suit Gundam SEED Destiny/Season 00/Mobile
         Suit Gundam SEED Destiny - S00E004 - Special Edition II Their Respective Swords
       Relative Show File Path: ''
-      Relative Show Path: anime/staging/Mobile Suit Gundam SEED Destiny/Season 00
+      Relative Show Path: tv/staging/Mobile Suit Gundam SEED Destiny/Season 00
       Season: '00'
       Show Genres:
       - Action
       - Adventure
       - Animation
-      Show Root Path: anime/staging/Mobile Suit Gundam SEED Destiny
+      Show Root Path: tv/staging/Mobile Suit Gundam SEED Destiny
       Symlinked: ''
       Title: Special Edition II Their Respective Swords
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0434694
       seriesId: 165
       tvdbId: 74890
@@ -9687,40 +9701,45 @@ Mobile Suit Gundam SEED Destiny- Special Edition III - Flames of Destiny (2006):
       Anime: true
       Episode: '9'
       Episode ID: '5574'
-      Parsed Episode: 09
+      Parsed Episode: 009
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00/Mobile
-        Suit Gundam SEED (2012) - S00E09 - Special Edition III Flames Of Destiny
+      Parsed Show Title: tv/staging/Mobile Suit Gundam SEED (2012) - HD Remaster/Season
+        00/Mobile Suit Gundam SEED (2012) - HD Remaster - S00E009 - Special Edition
+        III Flames Of Destiny
       Relative Show File Path: ''
-      Relative Show Path: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00
+      Relative Show Path: tv/staging/Mobile Suit Gundam SEED (2012) - HD Remaster/Season
+        00
       Season: '00'
       Show Genres:
-      - Anime
-      Show Root Path: anime/staging/Mobile Suit Gundam SEED (2012)
+      - Action
+      - Adventure
+      - Animation
+      - Science-Fiction
+      Show Root Path: tv/staging/Mobile Suit Gundam SEED (2012) - HD Remaster
       Symlinked: ''
-      seriesId: 164
       Title: Special Edition III Flames Of Destiny
-      episodeFileId: 0
-      tvdbId: 368524
+      episodeFileId: ''
+      seriesId: 164
+      tvdbId: 254931
     Mobile Suit Gundam SEED Destiny:
       Anime: true
       Episode: '5'
       Episode ID: '5638'
       Parsed Episode: '005'
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/staging/Mobile Suit Gundam SEED Destiny/Season 00/Mobile
+      Parsed Show Title: tv/staging/Mobile Suit Gundam SEED Destiny/Season 00/Mobile
         Suit Gundam SEED Destiny - S00E005 - Special Edition III Flames Of Destiny
       Relative Show File Path: ''
-      Relative Show Path: anime/staging/Mobile Suit Gundam SEED Destiny/Season 00
+      Relative Show Path: tv/staging/Mobile Suit Gundam SEED Destiny/Season 00
       Season: '00'
       Show Genres:
       - Action
       - Adventure
       - Animation
-      Show Root Path: anime/staging/Mobile Suit Gundam SEED Destiny
+      Show Root Path: tv/staging/Mobile Suit Gundam SEED Destiny
       Symlinked: ''
       Title: Special Edition III Flames Of Destiny
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0434694
       seriesId: 165
       tvdbId: 74890
@@ -9748,41 +9767,46 @@ Mobile Suit Gundam SEED Destiny- Special Edition IV - The Cost of Freedom (2007)
       Anime: true
       Episode: '10'
       Episode ID: '5575'
-      Parsed Episode: '10'
+      Parsed Episode: '010'
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00/Mobile
-        Suit Gundam SEED (2012) - S00E10 - Special Edition IV The Cost of Freedom
+      Parsed Show Title: tv/staging/Mobile Suit Gundam SEED (2012) - HD Remaster/Season
+        00/Mobile Suit Gundam SEED (2012) - HD Remaster - S00E010 - Special Edition
+        IV The Cost of Freedom
       Relative Show File Path: ''
-      Relative Show Path: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00
+      Relative Show Path: tv/staging/Mobile Suit Gundam SEED (2012) - HD Remaster/Season
+        00
       Season: '00'
       Show Genres:
-      - Anime
-      Show Root Path: anime/staging/Mobile Suit Gundam SEED (2012)
+      - Action
+      - Adventure
+      - Animation
+      - Science-Fiction
+      Show Root Path: tv/staging/Mobile Suit Gundam SEED (2012) - HD Remaster
       Symlinked: ''
       Title: Special Edition IV The Cost of Freedom
-      seriesId: 164
-      episodeFileId: 0
-      tvdbId: 368524
+      episodeFileId: ''
       imdbId: tt0434694
+      seriesId: 164
+      tvdbId: 254931
     Mobile Suit Gundam SEED Destiny:
       Anime: true
       Episode: '6'
       Episode ID: '5639'
       Parsed Episode: '006'
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/staging/Mobile Suit Gundam SEED Destiny/Season 00/Mobile
+      Parsed Show Title: tv/staging/Mobile Suit Gundam SEED Destiny/Season 00/Mobile
         Suit Gundam SEED Destiny - S00E006 - Special Edition IV The Cost of Freedom
       Relative Show File Path: ''
-      Relative Show Path: anime/staging/Mobile Suit Gundam SEED Destiny/Season 00
+      Relative Show Path: tv/staging/Mobile Suit Gundam SEED Destiny/Season 00
       Season: '00'
       Show Genres:
       - Action
       - Adventure
       - Animation
-      Show Root Path: anime/staging/Mobile Suit Gundam SEED Destiny
+      Show Root Path: tv/staging/Mobile Suit Gundam SEED Destiny
       Symlinked: ''
       Title: Special Edition IV The Cost of Freedom
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0434694
       seriesId: 165
       tvdbId: 74890
@@ -9812,42 +9836,47 @@ Mobile Suit Gundam SEED Movie I- The Empty Battlefield (2004):
       Episode ID: '5462'
       Parsed Episode: '02'
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/staging/Mobile Suit Gundam SEED/Season 00/Mobile Suit
+      Parsed Show Title: tv/staging/Mobile Suit Gundam SEED/Season 00/Mobile Suit
         Gundam SEED - S00E02 - Special Edition I The Empty Battlefield
       Relative Show File Path: ''
-      Relative Show Path: anime/staging/Mobile Suit Gundam SEED/Season 00
+      Relative Show Path: tv/staging/Mobile Suit Gundam SEED/Season 00
       Season: '00'
       Show Genres:
       - Action
       - Animation
       - Anime
       - Science-Fiction
-      Show Root Path: anime/staging/Mobile Suit Gundam SEED
+      Show Root Path: tv/staging/Mobile Suit Gundam SEED
       Symlinked: ''
       Title: Special Edition I The Empty Battlefield
-      seriesId: 163
-      episodeFileId: 163
+      episodeFileId: ''
       imdbId: tt0374407
+      seriesId: 163
       tvdbId: 367683
     Mobile Suit Gundam SEED (2012) - HD Remaster:
       Anime: true
       Episode: '2'
       Episode ID: '5567'
-      Parsed Episode: '02'
+      Parsed Episode: '002'
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00/Mobile
-        Suit Gundam SEED (2012) - S00E02 - Special Edition I The Empty Battlefield
+      Parsed Show Title: tv/staging/Mobile Suit Gundam SEED (2012) - HD Remaster/Season
+        00/Mobile Suit Gundam SEED (2012) - HD Remaster - S00E002 - Special Edition
+        I The Empty Battlefield
       Relative Show File Path: ''
-      Relative Show Path: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00
+      Relative Show Path: tv/staging/Mobile Suit Gundam SEED (2012) - HD Remaster/Season
+        00
       Season: '00'
       Show Genres:
-      - Anime
-      Show Root Path: anime/staging/Mobile Suit Gundam SEED (2012)
-      seriesId: 164
+      - Action
+      - Adventure
+      - Animation
+      - Science-Fiction
+      Show Root Path: tv/staging/Mobile Suit Gundam SEED (2012) - HD Remaster
       Symlinked: ''
       Title: Special Edition I The Empty Battlefield
-      episodeFileId: 0
-      tvdbId: 368524
+      episodeFileId: ''
+      seriesId: 164
+      tvdbId: 254931
   Title: Mobile Suit Gundam SEED Movie I- The Empty Battlefield (2004)
   Unparsed Title: 'Mobile Suit Gundam SEED Movie I: The Empty Battlefield'
   Year: 2004
@@ -9872,42 +9901,47 @@ Mobile Suit Gundam SEED Movie II- The Far-Away Dawn (2004):
       Episode ID: '5463'
       Parsed Episode: '03'
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/staging/Mobile Suit Gundam SEED/Season 00/Mobile Suit
+      Parsed Show Title: tv/staging/Mobile Suit Gundam SEED/Season 00/Mobile Suit
         Gundam SEED - S00E03 - Special Edition II The Far-Away Dawn
       Relative Show File Path: ''
-      Relative Show Path: anime/staging/Mobile Suit Gundam SEED/Season 00
+      Relative Show Path: tv/staging/Mobile Suit Gundam SEED/Season 00
       Season: '00'
       Show Genres:
       - Action
       - Animation
       - Anime
       - Science-Fiction
-      Show Root Path: anime/staging/Mobile Suit Gundam SEED
+      Show Root Path: tv/staging/Mobile Suit Gundam SEED
       Symlinked: ''
       Title: Special Edition II The Far-Away Dawn
-      episodeFileId: 0
-      seriesId: 163
+      episodeFileId: ''
       imdbId: tt0374407
+      seriesId: 163
       tvdbId: 367683
     Mobile Suit Gundam SEED (2012) - HD Remaster:
       Anime: true
       Episode: '3'
       Episode ID: '5568'
-      Parsed Episode: '03'
+      Parsed Episode: '003'
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00/Mobile
-        Suit Gundam SEED (2012) - S00E03 - Special Edition II The Far-Away Dawn
+      Parsed Show Title: tv/staging/Mobile Suit Gundam SEED (2012) - HD Remaster/Season
+        00/Mobile Suit Gundam SEED (2012) - HD Remaster - S00E003 - Special Edition
+        II The Far-Away Dawn
       Relative Show File Path: ''
-      Relative Show Path: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00
+      Relative Show Path: tv/staging/Mobile Suit Gundam SEED (2012) - HD Remaster/Season
+        00
       Season: '00'
       Show Genres:
-      - Anime
-      Show Root Path: anime/staging/Mobile Suit Gundam SEED (2012)
+      - Action
+      - Adventure
+      - Animation
+      - Science-Fiction
+      Show Root Path: tv/staging/Mobile Suit Gundam SEED (2012) - HD Remaster
       Symlinked: ''
-      seriesId: 164
       Title: Special Edition II The Far-Away Dawn
-      episodeFileId: 0
-      tvdbId: 368524
+      episodeFileId: ''
+      seriesId: 164
+      tvdbId: 254931
   Title: Mobile Suit Gundam SEED Movie II- The Far-Away Dawn (2004)
   Unparsed Title: 'Mobile Suit Gundam SEED Movie II: The Far-Away Dawn'
   Year: 2004
@@ -9932,42 +9966,47 @@ Mobile Suit Gundam SEED Movie III- The Rumbling Sky (2004):
       Episode ID: '5464'
       Parsed Episode: '04'
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/staging/Mobile Suit Gundam SEED/Season 00/Mobile Suit
+      Parsed Show Title: tv/staging/Mobile Suit Gundam SEED/Season 00/Mobile Suit
         Gundam SEED - S00E04 - Special Edition III The Rumbling Sky
       Relative Show File Path: ''
-      Relative Show Path: anime/staging/Mobile Suit Gundam SEED/Season 00
+      Relative Show Path: tv/staging/Mobile Suit Gundam SEED/Season 00
       Season: '00'
       Show Genres:
       - Action
       - Animation
       - Anime
       - Science-Fiction
-      Show Root Path: anime/staging/Mobile Suit Gundam SEED
+      Show Root Path: tv/staging/Mobile Suit Gundam SEED
       Symlinked: ''
       Title: Special Edition III The Rumbling Sky
-      episodeFileId: 0
-      seriesId: 163
+      episodeFileId: ''
       imdbId: tt0374407
+      seriesId: 163
       tvdbId: 367683
     Mobile Suit Gundam SEED (2012) - HD Remaster:
       Anime: true
       Episode: '4'
       Episode ID: '5569'
-      Parsed Episode: '04'
+      Parsed Episode: '004'
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00/Mobile
-        Suit Gundam SEED (2012) - S00E04 - Special Edition III The Rumbling Sky
+      Parsed Show Title: tv/staging/Mobile Suit Gundam SEED (2012) - HD Remaster/Season
+        00/Mobile Suit Gundam SEED (2012) - HD Remaster - S00E004 - Special Edition
+        III The Rumbling Sky
       Relative Show File Path: ''
-      Relative Show Path: anime/staging/Mobile Suit Gundam SEED (2012)/Season 00
+      Relative Show Path: tv/staging/Mobile Suit Gundam SEED (2012) - HD Remaster/Season
+        00
       Season: '00'
       Show Genres:
-      - Anime
-      Show Root Path: anime/staging/Mobile Suit Gundam SEED (2012)
+      - Action
+      - Adventure
+      - Animation
+      - Science-Fiction
+      Show Root Path: tv/staging/Mobile Suit Gundam SEED (2012) - HD Remaster
       Symlinked: ''
-      seriesId: 164
       Title: Special Edition III The Rumbling Sky
-      episodeFileId: 0
-      tvdbId: 368524
+      episodeFileId: ''
+      seriesId: 164
+      tvdbId: 254931
   Title: Mobile Suit Gundam SEED Movie III- The Rumbling Sky (2004)
   Unparsed Title: 'Mobile Suit Gundam SEED Movie III: The Rumbling Sky'
   Year: 2004
@@ -10008,7 +10047,7 @@ Mobile Suit Gundam- Char's Counterattack (1988):
       Show Root Path: anime/staging/Mobile Suit Gundam
       Symlinked: ''
       Title: Mobile Suit Gundam Char's Counterattack
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0159172
       seriesId: 160
       tvdbId: 76547
@@ -10030,7 +10069,7 @@ Mobile Suit Gundam- Char's Counterattack (1988):
       Show Root Path: anime/staging/Mobile Suit Gundam 0079
       Symlinked: ''
       Title: Mobile Suit Gundam Char's Counterattack
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0159172
       seriesId: 160
       tvdbId: 76547
@@ -10082,7 +10121,7 @@ Mobile Suit Gundam- The 08th MS Team - Miller's Report (1998):
       Show Root Path: anime/staging/Mobile Suit Gundam- The 08th MS Team
       Symlinked: ''
       Title: Miller's Report
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0159569
       seriesId: 166
       tvdbId: 80784
@@ -10129,7 +10168,7 @@ Monster Musume no Iru Nichijou OVA (2016):
       Show Root Path: anime/staging/Monster Musume- Everyday Life with Monster Girls
       Symlinked: ''
       Title: Everyday Life at the Gym's Pool
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt4831392
       seriesId: 80
       tvdbId: 293119
@@ -10178,7 +10217,7 @@ Mushishi- The Next Chapter - Drops of Bells (2015):
         Chapter - Drops of Bells (2015)/Mushishi- The Next Chapter - Drops of Bells
         (2015) Bluray-1080p.mkv
       Title: Bell Droplets
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0807832
       seriesId: 81
       tvdbId: 79214
@@ -10221,7 +10260,7 @@ Mushishi- The Next Chapter - Path of Thorns (2014):
       Show Root Path: anime/staging/Mushi-Shi
       Symlinked: ''
       Title: Path of Thorns
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0807832
       seriesId: 81
       tvdbId: 79214
@@ -10267,7 +10306,7 @@ Mushishi- The Shadow That Devours the Sun (2014):
         The Shadow That Devours the Sun (2014)/Mushishi- The Shadow That Devours the
         Sun (2014) Bluray-1080p.mkv
       Title: The Shadow That Devours the Sun
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0807832
       seriesId: 81
       tvdbId: 79214
@@ -10313,7 +10352,7 @@ My Hero Academia - Two Heroes (2018):
       Show Root Path: anime/shounen/My Hero Academia
       Symlinked: ''
       Title: My Hero Academia the Movie The Two Heroes
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt5626028
       seriesId: 82
       tvdbId: 305074
@@ -10358,7 +10397,7 @@ My Name Is Bruce (2007):
         My Name Is Bruce Bluray-1080p.mkv -> ../../../../movies/horror/My Name Is
         Bruce (2007)/My Name Is Bruce (2007) Bluray-1080p.mkv
       Title: My Name Is Bruce
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt4189022
       seriesId: 332
       tvdbId: 296295
@@ -10405,7 +10444,7 @@ Naruto Shippuden the Movie Blood Prison (2011):
       Show Root Path: anime/shounen/Naruto Shippuden
       Symlinked: ''
       Title: Naruto Shippuuden 5 Blood Prison
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0988824
       seriesId: 168
       tvdbId: 79824
@@ -10453,7 +10492,7 @@ Naruto Shippuden the Movie Bonds (2008):
       Show Root Path: anime/shounen/Naruto Shippuden
       Symlinked: ''
       Title: Naruto Shippuuden 2 Bonds
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0988824
       seriesId: 168
       tvdbId: 79824
@@ -10504,7 +10543,7 @@ Naruto Shippuden the Movie Inheritors of the Will of Fire (2009):
       Show Root Path: anime/shounen/Naruto Shippuden
       Symlinked: ''
       Title: Naruto Shippuuden 3 Inheritors of the Will of Fire
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0988824
       seriesId: 168
       tvdbId: 79824
@@ -10550,7 +10589,7 @@ Naruto Shippuden the Movie Road to Ninja (2012):
       Show Root Path: anime/shounen/Naruto Shippuden
       Symlinked: ''
       Title: Naruto Shippuuden the Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0988824
       seriesId: 168
       tvdbId: 79824
@@ -10597,7 +10636,7 @@ Naruto Shippuden the Movie The Lost Tower (2010):
       Show Root Path: anime/shounen/Naruto Shippuden
       Symlinked: ''
       Title: Naruto Shippuuden 4 The Lost Tower
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0988824
       seriesId: 168
       tvdbId: 79824
@@ -10642,7 +10681,7 @@ Naruto Shippuden- The Movie (2007):
       Show Root Path: anime/shounen/Naruto Shippuden
       Symlinked: ''
       Title: Naruto Shippuuden the Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0988824
       seriesId: 168
       tvdbId: 79824
@@ -10690,7 +10729,7 @@ Naruto the Movie- Guardians of the Crescent Moon Kingdom (2006):
       Show Root Path: anime/shounen/Naruto
       Symlinked: ''
       Title: Naruto the Movie 3 Guardians of the Crescent Moon Kingdom
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0409591
       seriesId: 83
       tvdbId: 78857
@@ -10745,7 +10784,7 @@ Naruto the Movie- Legend of the Stone of Gelel (2005):
         NARUTO -\xe3\x83\x8a\xe3\x83\xab\xe3\x83\x88- \xe5\xa4\xa7\xe6\xbf\x80\xe7\xaa\x81!\xe5\xb9\xbb\xe3\x81\xae\xe5\x9c\xb0\xe5\xba\x95\xe9\x81\xba\xe8\xb7\xa1\xe3\x81\xa0\xe3\x81\xa3\xe3\x81\xa6\xe3\x81\xb0\xe3\x82\x88
         (2005) Bluray-1080p.mkv
       Title: Naruto the Movie 2 Legend of the Stone of Gelel
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0409591
       seriesId: 83
       tvdbId: 78857
@@ -10795,7 +10834,7 @@ Naruto the Movie- Ninja Clash in the Land of Snow (2004):
       Show Root Path: anime/shounen/Naruto
       Symlinked: ''
       Title: Naruto the Movie Ninja Clash in the Land of Snow
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0409591
       seriesId: 83
       tvdbId: 78857
@@ -10842,7 +10881,7 @@ Naruto- Find the Crimson Four-leaf Clover! (2003):
         Find the Crimson Four-leaf Clover! (2003)/Naruto- Find the Crimson Four-leaf
         Clover! (2003) Bluray-720p.mkv
       Title: Naruto OVA Find the Crimson Four-Leaf Clover!
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0409591
       seriesId: 83
       tvdbId: 78857
@@ -10898,7 +10937,7 @@ Naruto- Gentle Breeze Chronicles the Film- Naruto, the Genie, and the Three Wish
         the Genie, and the Three Wishes Dattebayo!! (2010)/Naruto- Gentle Breeze Chronicles
         the Film- Naruto, the Genie, and the Three Wishes Dattebayo!! (2010) Remux-1080p.mkv
       Title: Naruto, the Genie, and the Three Wishes, Believe It!
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0988824
       seriesId: 168
       tvdbId: 79824
@@ -10964,7 +11003,7 @@ Neon Genesis Evangelion- Death and Rebirth (1997):
       Show Root Path: anime/staging/Neon Genesis Evangelion
       Symlinked: ''
       Title: Death and Rebirth
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0112159
       seriesId: 84
       tvdbId: 70350
@@ -11012,7 +11051,7 @@ Neon Genesis Evangelion- The End of Evangelion (1997):
       Show Root Path: anime/staging/Neon Genesis Evangelion
       Symlinked: ''
       Title: The End of Evangelion
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0112159
       seriesId: 84
       tvdbId: 70350
@@ -11061,7 +11100,7 @@ New Fist of the North Star- The Cursed City (2003):
         Fist of the North Star- The Cursed City (2003)/New Fist of the North Star-
         The Cursed City (2003) DVD.mp4
       Title: The Cursed City!
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0091211
       seriesId: 42
       tvdbId: 79156
@@ -11109,7 +11148,7 @@ New Fist of the North Star- The Forbidden Fist (2003):
         Fist of the North Star- The Forbidden Fist (2003)/New Fist of the North Star-
         The Forbidden Fist (2003) DVD.mp4
       Title: The Forbidden Fist
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0091211
       seriesId: 42
       tvdbId: 79156
@@ -11158,7 +11197,7 @@ New Fist of the North Star- When a Man Carries Sorrow (2004):
         Fist of the North Star- When a Man Carries Sorrow (2004)/New Fist of the North
         Star- When a Man Carries Sorrow (2004) DVD.mp4
       Title: When a Man Carries Sorrow
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0091211
       seriesId: 42
       tvdbId: 79156
@@ -11204,7 +11243,7 @@ No Game No Life- Zero (2017):
         No Life- Zero (2017)/\xe3\x83\x8e\xe3\x83\xbc\xe3\x82\xb2\xe3\x83\xbc\xe3\x83\xa0\xe3\x83\xbb\xe3\x83\x8e\xe3\x83\xbc\xe3\x83\xa9\xe3\x82\xa4\xe3\x83\x95
         \xe3\x82\xbc\xe3\x83\xad (2017) Bluray-1080p.mkv
       Title: No Game No Life Zero
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt3431758
       seriesId: 169
       tvdbId: 278155
@@ -11272,7 +11311,7 @@ One Piece - Adventure of Nebulandia (2015):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: Adventure in the Ocean's Navel
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -11324,7 +11363,7 @@ One Piece - Baron Omatsuri and the Secret Island (2005):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: One Piece Defeat the Pirate Ganzack! (OVA 1)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -11376,7 +11415,7 @@ One Piece - Chopper's Kingdom on the Island of Strange Animals (2002):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: Chopper's Kingdom on the Island of Strange Animals
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -11427,7 +11466,7 @@ One Piece - Clockwork Island Adventure (2001):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: Clockwork Island Adventure
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -11479,7 +11518,7 @@ One Piece - Curse of the Sacred Sword (2004):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: One Piece Defeat the Pirate Ganzack! (OVA 1)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -11528,7 +11567,7 @@ One Piece - Dead End Adventure (2003):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: Dead End Adventure
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -11585,7 +11624,7 @@ One Piece - Episode of Chopper Plus - Bloom in the Winter, Miracle Cherry Blosso
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: One Piece Defeat the Pirate Ganzack! (OVA 1)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -11642,7 +11681,7 @@ One Piece - Episode of Luffy - Hand Island Adventure (2012):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: One Piece The Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -11695,7 +11734,7 @@ One Piece - Episode of Skypiea (2018):
         in the Ocean\s Navel SDTV.avi" -> \../../../../movies/foreign/One Piece -
         Episode of Skypiea (2018)/One Piece- Episode of Skypiea (2018) Bluray-1080p.mkv
       Title: Adventure in the Ocean's Navel
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -11747,7 +11786,7 @@ One Piece - Giant Mecha Soldier of Karakuri Castle (2006):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: One Piece Defeat the Pirate Ganzack! (OVA 1)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -11795,7 +11834,7 @@ One Piece - Heart of Gold (2016):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: Adventure in the Ocean's Navel
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -11841,7 +11880,7 @@ One Piece - Jango's Dance Carnival (2001):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: Jango's Dance Carnival
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -11891,7 +11930,7 @@ One Piece - Romance Dawn Story (2008):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: One Piece Defeat the Pirate Ganzack! (OVA 1)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -11939,7 +11978,7 @@ One Piece - Strong World Episode 0 (2010):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: One Piece The Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -11993,7 +12032,7 @@ One Piece - The Desert Princess and the Pirates - Adventure in Alabasta (2007):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: One Piece Defeat the Pirate Ganzack! (OVA 1)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -12042,7 +12081,7 @@ One Piece - The Movie (2000):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: One Piece The Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -12089,7 +12128,7 @@ One Piece 3D - Straw Hat Chase (2011):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: One Piece The Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -12143,7 +12182,7 @@ One Piece 3D2Y - Overcome Ace's Death! Luffy's Vow to his Friends (2014):
         - Overcome Ace\\\\\s Death! Luffy\\\\\s Vow to his Friends (2014)/One Piece
         3D2Y - Overcome Ace\\\\\s Death! Luffy\\\\\s Vow to his Friends (2014) Bluray-720p.mkv
       Title: Adventure in the Ocean's Navel
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -12197,7 +12236,7 @@ One Piece Episode of East Blue Luffy and His 4 Crewmate's Big Adventure (2017):
         of East Blue Luffy and His 4 Crewmate\\\\\s Big Adventure (2017)/One Piece
         Episode of East Blue Luffy and His 4 Crewmate\\\\\s Big Adventure (2017) Bluray-1080p.mkv
       Title: Adventure in the Ocean's Navel
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -12246,7 +12285,7 @@ One Piece Episode of Merry - The Tale of One More Friend (2013):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: One Piece The Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -12300,7 +12339,7 @@ One Piece Episode of Nami - Tears of a Navigator and the Bonds of Friends (2012)
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: One Piece The Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -12352,7 +12391,7 @@ One Piece Film - GOLD (2016):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: Adventure in the Ocean's Navel
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -12403,7 +12442,7 @@ One Piece Film - Strong World (2009):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: One Piece Defeat the Pirate Ganzack! (OVA 1)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -12451,7 +12490,7 @@ One Piece Film - Z (2012):
       Show Root Path: anime/shounen/One Piece
       Symlinked: ''
       Title: One Piece The Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -12498,7 +12537,7 @@ One Punch Man- Road to Hero (2015):
         to Hero DVD.mkv -> ../../../../movies/foreign/One Punch Man- Road to Hero
         (2015)/One Punch Man- Road to Hero (2015) DVD.mkv
       Title: Road to Hero
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt4508902
       seriesId: 171
       tvdbId: 293088
@@ -12549,7 +12588,7 @@ Overlord Movie 1- The Undead King (2017):
         \xe4\xb8\x8d\xe6\xad\xbb\xe8\x80\x85\xe3\x81\xae\xe7\x8e\x8b\xe3\x80\x90\xe5\x89\x8d\xe7\xb7\xa8\xe3\x80\x91
         (2017) Remux-1080p.mkv
       Title: Pure Pure Pleiades - Play 1 Overlord and Beginning
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt4869896
       seriesId: 88
       tvdbId: 294002
@@ -12603,7 +12642,7 @@ Overlord Movie 2- The Dark Warrior (2017):
         \xe6\xbc\x86\xe9\xbb\x92\xe3\x81\xae\xe8\x8b\xb1\xe9\x9b\x84\xe3\x80\x90\xe5\xbe\x8c\xe7\xb7\xa8\xe3\x80\x91
         (2017) Remux-1080p.mkv
       Title: Pure Pure Pleiades - Play 1 Overlord and Beginning
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt4869896
       seriesId: 88
       tvdbId: 294002
@@ -12647,7 +12686,7 @@ Parasyte- Part 1 (2014):
       Show Root Path: anime/staging/Parasyte
       Symlinked: ''
       Title: Parasyte Part 1
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt3358020
       seriesId: 173
       tvdbId: 279831
@@ -12689,7 +12728,7 @@ Parasyte- Part 2 (2015):
       Show Root Path: anime/staging/Parasyte
       Symlinked: ''
       Title: Parasyte Part 2
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt3358020
       seriesId: 173
       tvdbId: 279831
@@ -12732,7 +12771,7 @@ Parks and Recreation- Cast and Creators Live at PALEYFEST 2014 (2014):
       Show Root Path: tv/sitcom/Parks and Recreation
       Symlinked: ''
       Title: April & Andy's Road Trip (1) Spider
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1266020
       seriesId: 436
       tvdbId: 84912
@@ -12772,7 +12811,7 @@ Parks and Recreation- Cast and Creators Live at PALEYFEST 2014 (2014):
       Show Root Path: tv/staging/Persona 4- The Animation
       Symlinked: ''
       Title: 'Persona 3 The Movie #1 Spring of Birth'
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt2387612
       seriesId: 174
       tvdbId: 252232
@@ -12859,7 +12898,7 @@ Parks and Recreation- Cast and Creators Live at PALEYFEST 2014 (2014):
       Show Root Path: tv/staging/Persona 4- The Animation
       Symlinked: ''
       Title: 'Persona 3 The Movie #3 Falling Down'
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt2387612
       seriesId: 174
       tvdbId: 252232
@@ -12900,7 +12939,7 @@ Parks and Recreation- Cast and Creators Live at PALEYFEST 2014 (2014):
       Show Root Path: tv/staging/Persona 4- The Animation
       Symlinked: ''
       Title: 'Persona 3 The Movie #4 Winter of Rebirth'
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt2387612
       seriesId: 174
       tvdbId: 252232
@@ -12946,7 +12985,7 @@ Persona 4 the Animation- No One is Alone (0):
         4 the Animation- No One is Alone (0)/Persona 4 the Animation- No One is Alone
         (0) Bluray-1080p.mkv
       Title: True End No One is Alone
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt2387612
       seriesId: 174
       tvdbId: 252232
@@ -12987,7 +13026,7 @@ Persona 4- The Animation -The Factor of Hope- (2012):
       Show Root Path: tv/staging/Persona 4- The Animation
       Symlinked: ''
       Title: The Factor of Hope
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt2387612
       seriesId: 174
       tvdbId: 252232
@@ -13027,7 +13066,7 @@ Persona 5 the Animation- The Day Breakers (2016):
       Show Root Path: tv/staging/Persona 4- The Animation
       Symlinked: ''
       Title: Persona 5 - The Day Breakers
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt2387612
       seriesId: 174
       tvdbId: 252232
@@ -13066,7 +13105,7 @@ Prelude to Axanar (2014):
       Show Root Path: tv/staging/Star Trek- Axanar
       Symlinked: ''
       Title: Prelude to Axanar
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt3572740
       seriesId: 377
       tvdbId: 342359
@@ -13110,7 +13149,7 @@ Prison School- Mad Wax (2016):
         - Mad Wax DVD.mkv -> ../../../../movies/foreign/Prison School- Mad Wax (2016)/Prison
         School- Mad Wax (2016) DVD.mkv
       Title: Mad Wax
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt4917066
       seriesId: 90
       tvdbId: 293267
@@ -13152,7 +13191,7 @@ Psych- The Movie (2017):
         -> ../../../../movies/staging/Psych- The Movie (2017)/Psych- The Movie (2017)
         WEBDL-1080p.mkv
       Title: Psych The Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0491738
       seriesId: 216
       tvdbId: 79335
@@ -13195,7 +13234,7 @@ Psych- The Musical (2013):
         Little Shawn and Gus WEBDL-1080p.mkv -> ../../../../movies/staging/Psych-
         The Musical (2013)/Psych- The Musical (2013) WEBDL-1080p.mkv
       Title: The Big Adventures of Little Shawn and Gus
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0491738
       seriesId: 216
       tvdbId: 79335
@@ -13236,7 +13275,7 @@ Psycho-Pass- The Movie (2015):
       Show Root Path: anime/staging/Psycho-Pass
       Symlinked: ''
       Title: Criminal Coefficient / Those Capable (Extended)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt2379308
       seriesId: 176
       tvdbId: 262090
@@ -13290,7 +13329,7 @@ Puella Magi Madoka Magica the Movie Part I- Beginnings (2012):
       Show Root Path: anime/staging/Puella Magi Madoka Magica
       Symlinked: ''
       Title: Madoka Magica the Movie Part I The Beginning Story
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1773185
       seriesId: 91
       tvdbId: 219181
@@ -13344,7 +13383,7 @@ Puella Magi Madoka Magica the Movie Part II- Eternal (2012):
       Show Root Path: anime/staging/Puella Magi Madoka Magica
       Symlinked: ''
       Title: Madoka Magica the Movie Part II The Eternal Story
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1773185
       seriesId: 91
       tvdbId: 219181
@@ -13399,7 +13438,7 @@ Puella Magi Madoka Magica the Movie Part III- Rebellion (2013):
       Show Root Path: anime/staging/Puella Magi Madoka Magica
       Symlinked: ''
       Title: Madoka Magica the Movie Part III The Rebellion Story
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1773185
       seriesId: 91
       tvdbId: 219181
@@ -13454,7 +13493,7 @@ Red vs. Blue- Out of Mind (2006):
       Show Root Path: tv/staging/Red vs. Blue
       Symlinked: ''
       Title: Episode 0 - The Cast
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0401747
       seriesId: 289
       tvdbId: 78896
@@ -13548,7 +13587,7 @@ Robot Chicken DC Comics Special II- Villains in Paradise (2014):
       Show Root Path: tv/animated/Robot Chicken
       Symlinked: ''
       Title: Sweet J Presents
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0437745
       seriesId: 291
       tvdbId: 75734
@@ -13587,7 +13626,7 @@ Robot Chicken DC Comics Special III- Magical Friendship (2015):
       Show Root Path: tv/animated/Robot Chicken
       Symlinked: ''
       Title: Sweet J Presents
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0437745
       seriesId: 291
       tvdbId: 75734
@@ -13625,7 +13664,7 @@ Robot Chicken- Christmas Specials (2014):
       Show Root Path: tv/animated/Robot Chicken
       Symlinked: ''
       Title: Robot Chicken Christmas Special
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0437745
       seriesId: 291
       tvdbId: 75734
@@ -13665,7 +13704,7 @@ Robot Chicken- DC Comics Special (2012):
       Show Root Path: tv/animated/Robot Chicken
       Symlinked: ''
       Title: Sweet J Presents
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0437745
       seriesId: 291
       tvdbId: 75734
@@ -13704,7 +13743,7 @@ Robot Chicken- Star Wars (2007):
       Show Root Path: tv/animated/Robot Chicken
       Symlinked: ''
       Title: Robot Chicken Star Wars Special
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0437745
       seriesId: 291
       tvdbId: 75734
@@ -13741,7 +13780,7 @@ Robot Chicken- Star Wars Episode II (2008):
       Show Root Path: tv/animated/Robot Chicken
       Symlinked: ''
       Title: Robot Chicken Star Wars Special II
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0437745
       seriesId: 291
       tvdbId: 75734
@@ -13778,7 +13817,7 @@ Robot Chicken- Star Wars Episode III (2010):
       Show Root Path: tv/animated/Robot Chicken
       Symlinked: ''
       Title: Sweet J Presents
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0437745
       seriesId: 291
       tvdbId: 75734
@@ -13847,7 +13886,7 @@ Rurouni Kenshin The Movie (1997):
       Show Root Path: tv/staging/Rurouni Kenshin
       Symlinked: ''
       Title: Requiem for Patriots (The Movie)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0182629
       seriesId: 95
       tvdbId: 70863
@@ -13929,7 +13968,7 @@ Rurouni Kenshin- New Kyoto Arc- Cage of Flames (2011):
       Show Root Path: tv/staging/Rurouni Kenshin
       Symlinked: ''
       Title: New Kyoto Arc OAV Act 1 - Cage of Flames
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0182629
       seriesId: 95
       tvdbId: 70863
@@ -13977,7 +14016,7 @@ Rurouni Kenshin- New Kyoto Arc- The Chirps of Light (2012):
       Show Root Path: tv/staging/Rurouni Kenshin
       Symlinked: ''
       Title: New Kyoto Arc OAV Act 2 - The Chirps of Light
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0182629
       seriesId: 95
       tvdbId: 70863
@@ -14020,7 +14059,7 @@ Rurouni Kenshin- Reflection Director's Cut (2002):
       Show Root Path: tv/staging/Rurouni Kenshin
       Symlinked: ''
       Title: Reflections OAV Act 1 - Beginnings
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0182629
       seriesId: 95
       tvdbId: 70863
@@ -14077,7 +14116,7 @@ Rurouni Kenshin- Trust & Betrayal Director's Cut (0):
       Show Root Path: tv/staging/Rurouni Kenshin
       Symlinked: ''
       Title: Trust and Betrayal OAV Act 1 - The Man of the Slashing Sword
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0182629
       seriesId: 95
       tvdbId: 70863
@@ -14117,7 +14156,7 @@ Sacred Seven- Shirogane no Tsubasa (2012):
       Show Root Path: tv/staging/Sacred Seven
       Symlinked: ''
       Title: Shirogane no Tsubasa
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1980688
       seriesId: 96
       tvdbId: 249939
@@ -14157,7 +14196,7 @@ Saga of Tanya the Evil Movie (2019):
       Show Root Path: tv/staging/Saga of Tanya the Evil
       Symlinked: ''
       Title: "Saga of Tanya the Evil \u300CMini\u300D - Episode 00"
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt6455986
       seriesId: 550
       tvdbId: 315500
@@ -14198,7 +14237,7 @@ Sailor Moon - Sailor Stars (1996):
       Show Root Path: anime/staging/Sailor Moon
       Symlinked: ''
       Title: Sailor Moon R The Movie Special Make Up! Sailor Soldiers
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0103369
       seriesId: 540
       tvdbId: 78500
@@ -14240,7 +14279,7 @@ Sailor Moon - Sailor Stars (Revision) (1997):
       Show Root Path: anime/staging/Sailor Moon
       Symlinked: ''
       Title: Sailor Moon R The Movie Special Make Up! Sailor Soldiers
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0103369
       seriesId: 540
       tvdbId: 78500
@@ -14280,7 +14319,7 @@ Sailor Moon R- The Movie (1993):
       Show Root Path: anime/staging/Sailor Moon
       Symlinked: ''
       Title: Sailor Moon R The Movie Special Make Up! Sailor Soldiers
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0103369
       seriesId: 540
       tvdbId: 78500
@@ -14321,7 +14360,7 @@ Sailor Moon S The Movie- Hearts In Ice (1994):
       Show Root Path: anime/staging/Sailor Moon
       Symlinked: ''
       Title: Sailor Moon S The Movie Hearts in Ice
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0103369
       seriesId: 540
       tvdbId: 78500
@@ -14363,7 +14402,7 @@ Sailor Moon Super S- Ami's First Love (1995):
       Show Root Path: anime/staging/Sailor Moon
       Symlinked: ''
       Title: Sailor Moon Super S The Movie Short Ami's First Love
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0103369
       seriesId: 540
       tvdbId: 78500
@@ -14404,7 +14443,7 @@ Sailor Moon Super S- The Movie (1995):
       Show Root Path: anime/staging/Sailor Moon
       Symlinked: ''
       Title: Sailor Moon Super S The Movie Miracle of the Black Dream Hole
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0103369
       seriesId: 540
       tvdbId: 78500
@@ -14462,7 +14501,7 @@ Saint Seiya Heaven Chapter- Overture (2004):
       Show Root Path: anime/staging/Saint Seiya
       Symlinked: ''
       Title: Heaven Chapter - Overture
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0161952
       seriesId: 97
       tvdbId: 72775
@@ -14507,7 +14546,7 @@ Saint Seiya- Evil Goddess Eris (1987):
       Show Root Path: anime/staging/Saint Seiya
       Symlinked: ''
       Title: Evil Goddess Eris
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0161952
       seriesId: 97
       tvdbId: 72775
@@ -14565,7 +14604,7 @@ Saint Seiya- Legend of Crimson Youth (1988):
       Show Root Path: anime/staging/Saint Seiya
       Symlinked: ''
       Title: Legend of Crimson Youth
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0161952
       seriesId: 97
       tvdbId: 72775
@@ -14606,7 +14645,7 @@ Saint Seiya- Legend of Sanctuary (2014):
       Show Root Path: anime/staging/Saint Seiya
       Symlinked: ''
       Title: Legend of Sanctuary
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0161952
       seriesId: 97
       tvdbId: 72775
@@ -14645,7 +14684,7 @@ Saint Seiya- The Hades Chapter - Elysion (2008):
       Symlinked: ''
       Title: The Hades Chapter - Sanctuary Myth of the resurrected Gold Saints (Part
         1)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0161952
       seriesId: 97
       tvdbId: 72775
@@ -14687,7 +14726,7 @@ Saint Seiya- The Heated Battle of the Gods (1988):
       Show Root Path: anime/staging/Saint Seiya
       Symlinked: ''
       Title: The Heated Battle of the Gods
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0161952
       seriesId: 97
       tvdbId: 72775
@@ -14732,7 +14771,7 @@ Saint Seiya- Warriors of the Final Holy Battle (1989):
       Show Root Path: anime/staging/Saint Seiya
       Symlinked: ''
       Title: Warriors of the Final Holy Battle
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0161952
       seriesId: 97
       tvdbId: 72775
@@ -14806,7 +14845,7 @@ Saturday Night Live 25th Anniversary (1999):
       Show Root Path: tv/staging/Saturday Night Live
       Symlinked: ''
       Title: SNL Film Festival
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0072562
       seriesId: 219
       tvdbId: 76177
@@ -14844,7 +14883,7 @@ Saturday Night Live 40th Anniversary Special (2015):
       Show Root Path: tv/staging/Saturday Night Live
       Symlinked: ''
       Title: SNL 40th Anniversary Special
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0072562
       seriesId: 219
       tvdbId: 76177
@@ -14882,7 +14921,7 @@ Saturday Night Live- 15th Anniversary (1989):
       Show Root Path: tv/staging/Saturday Night Live
       Symlinked: ''
       Title: Things We Did Last Summer
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0072562
       seriesId: 219
       tvdbId: 76177
@@ -14919,7 +14958,7 @@ Saturday Night Live- Christmas (1999):
       Show Root Path: tv/staging/Saturday Night Live
       Symlinked: ''
       Title: Christmas Special
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0072562
       seriesId: 219
       tvdbId: 76177
@@ -14958,7 +14997,7 @@ Saturday Night Live- Halloween (2003):
       Show Root Path: tv/staging/Saturday Night Live
       Symlinked: ''
       Title: Things We Did Last Summer
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0072562
       seriesId: 219
       tvdbId: 76177
@@ -14995,7 +15034,7 @@ Saturday Night Live- Thanksgiving (2013):
       Show Root Path: tv/staging/Saturday Night Live
       Symlinked: ''
       Title: Thanksgiving Special 2013
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0072562
       seriesId: 219
       tvdbId: 76177
@@ -15033,7 +15072,7 @@ Saturday Night Live- The Best of Adam Sandler (1999):
       Show Root Path: tv/staging/Saturday Night Live
       Symlinked: ''
       Title: Things We Did Last Summer
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0072562
       seriesId: 219
       tvdbId: 76177
@@ -15071,7 +15110,7 @@ Saturday Night Live- The Best of Amy Poehler (2009):
       Show Root Path: tv/staging/Saturday Night Live
       Symlinked: ''
       Title: Best of Amy Poehler
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0072562
       seriesId: 219
       tvdbId: 76177
@@ -15109,7 +15148,7 @@ Saturday Night Live- The Best of Chris Farley (2003):
       Show Root Path: tv/staging/Saturday Night Live
       Symlinked: ''
       Title: Things We Did Last Summer
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0072562
       seriesId: 219
       tvdbId: 76177
@@ -15147,7 +15186,7 @@ Saturday Night Live- The Best of Chris Rock (1999):
       Show Root Path: tv/staging/Saturday Night Live
       Symlinked: ''
       Title: Things We Did Last Summer
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0072562
       seriesId: 219
       tvdbId: 76177
@@ -15223,7 +15262,7 @@ Saturday Night Live- The Best of Dan Aykroyd (2005):
       Show Root Path: tv/staging/Saturday Night Live
       Symlinked: ''
       Title: Things We Did Last Summer
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0072562
       seriesId: 219
       tvdbId: 76177
@@ -15261,7 +15300,7 @@ Saturday Night Live- The Best of Dana Carvey (1999):
       Show Root Path: tv/staging/Saturday Night Live
       Symlinked: ''
       Title: SNL Film Festival
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0072562
       seriesId: 219
       tvdbId: 76177
@@ -15299,7 +15338,7 @@ Saturday Night Live- The Best of David Spade (2005):
       Show Root Path: tv/staging/Saturday Night Live
       Symlinked: ''
       Title: Things We Did Last Summer
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0072562
       seriesId: 219
       tvdbId: 76177
@@ -15337,7 +15376,7 @@ Saturday Night Live- The Best of Eddie Murphy (1998):
       Show Root Path: tv/staging/Saturday Night Live
       Symlinked: ''
       Title: SNL Film Festival
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0072562
       seriesId: 219
       tvdbId: 76177
@@ -15375,7 +15414,7 @@ Saturday Night Live- The Best of John Belushi (2005):
       Show Root Path: tv/staging/Saturday Night Live
       Symlinked: ''
       Title: Things We Did Last Summer
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0072562
       seriesId: 219
       tvdbId: 76177
@@ -15413,7 +15452,7 @@ Saturday Night Live- The Best of Mike Myers (1998):
       Show Root Path: tv/staging/Saturday Night Live
       Symlinked: ''
       Title: Things We Did Last Summer
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0072562
       seriesId: 219
       tvdbId: 76177
@@ -15451,7 +15490,7 @@ Saturday Night Live- The Best of Phil Hartman (1998):
       Show Root Path: tv/staging/Saturday Night Live
       Symlinked: ''
       Title: Things We Did Last Summer
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0072562
       seriesId: 219
       tvdbId: 76177
@@ -15492,7 +15531,7 @@ Saturday Night Live- The Best of Will Ferrell (2002):
       Show Root Path: tv/staging/Saturday Night Live
       Symlinked: ''
       Title: Things We Did Last Summer
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0072562
       seriesId: 219
       tvdbId: 76177
@@ -15530,7 +15569,7 @@ Saturday Night Live- The Best of Will Ferrell - Volume 2 (2004):
       Show Root Path: tv/staging/Saturday Night Live
       Symlinked: ''
       Title: Things We Did Last Summer
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0072562
       seriesId: 219
       tvdbId: 76177
@@ -15574,7 +15613,7 @@ Scooby-Doo! & Batman- The Brave and the Bold (2018):
       Show Root Path: tv/superhero/Batman- The Brave and the Bold
       Symlinked: ''
       Title: Scooby-Doo & Batman The Brave and the Bold
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1213218
       seriesId: 464
       tvdbId: 82824
@@ -15628,7 +15667,7 @@ Seinfeld- How It Began (2004):
       Show Root Path: tv/staging/Seinfeld
       Symlinked: ''
       Title: Good News Bad News (Alternative pilot)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0098904
       seriesId: 441
       tvdbId: 79169
@@ -15669,7 +15708,7 @@ Serenity (2005):
       Symlinked: tv/scifi/Firefly/Season 00/Firefly - S00E01 - Serenity Bluray-2160p.mkv
         -> ../../../../movies/thrillers/Serenity (2005)/Serenity (2005) Bluray-2160p.mkv
       Title: Serenity
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0303461
       seriesId: 368
       tvdbId: 78874
@@ -15732,7 +15771,7 @@ Sherlock- The Abominable Bride (2016):
         Bluray-1080p.mkv -> ../../../../movies/thrillers/Sherlock- The Abominable
         Bride (2016)/Sherlock- The Abominable Bride (2015) Bluray-1080p.mkv
       Title: The Abominable Bride
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1475582
       seriesId: 319
       tvdbId: 176941
@@ -15776,7 +15815,7 @@ South Park- Bigger, Longer & Uncut (1999):
         Park- Bigger, Longer & Uncut (1999)/South Park- Bigger, Longer & Uncut (1999)
         Bluray-1080p.mkv
       Title: South Park Bigger Longer & Uncut
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0121955
       seriesId: 293
       tvdbId: 75897
@@ -15813,7 +15852,7 @@ South Park- Imaginationland (2008):
       Show Root Path: tv/animated/South Park
       Symlinked: ''
       Title: The Imaginationland Trilogy
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0121955
       seriesId: 293
       tvdbId: 75897
@@ -15873,7 +15912,7 @@ Star Trek 25th Anniversary Special (1991):
       Show Root Path: tv/scifi/Star Trek
       Symlinked: ''
       Title: Star Trek's 25th Anniversary Special
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0060028
       seriesId: 374
       tvdbId: 77526
@@ -15915,7 +15954,7 @@ Star Trek Secret Voyage- Whose Birth These Triumphs Are (2012):
       Show Root Path: tv/staging/Star Trek- Secret Voyage
       Symlinked: ''
       Title: Whose Birth These Triumphs Are
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt9149834
       seriesId: 390
       tvdbId: 280842
@@ -15955,7 +15994,7 @@ Star Trek- 30 Years and Beyond (1996):
       Show Root Path: tv/scifi/Star Trek
       Symlinked: ''
       Title: Star Trek 30 Years and Beyond
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0060028
       seriesId: 374
       tvdbId: 77526
@@ -15996,7 +16035,7 @@ Star Trek- A Captain's Log (1994):
       Show Root Path: tv/scifi/Star Trek
       Symlinked: ''
       Title: Star Trek A Captain's Log
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0060028
       seriesId: 374
       tvdbId: 77526
@@ -16036,7 +16075,7 @@ Star Trek- Axanar (2015):
       Show Root Path: tv/staging/Star Trek- Axanar
       Symlinked: ''
       Title: The Four Years War, part 4
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt3572740
       seriesId: 377
       tvdbId: 342359
@@ -16084,7 +16123,7 @@ Star Trek- Of Gods And Men (2007):
       Show Root Path: tv/staging/Star Trek- Of Gods and Men
       Symlinked: ''
       Title: Act 1
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0835378
       seriesId: 387
       tvdbId: 81460
@@ -16125,7 +16164,7 @@ Star Trek- Voyager - Inside The New Adventure (1995):
       Show Root Path: tv/staging/Star Trek- Voyager
       Symlinked: ''
       Title: Star Trek Inside The New Adventure
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0112178
       seriesId: 396
       tvdbId: 74550
@@ -16168,7 +16207,7 @@ Stargate (1994):
         SG-1 - Stargate- The Movie Bluray-1080p.mp4 -> ../../../../movies/staging/Stargate
         (1994)/Stargate (1994) Bluray-1080p.mp4
       Title: Stargate The Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0118480
       seriesId: 400
       tvdbId: 72449
@@ -16248,7 +16287,7 @@ Stargate SG-1- True Science (2006):
         SG-1 - True Science SDTV.avi -> ../../../../movies/staging/Stargate SG-1-
         True Science (2006)/Stargate SG-1- True Science (2006) SDTV.avi
       Title: Stargate SG-1 True Science
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0118480
       seriesId: 400
       tvdbId: 72449
@@ -16308,7 +16347,7 @@ Stargate- Continuum (2008):
         SG-1 - Continuum Bluray-1080p.mkv -> ../../../../movies/staging/Stargate-
         Continuum (2008)/Stargate- Continuum (2008) Bluray-1080p.mkv
       Title: Continuum
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0118480
       seriesId: 400
       tvdbId: 72449
@@ -16352,7 +16391,7 @@ Stargate- The Ark of Truth (2008):
         of Truth Bluray-1080p.mkv -> ../../../../movies/staging/Stargate- The Ark
         of Truth (2008)/Stargate- The Ark of Truth (2008) Bluray-1080p.mkv
       Title: The Ark of Truth
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0118480
       seriesId: 400
       tvdbId: 72449
@@ -16397,7 +16436,7 @@ Steins;Gate 0- Valentine's of Crystal Polymorphism - Bittersweet Intermedio (201
       Show Root Path: tv/staging/Steins;Gate 0
       Symlinked: ''
       Title: Valentine's of Crystal Polymorphism -Bittersweet Intermedio-
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt5514358
       seriesId: 103
       tvdbId: 339268
@@ -16446,7 +16485,7 @@ Steins;Gate- Egoistic Poriomania (2012):
         - Egoistic Poriomania WEBDL-1080p.mp4 -> ../../../../movies/foreign/Steins;Gate-
         Egoistic Poriomania (2012)/Steins;Gate- Egoistic Poriomania (2012) WEBDL-1080p.mp4
       Title: Egoistic Poriomania
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1910272
       seriesId: 185
       tvdbId: 244061
@@ -16492,7 +16531,7 @@ Steins;Gate- Egoistic Poriomania (2012):
       Show Root Path: anime/staging/Steins;Gate
       Symlinked: ''
       Title: "Steins;Gate the Movie Loading Area of D\xE9j\xE0 vu"
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1910272
       seriesId: 185
       tvdbId: 244061
@@ -16559,7 +16598,7 @@ Sword Art Online- Extra Edition (2013):
         - Sword Art Offline 1 Bluray-1080p.mkv -> ../../../../movies/foreign/Sword
         Art Online- Extra Edition (2013)/Sword Art Online- Extra Edition (2013) Remux-1080p.mkv
       Title: Sword Art Offline 1
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt2250192
       seriesId: 105
       tvdbId: 259640
@@ -16616,7 +16655,7 @@ Sword Art Online- The Movie - Ordinal Scale (2017):
         -\xe3\x82\xaa\xe3\x83\xbc\xe3\x83\x87\xe3\x82\xa3\xe3\x83\x8a\xe3\x83\xab\xe3\x83\xbb\xe3\x82\xb9\xe3\x82\xb1\xe3\x83\xbc\xe3\x83\xab-
         (2017) Bluray-1080p.mkv
       Title: Sword Art Offline 2
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt2250192
       seriesId: 105
       tvdbId: 259640
@@ -16741,7 +16780,7 @@ Teen Titans- Trouble in Tokyo (2006):
         in Tokyo WEBDL-1080p.mkv -> ../../../../movies/staging/Teen Titans- Trouble
         in Tokyo (2006)/Teen Titans- Trouble in Tokyo (2006) WEBDL-1080p.mkv
       Title: Trouble in Tokyo
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0343314
       seriesId: 495
       tvdbId: 71503
@@ -16799,7 +16838,7 @@ The A-Team (2010):
         (2010) Bluray-1080p.mkv -> ../../../../movies/staging/The A-Team (2010)/The
         A-Team (2010) Bluray-1080p.mkv
       Title: The A-Team (2010)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0084967
       seriesId: 221
       tvdbId: 77904
@@ -16864,7 +16903,7 @@ The Batman vs. Dracula (2005):
         vs. Dracula WEBDL-1080p.mkv -> ../../../../movies/horror/The Batman vs. Dracula
         (2005)/The Batman vs. Dracula (2005) WEBDL-1080p.mkv
       Title: The Batman vs. Dracula
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0398417
       seriesId: 497
       tvdbId: 73180
@@ -16907,7 +16946,7 @@ The Cage (1965):
       Show Root Path: tv/scifi/Star Trek
       Symlinked: ''
       Title: The Cage (Original Pilot)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0060028
       seriesId: 374
       tvdbId: 77526
@@ -16947,7 +16986,7 @@ The Dark Knight's First Night (1991):
       Show Root Path: tv/superhero/Batman- The Animated Series
       Symlinked: ''
       Title: The Dark Knight's First Night
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0103359
       seriesId: 463
       tvdbId: 76168
@@ -16988,7 +17027,7 @@ The Day Naruto Became Hokage (2016):
       Show Root Path: anime/shounen/Boruto- Naruto Next Generations
       Symlinked: ''
       Title: Boruto Naruto the Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt6342474
       seriesId: 8
       tvdbId: 321285
@@ -17030,7 +17069,7 @@ The Dukes of Hazzard- Hazzard in Hollywood (2000):
       Show Root Path: tv/staging/The Dukes of Hazzard
       Symlinked: ''
       Title: Hazzard in Hollywood
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0078607
       seriesId: 222
       tvdbId: 77748
@@ -17072,7 +17111,7 @@ The Dukes of Hazzard- Reunion! (1997):
       Show Root Path: tv/staging/The Dukes of Hazzard
       Symlinked: ''
       Title: Reunion!
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0078607
       seriesId: 222
       tvdbId: 77748
@@ -17114,7 +17153,7 @@ The Dukes of Hazzard- The Beginning (2007):
       Show Root Path: tv/staging/The Dukes of Hazzard
       Symlinked: ''
       Title: The Dukes of Hazzard The Beginning
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0078607
       seriesId: 222
       tvdbId: 77748
@@ -17157,7 +17196,7 @@ The Evil Dead (1981):
         The Evil Dead Bluray-1080p.mkv -> ../../../../movies/horror/The Evil Dead
         (1981)/The Evil Dead (1981) Bluray-1080p.mkv
       Title: The Evil Dead
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt4189022
       seriesId: 332
       tvdbId: 296295
@@ -17200,7 +17239,7 @@ The Future Diary- Redial (2013):
         - Mirai Nikki Redial Bluray-720p.mp4 -> ../../../../movies/foreign/The Future
         Diary- Redial (2013)/The Future Diary- Redial (2013) Bluray-720p.mp4
       Title: Mirai Nikki Redial
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt2069441
       seriesId: 188
       tvdbId: 249827
@@ -17246,7 +17285,7 @@ The Garden of Sinners - Remix- Gate of Seventh Heaven (2009):
       Show Root Path: anime/staging/The Garden of Sinners
       Symlinked: ''
       Title: Remix Gate of Seventh Heaven
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1155650
       seriesId: 107
       tvdbId: 82099
@@ -17290,7 +17329,7 @@ The Garden of Sinners- Epilogue (2011):
       Show Root Path: anime/staging/The Garden of Sinners
       Symlinked: ''
       Title: Epilogue (Kara no Kyouka)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1155650
       seriesId: 107
       tvdbId: 82099
@@ -17340,7 +17379,7 @@ The Garden of Sinners- Future Gospel - Extra Chorus (2013):
       Show Root Path: anime/staging/The Garden of Sinners
       Symlinked: ''
       Title: Recalled Out Summer - Extra Chorus
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1155650
       seriesId: 107
       tvdbId: 82099
@@ -17380,7 +17419,7 @@ The IT Crowd Manual (2014):
       Show Root Path: tv/sitcom/The IT Crowd
       Symlinked: ''
       Title: The IT Crowd Manual
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0487831
       seriesId: 450
       tvdbId: 79216
@@ -17423,7 +17462,7 @@ The Last- Naruto the Movie (2014):
       Show Root Path: anime/shounen/Naruto Shippuden
       Symlinked: ''
       Title: Naruto Shippuuden the Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0988824
       seriesId: 168
       tvdbId: 79824
@@ -17462,7 +17501,7 @@ The Making of 'King of the Hill' (2003):
       Show Root Path: tv/staging/King of the Hill
       Symlinked: ''
       Title: The Making of King of the Hill
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0118375
       seriesId: 286
       tvdbId: 73903
@@ -17501,7 +17540,7 @@ The Making of 'The X Files- Fight the Future' (1998):
       Show Root Path: tv/scifi/The X-Files
       Symlinked: ''
       Title: The X-Files Fight the Future
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0106179
       seriesId: 409
       tvdbId: 77398
@@ -17540,7 +17579,7 @@ The Making of The Walking Dead (2010):
       Show Root Path: tv/fantasy/The Walking Dead
       Symlinked: ''
       Title: The Making of The Walking Dead
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1520211
       seriesId: 347
       tvdbId: 153021
@@ -17583,7 +17622,7 @@ The Making of The Walking Dead (2010):
       Show Root Path: tv/animated/Robot Chicken
       Symlinked: ''
       Title: Sweet J Presents
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0437745
       seriesId: 291
       tvdbId: 75734
@@ -17624,7 +17663,7 @@ The Robot Chicken Walking Dead Special- Look Who's Walking (2017):
       Show Root Path: tv/animated/Robot Chicken
       Symlinked: ''
       Title: Sweet J Presents
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0437745
       seriesId: 291
       tvdbId: 75734
@@ -17659,7 +17698,7 @@ The Seinfeld Story (2004):
       Show Root Path: tv/staging/Seinfeld
       Symlinked: ''
       Title: Good News Bad News (Alternative pilot)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0098904
       seriesId: 441
       tvdbId: 79169
@@ -17706,7 +17745,7 @@ The Seven Deadly Sins - Prisoners of the Sky (2018):
       Show Root Path: anime/shounen/The Seven Deadly Sins
       Symlinked: ''
       Title: The Seven Deadly Sins Movie Prisoners of the Sky
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt3909224
       seriesId: 108
       tvdbId: 284131
@@ -17761,7 +17800,7 @@ The Simpsons - Christmas (2003):
       Show Root Path: tv/sitcom/The Simpsons
       Symlinked: ''
       Title: Jumping Bart
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0096697
       seriesId: 455
       tvdbId: 71663
@@ -17873,7 +17912,7 @@ The Simpsons - Viva Los Simpsons (2005):
       Show Root Path: tv/sitcom/The Simpsons
       Symlinked: ''
       Title: The Pacifier
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0096697
       seriesId: 455
       tvdbId: 71663
@@ -17909,7 +17948,7 @@ The Simpsons Christmas 2 (2004):
       Show Root Path: tv/sitcom/The Simpsons
       Symlinked: ''
       Title: The Pacifier
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0096697
       seriesId: 455
       tvdbId: 71663
@@ -17983,7 +18022,7 @@ The Simpsons Movie (2007):
       Show Root Path: tv/sitcom/The Simpsons
       Symlinked: ''
       Title: The Pacifier
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0096697
       seriesId: 455
       tvdbId: 71663
@@ -18121,7 +18160,7 @@ The Wire Odyssey (2007):
       Show Root Path: tv/crime/The Wire
       Symlinked: ''
       Title: The Wire Odyssey
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0306414
       seriesId: 328
       tvdbId: 79126
@@ -18158,7 +18197,7 @@ The Wire- The Last Word (2007):
       Show Root Path: tv/crime/The Wire
       Symlinked: ''
       Title: The Wire The Last Word
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0306414
       seriesId: 328
       tvdbId: 79126
@@ -18201,7 +18240,7 @@ The X Files- I Want to Believe (2008):
         I Want to Believe Bluray-1080p.mkv -> ../../../../movies/staging/The X Files-
         I Want to Believe (2008)/The X Files- I Want to Believe (2008) Bluray-1080p.mkv
       Title: The X-Files I Want to Believe
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0106179
       seriesId: 409
       tvdbId: 77398
@@ -18246,7 +18285,7 @@ Thus Spoke Kishibe Rohan 2- Mutsu-kabe Hill (2018):
       Show Root Path: anime/staging/JoJo's Bizarre Adventure (2012)
       Symlinked: ''
       Title: Thus Spoke Kishibe Rohan Mutsukabe Hill
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt2359704
       seriesId: 141
       tvdbId: 262954
@@ -18254,7 +18293,7 @@ Thus Spoke Kishibe Rohan 2- Mutsu-kabe Hill (2018):
   Unparsed Title: 'Thus Spoke Kishibe Rohan 2: Mutsu-kabe Hill'
   Year: 2018
 Tiger & Bunny (0):
-  Absolute Movie File Path:
+  Absolute Movie File Path: null
   Absolute Movie Path: /media/video/movies/foreign/Tiger & Bunny (0)
   Has File: false
   Monitored: true
@@ -18266,19 +18305,23 @@ Tiger & Bunny (0):
   Relative Movie Path: movies/foreign/Tiger & Bunny (0)
   Shows:
     Tiger & Bunny: null
-  Title: Tiger & Bunny
+  Title: Tiger & Bunny (2019)
   Unparsed Title: Tiger & Bunny
   Year: 2019
 Tiger & Bunny - The Movie- The Rising (2014):
-  Absolute Movie File Path: /media/video/movies/foreign/Tiger & Bunny - The Movie- The Rising (2014)/劇場版 Tiger & Bunny -the Rising- (2014) Bluray-1080p.mkv
-  Absolute Movie Path: /media/video/movies/foreign/Tiger & Bunny - The Movie- The Rising (2014)
+  Absolute Movie File Path: "/media/video/movies/foreign/Tiger & Bunny - The Movie-\
+    \ The Rising (2014)/\u5287\u5834\u7248 Tiger & Bunny -the Rising- (2014) Bluray-1080p.mkv"
+  Absolute Movie Path: /media/video/movies/foreign/Tiger & Bunny - The Movie- The
+    Rising (2014)
   Has File: true
   Monitored: true
   Movie DB ID: 258807
-  Movie File: ''
+  Movie File: "\u5287\u5834\u7248 Tiger & Bunny -the Rising- (2014) Bluray-1080p.mkv"
+  Parsed Extension: mkv
   Parsed Movie Extension: ''
-  Parsed Movie Quality: ''
-  Relative Movie File Path: movies/foreign/Tiger & Bunny - The Movie- The Rising (2014)/劇場版 Tiger & Bunny -the Rising- (2014) Bluray-1080p.mkv
+  Parsed Movie Quality: Bluray-1080p
+  Relative Movie File Path: "movies/foreign/Tiger & Bunny - The Movie- The Rising\
+    \ (2014)/\u5287\u5834\u7248 Tiger & Bunny -the Rising- (2014) Bluray-1080p.mkv"
   Relative Movie Path: movies/foreign/Tiger & Bunny - The Movie- The Rising (2014)
   Shows:
     Tiger & Bunny:
@@ -18298,17 +18341,17 @@ Tiger & Bunny - The Movie- The Rising (2014):
       - Romance
       Show Root Path: anime/staging/Tiger & Bunny
       Symlinked: ''
-      Title: Tiger & Bunny- The Rising
-      episodeFileId: 0
-      seriesId: 109
+      Title: Tiger & Bunny The Beginning
+      episodeFileId: ''
       imdbId: tt3740548
+      seriesId: 109
       tvdbId: 296279
-  Title: Tiger & Bunny - The Movie- The Rising
-  Unparsed Title: Tiger & Bunny - The Movie- The Rising
+  Title: "\u5287\u5834\u7248 Tiger & Bunny -the Rising- (2019)"
+  Unparsed Title: "\u5287\u5834\u7248 Tiger & Bunny -the Rising-"
   Year: 2019
 Tiger & Bunny- The Beginning (2012):
   Absolute Movie File Path: ''
-  Absolute Movie Path: /media/video/movies/foreign/Tiger & Bunny- The Beginning (2012)
+  Absolute Movie Path: /media/video/movies/staging/Bill Burr- Paper Tiger (2019)
   Has File: false
   Monitored: true
   Movie DB ID: 625128
@@ -18316,15 +18359,15 @@ Tiger & Bunny- The Beginning (2012):
   Parsed Movie Extension: ''
   Parsed Movie Quality: ''
   Relative Movie File Path: ''
-  Relative Movie Path: movies/foreign/Tiger & Bunny- The Beginning (2012)
+  Relative Movie Path: movies/staging/Bill Burr- Paper Tiger (2019)
   Shows:
     Tiger & Bunny:
       Anime: true
       Episode: '3'
       Episode ID: '47708'
-      Parsed Episode: '03'
+      Parsed Episode: '003'
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/staging/Tiger & Bunny/Season 00/Tiger & Bunny - S00E03
+      Parsed Show Title: anime/staging/Tiger & Bunny/Season 00/Tiger & Bunny - S00E003
         - Tiger & Bunny The Rising
       Relative Show File Path: ''
       Relative Show Path: anime/staging/Tiger & Bunny/Season 00
@@ -18336,12 +18379,12 @@ Tiger & Bunny- The Beginning (2012):
       Show Root Path: anime/staging/Tiger & Bunny
       Symlinked: ''
       Title: Tiger & Bunny The Rising
-      episodeFileId: 0
-      seriesId: 109
+      episodeFileId: ''
       imdbId: tt3740548
+      seriesId: 109
       tvdbId: 296279
-  Title: Tiger & Bunny- The Beginning
-  Unparsed Title: Tiger & Bunny- The Beginning
+  Title: Bill Burr- Paper Tiger (2012)
+  Unparsed Title: 'Bill Burr: Paper Tiger'
   Year: 2012
 Tiger & Bunny- Too Many Cooks Spoil the Broth (2015):
   Absolute Movie File Path: ''
@@ -18395,7 +18438,7 @@ Top Gear- 50 Years Of Bond Cars (2012):
       Show Root Path: tv/reality/Top Gear
       Symlinked: ''
       Title: Series 4 Best of
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -18435,7 +18478,7 @@ Top Gear- Apocalypse (2010):
       Show Root Path: tv/reality/Top Gear
       Symlinked: ''
       Title: Series 3 Best of
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -18475,7 +18518,7 @@ Top Gear- At the Movies (2011):
       Show Root Path: tv/reality/Top Gear
       Symlinked: ''
       Title: Series 3 Best of
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -18516,7 +18559,7 @@ Top Gear- Botswana Special (2007):
       Show Root Path: tv/reality/Top Gear
       Symlinked: ''
       Title: Series 4 Best of
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -18556,7 +18599,7 @@ Top Gear- Burma Special (2014):
       Show Root Path: tv/reality/Top Gear
       Symlinked: ''
       Title: Series 7 Best of
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -18617,7 +18660,7 @@ Top Gear- Middle East Special (2011):
       Show Root Path: tv/reality/Top Gear
       Symlinked: ''
       Title: Series 3 Best of
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -18660,7 +18703,7 @@ Top Gear- Patagonia Special- Part 1 (2014):
       Show Root Path: tv/reality/Top Gear
       Symlinked: ''
       Title: Series 5 Best of
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -18703,7 +18746,7 @@ Top Gear- Patagonia Special- Part 2 (2014):
       Show Root Path: tv/reality/Top Gear
       Symlinked: ''
       Title: Series 5 Best of
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -18761,7 +18804,7 @@ Top Gear- The Challenges (2007):
       Show Root Path: tv/reality/Top Gear
       Symlinked: ''
       Title: Series 1 Best of
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -18820,7 +18863,7 @@ Top Gear- The Challenges 4 (2010):
       Show Root Path: tv/reality/Top Gear
       Symlinked: ''
       Title: Series 7 Best of
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -18862,7 +18905,7 @@ Top Gear- The Great African Adventure (2013):
       Show Root Path: tv/reality/Top Gear
       Symlinked: ''
       Title: Series 5 Best of
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -18903,7 +18946,7 @@ Top Gear- The India Special (2011):
       Show Root Path: tv/reality/Top Gear
       Symlinked: ''
       Title: Series 3 Best of
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -18943,7 +18986,7 @@ Top Gear- The Perfect Road Trip (2013):
       Show Root Path: tv/reality/Top Gear
       Symlinked: ''
       Title: Series 4 Best of
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -18984,7 +19027,7 @@ Top Gear- The Perfect Road Trip 2 (2014):
       Show Root Path: tv/reality/Top Gear
       Symlinked: ''
       Title: Series 5 Best of
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -19030,7 +19073,7 @@ Top Gear- The Worst Car In the History of the World (2012):
       Show Root Path: tv/reality/Top Gear
       Symlinked: ''
       Title: Series 4 Best of
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -19069,7 +19112,7 @@ Top Gear- Top Gear Of The Pops (0):
       Show Root Path: tv/reality/Top Gear
       Symlinked: ''
       Title: Series 1 Best of
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -19108,7 +19151,7 @@ Top Gear- Top Ground Gear Force (0):
       Show Root Path: tv/reality/Top Gear
       Symlinked: ''
       Title: Series 2 Best of
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -19148,7 +19191,7 @@ Top Gear- Uncovered (2009):
       Show Root Path: tv/reality/Top Gear
       Symlinked: ''
       Title: Series 4 Best of
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -19189,7 +19232,7 @@ Top Gear- Vietnam Special (2009):
       Show Root Path: tv/reality/Top Gear
       Symlinked: ''
       Title: Best of The Special Guests
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -19230,7 +19273,7 @@ Top Gear- Winter Olympics (2006):
       Show Root Path: tv/reality/Top Gear
       Symlinked: ''
       Title: Series 7 Best of
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -19278,7 +19321,7 @@ Toriko 3D Movie- Kaimaku! Gourmet Adventure!! (2011):
         Kaimaku! Gourmet Adventure!! (2011)/Toriko 3D Movie- Kaimaku! Gourmet Adventure!!
         (2011) Bluray-1080p.mp4
       Title: Kaimaku Gourmet Adventure!!
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1899047
       seriesId: 111
       tvdbId: 247231
@@ -19322,7 +19365,7 @@ Trigun - Badlands Rumble (2010):
       Show Root Path: anime/shounen/Trigun
       Symlinked: ''
       Title: Trigun the Movie Badlands Rumble
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0251439
       seriesId: 112
       tvdbId: 77680
@@ -19368,7 +19411,7 @@ Twilight Zone- The Movie (1983):
         Twilight Zone- The Movie Bluray-1080p.mkv -> ../../../../movies/horror/Twilight
         Zone- The Movie (1983)/Twilight Zone- The Movie (1983) Bluray-1080p.mkv
       Title: Twilight Zone The Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0052520
       seriesId: 406
       tvdbId: 73587
@@ -19411,7 +19454,7 @@ Unlocking Sherlock (2014):
         (2013) WEBDL-720p.mkv -> ../../../../movies/thrillers/Unlocking Sherlock (2014)/Unlocking
         Sherlock (2014) WEBDL-720p.mkv
       Title: Unlocking Sherlock (2013)
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1475582
       seriesId: 319
       tvdbId: 176941
@@ -19469,7 +19512,7 @@ Vixen- The Movie (2017):
       Symlinked: ''
       Title: Vixen The Movie
       Vixen: Vixen - S00E01 - Vixen- The Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt4406248
       seriesId: 501
       tvdbId: 298305
@@ -19530,7 +19573,7 @@ Watashi ga Motenai no wa Dou Kangaetemo Omaera ga Warui!- Motenaishi, Nazomeite 
       Show Root Path: anime/staging/WATAMOTE
       Symlinked: ''
       Title: Since I'm Not Popular, I'll Become an Enigma
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt2963556
       seriesId: 114
       tvdbId: 270062
@@ -19655,7 +19698,7 @@ Your Lie in April (2016):
       Show Root Path: anime/staging/Your lie in April
       Symlinked: ''
       Title: Your Lie in April Live Action Movie
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt3895150
       seriesId: 116
       tvdbId: 279830
@@ -19698,7 +19741,7 @@ Yu Yu Hakusho- The Movie (1993):
         Golden Seal Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Yu Yu Hakusho-
         The Movie (1993)/Yu Yu Hakusho- The Movie (1993) Remux-1080p.mkv
       Title: The Golden Seal
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0185133
       seriesId: 128
       tvdbId: 76665
@@ -19744,7 +19787,7 @@ Yu Yu Hakusho- The Movie - Poltergeist Report (1994):
         Report DVD.mkv -> ../../../../movies/foreign/Yu Yu Hakusho- The Movie - Poltergeist
         Report (1994)/Yu Yu Hakusho- The Movie - Poltergeist Report (1994) DVD.mkv
       Title: Poltergeist Report
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0185133
       seriesId: 128
       tvdbId: 76665
@@ -19787,7 +19830,7 @@ Yu Yu Hakusho- Two Shots (2018):
         Golden Seal Bluray-1080p Remux.mkv -> ../../../../movies/foreign/Yu Yu Hakusho-
         Two Shots (2018)/Yu Yu Hakusho- Two Shots (2018) Bluray-1080p.mkv
       Title: The Golden Seal
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0185133
       seriesId: 128
       tvdbId: 76665
@@ -19826,7 +19869,7 @@ Yu Yu Hakusho- Two Shots (2018):
       Show Root Path: anime/staging/Yu Yu Hakusho
       Symlinked: ''
       Title: Eizou Hakusho Dark Tournament, vol. 1
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0185133
       seriesId: 128
       tvdbId: 76665
@@ -19871,7 +19914,7 @@ anohana- The Flower We Saw That Day - The Movie (2013):
       Show Root Path: anime/staging/Anohana- The Flower We Saw That Day
       Symlinked: ''
       Title: Anohana The Movie - The Flower We Saw That Day
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt1913273
       seriesId: 134
       tvdbId: 247958
@@ -19922,7 +19965,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Show Root Path: anime/staging/xxxHOLiC
       Symlinked: ''
       Title: A Midsummer Night's Dream
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0488477
       seriesId: 194
       tvdbId: 79283
@@ -19967,7 +20010,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Show Root Path: anime/staging/xxxHOLiC
       Symlinked: ''
       Title: Rou
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0488477
       seriesId: 194
       tvdbId: 79283
@@ -20011,7 +20054,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Show Root Path: anime/staging/xxxHOLiC
       Symlinked: ''
       Title: Rou Adayume
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt0488477
       seriesId: 194
       tvdbId: 79283
@@ -20057,7 +20100,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Show Root Path: tv/staging/Cells at Work!
       Symlinked: ''
       Title: The Common Cold
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt8673610
       seriesId: 10
       tvdbId: 346931
@@ -20103,7 +20146,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Show Root Path: anime/staging/Attack on Titan
       Symlinked: ''
       Title: Since That Day
-      episodeFileId: 0
+      episodeFileId: ''
       imdbId: tt2560140
       seriesId: 121
       tvdbId: 267440
