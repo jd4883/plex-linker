@@ -218,9 +218,14 @@ class Show(Movie, Globals):
 		self.episode_dict = parse_series.parse_episode_dict(self, g)
 		self.anime_status = bool(parse_series.anime_status(self, g))
 		self.padding = parse_series.episode_padding(self, g)
-		self.link_status = fetch_series.symlink_status(self, g)
 		self.episode_file_id = parse_series.episode_file_id(self, g)
 		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)
+		link_status = str(self.episode_file_dict['path']).replace(str(os.environ['SONARR_ROOT_PATH_PREFIX']))
+		self.has_link = \
+			self.series_dict['Show Link Status'] = bool(True) if str(os.path.exists()) else bool()
+		self.link_status = fetch_series.symlink_status(self, g)
+		print(self.has_link)
+		breakpoint()
 		# need to add monitored and file status info for episodes to determine this part
 		# self.has_link =
 		# technically not in use but could be really useful as a means of checking if a link is needed
