@@ -237,6 +237,7 @@ class Show(Movie, Globals):
 		self.season_folder = parse_series.season_folder_from_api(self, g)
 		self.show_root_path = parse_series.show_root_folder(self, g)
 		self.relative_show_path = parse_series.relative_show_path(self, g)
+		print(self.episode_dict)
 		self.episode_title = episode_title(self, g)
 		self.parsed_show_title = parsed_show_title(self, g)
 		g.sonarr.rescan_series(self.tvdbId)  # rescan movie in case it was picked up since last scan
