@@ -213,10 +213,12 @@ def padded_absolute_episode(self, g):
 	list = []
 	for item in self.absolute_episode:
 		if type(item) == "<class 'list'>":
+			print(f"INNER LOOP TRIGGERED FOR LIST ITEM (item")
 			for i in item:
+				print(f"SUBITEM = {i}")
 				list.append(str(i).zfill(self.padding))
 		list.append(str(item).zfill(self.padding))
-	result = "-".join(str(i).zfill(self.padding) for i in list)
+	result = "-".join(list)
 	if result == ('00' or '000'):
 		return str()
 	g.LOG.info(backend.debug_message(635, g, result))
