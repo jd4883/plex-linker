@@ -18,6 +18,7 @@ def show_path_string(string):
 
 
 def fetch_link_status(episode_file_dict, relative_movie_file_path):
+	print(episode_file_dict)
 	result = bool()
 	link = episode_file_dict[0]['path'].replace(os.environ['SONARR_ROOT_PATH_PREFIX'], str())
 	parsed_link = str(os.readlink(link)).replace('../', str())
