@@ -23,15 +23,13 @@ def symlink_force(show, g):
 		# show.link_status = \
 		# 	strip_quotes_from_string(get_symlink_string(process)).replace('b"', str())[:-3].rstrip()
 		# # -3 covers the link not having the newline character at the end, if this is fixed this should be -1 instead
-		if show.link_status:
-			g.LOG.info(backend.debug_message(642, g, show.has_link))
+		g.LOG.info(backend.debug_message(642, g, show.has_link))
 	else:
 		print(f'no link created for {show.absolute_movie_file_path}')
 		show.link_status = str()
 		show.relative_show_path = str()
 		show.movie_file = str()
 		g.list_of_movies_to_locate.append(show.movie_title)
-	breakpoint()
 	message.method_exit(g)
 
 
