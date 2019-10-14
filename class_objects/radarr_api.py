@@ -29,7 +29,7 @@ class RadarrAPI(object):
 	
 	def lookup_movie(self, query, g):
 		query = self.request_get(f"{self.host_url}/movie/lookup?term={query}").json()
-		for i in g.movies_dictionary:
+		for i in g.full_radarr_dict:
 			if 'tmdbId' in query and i['tmdbId'] == query[0]['tmdbId']:
 				query[0] = i
 				return i

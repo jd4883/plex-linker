@@ -17,7 +17,7 @@ def write_python_dictionary_object_to_yaml_file(g):
 	method_launch(g)
 	Path(get_collection_absolute_path_parsed_this_run()).touch()
 	
-	yaml.dump(g.movies_dictionary_object, open(get_collection_absolute_path_parsed_this_run(), "w+"))
+	yaml.dump(g.movies_dict, open(get_collection_absolute_path_parsed_this_run(), "w+"))
 	# need to review how this is set as there may be an error
 	
 	move(get_collection_absolute_path_parsed_last_run(), f"{get_media_collection_parsed_archives()}/collection_parsed_{time.strftime('%m-%d-%Y')}.yaml")
