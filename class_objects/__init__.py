@@ -220,14 +220,14 @@ class Show(Movie, Globals):
 		self.padding = parse_series.episode_padding(self, g)
 		self.episode_file_id = parse_series.episode_file_id(self, g)
 		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)
-		link = str(self.episode_file_dict['path']).replace(str(os.environ['SONARR_ROOT_PATH_PREFIX']), str())
-		link_abspath = str(os.readlink(link)).replace('../', str())
-		if str(self.relative_movie_file_path) == link_abspath:
+		link = str(self.episode_file_dict['path']).replace(str(os.environ['SONARR_ROOT_PATH_PREFIX']), str()).replace('../', str()
+		#link_abspath = str(os.readlink(link)).replace('../', str())
+		if str(self.relative_movie_file_path) == link:
 			print("we have a match")
 		else:
 			print("no match")
-		print(f"LINK ABSOLUTE PATH CALCULATION FROM SYMLINK: {link_abspath}")
-		print(f"LINK ABSOLUTE PATH FROM RADARR: {self.absolute_movie_file_path}")
+		print(f"LINK ABSOLUTE PATH CALCULATION FROM SYMLINK: {link}")
+		print(f"LINK ABSOLUTE PATH FROM RADARR: {self.relative_movie_file_path}"))
 		self.has_link = self.series_dict['Show Link Status'] = bool(os.path.islink(link))
 		self.link_status = fetch_series.symlink_status(self, g)
 		breakpoint()
