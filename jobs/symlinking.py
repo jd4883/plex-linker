@@ -6,30 +6,42 @@ import messaging.backend as backend
 
 def symlink_force(show, g):
 	message.method_launch(g)
-	if (show.absolute_movie_file_path or show.absolute_movie_file_path) == ("/'" or "" or None or "/"):
+	# TODO: add method to handle deleting dead links and files instead of links
+	if (show.absolute_movie_path or show.absolute_movie_file_path) == ("/'" or "" or None or "/") \
+			or str(show.absolute_movie_path or show.absolute_movie_file_path).endswith("/'" or "" or None or "/"):
 		# really primitive way to indicate if the movie value is blank we do not link
+		show.absolute_movie_file_path = str()
+		show.has_link = bool()
 		pass
-	elif validate_link_ready(show):
+	# improve logic here to also validate the link is in place in addition to the flag
+	# make sure logic also cares about relpath presence i suspect this is our issue
+	# os.chdir(str(os.environ['HOST_MEDIA_PATH']))
+	# process = subprocess.Popen(get_symlink_command_string(show), stderr = subprocess.DEVNULL,
+	#                            stdout = subprocess.PIPE)
+	# g.LOG.info(backend.debug_message(642, g, show.has_link))
+	if not show.has_link: #validate_link_ready(show):
 		os.chdir(str(os.environ['HOST_MEDIA_PATH']))
 		# noinspection SpellCheckingInspection
 		process = subprocess.Popen(get_symlink_command_string(show), stderr = subprocess.DEVNULL,
 		                           stdout = subprocess.PIPE)
-		show.link_status = \
-			strip_quotes_from_string(get_symlink_string(process)).replace('b"', str())[:-3].rstrip()
-		# -3 covers the link not having the newline character at the end, if this is fixed this should be -1 instead
-		if show.link_status:
-			g.LOG.info(backend.debug_message(642, g, show.link_status))
+		# print(show.has_link)
+		#
+		#
+		# show.link_status = \
+		# 	strip_quotes_from_string(get_symlink_string(process)).replace('b"', str())[:-3].rstrip()
+		# # -3 covers the link not having the newline character at the end, if this is fixed this should be -1 instead
+		g.LOG.info(backend.debug_message(642, g, show.has_link))
 	else:
-		print(f'no link created for {show.absolute_movie_file_path}')
+		print(f'Link not created for {show.absolute_movie_file_path}')
 		show.link_status = str()
 		show.relative_show_path = str()
 		show.movie_file = str()
-		g.list_of_movies_to_locate.append(show.movie_title)
+		#g.list_of_movies_to_locate.append(show.movie_title)
 	message.method_exit(g)
 
 
 def get_symlink_command_string(show):
-	return ["ln", "-fsvr", f"{show.absolute_movie_file_path}", f"{show.relative_show_path}"]
+	return ["ln", "-fsvr", f"{show.absolute_movie_file_path}", f"{show.relative_show_file_path}"]
 
 
 def get_symlink_string(process):

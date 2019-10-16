@@ -2,8 +2,8 @@ import os
 from movies.movie.shows.show import validate as validate_show
 
 def symlink_destination_exists(show):
-	if os.path.exists(str(show.relative_show_path)):
-		if os.path.islink(str(show.relative_show_path)):
+	if os.path.exists(str(show.relative_show_file_path)):
+		if os.path.islink(str(show.relative_show_file_path)):
 			return True
 	return False
 
@@ -15,7 +15,7 @@ def symlink_destination_in_dictionary(movie):
 def live_link_status(show):
 	os.chdir(str(os.environ['DOCKER_MEDIA_PATH']))
 	try:
-		if not os.path.isdir(str(show.relative_show_path)) and os.readlink(str(show.relative_show_path)):
+		if not os.path.isdir(str(show.relative_show_file_path)) and os.readlink(str(show.relative_show_file_path)):
 			return True
 	except FileNotFoundError:
 		pass

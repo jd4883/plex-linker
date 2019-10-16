@@ -1,6 +1,6 @@
 def init_show_object(movie, series, g):
 	from class_objects import Show
-	if str(type(movie.shows_dictionary[series])) != "<class 'dict'>":
+	if not isinstance(movie.shows_dictionary[series], dict):
 		return
 	show = Show(g,
 	            series,

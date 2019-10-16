@@ -62,8 +62,7 @@
       Episode ID: 75244
       Parsed Episode: '43'
       Parsed Season Folder: Season 00
-      Parsed Show Title: tv/animated/South Park/Season 00/South Park - S00E43 - 6
-        Days to Air- The Making of South Park (2011)
+      Parsed Show Title: 'tv/animated/South Park/Season 00/South Park - S00E43 - '
       Relative Show File Path: tv/animated/South Park/Season 00/South Park - S00E41
         - Six Days to Air- The Making of South Park Bluray-1080p.mkv
       Relative Show Path: tv/animated/South Park/Season 00
@@ -76,7 +75,7 @@
         Air- The Making of South Park Bluray-1080p.mkv -> ../../../../movies/staging/6
         Days to Air- The Making of South Park (2011)/6 Days to Air- The Making of
         South Park (2011) Bluray-1080p.mkv
-      Title: 6 Days to Air- The Making of South Park (2011)
+      Title: ''
       episodeFileId: ''
       imdbId: tt0121955
       seriesId: 293
@@ -153,8 +152,7 @@ ANOTHER GANTZ (2011):
       Episode ID: '72074'
       Parsed Episode: '004'
       Parsed Season Folder: Season 00
-      Parsed Show Title: anime/staging/Gantz/Season 00/Gantz - S00E004 - ANOTHER GANTZ
-        (2011)
+      Parsed Show Title: 'anime/staging/Gantz/Season 00/Gantz - S00E004 - '
       Relative Show File Path: anime/staging/Gantz/Season 00/Gantz - S00E004 - ANOTHER
         Gantz DVD.mkv
       Relative Show Path: anime/staging/Gantz/Season 00
@@ -164,7 +162,7 @@ ANOTHER GANTZ (2011):
       Show Root Path: anime/staging/Gantz
       Symlinked: anime/staging/Gantz/Season 00/Gantz - S00E004 - ANOTHER Gantz DVD.mkv
         -> ../../../../movies/foreign/ANOTHER GANTZ (2011)/ANOTHER GANTZ (2011) DVD.mkv
-      Title: ANOTHER GANTZ (2011)
+      Title: ''
       episodeFileId: ''
       imdbId: tt0434685
       seriesId: 45
@@ -3154,10 +3152,10 @@ Cowboy Bebop- The Movie (2001):
   Has File: false
   Monitored: true
   Movie DB ID: 11299
-  Movie File: Cowboy Bebop- The Movie (2001) HDTV-1080p.mkv
+  Movie File: ''
   Parsed Extension: mkv
   Parsed Movie Extension: ''
-  Parsed Movie Quality: HDTV-1080p
+  Parsed Movie Quality: ''
   Relative Movie File Path: movies/foreign/Cowboy Bebop- The Movie (2001)/Cowboy Bebop-
     The Movie (2001) HDTV-1080p.mkv
   Relative Movie Path: movies/foreign/Cowboy Bebop- The Movie (2001)

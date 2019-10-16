@@ -1,12 +1,10 @@
 import os
-
-import plex_linker.sets.series as sets
 from messaging import backend as backend
 from plex_linker.fetch import series as fetch_series
 
 
 def parse_series_genres(sonarr_series_dict, series_dict, g):
-	if type(sonarr_series_dict) == dict:
+	if isinstance(sonarr_series_dict, dict):
 		result = series_dict['Show Genres'] = sonarr_series_dict.pop('genres')
 		g.LOG.debug(backend.debug_message(649, g, result))
 		return list(result)
@@ -15,31 +13,28 @@ def parse_series_genres(sonarr_series_dict, series_dict, g):
 
 def tvdb_id(sonarr_series_dict, series_dict, g):
 	result = 0
-	if type(sonarr_series_dict) == dict:
+	if isinstance(sonarr_series_dict, dict):
 		result = series_dict['tvdbId'] = sonarr_series_dict.pop('tvdbId')
 	if result == 0:
 		result = str()
-		#raise ValueError("TVDB ID MUST BE SET")
-		# breakpoint()
 	g.LOG.debug(backend.debug_message(618, g, result))
 	return str(result)
 
 
 def series_id(sonarr_series_dict, series_dict, g):
 	result = 0
-	if type(sonarr_series_dict) == dict:
+	if isinstance(sonarr_series_dict, dict):
 		if 'seriesId' in sonarr_series_dict and str(sonarr_series_dict['seriesId']).isdigit():
 			result = series_dict['seriesId'] = sonarr_series_dict.pop('id')
 		elif 'seriesId' in series_dict and str(series_dict['seriesId']).isdigit():
 			result = series_dict['seriesId']
-		# elif 'seriesId' in series_dict and series_dict['']:
-		# 	result = series_dict['seriesId'] =
 		else:
 			print(sonarr_series_dict)
 			print(series_dict)
-			raise ValueError("SERIES ID MUST BE SET")
+		#	raise ValueError("SERIES ID MUST BE SET")
 	if result == 0:
 		result = str()
+		raise ValueError("SERIES ID MUST BE SET")
 		# need to readd this raise condition after dict is set, manually correct errors
 		
 	g.LOG.debug(backend.debug_message(618, g, result))
@@ -47,7 +42,7 @@ def series_id(sonarr_series_dict, series_dict, g):
 
 
 def imdb_id(sonarr_series_dict, series_dict, g):
-	if type(sonarr_series_dict) == dict:
+	if isinstance(sonarr_series_dict, dict):
 		try:
 			result = series_dict['imdbId'] = sonarr_series_dict.pop('imdbId')
 		except KeyError:
@@ -68,21 +63,27 @@ def root_folder(self, g):
 	default_root = f"{os.environ['SONARR_DEFAULT_ROOT']}/{self.show}"
 	
 	for item in g.sonarr_root_folders:
-		item = fetch_series.show_path_string(self, str(item['path']))
-		potential = fetch_series.show_path_string(self, f"{item}{self.show}/{self.season_folder}")
+		item = fetch_series.show_path_string(str(item['path']))
+		potential = fetch_series.show_path_string(f"{item}{self.show}/{self.season_folder}")
 		if os.path.exists(potential) and os.path.isdir(potential):
-			return fetch_series.show_path_string(self, f"{item}{self.show}")
+			return fetch_series.show_path_string(f"{item}{self.show}")
 	return str(default_root)
 
 
 def anime_status(self, g):
-	if 'Anime' in self.series_dict and self.series_dict['Anime']:
-		result = bool(self.series_dict['Anime'])
-	elif 'seriesType' in self.sonarr_api_query and self.sonarr_api_query['seriesType'] == 'anime':
-		result = bool(True)
+	result = self.series_dict['Anime'] = bool(True)
+	if 'seriesType' in self.sonarr_api_query and (self.sonarr_api_query['seriesType'] != 'anime'):
+		result = bool()
+	elif 'seriesType' in self.sonarr_api_query and (self.sonarr_api_query['seriesType'] == 'anime'):
+		pass # result stays True
+	# elif 'Anime' in self.dict and self.dict['Anime']:
+	# 	result = bool(self.dict['Anime'])
 	else:
-		result = bool(False)
-	g.LOG.debug(backend.debug_message(621, g, result))
+		print("EDGE CONDTION CAME UP PROCESSING ANIME STATUS FROM SONARR")
+		print(self.show)
+		print(self.movie_dictionary)
+		# need to look into
+	g.LOG.info(backend.debug_message(621, g, result))
 	return result
 
 
@@ -99,18 +100,14 @@ def episode_index(self, query = dict()):
 def episode_id(self, g):
 	result = self.series_dict['Episode ID'] \
 		if 'Episode ID' in self.series_dict and str(self.series_dict['Episode ID']).isdigit() \
-		else sets.set_episode_id(self, g)
+		else g.sonarr.get_episodes_by_series_id(self.series_id)
 	if result == 0:
 		raise ValueError("EPISODE ID MUST BE SET")
-	g.LOG.debug(backend.debug_message(619, g, result))
+	g.LOG.info(backend.debug_message(619, g, result))
 	return result
+# TODO: missing logic to parse out the episode ID from what I can tell
 
 
-# OLD METHOD:
-# 		for i in query:
-# 			if int(i['seasonNumber']) == int(self.series_dict['Season']):
-# 				if int(i['episodeNumber']) == int(self.series_dict['Episode'][0]):
-# 					return i['id']
 def episode_padding(self, g):
 	result = int(3) if self.anime_status else int(os.environ['EPISODE_PADDING'])
 	g.LOG.debug(backend.debug_message(621, g, result))
@@ -118,9 +115,14 @@ def episode_padding(self, g):
 
 
 def parse_episode_file_id_dict(self, g):
+	result = dict()
+	if self.episode_file_id == 0 or not self.episode_file_id:
+		print("File not found should be parsing out a link")
+		return result
 	result = g.sonarr.get_episode_file_by_episode_id(self.episode_file_id);
 	if result == 0:
-		result = str()
+		print(f"RESULT = 0 {result} {self.episode_file_id}")
+		result = dict()
 	g.LOG.debug(backend.debug_message(652, g, result))
 	return result
 
@@ -137,23 +139,34 @@ def episode_file_id(self, g):
 		result = self.series_dict['episodeFileId'] = str()
 		# need episode file presence info for this check to work
 		#raise ValueError("EPISODE FILE ID MUST BE SET")
-	g.LOG.debug(backend.debug_message(653, g, result))
+	g.LOG.info(backend.debug_message(653, g, result))
 	return result
 
 
 def episode_number(self, g):
-	result = self.series_dict['Episode'] \
-		if 'Episode' in self.series_dict and self.series_dict['Episode'] \
-		else self.episode_dict.pop('episodeNumber', str())
-	g.LOG.debug(backend.debug_message(622, g, result))
+	# need handling for multi part episodes
+	temp = self.episode_dict.pop('episodeNumber', str())
+	if 'Episode' in self.series_dict and not self.series_dict['Episode']:
+		print("EPISODE NOT FILLED IN ADDING DATA")
+		print(temp)
+	if self.series_dict['Episode'] and isinstance(self.series_dict['Episode'], list):
+		result = self.series_dict['Episode']
+	else:
+		result = self.series_dict['Episode'] = temp
+	if not result:
+		print("Empty Episode error")
+		breakpoint()
+	g.LOG.info(backend.debug_message(622, g, result))
 	return result
 
 
 def absolute_episode_number(self, g):
-	result = self.series_dict['Absolute Episode'] = (self.episode_dict.pop('absoluteEpisodeNumber', str()))
+	# need handling for multi part absolute episodes
+	result = self.series_dict['Absolute Episode'] = self.episode_dict.pop('absoluteEpisodeNumber', str())
 	if not result and 'Absolute Episode' in self.series_dict:
 		del self.series_dict['Absolute Episode']
-	g.LOG.debug(backend.debug_message(628, g, result))
+	if result:
+		g.LOG.info(backend.debug_message(628, g, result))
 	return result
 
 
@@ -171,9 +184,9 @@ def season_folder_from_api(self, g):
 
 def show_root_folder(self, g):
 	result = self.series_dict['Show Root Path'] = \
-		fetch_series.show_path_string(self, self.episode_dict.pop('path', fetch_series.show_path_string(
-				self, root_folder(self, g))))
-	path = os.path.join(fetch_series.show_path_string(self, os.environ['DOCKER_MEDIA_PATH']), result, self.season_folder)
+		fetch_series.show_path_string(self.episode_dict.pop('path', fetch_series.show_path_string(
+				root_folder(self, g))))
+	path = os.path.join(fetch_series.show_path_string(os.environ['DOCKER_MEDIA_PATH']), result, self.season_folder)
 	os.makedirs(path, exist_ok = True)
 	g.LOG.debug(backend.debug_message(632, g, result))
 	return result
@@ -186,55 +199,63 @@ def relative_show_path(self, g):
 
 
 def padded_episode_number(self, g):
-	list = []
-	if self.episode:
-		for item in self.episode:
-			if type(item) == "<class 'list'>":
-				for i in item:
-					list.append(str(i).zfill(self.padding))
-			else:
-				list.append(str(item).zfill(self.padding))
-		result = "-".join(list)
-		if result == ('00' or '000'):
-			return str()
-	else:
+	if not self.episode:
+		print(f"IF 1 {str()}")
 		result = str()
-	
+	elif isinstance(self.episode, list):
+		items = []
+		for i in self.episode:
+			items.append(str(i).zfill(self.padding))
+		result = "-".join(items)
+	elif isinstance(self.episode, int):
+		result = str(self.episode).zfill(self.padding)
+	elif 'Parsed Absolute Episode' in self.series_dict:
+		del self.series_dict['Parsed Absolute Episode']
+		result = str()
+	else:
+		print(f"No idea why we are here {self.episode}")
+		breakpoint()
 	g.LOG.info(backend.debug_message(634, g, result))
-	return str(result)
+	print(self.episode)
+	return result
 
 
 def padded_absolute_episode(self, g):
+	result = str()
 	if not self.absolute_episode:
-		return str()
-	if 'Parsed Absolute Episode' in self.series_dict:
+		print(f"IF 1 {str()}")
+	elif isinstance(self.absolute_episode, list):
+		items = []
+		for i in self.absolute_episode:
+			items.append(str(i).zfill(self.padding))
+		result = "-".join(items)
+	elif isinstance(self.absolute_episode, int):
+		result = str(self.absolute_episode).zfill(self.padding)
+		print(f"IF 4 {result}")
+	elif 'Parsed Absolute Episode' in self.series_dict:
 		del self.series_dict['Parsed Absolute Episode']
-		return str()
-	list = []
-	for item in self.absolute_episode:
-		if type(item) == "<class 'list'>":
-			print(f"INNER LOOP TRIGGERED FOR LIST ITEM (item")
-			for i in item:
-				print(f"SUBITEM = {i}")
-				list.append(str(i).zfill(self.padding))
-		list.append(str(item).zfill(self.padding))
-	result = "-".join(list)
-	if result == ('00' or '000'):
+		result = str()
+	elif result == 0 or 00 or '00' or '000' or None:
 		return str()
 	g.LOG.info(backend.debug_message(635, g, result))
 	return result
 
 
-def parsed_show_title(self, g):
-	result = self.series_dict['Parsed Show Title'] = \
-		fetch_series.show_path_string(self, f"{self.show_root_path}/{self.season_folder}/{self.show} - S{self.season}"
+def compiled_episode_title(self, g):
+	result = self.series_dict['Parsed Episode Title'] = \
+		fetch_series.show_path_string(f"{self.show_root_path}/{self.season_folder}/{self.show} - S{self.season}"
 		                                    f"E{self.parsed_episode} - {self.episode_title}")
-	g.LOG.debug(backend.debug_message(637, g, result))
+	g.LOG.info(backend.debug_message(637, g, result))
 	return result
 
 
 def episode_title(self, g):
-	result = self.series_dict['Title'] = fetch_series.show_path_string(self,
-	                                                                   self.episode_dict.pop('title', self.movie_title))
-	g.LOG.debug(backend.debug_message(636, g, result))
+	title = str()
+	# not sure why i cant pop here this was a hacky way to get around it, suspecting a datatype error
+	for k,v in self.episode_dict.items():
+		if k == 'title':
+			title = v
+			break
+	result = self.series_dict['Title'] = fetch_series.show_path_string(self.episode_dict.pop('title', title))
+	g.LOG.info(backend.debug_message(636, g, result))
 	return result

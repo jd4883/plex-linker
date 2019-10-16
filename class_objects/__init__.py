@@ -1,10 +1,11 @@
-#!/usr/bin/env python3.7
 import time
 import plex_linker.parser.series as parse_series
 import plex_linker.fetch.series as fetch_series
 import class_objects.sonarr_api
 import class_objects.sonarr_class_methods
 import messaging.backend as backend
+import plex_linker.cleanup.movie as cleanup_movie
+import plex_linker.cleanup.series as cleanup_series
 
 from os.path import abspath
 from marshmallow import Schema, fields
@@ -23,7 +24,8 @@ from IO.YAML.yaml_to_object import (get_variable_from_yaml)
 from logs.bin.get_parameters import (get_log_name, get_logger, get_method_main)
 from movies.movie.movie_gets import (get_absolute_movie_file_path, get_relative_movie_file_path)
 from movies.movies_gets import (get_relative_movies_path)
-from plex_linker.parser.series import padded_absolute_episode, parsed_show_title, episode_title
+from plex_linker.fetch.series import fetch_link_status
+from plex_linker.parser.series import padded_absolute_episode, episode_title
 
 
 class Globals:
@@ -55,7 +57,7 @@ class Movies:
 
 class MovieSchema(Schema):
 	unparsed_title = fields.Function()
-# movie_dictionary = fields.Movie.movie_dictionary()
+# parent_dict = fields.Movie.parent_dict()
 
 
 class Movie(Movies, Globals):
@@ -65,9 +67,8 @@ class Movie(Movies, Globals):
 	             g):
 		super().__init__()
 		# schema = MovieSchema()
-		self.movie_dictionary = movie_dict
-		g.LOG.debug(backend.debug_message(627, g, self.movie_dictionary))
-		
+		self.movie_dictionary = movie_dict; g.LOG.debug(backend.debug_message(627, g, self.movie_dictionary))
+		cleanup_movie.cleanup_dict(self.movie_dictionary)
 		self.shows_dictionary = self.movie_dictionary['Shows']
 		g.LOG.debug(backend.debug_message(645, g, self.shows_dictionary))
 		self.tmbdid = self.movie_dictionary['Movie DB ID']
@@ -88,10 +89,11 @@ class Movie(Movies, Globals):
 		except TypeError:
 			self.monitored = self.movie_dictionary['Monitored'] = bool(True)
 		g.LOG.debug(backend.debug_message(647, g, self.monitored))
-		if 'Year' in self.movie_dictionary and self.movie_dictionary['Year'] != 0:
-			self.year = int(self.movie_dictionary['Year'])
-		else:
-			self.year = self.movie_dictionary['Year'] = int(self.radarr_dictionary.pop('year', 0))
+		
+		
+		self.year = self.movie_dictionary['Year'] =	\
+			int(self.radarr_dictionary['inCinemas'][0:4]) if 'inCinemas' in self.radarr_dictionary \
+				else int(self.radarr_dictionary.pop('year', 0))
 		self.unparsed_title = self.movie_dictionary['Unparsed Title'] = self.get_unparsed_movie_title(g).replace(' (0)',
 		                                                                                                         str())
 		self.movie_title = self.movie_dictionary['Title'] = str(get_parsed_movie_title(self, g)).replace(' (0)', str())
@@ -100,9 +102,9 @@ class Movie(Movies, Globals):
 		if "movieFile" not in self.radarr_dictionary or not self.relative_movie_path:
 			self.movie_file = self.movie_dictionary['Movie File'] = str()
 			self.quality = self.movie_dictionary['Parsed Movie Quality'] = str()
-			self.extension = self.movie_dictionary['Parsed Movie Extension'] = str()
-			self.absolute_movie_file_path = str(self.movie_dictionary['Absolute Movie File Path'])
-			self.relative_movie_file_path = str(self.movie_dictionary['Relative Movie File Path'])
+			self.extension = self.movie_dictionary['Parsed Extension'] = str()
+			self.absolute_movie_file_path = self.movie_dictionary['Absolute Movie File Path'] = str()
+			self.relative_movie_file_path = self.movie_dictionary['Relative Movie File Path'] = str()
 			return
 		file_dict = self.radarr_dictionary['movieFile']
 		self.movie_file = self.movie_dictionary['Movie File'] = str(file_dict['relativePath'])
@@ -117,6 +119,8 @@ class Movie(Movies, Globals):
 				get_relative_movie_file_path(self, g))
 	
 	def get_unparsed_movie_title(self, g):
+		if 'Title' not in self.movie_dictionary:
+			self.movie_dictionary['Title'] = str()
 		result = str(self.radarr_dictionary['title']) \
 			if 'title' in self.radarr_dictionary else self.movie_dictionary['Title']
 		g.LOG.debug(backend.debug_message(643, g, result))
@@ -167,19 +171,24 @@ class Movie(Movies, Globals):
 			quality = str(self.quality)
 		else:
 			return str()
-		if str(self.quality).lower() == "Remux-1080p.mkv".lower():
-			try:
-				quality.replace("Remux-1080p.mkv", "Bluray-1080p Remux.mkv")
-			except IndexError:
-				pass
 		if quality.endswith(f"Proper.{self.extension}"):
 			try:
 				quality = f"{self.movie_file.split().pop(-2)} {self.quality}"
 			except IndexError:
 				pass
-		if quality.endswith(f"REAL.{self.extension}"):
+		elif quality.endswith(f"Proper REAL.{self.extension}"):
+			try:
+				quality = f"{self.movie_file.split().pop(-3)} {self.quality}"
+			except IndexError:
+				pass
+		elif quality.endswith(f"REAL.{self.extension}"):
 			try:
 				quality = f"{self.movie_file.split().pop(-2)} {self.quality}"
+			except IndexError:
+				pass
+		if str(self.quality).lower() == "Remux-1080p.mkv".lower():
+			try:
+				quality.replace("Remux-1080p.mkv", "Bluray-1080p Remux.mkv")
 			except IndexError:
 				pass
 		elif not quality:
@@ -202,11 +211,10 @@ class Show(Movie, Globals):
 	             show_dict = dict(),
 	             movie_dict = dict()):
 		super().__init__(film, movie_dict, g)
-		# passed values
-		self.show = series; g.LOG.debug(backend.debug_message(604, g, self.show))
-		self.movie_dictionary = movie_dict; g.LOG.debug(backend.debug_message(627, g, self.movie_dictionary))
-		self.series_dict = show_dict; g.LOG.debug(backend.debug_message(624, g, self.series_dict))
-		# sonarr api info
+		self.show = fetch_series.title(self, g, series)
+		self.movie_dictionary = fetch_series.parent_dict(self, g, movie_dict)
+		self.series_dict = fetch_series.child_dict(self, g, show_dict)
+		cleanup_series.cleanup_dict(self.series_dict)
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
 		self.series_id = parse_series.series_id(self.sonarr_series_dict, self.series_dict, g)
 		self.tvdbId = parse_series.tvdb_id(self.sonarr_series_dict, self.series_dict, g)
@@ -218,20 +226,35 @@ class Show(Movie, Globals):
 		self.episode_dict = parse_series.parse_episode_dict(self, g)
 		self.anime_status = bool(parse_series.anime_status(self, g))
 		self.padding = parse_series.episode_padding(self, g)
-		self.link_status = fetch_series.symlink_status(self, g)
-		# need to add monitored and file status info for episodes to determine this part
 		self.episode_file_id = parse_series.episode_file_id(self, g)
 		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)
+		self.link_status = fetch_series.symlink_status(self, g)
+		self.sonarr_monitored = not bool() # if linked monitoring should be false
+		# need to push this status to Sonarr via API
+		
+		# need to add monitored and file status info for episodes to determine this part
+		# self.has_link =
 		# technically not in use but could be really useful as a means of checking if a link is needed
-		self.episode = [parse_series.episode_number(self, g)]
+		self.episode = parse_series.episode_number(self, g) # suspect this is the problem point but not 100% sure how
+		# to go between parsing as a list vs not
 		self.parsed_episode = parse_series.padded_episode_number(self, g)
-		self.absolute_episode = [parse_series.absolute_episode_number(self, g)]
+		self.absolute_episode = parse_series.absolute_episode_number(self, g)
 		self.parsed_absolute_episode = padded_absolute_episode(self, g)
 		self.season = parse_series.season_from_sonarr(self, g)
 		self.season_folder = parse_series.season_folder_from_api(self, g)
 		self.show_root_path = parse_series.show_root_folder(self, g)
 		self.relative_show_path = parse_series.relative_show_path(self, g)
 		self.episode_title = episode_title(self, g)
-		self.parsed_show_title = parsed_show_title(self, g)
+		self.parsed_episode_title = parse_series.compiled_episode_title(self, g)
+		self.relative_show_file_path = \
+			self.series_dict['Relative Show File Path'] = \
+			f"{self.parsed_episode_title} {self.quality}.{self.extension}" \
+				if (self.hasFile and self.parsed_episode_title) else str()
+		self.has_link = \
+			self.series_dict['Has Link'] = \
+			fetch_link_status(self, self.episode_file_dict,self.relative_movie_file_path) \
+				if self.episode_file_dict else bool()
 		g.sonarr.rescan_series(self.tvdbId)  # rescan movie in case it was picked up since last scan
 		g.sonarr.refresh_series(self.tvdbId)  # to ensure metadata is up to date
+
+	
