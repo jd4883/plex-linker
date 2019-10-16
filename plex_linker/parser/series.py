@@ -76,15 +76,7 @@ def anime_status(self, g):
 		pass
 		# result stays as a False
 	elif 'seriesType' in self.sonarr_api_query and (self.sonarr_api_query['seriesType'] == 'anime'):
-		self.series_dict['Anime'] = bool(True)
-	# elif 'Anime' in self.dict and self.dict['Anime']:
-	# 	result = bool(self.dict['Anime'])
-	else:
-		print("EDGE CONDTION CAME UP PROCESSING ANIME STATUS FROM SONARR")
-		print(self.show)
-		print(self.movie_dictionary)
-		breakpoint()
-		# need to look into
+		result = self.series_dict['Anime'] = bool(True)
 	g.LOG.info(backend.debug_message(621, g, result))
 	return result
 
