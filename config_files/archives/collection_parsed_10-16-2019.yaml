@@ -5369,30 +5369,12 @@ Fullmetal Alchemist (2017):
     \u932C\u91D1\u8853\u5E2B (2017) WEBDL-1080p.mkv"
   Relative Movie Path: movies/foreign/Fullmetal Alchemist (2017)
   Shows:
-    Fist of the North Star:
+    Fullmetal Alchemist:
       Anime: true
       Episode: 1
-      Episode ID: '877'
-      Has Link: false
-      Parsed Episode: '001'
-      Parsed Episode Title: anime/staging/Fist of the North Star/Season 00/Fist of
-        the North Star - S00E001 - Fist of the North Star
-      Parsed Season Folder: Season 00
-      Relative Show File Path: anime/staging/Fist of the North Star/Season 00/Fist
-        of the North Star - S00E001 - Fist of the North Star WEBDL-1080p.mkv
-      Relative Show Path: anime/staging/Fist of the North Star/Season 00
-      Season: '00'
-      Show Genres:
-      - Action
-      - Adventure
-      - Animation
-      - Science-Fiction
-      Show Root Path: anime/staging/Fist of the North Star
-      Title: Fist of the North Star
-      episodeFileId: 75773
-      imdbId: tt0091211
-      seriesId: 42
-      tvdbId: 79156
+      Episode ID: '1956'
+      seriesId: 43
+      tvdbId: 75579
   Title: "\u92FC\u306E\u932C\u91D1\u8853\u5E2B (2017)"
   Unparsed Title: "\u92FC\u306E\u932C\u91D1\u8853\u5E2B"
   Year: 2017
@@ -5508,7 +5490,6 @@ Futurama - Bender's Big Score (2007):
   Movie DB ID: 7249
   Movie File: Futurama- Bender's Big Score (2007) WEBDL-1080p.ts
   Parsed Extension: ts
-  Parsed Movie Extension: ''
   Parsed Movie Quality: WEBDL-1080p
   Relative Movie File Path: movies/staging/Futurama - Bender's Big Score (2007)/Futurama-
     Bender's Big Score (2007) WEBDL-1080p.ts
@@ -5519,7 +5500,6 @@ Futurama - Bender's Big Score (2007):
       Episode: 1
       Episode ID: '21405'
       Has Link: true
-      Parsed Episode: '01'
       Parsed Episode Title: tv/staging/Futurama/Season 00/Futurama - S00E01 - Bender's
         Big Score
       Parsed Season Folder: Season 00
@@ -5721,15 +5701,14 @@ Game of Thrones- The Last Watch (2019):
   Shows:
     Game of Thrones:
       Anime: true
-      Episode: 4
-      Episode ID: '28269'
-      Has Link: true
-      Parsed Episode: '04'
+      Episode: 41
+      Episode ID: '49270'
+      Has Link: false
       Parsed Episode Title: tv/fantasy/Game of Thrones/Season 00/Game of Thrones -
-        S00E04 - El Juego Comienza
+        S00E41 - The Last Watch
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/fantasy/Game of Thrones/Season 00/Game of Thrones
-        - S00E04 - El Juego Comienza WEBDL-1080p.mkv
+        - S00E41 - The Last Watch WEBDL-1080p.mkv
       Relative Show Path: tv/fantasy/Game of Thrones/Season 00
       Season: '00'
       Show Genres:
@@ -5737,8 +5716,8 @@ Game of Thrones- The Last Watch (2019):
       - Drama
       - Fantasy
       Show Root Path: tv/fantasy/Game of Thrones
-      Title: El Juego Comienza
-      episodeFileId: 75790
+      Title: The Last Watch
+      episodeFileId: ''
       imdbId: tt0944947
       seriesId: 337
       tvdbId: 121361
