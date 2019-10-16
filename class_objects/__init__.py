@@ -225,6 +225,8 @@ class Show(Movie, Globals):
 		self.episode_id = parse_series.episode_id(self, g)
 		self.episode_dict = parse_series.parse_episode_dict(self, g)
 		self.anime_status = bool(parse_series.anime_status(self, g))
+		# TODO: something is up here as many series that are not anime are being marked as anime, suspect the default
+		#  false bool is never getting passed
 		self.padding = parse_series.episode_padding(self, g)
 		self.episode_file_id = parse_series.episode_file_id(self, g)
 		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)

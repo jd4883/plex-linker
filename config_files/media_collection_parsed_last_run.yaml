@@ -5469,70 +5469,21 @@ Fullmetal Alchemist The Movie- The Sacred Star of Milos (2011):
   Relative Movie Path: movies/foreign/Fullmetal Alchemist The Movie- The Sacred Star
     of Milos (2011)
   Shows:
-    Fullmetal Alchemist:
-      Anime: true
+    Fullmetal Alchemist- Brotherhood:
       Episode: 5
-      Episode ID: '1949'
-      Has Link: true
-      Parsed Episode: '005'
-      Parsed Episode Title: anime/shounen/Fullmetal Alchemist/Season 00/Fullmetal
-        Alchemist - S00E005 - Interactive Experience - Preshow
-      Parsed Season Folder: Season 00
-      Relative Show File Path: anime/shounen/Fullmetal Alchemist/Season 00/Fullmetal
-        Alchemist - S00E005 - Interactive Experience - Preshow Remux-1080p.mkv
-      Relative Show Path: anime/shounen/Fullmetal Alchemist/Season 00
-      Season: '00'
-      Show Genres:
-      - Action
-      - Adventure
-      - Animation
-      - Anime
-      - Drama
-      - Fantasy
-      Show Root Path: anime/shounen/Fullmetal Alchemist
-      Title: Interactive Experience - Preshow
-      episodeFileId: 75784
-      imdbId: tt0421357
-      seriesId: 43
-      tvdbId: 75579
+      Episode ID: '45576'
+      seriesId: 44
+      tvdbId: 85249
   Title: "\u92FC\u306E\u932C\u91D1\u8853\u5E2B \u5606\u304D\u306E\u4E18\u306E\u8056\
     \u306A\u308B\u661F (2011)"
   Unparsed Title: "\u92FC\u306E\u932C\u91D1\u8853\u5E2B \u5606\u304D\u306E\u4E18\u306E\
     \u8056\u306A\u308B\u661F"
   Year: 2011
 Futurama - Bender's Big Score (2007):
-  Absolute Movie File Path: /media/video/movies/staging/Futurama - Bender's Big Score
-    (2007)/Futurama- Bender's Big Score (2007) WEBDL-1080p.ts
-  Absolute Movie Path: /media/video/movies/staging/Futurama - Bender's Big Score (2007)
-  Has File: true
-  Monitored: true
   Movie DB ID: 7249
-  Movie File: Futurama- Bender's Big Score (2007) WEBDL-1080p.ts
-  Parsed Extension: ts
-  Parsed Movie Quality: WEBDL-1080p
-  Relative Movie File Path: movies/staging/Futurama - Bender's Big Score (2007)/Futurama-
-    Bender's Big Score (2007) WEBDL-1080p.ts
-  Relative Movie Path: movies/staging/Futurama - Bender's Big Score (2007)
   Shows:
     Futurama:
-      Anime: true
-      Episode: 1
       Episode ID: '21405'
-      Has Link: true
-      Parsed Episode Title: tv/staging/Futurama/Season 00/Futurama - S00E01 - Bender's
-        Big Score
-      Parsed Season Folder: Season 00
-      Relative Show File Path: tv/staging/Futurama/Season 00/Futurama - S00E01 - Bender's
-        Big Score WEBDL-1080p.ts
-      Relative Show Path: tv/staging/Futurama/Season 00
-      Season: '00'
-      Show Genres:
-      - Animation
-      - Comedy
-      - Science-Fiction
-      Show Root Path: tv/staging/Futurama
-      Title: Bender's Big Score
-      episodeFileId: 75785
       imdbId: tt0149460
       seriesId: 284
       tvdbId: 73871
