@@ -15,6 +15,11 @@ RUN echo '*/15 *  *  *  * python /config/link-tv-specials.py' > /etc/crontabs/ro
 RUN ["chmod", "+x", "/config/link-tv-specials.py", "/config/launcher.sh"]
 
 ENV SCRIPTS=$SCRIPTS/bin
+# this may not be used and is setup specific
+
+ENV SONARR_API_KEY =""
+ENV RADARR_API_KEY=""
+ENV PLEX_API_KEY=""
 
 ENV SONARR_URL=http://127.0.0.1:8989/api
 ENV PLEX_API_URL=http://127.0.0.1:32400
@@ -35,13 +40,13 @@ ENV LOG_NAME=plex_linker
 ENV LOGS=/config/logs
 
 ENV SONARR_DEFAULT_ROOT=tv
+ENV RADARR_DEFAULT_ROOT=movies
 ENV SEASON_INT=0
 ENV SEASON_STR='00'
 ENV EPISODE_PADDING=2
+
 
 ENV DOCKER_MEDIA_PATH=/media/video
 ENV HOST_MEDIA_PATH=/media/video
 
 CMD ["/usr/sbin/crond", "-f", "-d", "8"]
-
-

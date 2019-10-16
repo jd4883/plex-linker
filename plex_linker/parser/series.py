@@ -32,14 +32,15 @@ def series_id(sonarr_series_dict, series_dict, g):
 			result = series_dict['seriesId'] = sonarr_series_dict.pop('id')
 		elif 'seriesId' in series_dict and str(series_dict['seriesId']).isdigit():
 			result = series_dict['seriesId']
-		# elif 'seriesId' in series_dict and series_dict['']:
-		# 	result = series_dict['seriesId'] =
+		# elif 'seriesId' in dict and dict['']:
+		# 	result = dict['seriesId'] =
 		else:
 			print(sonarr_series_dict)
 			print(series_dict)
-			raise ValueError("SERIES ID MUST BE SET")
+		#	raise ValueError("SERIES ID MUST BE SET")
 	if result == 0:
 		result = str()
+		raise ValueError("SERIES ID MUST BE SET")
 		# need to readd this raise condition after dict is set, manually correct errors
 		
 	g.LOG.debug(backend.debug_message(618, g, result))
@@ -76,13 +77,19 @@ def root_folder(self, g):
 
 
 def anime_status(self, g):
-	if 'Anime' in self.series_dict and self.series_dict['Anime']:
-		result = bool(self.series_dict['Anime'])
-	elif 'seriesType' in self.sonarr_api_query and self.sonarr_api_query['seriesType'] == 'anime':
-		result = bool(True)
+	result = self.series_dict['Anime'] = bool(True)
+	if 'seriesType' in self.sonarr_api_query and (self.sonarr_api_query['seriesType'] != 'anime'):
+		result = bool()
+	elif 'seriesType' in self.sonarr_api_query and (self.sonarr_api_query['seriesType'] == 'anime'):
+		pass # result stays True
+	# elif 'Anime' in self.dict and self.dict['Anime']:
+	# 	result = bool(self.dict['Anime'])
 	else:
-		result = bool(False)
-	g.LOG.debug(backend.debug_message(621, g, result))
+		print("EDGE CONDTION CAME UP PROCESSING ANIME STATUS FROM SONARR")
+		print(self.show)
+		print(self.movie_dictionary)
+		# need to look into
+	g.LOG.info(backend.debug_message(621, g, result))
 	return result
 
 
@@ -99,18 +106,14 @@ def episode_index(self, query = dict()):
 def episode_id(self, g):
 	result = self.series_dict['Episode ID'] \
 		if 'Episode ID' in self.series_dict and str(self.series_dict['Episode ID']).isdigit() \
-		else sets.set_episode_id(self, g)
+		else g.sonarr.get_episodes_by_series_id(self.series_id)
 	if result == 0:
 		raise ValueError("EPISODE ID MUST BE SET")
-	g.LOG.debug(backend.debug_message(619, g, result))
+	g.LOG.info(backend.debug_message(619, g, result))
 	return result
+# TODO: missing logic to parse out the episode ID from what I can tell
 
 
-# OLD METHOD:
-# 		for i in query:
-# 			if int(i['seasonNumber']) == int(self.series_dict['Season']):
-# 				if int(i['episodeNumber']) == int(self.series_dict['Episode'][0]):
-# 					return i['id']
 def episode_padding(self, g):
 	result = int(3) if self.anime_status else int(os.environ['EPISODE_PADDING'])
 	g.LOG.debug(backend.debug_message(621, g, result))
@@ -118,12 +121,14 @@ def episode_padding(self, g):
 
 
 def parse_episode_file_id_dict(self, g):
+	result = dict()
 	if self.episode_file_id == 0 or not self.episode_file_id:
 		print("File not found should be parsing out a link")
-		return str()
+		return result
 	result = g.sonarr.get_episode_file_by_episode_id(self.episode_file_id);
 	if result == 0:
-		result = str()
+		print(f"RESULT = 0 {result} {self.episode_file_id}")
+		result = dict()
 	g.LOG.debug(backend.debug_message(652, g, result))
 	return result
 
@@ -189,19 +194,22 @@ def relative_show_path(self, g):
 
 
 def padded_episode_number(self, g):
+	if not self.episode:
+		return str()
+	if str(self.episode).startswith('[').endswith(']'):
+		print(self.episode)
+		print("MULTI PART EPISODE FOUND")
+		breakpoint()
 	list = []
-	if self.episode:
-		for item in self.episode:
-			if type(item) == "<class 'list'>":
-				for i in item:
-					list.append(str(i).zfill(self.padding))
-			else:
-				list.append(str(item).zfill(self.padding))
-		result = "-".join(list)
-		if result == ('00' or '000'):
-			return str()
-	else:
-		result = str()
+	for item in self.episode:
+		if type(item) == "<class 'list'>":
+			for i in item:
+				list.append(str(i).zfill(self.padding))
+		else:
+			list.append(str(item).zfill(self.padding))
+	result = "-".join(list)
+	if result == ('00' or '000'):
+		return str()
 	
 	g.LOG.info(backend.debug_message(634, g, result))
 	return str(result)
@@ -213,7 +221,12 @@ def padded_absolute_episode(self, g):
 	if 'Parsed Absolute Episode' in self.series_dict:
 		del self.series_dict['Parsed Absolute Episode']
 		return str()
+	if str(self.absolute_episode).startswith('[').endswith(']'):
+		print(self.absolute_episode)
+		print("MULTI PART ABS EPISODE FOUND")
+		breakpoint()
 	list = []
+	# looks like this is where I try to make multi episode parsing work
 	for item in self.absolute_episode:
 		if type(item) == "<class 'list'>":
 			print(f"INNER LOOP TRIGGERED FOR LIST ITEM (item")
@@ -223,16 +236,17 @@ def padded_absolute_episode(self, g):
 		list.append(str(item).zfill(self.padding))
 	result = "-".join(list)
 	if result == ('00' or '000'):
-		return str()
-	g.LOG.info(backend.debug_message(635, g, result))
+		result = str()
+	if result:
+		g.LOG.info(backend.debug_message(635, g, result))
 	return result
 
 
-def parsed_show_title(self, g):
-	result = self.series_dict['Parsed Show Title'] = \
+def compiled_episode_title(self, g):
+	result = self.series_dict['Parsed Episode Title'] = \
 		fetch_series.show_path_string(f"{self.show_root_path}/{self.season_folder}/{self.show} - S{self.season}"
 		                                    f"E{self.parsed_episode} - {self.episode_title}")
-	g.LOG.debug(backend.debug_message(637, g, result))
+	g.LOG.info(backend.debug_message(637, g, result))
 	return result
 
 

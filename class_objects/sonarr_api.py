@@ -13,6 +13,9 @@ class SonarrAPI(object):
 	def get_episodes_by_series_id(self, series_id):
 		return self.request_get(f"{self.host_url}/episode?seriesId={series_id}").json()
 	
+	def get_series_by_tvdb_id(self, tvdbId):
+		return self.request_get(f"{self.host_url}/lookup?term=tvdb:{tvdbId}").json()
+	
 	def get_episode_by_episode_id(self, episode_id):
 		return self.request_get(f"{self.host_url}/episode/{episode_id}").json()
 	
@@ -32,7 +35,13 @@ class SonarrAPI(object):
 		return self.request_get(f"{self.host_url}/series").json()
 	
 	def get_series_by_series_id(self, series_id):
-		return self.request_get(f"{self.host_url}/series/{series_id}").json()
+		query = self.request_get(f"{self.host_url}/series/{series_id}").json()
+		for i in g.full_sonarr_dict:
+			if 'id' in query and i['id'] == series_id or \
+					'tvdbId' in query and i['tvdbId'] == query[0]['tvdbId']:
+				query[0] = i
+				return i
+		return
 	
 	def set_series_tags(self, label, series_id, data = dict()):
 		return self.request_post(f"{self.host_url}/series/{series_id}/tag&label={str(label).lower()}", data).json()

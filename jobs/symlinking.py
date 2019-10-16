@@ -15,10 +15,10 @@ def symlink_force(show, g):
 		pass
 	# improve logic here to also validate the link is in place in addition to the flag
 	# make sure logic also cares about relpath presence i suspect this is our issue
-	os.chdir(str(os.environ['HOST_MEDIA_PATH']))
-	process = subprocess.Popen(get_symlink_command_string(show), stderr = subprocess.DEVNULL,
-	                           stdout = subprocess.PIPE)
-	g.LOG.info(backend.debug_message(642, g, show.has_link))
+	# os.chdir(str(os.environ['HOST_MEDIA_PATH']))
+	# process = subprocess.Popen(get_symlink_command_string(show), stderr = subprocess.DEVNULL,
+	#                            stdout = subprocess.PIPE)
+	# g.LOG.info(backend.debug_message(642, g, show.has_link))
 	if not show.has_link: #validate_link_ready(show):
 		os.chdir(str(os.environ['HOST_MEDIA_PATH']))
 		# noinspection SpellCheckingInspection
@@ -41,7 +41,7 @@ def symlink_force(show, g):
 
 
 def get_symlink_command_string(show):
-	return ["ln", "-fsvr", f"{show.absolute_movie_file_path}", f"{show.relative_show_path}"]
+	return ["ln", "-fsvr", f"{show.absolute_movie_file_path}", f"{show.relative_show_file_path}"]
 
 
 def get_symlink_string(process):

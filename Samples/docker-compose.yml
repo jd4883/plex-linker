@@ -1,0 +1,36 @@
+version: '3.7'
+# the network options don't really matter for this program but don't feel that you need to follow my paradigm
+networks:
+    backend:          &external
+        external:      true
+    backend_vpn:      *external
+    frontend:         *external
+volumes:
+    media:            *external             # you can bind mount these or use volumes. I am partial to volumes
+    plex_linker:      *external             # you can bind mount these or use volumes. I am partial to volumes
+secrets:
+    radarr_api_key:
+         file: $DOCKER/secrets/radarr/RADARR_API_KEY.secret
+    sonarr_api_key:
+         file: $DOCKER/secrets/sonarr/SONARR_API_KEY.secret
+    plex_api_key:
+         file: $DOCKER/secrets/plex/PLEX_API_KEY.secret
+services:
+    plex-linker:
+        secrets:
+            -        radarr_api_key
+            -        sonarr_api_key
+            -        plex_api_key
+        image:       plex_linker:latest
+        hostname:    plex-linker
+        env_file:
+            - plex-linker.env   # this is where I define all my ENVAR's I want within the container
+        volumes:
+            - media:/media
+            - plex_linker:/config
+            - /etc/localtime:/etc/localtime:ro
+        networks:
+            - backend
+        deploy:
+            mode:       replicated
+            replicas:   1
