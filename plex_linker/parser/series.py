@@ -1,12 +1,10 @@
 import os
-
-import plex_linker.sets.series as sets
 from messaging import backend as backend
 from plex_linker.fetch import series as fetch_series
 
 
 def parse_series_genres(sonarr_series_dict, series_dict, g):
-	if type(sonarr_series_dict) == dict:
+	if isinstance(sonarr_series_dict, dict):
 		result = series_dict['Show Genres'] = sonarr_series_dict.pop('genres')
 		g.LOG.debug(backend.debug_message(649, g, result))
 		return list(result)
@@ -15,25 +13,21 @@ def parse_series_genres(sonarr_series_dict, series_dict, g):
 
 def tvdb_id(sonarr_series_dict, series_dict, g):
 	result = 0
-	if type(sonarr_series_dict) == dict:
+	if isinstance(sonarr_series_dict, dict):
 		result = series_dict['tvdbId'] = sonarr_series_dict.pop('tvdbId')
 	if result == 0:
 		result = str()
-		#raise ValueError("TVDB ID MUST BE SET")
-		# breakpoint()
 	g.LOG.debug(backend.debug_message(618, g, result))
 	return str(result)
 
 
 def series_id(sonarr_series_dict, series_dict, g):
 	result = 0
-	if type(sonarr_series_dict) == dict:
+	if isinstance(sonarr_series_dict, dict):
 		if 'seriesId' in sonarr_series_dict and str(sonarr_series_dict['seriesId']).isdigit():
 			result = series_dict['seriesId'] = sonarr_series_dict.pop('id')
 		elif 'seriesId' in series_dict and str(series_dict['seriesId']).isdigit():
 			result = series_dict['seriesId']
-		# elif 'seriesId' in dict and dict['']:
-		# 	result = dict['seriesId'] =
 		else:
 			print(sonarr_series_dict)
 			print(series_dict)
@@ -48,7 +42,7 @@ def series_id(sonarr_series_dict, series_dict, g):
 
 
 def imdb_id(sonarr_series_dict, series_dict, g):
-	if type(sonarr_series_dict) == dict:
+	if isinstance(sonarr_series_dict, dict):
 		try:
 			result = series_dict['imdbId'] = sonarr_series_dict.pop('imdbId')
 		except KeyError:
@@ -150,18 +144,23 @@ def episode_file_id(self, g):
 
 
 def episode_number(self, g):
-	result = self.series_dict['Episode'] \
-		if 'Episode' in self.series_dict and self.series_dict['Episode'] \
-		else self.episode_dict.pop('episodeNumber', str())
+	# need handling for multi part episodes
+	temp = self.episode_dict.pop('episodeNumber', str())
+	if isinstance(temp, list):
+		result = self.series_dict['Episode']
+	else:
+		result = self.series_dict['Episode'] = temp
 	g.LOG.debug(backend.debug_message(622, g, result))
 	return result
 
 
 def absolute_episode_number(self, g):
-	result = self.series_dict['Absolute Episode'] = (self.episode_dict.pop('absoluteEpisodeNumber', str()))
+	# need handling for multi part absolute episodes
+	result = self.series_dict['Absolute Episode'] = self.episode_dict.pop('absoluteEpisodeNumber', str())
 	if not result and 'Absolute Episode' in self.series_dict:
 		del self.series_dict['Absolute Episode']
-	g.LOG.debug(backend.debug_message(628, g, result))
+	if result:
+		g.LOG.info(backend.debug_message(628, g, result))
 	return result
 
 
@@ -195,50 +194,44 @@ def relative_show_path(self, g):
 
 def padded_episode_number(self, g):
 	if not self.episode:
-		return str()
-	if str(self.episode).startswith('[').endswith(']'):
-		print(self.episode)
-		print("MULTI PART EPISODE FOUND")
+		print(f"IF 1 {str()}")
+		result = str()
+	elif isinstance(self.episode, list):
+		items = []
+		for i in self.episode:
+			items.append(str(i).zfill(self.padding))
+		result = "-".join(items)
+	elif isinstance(self.episode, int):
+		result = str(self.episode).zfill(self.padding)
+	elif 'Parsed Absolute Episode' in self.series_dict:
+		del self.series_dict['Parsed Absolute Episode']
+		result = str()
+	else:
+		print(f"No idea why we are here {self.episode}")
 		breakpoint()
-	list = []
-	for item in self.episode:
-		if type(item) == "<class 'list'>":
-			for i in item:
-				list.append(str(i).zfill(self.padding))
-		else:
-			list.append(str(item).zfill(self.padding))
-	result = "-".join(list)
-	if result == ('00' or '000'):
-		return str()
-	
 	g.LOG.info(backend.debug_message(634, g, result))
-	return str(result)
+	print(self.episode)
+	return result
 
 
 def padded_absolute_episode(self, g):
+	result = str()
 	if not self.absolute_episode:
-		return str()
-	if 'Parsed Absolute Episode' in self.series_dict:
+		print(f"IF 1 {str()}")
+	elif isinstance(self.absolute_episode, list):
+		items = []
+		for i in self.absolute_episode:
+			items.append(str(i).zfill(self.padding))
+		result = "-".join(items)
+	elif isinstance(self.absolute_episode, int):
+		result = str(self.absolute_episode).zfill(self.padding)
+		print(f"IF 4 {result}")
+	elif 'Parsed Absolute Episode' in self.series_dict:
 		del self.series_dict['Parsed Absolute Episode']
-		return str()
-	if str(self.absolute_episode).startswith('[').endswith(']'):
-		print(self.absolute_episode)
-		print("MULTI PART ABS EPISODE FOUND")
-		breakpoint()
-	list = []
-	# looks like this is where I try to make multi episode parsing work
-	for item in self.absolute_episode:
-		if type(item) == "<class 'list'>":
-			print(f"INNER LOOP TRIGGERED FOR LIST ITEM (item")
-			for i in item:
-				print(f"SUBITEM = {i}")
-				list.append(str(i).zfill(self.padding))
-		list.append(str(item).zfill(self.padding))
-	result = "-".join(list)
-	if result == ('00' or '000'):
 		result = str()
-	if result:
-		g.LOG.info(backend.debug_message(635, g, result))
+	elif result == 0 or 00 or '00' or '000' or None:
+		return str()
+	g.LOG.info(backend.debug_message(635, g, result))
 	return result
 
 

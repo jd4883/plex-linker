@@ -89,10 +89,8 @@ class Movie(Movies, Globals):
 		except TypeError:
 			self.monitored = self.movie_dictionary['Monitored'] = bool(True)
 		g.LOG.debug(backend.debug_message(647, g, self.monitored))
-		if 'Year' in self.movie_dictionary and self.movie_dictionary['Year'] != 0:
-			self.year = int(self.movie_dictionary['Year'])
-		else:
-			self.year = self.movie_dictionary['Year'] = int(self.radarr_dictionary.pop('year', 0))
+		self.year = self.movie_dictionary['Year'] = int(self.radarr_dictionary.pop('year', 0))
+		print(self.year)
 		self.unparsed_title = self.movie_dictionary['Unparsed Title'] = self.get_unparsed_movie_title(g).replace(' (0)',
 		                                                                                                         str())
 		self.movie_title = self.movie_dictionary['Title'] = str(get_parsed_movie_title(self, g)).replace(' (0)', str())
@@ -229,9 +227,10 @@ class Show(Movie, Globals):
 		# need to add monitored and file status info for episodes to determine this part
 		# self.has_link =
 		# technically not in use but could be really useful as a means of checking if a link is needed
-		self.episode = [parse_series.episode_number(self, g)]
+		self.episode = parse_series.episode_number(self, g) # suspect this is the problem point but not 100% sure how
+		# to go between parsing as a list vs not
 		self.parsed_episode = parse_series.padded_episode_number(self, g)
-		self.absolute_episode = [parse_series.absolute_episode_number(self, g)]
+		self.absolute_episode = parse_series.absolute_episode_number(self, g)
 		self.parsed_absolute_episode = padded_absolute_episode(self, g)
 		self.season = parse_series.season_from_sonarr(self, g)
 		self.season_folder = parse_series.season_folder_from_api(self, g)

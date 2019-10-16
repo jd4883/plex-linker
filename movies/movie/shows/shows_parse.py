@@ -24,7 +24,7 @@ def parse_shows_dictionary_object(movie, g):
 		if series not in movie.shows_dictionary:
 			g.LOG.warn(backend.debug_message(638, g, movie.movie_title))
 			continue
-		if str(type(movie.shows_dictionary[series])) != "<class 'dict'>":
+		if not isinstance(movie.shows_dictionary[series], dict):
 			# no shows to associate with the movie
 			g.LOG.warn(backend.debug_message(639, g, movie.movie_title))
 			break

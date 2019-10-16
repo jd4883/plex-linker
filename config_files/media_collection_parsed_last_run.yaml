@@ -15,9 +15,9 @@
   Shows:
     '24':
       Anime: true
-      Episode: '9'
+      Episode: 9
       Episode ID: '7014'
-      Has Link: true
+      Has Link: false
       Parsed Episode: 09
       Parsed Episode Title: tv/staging/24/Season 00/24 - S00E09 - Redemption
       Parsed Season Folder: Season 00
@@ -55,12 +55,11 @@
   Shows:
     South Park:
       Anime: true
-      Episode: 43
+      Episode: ''
       Episode ID: 75244
       Has Link: false
       Parsed Episode: '43'
-      Parsed Episode Title: 'tv/animated/South Park/Season 00/South Park - S00E43
-        - '
+      Parsed Episode Title: 'tv/animated/South Park/Season 00/South Park - S00E - '
       Parsed Season Folder: Season 00
       Relative Show File Path: ''
       Relative Show Path: tv/animated/South Park/Season 00
@@ -95,7 +94,7 @@
     91 Days:
       Absolute Episode: 13
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '13'
       Has Link: false
       Parsed Episode: '001'
@@ -138,13 +137,13 @@ ANOTHER GANTZ (2011):
   Shows:
     Gantz:
       Anime: true
-      Episode: '4'
+      Episode: ''
       Episode ID: '72074'
       Has Link: false
       Parsed Episode: '004'
-      Parsed Episode Title: 'anime/staging/Gantz/Season 00/Gantz - S00E004 - '
+      Parsed Episode Title: 'anime/staging/Gantz/Season 00/Gantz - S00E - '
       Parsed Season Folder: Season 00
-      Relative Show File Path: anime/staging/Gantz/Season 00/Gantz - S00E004 -  DVD.mkv
+      Relative Show File Path: anime/staging/Gantz/Season 00/Gantz - S00E -  DVD.mkv
       Relative Show Path: anime/staging/Gantz/Season 00
       Season: '00'
       Show Genres:
@@ -175,7 +174,7 @@ Absolutely Fabulous- The Last Shout (1996):
     Absolutely Fabulous:
       Absolute Episode: 23
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '35143'
       Has Link: false
       Parsed Episode: '01'
@@ -214,9 +213,9 @@ Absolutely Fabulous- The Movie (2016):
   Shows:
     Absolutely Fabulous:
       Anime: true
-      Episode: '8'
+      Episode: 8
       Episode ID: '35150'
-      Has Link: true
+      Has Link: false
       Parsed Episode: 08
       Parsed Episode Title: tv/sitcom/Absolutely Fabulous/Season 00/Absolutely Fabulous
         - S00E08 - Absolutely Fabulous The Movie
@@ -253,9 +252,9 @@ Achmed Saves America (2014):
   Shows:
     The Jeff Dunham Show:
       Anime: true
-      Episode: '7'
+      Episode: 7
       Episode ID: '10431'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '07'
       Parsed Episode Title: tv/staging/The Jeff Dunham Show/Season 00/The Jeff Dunham
         Show - S00E07 - Achmed Saves America
@@ -292,9 +291,9 @@ Ajin- Demi-Human (2017):
   Shows:
     Ajin:
       Anime: true
-      Episode: '7'
+      Episode: 7
       Episode ID: '51239'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '007'
       Parsed Episode Title: anime/staging/Ajin/Season 00/Ajin - S00E007 - Ajin Demi-Human
         (Live Action)
@@ -336,9 +335,9 @@ Ajin- Demi-Human - Compel (2015):
   Shows:
     Ajin:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '43851'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Ajin/Season 00/Ajin - S00E001 - Ajin, Part
         1 Shoudou
@@ -379,7 +378,7 @@ Anemone- Eureka Seven Hi-Evolution (2018):
   Shows:
     Eureka Seven:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '4184'
       Has Link: false
       Parsed Episode: '002'
@@ -423,9 +422,9 @@ Anohana- The Flower We Saw That Day (2015):
   Shows:
     Anohana- The Flower We Saw That Day:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '49288'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '003'
       Parsed Episode Title: anime/staging/Anohana- The Flower We Saw That Day/Season
         00/Anohana- The Flower We Saw That Day - S00E003 - Live-Action TV Drama
@@ -463,7 +462,7 @@ Another Live Action (2012):
   Shows:
     Another:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '4107'
       Has Link: false
       Parsed Episode: '002'
@@ -508,7 +507,7 @@ Aqua Teen Hunger Force Colon Movie Film for Theaters (2007):
   Shows:
     Aqua Teen Hunger Force:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '20150'
       Has Link: false
       Parsed Episode: '03'
@@ -549,9 +548,9 @@ Army of Darkness (1992):
   Shows:
     Ash vs Evil Dead:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '27916'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '03'
       Parsed Episode Title: tv/fantasy/Ash vs Evil Dead/Season 00/Ash vs Evil Dead
         - S00E03 - Army of Darkness
@@ -590,9 +589,9 @@ Assassination Classroom (2015):
   Shows:
     Assassination Classroom:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '43940'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '004'
       Parsed Episode Title: anime/shounen/Assassination Classroom/Season 00/Assassination
         Classroom - S00E004 - Assassination Classroom
@@ -636,9 +635,9 @@ Assassination Classroom The Movie- 365 Days (2016):
   Shows:
     Assassination Classroom:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '43939'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '003'
       Parsed Episode Title: anime/shounen/Assassination Classroom/Season 00/Assassination
         Classroom - S00E003 - Assassination Classroom The Movie 365 Days
@@ -676,7 +675,7 @@ Assassination Classroom- Graduation (2016):
   Shows:
     Assassination Classroom:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '43941'
       Has Link: false
       Parsed Episode: '005'
@@ -719,9 +718,9 @@ Assassination Classroom- Jump Festa 2013 Special (2013):
   Shows:
     Assassination Classroom:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '43937'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/shounen/Assassination Classroom/Season 00/Assassination
         Classroom - S00E001 - Jump Festa 2013 Special
@@ -764,7 +763,7 @@ Attack on Titan II- End of the World (2015):
   Shows:
     Attack on Titan:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '2543'
       Has Link: false
       Parsed Episode: '001'
@@ -813,7 +812,7 @@ Attack on Titan- Crimson Bow and Arrow (2014):
   Shows:
     Attack on Titan:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '2543'
       Has Link: false
       Parsed Episode: '001'
@@ -862,9 +861,9 @@ Attack on Titan- The Roar of Awakening (2018):
   Shows:
     Attack on Titan:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '2544'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/Attack on Titan/Season 00/Attack on Titan
         - S00E002 - Ilse's Notebook Memoirs of a Recon Corps Member
@@ -911,7 +910,7 @@ Attack on Titan- Wings of Freedom (2015):
   Shows:
     Attack on Titan:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '2543'
       Has Link: false
       Parsed Episode: '001'
@@ -957,9 +956,9 @@ Babylon 5- A Call to Arms (1999):
     Babylon 5:
       Absolute Episode: 114
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '30667'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '05'
       Parsed Episode Title: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E05 - A Call
         to Arms
@@ -997,9 +996,9 @@ Babylon 5- In the Beginning (1998):
     Babylon 5:
       Absolute Episode: 1
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '30664'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '02'
       Parsed Episode Title: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E02 - In the
         Beginning
@@ -1037,9 +1036,9 @@ Babylon 5- The Gathering (1993):
     Babylon 5:
       Absolute Episode: 2
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '30663'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '01'
       Parsed Episode Title: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E01 - The
         Gathering
@@ -1082,9 +1081,9 @@ Babylon 5- The Legend of the Rangers - To Live and Die in Starlight (2002):
     Babylon 5:
       Absolute Episode: 115
       Anime: true
-      Episode: '6'
+      Episode: 6
       Episode ID: '30668'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '06'
       Parsed Episode Title: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E06 - The
         Legend of the Rangers
@@ -1125,9 +1124,9 @@ Babylon 5- The Lost Tales - Voices in the Dark (2007):
     Babylon 5:
       Absolute Episode: 116
       Anime: true
-      Episode: '7'
+      Episode: 7
       Episode ID: '30669'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '07'
       Parsed Episode Title: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E07 - Voices
         in the Dark Over Here
@@ -1165,9 +1164,9 @@ Babylon 5- The River of Souls (1998):
     Babylon 5:
       Absolute Episode: 113
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '30666'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '04'
       Parsed Episode Title: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E04 - River
         of Souls
@@ -1205,9 +1204,9 @@ Babylon 5- Thirdspace (1998):
     Babylon 5:
       Absolute Episode: 77
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '30665'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '03'
       Parsed Episode Title: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E03 - Thirdspace
       Parsed Season Folder: Season 00
@@ -1246,7 +1245,7 @@ Batman & Mr. Freeze- SubZero (1998):
       Anime: true
       Episode: 2
       Episode ID: '41555'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '02'
       Parsed Episode Title: tv/superhero/Batman- The Animated Series/Season 00/Batman-
         The Animated Series - S00E02 - Batman & Mr. Freeze SubZero
@@ -1287,9 +1286,9 @@ Batman Beyond- Return of the Joker (2000):
   Shows:
     Batman Beyond:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '41500'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '01'
       Parsed Episode Title: tv/superhero/Batman Beyond/Season 00/Batman Beyond - S00E01
         - Return of the Joker
@@ -1329,9 +1328,9 @@ Batman and Harley Quinn (2017):
   Shows:
     Batman- The Animated Series:
       Anime: true
-      Episode: '6'
+      Episode: 6
       Episode ID: '41559'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '06'
       Parsed Episode Title: tv/superhero/Batman- The Animated Series/Season 00/Batman-
         The Animated Series - S00E06 - Batman and Harley Quinn
@@ -1372,9 +1371,9 @@ Batman- Mask of the Phantasm (1993):
   Shows:
     Batman- The Animated Series:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '41554'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '01'
       Parsed Episode Title: tv/superhero/Batman- The Animated Series/Season 00/Batman-
         The Animated Series - S00E01 - Batman Mask of the Phantasm
@@ -1415,9 +1414,9 @@ Batman- Mystery of the Batwoman (2003):
   Shows:
     Batman- The Animated Series:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '41556'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '03'
       Parsed Episode Title: tv/superhero/Batman- The Animated Series/Season 00/Batman-
         The Animated Series - S00E03 - Batman Mystery of the Batwoman
@@ -1457,9 +1456,9 @@ Battlestar Galactica (1978):
   Shows:
     Battlestar Galactica:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '30781'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '01'
       Parsed Episode Title: tv/scifi/Battlestar Galactica/Season 00/Battlestar Galactica
         - S00E01 - Battlestar Galactica The Moving Picture
@@ -1497,9 +1496,9 @@ Battlestar Galactica- The Plan (2009):
   Shows:
     Battlestar Galactica (2003):
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '30807'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '02'
       Parsed Episode Title: tv/scifi/Battlestar Galactica (2003)/Season 00/Battlestar
         Galactica (2003) - S00E02 - Battlestar Galactica The Miniseries (2)
@@ -1544,7 +1543,7 @@ Berserk - The Golden Age Arc 1 - The Egg of the King (2012):
   Shows:
     Berserk (2016):
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '44196'
       Has Link: true
       Parsed Episode: '001'
@@ -1595,7 +1594,7 @@ Berserk - The Golden Age Arc 2 - The Battle for Doldrey (2012):
   Shows:
     Berserk (2016):
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '44197'
       Has Link: true
       Parsed Episode: '002'
@@ -1646,7 +1645,7 @@ Berserk - The Golden Age Arc 3 - The Advent (2013):
   Shows:
     Berserk (2016):
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '44198'
       Has Link: true
       Parsed Episode: '003'
@@ -1691,7 +1690,7 @@ Bishokushin's Special Menu (2013):
   Shows:
     Toriko:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '47859'
       Has Link: true
       Parsed Episode: '005'
@@ -1736,7 +1735,7 @@ Bleach- Fade to Black (2008):
   Shows:
     Bleach:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '44572'
       Has Link: true
       Parsed Episode: '005'
@@ -1782,7 +1781,7 @@ Bleach- Hell Verse (2010):
   Shows:
     Bleach:
       Anime: true
-      Episode: '6'
+      Episode: 6
       Episode ID: '44573'
       Has Link: true
       Parsed Episode: '006'
@@ -1826,7 +1825,7 @@ Bleach- Memories in the Rain (2004):
   Shows:
     Bleach:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '44568'
       Has Link: true
       Parsed Episode: '001'
@@ -1874,7 +1873,7 @@ Bleach- Memories of Nobody (2006):
   Shows:
     Bleach:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '44570'
       Has Link: true
       Parsed Episode: '003'
@@ -1928,7 +1927,7 @@ Bleach- The DiamondDust Rebellion (2007):
   Shows:
     Bleach:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '44571'
       Has Link: true
       Parsed Episode: '004'
@@ -1974,7 +1973,7 @@ Bleach- The Sealed Sword Frenzy (2005):
   Shows:
     Bleach:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '44569'
       Has Link: true
       Parsed Episode: '002'
@@ -2019,7 +2018,7 @@ Blue Exorcist - Kyoto Saga- Snake and Poison (2017):
   Shows:
     Blue Exorcist:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '44611'
       Has Link: false
       Parsed Episode: '001'
@@ -2062,7 +2061,7 @@ Blue Exorcist - Kyoto Saga- Spy Game (2017):
   Shows:
     Blue Exorcist:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '44611'
       Has Link: false
       Parsed Episode: '001'
@@ -2104,7 +2103,7 @@ Blue Exorcist- Runaway Kuro (2011):
   Shows:
     Blue Exorcist:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '44611'
       Has Link: false
       Parsed Episode: '001'
@@ -2146,7 +2145,7 @@ Blue Exorcist- The Movie (2012):
   Shows:
     Blue Exorcist:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '44611'
       Has Link: false
       Parsed Episode: '001'
@@ -2191,15 +2190,15 @@ Boruto- Naruto the Movie (2015):
   Shows:
     Boruto- Naruto Next Generations:
       Anime: true
-      Episode: '1'
+      Episode: 2
       Episode ID: '107'
       Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/shounen/Boruto- Naruto Next Generations/Season 00/Boruto-
-        Naruto Next Generations - S00E001 - The Day Naruto Became Hokage
+        Naruto Next Generations - S00E002 - The Day Naruto Became Hokage
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Boruto- Naruto Next Generations/Season
-        00/Boruto- Naruto Next Generations - S00E001 - The Day Naruto Became Hokage
+        00/Boruto- Naruto Next Generations - S00E002 - The Day Naruto Became Hokage
         Bluray-1080p.mkv
       Relative Show Path: anime/shounen/Boruto- Naruto Next Generations/Season 00
       Season: '00'
@@ -2216,9 +2215,9 @@ Boruto- Naruto the Movie (2015):
       tvdbId: 321285
     Naruto Shippuden:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '6193'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '001'
       Parsed Episode Title: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
         - S00E001 - Naruto Shippuuden the Movie
@@ -2264,7 +2263,7 @@ Bungo Stray Dogs- Dead Apple (2018):
   Shows:
     Bungo Stray Dogs:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '293'
       Has Link: true
       Parsed Episode: '002'
@@ -2310,7 +2309,7 @@ Burn Notice - The Fall of Sam Axe (2011):
   Shows:
     Burn Notice:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '24571'
       Has Link: true
       Parsed Episode: '01'
@@ -2352,7 +2351,7 @@ Chase Me (2003):
   Shows:
     Batman- The Animated Series:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '41557'
       Has Link: true
       Parsed Episode: '04'
@@ -2414,7 +2413,7 @@ Chunin Exam on Fire! and Naruto vs. Konohamaru! (2011):
   Shows:
     Naruto Shippuden:
       Anime: true
-      Episode: '9'
+      Episode: 9
       Episode ID: '6201'
       Has Link: true
       Parsed Episode: 009
@@ -2458,7 +2457,7 @@ Clannad (2007):
   Shows:
     Clannad:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '44761'
       Has Link: true
       Parsed Episode: '001'
@@ -2500,7 +2499,7 @@ Clannad- After Story - Another World, Kyou Chapter (0):
     Clannad:
       Absolute Episode: 49
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '44760'
       Has Link: false
       Parsed Episode: '003'
@@ -2541,7 +2540,7 @@ Clannad- Another World - Tomoyo Chapter (0):
     Clannad:
       Absolute Episode: 24
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '44735'
       Has Link: false
       Parsed Episode: '002'
@@ -2590,9 +2589,9 @@ Code Geass- Akito the Exiled 1- The Wyvern Arrives (2012):
   Shows:
     Code Geass- Lelouch of the Rebellion:
       Anime: true
-      Episode: '25'
+      Episode: 25
       Episode ID: '44836'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '025'
       Parsed Episode Title: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00/Code Geass- Lelouch of the Rebellion - S00E025 - Akito the Exiled The Wyvern
@@ -2646,9 +2645,9 @@ Code Geass- Akito the Exiled 2- The Wyvern Divided (2013):
   Shows:
     Code Geass- Lelouch of the Rebellion:
       Anime: true
-      Episode: '26'
+      Episode: 26
       Episode ID: '44837'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '026'
       Parsed Episode Title: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00/Code Geass- Lelouch of the Rebellion - S00E026 - Akito the Exiled The Torn
@@ -2703,9 +2702,9 @@ Code Geass- Akito the Exiled 3- The Brightness Falls (2015):
   Shows:
     Code Geass- Lelouch of the Rebellion:
       Anime: true
-      Episode: '27'
+      Episode: 27
       Episode ID: '44838'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '027'
       Parsed Episode Title: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00/Code Geass- Lelouch of the Rebellion - S00E027 - Akito the Exiled The Brightness
@@ -2759,9 +2758,9 @@ Code Geass- Akito the Exiled 4- Memories of Hatred (2015):
   Shows:
     Code Geass- Lelouch of the Rebellion:
       Anime: true
-      Episode: '28'
+      Episode: 28
       Episode ID: '44839'
-      Has Link: true
+      Has Link: false
       Parsed Episode: 028
       Parsed Episode Title: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00/Code Geass- Lelouch of the Rebellion - S00E028 - Akito the Exiled Memories
@@ -2816,9 +2815,9 @@ Code Geass- Akito the Exiled 5- To Beloved Ones (2016):
   Shows:
     Code Geass- Lelouch of the Rebellion:
       Anime: true
-      Episode: '29'
+      Episode: 29
       Episode ID: '44840'
-      Has Link: true
+      Has Link: false
       Parsed Episode: 029
       Parsed Episode Title: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00/Code Geass- Lelouch of the Rebellion - S00E029 - Akito the Exiled To Those
@@ -2863,7 +2862,7 @@ Code Geass- Lelouch of the Re;Surrection (2019):
   Shows:
     Code Geass- Lelouch of the Rebellion:
       Anime: true
-      Episode: '35'
+      Episode: 35
       Episode ID: '44846'
       Has Link: false
       Parsed Episode: '035'
@@ -2960,7 +2959,7 @@ Code Geass- Lelouch of the Rebellion - Glorification (2018):
       Anime: true
       Episode: 32
       Episode ID: 44843
-      Has Link: true
+      Has Link: false
       Parsed Episode Title: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00/Code Geass- Lelouch of the Rebellion - S00E032 - Code Geass Lelouch of
         the Revolution The Imperial Path
@@ -3052,7 +3051,7 @@ Constantine- City of Demons - The Movie (2018):
   Shows:
     Constantine- City of Demons:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '41751'
       Has Link: false
       Parsed Episode: '02'
@@ -3091,7 +3090,7 @@ Cowboy Bebop- The Movie (2001):
   Shows:
     Cowboy Bebop:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '44925'
       Has Link: false
       Parsed Episode: '001'
@@ -3135,9 +3134,9 @@ Death Note (2006):
   Shows:
     Death Note:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '45126'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '003'
       Parsed Episode Title: anime/staging/Death Note/Season 00/Death Note - S00E003
         - Death Note (Live Action Movie)
@@ -3178,9 +3177,9 @@ Death Note (2017):
   Shows:
     Death Note:
       Anime: true
-      Episode: '6'
+      Episode: 6
       Episode ID: '45129'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '006'
       Parsed Episode Title: anime/staging/Death Note/Season 00/Death Note - S00E006
         - Death Note (Netflix Live Action Movie)
@@ -3223,9 +3222,9 @@ Death Note Relight 1- Visions of a God (2007):
     Death Note:
       Absolute Episode: 38
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '45124'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Death Note/Season 00/Death Note - S00E001
         - Death Note Rewrite The Visualizing God
@@ -3270,9 +3269,9 @@ Death Note Relight 2- L's Successors (2009):
     Death Note:
       Absolute Episode: 39
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '45125'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/Death Note/Season 00/Death Note - S00E002
         - Death Note Rewrite 2 L's Successors
@@ -3313,9 +3312,9 @@ Death Note- The Last Name (2006):
   Shows:
     Death Note:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '45127'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '004'
       Parsed Episode Title: anime/staging/Death Note/Season 00/Death Note - S00E004
         - Death Note The Last Name (Live Action Movie)
@@ -3354,7 +3353,7 @@ Dexter's Laboratory- Ego Trip (1999):
   Shows:
     Dexter's Laboratory:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '20763'
       Has Link: false
       Parsed Episode: '02'
@@ -3395,7 +3394,7 @@ Dragon Ball Z- Battle of Gods (2013):
   Shows:
     Dragon Ball Z:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '669'
       Has Link: false
       Parsed Episode: '002'
@@ -3440,7 +3439,7 @@ Dragon Ball Z- Bio-Broly (1994):
   Shows:
     Dragon Ball Z:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '668'
       Has Link: false
       Parsed Episode: '001'
@@ -3487,9 +3486,9 @@ Dragon Ball Z- Bojack Unbound (1993):
   Shows:
     Dragon Ball Z:
       Anime: true
-      Episode: '9'
+      Episode: 9
       Episode ID: '676'
-      Has Link: true
+      Has Link: false
       Parsed Episode: 009
       Parsed Episode Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z -
         S00E009 - Bojack Unbound
@@ -3536,7 +3535,7 @@ Dragon Ball Z- Bojack Unbound (1993):
   Shows:
     Dragon Ball Z:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '668'
       Has Link: false
       Parsed Episode: '001'
@@ -3587,9 +3586,9 @@ Dragon Ball Z- Bojack Unbound (1993):
   Shows:
     Dragon Ball Z:
       Anime: true
-      Episode: '8'
+      Episode: 8
       Episode ID: '675'
-      Has Link: true
+      Has Link: false
       Parsed Episode: 008
       Parsed Episode Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z -
         S00E008 - Broly The Legendary Super Saiyan
@@ -3631,9 +3630,9 @@ Dragon Ball Z- Dead Zone (1989):
   Shows:
     Dragon Ball Z:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '672'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '005'
       Parsed Episode Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z -
         S00E005 - Cooler's Revenge
@@ -3678,7 +3677,7 @@ Dragon Ball Z- Fusion Reborn (1995):
   Shows:
     Dragon Ball Z:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '668'
       Has Link: false
       Parsed Episode: '001'
@@ -3725,9 +3724,9 @@ Dragon Ball Z- Lord Slug (1991):
   Shows:
     Dragon Ball Z:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '671'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '004'
       Parsed Episode Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z -
         S00E004 - Lord Slug
@@ -3773,7 +3772,7 @@ Dragon Ball Z- Resurrection 'F' (2015):
   Shows:
     Dragon Ball Z:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '669'
       Has Link: false
       Parsed Episode: '002'
@@ -3821,9 +3820,9 @@ Dragon Ball Z- The Tree of Might (1990):
   Shows:
     Dragon Ball Z:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '670'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '003'
       Parsed Episode Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z -
         S00E003 - The Tree of Might
@@ -3869,7 +3868,7 @@ Dragon Ball Z- The World's Strongest (1990):
   Shows:
     Dragon Ball Z:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '669'
       Has Link: false
       Parsed Episode: '002'
@@ -3918,7 +3917,7 @@ Dragon Ball Z- Wrath of the Dragon (1995):
   Shows:
     Dragon Ball Z:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '668'
       Has Link: false
       Parsed Episode: '001'
@@ -3966,7 +3965,7 @@ Dragon Ball- Episode of Bardock (2011):
   Shows:
     Dragon Ball Z:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '669'
       Has Link: false
       Parsed Episode: '002'
@@ -4015,16 +4014,16 @@ Dream 9 Toriko & One Piece & Dragon Ball Z Super Collaboration Special!! (2013):
   Shows:
     Dragon Ball Z:
       Anime: true
-      Episode: '2'
+      Episode: 22
       Episode ID: '689'
       Has Link: false
       Parsed Episode: '002'
       Parsed Episode Title: "anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z -\
-        \ S00E002 - Dream 9 Toriko & One Piece & Dragon Ball Z Ch\u014D Collaboration\
+        \ S00E022 - Dream 9 Toriko & One Piece & Dragon Ball Z Ch\u014D Collaboration\
         \ Special!!"
       Parsed Season Folder: Season 00
       Relative Show File Path: "anime/shounen/Dragon Ball Z/Season 00/Dragon Ball\
-        \ Z - S00E002 - Dream 9 Toriko & One Piece & Dragon Ball Z Ch\u014D Collaboration\
+        \ Z - S00E022 - Dream 9 Toriko & One Piece & Dragon Ball Z Ch\u014D Collaboration\
         \ Special!! WEBDL-720p.mkv"
       Relative Show Path: anime/shounen/Dragon Ball Z/Season 00
       Season: '00'
@@ -4042,14 +4041,14 @@ Dream 9 Toriko & One Piece & Dragon Ball Z Super Collaboration Special!! (2013):
     One Piece:
       Absolute Episode: 590
       Anime: true
-      Episode: '2'
+      Episode: 25
       Episode ID: '3656'
       Has Link: false
       Parsed Episode: '002'
-      Parsed Episode Title: "anime/shounen/One Piece/Season 00/One Piece - S00E002\
+      Parsed Episode Title: "anime/shounen/One Piece/Season 00/One Piece - S00E025\
         \ - Dream 9 Toriko & One Piece & Dragon Ball Z Ch\u014D Collaboration Special!!"
       Parsed Season Folder: Season 00
-      Relative Show File Path: "anime/shounen/One Piece/Season 00/One Piece - S00E002\
+      Relative Show File Path: "anime/shounen/One Piece/Season 00/One Piece - S00E025\
         \ - Dream 9 Toriko & One Piece & Dragon Ball Z Ch\u014D Collaboration Special!!\
         \ WEBDL-720p.mkv"
       Relative Show Path: anime/shounen/One Piece/Season 00
@@ -4072,9 +4071,9 @@ Dream 9 Toriko & One Piece & Dragon Ball Z Super Collaboration Special!! (2013):
     Toriko:
       Absolute Episode: 99
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '47807'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '004'
       Parsed Episode Title: "anime/staging/Toriko/Season 00/Toriko - S00E004 - Dream\
         \ 9 Toriko & One Piece & Dragon Ball Z Ch\u014D Collaboration Special!!"
@@ -4116,9 +4115,9 @@ Elfen Lied Special (2005):
     Elfen Lied:
       Absolute Episode: 14
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '45401'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Elfen Lied/Season 00/Elfen Lied - S00E001
         - In the Passing Rain
@@ -4157,9 +4156,9 @@ Entourage (2015):
   Shows:
     Entourage:
       Anime: true
-      Episode: '9'
+      Episode: 9
       Episode ID: '7873'
-      Has Link: true
+      Has Link: false
       Parsed Episode: 09
       Parsed Episode Title: tv/staging/Entourage/Season 00/Entourage - S00E09 - Entourage
         The Movie
@@ -4202,7 +4201,7 @@ Episode of Sabo - The Three Brothers' Bond - The Miraculous Reunion (2015):
   Shows:
     One Piece:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '3936'
       Has Link: false
       Parsed Episode: '003'
@@ -4248,9 +4247,9 @@ Escaflowne- The Movie (2000):
   Shows:
     Vision of Escaflowne:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '51092'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '01'
       Parsed Episode Title: anime/staging/Vision of Escaflowne/Season 00/Vision of
         Escaflowne - S00E01 - Escaflowne The Movie
@@ -4294,9 +4293,9 @@ Eureka Seven AO- Jungfrau no Hanabana-tachi (2012):
   Shows:
     Eureka Seven:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '4186'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '004'
       Parsed Episode Title: anime/staging/Eureka Seven/Season 00/Eureka Seven - S00E004
         - The Flowers of Jungfrau
@@ -4340,9 +4339,9 @@ Evangelion- 1.0 You Are (Not) Alone (2007):
   Shows:
     Neon Genesis Evangelion:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '46981'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '003'
       Parsed Episode Title: anime/staging/Neon Genesis Evangelion/Season 00/Neon Genesis
         Evangelion - S00E003 - Evangelion 1 You Are (Not) Alone
@@ -4388,9 +4387,9 @@ Evangelion- 2.0 You Can (Not) Advance (2009):
   Shows:
     Neon Genesis Evangelion:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '46982'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '004'
       Parsed Episode Title: anime/staging/Neon Genesis Evangelion/Season 00/Neon Genesis
         Evangelion - S00E004 - Evangelion 2 You Can (Not) Advance
@@ -4436,9 +4435,9 @@ Evangelion- 3.0 You Can (Not) Redo (2012):
   Shows:
     Neon Genesis Evangelion:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '46983'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '005'
       Parsed Episode Title: anime/staging/Neon Genesis Evangelion/Season 00/Neon Genesis
         Evangelion - S00E005 - Evangelion 3 You Can (Not) Redo
@@ -4478,7 +4477,7 @@ Evangelion- 3.0+1.0 (2020):
   Shows:
     Neon Genesis Evangelion:
       Anime: true
-      Episode: '6'
+      Episode: 6
       Episode ID: '46984'
       Has Link: false
       Parsed Episode: '006'
@@ -4521,9 +4520,9 @@ Evil Dead II (1987):
   Shows:
     Ash vs Evil Dead:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '27915'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '02'
       Parsed Episode Title: tv/fantasy/Ash vs Evil Dead/Season 00/Ash vs Evil Dead
         - S00E02 - Evil Dead II
@@ -4565,9 +4564,9 @@ Fairy Tail the Movie- Phoenix Priestess (2012):
   Shows:
     Fairy Tail:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '2270'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '004'
       Parsed Episode Title: anime/shounen/Fairy Tail/Season 00/Fairy Tail - S00E004
         - Fairy Tail the Movie The Phoenix Priestess
@@ -4609,9 +4608,9 @@ Fairy Tail x Rave (2013):
   Shows:
     Fairy Tail:
       Anime: true
-      Episode: '8'
+      Episode: 8
       Episode ID: '2274'
-      Has Link: true
+      Has Link: false
       Parsed Episode: 008
       Parsed Episode Title: anime/shounen/Fairy Tail/Season 00/Fairy Tail - S00E008
         - Fairy Tail x Rave
@@ -4635,7 +4634,7 @@ Fairy Tail x Rave (2013):
       tvdbId: 114801
     Rave Master:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '51980'
       Has Link: false
       Parsed Episode: '001'
@@ -4674,9 +4673,9 @@ Fairy Tail- Dragon Cry (2017):
   Shows:
     Fairy Tail:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '2267'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/shounen/Fairy Tail/Season 00/Fairy Tail - S00E001
         - Welcome to Fairy Hills!!
@@ -4722,9 +4721,9 @@ Family Guy Presents Stewie Griffin - The Untold Story (2005):
   Shows:
     Family Guy:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '21040'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '01'
       Parsed Episode Title: tv/staging/Family Guy/Season 00/Family Guy - S00E01 -
         Stewie Griffin The Untold Story
@@ -4761,7 +4760,7 @@ Family Guy Presents- Road to the North Pole (2011):
   Shows:
     Family Guy:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '21042'
       Has Link: false
       Parsed Episode: '03'
@@ -4799,7 +4798,7 @@ Family Guy Presents- Seth and Alex's almost live comedy show (2009):
   Shows:
     Family Guy:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '21040'
       Has Link: false
       Parsed Episode: '01'
@@ -4844,9 +4843,9 @@ Family Guy Presents- Seth and Alex's almost live comedy show (2009):
     Fate+Kaleid Liner Prisma Illya:
       Absolute Episode: 43
       Anime: true
-      Episode: '24'
+      Episode: 24
       Episode ID: '4274'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '024'
       Parsed Episode Title: anime/staging/Fate+Kaleid Liner Prisma Illya/Season 00/Fate+Kaleid
         Liner Prisma Illya - S00E024 - Oath Under Snow
@@ -4888,7 +4887,7 @@ Fate+Stay Night- Unlimited Blade Works (2010):
   Shows:
     Fate+Stay Night:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '45457'
       Has Link: false
       Parsed Episode: '004'
@@ -4938,7 +4937,7 @@ Fate+stay night- Heaven's Feel I. presage flower (2017):
   Shows:
     Fate+Stay Night- Unlimited Blade Works:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '51924'
       Has Link: false
       Parsed Episode: '003'
@@ -4989,7 +4988,7 @@ Fate+stay night- Heaven's Feel I. presage flower (2017):
   Shows:
     Fate+Stay Night- Unlimited Blade Works:
       Anime: true
-      Episode: ''
+      Episode: 4
       Episode ID: '4327'
       Has Link: false
       Parsed Episode: '004'
@@ -5035,7 +5034,7 @@ Fate+stay night- Heaven's Feel I. presage flower (2017):
   Shows:
     Fate+Stay Night- Unlimited Blade Works:
       Anime: true
-      Episode: ''
+      Episode: 5
       Episode ID: '51925'
       Has Link: false
       Parsed Episode: '005'
@@ -5078,9 +5077,9 @@ Fist of the North Star (1986):
   Shows:
     Fist of the North Star:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '877'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Fist of the North Star/Season 00/Fist of
         the North Star - S00E001 - Fist of the North Star
@@ -5126,9 +5125,9 @@ Fist of the North Star- Legend of Raoh - Chapter of Death in Love (2006):
   Shows:
     Fist of the North Star:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '881'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '005'
       Parsed Episode Title: anime/staging/Fist of the North Star/Season 00/Fist of
         the North Star - S00E005 - Legend of Raoh Chapter of Death in Love
@@ -5176,9 +5175,9 @@ Fist of the North Star- Legend of Raoh - Chapter of Fierce Fight (2007):
   Shows:
     Fist of the North Star:
       Anime: true
-      Episode: '7'
+      Episode: 7
       Episode ID: '883'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '007'
       Parsed Episode Title: anime/staging/Fist of the North Star/Season 00/Fist of
         the North Star - S00E007 - Legend of Raoh Chapter of Fierce Fight
@@ -5224,9 +5223,9 @@ Fist of the North Star- Legend of Toki (2008):
   Shows:
     Fist of the North Star:
       Anime: true
-      Episode: '8'
+      Episode: 8
       Episode ID: '884'
-      Has Link: true
+      Has Link: false
       Parsed Episode: 008
       Parsed Episode Title: anime/staging/Fist of the North Star/Season 00/Fist of
         the North Star - S00E008 - Legend of Toki
@@ -5272,9 +5271,9 @@ Fist of the North Star- Legend of Yuria (2007):
   Shows:
     Fist of the North Star:
       Anime: true
-      Episode: '6'
+      Episode: 6
       Episode ID: '882'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '006'
       Parsed Episode Title: anime/staging/Fist of the North Star/Season 00/Fist of
         the North Star - S00E006 - Legend of Yuria
@@ -5321,9 +5320,9 @@ Fist of the North Star- The Legend of Kenshiro (2008):
   Shows:
     Fist of the North Star:
       Anime: true
-      Episode: '9'
+      Episode: 9
       Episode ID: '885'
-      Has Link: true
+      Has Link: false
       Parsed Episode: 009
       Parsed Episode Title: anime/staging/Fist of the North Star/Season 00/Fist of
         the North Star - S00E009 - Zero Legend of Kenshiro
@@ -5365,9 +5364,9 @@ Freedom Fighters- The Ray (2018):
   Shows:
     Freedom Fighters- The Ray:
       Anime: true
-      Episode: '6'
+      Episode: 6
       Episode ID: '41839'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '06'
       Parsed Episode Title: tv/superhero/Freedom Fighters- The Ray/Season 00/Freedom
         Fighters- The Ray - S00E06 - Freedom Fighters The Ray (feature-length release)
@@ -5407,7 +5406,7 @@ Fullmetal Alchemist (2017):
   Shows:
     Fist of the North Star:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '877'
       Has Link: false
       Parsed Episode: '001'
@@ -5454,9 +5453,9 @@ Fullmetal Alchemist The Movie- Conqueror of Shamballa (2005):
   Shows:
     Fullmetal Alchemist:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '1948'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '004'
       Parsed Episode Title: anime/shounen/Fullmetal Alchemist/Season 00/Fullmetal
         Alchemist - S00E004 - Fullmetal Alchemist The Movie Conqueror of Shamballa
@@ -5506,9 +5505,9 @@ Fullmetal Alchemist The Movie- The Sacred Star of Milos (2011):
   Shows:
     Fullmetal Alchemist:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '1949'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '005'
       Parsed Episode Title: anime/shounen/Fullmetal Alchemist/Season 00/Fullmetal
         Alchemist - S00E005 - Interactive Experience - Preshow
@@ -5552,9 +5551,9 @@ Futurama - Bender's Big Score (2007):
   Shows:
     Futurama:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '21405'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '01'
       Parsed Episode Title: tv/staging/Futurama/Season 00/Futurama - S00E01 - Bender's
         Big Score
@@ -5593,9 +5592,9 @@ Futurama - Bender's Game (2008):
   Shows:
     Futurama:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '21409'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '05'
       Parsed Episode Title: tv/staging/Futurama/Season 00/Futurama - S00E05 - Bender's
         Game
@@ -5635,9 +5634,9 @@ Futurama - Into the Wild Green Yonder (2009):
   Shows:
     Futurama:
       Anime: true
-      Episode: '6'
+      Episode: 6
       Episode ID: '21410'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '06'
       Parsed Episode Title: tv/staging/Futurama/Season 00/Futurama - S00E06 - Into
         the Wild Green Yonder
@@ -5677,9 +5676,9 @@ Futurama - The Beast with a Billion Backs (2008):
   Shows:
     Futurama:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '21406'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '02'
       Parsed Episode Title: tv/staging/Futurama/Season 00/Futurama - S00E02 - The
         Beast With A Billion Backs
@@ -5716,7 +5715,7 @@ Futurama - The Lost Adventure (2008):
   Shows:
     Futurama:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '21407'
       Has Link: false
       Parsed Episode: '03'
@@ -5757,9 +5756,9 @@ Game of Thrones- The Last Watch (2019):
   Shows:
     Game of Thrones:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '28269'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '04'
       Parsed Episode Title: tv/fantasy/Game of Thrones/Season 00/Game of Thrones -
         S00E04 - El Juego Comienza
@@ -5797,9 +5796,9 @@ Gantz (2010):
   Shows:
     Gantz:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '45619'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Gantz/Season 00/Gantz - S00E001 - Gantz
       Parsed Season Folder: Season 00
@@ -5835,9 +5834,9 @@ Gantz- Perfect Answer (2011):
   Shows:
     Gantz:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '45620'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/Gantz/Season 00/Gantz - S00E002 - Gantz
         Perfect Answer
@@ -5873,9 +5872,9 @@ Gantz-O (2016):
   Shows:
     Gantz:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '45621'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '003'
       Parsed Episode Title: anime/staging/Gantz/Season 00/Gantz - S00E003 - GantzO
       Parsed Season Folder: Season 00
@@ -5911,9 +5910,9 @@ Ghost in the Shell (1995):
   Shows:
     Ghost in the Shell- Stand Alone Complex:
       Anime: true
-      Episode: ''
+      Episode: 1
       Episode ID: '4451'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Ghost in the Shell- Stand Alone Complex/Season
         00/Ghost in the Shell- Stand Alone Complex - S00E001 - Ghost in the Shell
@@ -5958,7 +5957,7 @@ Ghost in the Shell (2017):
       Anime: true
       Episode: 1
       Episode ID: '1967'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Ghost in the Shell- Arise - Alternative
         Architecture/Season 00/Ghost in the Shell- Arise - Alternative Architecture
@@ -6001,9 +6000,9 @@ Ghost in the Shell 2- Innocence (2004):
   Shows:
     Ghost in the Shell- Stand Alone Complex:
       Anime: true
-      Episode: ''
+      Episode: 2
       Episode ID: '4452'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/Ghost in the Shell- Stand Alone Complex/Season
         00/Ghost in the Shell- Stand Alone Complex - S00E002 - Ghost in the Shell
@@ -6050,31 +6049,28 @@ Ghost in the Shell Arise - Border 1- Ghost Pain (2013):
     (2013)
   Shows:
     Ghost in the Shell- Arise - Alternative Architecture:
+      Absolute Episode: 3
       Anime: true
-      Episode:
-      - 1
-      - 2
-      Episode ID:
-      - 1959
-      - 1960
+      Episode: 3
+      Episode ID: 1959
       Has Link: false
-      Parsed Episode: '[1, 2]'
-      Parsed Episode Title: 'anime/staging/Ghost in the Shell- Arise - Alternative
-        Architecture/Season 00/Ghost in the Shell- Arise - Alternative Architecture
-        - S00E[1, 2] - '
-      Parsed Season Folder: Season 00
+      Parsed Episode: 001-002
+      Parsed Episode Title: anime/staging/Ghost in the Shell- Arise - Alternative
+        Architecture/Season 01/Ghost in the Shell- Arise - Alternative Architecture
+        - S01E003 - Ghost Pain (1)
+      Parsed Season Folder: Season 01
       Relative Show File Path: anime/staging/Ghost in the Shell- Arise - Alternative
-        Architecture/Season 00/Ghost in the Shell- Arise - Alternative Architecture
-        - S00E[1, 2] -  Remux-1080p.emux.mkv
+        Architecture/Season 01/Ghost in the Shell- Arise - Alternative Architecture
+        - S01E003 - Ghost Pain (1) Remux-1080p.emux.mkv
       Relative Show Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture/Season
-        00
-      Season: '00'
+        01
+      Season: '01'
       Show Genres:
       - Action
       - Animation
       - Science-Fiction
       Show Root Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture
-      Title: ''
+      Title: Ghost Pain (1)
       episodeFileId: ''
       imdbId: tt4508686
       seriesId: 46
@@ -6101,29 +6097,28 @@ Ghost in the Shell Arise - Border 2- Ghost Whispers (2013):
     (2013)
   Shows:
     Ghost in the Shell- Arise - Alternative Architecture:
+      Absolute Episode: 5
       Anime: true
-      Episode: ''
-      Episode ID:
-      - 1961
-      - 1962
+      Episode: 5
+      Episode ID: 1961
       Has Link: false
       Parsed Episode: '005'
-      Parsed Episode Title: 'anime/staging/Ghost in the Shell- Arise - Alternative
-        Architecture/Season 00/Ghost in the Shell- Arise - Alternative Architecture
-        - S00E000 - '
-      Parsed Season Folder: Season 00
+      Parsed Episode Title: anime/staging/Ghost in the Shell- Arise - Alternative
+        Architecture/Season 01/Ghost in the Shell- Arise - Alternative Architecture
+        - S01E005 - Ghost Whispers (1)
+      Parsed Season Folder: Season 01
       Relative Show File Path: anime/staging/Ghost in the Shell- Arise - Alternative
-        Architecture/Season 00/Ghost in the Shell- Arise - Alternative Architecture
-        - S00E000 -  Remux-1080p.mkv
+        Architecture/Season 01/Ghost in the Shell- Arise - Alternative Architecture
+        - S01E005 - Ghost Whispers (1) Remux-1080p.mkv
       Relative Show Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture/Season
-        00
-      Season: '00'
+        01
+      Season: '01'
       Show Genres:
       - Action
       - Animation
       - Science-Fiction
       Show Root Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture
-      Title: ''
+      Title: Ghost Whispers (1)
       episodeFileId: ''
       imdbId: tt4508686
       seriesId: 46
@@ -6150,29 +6145,28 @@ Ghost in the Shell Arise - Border 3- Ghost Tears (2014):
     (2014)
   Shows:
     Ghost in the Shell- Arise - Alternative Architecture:
+      Absolute Episode: 7
       Anime: true
-      Episode: ''
-      Episode ID:
-      - 1963
-      - 1964
+      Episode: 7
+      Episode ID: 1963
       Has Link: false
       Parsed Episode: '007'
-      Parsed Episode Title: 'anime/staging/Ghost in the Shell- Arise - Alternative
-        Architecture/Season 00/Ghost in the Shell- Arise - Alternative Architecture
-        - S00E000 - '
-      Parsed Season Folder: Season 00
+      Parsed Episode Title: anime/staging/Ghost in the Shell- Arise - Alternative
+        Architecture/Season 01/Ghost in the Shell- Arise - Alternative Architecture
+        - S01E007 - Ghost Tears (1)
+      Parsed Season Folder: Season 01
       Relative Show File Path: anime/staging/Ghost in the Shell- Arise - Alternative
-        Architecture/Season 00/Ghost in the Shell- Arise - Alternative Architecture
-        - S00E000 -  HDTV-1080p.emux-1080p.mkv
+        Architecture/Season 01/Ghost in the Shell- Arise - Alternative Architecture
+        - S01E007 - Ghost Tears (1) HDTV-1080p.emux-1080p.mkv
       Relative Show Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture/Season
-        00
-      Season: '00'
+        01
+      Season: '01'
       Show Genres:
       - Action
       - Animation
       - Science-Fiction
       Show Root Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture
-      Title: ''
+      Title: Ghost Tears (1)
       episodeFileId: ''
       imdbId: tt4508686
       seriesId: 46
@@ -6201,29 +6195,28 @@ Ghost in the Shell Arise - Border 4- Ghost Stands Alone (2014):
     Alone (2014)
   Shows:
     Ghost in the Shell- Arise - Alternative Architecture:
+      Absolute Episode: 1
       Anime: true
-      Episode: ''
-      Episode ID:
-      - 1957
-      - 1958
+      Episode: 1
+      Episode ID: 1957
       Has Link: false
       Parsed Episode: '001'
-      Parsed Episode Title: 'anime/staging/Ghost in the Shell- Arise - Alternative
-        Architecture/Season 00/Ghost in the Shell- Arise - Alternative Architecture
-        - S00E000 - '
-      Parsed Season Folder: Season 00
+      Parsed Episode Title: anime/staging/Ghost in the Shell- Arise - Alternative
+        Architecture/Season 01/Ghost in the Shell- Arise - Alternative Architecture
+        - S01E001 - Ghost Stands Alone (1)
+      Parsed Season Folder: Season 01
       Relative Show File Path: anime/staging/Ghost in the Shell- Arise - Alternative
-        Architecture/Season 00/Ghost in the Shell- Arise - Alternative Architecture
-        - S00E000 -  Remux-1080p.EAL.mkv
+        Architecture/Season 01/Ghost in the Shell- Arise - Alternative Architecture
+        - S01E001 - Ghost Stands Alone (1) Remux-1080p.EAL.mkv
       Relative Show Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture/Season
-        00
-      Season: '00'
+        01
+      Season: '01'
       Show Genres:
       - Action
       - Animation
       - Science-Fiction
       Show Root Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture
-      Title: ''
+      Title: Ghost Stands Alone (1)
       episodeFileId: ''
       imdbId: tt4508686
       seriesId: 46
@@ -6250,29 +6243,28 @@ Ghost in the Shell Arise - Border 5- Pyrophoric Cult (2015):
     Cult (2015)
   Shows:
     Ghost in the Shell- Arise - Alternative Architecture:
+      Absolute Episode: 9
       Anime: true
-      Episode: ''
-      Episode ID:
-      - 1965
-      - 1966
+      Episode: 9
+      Episode ID: 1965
       Has Link: false
       Parsed Episode: 009
-      Parsed Episode Title: 'anime/staging/Ghost in the Shell- Arise - Alternative
-        Architecture/Season 00/Ghost in the Shell- Arise - Alternative Architecture
-        - S00E000 - '
-      Parsed Season Folder: Season 00
+      Parsed Episode Title: anime/staging/Ghost in the Shell- Arise - Alternative
+        Architecture/Season 01/Ghost in the Shell- Arise - Alternative Architecture
+        - S01E009 - Pyrophoric Cult (1)
+      Parsed Season Folder: Season 01
       Relative Show File Path: anime/staging/Ghost in the Shell- Arise - Alternative
-        Architecture/Season 00/Ghost in the Shell- Arise - Alternative Architecture
-        - S00E000 -  Remux-1080p.mkv
+        Architecture/Season 01/Ghost in the Shell- Arise - Alternative Architecture
+        - S01E009 - Pyrophoric Cult (1) Remux-1080p.mkv
       Relative Show Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture/Season
-        00
-      Season: '00'
+        01
+      Season: '01'
       Show Genres:
       - Action
       - Animation
       - Science-Fiction
       Show Root Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture
-      Title: ''
+      Title: Pyrophoric Cult (1)
       episodeFileId: ''
       imdbId: tt4508686
       seriesId: 46
@@ -6296,7 +6288,7 @@ Ghost in the Shell Arise- Another Mission (2013):
   Shows:
     Ghost in the Shell- Arise - Alternative Architecture:
       Anime: true
-      Episode: ''
+      Episode: 11
       Episode ID: '1977'
       Has Link: false
       Parsed Episode: '011'
@@ -6343,9 +6335,9 @@ Ghost in the Shell Arise- Another Mission (2013):
   Shows:
     Ghost in the Shell- Stand Alone Complex:
       Anime: true
-      Episode: ''
+      Episode: 4
       Episode ID: '4454'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '004'
       Parsed Episode Title: anime/staging/Ghost in the Shell- Stand Alone Complex/Season
         00/Ghost in the Shell- Stand Alone Complex - S00E004 - Individual Eleven
@@ -6391,9 +6383,9 @@ Ghost in the Shell- Stand Alone Complex - Solid State Society (2006):
   Shows:
     Ghost in the Shell- Stand Alone Complex:
       Anime: true
-      Episode: ''
+      Episode: 5
       Episode ID: '4455'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '005'
       Parsed Episode Title: anime/staging/Ghost in the Shell- Stand Alone Complex/Season
         00/Ghost in the Shell- Stand Alone Complex - S00E005 - Solid State Society
@@ -6441,9 +6433,9 @@ Ghost in the Shell- Stand Alone Complex - The Laughing Man (2005):
   Shows:
     Ghost in the Shell- Stand Alone Complex:
       Anime: true
-      Episode: ''
+      Episode: 3
       Episode ID: '4453'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '003'
       Parsed Episode Title: anime/staging/Ghost in the Shell- Stand Alone Complex/Season
         00/Ghost in the Shell- Stand Alone Complex - S00E003 - The Laughing Man
@@ -6486,9 +6478,9 @@ Gintama- The Best of Gintama on Theater 2D (2012):
   Shows:
     Gintama:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '4877'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Gintama/Season 00/Gintama - S00E001 - Jump
         Festa 2005 Special
@@ -6534,9 +6526,9 @@ Gintama- The Final Chapter - Be Forever Yorozuya (2013):
   Shows:
     Gintama:
       Anime: true
-      Episode: '7'
+      Episode: 7
       Episode ID: '4883'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '007'
       Parsed Episode Title: anime/staging/Gintama/Season 00/Gintama - S00E007 - Gintama
         The Movie The Final Chapter Odd Jobs Forever
@@ -6579,9 +6571,9 @@ Gintama- The Movie (2010):
   Shows:
     Gintama:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '4880'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '004'
       Parsed Episode Title: anime/staging/Gintama/Season 00/Gintama - S00E004 - Gintama
         The Movie
@@ -6620,7 +6612,7 @@ God Eater Prologue (0):
   Shows:
     God Eater:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '45647'
       Has Link: false
       Parsed Episode: '001'
@@ -6659,7 +6651,7 @@ Goin' Down To South Park (1999):
   Shows:
     South Park:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '22827'
       Has Link: false
       Parsed Episode: '02'
@@ -6696,7 +6688,7 @@ Granblue Fantasy The Animation- Kabocha no Lantern (0):
   Shows:
     Granblue Fantasy The Animation:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '45667'
       Has Link: false
       Parsed Episode: '002'
@@ -6736,9 +6728,9 @@ Gundam Wing- Endless Waltz (1998):
   Shows:
     Mobile Suit Gundam Wing:
       Anime: true
-      Episode: '8'
+      Episode: 8
       Episode ID: '1236'
-      Has Link: true
+      Has Link: false
       Parsed Episode: 008
       Parsed Episode Title: anime/staging/Mobile Suit Gundam Wing/Season 00/Mobile
         Suit Gundam Wing - S00E008 - Endless Waltz Movie
@@ -6776,7 +6768,7 @@ Gundam- Mission to the Rise (1998):
   Shows:
     Mobile Suit Gundam:
       Anime: true
-      Episode: '7'
+      Episode: 7
       Episode ID: '5393'
       Has Link: false
       Parsed Episode: '007'
@@ -6798,7 +6790,7 @@ Gundam- Mission to the Rise (1998):
       tvdbId: 76547
     Mobile Suit Gundam 0079:
       Anime: true
-      Episode: '8'
+      Episode: 8
       Episode ID: '46369'
       Has Link: false
       Parsed Episode: 008
@@ -6842,9 +6834,9 @@ Gurren Lagann The Movie- Childhood's End (2008):
   Shows:
     Gurren Lagann:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '45697'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '003'
       Parsed Episode Title: anime/staging/Gurren Lagann/Season 00/Gurren Lagann -
         S00E003 - Gurren Lagann the Movie -Childhood's End-
@@ -6892,9 +6884,9 @@ Gurren Lagann The Movie- The Lights in the Sky Are Stars (2009):
   Shows:
     Gurren Lagann:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '45698'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '004'
       Parsed Episode Title: anime/staging/Gurren Lagann/Season 00/Gurren Lagann -
         S00E004 - Gurren Lagann the Movie -The Lights in the Sky Are Stars-
@@ -6938,7 +6930,7 @@ Haikyuu!! Movie 2- Winners and Losers (2015):
   Shows:
     Haikyu!!:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '45781'
       Has Link: false
       Parsed Episode: '004'
@@ -6980,7 +6972,7 @@ Haikyuu!! Movie 3- Genius and Sense (2017):
   Shows:
     Haikyu!!:
       Anime: true
-      Episode: '6'
+      Episode: 6
       Episode ID: '45783'
       Has Link: false
       Parsed Episode: '006'
@@ -7022,7 +7014,7 @@ Haikyuu!! Movie 4- Battle of Concepts (2017):
   Shows:
     Haikyu!!:
       Anime: true
-      Episode: '7'
+      Episode: 7
       Episode ID: '45784'
       Has Link: false
       Parsed Episode: '007'
@@ -7066,7 +7058,7 @@ Haikyuu!! The Movie- Beginnings and Endings (2015):
     Haikyu!!:
       Absolute Episode: 1
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '45717'
       Has Link: false
       Parsed Episode: '001'
@@ -7107,7 +7099,7 @@ Hajime no Ippo- Champion Road (2003):
   Shows:
     Hajime no Ippo- The Fighting!:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '5018'
       Has Link: false
       Parsed Episode: '002'
@@ -7147,7 +7139,7 @@ Hajime no Ippo- Mashiba vs. Kimura (2003):
   Shows:
     Hajime no Ippo- The Fighting!:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '5019'
       Has Link: false
       Parsed Episode: '003'
@@ -7212,7 +7204,7 @@ High School of the Dead OVA- Drifters of the Dead (2011):
   Shows:
     High School of the Dead:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '53007'
       Has Link: false
       Parsed Episode: '01'
@@ -7258,9 +7250,9 @@ High School of the Dead OVA- Drifters of the Dead (2011):
   Shows:
     Hunter x Hunter (2011):
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '46053'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Hunter x Hunter (2011)/Season 00/Hunter
         x Hunter (2011) - S00E001 - Phantom Rouge
@@ -7305,9 +7297,9 @@ High School of the Dead OVA- Drifters of the Dead (2011):
   Shows:
     Hunter x Hunter (2011):
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '46054'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/Hunter x Hunter (2011)/Season 00/Hunter
         x Hunter (2011) - S00E002 - The Last Mission
@@ -7348,9 +7340,9 @@ Inside The X-Files (1998):
   Shows:
     The X-Files:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '34520'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '04'
       Parsed Episode Title: tv/scifi/The X-Files/Season 00/The X-Files - S00E04 -
         Inside the X-Files
@@ -7392,9 +7384,9 @@ Inuyasha the Movie 2- The Castle Beyond the Looking Glass (2002):
   Shows:
     InuYasha:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '46249'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '002'
       Parsed Episode Title: anime/shounen/InuYasha/Season 00/InuYasha - S00E002 -
         Movie 2 The Castle Beyond the Looking Glass
@@ -7438,9 +7430,9 @@ Inuyasha the Movie 3- Swords of an Honorable Ruler (2003):
   Shows:
     InuYasha:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '46250'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '003'
       Parsed Episode Title: anime/shounen/InuYasha/Season 00/InuYasha - S00E003 -
         Movie 3 Swords of an Honorable Ruler
@@ -7484,9 +7476,9 @@ Inuyasha the Movie 4- Fire on the Mystic Island (2004):
   Shows:
     InuYasha:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '46251'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '004'
       Parsed Episode Title: anime/shounen/InuYasha/Season 00/InuYasha - S00E004 -
         Movie 4 Fire on the Mystic Island
@@ -7532,9 +7524,9 @@ Inuyasha the Movie- Affections Touching Across Time (2001):
   Shows:
     InuYasha:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '46248'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/shounen/InuYasha/Season 00/InuYasha - S00E001 -
         Movie 1 Affections Touching Across Time
@@ -7595,9 +7587,9 @@ Jeff Dunham - All Over the Map (2014):
   Shows:
     The Jeff Dunham Show:
       Anime: true
-      Episode: '8'
+      Episode: 8
       Episode ID: '10432'
-      Has Link: true
+      Has Link: false
       Parsed Episode: 08
       Parsed Episode Title: tv/staging/The Jeff Dunham Show/Season 00/The Jeff Dunham
         Show - S00E08 - All Over the Map
@@ -7635,9 +7627,9 @@ Jeff Dunham - Arguing with Myself (2006):
   Shows:
     The Jeff Dunham Show:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '10425'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '01'
       Parsed Episode Title: tv/staging/The Jeff Dunham Show/Season 00/The Jeff Dunham
         Show - S00E01 - Arguing with Myself
@@ -7675,9 +7667,9 @@ Jeff Dunham - Birth of a Dummy (2011):
   Shows:
     The Jeff Dunham Show:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '10429'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '05'
       Parsed Episode Title: tv/staging/The Jeff Dunham Show/Season 00/The Jeff Dunham
         Show - S00E05 - Birth of a Dummy
@@ -7715,9 +7707,9 @@ Jeff Dunham - Controlled Chaos (2011):
   Shows:
     The Jeff Dunham Show:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '10428'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '04'
       Parsed Episode Title: tv/staging/The Jeff Dunham Show/Season 00/The Jeff Dunham
         Show - S00E04 - Controlled Chaos
@@ -7758,9 +7750,9 @@ Jeff Dunham - Jeff Dunham's Very Special Christmas Special (2008):
   Shows:
     The Jeff Dunham Show:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '10427'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '03'
       Parsed Episode Title: tv/staging/The Jeff Dunham Show/Season 00/The Jeff Dunham
         Show - S00E03 - Very Special Christmas Special
@@ -7798,9 +7790,9 @@ Jeff Dunham - Minding the Monsters (2012):
   Shows:
     The Jeff Dunham Show:
       Anime: true
-      Episode: '6'
+      Episode: 6
       Episode ID: '10430'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '06'
       Parsed Episode Title: tv/staging/The Jeff Dunham Show/Season 00/The Jeff Dunham
         Show - S00E06 - Minding the Monsters
@@ -7838,7 +7830,7 @@ Jeff Dunham - Relative Disaster (2017):
   Shows:
     The Jeff Dunham Show:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '10425'
       Has Link: false
       Parsed Episode: '01'
@@ -7878,9 +7870,9 @@ Jeff Dunham - Spark of Insanity (2007):
   Shows:
     The Jeff Dunham Show:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '10426'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '02'
       Parsed Episode Title: tv/staging/The Jeff Dunham Show/Season 00/The Jeff Dunham
         Show - S00E02 - Spark of Insanity
@@ -7918,9 +7910,9 @@ Jeff Dunham - Unhinged in Hollywood (2015):
   Shows:
     The Jeff Dunham Show:
       Anime: true
-      Episode: '9'
+      Episode: 9
       Episode ID: '10433'
-      Has Link: true
+      Has Link: false
       Parsed Episode: 09
       Parsed Episode Title: tv/staging/The Jeff Dunham Show/Season 00/The Jeff Dunham
         Show - S00E09 - Unhinged in Hollywood
@@ -8036,9 +8028,9 @@ Journey's End- The Saga of Star Trek - The Next Generation (1994):
   Shows:
     Star Trek- The Next Generation:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '32976'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '01'
       Parsed Episode Title: tv/scifi/Star Trek- The Next Generation/Season 00/Star
         Trek- The Next Generation - S00E01 - Journey's End The Saga of Star Trek The
@@ -8102,9 +8094,9 @@ Justice League- Crisis on Two Earths (2010):
   Shows:
     Justice League:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '41992'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '05'
       Parsed Episode Title: tv/superhero/Justice League/Season 00/Justice League -
         S00E05 - Crisis on Two Earths
@@ -8146,9 +8138,9 @@ Justice League- The Flashpoint Paradox (2013):
   Shows:
     Justice League:
       Anime: true
-      Episode: '6'
+      Episode: 6
       Episode ID: '41993'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '06'
       Parsed Episode Title: tv/superhero/Justice League/Season 00/Justice League -
         S00E06 - The Flashpoint Paradox
@@ -8190,9 +8182,9 @@ Justice League- The New Frontier (2008):
   Shows:
     Justice League:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '41991'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '04'
       Parsed Episode Title: tv/superhero/Justice League/Season 00/Justice League -
         S00E04 - The New Frontier
@@ -8238,9 +8230,9 @@ Kabaneri of the Iron Fortress Recap 1- Gathering Light (2016):
   Shows:
     Kabaneri of the Iron Fortress:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '49306'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Kabaneri of the Iron Fortress/Season 00/Kabaneri
         of the Iron Fortress - S00E001 - Kabaneri of the Iron Fortress Recap 1 Gathering
@@ -8290,9 +8282,9 @@ Kabaneri of the Iron Fortress Recap 2- Burning Life (2017):
   Shows:
     Kabaneri of the Iron Fortress:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '50620'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/Kabaneri of the Iron Fortress/Season 00/Kabaneri
         of the Iron Fortress - S00E002 - Kabaneri of the Iron Fortress Recap 2 Burning
@@ -8338,7 +8330,7 @@ Kabaneri of the Iron Fortress- The Battle of Unato (2019):
     Kabaneri of the Iron Fortress:
       Absolute Episode: 13
       Anime: true
-      Episode: ''
+      Episode: 3
       Episode ID: '50621'
       Has Link: false
       Parsed Episode: '003'
@@ -8386,9 +8378,9 @@ Kono Subarashii Sekai ni Shukufuku wo! 2- God's Blessings on This Wonderful Work
   Shows:
     KONOSUBA - God's blessing on this wonderful world!:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '5250'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '004'
       Parsed Episode Title: anime/staging/KONOSUBA - God's blessing on this wonderful
         world!/Season 00/KONOSUBA - God's blessing on this wonderful world! - S00E004
@@ -8439,16 +8431,16 @@ Kono Subarashii Sekai ni Shukufuku wo! God's Blessings on This Wonderful Choker!
   Shows:
     KONOSUBA - God's blessing on this wonderful world!:
       Anime: true
-      Episode: '4'
+      Episode: 3
       Episode ID: '5249'
       Has Link: false
       Parsed Episode: '004'
       Parsed Episode Title: anime/staging/KONOSUBA - God's blessing on this wonderful
-        world!/Season 00/KONOSUBA - God's blessing on this wonderful world! - S00E004
+        world!/Season 00/KONOSUBA - God's blessing on this wonderful world! - S00E003
         - A Blessing to This Wonderful Choker!
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/KONOSUBA - God's blessing on this wonderful
-        world!/Season 00/KONOSUBA - God's blessing on this wonderful world! - S00E004
+        world!/Season 00/KONOSUBA - God's blessing on this wonderful world! - S00E003
         - A Blessing to This Wonderful Choker! Bluray-1080p.mkv
       Relative Show Path: anime/staging/KONOSUBA - God's blessing on this wonderful
         world!/Season 00
@@ -8493,9 +8485,9 @@ Koukyoushihen- Eureka Seven - Hi-Evolution 1 (2017):
   Shows:
     Eureka Seven:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '4184'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/Eureka Seven/Season 00/Eureka Seven - S00E002
         - Navigation ray=out
@@ -8537,9 +8529,9 @@ L- Change the World (2008):
   Shows:
     Death Note:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '45128'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '005'
       Parsed Episode Title: anime/staging/Death Note/Season 00/Death Note - S00E005
         - Death Note L, Change the World (Live Action Movie)
@@ -8582,22 +8574,19 @@ Lupin the Third- Daisuke Jigen's Gravestone (2014):
     (2014)
   Shows:
     Lupin the Third- The Woman Called Fujiko Mine:
+      Absolute Episode: 14
       Anime: true
-      Episode:
-      - 1
-      - 2
-      Episode ID:
-      - 5264
-      - 5265
+      Episode: 1
+      Episode ID: 5264
       Has Link: false
-      Parsed Episode: '[1, 2]'
-      Parsed Episode Title: 'anime/staging/Lupin the Third- The Woman Called Fujiko
-        Mine/Season 00/Lupin the Third- The Woman Called Fujiko Mine - S00E[1, 2]
-        - '
+      Parsed Episode: 001-002
+      Parsed Episode Title: anime/staging/Lupin the Third- The Woman Called Fujiko
+        Mine/Season 00/Lupin the Third- The Woman Called Fujiko Mine - S00E001 - Daisuke
+        Jigen's Gravestone, Part 1
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Lupin the Third- The Woman Called Fujiko
-        Mine/Season 00/Lupin the Third- The Woman Called Fujiko Mine - S00E[1, 2]
-        -  Bluray-1080p.mkv
+        Mine/Season 00/Lupin the Third- The Woman Called Fujiko Mine - S00E001 - Daisuke
+        Jigen's Gravestone, Part 1 Bluray-1080p.mkv
       Relative Show Path: anime/staging/Lupin the Third- The Woman Called Fujiko Mine/Season
         00
       Season: '00'
@@ -8606,7 +8595,7 @@ Lupin the Third- Daisuke Jigen's Gravestone (2014):
       - Animation
       - Comedy
       Show Root Path: anime/staging/Lupin the Third- The Woman Called Fujiko Mine
-      Title: ''
+      Title: Daisuke Jigen's Gravestone, Part 1
       episodeFileId: ''
       imdbId: tt2298919
       seriesId: 156
@@ -8635,22 +8624,19 @@ Lupin the Third- The Blood Spray of Goemon Ishikawa (2017):
     (2017)
   Shows:
     Lupin the Third- The Woman Called Fujiko Mine:
+      Absolute Episode: 16
       Anime: true
-      Episode:
-      - 3
-      - 4
-      Episode ID:
-      - 5266
-      - 5267
+      Episode: 3
+      Episode ID: 5266
       Has Link: false
-      Parsed Episode: '[3, 4]'
-      Parsed Episode Title: 'anime/staging/Lupin the Third- The Woman Called Fujiko
-        Mine/Season 00/Lupin the Third- The Woman Called Fujiko Mine - S00E[3, 4]
-        - '
+      Parsed Episode: 003-004
+      Parsed Episode Title: anime/staging/Lupin the Third- The Woman Called Fujiko
+        Mine/Season 00/Lupin the Third- The Woman Called Fujiko Mine - S00E003 - The
+        Blood Spray of Goemon Ishikawa, Part 1
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Lupin the Third- The Woman Called Fujiko
-        Mine/Season 00/Lupin the Third- The Woman Called Fujiko Mine - S00E[3, 4]
-        -  Bluray-1080p.mkv
+        Mine/Season 00/Lupin the Third- The Woman Called Fujiko Mine - S00E003 - The
+        Blood Spray of Goemon Ishikawa, Part 1 Bluray-1080p.mkv
       Relative Show Path: anime/staging/Lupin the Third- The Woman Called Fujiko Mine/Season
         00
       Season: '00'
@@ -8659,7 +8645,7 @@ Lupin the Third- The Blood Spray of Goemon Ishikawa (2017):
       - Animation
       - Comedy
       Show Root Path: anime/staging/Lupin the Third- The Woman Called Fujiko Mine
-      Title: ''
+      Title: The Blood Spray of Goemon Ishikawa, Part 1
       episodeFileId: ''
       imdbId: tt2298919
       seriesId: 156
@@ -8683,7 +8669,7 @@ Made in Abyss- Dawn of the Deep Soul (2020):
   Shows:
     Made in Abyss:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '51241'
       Has Link: false
       Parsed Episode: '003'
@@ -8728,9 +8714,9 @@ Maggie Simpson in The Longest Daycare (2012):
   Shows:
     The Simpsons:
       Anime: true
-      Episode: '6'
+      Episode: 6
       Episode ID: '39452'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '06'
       Parsed Episode Title: tv/sitcom/The Simpsons/Season 00/The Simpsons - S00E06
         - Burping Contest
@@ -8768,7 +8754,7 @@ March Comes in Like a Lion (2017):
   Shows:
     March Comes in Like a Lion:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '5314'
       Has Link: false
       Parsed Episode: '003'
@@ -8807,7 +8793,7 @@ Merlin's Apprentice (2006):
   Shows:
     Merlin (1998):
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '48210'
       Has Link: false
       Parsed Episode: '02'
@@ -8848,9 +8834,9 @@ Merlin- The Return (2000):
   Shows:
     Merlin (1998):
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '48209'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '01'
       Parsed Episode Title: tv/staging/Merlin (1998)/Season 00/Merlin (1998) - S00E01
         - Merlin - The Return
@@ -8895,9 +8881,9 @@ Merlin- The Return (2000):
   Shows:
     Mob Psycho 100:
       Anime: true
-      Episode: '7'
+      Episode: 7
       Episode ID: '1070'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '007'
       Parsed Episode Title: anime/staging/Mob Psycho 100/Season 00/Mob Psycho 100
         - S00E007 - Reigen - The Miracle Psychic that Nobody Knows
@@ -8942,9 +8928,9 @@ Mobile Suit Gundam 00 Special Edition I- Celestial Being (2009):
   Shows:
     Mobile Suit Gundam 00:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '1128'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '004'
       Parsed Episode Title: anime/staging/Mobile Suit Gundam 00/Season 00/Mobile Suit
         Gundam 00 - S00E004 - Special Edition I Celestial Being
@@ -8987,9 +8973,9 @@ Mobile Suit Gundam 00 Special Edition II- End of World (2009):
   Shows:
     Mobile Suit Gundam 00:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '1129'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '005'
       Parsed Episode Title: anime/staging/Mobile Suit Gundam 00/Season 00/Mobile Suit
         Gundam 00 - S00E005 - Special Edition II End of World
@@ -9032,9 +9018,9 @@ Mobile Suit Gundam 00 Special Edition III- Return The World (2010):
   Shows:
     Mobile Suit Gundam 00:
       Anime: true
-      Episode: '6'
+      Episode: 6
       Episode ID: '1130'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '006'
       Parsed Episode Title: anime/staging/Mobile Suit Gundam 00/Season 00/Mobile Suit
         Gundam 00 - S00E006 - Special Edition III Return of the World
@@ -9079,9 +9065,9 @@ Mobile Suit Gundam 00- A Wakening of the Trailblazer (2010):
     Mobile Suit Gundam 00:
       Absolute Episode: 51
       Anime: true
-      Episode: '7'
+      Episode: 7
       Episode ID: '1124'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '007'
       Parsed Episode Title: anime/staging/Mobile Suit Gundam 00/Season 00/Mobile Suit
         Gundam 00 - S00E007 - Awakening of the Trailblazer
@@ -9126,9 +9112,9 @@ Mobile Suit Gundam 0083- Stardust Memory - The Mayfly of Space (1992):
   Shows:
     Mobile Suit Gundam 0083- Stardust Memory:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '46387'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/Mobile Suit Gundam 0083- Stardust Memory/Season
         00/Mobile Suit Gundam 0083- Stardust Memory - S00E002 - The Mayfly of Space
@@ -9168,7 +9154,7 @@ Mobile Suit Gundam 0083- The Last Blitz of Zeon (1992):
   Shows:
     Mobile Suit Gundam 0083- Stardust Memory:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '46386'
       Has Link: false
       Parsed Episode: '001'
@@ -9210,7 +9196,7 @@ Mobile Suit Gundam AGE- Memory of Eden (2013):
   Shows:
     Mobile Suit Gundam AGE:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '46438'
       Has Link: false
       Parsed Episode: '001'
@@ -9251,9 +9237,9 @@ Mobile Suit Gundam F91 (1991):
   Shows:
     Mobile Suit Gundam:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '5391'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '005'
       Parsed Episode Title: anime/staging/Mobile Suit Gundam/Season 00/Mobile Suit
         Gundam - S00E005 - Mobile Suit Gundam F91
@@ -9290,7 +9276,7 @@ Mobile Suit Gundam I (1981):
   Shows:
     Mobile Suit Gundam:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '5387'
       Has Link: false
       Parsed Episode: '001'
@@ -9312,7 +9298,7 @@ Mobile Suit Gundam I (1981):
       tvdbId: 76547
     Mobile Suit Gundam 0079:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '46362'
       Has Link: false
       Parsed Episode: '001'
@@ -9351,7 +9337,7 @@ Mobile Suit Gundam II- Soldiers of Sorrow (1981):
   Shows:
     Mobile Suit Gundam:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '5388'
       Has Link: false
       Parsed Episode: '002'
@@ -9373,7 +9359,7 @@ Mobile Suit Gundam II- Soldiers of Sorrow (1981):
       tvdbId: 76547
     Mobile Suit Gundam 0079:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '46363'
       Has Link: false
       Parsed Episode: '002'
@@ -9415,7 +9401,7 @@ Mobile Suit Gundam III- Encounters in Space (1982):
   Shows:
     Mobile Suit Gundam:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '5389'
       Has Link: false
       Parsed Episode: '003'
@@ -9437,7 +9423,7 @@ Mobile Suit Gundam III- Encounters in Space (1982):
       tvdbId: 76547
     Mobile Suit Gundam 0079:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '46364'
       Has Link: false
       Parsed Episode: '003'
@@ -9479,7 +9465,7 @@ Mobile Suit Gundam MS IGLOO- The Hidden One Year War (2004):
   Shows:
     Mobile Suit Gundam- MS IGLOO:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '46448'
       Has Link: false
       Parsed Episode: '001'
@@ -9517,7 +9503,7 @@ Mobile Suit Gundam SEED Destiny- Special Edition I - The Broken World (2006):
   Shows:
     Mobile Suit Gundam SEED (2012) - HD Remaster:
       Anime: true
-      Episode: '7'
+      Episode: 7
       Episode ID: '5572'
       Has Link: false
       Parsed Episode: '007'
@@ -9541,7 +9527,7 @@ Mobile Suit Gundam SEED Destiny- Special Edition I - The Broken World (2006):
       tvdbId: 254931
     Mobile Suit Gundam SEED Destiny:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '5636'
       Has Link: false
       Parsed Episode: '003'
@@ -9582,7 +9568,7 @@ Mobile Suit Gundam SEED Destiny- Special Edition II - Their Respective Swords (2
   Shows:
     Mobile Suit Gundam SEED (2012) - HD Remaster:
       Anime: true
-      Episode: '8'
+      Episode: 8
       Episode ID: '5573'
       Has Link: false
       Parsed Episode: 008
@@ -9606,7 +9592,7 @@ Mobile Suit Gundam SEED Destiny- Special Edition II - Their Respective Swords (2
       tvdbId: 254931
     Mobile Suit Gundam SEED Destiny:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '5637'
       Has Link: false
       Parsed Episode: '004'
@@ -9647,7 +9633,7 @@ Mobile Suit Gundam SEED Destiny- Special Edition III - Flames of Destiny (2006):
   Shows:
     Mobile Suit Gundam SEED (2012) - HD Remaster:
       Anime: true
-      Episode: '9'
+      Episode: 9
       Episode ID: '5574'
       Has Link: false
       Parsed Episode: 009
@@ -9671,7 +9657,7 @@ Mobile Suit Gundam SEED Destiny- Special Edition III - Flames of Destiny (2006):
       tvdbId: 254931
     Mobile Suit Gundam SEED Destiny:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '5638'
       Has Link: false
       Parsed Episode: '005'
@@ -9712,7 +9698,7 @@ Mobile Suit Gundam SEED Destiny- Special Edition IV - The Cost of Freedom (2007)
   Shows:
     Mobile Suit Gundam SEED (2012) - HD Remaster:
       Anime: true
-      Episode: '10'
+      Episode: 10
       Episode ID: '5575'
       Has Link: false
       Parsed Episode: '010'
@@ -9736,7 +9722,7 @@ Mobile Suit Gundam SEED Destiny- Special Edition IV - The Cost of Freedom (2007)
       tvdbId: 254931
     Mobile Suit Gundam SEED Destiny:
       Anime: true
-      Episode: '6'
+      Episode: 6
       Episode ID: '5639'
       Has Link: false
       Parsed Episode: '006'
@@ -9777,7 +9763,7 @@ Mobile Suit Gundam SEED Movie I- The Empty Battlefield (2004):
   Shows:
     Mobile Suit Gundam SEED:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '5462'
       Has Link: false
       Parsed Episode: '02'
@@ -9800,7 +9786,7 @@ Mobile Suit Gundam SEED Movie I- The Empty Battlefield (2004):
       tvdbId: 367683
     Mobile Suit Gundam SEED (2012) - HD Remaster:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '5567'
       Has Link: false
       Parsed Episode: '002'
@@ -9842,7 +9828,7 @@ Mobile Suit Gundam SEED Movie II- The Far-Away Dawn (2004):
   Shows:
     Mobile Suit Gundam SEED:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '5463'
       Has Link: false
       Parsed Episode: '03'
@@ -9865,7 +9851,7 @@ Mobile Suit Gundam SEED Movie II- The Far-Away Dawn (2004):
       tvdbId: 367683
     Mobile Suit Gundam SEED (2012) - HD Remaster:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '5568'
       Has Link: false
       Parsed Episode: '003'
@@ -9907,7 +9893,7 @@ Mobile Suit Gundam SEED Movie III- The Rumbling Sky (2004):
   Shows:
     Mobile Suit Gundam SEED:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '5464'
       Has Link: false
       Parsed Episode: '04'
@@ -9930,7 +9916,7 @@ Mobile Suit Gundam SEED Movie III- The Rumbling Sky (2004):
       tvdbId: 367683
     Mobile Suit Gundam SEED (2012) - HD Remaster:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '5569'
       Has Link: false
       Parsed Episode: '004'
@@ -9976,9 +9962,9 @@ Mobile Suit Gundam- Char's Counterattack (1988):
   Shows:
     Mobile Suit Gundam:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '5390'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '004'
       Parsed Episode Title: anime/staging/Mobile Suit Gundam/Season 00/Mobile Suit
         Gundam - S00E004 - Mobile Suit Gundam Char's Counterattack
@@ -9999,7 +9985,7 @@ Mobile Suit Gundam- Char's Counterattack (1988):
       tvdbId: 76547
     Mobile Suit Gundam 0079:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '46365'
       Has Link: false
       Parsed Episode: '004'
@@ -10049,9 +10035,9 @@ Mobile Suit Gundam- The 08th MS Team - Miller's Report (1998):
   Shows:
     Mobile Suit Gundam- The 08th MS Team:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '5654'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Mobile Suit Gundam- The 08th MS Team/Season
         00/Mobile Suit Gundam- The 08th MS Team - S00E001 - Miller's Report
@@ -10097,9 +10083,9 @@ Monster Musume no Iru Nichijou OVA (2016):
     Monster Musume- Everyday Life with Monster Girls:
       Absolute Episode: 13
       Anime: true
-      Episode: '73'
+      Episode: 73
       Episode ID: '1250'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '073'
       Parsed Episode Title: anime/staging/Monster Musume- Everyday Life with Monster
         Girls/Season 00/Monster Musume- Everyday Life with Monster Girls - S00E073
@@ -10144,9 +10130,9 @@ Mushishi- The Next Chapter - Drops of Bells (2015):
     Mushi-Shi:
       Absolute Episode: 50
       Anime: true
-      Episode: '6'
+      Episode: 6
       Episode ID: '46719'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '006'
       Parsed Episode Title: anime/staging/Mushi-Shi/Season 00/Mushi-Shi - S00E006
         - Bell Droplets
@@ -10187,7 +10173,7 @@ Mushishi- The Next Chapter - Path of Thorns (2014):
     Mushi-Shi:
       Absolute Episode: 38
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '46707'
       Has Link: false
       Parsed Episode: '004'
@@ -10229,9 +10215,9 @@ Mushishi- The Shadow That Devours the Sun (2014):
   Shows:
     Mushi-Shi:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '46720'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Mushi-Shi/Season 00/Mushi-Shi - S00E001
         - The Shadow That Devours the Sun
@@ -10274,9 +10260,9 @@ My Hero Academia - Two Heroes (2018):
   Shows:
     My Hero Academia:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '1392'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '004'
       Parsed Episode Title: anime/shounen/My Hero Academia/Season 00/My Hero Academia
         - S00E004 - My Hero Academia the Movie The Two Heroes
@@ -10320,9 +10306,9 @@ My Name Is Bruce (2007):
   Shows:
     Ash vs Evil Dead:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '27917'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '04'
       Parsed Episode Title: tv/fantasy/Ash vs Evil Dead/Season 00/Ash vs Evil Dead
         - S00E04 - My Name Is Bruce
@@ -10365,9 +10351,9 @@ Naruto Shippuden the Movie Blood Prison (2011):
   Shows:
     Naruto Shippuden:
       Anime: true
-      Episode: '7'
+      Episode: 7
       Episode ID: '6199'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '007'
       Parsed Episode Title: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
         - S00E007 - Naruto Shippuuden 5 Blood Prison
@@ -10414,9 +10400,9 @@ Naruto Shippuden the Movie Bonds (2008):
   Shows:
     Naruto Shippuden:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '6194'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '002'
       Parsed Episode Title: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
         - S00E002 - Naruto Shippuuden 2 Bonds
@@ -10465,9 +10451,9 @@ Naruto Shippuden the Movie Inheritors of the Will of Fire (2009):
   Shows:
     Naruto Shippuden:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '6195'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '003'
       Parsed Episode Title: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
         - S00E003 - Naruto Shippuuden 3 Inheritors of the Will of Fire
@@ -10512,7 +10498,7 @@ Naruto Shippuden the Movie Road to Ninja (2012):
   Shows:
     Naruto Shippuden:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '6193'
       Has Link: false
       Parsed Episode: '001'
@@ -10560,9 +10546,9 @@ Naruto Shippuden the Movie The Lost Tower (2010):
   Shows:
     Naruto Shippuden:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '6196'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '004'
       Parsed Episode Title: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
         - S00E004 - Naruto Shippuuden 4 The Lost Tower
@@ -10606,7 +10592,7 @@ Naruto Shippuden- The Movie (2007):
   Shows:
     Naruto Shippuden:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '6193'
       Has Link: false
       Parsed Episode: '001'
@@ -10658,9 +10644,9 @@ Naruto the Movie- Guardians of the Crescent Moon Kingdom (2006):
   Shows:
     Naruto:
       Anime: true
-      Episode: '7'
+      Episode: 7
       Episode ID: '46950'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '007'
       Parsed Episode Title: anime/shounen/Naruto/Season 00/Naruto - S00E007 - Naruto
         the Movie 3 Guardians of the Crescent Moon Kingdom
@@ -10709,9 +10695,9 @@ Naruto the Movie- Legend of the Stone of Gelel (2005):
   Shows:
     Naruto:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '46948'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '005'
       Parsed Episode Title: anime/shounen/Naruto/Season 00/Naruto - S00E005 - Naruto
         the Movie 2 Legend of the Stone of Gelel
@@ -10760,9 +10746,9 @@ Naruto the Movie- Ninja Clash in the Land of Snow (2004):
   Shows:
     Naruto:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '46947'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '004'
       Parsed Episode Title: anime/shounen/Naruto/Season 00/Naruto - S00E004 - Naruto
         the Movie Ninja Clash in the Land of Snow
@@ -10804,9 +10790,9 @@ Naruto- Find the Crimson Four-leaf Clover! (2003):
   Shows:
     Naruto:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '46944'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/shounen/Naruto/Season 00/Naruto - S00E001 - Naruto
         OVA Find the Crimson Four-Leaf Clover!
@@ -10852,9 +10838,9 @@ Naruto- Gentle Breeze Chronicles the Film- Naruto, the Genie, and the Three Wish
   Shows:
     Naruto Shippuden:
       Anime: true
-      Episode: '8'
+      Episode: 8
       Episode ID: '6200'
-      Has Link: true
+      Has Link: false
       Parsed Episode: 008
       Parsed Episode Title: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
         - S00E008 - Naruto, the Genie, and the Three Wishes, Believe It!
@@ -10921,9 +10907,9 @@ Neon Genesis Evangelion- Death and Rebirth (1997):
   Shows:
     Neon Genesis Evangelion:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '46979'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Neon Genesis Evangelion/Season 00/Neon Genesis
         Evangelion - S00E001 - Death and Rebirth
@@ -10970,9 +10956,9 @@ Neon Genesis Evangelion- The End of Evangelion (1997):
   Shows:
     Neon Genesis Evangelion:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '46980'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/Neon Genesis Evangelion/Season 00/Neon Genesis
         Evangelion - S00E002 - The End of Evangelion
@@ -11016,9 +11002,9 @@ New Fist of the North Star- The Cursed City (2003):
   Shows:
     Fist of the North Star:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '878'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/Fist of the North Star/Season 00/Fist of
         the North Star - S00E002 - The Cursed City!
@@ -11061,9 +11047,9 @@ New Fist of the North Star- The Forbidden Fist (2003):
   Shows:
     Fist of the North Star:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '879'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '003'
       Parsed Episode Title: anime/staging/Fist of the North Star/Season 00/Fist of
         the North Star - S00E003 - The Forbidden Fist
@@ -11107,9 +11093,9 @@ New Fist of the North Star- When a Man Carries Sorrow (2004):
   Shows:
     Fist of the North Star:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '880'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '004'
       Parsed Episode Title: anime/staging/Fist of the North Star/Season 00/Fist of
         the North Star - S00E004 - When a Man Carries Sorrow
@@ -11151,9 +11137,9 @@ No Game No Life- Zero (2017):
   Shows:
     No Game No Life:
       Anime: true
-      Episode: '7'
+      Episode: 7
       Episode ID: '6225'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '007'
       Parsed Episode Title: anime/staging/No Game No Life/Season 00/No Game No Life
         - S00E007 - No Game No Life Zero
@@ -11214,7 +11200,7 @@ One Piece - Adventure of Nebulandia (2015):
   Shows:
     One Piece:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '3936'
       Has Link: false
       Parsed Episode: '003'
@@ -11266,7 +11252,7 @@ One Piece - Baron Omatsuri and the Secret Island (2005):
   Shows:
     One Piece:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '3934'
       Has Link: false
       Parsed Episode: '001'
@@ -11319,9 +11305,9 @@ One Piece - Chopper's Kingdom on the Island of Strange Animals (2002):
   Shows:
     One Piece:
       Anime: true
-      Episode: '6'
+      Episode: 6
       Episode ID: '3939'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '006'
       Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E006
         - Chopper's Kingdom on the Island of Strange Animals
@@ -11371,9 +11357,9 @@ One Piece - Clockwork Island Adventure (2001):
   Shows:
     One Piece:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '3937'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '004'
       Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E004
         - Clockwork Island Adventure
@@ -11423,7 +11409,7 @@ One Piece - Curse of the Sacred Sword (2004):
   Shows:
     One Piece:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '3934'
       Has Link: false
       Parsed Episode: '001'
@@ -11473,9 +11459,9 @@ One Piece - Dead End Adventure (2003):
   Shows:
     One Piece:
       Anime: true
-      Episode: '8'
+      Episode: 8
       Episode ID: '3941'
-      Has Link: true
+      Has Link: false
       Parsed Episode: 008
       Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E008
         - Dead End Adventure
@@ -11530,7 +11516,7 @@ One Piece - Episode of Chopper Plus - Bloom in the Winter, Miracle Cherry Blosso
   Shows:
     One Piece:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '3934'
       Has Link: false
       Parsed Episode: '001'
@@ -11588,7 +11574,7 @@ One Piece - Episode of Luffy - Hand Island Adventure (2012):
   Shows:
     One Piece:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '3935'
       Has Link: false
       Parsed Episode: '002'
@@ -11639,7 +11625,7 @@ One Piece - Episode of Skypiea (2018):
   Shows:
     One Piece:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '3936'
       Has Link: false
       Parsed Episode: '003'
@@ -11691,9 +11677,9 @@ One Piece - Giant Mecha Soldier of Karakuri Castle (2006):
   Shows:
     One Piece:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '3934'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E001
         - One Piece Defeat the Pirate Ganzack! (OVA 1)
@@ -11739,7 +11725,7 @@ One Piece - Heart of Gold (2016):
   Shows:
     One Piece:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '3936'
       Has Link: false
       Parsed Episode: '003'
@@ -11786,9 +11772,9 @@ One Piece - Jango's Dance Carnival (2001):
   Shows:
     One Piece:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '3938'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '005'
       Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E005
         - Jango's Dance Carnival
@@ -11836,7 +11822,7 @@ One Piece - Romance Dawn Story (2008):
   Shows:
     One Piece:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '3934'
       Has Link: false
       Parsed Episode: '001'
@@ -11885,7 +11871,7 @@ One Piece - Strong World Episode 0 (2010):
   Shows:
     One Piece:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '3935'
       Has Link: false
       Parsed Episode: '002'
@@ -11939,7 +11925,7 @@ One Piece - The Desert Princess and the Pirates - Adventure in Alabasta (2007):
   Shows:
     One Piece:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '3934'
       Has Link: false
       Parsed Episode: '001'
@@ -11989,7 +11975,7 @@ One Piece - The Movie (2000):
   Shows:
     One Piece:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '3935'
       Has Link: false
       Parsed Episode: '002'
@@ -12037,7 +12023,7 @@ One Piece 3D - Straw Hat Chase (2011):
   Shows:
     One Piece:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '3935'
       Has Link: false
       Parsed Episode: '002'
@@ -12088,9 +12074,9 @@ One Piece 3D2Y - Overcome Ace's Death! Luffy's Vow to his Friends (2014):
   Shows:
     One Piece:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '3936'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '003'
       Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E003
         - Adventure in the Ocean's Navel
@@ -12139,7 +12125,7 @@ One Piece Episode of East Blue Luffy and His 4 Crewmate's Big Adventure (2017):
   Shows:
     One Piece:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '3936'
       Has Link: false
       Parsed Episode: '003'
@@ -12189,7 +12175,7 @@ One Piece Episode of Merry - The Tale of One More Friend (2013):
   Shows:
     One Piece:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '3935'
       Has Link: false
       Parsed Episode: '002'
@@ -12244,7 +12230,7 @@ One Piece Episode of Nami - Tears of a Navigator and the Bonds of Friends (2012)
   Shows:
     One Piece:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '3935'
       Has Link: false
       Parsed Episode: '002'
@@ -12296,7 +12282,7 @@ One Piece Film - GOLD (2016):
   Shows:
     One Piece:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '3936'
       Has Link: false
       Parsed Episode: '003'
@@ -12347,7 +12333,7 @@ One Piece Film - Strong World (2009):
   Shows:
     One Piece:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '3934'
       Has Link: false
       Parsed Episode: '001'
@@ -12396,7 +12382,7 @@ One Piece Film - Z (2012):
   Shows:
     One Piece:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '3935'
       Has Link: false
       Parsed Episode: '002'
@@ -12443,9 +12429,9 @@ One Punch Man- Road to Hero (2015):
   Shows:
     One-Punch Man:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '6267'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/One-Punch Man/Season 00/One-Punch Man -
         S00E001 - Road to Hero
@@ -12490,7 +12476,7 @@ Overlord Movie 1- The Undead King (2017):
   Shows:
     Overlord:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '1433'
       Has Link: false
       Parsed Episode: '001'
@@ -12539,7 +12525,7 @@ Overlord Movie 2- The Dark Warrior (2017):
   Shows:
     Overlord:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '1433'
       Has Link: false
       Parsed Episode: '001'
@@ -12583,9 +12569,9 @@ Parasyte- Part 1 (2014):
   Shows:
     Parasyte:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '6311'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Parasyte/Season 00/Parasyte - S00E001 -
         Parasyte Part 1
@@ -12626,9 +12612,9 @@ Parasyte- Part 2 (2015):
   Shows:
     Parasyte:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '6312'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/Parasyte/Season 00/Parasyte - S00E002 -
         Parasyte Part 2
@@ -12674,9 +12660,9 @@ Parks and Recreation- Cast and Creators Live at PALEYFEST 2014 (2014):
   Shows:
     Parks and Recreation:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '37181'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '01'
       Parsed Episode Title: tv/sitcom/Parks and Recreation/Season 00/Parks and Recreation
         - S00E01 - April & Andy's Road Trip (1) Spider
@@ -12711,6 +12697,7 @@ Parks and Recreation- Cast and Creators Live at PALEYFEST 2014 (2014):
   Shows:
     Persona 4- The Animation:
       Anime: true
+      Episode: 3
       Episode ID: '6340'
       Has Link: false
       Parsed Episode Title: 'tv/staging/Persona 4- The Animation/Season 00/Persona
@@ -12750,10 +12737,10 @@ Parks and Recreation- Cast and Creators Live at PALEYFEST 2014 (2014):
   Shows:
     Persona 4- The Animation:
       Anime: true
-      Episode: '6341'
+      Episode: ''
       Has Link: false
       Parsed Episode Title: 'tv/staging/Persona 4- The Animation/Season 00/Persona
-        4- The Animation - S00E6341 - '
+        4- The Animation - S00E - '
       Parsed Season Folder: Season 00
       Relative Show File Path: ''
       Relative Show Path: tv/staging/Persona 4- The Animation/Season 00
@@ -12789,6 +12776,7 @@ Parks and Recreation- Cast and Creators Live at PALEYFEST 2014 (2014):
   Shows:
     Persona 4- The Animation:
       Anime: true
+      Episode: 5
       Episode ID: '6342'
       Has Link: false
       Parsed Episode Title: 'tv/staging/Persona 4- The Animation/Season 00/Persona
@@ -12827,6 +12815,7 @@ Parks and Recreation- Cast and Creators Live at PALEYFEST 2014 (2014):
   Shows:
     Persona 4- The Animation:
       Anime: true
+      Episode: 6
       Episode ID: 6343
       Has Link: false
       Parsed Episode Title: 'tv/staging/Persona 4- The Animation/Season 00/Persona
@@ -12868,6 +12857,7 @@ Persona 4 the Animation- No One is Alone (0):
     Persona 4- The Animation:
       Absolute Episode: 26
       Anime: true
+      Episode: 2
       Episode ID: '6338'
       Has Link: false
       Parsed Episode Title: tv/staging/Persona 4- The Animation/Season 00/Persona
@@ -12907,6 +12897,7 @@ Persona 4- The Animation -The Factor of Hope- (2012):
   Shows:
     Persona 4- The Animation:
       Anime: true
+      Episode: 1
       Episode ID: '6339'
       Has Link: false
       Parsed Episode Title: tv/staging/Persona 4- The Animation/Season 00/Persona
@@ -12944,6 +12935,7 @@ Persona 5 the Animation- The Day Breakers (2016):
   Shows:
     Persona 4- The Animation:
       Anime: true
+      Episode: 7
       Episode ID: 6344
       Has Link: false
       Parsed Episode Title: tv/staging/Persona 4- The Animation/Season 00/Persona
@@ -12983,6 +12975,7 @@ Prelude to Axanar (2014):
   Shows:
     Star Trek- Axanar:
       Anime: true
+      Episode: 1
       Episode ID: '32503'
       Has Link: false
       Parsed Episode Title: tv/staging/Star Trek- Axanar/Season 01/Star Trek- Axanar
@@ -13022,9 +13015,9 @@ Prison School- Mad Wax (2016):
     Prison School:
       Absolute Episode: 13
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '47104'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Prison School/Season 00/Prison School -
         S00E001 - Mad Wax
@@ -13062,9 +13055,9 @@ Psych- The Movie (2017):
   Shows:
     Psych:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '8760'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '05'
       Parsed Episode Title: tv/staging/Psych/Season 00/Psych - S00E05 - Psych The
         Movie
@@ -13103,9 +13096,9 @@ Psych- The Musical (2013):
   Shows:
     Psych:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '8757'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '02'
       Parsed Episode Title: tv/staging/Psych/Season 00/Psych - S00E02 - The Big Adventures
         of Little Shawn and Gus
@@ -13145,7 +13138,7 @@ Psycho-Pass- The Movie (2015):
   Shows:
     Psycho-Pass:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '6391'
       Has Link: false
       Parsed Episode: '001'
@@ -13195,9 +13188,9 @@ Puella Magi Madoka Magica the Movie Part I- Beginnings (2012):
     Puella Magi Madoka Magica:
       Absolute Episode: 13
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '47128'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Puella Magi Madoka Magica/Season 00/Puella
         Magi Madoka Magica - S00E001 - Madoka Magica the Movie Part I The Beginning
@@ -13250,9 +13243,9 @@ Puella Magi Madoka Magica the Movie Part II- Eternal (2012):
     Puella Magi Madoka Magica:
       Absolute Episode: 14
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '47129'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/Puella Magi Madoka Magica/Season 00/Puella
         Magi Madoka Magica - S00E002 - Madoka Magica the Movie Part II The Eternal
@@ -13306,9 +13299,9 @@ Puella Magi Madoka Magica the Movie Part III- Rebellion (2013):
     Puella Magi Madoka Magica:
       Absolute Episode: 15
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '47130'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '003'
       Parsed Episode Title: anime/staging/Puella Magi Madoka Magica/Season 00/Puella
         Magi Madoka Magica - S00E003 - Madoka Magica the Movie Part III The Rebellion
@@ -13369,7 +13362,7 @@ Red vs. Blue- Out of Mind (2006):
   Shows:
     Red vs. Blue:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '21972'
       Has Link: false
       Parsed Episode: '02'
@@ -13463,7 +13456,7 @@ Robot Chicken DC Comics Special II- Villains in Paradise (2014):
   Shows:
     Robot Chicken:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '22555'
       Has Link: false
       Parsed Episode: '01'
@@ -13503,7 +13496,7 @@ Robot Chicken DC Comics Special III- Magical Friendship (2015):
   Shows:
     Robot Chicken:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '22555'
       Has Link: false
       Parsed Episode: '01'
@@ -13541,7 +13534,7 @@ Robot Chicken- Christmas Specials (2014):
   Shows:
     Robot Chicken:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '22556'
       Has Link: false
       Parsed Episode: '02'
@@ -13581,7 +13574,7 @@ Robot Chicken- DC Comics Special (2012):
   Shows:
     Robot Chicken:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '22555'
       Has Link: false
       Parsed Episode: '01'
@@ -13621,9 +13614,9 @@ Robot Chicken- Star Wars (2007):
   Shows:
     Robot Chicken:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '22558'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '04'
       Parsed Episode Title: tv/animated/Robot Chicken/Season 00/Robot Chicken - S00E04
         - Robot Chicken Star Wars Special
@@ -13660,7 +13653,7 @@ Robot Chicken- Star Wars Episode II (2008):
   Shows:
     Robot Chicken:
       Anime: true
-      Episode: '7'
+      Episode: 7
       Episode ID: '22561'
       Has Link: false
       Parsed Episode: '07'
@@ -13698,7 +13691,7 @@ Robot Chicken- Star Wars Episode III (2010):
   Shows:
     Robot Chicken:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '22555'
       Has Link: false
       Parsed Episode: '01'
@@ -13769,7 +13762,7 @@ Rurouni Kenshin The Movie (1997):
   Shows:
     Rurouni Kenshin:
       Anime: true
-      Episode: '7'
+      Episode: 7
       Episode ID: '47259'
       Has Link: false
       Parsed Episode: '007'
@@ -13851,7 +13844,7 @@ Rurouni Kenshin- New Kyoto Arc- Cage of Flames (2011):
   Shows:
     Rurouni Kenshin:
       Anime: true
-      Episode: '8'
+      Episode: 8
       Episode ID: '47260'
       Has Link: false
       Parsed Episode: 008
@@ -13900,7 +13893,7 @@ Rurouni Kenshin- New Kyoto Arc- The Chirps of Light (2012):
   Shows:
     Rurouni Kenshin:
       Anime: true
-      Episode: '9'
+      Episode: 9
       Episode ID: '47261'
       Has Link: false
       Parsed Episode: 009
@@ -13944,7 +13937,7 @@ Rurouni Kenshin- Reflection Director's Cut (2002):
   Shows:
     Rurouni Kenshin:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '47257'
       Has Link: false
       Parsed Episode: '005'
@@ -14003,7 +13996,7 @@ Rurouni Kenshin- Trust & Betrayal Director's Cut (0):
   Shows:
     Rurouni Kenshin:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '47253'
       Has Link: false
       Parsed Episode: '001'
@@ -14044,7 +14037,7 @@ Sacred Seven- Shirogane no Tsubasa (2012):
   Shows:
     Sacred Seven:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '47302'
       Has Link: false
       Parsed Episode: '001'
@@ -14084,7 +14077,7 @@ Saga of Tanya the Evil Movie (2019):
   Shows:
     Saga of Tanya the Evil:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '51130'
       Has Link: false
       Parsed Episode: '01'
@@ -14124,7 +14117,7 @@ Sailor Moon - Sailor Stars (1996):
   Shows:
     Sailor Moon:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '50843'
       Has Link: false
       Parsed Episode: '001'
@@ -14166,7 +14159,7 @@ Sailor Moon - Sailor Stars (Revision) (1997):
   Shows:
     Sailor Moon:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '50843'
       Has Link: false
       Parsed Episode: '001'
@@ -14207,7 +14200,7 @@ Sailor Moon R- The Movie (1993):
   Shows:
     Sailor Moon:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '50843'
       Has Link: false
       Parsed Episode: '001'
@@ -14249,7 +14242,7 @@ Sailor Moon S The Movie- Hearts In Ice (1994):
   Shows:
     Sailor Moon:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '50846'
       Has Link: false
       Parsed Episode: '004'
@@ -14291,7 +14284,7 @@ Sailor Moon Super S- Ami's First Love (1995):
   Shows:
     Sailor Moon:
       Anime: true
-      Episode: '9'
+      Episode: 9
       Episode ID: '50851'
       Has Link: false
       Parsed Episode: 009
@@ -14333,7 +14326,7 @@ Sailor Moon Super S- The Movie (1995):
   Shows:
     Sailor Moon:
       Anime: true
-      Episode: '8'
+      Episode: 8
       Episode ID: '50850'
       Has Link: false
       Parsed Episode: 008
@@ -14397,9 +14390,9 @@ Saint Seiya Heaven Chapter- Overture (2004):
   Shows:
     Saint Seiya:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '47492'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '005'
       Parsed Episode Title: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E005
         - Heaven Chapter - Overture
@@ -14441,9 +14434,9 @@ Saint Seiya- Evil Goddess Eris (1987):
     Saint Seiya:
       Absolute Episode: 1111
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '47488'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E001
         - Evil Goddess Eris
@@ -14500,9 +14493,9 @@ Saint Seiya- Legend of Crimson Youth (1988):
   Shows:
     Saint Seiya:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '47490'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '003'
       Parsed Episode Title: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E003
         - Legend of Crimson Youth
@@ -14541,9 +14534,9 @@ Saint Seiya- Legend of Sanctuary (2014):
   Shows:
     Saint Seiya:
       Anime: true
-      Episode: '8'
+      Episode: 8
       Episode ID: '47495'
-      Has Link: true
+      Has Link: false
       Parsed Episode: 008
       Parsed Episode Title: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E008
         - Legend of Sanctuary
@@ -14579,7 +14572,7 @@ Saint Seiya- The Hades Chapter - Elysion (2008):
   Shows:
     Saint Seiya:
       Anime: true
-      Episode: '6'
+      Episode: 6
       Episode ID: '47493'
       Has Link: false
       Parsed Episode: '006'
@@ -14623,9 +14616,9 @@ Saint Seiya- The Heated Battle of the Gods (1988):
   Shows:
     Saint Seiya:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '47489'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E002
         - The Heated Battle of the Gods
@@ -14668,9 +14661,9 @@ Saint Seiya- Warriors of the Final Holy Battle (1989):
   Shows:
     Saint Seiya:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '47491'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '004'
       Parsed Episode Title: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E004
         - Warriors of the Final Holy Battle
@@ -14744,6 +14737,7 @@ Saturday Night Live 25th Anniversary (1999):
   Shows:
     Saturday Night Live:
       Anime: true
+      Episode: 34
       Episode ID: '8979'
       Has Link: false
       Parsed Episode Title: tv/staging/Saturday Night Live/Season 00/Saturday Night
@@ -14780,7 +14774,7 @@ Saturday Night Live 40th Anniversary Special (2015):
   Shows:
     Saturday Night Live:
       Anime: true
-      Episode: '90'
+      Episode: 90
       Episode ID: '9031'
       Has Link: false
       Parsed Episode: '90'
@@ -14818,6 +14812,7 @@ Saturday Night Live- 15th Anniversary (1989):
   Shows:
     Saturday Night Live:
       Anime: true
+      Episode: 20
       Episode ID: '8970'
       Has Link: false
       Parsed Episode Title: tv/staging/Saturday Night Live/Season 00/Saturday Night
@@ -14853,7 +14848,7 @@ Saturday Night Live- Christmas (1999):
   Shows:
     Saturday Night Live:
       Anime: true
-      Episode: '43'
+      Episode: 43
       Episode ID: '8986'
       Has Link: false
       Parsed Episode: '43'
@@ -14892,6 +14887,7 @@ Saturday Night Live- Halloween (2003):
   Shows:
     Saturday Night Live:
       Anime: true
+      Episode: 21
       Episode ID: '8971'
       Has Link: false
       Parsed Episode Title: tv/staging/Saturday Night Live/Season 00/Saturday Night
@@ -14928,7 +14924,7 @@ Saturday Night Live- Thanksgiving (2013):
   Shows:
     Saturday Night Live:
       Anime: true
-      Episode: '82'
+      Episode: 82
       Episode ID: '9023'
       Has Link: false
       Parsed Episode: '82'
@@ -14966,7 +14962,7 @@ Saturday Night Live- The Best of Adam Sandler (1999):
   Shows:
     Saturday Night Live:
       Anime: true
-      Episode: '209'
+      Episode: 209
       Episode ID: '9045'
       Has Link: false
       Parsed Episode Title: tv/staging/Saturday Night Live/Season 00/Saturday Night
@@ -15003,7 +14999,7 @@ Saturday Night Live- The Best of Amy Poehler (2009):
   Shows:
     Saturday Night Live:
       Anime: true
-      Episode: '68'
+      Episode: 68
       Episode ID: '9009'
       Has Link: false
       Parsed Episode: '68'
@@ -15041,7 +15037,7 @@ Saturday Night Live- The Best of Chris Farley (2003):
   Shows:
     Saturday Night Live:
       Anime: true
-      Episode: '207'
+      Episode: 207
       Episode ID: '9043'
       Has Link: false
       Parsed Episode Title: tv/staging/Saturday Night Live/Season 00/Saturday Night
@@ -15078,6 +15074,7 @@ Saturday Night Live- The Best of Chris Rock (1999):
   Shows:
     Saturday Night Live:
       Anime: true
+      Episode: 206
       Episode ID: '9042'
       Has Link: false
       Parsed Episode Title: tv/staging/Saturday Night Live/Season 00/Saturday Night
@@ -15114,7 +15111,7 @@ Saturday Night Live- The Best of Christopher Walken (2004):
   Shows:
     Saturday Night Live:
       Anime: true
-      Episode: '48'
+      Episode: 48
       Episode ID: '8989'
       Has Link: false
       Parsed Episode Title: tv/staging/Saturday Night Live/Season 00/Saturday Night
@@ -15151,7 +15148,7 @@ Saturday Night Live- The Best of Dan Aykroyd (2005):
   Shows:
     Saturday Night Live:
       Anime: true
-      Episode: '202'
+      Episode: 202
       Episode ID: '9038'
       Has Link: false
       Parsed Episode Title: tv/staging/Saturday Night Live/Season 00/Saturday Night
@@ -15188,7 +15185,7 @@ Saturday Night Live- The Best of Dana Carvey (1999):
   Shows:
     Saturday Night Live:
       Anime: true
-      Episode: '32'
+      Episode: 32
       Episode ID: '8978'
       Has Link: false
       Parsed Episode Title: tv/staging/Saturday Night Live/Season 00/Saturday Night
@@ -15225,7 +15222,7 @@ Saturday Night Live- The Best of David Spade (2005):
   Shows:
     Saturday Night Live:
       Anime: true
-      Episode: '213'
+      Episode: 213
       Episode ID: '9049'
       Has Link: false
       Parsed Episode Title: tv/staging/Saturday Night Live/Season 00/Saturday Night
@@ -15262,7 +15259,7 @@ Saturday Night Live- The Best of Eddie Murphy (1998):
   Shows:
     Saturday Night Live:
       Anime: true
-      Episode: '30'
+      Episode: 30
       Episode ID: '8976'
       Has Link: false
       Parsed Episode Title: tv/staging/Saturday Night Live/Season 00/Saturday Night
@@ -15299,7 +15296,7 @@ Saturday Night Live- The Best of John Belushi (2005):
   Shows:
     Saturday Night Live:
       Anime: true
-      Episode: '203'
+      Episode: 203
       Episode ID: '9039'
       Has Link: false
       Parsed Episode Title: tv/staging/Saturday Night Live/Season 00/Saturday Night
@@ -15336,7 +15333,7 @@ Saturday Night Live- The Best of Mike Myers (1998):
   Shows:
     Saturday Night Live:
       Anime: true
-      Episode: '204'
+      Episode: 204
       Episode ID: '9040'
       Has Link: false
       Parsed Episode Title: tv/staging/Saturday Night Live/Season 00/Saturday Night
@@ -15373,7 +15370,7 @@ Saturday Night Live- The Best of Phil Hartman (1998):
   Shows:
     Saturday Night Live:
       Anime: true
-      Episode: '205'
+      Episode: 205
       Episode ID: '9041'
       Has Link: false
       Parsed Episode Title: tv/staging/Saturday Night Live/Season 00/Saturday Night
@@ -15413,7 +15410,7 @@ Saturday Night Live- The Best of Will Ferrell (2002):
   Shows:
     Saturday Night Live:
       Anime: true
-      Episode: '210'
+      Episode: 210
       Episode ID: '9046'
       Has Link: false
       Parsed Episode Title: tv/staging/Saturday Night Live/Season 00/Saturday Night
@@ -15451,7 +15448,7 @@ Saturday Night Live- The Best of Will Ferrell - Volume 2 (2004):
   Shows:
     Saturday Night Live:
       Anime: true
-      Episode: '211'
+      Episode: 211
       Episode ID: '9047'
       Has Link: false
       Parsed Episode Title: tv/staging/Saturday Night Live/Season 00/Saturday Night
@@ -15491,9 +15488,9 @@ Scooby-Doo! & Batman- The Brave and the Bold (2018):
   Shows:
     Batman- The Brave and the Bold:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '41645'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '01'
       Parsed Episode Title: tv/superhero/Batman- The Brave and the Bold/Season 00/Batman-
         The Brave and the Bold - S00E01 - Scooby-Doo & Batman The Brave and the Bold
@@ -15551,7 +15548,7 @@ Seinfeld- How It Began (2004):
   Shows:
     Seinfeld:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '37766'
       Has Link: false
       Parsed Episode: '01'
@@ -15589,9 +15586,9 @@ Serenity (2005):
     Firefly:
       Absolute Episode: 15
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '32116'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '01'
       Parsed Episode Title: tv/scifi/Firefly/Season 00/Firefly - S00E01 - Serenity
       Parsed Season Folder: Season 00
@@ -15648,9 +15645,9 @@ Sherlock- The Abominable Bride (2016):
   Shows:
     Sherlock:
       Anime: true
-      Episode: '9'
+      Episode: 9
       Episode ID: '26970'
-      Has Link: true
+      Has Link: false
       Parsed Episode: 09
       Parsed Episode Title: tv/crime/Sherlock/Season 00/Sherlock - S00E09 - The Abominable
         Bride
@@ -15690,9 +15687,9 @@ South Park- Bigger, Longer & Uncut (1999):
   Shows:
     South Park:
       Anime: true
-      Episode: '6'
+      Episode: 6
       Episode ID: '22831'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '06'
       Parsed Episode Title: tv/animated/South Park/Season 00/South Park - S00E06 -
         South Park Bigger Longer & Uncut
@@ -15728,7 +15725,7 @@ South Park- Imaginationland (2008):
   Shows:
     South Park:
       Anime: true
-      Episode: '7'
+      Episode: 7
       Episode ID: '22832'
       Has Link: false
       Parsed Episode: '07'
@@ -15786,9 +15783,9 @@ Star Trek 25th Anniversary Special (1991):
   Shows:
     Star Trek:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '32395'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '02'
       Parsed Episode Title: tv/scifi/Star Trek/Season 00/Star Trek - S00E02 - Star
         Trek's 25th Anniversary Special
@@ -15832,7 +15829,7 @@ Star Trek Secret Voyage- Whose Birth These Triumphs Are (2012):
   Shows:
     Star Trek- Secret Voyage:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '32931'
       Has Link: false
       Parsed Episode: '01'
@@ -15870,7 +15867,7 @@ Star Trek- 30 Years and Beyond (1996):
   Shows:
     Star Trek:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '32397'
       Has Link: false
       Parsed Episode: '04'
@@ -15911,9 +15908,9 @@ Star Trek- A Captain's Log (1994):
   Shows:
     Star Trek:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '32396'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '03'
       Parsed Episode Title: tv/scifi/Star Trek/Season 00/Star Trek - S00E03 - Star
         Trek A Captain's Log
@@ -15950,18 +15947,13 @@ Star Trek- Axanar (2015):
   Relative Movie Path: movies/thrillers/Star Trek - Axanar (2015)
   Shows:
     Star Trek- Axanar:
-      Absolute Episode: 1
       Anime: true
-      Episode:
-      - 2
-      - 3
-      Episode ID:
-      - 32504
-      - 32505
+      Episode: 2
+      Episode ID: 32504
       Has Link: false
       Parsed Episode: 02-03
       Parsed Episode Title: tv/staging/Star Trek- Axanar/Season 01/Star Trek- Axanar
-        - S01E[2, 3] - The New Threat
+        - S01E02 - The Four Years War, part 4
       Parsed Season Folder: Season 01
       Relative Show File Path: ''
       Relative Show Path: tv/staging/Star Trek- Axanar/Season 01
@@ -15970,8 +15962,8 @@ Star Trek- Axanar (2015):
       - Mini-Series
       - Science-Fiction
       Show Root Path: tv/staging/Star Trek- Axanar
-      Title: The New Threat
-      episodeFileId: 38089
+      Title: The Four Years War, part 4
+      episodeFileId: ''
       imdbId: tt3572740
       seriesId: 377
       tvdbId: 342359
@@ -15994,23 +15986,16 @@ Star Trek- Of Gods And Men (2007):
   Relative Movie Path: movies/staging/Star Trek- Of Gods And Men (2007)
   Shows:
     Star Trek- Of Gods and Men:
-      Absolute Episode: 11
       Anime: true
-      Episode:
-      - 1
-      - 2
-      - 3
-      Episode ID:
-      - 32910
-      - 32911
-      - 32912
+      Episode: 1
+      Episode ID: 32910
       Has Link: false
       Parsed Episode: '[1, 2, 3]'
       Parsed Episode Title: tv/staging/Star Trek- Of Gods and Men/Season 01/Star Trek-
-        Of Gods and Men - S01E[1, 2, 3] - Terror on Arlia
+        Of Gods and Men - S01E01 - Act 1
       Parsed Season Folder: Season 01
       Relative Show File Path: tv/staging/Star Trek- Of Gods and Men/Season 01/Star
-        Trek- Of Gods and Men - S01E[1, 2, 3] - Terror on Arlia DVD.mkv
+        Trek- Of Gods and Men - S01E01 - Act 1 DVD.mkv
       Relative Show Path: tv/staging/Star Trek- Of Gods and Men/Season 01
       Season: '01'
       Show Genres:
@@ -16020,8 +16005,8 @@ Star Trek- Of Gods And Men (2007):
       - Mini-Series
       - Science-Fiction
       Show Root Path: tv/staging/Star Trek- Of Gods and Men
-      Title: Terror on Arlia
-      episodeFileId: 38099
+      Title: Act 1
+      episodeFileId: ''
       imdbId: tt0835378
       seriesId: 387
       tvdbId: 81460
@@ -16045,7 +16030,7 @@ Star Trek- Voyager - Inside The New Adventure (1995):
   Shows:
     Star Trek- Voyager:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '33172'
       Has Link: false
       Parsed Episode: '01'
@@ -16085,9 +16070,9 @@ Stargate (1994):
   Shows:
     Stargate SG-1:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '33484'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '01'
       Parsed Episode Title: tv/scifi/Stargate SG-1/Season 00/Stargate SG-1 - S00E01
         - Stargate The Movie
@@ -16164,9 +16149,9 @@ Stargate SG-1- True Science (2006):
   Shows:
     Stargate SG-1:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '33487'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '04'
       Parsed Episode Title: tv/scifi/Stargate SG-1/Season 00/Stargate SG-1 - S00E04
         - Stargate SG-1 True Science
@@ -16223,9 +16208,9 @@ Stargate- Continuum (2008):
   Shows:
     Stargate SG-1:
       Anime: true
-      Episode: '8'
+      Episode: 8
       Episode ID: '33490'
-      Has Link: true
+      Has Link: false
       Parsed Episode: 08
       Parsed Episode Title: tv/scifi/Stargate SG-1/Season 00/Stargate SG-1 - S00E08
         - Continuum
@@ -16265,9 +16250,9 @@ Stargate- The Ark of Truth (2008):
   Shows:
     Stargate SG-1:
       Anime: true
-      Episode: '7'
+      Episode: 7
       Episode ID: '33489'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '07'
       Parsed Episode Title: tv/scifi/Stargate SG-1/Season 00/Stargate SG-1 - S00E07
         - The Ark of Truth
@@ -16306,7 +16291,7 @@ Steins;Gate 0- Valentine's of Crystal Polymorphism - Bittersweet Intermedio (201
     Steins;Gate 0:
       Absolute Episode: 24
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '47666'
       Has Link: false
       Parsed Episode: '002'
@@ -16350,9 +16335,9 @@ Steins;Gate- Egoistic Poriomania (2012):
     Steins;Gate:
       Absolute Episode: 25
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '6669'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Steins;Gate/Season 00/Steins;Gate - S00E001
         - Egoistic Poriomania
@@ -16397,9 +16382,9 @@ Steins;Gate- Egoistic Poriomania (2012):
   Shows:
     Steins;Gate:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '6670'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '002'
       Parsed Episode Title: "anime/staging/Steins;Gate/Season 00/Steins;Gate - S00E002\
         \ - Steins;Gate the Movie Loading Area of D\xE9j\xE0 vu"
@@ -16461,9 +16446,9 @@ Sword Art Online- Extra Edition (2013):
   Shows:
     Sword Art Online:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '1614'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/shounen/Sword Art Online/Season 00/Sword Art Online
         - S00E001 - Sword Art Offline 1
@@ -16513,9 +16498,9 @@ Sword Art Online- The Movie - Ordinal Scale (2017):
   Shows:
     Sword Art Online:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '1615'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '002'
       Parsed Episode Title: anime/shounen/Sword Art Online/Season 00/Sword Art Online
         - S00E002 - Sword Art Offline 2
@@ -16638,9 +16623,9 @@ Teen Titans- Trouble in Tokyo (2006):
   Shows:
     Teen Titans:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '43148'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '02'
       Parsed Episode Title: tv/superhero/Teen Titans/Season 00/Teen Titans - S00E02
         - Trouble in Tokyo
@@ -16696,9 +16681,9 @@ The A-Team (2010):
   Shows:
     The A-Team:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '10173'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '02'
       Parsed Episode Title: tv/staging/The A-Team/Season 00/The A-Team - S00E02 -
         The A-Team (2010)
@@ -16757,9 +16742,9 @@ The Batman vs. Dracula (2005):
   Shows:
     The Batman:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '43461'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '02'
       Parsed Episode Title: tv/superhero/The Batman/Season 00/The Batman - S00E02
         - The Batman vs. Dracula
@@ -16801,9 +16786,9 @@ The Cage (1965):
     Star Trek:
       Absolute Episode: 1
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '32394'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '01'
       Parsed Episode Title: tv/scifi/Star Trek/Season 00/Star Trek - S00E01 - The
         Cage (Original Pilot)
@@ -16842,7 +16827,7 @@ The Dark Knight's First Night (1991):
   Shows:
     Batman- The Animated Series:
       Anime: true
-      Episode: ''
+      Episode: 5
       Episode ID: '41558'
       Has Link: false
       Parsed Episode: '05'
@@ -16883,7 +16868,7 @@ The Day Naruto Became Hokage (2016):
   Shows:
     Boruto- Naruto Next Generations:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '106'
       Has Link: false
       Parsed Episode: '001'
@@ -16926,9 +16911,9 @@ The Dukes of Hazzard- Hazzard in Hollywood (2000):
   Shows:
     The Dukes of Hazzard:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '52590'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '02'
       Parsed Episode Title: tv/staging/The Dukes of Hazzard/Season 00/The Dukes of
         Hazzard - S00E02 - Hazzard in Hollywood
@@ -16969,9 +16954,9 @@ The Dukes of Hazzard- Reunion! (1997):
   Shows:
     The Dukes of Hazzard:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '52589'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '01'
       Parsed Episode Title: tv/staging/The Dukes of Hazzard/Season 00/The Dukes of
         Hazzard - S00E01 - Reunion!
@@ -17012,9 +16997,9 @@ The Dukes of Hazzard- The Beginning (2007):
   Shows:
     The Dukes of Hazzard:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '52591'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '03'
       Parsed Episode Title: tv/staging/The Dukes of Hazzard/Season 00/The Dukes of
         Hazzard - S00E03 - The Dukes of Hazzard The Beginning
@@ -17054,9 +17039,9 @@ The Evil Dead (1981):
   Shows:
     Ash vs Evil Dead:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '27914'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '01'
       Parsed Episode Title: tv/fantasy/Ash vs Evil Dead/Season 00/Ash vs Evil Dead
         - S00E01 - The Evil Dead
@@ -17095,9 +17080,9 @@ The Future Diary- Redial (2013):
   Shows:
     The Future Diary:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '6743'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/The Future Diary/Season 00/The Future Diary
         - S00E002 - Mirai Nikki Redial
@@ -17141,9 +17126,9 @@ The Garden of Sinners - Remix- Gate of Seventh Heaven (2009):
   Shows:
     The Garden of Sinners:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '45633'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/The Garden of Sinners/Season 00/The Garden
         of Sinners - S00E002 - Remix Gate of Seventh Heaven
@@ -17185,7 +17170,7 @@ The Garden of Sinners- Epilogue (2011):
     The Garden of Sinners:
       Absolute Episode: 8
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '45630'
       Has Link: false
       Parsed Episode: '001'
@@ -17234,9 +17219,9 @@ The Garden of Sinners- Future Gospel - Extra Chorus (2013):
     The Garden of Sinners:
       Absolute Episode: 10
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '45632'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '004'
       Parsed Episode Title: anime/staging/The Garden of Sinners/Season 00/The Garden
         of Sinners - S00E004 - Recalled Out Summer - Extra Chorus
@@ -17278,9 +17263,9 @@ The IT Crowd Manual (2014):
   Shows:
     The IT Crowd:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '39046'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '05'
       Parsed Episode Title: tv/sitcom/The IT Crowd/Season 00/The IT Crowd - S00E05
         - The IT Crowd Manual
@@ -17317,7 +17302,7 @@ The Last- Naruto the Movie (2014):
   Shows:
     Naruto Shippuden:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '6193'
       Has Link: false
       Parsed Episode: '001'
@@ -17360,7 +17345,7 @@ The Making of 'King of the Hill' (2003):
   Shows:
     King of the Hill:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '21649'
       Has Link: false
       Parsed Episode: '05'
@@ -17400,7 +17385,7 @@ The Making of 'The X Files- Fight the Future' (1998):
   Shows:
     The X-Files:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '34517'
       Has Link: false
       Parsed Episode: '01'
@@ -17437,7 +17422,7 @@ The Making of The Walking Dead (2010):
   Shows:
     The Walking Dead:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '28919'
       Has Link: false
       Parsed Episode: '02'
@@ -17481,7 +17466,7 @@ The Making of The Walking Dead (2010):
   Shows:
     Robot Chicken:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '22555'
       Has Link: false
       Parsed Episode: '01'
@@ -17522,7 +17507,7 @@ The Robot Chicken Walking Dead Special- Look Who's Walking (2017):
   Shows:
     Robot Chicken:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '22555'
       Has Link: false
       Parsed Episode: '01'
@@ -17559,7 +17544,7 @@ The Seinfeld Story (2004):
   Shows:
     Seinfeld:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '37766'
       Has Link: false
       Parsed Episode: '01'
@@ -17602,9 +17587,9 @@ The Seven Deadly Sins - Prisoners of the Sky (2018):
   Shows:
     The Seven Deadly Sins:
       Anime: true
-      Episode: '9'
+      Episode: 9
       Episode ID: '1692'
-      Has Link: true
+      Has Link: false
       Parsed Episode: 009
       Parsed Episode Title: anime/shounen/The Seven Deadly Sins/Season 00/The Seven
         Deadly Sins - S00E009 - The Seven Deadly Sins Movie Prisoners of the Sky
@@ -17662,7 +17647,7 @@ The Simpsons - Christmas (2003):
   Shows:
     The Simpsons:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '39449'
       Has Link: false
       Parsed Episode: '03'
@@ -17774,7 +17759,7 @@ The Simpsons - Viva Los Simpsons (2005):
   Shows:
     The Simpsons:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '39451'
       Has Link: false
       Parsed Episode: '05'
@@ -17811,7 +17796,7 @@ The Simpsons Christmas 2 (2004):
   Shows:
     The Simpsons:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '39451'
       Has Link: false
       Parsed Episode: '05'
@@ -17885,9 +17870,9 @@ The Simpsons Movie (2007):
   Shows:
     The Simpsons:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '39451'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '05'
       Parsed Episode Title: tv/sitcom/The Simpsons/Season 00/The Simpsons - S00E05
         - The Pacifier
@@ -18028,7 +18013,7 @@ The Wire Odyssey (2007):
   Shows:
     The Wire:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '27651'
       Has Link: false
       Parsed Episode: '04'
@@ -18065,7 +18050,7 @@ The Wire- The Last Word (2007):
   Shows:
     The Wire:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '27652'
       Has Link: false
       Parsed Episode: '05'
@@ -18105,9 +18090,9 @@ The X Files- I Want to Believe (2008):
   Shows:
     The X-Files:
       Anime: true
-      Episode: '6'
+      Episode: 6
       Episode ID: '34522'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '06'
       Parsed Episode Title: tv/scifi/The X-Files/Season 00/The X-Files - S00E06 -
         The X-Files I Want to Believe
@@ -18147,9 +18132,9 @@ Thus Spoke Kishibe Rohan 2- Mutsu-kabe Hill (2018):
   Shows:
     JoJo's Bizarre Adventure (2012):
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '2912'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/JoJo's Bizarre Adventure (2012)/Season 00/JoJo's
         Bizarre Adventure (2012) - S00E002 - Thus Spoke Kishibe Rohan Mutsukabe Hill
@@ -18210,9 +18195,9 @@ Tiger & Bunny - The Movie- The Rising (2014):
   Shows:
     Tiger & Bunny:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '47707'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '02'
       Parsed Episode Title: anime/staging/Tiger & Bunny/Season 00/Tiger & Bunny -
         S00E02 - Tiger & Bunny The Beginning
@@ -18249,7 +18234,7 @@ Tiger & Bunny- The Beginning (2012):
   Shows:
     Tiger & Bunny:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '47708'
       Has Link: false
       Parsed Episode: '003'
@@ -18308,7 +18293,7 @@ Top Gear- 50 Years Of Bond Cars (2012):
     Top Gear:
       Absolute Episode: 43
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '30326'
       Has Link: false
       Parsed Episode: '04'
@@ -18347,7 +18332,7 @@ Top Gear- Apocalypse (2010):
     Top Gear:
       Absolute Episode: 32
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '30325'
       Has Link: false
       Parsed Episode: '03'
@@ -18386,7 +18371,7 @@ Top Gear- At the Movies (2011):
     Top Gear:
       Absolute Episode: 32
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '30325'
       Has Link: false
       Parsed Episode: '03'
@@ -18426,7 +18411,7 @@ Top Gear- Botswana Special (2007):
     Top Gear:
       Absolute Episode: 43
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '30326'
       Has Link: false
       Parsed Episode: '04'
@@ -18465,7 +18450,7 @@ Top Gear- Burma Special (2014):
     Top Gear:
       Absolute Episode: 72
       Anime: true
-      Episode: '7'
+      Episode: 7
       Episode ID: '30329'
       Has Link: false
       Parsed Episode: '07'
@@ -18525,9 +18510,9 @@ Top Gear- Middle East Special (2011):
     Top Gear:
       Absolute Episode: 32
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '30325'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '03'
       Parsed Episode Title: tv/reality/Top Gear/Season 00/Top Gear - S00E03 - Series
         3 Best of
@@ -18568,7 +18553,7 @@ Top Gear- Patagonia Special- Part 1 (2014):
     Top Gear:
       Absolute Episode: 53
       Anime: true
-      Episode: '6'
+      Episode: 6
       Episode ID: '30328'
       Has Link: false
       Parsed Episode: '06'
@@ -18611,7 +18596,7 @@ Top Gear- Patagonia Special- Part 2 (2014):
     Top Gear:
       Absolute Episode: 53
       Anime: true
-      Episode: '6'
+      Episode: 6
       Episode ID: '30328'
       Has Link: false
       Parsed Episode: '06'
@@ -18669,7 +18654,7 @@ Top Gear- The Challenges (2007):
     Top Gear:
       Absolute Episode: 11
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '30323'
       Has Link: false
       Parsed Episode: '01'
@@ -18727,7 +18712,7 @@ Top Gear- The Challenges 4 (2010):
     Top Gear:
       Absolute Episode: 72
       Anime: true
-      Episode: '7'
+      Episode: 7
       Episode ID: '30329'
       Has Link: false
       Parsed Episode: '07'
@@ -18768,7 +18753,7 @@ Top Gear- The Great African Adventure (2013):
     Top Gear:
       Absolute Episode: 53
       Anime: true
-      Episode: '6'
+      Episode: 6
       Episode ID: '30328'
       Has Link: false
       Parsed Episode: '06'
@@ -18808,7 +18793,7 @@ Top Gear- The India Special (2011):
     Top Gear:
       Absolute Episode: 32
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '30325'
       Has Link: false
       Parsed Episode: '03'
@@ -18848,7 +18833,7 @@ Top Gear- The Perfect Road Trip (2013):
     Top Gear:
       Absolute Episode: 43
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '30326'
       Has Link: false
       Parsed Episode: '04'
@@ -18888,7 +18873,7 @@ Top Gear- The Perfect Road Trip 2 (2014):
     Top Gear:
       Absolute Episode: 53
       Anime: true
-      Episode: '6'
+      Episode: 6
       Episode ID: '30328'
       Has Link: false
       Parsed Episode: '06'
@@ -18933,9 +18918,9 @@ Top Gear- The Worst Car In the History of the World (2012):
     Top Gear:
       Absolute Episode: 43
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '30326'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '04'
       Parsed Episode Title: tv/reality/Top Gear/Season 00/Top Gear - S00E04 - Series
         4 Best of
@@ -18973,7 +18958,7 @@ Top Gear- Top Gear Of The Pops (0):
     Top Gear:
       Absolute Episode: 11
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '30323'
       Has Link: false
       Parsed Episode: '01'
@@ -19012,7 +18997,7 @@ Top Gear- Top Ground Gear Force (0):
     Top Gear:
       Absolute Episode: 22
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '30324'
       Has Link: false
       Parsed Episode: '02'
@@ -19051,7 +19036,7 @@ Top Gear- Uncovered (2009):
     Top Gear:
       Absolute Episode: 43
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '30326'
       Has Link: false
       Parsed Episode: '04'
@@ -19091,7 +19076,7 @@ Top Gear- Vietnam Special (2009):
     Top Gear:
       Absolute Episode: 74
       Anime: true
-      Episode: '8'
+      Episode: 8
       Episode ID: '30330'
       Has Link: false
       Parsed Episode: 08
@@ -19131,7 +19116,7 @@ Top Gear- Winter Olympics (2006):
     Top Gear:
       Absolute Episode: 72
       Anime: true
-      Episode: '7'
+      Episode: 7
       Episode ID: '30329'
       Has Link: false
       Parsed Episode: '07'
@@ -19174,9 +19159,9 @@ Toriko 3D Movie- Kaimaku! Gourmet Adventure!! (2011):
   Shows:
     Toriko:
       Anime: true
-      Episode: '3'
+      Episode: 3
       Episode ID: '47858'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '003'
       Parsed Episode Title: anime/staging/Toriko/Season 00/Toriko - S00E003 - Kaimaku
         Gourmet Adventure!!
@@ -19216,9 +19201,9 @@ Trigun - Badlands Rumble (2010):
   Shows:
     Trigun:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '47886'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/shounen/Trigun/Season 00/Trigun - S00E001 - Trigun
         the Movie Badlands Rumble
@@ -19261,9 +19246,9 @@ Twilight Zone- The Movie (1983):
   Shows:
     The Twilight Zone:
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '34140'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '04'
       Parsed Episode Title: tv/scifi/The Twilight Zone/Season 00/The Twilight Zone
         - S00E04 - Twilight Zone The Movie
@@ -19305,9 +19290,9 @@ Unlocking Sherlock (2014):
   Shows:
     Sherlock:
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '26966'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '05'
       Parsed Episode Title: tv/crime/Sherlock/Season 00/Sherlock - S00E05 - Unlocking
         Sherlock (2013)
@@ -19363,7 +19348,7 @@ Vixen- The Movie (2017):
   Shows:
     Vixen:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '43717'
       Has Link: false
       Parsed Episode: '01'
@@ -19428,9 +19413,9 @@ Watashi ga Motenai no wa Dou Kangaetemo Omaera ga Warui!- Motenaishi, Nazomeite 
   Shows:
     WATAMOTE:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '1758'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/WATAMOTE/Season 00/WATAMOTE - S00E001 -
         Since I'm Not Popular, I'll Become an Enigma
@@ -19470,47 +19455,23 @@ Watchmen- The Complete Motion Comic (2009):
   Shows:
     Watchmen- The Motion Comic:
       Anime: true
-      Episode:
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
-      - 7
-      - 8
-      - 9
-      - 10
-      - 11
-      - 12
-      Episode ID:
-      - 43733
-      - 43734
-      - 43735
-      - 43736
-      - 43737
-      - 43738
-      - 43739
-      - 43740
-      - 43741
-      - 43742
-      - 43743
-      - 43744
+      Episode: 1
+      Episode ID: 43733
       Has Link: false
       Parsed Episode: '[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]'
-      Parsed Episode Title: 'tv/staging/Watchmen- The Motion Comic/Season 00/Watchmen-
-        The Motion Comic - S00E[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] - '
-      Parsed Season Folder: Season 00
+      Parsed Episode Title: tv/superhero/Watchmen- The Motion Comic/Season 01/Watchmen-
+        The Motion Comic - S01E01 - Chapter I - At Midnight, All the Agents...
+      Parsed Season Folder: Season 01
       Relative Show File Path: ''
-      Relative Show Path: tv/staging/Watchmen- The Motion Comic/Season 00
-      Season: '00'
+      Relative Show Path: tv/superhero/Watchmen- The Motion Comic/Season 01
+      Season: '01'
       Show Genres:
       - Animation
       - Drama
       - Fantasy
-      Show Root Path: tv/staging/Watchmen- The Motion Comic
-      Title: ''
-      episodeFileId: ''
+      Show Root Path: tv/superhero/Watchmen- The Motion Comic
+      Title: Chapter I - At Midnight, All the Agents...
+      episodeFileId: 26520
       imdbId: tt1322240
       seriesId: 502
       tvdbId: 82618
@@ -19552,7 +19513,7 @@ Your Lie in April (2016):
   Shows:
     Your lie in April:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '47922'
       Has Link: false
       Parsed Episode: '002'
@@ -19594,7 +19555,7 @@ Yu Yu Hakusho- The Movie (1993):
   Shows:
     Yu Yu Hakusho:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '2478'
       Has Link: false
       Parsed Episode: '001'
@@ -19638,9 +19599,9 @@ Yu Yu Hakusho- The Movie - Poltergeist Report (1994):
   Shows:
     Yu Yu Hakusho:
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '2479'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/Yu Yu Hakusho/Season 00/Yu Yu Hakusho -
         S00E002 - Poltergeist Report
@@ -19679,9 +19640,9 @@ Yu Yu Hakusho- Two Shots (2018):
   Shows:
     Yu Yu Hakusho:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '2478'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Yu Yu Hakusho/Season 00/Yu Yu Hakusho -
         S00E001 - The Golden Seal
@@ -19718,7 +19679,7 @@ Yu Yu Hakusho- Two Shots (2018):
   Shows:
     Yu Yu Hakusho:
       Anime: true
-      Episode: '6'
+      Episode: 6
       Episode ID: '2483'
       Has Link: false
       Parsed Episode: '006'
@@ -19759,7 +19720,7 @@ anohana- The Flower We Saw That Day - The Movie (2013):
     Anohana- The Flower We Saw That Day:
       Absolute Episode: 12
       Anime: true
-      Episode: '2'
+      Episode: 2
       Episode ID: '43886'
       Has Link: false
       Parsed Episode: '002'
@@ -19809,9 +19770,9 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
     xxxHOLiC:
       Absolute Episode: 100
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '6969'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/xxxHOLiC/Season 00/xxxHOLiC - S00E001 -
         A Midsummer Night's Dream
@@ -19854,9 +19815,9 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
     xxxHOLiC:
       Absolute Episode: 40
       Anime: true
-      Episode: '4'
+      Episode: 4
       Episode ID: '6967'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '004'
       Parsed Episode Title: anime/staging/xxxHOLiC/Season 00/xxxHOLiC - S00E004 -
         Rou
@@ -19898,9 +19859,9 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
     xxxHOLiC:
       Absolute Episode: 41
       Anime: true
-      Episode: '5'
+      Episode: 5
       Episode ID: '6968'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '005'
       Parsed Episode Title: anime/staging/xxxHOLiC/Season 00/xxxHOLiC - S00E005 -
         Rou Adayume
@@ -19946,7 +19907,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
     Cells at Work!:
       Absolute Episode: 14
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '44656'
       Has Link: false
       Parsed Episode: '001'
@@ -19990,9 +19951,9 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
   Shows:
     Attack on Titan:
       Anime: true
-      Episode: '1'
+      Episode: 1
       Episode ID: '2543'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Attack on Titan/Season 00/Attack on Titan
         - S00E001 - Since That Day
