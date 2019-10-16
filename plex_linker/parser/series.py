@@ -146,11 +146,17 @@ def episode_file_id(self, g):
 def episode_number(self, g):
 	# need handling for multi part episodes
 	temp = self.episode_dict.pop('episodeNumber', str())
-	if isinstance(temp, list):
+	if 'Episode' in self.series_dict and not self.series_dict['Episode']:
+		print("EPISODE NOT FILLED IN ADDING DATA")
+		print(temp)
+	if self.series_dict['Episode'] and isinstance(self.series_dict['Episode'], list):
 		result = self.series_dict['Episode']
 	else:
 		result = self.series_dict['Episode'] = temp
-	g.LOG.debug(backend.debug_message(622, g, result))
+	if not result:
+		print("Empty Episode error")
+		breakpoint()
+	g.LOG.info(backend.debug_message(622, g, result))
 	return result
 
 

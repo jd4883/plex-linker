@@ -92,9 +92,8 @@ class Movie(Movies, Globals):
 		
 		
 		self.year = self.movie_dictionary['Year'] =	\
-			self.radarr_dictionary['inCinemas'][0:4] if 'inCinemas' in self.radarr_dictionary \
+			int(self.radarr_dictionary['inCinemas'][0:4]) if 'inCinemas' in self.radarr_dictionary \
 				else int(self.radarr_dictionary.pop('year', 0))
-		print(f"IN TESTING YEAR: {self.year}")
 		self.unparsed_title = self.movie_dictionary['Unparsed Title'] = self.get_unparsed_movie_title(g).replace(' (0)',
 		                                                                                                         str())
 		self.movie_title = self.movie_dictionary['Title'] = str(get_parsed_movie_title(self, g)).replace(' (0)', str())
@@ -172,19 +171,24 @@ class Movie(Movies, Globals):
 			quality = str(self.quality)
 		else:
 			return str()
-		if str(self.quality).lower() == "Remux-1080p.mkv".lower():
-			try:
-				quality.replace("Remux-1080p.mkv", "Bluray-1080p Remux.mkv")
-			except IndexError:
-				pass
 		if quality.endswith(f"Proper.{self.extension}"):
 			try:
 				quality = f"{self.movie_file.split().pop(-2)} {self.quality}"
 			except IndexError:
 				pass
-		if quality.endswith(f"REAL.{self.extension}"):
+		elif quality.endswith(f"Proper REAL.{self.extension}"):
+			try:
+				quality = f"{self.movie_file.split().pop(-3)} {self.quality}"
+			except IndexError:
+				pass
+		elif quality.endswith(f"REAL.{self.extension}"):
 			try:
 				quality = f"{self.movie_file.split().pop(-2)} {self.quality}"
+			except IndexError:
+				pass
+		if str(self.quality).lower() == "Remux-1080p.mkv".lower():
+			try:
+				quality.replace("Remux-1080p.mkv", "Bluray-1080p Remux.mkv")
 			except IndexError:
 				pass
 		elif not quality:
