@@ -89,8 +89,11 @@ class Movie(Movies, Globals):
 		except TypeError:
 			self.monitored = self.movie_dictionary['Monitored'] = bool(True)
 		g.LOG.debug(backend.debug_message(647, g, self.monitored))
+		
+		if 'inCinemas' in self.radarr_dictionary:
+			print(self.radarr_dictionary['inCinemas'][0:3])
+		breakpoint()
 		self.year = self.movie_dictionary['Year'] = int(self.radarr_dictionary.pop('year', 0))
-		print(self.year)
 		self.unparsed_title = self.movie_dictionary['Unparsed Title'] = self.get_unparsed_movie_title(g).replace(' (0)',
 		                                                                                                         str())
 		self.movie_title = self.movie_dictionary['Title'] = str(get_parsed_movie_title(self, g)).replace(' (0)', str())
