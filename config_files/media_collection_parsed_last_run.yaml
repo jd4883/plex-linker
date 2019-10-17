@@ -2860,42 +2860,13 @@ Constantine- City of Demons - The Movie (2018):
       tvdbId: 336139
   Year: 2018
 Cowboy Bebop- The Movie (2001):
-  Absolute Movie File Path: ''
-  Absolute Movie Path: /media/video/movies/foreign/Cowboy Bebop- The Movie (2001)
-  Has File: false
-  Monitored: true
   Movie DB ID: 11299
-  Movie File: ''
-  Parsed Extension: ''
-  Parsed Quality: ''
-  Raw Title: ''
-  Relative Movie File Path: ''
-  Relative Movie Path: movies/foreign/Cowboy Bebop- The Movie (2001)
   Shows:
     Cowboy Bebop:
-      Absolute Episode: ''
-      Anime: true
       Episode: 1
       Episode ID: '44925'
-      Has Link: false
-      Parsed Episode Title: anime/staging/Cowboy Bebop/Season 00/Cowboy Bebop - S00E001
-        - Knockin' on Heaven's Door
-      Parsed Season Folder: Season 00
-      Relative Show File Path: ''
-      Relative Show Path: anime/staging/Cowboy Bebop/Season 00
-      Season: '00'
-      Show Genres:
-      - Action
-      - Adventure
-      - Anime
-      - Science-Fiction
-      - Western
-      Show Root Path: anime/staging/Cowboy Bebop
-      episodeFileId: ''
-      imdbId: tt0213338
       seriesId: 15
       tvdbId: 76885
-  Year: 2001
 Death Note (2006):
   Absolute Movie File Path: "/media/video/movies/foreign/Death Note (2006)/\u30C7\u30B9\
     \u30CE\u30FC\u30C8 (2006) Bluray-1080p.mkv"
@@ -5145,43 +5116,14 @@ Fullmetal Alchemist The Movie- The Sacred Star of Milos (2011):
       tvdbId: 85249
   Year: 2011
 Futurama - Bender's Big Score (2007):
-  Absolute Movie File Path: /media/video/movies/staging/Futurama - Bender's Big Score
-    (2007)/Futurama- Bender's Big Score (2007) WEBDL-1080p.ts
-  Absolute Movie Path: /media/video/movies/staging/Futurama - Bender's Big Score (2007)
-  Has File: true
-  Monitored: true
   Movie DB ID: 7249
-  Movie File: Futurama- Bender's Big Score (2007) WEBDL-1080p.ts
-  Parsed Extension: .ts
-  Parsed Movie Quality: WEBDL-1080p
-  Raw Title: ''
-  Relative Movie File Path: movies/staging/Futurama - Bender's Big Score (2007)/Futurama-
-    Bender's Big Score (2007) WEBDL-1080p.ts
-  Relative Movie Path: movies/staging/Futurama - Bender's Big Score (2007)
   Shows:
     Futurama:
-      Absolute Episode: ''
-      Anime: false
       Episode: 1
       Episode ID: '21405'
-      Has Link: false
-      Parsed Episode Title: tv/staging/Futurama/Season 00/Futurama - S00E01 - Bender's
-        Big Score
-      Parsed Season Folder: Season 00
-      Relative Show File Path: tv/staging/Futurama/Season 00/Futurama - S00E01 - Bender's
-        Big Score WEBDL-1080p.ts
-      Relative Show Path: tv/staging/Futurama/Season 00
-      Season: '00'
-      Show Genres:
-      - Animation
-      - Comedy
-      - Science-Fiction
-      Show Root Path: tv/staging/Futurama
-      episodeFileId: ''
       imdbId: tt0149460
       seriesId: 284
       tvdbId: 73871
-  Year: 2007
 Futurama - Bender's Game (2008):
   Absolute Movie File Path: /media/video/movies/staging/Futurama - Bender's Game (2008)/Futurama-
     Bender's Game (2008) Bluray-1080p.mkv
@@ -5633,29 +5575,15 @@ Ghost in the Shell Arise - Border 1- Ghost Pain (2013):
     (2013)
   Shows:
     Ghost in the Shell- Arise - Alternative Architecture:
-      Absolute Episode: 3
-      Anime: true
-      Episode: 3
+      Absolute Episode:
+      - 3
+      - 4
+      Episode:
+      - 3
+      - 4
       Episode ID: 1959
-      Has Link: false
-      Parsed Episode: 001-002
-      Parsed Episode Title: 'anime/staging/Ghost in the Shell- Arise - Alternative
-        Architecture/Season 01/Ghost in the Shell- Arise - Alternative Architecture
-        - S01E003 - Ghost Pain '
-      Parsed Season Folder: Season 01
-      Relative Show File Path: anime/staging/Ghost in the Shell- Arise - Alternative
-        Architecture/Season 01/Ghost in the Shell- Arise - Alternative Architecture
-        - S01E003 - Ghost Pain  Remux-1080p.Remux.mkv
-      Relative Show Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture/Season
-        01
-      Season: '01'
-      Show Genres:
-      - Action
-      - Animation
-      - Science-Fiction
-      Show Root Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture
-      episodeFileId: ''
-      imdbId: tt4508686
+      Parsed Episode: 003-004
+      Parsed Absolute Episode: 003-004
       seriesId: 46
       tvdbId: 293491
   Year: 2013
@@ -5678,74 +5606,31 @@ Ghost in the Shell Arise - Border 2- Ghost Whispers (2013):
     (2013)
   Shows:
     Ghost in the Shell- Arise - Alternative Architecture:
-      Absolute Episode: 5
-      Anime: true
-      Episode: 5
+      Absolute Episode:
+      - 5
+      - 6
+      Episode:
+      - 5
+      - 6
       Episode ID: 1961
-      Has Link: false
-      Parsed Episode: '005'
-      Parsed Episode Title: 'anime/staging/Ghost in the Shell- Arise - Alternative
-        Architecture/Season 01/Ghost in the Shell- Arise - Alternative Architecture
-        - S01E005 - Ghost Whispers '
-      Parsed Season Folder: Season 01
-      Relative Show File Path: anime/staging/Ghost in the Shell- Arise - Alternative
-        Architecture/Season 01/Ghost in the Shell- Arise - Alternative Architecture
-        - S01E005 - Ghost Whispers  Remux-1080p.mkv
-      Relative Show Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture/Season
-        01
-      Season: '01'
-      Show Genres:
-      - Action
-      - Animation
-      - Science-Fiction
-      Show Root Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture
-      episodeFileId: ''
-      imdbId: tt4508686
+      Parsed Episode: '005-006'
+      Parsed Absolute Episode: '005-006'
       seriesId: 46
       tvdbId: 293491
   Year: 2013
 Ghost in the Shell Arise - Border 3- Ghost Tears (2014):
-  Absolute Movie File Path: /media/video/movies/foreign/Ghost in the Shell Arise -
-    Border 3- Ghost Tears (2014)/Ghost in the Shell Arise - Border 3- Ghost Tears
-    (2014) Remux-1080p.mkv
-  Absolute Movie Path: /media/video/movies/foreign/Ghost in the Shell Arise - Border
-    3- Ghost Tears (2014)
-  Has File: true
-  Monitored: true
   Movie DB ID: 240341
-  Movie File: Ghost in the Shell Arise - Border 3- Ghost Tears (2014) Remux-1080p.mkv
-  Parsed Extension: Remux-1080p.mkv
-  Parsed Movie Quality: HDTV-1080p
-  Raw Title: ''
-  Relative Movie File Path: movies/foreign/Ghost in the Shell Arise - Border 3- Ghost
-    Tears (2014)/Ghost in the Shell Arise - Border 3- Ghost Tears (2014) Remux-1080p.mkv
-  Relative Movie Path: movies/foreign/Ghost in the Shell Arise - Border 3- Ghost Tears
-    (2014)
   Shows:
     Ghost in the Shell- Arise - Alternative Architecture:
-      Absolute Episode: 7
-      Anime: true
-      Episode: 7
+      Absolute Episode:
+      - 7
+      - 8
+      Episode:
+      - 7
+      - 8
       Episode ID: 1963
-      Has Link: false
-      Parsed Episode: '007'
-      Parsed Episode Title: 'anime/staging/Ghost in the Shell- Arise - Alternative
-        Architecture/Season 01/Ghost in the Shell- Arise - Alternative Architecture
-        - S01E007 - Ghost Tears '
-      Parsed Season Folder: Season 01
-      Relative Show File Path: anime/staging/Ghost in the Shell- Arise - Alternative
-        Architecture/Season 01/Ghost in the Shell- Arise - Alternative Architecture
-        - S01E007 - Ghost Tears  HDTV-1080p.Remux-1080p.mkv
-      Relative Show Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture/Season
-        01
-      Season: '01'
-      Show Genres:
-      - Action
-      - Animation
-      - Science-Fiction
-      Show Root Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture
-      episodeFileId: ''
-      imdbId: tt4508686
+      Parsed Episode: '007-008'
+      Parsed Absolute Episode: '007-008'
       seriesId: 46
       tvdbId: 293491
   Year: 2014
@@ -5770,29 +5655,15 @@ Ghost in the Shell Arise - Border 4- Ghost Stands Alone (2014):
     Alone (2014)
   Shows:
     Ghost in the Shell- Arise - Alternative Architecture:
-      Absolute Episode: 1
-      Anime: true
-      Episode: 1
+      Absolute Episode:
+      - 1
+      - 2
+      Episode:
+      - 1
+      - 2
       Episode ID: 1957
-      Has Link: false
-      Parsed Episode: '001'
-      Parsed Episode Title: 'anime/staging/Ghost in the Shell- Arise - Alternative
-        Architecture/Season 01/Ghost in the Shell- Arise - Alternative Architecture
-        - S01E001 - Ghost Stands Alone '
-      Parsed Season Folder: Season 01
-      Relative Show File Path: anime/staging/Ghost in the Shell- Arise - Alternative
-        Architecture/Season 01/Ghost in the Shell- Arise - Alternative Architecture
-        - S01E001 - Ghost Stands Alone  Remux-1080p.REAL.mkv
-      Relative Show Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture/Season
-        01
-      Season: '01'
-      Show Genres:
-      - Action
-      - Animation
-      - Science-Fiction
-      Show Root Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture
-      episodeFileId: ''
-      imdbId: tt4508686
+      Parsed Episode: '001-002'
+      Parsed Absolute Episode: '001-002'
       seriesId: 46
       tvdbId: 293491
   Year: 2014
