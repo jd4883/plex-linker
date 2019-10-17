@@ -18,11 +18,11 @@
       Anime: false
       Episode: 9
       Episode ID: '7014'
-      Has Link: false
+      Has Link: true
       Parsed Episode: 09
       Parsed Episode Title: tv/staging/24/Season 00/24 - S00E09 - Redemption
       Parsed Season Folder: Season 00
-      Relative Show File Path: tv/staging/24/Season 00/24 - S00E09 - Redemption Bluray-1080p..mkv
+      Relative Show File Path: tv/staging/24/Season 00/24 - S00E09 - Redemption Bluray-1080p.mkv
       Relative Show Path: tv/staging/24/Season 00
       Season: '00'
       Show Genres:
@@ -31,7 +31,7 @@
       - Drama
       - Thriller
       Show Root Path: tv/staging/24
-      episodeFileId: ''
+      episodeFileId: 76109
       imdbId: tt0285331
       seriesId: 196
       tvdbId: 76290
@@ -99,7 +99,7 @@
         of Time / All Our Yesterdays / Tomorrow, and Tomorrow
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/91 Days/Season 00/91 Days - S00E001 -
-        Shoal of Time / All Our Yesterdays / Tomorrow, and Tomorrow Remux-1080p..mkv
+        Shoal of Time / All Our Yesterdays / Tomorrow, and Tomorrow Remux-1080p.mkv
       Relative Show Path: anime/staging/91 Days/Season 00
       Season: '00'
       Show Genres:
@@ -140,7 +140,7 @@ ANOTHER GANTZ (2011):
         Gantz
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Gantz/Season 00/Gantz - S00E004 - ANOTHER
-        Gantz DVD..mkv
+        Gantz DVD.mkv
       Relative Show Path: anime/staging/Gantz/Season 00
       Season: '00'
       Show Genres:
@@ -207,19 +207,19 @@ Absolutely Fabulous- The Movie (2016):
       Anime: false
       Episode: 8
       Episode ID: '35150'
-      Has Link: false
+      Has Link: true
       Parsed Episode: 08
       Parsed Episode Title: tv/sitcom/Absolutely Fabulous/Season 00/Absolutely Fabulous
         - S00E08 - Absolutely Fabulous The Movie
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/sitcom/Absolutely Fabulous/Season 00/Absolutely
-        Fabulous - S00E08 - Absolutely Fabulous The Movie Bluray-1080p..mp4
+        Fabulous - S00E08 - Absolutely Fabulous The Movie Bluray-1080p.mp4
       Relative Show Path: tv/sitcom/Absolutely Fabulous/Season 00
       Season: '00'
       Show Genres:
       - Comedy
       Show Root Path: tv/sitcom/Absolutely Fabulous
-      episodeFileId: ''
+      episodeFileId: 76110
       imdbId: tt0105929
       seriesId: 416
       tvdbId: 73314
@@ -250,7 +250,7 @@ Achmed Saves America (2014):
         Dunham Show - S00E07 - Achmed Saves America
       Parsed Season Folder: Season 00
       Relative Show File Path: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
-        Dunham Show - S00E07 - Achmed Saves America Bluray-1080p..mkv
+        Dunham Show - S00E07 - Achmed Saves America Bluray-1080p.mkv
       Relative Show Path: movies/staging/The Jeff Dunham Show/Season 00
       Season: '00'
       Show Genres:
@@ -281,13 +281,13 @@ Ajin- Demi-Human (2017):
       Anime: true
       Episode: 7
       Episode ID: '51239'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '007'
       Parsed Episode Title: anime/staging/Ajin/Season 00/Ajin - S00E007 - Ajin Demi-Human
         (Live Action)
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Ajin/Season 00/Ajin - S00E007 - Ajin
-        Demi-Human (Live Action) Bluray-1080p..mkv
+        Demi-Human (Live Action) Bluray-1080p.mkv
       Relative Show Path: anime/staging/Ajin/Season 00
       Season: '00'
       Show Genres:
@@ -298,7 +298,7 @@ Ajin- Demi-Human (2017):
       - Mystery
       - Suspense
       Show Root Path: anime/staging/Ajin
-      episodeFileId: ''
+      episodeFileId: 76112
       imdbId: tt5537534
       seriesId: 25
       tvdbId: 300835
@@ -326,13 +326,13 @@ Ajin- Demi-Human - Compel (2015):
       - 2
       - 3
       Episode ID: '43851'
-      Has Link: false
+      Has Link: true
       Parsed Episode: 001-002-003
       Parsed Episode Title: anime/staging/Ajin/Season 00/Ajin - S00E001-002-003 -
         Ajin, Part 1 Shoudou
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Ajin/Season 00/Ajin - S00E001-002-003
-        - Ajin, Part 1 Shoudou Bluray-1080p..mkv
+        - Ajin, Part 1 Shoudou Bluray-1080p.mkv
       Relative Show Path: anime/staging/Ajin/Season 00
       Season: '00'
       Show Genres:
@@ -343,7 +343,7 @@ Ajin- Demi-Human - Compel (2015):
       - Mystery
       - Suspense
       Show Root Path: anime/staging/Ajin
-      episodeFileId: ''
+      episodeFileId: 76111
       imdbId: tt5537534
       seriesId: 25
       tvdbId: 300835
@@ -407,13 +407,13 @@ Anohana- The Flower We Saw That Day (2015):
       Anime: true
       Episode: 3
       Episode ID: '49288'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '003'
       Parsed Episode Title: anime/staging/Anohana- The Flower We Saw That Day/Season
         00/Anohana- The Flower We Saw That Day - S00E003 - Live-Action TV Drama
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Anohana- The Flower We Saw That Day/Season
-        00/Anohana- The Flower We Saw That Day - S00E003 - Live-Action TV Drama Bluray-1080p..mkv
+        00/Anohana- The Flower We Saw That Day - S00E003 - Live-Action TV Drama Bluray-1080p.mkv
       Relative Show Path: anime/staging/Anohana- The Flower We Saw That Day/Season
         00
       Season: '00'
@@ -422,7 +422,7 @@ Anohana- The Flower We Saw That Day (2015):
       - Drama
       - Fantasy
       Show Root Path: anime/staging/Anohana- The Flower We Saw That Day
-      episodeFileId: ''
+      episodeFileId: 76113
       imdbId: tt1913273
       seriesId: 134
       tvdbId: 247958
@@ -495,7 +495,7 @@ Aqua Teen Hunger Force Colon Movie Film for Theaters (2007):
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/Aqua Teen Hunger Force/Season 00/Aqua Teen
         Hunger Force - S00E03 - Aqua Teen Hunger Force Colon Movie Film for Theaters
-        DVD..mkv
+        DVD.mkv
       Relative Show Path: tv/staging/Aqua Teen Hunger Force/Season 00
       Season: '00'
       Show Genres:
@@ -533,7 +533,7 @@ Army of Darkness (1992):
         - S00E03 - Evil Dead II
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/fantasy/Ash vs Evil Dead/Season 00/Ash vs Evil Dead
-        - S00E03 - Evil Dead II Bluray-1080p..mkv
+        - S00E03 - Evil Dead II Bluray-1080p.mkv
       Relative Show Path: tv/fantasy/Ash vs Evil Dead/Season 00
       Season: '00'
       Show Genres:
@@ -541,7 +541,7 @@ Army of Darkness (1992):
       - Horror
       - Thriller
       Show Root Path: tv/fantasy/Ash vs Evil Dead
-      episodeFileId: ''
+      episodeFileId: 76115
       imdbId: tt4189022
       seriesId: 332
       tvdbId: 296295
@@ -566,13 +566,13 @@ Assassination Classroom (2015):
       Anime: true
       Episode: 4
       Episode ID: '43940'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '004'
       Parsed Episode Title: anime/shounen/Assassination Classroom/Season 00/Assassination
         Classroom - S00E004 - Assassination Classroom
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Assassination Classroom/Season 00/Assassination
-        Classroom - S00E004 - Assassination Classroom Bluray-1080p..mkv
+        Classroom - S00E004 - Assassination Classroom Bluray-1080p.mkv
       Relative Show Path: anime/shounen/Assassination Classroom/Season 00
       Season: '00'
       Show Genres:
@@ -580,7 +580,7 @@ Assassination Classroom (2015):
       - Anime
       - Comedy
       Show Root Path: anime/shounen/Assassination Classroom
-      episodeFileId: ''
+      episodeFileId: 76119
       imdbId: tt3837246
       seriesId: 5
       tvdbId: 283947
@@ -610,7 +610,7 @@ Assassination Classroom The Movie- 365 Days (2016):
       Anime: true
       Episode: 3
       Episode ID: '43939'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '003'
       Parsed Episode Title: anime/shounen/Assassination Classroom/Season 00/Assassination
         Classroom - S00E003 - Assassination Classroom The Movie 365 Days
@@ -624,7 +624,7 @@ Assassination Classroom The Movie- 365 Days (2016):
       - Anime
       - Comedy
       Show Root Path: anime/shounen/Assassination Classroom
-      episodeFileId: ''
+      episodeFileId: 76118
       imdbId: tt3837246
       seriesId: 5
       tvdbId: 283947
@@ -689,13 +689,13 @@ Assassination Classroom- Jump Festa 2013 Special (2013):
       Anime: true
       Episode: 1
       Episode ID: '43937'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '001'
       Parsed Episode Title: anime/shounen/Assassination Classroom/Season 00/Assassination
         Classroom - S00E001 - Jump Festa 2013 Special
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Assassination Classroom/Season 00/Assassination
-        Classroom - S00E001 - Jump Festa 2013 Special Remux-1080p..mkv
+        Classroom - S00E001 - Jump Festa 2013 Special Remux-1080p.mkv
       Relative Show Path: anime/shounen/Assassination Classroom/Season 00
       Season: '00'
       Show Genres:
@@ -703,7 +703,7 @@ Assassination Classroom- Jump Festa 2013 Special (2013):
       - Anime
       - Comedy
       Show Root Path: anime/shounen/Assassination Classroom
-      episodeFileId: ''
+      episodeFileId: 76117
       imdbId: tt3837246
       seriesId: 5
       tvdbId: 283947
@@ -732,12 +732,12 @@ Attack on Titan II- End of the World (2015):
       Anime: true
       Episode: 19
       Episode ID: '2561'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/staging/Attack on Titan/Season 00/Attack on Titan
         - S00E019 - Attack on Titan II - End of the World (Live Action Movie)
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Attack on Titan/Season 00/Attack on Titan
-        - S00E019 - Attack on Titan II - End of the World (Live Action Movie) Bluray-1080p..mkv
+        - S00E019 - Attack on Titan II - End of the World (Live Action Movie) Bluray-1080p.mkv
       Relative Show Path: anime/staging/Attack on Titan/Season 00
       Season: '00'
       Show Genres:
@@ -747,7 +747,7 @@ Attack on Titan II- End of the World (2015):
       - Drama
       - Fantasy
       Show Root Path: anime/staging/Attack on Titan
-      episodeFileId: ''
+      episodeFileId: 76124
       imdbId: tt2560140
       seriesId: 121
       tvdbId: 267440
@@ -776,12 +776,12 @@ Attack on Titan- Crimson Bow and Arrow (2014):
       Anime: true
       Episode: 14
       Episode ID: '2556'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/staging/Attack on Titan/Season 00/Attack on Titan
         - S00E014 - Attack on Titan Part I Crimson Bow and Arrow
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Attack on Titan/Season 00/Attack on Titan
-        - S00E014 - Attack on Titan Part I Crimson Bow and Arrow Bluray-1080p..mkv
+        - S00E014 - Attack on Titan Part I Crimson Bow and Arrow Bluray-1080p.mkv
       Relative Show Path: anime/staging/Attack on Titan/Season 00
       Season: '00'
       Show Genres:
@@ -791,7 +791,7 @@ Attack on Titan- Crimson Bow and Arrow (2014):
       - Drama
       - Fantasy
       Show Root Path: anime/staging/Attack on Titan
-      episodeFileId: ''
+      episodeFileId: 76122
       imdbId: tt2560140
       seriesId: 121
       tvdbId: 267440
@@ -820,12 +820,12 @@ Attack on Titan- The Roar of Awakening (2018):
       Anime: true
       Episode: 23
       Episode ID: '2563'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/staging/Attack on Titan/Season 00/Attack on Titan
         - S00E023 - Attack on Titan Part III The Roar of Awakening
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Attack on Titan/Season 00/Attack on Titan
-        - S00E023 - Attack on Titan Part III The Roar of Awakening Bluray-1080p..mkv
+        - S00E023 - Attack on Titan Part III The Roar of Awakening Bluray-1080p.mkv
       Relative Show Path: anime/staging/Attack on Titan/Season 00
       Season: '00'
       Show Genres:
@@ -835,7 +835,7 @@ Attack on Titan- The Roar of Awakening (2018):
       - Drama
       - Fantasy
       Show Root Path: anime/staging/Attack on Titan
-      episodeFileId: ''
+      episodeFileId: 76125
       imdbId: tt2560140
       seriesId: 121
       tvdbId: 267440
@@ -864,12 +864,12 @@ Attack on Titan- Wings of Freedom (2015):
       Anime: true
       Episode: 15
       Episode ID: '2557'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/staging/Attack on Titan/Season 00/Attack on Titan
         - S00E015 - Attack on Titan Part II Wings of Freedom
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Attack on Titan/Season 00/Attack on Titan
-        - S00E015 - Attack on Titan Part II Wings of Freedom Bluray-1080p..mkv
+        - S00E015 - Attack on Titan Part II Wings of Freedom Bluray-1080p.mkv
       Relative Show Path: anime/staging/Attack on Titan/Season 00
       Season: '00'
       Show Genres:
@@ -879,7 +879,7 @@ Attack on Titan- Wings of Freedom (2015):
       - Drama
       - Fantasy
       Show Root Path: anime/staging/Attack on Titan
-      episodeFileId: ''
+      episodeFileId: 76123
       imdbId: tt2560140
       seriesId: 121
       tvdbId: 267440
@@ -904,19 +904,19 @@ Babylon 5- A Call to Arms (1999):
       Anime: false
       Episode: 5
       Episode ID: '30667'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '05'
       Parsed Episode Title: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E05 - A Call
         to Arms
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E05 - A
-        Call to Arms Bluray-1080p..mkv
+        Call to Arms Bluray-1080p.mkv
       Relative Show Path: tv/scifi/Babylon 5/Season 00
       Season: '00'
       Show Genres:
       - Science-Fiction
       Show Root Path: tv/scifi/Babylon 5
-      episodeFileId: ''
+      episodeFileId: 76130
       imdbId: tt0105946
       seriesId: 357
       tvdbId: 70726
@@ -941,19 +941,19 @@ Babylon 5- In the Beginning (1998):
       Anime: false
       Episode: 2
       Episode ID: '30664'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '02'
       Parsed Episode Title: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E02 - In the
         Beginning
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E02 - In
-        the Beginning HDTV-1080p..mkv
+        the Beginning HDTV-1080p.mkv
       Relative Show Path: tv/scifi/Babylon 5/Season 00
       Season: '00'
       Show Genres:
       - Science-Fiction
       Show Root Path: tv/scifi/Babylon 5
-      episodeFileId: ''
+      episodeFileId: 76127
       imdbId: tt0105946
       seriesId: 357
       tvdbId: 70726
@@ -978,19 +978,19 @@ Babylon 5- The Gathering (1993):
       Anime: false
       Episode: 1
       Episode ID: '30663'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '01'
       Parsed Episode Title: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E01 - The
         Gathering
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E01 - The
-        Gathering Bluray-2160p..mkv
+        Gathering Bluray-2160p.mkv
       Relative Show Path: tv/scifi/Babylon 5/Season 00
       Season: '00'
       Show Genres:
       - Science-Fiction
       Show Root Path: tv/scifi/Babylon 5
-      episodeFileId: ''
+      episodeFileId: 76126
       imdbId: tt0105946
       seriesId: 357
       tvdbId: 70726
@@ -1020,19 +1020,19 @@ Babylon 5- The Legend of the Rangers - To Live and Die in Starlight (2002):
       Anime: false
       Episode: 6
       Episode ID: '30668'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '06'
       Parsed Episode Title: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E06 - The
         Legend of the Rangers
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E06 - The
-        Legend of the Rangers Bluray-1080p..mkv
+        Legend of the Rangers Bluray-1080p.mkv
       Relative Show Path: tv/scifi/Babylon 5/Season 00
       Season: '00'
       Show Genres:
       - Science-Fiction
       Show Root Path: tv/scifi/Babylon 5
-      episodeFileId: ''
+      episodeFileId: 76131
       imdbId: tt0105946
       seriesId: 357
       tvdbId: 70726
@@ -1060,19 +1060,19 @@ Babylon 5- The Lost Tales - Voices in the Dark (2007):
       Anime: false
       Episode: 7
       Episode ID: '30669'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '07'
       Parsed Episode Title: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E07 - Voices
         in the Dark Over Here
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E07 - Voices
-        in the Dark Over Here DVD..mkv
+        in the Dark Over Here DVD.mkv
       Relative Show Path: tv/scifi/Babylon 5/Season 00
       Season: '00'
       Show Genres:
       - Science-Fiction
       Show Root Path: tv/scifi/Babylon 5
-      episodeFileId: ''
+      episodeFileId: 76132
       imdbId: tt0105946
       seriesId: 357
       tvdbId: 70726
@@ -1097,19 +1097,19 @@ Babylon 5- The River of Souls (1998):
       Anime: false
       Episode: 4
       Episode ID: '30666'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '04'
       Parsed Episode Title: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E04 - River
         of Souls
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E04 - River
-        of Souls Bluray-1080p..mkv
+        of Souls Bluray-1080p.mkv
       Relative Show Path: tv/scifi/Babylon 5/Season 00
       Season: '00'
       Show Genres:
       - Science-Fiction
       Show Root Path: tv/scifi/Babylon 5
-      episodeFileId: ''
+      episodeFileId: 76129
       imdbId: tt0105946
       seriesId: 357
       tvdbId: 70726
@@ -1134,18 +1134,18 @@ Babylon 5- Thirdspace (1998):
       Anime: false
       Episode: 3
       Episode ID: '30665'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '03'
       Parsed Episode Title: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E03 - Thirdspace
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/scifi/Babylon 5/Season 00/Babylon 5 - S00E03 - Thirdspace
-        DVD..mkv
+        DVD.mkv
       Relative Show Path: tv/scifi/Babylon 5/Season 00
       Season: '00'
       Show Genres:
       - Science-Fiction
       Show Root Path: tv/scifi/Babylon 5
-      episodeFileId: ''
+      episodeFileId: 76128
       imdbId: tt0105946
       seriesId: 357
       tvdbId: 70726
@@ -1171,13 +1171,13 @@ Batman & Mr. Freeze- SubZero (1998):
       Anime: false
       Episode: 2
       Episode ID: '41555'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '02'
       Parsed Episode Title: tv/superhero/Batman- The Animated Series/Season 00/Batman-
         The Animated Series - S00E02 - Batman & Mr. Freeze SubZero
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/superhero/Batman- The Animated Series/Season 00/Batman-
-        The Animated Series - S00E02 - Batman & Mr. Freeze SubZero Bluray-1080p..mkv
+        The Animated Series - S00E02 - Batman & Mr. Freeze SubZero Bluray-1080p.mkv
       Relative Show Path: tv/superhero/Batman- The Animated Series/Season 00
       Season: '00'
       Show Genres:
@@ -1186,7 +1186,7 @@ Batman & Mr. Freeze- SubZero (1998):
       - Animation
       - Thriller
       Show Root Path: tv/superhero/Batman- The Animated Series
-      episodeFileId: ''
+      episodeFileId: 76135
       imdbId: tt0103359
       seriesId: 463
       tvdbId: 76168
@@ -1212,13 +1212,13 @@ Batman Beyond- Return of the Joker (2000):
       Anime: false
       Episode: 1
       Episode ID: '41500'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '01'
       Parsed Episode Title: tv/superhero/Batman Beyond/Season 00/Batman Beyond - S00E01
         - Return of the Joker
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/superhero/Batman Beyond/Season 00/Batman Beyond
-        - S00E01 - Return of the Joker Bluray-1080p..mkv
+        - S00E01 - Return of the Joker Bluray-1080p.mkv
       Relative Show Path: tv/superhero/Batman Beyond/Season 00
       Season: '00'
       Show Genres:
@@ -1227,7 +1227,7 @@ Batman Beyond- Return of the Joker (2000):
       - Animation
       - Children
       Show Root Path: tv/superhero/Batman Beyond
-      episodeFileId: ''
+      episodeFileId: 76139
       imdbId: tt0147746
       seriesId: 462
       tvdbId: 75417
@@ -1252,13 +1252,13 @@ Batman and Harley Quinn (2017):
       Anime: false
       Episode: 6
       Episode ID: '41559'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '06'
       Parsed Episode Title: tv/superhero/Batman- The Animated Series/Season 00/Batman-
         The Animated Series - S00E06 - Batman and Harley Quinn
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/superhero/Batman- The Animated Series/Season 00/Batman-
-        The Animated Series - S00E06 - Batman and Harley Quinn Bluray-1080p..mkv
+        The Animated Series - S00E06 - Batman and Harley Quinn Bluray-1080p.mkv
       Relative Show Path: tv/superhero/Batman- The Animated Series/Season 00
       Season: '00'
       Show Genres:
@@ -1267,7 +1267,7 @@ Batman and Harley Quinn (2017):
       - Animation
       - Thriller
       Show Root Path: tv/superhero/Batman- The Animated Series
-      episodeFileId: ''
+      episodeFileId: 76138
       imdbId: tt0103359
       seriesId: 463
       tvdbId: 76168
@@ -1293,13 +1293,13 @@ Batman- Mask of the Phantasm (1993):
       Anime: false
       Episode: 1
       Episode ID: '41554'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '01'
       Parsed Episode Title: tv/superhero/Batman- The Animated Series/Season 00/Batman-
         The Animated Series - S00E01 - Batman Mask of the Phantasm
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/superhero/Batman- The Animated Series/Season 00/Batman-
-        The Animated Series - S00E01 - Batman Mask of the Phantasm Bluray-1080p..mkv
+        The Animated Series - S00E01 - Batman Mask of the Phantasm Bluray-1080p.mkv
       Relative Show Path: tv/superhero/Batman- The Animated Series/Season 00
       Season: '00'
       Show Genres:
@@ -1308,7 +1308,7 @@ Batman- Mask of the Phantasm (1993):
       - Animation
       - Thriller
       Show Root Path: tv/superhero/Batman- The Animated Series
-      episodeFileId: ''
+      episodeFileId: 76134
       imdbId: tt0103359
       seriesId: 463
       tvdbId: 76168
@@ -1334,13 +1334,13 @@ Batman- Mystery of the Batwoman (2003):
       Anime: false
       Episode: 3
       Episode ID: '41556'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '03'
       Parsed Episode Title: tv/superhero/Batman- The Animated Series/Season 00/Batman-
         The Animated Series - S00E03 - Batman Mystery of the Batwoman
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/superhero/Batman- The Animated Series/Season 00/Batman-
-        The Animated Series - S00E03 - Batman Mystery of the Batwoman Bluray-1080p..mkv
+        The Animated Series - S00E03 - Batman Mystery of the Batwoman Bluray-1080p.mkv
       Relative Show Path: tv/superhero/Batman- The Animated Series/Season 00
       Season: '00'
       Show Genres:
@@ -1349,7 +1349,7 @@ Batman- Mystery of the Batwoman (2003):
       - Animation
       - Thriller
       Show Root Path: tv/superhero/Batman- The Animated Series
-      episodeFileId: ''
+      episodeFileId: 76136
       imdbId: tt0103359
       seriesId: 463
       tvdbId: 76168
@@ -1374,19 +1374,19 @@ Battlestar Galactica (1978):
       Anime: false
       Episode: 1
       Episode ID: '30781'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '01'
       Parsed Episode Title: tv/scifi/Battlestar Galactica/Season 00/Battlestar Galactica
         - S00E01 - Battlestar Galactica The Moving Picture
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/scifi/Battlestar Galactica/Season 00/Battlestar
-        Galactica - S00E01 - Battlestar Galactica The Moving Picture Bluray-1080p..mkv
+        Galactica - S00E01 - Battlestar Galactica The Moving Picture Bluray-1080p.mkv
       Relative Show Path: tv/scifi/Battlestar Galactica/Season 00
       Season: '00'
       Show Genres:
       - Science-Fiction
       Show Root Path: tv/scifi/Battlestar Galactica
-      episodeFileId: ''
+      episodeFileId: 76141
       imdbId: tt0076984
       seriesId: 358
       tvdbId: 71173
@@ -1412,12 +1412,12 @@ Battlestar Galactica- The Plan (2009):
       Anime: false
       Episode: 22
       Episode ID: '30827'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: tv/scifi/Battlestar Galactica (2003)/Season 00/Battlestar
         Galactica (2003) - S00E22 - The Plan
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/scifi/Battlestar Galactica (2003)/Season 00/Battlestar
-        Galactica (2003) - S00E22 - The Plan Bluray-720p..mkv
+        Galactica (2003) - S00E22 - The Plan Bluray-720p.mkv
       Relative Show Path: tv/scifi/Battlestar Galactica (2003)/Season 00
       Season: '00'
       Show Genres:
@@ -1426,7 +1426,7 @@ Battlestar Galactica- The Plan (2009):
       - Drama
       - Science-Fiction
       Show Root Path: tv/scifi/Battlestar Galactica (2003)
-      episodeFileId: ''
+      episodeFileId: 76142
       imdbId: tt0407362
       seriesId: 359
       tvdbId: 73545
@@ -1456,13 +1456,13 @@ Berserk - The Golden Age Arc 1 - The Egg of the King (2012):
       Anime: true
       Episode: 1
       Episode ID: '44196'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '001'
       Parsed Episode Title: anime/shounen/Berserk (2016)/Season 00/Berserk (2016)
         - S00E001 - Golden Age Arc I Egg of the King
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Berserk (2016)/Season 00/Berserk (2016)
-        - S00E001 - Golden Age Arc I Egg of the King Remux-1080p..mkv
+        - S00E001 - Golden Age Arc I Egg of the King Remux-1080p.mkv
       Relative Show Path: anime/shounen/Berserk (2016)/Season 00
       Season: '00'
       Show Genres:
@@ -1473,7 +1473,7 @@ Berserk - The Golden Age Arc 1 - The Egg of the King (2012):
       - Fantasy
       - Horror
       Show Root Path: anime/shounen/Berserk (2016)
-      episodeFileId: ''
+      episodeFileId: 76143
       imdbId: tt5847454
       seriesId: 7
       tvdbId: 307111
@@ -1503,13 +1503,13 @@ Berserk - The Golden Age Arc 2 - The Battle for Doldrey (2012):
       Anime: true
       Episode: 2
       Episode ID: '44197'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '002'
       Parsed Episode Title: anime/shounen/Berserk (2016)/Season 00/Berserk (2016)
         - S00E002 - Golden Age Arc II The Battle for Doldrey
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Berserk (2016)/Season 00/Berserk (2016)
-        - S00E002 - Golden Age Arc II The Battle for Doldrey Remux-1080p..mkv
+        - S00E002 - Golden Age Arc II The Battle for Doldrey Remux-1080p.mkv
       Relative Show Path: anime/shounen/Berserk (2016)/Season 00
       Season: '00'
       Show Genres:
@@ -1520,7 +1520,7 @@ Berserk - The Golden Age Arc 2 - The Battle for Doldrey (2012):
       - Fantasy
       - Horror
       Show Root Path: anime/shounen/Berserk (2016)
-      episodeFileId: ''
+      episodeFileId: 76144
       imdbId: tt5847454
       seriesId: 7
       tvdbId: 307111
@@ -1550,13 +1550,13 @@ Berserk - The Golden Age Arc 3 - The Advent (2013):
       Anime: true
       Episode: 3
       Episode ID: '44198'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '003'
       Parsed Episode Title: anime/shounen/Berserk (2016)/Season 00/Berserk (2016)
         - S00E003 - Golden Age Arc III The Advent
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Berserk (2016)/Season 00/Berserk (2016)
-        - S00E003 - Golden Age Arc III The Advent Remux-1080p..mkv
+        - S00E003 - Golden Age Arc III The Advent Remux-1080p.mkv
       Relative Show Path: anime/shounen/Berserk (2016)/Season 00
       Season: '00'
       Show Genres:
@@ -1567,7 +1567,7 @@ Berserk - The Golden Age Arc 3 - The Advent (2013):
       - Fantasy
       - Horror
       Show Root Path: anime/shounen/Berserk (2016)
-      episodeFileId: ''
+      episodeFileId: 76145
       imdbId: tt5847454
       seriesId: 7
       tvdbId: 307111
@@ -1592,13 +1592,13 @@ Bishokushin's Special Menu (2013):
       Anime: true
       Episode: 5
       Episode ID: '47859'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '005'
       Parsed Episode Title: anime/staging/Toriko/Season 00/Toriko - S00E005 - Bishokushin's
         Special Menu
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Toriko/Season 00/Toriko - S00E005 - Bishokushin's
-        Special Menu WEBDL-1080p..mkv
+        Special Menu WEBDL-1080p.mkv
       Relative Show Path: anime/staging/Toriko/Season 00
       Season: '00'
       Show Genres:
@@ -1635,13 +1635,13 @@ Bleach- Fade to Black (2008):
       Anime: true
       Episode: 5
       Episode ID: '44572'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '005'
       Parsed Episode Title: anime/staging/Bleach/Season 00/Bleach - S00E005 - Fade
         to Black
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Bleach/Season 00/Bleach - S00E005 - Fade
-        to Black Bluray-1080p..mkv
+        to Black Bluray-1080p.mkv
       Relative Show Path: anime/staging/Bleach/Season 00
       Season: '00'
       Show Genres:
@@ -1651,7 +1651,7 @@ Bleach- Fade to Black (2008):
       - Anime
       - Fantasy
       Show Root Path: anime/staging/Bleach
-      episodeFileId: ''
+      episodeFileId: 76150
       imdbId: tt0434665
       seriesId: 123
       tvdbId: 74796
@@ -1677,13 +1677,13 @@ Bleach- Hell Verse (2010):
       Anime: true
       Episode: 6
       Episode ID: '44573'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '006'
       Parsed Episode Title: anime/staging/Bleach/Season 00/Bleach - S00E006 - Bleach
         Hell Chapter
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Bleach/Season 00/Bleach - S00E006 - Bleach
-        Hell Chapter Bluray-1080p..mkv
+        Hell Chapter Bluray-1080p.mkv
       Relative Show Path: anime/staging/Bleach/Season 00
       Season: '00'
       Show Genres:
@@ -1693,7 +1693,7 @@ Bleach- Hell Verse (2010):
       - Anime
       - Fantasy
       Show Root Path: anime/staging/Bleach
-      episodeFileId: ''
+      episodeFileId: 76151
       imdbId: tt0434665
       seriesId: 123
       tvdbId: 74796
@@ -1718,13 +1718,13 @@ Bleach- Memories in the Rain (2004):
       Anime: true
       Episode: 1
       Episode ID: '44568'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Bleach/Season 00/Bleach - S00E001 - Memories
         in the Rain
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Bleach/Season 00/Bleach - S00E001 - Memories
-        in the Rain DVD..mkv
+        in the Rain DVD.mkv
       Relative Show Path: anime/staging/Bleach/Season 00
       Season: '00'
       Show Genres:
@@ -1734,7 +1734,7 @@ Bleach- Memories in the Rain (2004):
       - Anime
       - Fantasy
       Show Root Path: anime/staging/Bleach
-      episodeFileId: ''
+      episodeFileId: 76146
       imdbId: tt0434665
       seriesId: 123
       tvdbId: 74796
@@ -1764,13 +1764,13 @@ Bleach- Memories of Nobody (2006):
       Anime: true
       Episode: 3
       Episode ID: '44570'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '003'
       Parsed Episode Title: anime/staging/Bleach/Season 00/Bleach - S00E003 - Memories
         of Nobody
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Bleach/Season 00/Bleach - S00E003 - Memories
-        of Nobody Bluray-1080p..mkv
+        of Nobody Bluray-1080p.mkv
       Relative Show Path: anime/staging/Bleach/Season 00
       Season: '00'
       Show Genres:
@@ -1780,7 +1780,7 @@ Bleach- Memories of Nobody (2006):
       - Anime
       - Fantasy
       Show Root Path: anime/staging/Bleach
-      episodeFileId: ''
+      episodeFileId: 76148
       imdbId: tt0434665
       seriesId: 123
       tvdbId: 74796
@@ -1815,13 +1815,13 @@ Bleach- The DiamondDust Rebellion (2007):
       Anime: true
       Episode: 4
       Episode ID: '44571'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '004'
       Parsed Episode Title: anime/staging/Bleach/Season 00/Bleach - S00E004 - The
         Diamond Dust Rebellion
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Bleach/Season 00/Bleach - S00E004 - The
-        Diamond Dust Rebellion Bluray-1080p..mkv
+        Diamond Dust Rebellion Bluray-1080p.mkv
       Relative Show Path: anime/staging/Bleach/Season 00
       Season: '00'
       Show Genres:
@@ -1831,7 +1831,7 @@ Bleach- The DiamondDust Rebellion (2007):
       - Anime
       - Fantasy
       Show Root Path: anime/staging/Bleach
-      episodeFileId: ''
+      episodeFileId: 76149
       imdbId: tt0434665
       seriesId: 123
       tvdbId: 74796
@@ -1857,13 +1857,13 @@ Bleach- The Sealed Sword Frenzy (2005):
       Anime: true
       Episode: 2
       Episode ID: '44569'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/Bleach/Season 00/Bleach - S00E002 - The
         Sealed Sword Frenzy
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Bleach/Season 00/Bleach - S00E002 - The
-        Sealed Sword Frenzy DVD..mkv
+        Sealed Sword Frenzy DVD.mkv
       Relative Show Path: anime/staging/Bleach/Season 00
       Season: '00'
       Show Genres:
@@ -1873,7 +1873,7 @@ Bleach- The Sealed Sword Frenzy (2005):
       - Anime
       - Fantasy
       Show Root Path: anime/staging/Bleach
-      episodeFileId: ''
+      episodeFileId: 76147
       imdbId: tt0434665
       seriesId: 123
       tvdbId: 74796
@@ -1900,12 +1900,12 @@ Blue Exorcist - Kyoto Saga- Snake and Poison (2017):
       Anime: true
       Episode: 13
       Episode ID: '44623'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/shounen/Blue Exorcist/Season 00/Blue Exorcist -
         S00E013 - Blue Exorcist OVA Kyoto Impure King
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Blue Exorcist/Season 00/Blue Exorcist
-        - S00E013 - Blue Exorcist OVA Kyoto Impure King DVD..mkv
+        - S00E013 - Blue Exorcist OVA Kyoto Impure King DVD.mkv
       Relative Show Path: anime/shounen/Blue Exorcist/Season 00
       Season: '00'
       Show Genres:
@@ -1914,7 +1914,7 @@ Blue Exorcist - Kyoto Saga- Snake and Poison (2017):
       - Fantasy
       - Horror
       Show Root Path: anime/shounen/Blue Exorcist
-      episodeFileId: ''
+      episodeFileId: 76154
       imdbId: tt1799631
       seriesId: 28
       tvdbId: 248035
@@ -1940,12 +1940,12 @@ Blue Exorcist - Kyoto Saga- Spy Game (2017):
       Anime: true
       Episode: 14
       Episode ID: '44624'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/shounen/Blue Exorcist/Season 00/Blue Exorcist -
         S00E014 - Blue Exorcist OVA Spy Game
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Blue Exorcist/Season 00/Blue Exorcist
-        - S00E014 - Blue Exorcist OVA Spy Game DVD..mkv
+        - S00E014 - Blue Exorcist OVA Spy Game DVD.mkv
       Relative Show Path: anime/shounen/Blue Exorcist/Season 00
       Season: '00'
       Show Genres:
@@ -1954,7 +1954,7 @@ Blue Exorcist - Kyoto Saga- Spy Game (2017):
       - Fantasy
       - Horror
       Show Root Path: anime/shounen/Blue Exorcist
-      episodeFileId: ''
+      episodeFileId: 76155
       imdbId: tt1799631
       seriesId: 28
       tvdbId: 248035
@@ -1979,12 +1979,12 @@ Blue Exorcist- Runaway Kuro (2011):
       Anime: true
       Episode: 11
       Episode ID: '44621'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/shounen/Blue Exorcist/Season 00/Blue Exorcist -
         S00E011 - Blue Exorcist OVA Runaway Kuro
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Blue Exorcist/Season 00/Blue Exorcist
-        - S00E011 - Blue Exorcist OVA Runaway Kuro Bluray-1080p..mkv
+        - S00E011 - Blue Exorcist OVA Runaway Kuro Bluray-1080p.mkv
       Relative Show Path: anime/shounen/Blue Exorcist/Season 00
       Season: '00'
       Show Genres:
@@ -1993,7 +1993,7 @@ Blue Exorcist- Runaway Kuro (2011):
       - Fantasy
       - Horror
       Show Root Path: anime/shounen/Blue Exorcist
-      episodeFileId: ''
+      episodeFileId: 76152
       imdbId: tt1799631
       seriesId: 28
       tvdbId: 248035
@@ -2018,12 +2018,12 @@ Blue Exorcist- The Movie (2012):
       Anime: true
       Episode: 12
       Episode ID: '44622'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/shounen/Blue Exorcist/Season 00/Blue Exorcist -
         S00E012 - Blue Exorcist The Movie
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Blue Exorcist/Season 00/Blue Exorcist
-        - S00E012 - Blue Exorcist The Movie Bluray-1080p..mkv
+        - S00E012 - Blue Exorcist The Movie Bluray-1080p.mkv
       Relative Show Path: anime/shounen/Blue Exorcist/Season 00
       Season: '00'
       Show Genres:
@@ -2032,7 +2032,7 @@ Blue Exorcist- The Movie (2012):
       - Fantasy
       - Horror
       Show Root Path: anime/shounen/Blue Exorcist
-      episodeFileId: ''
+      episodeFileId: 76153
       imdbId: tt1799631
       seriesId: 28
       tvdbId: 248035
@@ -2066,7 +2066,7 @@ Boruto- Naruto the Movie (2015):
         Naruto Next Generations - S00E001 - Boruto Naruto the Movie
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Boruto- Naruto Next Generations/Season
-        00/Boruto- Naruto Next Generations - S00E001 - Boruto Naruto the Movie Bluray-1080p..mkv
+        00/Boruto- Naruto Next Generations - S00E001 - Boruto Naruto the Movie Bluray-1080p.mkv
       Relative Show Path: anime/shounen/Boruto- Naruto Next Generations/Season 00
       Season: '00'
       Show Genres:
@@ -2075,7 +2075,7 @@ Boruto- Naruto the Movie (2015):
       - Animation
       - Anime
       Show Root Path: anime/shounen/Boruto- Naruto Next Generations
-      episodeFileId: ''
+      episodeFileId: 76156
       imdbId: tt6342474
       seriesId: 8
       tvdbId: 321285
@@ -2102,13 +2102,13 @@ Bungo Stray Dogs- Dead Apple (2018):
       Anime: true
       Episode: 2
       Episode ID: '293'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/Bungo Stray Dogs/Season 00/Bungo Stray Dogs
         - S00E002 - Dead Apple
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Bungo Stray Dogs/Season 00/Bungo Stray
-        Dogs - S00E002 - Dead Apple WEBDL-1080p..mkv
+        Dogs - S00E002 - Dead Apple WEBDL-1080p.mkv
       Relative Show Path: anime/staging/Bungo Stray Dogs/Season 00
       Season: '00'
       Show Genres:
@@ -2119,7 +2119,7 @@ Bungo Stray Dogs- Dead Apple (2018):
       - Drama
       - Fantasy
       Show Root Path: anime/staging/Bungo Stray Dogs
-      episodeFileId: ''
+      episodeFileId: 76157
       imdbId: tt5679720
       seriesId: 11
       tvdbId: 305075
@@ -2145,13 +2145,13 @@ Burn Notice - The Fall of Sam Axe (2011):
       Anime: false
       Episode: 1
       Episode ID: '24571'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '01'
       Parsed Episode Title: tv/crime/Burn Notice/Season 00/Burn Notice - S00E01 -
         Burn Notice The Fall of Sam Axe
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/crime/Burn Notice/Season 00/Burn Notice - S00E01
-        - Burn Notice The Fall of Sam Axe Bluray-1080p..mkv
+        - Burn Notice The Fall of Sam Axe Bluray-1080p.mkv
       Relative Show Path: tv/crime/Burn Notice/Season 00
       Season: '00'
       Show Genres:
@@ -2161,7 +2161,7 @@ Burn Notice - The Fall of Sam Axe (2011):
       - Drama
       - Thriller
       Show Root Path: tv/crime/Burn Notice
-      episodeFileId: ''
+      episodeFileId: 76158
       imdbId: tt0810788
       seriesId: 301
       tvdbId: 80270
@@ -2185,13 +2185,13 @@ Chase Me (2003):
       Anime: false
       Episode: 4
       Episode ID: '41557'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '04'
       Parsed Episode Title: tv/superhero/Batman- The Animated Series/Season 00/Batman-
         The Animated Series - S00E04 - Chase Me
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/superhero/Batman- The Animated Series/Season 00/Batman-
-        The Animated Series - S00E04 - Chase Me DVD..mkv
+        The Animated Series - S00E04 - Chase Me DVD.mkv
       Relative Show Path: tv/superhero/Batman- The Animated Series/Season 00
       Season: '00'
       Show Genres:
@@ -2200,7 +2200,7 @@ Chase Me (2003):
       - Animation
       - Thriller
       Show Root Path: tv/superhero/Batman- The Animated Series
-      episodeFileId: ''
+      episodeFileId: 76137
       imdbId: tt0103359
       seriesId: 463
       tvdbId: 76168
@@ -2249,7 +2249,7 @@ Chunin Exam on Fire! and Naruto vs. Konohamaru! (2011):
         - S00E009 - Naruto vs. Konohamaru!!
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
-        - S00E009 - Naruto vs. Konohamaru!! Bluray-1080p..mkv
+        - S00E009 - Naruto vs. Konohamaru!! Bluray-1080p.mkv
       Relative Show Path: anime/shounen/Naruto Shippuden/Season 00
       Season: '00'
       Show Genres:
@@ -2285,13 +2285,13 @@ Clannad (2007):
       Anime: true
       Episode: 1
       Episode ID: '44761'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Clannad/Season 00/Clannad - S00E001 - Clannad
         the Motion Picture
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Clannad/Season 00/Clannad - S00E001 -
-        Clannad the Motion Picture DVD..mkv
+        Clannad the Motion Picture DVD.mkv
       Relative Show Path: anime/staging/Clannad/Season 00
       Season: '00'
       Show Genres:
@@ -2301,7 +2301,7 @@ Clannad (2007):
       - Fantasy
       - Romance
       Show Root Path: anime/staging/Clannad
-      episodeFileId: ''
+      episodeFileId: 76159
       imdbId: tt1118804
       seriesId: 29
       tvdbId: 80644
@@ -2409,7 +2409,7 @@ Code Geass- Akito the Exiled 1- The Wyvern Arrives (2012):
       Anime: true
       Episode: 25
       Episode ID: '44836'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '025'
       Parsed Episode Title: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00/Code Geass- Lelouch of the Rebellion - S00E025 - Akito the Exiled The Wyvern
@@ -2417,7 +2417,7 @@ Code Geass- Akito the Exiled 1- The Wyvern Arrives (2012):
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00/Code Geass- Lelouch of the Rebellion - S00E025 - Akito the Exiled The Wyvern
-        Has Landed Remux-1080p..mkv
+        Has Landed Remux-1080p.mkv
       Relative Show Path: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00
       Season: '00'
@@ -2429,7 +2429,7 @@ Code Geass- Akito the Exiled 1- The Wyvern Arrives (2012):
       - Science-Fiction
       - Thriller
       Show Root Path: anime/staging/Code Geass- Lelouch of the Rebellion
-      episodeFileId: ''
+      episodeFileId: 76160
       imdbId: tt0994314
       seriesId: 21
       tvdbId: 79525
@@ -2461,7 +2461,7 @@ Code Geass- Akito the Exiled 2- The Wyvern Divided (2013):
       Anime: true
       Episode: 26
       Episode ID: '44837'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '026'
       Parsed Episode Title: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00/Code Geass- Lelouch of the Rebellion - S00E026 - Akito the Exiled The Torn
@@ -2469,7 +2469,7 @@ Code Geass- Akito the Exiled 2- The Wyvern Divided (2013):
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00/Code Geass- Lelouch of the Rebellion - S00E026 - Akito the Exiled The Torn
-        Wyvern Remux-1080p..mkv
+        Wyvern Remux-1080p.mkv
       Relative Show Path: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00
       Season: '00'
@@ -2481,7 +2481,7 @@ Code Geass- Akito the Exiled 2- The Wyvern Divided (2013):
       - Science-Fiction
       - Thriller
       Show Root Path: anime/staging/Code Geass- Lelouch of the Rebellion
-      episodeFileId: ''
+      episodeFileId: 76161
       imdbId: tt0994314
       seriesId: 21
       tvdbId: 79525
@@ -2514,7 +2514,7 @@ Code Geass- Akito the Exiled 3- The Brightness Falls (2015):
       Anime: true
       Episode: 27
       Episode ID: '44838'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '027'
       Parsed Episode Title: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00/Code Geass- Lelouch of the Rebellion - S00E027 - Akito the Exiled The Brightness
@@ -2522,7 +2522,7 @@ Code Geass- Akito the Exiled 3- The Brightness Falls (2015):
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00/Code Geass- Lelouch of the Rebellion - S00E027 - Akito the Exiled The Brightness
-        Falls Remux-1080p..mkv
+        Falls Remux-1080p.mkv
       Relative Show Path: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00
       Season: '00'
@@ -2534,7 +2534,7 @@ Code Geass- Akito the Exiled 3- The Brightness Falls (2015):
       - Science-Fiction
       - Thriller
       Show Root Path: anime/staging/Code Geass- Lelouch of the Rebellion
-      episodeFileId: ''
+      episodeFileId: 76162
       imdbId: tt0994314
       seriesId: 21
       tvdbId: 79525
@@ -2566,7 +2566,7 @@ Code Geass- Akito the Exiled 4- Memories of Hatred (2015):
       Anime: true
       Episode: 28
       Episode ID: '44839'
-      Has Link: false
+      Has Link: true
       Parsed Episode: 028
       Parsed Episode Title: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00/Code Geass- Lelouch of the Rebellion - S00E028 - Akito the Exiled Memories
@@ -2574,7 +2574,7 @@ Code Geass- Akito the Exiled 4- Memories of Hatred (2015):
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00/Code Geass- Lelouch of the Rebellion - S00E028 - Akito the Exiled Memories
-        of Hatred Remux-1080p..mkv
+        of Hatred Remux-1080p.mkv
       Relative Show Path: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00
       Season: '00'
@@ -2586,7 +2586,7 @@ Code Geass- Akito the Exiled 4- Memories of Hatred (2015):
       - Science-Fiction
       - Thriller
       Show Root Path: anime/staging/Code Geass- Lelouch of the Rebellion
-      episodeFileId: ''
+      episodeFileId: 76163
       imdbId: tt0994314
       seriesId: 21
       tvdbId: 79525
@@ -2619,7 +2619,7 @@ Code Geass- Akito the Exiled 5- To Beloved Ones (2016):
       Anime: true
       Episode: 29
       Episode ID: '44840'
-      Has Link: false
+      Has Link: true
       Parsed Episode: 029
       Parsed Episode Title: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00/Code Geass- Lelouch of the Rebellion - S00E029 - Akito the Exiled To Those
@@ -2627,7 +2627,7 @@ Code Geass- Akito the Exiled 5- To Beloved Ones (2016):
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00/Code Geass- Lelouch of the Rebellion - S00E029 - Akito the Exiled To Those
-        Who are Precious Remux-1080p..mkv
+        Who are Precious Remux-1080p.mkv
       Relative Show Path: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00
       Season: '00'
@@ -2639,7 +2639,7 @@ Code Geass- Akito the Exiled 5- To Beloved Ones (2016):
       - Science-Fiction
       - Thriller
       Show Root Path: anime/staging/Code Geass- Lelouch of the Rebellion
-      episodeFileId: ''
+      episodeFileId: 76164
       imdbId: tt0994314
       seriesId: 21
       tvdbId: 79525
@@ -2753,7 +2753,7 @@ Code Geass- Lelouch of the Rebellion - Glorification (2018):
       Anime: true
       Episode: 32
       Episode ID: 44843
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00/Code Geass- Lelouch of the Rebellion - S00E032 - Code Geass Lelouch of
         the Revolution The Imperial Path
@@ -2772,7 +2772,7 @@ Code Geass- Lelouch of the Rebellion - Glorification (2018):
       - Science-Fiction
       - Thriller
       Show Root Path: anime/staging/Code Geass- Lelouch of the Rebellion
-      episodeFileId: ''
+      episodeFileId: 76165
       imdbId: tt0994314
       seriesId: 21
       tvdbId: 79525
@@ -2846,7 +2846,7 @@ Constantine- City of Demons - The Movie (2018):
         City of Demons - S00E02 - Constantine City Of Demons The Movie
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/Constantine- City of Demons/Season 00/Constantine-
-        City of Demons - S00E02 - Constantine City Of Demons The Movie Bluray-1080p..mkv
+        City of Demons - S00E02 - Constantine City Of Demons The Movie Bluray-1080p.mkv
       Relative Show Path: tv/staging/Constantine- City of Demons/Season 00
       Season: '00'
       Show Genres:
@@ -2916,13 +2916,13 @@ Death Note (2006):
       Anime: true
       Episode: 3
       Episode ID: '45126'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '003'
       Parsed Episode Title: anime/staging/Death Note/Season 00/Death Note - S00E003
         - Death Note (Live Action Movie)
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Death Note/Season 00/Death Note - S00E003
-        - Death Note (Live Action Movie) Bluray-1080p..mkv
+        - Death Note (Live Action Movie) Bluray-1080p.mkv
       Relative Show Path: anime/staging/Death Note/Season 00
       Season: '00'
       Show Genres:
@@ -2933,7 +2933,7 @@ Death Note (2006):
       - Mystery
       - Thriller
       Show Root Path: anime/staging/Death Note
-      episodeFileId: ''
+      episodeFileId: 76168
       imdbId: tt0877057
       seriesId: 117
       tvdbId: 79481
@@ -2958,13 +2958,13 @@ Death Note (2017):
       Anime: true
       Episode: 6
       Episode ID: '45129'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '006'
       Parsed Episode Title: anime/staging/Death Note/Season 00/Death Note - S00E006
         - Death Note (Netflix Live Action Movie)
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Death Note/Season 00/Death Note - S00E006
-        - Death Note (Netflix Live Action Movie) Bluray-1080p..mkv
+        - Death Note (Netflix Live Action Movie) Bluray-1080p.mkv
       Relative Show Path: anime/staging/Death Note/Season 00
       Season: '00'
       Show Genres:
@@ -2975,7 +2975,7 @@ Death Note (2017):
       - Mystery
       - Thriller
       Show Root Path: anime/staging/Death Note
-      episodeFileId: ''
+      episodeFileId: 76171
       imdbId: tt0877057
       seriesId: 117
       tvdbId: 79481
@@ -3001,13 +3001,13 @@ Death Note Relight 1- Visions of a God (2007):
       Anime: true
       Episode: 1
       Episode ID: '45124'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Death Note/Season 00/Death Note - S00E001
         - Death Note Rewrite The Visualizing God
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Death Note/Season 00/Death Note - S00E001
-        - Death Note Rewrite The Visualizing God Bluray-1080p..mkv
+        - Death Note Rewrite The Visualizing God Bluray-1080p.mkv
       Relative Show Path: anime/staging/Death Note/Season 00
       Season: '00'
       Show Genres:
@@ -3018,7 +3018,7 @@ Death Note Relight 1- Visions of a God (2007):
       - Mystery
       - Thriller
       Show Root Path: anime/staging/Death Note
-      episodeFileId: ''
+      episodeFileId: 76166
       imdbId: tt0877057
       seriesId: 117
       tvdbId: 79481
@@ -3046,13 +3046,13 @@ Death Note Relight 2- L's Successors (2009):
       Anime: true
       Episode: 2
       Episode ID: '45125'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/Death Note/Season 00/Death Note - S00E002
         - Death Note Rewrite 2 L's Successors
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Death Note/Season 00/Death Note - S00E002
-        - Death Note Rewrite 2 L's Successors Bluray-1080p..mkv
+        - Death Note Rewrite 2 L's Successors Bluray-1080p.mkv
       Relative Show Path: anime/staging/Death Note/Season 00
       Season: '00'
       Show Genres:
@@ -3063,7 +3063,7 @@ Death Note Relight 2- L's Successors (2009):
       - Mystery
       - Thriller
       Show Root Path: anime/staging/Death Note
-      episodeFileId: ''
+      episodeFileId: 76167
       imdbId: tt0877057
       seriesId: 117
       tvdbId: 79481
@@ -3088,7 +3088,7 @@ Death Note- The Last Name (2006):
       Anime: true
       Episode: 4
       Episode ID: '45127'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '004'
       Parsed Episode Title: anime/staging/Death Note/Season 00/Death Note - S00E004
         - Death Note The Last Name (Live Action Movie)
@@ -3105,7 +3105,7 @@ Death Note- The Last Name (2006):
       - Mystery
       - Thriller
       Show Root Path: anime/staging/Death Note
-      episodeFileId: ''
+      episodeFileId: 76169
       imdbId: tt0877057
       seriesId: 117
       tvdbId: 79481
@@ -3167,12 +3167,12 @@ Dragon Ball Z- Battle of Gods (2013):
       Anime: true
       Episode: 23
       Episode ID: '690'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z -
         S00E023 - Battle of Gods
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E023 - Battle of Gods Remux-1080p..mkv
+        - S00E023 - Battle of Gods Remux-1080p.mkv
       Relative Show Path: anime/shounen/Dragon Ball Z/Season 00
       Season: '00'
       Show Genres:
@@ -3181,7 +3181,7 @@ Dragon Ball Z- Battle of Gods (2013):
       - Animation
       - Anime
       Show Root Path: anime/shounen/Dragon Ball Z
-      episodeFileId: ''
+      episodeFileId: 76184
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -3209,12 +3209,12 @@ Dragon Ball Z- Bio-Broly (1994):
       Anime: true
       Episode: 11
       Episode ID: '678'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z -
         S00E011 - Bio-Broly
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E011 - Bio-Broly Remux-1080p..mkv
+        - S00E011 - Bio-Broly Remux-1080p.mkv
       Relative Show Path: anime/shounen/Dragon Ball Z/Season 00
       Season: '00'
       Show Genres:
@@ -3223,7 +3223,7 @@ Dragon Ball Z- Bio-Broly (1994):
       - Animation
       - Anime
       Show Root Path: anime/shounen/Dragon Ball Z
-      episodeFileId: ''
+      episodeFileId: 76179
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -3251,13 +3251,13 @@ Dragon Ball Z- Bojack Unbound (1993):
       Anime: true
       Episode: 9
       Episode ID: '676'
-      Has Link: false
+      Has Link: true
       Parsed Episode: 009
       Parsed Episode Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z -
         S00E009 - Bojack Unbound
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E009 - Bojack Unbound Remux-1080p..mkv
+        - S00E009 - Bojack Unbound Remux-1080p.mkv
       Relative Show Path: anime/shounen/Dragon Ball Z/Season 00
       Season: '00'
       Show Genres:
@@ -3266,7 +3266,7 @@ Dragon Ball Z- Bojack Unbound (1993):
       - Animation
       - Anime
       Show Root Path: anime/shounen/Dragon Ball Z
-      episodeFileId: ''
+      episodeFileId: 76177
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -3296,12 +3296,12 @@ Dragon Ball Z- Bojack Unbound (1993):
       Anime: true
       Episode: 10
       Episode ID: '677'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z -
         S00E010 - Broly Second Coming
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E010 - Broly Second Coming Remux-1080p..mkv
+        - S00E010 - Broly Second Coming Remux-1080p.mkv
       Relative Show Path: anime/shounen/Dragon Ball Z/Season 00
       Season: '00'
       Show Genres:
@@ -3310,7 +3310,7 @@ Dragon Ball Z- Bojack Unbound (1993):
       - Animation
       - Anime
       Show Root Path: anime/shounen/Dragon Ball Z
-      episodeFileId: ''
+      episodeFileId: 76178
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -3342,13 +3342,13 @@ Dragon Ball Z- Bojack Unbound (1993):
       Anime: true
       Episode: 8
       Episode ID: '675'
-      Has Link: false
+      Has Link: true
       Parsed Episode: 008
       Parsed Episode Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z -
         S00E008 - Broly The Legendary Super Saiyan
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E008 - Broly The Legendary Super Saiyan Remux-1080p..mkv
+        - S00E008 - Broly The Legendary Super Saiyan Remux-1080p.mkv
       Relative Show Path: anime/shounen/Dragon Ball Z/Season 00
       Season: '00'
       Show Genres:
@@ -3357,7 +3357,7 @@ Dragon Ball Z- Bojack Unbound (1993):
       - Animation
       - Anime
       Show Root Path: anime/shounen/Dragon Ball Z
-      episodeFileId: ''
+      episodeFileId: 76176
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -3382,12 +3382,12 @@ Dragon Ball Z- Dead Zone (1989):
       Anime: true
       Episode: 1
       Episode ID: '668'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z -
         S00E001 - Dead Zone
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E001 - Dead Zone WEBDL-1080p..mkv
+        - S00E001 - Dead Zone WEBDL-1080p.mkv
       Relative Show Path: anime/shounen/Dragon Ball Z/Season 00
       Season: '00'
       Show Genres:
@@ -3396,7 +3396,7 @@ Dragon Ball Z- Dead Zone (1989):
       - Animation
       - Anime
       Show Root Path: anime/shounen/Dragon Ball Z
-      episodeFileId: ''
+      episodeFileId: 76172
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -3426,12 +3426,12 @@ Dragon Ball Z- Fusion Reborn (1995):
       Anime: true
       Episode: 12
       Episode ID: '679'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z -
         S00E012 - Fusion Reborn
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E012 - Fusion Reborn Remux-1080p..mkv
+        - S00E012 - Fusion Reborn Remux-1080p.mkv
       Relative Show Path: anime/shounen/Dragon Ball Z/Season 00
       Season: '00'
       Show Genres:
@@ -3440,7 +3440,7 @@ Dragon Ball Z- Fusion Reborn (1995):
       - Animation
       - Anime
       Show Root Path: anime/shounen/Dragon Ball Z
-      episodeFileId: ''
+      episodeFileId: 76180
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -3468,13 +3468,13 @@ Dragon Ball Z- Lord Slug (1991):
       Anime: true
       Episode: 4
       Episode ID: '671'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '004'
       Parsed Episode Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z -
         S00E004 - Lord Slug
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E004 - Lord Slug Remux-1080p..mkv
+        - S00E004 - Lord Slug Remux-1080p.mkv
       Relative Show Path: anime/shounen/Dragon Ball Z/Season 00
       Season: '00'
       Show Genres:
@@ -3483,7 +3483,7 @@ Dragon Ball Z- Lord Slug (1991):
       - Animation
       - Anime
       Show Root Path: anime/shounen/Dragon Ball Z
-      episodeFileId: ''
+      episodeFileId: 76175
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -3512,12 +3512,12 @@ Dragon Ball Z- Resurrection 'F' (2015):
       Anime: true
       Episode: 24
       Episode ID: '691'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z -
         S00E024 - Resurrection 'F'
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E024 - Resurrection 'F' Bluray-1080p..mkv
+        - S00E024 - Resurrection 'F' Bluray-1080p.mkv
       Relative Show Path: anime/shounen/Dragon Ball Z/Season 00
       Season: '00'
       Show Genres:
@@ -3526,7 +3526,7 @@ Dragon Ball Z- Resurrection 'F' (2015):
       - Animation
       - Anime
       Show Root Path: anime/shounen/Dragon Ball Z
-      episodeFileId: ''
+      episodeFileId: 76185
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -3555,13 +3555,13 @@ Dragon Ball Z- The Tree of Might (1990):
       Anime: true
       Episode: 3
       Episode ID: '670'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '003'
       Parsed Episode Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z -
         S00E003 - The Tree of Might
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E003 - The Tree of Might Remux-1080p..mkv
+        - S00E003 - The Tree of Might Remux-1080p.mkv
       Relative Show Path: anime/shounen/Dragon Ball Z/Season 00
       Season: '00'
       Show Genres:
@@ -3570,7 +3570,7 @@ Dragon Ball Z- The Tree of Might (1990):
       - Animation
       - Anime
       Show Root Path: anime/shounen/Dragon Ball Z
-      episodeFileId: ''
+      episodeFileId: 76174
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -3599,13 +3599,13 @@ Dragon Ball Z- The World's Strongest (1990):
       Anime: true
       Episode: 2
       Episode ID: '669'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '002'
       Parsed Episode Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z -
         S00E002 - The World's Strongest
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E002 - The World's Strongest Remux-1080p..mkv
+        - S00E002 - The World's Strongest Remux-1080p.mkv
       Relative Show Path: anime/shounen/Dragon Ball Z/Season 00
       Season: '00'
       Show Genres:
@@ -3614,7 +3614,7 @@ Dragon Ball Z- The World's Strongest (1990):
       - Animation
       - Anime
       Show Root Path: anime/shounen/Dragon Ball Z
-      episodeFileId: ''
+      episodeFileId: 76173
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -3644,12 +3644,12 @@ Dragon Ball Z- Wrath of the Dragon (1995):
       Anime: true
       Episode: 13
       Episode ID: '680'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z -
         S00E013 - Wrath of the Dragon
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E013 - Wrath of the Dragon Remux-1080p..mkv
+        - S00E013 - Wrath of the Dragon Remux-1080p.mkv
       Relative Show Path: anime/shounen/Dragon Ball Z/Season 00
       Season: '00'
       Show Genres:
@@ -3658,7 +3658,7 @@ Dragon Ball Z- Wrath of the Dragon (1995):
       - Animation
       - Anime
       Show Root Path: anime/shounen/Dragon Ball Z
-      episodeFileId: ''
+      episodeFileId: 76181
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -3687,12 +3687,12 @@ Dragon Ball- Episode of Bardock (2011):
       Anime: true
       Episode: 21
       Episode ID: '688'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z -
         S00E021 - Dragon Ball Episode of Bardock
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z
-        - S00E021 - Dragon Ball Episode of Bardock Remux-1080p..mkv
+        - S00E021 - Dragon Ball Episode of Bardock Remux-1080p.mkv
       Relative Show Path: anime/shounen/Dragon Ball Z/Season 00
       Season: '00'
       Show Genres:
@@ -3701,7 +3701,7 @@ Dragon Ball- Episode of Bardock (2011):
       - Animation
       - Anime
       Show Root Path: anime/shounen/Dragon Ball Z
-      episodeFileId: ''
+      episodeFileId: 76182
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -3731,7 +3731,7 @@ Dream 9 Toriko & One Piece & Dragon Ball Z Super Collaboration Special!! (2013):
       Anime: true
       Episode: 22
       Episode ID: '689'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '002'
       Parsed Episode Title: "anime/shounen/Dragon Ball Z/Season 00/Dragon Ball Z -\
         \ S00E022 - Dream 9 Toriko & One Piece & Dragon Ball Z Ch\u014D Collaboration\
@@ -3739,7 +3739,7 @@ Dream 9 Toriko & One Piece & Dragon Ball Z Super Collaboration Special!! (2013):
       Parsed Season Folder: Season 00
       Relative Show File Path: "anime/shounen/Dragon Ball Z/Season 00/Dragon Ball\
         \ Z - S00E022 - Dream 9 Toriko & One Piece & Dragon Ball Z Ch\u014D Collaboration\
-        \ Special!! WEBDL-720p..mkv"
+        \ Special!! WEBDL-720p.mkv"
       Relative Show Path: anime/shounen/Dragon Ball Z/Season 00
       Season: '00'
       Show Genres:
@@ -3748,7 +3748,7 @@ Dream 9 Toriko & One Piece & Dragon Ball Z Super Collaboration Special!! (2013):
       - Animation
       - Anime
       Show Root Path: anime/shounen/Dragon Ball Z
-      episodeFileId: ''
+      episodeFileId: 76183
       imdbId: tt0214341
       seriesId: 37
       tvdbId: 81472
@@ -3764,7 +3764,7 @@ Dream 9 Toriko & One Piece & Dragon Ball Z Super Collaboration Special!! (2013):
       Parsed Season Folder: Season 00
       Relative Show File Path: "anime/shounen/One Piece/Season 00/One Piece - S00E025\
         \ - Dream 9 Toriko & One Piece & Dragon Ball Z Ch\u014D Collaboration Special!!\
-        \ WEBDL-720p..mkv"
+        \ WEBDL-720p.mkv"
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -3793,7 +3793,7 @@ Dream 9 Toriko & One Piece & Dragon Ball Z Super Collaboration Special!! (2013):
       Parsed Season Folder: Season 00
       Relative Show File Path: "anime/staging/Toriko/Season 00/Toriko - S00E004 -\
         \ Dream 9 Toriko & One Piece & Dragon Ball Z Ch\u014D Collaboration Special!!\
-        \ WEBDL-720p..mkv"
+        \ WEBDL-720p.mkv"
       Relative Show Path: anime/staging/Toriko/Season 00
       Season: '00'
       Show Genres:
@@ -3833,7 +3833,7 @@ Elfen Lied Special (2005):
         - In the Passing Rain
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Elfen Lied/Season 00/Elfen Lied - S00E001
-        - In the Passing Rain Bluray-1080p..mkv
+        - In the Passing Rain Bluray-1080p.mkv
       Relative Show Path: anime/staging/Elfen Lied/Season 00
       Season: '00'
       Show Genres:
@@ -3872,7 +3872,7 @@ Entourage (2015):
         The Movie
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/Entourage/Season 00/Entourage - S00E09 -
-        Entourage The Movie Bluray-1080p..mkv
+        Entourage The Movie Bluray-1080p.mkv
       Relative Show Path: tv/staging/Entourage/Season 00
       Season: '00'
       Show Genres:
@@ -3914,7 +3914,7 @@ Episode of Sabo - The Three Brothers' Bond - The Miraculous Reunion (2015):
         - One Piece Episode of Sabo
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E031
-        - One Piece Episode of Sabo Bluray-1080p..mkv
+        - One Piece Episode of Sabo Bluray-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -3958,7 +3958,7 @@ Escaflowne- The Movie (2000):
         Escaflowne - S00E01 - Escaflowne The Movie
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Vision of Escaflowne/Season 00/Vision
-        of Escaflowne - S00E01 - Escaflowne The Movie Bluray-1080p..mkv
+        of Escaflowne - S00E01 - Escaflowne The Movie Bluray-1080p.mkv
       Relative Show Path: anime/staging/Vision of Escaflowne/Season 00
       Season: '00'
       Show Genres:
@@ -4002,7 +4002,7 @@ Eureka Seven AO- Jungfrau no Hanabana-tachi (2012):
         - The Flowers of Jungfrau
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Eureka Seven/Season 00/Eureka Seven -
-        S00E004 - The Flowers of Jungfrau Remux-1080p..mkv
+        S00E004 - The Flowers of Jungfrau Remux-1080p.mkv
       Relative Show Path: anime/staging/Eureka Seven/Season 00
       Season: '00'
       Show Genres:
@@ -4046,7 +4046,7 @@ Evangelion- 1.0 You Are (Not) Alone (2007):
         Evangelion - S00E003 - Evangelion 1 You Are (Not) Alone
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Neon Genesis Evangelion/Season 00/Neon
-        Genesis Evangelion - S00E003 - Evangelion 1 You Are (Not) Alone Remux-1080p..mkv
+        Genesis Evangelion - S00E003 - Evangelion 1 You Are (Not) Alone Remux-1080p.mkv
       Relative Show Path: anime/staging/Neon Genesis Evangelion/Season 00
       Season: '00'
       Show Genres:
@@ -4090,7 +4090,7 @@ Evangelion- 2.0 You Can (Not) Advance (2009):
         Evangelion - S00E004 - Evangelion 2 You Can (Not) Advance
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Neon Genesis Evangelion/Season 00/Neon
-        Genesis Evangelion - S00E004 - Evangelion 2 You Can (Not) Advance Remux-1080p..mkv
+        Genesis Evangelion - S00E004 - Evangelion 2 You Can (Not) Advance Remux-1080p.mkv
       Relative Show Path: anime/staging/Neon Genesis Evangelion/Season 00
       Season: '00'
       Show Genres:
@@ -4134,7 +4134,7 @@ Evangelion- 3.0 You Can (Not) Redo (2012):
         Evangelion - S00E005 - Evangelion 3 You Can (Not) Redo
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Neon Genesis Evangelion/Season 00/Neon
-        Genesis Evangelion - S00E005 - Evangelion 3 You Can (Not) Redo Remux-1080p..mkv
+        Genesis Evangelion - S00E005 - Evangelion 3 You Can (Not) Redo Remux-1080p.mkv
       Relative Show Path: anime/staging/Neon Genesis Evangelion/Season 00
       Season: '00'
       Show Genres:
@@ -4205,12 +4205,12 @@ Evil Dead II (1987):
       Anime: false
       Episode: 3
       Episode ID: '27916'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: tv/fantasy/Ash vs Evil Dead/Season 00/Ash vs Evil Dead
         - S00E03 - Evil Dead II
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/fantasy/Ash vs Evil Dead/Season 00/Ash vs Evil Dead
-        - S00E03 - Evil Dead II Bluray-1080p..mkv
+        - S00E03 - Evil Dead II Bluray-1080p.mkv
       Relative Show Path: tv/fantasy/Ash vs Evil Dead/Season 00
       Season: '00'
       Show Genres:
@@ -4218,7 +4218,7 @@ Evil Dead II (1987):
       - Horror
       - Thriller
       Show Root Path: tv/fantasy/Ash vs Evil Dead
-      episodeFileId: ''
+      episodeFileId: 76115
       imdbId: tt4189022
       seriesId: 332
       tvdbId: 296295
@@ -4252,7 +4252,7 @@ Fairy Tail the Movie- Phoenix Priestess (2012):
         - Fairy Tail the Movie The Phoenix Priestess
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Fairy Tail/Season 00/Fairy Tail - S00E004
-        - Fairy Tail the Movie The Phoenix Priestess Remux-1080p..mkv
+        - Fairy Tail the Movie The Phoenix Priestess Remux-1080p.mkv
       Relative Show Path: anime/shounen/Fairy Tail/Season 00
       Season: '00'
       Show Genres:
@@ -4294,7 +4294,7 @@ Fairy Tail x Rave (2013):
         - Fairy Tail x Rave
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Fairy Tail/Season 00/Fairy Tail - S00E008
-        - Fairy Tail x Rave DVD..mkv
+        - Fairy Tail x Rave DVD.mkv
       Relative Show Path: anime/shounen/Fairy Tail/Season 00
       Season: '00'
       Show Genres:
@@ -4320,7 +4320,7 @@ Fairy Tail x Rave (2013):
         - Fairy Tail x Rave
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/Rave Master/Season 00/Rave Master - S00E001
-        - Fairy Tail x Rave DVD..mkv
+        - Fairy Tail x Rave DVD.mkv
       Relative Show Path: tv/staging/Rave Master/Season 00
       Season: '00'
       Show Genres:
@@ -4356,7 +4356,7 @@ Fairy Tail- Dragon Cry (2017):
         - Fairy Tail Dragon Cry
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Fairy Tail/Season 00/Fairy Tail - S00E012
-        - Fairy Tail Dragon Cry Bluray-1080p..mkv
+        - Fairy Tail Dragon Cry Bluray-1080p.mkv
       Relative Show Path: anime/shounen/Fairy Tail/Season 00
       Season: '00'
       Show Genres:
@@ -4402,7 +4402,7 @@ Family Guy Presents Stewie Griffin - The Untold Story (2005):
         Stewie Griffin The Untold Story
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/Family Guy/Season 00/Family Guy - S00E01
-        - Stewie Griffin The Untold Story DVD..mkv
+        - Stewie Griffin The Untold Story DVD.mkv
       Relative Show Path: tv/staging/Family Guy/Season 00
       Season: '00'
       Show Genres:
@@ -4515,7 +4515,7 @@ Family Guy Presents- Seth and Alex's almost live comedy show (2009):
         Liner Prisma Illya - S00E024 - Oath Under Snow
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Fate+Kaleid Liner Prisma Illya/Season
-        00/Fate+Kaleid Liner Prisma Illya - S00E024 - Oath Under Snow Bluray-1080p..mkv
+        00/Fate+Kaleid Liner Prisma Illya - S00E024 - Oath Under Snow Bluray-1080p.mkv
       Relative Show Path: anime/staging/Fate+Kaleid Liner Prisma Illya/Season 00
       Season: '00'
       Show Genres:
@@ -4601,7 +4601,7 @@ Fate+stay night- Heaven's Feel I. presage flower (2017):
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Fate+Stay Night- Unlimited Blade Works/Season
         00/Fate+Stay Night- Unlimited Blade Works - S00E003 - Fate/Stay Night Heaven's
-        Feel - I. Presage Flower Bluray-1080p..mkv
+        Feel - I. Presage Flower Bluray-1080p.mkv
       Relative Show Path: anime/staging/Fate+Stay Night- Unlimited Blade Works/Season
         00
       Season: '00'
@@ -4649,7 +4649,7 @@ Fate+stay night- Heaven's Feel I. presage flower (2017):
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Fate+Stay Night- Unlimited Blade Works/Season
         00/Fate+Stay Night- Unlimited Blade Works - S00E004 - Fate/Stay Night Heaven's
-        Feel - II. Lost Butterfly Remux-1080p..mkv
+        Feel - II. Lost Butterfly Remux-1080p.mkv
       Relative Show Path: anime/staging/Fate+Stay Night- Unlimited Blade Works/Season
         00
       Season: '00'
@@ -4731,7 +4731,7 @@ Fist of the North Star (1986):
         the North Star - S00E001 - Fist of the North Star
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Fist of the North Star/Season 00/Fist
-        of the North Star - S00E001 - Fist of the North Star Bluray-1080p..mkv
+        of the North Star - S00E001 - Fist of the North Star Bluray-1080p.mkv
       Relative Show Path: anime/staging/Fist of the North Star/Season 00
       Season: '00'
       Show Genres:
@@ -4777,7 +4777,7 @@ Fist of the North Star- Legend of Raoh - Chapter of Death in Love (2006):
         the North Star - S00E005 - Legend of Raoh Chapter of Death in Love
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Fist of the North Star/Season 00/Fist
-        of the North Star - S00E005 - Legend of Raoh Chapter of Death in Love HDTV-720p..mp4
+        of the North Star - S00E005 - Legend of Raoh Chapter of Death in Love HDTV-720p.mp4
       Relative Show Path: anime/staging/Fist of the North Star/Season 00
       Season: '00'
       Show Genres:
@@ -4823,7 +4823,7 @@ Fist of the North Star- Legend of Raoh - Chapter of Fierce Fight (2007):
         the North Star - S00E007 - Legend of Raoh Chapter of Fierce Fight
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Fist of the North Star/Season 00/Fist
-        of the North Star - S00E007 - Legend of Raoh Chapter of Fierce Fight HDTV-720p..mp4
+        of the North Star - S00E007 - Legend of Raoh Chapter of Fierce Fight HDTV-720p.mp4
       Relative Show Path: anime/staging/Fist of the North Star/Season 00
       Season: '00'
       Show Genres:
@@ -4867,7 +4867,7 @@ Fist of the North Star- Legend of Toki (2008):
         the North Star - S00E008 - Legend of Toki
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Fist of the North Star/Season 00/Fist
-        of the North Star - S00E008 - Legend of Toki HDTV-720p..mp4
+        of the North Star - S00E008 - Legend of Toki HDTV-720p.mp4
       Relative Show Path: anime/staging/Fist of the North Star/Season 00
       Season: '00'
       Show Genres:
@@ -4911,7 +4911,7 @@ Fist of the North Star- Legend of Yuria (2007):
         the North Star - S00E006 - Legend of Yuria
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Fist of the North Star/Season 00/Fist
-        of the North Star - S00E006 - Legend of Yuria HDTV-720p..mp4
+        of the North Star - S00E006 - Legend of Yuria HDTV-720p.mp4
       Relative Show Path: anime/staging/Fist of the North Star/Season 00
       Season: '00'
       Show Genres:
@@ -4956,7 +4956,7 @@ Fist of the North Star- The Legend of Kenshiro (2008):
         the North Star - S00E009 - Zero Legend of Kenshiro
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Fist of the North Star/Season 00/Fist
-        of the North Star - S00E009 - Zero Legend of Kenshiro HDTV-720p..mp4
+        of the North Star - S00E009 - Zero Legend of Kenshiro HDTV-720p.mp4
       Relative Show Path: anime/staging/Fist of the North Star/Season 00
       Season: '00'
       Show Genres:
@@ -4997,7 +4997,7 @@ Freedom Fighters- The Ray (2018):
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/superhero/Freedom Fighters- The Ray/Season 00/Freedom
         Fighters- The Ray - S00E06 - Freedom Fighters The Ray (feature-length release)
-        WEBDL-1080p..mkv
+        WEBDL-1080p.mkv
       Relative Show Path: tv/superhero/Freedom Fighters- The Ray/Season 00
       Season: '00'
       Show Genres:
@@ -5035,7 +5035,7 @@ Fullmetal Alchemist (2017):
         Alchemist - S00E012 - Fullmetal Alchemist (Live Action)
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Fullmetal Alchemist/Season 00/Fullmetal
-        Alchemist - S00E012 - Fullmetal Alchemist (Live Action) WEBDL-1080p..mkv
+        Alchemist - S00E012 - Fullmetal Alchemist (Live Action) WEBDL-1080p.mkv
       Relative Show Path: anime/shounen/Fullmetal Alchemist/Season 00
       Season: '00'
       Show Genres:
@@ -5083,7 +5083,7 @@ Fullmetal Alchemist The Movie- Conqueror of Shamballa (2005):
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Fullmetal Alchemist/Season 00/Fullmetal
         Alchemist - S00E004 - Fullmetal Alchemist The Movie Conqueror of Shamballa
-        WEBDL-1080p..mkv
+        WEBDL-1080p.mkv
       Relative Show Path: anime/shounen/Fullmetal Alchemist/Season 00
       Season: '00'
       Show Genres:
@@ -5129,7 +5129,7 @@ Fullmetal Alchemist The Movie- The Sacred Star of Milos (2011):
         00/Fullmetal Alchemist- Brotherhood - S00E005 - The Sacred Star of Milos
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Fullmetal Alchemist- Brotherhood/Season
-        00/Fullmetal Alchemist- Brotherhood - S00E005 - The Sacred Star of Milos Remux-1080p..mkv
+        00/Fullmetal Alchemist- Brotherhood - S00E005 - The Sacred Star of Milos Remux-1080p.mkv
       Relative Show Path: anime/shounen/Fullmetal Alchemist- Brotherhood/Season 00
       Season: '00'
       Show Genres:
@@ -5169,7 +5169,7 @@ Futurama - Bender's Big Score (2007):
         Big Score
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/Futurama/Season 00/Futurama - S00E01 - Bender's
-        Big Score WEBDL-1080p..ts
+        Big Score WEBDL-1080p.ts
       Relative Show Path: tv/staging/Futurama/Season 00
       Season: '00'
       Show Genres:
@@ -5208,7 +5208,7 @@ Futurama - Bender's Game (2008):
         Game
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/Futurama/Season 00/Futurama - S00E05 - Bender's
-        Game Bluray-1080p..mkv
+        Game Bluray-1080p.mkv
       Relative Show Path: tv/staging/Futurama/Season 00
       Season: '00'
       Show Genres:
@@ -5248,7 +5248,7 @@ Futurama - Into the Wild Green Yonder (2009):
         the Wild Green Yonder
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/Futurama/Season 00/Futurama - S00E06 - Into
-        the Wild Green Yonder Bluray-1080p..mkv
+        the Wild Green Yonder Bluray-1080p.mkv
       Relative Show Path: tv/staging/Futurama/Season 00
       Season: '00'
       Show Genres:
@@ -5288,7 +5288,7 @@ Futurama - The Beast with a Billion Backs (2008):
         Beast With A Billion Backs
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/Futurama/Season 00/Futurama - S00E02 - The
-        Beast With A Billion Backs WEBDL-1080p..mkv
+        Beast With A Billion Backs WEBDL-1080p.mkv
       Relative Show Path: tv/staging/Futurama/Season 00
       Season: '00'
       Show Genres:
@@ -5363,7 +5363,7 @@ Game of Thrones- The Last Watch (2019):
         S00E41 - The Last Watch
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/fantasy/Game of Thrones/Season 00/Game of Thrones
-        - S00E41 - The Last Watch WEBDL-1080p..mkv
+        - S00E41 - The Last Watch WEBDL-1080p.mkv
       Relative Show Path: tv/fantasy/Game of Thrones/Season 00
       Season: '00'
       Show Genres:
@@ -5400,7 +5400,7 @@ Gantz (2010):
       Parsed Episode Title: anime/staging/Gantz/Season 00/Gantz - S00E001 - Gantz
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Gantz/Season 00/Gantz - S00E001 - Gantz
-        Bluray-1080p..mkv
+        Bluray-1080p.mkv
       Relative Show Path: anime/staging/Gantz/Season 00
       Season: '00'
       Show Genres:
@@ -5437,7 +5437,7 @@ Gantz- Perfect Answer (2011):
         Perfect Answer
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Gantz/Season 00/Gantz - S00E002 - Gantz
-        Perfect Answer Bluray-1080p..mkv
+        Perfect Answer Bluray-1080p.mkv
       Relative Show Path: anime/staging/Gantz/Season 00
       Season: '00'
       Show Genres:
@@ -5472,7 +5472,7 @@ Gantz-O (2016):
       Parsed Episode Title: anime/staging/Gantz/Season 00/Gantz - S00E003 - GantzO
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Gantz/Season 00/Gantz - S00E003 - GantzO
-        HDTV-720p..mkv
+        HDTV-720p.mkv
       Relative Show Path: anime/staging/Gantz/Season 00
       Season: '00'
       Show Genres:
@@ -5511,7 +5511,7 @@ Ghost in the Shell (1995):
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Ghost in the Shell- Stand Alone Complex/Season
         00/Ghost in the Shell- Stand Alone Complex - S00E001 - Ghost in the Shell
-        Movie Remux-1080p..mkv
+        Movie Remux-1080p.mkv
       Relative Show Path: anime/staging/Ghost in the Shell- Stand Alone Complex/Season
         00
       Season: '00'
@@ -5554,7 +5554,7 @@ Ghost in the Shell (2017):
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Ghost in the Shell- Arise - Alternative
         Architecture/Season 00/Ghost in the Shell- Arise - Alternative Architecture
-        - S00E001 - Ghost in the Shell New Movie Bluray-2160p..mkv
+        - S00E001 - Ghost in the Shell New Movie Bluray-2160p.mkv
       Relative Show Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture/Season
         00
       Season: '00'
@@ -5597,7 +5597,7 @@ Ghost in the Shell 2- Innocence (2004):
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Ghost in the Shell- Stand Alone Complex/Season
         00/Ghost in the Shell- Stand Alone Complex - S00E002 - Ghost in the Shell
-        Movie 2  Innocence Remux-1080p..mkv
+        Movie 2  Innocence Remux-1080p.mkv
       Relative Show Path: anime/staging/Ghost in the Shell- Stand Alone Complex/Season
         00
       Season: '00'
@@ -5690,7 +5690,7 @@ Ghost in the Shell Arise - Border 2- Ghost Whispers (2013):
       Parsed Season Folder: Season 01
       Relative Show File Path: anime/staging/Ghost in the Shell- Arise - Alternative
         Architecture/Season 01/Ghost in the Shell- Arise - Alternative Architecture
-        - S01E005 - Ghost Whispers  Remux-1080p..mkv
+        - S01E005 - Ghost Whispers  Remux-1080p.mkv
       Relative Show Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture/Season
         01
       Season: '01'
@@ -5827,7 +5827,7 @@ Ghost in the Shell Arise - Border 5- Pyrophoric Cult (2015):
       Parsed Season Folder: Season 01
       Relative Show File Path: anime/staging/Ghost in the Shell- Arise - Alternative
         Architecture/Season 01/Ghost in the Shell- Arise - Alternative Architecture
-        - S01E009 - Pyrophoric Cult  Remux-1080p..mkv
+        - S01E009 - Pyrophoric Cult  Remux-1080p.mkv
       Relative Show Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture/Season
         01
       Season: '01'
@@ -5958,7 +5958,7 @@ Ghost in the Shell- Stand Alone Complex - Solid State Society (2006):
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Ghost in the Shell- Stand Alone Complex/Season
         00/Ghost in the Shell- Stand Alone Complex - S00E005 - Solid State Society
-        Remux-1080p..mkv
+        Remux-1080p.mkv
       Relative Show Path: anime/staging/Ghost in the Shell- Stand Alone Complex/Season
         00
       Season: '00'
@@ -6004,7 +6004,7 @@ Ghost in the Shell- Stand Alone Complex - The Laughing Man (2005):
         00/Ghost in the Shell- Stand Alone Complex - S00E003 - The Laughing Man
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Ghost in the Shell- Stand Alone Complex/Season
-        00/Ghost in the Shell- Stand Alone Complex - S00E003 - The Laughing Man Bluray-1080p..mkv
+        00/Ghost in the Shell- Stand Alone Complex - S00E003 - The Laughing Man Bluray-1080p.mkv
       Relative Show Path: anime/staging/Ghost in the Shell- Stand Alone Complex/Season
         00
       Season: '00'
@@ -6046,7 +6046,7 @@ Gintama- The Best of Gintama on Theater 2D (2012):
         Festa 2005 Special
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Gintama/Season 00/Gintama - S00E001 -
-        Jump Festa 2005 Special DVD..mkv
+        Jump Festa 2005 Special DVD.mkv
       Relative Show Path: anime/staging/Gintama/Season 00
       Season: '00'
       Show Genres:
@@ -6092,7 +6092,7 @@ Gintama- The Final Chapter - Be Forever Yorozuya (2013):
         The Movie The Final Chapter Odd Jobs Forever
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Gintama/Season 00/Gintama - S00E007 -
-        Gintama The Movie The Final Chapter Odd Jobs Forever Bluray-1080p..mkv
+        Gintama The Movie The Final Chapter Odd Jobs Forever Bluray-1080p.mkv
       Relative Show Path: anime/staging/Gintama/Season 00
       Season: '00'
       Show Genres:
@@ -6133,7 +6133,7 @@ Gintama- The Movie (2010):
         The Movie
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Gintama/Season 00/Gintama - S00E004 -
-        Gintama The Movie Bluray-1080p..mkv
+        Gintama The Movie Bluray-1080p.mkv
       Relative Show Path: anime/staging/Gintama/Season 00
       Season: '00'
       Show Genres:
@@ -6282,7 +6282,7 @@ Gundam Wing- Endless Waltz (1998):
         Suit Gundam Wing - S00E008 - Endless Waltz Movie
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Mobile Suit Gundam Wing/Season 00/Mobile
-        Suit Gundam Wing - S00E008 - Endless Waltz Movie Bluray-1080p..mkv
+        Suit Gundam Wing - S00E008 - Endless Waltz Movie Bluray-1080p.mkv
       Relative Show Path: anime/staging/Mobile Suit Gundam Wing/Season 00
       Season: '00'
       Show Genres:
@@ -6383,7 +6383,7 @@ Gurren Lagann The Movie- Childhood's End (2008):
         S00E003 - Gurren Lagann the Movie -Childhood's End-
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Gurren Lagann/Season 00/Gurren Lagann
-        - S00E003 - Gurren Lagann the Movie -Childhood's End- Bluray-1080p..mkv
+        - S00E003 - Gurren Lagann the Movie -Childhood's End- Bluray-1080p.mkv
       Relative Show Path: anime/staging/Gurren Lagann/Season 00
       Season: '00'
       Show Genres:
@@ -6429,7 +6429,7 @@ Gurren Lagann The Movie- The Lights in the Sky Are Stars (2009):
         S00E004 - Gurren Lagann the Movie -The Lights in the Sky Are Stars-
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Gurren Lagann/Season 00/Gurren Lagann
-        - S00E004 - Gurren Lagann the Movie -The Lights in the Sky Are Stars- WEBDL-1080p..mkv
+        - S00E004 - Gurren Lagann the Movie -The Lights in the Sky Are Stars- WEBDL-1080p.mkv
       Relative Show Path: anime/staging/Gurren Lagann/Season 00
       Season: '00'
       Show Genres:
@@ -6471,7 +6471,7 @@ Haikyuu!! Movie 2- Winners and Losers (2015):
         Movie 2 Shousha to Haisha
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/Haikyu!!/Season 00/Haikyu!! - S00E004 -
-        Haikyu!! Movie 2 Shousha to Haisha Bluray-1080p..mkv
+        Haikyu!! Movie 2 Shousha to Haisha Bluray-1080p.mkv
       Relative Show Path: tv/staging/Haikyu!!/Season 00
       Season: '00'
       Show Genres:
@@ -6511,7 +6511,7 @@ Haikyuu!! Movie 3- Genius and Sense (2017):
         Movie 3 Sainou to Sense
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/Haikyu!!/Season 00/Haikyu!! - S00E006 -
-        Haikyu!! Movie 3 Sainou to Sense Bluray-1080p..mkv
+        Haikyu!! Movie 3 Sainou to Sense Bluray-1080p.mkv
       Relative Show Path: tv/staging/Haikyu!!/Season 00
       Season: '00'
       Show Genres:
@@ -6551,7 +6551,7 @@ Haikyuu!! Movie 4- Battle of Concepts (2017):
         Movie 4 Concept no Tatakai
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/Haikyu!!/Season 00/Haikyu!! - S00E007 -
-        Haikyu!! Movie 4 Concept no Tatakai Bluray-1080p..mkv
+        Haikyu!! Movie 4 Concept no Tatakai Bluray-1080p.mkv
       Relative Show Path: tv/staging/Haikyu!!/Season 00
       Season: '00'
       Show Genres:
@@ -6592,7 +6592,7 @@ Haikyuu!! The Movie- Beginnings and Endings (2015):
         End and the Beginning
       Parsed Season Folder: Season 01
       Relative Show File Path: tv/staging/Haikyu!!/Season 01/Haikyu!! - S01E001 -
-        The End and the Beginning Bluray-1080p..mkv
+        The End and the Beginning Bluray-1080p.mkv
       Relative Show Path: tv/staging/Haikyu!!/Season 01
       Season: '01'
       Show Genres:
@@ -6631,7 +6631,7 @@ Hajime no Ippo- Champion Road (2003):
         no Ippo- The Fighting! - S00E002 - Champion Road
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/Hajime no Ippo- The Fighting!/Season 00/Hajime
-        no Ippo- The Fighting! - S00E002 - Champion Road DVD..mkv
+        no Ippo- The Fighting! - S00E002 - Champion Road DVD.mkv
       Relative Show Path: tv/staging/Hajime no Ippo- The Fighting!/Season 00
       Season: '00'
       Show Genres:
@@ -6729,7 +6729,7 @@ High School of the Dead OVA- Drifters of the Dead (2011):
         of the Dead - S00E01 - Drifters of the Dead
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/High School of the Dead/Season 00/High School
-        of the Dead - S00E01 - Drifters of the Dead Remux-1080p..mkv
+        of the Dead - S00E01 - Drifters of the Dead Remux-1080p.mkv
       Relative Show Path: tv/staging/High School of the Dead/Season 00
       Season: '00'
       Show Genres:
@@ -6773,7 +6773,7 @@ High School of the Dead OVA- Drifters of the Dead (2011):
         x Hunter (2011) - S00E001 - Phantom Rouge
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Hunter x Hunter (2011)/Season 00/Hunter
-        x Hunter (2011) - S00E001 - Phantom Rouge Remux-1080p..mkv
+        x Hunter (2011) - S00E001 - Phantom Rouge Remux-1080p.mkv
       Relative Show Path: anime/staging/Hunter x Hunter (2011)/Season 00
       Season: '00'
       Show Genres:
@@ -6816,7 +6816,7 @@ High School of the Dead OVA- Drifters of the Dead (2011):
         x Hunter (2011) - S00E002 - The Last Mission
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Hunter x Hunter (2011)/Season 00/Hunter
-        x Hunter (2011) - S00E002 - The Last Mission Remux-1080p..mkv
+        x Hunter (2011) - S00E002 - The Last Mission Remux-1080p.mkv
       Relative Show Path: anime/staging/Hunter x Hunter (2011)/Season 00
       Season: '00'
       Show Genres:
@@ -6857,7 +6857,7 @@ Inside The X-Files (1998):
         Inside the X-Files
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/scifi/The X-Files/Season 00/The X-Files - S00E04
-        - Inside the X-Files DVD..mp4
+        - Inside the X-Files DVD.mp4
       Relative Show Path: tv/scifi/The X-Files/Season 00
       Season: '00'
       Show Genres:
@@ -6899,7 +6899,7 @@ Inuyasha the Movie 2- The Castle Beyond the Looking Glass (2002):
         Movie 2 The Castle Beyond the Looking Glass
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/InuYasha/Season 00/InuYasha - S00E002
-        - Movie 2 The Castle Beyond the Looking Glass Bluray-720p..mkv
+        - Movie 2 The Castle Beyond the Looking Glass Bluray-720p.mkv
       Relative Show Path: anime/shounen/InuYasha/Season 00
       Season: '00'
       Show Genres:
@@ -6943,7 +6943,7 @@ Inuyasha the Movie 3- Swords of an Honorable Ruler (2003):
         Movie 3 Swords of an Honorable Ruler
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/InuYasha/Season 00/InuYasha - S00E003
-        - Movie 3 Swords of an Honorable Ruler Bluray-720p..mkv
+        - Movie 3 Swords of an Honorable Ruler Bluray-720p.mkv
       Relative Show Path: anime/shounen/InuYasha/Season 00
       Season: '00'
       Show Genres:
@@ -6987,7 +6987,7 @@ Inuyasha the Movie 4- Fire on the Mystic Island (2004):
         Movie 4 Fire on the Mystic Island
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/InuYasha/Season 00/InuYasha - S00E004
-        - Movie 4 Fire on the Mystic Island Bluray-720p..mkv
+        - Movie 4 Fire on the Mystic Island Bluray-720p.mkv
       Relative Show Path: anime/shounen/InuYasha/Season 00
       Season: '00'
       Show Genres:
@@ -7033,7 +7033,7 @@ Inuyasha the Movie- Affections Touching Across Time (2001):
         Movie 1 Affections Touching Across Time
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/InuYasha/Season 00/InuYasha - S00E001
-        - Movie 1 Affections Touching Across Time Bluray-720p..mkv
+        - Movie 1 Affections Touching Across Time Bluray-720p.mkv
       Relative Show Path: anime/shounen/InuYasha/Season 00
       Season: '00'
       Show Genres:
@@ -7090,7 +7090,7 @@ Jeff Dunham - All Over the Map (2014):
         Dunham Show - S00E08 - All Over the Map
       Parsed Season Folder: Season 00
       Relative Show File Path: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
-        Dunham Show - S00E08 - All Over the Map Bluray-1080p..mp4
+        Dunham Show - S00E08 - All Over the Map Bluray-1080p.mp4
       Relative Show Path: movies/staging/The Jeff Dunham Show/Season 00
       Season: '00'
       Show Genres:
@@ -7128,7 +7128,7 @@ Jeff Dunham - Arguing with Myself (2006):
         Dunham Show - S00E01 - Arguing with Myself
       Parsed Season Folder: Season 00
       Relative Show File Path: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
-        Dunham Show - S00E01 - Arguing with Myself Bluray-1080p..mkv
+        Dunham Show - S00E01 - Arguing with Myself Bluray-1080p.mkv
       Relative Show Path: movies/staging/The Jeff Dunham Show/Season 00
       Season: '00'
       Show Genres:
@@ -7204,7 +7204,7 @@ Jeff Dunham - Controlled Chaos (2011):
         Dunham Show - S00E04 - Controlled Chaos
       Parsed Season Folder: Season 00
       Relative Show File Path: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
-        Dunham Show - S00E04 - Controlled Chaos DVD..avi
+        Dunham Show - S00E04 - Controlled Chaos DVD.avi
       Relative Show Path: movies/staging/The Jeff Dunham Show/Season 00
       Season: '00'
       Show Genres:
@@ -7245,7 +7245,7 @@ Jeff Dunham - Jeff Dunham's Very Special Christmas Special (2008):
         Dunham Show - S00E03 - Very Special Christmas Special
       Parsed Season Folder: Season 00
       Relative Show File Path: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
-        Dunham Show - S00E03 - Very Special Christmas Special DVD..avi
+        Dunham Show - S00E03 - Very Special Christmas Special DVD.avi
       Relative Show Path: movies/staging/The Jeff Dunham Show/Season 00
       Season: '00'
       Show Genres:
@@ -7283,7 +7283,7 @@ Jeff Dunham - Minding the Monsters (2012):
         Dunham Show - S00E06 - Minding the Monsters
       Parsed Season Folder: Season 00
       Relative Show File Path: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
-        Dunham Show - S00E06 - Minding the Monsters Bluray-1080p..mkv
+        Dunham Show - S00E06 - Minding the Monsters Bluray-1080p.mkv
       Relative Show Path: movies/staging/The Jeff Dunham Show/Season 00
       Season: '00'
       Show Genres:
@@ -7321,7 +7321,7 @@ Jeff Dunham - Relative Disaster (2017):
         Dunham Show - S00E01 - Arguing with Myself
       Parsed Season Folder: Season 00
       Relative Show File Path: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
-        Dunham Show - S00E01 - Arguing with Myself WEBDL-1080p..mkv
+        Dunham Show - S00E01 - Arguing with Myself WEBDL-1080p.mkv
       Relative Show Path: movies/staging/The Jeff Dunham Show/Season 00
       Season: '00'
       Show Genres:
@@ -7359,7 +7359,7 @@ Jeff Dunham - Spark of Insanity (2007):
         Dunham Show - S00E02 - Spark of Insanity
       Parsed Season Folder: Season 00
       Relative Show File Path: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
-        Dunham Show - S00E02 - Spark of Insanity Bluray-1080p..mkv
+        Dunham Show - S00E02 - Spark of Insanity Bluray-1080p.mkv
       Relative Show Path: movies/staging/The Jeff Dunham Show/Season 00
       Season: '00'
       Show Genres:
@@ -7397,7 +7397,7 @@ Jeff Dunham - Unhinged in Hollywood (2015):
         Dunham Show - S00E09 - Unhinged in Hollywood
       Parsed Season Folder: Season 00
       Relative Show File Path: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
-        Dunham Show - S00E09 - Unhinged in Hollywood Bluray-720p..mkv
+        Dunham Show - S00E09 - Unhinged in Hollywood Bluray-720p.mkv
       Relative Show Path: movies/staging/The Jeff Dunham Show/Season 00
       Season: '00'
       Show Genres:
@@ -7507,7 +7507,7 @@ Journey's End- The Saga of Star Trek - The Next Generation (1994):
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/scifi/Star Trek- The Next Generation/Season 00/Star
         Trek- The Next Generation - S00E01 - Journey's End The Saga of Star Trek The
-        Next Generation WEBDL-720p..mkv
+        Next Generation WEBDL-720p.mkv
       Relative Show Path: tv/scifi/Star Trek- The Next Generation/Season 00
       Season: '00'
       Show Genres:
@@ -7567,7 +7567,7 @@ Justice League- Crisis on Two Earths (2010):
         S00E05 - Crisis on Two Earths
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/superhero/Justice League/Season 00/Justice League
-        - S00E05 - Crisis on Two Earths Bluray-1080p..mkv
+        - S00E05 - Crisis on Two Earths Bluray-1080p.mkv
       Relative Show Path: tv/superhero/Justice League/Season 00
       Season: '00'
       Show Genres:
@@ -7609,7 +7609,7 @@ Justice League- The Flashpoint Paradox (2013):
         S00E06 - The Flashpoint Paradox
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/superhero/Justice League/Season 00/Justice League
-        - S00E06 - The Flashpoint Paradox Bluray-1080p..mkv
+        - S00E06 - The Flashpoint Paradox Bluray-1080p.mkv
       Relative Show Path: tv/superhero/Justice League/Season 00
       Season: '00'
       Show Genres:
@@ -7651,7 +7651,7 @@ Justice League- The New Frontier (2008):
         S00E04 - The New Frontier
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/superhero/Justice League/Season 00/Justice League
-        - S00E04 - The New Frontier Bluray-1080p..mkv
+        - S00E04 - The New Frontier Bluray-1080p.mkv
       Relative Show Path: tv/superhero/Justice League/Season 00
       Season: '00'
       Show Genres:
@@ -7699,7 +7699,7 @@ Kabaneri of the Iron Fortress Recap 1- Gathering Light (2016):
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Kabaneri of the Iron Fortress/Season
         00/Kabaneri of the Iron Fortress - S00E001 - Kabaneri of the Iron Fortress
-        Recap 1 Gathering Light WEBDL-720p..mkv
+        Recap 1 Gathering Light WEBDL-720p.mkv
       Relative Show Path: anime/staging/Kabaneri of the Iron Fortress/Season 00
       Season: '00'
       Show Genres:
@@ -7747,7 +7747,7 @@ Kabaneri of the Iron Fortress Recap 2- Burning Life (2017):
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Kabaneri of the Iron Fortress/Season
         00/Kabaneri of the Iron Fortress - S00E002 - Kabaneri of the Iron Fortress
-        Recap 2 Burning Life WEBDL-720p..mkv
+        Recap 2 Burning Life WEBDL-720p.mkv
       Relative Show Path: anime/staging/Kabaneri of the Iron Fortress/Season 00
       Season: '00'
       Show Genres:
@@ -7836,7 +7836,7 @@ Kono Subarashii Sekai ni Shukufuku wo! 2- God's Blessings on This Wonderful Work
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/KONOSUBA - God's blessing on this wonderful
         world!/Season 00/KONOSUBA - God's blessing on this wonderful world! - S00E004
-        - A Blessing to This Wonderful Work of Art! Bluray-1080p..mkv
+        - A Blessing to This Wonderful Work of Art! Bluray-1080p.mkv
       Relative Show Path: anime/staging/KONOSUBA - God's blessing on this wonderful
         world!/Season 00
       Season: '00'
@@ -7885,7 +7885,7 @@ Kono Subarashii Sekai ni Shukufuku wo! God's Blessings on This Wonderful Choker!
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/KONOSUBA - God's blessing on this wonderful
         world!/Season 00/KONOSUBA - God's blessing on this wonderful world! - S00E003
-        - A Blessing to This Wonderful Choker! Bluray-1080p..mkv
+        - A Blessing to This Wonderful Choker! Bluray-1080p.mkv
       Relative Show Path: anime/staging/KONOSUBA - God's blessing on this wonderful
         world!/Season 00
       Season: '00'
@@ -7927,13 +7927,13 @@ Koukyoushihen- Eureka Seven - Hi-Evolution 1 (2017):
       Anime: true
       Episode: 2
       Episode ID: '4184'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/Eureka Seven/Season 00/Eureka Seven - S00E002
         - Navigation ray=out
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Eureka Seven/Season 00/Eureka Seven -
-        S00E002 - Navigation ray=out Remux-1080p..mkv
+        S00E002 - Navigation ray=out Remux-1080p.mkv
       Relative Show Path: anime/staging/Eureka Seven/Season 00
       Season: '00'
       Show Genres:
@@ -7942,7 +7942,7 @@ Koukyoushihen- Eureka Seven - Hi-Evolution 1 (2017):
       - Drama
       - Science-Fiction
       Show Root Path: anime/staging/Eureka Seven
-      episodeFileId: ''
+      episodeFileId: 76191
       imdbId: tt0765491
       seriesId: 145
       tvdbId: 79360
@@ -7967,13 +7967,13 @@ L- Change the World (2008):
       Anime: true
       Episode: 5
       Episode ID: '45128'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '005'
       Parsed Episode Title: anime/staging/Death Note/Season 00/Death Note - S00E005
         - Death Note L, Change the World (Live Action Movie)
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Death Note/Season 00/Death Note - S00E005
-        - Death Note L, Change the World (Live Action Movie) Bluray-1080p..mkv
+        - Death Note L, Change the World (Live Action Movie) Bluray-1080p.mkv
       Relative Show Path: anime/staging/Death Note/Season 00
       Season: '00'
       Show Genres:
@@ -7984,7 +7984,7 @@ L- Change the World (2008):
       - Mystery
       - Thriller
       Show Root Path: anime/staging/Death Note
-      episodeFileId: ''
+      episodeFileId: 76170
       imdbId: tt0877057
       seriesId: 117
       tvdbId: 79481
@@ -8020,7 +8020,7 @@ Lupin the Third- Daisuke Jigen's Gravestone (2014):
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Lupin the Third- The Woman Called Fujiko
         Mine/Season 00/Lupin the Third- The Woman Called Fujiko Mine - S00E001 - Daisuke
-        Jigen's Gravestone, Part 1 Bluray-1080p..mkv
+        Jigen's Gravestone, Part 1 Bluray-1080p.mkv
       Relative Show Path: anime/staging/Lupin the Third- The Woman Called Fujiko Mine/Season
         00
       Season: '00'
@@ -8067,7 +8067,7 @@ Lupin the Third- The Blood Spray of Goemon Ishikawa (2017):
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Lupin the Third- The Woman Called Fujiko
         Mine/Season 00/Lupin the Third- The Woman Called Fujiko Mine - S00E003 - The
-        Blood Spray of Goemon Ishikawa, Part 1 Bluray-1080p..mkv
+        Blood Spray of Goemon Ishikawa, Part 1 Bluray-1080p.mkv
       Relative Show Path: anime/staging/Lupin the Third- The Woman Called Fujiko Mine/Season
         00
       Season: '00'
@@ -8149,7 +8149,7 @@ Maggie Simpson in The Longest Daycare (2012):
         - Burping Contest
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/sitcom/The Simpsons/Season 00/The Simpsons - S00E06
-        - Burping Contest HDTV-720p..mkv
+        - Burping Contest HDTV-720p.mkv
       Relative Show Path: tv/sitcom/The Simpsons/Season 00
       Season: '00'
       Show Genres:
@@ -8188,7 +8188,7 @@ March Comes in Like a Lion (2017):
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/March Comes in Like a Lion/Season 00/March
         Comes in Like a Lion - S00E003 - March Comes in Like a Lion Live Action Movie
-        Bluray-1080p..mkv
+        Bluray-1080p.mkv
       Relative Show Path: anime/staging/March Comes in Like a Lion/Season 00
       Season: '00'
       Show Genres:
@@ -8263,7 +8263,7 @@ Merlin- The Return (2000):
         S00E01 - Merlin - The Return
       Parsed Season Folder: Season 00
       Relative Show File Path: movies/staging/Merlin (1998)/Season 00/Merlin (1998)
-        - S00E01 - Merlin - The Return DVD..mp4
+        - S00E01 - Merlin - The Return DVD.mp4
       Relative Show Path: movies/staging/Merlin (1998)/Season 00
       Season: '00'
       Show Genres:
@@ -8308,7 +8308,7 @@ Merlin- The Return (2000):
         - S00E007 - Reigen - The Miracle Psychic that Nobody Knows
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Mob Psycho 100/Season 00/Mob Psycho 100
-        - S00E007 - Reigen - The Miracle Psychic that Nobody Knows WEBDL-1080p..mkv
+        - S00E007 - Reigen - The Miracle Psychic that Nobody Knows WEBDL-1080p.mkv
       Relative Show Path: anime/staging/Mob Psycho 100/Season 00
       Season: '00'
       Show Genres:
@@ -8353,7 +8353,7 @@ Mobile Suit Gundam 00 Special Edition I- Celestial Being (2009):
         Gundam 00 - S00E004 - Special Edition I Celestial Being
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Mobile Suit Gundam 00/Season 00/Mobile
-        Suit Gundam 00 - S00E004 - Special Edition I Celestial Being Bluray-1080p..mp4
+        Suit Gundam 00 - S00E004 - Special Edition I Celestial Being Bluray-1080p.mp4
       Relative Show Path: anime/staging/Mobile Suit Gundam 00/Season 00
       Season: '00'
       Show Genres:
@@ -8396,7 +8396,7 @@ Mobile Suit Gundam 00 Special Edition II- End of World (2009):
         Gundam 00 - S00E005 - Special Edition II End of World
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Mobile Suit Gundam 00/Season 00/Mobile
-        Suit Gundam 00 - S00E005 - Special Edition II End of World Bluray-1080p..mp4
+        Suit Gundam 00 - S00E005 - Special Edition II End of World Bluray-1080p.mp4
       Relative Show Path: anime/staging/Mobile Suit Gundam 00/Season 00
       Season: '00'
       Show Genres:
@@ -8439,7 +8439,7 @@ Mobile Suit Gundam 00 Special Edition III- Return The World (2010):
         Gundam 00 - S00E006 - Special Edition III Return of the World
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Mobile Suit Gundam 00/Season 00/Mobile
-        Suit Gundam 00 - S00E006 - Special Edition III Return of the World Bluray-1080p..mp4
+        Suit Gundam 00 - S00E006 - Special Edition III Return of the World Bluray-1080p.mp4
       Relative Show Path: anime/staging/Mobile Suit Gundam 00/Season 00
       Season: '00'
       Show Genres:
@@ -8483,7 +8483,7 @@ Mobile Suit Gundam 00- A Wakening of the Trailblazer (2010):
         Gundam 00 - S00E007 - Awakening of the Trailblazer
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Mobile Suit Gundam 00/Season 00/Mobile
-        Suit Gundam 00 - S00E007 - Awakening of the Trailblazer Remux-1080p..mkv
+        Suit Gundam 00 - S00E007 - Awakening of the Trailblazer Remux-1080p.mkv
       Relative Show Path: anime/staging/Mobile Suit Gundam 00/Season 00
       Season: '00'
       Show Genres:
@@ -8528,7 +8528,7 @@ Mobile Suit Gundam 0083- Stardust Memory - The Mayfly of Space (1992):
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Mobile Suit Gundam 0083- Stardust Memory/Season
         00/Mobile Suit Gundam 0083- Stardust Memory - S00E002 - The Mayfly of Space
-        Bluray-1080p..mkv
+        Bluray-1080p.mkv
       Relative Show Path: anime/staging/Mobile Suit Gundam 0083- Stardust Memory/Season
         00
       Season: '00'
@@ -8644,7 +8644,7 @@ Mobile Suit Gundam F91 (1991):
         Gundam - S00E005 - Mobile Suit Gundam F91
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Mobile Suit Gundam/Season 00/Mobile Suit
-        Gundam - S00E005 - Mobile Suit Gundam F91 Bluray-1080p..mkv
+        Gundam - S00E005 - Mobile Suit Gundam F91 Bluray-1080p.mkv
       Relative Show Path: anime/staging/Mobile Suit Gundam/Season 00
       Season: '00'
       Show Genres:
@@ -9337,7 +9337,7 @@ Mobile Suit Gundam- Char's Counterattack (1988):
         Gundam - S00E004 - Mobile Suit Gundam Char's Counterattack
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Mobile Suit Gundam/Season 00/Mobile Suit
-        Gundam - S00E004 - Mobile Suit Gundam Char's Counterattack Remux-1080p..mkv
+        Gundam - S00E004 - Mobile Suit Gundam Char's Counterattack Remux-1080p.mkv
       Relative Show Path: anime/staging/Mobile Suit Gundam/Season 00
       Season: '00'
       Show Genres:
@@ -9360,7 +9360,7 @@ Mobile Suit Gundam- Char's Counterattack (1988):
         Suit Gundam 0079 - S00E004 - Mobile Suit Gundam Char's Counterattack
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Mobile Suit Gundam 0079/Season 00/Mobile
-        Suit Gundam 0079 - S00E004 - Mobile Suit Gundam Char's Counterattack Remux-1080p..mkv
+        Suit Gundam 0079 - S00E004 - Mobile Suit Gundam Char's Counterattack Remux-1080p.mkv
       Relative Show Path: anime/staging/Mobile Suit Gundam 0079/Season 00
       Season: '00'
       Show Genres:
@@ -9406,7 +9406,7 @@ Mobile Suit Gundam- The 08th MS Team - Miller's Report (1998):
         00/Mobile Suit Gundam- The 08th MS Team - S00E001 - Miller's Report
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Mobile Suit Gundam- The 08th MS Team/Season
-        00/Mobile Suit Gundam- The 08th MS Team - S00E001 - Miller's Report Remux-1080p..mkv
+        00/Mobile Suit Gundam- The 08th MS Team - S00E001 - Miller's Report Remux-1080p.mkv
       Relative Show Path: anime/staging/Mobile Suit Gundam- The 08th MS Team/Season
         00
       Season: '00'
@@ -9451,7 +9451,7 @@ Monster Musume no Iru Nichijou OVA (2016):
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Monster Musume- Everyday Life with Monster
         Girls/Season 00/Monster Musume- Everyday Life with Monster Girls - S00E073
-        - Everyday Life at the Gym's Pool Bluray-1080p..mkv
+        - Everyday Life at the Gym's Pool Bluray-1080p.mkv
       Relative Show Path: anime/staging/Monster Musume- Everyday Life with Monster
         Girls/Season 00
       Season: '00'
@@ -9493,7 +9493,7 @@ Mushishi- The Next Chapter - Drops of Bells (2015):
         - Bell Droplets
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Mushi-Shi/Season 00/Mushi-Shi - S00E006
-        - Bell Droplets Bluray-1080p..mkv
+        - Bell Droplets Bluray-1080p.mkv
       Relative Show Path: anime/staging/Mushi-Shi/Season 00
       Season: '00'
       Show Genres:
@@ -9573,7 +9573,7 @@ Mushishi- The Shadow That Devours the Sun (2014):
         - The Shadow That Devours the Sun
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Mushi-Shi/Season 00/Mushi-Shi - S00E001
-        - The Shadow That Devours the Sun Bluray-1080p..mkv
+        - The Shadow That Devours the Sun Bluray-1080p.mkv
       Relative Show Path: anime/staging/Mushi-Shi/Season 00
       Season: '00'
       Show Genres:
@@ -9616,7 +9616,7 @@ My Hero Academia - Two Heroes (2018):
         - S00E004 - My Hero Academia the Movie The Two Heroes
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/My Hero Academia/Season 00/My Hero Academia
-        - S00E004 - My Hero Academia the Movie The Two Heroes Remux-1080p..mkv
+        - S00E004 - My Hero Academia the Movie The Two Heroes Remux-1080p.mkv
       Relative Show Path: anime/shounen/My Hero Academia/Season 00
       Season: '00'
       Show Genres:
@@ -9652,13 +9652,13 @@ My Name Is Bruce (2007):
       Anime: false
       Episode: 4
       Episode ID: '27917'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '04'
       Parsed Episode Title: tv/fantasy/Ash vs Evil Dead/Season 00/Ash vs Evil Dead
         - S00E04 - Army of Darkness
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/fantasy/Ash vs Evil Dead/Season 00/Ash vs Evil Dead
-        - S00E04 - Army of Darkness Bluray-1080p..mkv
+        - S00E04 - Army of Darkness Bluray-1080p.mkv
       Relative Show Path: tv/fantasy/Ash vs Evil Dead/Season 00
       Season: '00'
       Show Genres:
@@ -9666,7 +9666,7 @@ My Name Is Bruce (2007):
       - Horror
       - Thriller
       Show Root Path: tv/fantasy/Ash vs Evil Dead
-      episodeFileId: ''
+      episodeFileId: 76116
       imdbId: tt4189022
       seriesId: 332
       tvdbId: 296295
@@ -9701,7 +9701,7 @@ Naruto Shippuden the Movie Blood Prison (2011):
         - S00E007 - Naruto Shippuuden 5 Blood Prison
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
-        - S00E007 - Naruto Shippuuden 5 Blood Prison Bluray-1080p..mkv
+        - S00E007 - Naruto Shippuuden 5 Blood Prison Bluray-1080p.mkv
       Relative Show Path: anime/shounen/Naruto Shippuden/Season 00
       Season: '00'
       Show Genres:
@@ -9746,7 +9746,7 @@ Naruto Shippuden the Movie Bonds (2008):
         - S00E002 - Naruto Shippuuden 2 Bonds
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
-        - S00E002 - Naruto Shippuuden 2 Bonds Bluray-1080p..mkv
+        - S00E002 - Naruto Shippuuden 2 Bonds Bluray-1080p.mkv
       Relative Show Path: anime/shounen/Naruto Shippuden/Season 00
       Season: '00'
       Show Genres:
@@ -9794,7 +9794,7 @@ Naruto Shippuden the Movie Inheritors of the Will of Fire (2009):
         - S00E003 - Naruto Shippuuden 3 Inheritors of the Will of Fire
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
-        - S00E003 - Naruto Shippuuden 3 Inheritors of the Will of Fire Bluray-1080p..mkv
+        - S00E003 - Naruto Shippuuden 3 Inheritors of the Will of Fire Bluray-1080p.mkv
       Relative Show Path: anime/shounen/Naruto Shippuden/Season 00
       Season: '00'
       Show Genres:
@@ -9837,7 +9837,7 @@ Naruto Shippuden the Movie Road to Ninja (2012):
         - S00E001 - Naruto Shippuuden the Movie
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
-        - S00E001 - Naruto Shippuuden the Movie Bluray-1080p..mkv
+        - S00E001 - Naruto Shippuuden the Movie Bluray-1080p.mkv
       Relative Show Path: anime/shounen/Naruto Shippuden/Season 00
       Season: '00'
       Show Genres:
@@ -9883,7 +9883,7 @@ Naruto Shippuden the Movie The Lost Tower (2010):
         - S00E004 - Naruto Shippuuden 4 The Lost Tower
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
-        - S00E004 - Naruto Shippuuden 4 The Lost Tower Bluray-1080p..mkv
+        - S00E004 - Naruto Shippuuden 4 The Lost Tower Bluray-1080p.mkv
       Relative Show Path: anime/shounen/Naruto Shippuden/Season 00
       Season: '00'
       Show Genres:
@@ -9975,7 +9975,7 @@ Naruto the Movie- Guardians of the Crescent Moon Kingdom (2006):
         the Movie 3 Guardians of the Crescent Moon Kingdom
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Naruto/Season 00/Naruto - S00E007 - Naruto
-        the Movie 3 Guardians of the Crescent Moon Kingdom Bluray-1080p..mkv
+        the Movie 3 Guardians of the Crescent Moon Kingdom Bluray-1080p.mkv
       Relative Show Path: anime/shounen/Naruto/Season 00
       Season: '00'
       Show Genres:
@@ -10020,7 +10020,7 @@ Naruto the Movie- Legend of the Stone of Gelel (2005):
         the Movie 2 Legend of the Stone of Gelel
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Naruto/Season 00/Naruto - S00E005 - Naruto
-        the Movie 2 Legend of the Stone of Gelel Bluray-1080p..mkv
+        the Movie 2 Legend of the Stone of Gelel Bluray-1080p.mkv
       Relative Show Path: anime/shounen/Naruto/Season 00
       Season: '00'
       Show Genres:
@@ -10067,7 +10067,7 @@ Naruto the Movie- Ninja Clash in the Land of Snow (2004):
         the Movie Ninja Clash in the Land of Snow
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Naruto/Season 00/Naruto - S00E004 - Naruto
-        the Movie Ninja Clash in the Land of Snow Bluray-1080p..mkv
+        the Movie Ninja Clash in the Land of Snow Bluray-1080p.mkv
       Relative Show Path: anime/shounen/Naruto/Season 00
       Season: '00'
       Show Genres:
@@ -10107,7 +10107,7 @@ Naruto- Find the Crimson Four-leaf Clover! (2003):
         OVA Find the Crimson Four-Leaf Clover!
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Naruto/Season 00/Naruto - S00E001 - Naruto
-        OVA Find the Crimson Four-Leaf Clover! Bluray-720p..mkv
+        OVA Find the Crimson Four-Leaf Clover! Bluray-720p.mkv
       Relative Show Path: anime/shounen/Naruto/Season 00
       Season: '00'
       Show Genres:
@@ -10153,7 +10153,7 @@ Naruto- Gentle Breeze Chronicles the Film- Naruto, the Genie, and the Three Wish
         - S00E008 - Naruto, the Genie, and the Three Wishes, Believe It!
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
-        - S00E008 - Naruto, the Genie, and the Three Wishes, Believe It! Remux-1080p..mkv
+        - S00E008 - Naruto, the Genie, and the Three Wishes, Believe It! Remux-1080p.mkv
       Relative Show Path: anime/shounen/Naruto Shippuden/Season 00
       Season: '00'
       Show Genres:
@@ -10216,7 +10216,7 @@ Neon Genesis Evangelion- Death and Rebirth (1997):
         Evangelion - S00E001 - Death and Rebirth
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Neon Genesis Evangelion/Season 00/Neon
-        Genesis Evangelion - S00E001 - Death and Rebirth Remux-1080p..mkv
+        Genesis Evangelion - S00E001 - Death and Rebirth Remux-1080p.mkv
       Relative Show Path: anime/staging/Neon Genesis Evangelion/Season 00
       Season: '00'
       Show Genres:
@@ -10261,7 +10261,7 @@ Neon Genesis Evangelion- The End of Evangelion (1997):
         Evangelion - S00E002 - The End of Evangelion
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Neon Genesis Evangelion/Season 00/Neon
-        Genesis Evangelion - S00E002 - The End of Evangelion Remux-1080p..mkv
+        Genesis Evangelion - S00E002 - The End of Evangelion Remux-1080p.mkv
       Relative Show Path: anime/staging/Neon Genesis Evangelion/Season 00
       Season: '00'
       Show Genres:
@@ -10297,13 +10297,13 @@ New Fist of the North Star- The Cursed City (2003):
       Anime: true
       Episode: 2
       Episode ID: '878'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/Fist of the North Star/Season 00/Fist of
         the North Star - S00E002 - The Cursed City!
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Fist of the North Star/Season 00/Fist
-        of the North Star - S00E002 - The Cursed City! DVD..mp4
+        of the North Star - S00E002 - The Cursed City! DVD.mp4
       Relative Show Path: anime/staging/Fist of the North Star/Season 00
       Season: '00'
       Show Genres:
@@ -10312,7 +10312,7 @@ New Fist of the North Star- The Cursed City (2003):
       - Animation
       - Science-Fiction
       Show Root Path: anime/staging/Fist of the North Star
-      episodeFileId: ''
+      episodeFileId: 76200
       imdbId: tt0091211
       seriesId: 42
       tvdbId: 79156
@@ -10340,13 +10340,13 @@ New Fist of the North Star- The Forbidden Fist (2003):
       Anime: true
       Episode: 3
       Episode ID: '879'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '003'
       Parsed Episode Title: anime/staging/Fist of the North Star/Season 00/Fist of
         the North Star - S00E003 - The Forbidden Fist
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Fist of the North Star/Season 00/Fist
-        of the North Star - S00E003 - The Forbidden Fist DVD..mp4
+        of the North Star - S00E003 - The Forbidden Fist DVD.mp4
       Relative Show Path: anime/staging/Fist of the North Star/Season 00
       Season: '00'
       Show Genres:
@@ -10355,7 +10355,7 @@ New Fist of the North Star- The Forbidden Fist (2003):
       - Animation
       - Science-Fiction
       Show Root Path: anime/staging/Fist of the North Star
-      episodeFileId: ''
+      episodeFileId: 76201
       imdbId: tt0091211
       seriesId: 42
       tvdbId: 79156
@@ -10384,13 +10384,13 @@ New Fist of the North Star- When a Man Carries Sorrow (2004):
       Anime: true
       Episode: 4
       Episode ID: '880'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '004'
       Parsed Episode Title: anime/staging/Fist of the North Star/Season 00/Fist of
         the North Star - S00E004 - When a Man Carries Sorrow
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Fist of the North Star/Season 00/Fist
-        of the North Star - S00E004 - When a Man Carries Sorrow DVD..mp4
+        of the North Star - S00E004 - When a Man Carries Sorrow DVD.mp4
       Relative Show Path: anime/staging/Fist of the North Star/Season 00
       Season: '00'
       Show Genres:
@@ -10399,7 +10399,7 @@ New Fist of the North Star- When a Man Carries Sorrow (2004):
       - Animation
       - Science-Fiction
       Show Root Path: anime/staging/Fist of the North Star
-      episodeFileId: ''
+      episodeFileId: 76202
       imdbId: tt0091211
       seriesId: 42
       tvdbId: 79156
@@ -10432,7 +10432,7 @@ No Game No Life- Zero (2017):
         - S00E007 - No Game No Life Zero
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/No Game No Life/Season 00/No Game No
-        Life - S00E007 - No Game No Life Zero Bluray-1080p..mkv
+        Life - S00E007 - No Game No Life Zero Bluray-1080p.mkv
       Relative Show Path: anime/staging/No Game No Life/Season 00
       Season: '00'
       Show Genres:
@@ -10489,7 +10489,7 @@ One Piece - Adventure of Nebulandia (2015):
         - Adventure in the Ocean's Navel
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E003
-        - Adventure in the Ocean's Navel Bluray-1080p..mkv
+        - Adventure in the Ocean's Navel Bluray-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -10539,7 +10539,7 @@ One Piece - Baron Omatsuri and the Secret Island (2005):
         - One Piece Defeat the Pirate Ganzack! (OVA 1)
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E001
-        - One Piece Defeat the Pirate Ganzack! (OVA 1) Bluray-1080p..mkv
+        - One Piece Defeat the Pirate Ganzack! (OVA 1) Bluray-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -10588,7 +10588,7 @@ One Piece - Chopper's Kingdom on the Island of Strange Animals (2002):
         - Chopper's Kingdom on the Island of Strange Animals
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E006
-        - Chopper's Kingdom on the Island of Strange Animals Bluray-1080p..mkv
+        - Chopper's Kingdom on the Island of Strange Animals Bluray-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -10636,7 +10636,7 @@ One Piece - Clockwork Island Adventure (2001):
         - Clockwork Island Adventure
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E004
-        - Clockwork Island Adventure Bluray-1080p..mkv
+        - Clockwork Island Adventure Bluray-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -10684,7 +10684,7 @@ One Piece - Curse of the Sacred Sword (2004):
         - One Piece Defeat the Pirate Ganzack! (OVA 1)
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E001
-        - One Piece Defeat the Pirate Ganzack! (OVA 1) Bluray-1080p..mkv
+        - One Piece Defeat the Pirate Ganzack! (OVA 1) Bluray-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -10732,7 +10732,7 @@ One Piece - Dead End Adventure (2003):
         - Dead End Adventure
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E008
-        - Dead End Adventure Bluray-1080p..mkv
+        - Dead End Adventure Bluray-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -10785,7 +10785,7 @@ One Piece - Episode of Chopper Plus - Bloom in the Winter, Miracle Cherry Blosso
         - One Piece Defeat the Pirate Ganzack! (OVA 1)
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E001
-        - One Piece Defeat the Pirate Ganzack! (OVA 1) Bluray-1080p..mkv
+        - One Piece Defeat the Pirate Ganzack! (OVA 1) Bluray-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -10837,7 +10837,7 @@ One Piece - Episode of Luffy - Hand Island Adventure (2012):
         - One Piece The Movie
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E002
-        - One Piece The Movie Bluray-720p..mkv
+        - One Piece The Movie Bluray-720p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -10882,7 +10882,7 @@ One Piece - Episode of Skypiea (2018):
         - Adventure in the Ocean's Navel
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E003
-        - Adventure in the Ocean's Navel Bluray-1080p..mkv
+        - Adventure in the Ocean's Navel Bluray-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -10932,7 +10932,7 @@ One Piece - Giant Mecha Soldier of Karakuri Castle (2006):
         - One Piece Defeat the Pirate Ganzack! (OVA 1)
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E001
-        - One Piece Defeat the Pirate Ganzack! (OVA 1) WEBDL-1080p..mkv
+        - One Piece Defeat the Pirate Ganzack! (OVA 1) WEBDL-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -10976,7 +10976,7 @@ One Piece - Heart of Gold (2016):
         - Adventure in the Ocean's Navel
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E003
-        - Adventure in the Ocean's Navel Bluray-1080p..mkv
+        - Adventure in the Ocean's Navel Bluray-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -11021,7 +11021,7 @@ One Piece - Jango's Dance Carnival (2001):
         - Jango's Dance Carnival
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E005
-        - Jango's Dance Carnival DVD..avi
+        - Jango's Dance Carnival DVD.avi
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -11069,7 +11069,7 @@ One Piece - Romance Dawn Story (2008):
         - One Piece Defeat the Pirate Ganzack! (OVA 1)
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E001
-        - One Piece Defeat the Pirate Ganzack! (OVA 1) Bluray-720p..mkv
+        - One Piece Defeat the Pirate Ganzack! (OVA 1) Bluray-720p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -11114,7 +11114,7 @@ One Piece - Strong World Episode 0 (2010):
         - One Piece The Movie
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E002
-        - One Piece The Movie DVD..mkv
+        - One Piece The Movie DVD.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -11166,7 +11166,7 @@ One Piece - The Desert Princess and the Pirates - Adventure in Alabasta (2007):
         - One Piece Defeat the Pirate Ganzack! (OVA 1)
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E001
-        - One Piece Defeat the Pirate Ganzack! (OVA 1) Bluray-1080p..mkv
+        - One Piece Defeat the Pirate Ganzack! (OVA 1) Bluray-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -11210,7 +11210,7 @@ One Piece - The Movie (2000):
         - One Piece The Movie
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E002
-        - One Piece The Movie Bluray-1080p..mkv
+        - One Piece The Movie Bluray-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -11256,7 +11256,7 @@ One Piece 3D - Straw Hat Chase (2011):
         - One Piece The Movie
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E002
-        - One Piece The Movie Bluray-1080p..mkv
+        - One Piece The Movie Bluray-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -11305,7 +11305,7 @@ One Piece 3D2Y - Overcome Ace's Death! Luffy's Vow to his Friends (2014):
         - Adventure in the Ocean's Navel
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E003
-        - Adventure in the Ocean's Navel Bluray-720p..mkv
+        - Adventure in the Ocean's Navel Bluray-720p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -11354,7 +11354,7 @@ One Piece Episode of East Blue Luffy and His 4 Crewmate's Big Adventure (2017):
         - Adventure in the Ocean's Navel
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E003
-        - Adventure in the Ocean's Navel Bluray-1080p..mkv
+        - Adventure in the Ocean's Navel Bluray-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -11402,7 +11402,7 @@ One Piece Episode of Merry - The Tale of One More Friend (2013):
         - One Piece The Movie
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E002
-        - One Piece The Movie Bluray-720p..mkv
+        - One Piece The Movie Bluray-720p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -11451,7 +11451,7 @@ One Piece Episode of Nami - Tears of a Navigator and the Bonds of Friends (2012)
         - One Piece The Movie
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E002
-        - One Piece The Movie Bluray-720p..mkv
+        - One Piece The Movie Bluray-720p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -11497,7 +11497,7 @@ One Piece Film - GOLD (2016):
         - Adventure in the Ocean's Navel
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E003
-        - Adventure in the Ocean's Navel Bluray-1080p..mkv
+        - Adventure in the Ocean's Navel Bluray-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -11544,7 +11544,7 @@ One Piece Film - Strong World (2009):
         - One Piece Defeat the Pirate Ganzack! (OVA 1)
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E001
-        - One Piece Defeat the Pirate Ganzack! (OVA 1) Bluray-1080p..mkv
+        - One Piece Defeat the Pirate Ganzack! (OVA 1) Bluray-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -11589,7 +11589,7 @@ One Piece Film - Z (2012):
         - One Piece The Movie
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E002
-        - One Piece The Movie Bluray-1080p..mkv
+        - One Piece The Movie Bluray-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -11633,7 +11633,7 @@ One Punch Man- Road to Hero (2015):
         S00E001 - Road to Hero
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/One-Punch Man/Season 00/One-Punch Man
-        - S00E001 - Road to Hero DVD..mkv
+        - S00E001 - Road to Hero DVD.mkv
       Relative Show Path: anime/staging/One-Punch Man/Season 00
       Season: '00'
       Show Genres:
@@ -11678,7 +11678,7 @@ Overlord Movie 1- The Undead King (2017):
         Pure Pure Pleiades - Play 1 Overlord and Beginning
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Overlord/Season 00/Overlord - S00E001
-        - Pure Pure Pleiades - Play 1 Overlord and Beginning Remux-1080p..mkv
+        - Pure Pure Pleiades - Play 1 Overlord and Beginning Remux-1080p.mkv
       Relative Show Path: anime/staging/Overlord/Season 00
       Season: '00'
       Show Genres:
@@ -11723,7 +11723,7 @@ Overlord Movie 2- The Dark Warrior (2017):
         Pure Pure Pleiades - Play 1 Overlord and Beginning
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Overlord/Season 00/Overlord - S00E001
-        - Pure Pure Pleiades - Play 1 Overlord and Beginning Remux-1080p..mkv
+        - Pure Pure Pleiades - Play 1 Overlord and Beginning Remux-1080p.mkv
       Relative Show Path: anime/staging/Overlord/Season 00
       Season: '00'
       Show Genres:
@@ -11763,7 +11763,7 @@ Parasyte- Part 1 (2014):
         Parasyte Part 1
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Parasyte/Season 00/Parasyte - S00E001
-        - Parasyte Part 1 Bluray-1080p..mkv
+        - Parasyte Part 1 Bluray-1080p.mkv
       Relative Show Path: anime/staging/Parasyte/Season 00
       Season: '00'
       Show Genres:
@@ -11804,7 +11804,7 @@ Parasyte- Part 2 (2015):
         Parasyte Part 2
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Parasyte/Season 00/Parasyte - S00E002
-        - Parasyte Part 2 Bluray-1080p..mkv
+        - Parasyte Part 2 Bluray-1080p.mkv
       Relative Show Path: anime/staging/Parasyte/Season 00
       Season: '00'
       Show Genres:
@@ -11850,7 +11850,7 @@ Parks and Recreation- Cast and Creators Live at PALEYFEST 2014 (2014):
         - S00E01 - April & Andy's Road Trip (1) Spider
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/sitcom/Parks and Recreation/Season 00/Parks and
-        Recreation - S00E01 - April & Andy's Road Trip (1) Spider HDTV-1080p..mp4
+        Recreation - S00E01 - April & Andy's Road Trip (1) Spider HDTV-1080p.mp4
       Relative Show Path: tv/sitcom/Parks and Recreation/Season 00
       Season: '00'
       Show Genres:
@@ -12036,7 +12036,7 @@ Persona 4 the Animation- No One is Alone (0):
         4- The Animation - S00E002 - True End No One is Alone
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/Persona 4- The Animation/Season 00/Persona
-        4- The Animation - S00E002 - True End No One is Alone Bluray-1080p..mkv
+        4- The Animation - S00E002 - True End No One is Alone Bluray-1080p.mkv
       Relative Show Path: tv/staging/Persona 4- The Animation/Season 00
       Season: '00'
       Show Genres:
@@ -12150,7 +12150,7 @@ Prelude to Axanar (2014):
         - S01E01 - Prelude to Axanar
       Parsed Season Folder: Season 01
       Relative Show File Path: tv/staging/Star Trek- Axanar/Season 01/Star Trek- Axanar
-        - S01E01 - Prelude to Axanar WEBDL-1080p..mp4
+        - S01E01 - Prelude to Axanar WEBDL-1080p.mp4
       Relative Show Path: tv/staging/Star Trek- Axanar/Season 01
       Season: '01'
       Show Genres:
@@ -12188,7 +12188,7 @@ Prison School- Mad Wax (2016):
         S00E001 - Mad Wax
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Prison School/Season 00/Prison School
-        - S00E001 - Mad Wax DVD..mkv
+        - S00E001 - Mad Wax DVD.mkv
       Relative Show Path: anime/staging/Prison School/Season 00
       Season: '00'
       Show Genres:
@@ -12226,7 +12226,7 @@ Psych- The Movie (2017):
         Movie
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/Psych/Season 00/Psych - S00E05 - Psych The
-        Movie WEBDL-1080p..mkv
+        Movie WEBDL-1080p.mkv
       Relative Show Path: tv/staging/Psych/Season 00
       Season: '00'
       Show Genres:
@@ -12265,7 +12265,7 @@ Psych- The Musical (2013):
         of Little Shawn and Gus
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/Psych/Season 00/Psych - S00E02 - The Big
-        Adventures of Little Shawn and Gus WEBDL-1080p..mkv
+        Adventures of Little Shawn and Gus WEBDL-1080p.mkv
       Relative Show Path: tv/staging/Psych/Season 00
       Season: '00'
       Show Genres:
@@ -12305,7 +12305,7 @@ Psycho-Pass- The Movie (2015):
         - Criminal Coefficient / Those Capable (Extended)
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Psycho-Pass/Season 00/Psycho-Pass - S00E001
-        - Criminal Coefficient / Those Capable (Extended) Bluray-1080p..mkv
+        - Criminal Coefficient / Those Capable (Extended) Bluray-1080p.mkv
       Relative Show Path: anime/staging/Psycho-Pass/Season 00
       Season: '00'
       Show Genres:
@@ -12354,7 +12354,7 @@ Puella Magi Madoka Magica the Movie Part I- Beginnings (2012):
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Puella Magi Madoka Magica/Season 00/Puella
         Magi Madoka Magica - S00E001 - Madoka Magica the Movie Part I The Beginning
-        Story Remux-1080p..mkv
+        Story Remux-1080p.mkv
       Relative Show Path: anime/staging/Puella Magi Madoka Magica/Season 00
       Season: '00'
       Show Genres:
@@ -12404,7 +12404,7 @@ Puella Magi Madoka Magica the Movie Part II- Eternal (2012):
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Puella Magi Madoka Magica/Season 00/Puella
         Magi Madoka Magica - S00E002 - Madoka Magica the Movie Part II The Eternal
-        Story Remux-1080p..mkv
+        Story Remux-1080p.mkv
       Relative Show Path: anime/staging/Puella Magi Madoka Magica/Season 00
       Season: '00'
       Show Genres:
@@ -12455,7 +12455,7 @@ Puella Magi Madoka Magica the Movie Part III- Rebellion (2013):
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Puella Magi Madoka Magica/Season 00/Puella
         Magi Madoka Magica - S00E003 - Madoka Magica the Movie Part III The Rebellion
-        Story Remux-1080p..mkv
+        Story Remux-1080p.mkv
       Relative Show Path: anime/staging/Puella Magi Madoka Magica/Season 00
       Season: '00'
       Show Genres:
@@ -12596,7 +12596,7 @@ Robot Chicken DC Comics Special II- Villains in Paradise (2014):
         - Sweet J Presents
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/animated/Robot Chicken/Season 00/Robot Chicken -
-        S00E01 - Sweet J Presents WEBDL-1080p..mkv
+        S00E01 - Sweet J Presents WEBDL-1080p.mkv
       Relative Show Path: tv/animated/Robot Chicken/Season 00
       Season: '00'
       Show Genres:
@@ -12708,7 +12708,7 @@ Robot Chicken- DC Comics Special (2012):
         - Sweet J Presents
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/animated/Robot Chicken/Season 00/Robot Chicken -
-        S00E01 - Sweet J Presents WEBDL-1080p..mkv
+        S00E01 - Sweet J Presents WEBDL-1080p.mkv
       Relative Show Path: tv/animated/Robot Chicken/Season 00
       Season: '00'
       Show Genres:
@@ -12746,7 +12746,7 @@ Robot Chicken- Star Wars (2007):
         - Robot Chicken Star Wars Special
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/animated/Robot Chicken/Season 00/Robot Chicken -
-        S00E04 - Robot Chicken Star Wars Special WEBDL-1080p..mkv
+        S00E04 - Robot Chicken Star Wars Special WEBDL-1080p.mkv
       Relative Show Path: tv/animated/Robot Chicken/Season 00
       Season: '00'
       Show Genres:
@@ -12958,7 +12958,7 @@ Rurouni Kenshin- New Kyoto Arc- Cage of Flames (2011):
         S00E008 - New Kyoto Arc OAV Act 1 - Cage of Flames
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/Rurouni Kenshin/Season 00/Rurouni Kenshin
-        - S00E008 - New Kyoto Arc OAV Act 1 - Cage of Flames Bluray-1080p..mp4
+        - S00E008 - New Kyoto Arc OAV Act 1 - Cage of Flames Bluray-1080p.mp4
       Relative Show Path: tv/staging/Rurouni Kenshin/Season 00
       Season: '00'
       Show Genres:
@@ -13003,7 +13003,7 @@ Rurouni Kenshin- New Kyoto Arc- The Chirps of Light (2012):
         S00E009 - New Kyoto Arc OAV Act 2 - The Chirps of Light
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/Rurouni Kenshin/Season 00/Rurouni Kenshin
-        - S00E009 - New Kyoto Arc OAV Act 2 - The Chirps of Light Bluray-1080p..mp4
+        - S00E009 - New Kyoto Arc OAV Act 2 - The Chirps of Light Bluray-1080p.mp4
       Relative Show Path: tv/staging/Rurouni Kenshin/Season 00
       Season: '00'
       Show Genres:
@@ -13043,7 +13043,7 @@ Rurouni Kenshin- Reflection Director's Cut (2002):
         S00E005 - Reflections OAV Act 1 - Beginnings
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/Rurouni Kenshin/Season 00/Rurouni Kenshin
-        - S00E005 - Reflections OAV Act 1 - Beginnings Remux-1080p..mkv
+        - S00E005 - Reflections OAV Act 1 - Beginnings Remux-1080p.mkv
       Relative Show Path: tv/staging/Rurouni Kenshin/Season 00
       Season: '00'
       Show Genres:
@@ -13135,7 +13135,7 @@ Sacred Seven- Shirogane no Tsubasa (2012):
         - Shirogane no Tsubasa
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/Sacred Seven/Season 00/Sacred Seven - S00E001
-        - Shirogane no Tsubasa Bluray-720p..mkv
+        - Shirogane no Tsubasa Bluray-720p.mkv
       Relative Show Path: tv/staging/Sacred Seven/Season 00
       Season: '00'
       Show Genres:
@@ -13174,7 +13174,7 @@ Saga of Tanya the Evil Movie (2019):
       Parsed Season Folder: Season 00
       Relative Show File Path: "tv/staging/Saga of Tanya the Evil/Season 00/Saga of\
         \ Tanya the Evil - S00E01 - Saga of Tanya the Evil \u300CMini\u300D - Episode\
-        \ 00 Remux-1080p..mkv"
+        \ 00 Remux-1080p.mkv"
       Relative Show Path: tv/staging/Saga of Tanya the Evil/Season 00
       Season: '00'
       Show Genres:
@@ -13470,7 +13470,7 @@ Saint Seiya Heaven Chapter- Overture (2004):
         - Heaven Chapter - Overture
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E005
-        - Heaven Chapter - Overture Remux-1080p..mkv
+        - Heaven Chapter - Overture Remux-1080p.mkv
       Relative Show Path: anime/staging/Saint Seiya/Season 00
       Season: '00'
       Show Genres:
@@ -13510,7 +13510,7 @@ Saint Seiya- Evil Goddess Eris (1987):
         - Evil Goddess Eris
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E001
-        - Evil Goddess Eris Remux-1080p..mkv
+        - Evil Goddess Eris Remux-1080p.mkv
       Relative Show Path: anime/staging/Saint Seiya/Season 00
       Season: '00'
       Show Genres:
@@ -13565,7 +13565,7 @@ Saint Seiya- Legend of Crimson Youth (1988):
         - Legend of Crimson Youth
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E003
-        - Legend of Crimson Youth Remux-1080p..mkv
+        - Legend of Crimson Youth Remux-1080p.mkv
       Relative Show Path: anime/staging/Saint Seiya/Season 00
       Season: '00'
       Show Genres:
@@ -13603,7 +13603,7 @@ Saint Seiya- Legend of Sanctuary (2014):
         - Legend of Sanctuary
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E008
-        - Legend of Sanctuary Bluray-1080p..mkv
+        - Legend of Sanctuary Bluray-1080p.mkv
       Relative Show Path: anime/staging/Saint Seiya/Season 00
       Season: '00'
       Show Genres:
@@ -13680,7 +13680,7 @@ Saint Seiya- The Heated Battle of the Gods (1988):
         - The Heated Battle of the Gods
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E002
-        - The Heated Battle of the Gods Remux-1080p..mkv
+        - The Heated Battle of the Gods Remux-1080p.mkv
       Relative Show Path: anime/staging/Saint Seiya/Season 00
       Season: '00'
       Show Genres:
@@ -13722,7 +13722,7 @@ Saint Seiya- Warriors of the Final Holy Battle (1989):
         - Warriors of the Final Holy Battle
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Saint Seiya/Season 00/Saint Seiya - S00E004
-        - Warriors of the Final Holy Battle Remux-1080p..mkv
+        - Warriors of the Final Holy Battle Remux-1080p.mkv
       Relative Show Path: anime/staging/Saint Seiya/Season 00
       Season: '00'
       Show Genres:
@@ -13932,7 +13932,7 @@ Saturday Night Live- Halloween (2003):
         Live - S00E21 - Halloween Special
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/Saturday Night Live/Season 00/Saturday Night
-        Live - S00E21 - Halloween Special WEBDL-1080p..mkv
+        Live - S00E21 - Halloween Special WEBDL-1080p.mkv
       Relative Show Path: tv/staging/Saturday Night Live/Season 00
       Season: '00'
       Show Genres:
@@ -14427,7 +14427,7 @@ Saturday Night Live- The Best of Will Ferrell (2002):
         Live - S00E210 - Best of Will Ferrell
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/Saturday Night Live/Season 00/Saturday Night
-        Live - S00E210 - Best of Will Ferrell DVD..mkv
+        Live - S00E210 - Best of Will Ferrell DVD.mkv
       Relative Show Path: tv/staging/Saturday Night Live/Season 00
       Season: '00'
       Show Genres:
@@ -14496,14 +14496,14 @@ Scooby-Doo! & Batman- The Brave and the Bold (2018):
       Anime: false
       Episode: 1
       Episode ID: '41645'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '01'
       Parsed Episode Title: tv/superhero/Batman- The Brave and the Bold/Season 00/Batman-
         The Brave and the Bold - S00E01 - Scooby-Doo & Batman The Brave and the Bold
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/superhero/Batman- The Brave and the Bold/Season
         00/Batman- The Brave and the Bold - S00E01 - Scooby-Doo & Batman The Brave
-        and the Bold WEBDL-1080p..mkv
+        and the Bold WEBDL-1080p.mkv
       Relative Show Path: tv/superhero/Batman- The Brave and the Bold/Season 00
       Season: '00'
       Show Genres:
@@ -14512,7 +14512,7 @@ Scooby-Doo! & Batman- The Brave and the Bold (2018):
       - Animation
       - Children
       Show Root Path: tv/superhero/Batman- The Brave and the Bold
-      episodeFileId: ''
+      episodeFileId: 76140
       imdbId: tt1213218
       seriesId: 464
       tvdbId: 82824
@@ -14587,19 +14587,19 @@ Serenity (2005):
       Anime: false
       Episode: 1
       Episode ID: '32116'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '01'
       Parsed Episode Title: tv/scifi/Firefly/Season 00/Firefly - S00E01 - Serenity
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/scifi/Firefly/Season 00/Firefly - S00E01 - Serenity
-        Bluray-2160p..mkv
+        Bluray-2160p.mkv
       Relative Show Path: tv/scifi/Firefly/Season 00
       Season: '00'
       Show Genres:
       - Drama
       - Science-Fiction
       Show Root Path: tv/scifi/Firefly
-      episodeFileId: ''
+      episodeFileId: 76198
       imdbId: tt0303461
       seriesId: 368
       tvdbId: 78874
@@ -14648,7 +14648,7 @@ Sherlock- The Abominable Bride (2016):
         Bride
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/crime/Sherlock/Season 00/Sherlock - S00E09 - The
-        Abominable Bride Bluray-1080p..mkv
+        Abominable Bride Bluray-1080p.mkv
       Relative Show Path: tv/crime/Sherlock/Season 00
       Season: '00'
       Show Genres:
@@ -14688,7 +14688,7 @@ South Park- Bigger, Longer & Uncut (1999):
         South Park Bigger Longer & Uncut
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/animated/South Park/Season 00/South Park - S00E06
-        - South Park Bigger Longer & Uncut Bluray-1080p..mkv
+        - South Park Bigger Longer & Uncut Bluray-1080p.mkv
       Relative Show Path: tv/animated/South Park/Season 00
       Season: '00'
       Show Genres:
@@ -14778,7 +14778,7 @@ Star Trek 25th Anniversary Special (1991):
         Trek's 25th Anniversary Special
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/scifi/Star Trek/Season 00/Star Trek - S00E02 - Star
-        Trek's 25th Anniversary Special DVD..avi
+        Trek's 25th Anniversary Special DVD.avi
       Relative Show Path: tv/scifi/Star Trek/Season 00
       Season: '00'
       Show Genres:
@@ -14822,7 +14822,7 @@ Star Trek Secret Voyage- Whose Birth These Triumphs Are (2012):
         Secret Voyage - S01E01 - Whose Birth These Triumphs Are
       Parsed Season Folder: Season 01
       Relative Show File Path: tv/staging/Star Trek- Secret Voyage/Season 01/Star
-        Trek- Secret Voyage - S01E01 - Whose Birth These Triumphs Are DVD..mp4
+        Trek- Secret Voyage - S01E01 - Whose Birth These Triumphs Are DVD.mp4
       Relative Show Path: tv/staging/Star Trek- Secret Voyage/Season 01
       Season: '01'
       Show Genres:
@@ -14897,7 +14897,7 @@ Star Trek- A Captain's Log (1994):
         Trek A Captain's Log
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/scifi/Star Trek/Season 00/Star Trek - S00E03 - Star
-        Trek A Captain's Log DVD..avi
+        Trek A Captain's Log DVD.avi
       Relative Show Path: tv/scifi/Star Trek/Season 00
       Season: '00'
       Show Genres:
@@ -14972,7 +14972,7 @@ Star Trek- Of Gods And Men (2007):
         Of Gods and Men - S01E01 - Act 1
       Parsed Season Folder: Season 01
       Relative Show File Path: tv/staging/Star Trek- Of Gods and Men/Season 01/Star
-        Trek- Of Gods and Men - S01E01 - Act 1 DVD..mkv
+        Trek- Of Gods and Men - S01E01 - Act 1 DVD.mkv
       Relative Show Path: tv/staging/Star Trek- Of Gods and Men/Season 01
       Season: '01'
       Show Genres:
@@ -15051,7 +15051,7 @@ Stargate (1994):
         - Stargate The Movie
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/scifi/Stargate SG-1/Season 00/Stargate SG-1 - S00E01
-        - Stargate The Movie Bluray-1080p..mp4
+        - Stargate The Movie Bluray-1080p.mp4
       Relative Show Path: tv/scifi/Stargate SG-1/Season 00
       Season: '00'
       Show Genres:
@@ -15124,7 +15124,7 @@ Stargate SG-1- True Science (2006):
         - Stargate SG-1 True Science
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/scifi/Stargate SG-1/Season 00/Stargate SG-1 - S00E04
-        - Stargate SG-1 True Science SDTV..avi
+        - Stargate SG-1 True Science SDTV.avi
       Relative Show Path: tv/scifi/Stargate SG-1/Season 00
       Season: '00'
       Show Genres:
@@ -15179,7 +15179,7 @@ Stargate- Continuum (2008):
         - Continuum
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/scifi/Stargate SG-1/Season 00/Stargate SG-1 - S00E08
-        - Continuum Bluray-1080p..mkv
+        - Continuum Bluray-1080p.mkv
       Relative Show Path: tv/scifi/Stargate SG-1/Season 00
       Season: '00'
       Show Genres:
@@ -15219,7 +15219,7 @@ Stargate- The Ark of Truth (2008):
         - The Ark of Truth
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/scifi/Stargate SG-1/Season 00/Stargate SG-1 - S00E07
-        - The Ark of Truth Bluray-1080p..mkv
+        - The Ark of Truth Bluray-1080p.mkv
       Relative Show Path: tv/scifi/Stargate SG-1/Season 00
       Season: '00'
       Show Genres:
@@ -15298,7 +15298,7 @@ Steins;Gate- Egoistic Poriomania (2012):
         - Egoistic Poriomania
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Steins;Gate/Season 00/Steins;Gate - S00E001
-        - Egoistic Poriomania WEBDL-1080p..mp4
+        - Egoistic Poriomania WEBDL-1080p.mp4
       Relative Show Path: anime/staging/Steins;Gate/Season 00
       Season: '00'
       Show Genres:
@@ -15343,7 +15343,7 @@ Steins;Gate- Egoistic Poriomania (2012):
         \ - Steins;Gate the Movie Loading Area of D\xE9j\xE0 vu"
       Parsed Season Folder: Season 00
       Relative Show File Path: "anime/staging/Steins;Gate/Season 00/Steins;Gate -\
-        \ S00E002 - Steins;Gate the Movie Loading Area of D\xE9j\xE0 vu Remux-1080p..mkv"
+        \ S00E002 - Steins;Gate the Movie Loading Area of D\xE9j\xE0 vu Remux-1080p.mkv"
       Relative Show Path: anime/staging/Steins;Gate/Season 00
       Season: '00'
       Show Genres:
@@ -15399,7 +15399,7 @@ Sword Art Online- Extra Edition (2013):
         - S00E001 - Sword Art Offline 1
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Sword Art Online/Season 00/Sword Art
-        Online - S00E001 - Sword Art Offline 1 Remux-1080p..mkv
+        Online - S00E001 - Sword Art Offline 1 Remux-1080p.mkv
       Relative Show Path: anime/shounen/Sword Art Online/Season 00
       Season: '00'
       Show Genres:
@@ -15449,7 +15449,7 @@ Sword Art Online- The Movie - Ordinal Scale (2017):
         - S00E002 - Sword Art Offline 2
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Sword Art Online/Season 00/Sword Art
-        Online - S00E002 - Sword Art Offline 2 Bluray-1080p..mkv
+        Online - S00E002 - Sword Art Offline 2 Bluray-1080p.mkv
       Relative Show Path: anime/shounen/Sword Art Online/Season 00
       Season: '00'
       Show Genres:
@@ -15558,7 +15558,7 @@ Teen Titans- Trouble in Tokyo (2006):
         - Trouble in Tokyo
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/superhero/Teen Titans/Season 00/Teen Titans - S00E02
-        - Trouble in Tokyo WEBDL-1080p..mkv
+        - Trouble in Tokyo WEBDL-1080p.mkv
       Relative Show Path: tv/superhero/Teen Titans/Season 00
       Season: '00'
       Show Genres:
@@ -15606,13 +15606,13 @@ The A-Team (2010):
       Anime: false
       Episode: 2
       Episode ID: '10173'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '02'
       Parsed Episode Title: 'tv/staging/The A-Team/Season 00/The A-Team - S00E02 -
         The A-Team '
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/The A-Team/Season 00/The A-Team - S00E02
-        - The A-Team  Bluray-1080p..mkv
+        - The A-Team  Bluray-1080p.mkv
       Relative Show Path: tv/staging/The A-Team/Season 00
       Season: '00'
       Show Genres:
@@ -15620,7 +15620,7 @@ The A-Team (2010):
       - Adventure
       - Crime
       Show Root Path: tv/staging/The A-Team
-      episodeFileId: ''
+      episodeFileId: 76120
       imdbId: tt0084967
       seriesId: 221
       tvdbId: 77904
@@ -15663,13 +15663,13 @@ The Batman vs. Dracula (2005):
       Anime: false
       Episode: 2
       Episode ID: '43461'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '02'
       Parsed Episode Title: tv/superhero/The Batman/Season 00/The Batman - S00E02
         - The Batman vs. Dracula
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/superhero/The Batman/Season 00/The Batman - S00E02
-        - The Batman vs. Dracula WEBDL-1080p..mkv
+        - The Batman vs. Dracula WEBDL-1080p.mkv
       Relative Show Path: tv/superhero/The Batman/Season 00
       Season: '00'
       Show Genres:
@@ -15679,7 +15679,7 @@ The Batman vs. Dracula (2005):
       - Children
       - Fantasy
       Show Root Path: tv/superhero/The Batman
-      episodeFileId: ''
+      episodeFileId: 76133
       imdbId: tt0398417
       seriesId: 497
       tvdbId: 73180
@@ -15710,7 +15710,7 @@ The Cage (1965):
         Cage (Original Pilot)
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/scifi/Star Trek/Season 00/Star Trek - S00E01 - The
-        Cage (Original Pilot) Bluray-1080p..mkv
+        Cage (Original Pilot) Bluray-1080p.mkv
       Relative Show Path: tv/scifi/Star Trek/Season 00
       Season: '00'
       Show Genres:
@@ -15782,13 +15782,13 @@ The Day Naruto Became Hokage (2016):
       Anime: true
       Episode: 1
       Episode ID: '106'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '001'
       Parsed Episode Title: anime/shounen/Boruto- Naruto Next Generations/Season 00/Boruto-
         Naruto Next Generations - S00E001 - Boruto Naruto the Movie
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Boruto- Naruto Next Generations/Season
-        00/Boruto- Naruto Next Generations - S00E001 - Boruto Naruto the Movie Bluray-1080p..mkv
+        00/Boruto- Naruto Next Generations - S00E001 - Boruto Naruto the Movie Bluray-1080p.mkv
       Relative Show Path: anime/shounen/Boruto- Naruto Next Generations/Season 00
       Season: '00'
       Show Genres:
@@ -15797,7 +15797,7 @@ The Day Naruto Became Hokage (2016):
       - Animation
       - Anime
       Show Root Path: anime/shounen/Boruto- Naruto Next Generations
-      episodeFileId: ''
+      episodeFileId: 76156
       imdbId: tt6342474
       seriesId: 8
       tvdbId: 321285
@@ -15823,13 +15823,13 @@ The Dukes of Hazzard- Hazzard in Hollywood (2000):
       Anime: false
       Episode: 2
       Episode ID: '52590'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '02'
       Parsed Episode Title: tv/staging/The Dukes of Hazzard/Season 00/The Dukes of
         Hazzard - S00E02 - Hazzard in Hollywood
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/The Dukes of Hazzard/Season 00/The Dukes
-        of Hazzard - S00E02 - Hazzard in Hollywood DVD..avi
+        of Hazzard - S00E02 - Hazzard in Hollywood DVD.avi
       Relative Show Path: tv/staging/The Dukes of Hazzard/Season 00
       Season: '00'
       Show Genres:
@@ -15838,7 +15838,7 @@ The Dukes of Hazzard- Hazzard in Hollywood (2000):
       - Comedy
       - Drama
       Show Root Path: tv/staging/The Dukes of Hazzard
-      episodeFileId: ''
+      episodeFileId: 76187
       imdbId: tt0078607
       seriesId: 222
       tvdbId: 77748
@@ -15864,13 +15864,13 @@ The Dukes of Hazzard- Reunion! (1997):
       Anime: false
       Episode: 1
       Episode ID: '52589'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '01'
       Parsed Episode Title: tv/staging/The Dukes of Hazzard/Season 00/The Dukes of
         Hazzard - S00E01 - Reunion!
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/The Dukes of Hazzard/Season 00/The Dukes
-        of Hazzard - S00E01 - Reunion! DVD..avi
+        of Hazzard - S00E01 - Reunion! DVD.avi
       Relative Show Path: tv/staging/The Dukes of Hazzard/Season 00
       Season: '00'
       Show Genres:
@@ -15879,7 +15879,7 @@ The Dukes of Hazzard- Reunion! (1997):
       - Comedy
       - Drama
       Show Root Path: tv/staging/The Dukes of Hazzard
-      episodeFileId: ''
+      episodeFileId: 76186
       imdbId: tt0078607
       seriesId: 222
       tvdbId: 77748
@@ -15905,13 +15905,13 @@ The Dukes of Hazzard- The Beginning (2007):
       Anime: false
       Episode: 3
       Episode ID: '52591'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '03'
       Parsed Episode Title: tv/staging/The Dukes of Hazzard/Season 00/The Dukes of
         Hazzard - S00E03 - The Dukes of Hazzard The Beginning
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/The Dukes of Hazzard/Season 00/The Dukes
-        of Hazzard - S00E03 - The Dukes of Hazzard The Beginning DVD..avi
+        of Hazzard - S00E03 - The Dukes of Hazzard The Beginning DVD.avi
       Relative Show Path: tv/staging/The Dukes of Hazzard/Season 00
       Season: '00'
       Show Genres:
@@ -15920,7 +15920,7 @@ The Dukes of Hazzard- The Beginning (2007):
       - Comedy
       - Drama
       Show Root Path: tv/staging/The Dukes of Hazzard
-      episodeFileId: ''
+      episodeFileId: 76188
       imdbId: tt0078607
       seriesId: 222
       tvdbId: 77748
@@ -15945,13 +15945,13 @@ The Evil Dead (1981):
       Anime: false
       Episode: 1
       Episode ID: '27914'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '01'
       Parsed Episode Title: tv/fantasy/Ash vs Evil Dead/Season 00/Ash vs Evil Dead
         - S00E01 - Within the Woods
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/fantasy/Ash vs Evil Dead/Season 00/Ash vs Evil Dead
-        - S00E01 - Within the Woods Bluray-1080p..mkv
+        - S00E01 - Within the Woods Bluray-1080p.mkv
       Relative Show Path: tv/fantasy/Ash vs Evil Dead/Season 00
       Season: '00'
       Show Genres:
@@ -15959,7 +15959,7 @@ The Evil Dead (1981):
       - Horror
       - Thriller
       Show Root Path: tv/fantasy/Ash vs Evil Dead
-      episodeFileId: ''
+      episodeFileId: 76114
       imdbId: tt4189022
       seriesId: 332
       tvdbId: 296295
@@ -15984,13 +15984,13 @@ The Future Diary- Redial (2013):
       Anime: true
       Episode: 2
       Episode ID: '6743'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/The Future Diary/Season 00/The Future Diary
         - S00E002 - Mirai Nikki Redial
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/The Future Diary/Season 00/The Future
-        Diary - S00E002 - Mirai Nikki Redial Bluray-720p..mp4
+        Diary - S00E002 - Mirai Nikki Redial Bluray-720p.mp4
       Relative Show Path: anime/staging/The Future Diary/Season 00
       Season: '00'
       Show Genres:
@@ -15998,7 +15998,7 @@ The Future Diary- Redial (2013):
       - Anime
       - Drama
       Show Root Path: anime/staging/The Future Diary
-      episodeFileId: ''
+      episodeFileId: 76216
       imdbId: tt2069441
       seriesId: 188
       tvdbId: 249827
@@ -16028,13 +16028,13 @@ The Garden of Sinners - Remix- Gate of Seventh Heaven (2009):
       Anime: true
       Episode: 2
       Episode ID: '45633'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/The Garden of Sinners/Season 00/The Garden
         of Sinners - S00E002 - Remix Gate of Seventh Heaven
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/The Garden of Sinners/Season 00/The Garden
-        of Sinners - S00E002 - Remix Gate of Seventh Heaven Bluray-1080p..mkv
+        of Sinners - S00E002 - Remix Gate of Seventh Heaven Bluray-1080p.mkv
       Relative Show Path: anime/staging/The Garden of Sinners/Season 00
       Season: '00'
       Show Genres:
@@ -16043,7 +16043,7 @@ The Garden of Sinners - Remix- Gate of Seventh Heaven (2009):
       - Fantasy
       - Horror
       Show Root Path: anime/staging/The Garden of Sinners
-      episodeFileId: ''
+      episodeFileId: 76222
       imdbId: tt1155650
       seriesId: 107
       tvdbId: 82099
@@ -16111,13 +16111,13 @@ The Garden of Sinners- Future Gospel - Extra Chorus (2013):
       Anime: true
       Episode: 4
       Episode ID: '45632'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '004'
       Parsed Episode Title: anime/staging/The Garden of Sinners/Season 00/The Garden
         of Sinners - S00E004 - Recalled Out Summer - Extra Chorus
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/The Garden of Sinners/Season 00/The Garden
-        of Sinners - S00E004 - Recalled Out Summer - Extra Chorus Bluray-1080p..mkv
+        of Sinners - S00E004 - Recalled Out Summer - Extra Chorus Bluray-1080p.mkv
       Relative Show Path: anime/staging/The Garden of Sinners/Season 00
       Season: '00'
       Show Genres:
@@ -16126,7 +16126,7 @@ The Garden of Sinners- Future Gospel - Extra Chorus (2013):
       - Fantasy
       - Horror
       Show Root Path: anime/staging/The Garden of Sinners
-      episodeFileId: ''
+      episodeFileId: 76223
       imdbId: tt1155650
       seriesId: 107
       tvdbId: 82099
@@ -16157,7 +16157,7 @@ The IT Crowd Manual (2014):
         - The IT Crowd Manual
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/sitcom/The IT Crowd/Season 00/The IT Crowd - S00E05
-        - The IT Crowd Manual HDTV-720p..mkv
+        - The IT Crowd Manual HDTV-720p.mkv
       Relative Show Path: tv/sitcom/The IT Crowd/Season 00
       Season: '00'
       Show Genres:
@@ -16194,7 +16194,7 @@ The Last- Naruto the Movie (2014):
         - S00E001 - Naruto Shippuuden the Movie
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
-        - S00E001 - Naruto Shippuuden the Movie Remux-1080p..mkv
+        - S00E001 - Naruto Shippuuden the Movie Remux-1080p.mkv
       Relative Show Path: anime/shounen/Naruto Shippuden/Season 00
       Season: '00'
       Show Genres:
@@ -16463,7 +16463,7 @@ The Seven Deadly Sins - Prisoners of the Sky (2018):
         Deadly Sins - S00E009 - The Seven Deadly Sins Movie Prisoners of the Sky
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/The Seven Deadly Sins/Season 00/The Seven
-        Deadly Sins - S00E009 - The Seven Deadly Sins Movie Prisoners of the Sky WEBDL-1080p..mkv
+        Deadly Sins - S00E009 - The Seven Deadly Sins Movie Prisoners of the Sky WEBDL-1080p.mkv
       Relative Show Path: anime/shounen/The Seven Deadly Sins/Season 00
       Season: '00'
       Show Genres:
@@ -16924,7 +16924,7 @@ The X Files- I Want to Believe (2008):
         The X-Files I Want to Believe
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/scifi/The X-Files/Season 00/The X-Files - S00E06
-        - The X-Files I Want to Believe Bluray-1080p..mkv
+        - The X-Files I Want to Believe Bluray-1080p.mkv
       Relative Show Path: tv/scifi/The X-Files/Season 00
       Season: '00'
       Show Genres:
@@ -16965,7 +16965,7 @@ Thus Spoke Kishibe Rohan 2- Mutsu-kabe Hill (2018):
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/JoJo's Bizarre Adventure (2012)/Season
         00/JoJo's Bizarre Adventure (2012) - S00E002 - Thus Spoke Kishibe Rohan Mutsukabe
-        Hill DVD..mkv
+        Hill DVD.mkv
       Relative Show Path: anime/staging/JoJo's Bizarre Adventure (2012)/Season 00
       Season: '00'
       Show Genres:
@@ -17023,7 +17023,7 @@ Tiger & Bunny - The Movie- The Rising (2014):
         S00E02 - Tiger & Bunny The Beginning
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Tiger & Bunny/Season 00/Tiger & Bunny
-        - S00E02 - Tiger & Bunny The Beginning Bluray-1080p..mkv
+        - S00E02 - Tiger & Bunny The Beginning Bluray-1080p.mkv
       Relative Show Path: anime/staging/Tiger & Bunny/Season 00
       Season: '00'
       Show Genres:
@@ -17314,7 +17314,7 @@ Top Gear- Middle East Special (2011):
         3 Best of
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/reality/Top Gear/Season 00/Top Gear - S00E03 - Series
-        3 Best of Bluray-1080p..mp4
+        3 Best of Bluray-1080p.mp4
       Relative Show Path: tv/reality/Top Gear/Season 00
       Season: '00'
       Show Genres:
@@ -17354,7 +17354,7 @@ Top Gear- Patagonia Special- Part 1 (2014):
         5 Best of
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/reality/Top Gear/Season 00/Top Gear - S00E06 - Series
-        5 Best of Bluray-1080p..mp4
+        5 Best of Bluray-1080p.mp4
       Relative Show Path: tv/reality/Top Gear/Season 00
       Season: '00'
       Show Genres:
@@ -17394,7 +17394,7 @@ Top Gear- Patagonia Special- Part 2 (2014):
         5 Best of
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/reality/Top Gear/Season 00/Top Gear - S00E06 - Series
-        5 Best of Bluray-1080p..mp4
+        5 Best of Bluray-1080p.mp4
       Relative Show Path: tv/reality/Top Gear/Season 00
       Season: '00'
       Show Genres:
@@ -17691,7 +17691,7 @@ Top Gear- The Worst Car In the History of the World (2012):
         4 Best of
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/reality/Top Gear/Season 00/Top Gear - S00E04 - Series
-        4 Best of Bluray-1080p..mp4
+        4 Best of Bluray-1080p.mp4
       Relative Show Path: tv/reality/Top Gear/Season 00
       Season: '00'
       Show Genres:
@@ -17915,7 +17915,7 @@ Toriko 3D Movie- Kaimaku! Gourmet Adventure!! (2011):
         Gourmet Adventure!!
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Toriko/Season 00/Toriko - S00E003 - Kaimaku
-        Gourmet Adventure!! Bluray-1080p..mp4
+        Gourmet Adventure!! Bluray-1080p.mp4
       Relative Show Path: anime/staging/Toriko/Season 00
       Season: '00'
       Show Genres:
@@ -17955,7 +17955,7 @@ Trigun - Badlands Rumble (2010):
         the Movie Badlands Rumble
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/shounen/Trigun/Season 00/Trigun - S00E001 - Trigun
-        the Movie Badlands Rumble Bluray-1080p..mkv
+        the Movie Badlands Rumble Bluray-1080p.mkv
       Relative Show Path: anime/shounen/Trigun/Season 00
       Season: '00'
       Show Genres:
@@ -17998,7 +17998,7 @@ Twilight Zone- The Movie (1983):
         - S00E04 - Twilight Zone The Movie
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/scifi/The Twilight Zone/Season 00/The Twilight Zone
-        - S00E04 - Twilight Zone The Movie Bluray-1080p..mkv
+        - S00E04 - Twilight Zone The Movie Bluray-1080p.mkv
       Relative Show Path: tv/scifi/The Twilight Zone/Season 00
       Season: '00'
       Show Genres:
@@ -18040,7 +18040,7 @@ Unlocking Sherlock (2014):
         Sherlock '
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/crime/Sherlock/Season 00/Sherlock - S00E05 - Unlocking
-        Sherlock  WEBDL-720p..mkv
+        Sherlock  WEBDL-720p.mkv
       Relative Show Path: tv/crime/Sherlock/Season 00
       Season: '00'
       Show Genres:
@@ -18094,7 +18094,7 @@ Vixen- The Movie (2017):
         Movie
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/Vixen/Season 00/Vixen - S00E01 - Vixen The
-        Movie Bluray-1080p..mkv
+        Movie Bluray-1080p.mkv
       Relative Show Path: tv/staging/Vixen/Season 00
       Season: '00'
       Show Genres:
@@ -18155,7 +18155,7 @@ Watashi ga Motenai no wa Dou Kangaetemo Omaera ga Warui!- Motenaishi, Nazomeite 
         Since I'm Not Popular, I'll Become an Enigma
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/WATAMOTE/Season 00/WATAMOTE - S00E001
-        - Since I'm Not Popular, I'll Become an Enigma WEBDL-720p..mkv
+        - Since I'm Not Popular, I'll Become an Enigma WEBDL-720p.mkv
       Relative Show Path: anime/staging/WATAMOTE/Season 00
       Season: '00'
       Show Genres:
@@ -18247,7 +18247,7 @@ Your Lie in April (2016):
         April - S00E002 - Your Lie in April Live Action Movie
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Your lie in April/Season 00/Your lie
-        in April - S00E002 - Your Lie in April Live Action Movie Bluray-1080p..mkv
+        in April - S00E002 - Your Lie in April Live Action Movie Bluray-1080p.mkv
       Relative Show Path: anime/staging/Your lie in April/Season 00
       Season: '00'
       Show Genres:
@@ -18287,7 +18287,7 @@ Yu Yu Hakusho- The Movie (1993):
         S00E001 - The Golden Seal
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Yu Yu Hakusho/Season 00/Yu Yu Hakusho
-        - S00E001 - The Golden Seal Remux-1080p..mkv
+        - S00E001 - The Golden Seal Remux-1080p.mkv
       Relative Show Path: anime/staging/Yu Yu Hakusho/Season 00
       Season: '00'
       Show Genres:
@@ -18329,7 +18329,7 @@ Yu Yu Hakusho- The Movie - Poltergeist Report (1994):
         S00E002 - Poltergeist Report
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Yu Yu Hakusho/Season 00/Yu Yu Hakusho
-        - S00E002 - Poltergeist Report DVD..mkv
+        - S00E002 - Poltergeist Report DVD.mkv
       Relative Show Path: anime/staging/Yu Yu Hakusho/Season 00
       Season: '00'
       Show Genres:
@@ -18368,7 +18368,7 @@ Yu Yu Hakusho- Two Shots (2018):
         S00E001 - The Golden Seal
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Yu Yu Hakusho/Season 00/Yu Yu Hakusho
-        - S00E001 - The Golden Seal Bluray-1080p..mkv
+        - S00E001 - The Golden Seal Bluray-1080p.mkv
       Relative Show Path: anime/staging/Yu Yu Hakusho/Season 00
       Season: '00'
       Show Genres:
@@ -18488,7 +18488,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
         A Midsummer Night's Dream
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/xxxHOLiC/Season 00/xxxHOLiC - S00E001
-        - A Midsummer Night's Dream Remux-1080p..mkv
+        - A Midsummer Night's Dream Remux-1080p.mkv
       Relative Show Path: anime/staging/xxxHOLiC/Season 00
       Season: '00'
       Show Genres:
@@ -18529,7 +18529,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
         Rou
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/xxxHOLiC/Season 00/xxxHOLiC - S00E004
-        - Rou Bluray-1080p..mkv
+        - Rou Bluray-1080p.mkv
       Relative Show Path: anime/staging/xxxHOLiC/Season 00
       Season: '00'
       Show Genres:
@@ -18570,7 +18570,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
         Rou Adayume
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/xxxHOLiC/Season 00/xxxHOLiC - S00E005
-        - Rou Adayume Bluray-1080p..mkv
+        - Rou Adayume Bluray-1080p.mkv
       Relative Show Path: anime/staging/xxxHOLiC/Season 00
       Season: '00'
       Show Genres:
@@ -18615,7 +18615,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
         - The Common Cold
       Parsed Season Folder: Season 00
       Relative Show File Path: tv/staging/Cells at Work!/Season 00/Cells at Work!
-        - S00E001 - The Common Cold Bluray-1080p..mkv
+        - S00E001 - The Common Cold Bluray-1080p.mkv
       Relative Show Path: tv/staging/Cells at Work!/Season 00
       Season: '00'
       Show Genres:
@@ -18651,13 +18651,13 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Anime: true
       Episode: 1
       Episode ID: '2543'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Attack on Titan/Season 00/Attack on Titan
         - S00E001 - Since That Day
       Parsed Season Folder: Season 00
       Relative Show File Path: anime/staging/Attack on Titan/Season 00/Attack on Titan
-        - S00E001 - Since That Day Bluray-1080p..mkv
+        - S00E001 - Since That Day Bluray-1080p.mkv
       Relative Show Path: anime/staging/Attack on Titan/Season 00
       Season: '00'
       Show Genres:
@@ -18667,7 +18667,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       - Drama
       - Fantasy
       Show Root Path: anime/staging/Attack on Titan
-      episodeFileId: ''
+      episodeFileId: 76121
       imdbId: tt2560140
       seriesId: 121
       tvdbId: 267440
