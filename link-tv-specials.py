@@ -2,7 +2,7 @@
 import os
 import class_objects as media
 from IO.YAML.object_to_yaml import write_python_dictionary_object_to_yaml_file as dict_to_yaml
-from movies.movies_gets import get_docker_media_path
+from plex_linker.gets.path import get_docker_media_path
 from plex_linker.parser.movies import parse_all_movies_in_yaml_dictionary as parse_movies
 
 if __name__ == "__main__":

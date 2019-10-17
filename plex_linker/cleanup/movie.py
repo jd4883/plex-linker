@@ -5,6 +5,7 @@ def cleanup_dict(dict):
 	          'Has File',
 	          'Parsed Extension',
 	          'Parsed Movie Quality',
+	          'Parsed Movie Extension',
 	          'Relative Movie File Path',
 	          'Relative Movie Path',
 	          'Title',

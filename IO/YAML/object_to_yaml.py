@@ -10,7 +10,7 @@ from jobs.set_path_permissions import (
 	set_ownership_on_files_and_links,
 	)
 from messaging.frontend import method_launch, method_exit
-from movies.movies_gets import (get_media_collection_parsed_archives)
+from plex_linker.gets.path import get_media_collection_parsed_archives
 
 
 def write_python_dictionary_object_to_yaml_file(g):

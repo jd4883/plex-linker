@@ -2,7 +2,7 @@
 import os
 
 import messaging.backend
-from movies.movie.movie_gets import get_movie_path
+from plex_linker.gets.path import get_movie_path
 
 
 def parse_relpath(self, g, media_path):

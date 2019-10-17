@@ -1,11 +1,11 @@
 import os
 import yaml
-import movies.movies_gets as movies_gets
+import plex_linker.gets.path
 
 
 def get_yaml_dictionary():
 	os.chdir(os.environ['PLEX_LINKER'])
-	with open(movies_gets.parsed_collection()) as f:
+	with open(plex_linker.gets.path.parsed_collection()) as f:
 		return yaml.load(f, Loader=yaml.FullLoader)
 
 
