@@ -210,8 +210,8 @@ class Show(Movie, Globals):
 		self.parsed_episode_title = parse_series.compiled_episode_title(self, g)
 		self.relative_show_file_path = \
 			self.series_dict['Relative Show File Path'] = \
-			f"{self.parsed_episode_title} {self.quality}.{self.extension}" \
-				if (self.hasFile and self.parsed_episode_title) else str()
+			(f"{self.parsed_episode_title} {self.quality}.{self.extension}" \
+				if (self.hasFile and self.parsed_episode_title) else str()).replace("..", ".")
 		self.has_link = \
 			self.series_dict['Has Link'] = \
 			fetch_link_status(self, self.episode_file_dict,self.relative_movie_file_path) \
