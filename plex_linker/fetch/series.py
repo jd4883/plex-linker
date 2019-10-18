@@ -40,7 +40,7 @@ def fetch_link_status(self, episode_file_dict, relative_movie_file_path):
 
 def title(self, g, series):
 	result = series
-	g.LOG.info(backend.debug_message(604, g, result))
+	g.LOG.debug(backend.debug_message(604, g, result))
 	return result
 
 

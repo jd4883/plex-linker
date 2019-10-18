@@ -22,6 +22,7 @@ from class_objects.radarr_class_methods import get_parsed_movie_title, parse_rel
 from class_objects.sonarr_api import *
 from IO.YAML.yaml_to_object import (get_variable_from_yaml)
 from logs.bin.get_parameters import (get_log_name, get_logger, get_method_main)
+from plex_linker.compare.ids import validate_tmdbId
 from plex_linker.gets.path import get_absolute_movie_file_path, get_relative_movie_file_path
 from plex_linker.gets.movie import get_relative_movies_path
 from plex_linker.fetch.series import fetch_link_status
@@ -94,8 +95,8 @@ class Movie(Movies, Globals):
 		self.year = self.movie_dictionary['Year'] =	\
 			int(self.radarr_dictionary['inCinemas'][0:4]) if 'inCinemas' in self.radarr_dictionary \
 				else int(self.radarr_dictionary.pop('year', 0))
-		self.unparsed_title = re.sub("\s+\(0\)","", self.get_unparsed_movie_title(g))
-		self.movie_title = re.sub("\s+\(0\)",str(), get_parsed_movie_title(self, g))
+		self.unparsed_title = re.sub("\s+\(0\)\s?","", self.get_unparsed_movie_title(g))
+		self.movie_title = re.sub("\s+\(0\)\s?",str(), get_parsed_movie_title(self, g))
 		self.relative_movie_path = self.init_relative_movie_path(g)
 		self.absolute_movie_path = self.init_absolute_movie_path(g)
 		if "movieFile" not in self.radarr_dictionary or not self.relative_movie_path:
@@ -107,9 +108,9 @@ class Movie(Movies, Globals):
 			return
 		file_dict = self.radarr_dictionary['movieFile']
 		self.movie_file = self.movie_dictionary['Movie File'] = str(file_dict['relativePath'])
-		g.LOG.info(backend.debug_message(610, g, self.movie_file))
+		g.LOG.debug(backend.debug_message(610, g, self.movie_file))
 		self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(file_dict['quality']['quality']['name'])
-		g.LOG.info(backend.debug_message(612, g, self.quality))
+		g.LOG.debug(backend.debug_message(612, g, self.quality))
 		self.extension = self.movie_dictionary['Parsed Extension'] = \
 			re.sub("\s+REAL\.\W+$", "", str(self.movie_file.split().pop()).replace(self.quality, str()))
 		self.absolute_movie_file_path = str(get_absolute_movie_file_path(self, g))
@@ -120,19 +121,6 @@ class Movie(Movies, Globals):
 		result = self.radarr_dictionary.pop('title', str())
 		g.LOG.debug(backend.debug_message(643, g, result))
 		return result
-	
-	def parse_dict_from_radarr(self, g):
-		if str(self.movie_dictionary['Movie DB ID']).isdigit() and str(
-				self.movie_dictionary['Movie DB ID']).isdigit() != 0:
-			try:
-				index = \
-					[i for i, d in enumerate(g.full_radarr_dict) if (self.movie_dictionary['Movie DB ID'] in d.values())
-					 and ("tmdbId" in d.keys() and d['tmdbId'] == self.movie_dictionary['Movie DB ID'])][0]
-				g.LOG.debug(backend.debug_message(644, g, g.full_radarr_dict[index]))
-				return g.full_radarr_dict[index]
-			except IndexError:
-				pass
-		return dict()
 	
 	def init_absolute_movie_path(self, g):
 		result = self.movie_dictionary['Absolute Movie Path'] = "/".join(
@@ -160,8 +148,18 @@ class Movie(Movies, Globals):
 			if len(self.radarr_dictionary) > 0 and self.radarr_dictionary[0]['monitored']:
 				g.radarr.movie_search(int(tmdbID))
 		return tmdbID
-
-# TODO: make sure order allows everything to calculate from the API if not well defined
+	
+	def parse_dict_from_radarr(self, g):
+		if validate_tmdbId(self.tmbdid):
+			try:
+				index = \
+					[i for i, d in enumerate(g.full_radarr_dict) if (self.movie_dictionary['Movie DB ID'] in d.values())
+					 and ("tmdbId" in d.keys() and d['tmdbId'] == self.movie_dictionary['Movie DB ID'])][0]
+				g.LOG.debug(backend.debug_message(644, g, g.full_radarr_dict[index]))
+				return g.full_radarr_dict[index]
+			except IndexError:
+				pass
+		return dict()
 
 class Show(Movie, Globals):
 	def __init__(self,

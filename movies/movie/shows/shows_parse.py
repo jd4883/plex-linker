@@ -32,5 +32,4 @@ def parse_shows_dictionary_object(movie, g):
 			g.LOG.debug(backend.debug_message(640, g, movie.movie_title))
 			continue
 		g.LOG.info(backend.debug_message(641, g, movie.movie_title, show.show))
-		#movie.movie_title = movie.movie_dictionary['Title'] # bandage fix until i find where this resets
 		parse_show_to_link(show, g)
