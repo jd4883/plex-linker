@@ -13,39 +13,24 @@ def symlink_force(show, g):
 		show.absolute_movie_file_path = str()
 		show.has_link = bool()
 		pass
-	# improve logic here to also validate the link is in place in addition to the flag
-	# make sure logic also cares about relpath presence i suspect this is our issue
-	# os.chdir(str(os.environ['HOST_MEDIA_PATH']))
-	# process = subprocess.Popen(get_symlink_command_string(show), stderr = subprocess.DEVNULL,
-	#                            stdout = subprocess.PIPE)
-	# g.LOG.info(backend.debug_message(642, g, show.has_link))
-	if not show.has_link: #validate_link_ready(show):
+	if not show.has_link:
 		os.chdir(str(os.environ['HOST_MEDIA_PATH']))
 		# noinspection SpellCheckingInspection
 		process = subprocess.Popen(get_symlink_command_string(show), stderr = subprocess.DEVNULL,
 		                           stdout = subprocess.PIPE)
-		# print(show.has_link)
-		#
-		#
-		# show.link_status = \
-		# 	strip_quotes_from_string(get_symlink_string(process)).replace('b"', str())[:-3].rstrip()
-		# # -3 covers the link not having the newline character at the end, if this is fixed this should be -1 instead
-		g.LOG.info(backend.debug_message(642, g, show.has_link))
+		process = str(process.communicate()[0])[3:-4].replace("'","")
+		g.LOG.info(backend.debug_message(654, g, process))
+		g.LOG.debug(backend.debug_message(642, g, show.has_link))
 	else:
 		print(f'Link not created for {show.absolute_movie_file_path}')
 		show.link_status = str()
 		show.relative_show_path = str()
 		show.movie_file = str()
-		#g.list_of_movies_to_locate.append(show.movie_title)
 	message.method_exit(g)
 
 
 def get_symlink_command_string(show):
 	return ["ln", "-fsvr", f"{show.absolute_movie_file_path}", f"{show.relative_show_file_path}"]
-
-
-def get_symlink_string(process):
-	return strip_quotes_from_string(str(process.communicate()[0])).strip()
 
 
 # cleanup this method along with others and try to segment where they are stored

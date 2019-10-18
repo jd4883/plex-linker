@@ -22,11 +22,12 @@ from class_objects.radarr_class_methods import get_parsed_movie_title, parse_rel
 from class_objects.sonarr_api import *
 from IO.YAML.yaml_to_object import (get_variable_from_yaml)
 from logs.bin.get_parameters import (get_log_name, get_logger, get_method_main)
-from movies.movie.movie_gets import (get_absolute_movie_file_path, get_relative_movie_file_path)
-from movies.movies_gets import (get_relative_movies_path)
+from plex_linker.compare.ids import validate_tmdbId
+from plex_linker.gets.path import get_absolute_movie_file_path, get_relative_movie_file_path
+from plex_linker.gets.movie import get_relative_movies_path
 from plex_linker.fetch.series import fetch_link_status
 from plex_linker.parser.series import padded_absolute_episode, episode_title
-
+import re
 
 class Globals:
 	def __init__(self):
@@ -94,14 +95,13 @@ class Movie(Movies, Globals):
 		self.year = self.movie_dictionary['Year'] =	\
 			int(self.radarr_dictionary['inCinemas'][0:4]) if 'inCinemas' in self.radarr_dictionary \
 				else int(self.radarr_dictionary.pop('year', 0))
-		self.unparsed_title = self.movie_dictionary['Unparsed Title'] = self.get_unparsed_movie_title(g).replace(' (0)',
-		                                                                                                         str())
-		self.movie_title = self.movie_dictionary['Title'] = str(get_parsed_movie_title(self, g)).replace(' (0)', str())
+		self.unparsed_title = re.sub("\s+\(0\)\s?","", self.get_unparsed_movie_title(g))
+		self.movie_title = re.sub("\s+\(0\)\s?",str(), get_parsed_movie_title(self, g))
 		self.relative_movie_path = self.init_relative_movie_path(g)
 		self.absolute_movie_path = self.init_absolute_movie_path(g)
 		if "movieFile" not in self.radarr_dictionary or not self.relative_movie_path:
 			self.movie_file = self.movie_dictionary['Movie File'] = str()
-			self.quality = self.movie_dictionary['Parsed Movie Quality'] = str()
+			self.quality = self.movie_dictionary['Parsed Quality'] = str()
 			self.extension = self.movie_dictionary['Parsed Extension'] = str()
 			self.absolute_movie_file_path = self.movie_dictionary['Absolute Movie File Path'] = str()
 			self.relative_movie_file_path = self.movie_dictionary['Relative Movie File Path'] = str()
@@ -111,33 +111,16 @@ class Movie(Movies, Globals):
 		g.LOG.debug(backend.debug_message(610, g, self.movie_file))
 		self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(file_dict['quality']['quality']['name'])
 		g.LOG.debug(backend.debug_message(612, g, self.quality))
-		self.extension = self.movie_dictionary['Parsed Extension'] = str(self.movie_file.split().pop()).replace(
-				self.quality, str())[1:]
-		self.absolute_movie_file_path = self.movie_dictionary['Absolute Movie File Path'] = str(
-				get_absolute_movie_file_path(self, g))
-		self.relative_movie_file_path = self.movie_dictionary['Relative Movie File Path'] = str(
-				get_relative_movie_file_path(self, g))
+		self.extension = self.movie_dictionary['Parsed Extension'] = \
+			re.sub("\s+REAL\.\W+$", "", str(self.movie_file.split().pop()).replace(self.quality, str()))
+		self.absolute_movie_file_path = str(get_absolute_movie_file_path(self, g))
+		self.relative_movie_file_path = str(get_relative_movie_file_path(self, g))
+	
 	
 	def get_unparsed_movie_title(self, g):
-		if 'Title' not in self.movie_dictionary:
-			self.movie_dictionary['Title'] = str()
-		result = str(self.radarr_dictionary['title']) \
-			if 'title' in self.radarr_dictionary else self.movie_dictionary['Title']
+		result = self.radarr_dictionary.pop('title', str())
 		g.LOG.debug(backend.debug_message(643, g, result))
 		return result
-	
-	def parse_dict_from_radarr(self, g):
-		if str(self.movie_dictionary['Movie DB ID']).isdigit() and str(
-				self.movie_dictionary['Movie DB ID']).isdigit() != 0:
-			try:
-				index = \
-					[i for i, d in enumerate(g.full_radarr_dict) if (self.movie_dictionary['Movie DB ID'] in d.values())
-					 and ("tmdbId" in d.keys() and d['tmdbId'] == self.movie_dictionary['Movie DB ID'])][0]
-				g.LOG.debug(backend.debug_message(644, g, g.full_radarr_dict[index]))
-				return g.full_radarr_dict[index]
-			except IndexError:
-				pass
-		return dict()
 	
 	def init_absolute_movie_path(self, g):
 		result = self.movie_dictionary['Absolute Movie Path'] = "/".join(
@@ -166,42 +149,17 @@ class Movie(Movies, Globals):
 				g.radarr.movie_search(int(tmdbID))
 		return tmdbID
 	
-	def parse_quality(self):
-		if self.quality:
-			quality = str(self.quality)
-		else:
-			return str()
-		if quality.endswith(f"Proper.{self.extension}"):
+	def parse_dict_from_radarr(self, g):
+		if validate_tmdbId(self.tmbdid):
 			try:
-				quality = f"{self.movie_file.split().pop(-2)} {self.quality}"
+				index = \
+					[i for i, d in enumerate(g.full_radarr_dict) if (self.movie_dictionary['Movie DB ID'] in d.values())
+					 and ("tmdbId" in d.keys() and d['tmdbId'] == self.movie_dictionary['Movie DB ID'])][0]
+				g.LOG.debug(backend.debug_message(644, g, g.full_radarr_dict[index]))
+				return g.full_radarr_dict[index]
 			except IndexError:
 				pass
-		elif quality.endswith(f"Proper REAL.{self.extension}"):
-			try:
-				quality = f"{self.movie_file.split().pop(-3)} {self.quality}"
-			except IndexError:
-				pass
-		elif quality.endswith(f"REAL.{self.extension}"):
-			try:
-				quality = f"{self.movie_file.split().pop(-2)} {self.quality}"
-			except IndexError:
-				pass
-		if str(self.quality).lower() == "Remux-1080p.mkv".lower():
-			try:
-				quality.replace("Remux-1080p.mkv", "Bluray-1080p Remux.mkv")
-			except IndexError:
-				pass
-		elif not quality:
-			quality = str()
-		else:
-			if self.movie_file:
-				quality = str(self.movie_file.split().pop())
-			else:
-				quality = str()
-		return str(quality)  # .rsplit( ".", 1 )[ 0 ] ) if it the extension is parsed separately
-
-
-# TODO: make sure order allows everything to calculate from the API if not well defined
+		return dict()
 
 class Show(Movie, Globals):
 	def __init__(self,
@@ -225,6 +183,8 @@ class Show(Movie, Globals):
 		self.episode_id = parse_series.episode_id(self, g)
 		self.episode_dict = parse_series.parse_episode_dict(self, g)
 		self.anime_status = bool(parse_series.anime_status(self, g))
+		# TODO: something is up here as many series that are not anime are being marked as anime, suspect the default
+		#  false bool is never getting passed
 		self.padding = parse_series.episode_padding(self, g)
 		self.episode_file_id = parse_series.episode_file_id(self, g)
 		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)
@@ -248,13 +208,14 @@ class Show(Movie, Globals):
 		self.parsed_episode_title = parse_series.compiled_episode_title(self, g)
 		self.relative_show_file_path = \
 			self.series_dict['Relative Show File Path'] = \
-			f"{self.parsed_episode_title} {self.quality}.{self.extension}" \
-				if (self.hasFile and self.parsed_episode_title) else str()
+			(f"{self.parsed_episode_title} {self.quality}.{self.extension}" \
+				if (self.hasFile and self.parsed_episode_title) else str()).replace("..", ".")
 		self.has_link = \
 			self.series_dict['Has Link'] = \
 			fetch_link_status(self, self.episode_file_dict,self.relative_movie_file_path) \
 				if self.episode_file_dict else bool()
 		g.sonarr.rescan_series(self.tvdbId)  # rescan movie in case it was picked up since last scan
 		g.sonarr.refresh_series(self.tvdbId)  # to ensure metadata is up to date
+		
 
 	

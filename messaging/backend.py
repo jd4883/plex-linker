@@ -187,6 +187,9 @@ def debug_message(status_code, g, var1 = str(), var2 = str()):
 	elif status_code == 653:
 		g.message1 = format_string(f"sonarr episode file id:")
 		g.message2 = f"{var1}"
+	elif status_code == 654:
+		g.message1 = format_string(f"link created: ")
+		g.message2 = f"{var1}"
 	elif status_code == -1:
 		g.message1 = format_string(
 				f"boss, you've indicated this {status_code} is an error that warrants exiting. check yo code!!")

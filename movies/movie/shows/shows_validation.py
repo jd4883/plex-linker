@@ -1,5 +1,7 @@
 import os
-from movies.movie.shows.show import validate as validate_show
+
+import plex_linker.compare.path
+
 
 def symlink_destination_exists(show):
 	if os.path.exists(str(show.relative_show_file_path)):
@@ -33,6 +35,6 @@ def link_status(movie, show):
 def linking_can_be_skipped(show, movie):
 	if show.series_dict:
 		if link_status(movie, show):
-			if validate_show.compare_symlink_to_relpath(show):
+			if plex_linker.compare.path.compare_symlink_to_relpath(show):
 				return True
 	return False
