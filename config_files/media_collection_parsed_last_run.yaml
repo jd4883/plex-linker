@@ -59,7 +59,7 @@
       Anime: false
       Episode: 41
       Episode ID: 22856
-      Has Link: false
+      Has Link: true
       Parsed Episode: '43'
       Parsed Episode Title: tv/animated/South Park/Season 00/South Park - S00E41 -
         Six Days to Air The Making of South Park
@@ -72,7 +72,7 @@
       - Animation
       - Comedy
       Show Root Path: tv/animated/South Park
-      episodeFileId: ''
+      episodeFileId: 78780
       imdbId: tt0121955
       seriesId: 293
       tvdbId: 75897
@@ -150,7 +150,7 @@ ANOTHER GANTZ (2011):
       Show Genres:
       - Animation
       Show Root Path: anime/staging/Gantz
-      episodeFileId: 76503
+      episodeFileId: 78761
       imdbId: tt0434685
       seriesId: 45
       tvdbId: 78916
@@ -191,7 +191,7 @@ Absolutely Fabulous- The Last Shout (1996):
       Show Genres:
       - Comedy
       Show Root Path: tv/sitcom/Absolutely Fabulous
-      episodeFileId: 76367
+      episodeFileId: 78747
       imdbId: tt0105929
       seriesId: 416
       tvdbId: 73314
@@ -229,7 +229,7 @@ Absolutely Fabulous- The Movie (2016):
       Show Genres:
       - Comedy
       Show Root Path: tv/sitcom/Absolutely Fabulous
-      episodeFileId: 76369
+      episodeFileId: 78748
       imdbId: tt0105929
       seriesId: 416
       tvdbId: 73314
@@ -254,19 +254,19 @@ Achmed Saves America (2014):
       Anime: false
       Episode: 7
       Episode ID: '10431'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '07'
-      Parsed Episode Title: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
-        Dunham Show - S00E07 - Achmed Saves America
+      Parsed Episode Title: tv/staging/The Jeff Dunham Show/Season 00/The Jeff Dunham
+        Show - S00E07 - Achmed Saves America
       Parsed Season Folder: Season 00
-      Relative Show File Path: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
+      Relative Show File Path: tv/staging/The Jeff Dunham Show/Season 00/The Jeff
         Dunham Show - S00E07 - Achmed Saves America Bluray-1080p.mkv
-      Relative Show Path: movies/staging/The Jeff Dunham Show/Season 00
+      Relative Show Path: tv/staging/The Jeff Dunham Show/Season 00
       Season: '00'
       Show Genres:
       - Comedy
-      Show Root Path: movies/staging/The Jeff Dunham Show
-      episodeFileId: ''
+      Show Root Path: tv/staging/The Jeff Dunham Show
+      episodeFileId: 78768
       imdbId: tt1483024
       seriesId: 224
       tvdbId: 119761
@@ -291,7 +291,7 @@ Ajin- Demi-Human (2017):
       Anime: true
       Episode: 7
       Episode ID: '51239'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '007'
       Parsed Episode Title: anime/staging/Ajin/Season 00/Ajin - S00E007 - Ajin Demi-Human
         (Live Action)
@@ -308,7 +308,7 @@ Ajin- Demi-Human (2017):
       - Mystery
       - Suspense
       Show Root Path: anime/staging/Ajin
-      episodeFileId: ''
+      episodeFileId: 78750
       imdbId: tt5537534
       seriesId: 25
       tvdbId: 300835
@@ -336,7 +336,7 @@ Ajin- Demi-Human - Compel (2015):
       - 2
       - 3
       Episode ID: '43851'
-      Has Link: false
+      Has Link: true
       Parsed Episode: 001-002-003
       Parsed Episode Title: anime/staging/Ajin/Season 00/Ajin - S00E001-002-003 -
         Ajin, Part 1 Shoudou
@@ -353,7 +353,7 @@ Ajin- Demi-Human - Compel (2015):
       - Mystery
       - Suspense
       Show Root Path: anime/staging/Ajin
-      episodeFileId: ''
+      episodeFileId: 78749
       imdbId: tt5537534
       seriesId: 25
       tvdbId: 300835
@@ -391,7 +391,7 @@ Anemone- Eureka Seven Hi-Evolution (2018):
       - Drama
       - Science-Fiction
       Show Root Path: anime/staging/Eureka Seven
-      episodeFileId: 76461
+      episodeFileId: 78760
       imdbId: tt0765491
       seriesId: 145
       tvdbId: 79360
@@ -432,7 +432,7 @@ Anohana- The Flower We Saw That Day (2015):
       - Drama
       - Fantasy
       Show Root Path: anime/staging/Anohana- The Flower We Saw That Day
-      episodeFileId: 76372
+      episodeFileId: 78751
       imdbId: tt1913273
       seriesId: 134
       tvdbId: 247958
@@ -576,7 +576,7 @@ Assassination Classroom (2015):
       Anime: true
       Episode: 4
       Episode ID: '43940'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '004'
       Parsed Episode Title: anime/shounen/Assassination Classroom/Season 00/Assassination
         Classroom - S00E004 - Assassination Classroom
@@ -590,7 +590,7 @@ Assassination Classroom (2015):
       - Anime
       - Comedy
       Show Root Path: anime/shounen/Assassination Classroom
-      episodeFileId: 76377
+      episodeFileId: 78756
       imdbId: tt3837246
       seriesId: 5
       tvdbId: 283947
@@ -620,7 +620,7 @@ Assassination Classroom The Movie- 365 Days (2016):
       Anime: true
       Episode: 3
       Episode ID: '43939'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '003'
       Parsed Episode Title: anime/shounen/Assassination Classroom/Season 00/Assassination
         Classroom - S00E003 - Assassination Classroom The Movie 365 Days
@@ -634,7 +634,7 @@ Assassination Classroom The Movie- 365 Days (2016):
       - Anime
       - Comedy
       Show Root Path: anime/shounen/Assassination Classroom
-      episodeFileId: 76375
+      episodeFileId: 78755
       imdbId: tt3837246
       seriesId: 5
       tvdbId: 283947
@@ -699,7 +699,7 @@ Assassination Classroom- Jump Festa 2013 Special (2013):
       Anime: true
       Episode: 1
       Episode ID: '43937'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '001'
       Parsed Episode Title: anime/shounen/Assassination Classroom/Season 00/Assassination
         Classroom - S00E001 - Jump Festa 2013 Special
@@ -713,7 +713,7 @@ Assassination Classroom- Jump Festa 2013 Special (2013):
       - Anime
       - Comedy
       Show Root Path: anime/shounen/Assassination Classroom
-      episodeFileId: 76374
+      episodeFileId: 78754
       imdbId: tt3837246
       seriesId: 5
       tvdbId: 283947
@@ -742,7 +742,7 @@ Attack on Titan II- End of the World (2015):
       Anime: true
       Episode: 19
       Episode ID: '2561'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/staging/Attack on Titan/Season 00/Attack on Titan
         - S00E019 - Attack on Titan II - End of the World (Live Action Movie)
       Parsed Season Folder: Season 00
@@ -757,7 +757,7 @@ Attack on Titan II- End of the World (2015):
       - Drama
       - Fantasy
       Show Root Path: anime/staging/Attack on Titan
-      episodeFileId: ''
+      episodeFileId: 78758
       imdbId: tt2560140
       seriesId: 121
       tvdbId: 267440
@@ -786,7 +786,7 @@ Attack on Titan- Crimson Bow and Arrow (2014):
       Anime: true
       Episode: 14
       Episode ID: '2556'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/staging/Attack on Titan/Season 00/Attack on Titan
         - S00E014 - Attack on Titan Part I Crimson Bow and Arrow
       Parsed Season Folder: Season 00
@@ -801,7 +801,7 @@ Attack on Titan- Crimson Bow and Arrow (2014):
       - Drama
       - Fantasy
       Show Root Path: anime/staging/Attack on Titan
-      episodeFileId: ''
+      episodeFileId: 76737
       imdbId: tt2560140
       seriesId: 121
       tvdbId: 267440
@@ -830,7 +830,7 @@ Attack on Titan- The Roar of Awakening (2018):
       Anime: true
       Episode: 23
       Episode ID: '2563'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/staging/Attack on Titan/Season 00/Attack on Titan
         - S00E023 - Attack on Titan Part III The Roar of Awakening
       Parsed Season Folder: Season 00
@@ -845,7 +845,7 @@ Attack on Titan- The Roar of Awakening (2018):
       - Drama
       - Fantasy
       Show Root Path: anime/staging/Attack on Titan
-      episodeFileId: ''
+      episodeFileId: 76759
       imdbId: tt2560140
       seriesId: 121
       tvdbId: 267440
@@ -874,7 +874,7 @@ Attack on Titan- Wings of Freedom (2015):
       Anime: true
       Episode: 15
       Episode ID: '2557'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/staging/Attack on Titan/Season 00/Attack on Titan
         - S00E015 - Attack on Titan Part II Wings of Freedom
       Parsed Season Folder: Season 00
@@ -889,7 +889,7 @@ Attack on Titan- Wings of Freedom (2015):
       - Drama
       - Fantasy
       Show Root Path: anime/staging/Attack on Titan
-      episodeFileId: ''
+      episodeFileId: 76740
       imdbId: tt2560140
       seriesId: 121
       tvdbId: 267440
@@ -1466,7 +1466,7 @@ Berserk - The Golden Age Arc 1 - The Egg of the King (2012):
       Anime: true
       Episode: 1
       Episode ID: '44196'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '001'
       Parsed Episode Title: anime/shounen/Berserk (2016)/Season 00/Berserk (2016)
         - S00E001 - Golden Age Arc I Egg of the King
@@ -1483,7 +1483,7 @@ Berserk - The Golden Age Arc 1 - The Egg of the King (2012):
       - Fantasy
       - Horror
       Show Root Path: anime/shounen/Berserk (2016)
-      episodeFileId: 76407
+      episodeFileId: 76764
       imdbId: tt5847454
       seriesId: 7
       tvdbId: 307111
@@ -1513,7 +1513,7 @@ Berserk - The Golden Age Arc 2 - The Battle for Doldrey (2012):
       Anime: true
       Episode: 2
       Episode ID: '44197'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '002'
       Parsed Episode Title: anime/shounen/Berserk (2016)/Season 00/Berserk (2016)
         - S00E002 - Golden Age Arc II The Battle for Doldrey
@@ -1530,7 +1530,7 @@ Berserk - The Golden Age Arc 2 - The Battle for Doldrey (2012):
       - Fantasy
       - Horror
       Show Root Path: anime/shounen/Berserk (2016)
-      episodeFileId: 76408
+      episodeFileId: 76765
       imdbId: tt5847454
       seriesId: 7
       tvdbId: 307111
@@ -1560,7 +1560,7 @@ Berserk - The Golden Age Arc 3 - The Advent (2013):
       Anime: true
       Episode: 3
       Episode ID: '44198'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '003'
       Parsed Episode Title: anime/shounen/Berserk (2016)/Season 00/Berserk (2016)
         - S00E003 - Golden Age Arc III The Advent
@@ -1577,7 +1577,7 @@ Berserk - The Golden Age Arc 3 - The Advent (2013):
       - Fantasy
       - Horror
       Show Root Path: anime/shounen/Berserk (2016)
-      episodeFileId: 76409
+      episodeFileId: 76766
       imdbId: tt5847454
       seriesId: 7
       tvdbId: 307111
@@ -1910,7 +1910,7 @@ Blue Exorcist - Kyoto Saga- Snake and Poison (2017):
       Anime: true
       Episode: 13
       Episode ID: '44623'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/shounen/Blue Exorcist/Season 00/Blue Exorcist -
         S00E013 - Blue Exorcist OVA Kyoto Impure King
       Parsed Season Folder: Season 00
@@ -1924,7 +1924,7 @@ Blue Exorcist - Kyoto Saga- Snake and Poison (2017):
       - Fantasy
       - Horror
       Show Root Path: anime/shounen/Blue Exorcist
-      episodeFileId: 76425
+      episodeFileId: 76769
       imdbId: tt1799631
       seriesId: 28
       tvdbId: 248035
@@ -1950,7 +1950,7 @@ Blue Exorcist - Kyoto Saga- Spy Game (2017):
       Anime: true
       Episode: 14
       Episode ID: '44624'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/shounen/Blue Exorcist/Season 00/Blue Exorcist -
         S00E014 - Blue Exorcist OVA Spy Game
       Parsed Season Folder: Season 00
@@ -1964,7 +1964,7 @@ Blue Exorcist - Kyoto Saga- Spy Game (2017):
       - Fantasy
       - Horror
       Show Root Path: anime/shounen/Blue Exorcist
-      episodeFileId: 76426
+      episodeFileId: 76770
       imdbId: tt1799631
       seriesId: 28
       tvdbId: 248035
@@ -1989,7 +1989,7 @@ Blue Exorcist- Runaway Kuro (2011):
       Anime: true
       Episode: 11
       Episode ID: '44621'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/shounen/Blue Exorcist/Season 00/Blue Exorcist -
         S00E011 - Blue Exorcist OVA Runaway Kuro
       Parsed Season Folder: Season 00
@@ -2003,7 +2003,7 @@ Blue Exorcist- Runaway Kuro (2011):
       - Fantasy
       - Horror
       Show Root Path: anime/shounen/Blue Exorcist
-      episodeFileId: 76421
+      episodeFileId: 76767
       imdbId: tt1799631
       seriesId: 28
       tvdbId: 248035
@@ -2028,7 +2028,7 @@ Blue Exorcist- The Movie (2012):
       Anime: true
       Episode: 12
       Episode ID: '44622'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/shounen/Blue Exorcist/Season 00/Blue Exorcist -
         S00E012 - Blue Exorcist The Movie
       Parsed Season Folder: Season 00
@@ -2042,7 +2042,7 @@ Blue Exorcist- The Movie (2012):
       - Fantasy
       - Horror
       Show Root Path: anime/shounen/Blue Exorcist
-      episodeFileId: 76422
+      episodeFileId: 76768
       imdbId: tt1799631
       seriesId: 28
       tvdbId: 248035
@@ -2072,19 +2072,19 @@ Boruto- Naruto the Movie (2015):
       Episode ID: '106'
       Has Link: false
       Parsed Episode: '001'
-      Parsed Episode Title: movies/staging/Boruto- Naruto Next Generations/Season
-        00/Boruto- Naruto Next Generations - S00E001 - Boruto Naruto the Movie
+      Parsed Episode Title: tv/staging/Boruto- Naruto Next Generations/Season 00/Boruto-
+        Naruto Next Generations - S00E001 - Boruto Naruto the Movie
       Parsed Season Folder: Season 00
-      Relative Show File Path: movies/staging/Boruto- Naruto Next Generations/Season
-        00/Boruto- Naruto Next Generations - S00E001 - Boruto Naruto the Movie Bluray-1080p.mkv
-      Relative Show Path: movies/staging/Boruto- Naruto Next Generations/Season 00
+      Relative Show File Path: tv/staging/Boruto- Naruto Next Generations/Season 00/Boruto-
+        Naruto Next Generations - S00E001 - Boruto Naruto the Movie Bluray-1080p.mkv
+      Relative Show Path: tv/staging/Boruto- Naruto Next Generations/Season 00
       Season: '00'
       Show Genres:
       - Action
       - Adventure
       - Animation
       - Anime
-      Show Root Path: movies/staging/Boruto- Naruto Next Generations
+      Show Root Path: tv/staging/Boruto- Naruto Next Generations
       episodeFileId: ''
       imdbId: tt6342474
       seriesId: 8
@@ -2295,7 +2295,7 @@ Clannad (2007):
       Anime: true
       Episode: 1
       Episode ID: '44761'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Clannad/Season 00/Clannad - S00E001 - Clannad
         the Motion Picture
@@ -2311,7 +2311,7 @@ Clannad (2007):
       - Fantasy
       - Romance
       Show Root Path: anime/staging/Clannad
-      episodeFileId: ''
+      episodeFileId: 76771
       imdbId: tt1118804
       seriesId: 29
       tvdbId: 80644
@@ -2415,7 +2415,7 @@ Code Geass- Akito the Exiled 1- The Wyvern Arrives (2012):
       Anime: true
       Episode: 25
       Episode ID: '44836'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '025'
       Parsed Episode Title: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00/Code Geass- Lelouch of the Rebellion - S00E025 - Akito the Exiled The Wyvern
@@ -2435,7 +2435,7 @@ Code Geass- Akito the Exiled 1- The Wyvern Arrives (2012):
       - Science-Fiction
       - Thriller
       Show Root Path: anime/staging/Code Geass- Lelouch of the Rebellion
-      episodeFileId: ''
+      episodeFileId: 76772
       imdbId: tt0994314
       seriesId: 21
       tvdbId: 79525
@@ -2467,7 +2467,7 @@ Code Geass- Akito the Exiled 2- The Wyvern Divided (2013):
       Anime: true
       Episode: 26
       Episode ID: '44837'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '026'
       Parsed Episode Title: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00/Code Geass- Lelouch of the Rebellion - S00E026 - Akito the Exiled The Torn
@@ -2487,7 +2487,7 @@ Code Geass- Akito the Exiled 2- The Wyvern Divided (2013):
       - Science-Fiction
       - Thriller
       Show Root Path: anime/staging/Code Geass- Lelouch of the Rebellion
-      episodeFileId: ''
+      episodeFileId: 76773
       imdbId: tt0994314
       seriesId: 21
       tvdbId: 79525
@@ -2520,7 +2520,7 @@ Code Geass- Akito the Exiled 3- The Brightness Falls (2015):
       Anime: true
       Episode: 27
       Episode ID: '44838'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '027'
       Parsed Episode Title: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00/Code Geass- Lelouch of the Rebellion - S00E027 - Akito the Exiled The Brightness
@@ -2540,7 +2540,7 @@ Code Geass- Akito the Exiled 3- The Brightness Falls (2015):
       - Science-Fiction
       - Thriller
       Show Root Path: anime/staging/Code Geass- Lelouch of the Rebellion
-      episodeFileId: ''
+      episodeFileId: 76774
       imdbId: tt0994314
       seriesId: 21
       tvdbId: 79525
@@ -2572,7 +2572,7 @@ Code Geass- Akito the Exiled 4- Memories of Hatred (2015):
       Anime: true
       Episode: 28
       Episode ID: '44839'
-      Has Link: false
+      Has Link: true
       Parsed Episode: 028
       Parsed Episode Title: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00/Code Geass- Lelouch of the Rebellion - S00E028 - Akito the Exiled Memories
@@ -2592,7 +2592,7 @@ Code Geass- Akito the Exiled 4- Memories of Hatred (2015):
       - Science-Fiction
       - Thriller
       Show Root Path: anime/staging/Code Geass- Lelouch of the Rebellion
-      episodeFileId: ''
+      episodeFileId: 76775
       imdbId: tt0994314
       seriesId: 21
       tvdbId: 79525
@@ -2625,7 +2625,7 @@ Code Geass- Akito the Exiled 5- To Beloved Ones (2016):
       Anime: true
       Episode: 29
       Episode ID: '44840'
-      Has Link: false
+      Has Link: true
       Parsed Episode: 029
       Parsed Episode Title: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00/Code Geass- Lelouch of the Rebellion - S00E029 - Akito the Exiled To Those
@@ -2645,7 +2645,7 @@ Code Geass- Akito the Exiled 5- To Beloved Ones (2016):
       - Science-Fiction
       - Thriller
       Show Root Path: anime/staging/Code Geass- Lelouch of the Rebellion
-      episodeFileId: ''
+      episodeFileId: 76776
       imdbId: tt0994314
       seriesId: 21
       tvdbId: 79525
@@ -2759,7 +2759,7 @@ Code Geass- Lelouch of the Rebellion - Glorification (2018):
       Anime: true
       Episode: 32
       Episode ID: 44843
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/staging/Code Geass- Lelouch of the Rebellion/Season
         00/Code Geass- Lelouch of the Rebellion - S00E032 - Code Geass Lelouch of
         the Revolution The Imperial Path
@@ -2778,7 +2778,7 @@ Code Geass- Lelouch of the Rebellion - Glorification (2018):
       - Science-Fiction
       - Thriller
       Show Root Path: anime/staging/Code Geass- Lelouch of the Rebellion
-      episodeFileId: ''
+      episodeFileId: 76777
       imdbId: tt0994314
       seriesId: 21
       tvdbId: 79525
@@ -2866,21 +2866,15 @@ Constantine- City of Demons - The Movie (2018):
       tvdbId: 336139
   Year: 2018
 Cowboy Bebop- The Movie (2001):
-  Absolute Movie File Path: "/media/video/movies/foreign/Cowboy Bebop- The Movie (2001)/\u30AB\
-    \u30A6\u30DC\u30FC\u30A4\u30D3\u30D0\u30C3\u30D7 \u5929\u56FD\u306E\u6249 (2001)\
-    \ Remux-1080p Proper REAL.mkv"
+  Absolute Movie File Path: ''
   Absolute Movie Path: /media/video/movies/foreign/Cowboy Bebop- The Movie (2001)
   Has File: false
   Monitored: true
   Movie DB ID: 11299
-  Movie File: "\u30AB\u30A6\u30DC\u30FC\u30A4\u30D3\u30D0\u30C3\u30D7 \u5929\u56FD\
-    \u306E\u6249 (2001) Remux-1080p Proper REAL.mkv"
-  Parsed Extension: REAL.mkv
-  Parsed Movie Quality: HDTV-1080p
+  Movie File: ''
+  Parsed Extension: ''
   Parsed Quality: ''
-  Relative Movie File Path: "movies/foreign/Cowboy Bebop- The Movie (2001)/\u30AB\u30A6\
-    \u30DC\u30FC\u30A4\u30D3\u30D0\u30C3\u30D7 \u5929\u56FD\u306E\u6249 (2001) Remux-1080p\
-    \ Proper REAL.mkv"
+  Relative Movie File Path: ''
   Relative Movie Path: movies/foreign/Cowboy Bebop- The Movie (2001)
   Shows:
     Cowboy Bebop:
@@ -2927,7 +2921,7 @@ Death Note (2006):
       Anime: true
       Episode: 3
       Episode ID: '45126'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '003'
       Parsed Episode Title: anime/staging/Death Note/Season 00/Death Note - S00E003
         - Death Note (Live Action Movie)
@@ -2944,7 +2938,7 @@ Death Note (2006):
       - Mystery
       - Thriller
       Show Root Path: anime/staging/Death Note
-      episodeFileId: ''
+      episodeFileId: 76783
       imdbId: tt0877057
       seriesId: 117
       tvdbId: 79481
@@ -2969,7 +2963,7 @@ Death Note (2017):
       Anime: true
       Episode: 6
       Episode ID: '45129'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '006'
       Parsed Episode Title: anime/staging/Death Note/Season 00/Death Note - S00E006
         - Death Note (Netflix Live Action Movie)
@@ -2986,7 +2980,7 @@ Death Note (2017):
       - Mystery
       - Thriller
       Show Root Path: anime/staging/Death Note
-      episodeFileId: ''
+      episodeFileId: 76789
       imdbId: tt0877057
       seriesId: 117
       tvdbId: 79481
@@ -3012,7 +3006,7 @@ Death Note Relight 1- Visions of a God (2007):
       Anime: true
       Episode: 1
       Episode ID: '45124'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Death Note/Season 00/Death Note - S00E001
         - Death Note Rewrite The Visualizing God
@@ -3029,7 +3023,7 @@ Death Note Relight 1- Visions of a God (2007):
       - Mystery
       - Thriller
       Show Root Path: anime/staging/Death Note
-      episodeFileId: ''
+      episodeFileId: 76779
       imdbId: tt0877057
       seriesId: 117
       tvdbId: 79481
@@ -3057,7 +3051,7 @@ Death Note Relight 2- L's Successors (2009):
       Anime: true
       Episode: 2
       Episode ID: '45125'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '002'
       Parsed Episode Title: anime/staging/Death Note/Season 00/Death Note - S00E002
         - Death Note Rewrite 2 L's Successors
@@ -3074,7 +3068,7 @@ Death Note Relight 2- L's Successors (2009):
       - Mystery
       - Thriller
       Show Root Path: anime/staging/Death Note
-      episodeFileId: ''
+      episodeFileId: 76781
       imdbId: tt0877057
       seriesId: 117
       tvdbId: 79481
@@ -3099,7 +3093,7 @@ Death Note- The Last Name (2006):
       Anime: true
       Episode: 4
       Episode ID: '45127'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '004'
       Parsed Episode Title: anime/staging/Death Note/Season 00/Death Note - S00E004
         - Death Note The Last Name (Live Action Movie)
@@ -3116,7 +3110,7 @@ Death Note- The Last Name (2006):
       - Mystery
       - Thriller
       Show Root Path: anime/staging/Death Note
-      episodeFileId: ''
+      episodeFileId: 76785
       imdbId: tt0877057
       seriesId: 117
       tvdbId: 79481
@@ -4257,7 +4251,7 @@ Fairy Tail the Movie- Phoenix Priestess (2012):
       Anime: true
       Episode: 4
       Episode ID: '2270'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '004'
       Parsed Episode Title: anime/shounen/Fairy Tail/Season 00/Fairy Tail - S00E004
         - Fairy Tail the Movie The Phoenix Priestess
@@ -4274,7 +4268,7 @@ Fairy Tail the Movie- Phoenix Priestess (2012):
       - Comedy
       - Fantasy
       Show Root Path: anime/shounen/Fairy Tail
-      episodeFileId: 76463
+      episodeFileId: 76821
       imdbId: tt1528406
       seriesId: 38
       tvdbId: 114801
@@ -4299,7 +4293,7 @@ Fairy Tail x Rave (2013):
       Anime: true
       Episode: 8
       Episode ID: '2274'
-      Has Link: false
+      Has Link: true
       Parsed Episode: 008
       Parsed Episode Title: anime/shounen/Fairy Tail/Season 00/Fairy Tail - S00E008
         - Fairy Tail x Rave
@@ -4316,7 +4310,7 @@ Fairy Tail x Rave (2013):
       - Comedy
       - Fantasy
       Show Root Path: anime/shounen/Fairy Tail
-      episodeFileId: 76466
+      episodeFileId: 76822
       imdbId: tt1528406
       seriesId: 38
       tvdbId: 114801
@@ -4362,7 +4356,7 @@ Fairy Tail- Dragon Cry (2017):
       Anime: true
       Episode: 12
       Episode ID: '2278'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/shounen/Fairy Tail/Season 00/Fairy Tail - S00E012
         - Fairy Tail Dragon Cry
       Parsed Season Folder: Season 00
@@ -4378,7 +4372,7 @@ Fairy Tail- Dragon Cry (2017):
       - Comedy
       - Fantasy
       Show Root Path: anime/shounen/Fairy Tail
-      episodeFileId: 76467
+      episodeFileId: 76823
       imdbId: tt1528406
       seriesId: 38
       tvdbId: 114801
@@ -4520,7 +4514,7 @@ Family Guy Presents- Seth and Alex's almost live comedy show (2009):
       Anime: true
       Episode: 24
       Episode ID: '4274'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '024'
       Parsed Episode Title: anime/staging/Fate+Kaleid Liner Prisma Illya/Season 00/Fate+Kaleid
         Liner Prisma Illya - S00E024 - Oath Under Snow
@@ -4536,7 +4530,7 @@ Family Guy Presents- Seth and Alex's almost live comedy show (2009):
       - Comedy
       - Fantasy
       Show Root Path: anime/staging/Fate+Kaleid Liner Prisma Illya
-      episodeFileId: ''
+      episodeFileId: 76891
       imdbId: tt2904426
       seriesId: 147
       tvdbId: 269319
@@ -4606,14 +4600,14 @@ Fate+stay night- Heaven's Feel I. presage flower (2017):
       Episode ID: '51924'
       Has Link: false
       Parsed Episode: '003'
-      Parsed Episode Title: movies/staging/Fate+Stay Night- Unlimited Blade Works/Season
+      Parsed Episode Title: tv/staging/Fate+Stay Night- Unlimited Blade Works/Season
         00/Fate+Stay Night- Unlimited Blade Works - S00E003 - Fate/Stay Night Heaven's
         Feel - I. Presage Flower
       Parsed Season Folder: Season 00
-      Relative Show File Path: movies/staging/Fate+Stay Night- Unlimited Blade Works/Season
+      Relative Show File Path: tv/staging/Fate+Stay Night- Unlimited Blade Works/Season
         00/Fate+Stay Night- Unlimited Blade Works - S00E003 - Fate/Stay Night Heaven's
         Feel - I. Presage Flower Bluray-1080p.mkv
-      Relative Show Path: movies/staging/Fate+Stay Night- Unlimited Blade Works/Season
+      Relative Show Path: tv/staging/Fate+Stay Night- Unlimited Blade Works/Season
         00
       Season: '00'
       Show Genres:
@@ -4621,7 +4615,7 @@ Fate+stay night- Heaven's Feel I. presage flower (2017):
       - Animation
       - Anime
       - Fantasy
-      Show Root Path: movies/staging/Fate+Stay Night- Unlimited Blade Works
+      Show Root Path: tv/staging/Fate+Stay Night- Unlimited Blade Works
       episodeFileId: ''
       imdbId: tt3621796
       seriesId: 148
@@ -4654,14 +4648,14 @@ Fate+stay night- Heaven's Feel I. presage flower (2017):
       Episode ID: '4327'
       Has Link: false
       Parsed Episode: '004'
-      Parsed Episode Title: movies/staging/Fate+Stay Night- Unlimited Blade Works/Season
+      Parsed Episode Title: tv/staging/Fate+Stay Night- Unlimited Blade Works/Season
         00/Fate+Stay Night- Unlimited Blade Works - S00E004 - Fate/Stay Night Heaven's
         Feel - II. Lost Butterfly
       Parsed Season Folder: Season 00
-      Relative Show File Path: movies/staging/Fate+Stay Night- Unlimited Blade Works/Season
+      Relative Show File Path: tv/staging/Fate+Stay Night- Unlimited Blade Works/Season
         00/Fate+Stay Night- Unlimited Blade Works - S00E004 - Fate/Stay Night Heaven's
         Feel - II. Lost Butterfly Remux-1080p.mkv
-      Relative Show Path: movies/staging/Fate+Stay Night- Unlimited Blade Works/Season
+      Relative Show Path: tv/staging/Fate+Stay Night- Unlimited Blade Works/Season
         00
       Season: '00'
       Show Genres:
@@ -4669,7 +4663,7 @@ Fate+stay night- Heaven's Feel I. presage flower (2017):
       - Animation
       - Anime
       - Fantasy
-      Show Root Path: movies/staging/Fate+Stay Night- Unlimited Blade Works
+      Show Root Path: tv/staging/Fate+Stay Night- Unlimited Blade Works
       episodeFileId: ''
       imdbId: tt3621796
       seriesId: 148
@@ -4697,12 +4691,12 @@ Fate+stay night- Heaven's Feel I. presage flower (2017):
       Episode ID: '51925'
       Has Link: false
       Parsed Episode: '005'
-      Parsed Episode Title: movies/staging/Fate+Stay Night- Unlimited Blade Works/Season
+      Parsed Episode Title: tv/staging/Fate+Stay Night- Unlimited Blade Works/Season
         00/Fate+Stay Night- Unlimited Blade Works - S00E005 - Fate/Stay Night Heaven's
         Feel - III. Spring Song
       Parsed Season Folder: Season 00
       Relative Show File Path: ''
-      Relative Show Path: movies/staging/Fate+Stay Night- Unlimited Blade Works/Season
+      Relative Show Path: tv/staging/Fate+Stay Night- Unlimited Blade Works/Season
         00
       Season: '00'
       Show Genres:
@@ -4710,7 +4704,7 @@ Fate+stay night- Heaven's Feel I. presage flower (2017):
       - Animation
       - Anime
       - Fantasy
-      Show Root Path: movies/staging/Fate+Stay Night- Unlimited Blade Works
+      Show Root Path: tv/staging/Fate+Stay Night- Unlimited Blade Works
       episodeFileId: ''
       imdbId: tt3621796
       seriesId: 148
@@ -5041,7 +5035,7 @@ Fullmetal Alchemist (2017):
       Anime: true
       Episode: 12
       Episode ID: '1956'
-      Has Link: false
+      Has Link: true
       Parsed Episode Title: anime/shounen/Fullmetal Alchemist/Season 00/Fullmetal
         Alchemist - S00E012 - Fullmetal Alchemist (Live Action)
       Parsed Season Folder: Season 00
@@ -5057,7 +5051,7 @@ Fullmetal Alchemist (2017):
       - Drama
       - Fantasy
       Show Root Path: anime/shounen/Fullmetal Alchemist
-      episodeFileId: 76488
+      episodeFileId: 76989
       imdbId: tt0421357
       seriesId: 43
       tvdbId: 75579
@@ -5087,7 +5081,7 @@ Fullmetal Alchemist The Movie- Conqueror of Shamballa (2005):
       Anime: true
       Episode: 4
       Episode ID: '1948'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '004'
       Parsed Episode Title: anime/shounen/Fullmetal Alchemist/Season 00/Fullmetal
         Alchemist - S00E004 - Fullmetal Alchemist The Movie Conqueror of Shamballa
@@ -5105,7 +5099,7 @@ Fullmetal Alchemist The Movie- Conqueror of Shamballa (2005):
       - Drama
       - Fantasy
       Show Root Path: anime/shounen/Fullmetal Alchemist
-      episodeFileId: 76486
+      episodeFileId: 76988
       imdbId: tt0421357
       seriesId: 43
       tvdbId: 75579
@@ -5136,12 +5130,12 @@ Fullmetal Alchemist The Movie- The Sacred Star of Milos (2011):
       Episode: 5
       Episode ID: '45576'
       Has Link: false
-      Parsed Episode Title: movies/staging/Fullmetal Alchemist- Brotherhood/Season
-        00/Fullmetal Alchemist- Brotherhood - S00E005 - The Sacred Star of Milos
+      Parsed Episode Title: tv/staging/Fullmetal Alchemist- Brotherhood/Season 00/Fullmetal
+        Alchemist- Brotherhood - S00E005 - The Sacred Star of Milos
       Parsed Season Folder: Season 00
-      Relative Show File Path: movies/staging/Fullmetal Alchemist- Brotherhood/Season
+      Relative Show File Path: tv/staging/Fullmetal Alchemist- Brotherhood/Season
         00/Fullmetal Alchemist- Brotherhood - S00E005 - The Sacred Star of Milos Remux-1080p.mkv
-      Relative Show Path: movies/staging/Fullmetal Alchemist- Brotherhood/Season 00
+      Relative Show Path: tv/staging/Fullmetal Alchemist- Brotherhood/Season 00
       Season: '00'
       Show Genres:
       - Action
@@ -5149,7 +5143,7 @@ Fullmetal Alchemist The Movie- The Sacred Star of Milos (2011):
       - Anime
       - Drama
       - Fantasy
-      Show Root Path: movies/staging/Fullmetal Alchemist- Brotherhood
+      Show Root Path: tv/staging/Fullmetal Alchemist- Brotherhood
       episodeFileId: ''
       imdbId: tt1355642
       seriesId: 44
@@ -5852,7 +5846,7 @@ Ghost in the Shell Arise - Border 5- Pyrophoric Cult (2015):
       - 9
       - 10
       Episode ID: 1965
-      Has Link: false
+      Has Link: true
       Parsed Episode: 009-010
       Parsed Episode Title: 'anime/staging/Ghost in the Shell- Arise - Alternative
         Architecture/Season 01/Ghost in the Shell- Arise - Alternative Architecture
@@ -5869,7 +5863,7 @@ Ghost in the Shell Arise - Border 5- Pyrophoric Cult (2015):
       - Animation
       - Science-Fiction
       Show Root Path: anime/staging/Ghost in the Shell- Arise - Alternative Architecture
-      episodeFileId: 76519
+      episodeFileId: 76990
       imdbId: tt4508686
       seriesId: 46
       tvdbId: 293491
@@ -6073,7 +6067,7 @@ Gintama- The Best of Gintama on Theater 2D (2012):
       Anime: true
       Episode: 1
       Episode ID: '4877'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Gintama/Season 00/Gintama - S00E001 - Jump
         Festa 2005 Special
@@ -6089,7 +6083,7 @@ Gintama- The Best of Gintama on Theater 2D (2012):
       - Comedy
       - Science-Fiction
       Show Root Path: anime/staging/Gintama
-      episodeFileId: ''
+      episodeFileId: 77001
       imdbId: tt0988818
       seriesId: 151
       tvdbId: 79895
@@ -6119,7 +6113,7 @@ Gintama- The Final Chapter - Be Forever Yorozuya (2013):
       Anime: true
       Episode: 7
       Episode ID: '4883'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '007'
       Parsed Episode Title: anime/staging/Gintama/Season 00/Gintama - S00E007 - Gintama
         The Movie The Final Chapter Odd Jobs Forever
@@ -6135,7 +6129,7 @@ Gintama- The Final Chapter - Be Forever Yorozuya (2013):
       - Comedy
       - Science-Fiction
       Show Root Path: anime/staging/Gintama
-      episodeFileId: ''
+      episodeFileId: 77062
       imdbId: tt0988818
       seriesId: 151
       tvdbId: 79895
@@ -6160,7 +6154,7 @@ Gintama- The Movie (2010):
       Anime: true
       Episode: 4
       Episode ID: '4880'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '004'
       Parsed Episode Title: anime/staging/Gintama/Season 00/Gintama - S00E004 - Gintama
         The Movie
@@ -6176,7 +6170,7 @@ Gintama- The Movie (2010):
       - Comedy
       - Science-Fiction
       Show Root Path: anime/staging/Gintama
-      episodeFileId: ''
+      episodeFileId: 77031
       imdbId: tt0988818
       seriesId: 151
       tvdbId: 79895
@@ -6406,7 +6400,7 @@ Gurren Lagann The Movie- Childhood's End (2008):
       Anime: true
       Episode: 3
       Episode ID: '45697'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '003'
       Parsed Episode Title: anime/shounen/Gurren Lagann/Season 00/Gurren Lagann -
         S00E003 - Gurren Lagann the Movie -Childhood's End-
@@ -6422,7 +6416,7 @@ Gurren Lagann The Movie- Childhood's End (2008):
       - Anime
       - Comedy
       Show Root Path: anime/shounen/Gurren Lagann
-      episodeFileId: 76525
+      episodeFileId: 77360
       imdbId: tt0948103
       seriesId: 52
       tvdbId: 80096
@@ -6452,7 +6446,7 @@ Gurren Lagann The Movie- The Lights in the Sky Are Stars (2009):
       Anime: true
       Episode: 4
       Episode ID: '45698'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '004'
       Parsed Episode Title: anime/shounen/Gurren Lagann/Season 00/Gurren Lagann -
         S00E004 - Gurren Lagann the Movie -The Lights in the Sky Are Stars-
@@ -6468,7 +6462,7 @@ Gurren Lagann The Movie- The Lights in the Sky Are Stars (2009):
       - Anime
       - Comedy
       Show Root Path: anime/shounen/Gurren Lagann
-      episodeFileId: 76527
+      episodeFileId: 77361
       imdbId: tt0948103
       seriesId: 52
       tvdbId: 80096
@@ -7113,19 +7107,19 @@ Jeff Dunham - All Over the Map (2014):
       Anime: false
       Episode: 8
       Episode ID: '10432'
-      Has Link: false
+      Has Link: true
       Parsed Episode: 08
-      Parsed Episode Title: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
-        Dunham Show - S00E08 - All Over the Map
+      Parsed Episode Title: tv/staging/The Jeff Dunham Show/Season 00/The Jeff Dunham
+        Show - S00E08 - All Over the Map
       Parsed Season Folder: Season 00
-      Relative Show File Path: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
+      Relative Show File Path: tv/staging/The Jeff Dunham Show/Season 00/The Jeff
         Dunham Show - S00E08 - All Over the Map Bluray-1080p.mp4
-      Relative Show Path: movies/staging/The Jeff Dunham Show/Season 00
+      Relative Show Path: tv/staging/The Jeff Dunham Show/Season 00
       Season: '00'
       Show Genres:
       - Comedy
-      Show Root Path: movies/staging/The Jeff Dunham Show
-      episodeFileId: ''
+      Show Root Path: tv/staging/The Jeff Dunham Show
+      episodeFileId: 78769
       imdbId: tt1483024
       seriesId: 224
       tvdbId: 119761
@@ -7151,19 +7145,19 @@ Jeff Dunham - Arguing with Myself (2006):
       Anime: false
       Episode: 1
       Episode ID: '10425'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '01'
-      Parsed Episode Title: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
-        Dunham Show - S00E01 - Arguing with Myself
+      Parsed Episode Title: tv/staging/The Jeff Dunham Show/Season 00/The Jeff Dunham
+        Show - S00E01 - Arguing with Myself
       Parsed Season Folder: Season 00
-      Relative Show File Path: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
+      Relative Show File Path: tv/staging/The Jeff Dunham Show/Season 00/The Jeff
         Dunham Show - S00E01 - Arguing with Myself Bluray-1080p.mkv
-      Relative Show Path: movies/staging/The Jeff Dunham Show/Season 00
+      Relative Show Path: tv/staging/The Jeff Dunham Show/Season 00
       Season: '00'
       Show Genres:
       - Comedy
-      Show Root Path: movies/staging/The Jeff Dunham Show
-      episodeFileId: ''
+      Show Root Path: tv/staging/The Jeff Dunham Show
+      episodeFileId: 78762
       imdbId: tt1483024
       seriesId: 224
       tvdbId: 119761
@@ -7189,19 +7183,19 @@ Jeff Dunham - Birth of a Dummy (2011):
       Anime: false
       Episode: 5
       Episode ID: '10429'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '05'
-      Parsed Episode Title: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
-        Dunham Show - S00E05 - Birth of a Dummy
+      Parsed Episode Title: tv/staging/The Jeff Dunham Show/Season 00/The Jeff Dunham
+        Show - S00E05 - Birth of a Dummy
       Parsed Season Folder: Season 00
-      Relative Show File Path: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
+      Relative Show File Path: tv/staging/The Jeff Dunham Show/Season 00/The Jeff
         Dunham Show - S00E05 - Birth of a Dummy HDTV-720p.Proper.mkv
-      Relative Show Path: movies/staging/The Jeff Dunham Show/Season 00
+      Relative Show Path: tv/staging/The Jeff Dunham Show/Season 00
       Season: '00'
       Show Genres:
       - Comedy
-      Show Root Path: movies/staging/The Jeff Dunham Show
-      episodeFileId: ''
+      Show Root Path: tv/staging/The Jeff Dunham Show
+      episodeFileId: 78766
       imdbId: tt1483024
       seriesId: 224
       tvdbId: 119761
@@ -7227,19 +7221,19 @@ Jeff Dunham - Controlled Chaos (2011):
       Anime: false
       Episode: 4
       Episode ID: '10428'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '04'
-      Parsed Episode Title: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
-        Dunham Show - S00E04 - Controlled Chaos
+      Parsed Episode Title: tv/staging/The Jeff Dunham Show/Season 00/The Jeff Dunham
+        Show - S00E04 - Controlled Chaos
       Parsed Season Folder: Season 00
-      Relative Show File Path: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
+      Relative Show File Path: tv/staging/The Jeff Dunham Show/Season 00/The Jeff
         Dunham Show - S00E04 - Controlled Chaos DVD.avi
-      Relative Show Path: movies/staging/The Jeff Dunham Show/Season 00
+      Relative Show Path: tv/staging/The Jeff Dunham Show/Season 00
       Season: '00'
       Show Genres:
       - Comedy
-      Show Root Path: movies/staging/The Jeff Dunham Show
-      episodeFileId: ''
+      Show Root Path: tv/staging/The Jeff Dunham Show
+      episodeFileId: 78765
       imdbId: tt1483024
       seriesId: 224
       tvdbId: 119761
@@ -7268,19 +7262,19 @@ Jeff Dunham - Jeff Dunham's Very Special Christmas Special (2008):
       Anime: false
       Episode: 3
       Episode ID: '10427'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '03'
-      Parsed Episode Title: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
-        Dunham Show - S00E03 - Very Special Christmas Special
+      Parsed Episode Title: tv/staging/The Jeff Dunham Show/Season 00/The Jeff Dunham
+        Show - S00E03 - Very Special Christmas Special
       Parsed Season Folder: Season 00
-      Relative Show File Path: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
+      Relative Show File Path: tv/staging/The Jeff Dunham Show/Season 00/The Jeff
         Dunham Show - S00E03 - Very Special Christmas Special DVD.avi
-      Relative Show Path: movies/staging/The Jeff Dunham Show/Season 00
+      Relative Show Path: tv/staging/The Jeff Dunham Show/Season 00
       Season: '00'
       Show Genres:
       - Comedy
-      Show Root Path: movies/staging/The Jeff Dunham Show
-      episodeFileId: ''
+      Show Root Path: tv/staging/The Jeff Dunham Show
+      episodeFileId: 78764
       imdbId: tt1483024
       seriesId: 224
       tvdbId: 119761
@@ -7306,19 +7300,19 @@ Jeff Dunham - Minding the Monsters (2012):
       Anime: false
       Episode: 6
       Episode ID: '10430'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '06'
-      Parsed Episode Title: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
-        Dunham Show - S00E06 - Minding the Monsters
+      Parsed Episode Title: tv/staging/The Jeff Dunham Show/Season 00/The Jeff Dunham
+        Show - S00E06 - Minding the Monsters
       Parsed Season Folder: Season 00
-      Relative Show File Path: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
+      Relative Show File Path: tv/staging/The Jeff Dunham Show/Season 00/The Jeff
         Dunham Show - S00E06 - Minding the Monsters Bluray-1080p.mkv
-      Relative Show Path: movies/staging/The Jeff Dunham Show/Season 00
+      Relative Show Path: tv/staging/The Jeff Dunham Show/Season 00
       Season: '00'
       Show Genres:
       - Comedy
-      Show Root Path: movies/staging/The Jeff Dunham Show
-      episodeFileId: ''
+      Show Root Path: tv/staging/The Jeff Dunham Show
+      episodeFileId: 78767
       imdbId: tt1483024
       seriesId: 224
       tvdbId: 119761
@@ -7346,17 +7340,17 @@ Jeff Dunham - Relative Disaster (2017):
       Episode ID: '10425'
       Has Link: false
       Parsed Episode: '01'
-      Parsed Episode Title: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
-        Dunham Show - S00E01 - Arguing with Myself
+      Parsed Episode Title: tv/staging/The Jeff Dunham Show/Season 00/The Jeff Dunham
+        Show - S00E01 - Arguing with Myself
       Parsed Season Folder: Season 00
-      Relative Show File Path: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
+      Relative Show File Path: tv/staging/The Jeff Dunham Show/Season 00/The Jeff
         Dunham Show - S00E01 - Arguing with Myself WEBDL-1080p.mkv
-      Relative Show Path: movies/staging/The Jeff Dunham Show/Season 00
+      Relative Show Path: tv/staging/The Jeff Dunham Show/Season 00
       Season: '00'
       Show Genres:
       - Comedy
-      Show Root Path: movies/staging/The Jeff Dunham Show
-      episodeFileId: ''
+      Show Root Path: tv/staging/The Jeff Dunham Show
+      episodeFileId: 78762
       imdbId: tt1483024
       seriesId: 224
       tvdbId: 119761
@@ -7382,19 +7376,19 @@ Jeff Dunham - Spark of Insanity (2007):
       Anime: false
       Episode: 2
       Episode ID: '10426'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '02'
-      Parsed Episode Title: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
-        Dunham Show - S00E02 - Spark of Insanity
+      Parsed Episode Title: tv/staging/The Jeff Dunham Show/Season 00/The Jeff Dunham
+        Show - S00E02 - Spark of Insanity
       Parsed Season Folder: Season 00
-      Relative Show File Path: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
+      Relative Show File Path: tv/staging/The Jeff Dunham Show/Season 00/The Jeff
         Dunham Show - S00E02 - Spark of Insanity Bluray-1080p.mkv
-      Relative Show Path: movies/staging/The Jeff Dunham Show/Season 00
+      Relative Show Path: tv/staging/The Jeff Dunham Show/Season 00
       Season: '00'
       Show Genres:
       - Comedy
-      Show Root Path: movies/staging/The Jeff Dunham Show
-      episodeFileId: ''
+      Show Root Path: tv/staging/The Jeff Dunham Show
+      episodeFileId: 78763
       imdbId: tt1483024
       seriesId: 224
       tvdbId: 119761
@@ -7420,19 +7414,19 @@ Jeff Dunham - Unhinged in Hollywood (2015):
       Anime: false
       Episode: 9
       Episode ID: '10433'
-      Has Link: false
+      Has Link: true
       Parsed Episode: 09
-      Parsed Episode Title: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
-        Dunham Show - S00E09 - Unhinged in Hollywood
+      Parsed Episode Title: tv/staging/The Jeff Dunham Show/Season 00/The Jeff Dunham
+        Show - S00E09 - Unhinged in Hollywood
       Parsed Season Folder: Season 00
-      Relative Show File Path: movies/staging/The Jeff Dunham Show/Season 00/The Jeff
+      Relative Show File Path: tv/staging/The Jeff Dunham Show/Season 00/The Jeff
         Dunham Show - S00E09 - Unhinged in Hollywood Bluray-720p.mkv
-      Relative Show Path: movies/staging/The Jeff Dunham Show/Season 00
+      Relative Show Path: tv/staging/The Jeff Dunham Show/Season 00
       Season: '00'
       Show Genres:
       - Comedy
-      Show Root Path: movies/staging/The Jeff Dunham Show
-      episodeFileId: ''
+      Show Root Path: tv/staging/The Jeff Dunham Show
+      episodeFileId: 78770
       imdbId: tt1483024
       seriesId: 224
       tvdbId: 119761
@@ -7528,7 +7522,7 @@ Journey's End- The Saga of Star Trek - The Next Generation (1994):
       Anime: false
       Episode: 1
       Episode ID: '32976'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '01'
       Parsed Episode Title: tv/scifi/Star Trek- The Next Generation/Season 00/Star
         Trek- The Next Generation - S00E01 - Journey's End The Saga of Star Trek The
@@ -7545,7 +7539,7 @@ Journey's End- The Saga of Star Trek - The Next Generation (1994):
       - Drama
       - Science-Fiction
       Show Root Path: tv/scifi/Star Trek- The Next Generation
-      episodeFileId: ''
+      episodeFileId: 77498
       imdbId: tt0092455
       seriesId: 394
       tvdbId: 71470
@@ -7971,7 +7965,7 @@ Koukyoushihen- Eureka Seven - Hi-Evolution 1 (2017):
       - Drama
       - Science-Fiction
       Show Root Path: anime/staging/Eureka Seven
-      episodeFileId: 76461
+      episodeFileId: 78760
       imdbId: tt0765491
       seriesId: 145
       tvdbId: 79360
@@ -7996,7 +7990,7 @@ L- Change the World (2008):
       Anime: true
       Episode: 5
       Episode ID: '45128'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '005'
       Parsed Episode Title: anime/staging/Death Note/Season 00/Death Note - S00E005
         - Death Note L, Change the World (Live Action Movie)
@@ -8013,7 +8007,7 @@ L- Change the World (2008):
       - Mystery
       - Thriller
       Show Root Path: anime/staging/Death Note
-      episodeFileId: ''
+      episodeFileId: 76787
       imdbId: tt0877057
       seriesId: 117
       tvdbId: 79481
@@ -8058,7 +8052,7 @@ Lupin the Third- Daisuke Jigen's Gravestone (2014):
       - Animation
       - Comedy
       Show Root Path: anime/staging/Lupin the Third- The Woman Called Fujiko Mine
-      episodeFileId: 76550
+      episodeFileId: 77571
       imdbId: tt2298919
       seriesId: 156
       tvdbId: 257875
@@ -8105,7 +8099,7 @@ Lupin the Third- The Blood Spray of Goemon Ishikawa (2017):
       - Animation
       - Comedy
       Show Root Path: anime/staging/Lupin the Third- The Woman Called Fujiko Mine
-      episodeFileId: 76552
+      episodeFileId: 77572
       imdbId: tt2298919
       seriesId: 156
       tvdbId: 257875
@@ -8185,7 +8179,7 @@ Maggie Simpson in The Longest Daycare (2012):
       - Animation
       - Comedy
       Show Root Path: tv/sitcom/The Simpsons
-      episodeFileId: 76646
+      episodeFileId: 78779
       imdbId: tt0096697
       seriesId: 455
       tvdbId: 71663
@@ -8249,18 +8243,18 @@ Merlin's Apprentice (2006):
       Episode ID: '48210'
       Has Link: false
       Parsed Episode: '02'
-      Parsed Episode Title: movies/staging/Merlin (1998)/Season 00/Merlin (1998) -
-        S00E02 - Merlins Apprentice
+      Parsed Episode Title: tv/staging/Merlin (1998)/Season 00/Merlin (1998) - S00E02
+        - Merlins Apprentice
       Parsed Season Folder: Season 00
       Relative Show File Path: ''
-      Relative Show Path: movies/staging/Merlin (1998)/Season 00
+      Relative Show Path: tv/staging/Merlin (1998)/Season 00
       Season: '00'
       Show Genres:
       - Adventure
       - Drama
       - Fantasy
       - Mini-Series
-      Show Root Path: movies/staging/Merlin (1998)
+      Show Root Path: tv/staging/Merlin (1998)
       episodeFileId: ''
       imdbId: tt0130414
       seriesId: 512
@@ -8286,22 +8280,22 @@ Merlin- The Return (2000):
       Anime: false
       Episode: 1
       Episode ID: '48209'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '01'
-      Parsed Episode Title: movies/staging/Merlin (1998)/Season 00/Merlin (1998) -
-        S00E01 - Merlin - The Return
+      Parsed Episode Title: tv/staging/Merlin (1998)/Season 00/Merlin (1998) - S00E01
+        - Merlin - The Return
       Parsed Season Folder: Season 00
-      Relative Show File Path: movies/staging/Merlin (1998)/Season 00/Merlin (1998)
-        - S00E01 - Merlin - The Return DVD.mp4
-      Relative Show Path: movies/staging/Merlin (1998)/Season 00
+      Relative Show File Path: tv/staging/Merlin (1998)/Season 00/Merlin (1998) -
+        S00E01 - Merlin - The Return DVD.mp4
+      Relative Show Path: tv/staging/Merlin (1998)/Season 00
       Season: '00'
       Show Genres:
       - Adventure
       - Drama
       - Fantasy
       - Mini-Series
-      Show Root Path: movies/staging/Merlin (1998)
-      episodeFileId: ''
+      Show Root Path: tv/staging/Merlin (1998)
+      episodeFileId: 78771
       imdbId: tt0130414
       seriesId: 512
       tvdbId: 83269
@@ -9681,7 +9675,7 @@ My Name Is Bruce (2007):
       Anime: false
       Episode: 4
       Episode ID: '27917'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '04'
       Parsed Episode Title: tv/fantasy/Ash vs Evil Dead/Season 00/Ash vs Evil Dead
         - S00E04 - Army of Darkness
@@ -9695,7 +9689,7 @@ My Name Is Bruce (2007):
       - Horror
       - Thriller
       Show Root Path: tv/fantasy/Ash vs Evil Dead
-      episodeFileId: ''
+      episodeFileId: 78753
       imdbId: tt4189022
       seriesId: 332
       tvdbId: 296295
@@ -9860,7 +9854,7 @@ Naruto Shippuden the Movie Road to Ninja (2012):
       Anime: true
       Episode: 1
       Episode ID: '6193'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '001'
       Parsed Episode Title: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
         - S00E001 - Naruto Shippuuden the Movie
@@ -9877,7 +9871,7 @@ Naruto Shippuden the Movie Road to Ninja (2012):
       - Comedy
       - Drama
       Show Root Path: anime/shounen/Naruto Shippuden
-      episodeFileId: 76580
+      episodeFileId: 78772
       imdbId: tt0988824
       seriesId: 168
       tvdbId: 79824
@@ -9948,7 +9942,7 @@ Naruto Shippuden- The Movie (2007):
       Anime: true
       Episode: 1
       Episode ID: '6193'
-      Has Link: true
+      Has Link: false
       Parsed Episode: '001'
       Parsed Episode Title: anime/shounen/Naruto Shippuden/Season 00/Naruto Shippuden
         - S00E001 - Naruto Shippuuden the Movie
@@ -9965,7 +9959,7 @@ Naruto Shippuden- The Movie (2007):
       - Comedy
       - Drama
       Show Root Path: anime/shounen/Naruto Shippuden
-      episodeFileId: 76580
+      episodeFileId: 78772
       imdbId: tt0988824
       seriesId: 168
       tvdbId: 79824
@@ -10510,15 +10504,14 @@ One Piece - Adventure of Nebulandia (2015):
     One Piece:
       Absolute Episode: ''
       Anime: true
-      Episode: 3
-      Episode ID: '3936'
-      Has Link: false
-      Parsed Episode: '003'
-      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E003
-        - Adventure in the Ocean's Navel
+      Episode: 33
+      Episode ID: '3965'
+      Has Link: true
+      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E033
+        - Adventure of Nebulandia
       Parsed Season Folder: Season 00
-      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E003
-        - Adventure in the Ocean's Navel Bluray-1080p.mkv
+      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E033
+        - Adventure of Nebulandia Bluray-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -10531,7 +10524,7 @@ One Piece - Adventure of Nebulandia (2015):
       - Fantasy
       - Travel
       Show Root Path: anime/shounen/One Piece
-      episodeFileId: 76607
+      episodeFileId: 77586
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -10560,15 +10553,14 @@ One Piece - Baron Omatsuri and the Secret Island (2005):
     One Piece:
       Absolute Episode: ''
       Anime: true
-      Episode: 1
-      Episode ID: '3934'
-      Has Link: false
-      Parsed Episode: '001'
-      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E001
-        - One Piece Defeat the Pirate Ganzack! (OVA 1)
+      Episode: 13
+      Episode ID: '3946'
+      Has Link: true
+      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E013
+        - Baron Omatsuri and the Secret Island
       Parsed Season Folder: Season 00
-      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E001
-        - One Piece Defeat the Pirate Ganzack! (OVA 1) Bluray-1080p.mkv
+      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E013
+        - Baron Omatsuri and the Secret Island Bluray-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -10581,7 +10573,7 @@ One Piece - Baron Omatsuri and the Secret Island (2005):
       - Fantasy
       - Travel
       Show Root Path: anime/shounen/One Piece
-      episodeFileId: 76602
+      episodeFileId: 77576
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -10705,15 +10697,14 @@ One Piece - Curse of the Sacred Sword (2004):
     One Piece:
       Absolute Episode: ''
       Anime: true
-      Episode: 1
-      Episode ID: '3934'
-      Has Link: false
-      Parsed Episode: '001'
-      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E001
-        - One Piece Defeat the Pirate Ganzack! (OVA 1)
+      Episode: 11
+      Episode ID: '3944'
+      Has Link: true
+      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E011
+        - Curse of the Sacred Sword
       Parsed Season Folder: Season 00
-      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E001
-        - One Piece Defeat the Pirate Ganzack! (OVA 1) Bluray-1080p.mkv
+      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E011
+        - Curse of the Sacred Sword Bluray-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -10726,7 +10717,7 @@ One Piece - Curse of the Sacred Sword (2004):
       - Fantasy
       - Travel
       Show Root Path: anime/shounen/One Piece
-      episodeFileId: 76602
+      episodeFileId: 77575
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -10806,15 +10797,14 @@ One Piece - Episode of Chopper Plus - Bloom in the Winter, Miracle Cherry Blosso
     One Piece:
       Absolute Episode: ''
       Anime: true
-      Episode: 1
-      Episode ID: '3934'
+      Episode: 17
+      Episode ID: '3950'
       Has Link: false
-      Parsed Episode: '001'
-      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E001
-        - One Piece Defeat the Pirate Ganzack! (OVA 1)
+      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E017
+        - Episode of Chopper Bloom in the Winter, Miracle Sakura
       Parsed Season Folder: Season 00
-      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E001
-        - One Piece Defeat the Pirate Ganzack! (OVA 1) Bluray-1080p.mkv
+      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E017
+        - Episode of Chopper Bloom in the Winter, Miracle Sakura Bluray-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -10827,7 +10817,7 @@ One Piece - Episode of Chopper Plus - Bloom in the Winter, Miracle Cherry Blosso
       - Fantasy
       - Travel
       Show Root Path: anime/shounen/One Piece
-      episodeFileId: 76602
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -10858,15 +10848,14 @@ One Piece - Episode of Luffy - Hand Island Adventure (2012):
     One Piece:
       Absolute Episode: ''
       Anime: true
-      Episode: 2
-      Episode ID: '3935'
+      Episode: 24
+      Episode ID: '3957'
       Has Link: false
-      Parsed Episode: '002'
-      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E002
-        - One Piece The Movie
+      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E024
+        - Episode of Luffy The Hand Island Adventure
       Parsed Season Folder: Season 00
-      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E002
-        - One Piece The Movie Bluray-720p.mkv
+      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E024
+        - Episode of Luffy The Hand Island Adventure Bluray-720p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -10879,7 +10868,7 @@ One Piece - Episode of Luffy - Hand Island Adventure (2012):
       - Fantasy
       - Travel
       Show Root Path: anime/shounen/One Piece
-      episodeFileId: 76606
+      episodeFileId: ''
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -10903,15 +10892,14 @@ One Piece - Episode of Skypiea (2018):
     One Piece:
       Absolute Episode: ''
       Anime: true
-      Episode: 3
-      Episode ID: '3936'
-      Has Link: false
-      Parsed Episode: '003'
-      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E003
-        - Adventure in the Ocean's Navel
+      Episode: 38
+      Episode ID: '3970'
+      Has Link: true
+      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E038
+        - Episode of Skypiea
       Parsed Season Folder: Season 00
-      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E003
-        - Adventure in the Ocean's Navel Bluray-1080p.mkv
+      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E038
+        - Episode of Skypiea Bluray-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -10924,7 +10912,7 @@ One Piece - Episode of Skypiea (2018):
       - Fantasy
       - Travel
       Show Root Path: anime/shounen/One Piece
-      episodeFileId: 76607
+      episodeFileId: 77590
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -10953,15 +10941,14 @@ One Piece - Giant Mecha Soldier of Karakuri Castle (2006):
     One Piece:
       Absolute Episode: ''
       Anime: true
-      Episode: 1
-      Episode ID: '3934'
+      Episode: 15
+      Episode ID: '3948'
       Has Link: true
-      Parsed Episode: '001'
-      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E001
-        - One Piece Defeat the Pirate Ganzack! (OVA 1)
+      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E015
+        - The Giant Mechanical Soldier of Karakuri Castle
       Parsed Season Folder: Season 00
-      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E001
-        - One Piece Defeat the Pirate Ganzack! (OVA 1) WEBDL-1080p.mkv
+      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E015
+        - The Giant Mechanical Soldier of Karakuri Castle WEBDL-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -10974,7 +10961,7 @@ One Piece - Giant Mecha Soldier of Karakuri Castle (2006):
       - Fantasy
       - Travel
       Show Root Path: anime/shounen/One Piece
-      episodeFileId: 76602
+      episodeFileId: 77577
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -10997,15 +10984,14 @@ One Piece - Heart of Gold (2016):
     One Piece:
       Absolute Episode: ''
       Anime: true
-      Episode: 3
-      Episode ID: '3936'
-      Has Link: false
-      Parsed Episode: '003'
-      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E003
-        - Adventure in the Ocean's Navel
+      Episode: 35
+      Episode ID: '3967'
+      Has Link: true
+      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E035
+        - One Piece Heart of Gold
       Parsed Season Folder: Season 00
-      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E003
-        - Adventure in the Ocean's Navel Bluray-1080p.mkv
+      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E035
+        - One Piece Heart of Gold Bluray-1080p.mkv
       Relative Show Path: anime/shounen/One Piece/Season 00
       Season: '00'
       Show Genres:
@@ -11018,7 +11004,7 @@ One Piece - Heart of Gold (2016):
       - Fantasy
       - Travel
       Show Root Path: anime/shounen/One Piece
-      episodeFileId: 76607
+      episodeFileId: 77588
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -11088,31 +11074,7 @@ One Piece - Romance Dawn Story (2008):
   Relative Movie Path: movies/foreign/One Piece - Romance Dawn Story (2008)
   Shows:
     One Piece:
-      Absolute Episode: ''
-      Anime: true
-      Episode: 1
-      Episode ID: '3934'
-      Has Link: false
-      Parsed Episode: '001'
-      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E001
-        - One Piece Defeat the Pirate Ganzack! (OVA 1)
-      Parsed Season Folder: Season 00
-      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E001
-        - One Piece Defeat the Pirate Ganzack! (OVA 1) Bluray-720p.mkv
-      Relative Show Path: anime/shounen/One Piece/Season 00
-      Season: '00'
-      Show Genres:
-      - Action
-      - Adventure
-      - Animation
-      - Anime
-      - Comedy
-      - Drama
-      - Fantasy
-      - Travel
-      Show Root Path: anime/shounen/One Piece
-      episodeFileId: 76602
-      imdbId: tt0388629
+      Episode ID: '3951'
       seriesId: 86
       tvdbId: 81797
   Year: 2008
@@ -11133,31 +11095,7 @@ One Piece - Strong World Episode 0 (2010):
   Relative Movie Path: movies/foreign/One Piece - Strong World Episode 0 (2010)
   Shows:
     One Piece:
-      Absolute Episode: ''
-      Anime: true
-      Episode: 2
-      Episode ID: '3935'
-      Has Link: false
-      Parsed Episode: '002'
-      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E002
-        - One Piece The Movie
-      Parsed Season Folder: Season 00
-      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E002
-        - One Piece The Movie DVD.mkv
-      Relative Show Path: anime/shounen/One Piece/Season 00
-      Season: '00'
-      Show Genres:
-      - Action
-      - Adventure
-      - Animation
-      - Anime
-      - Comedy
-      - Drama
-      - Fantasy
-      - Travel
-      Show Root Path: anime/shounen/One Piece
-      episodeFileId: 76606
-      imdbId: tt0388629
+      Episode ID: '3953'
       seriesId: 86
       tvdbId: 81797
   Year: 2010
@@ -11185,31 +11123,7 @@ One Piece - The Desert Princess and the Pirates - Adventure in Alabasta (2007):
     - Adventure in Alabasta (2007)
   Shows:
     One Piece:
-      Absolute Episode: ''
-      Anime: true
-      Episode: 1
-      Episode ID: '3934'
-      Has Link: false
-      Parsed Episode: '001'
-      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E001
-        - One Piece Defeat the Pirate Ganzack! (OVA 1)
-      Parsed Season Folder: Season 00
-      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E001
-        - One Piece Defeat the Pirate Ganzack! (OVA 1) Bluray-1080p.mkv
-      Relative Show Path: anime/shounen/One Piece/Season 00
-      Season: '00'
-      Show Genres:
-      - Action
-      - Adventure
-      - Animation
-      - Anime
-      - Comedy
-      - Drama
-      - Fantasy
-      - Travel
-      Show Root Path: anime/shounen/One Piece
-      episodeFileId: 76602
-      imdbId: tt0388629
+      Episode ID: '3949'
       seriesId: 86
       tvdbId: 81797
   Year: 2007
@@ -11252,7 +11166,7 @@ One Piece - The Movie (2000):
       - Fantasy
       - Travel
       Show Root Path: anime/shounen/One Piece
-      episodeFileId: 76606
+      episodeFileId: 77491
       imdbId: tt0388629
       seriesId: 86
       tvdbId: 81797
@@ -11275,31 +11189,7 @@ One Piece 3D - Straw Hat Chase (2011):
   Relative Movie Path: movies/foreign/One Piece 3D - Straw Hat Chase (2011)
   Shows:
     One Piece:
-      Absolute Episode: ''
-      Anime: true
-      Episode: 2
-      Episode ID: '3935'
-      Has Link: false
-      Parsed Episode: '002'
-      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E002
-        - One Piece The Movie
-      Parsed Season Folder: Season 00
-      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E002
-        - One Piece The Movie Bluray-1080p.mkv
-      Relative Show Path: anime/shounen/One Piece/Season 00
-      Season: '00'
-      Show Genres:
-      - Action
-      - Adventure
-      - Animation
-      - Anime
-      - Comedy
-      - Drama
-      - Fantasy
-      - Travel
-      Show Root Path: anime/shounen/One Piece
-      episodeFileId: 76606
-      imdbId: tt0388629
+      Episode ID: '3954'
       seriesId: 86
       tvdbId: 81797
   Year: 2011
@@ -11324,31 +11214,7 @@ One Piece 3D2Y - Overcome Ace's Death! Luffy's Vow to his Friends (2014):
     Vow to his Friends (2014)
   Shows:
     One Piece:
-      Absolute Episode: ''
-      Anime: true
-      Episode: 3
-      Episode ID: '3936'
-      Has Link: true
-      Parsed Episode: '003'
-      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E003
-        - Adventure in the Ocean's Navel
-      Parsed Season Folder: Season 00
-      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E003
-        - Adventure in the Ocean's Navel Bluray-720p.mkv
-      Relative Show Path: anime/shounen/One Piece/Season 00
-      Season: '00'
-      Show Genres:
-      - Action
-      - Adventure
-      - Animation
-      - Anime
-      - Comedy
-      - Drama
-      - Fantasy
-      - Travel
-      Show Root Path: anime/shounen/One Piece
-      episodeFileId: 76607
-      imdbId: tt0388629
+      Episode ID: '3962'
       seriesId: 86
       tvdbId: 81797
   Year: 2014
@@ -11373,31 +11239,7 @@ One Piece Episode of East Blue Luffy and His 4 Crewmate's Big Adventure (2017):
     4 Crewmate's Big Adventure (2017)
   Shows:
     One Piece:
-      Absolute Episode: ''
-      Anime: true
-      Episode: 3
-      Episode ID: '3936'
-      Has Link: false
-      Parsed Episode: '003'
-      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E003
-        - Adventure in the Ocean's Navel
-      Parsed Season Folder: Season 00
-      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E003
-        - Adventure in the Ocean's Navel Bluray-1080p.mkv
-      Relative Show Path: anime/shounen/One Piece/Season 00
-      Season: '00'
-      Show Genres:
-      - Action
-      - Adventure
-      - Animation
-      - Anime
-      - Comedy
-      - Drama
-      - Fantasy
-      - Travel
-      Show Root Path: anime/shounen/One Piece
-      episodeFileId: 76607
-      imdbId: tt0388629
+      Episode ID: '3969'
       seriesId: 86
       tvdbId: 81797
   Year: 2017
@@ -11421,31 +11263,7 @@ One Piece Episode of Merry - The Tale of One More Friend (2013):
     More Friend (2013)
   Shows:
     One Piece:
-      Absolute Episode: ''
-      Anime: true
-      Episode: 2
-      Episode ID: '3935'
-      Has Link: false
-      Parsed Episode: '002'
-      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E002
-        - One Piece The Movie
-      Parsed Season Folder: Season 00
-      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E002
-        - One Piece The Movie Bluray-720p.mkv
-      Relative Show Path: anime/shounen/One Piece/Season 00
-      Season: '00'
-      Show Genres:
-      - Action
-      - Adventure
-      - Animation
-      - Anime
-      - Comedy
-      - Drama
-      - Fantasy
-      - Travel
-      Show Root Path: anime/shounen/One Piece
-      episodeFileId: 76606
-      imdbId: tt0388629
+      Episode ID: '3961'
       seriesId: 86
       tvdbId: 81797
   Year: 2013
@@ -11470,31 +11288,7 @@ One Piece Episode of Nami - Tears of a Navigator and the Bonds of Friends (2012)
     and the Bonds of Friends (2012)
   Shows:
     One Piece:
-      Absolute Episode: ''
-      Anime: true
-      Episode: 2
-      Episode ID: '3935'
-      Has Link: false
-      Parsed Episode: '002'
-      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E002
-        - One Piece The Movie
-      Parsed Season Folder: Season 00
-      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E002
-        - One Piece The Movie Bluray-720p.mkv
-      Relative Show Path: anime/shounen/One Piece/Season 00
-      Season: '00'
-      Show Genres:
-      - Action
-      - Adventure
-      - Animation
-      - Anime
-      - Comedy
-      - Drama
-      - Fantasy
-      - Travel
-      Show Root Path: anime/shounen/One Piece
-      episodeFileId: 76606
-      imdbId: tt0388629
+      Episode ID: '3956'
       seriesId: 86
       tvdbId: 81797
   Year: 2012
@@ -11516,31 +11310,7 @@ One Piece Film - GOLD (2016):
   Relative Movie Path: movies/foreign/One Piece Film - GOLD (2016)
   Shows:
     One Piece:
-      Absolute Episode: ''
-      Anime: true
-      Episode: 3
-      Episode ID: '3936'
-      Has Link: false
-      Parsed Episode: '003'
-      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E003
-        - Adventure in the Ocean's Navel
-      Parsed Season Folder: Season 00
-      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E003
-        - Adventure in the Ocean's Navel Bluray-1080p.mkv
-      Relative Show Path: anime/shounen/One Piece/Season 00
-      Season: '00'
-      Show Genres:
-      - Action
-      - Adventure
-      - Animation
-      - Anime
-      - Comedy
-      - Drama
-      - Fantasy
-      - Travel
-      Show Root Path: anime/shounen/One Piece
-      episodeFileId: 76607
-      imdbId: tt0388629
+      Episode ID: '3966'
       seriesId: 86
       tvdbId: 81797
   Year: 2016
@@ -11563,31 +11333,7 @@ One Piece Film - Strong World (2009):
   Relative Movie Path: movies/foreign/One Piece Film - Strong World (2009)
   Shows:
     One Piece:
-      Absolute Episode: ''
-      Anime: true
-      Episode: 1
-      Episode ID: '3934'
-      Has Link: false
-      Parsed Episode: '001'
-      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E001
-        - One Piece Defeat the Pirate Ganzack! (OVA 1)
-      Parsed Season Folder: Season 00
-      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E001
-        - One Piece Defeat the Pirate Ganzack! (OVA 1) Bluray-1080p.mkv
-      Relative Show Path: anime/shounen/One Piece/Season 00
-      Season: '00'
-      Show Genres:
-      - Action
-      - Adventure
-      - Animation
-      - Anime
-      - Comedy
-      - Drama
-      - Fantasy
-      - Travel
-      Show Root Path: anime/shounen/One Piece
-      episodeFileId: 76602
-      imdbId: tt0388629
+      Episode ID: '3952'
       seriesId: 86
       tvdbId: 81797
   Year: 2009
@@ -11608,31 +11354,7 @@ One Piece Film - Z (2012):
   Relative Movie Path: movies/foreign/One Piece Film - Z (2012)
   Shows:
     One Piece:
-      Absolute Episode: ''
-      Anime: true
-      Episode: 2
-      Episode ID: '3935'
-      Has Link: false
-      Parsed Episode: '002'
-      Parsed Episode Title: anime/shounen/One Piece/Season 00/One Piece - S00E002
-        - One Piece The Movie
-      Parsed Season Folder: Season 00
-      Relative Show File Path: anime/shounen/One Piece/Season 00/One Piece - S00E002
-        - One Piece The Movie Bluray-1080p.mkv
-      Relative Show Path: anime/shounen/One Piece/Season 00
-      Season: '00'
-      Show Genres:
-      - Action
-      - Adventure
-      - Animation
-      - Anime
-      - Comedy
-      - Drama
-      - Fantasy
-      - Travel
-      Show Root Path: anime/shounen/One Piece
-      episodeFileId: 76606
-      imdbId: tt0388629
+      Episode ID: '3959'
       seriesId: 86
       tvdbId: 81797
   Year: 2012
@@ -11716,7 +11438,7 @@ Overlord Movie 1- The Undead King (2017):
       - Fantasy
       - Horror
       Show Root Path: anime/staging/Overlord
-      episodeFileId: 76615
+      episodeFileId: 78775
       imdbId: tt4869896
       seriesId: 88
       tvdbId: 294002
@@ -11761,7 +11483,7 @@ Overlord Movie 2- The Dark Warrior (2017):
       - Fantasy
       - Horror
       Show Root Path: anime/staging/Overlord
-      episodeFileId: 76615
+      episodeFileId: 78775
       imdbId: tt4869896
       seriesId: 88
       tvdbId: 294002
@@ -11885,7 +11607,7 @@ Parks and Recreation- Cast and Creators Live at PALEYFEST 2014 (2014):
       Show Genres:
       - Comedy
       Show Root Path: tv/sitcom/Parks and Recreation
-      episodeFileId: 76618
+      episodeFileId: 78776
       imdbId: tt1266020
       seriesId: 436
       tvdbId: 84912
@@ -12302,7 +12024,7 @@ Psych- The Musical (2013):
       - Crime
       - Drama
       Show Root Path: tv/staging/Psych
-      episodeFileId: 76620
+      episodeFileId: 78777
       imdbId: tt0491738
       seriesId: 216
       tvdbId: 79335
@@ -12535,16 +12257,16 @@ Red vs. Blue- Out of Mind (2006):
       Episode ID: '21972'
       Has Link: false
       Parsed Episode: '02'
-      Parsed Episode Title: movies/staging/Red vs. Blue/Season 00/Red vs. Blue - S00E02
+      Parsed Episode Title: tv/staging/Red vs. Blue/Season 00/Red vs. Blue - S00E02
         - Episode 0 - The Cast
       Parsed Season Folder: Season 00
       Relative Show File Path: ''
-      Relative Show Path: movies/staging/Red vs. Blue/Season 00
+      Relative Show Path: tv/staging/Red vs. Blue/Season 00
       Season: '00'
       Show Genres:
       - Animation
       - Comedy
-      Show Root Path: movies/staging/Red vs. Blue
+      Show Root Path: tv/staging/Red vs. Blue
       episodeFileId: ''
       imdbId: tt0401747
       seriesId: 289
@@ -14525,7 +14247,7 @@ Scooby-Doo! & Batman- The Brave and the Bold (2018):
       Anime: false
       Episode: 1
       Episode ID: '41645'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '01'
       Parsed Episode Title: tv/superhero/Batman- The Brave and the Bold/Season 00/Batman-
         The Brave and the Bold - S00E01 - Scooby-Doo & Batman The Brave and the Bold
@@ -14541,7 +14263,7 @@ Scooby-Doo! & Batman- The Brave and the Bold (2018):
       - Animation
       - Children
       Show Root Path: tv/superhero/Batman- The Brave and the Bold
-      episodeFileId: ''
+      episodeFileId: 76763
       imdbId: tt1213218
       seriesId: 464
       tvdbId: 82824
@@ -14711,7 +14433,7 @@ South Park- Bigger, Longer & Uncut (1999):
       Anime: false
       Episode: 6
       Episode ID: '22831'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '06'
       Parsed Episode Title: tv/animated/South Park/Season 00/South Park - S00E06 -
         South Park Bigger Longer & Uncut
@@ -14724,7 +14446,7 @@ South Park- Bigger, Longer & Uncut (1999):
       - Animation
       - Comedy
       Show Root Path: tv/animated/South Park
-      episodeFileId: ''
+      episodeFileId: 77493
       imdbId: tt0121955
       seriesId: 293
       tvdbId: 75897
@@ -14801,7 +14523,7 @@ Star Trek 25th Anniversary Special (1991):
       Anime: false
       Episode: 2
       Episode ID: '32395'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '02'
       Parsed Episode Title: tv/scifi/Star Trek/Season 00/Star Trek - S00E02 - Star
         Trek's 25th Anniversary Special
@@ -14816,7 +14538,7 @@ Star Trek 25th Anniversary Special (1991):
       - Drama
       - Science-Fiction
       Show Root Path: tv/scifi/Star Trek
-      episodeFileId: ''
+      episodeFileId: 77496
       imdbId: tt0060028
       seriesId: 374
       tvdbId: 77526
@@ -14920,7 +14642,7 @@ Star Trek- A Captain's Log (1994):
       Anime: false
       Episode: 3
       Episode ID: '32396'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '03'
       Parsed Episode Title: tv/scifi/Star Trek/Season 00/Star Trek - S00E03 - Star
         Trek A Captain's Log
@@ -14935,7 +14657,7 @@ Star Trek- A Captain's Log (1994):
       - Drama
       - Science-Fiction
       Show Root Path: tv/scifi/Star Trek
-      episodeFileId: ''
+      episodeFileId: 77497
       imdbId: tt0060028
       seriesId: 374
       tvdbId: 77526
@@ -15074,7 +14796,7 @@ Stargate (1994):
       Anime: false
       Episode: 1
       Episode ID: '33484'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '01'
       Parsed Episode Title: tv/scifi/Stargate SG-1/Season 00/Stargate SG-1 - S00E01
         - Stargate The Movie
@@ -15089,7 +14811,7 @@ Stargate (1994):
       - Fantasy
       - Science-Fiction
       Show Root Path: tv/scifi/Stargate SG-1
-      episodeFileId: ''
+      episodeFileId: 77499
       imdbId: tt0118480
       seriesId: 400
       tvdbId: 72449
@@ -15147,7 +14869,7 @@ Stargate SG-1- True Science (2006):
       Anime: false
       Episode: 4
       Episode ID: '33487'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '04'
       Parsed Episode Title: tv/scifi/Stargate SG-1/Season 00/Stargate SG-1 - S00E04
         - Stargate SG-1 True Science
@@ -15162,7 +14884,7 @@ Stargate SG-1- True Science (2006):
       - Fantasy
       - Science-Fiction
       Show Root Path: tv/scifi/Stargate SG-1
-      episodeFileId: ''
+      episodeFileId: 77500
       imdbId: tt0118480
       seriesId: 400
       tvdbId: 72449
@@ -15202,7 +14924,7 @@ Stargate- Continuum (2008):
       Anime: false
       Episode: 8
       Episode ID: '33490'
-      Has Link: false
+      Has Link: true
       Parsed Episode: 08
       Parsed Episode Title: tv/scifi/Stargate SG-1/Season 00/Stargate SG-1 - S00E08
         - Continuum
@@ -15217,7 +14939,7 @@ Stargate- Continuum (2008):
       - Fantasy
       - Science-Fiction
       Show Root Path: tv/scifi/Stargate SG-1
-      episodeFileId: ''
+      episodeFileId: 77502
       imdbId: tt0118480
       seriesId: 400
       tvdbId: 72449
@@ -15242,7 +14964,7 @@ Stargate- The Ark of Truth (2008):
       Anime: false
       Episode: 7
       Episode ID: '33489'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '07'
       Parsed Episode Title: tv/scifi/Stargate SG-1/Season 00/Stargate SG-1 - S00E07
         - The Ark of Truth
@@ -15257,7 +14979,7 @@ Stargate- The Ark of Truth (2008):
       - Fantasy
       - Science-Fiction
       Show Root Path: tv/scifi/Stargate SG-1
-      episodeFileId: ''
+      episodeFileId: 77501
       imdbId: tt0118480
       seriesId: 400
       tvdbId: 72449
@@ -15422,7 +15144,7 @@ Sword Art Online- Extra Edition (2013):
       Anime: true
       Episode: 1
       Episode ID: '1614'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '001'
       Parsed Episode Title: anime/shounen/Sword Art Online/Season 00/Sword Art Online
         - S00E001 - Sword Art Offline 1
@@ -15439,7 +15161,7 @@ Sword Art Online- Extra Edition (2013):
       - Drama
       - Science-Fiction
       Show Root Path: anime/shounen/Sword Art Online
-      episodeFileId: ''
+      episodeFileId: 78781
       imdbId: tt2250192
       seriesId: 105
       tvdbId: 259640
@@ -15472,7 +15194,7 @@ Sword Art Online- The Movie - Ordinal Scale (2017):
       Anime: true
       Episode: 2
       Episode ID: '1615'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '002'
       Parsed Episode Title: anime/shounen/Sword Art Online/Season 00/Sword Art Online
         - S00E002 - Sword Art Offline 2
@@ -15489,7 +15211,7 @@ Sword Art Online- The Movie - Ordinal Scale (2017):
       - Drama
       - Science-Fiction
       Show Root Path: anime/shounen/Sword Art Online
-      episodeFileId: ''
+      episodeFileId: 78782
       imdbId: tt2250192
       seriesId: 105
       tvdbId: 259640
@@ -15581,7 +15303,7 @@ Teen Titans- Trouble in Tokyo (2006):
       Anime: false
       Episode: 2
       Episode ID: '43148'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '02'
       Parsed Episode Title: tv/superhero/Teen Titans/Season 00/Teen Titans - S00E02
         - Trouble in Tokyo
@@ -15596,7 +15318,7 @@ Teen Titans- Trouble in Tokyo (2006):
       - Animation
       - Children
       Show Root Path: tv/superhero/Teen Titans
-      episodeFileId: ''
+      episodeFileId: 77505
       imdbId: tt0343314
       seriesId: 495
       tvdbId: 71503
@@ -15635,7 +15357,7 @@ The A-Team (2010):
       Anime: false
       Episode: 2
       Episode ID: '10173'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '02'
       Parsed Episode Title: 'tv/staging/The A-Team/Season 00/The A-Team - S00E02 -
         The A-Team '
@@ -15649,7 +15371,7 @@ The A-Team (2010):
       - Adventure
       - Crime
       Show Root Path: tv/staging/The A-Team
-      episodeFileId: ''
+      episodeFileId: 76684
       imdbId: tt0084967
       seriesId: 221
       tvdbId: 77904
@@ -15692,7 +15414,7 @@ The Batman vs. Dracula (2005):
       Anime: false
       Episode: 2
       Episode ID: '43461'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '02'
       Parsed Episode Title: tv/superhero/The Batman/Season 00/The Batman - S00E02
         - The Batman vs. Dracula
@@ -15708,7 +15430,7 @@ The Batman vs. Dracula (2005):
       - Children
       - Fantasy
       Show Root Path: tv/superhero/The Batman
-      episodeFileId: ''
+      episodeFileId: 76762
       imdbId: tt0398417
       seriesId: 497
       tvdbId: 73180
@@ -15733,7 +15455,7 @@ The Cage (1965):
       Anime: false
       Episode: 1
       Episode ID: '32394'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '01'
       Parsed Episode Title: tv/scifi/Star Trek/Season 00/Star Trek - S00E01 - The
         Cage (Original Pilot)
@@ -15748,7 +15470,7 @@ The Cage (1965):
       - Drama
       - Science-Fiction
       Show Root Path: tv/scifi/Star Trek
-      episodeFileId: ''
+      episodeFileId: 77495
       imdbId: tt0060028
       seriesId: 374
       tvdbId: 77526
@@ -15813,19 +15535,19 @@ The Day Naruto Became Hokage (2016):
       Episode ID: '106'
       Has Link: false
       Parsed Episode: '001'
-      Parsed Episode Title: movies/staging/Boruto- Naruto Next Generations/Season
-        00/Boruto- Naruto Next Generations - S00E001 - Boruto Naruto the Movie
+      Parsed Episode Title: tv/staging/Boruto- Naruto Next Generations/Season 00/Boruto-
+        Naruto Next Generations - S00E001 - Boruto Naruto the Movie
       Parsed Season Folder: Season 00
-      Relative Show File Path: movies/staging/Boruto- Naruto Next Generations/Season
-        00/Boruto- Naruto Next Generations - S00E001 - Boruto Naruto the Movie Bluray-1080p.mkv
-      Relative Show Path: movies/staging/Boruto- Naruto Next Generations/Season 00
+      Relative Show File Path: tv/staging/Boruto- Naruto Next Generations/Season 00/Boruto-
+        Naruto Next Generations - S00E001 - Boruto Naruto the Movie Bluray-1080p.mkv
+      Relative Show Path: tv/staging/Boruto- Naruto Next Generations/Season 00
       Season: '00'
       Show Genres:
       - Action
       - Adventure
       - Animation
       - Anime
-      Show Root Path: movies/staging/Boruto- Naruto Next Generations
+      Show Root Path: tv/staging/Boruto- Naruto Next Generations
       episodeFileId: ''
       imdbId: tt6342474
       seriesId: 8
@@ -15974,7 +15696,7 @@ The Evil Dead (1981):
       Anime: false
       Episode: 1
       Episode ID: '27914'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '01'
       Parsed Episode Title: tv/fantasy/Ash vs Evil Dead/Season 00/Ash vs Evil Dead
         - S00E01 - Within the Woods
@@ -15988,7 +15710,7 @@ The Evil Dead (1981):
       - Horror
       - Thriller
       Show Root Path: tv/fantasy/Ash vs Evil Dead
-      episodeFileId: ''
+      episodeFileId: 78752
       imdbId: tt4189022
       seriesId: 332
       tvdbId: 296295
@@ -16234,7 +15956,7 @@ The Last- Naruto the Movie (2014):
       - Comedy
       - Drama
       Show Root Path: anime/shounen/Naruto Shippuden
-      episodeFileId: 76580
+      episodeFileId: 78772
       imdbId: tt0988824
       seriesId: 168
       tvdbId: 79824
@@ -16260,17 +15982,17 @@ The Making of 'King of the Hill' (2003):
       Episode ID: '21649'
       Has Link: false
       Parsed Episode: '05'
-      Parsed Episode Title: movies/staging/King of the Hill/Season 00/King of the
-        Hill - S00E05 - The Making of King of the Hill
+      Parsed Episode Title: tv/staging/King of the Hill/Season 00/King of the Hill
+        - S00E05 - The Making of King of the Hill
       Parsed Season Folder: Season 00
       Relative Show File Path: ''
-      Relative Show Path: movies/staging/King of the Hill/Season 00
+      Relative Show Path: tv/staging/King of the Hill/Season 00
       Season: '00'
       Show Genres:
       - Animation
       - Comedy
       - Drama
-      Show Root Path: movies/staging/King of the Hill
+      Show Root Path: tv/staging/King of the Hill
       episodeFileId: ''
       imdbId: tt0118375
       seriesId: 286
@@ -16654,7 +16376,7 @@ The Simpsons - Viva Los Simpsons (2005):
       - Animation
       - Comedy
       Show Root Path: tv/sitcom/The Simpsons
-      episodeFileId: 76321
+      episodeFileId: 78778
       imdbId: tt0096697
       seriesId: 455
       tvdbId: 71663
@@ -16689,7 +16411,7 @@ The Simpsons Christmas 2 (2004):
       - Animation
       - Comedy
       Show Root Path: tv/sitcom/The Simpsons
-      episodeFileId: 76321
+      episodeFileId: 78778
       imdbId: tt0096697
       seriesId: 455
       tvdbId: 71663
@@ -16758,7 +16480,7 @@ The Simpsons Movie (2007):
       - Animation
       - Comedy
       Show Root Path: tv/sitcom/The Simpsons
-      episodeFileId: 76321
+      episodeFileId: 78778
       imdbId: tt0096697
       seriesId: 455
       tvdbId: 71663
@@ -16947,7 +16669,7 @@ The X Files- I Want to Believe (2008):
       Anime: false
       Episode: 6
       Episode ID: '34522'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '06'
       Parsed Episode Title: tv/scifi/The X-Files/Season 00/The X-Files - S00E06 -
         The X-Files I Want to Believe
@@ -16960,7 +16682,7 @@ The X Files- I Want to Believe (2008):
       - Mystery
       - Science-Fiction
       Show Root Path: tv/scifi/The X-Files
-      episodeFileId: ''
+      episodeFileId: 77514
       imdbId: tt0106179
       seriesId: 409
       tvdbId: 77398
@@ -17046,7 +16768,7 @@ Tiger & Bunny - The Movie- The Rising (2014):
       Anime: false
       Episode: 2
       Episode ID: '47707'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '02'
       Parsed Episode Title: anime/staging/Tiger & Bunny/Season 00/Tiger & Bunny -
         S00E02 - Tiger & Bunny The Beginning
@@ -17060,7 +16782,7 @@ Tiger & Bunny - The Movie- The Rising (2014):
       - Home and Garden
       - Romance
       Show Root Path: anime/staging/Tiger & Bunny
-      episodeFileId: ''
+      episodeFileId: 78783
       imdbId: tt3740548
       seriesId: 109
       tvdbId: 296279
@@ -17096,7 +16818,7 @@ Tiger & Bunny- The Beginning (2012):
       - Home and Garden
       - Romance
       Show Root Path: anime/staging/Tiger & Bunny
-      episodeFileId: ''
+      episodeFileId: 77601
       imdbId: tt3740548
       seriesId: 109
       tvdbId: 296279
@@ -17150,7 +16872,7 @@ Top Gear- 50 Years Of Bond Cars (2012):
       - Special Interest
       - Talk Show
       Show Root Path: tv/reality/Top Gear
-      episodeFileId: ''
+      episodeFileId: 78785
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -17186,7 +16908,7 @@ Top Gear- Apocalypse (2010):
       - Special Interest
       - Talk Show
       Show Root Path: tv/reality/Top Gear
-      episodeFileId: ''
+      episodeFileId: 78784
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -17222,7 +16944,7 @@ Top Gear- At the Movies (2011):
       - Special Interest
       - Talk Show
       Show Root Path: tv/reality/Top Gear
-      episodeFileId: ''
+      episodeFileId: 78784
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -17259,7 +16981,7 @@ Top Gear- Botswana Special (2007):
       - Special Interest
       - Talk Show
       Show Root Path: tv/reality/Top Gear
-      episodeFileId: ''
+      episodeFileId: 78785
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -17337,7 +17059,7 @@ Top Gear- Middle East Special (2011):
       Anime: false
       Episode: 3
       Episode ID: '30325'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '03'
       Parsed Episode Title: tv/reality/Top Gear/Season 00/Top Gear - S00E03 - Series
         3 Best of
@@ -17351,7 +17073,7 @@ Top Gear- Middle East Special (2011):
       - Special Interest
       - Talk Show
       Show Root Path: tv/reality/Top Gear
-      episodeFileId: ''
+      episodeFileId: 78784
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -17391,7 +17113,7 @@ Top Gear- Patagonia Special- Part 1 (2014):
       - Special Interest
       - Talk Show
       Show Root Path: tv/reality/Top Gear
-      episodeFileId: ''
+      episodeFileId: 78786
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -17431,7 +17153,7 @@ Top Gear- Patagonia Special- Part 2 (2014):
       - Special Interest
       - Talk Show
       Show Root Path: tv/reality/Top Gear
-      episodeFileId: ''
+      episodeFileId: 78786
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -17574,7 +17296,7 @@ Top Gear- The Great African Adventure (2013):
       - Special Interest
       - Talk Show
       Show Root Path: tv/reality/Top Gear
-      episodeFileId: ''
+      episodeFileId: 78786
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -17611,7 +17333,7 @@ Top Gear- The India Special (2011):
       - Special Interest
       - Talk Show
       Show Root Path: tv/reality/Top Gear
-      episodeFileId: ''
+      episodeFileId: 78784
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -17648,7 +17370,7 @@ Top Gear- The Perfect Road Trip (2013):
       - Special Interest
       - Talk Show
       Show Root Path: tv/reality/Top Gear
-      episodeFileId: ''
+      episodeFileId: 78785
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -17685,7 +17407,7 @@ Top Gear- The Perfect Road Trip 2 (2014):
       - Special Interest
       - Talk Show
       Show Root Path: tv/reality/Top Gear
-      episodeFileId: ''
+      episodeFileId: 78786
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -17714,7 +17436,7 @@ Top Gear- The Worst Car In the History of the World (2012):
       Anime: false
       Episode: 4
       Episode ID: '30326'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '04'
       Parsed Episode Title: tv/reality/Top Gear/Season 00/Top Gear - S00E04 - Series
         4 Best of
@@ -17728,7 +17450,7 @@ Top Gear- The Worst Car In the History of the World (2012):
       - Special Interest
       - Talk Show
       Show Root Path: tv/reality/Top Gear
-      episodeFileId: ''
+      episodeFileId: 78785
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -17836,7 +17558,7 @@ Top Gear- Uncovered (2009):
       - Special Interest
       - Talk Show
       Show Root Path: tv/reality/Top Gear
-      episodeFileId: ''
+      episodeFileId: 78785
       imdbId: tt1628033
       seriesId: 355
       tvdbId: 74608
@@ -17938,7 +17660,7 @@ Toriko 3D Movie- Kaimaku! Gourmet Adventure!! (2011):
       Anime: true
       Episode: 3
       Episode ID: '47858'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '003'
       Parsed Episode Title: anime/staging/Toriko/Season 00/Toriko - S00E003 - Kaimaku
         Gourmet Adventure!!
@@ -17953,7 +17675,7 @@ Toriko 3D Movie- Kaimaku! Gourmet Adventure!! (2011):
       - Animation
       - Comedy
       Show Root Path: anime/staging/Toriko
-      episodeFileId: ''
+      episodeFileId: 77510
       imdbId: tt1899047
       seriesId: 111
       tvdbId: 247231
@@ -17978,7 +17700,7 @@ Trigun - Badlands Rumble (2010):
       Anime: true
       Episode: 1
       Episode ID: '47886'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '001'
       Parsed Episode Title: anime/shounen/Trigun/Season 00/Trigun - S00E001 - Trigun
         the Movie Badlands Rumble
@@ -17996,7 +17718,7 @@ Trigun - Badlands Rumble (2010):
       - Science-Fiction
       - Western
       Show Root Path: anime/shounen/Trigun
-      episodeFileId: ''
+      episodeFileId: 77511
       imdbId: tt0251439
       seriesId: 112
       tvdbId: 77680
@@ -18021,7 +17743,7 @@ Twilight Zone- The Movie (1983):
       Anime: false
       Episode: 4
       Episode ID: '34140'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '04'
       Parsed Episode Title: tv/scifi/The Twilight Zone/Season 00/The Twilight Zone
         - S00E04 - Twilight Zone The Movie
@@ -18038,7 +17760,7 @@ Twilight Zone- The Movie (1983):
       - Suspense
       - Thriller
       Show Root Path: tv/scifi/The Twilight Zone
-      episodeFileId: ''
+      episodeFileId: 77512
       imdbId: tt0052520
       seriesId: 406
       tvdbId: 73587
@@ -18178,7 +17900,7 @@ Watashi ga Motenai no wa Dou Kangaetemo Omaera ga Warui!- Motenaishi, Nazomeite 
       Anime: true
       Episode: 1
       Episode ID: '1758'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/WATAMOTE/Season 00/WATAMOTE - S00E001 -
         Since I'm Not Popular, I'll Become an Enigma
@@ -18192,7 +17914,7 @@ Watashi ga Motenai no wa Dou Kangaetemo Omaera ga Warui!- Motenaishi, Nazomeite 
       - Anime
       - Comedy
       Show Root Path: anime/staging/WATAMOTE
-      episodeFileId: ''
+      episodeFileId: 77513
       imdbId: tt2963556
       seriesId: 114
       tvdbId: 270062
@@ -18228,7 +17950,7 @@ Watchmen- The Complete Motion Comic (2009):
       - Drama
       - Fantasy
       Show Root Path: tv/superhero/Watchmen- The Motion Comic
-      episodeFileId: 26520
+      episodeFileId: 78105
       imdbId: tt1322240
       seriesId: 502
       tvdbId: 82618
@@ -18510,7 +18232,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Anime: true
       Episode: 1
       Episode ID: '6969'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/xxxHOLiC/Season 00/xxxHOLiC - S00E001 -
         A Midsummer Night's Dream
@@ -18526,7 +18248,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       - Drama
       - Fantasy
       Show Root Path: anime/staging/xxxHOLiC
-      episodeFileId: ''
+      episodeFileId: 77515
       imdbId: tt0488477
       seriesId: 194
       tvdbId: 79283
@@ -18551,7 +18273,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Anime: true
       Episode: 4
       Episode ID: '6967'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '004'
       Parsed Episode Title: anime/staging/xxxHOLiC/Season 00/xxxHOLiC - S00E004 -
         Rou
@@ -18567,7 +18289,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       - Drama
       - Fantasy
       Show Root Path: anime/staging/xxxHOLiC
-      episodeFileId: ''
+      episodeFileId: 77516
       imdbId: tt0488477
       seriesId: 194
       tvdbId: 79283
@@ -18592,7 +18314,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Anime: true
       Episode: 5
       Episode ID: '6968'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '005'
       Parsed Episode Title: anime/staging/xxxHOLiC/Season 00/xxxHOLiC - S00E005 -
         Rou Adayume
@@ -18608,7 +18330,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       - Drama
       - Fantasy
       Show Root Path: anime/staging/xxxHOLiC
-      episodeFileId: ''
+      episodeFileId: 77517
       imdbId: tt0488477
       seriesId: 194
       tvdbId: 79283
@@ -18679,7 +18401,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       Anime: true
       Episode: 1
       Episode ID: '2543'
-      Has Link: false
+      Has Link: true
       Parsed Episode: '001'
       Parsed Episode Title: anime/staging/Attack on Titan/Season 00/Attack on Titan
         - S00E001 - Since That Day
@@ -18695,7 +18417,7 @@ xxxHOLiC The Movie- A Midsummer Night's Dream (2005):
       - Drama
       - Fantasy
       Show Root Path: anime/staging/Attack on Titan
-      episodeFileId: ''
+      episodeFileId: 78757
       imdbId: tt2560140
       seriesId: 121
       tvdbId: 267440
