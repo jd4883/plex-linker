@@ -20,7 +20,7 @@ def symlink_force(show, g):
 		                           stdout = subprocess.PIPE)
 		process = str(process.communicate()[0])[3:-4].replace("'","")
 		g.LOG.info(backend.debug_message(654, g, process))
-		g.LOG.debug(backend.debug_message(642, g, show.has_link))
+		g.LOG.info(backend.debug_message(642, g, show.has_link))
 	else:
 		print(f'Link not created for {show.absolute_movie_file_path}')
 		show.link_status = str()

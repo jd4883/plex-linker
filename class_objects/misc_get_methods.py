@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 from os import environ
 
 from IO.YAML.yaml_to_object import get_yaml_dictionary, get_variable_from_yaml
