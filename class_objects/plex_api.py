@@ -12,7 +12,7 @@ class PlexAPI(object):
 	
 	def __init__(self):
 		self.host_url = baseurl = str(environ['PLEX_URL'])
-		self.api_key = token = pathlib.Path('/run/secrets/plex_api_key').read_text().replace('\n', '')
+		self.api_key = token = pathlib.Path('/run/secrets/plex_api_key').read_text().strip()
 		# make a method to handle either secrets or envars
 		self.plex = PlexServer(baseurl, token)
 

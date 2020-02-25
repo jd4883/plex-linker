@@ -16,5 +16,5 @@ def parse_relpath(self, g, media_path):
 def get_parsed_movie_title(self, g):
 	file = f"{self.unparsed_title} ({self.year})".replace(":", "-")
 	result = file.replace("/", "+")
-	g.LOG.debug(messaging.backend.debug_message(613, g, result))
+	g.LOG.info(messaging.backend.debug_message(613, g, result))
 	return result
