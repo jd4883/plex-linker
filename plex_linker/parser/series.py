@@ -34,8 +34,8 @@ def series_id(sonarr_series_dict, series_dict, g):
 			print(series_dict)
 	#	raise ValueError("SERIES ID MUST BE SET")
 	if result == 0:
-		result = str()
 		raise ValueError("SERIES ID MUST BE SET")
+		result = str()
 	# need to readd this raise condition after dict is set, manually correct errors
 	
 	g.LOG.info(backend.debug_message(618, g, result))

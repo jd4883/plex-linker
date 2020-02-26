@@ -42,19 +42,19 @@ def fetch_link_status(self, episode_file_dict, relative_movie_file_path):
 		return bool()
 
 
-def title(self, g, series):
+def title(g, series):
 	result = series
 	g.LOG.info(backend.debug_message(604, g, result))
 	return result
 
 
-def parent_dict(self, g, movie_dict):
+def parent_dict(g, movie_dict):
 	result = movie_dict
 	g.LOG.info(backend.debug_message(627, g, result))
 	return result
 
 
-def child_dict(self, g, show_dict):
+def child_dict(g, show_dict):
 	result = show_dict
 	g.LOG.info(backend.debug_message(624, g, result))
 	return result
