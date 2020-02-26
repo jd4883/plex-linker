@@ -26,7 +26,7 @@ ENV PLEX_API_URL http://127.0.0.1:32400
 ENV RADARR_URL http://127.0.0.1:7878/api
 
 ENV GIT_REPO https://github.com/jd4883/plex-linker-beta.git
-ENV GIT_BRANCH develop
+ENV GIT_BRANCH master
 
 ENV PLEX_LINKER /config
 
