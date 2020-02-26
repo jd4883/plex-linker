@@ -13,17 +13,17 @@ class SonarrAPI(object):
 	def get_episodes_by_series_id(self, series_id):
 		return self.request_get(f"{self.host_url}/episode?seriesId={series_id}").json()
 	
-	def get_series_by_tvdb_id(self, tvdbId):
-		return self.request_get(f"{self.host_url}/lookup?term=tvdb:{tvdbId}").json()
+	# def get_series_by_tvdb_id(self, tvdbId):
+	# 	return self.request_get(f"{self.host_url}/lookup?term=tvdb:{tvdbId}").json()
 	
 	def get_episode_by_episode_id(self, episode_id):
 		return self.request_get(f"{self.host_url}/episode/{episode_id}").json()
+	#
+	# def get_all_tag_ids(self):
+	# 	return self.request_get(f"{self.host_url}/tag").json()
 	
-	def get_all_tag_ids(self):
-		return self.request_get(f"{self.host_url}/tag").json()
-	
-	def get_episode_files_by_series_id(self, series_id):
-		return self.request_get(f"{self.host_url}/episodefile?seriesId={series_id}").json()
+	# def get_episode_files_by_series_id(self, series_id):
+	# 	return self.request_get(f"{self.host_url}/episodefile?seriesId={series_id}").json()
 	
 	def get_episode_file_by_episode_id(self, episode_id):
 		return self.request_get(f"{self.host_url}/episodefile/{episode_id}").json()
@@ -34,7 +34,7 @@ class SonarrAPI(object):
 	def get_series(self):
 		return self.request_get(f"{self.host_url}/series").json()
 	
-	def get_series_by_series_id(self, series_id):
+	def get_series_by_series_id(self, series_id, g):
 		query = self.request_get(f"{self.host_url}/series/{series_id}").json()
 		for i in g.full_sonarr_dict:
 			if 'id' in query and i['id'] == series_id or \

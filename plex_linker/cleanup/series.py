@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-def cleanup_dict(dict):
+def cleanup_dict(dictObj):
 	for k in ['Has Link',
 	          'Parsed Episode Title',
 	          'Parsed Season Folder',
@@ -13,7 +13,7 @@ def cleanup_dict(dict):
 	          'episodeFileId',
 	          'imdbId']:
 		try:
-			del dict[k]
+			del dictObj[k]
 		except KeyError:
 			continue
 		except AttributeError:

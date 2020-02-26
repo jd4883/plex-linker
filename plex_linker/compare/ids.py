@@ -1,3 +1,2 @@
-def validate_tmdbId(id):
-	return bool(str(id).isdigit() and id != 0)
-	
+def validate_tmdbId(ID):
+	return bool(str(ID).isdigit() and ID != 0)

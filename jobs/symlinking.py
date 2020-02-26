@@ -4,6 +4,7 @@ import subprocess
 import messaging.frontend as message
 import messaging.backend as backend
 
+
 def symlink_force(show, g):
 	message.method_launch(g)
 	# TODO: add method to handle deleting dead links and files instead of links
@@ -18,7 +19,7 @@ def symlink_force(show, g):
 		# noinspection SpellCheckingInspection
 		process = subprocess.Popen(get_symlink_command_string(show), stderr = subprocess.DEVNULL,
 		                           stdout = subprocess.PIPE)
-		process = str(process.communicate()[0])[3:-4].replace("'","")
+		process = str(process.communicate()[0])[3:-4].replace("'", "")
 		g.LOG.info(backend.debug_message(654, g, process))
 		g.LOG.info(backend.debug_message(642, g, show.has_link))
 	else:

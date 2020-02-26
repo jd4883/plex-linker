@@ -3,6 +3,7 @@ from messaging import backend as backend
 from plex_linker.fetch import series as fetch_series
 import re
 
+
 def parse_series_genres(sonarr_series_dict, series_dict, g):
 	if isinstance(sonarr_series_dict, dict):
 		result = series_dict['Show Genres'] = sonarr_series_dict.pop('genres')
@@ -31,12 +32,12 @@ def series_id(sonarr_series_dict, series_dict, g):
 		else:
 			print(sonarr_series_dict)
 			print(series_dict)
-		#	raise ValueError("SERIES ID MUST BE SET")
+	#	raise ValueError("SERIES ID MUST BE SET")
 	if result == 0:
 		result = str()
 		raise ValueError("SERIES ID MUST BE SET")
-		# need to readd this raise condition after dict is set, manually correct errors
-		
+	# need to readd this raise condition after dict is set, manually correct errors
+	
 	g.LOG.info(backend.debug_message(618, g, result))
 	return result
 
@@ -74,7 +75,7 @@ def anime_status(self, g):
 	result = self.series_dict['Anime'] = bool()
 	if 'seriesType' in self.sonarr_api_query and (self.sonarr_api_query['seriesType'] != 'anime'):
 		pass
-		# result stays as a False
+	# result stays as a False
 	elif 'seriesType' in self.sonarr_api_query and (self.sonarr_api_query['seriesType'] == 'anime'):
 		result = self.series_dict['Anime'] = bool(True)
 	g.LOG.info(backend.debug_message(621, g, result))
@@ -99,6 +100,8 @@ def episode_id(self, g):
 		raise ValueError("EPISODE ID MUST BE SET")
 	g.LOG.info(backend.debug_message(619, g, result))
 	return result
+
+
 # TODO: missing logic to parse out the episode ID from what I can tell
 
 
@@ -113,7 +116,7 @@ def parse_episode_file_id_dict(self, g):
 	if self.episode_file_id == 0 or not self.episode_file_id:
 		print("File not found should be parsing out a link")
 		return result
-	result = g.sonarr.get_episode_file_by_episode_id(self.episode_file_id);
+	result = g.sonarr.get_episode_file_by_episode_id(self.episode_file_id)
 	if result == 0:
 		print(f"RESULT = 0 {result} {self.episode_file_id}")
 		result = dict()
@@ -122,7 +125,7 @@ def parse_episode_file_id_dict(self, g):
 
 
 def parse_episode_dict(self, g):
-	result = g.sonarr.get_episode_by_episode_id(self.episode_id);
+	result = g.sonarr.get_episode_by_episode_id(self.episode_id)
 	g.LOG.info(backend.debug_message(623, g, result))
 	return result
 
@@ -131,8 +134,8 @@ def episode_file_id(self, g):
 	result = self.series_dict['episodeFileId'] = self.episode_dict.pop('episodeFileId', str())
 	if result == 0:
 		result = self.series_dict['episodeFileId'] = str()
-		# need episode file presence info for this check to work
-		#raise ValueError("EPISODE FILE ID MUST BE SET")
+	# need episode file presence info for this check to work
+	# raise ValueError("EPISODE FILE ID MUST BE SET")
 	g.LOG.info(backend.debug_message(653, g, result))
 	return result
 
@@ -190,9 +193,8 @@ def relative_show_path(self, g):
 
 
 def padded_episode_number(self, g):
-	if not self.episode:
-		result = str()
-	elif isinstance(self.episode, list):
+	result = str()
+	if isinstance(self.episode, list):
 		items = []
 		for i in self.episode:
 			items.append(str(i).zfill(self.padding))
@@ -225,19 +227,55 @@ def padded_absolute_episode(self, g):
 
 
 def compiled_episode_title(self, g):
-	parsed_title = f"{self.show_root_path}/{self.season_folder}/{self.show} - S{self.season}E{self.parsed_episode} - {self.episode_title}"
-	result = self.series_dict['Parsed Episode Title'] = re.sub('\(\d+\)$', "", fetch_series.show_path_string(parsed_title))
+	parsed_title = f"{self.show_root_path}/{self.season_folder}/{self.show} - S{self.season}E{self.parsed_episode} - " \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"{self.episode_title}"
+	result = self.series_dict['Parsed Episode Title'] = re.sub('\(\d+\)$', "",
+	                                                           fetch_series.show_path_string(parsed_title))
 	g.LOG.info(backend.debug_message(637, g, result))
 	return result
 
 
 def episode_title(self, g, result = str()):
 	# not sure why i cant pop here this was a hacky way to get around it, suspecting a datatype error
-	for k,v in self.episode_dict.items():
+	for k, v in self.episode_dict.items():
 		if k == 'title':
 			result = v
 			break
 	else:
-		result = re.sub('\(\d+\)$', "", fetch_series.show_path_string(self.episode_dict['title']))
+		self.episode_dict['title'] = str()
+	result = re.sub('\(\d+\)$', "", fetch_series.show_path_string(self.episode_dict['title']))
 	g.LOG.info(backend.debug_message(636, g, result))
 	return result
