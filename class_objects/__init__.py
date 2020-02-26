@@ -173,9 +173,9 @@ class Show(Movie, Globals):
 	             show_dict = dict(),
 	             movie_dict = dict()):
 		super().__init__(film, movie_dict, g)
-		self.show = fetch_series.title(self, g, series)
-		self.movie_dictionary = fetch_series.parent_dict(self, g, movie_dict)
-		self.series_dict = fetch_series.child_dict(self, g, show_dict)
+		self.show = fetch_series.title(g, series)
+		self.movie_dictionary = fetch_series.parent_dict(g, movie_dict)
+		self.series_dict = fetch_series.child_dict(g, show_dict)
 		cleanup_series.cleanup_dict(self.series_dict)
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
 		self.series_id = parse_series.series_id(self.sonarr_series_dict, self.series_dict, g)

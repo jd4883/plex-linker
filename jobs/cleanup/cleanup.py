@@ -1,4 +1,4 @@
-import os
+import subprocess
 
 
 def cleanup_sonarr_api_query(result):
@@ -11,8 +11,8 @@ def cleanup_sonarr_api_query(result):
 
 # any other cleanup scripts that are needed can be added here
 def postExecutionCleanup():
-	process = os.subprocess.Popen(["/bin/bash",
-	                               "scripts/clearcache.sh"],
-	                              stderr = os.subprocess.DEVNULL,
-	                              stdout = os.subprocess.PIPE)
+	process = subprocess.Popen(["/bin/bash",
+	                            "scripts/clearcache.sh"],
+	                           stderr = subprocess.DEVNULL,
+	                           stdout = subprocess.PIPE)
 	return process
