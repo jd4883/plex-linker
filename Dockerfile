@@ -49,13 +49,7 @@ ENV HOST_MEDIA_PATH /media/video
 
 COPY . /config/
 
-#RUN echo "*/${FREQUENCY} *  *  *  * python /config/link-tv-specials.py${APPEND_TO_CRON_END}" > ./temp; \
-#	echo "$(cat ./temp)" > /etc/crontabs/root; rm ./temp; cat /etc/crontabs/root
-
 RUN echo "*/5 *  *  *  * python /config/link-tv-specials.py" > /etc/crontabs/root; cat /etc/crontabs/root
-#RUN bash -c 'cat << EOF
-# "*/`$FREQUENCY` *  *  *  * python /config/link-tv-specials.py`$APPEND_TO_CRON_END`"
-# EOF > /etc/crontabs/root'
 
 RUN ["chmod", "+x", "/config/link-tv-specials.py", "/config/launcher.sh"]
 
