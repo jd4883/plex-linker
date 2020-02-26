@@ -26,7 +26,7 @@ ENV PLEX_API_URL http://127.0.0.1:32400
 ENV RADARR_URL http://127.0.0.1:7878/api
 
 ENV GIT_REPO https://github.com/jd4883/plex-linker-beta.git
-ENV GIT_BRANCH master
+ENV GIT_BRANCH develop
 
 ENV PLEX_LINKER /config
 
@@ -49,8 +49,13 @@ ENV HOST_MEDIA_PATH /media/video
 
 COPY . /config/
 
-RUN echo "*/${FREQUENCY} *  *  *  * python /config/link-tv-specials.py${APPEND_TO_CRON_END}" > ./temp; \
-	echo "$(cat ./temp)" > /etc/crontabs/root; rm ./temp; cat /etc/crontabs/root
+#RUN echo "*/${FREQUENCY} *  *  *  * python /config/link-tv-specials.py${APPEND_TO_CRON_END}" > ./temp; \
+#	echo "$(cat ./temp)" > /etc/crontabs/root; rm ./temp; cat /etc/crontabs/root
+
+#RUN echo "*/5 *  *  *  * python /config/link-tv-specials.py" > /etc/crontabs/root; cat /etc/crontabs/root
+RUN cat > /etc/crontabs/root << 'EOF'
+"*/${FREQUENCY} *  *  *  * python /config/link-tv-specials.py${APPEND_TO_CRON_END}"
+EOF
 
 RUN ["chmod", "+x", "/config/link-tv-specials.py", "/config/launcher.sh"]
 
