@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import os
+import re
 
 from messaging import backend as backend
 
@@ -13,8 +14,11 @@ def symlink_status(self, g):
 
 
 def show_path_string(string):
-	return str((str(string).replace('//', '/')).replace(":", "")).replace(str(os.environ['SONARR_ROOT_PATH_PREFIX']),
-	                                                                      str())
+	result = re.sub('//', '/', string)
+	result = re.sub(str(os.environ['SONARR_ROOT_PATH_PREFIX']), str(), result)
+	result = re.sub(':', str(), result)
+	return result
+
 
 # continue testing this seems right but may need more tweaks to properly handle everything
 def fetch_link_status(self, episode_file_dict, relative_movie_file_path):
@@ -23,12 +27,12 @@ def fetch_link_status(self, episode_file_dict, relative_movie_file_path):
 		os.chdir(root)
 		result = bool()
 		parsed_link = str()
-		link = str(episode_file_dict.pop(str('path'))).replace(os.environ['SONARR_ROOT_PATH_PREFIX'],str())
+		link = str(episode_file_dict.pop(str('path'))).replace(os.environ['SONARR_ROOT_PATH_PREFIX'], str())
 		if os.path.exists(str(link).replace('../', str())):
 			parsed_link = str(os.readlink(link)).replace('../', str())
-		if parsed_link and (relative_movie_file_path) == parsed_link and \
-			os.path.exists(self.relative_show_file_path) and \
-			os.path.islink(self.relative_show_file_path):
+		if parsed_link and relative_movie_file_path == parsed_link and \
+				os.path.exists(self.relative_show_file_path) and \
+				os.path.islink(self.relative_show_file_path):
 			result = bool(True)
 		return result
 	except OSError as err:
@@ -45,7 +49,7 @@ def title(self, g, series):
 
 
 def parent_dict(self, g, movie_dict):
-	result = movie_dict;
+	result = movie_dict
 	g.LOG.info(backend.debug_message(627, g, result))
 	return result
 

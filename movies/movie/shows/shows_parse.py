@@ -27,7 +27,7 @@ def parse_shows_dictionary_object(movie, g):
 			break
 		show = init_show_object(movie, str(series), g)
 		if show.has_link:
-		#if linking_can_be_skipped(show, movie):
+			# if linking_can_be_skipped(show, movie):
 			# not sure why but something is up with this method and it is not doing its job
 			g.LOG.info(backend.debug_message(640, g, movie.movie_title))
 			continue
