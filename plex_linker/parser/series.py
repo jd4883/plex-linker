@@ -238,6 +238,7 @@ def episode_title(self, g, result = str()):
 			result = v
 			break
 	else:
-		result = re.sub('\(\d+\)$', "", fetch_series.show_path_string(self.episode_dict['title']))
+		self.episode_dict['title'] = str()
+	result = re.sub('\(\d+\)$', "", fetch_series.show_path_string(self.episode_dict['title']))
 	g.LOG.info(backend.debug_message(636, g, result))
 	return result

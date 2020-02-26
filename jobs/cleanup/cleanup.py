@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+import os
+
+
 def cleanup_sonarr_api_query(result):
 	# need to make this a dynamic alternative to the ugly code here
 	i = 0
@@ -30,3 +33,9 @@ def cleanup_sonarr_api_query(result):
 	return result
 
 
+def postExecutionCleanup():
+	process = os.subprocess.Popen(["/bin/bash",
+	                               "scripts/clearcache.sh"],
+	                              stderr = os.subprocess.DEVNULL,
+	                              stdout = os.subprocess.PIPE)
+	return process
