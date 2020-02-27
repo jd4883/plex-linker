@@ -91,7 +91,7 @@ def debug_message(status_code, g, var1 = str(), var2 = str()):
 		g.message1 = format_string(f"parsed padding:")
 		g.message2 = f"{var1}"
 	elif status_code == 622:
-		g.message1 = format_string(f"episode parsed from sonarr api:")
+		g.message1 = format_string(f"episode number parsed from sonarr api:")
 		g.message2 = f"{var1}"
 	elif status_code == 623:
 		g.message1 = format_string(f"episode dictionary:")

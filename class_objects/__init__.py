@@ -72,7 +72,7 @@ class Movie(Movies, Globals):
 		super().__init__()
 		# schema = MovieSchema()
 		self.movie_dictionary = movie_dict
-		g.LOG.info(backend.debug_message(627, g, self.movie_dictionary))
+		g.LOG.debug(backend.debug_message(627, g, self.movie_dictionary))
 		cleanup_movie.cleanup_dict(self.movie_dictionary)
 		self.shows_dictionary = self.movie_dictionary['Shows']
 		g.LOG.info(backend.debug_message(645, g, self.shows_dictionary))
@@ -158,7 +158,7 @@ class Movie(Movies, Globals):
 					[i for i, d in enumerate(g.full_radarr_dict) if (self.movie_dictionary['Movie DB ID'] in
 					                                                 d.values())
 					 and ("tmdbId" in d.keys() and d['tmdbId'] == self.movie_dictionary['Movie DB ID'])][0]
-				g.LOG.info(backend.debug_message(644, g, g.full_radarr_dict[index]))
+				g.LOG.debug(backend.debug_message(644, g, g.full_radarr_dict[index]))
 				return g.full_radarr_dict[index]
 			except IndexError:
 				pass
@@ -206,7 +206,10 @@ class Show(Movie, Globals):
 		self.parsed_absolute_episode = padded_absolute_episode(self, g)
 		self.season = parse_series.season_from_sonarr(self, g)
 		self.season_folder = parse_series.season_folder_from_api(self, g)
-		self.show_root_path = parse_series.show_root_folder(self, g)
+		self.show_root_path = self.sonarr_series_dict["path"] \
+			if 'path' in self.sonarr_series_dict["path"] \
+			else parse_series.show_root_folder(self, g)
+		#self.show_root_path = parse_series.show_root_folder(self, g)
 		self.relative_show_path = parse_series.relative_show_path(self, g)
 		self.episode_title = episode_title(self, g)
 		self.parsed_episode_title = parse_series.compiled_episode_title(self, g)

@@ -55,6 +55,7 @@ def imdb_id(sonarr_series_dict, series_dict, g):
 
 def episode_dict_from_lookup(self, g):
 	query = episode_index(self, self.sonarr_series_dict) if self.sonarr_series_dict else dict()
+	# series dict
 	g.LOG.info(backend.debug_message(626, g, query))
 	return query
 
@@ -146,7 +147,7 @@ def episode_number(self, g):
 		result = self.series_dict['Episode']
 	else:
 		result = self.series_dict['Episode'] = self.episode_dict.pop('episodeNumber', str())
-	g.LOG.info(backend.debug_message(622, g, result))
+	g.LOG.debug(backend.debug_message(622, g, result))
 	return result
 
 
@@ -227,41 +228,7 @@ def padded_absolute_episode(self, g):
 
 
 def compiled_episode_title(self, g):
-	parsed_title = f"{self.show_root_path}/{self.season_folder}/{self.show} - S{self.season}E{self.parsed_episode} - " \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"{self.episode_title}"
+	parsed_title = f"{self.show_root_path}/{self.season_folder}/{self.show} - S{self.season}E{self.parsed_episode} - {self.episode_title}"
 	result = self.series_dict['Parsed Episode Title'] = re.sub('\(\d+\)$', "",
 	                                                           fetch_series.show_path_string(parsed_title))
 	g.LOG.info(backend.debug_message(637, g, result))
