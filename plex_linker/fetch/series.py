@@ -50,7 +50,7 @@ def title(g, series):
 
 def parent_dict(g, movie_dict):
 	result = movie_dict
-	g.LOG.info(backend.debug_message(627, g, result))
+	g.LOG.debug(backend.debug_message(627, g, result))
 	return result
 
 
