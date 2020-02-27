@@ -80,7 +80,7 @@ class SonarrAPI(object):
 			payload = payload[0]
 		except IndexError:
 			pass
-		g.LOG.info(messaging.backend.debug_message(625, g, payload))
+		g.LOG.debug(messaging.backend.debug_message(625, g, payload))
 		return payload
 	
 	def request_get(self, url, data = dict()):
