@@ -207,7 +207,7 @@ class Show(Movie, Globals):
 		self.season = parse_series.season_from_sonarr(self, g)
 		self.season_folder = parse_series.season_folder_from_api(self, g)
 		self.show_root_path = self.sonarr_series_dict["path"] \
-			if 'path' in self.sonarr_series_dict["path"] \
+			if 'path' in self.sonarr_series_dict and self.sonarr_series_dict["path"] \
 			else parse_series.show_root_folder(self, g)
 		#self.show_root_path = parse_series.show_root_folder(self, g)
 		self.relative_show_path = parse_series.relative_show_path(self, g)
