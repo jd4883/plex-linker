@@ -27,7 +27,7 @@ def get_absolute_movie_file_path(movie, g):
 
 def get_relative_movie_file_path(movie, g):
 	movie.movie_dictionary['Relative Movie File Path'] = "/".join((movie.relative_movie_path, movie.movie_file))
-	g.LOG.info(backend.debug_message(616, g, movie.movie_dictionary['Relative Movie File Path']))
+	g.LOG.debug(backend.debug_message(616, g, movie.movie_dictionary['Relative Movie File Path']))
 	return movie.movie_dictionary['Relative Movie File Path']
 
 

@@ -95,7 +95,7 @@ def episode_id(self, g):
 		else g.sonarr.get_episodes_by_series_id(self.series_id)
 	if result == 0:
 		raise ValueError("EPISODE ID MUST BE SET")
-	g.LOG.info(backend.debug_message(619, g, result))
+	g.LOG.debug(backend.debug_message(619, g, result))
 	return result
 
 
@@ -163,13 +163,13 @@ def absolute_episode_number(self, g):
 
 def season_from_sonarr(self, g):
 	result = self.series_dict['Season'] = str(self.episode_dict.pop('seasonNumber', str())).zfill(2)
-	g.LOG.info(backend.debug_message(630, g, result))
+	g.LOG.debug(backend.debug_message(630, g, result))
 	return result
 
 
 def season_folder_from_api(self, g):
 	result = self.series_dict['Parsed Season Folder'] = f"Season {self.season}"
-	g.LOG.info(backend.debug_message(631, g, result))
+	g.LOG.debug(backend.debug_message(631, g, result))
 	return result
 
 
@@ -233,7 +233,7 @@ def compiled_episode_title(self, g):
 	               f"{self.episode_title}"
 	result = self.series_dict['Parsed Episode Title'] = re.sub('\(\d+\)$', "",
 	                                                           fetch_series.show_path_string(parsed_title))
-	g.LOG.info(backend.debug_message(637, g, result))
+	g.LOG.debug(backend.debug_message(637, g, result))
 	return result
 
 

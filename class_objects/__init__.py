@@ -75,7 +75,7 @@ class Movie(Movies, Globals):
 		g.LOG.debug(backend.debug_message(627, g, self.movie_dictionary))
 		cleanup_movie.cleanup_dict(self.movie_dictionary)
 		self.shows_dictionary = self.movie_dictionary['Shows']
-		g.LOG.info(backend.debug_message(645, g, self.shows_dictionary))
+		g.LOG.debug(backend.debug_message(645, g, self.shows_dictionary))
 		self.tmbdid = self.movie_dictionary['Movie DB ID']
 		g.LOG.debug(backend.debug_message(648, g, self.tmbdid))
 		
@@ -133,7 +133,7 @@ class Movie(Movies, Globals):
 	def init_relative_movie_path(self, g, result = str()):
 		if 'path' in self.radarr_dictionary:
 			result = self.movie_dictionary['Relative Movie Path'] = str(self.radarr_dictionary['path'])[1:]
-		g.LOG.info(backend.debug_message(617, g, result))
+		g.LOG.debug(backend.debug_message(617, g, result))
 		return result
 	
 	def parse_tmdbid(self, g):
