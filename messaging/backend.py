@@ -29,32 +29,11 @@ def debug_message(status_code, g, var1 = str(), var2 = str()):
 		g.message2 = format_string(f"{g.method}")
 	elif status_code == 602:  # useful for handling edge cases
 		g.message1 = format_string(f"we hit an unexpected edge case in this method")
-	elif status_code == 603:
-		g.message1 = format_string("season parsed as:")
-		g.message2 = f"{var1}"
 	elif status_code == 604:
 		g.message1 = format_string(f"show title:")
 		g.message2 = f"{var1}"
-	elif status_code == 605:
-		g.message1 = format_string(f"show path:")
-		g.message2 = f"{var1}"
-	elif status_code == 606:
-		g.message1 = format_string(f"media path:")
-		g.message2 = f"{var1}"
-	elif status_code == 607:
-		g.message1 = format_string(f"checking if this is a video file:")
-		g.message2 = f"{var1}"
-	elif status_code == 608:
-		g.message1 = format_string(f"movie extension found:")
-		g.message2 = f"{var1}"
-	elif status_code == 609:
-		g.message1 = format_string(f"checking directory for files with extension:")
-		g.message2 = f"{var1}"
 	elif status_code == 610:
 		g.message1 = format_string(f"movie file found:")
-		g.message2 = f"{var1}"
-	elif status_code == 611:
-		g.message1 = format_string(f"show(s) dictionary:")
 		g.message2 = f"{var1}"
 	elif status_code == 612:
 		g.message1 = format_string(f"movie quality:")
