@@ -111,9 +111,9 @@ class Movie(Movies, Globals):
 			return
 		file_dict = self.radarr_dictionary['movieFile']
 		self.movie_file = self.movie_dictionary['Movie File'] = str(file_dict['relativePath'])
-		g.LOG.info(backend.debug_message(610, g, self.movie_file))
+		g.LOG.debug(backend.debug_message(610, g, self.movie_file))
 		self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(file_dict['quality']['quality']['name'])
-		g.LOG.info(backend.debug_message(612, g, self.quality))
+		g.LOG.debug(backend.debug_message(612, g, self.quality))
 		self.extension = self.movie_dictionary['Parsed Extension'] = \
 			re.sub("\s+REAL\.\W+$", "", str(self.movie_file.split().pop()).replace(self.quality, str()))
 		self.absolute_movie_file_path = str(get_absolute_movie_file_path(self, g))

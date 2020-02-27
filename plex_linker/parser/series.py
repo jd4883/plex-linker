@@ -79,7 +79,7 @@ def anime_status(self, g):
 	# result stays as a False
 	elif 'seriesType' in self.sonarr_api_query and (self.sonarr_api_query['seriesType'] == 'anime'):
 		result = self.series_dict['Anime'] = bool(True)
-	g.LOG.info(backend.debug_message(621, g, result))
+	g.LOG.debug(backend.debug_message(621, g, result))
 	return result
 
 
@@ -108,7 +108,7 @@ def episode_id(self, g):
 
 def episode_padding(self, g):
 	result = int(3) if self.anime_status else int(os.environ['EPISODE_PADDING'])
-	g.LOG.info(backend.debug_message(621, g, result))
+	g.LOG.debug(backend.debug_message(621, g, result))
 	return result
 
 
