@@ -21,7 +21,7 @@ def get_docker_media_path(g):
 
 def get_absolute_movie_file_path(movie, g):
 	movie.movie_dictionary['Absolute Movie File Path'] = "/".join((movie.absolute_movie_path, movie.movie_file))
-	g.LOG.info(backend.debug_message(615, g, movie.movie_dictionary['Absolute Movie File Path']))
+	g.LOG.debug(backend.debug_message(615, g, movie.movie_dictionary['Absolute Movie File Path']))
 	return movie.movie_dictionary['Absolute Movie File Path']
 
 
