@@ -123,7 +123,7 @@ def parse_episode_file_id_dict(self, g):
 
 def parse_episode_dict(self, g):
 	result = g.sonarr.get_episode_by_episode_id(self.episode_id)
-	g.LOG.info(backend.debug_message(623, g, result))
+	g.LOG.debug(backend.debug_message(623, g, result))
 	return result
 
 
@@ -133,7 +133,7 @@ def episode_file_id(self, g):
 		result = self.series_dict['episodeFileId'] = str()
 	# need episode file presence info for this check to work
 	# raise ValueError("EPISODE FILE ID MUST BE SET")
-	g.LOG.info(backend.debug_message(653, g, result))
+	g.LOG.debug(backend.debug_message(653, g, result))
 	return result
 
 
@@ -201,17 +201,14 @@ def padded_episode_number(self, g):
 	elif 'Parsed Absolute Episode' in self.series_dict:
 		del self.series_dict['Parsed Absolute Episode']
 		result = str()
-	g.LOG.info(backend.debug_message(634, g, result))
+	g.LOG.debug(backend.debug_message(634, g, result))
 	return result
 
 
 def padded_absolute_episode(self, g):
 	result = str()
 	if isinstance(self.absolute_episode, list):
-		items = []
-		for i in self.absolute_episode:
-			items.append(str(i).zfill(self.padding))
-		result = "-".join(items)
+		result = "-".join([str(i).zfill(self.padding) for i in self.absolute_episode])
 	elif isinstance(self.absolute_episode, int):
 		result = str(self.absolute_episode).zfill(self.padding)
 	elif 'Parsed Absolute Episode' in self.series_dict:
@@ -219,18 +216,13 @@ def padded_absolute_episode(self, g):
 		result = str()
 	elif result == 0 or 00 or '00' or '000' or None:
 		return str()
-	g.LOG.info(backend.debug_message(635, g, result))
+	g.LOG.debug(backend.debug_message(635, g, result))
 	return result
 
 
 def compiled_episode_title(self, g):
-	parsed_title = f"{self.show_root_path}/{self.season_folder}/{self.show} - S{self.season}E{self.parsed_episode} - " \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"" \
-	               f"{self.episode_title}"
+	root = "/".join(self.show_root_path,self.season_folder,self.show)
+	parsed_title = f"{root} - S{self.season}E{self.parsed_episode} - {self.episode_title}"
 	result = self.series_dict['Parsed Episode Title'] = re.sub('\(\d+\)$', "",
 	                                                           fetch_series.show_path_string(parsed_title))
 	g.LOG.debug(backend.debug_message(637, g, result))
@@ -238,13 +230,6 @@ def compiled_episode_title(self, g):
 
 
 def episode_title(self, g, result = str()):
-	# not sure why i cant pop here this was a hacky way to get around it, suspecting a datatype error
-	for k, v in self.episode_dict.items():
-		if k == 'title':
-			result = v
-			break
-	else:
-		self.episode_dict['title'] = str()
 	result = re.sub('\(\d+\)$', "", fetch_series.show_path_string(self.episode_dict['title']))
 	g.LOG.debug(backend.debug_message(636, g, result))
 	return result

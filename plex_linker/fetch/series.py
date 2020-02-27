@@ -56,5 +56,5 @@ def parent_dict(g, movie_dict):
 
 def child_dict(g, show_dict):
 	result = show_dict
-	g.LOG.info(backend.debug_message(624, g, result))
+	g.LOG.debug(backend.debug_message(624, g, result))
 	return result
