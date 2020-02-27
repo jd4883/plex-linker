@@ -145,7 +145,7 @@ def debug_message(status_code, g, var1 = str(), var2 = str()):
 		g.message1 = format_string(f"conditional met - no series found in dictionary:")
 		g.message2 = f"{var1}"
 	elif status_code == 640:
-		g.message1 = format_string(f"conditional met - linking already completed:")
+		g.message1 = format_string(f"conditional met - linking already completed or episode undefined:")
 		g.message2 = f"{var1}"
 	elif status_code == 641:
 		g.message1 = format_string(f"attempting to pair and link:")

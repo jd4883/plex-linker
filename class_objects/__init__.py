@@ -193,14 +193,8 @@ class Show(Movie, Globals):
 		self.episode_file_id = parse_series.episode_file_id(self, g)
 		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)
 		self.link_status = fetch_series.symlink_status(self, g)
-		self.sonarr_monitored = not bool()  # if linked monitoring should be false
-		# need to push this status to Sonarr via API
-		
-		# need to add monitored and file status info for episodes to determine this part
-		# self.has_link =
-		# technically not in use but could be really useful as a means of checking if a link is needed
-		self.episode = parse_series.episode_number(self, g)  # suspect this is the problem point but not 100% sure how
-		# to go between parsing as a list vs not
+		self.sonarr_monitored = not bool()
+		self.episode = parse_series.episode_number(self, g)
 		self.parsed_episode = parse_series.padded_episode_number(self, g)
 		self.absolute_episode = parse_series.absolute_episode_number(self, g)
 		self.parsed_absolute_episode = padded_absolute_episode(self, g)
