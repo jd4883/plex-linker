@@ -18,6 +18,7 @@ class SonarrAPI(object):
 	
 	def get_episode_by_episode_id(self, episode_id):
 		return self.request_get(f"{self.host_url}/episode/{episode_id}").json()
+	
 	#
 	# def get_all_tag_ids(self):
 	# 	return self.request_get(f"{self.host_url}/tag").json()
@@ -76,22 +77,20 @@ class SonarrAPI(object):
 	def lookup_series(self, query, g):
 		payload = cleanup_sonarr_api_query(self.request_get(f"{self.host_url}/series/lookup?term={query}").json())
 		try:
-			payload =  payload[0]
+			payload = payload[0]
 		except IndexError:
 			pass
 		g.LOG.info(messaging.backend.debug_message(625, g, payload))
 		return payload
 	
 	def request_get(self, url, data = dict()):
-		return requests.get(url, headers = {'X-Api-Key': self.api_key}, json = data)
+		return requests.get(url, headers = { 'X-Api-Key': self.api_key }, json = data)
 	
 	def request_post(self, url, data = dict()):
-		return requests.post(url, headers = {'X-Api-Key': self.api_key}, json = data)
+		return requests.post(url, headers = { 'X-Api-Key': self.api_key }, json = data)
 	
 	def request_put(self, url, data = dict()):
-		return requests.put(url, headers = {'X-Api-Key': self.api_key}, json = data)
+		return requests.put(url, headers = { 'X-Api-Key': self.api_key }, json = data)
 	
 	def request_delete(self, url, data = dict()):
-		return requests.delete(url, headers = {'X-Api-Key': self.api_key}, json = data)
-
-
+		return requests.delete(url, headers = { 'X-Api-Key': self.api_key }, json = data)

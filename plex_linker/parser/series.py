@@ -18,7 +18,7 @@ def tvdb_id(sonarr_series_dict, series_dict, g):
 		result = series_dict['tvdbId'] = sonarr_series_dict.pop('tvdbId')
 	if result == 0:
 		result = str()
-	g.LOG.info(backend.debug_message(618, g, result))
+	g.LOG.debug(backend.debug_message(618, g, result))
 	return str(result)
 
 
@@ -32,13 +32,9 @@ def series_id(sonarr_series_dict, series_dict, g):
 		else:
 			print(sonarr_series_dict)
 			print(series_dict)
-	#	raise ValueError("SERIES ID MUST BE SET")
 	if result == 0:
 		raise ValueError("SERIES ID MUST BE SET")
-		result = str()
-	# need to readd this raise condition after dict is set, manually correct errors
-	
-	g.LOG.info(backend.debug_message(618, g, result))
+	g.LOG.debug(backend.debug_message(618, g, result))
 	return result
 
 
@@ -161,7 +157,7 @@ def absolute_episode_number(self, g):
 		result = self.series_dict['Absolute Episode']
 	else:
 		result = self.series_dict['Absolute Episode'] = self.episode_dict.pop('absoluteEpisodeNumber', str())
-	g.LOG.info(backend.debug_message(628, g, result))
+	g.LOG.debug(backend.debug_message(628, g, result))
 	return result
 
 
@@ -183,13 +179,13 @@ def show_root_folder(self, g):
 				root_folder(self, g))))
 	path = os.path.join(fetch_series.show_path_string(os.environ['DOCKER_MEDIA_PATH']), result, self.season_folder)
 	os.makedirs(path, exist_ok = True)
-	g.LOG.info(backend.debug_message(632, g, result))
+	g.LOG.debug(backend.debug_message(632, g, result))
 	return result
 
 
 def relative_show_path(self, g):
 	result = self.series_dict['Relative Show Path'] = f"{self.show_root_path}/{self.season_folder}"
-	g.LOG.info(backend.debug_message(633, g, result))
+	g.LOG.debug(backend.debug_message(633, g, result))
 	return str(result)
 
 
@@ -228,7 +224,13 @@ def padded_absolute_episode(self, g):
 
 
 def compiled_episode_title(self, g):
-	parsed_title = f"{self.show_root_path}/{self.season_folder}/{self.show} - S{self.season}E{self.parsed_episode} - {self.episode_title}"
+	parsed_title = f"{self.show_root_path}/{self.season_folder}/{self.show} - S{self.season}E{self.parsed_episode} - " \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"" \
+	               f"{self.episode_title}"
 	result = self.series_dict['Parsed Episode Title'] = re.sub('\(\d+\)$', "",
 	                                                           fetch_series.show_path_string(parsed_title))
 	g.LOG.info(backend.debug_message(637, g, result))
@@ -244,5 +246,5 @@ def episode_title(self, g, result = str()):
 	else:
 		self.episode_dict['title'] = str()
 	result = re.sub('\(\d+\)$', "", fetch_series.show_path_string(self.episode_dict['title']))
-	g.LOG.info(backend.debug_message(636, g, result))
+	g.LOG.debug(backend.debug_message(636, g, result))
 	return result
