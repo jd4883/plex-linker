@@ -7,7 +7,7 @@ import re
 def parse_series_genres(sonarr_series_dict, series_dict, g):
 	if isinstance(sonarr_series_dict, dict):
 		result = series_dict['Show Genres'] = sonarr_series_dict.pop('genres')
-		g.LOG.info(backend.debug_message(649, g, result))
+		g.LOG.debug(backend.debug_message(649, g, result))
 		return list(result)
 	return list()
 
@@ -44,7 +44,7 @@ def imdb_id(sonarr_series_dict, series_dict, g):
 			result = series_dict['imdbId'] = sonarr_series_dict.pop('imdbId')
 		except KeyError:
 			result = str()
-		g.LOG.info(backend.debug_message(650, g, result))
+		g.LOG.debug(backend.debug_message(650, g, result))
 		return result
 	return str()
 
@@ -52,7 +52,7 @@ def imdb_id(sonarr_series_dict, series_dict, g):
 def episode_dict_from_lookup(self, g):
 	query = episode_index(self, self.sonarr_series_dict) if self.sonarr_series_dict else dict()
 	# series dict
-	g.LOG.info(backend.debug_message(626, g, query))
+	g.LOG.debug(backend.debug_message(626, g, query))
 	return query
 
 
@@ -117,7 +117,7 @@ def parse_episode_file_id_dict(self, g):
 	if result == 0:
 		print(f"RESULT = 0 {result} {self.episode_file_id}")
 		result = dict()
-	g.LOG.info(backend.debug_message(652, g, result))
+	g.LOG.debug(backend.debug_message(652, g, result))
 	return result
 
 
