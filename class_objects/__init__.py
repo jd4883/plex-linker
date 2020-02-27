@@ -77,7 +77,7 @@ class Movie(Movies, Globals):
 		self.shows_dictionary = self.movie_dictionary['Shows']
 		g.LOG.info(backend.debug_message(645, g, self.shows_dictionary))
 		self.tmbdid = self.movie_dictionary['Movie DB ID']
-		g.LOG.info(backend.debug_message(648, g, self.tmbdid))
+		g.LOG.debug(backend.debug_message(648, g, self.tmbdid))
 		
 		self.radarr_dictionary = self.parse_dict_from_radarr(g)
 		try:
@@ -86,14 +86,14 @@ class Movie(Movies, Globals):
 				bool(self.radarr_dictionary['hasFile']) if 'hasFile' in self.radarr_dictionary else False
 		except TypeError:
 			self.hasFile = self.movie_dictionary['Has File'] = bool()
-		g.LOG.info(backend.debug_message(646, g, self.hasFile))
+		g.LOG.debug(backend.debug_message(646, g, self.hasFile))
 		try:
 			self.monitored = \
 				self.movie_dictionary['Monitored'] = \
 				bool(self.radarr_dictionary['monitored']) if 'monitored' in self.radarr_dictionary else True
 		except TypeError:
 			self.monitored = self.movie_dictionary['Monitored'] = bool(True)
-		g.LOG.info(backend.debug_message(647, g, self.monitored))
+		g.LOG.debug(backend.debug_message(647, g, self.monitored))
 		
 		self.year = self.movie_dictionary['Year'] = \
 			int(self.radarr_dictionary['inCinemas'][0:4]) if 'inCinemas' in self.radarr_dictionary \
@@ -121,13 +121,13 @@ class Movie(Movies, Globals):
 	
 	def get_unparsed_movie_title(self, g):
 		result = self.radarr_dictionary.pop('title', str())
-		g.LOG.info(backend.debug_message(643, g, result))
+		g.LOG.debug(backend.debug_message(643, g, result))
 		return result
 	
 	def init_absolute_movie_path(self, g):
 		result = self.movie_dictionary['Absolute Movie Path'] = "/".join((os.environ['DOCKER_MEDIA_PATH'],
 		                                                                  self.relative_movie_path))
-		g.LOG.info(backend.debug_message(614, g, str(result)))
+		g.LOG.debug(backend.debug_message(614, g, str(result)))
 		return result
 	
 	def init_relative_movie_path(self, g, result = str()):
@@ -206,9 +206,7 @@ class Show(Movie, Globals):
 		self.parsed_absolute_episode = padded_absolute_episode(self, g)
 		self.season = parse_series.season_from_sonarr(self, g)
 		self.season_folder = parse_series.season_folder_from_api(self, g)
-		self.show_root_path = self.sonarr_series_dict["path"] \
-			if 'path' in self.sonarr_series_dict and self.sonarr_series_dict["path"] \
-			else parse_series.show_root_folder(self, g)
+		self.show_root_path = self.setShowRootPath(g)
 		#self.show_root_path = parse_series.show_root_folder(self, g)
 		self.relative_show_path = parse_series.relative_show_path(self, g)
 		self.episode_title = episode_title(self, g)
@@ -223,3 +221,9 @@ class Show(Movie, Globals):
 				if self.episode_file_dict else bool()
 		g.sonarr.rescan_series(self.tvdbId)  # rescan movie in case it was picked up since last scan
 		g.sonarr.refresh_series(self.tvdbId)  # to ensure metadata is up to date
+	
+	def setShowRootPath(self, g):
+		payload = parse_series.show_root_folder(self, g)
+		if 'path' in self.sonarr_series_dict and self.sonarr_series_dict["path"]:
+			payload = self.sonarr_series_dict["path"]
+		return payload
