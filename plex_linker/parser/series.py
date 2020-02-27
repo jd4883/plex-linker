@@ -1,7 +1,8 @@
 import os
+import re
+
 from messaging import backend as backend
 from plex_linker.fetch import series as fetch_series
-import re
 
 
 def parse_series_genres(sonarr_series_dict, series_dict, g):
@@ -82,7 +83,8 @@ def anime_status(self, g):
 def episode_index(self, query = dict()):
 	if self.sonarr_series_dict:
 		e = 'episodeNumber' in query
-		query = [query[x] for x in query if e and (query[x]['episodeNumber'] == self.episode) and (self.season == query[x]['seasonNumber'])]
+		query = [query[x] for x in query if
+		         e and (query[x]['episodeNumber'] == self.episode) and (self.season == query[x]['seasonNumber'])]
 	return query
 
 
@@ -204,14 +206,14 @@ def padded_absolute_episode(self, g):
 	elif 'Parsed Absolute Episode' in self.series_dict:
 		del self.series_dict['Parsed Absolute Episode']
 		result = str()
-	elif result == 0 or 00 or '00' or '000' or None:
+	elif result in [0, 00, '00', '000', None]:
 		return str()
 	g.LOG.debug(backend.debug_message(635, g, result))
 	return result
 
 
 def compiled_episode_title(self, g):
-	root = "/".join([self.show_root_path,self.season_folder,self.show])
+	root = "/".join([self.show_root_path, self.season_folder, self.show])
 	parsed_title = f"{root} - S{self.season}E{self.parsed_episode} - {self.episode_title}"
 	result = self.series_dict['Parsed Episode Title'] = re.sub('\(\d+\)$', "",
 	                                                           fetch_series.show_path_string(parsed_title))
@@ -219,7 +221,8 @@ def compiled_episode_title(self, g):
 	return result
 
 
-def episode_title(self, g, result = str()):
-	result = re.sub('\(\d+\)$', "", fetch_series.show_path_string(self.episode_dict['title']))
+def episode_title(self, g):
+	payload = fetch_series.show_path_string(self.episode_dict['title'] if 'title' in self.episode_dict else str())
+	result = re.sub('\(\d+\)$', "", payload)
 	g.LOG.debug(backend.debug_message(636, g, result))
 	return result
