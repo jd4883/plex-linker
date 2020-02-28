@@ -1,14 +1,16 @@
+import re
 import time
-import plex_linker.parser.series as parse_series
-import plex_linker.fetch.series as fetch_series
+from os.path import abspath
+
+from marshmallow import fields, Schema
+
 import class_objects.sonarr_api
 import class_objects.sonarr_class_methods
 import messaging.backend as backend
 import plex_linker.cleanup.movie as cleanup_movie
 import plex_linker.cleanup.series as cleanup_series
-
-from os.path import abspath
-from marshmallow import Schema, fields
+import plex_linker.fetch.series as fetch_series
+import plex_linker.parser.series as parse_series
 from class_objects.misc_get_methods import (
 	get_docker_media_path,
 	get_host_media_path,
@@ -23,11 +25,10 @@ from class_objects.sonarr_api import *
 from IO.YAML.yaml_to_object import (get_variable_from_yaml)
 from logs.bin.get_parameters import (get_log_name, get_logger, get_method_main)
 from plex_linker.compare.ids import validate_tmdbId
-from plex_linker.gets.path import get_absolute_movie_file_path, get_relative_movie_file_path
-from plex_linker.gets.movie import get_relative_movies_path
 from plex_linker.fetch.series import fetch_link_status
-from plex_linker.parser.series import padded_absolute_episode, episode_title
-import re
+from plex_linker.gets.movie import get_relative_movies_path
+from plex_linker.gets.path import get_absolute_movie_file_path, get_relative_movie_file_path
+from plex_linker.parser.series import episode_title, padded_absolute_episode
 
 
 class Globals:
@@ -155,9 +156,9 @@ class Movie(Movies, Globals):
 		if validate_tmdbId(self.tmbdid):
 			try:
 				index = \
-					[i for i, d in enumerate(g.full_radarr_dict) if (self.movie_dictionary['Movie DB ID'] in
-					                                                 d.values())
-					 and ("tmdbId" in d.keys() and d['tmdbId'] == self.movie_dictionary['Movie DB ID'])][0]
+					[i for i, d in enumerate(g.full_radarr_dict) if
+					 (self.movie_dictionary['Movie DB ID'] in d.values()) and (
+								 "tmdbId" in d.keys() and d['tmdbId'] == self.movie_dictionary['Movie DB ID'])][0]
 				g.LOG.debug(backend.debug_message(644, g, g.full_radarr_dict[index]))
 				return g.full_radarr_dict[index]
 			except IndexError:
@@ -206,7 +207,7 @@ class Show(Movie, Globals):
 		self.episode_title = episode_title(self, g)
 		self.parsed_episode_title = parse_series.compiled_episode_title(self, g)
 		titleWithQuality = f"{self.parsed_episode_title} {self.quality}.{self.extension}" if (
-					self.hasFile and self.parsed_episode_title) else str()
+				self.hasFile and self.parsed_episode_title) else str()
 		self.relative_show_file_path = \
 			self.series_dict['Relative Show File Path'] = re.sub("..", ".", titleWithQuality)
 		relativeMovieFilePath = fetch_link_status(self,
