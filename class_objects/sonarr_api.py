@@ -37,20 +37,20 @@ class SonarrAPI(object):
 	def get_series(self):
 		return self.request_get(f"{self.host_url}/series").json()
 	
-	def get_series_by_series_id(self, series_id, g):
-		query = self.request_get(f"{self.host_url}/series/{series_id}").json()
-		for i in g.full_sonarr_dict:
-			if 'id' in query and i['id'] == series_id or \
-					'tvdbId' in query and i['tvdbId'] == query[0]['tvdbId']:
-				query[0] = i
-				return i
-		return
+	# def get_series_by_series_id(self, series_id, g):
+	# 	query = self.request_get(f"{self.host_url}/series/{series_id}").json()
+	# 	for i in g.full_sonarr_dict:
+	# 		if 'id' in query and i['id'] == series_id or \
+	# 				'tvdbId' in query and i['tvdbId'] == query[0]['tvdbId']:
+	# 			query[0] = i
+	# 			return i
+	# 	return
 	
-	def set_series_tags(self, label, series_id, data = dict()):
-		return self.request_post(f"{self.host_url}/series/{series_id}/tag&label={str(label).lower()}", data).json()
+	# def set_series_tags(self, label, series_id, data = dict()):
+	# 	return self.request_post(f"{self.host_url}/series/{series_id}/tag&label={str(label).lower()}", data).json()
 	
-	def set_new_tag_for_sonarr(self, label, data = dict()):
-		return self.request_post(f"{self.host_url}/tag&label={str(label).lower()}", data).json()
+	# def set_new_tag_for_sonarr(self, label, data = dict()):
+	# 	return self.request_post(f"{self.host_url}/tag&label={str(label).lower()}", data).json()
 	
 	def refresh_series(self, series_id, data = dict()):
 		return self.request_post(f"{self.host_url}/command/RefreshSeries&seriesId={series_id}", data).json()
@@ -58,23 +58,23 @@ class SonarrAPI(object):
 	def rescan_series(self, series_id, data = dict()):
 		return self.request_post(f"{self.host_url}/command/RescanSeries&seriesId={series_id}", data).json()
 	
-	def constuct_series_json(self, tvdbid, quality_profile):
-		res = self.request_get(f"{self.host_url}/series/lookup?term={'tvdbId:' + str(tvdbid)}")
-		return {
-				'title':            res.json()[0]['title'],
-				'seasons':          res.json()[0]['seasons'],
-				'path':             self.get_root_folder()[0]['path'] + res.json()[0]['title'],
-				'qualityProfileId': quality_profile,
-				'seasonFolder':     True,
-				'monitored':        True,
-				'tvdbId':           tvdbid,
-				'images':           res.json()[0]['images'],
-				'titleSlug':        res.json()[0]['titleSlug'],
-				"addOptions":       {
-						"ignoreEpisodesWithFiles":    False,
-						"ignoreEpisodesWithoutFiles": False
-						}
-				}
+	# def constuct_series_json(self, tvdbid, quality_profile):
+	# 	res = self.request_get(f"{self.host_url}/series/lookup?term={'tvdbId:' + str(tvdbid)}")
+	# 	return {
+	# 			'title':            res.json()[0]['title'],
+	# 			'seasons':          res.json()[0]['seasons'],
+	# 			'path':             self.get_root_folder()[0]['path'] + res.json()[0]['title'],
+	# 			'qualityProfileId': quality_profile,
+	# 			'seasonFolder':     True,
+	# 			'monitored':        True,
+	# 			'tvdbId':           tvdbid,
+	# 			'images':           res.json()[0]['images'],
+	# 			'titleSlug':        res.json()[0]['titleSlug'],
+	# 			"addOptions":       {
+	# 					"ignoreEpisodesWithFiles":    False,
+	# 					"ignoreEpisodesWithoutFiles": False
+	# 					}
+	# 			}
 	
 	def lookup_series(self, query, g):
 		payload = cleanup_sonarr_api_query(self.request_get(f"{self.host_url}/series/lookup?term={query}").json())
@@ -89,8 +89,8 @@ class SonarrAPI(object):
 	def request_post(self, url, data = dict()):
 		return requests.post(url, headers = { 'X-Api-Key': self.api_key }, json = data)
 	
-	def request_put(self, url, data = dict()):
-		return requests.put(url, headers = { 'X-Api-Key': self.api_key }, json = data)
+	# def request_put(self, url, data = dict()):
+	# 	return requests.put(url, headers = { 'X-Api-Key': self.api_key }, json = data)
 	
-	def request_delete(self, url, data = dict()):
-		return requests.delete(url, headers = { 'X-Api-Key': self.api_key }, json = data)
+	# def request_delete(self, url, data = dict()):
+	# 	return requests.delete(url, headers = { 'X-Api-Key': self.api_key }, json = data)
