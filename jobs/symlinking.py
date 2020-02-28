@@ -14,8 +14,7 @@ def symlink_force(show, g):
 		# really primitive way to indicate if the movie value is blank we do not link
 		show.absolute_movie_file_path = str()
 		show.has_link = bool()
-		pass
-	if not show.has_link:
+	if show.has_link:
 		os.chdir(str(os.environ['HOST_MEDIA_PATH']))
 		# noinspection SpellCheckingInspection
 		process = subprocess.Popen(get_symlink_command_string(show), stderr = subprocess.DEVNULL,
