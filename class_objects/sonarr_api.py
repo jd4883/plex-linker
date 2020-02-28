@@ -76,10 +76,8 @@ class SonarrAPI(object):
 	
 	def lookup_series(self, query, g):
 		payload = cleanup_sonarr_api_query(self.request_get(f"{self.host_url}/series/lookup?term={query}").json())
-		try:
+		if type(payload) is list:
 			payload = payload[0]
-		except IndexError:
-			pass
 		g.LOG.debug(messaging.backend.debug_message(625, g, payload))
 		return payload
 	
