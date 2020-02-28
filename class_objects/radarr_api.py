@@ -1,7 +1,7 @@
 #!/usr/bin/env python3.7
 import pathlib
 from os import environ
-
+import re
 import requests
 
 
@@ -10,7 +10,7 @@ class RadarrAPI(object):
 	
 	def __init__(self):
 		self.host_url = str(environ['RADARR_URL'])
-		self.api_key = pathlib.Path('/run/secrets/radarr_api_key').read_text().replace('\n', '')
+		self.api_key = re.sub('\n', '', pathlib.Path('/run/secrets/radarr_api_key').read_text())
 	
 	# def get_movie_file(self, movie_id):
 	# 	return self.request_get(f"{self.host_url}/GetMovieFile&seriesId={movie_id}").json()
