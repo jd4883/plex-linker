@@ -29,7 +29,7 @@ def fetch_link_status(self, episode_file_dict, relative_movie_file_path):
 		path = str(episode_file_dict.pop(str('path'))) if 'path' in episode_file_dict else str()
 		link = re.sub(os.environ['SONARR_ROOT_PATH_PREFIX'], str(), path)
 		if os.path.exists(re.sub('../', str(), str(link))):
-			parsed_link = str(os.readlink(link)).replace('../', str())
+			parsed_link = re.sub('../', str(), str(os.readlink(link)))
 		if parsed_link and relative_movie_file_path == parsed_link and \
 				os.path.exists(self.relative_show_file_path) and \
 				os.path.islink(self.relative_show_file_path):

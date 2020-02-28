@@ -114,7 +114,7 @@ class Movie(Movies, Globals):
 		g.LOG.debug(backend.debug_message(610, g, self.movie_file))
 		self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(file_dict['quality']['quality']['name'])
 		g.LOG.debug(backend.debug_message(612, g, self.quality))
-		baseQuality = str(self.movie_file.split().pop()).replace(self.quality, str())
+		baseQuality = re.sub(self.quality, str(), str(self.movie_file.split().pop()))
 		self.extension = self.movie_dictionary['Parsed Extension'] = re.sub("\s+REAL\.\W+$", "", baseQuality)
 		self.absolute_movie_file_path = str(get_absolute_movie_file_path(self, g))
 		self.relative_movie_file_path = str(get_relative_movie_file_path(self, g))
@@ -205,14 +205,14 @@ class Show(Movie, Globals):
 		self.relative_show_path = parse_series.relative_show_path(self, g)
 		self.episode_title = episode_title(self, g)
 		self.parsed_episode_title = parse_series.compiled_episode_title(self, g)
+		titleWithQuality = f"{self.parsed_episode_title} {self.quality}.{self.extension}" if (
+					self.hasFile and self.parsed_episode_title) else str()
 		self.relative_show_file_path = \
-			self.series_dict['Relative Show File Path'] = \
-			(f"{self.parsed_episode_title} {self.quality}.{self.extension}" \
-				 if (self.hasFile and self.parsed_episode_title) else str()).replace("..", ".")
-		self.has_link = \
-			self.series_dict['Has Link'] = \
-			fetch_link_status(self, self.episode_file_dict, self.relative_movie_file_path) \
-				if self.episode_file_dict else bool()
+			self.series_dict['Relative Show File Path'] = re.sub("..", ".", titleWithQuality)
+		relativeMovieFilePath = fetch_link_status(self,
+		                                          self.episode_file_dict,
+		                                          self.relative_movie_file_path) if self.episode_file_dict else bool()
+		self.has_link = self.series_dict['Has Link'] = relativeMovieFilePath
 		g.sonarr.rescan_series(self.tvdbId)  # rescan movie in case it was picked up since last scan
 		g.sonarr.refresh_series(self.tvdbId)  # to ensure metadata is up to date
 	

@@ -1,4 +1,5 @@
 import os
+import re
 import subprocess
 
 import messaging.frontend as message
@@ -19,8 +20,7 @@ def symlink_force(show, g):
 		# noinspection SpellCheckingInspection
 		process = subprocess.Popen(get_symlink_command_string(show), stderr = subprocess.DEVNULL,
 		                           stdout = subprocess.PIPE)
-		process = str(process.communicate()[0])[3:-4].replace("'", "")
-		g.LOG.info(backend.debug_message(654, g, process))
+		g.LOG.info(backend.debug_message(654, g, re.sub("'", "", str(process.communicate()[0])[3:-4])))
 		g.LOG.info(backend.debug_message(642, g, show.has_link))
 	else:
 		print(f'Link not created for {show.absolute_movie_file_path}')
@@ -43,6 +43,4 @@ def validate_link_ready(show):
 
 
 def strip_quotes_from_string(string):
-	string.replace('"', '')
-	string.replace('\n', '')
-	return string.replace("'", "")
+	return re.sub(r"[\s+'\"']", str(), string)
