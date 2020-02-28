@@ -1,6 +1,7 @@
 import logging
 import os
 import sys
+import re
 
 
 def get_method_hierarchy_for_current_function(g):
@@ -13,8 +14,7 @@ def get_method_main():
 
 def format_string(string):
 	string = ' '.join([t.title() for t in string.split()])
-	string = string.replace("_", " ")
-	return string
+	return re.sub("_", " ", string)
 
 
 def get_parent_method_string(depth = 3):

@@ -5,11 +5,10 @@ import re
 from messaging import backend as backend
 
 
-def symlink_status(self, g):
-	result = str(self.series_dict['Symlinked']) \
-		if ('Symlinked' in self.series_dict) and self.series_dict['Symlinked'] \
-		else str()
-	g.LOG.info(backend.debug_message(651, g, result))
+def symlink_status(self, g, result = str()):
+	if ('Symlinked' in self.series_dict) and self.series_dict['Symlinked']:
+		result = str(self.series_dict['Symlinked'])
+		g.LOG.info(backend.debug_message(651, g, result))
 	return result
 
 
@@ -27,8 +26,9 @@ def fetch_link_status(self, episode_file_dict, relative_movie_file_path):
 		os.chdir(root)
 		result = bool()
 		parsed_link = str()
-		link = str(episode_file_dict.pop(str('path'))).replace(os.environ['SONARR_ROOT_PATH_PREFIX'], str())
-		if os.path.exists(str(link).replace('../', str())):
+		path = str(episode_file_dict.pop(str('path'))) if 'path' in episode_file_dict else str()
+		link = re.sub(os.environ['SONARR_ROOT_PATH_PREFIX'], str(), path)
+		if os.path.exists(re.sub('../', str(), str(link))):
 			parsed_link = str(os.readlink(link)).replace('../', str())
 		if parsed_link and relative_movie_file_path == parsed_link and \
 				os.path.exists(self.relative_show_file_path) and \
