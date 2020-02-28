@@ -1,8 +1,6 @@
 import time
 from os.path import abspath
 
-from marshmallow import fields, Schema
-
 import class_objects.sonarr_api
 import class_objects.sonarr_class_methods
 import messaging.backend as backend
@@ -205,10 +203,9 @@ class Show(Movie, Globals):
 		self.relative_show_path = parse_series.relative_show_path(self, g)
 		self.episode_title = episode_title(self, g)
 		self.parsed_episode_title = parse_series.compiled_episode_title(self, g)
-		titleWithQuality = f"{self.parsed_episode_title} {self.quality}.{self.extension}" if (
-				self.hasFile and self.parsed_episode_title) else str()
-		self.relative_show_file_path = \
-			self.series_dict['Relative Show File Path'] = re.sub("..", ".", titleWithQuality)
+		self.relative_show_file_path = self.series_dict['Relative Show File Path'] = \
+			(f"{self.parsed_episode_title} {self.quality}.{self.extension}" \
+				 if (self.hasFile and self.parsed_episode_title) else str()).replace("..", ".")
 		relativeMovieFilePath = fetch_link_status(self,
 		                                          self.episode_file_dict,
 		                                          self.relative_movie_file_path) if self.episode_file_dict else bool()
