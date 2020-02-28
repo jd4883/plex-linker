@@ -17,7 +17,7 @@ def tvdb_id(sonarr_series_dict, series_dict, g):
 	result = 0
 	if isinstance(sonarr_series_dict, dict):
 		result = series_dict['tvdbId'] = sonarr_series_dict.pop('tvdbId')
-	if result == 0:
+	if not result:
 		result = str()
 	g.LOG.debug(backend.debug_message(618, g, result))
 	return str(result)
@@ -33,7 +33,7 @@ def series_id(sonarr_series_dict, series_dict, g):
 		else:
 			print(sonarr_series_dict)
 			print(series_dict)
-	if result == 0:
+	if not result:
 		raise ValueError("SERIES ID MUST BE SET")
 	g.LOG.debug(backend.debug_message(618, g, result))
 	return result
@@ -92,7 +92,7 @@ def episode_id(self, g):
 	result = self.series_dict['Episode ID'] \
 		if 'Episode ID' in self.series_dict and str(self.series_dict['Episode ID']).isdigit() \
 		else g.sonarr.get_episodes_by_series_id(self.series_id)
-	if result == 0:
+	if not result:
 		raise ValueError("EPISODE ID MUST BE SET")
 	g.LOG.debug(backend.debug_message(619, g, result))
 	return result
@@ -127,7 +127,7 @@ def parse_episode_dict(self, g):
 
 def episode_file_id(self, g):
 	result = self.series_dict['episodeFileId'] = self.episode_dict.pop('episodeFileId', str())
-	if result == 0:
+	if not result:
 		result = self.series_dict['episodeFileId'] = str()
 	g.LOG.debug(backend.debug_message(653, g, result))
 	return result

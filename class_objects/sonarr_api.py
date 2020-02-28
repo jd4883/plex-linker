@@ -1,5 +1,7 @@
 import pathlib
 import os
+import re
+
 import requests
 import messaging.backend
 from jobs.cleanup.cleanup import cleanup_sonarr_api_query
@@ -8,7 +10,7 @@ from jobs.cleanup.cleanup import cleanup_sonarr_api_query
 class SonarrAPI(object):
 	def __init__(self):
 		self.host_url = str(os.environ['SONARR_URL'])
-		self.api_key = pathlib.Path('/run/secrets/sonarr_api_key').read_text().replace('\n', '')
+		self.api_key = re.sub('\n', '', pathlib.Path('/run/secrets/sonarr_api_key').read_text())
 	
 	def get_episodes_by_series_id(self, series_id):
 		return self.request_get(f"{self.host_url}/episode?seriesId={series_id}").json()
