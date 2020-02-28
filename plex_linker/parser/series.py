@@ -108,11 +108,12 @@ def episode_padding(self, g):
 
 
 def parse_episode_file_id_dict(self, g, payload = dict()):
-	if self.episode_file_id == 0 or not self.episode_file_id:
-		print("File not found should be parsing out a link")
+	if not (self.episode_file_id or self.episode_file_id):
+		g.LOG.info(backend.debug_message(603, self.movie_title, self.show))
 		return payload
 	payload = g.sonarr.get_episode_file_by_episode_id(self.episode_file_id)
-	if payload == 0:
+	if not payload:
+		g.LOG.error(backend.debug_message(605, payload, self.episode_file_id))
 		print(f"RESULT = 0 {payload} {self.episode_file_id}")
 		payload = dict()
 	g.LOG.debug(backend.debug_message(652, g, payload))

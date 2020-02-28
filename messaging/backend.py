@@ -29,9 +29,17 @@ def debug_message(status_code, g, var1 = str(), var2 = str()):
 		g.message2 = format_string(f"{g.method}")
 	elif status_code == 602:  # useful for handling edge cases
 		g.message1 = format_string(f"we hit an unexpected edge case in this method")
+	elif status_code == 603:
+		g.message1 = format_string(f"Movie file not found to parse a link between")
+		g.message2 = f"{var1} and"
+		g.message3 = f"--> {var2}"
 	elif status_code == 604:
 		g.message1 = format_string(f"show title:")
 		g.message2 = f"{var1}"
+	elif status_code == 605:
+		g.message1 = format_string(f"result = 0:")
+		g.message2 = f"{var1}"
+		g.message3 = f"{var2}"
 	elif status_code == 610:
 		g.message1 = format_string(f"movie file found:")
 		g.message2 = f"{var1}"
