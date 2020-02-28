@@ -114,8 +114,8 @@ class Movie(Movies, Globals):
 		g.LOG.debug(backend.debug_message(610, g, self.movie_file))
 		self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(file_dict['quality']['quality']['name'])
 		g.LOG.debug(backend.debug_message(612, g, self.quality))
-		self.extension = self.movie_dictionary['Parsed Extension'] = \
-			re.sub("\s+REAL\.\W+$", "", str(self.movie_file.split().pop()).replace(self.quality, str()))
+		baseQuality = str(self.movie_file.split().pop()).replace(self.quality, str())
+		self.extension = self.movie_dictionary['Parsed Extension'] = re.sub("\s+REAL\.\W+$", "", baseQuality)
 		self.absolute_movie_file_path = str(get_absolute_movie_file_path(self, g))
 		self.relative_movie_file_path = str(get_relative_movie_file_path(self, g))
 	
