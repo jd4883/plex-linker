@@ -1,4 +1,3 @@
-import re
 import time
 from os.path import abspath
 
@@ -58,8 +57,8 @@ class Movies:
 		self.relative_movies_path = get_relative_movies_path(self)
 
 
-class MovieSchema(Schema):
-	unparsed_title = fields.Function()
+# class MovieSchema(Schema):
+# 	unparsed_title = fields.Function()
 
 
 # parent_dict = fields.Movie.parent_dict()
@@ -137,20 +136,20 @@ class Movie(Movies, Globals):
 		g.LOG.debug(backend.debug_message(617, g, result))
 		return result
 	
-	def parse_tmdbid(self, g):
-		tmdbID = str()
-		if 'tmdbId' in self.radarr_dictionary:
-			if 'Movie DB ID' in self.movie_dictionary and self.movie_dictionary['Movie DB ID']:
-				tmdbID = self.movie_dictionary['Movie DB ID']
-			elif 'tmdbId' in self.radarr_dictionary[0] and int(self.radarr_dictionary[0]['tmdbId']) > 0:
-				tmdbID = int(self.radarr_dictionary[0]['tmdbId'])
-			g.radarr.rescan_movie(int(tmdbID)) if len(self.radarr_dictionary) > 0 else str()
-			# rescan movie in case it was picked up since last scan
-			g.radarr.refresh_movie(int(tmdbID)) if len(self.radarr_dictionary) > 0 else str()
-			# to ensure metadata is up to date
-			if len(self.radarr_dictionary) > 0 and self.radarr_dictionary[0]['monitored']:
-				g.radarr.movie_search(int(tmdbID))
-		return tmdbID
+	# def parse_tmdbid(self, g):
+	# 	tmdbID = str()
+	# 	if 'tmdbId' in self.radarr_dictionary:
+	# 		if 'Movie DB ID' in self.movie_dictionary and self.movie_dictionary['Movie DB ID']:
+	# 			tmdbID = self.movie_dictionary['Movie DB ID']
+	# 		elif 'tmdbId' in self.radarr_dictionary[0] and int(self.radarr_dictionary[0]['tmdbId']) > 0:
+	# 			tmdbID = int(self.radarr_dictionary[0]['tmdbId'])
+	# 		g.radarr.rescan_movie(int(tmdbID)) if len(self.radarr_dictionary) > 0 else str()
+	# 		# rescan movie in case it was picked up since last scan
+	# 		g.radarr.refresh_movie(int(tmdbID)) if len(self.radarr_dictionary) > 0 else str()
+	# 		# to ensure metadata is up to date
+	# 		if len(self.radarr_dictionary) > 0 and self.radarr_dictionary[0]['monitored']:
+	# 			g.radarr.movie_search(int(tmdbID))
+	# 	return tmdbID
 	
 	def parse_dict_from_radarr(self, g):
 		if validate_tmdbId(self.tmbdid):
@@ -158,7 +157,7 @@ class Movie(Movies, Globals):
 				index = \
 					[i for i, d in enumerate(g.full_radarr_dict) if
 					 (self.movie_dictionary['Movie DB ID'] in d.values()) and (
-								 "tmdbId" in d.keys() and d['tmdbId'] == self.movie_dictionary['Movie DB ID'])][0]
+							 "tmdbId" in d.keys() and d['tmdbId'] == self.movie_dictionary['Movie DB ID'])][0]
 				g.LOG.debug(backend.debug_message(644, g, g.full_radarr_dict[index]))
 				return g.full_radarr_dict[index]
 			except IndexError:

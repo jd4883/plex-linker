@@ -1,7 +1,5 @@
 import os
 
-import plex_linker.compare.path
-
 
 def symlink_destination_exists(show):
 	if os.path.exists(str(show.relative_show_file_path)):
