@@ -20,7 +20,8 @@ def symlink_force(show, g):
 		# noinspection SpellCheckingInspection
 		process = subprocess.Popen(get_symlink_command_string(show), stderr = subprocess.DEVNULL,
 		                           stdout = subprocess.PIPE)
-		g.LOG.info(backend.debug_message(654, g, re.sub("'", "", str(process.communicate()[0])[3:-4])))
+		process = str(process.communicate()[0])[3:-4].replace("'", "")
+		g.LOG.info(backend.debug_message(654, g, process))
 		g.LOG.info(backend.debug_message(642, g, show.has_link))
 	else:
 		print(f'Link not created for {show.absolute_movie_file_path}')

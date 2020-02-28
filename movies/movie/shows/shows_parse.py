@@ -7,9 +7,11 @@ from plex_linker.constructors.builds import init_show_object
 
 def parse_show_to_link(show, g):
 	message.method_launch(g)
-	for _ in show.shows_dictionary.items():
-		symlink_force(show, g)
-		set_permissions(show, g)
+	map(symlink_force(show, g), show.shows_dictionary.items())
+	map(set_permissions(show, g), show.shows_dictionary.items())
+	# for _ in show.shows_dictionary.items():
+	# 	symlink_force(show, g), show.shows_dictionary.items()
+	# 	set_permissions(show, g)
 	message.method_exit(g)
 
 
