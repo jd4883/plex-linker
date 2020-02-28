@@ -43,4 +43,6 @@ def validate_link_ready(show):
 
 
 def strip_quotes_from_string(string):
-	return re.sub(r"[\s+'\"']", str(), string)
+	string.replace('"', str())
+	string.replace('\n', str())
+	return string.replace("'", str())
