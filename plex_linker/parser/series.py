@@ -59,14 +59,15 @@ def episode_dict_from_lookup(self, g):
 
 def root_folder(self, g):
 	# default_root = f"tv/staging/{self.show}"  # adjust to be an environ
-	default_root = f"{os.environ['SONARR_DEFAULT_ROOT']}/{self.show}"
+	payload = f"{os.environ['SONARR_DEFAULT_ROOT']}/{self.show}"
 	
 	for item in g.sonarr_root_folders:
 		item = fetch_series.show_path_string(str(item['path']))
 		potential = fetch_series.show_path_string(f"{item}{self.show}/{self.season_folder}")
 		if os.path.exists(potential) and os.path.isdir(potential):
-			return fetch_series.show_path_string(f"{item}{self.show}")
-	return str(default_root)
+			payload = fetch_series.show_path_string(f"{item}{self.show}")
+			break
+	return payload
 
 
 def anime_status(self, g):
@@ -108,10 +109,10 @@ def episode_padding(self, g):
 
 
 def parse_episode_file_id_dict(self, g, payload = dict()):
+	payload = g.sonarr.get_episode_file_by_episode_id(self.episode_file_id)
 	if not (self.episode_file_id or self.episode_file_id):
 		g.LOG.info(backend.debug_message(603, g, self.movie_title, self.show))
 		return payload
-	payload = g.sonarr.get_episode_file_by_episode_id(self.episode_file_id)
 	if not payload:
 		g.LOG.error(backend.debug_message(605, g, payload, self.episode_file_id))
 		payload = dict()
