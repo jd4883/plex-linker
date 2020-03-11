@@ -32,7 +32,7 @@ class RadarrAPI(object):
 		for i in g.full_radarr_dict:
 			if 'tmdbId' in query and i['tmdbId'] == query[0]['tmdbId']:
 				query[0] = i
-				return i
+				break
 		return query
 	
 	def request_get(self, url, data = dict()):
