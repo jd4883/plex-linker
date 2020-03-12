@@ -16,7 +16,10 @@ def parse_series_genres(sonarr_series_dict, series_dict, g):
 def tvdb_id(sonarr_series_dict, series_dict, g):
 	result = 0
 	if isinstance(sonarr_series_dict, dict):
-		result = series_dict['tvdbId'] = sonarr_series_dict.pop('tvdbId')
+		try:
+			result = series_dict['tvdbId'] = sonarr_series_dict.pop('tvdbId')
+		except KeyError:
+			pass
 	if not result:
 		result = str()
 	g.LOG.debug(backend.debug_message(618, g, result))
