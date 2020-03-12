@@ -7,9 +7,12 @@ from plex_linker.fetch import series as fetch_series
 
 def parse_series_genres(sonarr_series_dict, series_dict, g):
 	if isinstance(sonarr_series_dict, dict):
-		result = series_dict['Show Genres'] = sonarr_series_dict.pop('genres')
-		g.LOG.debug(backend.debug_message(649, g, result))
-		return list(result)
+		try:
+			result = series_dict['Show Genres'] = sonarr_series_dict.pop('genres')
+			g.LOG.debug(backend.debug_message(649, g, result))
+			return list(result)
+		except KeyError:
+			pass
 	return list()
 
 
