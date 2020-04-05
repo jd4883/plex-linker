@@ -1,5 +1,7 @@
-import messaging.frontend as message
+import json.decoder
+
 import messaging.backend as backend
+import messaging.frontend as message
 from jobs.set_path_permissions import (set_permissions)
 from jobs.symlinking import (symlink_force)
 from plex_linker.constructors.builds import init_show_object
@@ -27,7 +29,10 @@ def parse_shows_dictionary_object(movie, g):
 			# no shows to associate with the movie
 			g.LOG.warn(backend.debug_message(639, g, movie.movie_title))
 			break
-		show = init_show_object(movie, str(series), g)
+		try:
+			show = init_show_object(movie, str(series), g)
+		except json.decoder.JSONDecodeError:
+			continue
 		code = 640 if show.has_link or not show.episode else 641
 		g.LOG.info(backend.debug_message(code, g, movie.movie_title, show.show))
 		if code == 641:
