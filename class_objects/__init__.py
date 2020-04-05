@@ -176,7 +176,7 @@ class Show(Movie, Globals):
 		self.series_dict = fetch_series.child_dict(g, show_dict)
 		cleanup_series.cleanup_dict(self.series_dict)
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
-		self.series_id = parse_series.series_id(self.sonarr_series_dict, self.series_dict, g)
+		self.series_id = parse_series.series_id(self.sonarr_series_dict, self.series_dict, self.show, g)
 		self.tvdbId = parse_series.tvdb_id(self.sonarr_series_dict, self.series_dict, g)
 		self.imdbId = parse_series.imdb_id(self.sonarr_series_dict, self.series_dict, g)
 		self.show_genres = parse_series.parse_series_genres(self.sonarr_series_dict, self.series_dict, g)
