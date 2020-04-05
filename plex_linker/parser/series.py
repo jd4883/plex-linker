@@ -29,7 +29,7 @@ def tvdb_id(sonarr_series_dict, series_dict, g):
 	return str(result)
 
 
-def series_id(sonarr_series_dict, series_dict, g):
+def series_id(sonarr_series_dict, series_dict, show, g):
 	result = 0
 	if isinstance(sonarr_series_dict, dict):
 		if 'seriesId' in sonarr_series_dict and str(sonarr_series_dict['seriesId']).isdigit():
@@ -40,6 +40,10 @@ def series_id(sonarr_series_dict, series_dict, g):
 			print(sonarr_series_dict)
 			print(series_dict)
 	if not result:
+		result = g.sonarr.lookup_series(show, g)
+		from pprint import pprint
+		pprint(result)
+		# if not result =
 		raise ValueError("SERIES ID MUST BE SET")
 	g.LOG.debug(backend.debug_message(618, g, result))
 	return result
