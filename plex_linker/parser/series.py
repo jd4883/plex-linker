@@ -40,11 +40,9 @@ def series_id(sonarr_series_dict, series_dict, show, g):
 			print(sonarr_series_dict)
 			print(series_dict)
 	if not result:
-		result = g.sonarr.lookup_series(show, g)
-		from pprint import pprint
-		pprint(result)
-		# if not result =
-		raise ValueError("SERIES ID MUST BE SET")
+		result = g.sonarr.lookup_series(show, g).pop("id")
+		print(result)
+		breakpoint()
 	g.LOG.debug(backend.debug_message(618, g, result))
 	return result
 
