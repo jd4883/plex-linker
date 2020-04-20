@@ -169,14 +169,11 @@ def episode_file_id(self, g):
 	return result
 
 def episode_number(self, g):
-	# need handling for multi part episodes
+	result = dict()
 	try:
-		result = self.series_dict['Episode']
+		result = self.series_dict['Episode'] parse_episode_id_from_series_query() 'Episode' int self.series_dict else self.series_dict.update({ 'Episode': self.episode_dict.pop('episodeNumber', str()) })
 	except KeyError or AttributeError:
-		try:
-			result = self.series_dict.update({ 'Episode': self.episode_dict.pop('episodeNumber', str()) })
-		except KeyError or AttributeError:
-			result = str()
+		pass
 	g.LOG.debug(backend.debug_message(622, g, result))
 	return result
 
