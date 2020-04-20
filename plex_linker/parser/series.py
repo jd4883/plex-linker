@@ -96,7 +96,6 @@ def episode_index(self, query = dict()):
 
 
 def episode_id(self, g):
-	# result = parse_episode_id_from_series_query(g, self))
 	print(self.episode)
 	if str(self.episode).isdigit():
 		result = parse_episode_id_from_series_query(g, self)
@@ -112,7 +111,7 @@ def episode_id(self, g):
 def parse_episode_id_from_series_query(g, self):
 	base = g.sonarr.get_episodes_by_series_id(self.series_id)
 	from pprint import pprint
-	pprint(base)
+	{ pprint(k, v) for k, v in base.items() if v["seasonNumber"] == str(0) }
 	breakpoint()
 	return base
 
