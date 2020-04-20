@@ -171,7 +171,10 @@ def episode_number(self, g):
 	try:
 		result = self.series_dict['Episode']
 	except KeyError or AttributeError:
-		result = self.series_dict['Episode'] = self.episode_dict.pop('episodeNumber', str())
+		try:
+			result = self.series_dict['Episode'] = self.episode_dict.pop('episodeNumber', str())
+		except KeyError or AttributeError:
+			result = str()
 	g.LOG.debug(backend.debug_message(622, g, result))
 	return result
 
