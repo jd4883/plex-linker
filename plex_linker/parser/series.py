@@ -171,7 +171,8 @@ def episode_file_id(self, g):
 def episode_number(self, g):
 	result = dict()
 	try:
-		result = self.series_dict['Episode'] parse_episode_id_from_series_query() 'Episode' int self.series_dict else self.series_dict.update({ 'Episode': self.episode_dict.pop('episodeNumber', str()) })
+		result = self.series_dict['Episode'] if 'Episode' in self.series_dict else self.series_dict.update(
+				{ 'Episode': self.episode_dict.pop('episodeNumber', str()) })
 	except KeyError or AttributeError:
 		pass
 	g.LOG.debug(backend.debug_message(622, g, result))
