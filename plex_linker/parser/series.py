@@ -153,8 +153,11 @@ def parse_episode_file_id_dict(self, g, payload = dict()):
 
 
 def parse_episode_dict(self, g):
-	result = g.sonarr.get_episode_by_episode_id(self.episode_id)
-	g.LOG.debug(backend.debug_message(623, g, result))
+	try:
+		result = g.sonarr.get_episode_by_episode_id(self.episode_id)
+		g.LOG.debug(backend.debug_message(623, g, result))
+	except KeyError or AttributeError:
+		result = dict()
 	return result
 
 
