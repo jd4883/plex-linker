@@ -111,7 +111,7 @@ def episode_id(self, g):
 def parse_episode_id_from_series_query(g, self):
 	base = g.sonarr.get_episodes_by_series_id(self.series_id)
 	from pprint import pprint
-	{ pprint(i) for i in base if i["seasonNumber"] == str(0) }
+	{ pprint(i.items()) for i in base }  # if i["seasonNumber"] == str(0)
 	breakpoint()
 	return base
 
