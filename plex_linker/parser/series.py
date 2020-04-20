@@ -96,6 +96,8 @@ def episode_index(self, query = dict()):
 
 
 def episode_id(self, g):
+	print(self.episode)
+	pprint(parse_episode_id_from_series_query(g, self))
 	if str(self.episode).isdigit():
 		parse_episode_id_from_series_query(g, self)
 	else:
