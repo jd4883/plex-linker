@@ -96,10 +96,10 @@ def episode_index(self, query = dict()):
 
 
 def episode_id(self, g):
+	# result = parse_episode_id_from_series_query(g, self))
 	print(self.episode)
-	pprint(parse_episode_id_from_series_query(g, self))
 	if str(self.episode).isdigit():
-		parse_episode_id_from_series_query(g, self)
+		result = parse_episode_id_from_series_query(g, self)
 	else:
 		result = self.series_dict['Episode ID'] if 'Episode ID' in self.series_dict and str(
 				self.series_dict['Episode ID']).isdigit() else str()
