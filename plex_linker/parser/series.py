@@ -96,13 +96,23 @@ def episode_index(self, query = dict()):
 
 
 def episode_id(self, g):
-	result = self.series_dict['Episode ID'] \
-		if 'Episode ID' in self.series_dict and str(self.series_dict['Episode ID']).isdigit() \
-		else g.sonarr.get_episodes_by_series_id(self.series_id)
+	if str(self.episode).isdigit():
+		parse_episode_id_from_series_query(g, self)
+	else:
+		result = self.series_dict['Episode ID'] if 'Episode ID' in self.series_dict and str(
+				self.series_dict['Episode ID']).isdigit() else str()
 	if not result:
 		raise ValueError("EPISODE ID MUST BE SET")
 	g.LOG.debug(backend.debug_message(619, g, result))
 	return result
+
+
+def parse_episode_id_from_series_query(g, self):
+	base = g.sonarr.get_episodes_by_series_id(self.series_id)
+	from pprint import pprint
+	pprint(base)
+	breakpoint()
+	return base
 
 
 # TODO: missing logic to parse out the episode ID from what I can tell
