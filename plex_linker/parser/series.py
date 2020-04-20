@@ -102,7 +102,8 @@ def episode_id(self, g):
 		result = self.series_dict['Episode ID'] if 'Episode ID' in self.series_dict and str(
 				self.series_dict['Episode ID']).isdigit() else str()
 	if not result:
-		raise ValueError("EPISODE ID MUST BE SET")
+		print(f"COULD NOT SET EID FOR {self.show}")
+	# raise ValueError("EPISODE ID MUST BE SET")
 	g.LOG.debug(backend.debug_message(619, g, result))
 	return result
 
