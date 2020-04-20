@@ -158,9 +158,9 @@ def episode_file_id(self, g):
 
 def episode_number(self, g):
 	# need handling for multi part episodes
-	if 'Episode' in self.series_dict and self.series_dict['Episode'] and isinstance(self.series_dict['Episode'], list):
+	try:
 		result = self.series_dict['Episode']
-	else:
+	except KeyError:
 		result = self.series_dict['Episode'] = self.episode_dict.pop('episodeNumber', str())
 	g.LOG.debug(backend.debug_message(622, g, result))
 	return result
