@@ -184,6 +184,7 @@ class Show(Movie, Globals):
 		# TODO: may need to add episode # calculation first not sure yet
 		self.anime_status = bool(parse_series.anime_status(self, g))
 		self.padding = parse_series.episode_padding(self, g)
+		self.episode_dict = dict()
 		self.episode = parse_series.episode_number(self, g)
 		self.absolute_episode = parse_series.absolute_episode_number(self, g)
 		self.episode_id = parse_series.episode_id(self, g)
