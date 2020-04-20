@@ -182,16 +182,18 @@ class Show(Movie, Globals):
 		self.show_genres = parse_series.parse_series_genres(self.sonarr_series_dict, self.series_dict, g)
 		self.sonarr_api_query = parse_series.episode_dict_from_lookup(self, g)
 		# TODO: may need to add episode # calculation first not sure yet
+		self.anime_status = bool(parse_series.anime_status(self, g))
+		self.padding = parse_series.episode_padding(self, g)
 		self.episode = parse_series.episode_number(self, g)
 		self.parsed_episode = parse_series.padded_episode_number(self, g)
 		self.absolute_episode = parse_series.absolute_episode_number(self, g)
 		self.parsed_absolute_episode = padded_absolute_episode(self, g)
 		self.episode_id = parse_series.episode_id(self, g)
 		self.episode_dict = parse_series.parse_episode_dict(self, g)
-		self.anime_status = bool(parse_series.anime_status(self, g))
+		
 		# TODO: something is up here as many series that are not anime are being marked as anime, suspect the default
 		#  false bool is never getting passed
-		self.padding = parse_series.episode_padding(self, g)
+		
 		self.episode_file_id = parse_series.episode_file_id(self, g)
 		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)
 		self.link_status = fetch_series.symlink_status(self, g)
