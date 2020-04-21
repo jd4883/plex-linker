@@ -174,12 +174,12 @@ class Show(Movie, Globals):
 		self.show = fetch_series.title(g, series)
 		self.movie_dictionary = fetch_series.parent_dict(g, movie_dict)
 		self.series_dict = fetch_series.child_dict(g, show_dict)
-		self.season = None
-		self.episode = None
-		self.parsed_episode = None
-		self.episode_id = None
+		self.season = 0
+		self.episode = str()
+		self.parsed_episode = str()
+		self.episode_id = int()
 		self.episode_title = str()
-		self.series_id = None
+		self.series_id = str()
 		self.episode_dict = dict()
 		cleanup_series.cleanup_dict(self.series_dict)
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
