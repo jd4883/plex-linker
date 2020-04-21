@@ -110,14 +110,13 @@ def episode_id(self, g):
 
 def parse_episode_id_from_series_query(g, self):
 	base = g.sonarr.get_episodes_by_series_id(self.series_id)
-	from pprint import pprint
 	for i in base:
 		for k, v in i.items():
 			if season(k, v):
-				pprint(i)
 				self.episode = self.series_dict["Episode"] = str(i["episodeNumber"])
 				self.episode_id = self.series_dict["Episode ID"] = str(i["id"])
 				self.episode_file_id = self.series_dict["episodeFileId"] = str(i["episodeFileId"])
+				self.series_id = self.series_dict["Season"] = str(i["seasonNumber"])
 				return self.episode_id
 
 
