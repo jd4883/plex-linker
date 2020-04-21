@@ -174,7 +174,7 @@ class Show(Movie, Globals):
 		self.show = fetch_series.title(g, series)
 		self.movie_dictionary = fetch_series.parent_dict(g, movie_dict)
 		self.series_dict = fetch_series.child_dict(g, show_dict)
-		self.season = 0
+		self.season = str(int()).zfill(2)
 		self.episode = str()
 		self.parsed_episode = str()
 		self.episode_id = int()
@@ -191,7 +191,7 @@ class Show(Movie, Globals):
 		# TODO: may need to add episode # calculation first not sure yet
 		self.anime_status = bool(parse_series.anime_status(self, g))
 		self.padding = parse_series.episode_padding(self, g)
-		self.episode = parse_series.episode_number(self, g)
+		# self.episode = parse_series.episode_number(self, g)
 		parse_series.episode_id(self, g)
 		self.episode_dict = parse_series.parse_episode_dict(self, g)
 		if self.episode_dict:
