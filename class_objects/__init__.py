@@ -176,7 +176,9 @@ class Show(Movie, Globals):
 		self.series_dict = fetch_series.child_dict(g, show_dict)
 		self.season = None
 		self.episode = None
+		self.parsed_episode = None
 		self.episode_id = None
+		self.episode_title = str()
 		self.series_id = None
 		self.episode_dict = dict()
 		cleanup_series.cleanup_dict(self.series_dict)
@@ -191,11 +193,14 @@ class Show(Movie, Globals):
 		self.padding = parse_series.episode_padding(self, g)
 		self.episode = parse_series.episode_number(self, g)
 		parse_series.episode_id(self, g)
-		self.parsed_episode = parse_series.padded_episode_number(self, g)
-		self.absolute_episode = parse_series.absolute_episode_number(self, g)
-		self.parsed_absolute_episode = padded_absolute_episode(self, g)
-		self.episode_title = episode_title(self, g)
 		self.episode_dict = parse_series.parse_episode_dict(self, g)
+		if self.episode_dict:
+			# TODO: anime status should go here
+			parse_series.padded_episode_number(self, g)
+			self.absolute_episode = parse_series.absolute_episode_number(self, g)
+			self.parsed_absolute_episode = padded_absolute_episode(self, g)
+			self.episode_title = re.sub('\(\d+\)$', "", fetch_series.show_path_string(self.episode_dict['title']
+		
 		from pprint import pprint
 		pprint(self.episode_dict)
 		# TODO: something is up here as many series that are not anime are being marked as anime, suspect the default
