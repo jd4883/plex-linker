@@ -199,7 +199,10 @@ class Show(Movie, Globals):
 			parse_series.padded_episode_number(self, g)
 			self.absolute_episode = parse_series.absolute_episode_number(self, g)
 			self.parsed_absolute_episode = padded_absolute_episode(self, g)
-			self.episode_title = re.sub('\(\d+\)$', "", fetch_series.show_path_string(self.episode_dict['title']))
+			self.episode_title = re.sub('\(\d+\)$',
+			                            "",
+			                            fetch_series.show_path_string(
+					                            self.episode_dict['title'] if "title" in self.episode_dict else str()))
 		from pprint import pprint
 		pprint(self.episode_dict)
 		# TODO: something is up here as many series that are not anime are being marked as anime, suspect the default
