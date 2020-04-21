@@ -225,13 +225,12 @@ def relative_show_path(self, g):
 
 def padded_episode_number(self, g, result = str()):
 	if isinstance(self.episode, list):
-		result = "-".join([str(i).zfill(self.padding) for i in self.episode])
+		self.parsed_episode = "-".join([str(i).zfill(self.padding) for i in self.episode])
 	elif isinstance(self.episode, int):
-		result = str(self.episode).zfill(self.padding)
+		self.parsed_episode = str(self.episode).zfill(self.padding)
 	elif 'Parsed Absolute Episode' in self.series_dict:
 		del self.series_dict['Parsed Absolute Episode']
 	g.LOG.debug(backend.debug_message(634, g, result))
-	return result
 
 
 def padded_absolute_episode(self, g):
@@ -257,9 +256,7 @@ def compiled_episode_title(self, g):
 	g.LOG.debug(backend.debug_message(637, g, result))
 	return result
 
-
-def episode_title(self, g):
-	payload = fetch_series.show_path_string(self.episode_dict['title'] if 'title' in self.episode_dict else str())
-	result = re.sub('\(\d+\)$', "", payload)
-	g.LOG.debug(backend.debug_message(636, g, result))
-	return result
+# def episode_title(show, g):
+# 	show.episode_title = re.sub('\(\d+\)$', "", fetch_series.show_path_string(show.episode_dict['title']  # if 'title'
+# 	# in show.episode_dict else str()))
+# 	g.LOG.debug(backend.debug_message(636, g, show.episode_title))
