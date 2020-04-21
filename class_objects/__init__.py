@@ -174,6 +174,11 @@ class Show(Movie, Globals):
 		self.show = fetch_series.title(g, series)
 		self.movie_dictionary = fetch_series.parent_dict(g, movie_dict)
 		self.series_dict = fetch_series.child_dict(g, show_dict)
+		self.season = None
+		self.episode = None
+		self.episode_id = None
+		self.series_id = None
+		self.episode_dict = dict()
 		cleanup_series.cleanup_dict(self.series_dict)
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
 		self.series_id = parse_series.series_id(self.sonarr_series_dict, self.series_dict, self.show, g)
@@ -184,14 +189,15 @@ class Show(Movie, Globals):
 		# TODO: may need to add episode # calculation first not sure yet
 		self.anime_status = bool(parse_series.anime_status(self, g))
 		self.padding = parse_series.episode_padding(self, g)
-		self.episode_dict = dict()
 		self.episode = parse_series.episode_number(self, g)
+		parse_series.episode_id(self, g)
 		self.parsed_episode = parse_series.padded_episode_number(self, g)
 		self.absolute_episode = parse_series.absolute_episode_number(self, g)
 		self.parsed_absolute_episode = padded_absolute_episode(self, g)
-		self.episode_id = parse_series.episode_id(self, g)
+		self.episode_title = episode_title(self, g)
 		self.episode_dict = parse_series.parse_episode_dict(self, g)
-		
+		from pprint import pprint
+		pprint(self.episode_dict)
 		# TODO: something is up here as many series that are not anime are being marked as anime, suspect the default
 		#  false bool is never getting passed
 		
@@ -199,12 +205,12 @@ class Show(Movie, Globals):
 		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)
 		self.link_status = fetch_series.symlink_status(self, g)
 		self.sonarr_monitored = not bool()
-		self.season = parse_series.season_from_sonarr(self, g)
+		# self.season = parse_series.season_from_sonarr(self, g)
 		self.season_folder = parse_series.season_folder_from_api(self, g)
 		self.show_root_path = self.setShowRootPath(g)
 		# self.show_root_path = parse_series.show_root_folder(self, g)
 		self.relative_show_path = parse_series.relative_show_path(self, g)
-		self.episode_title = episode_title(self, g)
+		
 		self.parsed_episode_title = parse_series.compiled_episode_title(self, g)
 		self.relative_show_file_path = self.series_dict['Relative Show File Path'] = \
 			(f"{self.parsed_episode_title} {self.quality}.{self.extension}" \
