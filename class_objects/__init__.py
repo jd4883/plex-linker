@@ -25,7 +25,7 @@ from plex_linker.compare.ids import validate_tmdbId
 from plex_linker.fetch.series import fetch_link_status
 from plex_linker.gets.movie import get_relative_movies_path
 from plex_linker.gets.path import get_absolute_movie_file_path, get_relative_movie_file_path
-from plex_linker.parser.series import episode_title, padded_absolute_episode
+from plex_linker.parser.series import padded_absolute_episode
 
 
 class Globals:
@@ -199,8 +199,7 @@ class Show(Movie, Globals):
 			parse_series.padded_episode_number(self, g)
 			self.absolute_episode = parse_series.absolute_episode_number(self, g)
 			self.parsed_absolute_episode = padded_absolute_episode(self, g)
-			self.episode_title = re.sub('\(\d+\)$', "", fetch_series.show_path_string(self.episode_dict['title']
-		
+			self.episode_title = re.sub('\(\d+\)$', "", fetch_series.show_path_string(self.episode_dict['title']))
 		from pprint import pprint
 		pprint(self.episode_dict)
 		# TODO: something is up here as many series that are not anime are being marked as anime, suspect the default
