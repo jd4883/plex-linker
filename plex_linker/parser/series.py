@@ -113,10 +113,10 @@ def parse_episode_id_from_series_query(g, self):
 	for i in base:
 		for k, v in i.items():
 			if season(k, v):
-				self.episode = self.series_dict["Episode"] = str(i["episodeNumber"])
+				self.episode = str(self.series_dict["Episode"]).zfill(self.padding)  # = str(i["episodeNumber"])
 				self.episode_id = self.series_dict["Episode ID"] = str(i["id"])
 				self.episode_file_id = self.series_dict["episodeFileId"] = str(i["episodeFileId"])
-				self.series_id = self.series_dict["Season"] = str(i["seasonNumber"])
+				self.series_id = self.series_dict["Season"] = str(i["seasonNumber"]).zfill(2)
 				return self.episode_id
 
 
