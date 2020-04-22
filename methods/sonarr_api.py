@@ -31,7 +31,12 @@ class SonarrAPI(object):
 		return get_request
 	
 	def get_series(self):
-		return self.request_get(f"{self.host_url}/series").json()
+		series = dict()
+		try:
+			series = self.request_get(f"{self.host_url}/series").json()
+		except AttributeError:
+			pass
+		return series
 	
 	def refresh_series(self, series_id, data = dict()):
 		return self.request_post(f"{self.host_url}/command/RefreshSeries&seriesId={series_id}", data).json()
