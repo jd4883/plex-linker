@@ -46,13 +46,13 @@ class SonarrAPI(object):
 	
 	def lookup_series(self, query, g):
 		try:
-			payload = cleanup_sonarr_api_query(self.request_get(f"{self.host_url}/series/lookup?term={query}")
+			sonarr_series = cleanup_sonarr_api_query(self.request_get(f"{self.host_url}/series/lookup?term={query}")
 		except ValueError:
-			return query
-		if type(payload) is list:
-			payload = payload[0]
-		g.LOG.debug(messaging.backend.debug_message(625, g, payload))
-		return payload
+			return sonarr_series
+		if type(sonarr_series) is list:
+			sonarr_series = sonarr_series[0]
+		g.LOG.debug(messaging.backend.debug_message(625, g, sonarr_series))
+		return sonarr_series
 	
 	def request_get(self, url, data = dict()):
 		backoff_timer = 30
