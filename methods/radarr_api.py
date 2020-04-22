@@ -14,23 +14,20 @@ class RadarrAPI(object):
 		self.host_url = str(environ['RADARR_URL'])
 		self.api_key = re.sub('\n', '', pathlib.Path('/run/secrets/radarr_api_key').read_text())
 	
-	# def get_movie_file(self, movie_id):
-	# 	return self.request_get(f"{self.host_url}/GetMovieFile&seriesId={movie_id}").json()
-	
 	def refresh_movie(self, movie_id):
-		return self.request_post(f"{self.host_url}/command/RefreshMovie&seriesId={movie_id}").json()
+		return self.request_post(f"{self.host_url}/command/RefreshMovie&seriesId={movie_id}")
 	
 	def rescan_movie(self, movie_id):
-		return self.request_post(f"{self.host_url}/command/RescanMovie&seriesId={movie_id}").json()
+		return self.request_post(f"{self.host_url}/command/RescanMovie&seriesId={movie_id}")
 	
 	def movie_search(self, movie_id):
-		return self.request_post(f"{self.host_url}/command/MoviesSearch&seriesId={movie_id}").json()
+		return self.request_post(f"{self.host_url}/command/MoviesSearch&seriesId={movie_id}")
 	
 	def get_movie_library(self):
-		return self.request_get(f"{self.host_url}/movie").json()
+		return self.request_get(f"{self.host_url}/movie")
 	
 	def lookup_movie(self, query, g):
-		query = self.request_get(f"{self.host_url}/movie/lookup?term={query}").json()
+		query = self.request_get(f"{self.host_url}/movie/lookup?term={query}")
 		for i in g.full_radarr_dict:
 			if 'tmdbId' in query and i['tmdbId'] == query[0]['tmdbId']:
 				query[0] = i
@@ -42,7 +39,7 @@ class RadarrAPI(object):
 		get_request = dict()
 		for i in range(1 - 10):
 			try:
-				get_request = requests.get(url, headers = { 'X-Api-Key': self.api_key }, json = data)
+				get_request = requests.get(url, headers = { 'X-Api-Key': self.api_key }, json = data).json()
 				break
 			except (requests.exceptions.ConnectTimeout, requests.exceptions.ConnectionError):
 				time.sleep(backoff_timer)
@@ -53,7 +50,7 @@ class RadarrAPI(object):
 		post_request = dict()
 		for i in range(1 - 10):
 			try:
-				post_request = requests.post(url, headers = { 'X-Api-Key': self.api_key }, json = data)
+				post_request = requests.post(url, headers = { 'X-Api-Key': self.api_key }, json = data).json()
 				break
 			except (requests.exceptions.ConnectTimeout, requests.exceptions.ConnectionError):
 				time.sleep(backoff_timer)
@@ -64,7 +61,7 @@ class RadarrAPI(object):
 		put_request = dict()
 		for i in range(1 - 10):
 			try:
-				put_request = requests.put(url, headers = { 'X-Api-Key': self.api_key }, json = data)
+				put_request = requests.put(url, headers = { 'X-Api-Key': self.api_key }, json = data).json()
 				break
 			except (requests.exceptions.ConnectTimeout, requests.exceptions.ConnectionError):
 				time.sleep(backoff_timer)
@@ -75,7 +72,7 @@ class RadarrAPI(object):
 		delete_request = dict()
 		for i in range(1 - 10):
 			try:
-				delete_request = requests.delete(url, headers = { 'X-Api-Key': self.api_key }, json = data)
+				delete_request = requests.delete(url, headers = { 'X-Api-Key': self.api_key }, json = data).json()
 				break
 			except (requests.exceptions.ConnectTimeout, requests.exceptions.ConnectionError):
 				time.sleep(backoff_timer)
