@@ -102,7 +102,6 @@ def episode_id(self, g):
 		result = self.series_dict.get('Episode ID', str())
 	if not result:
 		print(f"COULD NOT SET EID FOR {self.show}")
-	# raise ValueError("EPISODE ID MUST BE SET")
 	g.LOG.debug(backend.debug_message(619, g, result))
 	return result
 

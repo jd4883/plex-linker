@@ -182,6 +182,10 @@ class Show(Movie, Globals):
 		self.episode_dict = dict()
 		cleanup_series.cleanup_dict(self.series_dict)
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
+		from pprint import pprint
+		for k, v in self.sonarr_series_dict.items():
+			pprint(k, v)
+			breakpoint()
 		self.series_id = parse_series.series_id(self.sonarr_series_dict, self.series_dict, self.show, g)
 		self.tvdbId = parse_series.tvdb_id(self.sonarr_series_dict, self.series_dict, g)
 		self.imdbId = parse_series.imdb_id(self.sonarr_series_dict, self.series_dict, g)
