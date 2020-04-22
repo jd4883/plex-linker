@@ -1,14 +1,16 @@
 import time
 from os.path import abspath
 
-import class_objects.sonarr_api
-import class_objects.sonarr_class_methods
 import messaging.backend as backend
+import methods.sonarr_api
+import methods.sonarr_class_methods
 import plex_linker.cleanup.movie as cleanup_movie
 import plex_linker.cleanup.series as cleanup_series
 import plex_linker.fetch.series as fetch_series
 import plex_linker.parser.series as parse_series
-from class_objects.misc_get_methods import (
+from IO.YAML.yaml_to_object import (get_variable_from_yaml)
+from logs.bin.get_parameters import (get_log_name, get_logger, get_method_main)
+from methods.misc_get_methods import (
 	get_docker_media_path,
 	get_host_media_path,
 	get_movie_extensions,
@@ -16,11 +18,9 @@ from class_objects.misc_get_methods import (
 	get_movies_path,
 	get_shows_path,
 	)
-from class_objects.radarr_api import *
-from class_objects.radarr_class_methods import get_parsed_movie_title, parse_relpath
-from class_objects.sonarr_api import *
-from IO.YAML.yaml_to_object import (get_variable_from_yaml)
-from logs.bin.get_parameters import (get_log_name, get_logger, get_method_main)
+from methods.radarr_api import *
+from methods.radarr_class_methods import get_parsed_movie_title, parse_relpath
+from methods.sonarr_api import *
 from plex_linker.compare.ids import validate_tmdbId
 from plex_linker.fetch.series import fetch_link_status
 from plex_linker.gets.movie import get_relative_movies_path
@@ -199,10 +199,7 @@ class Show(Movie, Globals):
 			parse_series.padded_episode_number(self, g)
 			self.absolute_episode = parse_series.absolute_episode_number(self, g)
 			self.parsed_absolute_episode = padded_absolute_episode(self, g)
-			self.episode_title = re.sub('\(\d+\)$',
-			                            "",
-			                            fetch_series.show_path_string(
-					                            self.episode_dict['title'] if "title" in self.episode_dict else str()))
+			self.episode_title = re.sub('\(\d+\)$', "", self.get_title())
 		from pprint import pprint
 		pprint(self.episode_dict)
 		# TODO: something is up here as many series that are not anime are being marked as anime, suspect the default
@@ -228,6 +225,10 @@ class Show(Movie, Globals):
 		self.has_link = self.series_dict['Has Link'] = relativeMovieFilePath
 		g.sonarr.rescan_series(self.tvdbId)  # rescan movie in case it was picked up since last scan
 		g.sonarr.refresh_series(self.tvdbId)  # to ensure metadata is up to date
+	
+	def get_title(self):
+		payload = fetch_series.show_path_string(self.episode_dict['title'] if "title" in self.episode_dict else str())
+		return payload
 	
 	def setShowRootPath(self, g):
 		payload = parse_series.show_root_folder(self, g)
