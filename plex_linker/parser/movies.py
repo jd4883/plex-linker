@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import class_objects as media
+import methods as media
 from messaging import frontend as message
 from movies.movie.shows.shows_parse import parse_shows_dictionary_object as parse_shows
 
