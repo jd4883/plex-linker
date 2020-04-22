@@ -1,7 +1,9 @@
 #!/usr/bin/env python3.7
 import pathlib
-from os import environ
 import re
+import time
+from os import environ
+
 import requests
 
 
@@ -36,13 +38,45 @@ class RadarrAPI(object):
 		return query
 	
 	def request_get(self, url, data = dict()):
-		return requests.get(url, headers = { 'X-Api-Key': self.api_key }, json = data)
+		backoff_timer = 30
+		get_request = dict()
+		for i in range(1 - 10):
+			try:
+				get_request = requests.get(url, headers = { 'X-Api-Key': self.api_key }, json = data)
+				break
+			except (requests.exceptions.ConnectTimeout, requests.exceptions.ConnectionError):
+				time.sleep(backoff_timer)
+		return get_request
 	
 	def request_post(self, url, data = dict()):
-		return requests.post(url, headers = { 'X-Api-Key': self.api_key }, json = data)
+		backoff_timer = 30
+		post_request = dict()
+		for i in range(1 - 10):
+			try:
+				post_request = requests.post(url, headers = { 'X-Api-Key': self.api_key }, json = data)
+				break
+			except (requests.exceptions.ConnectTimeout, requests.exceptions.ConnectionError):
+				time.sleep(backoff_timer)
+		return post_request
 	
 	def request_put(self, url, data = dict()):
-		return requests.put(url, headers = { 'X-Api-Key': self.api_key }, json = data)
+		backoff_timer = 30
+		put_request = dict()
+		for i in range(1 - 10):
+			try:
+				put_request = requests.put(url, headers = { 'X-Api-Key': self.api_key }, json = data)
+				break
+			except (requests.exceptions.ConnectTimeout, requests.exceptions.ConnectionError):
+				time.sleep(backoff_timer)
+		return put_request
 	
 	def request_delete(self, url, data = dict()):
-		return requests.delete(url, headers = { 'X-Api-Key': self.api_key }, json = data)
+		backoff_timer = 30
+		delete_request = dict()
+		for i in range(1 - 10):
+			try:
+				delete_request = requests.delete(url, headers = { 'X-Api-Key': self.api_key }, json = data)
+				break
+			except (requests.exceptions.ConnectTimeout, requests.exceptions.ConnectionError):
+				time.sleep(backoff_timer)
+		return delete_request
