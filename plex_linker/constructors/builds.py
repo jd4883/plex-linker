@@ -1,7 +1,7 @@
 #
 # def build_movie_name_from_lookup(radarr_dictionary, movie_title):
-# 	title = str(radarr_dictionary[0].pop('title', str(movie_title)))
-# 	year = re.sub(" ()", str(), str(radarr_dictionary[0].pop('year', str())))
+# 	title = str(radarr_dictionary[0].get('title', str(movie_title)))
+# 	year = re.sub(" ()", str(), str(radarr_dictionary[0].get('year', str())))
 # 	return title + year
 
 
