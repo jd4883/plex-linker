@@ -25,10 +25,10 @@ class SonarrAPI(object):
 	
 	def get_root_folder(self):
 		try:
-			get_request = self.request_get(f"{self.host_url}/rootfolder")
+			get_request = self.request_get(f"{self.host_url}/rootfolder").json()
 		except AttributeError:
 			get_request = dict()
-		return get_request.json()
+		return get_request
 	
 	def get_series(self):
 		return self.request_get(f"{self.host_url}/series").json()
