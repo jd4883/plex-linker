@@ -6,7 +6,7 @@
 
 
 def init_show_object(movie, series, g):
-	from class_objects import Show
+	from methods import Show
 	if not isinstance(movie.shows_dictionary[series], dict):
 		return
 	show = Show(g,
