@@ -8,7 +8,7 @@ from plex_linker.fetch import series as fetch_series
 def parse_series_genres(sonarr_series_dict, series_dict, g):
 	if isinstance(sonarr_series_dict, dict):
 		try:
-			result = series_dict['Show Genres'] = sonarr_series_dict.pop('genres')
+			result = series_dict['Show Genres'] = sonarr_series_dict.get('genres', list())
 			g.LOG.debug(backend.debug_message(649, g, result))
 			return list(result)
 		except KeyError:
@@ -20,7 +20,7 @@ def tvdb_id(sonarr_series_dict, series_dict, g):
 	result = 0
 	if isinstance(sonarr_series_dict, dict):
 		try:
-			result = series_dict['tvdbId'] = sonarr_series_dict.pop('tvdbId')
+			result = series_dict['tvdbId'] = sonarr_series_dict.get('tvdbId')
 		except KeyError:
 			pass
 	if not result:
@@ -33,14 +33,14 @@ def series_id(sonarr_series_dict, series_dict, show, g):
 	result = 0
 	if isinstance(sonarr_series_dict, dict):
 		if 'seriesId' in sonarr_series_dict and str(sonarr_series_dict['seriesId']).isdigit():
-			result = series_dict['seriesId'] = sonarr_series_dict.pop('id')
+			result = series_dict['seriesId'] = sonarr_series_dict.get('id', 0)
 		elif 'seriesId' in series_dict and str(series_dict['seriesId']).isdigit():
 			result = series_dict['seriesId']
 		else:
 			print(sonarr_series_dict)
 			print(series_dict)
 	if not result:
-		result = g.sonarr.lookup_series(show, g).pop("id")
+		result = g.sonarr.lookup_series(show, g).get("id", 0)
 	g.LOG.debug(backend.debug_message(618, g, result))
 	return result
 
@@ -48,7 +48,7 @@ def series_id(sonarr_series_dict, series_dict, show, g):
 def imdb_id(sonarr_series_dict, series_dict, g):
 	if isinstance(sonarr_series_dict, dict):
 		try:
-			result = series_dict['imdbId'] = sonarr_series_dict.pop('imdbId')
+			result = series_dict['imdbId'] = sonarr_series_dict.get('imdbId', 0)
 		except KeyError:
 			result = str()
 		g.LOG.debug(backend.debug_message(650, g, result))
@@ -99,8 +99,7 @@ def episode_id(self, g):
 	if str(self.episode).isdigit():
 		result = parse_episode_id_from_series_query(g, self)
 	else:
-		result = self.series_dict['Episode ID'] if 'Episode ID' in self.series_dict and str(
-				self.series_dict['Episode ID']).isdigit() else str()
+		result = self.series_dict.get('Episode ID', str())
 	if not result:
 		print(f"COULD NOT SET EID FOR {self.show}")
 	# raise ValueError("EPISODE ID MUST BE SET")
@@ -163,7 +162,7 @@ def parse_episode_dict(self, g):
 
 
 def episode_file_id(self, g):
-	result = self.series_dict['episodeFileId'] = self.episode_dict.pop('episodeFileId', str())
+	result = self.series_dict['episodeFileId'] = self.episode_dict.get('episodeFileId', str())
 	if not result:
 		result = self.series_dict['episodeFileId'] = str()
 	g.LOG.debug(backend.debug_message(653, g, result))
@@ -173,7 +172,7 @@ def episode_number(self, g):
 	result = dict()
 	try:
 		result = self.series_dict['Episode'] if 'Episode' in self.series_dict else self.series_dict.update(
-				{ 'Episode': self.episode_dict.pop('episodeNumber', str()) })
+				{ 'Episode': self.episode_dict.get('episodeNumber', str()) })
 	except KeyError or AttributeError:
 		pass
 	g.LOG.debug(backend.debug_message(622, g, result))
@@ -189,13 +188,13 @@ def absolute_episode_number(self, g):
 	elif self.series_dict['Absolute Episode'] and isinstance(self.series_dict['Absolute Episode'], list):
 		result = self.series_dict['Absolute Episode']
 	else:
-		result = self.series_dict['Absolute Episode'] = self.episode_dict.pop('absoluteEpisodeNumber', str())
+		result = self.series_dict['Absolute Episode'] = self.episode_dict.get('absoluteEpisodeNumber', str())
 	g.LOG.debug(backend.debug_message(628, g, result))
 	return result
 
 
 def season_from_sonarr(self, g):
-	result = self.series_dict['Season'] = str(self.episode_dict.pop('seasonNumber', str())).zfill(2)
+	result = self.series_dict['Season'] = str(self.episode_dict.get('seasonNumber', str())).zfill(2)
 	g.LOG.debug(backend.debug_message(630, g, result))
 	return result
 
@@ -209,7 +208,7 @@ def season_folder_from_api(self, g):
 def show_root_folder(self, g):
 	result = \
 		self.series_dict['Show Root Path'] = \
-		fetch_series.show_path_string(self.episode_dict.pop('path',
+		fetch_series.show_path_string(self.episode_dict.get('path',
 		                                                    fetch_series.show_path_string(root_folder(self, g))))
 	path = os.path.join(fetch_series.show_path_string(os.environ['DOCKER_MEDIA_PATH']), result, self.season_folder)
 	os.makedirs(path, exist_ok = True)

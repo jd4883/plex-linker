@@ -1,4 +1,3 @@
-import time
 from os.path import abspath
 
 import messaging.backend as backend
@@ -95,7 +94,7 @@ class Movie(Movies, Globals):
 		
 		self.year = self.movie_dictionary['Year'] = \
 			int(self.radarr_dictionary['inCinemas'][0:4]) if 'inCinemas' in self.radarr_dictionary \
-				else int(self.radarr_dictionary.pop('year', 0))
+				else int(self.radarr_dictionary.get('year', 0))
 		self.unparsed_title = re.sub("\s+\(0\)\s?", "", self.get_unparsed_movie_title(g))
 		self.movie_title = re.sub("\s+\(0\)\s?", str(), get_parsed_movie_title(self, g))
 		self.relative_movie_path = self.init_relative_movie_path(g)
@@ -118,7 +117,7 @@ class Movie(Movies, Globals):
 		self.relative_movie_file_path = str(get_relative_movie_file_path(self, g))
 	
 	def get_unparsed_movie_title(self, g):
-		result = self.radarr_dictionary.pop('title', str())
+		result = self.radarr_dictionary.get('title', str())
 		g.LOG.debug(backend.debug_message(643, g, result))
 		return result
 	
