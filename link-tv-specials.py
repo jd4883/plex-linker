@@ -11,12 +11,6 @@ if __name__ == "__main__":
 	
 	# TODO: improve how we look at items not in the library and make more efficient in calculations
 	g = media.Globals()
-	
-	from pprint import pprint
-	for k, v in g.full_sonarr_dict.items():
-		pprint(k, v)
-		breakpoint()
-	
 	master_dictionary = media.Movies(str(os.path.abspath(get_docker_media_path(g))))
 	parse_movies(g)
 	dict_to_yaml(g)
