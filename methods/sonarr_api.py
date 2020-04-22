@@ -1,6 +1,7 @@
 import os
 import pathlib
 import re
+import time
 
 import requests
 
@@ -45,7 +46,17 @@ class SonarrAPI(object):
 		return payload
 	
 	def request_get(self, url, data = dict()):
-		return requests.get(url, headers = { 'X-Api-Key': self.api_key }, json = data)
+		backoff_timer = 10
+		try:
+			get_request = requests.get(url, headers = { 'X-Api-Key': self.api_key }, json = data)
+			return get_request
+		except (requests.exceptions.ConnectTimeout, requests.exceptions.ConnectionError):
+			time.sleep(backoff_timer)
 	
 	def request_post(self, url, data = dict()):
-		return requests.post(url, headers = { 'X-Api-Key': self.api_key }, json = data)
+		backoff_timer = 10
+		try:
+			post_request = requests.post(url, headers = { 'X-Api-Key': self.api_key }, json = data)
+			return post_request
+		except (requests.exceptions.ConnectTimeout, requests.exceptions.ConnectionError):
+			time.sleep(backoff_timer)
