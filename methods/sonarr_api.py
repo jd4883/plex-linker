@@ -45,10 +45,7 @@ class SonarrAPI(object):
 		return self.request_post(f"{self.host_url}/command/RescanSeries&seriesId={series_id}", data)
 	
 	def lookup_series(self, query, g):
-		try:
-			sonarr_series = cleanup_sonarr_api_query(self.request_get(f"{self.host_url}/series/lookup?term={query}")
-		except ValueError:
-			return sonarr_series
+		sonarr_series = cleanup_sonarr_api_query(self.request_get(f"{self.host_url}/series/lookup?term={query}")
 		if type(sonarr_series) is list:
 			sonarr_series = sonarr_series[0]
 		g.LOG.debug(messaging.backend.debug_message(625, g, sonarr_series))
