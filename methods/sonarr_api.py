@@ -6,7 +6,6 @@ import time
 import requests
 
 import messaging.backend
-from jobs.cleanup.cleanup import cleanup_sonarr_api_query
 
 
 class SonarrAPI(object):
@@ -44,8 +43,8 @@ class SonarrAPI(object):
 	def rescan_series(self, series_id, data = dict()):
 		return self.request_post(f"{self.host_url}/command/RescanSeries&seriesId={series_id}", data)
 	
-	def lookup_series(self, query, g):
-		sonarr_series = cleanup_sonarr_api_query(self.request_get(f"{self.host_url}/series/lookup?term={query}"))
+	def lookup_series(self, series, g):
+		sonarr_series = self.request_get(f"{self.host_url}/series/lookup?term={series}")
 		if type(sonarr_series) == list:
 			sonarr_series = sonarr_series[0]
 		g.LOG.info(messaging.backend.debug_message(625, g, sonarr_series))

@@ -171,6 +171,11 @@ class Show(Movie, Globals):
 	             movie_dict = dict()):
 		super().__init__(film, movie_dict, g)
 		self.show = series
+		
+		# TODO: something is wrong here, the read in dict seems to always be blank
+		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
+		print(f"SONARR READ IN DICT: {self.sonarr_series_dict}")
+		
 		self.movie_dictionary = fetch_series.parent_dict(g, movie_dict)
 		self.inherited_series_dict = show_dict
 		self.season = str(self.inherited_series_dict.get("Season", str(0))).zfill(2)
@@ -183,8 +188,6 @@ class Show(Movie, Globals):
 		self.episode_dict = dict()
 		self.has_link = self.inherited_series_dict['Has Link'] = self.inherited_series_dict.get('Has Link', bool())
 		cleanup_series.cleanup_dict(self.inherited_series_dict)
-		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
-		print(f"SONARR READ IN DICT: {self.sonarr_series_dict}")
 		
 		self.series_id = parse_series.series_id(self.sonarr_series_dict, self.inherited_series_dict, self.show, g)
 		self.tvdbId = parse_series.tvdb_id(self.sonarr_series_dict, self.inherited_series_dict, g)
