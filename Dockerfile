@@ -6,8 +6,8 @@ USER root
 VOLUME /config /media
 WORKDIR /config
 COPY requirements.txt /config/
-RUN pip install --upgrade pip; \
-	pip install -r requirements.txt \
+RUN pip install --upgrade pip && \
+	pip install -r requirements.txt && \
 	apk add --no-cache bash \
 		openssh \
 		libc6-compat \
