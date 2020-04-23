@@ -45,17 +45,17 @@ def fetch_link_status(self, episode_file_dict, relative_movie_file_path):
 
 def title(g, series):
 	result = series
-	g.LOG.debug(backend.debug_message(604, g, result))
+	g.LOG.info(backend.debug_message(604, g, result))
 	return result
 
 
 def parent_dict(g, movie_dict):
 	result = movie_dict
-	g.LOG.debug(backend.debug_message(627, g, result))
+	g.LOG.info(backend.debug_message(627, g, result))
 	return result
 
 
 def child_dict(g, show_dict):
 	result = show_dict
-	g.LOG.debug(backend.debug_message(624, g, result))
+	g.LOG.info(backend.debug_message(624, g, result))
 	return result

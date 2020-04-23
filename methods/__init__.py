@@ -69,12 +69,12 @@ class Movie(Movies, Globals):
 		super().__init__()
 		# schema = MovieSchema()
 		self.movie_dictionary = movie_dict
-		g.LOG.debug(backend.debug_message(627, g, self.movie_dictionary))
+		g.LOG.info(backend.debug_message(627, g, self.movie_dictionary))
 		cleanup_movie.cleanup_dict(self.movie_dictionary)
 		self.shows_dictionary = self.movie_dictionary['Shows']
-		g.LOG.debug(backend.debug_message(645, g, self.shows_dictionary))
+		g.LOG.info(backend.debug_message(645, g, self.shows_dictionary))
 		self.tmbdid = self.movie_dictionary['Movie DB ID']
-		g.LOG.debug(backend.debug_message(648, g, self.tmbdid))
+		g.LOG.info(backend.debug_message(648, g, self.tmbdid))
 		
 		self.radarr_dictionary = self.parse_dict_from_radarr(g)
 		try:
@@ -83,14 +83,14 @@ class Movie(Movies, Globals):
 				bool(self.radarr_dictionary['hasFile']) if 'hasFile' in self.radarr_dictionary else False
 		except TypeError:
 			self.hasFile = self.movie_dictionary['Has File'] = bool()
-		g.LOG.debug(backend.debug_message(646, g, self.hasFile))
+		g.LOG.info(backend.debug_message(646, g, self.hasFile))
 		try:
 			self.monitored = \
 				self.movie_dictionary['Monitored'] = \
 				bool(self.radarr_dictionary['monitored']) if 'monitored' in self.radarr_dictionary else True
 		except TypeError:
 			self.monitored = self.movie_dictionary['Monitored'] = bool(True)
-		g.LOG.debug(backend.debug_message(647, g, self.monitored))
+		g.LOG.info(backend.debug_message(647, g, self.monitored))
 		
 		self.year = self.movie_dictionary['Year'] = \
 			int(self.radarr_dictionary['inCinemas'][0:4]) if 'inCinemas' in self.radarr_dictionary \
@@ -108,9 +108,9 @@ class Movie(Movies, Globals):
 			return
 		file_dict = self.radarr_dictionary['movieFile']
 		self.movie_file = self.movie_dictionary['Movie File'] = str(file_dict['relativePath'])
-		g.LOG.debug(backend.debug_message(610, g, self.movie_file))
+		g.LOG.info(backend.debug_message(610, g, self.movie_file))
 		self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(file_dict['quality']['quality']['name'])
-		g.LOG.debug(backend.debug_message(612, g, self.quality))
+		g.LOG.info(backend.debug_message(612, g, self.quality))
 		baseQuality = re.sub(self.quality, str(), str(self.movie_file.split().pop()))
 		self.extension = self.movie_dictionary['Parsed Extension'] = re.sub("\s+REAL\.\W+$", "", baseQuality)
 		self.absolute_movie_file_path = str(get_absolute_movie_file_path(self, g))
@@ -118,19 +118,19 @@ class Movie(Movies, Globals):
 	
 	def get_unparsed_movie_title(self, g):
 		result = self.radarr_dictionary.get('title', str())
-		g.LOG.debug(backend.debug_message(643, g, result))
+		g.LOG.info(backend.debug_message(643, g, result))
 		return result
 	
 	def init_absolute_movie_path(self, g):
 		result = self.movie_dictionary['Absolute Movie Path'] = "/".join((os.environ['DOCKER_MEDIA_PATH'],
 		                                                                  self.relative_movie_path))
-		g.LOG.debug(backend.debug_message(614, g, str(result)))
+		g.LOG.info(backend.debug_message(614, g, str(result)))
 		return result
 	
 	def init_relative_movie_path(self, g, result = str()):
 		if 'path' in self.radarr_dictionary:
 			result = self.movie_dictionary['Relative Movie Path'] = str(self.radarr_dictionary['path'])[1:]
-		g.LOG.debug(backend.debug_message(617, g, result))
+		g.LOG.info(backend.debug_message(617, g, result))
 		return result
 	
 	# def parse_tmdbid(self, g):
@@ -155,7 +155,7 @@ class Movie(Movies, Globals):
 					[i for i, d in enumerate(g.full_radarr_dict) if
 					 (self.movie_dictionary['Movie DB ID'] in d.values()) and (
 							 "tmdbId" in d.keys() and d['tmdbId'] == self.movie_dictionary['Movie DB ID'])][0]
-				g.LOG.debug(backend.debug_message(644, g, g.full_radarr_dict[index]))
+				g.LOG.info(backend.debug_message(644, g, g.full_radarr_dict[index]))
 				return g.full_radarr_dict[index]
 			except IndexError:
 				pass
