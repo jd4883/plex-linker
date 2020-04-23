@@ -180,6 +180,7 @@ class Show(Movie, Globals):
 		self.episode_title = str()
 		self.series_id = str()
 		self.episode_dict = dict()
+		self.has_link = self.series_dict['Has Link'] = bool()
 		cleanup_series.cleanup_dict(self.series_dict)
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
 		from pprint import pprint
