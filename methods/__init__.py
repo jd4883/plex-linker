@@ -173,17 +173,19 @@ class Show(Movie, Globals):
 		self.show = series
 		self.movie_dictionary = fetch_series.parent_dict(g, movie_dict)
 		self.inherited_series_dict = show_dict
-		print(f"SHOW DICT: {show_dict}")
-		self.season = str(0).zfill(2)
-		self.episode = str()
-		self.parsed_episode = str()
-		self.episode_id = int()
-		self.episode_title = str()
-		self.series_id = str()
+		self.season = str(self.inherited_series_dict.get("Season", str(0))).zfill(2)
+		self.episode = str(self.inherited_series_dict.get("Episode", 0))
+		self.parsed_episode = str(self.inherited_series_dict.get("Parsed Episode", str(00))).zfill(2)  # replace with
+		# padding
+		self.episode_id = str(self.inherited_series_dict.get("Episode ID", 0))
+		self.episode_title = str(self.inherited_series_dict.get("Title", str()))
+		self.series_id = str(self.inherited_series_dict.get("seriesId", int()))
 		self.episode_dict = dict()
-		self.has_link = self.inherited_series_dict['Has Link'] = bool()
+		self.has_link = self.inherited_series_dict['Has Link'] = self.inherited_series_dict.get('Has Link', bool())
 		cleanup_series.cleanup_dict(self.inherited_series_dict)
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
+		print(f"SONARR READ IN DICT: {self.sonarr_series_dict}")
+		
 		self.series_id = parse_series.series_id(self.sonarr_series_dict, self.inherited_series_dict, self.show, g)
 		self.tvdbId = parse_series.tvdb_id(self.sonarr_series_dict, self.inherited_series_dict, g)
 		self.imdbId = parse_series.imdb_id(self.sonarr_series_dict, self.inherited_series_dict, g)
