@@ -1,6 +1,7 @@
 #!/usr/bin/env python3.7
 import os
 from pathlib import Path
+from time import sleep
 
 import methods as media
 from IO.YAML.object_to_yaml import write_python_dictionary_object_to_yaml_file as dict_to_yaml
@@ -21,5 +22,11 @@ if __name__ == "__main__":
 		parse_movies(g)
 		dict_to_yaml(g)
 		# write a cleanup method that looks at all links and if they are not in our setup they get removed
+		"""
+		RUNS CLEANUP METHODS
+		* puts process to sleep but denies requested cron jobs
+		* waits 15 minutes before running through again
+		"""
 		postExecutionCleanup()
+		sleep(900)
 		os.remove(lock_path)
