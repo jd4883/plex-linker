@@ -173,13 +173,14 @@ class Show(Movie, Globals):
 		self.movie_dictionary = fetch_series.parent_dict(g, movie_dict)
 		self.inherited_series_dict = show_dict
 		self.show = series
-		self.series_id = self.inherited_series_dict['seriesId'] = \
-			self.sonarr_series_dict.get('id', g.sonarr.lookup_series(self.show, g).get("id", 0))
-		g.LOG.info(backend.debug_message(618, g, self.series_id))
 		
 		# TODO: something is wrong here, the read in dict seems to always be blank
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
 		g.LOG.info(f"SONARR READ IN DICT: {self.sonarr_series_dict}")
+		
+		self.series_id = self.inherited_series_dict['seriesId'] = \
+			self.sonarr_series_dict.get('id', g.sonarr.lookup_series(self.show, g).get("id", 0))
+		g.LOG.info(backend.debug_message(618, g, self.series_id))
 		
 		self.season = str(self.inherited_series_dict.get("Season", str(0))).zfill(2)
 		self.episode = str(self.inherited_series_dict.get("Episode", 0))
