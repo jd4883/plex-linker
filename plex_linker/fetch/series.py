@@ -6,8 +6,8 @@ from messaging import backend as backend
 
 
 def symlink_status(self, g, result = str()):
-	if ('Symlinked' in self.series_dict) and self.series_dict['Symlinked']:
-		result = str(self.series_dict['Symlinked'])
+	if ('Symlinked' in self.inherited_series_dict) and self.inherited_series_dict['Symlinked']:
+		result = str(self.inherited_series_dict['Symlinked'])
 		g.LOG.info(backend.debug_message(651, g, result))
 	return result
 
@@ -43,19 +43,7 @@ def fetch_link_status(self, episode_file_dict, relative_movie_file_path):
 		return bool()
 
 
-def title(g, series):
-	result = series
-	g.LOG.info(backend.debug_message(604, g, result))
-	return result
-
-
 def parent_dict(g, movie_dict):
 	result = movie_dict
 	g.LOG.info(backend.debug_message(627, g, result))
-	return result
-
-
-def child_dict(g, show_dict):
-	result = show_dict
-	g.LOG.info(backend.debug_message(624, g, result))
 	return result

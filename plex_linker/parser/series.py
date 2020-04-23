@@ -49,7 +49,7 @@ def root_folder(self, g):
 def anime_status(self, g):
 	series_type_set = ('seriesType' in self.sonarr_api_query)
 	is_anime = (self.sonarr_api_query.get('seriesType', str()) == 'anime')
-	anime_status = self.series_dict['Anime'] = bool(series_type_set and is_anime)
+	anime_status = self.inherited_series_dict['Anime'] = bool(series_type_set and is_anime)
 	g.LOG.info(backend.debug_message(621, g, anime_status))
 	return anime_status
 
@@ -74,10 +74,11 @@ def parse_episode_id_from_series_query(g, show):
 	for i in base:
 		for k, v in i.items():
 			if season(k, v):
-				show.episode = str(show.series_dict["Episode"]).zfill(show.padding)  # = str(i["episodeNumber"])
-				show.episode_id = show.series_dict["Episode ID"] = str(i["id"])
-				show.episode_file_id = show.series_dict["episodeFileId"] = str(i["episodeFileId"])
-				show.series_id = show.series_dict["Season"] = str(i["seasonNumber"]).zfill(2)
+				show.episode = str(show.inherited_series_dict["Episode"]).zfill(
+					show.padding)  # = str(i["episodeNumber"])
+				show.episode_id = show.inherited_series_dict["Episode ID"] = str(i["id"])
+				show.episode_file_id = show.inherited_series_dict["episodeFileId"] = str(i["episodeFileId"])
+				show.series_id = show.inherited_series_dict["Season"] = str(i["seasonNumber"]).zfill(2)
 				break
 		if show.series_id:
 			break
@@ -117,16 +118,17 @@ def parse_episode_dict(self, g):
 
 
 def episode_file_id(self, g):
-	result = self.series_dict['episodeFileId'] = self.episode_dict.get('episodeFileId', str())
+	result = self.inherited_series_dict['episodeFileId'] = self.episode_dict.get('episodeFileId', str())
 	if not result:
-		result = self.series_dict['episodeFileId'] = str()
+		result = self.inherited_series_dict['episodeFileId'] = str()
 	g.LOG.info(backend.debug_message(653, g, result))
 	return result
 
 def episode_number(self, g):
 	result = dict()
 	try:
-		result = self.series_dict['Episode'] if 'Episode' in self.series_dict else self.series_dict.update(
+		result = self.inherited_series_dict[
+			'Episode'] if 'Episode' in self.inherited_series_dict else self.inherited_series_dict.update(
 				{ 'Episode': self.episode_dict.get('episodeNumber', str()) })
 	except KeyError or AttributeError:
 		pass
@@ -136,26 +138,26 @@ def episode_number(self, g):
 
 def absolute_episode_number(self, g):
 	# need handling for multi part absolute episodes
-	result = self.series_dict['Absolute Episode'] = self.episode_dict.get('absoluteEpisodeNumber', str())
+	result = self.inherited_series_dict['Absolute Episode'] = self.episode_dict.get('absoluteEpisodeNumber', str())
 	g.LOG.info(backend.debug_message(628, g, result))
 	return result
 
 
 def season_from_sonarr(self, g):
-	result = self.series_dict['Season'] = str(self.episode_dict.get('seasonNumber', str())).zfill(2)
+	result = self.inherited_series_dict['Season'] = str(self.episode_dict.get('seasonNumber', str())).zfill(2)
 	g.LOG.info(backend.debug_message(630, g, result))
 	return result
 
 
 def season_folder_from_api(self, g):
-	result = self.series_dict['Parsed Season Folder'] = f"Season {self.season}"
+	result = self.inherited_series_dict['Parsed Season Folder'] = f"Season {self.season}"
 	g.LOG.info(backend.debug_message(631, g, result))
 	return result
 
 
 def show_root_folder(self, g):
 	result = \
-		self.series_dict['Show Root Path'] = \
+		self.inherited_series_dict['Show Root Path'] = \
 		fetch_series.show_path_string(self.episode_dict.get('path',
 		                                                    fetch_series.show_path_string(root_folder(self, g))))
 	path = os.path.join(fetch_series.show_path_string(os.environ['DOCKER_MEDIA_PATH']), result, self.season_folder)
@@ -165,7 +167,7 @@ def show_root_folder(self, g):
 
 
 def relative_show_path(self, g):
-	result = self.series_dict['Relative Show Path'] = f"{self.show_root_path}/{self.season_folder}"
+	result = self.inherited_series_dict['Relative Show Path'] = f"{self.show_root_path}/{self.season_folder}"
 	g.LOG.info(backend.debug_message(633, g, result))
 	return str(result)
 
@@ -175,8 +177,8 @@ def padded_episode_number(self, g, result = str()):
 		self.parsed_episode = "-".join([str(i).zfill(self.padding) for i in self.episode])
 	elif isinstance(self.episode, int):
 		self.parsed_episode = str(self.episode).zfill(self.padding)
-	elif 'Parsed Absolute Episode' in self.series_dict:
-		del self.series_dict['Parsed Absolute Episode']
+	elif 'Parsed Absolute Episode' in self.inherited_series_dict:
+		del self.inherited_series_dict['Parsed Absolute Episode']
 	g.LOG.info(backend.debug_message(634, g, result))
 
 
@@ -186,8 +188,8 @@ def padded_absolute_episode(self, g):
 		result = "-".join([str(i).zfill(self.padding) for i in self.absolute_episode])
 	elif isinstance(self.absolute_episode, int):
 		result = str(self.absolute_episode).zfill(self.padding)
-	elif 'Parsed Absolute Episode' in self.series_dict:
-		del self.series_dict['Parsed Absolute Episode']
+	elif 'Parsed Absolute Episode' in self.inherited_series_dict:
+		del self.inherited_series_dict['Parsed Absolute Episode']
 		result = str()
 	elif result in [0, 00, '00', '000', None]:
 		return str()
@@ -198,8 +200,8 @@ def padded_absolute_episode(self, g):
 def compiled_episode_title(self, g):
 	root = "/".join([self.show_root_path, self.season_folder, self.show])
 	parsed_title = f"{root} - S{self.season}E{self.parsed_episode} - {self.episode_title}"
-	result = self.series_dict['Parsed Episode Title'] = re.sub('\(\d+\)$', "",
-	                                                           fetch_series.show_path_string(parsed_title))
+	result = self.inherited_series_dict['Parsed Episode Title'] = re.sub('\(\d+\)$', "",
+	                                                                     fetch_series.show_path_string(parsed_title))
 	g.LOG.info(backend.debug_message(637, g, result))
 	return result
 
