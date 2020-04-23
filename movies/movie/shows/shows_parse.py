@@ -22,15 +22,6 @@ def parse_shows_dictionary_object(movie, g):
 	if not movie.shows_dictionary:
 		return
 	for series in movie.shows_dictionary.keys():
-		print(series)
-		breakpoint()
-		if series not in movie.shows_dictionary:
-			g.LOG.warn(backend.debug_message(638, g, movie.movie_title))
-			continue
-		if not isinstance(movie.shows_dictionary[series], dict):
-			# no shows to associate with the movie
-			g.LOG.warn(backend.debug_message(639, g, movie.movie_title))
-			break
 		try:
 			show = init_show_object(movie, str(series), g)
 		except json.decoder.JSONDecodeError:
