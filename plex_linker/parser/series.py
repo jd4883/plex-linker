@@ -36,19 +36,19 @@ def episode_dict_from_lookup(self, g):
 
 
 def root_folder(self, g):
-	payload = f"{os.environ['SONARR_DEFAULT_ROOT']}/{self.show}"
+	root_folder = f"{os.environ['SONARR_DEFAULT_ROOT']}/{self.show}"
 	for item in g.sonarr_root_folders:
 		item = fetch_series.show_path_string(str(item['path']))
 		potential = fetch_series.show_path_string(f"{item}{self.show}/{self.season_folder}")
 		if os.path.exists(potential) and os.path.isdir(potential):
-			payload = fetch_series.show_path_string(f"{item}{self.show}")
+			root_folder = fetch_series.show_path_string(f"{item}{self.show}")
 			break
-	return payload
+	return root_folder
 
 
 def anime_status(self, g):
 	series_type_set = ('seriesType' in self.sonarr_api_query)
-	is_anime = (self.sonarr_api_query['seriesType'] == 'anime')
+	is_anime = (self.sonarr_api_query.get('seriesType', str()) == 'anime')
 	anime_status = self.series_dict['Anime'] = bool(series_type_set and is_anime)
 	g.LOG.debug(backend.debug_message(621, g, anime_status))
 	return anime_status
@@ -63,22 +63,25 @@ def episode_index(self, query = dict()):
 
 
 def episode_id(self, g):
-	if str(self.episode).isdigit():
-		episode_id = parse_episode_id_from_series_query(g, self)
-		g.LOG.debug(backend.debug_message(619, g, episode_id))
-		return episode_id
+	episode_id = parse_episode_id_from_series_query(g, self) if str(self.episode).isdigit() else 0
+	g.LOG.debug(backend.debug_message(619, g, episode_id))
+	return episode_id
 
 
-def parse_episode_id_from_series_query(g, self):
-	base = g.sonarr.get_episodes_by_series_id(self.series_id)
+def parse_episode_id_from_series_query(g, show):
+	base = g.sonarr.get_episodes_by_series_id(show.series_id)
+	show.episode_id = 0
 	for i in base:
 		for k, v in i.items():
 			if season(k, v):
-				self.episode = str(self.series_dict["Episode"]).zfill(self.padding)  # = str(i["episodeNumber"])
-				self.episode_id = self.series_dict["Episode ID"] = str(i["id"])
-				self.episode_file_id = self.series_dict["episodeFileId"] = str(i["episodeFileId"])
-				self.series_id = self.series_dict["Season"] = str(i["seasonNumber"]).zfill(2)
-				return self.episode_id
+				show.episode = str(show.series_dict["Episode"]).zfill(show.padding)  # = str(i["episodeNumber"])
+				show.episode_id = show.series_dict["Episode ID"] = str(i["id"])
+				show.episode_file_id = show.series_dict["episodeFileId"] = str(i["episodeFileId"])
+				show.series_id = show.series_dict["Season"] = str(i["seasonNumber"]).zfill(2)
+				break
+		if show.series_id:
+			break
+	return show.episode_id
 
 
 def season(k, v):
@@ -133,14 +136,7 @@ def episode_number(self, g):
 
 def absolute_episode_number(self, g):
 	# need handling for multi part absolute episodes
-	if 'Absolute Episode' not in self.series_dict:
-		self.series_dict['Absolute Episode'] = str()
-	if 'Absolute Episode' in self.series_dict and not self.series_dict['Absolute Episode']:
-		result = self.series_dict['Absolute Episode'] = str()
-	elif self.series_dict['Absolute Episode'] and isinstance(self.series_dict['Absolute Episode'], list):
-		result = self.series_dict['Absolute Episode']
-	else:
-		result = self.series_dict['Absolute Episode'] = self.episode_dict.get('absoluteEpisodeNumber', str())
+	result = self.series_dict['Absolute Episode'] = self.episode_dict.get('absoluteEpisodeNumber', str())
 	g.LOG.debug(backend.debug_message(628, g, result))
 	return result
 
