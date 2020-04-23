@@ -26,30 +26,29 @@ ENV FREQUENCY=${FREQUENCY}
 ENV APPEND_TO_CRON_END=${APPEND_TO_CRON_END}
 ENV SCRIPTS=${SCRIPTS}/bin
 
-ENV \
-	SONARR_API_KEY  "" \
-	RADARR_API_KEY "" \
-	PLEX_API_KEY "" \
-	SONARR_URL http://127.0.0.1:8989/api \
-	PLEX_API_URL http://127.0.0.1:32400 \
-	RADARR_URL http://127.0.0.1:7878/api \
-	GIT_REPO https://github.com/jd4883/plex-linker-beta.git \
-	GIT_BRANCH master \
-	PLEX_LINKER /config \
-	RADARR_ROOT_PATH_PREFIX / \
-	SONARR_ROOT_PATH_PREFIX / \
-	YAML_FILE_CURRENT /config/config_files/media_collection_parsed_this_run.yaml \
-	YAML_FILE_PREVIOUS /config/config_files/media_collection_parsed_last_run.yaml \
-	CONFIG_ARCHIVES /config/config_files/archives \
-	LOG_NAME plex_linker \
-	LOGS /config/logs \
-	SONARR_DEFAULT_ROOT tv \
-	RADARR_DEFAULT_ROOT movies \
-	SEASON_INT 0 \
-	SEASON_STR '00' \
-	EPISODE_PADDING 2 \
-	DOCKER_MEDIA_PATH /media/video \
-	HOST_MEDIA_PATH /media/video
+ENV SONARR_API_KEY  ""
+ENV	RADARR_API_KEY ""
+ENV	PLEX_API_KEY ""
+ENV	SONARR_URL http://127.0.0.1:8989/api
+ENV	PLEX_API_URL http://127.0.0.1:32400
+ENV	RADARR_URL http://127.0.0.1:7878/api
+ENV	GIT_REPO https://github.com/jd4883/plex-linker-beta.git
+ENV	GIT_BRANCH master
+ENV	PLEX_LINKER /config
+ENV	RADARR_ROOT_PATH_PREFIX /
+ENV	SONARR_ROOT_PATH_PREFIX /
+ENV	YAML_FILE_CURRENT /config/config_files/media_collection_parsed_this_run.yaml
+ENV	YAML_FILE_PREVIOUS /config/config_files/media_collection_parsed_last_run.yaml
+ENV	CONFIG_ARCHIVES /config/config_files/archives
+ENV	LOG_NAME plex_linker
+ENV	LOGS /config/logs
+ENV	SONARR_DEFAULT_ROOT tv
+ENV	RADARR_DEFAULT_ROOT movies
+ENV	SEASON_INT 0
+ENV	SEASON_STR '00'
+ENV	EPISODE_PADDING 2
+ENV	DOCKER_MEDIA_PATH /media/video
+ENV	HOST_MEDIA_PATH /media/video
 
 COPY . /config/
 
