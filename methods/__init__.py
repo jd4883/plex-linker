@@ -236,6 +236,8 @@ class Show(Movie, Globals):
 		self.has_link = self.inherited_series_dict['Has Link'] = relativeMovieFilePath
 		g.sonarr.rescan_series(self.tvdbId)  # rescan movie in case it was picked up since last scan
 		g.sonarr.refresh_series(self.tvdbId)  # to ensure metadata is up to date
+		print("SET BREAKPOINT FOR TESTING")
+		breakpoint()
 	
 	def get_title(self):
 		payload = fetch_series.show_path_string(self.episode_dict['title'] if "title" in self.episode_dict else str())

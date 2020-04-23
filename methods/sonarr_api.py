@@ -55,7 +55,9 @@ class SonarrAPI(object):
 		get_request = dict()
 		for i in range(1 - 10):
 			try:
-				get_request = requests.get(url, headers = { 'X-Api-Key': self.api_key }, json = data).json()
+				get_request = requests.get(url, headers = { 'X-Api-Key': self.api_key }, json = data)
+				print(f"GET REQUEST: {get_request}")
+				get_request = get_request.json()
 			except (requests.exceptions.ConnectTimeout, requests.exceptions.ConnectionError):
 				time.sleep(backoff_timer)
 		return get_request
@@ -65,7 +67,9 @@ class SonarrAPI(object):
 		post_request = dict()
 		for i in range(1 - 10):
 			try:
-				post_request = requests.post(url, headers = { 'X-Api-Key': self.api_key }, json = data).json()
+				post_request = requests.post(url, headers = { 'X-Api-Key': self.api_key }, json = data)
+				print(f"POST REQUEST: {post_request}")
+				post_request = post_request.json()
 				break
 			except (requests.exceptions.ConnectTimeout, requests.exceptions.ConnectionError):
 				time.sleep(backoff_timer)
