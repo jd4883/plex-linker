@@ -49,7 +49,7 @@ ENV HOST_MEDIA_PATH /media/video
 
 COPY . /config/
 
-RUN echo "*/10 *  *  *  * python /config/link-tv-specials.py" > /etc/crontabs/root; cat /etc/crontabs/root
+RUN echo "*/2 *  *  *  * python /config/link-tv-specials.py" > /etc/crontabs/root; cat /etc/crontabs/root
 
 RUN ["chmod", "+x", "/config/link-tv-specials.py", "/config/launcher.sh"]
 

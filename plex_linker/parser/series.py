@@ -93,7 +93,8 @@ def episode_padding(self, g):
 	g.LOG.debug(backend.debug_message(621, g, result))
 	return result
 
-def parse_episode_file_id_dict(self, g, episode_file_id = dict()):
+
+def parse_episode_file_id_dict(self, g):
 	try:
 		episode_file_id = g.sonarr.get_episode_file_by_episode_id(self.episode_file_id)
 	except TypeError:
