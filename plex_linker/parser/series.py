@@ -6,47 +6,37 @@ from plex_linker.fetch import series as fetch_series
 
 
 def parse_series_genres(sonarr_series_dict, series_dict, g):
-	result = series_dict['Show Genres'] = sonarr_series_dict.get('genres', list())
-	g.LOG.debug(backend.debug_message(649, g, result))
-	return result
+	series_genres = series_dict['Show Genres'] = sonarr_series_dict.get('genres', list())
+	g.LOG.debug(backend.debug_message(649, g, series_genres))
+	return series_genres
 
 
 def tvdb_id(sonarr_series_dict, series_dict, g):
-	result = 0
-	if isinstance(sonarr_series_dict, dict):
-		try:
-			result = series_dict['tvdbId'] = sonarr_series_dict.get('tvdbId')
-		except KeyError:
-			pass
-	if not result:
-		result = str()
-	g.LOG.debug(backend.debug_message(618, g, result))
-	return str(result)
+	tvdb_id = series_dict['tvdbId'] = sonarr_series_dict.get('tvdbId', 0)
+	g.LOG.debug(backend.debug_message(618, g, tvdb_id))
+	return str(tvdb_id)
 
 
 def series_id(sonarr_series_dict, series_dict, show, g):
-	result = series_dict['seriesId'] = sonarr_series_dict.get('id', g.sonarr.lookup_series(show, g).get("id", 0))
-	g.LOG.debug(backend.debug_message(618, g, result))
-	return result
+	series_id = series_dict['seriesId'] = sonarr_series_dict.get('id', g.sonarr.lookup_series(show, g).get("id", 0))
+	g.LOG.debug(backend.debug_message(618, g, series_id))
+	return series_id
 
 
 def imdb_id(sonarr_series_dict, series_dict, g):
-	result = series_dict['imdbId'] = sonarr_series_dict.get('imdbId', 0)
-	g.LOG.debug(backend.debug_message(650, g, result))
-	return result
+	imdb_id = series_dict['imdbId'] = sonarr_series_dict.get('imdbId', 0)
+	g.LOG.debug(backend.debug_message(650, g, imdb_id))
+	return imdb_id
 
 
 def episode_dict_from_lookup(self, g):
 	query = episode_index(self, self.sonarr_series_dict) if self.sonarr_series_dict else dict()
-	# series dict
 	g.LOG.debug(backend.debug_message(626, g, query))
 	return query
 
 
 def root_folder(self, g):
-	# default_root = f"tv/staging/{self.show}"  # adjust to be an environ
 	payload = f"{os.environ['SONARR_DEFAULT_ROOT']}/{self.show}"
-	
 	for item in g.sonarr_root_folders:
 		item = fetch_series.show_path_string(str(item['path']))
 		potential = fetch_series.show_path_string(f"{item}{self.show}/{self.season_folder}")
@@ -57,11 +47,11 @@ def root_folder(self, g):
 
 
 def anime_status(self, g):
-	result = self.series_dict['Anime'] = bool()
-	if 'seriesType' in self.sonarr_api_query and (self.sonarr_api_query['seriesType'] == 'anime'):
-		result = self.series_dict['Anime'] = bool(True)
-	g.LOG.debug(backend.debug_message(621, g, result))
-	return result
+	series_type_set = ('seriesType' in self.sonarr_api_query)
+	is_anime = (self.sonarr_api_query['seriesType'] == 'anime')
+	anime_status = self.series_dict['Anime'] = bool(series_type_set and is_anime)
+	g.LOG.debug(backend.debug_message(621, g, anime_status))
+	return anime_status
 
 
 def episode_index(self, query = dict()):
@@ -74,9 +64,9 @@ def episode_index(self, query = dict()):
 
 def episode_id(self, g):
 	if str(self.episode).isdigit():
-		result = parse_episode_id_from_series_query(g, self)
-	g.LOG.debug(backend.debug_message(619, g, result))
-	return result
+		episode_id = parse_episode_id_from_series_query(g, self)
+		g.LOG.debug(backend.debug_message(619, g, episode_id))
+		return episode_id
 
 
 def parse_episode_id_from_series_query(g, self):
@@ -95,33 +85,23 @@ def season(k, v):
 	return (k == "seasonNumber") and (str(v) == str(0))
 
 
-# def episode(k, v, episode):
-# 	return (k == "id") and
-
-
-# TODO: missing logic to parse out the episode ID from what I can tell
-
-
 def episode_padding(self, g):
 	result = 3 if self.anime_status else int(os.environ['EPISODE_PADDING'])
 	g.LOG.debug(backend.debug_message(621, g, result))
 	return result
 
 
-def parse_episode_file_id_dict(self, g, payload = dict()):
+def parse_episode_file_id_dict(self, g, episode_file_id = dict()):
 	try:
-		# if not (self.episode_file_id or self.episode_file_id):
-		# 	g.LOG.info(backend.debug_message(603, g, self.movie_title, self.show))
-		# 	return payload
-		payload = g.sonarr.get_episode_file_by_episode_id(self.episode_file_id)
+		episode_file_id = g.sonarr.get_episode_file_by_episode_id(self.episode_file_id)
 	except TypeError:
 		g.LOG.info(backend.debug_message(603, g, self.movie_title, self.show))
 		return dict()
-	if not payload:
-		g.LOG.error(backend.debug_message(605, g, payload, self.episode_file_id))
-		payload = dict()
-	g.LOG.debug(backend.debug_message(652, g, payload))
-	return payload
+	if not episode_file_id:
+		g.LOG.error(backend.debug_message(605, g, episode_file_id, self.episode_file_id))
+		episode_file_id = dict()
+	g.LOG.debug(backend.debug_message(652, g, episode_file_id))
+	return episode_file_id
 
 
 def parse_episode_dict(self, g):
