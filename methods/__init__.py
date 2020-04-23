@@ -1,6 +1,5 @@
 from os.path import abspath
 
-import messaging.backend as backend
 import methods.sonarr_api
 import methods.sonarr_class_methods
 import plex_linker.cleanup.movie as cleanup_movie
@@ -9,6 +8,7 @@ import plex_linker.fetch.series as fetch_series
 import plex_linker.parser.series as parse_series
 from IO.YAML.yaml_to_object import (get_variable_from_yaml)
 from logs.bin.get_parameters import (get_log_name, get_logger, get_method_main)
+from messaging import backend as backend
 from methods.misc_get_methods import (
 	get_docker_media_path,
 	get_host_media_path,
@@ -170,18 +170,23 @@ class Show(Movie, Globals):
 	             show_dict = dict(),
 	             movie_dict = dict()):
 		super().__init__(film, movie_dict, g)
+		self.movie_dictionary = fetch_series.parent_dict(g, movie_dict)
+		self.inherited_series_dict = show_dict
 		self.show = series
+		self.series_id = self.inherited_series_dict['seriesId'] = \
+			self.sonarr_series_dict.get('id', g.sonarr.lookup_series(self.show, g).get("id", 0))
+		g.LOG.info(backend.debug_message(618, g, self.series_id))
 		
 		# TODO: something is wrong here, the read in dict seems to always be blank
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
-		print(f"SONARR READ IN DICT: {self.sonarr_series_dict}")
+		g.LOG.info(f"SONARR READ IN DICT: {self.sonarr_series_dict}")
 		
-		self.movie_dictionary = fetch_series.parent_dict(g, movie_dict)
-		self.inherited_series_dict = show_dict
 		self.season = str(self.inherited_series_dict.get("Season", str(0))).zfill(2)
 		self.episode = str(self.inherited_series_dict.get("Episode", 0))
+		# anime status should be here
+		# padding should be  here
 		self.parsed_episode = str(self.inherited_series_dict.get("Parsed Episode", str(00))).zfill(2)  # replace with
-		# padding
+		
 		self.episode_id = str(self.inherited_series_dict.get("Episode ID", 0))
 		self.episode_title = str(self.inherited_series_dict.get("Title", str()))
 		self.series_id = str(self.inherited_series_dict.get("seriesId", int()))
@@ -189,7 +194,6 @@ class Show(Movie, Globals):
 		self.has_link = self.inherited_series_dict['Has Link'] = self.inherited_series_dict.get('Has Link', bool())
 		cleanup_series.cleanup_dict(self.inherited_series_dict)
 		
-		self.series_id = parse_series.series_id(self.sonarr_series_dict, self.inherited_series_dict, self.show, g)
 		self.tvdbId = parse_series.tvdb_id(self.sonarr_series_dict, self.inherited_series_dict, g)
 		self.imdbId = parse_series.imdb_id(self.sonarr_series_dict, self.inherited_series_dict, g)
 		self.show_genres = parse_series.parse_series_genres(self.sonarr_series_dict, self.inherited_series_dict, g)
