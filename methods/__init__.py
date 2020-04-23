@@ -170,27 +170,24 @@ class Show(Movie, Globals):
 	             show_dict = dict(),
 	             movie_dict = dict()):
 		super().__init__(film, movie_dict, g)
-		self.show = fetch_series.title(g, series)
+		self.show = series
 		self.movie_dictionary = fetch_series.parent_dict(g, movie_dict)
-		self.series_dict = fetch_series.child_dict(g, show_dict)
-		self.season = str(int()).zfill(2)
+		self.inherited_series_dict = show_dict
+		print(f"SHOW DICT: {show_dict}")
+		self.season = str(0).zfill(2)
 		self.episode = str()
 		self.parsed_episode = str()
 		self.episode_id = int()
 		self.episode_title = str()
 		self.series_id = str()
 		self.episode_dict = dict()
-		self.has_link = self.series_dict['Has Link'] = bool()
-		cleanup_series.cleanup_dict(self.series_dict)
+		self.has_link = self.inherited_series_dict['Has Link'] = bool()
+		cleanup_series.cleanup_dict(self.inherited_series_dict)
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
-		from pprint import pprint
-		for k, v in self.sonarr_series_dict.items():
-			pprint(k, v)
-			breakpoint()
-		self.series_id = parse_series.series_id(self.sonarr_series_dict, self.series_dict, self.show, g)
-		self.tvdbId = parse_series.tvdb_id(self.sonarr_series_dict, self.series_dict, g)
-		self.imdbId = parse_series.imdb_id(self.sonarr_series_dict, self.series_dict, g)
-		self.show_genres = parse_series.parse_series_genres(self.sonarr_series_dict, self.series_dict, g)
+		self.series_id = parse_series.series_id(self.sonarr_series_dict, self.inherited_series_dict, self.show, g)
+		self.tvdbId = parse_series.tvdb_id(self.sonarr_series_dict, self.inherited_series_dict, g)
+		self.imdbId = parse_series.imdb_id(self.sonarr_series_dict, self.inherited_series_dict, g)
+		self.show_genres = parse_series.parse_series_genres(self.sonarr_series_dict, self.inherited_series_dict, g)
 		self.sonarr_api_query = parse_series.episode_dict_from_lookup(self, g)
 		# TODO: may need to add episode # calculation first not sure yet
 		self.anime_status = bool(parse_series.anime_status(self, g))
@@ -220,13 +217,13 @@ class Show(Movie, Globals):
 		self.relative_show_path = parse_series.relative_show_path(self, g)
 		
 		self.parsed_episode_title = parse_series.compiled_episode_title(self, g)
-		self.relative_show_file_path = self.series_dict['Relative Show File Path'] = \
+		self.relative_show_file_path = self.inherited_series_dict['Relative Show File Path'] = \
 			(f"{self.parsed_episode_title} {self.quality}.{self.extension}" \
 				 if (self.hasFile and self.parsed_episode_title) else str()).replace("..", ".")
 		relativeMovieFilePath = fetch_link_status(self,
 		                                          self.episode_file_dict,
 		                                          self.relative_movie_file_path) if self.episode_file_dict else bool()
-		self.has_link = self.series_dict['Has Link'] = relativeMovieFilePath
+		self.has_link = self.inherited_series_dict['Has Link'] = relativeMovieFilePath
 		g.sonarr.rescan_series(self.tvdbId)  # rescan movie in case it was picked up since last scan
 		g.sonarr.refresh_series(self.tvdbId)  # to ensure metadata is up to date
 	

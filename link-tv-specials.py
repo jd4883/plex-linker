@@ -21,12 +21,14 @@ if __name__ == "__main__":
 		master_dictionary = media.Movies(str(os.path.abspath(get_docker_media_path(g))))
 		parse_movies(g)
 		dict_to_yaml(g)
+		
 		"""
 		RUNS CLEANUP METHODS
 		* puts process to sleep but denies requested cron jobs
 		* waits 15 minutes before running through again
 		** would like to remove all non-tracked links present in the media directories
 		"""
+		
 		postExecutionCleanup()
 		sleep(900)
 		os.remove(lock_path)
