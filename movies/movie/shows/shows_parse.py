@@ -26,7 +26,10 @@ def parse_shows_dictionary_object(movie, g):
 			show = init_show_object(movie, str(series), g)
 		except json.decoder.JSONDecodeError:
 			continue
-		code = 640 if show.has_link or not show.episode else 641
+		try:
+			code = 640 if show.has_link or not show.episode else 641
+		except AttributeError:
+			code = 641
 		g.LOG.info(backend.debug_message(code, g, movie.movie_title, show.show))
 		if code == 641:
 			parse_show_to_link(show, g)
