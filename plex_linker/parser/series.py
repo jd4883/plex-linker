@@ -6,14 +6,9 @@ from plex_linker.fetch import series as fetch_series
 
 
 def parse_series_genres(sonarr_series_dict, series_dict, g):
-	if isinstance(sonarr_series_dict, dict):
-		try:
-			result = series_dict['Show Genres'] = sonarr_series_dict.get('genres', list())
-			g.LOG.debug(backend.debug_message(649, g, result))
-			return list(result)
-		except KeyError:
-			pass
-	return list()
+	result = series_dict['Show Genres'] = sonarr_series_dict.get('genres', list())
+	g.LOG.debug(backend.debug_message(649, g, result))
+	return result
 
 
 def tvdb_id(sonarr_series_dict, series_dict, g):
@@ -30,30 +25,15 @@ def tvdb_id(sonarr_series_dict, series_dict, g):
 
 
 def series_id(sonarr_series_dict, series_dict, show, g):
-	result = 0
-	if isinstance(sonarr_series_dict, dict):
-		if 'seriesId' in sonarr_series_dict and str(sonarr_series_dict['seriesId']).isdigit():
-			result = series_dict['seriesId'] = sonarr_series_dict.get('id', 0)
-		elif 'seriesId' in series_dict and str(series_dict['seriesId']).isdigit():
-			result = series_dict['seriesId']
-		else:
-			print(sonarr_series_dict)
-			print(series_dict)
-	if not result:
-		result = g.sonarr.lookup_series(show, g).get("id", 0)
+	result = series_dict['seriesId'] = sonarr_series_dict.get('id', g.sonarr.lookup_series(show, g).get("id", 0))
 	g.LOG.debug(backend.debug_message(618, g, result))
 	return result
 
 
 def imdb_id(sonarr_series_dict, series_dict, g):
-	if isinstance(sonarr_series_dict, dict):
-		try:
-			result = series_dict['imdbId'] = sonarr_series_dict.get('imdbId', 0)
-		except KeyError:
-			result = str()
-		g.LOG.debug(backend.debug_message(650, g, result))
-		return result
-	return str()
+	result = series_dict['imdbId'] = sonarr_series_dict.get('imdbId', 0)
+	g.LOG.debug(backend.debug_message(650, g, result))
+	return result
 
 
 def episode_dict_from_lookup(self, g):
@@ -78,10 +58,7 @@ def root_folder(self, g):
 
 def anime_status(self, g):
 	result = self.series_dict['Anime'] = bool()
-	if 'seriesType' in self.sonarr_api_query and (self.sonarr_api_query['seriesType'] != 'anime'):
-		pass
-	# result stays as a False
-	elif 'seriesType' in self.sonarr_api_query and (self.sonarr_api_query['seriesType'] == 'anime'):
+	if 'seriesType' in self.sonarr_api_query and (self.sonarr_api_query['seriesType'] == 'anime'):
 		result = self.series_dict['Anime'] = bool(True)
 	g.LOG.debug(backend.debug_message(621, g, result))
 	return result
@@ -98,10 +75,6 @@ def episode_index(self, query = dict()):
 def episode_id(self, g):
 	if str(self.episode).isdigit():
 		result = parse_episode_id_from_series_query(g, self)
-	else:
-		result = self.series_dict.get('Episode ID', str())
-	if not result:
-		print(f"COULD NOT SET EID FOR {self.show}")
 	g.LOG.debug(backend.debug_message(619, g, result))
 	return result
 
