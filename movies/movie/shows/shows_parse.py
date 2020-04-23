@@ -28,8 +28,8 @@ def parse_shows_dictionary_object(movie, g):
 			continue
 		try:
 			code = 640 if show.has_link or not show.episode else 641
+			g.LOG.info(backend.debug_message(code, g, movie.movie_title, show.show))
 		except AttributeError:
 			code = 641
-		g.LOG.info(backend.debug_message(code, g, movie.movie_title, show.show))
 		if code == 641:
 			parse_show_to_link(show, g)
