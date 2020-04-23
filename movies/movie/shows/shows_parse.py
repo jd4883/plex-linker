@@ -22,6 +22,8 @@ def parse_shows_dictionary_object(movie, g):
 	if not movie.shows_dictionary:
 		return
 	for series in movie.shows_dictionary.keys():
+		print(series)
+		breakpoint()
 		if series not in movie.shows_dictionary:
 			g.LOG.warn(backend.debug_message(638, g, movie.movie_title))
 			continue
