@@ -213,7 +213,7 @@ class Show(Movie, Globals):
 			str(self.inherited_series_dict.get("seriesId",
 			                                   self.sonarr_series_dict["id"]))
 		self.sonarr_api_query = parse_series.episode_dict_from_lookup(self, g)
-		self.episode = self.inherited_series_dict['Episode'] = self.inherited_series_dict["Episode"]
+		self.episode = self.inherited_series_dict.get('Episode', str())
 		self.anime_status = bool(parse_series.anime_status(self, g))
 		self.padding = self.inherited_series_dict['Padding'] = parse_series.episode_padding(self, g)
 		parse_series.padded_episode_number(self, g)
