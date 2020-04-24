@@ -26,8 +26,13 @@ class SonarrAPI(object):
 		return episode_file_by_id
 	
 	def get_root_folder(self):
-		get_request = self.sonarr_api_request(f"{self.host_url}/rootfolder")
-		return get_request
+		try:
+			get_request = self.sonarr_api_request(f"{self.host_url}/rootfolder")
+			return get_request
+		except AttributeError as a:
+			print(a)
+			print(f"ERROR GRABBING ROOT FOLDER FOR {}")
+			
 	
 	def get_series(self):
 		series = self.sonarr_api_request(f"{self.host_url}/series")
@@ -49,35 +54,6 @@ class SonarrAPI(object):
 			sonarr_series = sonarr_series[0]
 		g.LOG.info(messaging.backend.debug_message(625, g, sonarr_series))
 		return sonarr_series
-	
-	# def request_get(self, url, data = dict()):
-	# 	backoff_timer = 2
-	# 	get_request = requests.get(url, headers = { 'X-Api-Key': self.api_key }, json = data)
-	# 	get_request = get_request.json()
-	# 	# for i in range(1 - 10):
-	# 	# 	try:
-	# 	# 		get_request = requests.get(url, headers = { 'X-Api-Key': self.api_key }, json = data)
-	# 	# 		get_request = get_request.json()
-	# 	# 	except (requests.exceptions.ConnectTimeout, requests.exceptions.ConnectionError):
-	# 	# 		time.sleep(backoff_timer)
-	# 	time.sleep(backoff_timer)
-	# 	print(f"GET REQUEST: {get_request}")
-	# 	return get_request
-	#
-	# def request_post(self, url, data = dict()):
-	# 	backoff_timer = 2
-	# 	post_request = requests.post(url, headers = { 'X-Api-Key': self.api_key }, json = data)
-	# 	post_request = post_request.json()
-	# 	# for i in range(1 - 10):
-	# 	# 	try:
-	# 	# 		post_request = requests.post(url, headers = { 'X-Api-Key': self.api_key }, json = data)
-	# 	# 		post_request = post_request.json()
-	# 	# 		break
-	# 	# 	except (requests.exceptions.ConnectTimeout, requests.exceptions.ConnectionError):
-	# 	# 		time.sleep(backoff_timer)
-	# 	time.sleep(backoff_timer)
-	# 	print(f"POST REQUEST: {post_request}")
-	# 	return post_request
 	
 	def sonarr_api_request(self, url, type = "get", data = dict()):
 		backoff_timer = 2
