@@ -268,6 +268,10 @@ class Show(Movie, Globals):
 		g.sonarr.refresh_series(self.tvdbId)  # to ensure metadata is up to date
 	
 	def get_series_id(self, title):
+		from pprint import pprint
+		pprint(self.inherited_series_dict)
+		breakpoint()
+		
 		for i in self.inherited_series_dict:
 			for k, v in self.inherited_series_dict[i].items():
 				if k == "title" and v == title:
