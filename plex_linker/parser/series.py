@@ -48,8 +48,8 @@ def root_folder(self, g):
 
 def anime_status(self, g):
 	series_type_set = ('seriesType' in self.sonarr_api_query)
-	is_anime = (self.sonarr_api_query.get('seriesType', str()) == 'anime')
-	anime_status = self.inherited_series_dict['Anime'] = bool(series_type_set and is_anime)
+	anime_status = self.inherited_series_dict['Anime'] = bool(
+			series_type_set and (self.sonarr_api_query[0].get('seriesType', str()) == 'anime'))
 	g.LOG.info(backend.debug_message(621, g, anime_status))
 	return anime_status
 
