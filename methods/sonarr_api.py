@@ -31,8 +31,6 @@ class SonarrAPI(object):
 			return get_request
 		except AttributeError as a:
 			print(a)
-			print(f"ERROR GRABBING ROOT FOLDER FOR {}")
-			
 	
 	def get_series(self):
 		series = self.sonarr_api_request(f"{self.host_url}/series")
