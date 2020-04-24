@@ -213,18 +213,22 @@ class Show(Movie, Globals):
 			str(self.inherited_series_dict.get("seriesId",
 			                                   self.sonarr_series_dict["id"]))
 		self.sonarr_api_query = parse_series.episode_dict_from_lookup(self, g)
-		self.episode = self.inherited_series_dict['Episode'] = str(self.inherited_series_dict.get("Episode", 0))
+		self.episode = self.inherited_series_dict['Episode'] = self.inherited_series_dict["Episode"]
+		if self.episode_dict:
+			self.absolute_episode = parse_series.absolute_episode_number(self, g)
+			self.parsed_absolute_episode = padded_absolute_episode(self, g)
 		self.anime_status = bool(parse_series.anime_status(self, g))
 		self.padding = self.inherited_series_dict['Padding'] = parse_series.episode_padding(self, g)
 		parse_series.padded_episode_number(self, g)
+		self.parsed_episode = self.inherited_series_dict['Parsed Episode'] = str(self.inherited_series_dict.get(
+				"Parsed Episode", str(00))).zfill(self.padding)
 		self.episode_id = self.inherited_series_dict['Episode ID'] = str(self.inherited_series_dict.get("Episode ID",
 		                                                                                                parse_series.episode_id(
 				                                                                                                self,
 				                                                                                                g)))
 		self.episode_dict = parse_series.parse_episode_dict(self, g)
 		self.season = str(self.inherited_series_dict.get("Season", str(0))).zfill(2)
-		self.parsed_episode = self.inherited_series_dict['Parsed Episode'] = str(self.inherited_series_dict.get(
-				"Parsed Episode", str(00))).zfill(self.padding)
+		
 		self.episode_title = self.inherited_series_dict['Title'] = str(self.inherited_series_dict.get("Title",
 		                                                                                              re.sub('\('
 		                                                                                                     '\d+\)$',
@@ -241,19 +245,15 @@ class Show(Movie, Globals):
 		self.show_genres = self.inherited_series_dict['Show Genres'] = parse_series.parse_series_genres(
 				self.sonarr_series_dict, self.inherited_series_dict, g)
 		
-		# TODO: may need to add episode # calculation first not sure yet
-		if self.episode_dict:
-			self.absolute_episode = parse_series.absolute_episode_number(self, g)
-			self.parsed_absolute_episode = padded_absolute_episode(self, g)
-		self.episode_file_id = self.inherited_series_dict['episodeFileId'] = parse_series.episode_file_id(self, g)
-		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)
-		self.link_status = self.inherited_series_dict['Link Status'] = fetch_series.symlink_status(self, g)
-		# self.season = parse_series.season_from_sonarr(self, g)
 		self.season_folder = parse_series.season_folder_from_api(self, g)
 		self.show_root_path = self.inherited_series_dict['Show Root Path'] = self.setShowRootPath(g)
 		# self.show_root_path = parse_series.show_root_folder(self, g)
 		self.relative_show_path = self.inherited_series_dict['Relative Show Path'] = parse_series.relative_show_path(
 				self, g)
+		self.episode_file_id = self.inherited_series_dict['episodeFileId'] = parse_series.episode_file_id(self, g)
+		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)
+		self.link_status = self.inherited_series_dict['Link Status'] = fetch_series.symlink_status(self, g)
+		# self.season = parse_series.season_from_sonarr(self, g)
 		
 		self.parsed_episode_title = self.inherited_series_dict['Parsed Episode Title'] = \
 			parse_series.compiled_episode_title(self, g)
