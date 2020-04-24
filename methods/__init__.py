@@ -173,6 +173,7 @@ class Show(Movie, Globals):
 		self.movie_dictionary = fetch_series.parent_dict(g, movie_dict)
 		self.inherited_series_dict = show_dict
 		self.show = series
+		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
 		self.series_id = self.inherited_series_dict['seriesId'] = \
 			str(self.inherited_series_dict.get("seriesId",
 			                                   int(self.sonarr_series_dict.get('id', self.sonarr_series_dict))))
@@ -183,7 +184,6 @@ class Show(Movie, Globals):
 		self.padding = parse_series.episode_padding(self, g)
 		self.parsed_episode = str(self.inherited_series_dict.get("Parsed Episode", str(00))).zfill(self.padding)
 		self.episode_title = str(self.inherited_series_dict.get("Title", str()))
-		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
 		self.sonarr_api_query = parse_series.episode_dict_from_lookup(self, g)
 		self.episode_dict = parse_series.parse_episode_dict(self, g)
 		g.LOG.info(backend.debug_message(618, g, self.series_id))
