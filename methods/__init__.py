@@ -68,6 +68,15 @@ class Movie(Movies, Globals):
 		super().__init__()
 		# schema = MovieSchema()
 		self.movie_dictionary = movie_dict
+		"""
+		PROTOTYPE CLEANUP METHOD FOR EMPTY KEYS
+		"""
+		for i in self.movie_dictionary:
+			if not i:
+				try:
+					del self.movie_dictionary[i]
+				except KeyError:
+					pass
 		g.LOG.info(backend.debug_message(627, g, self.movie_dictionary))
 		cleanup_movie.cleanup_dict(self.movie_dictionary)
 		self.shows_dictionary = self.movie_dictionary['Shows']
@@ -171,6 +180,33 @@ class Show(Movie, Globals):
 		super().__init__(film, movie_dict, g)
 		self.movie_dictionary = fetch_series.parent_dict(g, movie_dict)
 		self.inherited_series_dict = show_dict
+		"""
+		PROTOTYPE CLEANUP METHOD FOR EMPTY KEYS
+		"""
+		dict_fields = [
+				"Absolute Episode",
+				"Anime",
+				"Has Link",
+				"Parsed Episode",
+				"Parsed Episode Title",
+				"Relative Show File Path",
+				"Relative Show Path",
+				"Show Genres",
+				"Show Root Path",
+				"imdbId",
+				"seriesId",
+				"tvdbId"]
+		for i in dict_fields:
+			try:
+				del self.inherited_series_dict[i]
+			except KeyError:
+				pass
+		for i in self.inherited_series_dict:
+			if not i:
+				try:
+					del self.inherited_series_dict[i]
+				except KeyError:
+					pass
 		self.show = series
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
 		self.series_id = self.inherited_series_dict['seriesId'] = \
