@@ -179,7 +179,8 @@ class Show(Movie, Globals):
 		g.LOG.info(f"SONARR READ IN DICT: {self.sonarr_series_dict}")
 		
 		self.series_id = self.inherited_series_dict['seriesId'] = \
-			self.sonarr_series_dict.get('id', g.sonarr.lookup_series(self.show, g).get("id", 0))
+			self.sonarr_series_dict.get('id', self.sonarr_series_dict)
+		self.episode_dict = parse_series.parse_episode_dict(self, g)
 		g.LOG.info(backend.debug_message(618, g, self.series_id))
 		
 		self.season = str(self.inherited_series_dict.get("Season", str(0))).zfill(2)
@@ -191,7 +192,6 @@ class Show(Movie, Globals):
 		self.episode_id = str(self.inherited_series_dict.get("Episode ID", 0))
 		self.episode_title = str(self.inherited_series_dict.get("Title", str()))
 		self.series_id = str(self.inherited_series_dict.get("seriesId", int()))
-		self.episode_dict = dict()
 		self.has_link = self.inherited_series_dict['Has Link'] = self.inherited_series_dict.get('Has Link', bool())
 		cleanup_series.cleanup_dict(self.inherited_series_dict)
 		
@@ -204,7 +204,6 @@ class Show(Movie, Globals):
 		self.padding = parse_series.episode_padding(self, g)
 		# self.episode = parse_series.episode_number(self, g)
 		parse_series.episode_id(self, g)
-		self.episode_dict = parse_series.parse_episode_dict(self, g)
 		if self.episode_dict:
 			# TODO: anime status should go here
 			parse_series.padded_episode_number(self, g)
