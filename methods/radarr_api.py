@@ -49,7 +49,4 @@ class RadarrAPI(object):
 		elif type == "delete":
 			request_payload = requests.delete(url, headers = { 'X-Api-Key': self.api_key }, json = data)
 		time.sleep(backoff_timer)
-		print(request_payload.text)
-		print(request_payload.status_code)
-		print(request_payload.json())
 		return request_payload.json()
