@@ -77,12 +77,12 @@ class Movie(Movies, Globals):
 					del self.movie_dictionary[i]
 				except KeyError:
 					pass
-		g.LOG.info(backend.debug_message(627, g, self.movie_dictionary))
+		g.LOG.debug(backend.debug_message(627, g, self.movie_dictionary))
 		cleanup_movie.cleanup_dict(self.movie_dictionary)
 		self.shows_dictionary = self.movie_dictionary['Shows']
-		g.LOG.info(backend.debug_message(645, g, self.shows_dictionary))
+		g.LOG.debug(backend.debug_message(645, g, self.shows_dictionary))
 		self.tmbdid = self.movie_dictionary['Movie DB ID']
-		g.LOG.info(backend.debug_message(648, g, self.tmbdid))
+		g.LOG.debug(backend.debug_message(648, g, self.tmbdid))
 		
 		self.radarr_dictionary = self.parse_dict_from_radarr(g)
 		try:
@@ -91,7 +91,7 @@ class Movie(Movies, Globals):
 				bool(self.radarr_dictionary['hasFile']) if 'hasFile' in self.radarr_dictionary else False
 		except TypeError:
 			self.hasFile = self.movie_dictionary['Has File'] = bool()
-		g.LOG.info(backend.debug_message(646, g, self.hasFile))
+		g.LOG.debug(backend.debug_message(646, g, self.hasFile))
 		try:
 			self.monitored = \
 				self.movie_dictionary['Monitored'] = \
@@ -116,9 +116,9 @@ class Movie(Movies, Globals):
 			return
 		file_dict = self.radarr_dictionary['movieFile']
 		self.movie_file = self.movie_dictionary['Movie File'] = str(file_dict['relativePath'])
-		g.LOG.info(backend.debug_message(610, g, self.movie_file))
+		g.LOG.debug(backend.debug_message(610, g, self.movie_file))
 		self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(file_dict['quality']['quality']['name'])
-		g.LOG.info(backend.debug_message(612, g, self.quality))
+		g.LOG.debug(backend.debug_message(612, g, self.quality))
 		baseQuality = re.sub(self.quality, str(), str(self.movie_file.split().pop()))
 		self.extension = self.movie_dictionary['Parsed Extension'] = re.sub("\s+REAL\.\W+$", "", baseQuality)
 		self.absolute_movie_file_path = str(get_absolute_movie_file_path(self, g))
@@ -163,7 +163,7 @@ class Movie(Movies, Globals):
 					[i for i, d in enumerate(g.full_radarr_dict) if
 					 (self.movie_dictionary['Movie DB ID'] in d.values()) and (
 							 "tmdbId" in d.keys() and d['tmdbId'] == self.movie_dictionary['Movie DB ID'])][0]
-				g.LOG.info(backend.debug_message(644, g, g.full_radarr_dict[index]))
+				g.LOG.debug(backend.debug_message(644, g, g.full_radarr_dict[index]))
 				return g.full_radarr_dict[index]
 			except IndexError:
 				pass

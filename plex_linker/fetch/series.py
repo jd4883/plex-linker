@@ -45,5 +45,5 @@ def fetch_link_status(self, episode_file_dict, relative_movie_file_path):
 
 def parent_dict(g, movie_dict):
 	result = movie_dict
-	g.LOG.info(backend.debug_message(627, g, result))
+	g.LOG.debug(backend.debug_message(627, g, result))
 	return result
