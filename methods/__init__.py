@@ -32,7 +32,7 @@ class Globals:
 		self.sonarr = SonarrAPI()
 		self.radarr = RadarrAPI()
 		self.sonarr_root_folders = self.sonarr.get_root_folder()
-		self.radarr_root_folders = self.radarr.get_root_folder()  # fairly sure this isnt a radarr endpoint
+		# self.radarr_root_folders = self.radarr.get_root_folder()  # fairly sure this isnt a radarr endpoint
 		self.full_sonarr_dict = self.sonarr.get_series()
 		self.full_radarr_dict = self.radarr.get_movie_library()
 		self.MEDIA_PATH = str(get_docker_media_path())
