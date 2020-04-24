@@ -3,7 +3,6 @@ from os.path import abspath
 import methods.sonarr_api
 import methods.sonarr_class_methods
 import plex_linker.cleanup.movie as cleanup_movie
-import plex_linker.cleanup.series as cleanup_series
 import plex_linker.fetch.series as fetch_series
 import plex_linker.parser.series as parse_series
 from IO.YAML.yaml_to_object import (get_variable_from_yaml)
@@ -184,12 +183,12 @@ class Show(Movie, Globals):
 		self.episode_id = str(self.inherited_series_dict.get("Episode ID", parse_series.episode_id(self, g)))
 		self.anime_status = bool(parse_series.anime_status(self, g))
 		self.padding = parse_series.episode_padding(self, g)
+		parse_series.padded_episode_number(self, g)
 		self.parsed_episode = str(self.inherited_series_dict.get("Parsed Episode", str(00))).zfill(self.padding)
-		self.episode_title = str(self.inherited_series_dict.get("Title", str()))
+		self.episode_title = str(self.inherited_series_dict.get("Title", re.sub('\(\d+\)$', "", self.get_title())))
 		g.LOG.info(backend.debug_message(618, g, self.series_id))
 		
 		self.has_link = self.inherited_series_dict['Has Link'] = self.inherited_series_dict.get('Has Link', bool())
-		cleanup_series.cleanup_dict(self.inherited_series_dict)
 		
 		self.tvdbId = parse_series.tvdb_id(self.sonarr_series_dict, self.inherited_series_dict, g)
 		self.imdbId = parse_series.imdb_id(self.sonarr_series_dict, self.inherited_series_dict, g)
@@ -197,16 +196,8 @@ class Show(Movie, Globals):
 		
 		# TODO: may need to add episode # calculation first not sure yet
 		if self.episode_dict:
-			# TODO: anime status should go here
-			parse_series.padded_episode_number(self, g)
 			self.absolute_episode = parse_series.absolute_episode_number(self, g)
 			self.parsed_absolute_episode = padded_absolute_episode(self, g)
-			self.episode_title = re.sub('\(\d+\)$', "", self.get_title())
-		from pprint import pprint
-		pprint(self.episode_dict)
-		# TODO: something is up here as many series that are not anime are being marked as anime, suspect the default
-		#  false bool is never getting passed
-		
 		self.episode_file_id = parse_series.episode_file_id(self, g)
 		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)
 		self.link_status = fetch_series.symlink_status(self, g)
