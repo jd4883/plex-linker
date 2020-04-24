@@ -173,7 +173,15 @@ class Show(Movie, Globals):
 		self.movie_dictionary = fetch_series.parent_dict(g, movie_dict)
 		self.inherited_series_dict = show_dict
 		self.show = series
-		
+		self.season = str(self.inherited_series_dict.get("Season", str(0))).zfill(2)
+		self.episode = str(self.inherited_series_dict.get("Episode", 0))
+		self.episode_id = str(self.inherited_series_dict.get("Episode ID", 0))
+		# anime status should be here
+		# padding should be  here
+		self.parsed_episode = str(self.inherited_series_dict.get("Parsed Episode", str(00))).zfill(2)  # replace
+		# with
+		self.episode_title = str(self.inherited_series_dict.get("Title", str()))
+		self.series_id = str(self.inherited_series_dict.get("seriesId", int()))
 		# TODO: something is wrong here, the read in dict seems to always be blank
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
 		g.LOG.info(f"SONARR READ IN DICT: {self.sonarr_series_dict}")
@@ -183,15 +191,6 @@ class Show(Movie, Globals):
 		self.episode_dict = parse_series.parse_episode_dict(self, g)
 		g.LOG.info(backend.debug_message(618, g, self.series_id))
 		
-		self.season = str(self.inherited_series_dict.get("Season", str(0))).zfill(2)
-		self.episode = str(self.inherited_series_dict.get("Episode", 0))
-		# anime status should be here
-		# padding should be  here
-		self.parsed_episode = str(self.inherited_series_dict.get("Parsed Episode", str(00))).zfill(2)  # replace with
-		
-		self.episode_id = str(self.inherited_series_dict.get("Episode ID", 0))
-		self.episode_title = str(self.inherited_series_dict.get("Title", str()))
-		self.series_id = str(self.inherited_series_dict.get("seriesId", int()))
 		self.has_link = self.inherited_series_dict['Has Link'] = self.inherited_series_dict.get('Has Link', bool())
 		cleanup_series.cleanup_dict(self.inherited_series_dict)
 		
