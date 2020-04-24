@@ -175,17 +175,14 @@ class Show(Movie, Globals):
 		self.show = series
 		self.season = str(self.inherited_series_dict.get("Season", str(0))).zfill(2)
 		self.episode = str(self.inherited_series_dict.get("Episode", 0))
-		self.episode_id = str(self.inherited_series_dict.get("Episode ID", 0))
-		# anime status should be here
-		# padding should be  here
-		self.parsed_episode = str(self.inherited_series_dict.get("Parsed Episode", str(00))).zfill(2)  # replace
-		# with
+		self.episode_id = str(self.inherited_series_dict.get("Episode ID", parse_series.episode_id(self, g)))
+		self.anime_status = bool(parse_series.anime_status(self, g))
+		self.padding = parse_series.episode_padding(self, g)
+		self.parsed_episode = str(self.inherited_series_dict.get("Parsed Episode", str(00))).zfill(self.padding)
 		self.episode_title = str(self.inherited_series_dict.get("Title", str()))
 		self.series_id = str(self.inherited_series_dict.get("seriesId", int()))
-		# TODO: something is wrong here, the read in dict seems to always be blank
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
-		g.LOG.info(f"SONARR READ IN DICT: {self.sonarr_series_dict}")
-		
+		self.sonarr_api_query = parse_series.episode_dict_from_lookup(self, g)
 		self.series_id = self.inherited_series_dict['seriesId'] = \
 			self.sonarr_series_dict.get('id', self.sonarr_series_dict)
 		self.episode_dict = parse_series.parse_episode_dict(self, g)
@@ -197,12 +194,8 @@ class Show(Movie, Globals):
 		self.tvdbId = parse_series.tvdb_id(self.sonarr_series_dict, self.inherited_series_dict, g)
 		self.imdbId = parse_series.imdb_id(self.sonarr_series_dict, self.inherited_series_dict, g)
 		self.show_genres = parse_series.parse_series_genres(self.sonarr_series_dict, self.inherited_series_dict, g)
-		self.sonarr_api_query = parse_series.episode_dict_from_lookup(self, g)
+		
 		# TODO: may need to add episode # calculation first not sure yet
-		self.anime_status = bool(parse_series.anime_status(self, g))
-		self.padding = parse_series.episode_padding(self, g)
-		# self.episode = parse_series.episode_number(self, g)
-		parse_series.episode_id(self, g)
 		if self.episode_dict:
 			# TODO: anime status should go here
 			parse_series.padded_episode_number(self, g)
