@@ -191,6 +191,7 @@ class Show(Movie, Globals):
 		self.show_genres = parse_item_out_of_series_dict('genres', self.sonarr_series_dict, self.inherited_series_dict)
 		self.sonarr_api_query = parse_series.episode_dict_from_lookup(self, g)
 		self.anime_status = \
+			self.inherited_series_dict["Anime"] = \
 			(str(parse_item_out_of_series_dict('seriesType',
 			                                   self.sonarr_series_dict,
 			                                   self.inherited_series_dict)).lower() == "anime")
