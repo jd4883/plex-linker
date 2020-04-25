@@ -196,7 +196,7 @@ class Show(Movie, Globals):
 			                                   self.inherited_series_dict)).lower() == "anime")
 		self.padding = self.inherited_series_dict['Padding'] = 3 \
 			if self.anime_status else int(os.environ['EPISODE_PADDING'])
-		self.episode = int(self.inherited_series_dict.get('Episode'))
+		self.episode = self.inherited_series_dict.get('Episode')
 		parse_series.padded_episode_number(self, g)
 		self.episode_id = \
 			self.inherited_series_dict['Episode ID'] = \
