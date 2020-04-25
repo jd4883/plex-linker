@@ -54,21 +54,25 @@ def parse_episode_id_from_series_query(g, show):
 	if not base:
 		return str()
 	for i in base:
-		for k, v in base[i].items():
-			if season(k, v):
-				show.episode = str(show.inherited_series_dict["Episode"]).zfill(
-						show.padding)  # = str(i["episodeNumber"])
-				show.episode_id = show.inherited_series_dict["Episode ID"] = str(i["id"])
-				show.episode_file_id = show.inherited_series_dict["episodeFileId"] = str(i["episodeFileId"])
-				show.season = show.inherited_series_dict["Season"] = str(i["seasonNumber"]).zfill(2)
+		try:
+			for k, v in base[i].items():
+				if season(k, v):
+					show.episode = str(show.inherited_series_dict["Episode"]).zfill(
+							show.padding)
+					show.episode_id = show.inherited_series_dict["Episode ID"] = str(i["id"])
+					show.episode_file_id = show.inherited_series_dict["episodeFileId"] = str(i["episodeFileId"])
+					show.season = show.inherited_series_dict["Season"] = str(i["seasonNumber"]).zfill(2)
+					break
+			if show.series_id:
 				break
-		if show.series_id:
-			break
+		except AttributeError:
+			pass
 	return show.episode_id
 
 
 def season(k, v):
 	return (k == "seasonNumber") and (str(v) == str(0))
+
 
 def parse_episode_file_id_dict(self, g):
 	try:
@@ -76,6 +80,7 @@ def parse_episode_file_id_dict(self, g):
 	except TypeError:
 		g.LOG.error(backend.debug_message(605, g, 0, self.episode_file_id))
 		return dict()
+
 
 def parse_episode_dict(self, g):
 	try:
@@ -92,6 +97,7 @@ def episode_file_id(self, g):
 		result = self.inherited_series_dict['episodeFileId'] = str()
 	g.LOG.info(backend.debug_message(653, g, result))
 	return result
+
 
 def episode_number(self, g):
 	result = dict()
