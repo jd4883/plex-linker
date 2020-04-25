@@ -53,7 +53,8 @@ def parse_episode_id_from_series_query(g, show):
 	base = g.sonarr.get_episodes_by_series_id(show.series_id)
 	show.episode_id = 0
 	for i in base:
-		for k, v in i.items():
+		
+		for k, v in base[i].items():
 			if season(k, v):
 				show.episode = str(show.inherited_series_dict["Episode"]).zfill(
 						show.padding)  # = str(i["episodeNumber"])
