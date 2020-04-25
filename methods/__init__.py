@@ -23,7 +23,7 @@ from plex_linker.compare.ids import validate_tmdbId
 from plex_linker.fetch.series import fetch_link_status
 from plex_linker.gets.movie import get_relative_movies_path
 from plex_linker.gets.path import get_absolute_movie_file_path, get_relative_movie_file_path
-from plex_linker.parser.series import padded_absolute_episode
+from plex_linker.parser.series import padded_absolute_episode, parse_item_out_of_series_dict
 
 
 class Globals:
@@ -209,11 +209,16 @@ class Show(Movie, Globals):
 					pass
 		self.show = series
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
-		self.series_id = self.inherited_series_dict['seriesId'] = \
-			str(self.inherited_series_dict.get("seriesId", self.get_series_id()))
+		self.series_id = parse_item_out_of_series_dict('seriesId', self.sonarr_series_dict, self.inherited_series_dict)
+		self.tvdbId = parse_item_out_of_series_dict('tvdbId', self.sonarr_series_dict, self.inherited_series_dict)
+		self.imdb_id = parse_item_out_of_series_dict('imdbId', self.sonarr_series_dict, self.inherited_series_dict)
+		self.show_genres = parse_item_out_of_series_dict('genres', self.sonarr_series_dict, self.inherited_series_dict)
 		self.sonarr_api_query = parse_series.episode_dict_from_lookup(self, g)
 		self.episode = self.inherited_series_dict.get('Episode')
-		self.anime_status = parse_series.anime_status(self, g)
+		self.anime_status = \
+			(str(parse_item_out_of_series_dict('seriesType',
+			                                   self.sonarr_series_dict,
+			                                   self.inherited_series_dict)).lower() == "anime")
 		self.padding = self.inherited_series_dict['Padding'] = parse_series.episode_padding(self, g)
 		parse_series.padded_episode_number(self, g)
 		self.episode_id = self.inherited_series_dict['Episode ID'] = str(self.inherited_series_dict.get("Episode ID",
@@ -238,13 +243,6 @@ class Show(Movie, Globals):
 		g.LOG.info(backend.debug_message(618, g, self.series_id))
 		
 		self.has_link = self.inherited_series_dict['Has Link'] = self.inherited_series_dict.get('Has Link', bool())
-		
-		self.tvdbId = self.inherited_series_dict['tvdbId'] = parse_series.tvdb_id(self.sonarr_series_dict,
-		                                                                          self.inherited_series_dict, g)
-		self.imdbId = self.inherited_series_dict['imdbId'] = parse_series.imdb_id(self.sonarr_series_dict,
-		                                                                          self.inherited_series_dict, g)
-		self.show_genres = self.inherited_series_dict['Show Genres'] = parse_series.parse_series_genres(
-				self.sonarr_series_dict, self.inherited_series_dict, g)
 		
 		self.season_folder = parse_series.season_folder_from_api(self, g)
 		self.show_root_path = self.inherited_series_dict['Show Root Path'] = self.setShowRootPath(g)

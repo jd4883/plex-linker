@@ -24,9 +24,16 @@ def series_id(sonarr_series_dict, series_dict, show, g):
 
 
 def imdb_id(sonarr_series_dict, series_dict, g):
-	imdb_id = series_dict['imdbId'] = sonarr_series_dict.get('imdbId', 0)
+	imdb_id = parse_item_out_of_series_dict('imdbId', sonarr_series_dict, series_dict)
 	g.LOG.info(backend.debug_message(650, g, imdb_id))
 	return imdb_id
+
+
+def parse_item_out_of_series_dict(environ, sonarr_series_dict, series_dict):
+	for i in sonarr_series_dict:
+		if i.get(str(environ), None):
+			series_dict[environ] = sonarr_series_dict[i][environ]
+			return series_dict[environ]
 
 
 def episode_dict_from_lookup(self, g):
