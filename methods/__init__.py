@@ -183,17 +183,20 @@ class Show(Movie, Globals):
 		self.cleanup_input_data()
 		self.show = series
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
-		self.series_id = parse_item_out_of_series_dict('seriesId', self.sonarr_series_dict, self.inherited_series_dict)
-		self.tvdbId = parse_item_out_of_series_dict('tvdbId', self.sonarr_series_dict, self.inherited_series_dict)
-		self.imdb_id = parse_item_out_of_series_dict('imdbId', self.sonarr_series_dict, self.inherited_series_dict)
+		self.series_id = int(
+				parse_item_out_of_series_dict('seriesId', self.sonarr_series_dict, self.inherited_series_dict))
+		self.tvdbId = int(parse_item_out_of_series_dict('tvdbId', self.sonarr_series_dict, self.inherited_series_dict))
+		self.imdb_id = int(parse_item_out_of_series_dict('imdbId', self.sonarr_series_dict,
+		                                                 self.inherited_series_dict))
 		self.show_genres = parse_item_out_of_series_dict('genres', self.sonarr_series_dict, self.inherited_series_dict)
 		self.sonarr_api_query = parse_series.episode_dict_from_lookup(self, g)
-		self.episode = self.inherited_series_dict.get('Episode')
 		self.anime_status = \
 			(str(parse_item_out_of_series_dict('seriesType',
 			                                   self.sonarr_series_dict,
 			                                   self.inherited_series_dict)).lower() == "anime")
-		self.padding = self.inherited_series_dict['Padding'] = parse_series.episode_padding(self, g)
+		self.padding = self.inherited_series_dict['Padding'] = 3 \
+			if self.anime_status else int(os.environ['EPISODE_PADDING'])
+		self.episode = int(self.inherited_series_dict.get('Episode'))
 		parse_series.padded_episode_number(self, g)
 		self.episode_id = self.inherited_series_dict['Episode ID'] = str(self.inherited_series_dict.get("Episode ID",
 		                                                                                                parse_series.episode_id(

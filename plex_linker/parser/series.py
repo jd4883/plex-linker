@@ -72,13 +72,6 @@ def parse_episode_id_from_series_query(g, show):
 def season(k, v):
 	return (k == "seasonNumber") and (str(v) == str(0))
 
-
-def episode_padding(self, g):
-	result = 3 if self.anime_status else int(os.environ['EPISODE_PADDING'])
-	g.LOG.info(backend.debug_message(621, g, result))
-	return result
-
-
 def parse_episode_file_id_dict(self, g):
 	try:
 		return g.sonarr.get_episode_file_by_episode_id(self.episode_file_id)
