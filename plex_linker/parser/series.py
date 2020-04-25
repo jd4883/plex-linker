@@ -46,12 +46,12 @@ def root_folder(self, g):
 	return root_folder
 
 
-def anime_status(self, g):
-	series_type_set = ('seriesType' in self.sonarr_api_query)
-	anime_status = self.inherited_series_dict['Anime'] = bool(
-			series_type_set and (self.sonarr_api_query[0].get('seriesType', str()) == 'anime'))
+def anime_status(show, g):
+	show.anime_status = False
+	series_type = show.sonarr_api_query.get("seriesType", "standard")
+	if series_type.lower() == "anime".lower():
+		show.anime_status = True
 	g.LOG.info(backend.debug_message(621, g, anime_status))
-	return anime_status
 
 
 def episode_index(self, query = dict()):
