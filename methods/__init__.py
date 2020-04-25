@@ -210,7 +210,7 @@ class Show(Movie, Globals):
 		self.show = series
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
 		self.series_id = self.inherited_series_dict['seriesId'] = \
-			str(self.inherited_series_dict.get("seriesId", self.sonarr_series_dict.get("id")))
+			str(self.inherited_series_dict.get("seriesId", self.get_series_id()))
 		self.sonarr_api_query = parse_series.episode_dict_from_lookup(self, g)
 		self.episode = self.inherited_series_dict.get('Episode')
 		self.anime_status = parse_series.anime_status(self, g)
@@ -267,6 +267,15 @@ class Show(Movie, Globals):
 		self.has_link = self.inherited_series_dict['Has Link'] = relativeMovieFilePath
 		g.sonarr.rescan_series(self.tvdbId)  # rescan movie in case it was picked up since last scan
 		g.sonarr.refresh_series(self.tvdbId)  # to ensure metadata is up to date
+	
+	def get_series_id(self):
+		series_dict = dict()
+		for i in self.sonarr_api_query:
+			result = i.get("id", None)
+			if result:
+				series_dict = result
+				break
+		return series_dict
 	
 	def get_title(self):
 		payload = fetch_series.show_path_string(self.episode_dict['title'] if "title" in self.episode_dict else str())
