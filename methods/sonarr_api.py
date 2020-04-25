@@ -48,9 +48,12 @@ class SonarrAPI(object):
 	
 	def lookup_series(self, series, g):
 		sonarr_series = self.sonarr_api_request(f"{self.host_url}/series/lookup?term={series}")
+		print(sonarr_series)
+		breakpoint()
 		if str(type(sonarr_series)) == "<class 'list'>":
 			sonarr_series = sonarr_series[0]
 		g.LOG.info(messaging.backend.debug_message(625, g, sonarr_series))
+		
 		return sonarr_series
 	
 	def sonarr_api_request(self, url, type = "get", data = dict()):
