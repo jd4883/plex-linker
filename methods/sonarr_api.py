@@ -47,8 +47,12 @@ class SonarrAPI(object):
 		return series_scan
 	
 	def lookup_series(self, series, g):
+		from pprint import pprint
 		sonarr_series = self.sonarr_api_request(f"{self.host_url}/series/lookup?term={series}")
-		print(sonarr_series)
+		pprint(type(sonarr_series))
+		pprint(len(sonarr_series))
+		pprint(sonarr_series)
+		pprint(sonarr_series[len(sonarr_series)])
 		breakpoint()
 		if str(type(sonarr_series)) == "<class 'list'>":
 			sonarr_series = sonarr_series[0]
