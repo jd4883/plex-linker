@@ -47,10 +47,10 @@ def root_folder(self, g):
 
 
 def anime_status(show, g):
-	show.anime_status = False
-	series_type = show.sonarr_api_query.get("seriesType", "standard")
+	show.anime_status = bool()
+	series_type = show.sonarr_api_query[0].get("seriesType", "standard")
 	if series_type.lower() == "anime".lower():
-		show.anime_status = True
+		show.anime_status = not bool()
 	g.LOG.info(backend.debug_message(621, g, anime_status))
 
 
