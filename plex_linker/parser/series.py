@@ -151,12 +151,10 @@ def relative_show_path(self, g):
 
 
 def padded_episode_number(self, g, result = str()):
-	if isinstance(self.episode, list):
+	if str(self.episode) == "<class 'list'>":
 		self.parsed_episode = "-".join([str(i).zfill(self.padding) for i in self.episode])
-	elif isinstance(self.episode, int):
+	elif str(self.episode) == "<class 'int'>":
 		self.parsed_episode = str(self.episode).zfill(self.padding)
-	elif 'Parsed Absolute Episode' in self.inherited_series_dict:
-		del self.inherited_series_dict['Parsed Absolute Episode']
 	g.LOG.info(backend.debug_message(634, g, result))
 
 

@@ -269,17 +269,8 @@ class Show(Movie, Globals):
 				except KeyError:
 					pass
 	
-	def get_series_id(self):
-		series_dict = dict()
-		for i in self.sonarr_series_dict:
-			result = i.get("id", None)
-			if result:
-				series_dict = result
-				break
-		return series_dict
-	
 	def get_title(self):
-		payload = fetch_series.show_path_string(self.episode_dict['title'] if "title" in self.episode_dict else str())
+		payload = fetch_series.show_path_string(self.episode_dict.get('title', str()))
 		return payload
 	
 	def setShowRootPath(self, g):
