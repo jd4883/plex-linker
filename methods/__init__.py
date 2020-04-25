@@ -270,7 +270,7 @@ class Show(Movie, Globals):
 	
 	def get_series_id(self):
 		series_dict = dict()
-		for i in self.sonarr_api_query:
+		for i in self.sonarr_series_dict:
 			result = i.get("id", None)
 			if result:
 				series_dict = result
