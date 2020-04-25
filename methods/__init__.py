@@ -66,8 +66,8 @@ class SeasonsListSchema(Schema):
 
 
 class RatingsSchema(Schema):
-	votes = fields.int()
-	value = fields.int()
+	votes = fields.Int()
+	value = fields.Int()
 
 
 class ShowLookupSchema(Schema):
