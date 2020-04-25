@@ -50,7 +50,7 @@ def episode_id(self, g):
 
 
 def parse_episode_id_from_series_query(g, show):
-	base = g.sonarr.get_episodes_by_series_id(int(show.series_id))
+	base = g.sonarr.get_episodes_by_series_id(show.series_id)
 	print(f"BASE: {base}")
 	show.episode_id = 0
 	breakpoint()
