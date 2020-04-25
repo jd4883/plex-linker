@@ -30,7 +30,7 @@ def imdb_id(sonarr_series_dict, series_dict, g):
 
 
 def episode_dict_from_lookup(self, g):
-	query = episode_index(self, self.sonarr_series_dict) if self.sonarr_series_dict else dict()
+	query = episode_index(self, self.sonarr_series_dict)
 	g.LOG.info(backend.debug_message(626, g, query))
 	return query
 
@@ -48,9 +48,13 @@ def root_folder(self, g):
 
 def anime_status(show, g):
 	show.anime_status = bool()
-	series_type = show.sonarr_api_query.get("seriesType", "standard")
-	if series_type.lower() == "anime".lower():
-		show.anime_status = not bool()
+	for i in show.sonarr_api_query:
+		result = i.get("seriesType", None)
+		if result:
+			series_type = result
+			if series_type.lower() == "anime".lower():
+				show.anime_status = not bool()
+			break
 	g.LOG.info(backend.debug_message(621, g, anime_status))
 
 
