@@ -1,5 +1,7 @@
 from os.path import abspath
 
+from marshmallow import fields, pprint, Schema
+
 import methods.sonarr_api
 import methods.sonarr_class_methods
 import plex_linker.cleanup.movie as cleanup_movie
@@ -53,8 +55,52 @@ class Movies:
 		self.relative_movies_path = get_relative_movies_path(self)
 
 
-# class MovieSchema(Schema):
-# 	unparsed_title = fields.Function()
+class ImageSchema(Schema):
+	coverType = fields.Str()
+	url = fields.Url()
+
+
+class SeasonsListSchema(Schema):
+	seasonNumber = fields.Int()
+	monitored = fields.Bool()
+
+
+class RatingsSchema(Schema):
+	votes = fields.int()
+	value = fields.int()
+
+
+class ShowLookupSchema(Schema):
+	name = fields.Str()
+	sortTitle = fields.Str()
+	id = fields.Int()
+	status = fields.Str()
+	overview = fields.Str()
+	network = fields.Str()
+	airTime = fields.Str()
+	images = fields.List(ImageSchema())
+	remotePoster = fields.Url()
+	seasons = fields.List(SeasonsListSchema())
+	year = fields.Int()  # datetime object for year instead
+	profileId = fields.Int()
+	seasonFolder = fields.Bool()
+	monitored = fields.Bool()
+	useSceneNumbering = fields.Bool()
+	runtime = fields.Int()
+	tvdbId = fields.Int()
+	tvRageId = fields.Int()
+	tvMazeId = fields.Int()
+	firstAired = fields.DateTime()
+	seriesType = fields.Str()
+	cleanTitle = fields.Str()
+	imdbId = fields.Str()
+	titleSlug = fields.Str()
+	certification: fields.Str()
+	genres = fields.List(fields.Str())
+	tags = fields.List(fields.Str())
+	added = fields.Str()
+	ratings = fields.Nested(RatingsSchema())
+	qualityProfileId = fields.Int()
 
 
 # parent_dict = fields.Movie.parent_dict()
@@ -183,6 +229,10 @@ class Show(Movie, Globals):
 		self.cleanup_input_data()
 		self.show = series
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
+		schema = ShowLookupSchema()
+		result = schema.dump(self.sonarr_series_dict)
+		pprint(result, indent = 4)
+		breakpoint()
 		series_id = parse_item_out_of_series_dict('seriesId', self.sonarr_series_dict, self.inherited_series_dict)
 		self.series_id = self.inherited_series_dict.get("Series ID") if not series_id else series_id
 		self.tvdbId = parse_item_out_of_series_dict('tvdbId', self.sonarr_series_dict, self.inherited_series_dict)
@@ -217,20 +267,20 @@ class Show(Movie, Globals):
 		                                                                                                     '\d+\)$',
 		                                                                                                     "",
 		                                                                                                     self.get_title())))
+		### TODO: fix title parsing so its consistent
+		# * do a string concat of all components so its easier to read
+		# * general ease of readability cleanup
+		# * DB integration will make a world of a difference here
 		g.LOG.info(backend.debug_message(618, g, self.series_id))
 		
 		self.has_link = self.inherited_series_dict['Has Link'] = self.inherited_series_dict.get('Has Link', bool())
 		
 		self.season_folder = parse_series.season_folder_from_api(self, g)
 		self.show_root_path = self.inherited_series_dict['Show Root Path'] = self.setShowRootPath(g)
-		# self.show_root_path = parse_series.show_root_folder(self, g)
 		self.relative_show_path = self.inherited_series_dict['Relative Show Path'] = parse_series.relative_show_path(
 				self, g)
 		self.episode_file_id = self.inherited_series_dict['episodeFileId'] = parse_series.episode_file_id(self, g)
 		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)
-		self.link_status = self.inherited_series_dict['Link Status'] = fetch_series.symlink_status(self, g)
-		# self.season = parse_series.season_from_sonarr(self, g)
-		
 		self.parsed_episode_title = self.inherited_series_dict['Parsed Episode Title'] = \
 			parse_series.compiled_episode_title(self, g)
 		self.relative_show_file_path = self.inherited_series_dict['Parsed Relative Show File Path'] = \
@@ -239,6 +289,7 @@ class Show(Movie, Globals):
 		relativeMovieFilePath = fetch_link_status(self,
 		                                          self.episode_file_dict,
 		                                          self.relative_movie_file_path) if self.episode_file_dict else bool()
+		# TODO: this spot seems to not parse out link status correctly
 		self.has_link = self.inherited_series_dict['Has Link'] = relativeMovieFilePath
 		g.sonarr.rescan_series(self.tvdbId)  # rescan movie in case it was picked up since last scan
 		g.sonarr.refresh_series(self.tvdbId)  # to ensure metadata is up to date
