@@ -5,34 +5,16 @@ from messaging import backend as backend
 from plex_linker.fetch import series as fetch_series
 
 
-def parse_series_genres(sonarr_series_dict, series_dict, g):
-	series_genres = series_dict['Show Genres'] = sonarr_series_dict.get('genres', list())
-	g.LOG.info(backend.debug_message(649, g, series_genres))
-	return series_genres
-
-
-def tvdb_id(sonarr_series_dict, series_dict, g):
-	tvdb_id = series_dict['tvdbId'] = sonarr_series_dict.get('tvdbId', 0)
-	g.LOG.info(backend.debug_message(618, g, tvdb_id))
-	return str(tvdb_id)
-
-
 def series_id(sonarr_series_dict, series_dict, show, g):
 	series_id = series_dict['seriesId'] = sonarr_series_dict.get('id', g.sonarr.lookup_series(show, g).get("id", 0))
 	g.LOG.info(backend.debug_message(618, g, series_id))
 	return series_id
 
 
-def imdb_id(sonarr_series_dict, series_dict, g):
-	imdb_id = parse_item_out_of_series_dict('imdbId', sonarr_series_dict, series_dict)
-	g.LOG.info(backend.debug_message(650, g, imdb_id))
-	return imdb_id
-
-
 def parse_item_out_of_series_dict(environ, sonarr_series_dict, series_dict):
-	for i in sonarr_series_dict:
-		if i.get(str(environ), None):
-			series_dict[environ] = sonarr_series_dict[i][environ]
+	for index, i in enumerate(sonarr_series_dict):
+		if str(i).lower() == str(environ).lower():
+			series_dict[environ] = sonarr_series_dict[index][i]
 			return series_dict[environ]
 
 
@@ -51,18 +33,6 @@ def root_folder(self, g):
 			root_folder = fetch_series.show_path_string(f"{item}{self.show}")
 			break
 	return root_folder
-
-
-def anime_status(show, g):
-	show.anime_status = bool()
-	for i in show.sonarr_api_query:
-		result = i.get("seriesType", None)
-		if result:
-			series_type = result
-			if series_type.lower() == "anime".lower():
-				show.anime_status = not bool()
-			break
-	g.LOG.info(backend.debug_message(621, g, anime_status))
 
 
 def episode_index(self, query = dict()):
@@ -86,10 +56,10 @@ def parse_episode_id_from_series_query(g, show):
 		for k, v in i.items():
 			if season(k, v):
 				show.episode = str(show.inherited_series_dict["Episode"]).zfill(
-					show.padding)  # = str(i["episodeNumber"])
+						show.padding)  # = str(i["episodeNumber"])
 				show.episode_id = show.inherited_series_dict["Episode ID"] = str(i["id"])
 				show.episode_file_id = show.inherited_series_dict["episodeFileId"] = str(i["episodeFileId"])
-				show.series_id = show.inherited_series_dict["Season"] = str(i["seasonNumber"]).zfill(2)
+				show.season = show.inherited_series_dict["Season"] = str(i["seasonNumber"]).zfill(2)
 				break
 		if show.series_id:
 			break
