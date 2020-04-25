@@ -126,19 +126,19 @@ class Movie(Movies, Globals):
 	
 	def get_unparsed_movie_title(self, g):
 		result = self.radarr_dictionary.get('title', str())
-		g.LOG.info(backend.debug_message(643, g, result))
+		g.LOG.debug(backend.debug_message(643, g, result))
 		return result
 	
 	def init_absolute_movie_path(self, g):
 		result = self.movie_dictionary['Absolute Movie Path'] = "/".join((os.environ['DOCKER_MEDIA_PATH'],
 		                                                                  self.relative_movie_path))
-		g.LOG.info(backend.debug_message(614, g, str(result)))
+		g.LOG.debug(backend.debug_message(614, g, str(result)))
 		return result
 	
 	def init_relative_movie_path(self, g, result = str()):
 		if 'path' in self.radarr_dictionary:
 			result = self.movie_dictionary['Relative Movie Path'] = str(self.radarr_dictionary['path'])[1:]
-		g.LOG.info(backend.debug_message(617, g, result))
+		g.LOG.debug(backend.debug_message(617, g, result))
 		return result
 	
 	# def parse_tmdbid(self, g):
