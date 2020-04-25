@@ -1,6 +1,6 @@
 from os.path import abspath
 
-from marshmallow import fields, pprint, Schema
+from marshmallow import fields, Schema
 
 import methods.sonarr_api
 import methods.sonarr_class_methods
@@ -230,8 +230,7 @@ class Show(Movie, Globals):
 		self.show = series
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
 		schema = ShowLookupSchema()
-		result = schema.dump(self.sonarr_series_dict)
-		pprint(result, indent = 4)
+		print(f"SCHEMA DUMP TEST: {schema.dump(self.sonarr_series_dict)}")
 		series_id = parse_item_out_of_series_dict('seriesId', self.sonarr_series_dict, self.inherited_series_dict)
 		self.series_id = self.inherited_series_dict.get("Series ID") if not series_id else series_id
 		self.tvdbId = parse_item_out_of_series_dict('tvdbId', self.sonarr_series_dict, self.inherited_series_dict)
