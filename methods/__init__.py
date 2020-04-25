@@ -78,9 +78,9 @@ class ShowLookupSchema(Schema):
 	overview = fields.Str()
 	network = fields.Str()
 	airTime = fields.Str()
-	images = fields.List(ImageSchema())
+	images = fields.List(fields.Nested(ImageSchema()))
 	remotePoster = fields.Url()
-	seasons = fields.List(SeasonsListSchema())
+	seasons = fields.List(fields.Nested(SeasonsListSchema()))
 	year = fields.Int()  # datetime object for year instead
 	profileId = fields.Int()
 	seasonFolder = fields.Bool()
