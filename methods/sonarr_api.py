@@ -47,8 +47,8 @@ class SonarrAPI(object):
 		return series_scan
 	
 	def lookup_series(self, series, g):
-		base = self.sonarr_api_request(f"{self.host_url}/series/lookup?term={series}")
-		sonarr_series = dict((key, val) for k in base for key, val in k.items())
+		sonarr_series = self.sonarr_api_request(f"{self.host_url}/series/lookup?term={series}")
+		
 		# pprint(type(sonarr_series))
 		# pprint(len(sonarr_series))
 		# pprint(sonarr_series)
