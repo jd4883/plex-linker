@@ -66,7 +66,7 @@ def parse_episode_id_from_series_query(g, show):
 			if show.series_id:
 				break
 		except AttributeError:
-			pass
+			show.episode_id = int()
 	return show.episode_id
 
 
