@@ -13,10 +13,8 @@ if __name__ == "__main__":
 	
 	# TODO: improve how we look at items not in the library and make more efficient in calculations
 	lock_path = f"{os.path.dirname(os.path.realpath(__file__))}/pid.lock"
-	if os.path.exists(lock_path):
-		print("LOCK IN PLACE CRON JOB ALREADY RUNNING")
-	else:
-		init_lock = Path(lock_path).touch()
+	if not os.path.exists(lock_path):
+		Path(lock_path).touch()
 		g = media.Globals()
 		master_dictionary = media.Movies(str(os.path.abspath(get_docker_media_path(g))))
 		parse_movies(g)
@@ -24,8 +22,6 @@ if __name__ == "__main__":
 		
 		"""
 		RUNS CLEANUP METHODS
-		* puts process to sleep but denies requested cron jobs
-		* waits 15 minutes before running through again
 		** would like to remove all non-tracked links present in the media directories
 		"""
 		

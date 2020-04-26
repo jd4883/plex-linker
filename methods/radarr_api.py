@@ -38,15 +38,16 @@ class RadarrAPI(object):
 				break
 		return movie_lookup
 	
-	def radarr_api_request(self, url, type = "get", data = dict()):
+	def radarr_api_request(self, url, request_type = "get", data = dict()):
 		backoff_timer = 2
-		if type not in ["post", "put", "delete"]:
+		request_payload = dict()
+		if request_type not in ["post", "put", "delete"]:
 			request_payload = requests.get(url, headers = { 'X-Api-Key': self.api_key }, json = data)
-		elif type == "put":
+		elif request_type == "put":
 			request_payload = requests.put(url, headers = { 'X-Api-Key': self.api_key }, json = data)
-		elif type == "post":
+		elif request_type == "post":
 			request_payload = requests.post(url, headers = { 'X-Api-Key': self.api_key }, json = data)
-		elif type == "delete":
+		elif request_type == "delete":
 			request_payload = requests.delete(url, headers = { 'X-Api-Key': self.api_key }, json = data)
 		time.sleep(backoff_timer)
 		return request_payload.json()

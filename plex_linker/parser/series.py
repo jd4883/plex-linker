@@ -5,12 +5,6 @@ from messaging import backend as backend
 from plex_linker.fetch import series as fetch_series
 
 
-def series_id(sonarr_series_dict, series_dict, show, g):
-	series_id = series_dict['seriesId'] = sonarr_series_dict.get('id', g.sonarr.lookup_series(show, g).get("id", 0))
-	g.LOG.info(backend.debug_message(618, g, series_id))
-	return series_id
-
-
 def parse_item_out_of_series_dict(environ, sonarr_series_dict, series_dict):
 	for index, i in enumerate(sonarr_series_dict):
 		if str(i).lower() == str(environ).lower():

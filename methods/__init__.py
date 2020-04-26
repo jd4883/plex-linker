@@ -260,7 +260,6 @@ class Show(Movie, Globals):
 		self.sortTitle = None
 		self.status = "continuing"
 		self.tags = None
-		self.tags = None
 		self.title = series
 		self.titleSlug = None
 		self.tvdbId = None
@@ -297,7 +296,7 @@ class Show(Movie, Globals):
 		# * do a string concat of all components so its easier to read
 		# * general ease of readability cleanup
 		# * DB integration will make a world of a difference here
-		g.LOG.info(backend.debug_message(618, g, self.id))
+		g.LOG.info(backend.debug_message(618, g, self.tvdbId))
 		
 		self.has_link = self.inherited_series_dict['Has Link'] = self.inherited_series_dict.get('Has Link', bool())
 		
