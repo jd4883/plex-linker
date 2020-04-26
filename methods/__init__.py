@@ -248,10 +248,9 @@ class Show(Movie, Globals):
 		self.tags = None
 		self.title = series
 		self.titleSlug = None
-		self.tvDbEpisodeId = None
 		self.tvdbId = int
-		self.tvMazeId = None
-		self.tvRageId = None
+		self.tvMazeId = int
+		self.tvRageId = int
 		self.useSceneNumbering = None
 		self.year = None
 	
