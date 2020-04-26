@@ -335,4 +335,6 @@ class Show(Movie, Globals):
 
 def init_show(show, g):
 	print("TESTING HERE")
-	show = ShowLookupSchema().load(iter(g.sonarr.lookup_series(show.show, g)[0]).__next__())
+	lookup = g.sonarr.lookup_series(show.show, g)[0]
+	ShowLookupSchema().load(lookup)
+	ShowLookupSchema().dump(lookup)
