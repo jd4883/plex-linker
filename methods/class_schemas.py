@@ -1,3 +1,5 @@
+import datetime
+
 from marshmallow import fields, post_load, Schema
 
 from methods import Show
@@ -6,6 +8,8 @@ from methods import Show
 TODO:
 update all raw entries to be typed with defaults
 """
+
+
 class ShowLookupSchema(Schema):
 	added = fields.Raw()
 	airTime = fields.Str()
@@ -18,16 +22,16 @@ class ShowLookupSchema(Schema):
 	imdbId = fields.Str(required = True)
 	languageProfileId = fields.Int()
 	lastInfoSync = fields.Str()
-	monitored = fields.Bool(required = False, default = False)
+	monitored = fields.Bool(default = False)
 	network = fields.Str()
 	overview = fields.Str()
-	path = fields.Str()  # could make this an API call?
+	path = fields.Str()
 	profileId = fields.Int()
 	qualityProfileId = fields.Int()
 	ratings = fields.Raw()
 	remotePoster = fields.Str()
-	runtime = fields.Int(required = False, default = 20)
-	seasonCount = fields.Int(required = False, default = 1)
+	runtime = fields.Int(default = 20)
+	seasonCount = fields.Int(default = 1)
 	seasonFolder = fields.Bool(default = True)
 	seasons = fields.Raw(default = list())
 	seriesType = fields.Str(required = True, default = "anime")
@@ -40,7 +44,7 @@ class ShowLookupSchema(Schema):
 	tvMazeId = fields.Int()
 	tvRageId = fields.Int()
 	useSceneNumbering = fields.Bool(default = False)
-	year = fields.Int()
+	year = fields.Int(default = datetime.datetime.year)
 	
 	@post_load
 	def make_show(self, data, **kwargs):
