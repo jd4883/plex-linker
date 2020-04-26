@@ -199,10 +199,9 @@ class Show(Movie, Globals):
 		self.cleanup_input_data()
 		self.episode_dict = None
 		self.episode_file_dict = None
-		self.episode_file_id = None
+		self.episodeFileId = None
 		self.episode_id = None
 		self.episode_title = None
-		self.episodeFileId = None
 		self.episodeNumber = None
 		self.firstAired = None
 		self.genres = None
@@ -227,34 +226,30 @@ class Show(Movie, Globals):
 		self.relative_show_file_path = None
 		self.relative_show_path = None
 		self.remotePoster = str
-		self.runtime = None
-		self.sceneEpisodeNumber = None
+		self.runtime = int
+		self.sceneEpisodeNumber = bool
 		self.sceneSeasonNumber = None
 		self.season = None
-		self.seasons = None
-		self.season_folder = None
-		self.seasonCount = None
-		self.seasonFolder = True
+		self.seasonCount = int
+		self.seasonFolder = bool
 		self.seasonNumber = 0
 		self.seasons = None
-		self.seriesId = None
-		self.seriesType = "anime"
+		self.seriesId = int
+		self.seriesType = str
 		self.show = series
 		self.show_root_path = None
 		self.sonarr_api_query = None
 		self.sonarr_series_dict = None
 		self.sortTitle = None
 		self.status = str
-		self.tags = None
+		self.tags = list
 		self.title = series
-		self.titleSlug = None
+		self.titleSlug = str
 		self.tvdbId = int
 		self.tvMazeId = int
 		self.tvRageId = int
-		self.useSceneNumbering = None
+		self.useSceneNumbering = bool
 		self.year = int
-	
-	# datetime.datetime.year
 	
 	def init(self, g):
 		self.anime_status = bool("anime" in self.seriesType)
@@ -283,11 +278,11 @@ class Show(Movie, Globals):
 		# * DB integration will make a world of a difference here
 		g.LOG.info(backend.debug_message(618, g, self.tvdbId))
 		self.has_link = self.inherited_series_dict['Has Link'] = self.inherited_series_dict.get('Has Link', bool())
-		self.season_folder = parse_series.season_folder_from_api(self, g)
+		self.seasonFolder = parse_series.season_folder_from_api(self, g)
 		self.show_root_path = self.inherited_series_dict['Show Root Path'] = self.setShowRootPath(g)
 		self.relative_show_path = self.inherited_series_dict['Relative Show Path'] = parse_series.relative_show_path(
 				self, g)
-		self.episode_file_id = self.inherited_series_dict['episodeFileId'] = parse_series.episode_file_id(self, g)
+		self.episodeFileId = self.inherited_series_dict['episodeFileId'] = parse_series.episode_file_id(self, g)
 		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)
 		self.parsed_episode_title = self.inherited_series_dict['Parsed Episode Title'] = \
 			parse_series.compiled_episode_title(self, g)

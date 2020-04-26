@@ -19,7 +19,7 @@ def root_folder(self, g):
 	folder_root = f"{os.environ['SONARR_DEFAULT_ROOT']}/{self.show}"
 	for item in g.sonarr_root_folders:
 		item = fetch_series.show_path_string(str(item['path']))
-		potential = fetch_series.show_path_string(f"{item}{self.show}/{self.season_folder}")
+		potential = fetch_series.show_path_string(f"{item}{self.show}/{self.seasonFolder}")
 		if os.path.exists(potential) and os.path.isdir(potential):
 			folder_root = fetch_series.show_path_string(f"{item}{self.show}")
 			break
@@ -60,7 +60,7 @@ def parse_episode_id_from_series_query(g, show):
 					show.episode = str(show.inherited_series_dict["Episode"]).zfill(
 							show.padding)
 					show.episode_id = show.inherited_series_dict["Episode ID"] = str(i["id"])
-					show.episode_file_id = show.inherited_series_dict["episodeFileId"] = str(i["episodeFileId"])
+					show.episodeFileId = show.inherited_series_dict["episodeFileId"] = str(i["episodeFileId"])
 					show.season = show.inherited_series_dict["Season"] = str(i["seasonNumber"]).zfill(2)
 					break
 			break
@@ -75,9 +75,9 @@ def season(k, v):
 
 def parse_episode_file_id_dict(self, g):
 	try:
-		return g.sonarr.get_episode_file_by_episode_id(self.episode_file_id)
+		return g.sonarr.get_episode_file_by_episode_id(self.episodeFileId)
 	except TypeError:
-		g.LOG.error(backend.debug_message(605, g, 0, self.episode_file_id))
+		g.LOG.error(backend.debug_message(605, g, 0, self.episodeFileId))
 		return dict()
 
 
@@ -116,14 +116,14 @@ def show_root_folder(self, g):
 		self.inherited_series_dict['Show Root Path'] = \
 		fetch_series.show_path_string(self.episode_dict.get('path',
 		                                                    fetch_series.show_path_string(root_folder(self, g))))
-	path = os.path.join(fetch_series.show_path_string(os.environ['DOCKER_MEDIA_PATH']), result, self.season_folder)
+	path = os.path.join(fetch_series.show_path_string(os.environ['DOCKER_MEDIA_PATH']), result, self.seasonFolder)
 	os.makedirs(path, exist_ok = True)
 	g.LOG.debug(backend.debug_message(632, g, result))
 	return result
 
 
 def relative_show_path(self, g):
-	result = self.inherited_series_dict['Relative Show Path'] = f"{self.show_root_path}/{self.season_folder}"
+	result = self.inherited_series_dict['Relative Show Path'] = f"{self.show_root_path}/{self.seasonFolder}"
 	g.LOG.debug(backend.debug_message(633, g, result))
 	return str(result)
 
@@ -152,7 +152,7 @@ def padded_absolute_episode(self, g):
 
 
 def compiled_episode_title(self, g):
-	root = "/".join([self.show_root_path, self.season_folder, self.show])
+	root = "/".join([self.show_root_path, self.seasonFolder, self.show])
 	parsed_title = f"{root} - S{self.season}E{self.parsed_episode} - {self.episode_title}"
 	result = self.inherited_series_dict['Parsed Episode Title'] = re.sub('\(\d+\)$', "",
 	                                                                     fetch_series.show_path_string(parsed_title))
