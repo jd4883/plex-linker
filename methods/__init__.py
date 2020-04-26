@@ -233,11 +233,11 @@ class Show(Movie, Globals):
 		self.cleanup_input_data()
 		self.show = series
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
-		schema = ShowParentLookupSchema()
-		parsed_version = schema.load(self.sonarr_series_dict)
-		from pprint import pprint
-		pprint(parsed_version)
-		breakpoint()
+		# schema = ShowParentLookupSchema()
+		# parsed_version = schema.load(self.sonarr_series_dict)
+		# from pprint import pprint
+		# pprint(parsed_version)
+		# breakpoint()
 		series_id = parse_item_out_of_series_dict('seriesId', self.sonarr_series_dict, self.inherited_series_dict)
 		self.series_id = self.inherited_series_dict.get("Series ID") if not series_id else series_id
 		self.tvdbId = parse_item_out_of_series_dict('tvdbId', self.sonarr_series_dict, self.inherited_series_dict)
