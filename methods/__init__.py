@@ -101,7 +101,7 @@ class Movie(Movies, Globals):
 				bool(self.radarr_dictionary['monitored']) if 'monitored' in self.radarr_dictionary else True
 		except TypeError:
 			self.monitored = self.movie_dictionary['Monitored'] = bool(True)
-		g.LOG.info(backend.debug_message(647, g, self.monitored))
+		g.LOG.debug(backend.debug_message(647, g, self.monitored))
 		
 		self.year = self.movie_dictionary['Year'] = \
 			int(self.radarr_dictionary['inCinemas'][0:4]) if 'inCinemas' in self.radarr_dictionary \

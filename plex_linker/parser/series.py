@@ -48,6 +48,7 @@ def parse_episode_id_from_series_query(g, show):
 		try:
 			for k, v in base[i].items():
 				if season(k, v):
+					# TODO: maybe try this each time and check the parsed out values?
 					from pprint import pprint
 					pprint(EpisodeBySeriesIdSchema().load(i, id = show.episode_id))
 					breakpoint()
@@ -57,8 +58,7 @@ def parse_episode_id_from_series_query(g, show):
 					show.episode_file_id = show.inherited_series_dict["episodeFileId"] = str(i["episodeFileId"])
 					show.season = show.inherited_series_dict["Season"] = str(i["seasonNumber"]).zfill(2)
 					break
-			if show.id:
-				break
+			break
 		except AttributeError:
 			show.episode_id = int()
 	return show.episode_id
@@ -113,13 +113,13 @@ def show_root_folder(self, g):
 		                                                    fetch_series.show_path_string(root_folder(self, g))))
 	path = os.path.join(fetch_series.show_path_string(os.environ['DOCKER_MEDIA_PATH']), result, self.season_folder)
 	os.makedirs(path, exist_ok = True)
-	g.LOG.info(backend.debug_message(632, g, result))
+	g.LOG.debug(backend.debug_message(632, g, result))
 	return result
 
 
 def relative_show_path(self, g):
 	result = self.inherited_series_dict['Relative Show Path'] = f"{self.show_root_path}/{self.season_folder}"
-	g.LOG.info(backend.debug_message(633, g, result))
+	g.LOG.debug(backend.debug_message(633, g, result))
 	return str(result)
 
 
