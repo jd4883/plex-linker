@@ -230,7 +230,6 @@ class Show(Movie, Globals):
 		self.cleanup_input_data()
 		self.show = series
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
-		lookup_schema = ShowLookupSchema()
 		from pprint import pprint
 		self.name = series
 		self.sortTitle = None
@@ -268,7 +267,7 @@ class Show(Movie, Globals):
 		pprint(f"SCHEMA:\t{schema}")
 		# dump = schema.dump(data)
 		# pprint(f"DUMP VERSION:\t{dump}")
-		load = lookup_schema.from_dict(data)
+		load = schema.from_dict(data)
 		pprint(f"LOAD VERSION:\t{load}")
 		
 		breakpoint()
