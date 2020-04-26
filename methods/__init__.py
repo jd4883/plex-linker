@@ -231,6 +231,7 @@ class Show(Movie, Globals):
 		self.sceneEpisodeNumber = None
 		self.sceneSeasonNumber = None
 		self.season = None
+		self.seasons = None
 		self.season_folder = None
 		self.seasonCount = None
 		self.seasonFolder = True
