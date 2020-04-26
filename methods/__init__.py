@@ -229,11 +229,11 @@ class Show(Movie, Globals):
 		# schema = ShowLookupSchema()
 		from pprint import pprint
 		data = self.sonarr_series_dict[0]
-		schema = Schema.from_dict(data)
+		schema = Schema.from_dict(data, many = True)
 		pprint(f"SCHEMA:\t{schema}")
 		# dump = schema.dump(data)
 		# pprint(f"DUMP VERSION:\t{dump}")
-		load = schema.load(data)
+		load = schema().load(data)
 		pprint(f"LOAD VERSION:\t{load}")
 		
 		breakpoint()
