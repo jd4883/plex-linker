@@ -28,8 +28,8 @@ def init_show(show, g):
 	schema = ShowLookupSchema()
 	print(schema)
 	schema.from_dict(lookup)
-	schema.dump(show)
-	show.id = show.seriesId = lookup["id"]
+	# schema.dump(show)
+	# show.id = show.seriesId = lookup["id"]
 	print(show.id)
 	print(show.seriesId)
 	print(show.title)
