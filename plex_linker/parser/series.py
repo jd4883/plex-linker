@@ -6,6 +6,7 @@ from plex_linker.fetch import series as fetch_series
 
 
 def episode_dict_from_lookup(self, g):
+	# TODO: should get a new API call here instead of series_dict
 	query = episode_index(self, self.sonarr_series_dict)
 	g.LOG.info(backend.debug_message(626, g, query))
 	return query

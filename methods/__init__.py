@@ -212,14 +212,14 @@ class Show(Movie, Globals):
 		self.tvRageId = None
 		self.useSceneNumbering = False
 		self.year = datetime.datetime.year
-		ShowLookupSchema().load(self.sonarr_series_dict[0])
-		self.anime_status = bool(self.seriesType.lower() == "anime")
-		self.padding = \
-			self.inherited_series_dict['Padding'] = 3 if self.anime_status else int(os.environ['EPISODE_PADDING'])
+		self.episode = self.inherited_series_dict.get('Episode')
+		
+		ShowLookupSchema().load(self.sonarr_series_dict, many = True)
+		self.anime_status = bool("anime" in self.seriesType)
+		self.padding = 3 if self.anime_status else int(os.environ['EPISODE_PADDING'])
+		parse_series.padded_episode_number(self, g)
 		
 		self.sonarr_api_query = parse_series.episode_dict_from_lookup(self, g)
-		self.episode = self.inherited_series_dict.get('Episode')
-		parse_series.padded_episode_number(self, g)
 		self.episode_id = \
 			self.inherited_series_dict['Episode ID'] = \
 			self.inherited_series_dict.get("Episode ID", parse_series.episode_id(self, g))

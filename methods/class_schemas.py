@@ -1,32 +1,6 @@
-#!/usr/bin/env python3
 from marshmallow import fields, Schema
 
 
-# noinspection PyUnusedName,PyUnusedName
-class ImageSchema(Schema):
-	coverType = fields.Str()
-	url = fields.Url()
-
-
-# noinspection PyUnusedName,PyUnusedName
-class SeasonsListSchema(Schema):
-	seasonNumber = fields.Int()
-	monitored = fields.Bool()
-
-
-# noinspection PyUnusedName,PyUnusedName
-class RatingsSchema(Schema):
-	votes = fields.Int()
-	value = fields.Int()
-
-
-# noinspection PyUnusedName,PyUnusedName,PyUnusedName,PyUnusedName,PyUnusedName,PyUnusedName,PyUnusedName,
-# PyUnusedName,PyUnusedName
-# noinspection PyUnusedName,PyUnusedName,PyUnusedName,PyUnusedName,PyUnusedName,PyUnusedName,PyUnusedName,
-# PyUnusedName,PyUnusedName
-# noinspection PyUnusedName,PyUnusedName,PyUnusedName,PyUnusedName,PyUnusedName,PyUnusedName,PyUnusedName,
-# PyUnusedName,PyUnusedName
-# noinspection PyUnusedName,PyUnusedName,PyUnusedName,PyUnusedName
 class ShowLookupSchema(Schema):
 	added = fields.Str()
 	airTime = fields.Str()
@@ -35,7 +9,7 @@ class ShowLookupSchema(Schema):
 	firstAired = fields.DateTime()
 	genres = fields.List(fields.Str())
 	id = fields.Int()
-	images = fields.List(fields.Nested(ImageSchema()))
+	images = fields.Raw()
 	imdbId = fields.Str()
 	languageProfileId = fields.Int()
 	lastInfoSync = fields.Str()
@@ -45,12 +19,12 @@ class ShowLookupSchema(Schema):
 	path = fields.Str()
 	profileId = fields.Int()
 	qualityProfileId = fields.Int()
-	ratings = fields.Nested(RatingsSchema())
+	ratings = fields.Raw()
 	remotePoster = fields.Url()
 	runtime = fields.Int()
 	seasonCount = fields.Int()
 	seasonFolder = fields.Bool()
-	seasons = fields.Raw()  # fields.List(fields.Nested(SeasonsListSchema()))
+	seasons = fields.Raw()
 	seriesType = fields.Str()
 	sortTitle = fields.Str()
 	status = fields.Str()
