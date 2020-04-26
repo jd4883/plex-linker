@@ -1,5 +1,7 @@
-from marshmallow import fields, Schema, post_load
+from marshmallow import fields, post_load, Schema
+
 from methods import Show
+
 
 class ShowLookupSchema(Schema):
 	added = fields.Str()
@@ -8,15 +10,15 @@ class ShowLookupSchema(Schema):
 	cleanTitle = fields.Str()
 	firstAired = fields.DateTime()
 	genres = fields.List(fields.Str())
-	id = fields.Int()
+	id = fields.Int(required = True)
 	images = fields.Raw()
-	imdbId = fields.Str()
+	imdbId = fields.Str(required = True)
 	languageProfileId = fields.Int()
 	lastInfoSync = fields.Str()
-	monitored = fields.Bool()
+	monitored = fields.Bool(required = True)
 	network = fields.Str()
 	overview = fields.Str()
-	path = fields.Str()
+	path = fields.Str(required = True)
 	profileId = fields.Int()
 	qualityProfileId = fields.Int()
 	ratings = fields.Raw()
@@ -25,17 +27,18 @@ class ShowLookupSchema(Schema):
 	seasonCount = fields.Int()
 	seasonFolder = fields.Bool()
 	seasons = fields.Raw()
-	seriesType = fields.Str()
+	seriesType = fields.Str(required = True)
 	sortTitle = fields.Str()
 	status = fields.Str()
 	tags = fields.Raw()
-	title = fields.Str()
+	title = fields.Str(required = True)
 	titleSlug = fields.Str()
-	tvdbId = fields.Int()
+	tvdbId = fields.Int(required = True)
 	tvMazeId = fields.Int()
 	tvRageId = fields.Int()
 	useSceneNumbering = fields.Bool()
-	year = fields.Raw()
-	@post_load()
-    def make_show(self, data, **kwargs):
-        return Show(**data)
+	year = fields.Raw(required = True)
+	
+	@post_load
+	def make_show(self, data, **kwargs):
+		return Show(**data)
