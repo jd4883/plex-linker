@@ -242,7 +242,7 @@ class Show(Movie, Globals):
 		self.sortTitle = str
 		self.status = None
 		self.tags = list
-		self.titleSlug = str
+		self.titleSlug = None
 		self.tvdbId = int
 		self.tvMazeId = int
 		self.tvRageId = int
