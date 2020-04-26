@@ -47,6 +47,10 @@ class Globals:
 		pass
 
 
+# def __repr__(self):
+# 	return "<Globals(name={self.name!r})>".format(self = self)
+
+
 class Movies:
 	def __init__(self, absolute_movies_path = abspath("/".join((str(environ['DOCKER_MEDIA_PATH']),
 	                                                            get_variable_from_yaml(
@@ -54,6 +58,10 @@ class Movies:
 		self.start_time = time.time()
 		self.absolute_movies_path = absolute_movies_path
 		self.relative_movies_path = get_relative_movies_path(self)
+
+
+# def __repr__(self):
+# 	return "<Show(name={self.name!r})>".format(self = self)
 
 
 class Movie(Movies, Globals):
@@ -119,6 +127,9 @@ class Movie(Movies, Globals):
 		self.absolute_movie_file_path = str(get_absolute_movie_file_path(self, g))
 		self.relative_movie_file_path = str(get_relative_movie_file_path(self, g))
 	
+	def __repr__(self):
+		return "<Movie(name={self.movie_title!r})>".format(self = self)
+	
 	def get_unparsed_movie_title(self, g):
 		result = self.radarr_dictionary.get('title', str())
 		g.LOG.debug(backend.debug_message(643, g, result))
@@ -180,42 +191,56 @@ class Show(Movie, Globals):
 		self.cleanup_input_data()
 		self.show = series
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
+		self.absoluteEpisodeNumber = None
 		self.added = None
+		self.airDate = None
+		self.airDateUtc = None
 		self.airTime = None
 		self.certification = None
 		self.cleanTitle = None
+		self.episode_id = None
+		self.episodeFileId = None
+		self.episodeNumber = None
 		self.firstAired = None
 		self.genres = None
+		self.hasFile = False
 		self.id = None
 		self.images = None
 		self.imdbId = None
 		self.lastInfoSync = None
 		self.monitored = False
+		self.monitored = False
 		self.network = None
 		self.overview = None
+		self.overview = str()
 		self.path = None
 		self.profileId = None
 		self.qualityProfileId = None
 		self.ratings = None
 		self.remotePoster = None
 		self.runtime = 20
+		self.sceneEpisodeNumber = None
+		self.sceneSeasonNumber = None
 		self.seasonCount = None
 		self.seasonFolder = True
+		self.seasonNumber = 0
 		self.seasons = None
-		self.seriesType = str()
+		self.seriesId = None
+		self.seriesType = "anime"
 		self.sortTitle = None
 		self.status = None
 		self.tags = None
+		self.title = None
 		self.title = series
 		self.titleSlug = None
+		self.tvDbEpisodeId = None
 		self.tvdbId = None
 		self.tvMazeId = None
 		self.tvRageId = None
 		self.useSceneNumbering = False
 		self.year = datetime.datetime.year
 		self.episode = self.inherited_series_dict.get('Episode')
-		from pprint import pprint
-		pprint(ShowLookupSchema().load(self.sonarr_series_dict[0]))
+		ShowLookupSchema().load(self.sonarr_series_dict[0])
 		self.anime_status = bool("anime" in self.seriesType)
 		self.padding = 3 if self.anime_status else int(os.environ['EPISODE_PADDING'])
 		parse_series.padded_episode_number(self, g)

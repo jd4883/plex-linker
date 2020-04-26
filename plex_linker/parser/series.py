@@ -1,6 +1,8 @@
 import os
 import re
 
+from marshmallow import fields, Schema
+
 from messaging import backend as backend
 from plex_linker.fetch import series as fetch_series
 
@@ -39,12 +41,16 @@ def episode_id(self, g):
 
 def parse_episode_id_from_series_query(g, show):
 	base = g.sonarr.get_episodes_by_series_id(show.id)
+	episode_dict = None
 	if not base:
 		return str()
 	for i in base:
 		try:
 			for k, v in base[i].items():
 				if season(k, v):
+					from pprint import pprint
+					pprint(EpisodeBySeriesIdSchema().load(i, id = show.episode_id))
+					breakpoint()
 					show.episode = str(show.inherited_series_dict["Episode"]).zfill(
 							show.padding)
 					show.episode_id = show.inherited_series_dict["Episode ID"] = str(i["id"])
@@ -152,3 +158,20 @@ def compiled_episode_title(self, g):
 # 	show.episode_title = re.sub('\(\d+\)$', "", fetch_series.show_path_string(show.episode_dict['title']  # if 'title'
 # 	# in show.episode_dict else str()))
 # 	g.LOG.info(backend.debug_message(636, g, show.episode_title))
+class EpisodeBySeriesIdSchema(Schema):
+	def __init__(self):
+		seriesId = fields.Int()
+		episodeFileId = fields.Int()
+		seasonNumber = fields.Int()
+		episodeNumber = fields.Int()
+		title = fields.Str()
+		airDate = fields.DateTime()
+		airDateUtc = fields.DateTime()
+		overview = fields.Str()
+		hasFile = fields.Bool()
+		monitored = fields.Bool()
+		sceneEpisodeNumber = fields.Int()
+		sceneSeasonNumber = fields.Int()
+		tvDbEpisodeId = fields.Int()
+		absoluteEpisodeNumber = fields.Int()
+		id = fields.Int()
