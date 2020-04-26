@@ -37,7 +37,7 @@ class ShowLookupSchema(Schema):
 	status = fields.Str(required = False, status = "continuing")
 	
 	tags = fields.Raw(required = False, default = list())
-	title = fields.Raw(required = True, default = str(show))
+	title = fields.Raw(required = True, default = str())
 	
 	titleSlug = fields.Str(required = False)
 	tvdbId = fields.Int(required = True)
