@@ -72,7 +72,7 @@ class RatingsSchema(Schema):
 
 
 class ShowLookupSchema(Schema):
-	name = fields.Str()
+	title = fields.Str()
 	sortTitle = fields.Str()
 	id = fields.Int()
 	status = fields.Str()
@@ -82,7 +82,7 @@ class ShowLookupSchema(Schema):
 	images = fields.List(fields.Nested(ImageSchema()))
 	remotePoster = fields.Url()
 	seasons = fields.List(fields.Nested(SeasonsListSchema()))
-	year = fields.Int()  # datetime object for year instead
+	year = fields.Int()
 	profileId = fields.Int()
 	seasonFolder = fields.Bool()
 	monitored = fields.Bool()
@@ -102,7 +102,9 @@ class ShowLookupSchema(Schema):
 	added = fields.Str()
 	ratings = fields.Nested(RatingsSchema())
 	qualityProfileId = fields.Int()
-
+	seasonCount = fields.Int()
+	lastInfoSync = fields.Str()
+	tags = fields.List(fields.Str())
 
 class Movie(Movies, Globals):
 	def __init__(self,
