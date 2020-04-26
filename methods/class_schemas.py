@@ -17,7 +17,7 @@ class ShowLookupSchema(Schema):
 	lastInfoSync = fields.Str(required = False)
 	monitored = fields.Bool(required = False)
 	network = fields.Raw(required = False)
-	overview = fields.Str(required = False)
+	overview = fields.Raw(required = False)
 	path = fields.Raw(required = True)
 	profileId = fields.Int(required = False)
 	qualityProfileId = fields.Int(required = False)
