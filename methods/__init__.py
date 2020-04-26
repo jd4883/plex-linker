@@ -239,9 +239,7 @@ class Show(Movie, Globals):
 		self.year = datetime.datetime.year
 		self.episode = self.inherited_series_dict.get('Episode')
 		self.show = series
-		self = print(g.sonarr.lookup_series(self.show, g)[0])
-		print("TESTING HERE")
-		ShowLookupSchema().load(iter(self.sonarr_series_dict).__next__())
+		self = self.init_show(g)
 		## UPDATE HERE, NEED TO INIT THE OBJECT AS THE LAST STATEMENT AND HAVE BASE VALUES BE BLANKED, THIS CURRENT
 		# WAYS KIND OF CLUNKY
 		
@@ -294,6 +292,11 @@ class Show(Movie, Globals):
 		self.has_link = self.inherited_series_dict['Has Link'] = relativeMovieFilePath
 		g.sonarr.rescan_series(self.tvdbId)  # rescan movie in case it was picked up since last scan
 		g.sonarr.refresh_series(self.tvdbId)  # to ensure metadata is up to date
+	
+	def init_show(self, g):
+		print("TESTING HERE")
+		self = ShowLookupSchema().load(iter(g.sonarr.lookup_series(self.show, g)[0]).__next__())
+		return self
 	
 	def cleanup_input_data(self):
 		"""
