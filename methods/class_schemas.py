@@ -6,7 +6,7 @@ from methods import Show
 class ShowLookupSchema(Schema):
 	added = fields.Str()
 	airTime = fields.Str(required = False)
-	certification = fields.Raw(required = False)
+	certification = fields.Str(required = False)
 	cleanTitle = fields.Str(required = False)
 	firstAired = fields.DateTime()
 	genres = fields.List(fields.Str())
