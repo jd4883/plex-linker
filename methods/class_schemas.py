@@ -30,7 +30,7 @@ class ShowLookupSchema(Schema):
 	seriesType = fields.Str(required = True)
 	sortTitle = fields.Str()
 	status = fields.Str()
-	tags = fields.Raw()
+	# tags = fields.Raw()
 	title = fields.Str(required = True)
 	titleSlug = fields.Str()
 	tvdbId = fields.Int(required = True)
