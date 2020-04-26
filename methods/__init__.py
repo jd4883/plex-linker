@@ -229,8 +229,10 @@ class Show(Movie, Globals):
 		schema = ShowLookupSchema()
 		from pprint import pprint
 		for i in self.sonarr_series_dict:
-			parsed_version = schema.from_dict(i)
-			pprint(parsed_version.dump(i))
+			schema = schema.from_dict(i)
+			parsed_version = schema.load(i)
+			pprint(schema)
+			pprint(parsed_version)
 		breakpoint()
 		series_id = parse_item_out_of_series_dict('seriesId', self.sonarr_series_dict, self.inherited_series_dict)
 		self.series_id = self.inherited_series_dict.get("Series ID") if not series_id else series_id
