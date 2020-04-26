@@ -252,7 +252,7 @@ class Show(Movie, Globals):
 		self.tvMazeId = None
 		self.tvRageId = None
 		self.useSceneNumbering = False
-		self.year = datetime.datetime.year
+		self.year = int(datetime.datetime.year)
 	
 	def init(self, g):
 		self.anime_status = bool("anime" in self.seriesType)
