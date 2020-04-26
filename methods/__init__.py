@@ -1,3 +1,4 @@
+import datetime
 from os.path import abspath
 
 from marshmallow import fields, Schema
@@ -226,14 +227,45 @@ class Show(Movie, Globals):
 		self.cleanup_input_data()
 		self.show = series
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
-		# schema = ShowLookupSchema()
+		lookup_schema = ShowLookupSchema()
 		from pprint import pprint
+		self.name = series
+		self.sortTitle = None
+		self.id = None
+		self.status = "continuing"
+		self.overview = None
+		self.network = None
+		self.airTime = None
+		self.images = None
+		self.remotePoster = None
+		self.seasons = None
+		self.year = datetime.datetime.year
+		self.profileId = None
+		self.seasonFolder = True
+		self.monitored = False
+		self.useSceneNumbering = False
+		self.runtime = 20
+		self.tvdbId = None
+		self.tvRageId = None
+		self.tvMazeId = None
+		self.firstAired = None
+		self.seriesType = "standard"
+		self.cleanTitle = series
+		self.imdbId = None
+		self.titleSlug = None
+		self.certification: None
+		self.genres = None
+		self.tags = None
+		self.added = None
+		self.ratings = None
+		self.qualityProfileId = None
 		data = self.sonarr_series_dict[0]
 		schema = ShowLookupSchema()
+		
 		pprint(f"SCHEMA:\t{schema}")
 		# dump = schema.dump(data)
 		# pprint(f"DUMP VERSION:\t{dump}")
-		load = schema().load(data)
+		load = lookup_schema.load(data)
 		pprint(f"LOAD VERSION:\t{load}")
 		
 		breakpoint()
