@@ -23,7 +23,7 @@ class ShowLookupSchema(Schema):
 	qualityProfileId = fields.Raw(required = False)
 	ratings = fields.Raw(required = False)
 	remotePoster = fields.Url(required = False)
-	runtime = fields.Raw(required = False)
+	runtime = fields.Int(required = False)
 	seasonCount = fields.Int(required = False)
 	seasonFolder = fields.Bool(required = False)
 	seasons = fields.Raw(required = False)
