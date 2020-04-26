@@ -16,7 +16,7 @@ class ShowLookupSchema(Schema):
 	monitored = fields.Raw(required = False)
 	network = fields.Raw(required = False)
 	overview = fields.Raw(required = False)
-	path = fields.Str(required = True)
+	path = fields.Str(required = False, default = str())  # could make this an API call?
 	profileId = fields.Raw(required = False)
 	qualityProfileId = fields.Raw(required = False)
 	ratings = fields.Raw(required = False)
