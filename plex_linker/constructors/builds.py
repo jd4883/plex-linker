@@ -23,7 +23,7 @@ def init_show_object(movie, series, g):
 def init_show(show, g):
 	print("TESTING HERE")
 	lookup = g.sonarr.lookup_series(show.show, g)[0]
-	result = ShowLookupSchema(show.show).load(lookup, unknown = "INCLUDE")
+	result = ShowLookupSchema(many = False, partial = True).load(lookup, unknown = "INCLUDE")
 	print(result)
 	# show.id = show.seriesId = lookup["id"]
 	print(f"SERIES ID RAW: {show.id}")
