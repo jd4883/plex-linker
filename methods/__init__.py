@@ -237,7 +237,8 @@ class Show(Movie, Globals):
 		import marshmallow
 		pprint(self.sonarr_series_dict)
 		schema = ShowParentLookupSchema()
-		marshmallow.pprint(f"SCHEMA DUMP TEST: {schema.dump(schema.load(self.sonarr_series_dict))}")
+		parsed_version = schema.load(self.sonarr_series_dict)
+		marshmallow.pprint(f"SCHEMA DUMP TEST: {parsed_version}")
 		breakpoint()
 		series_id = parse_item_out_of_series_dict('seriesId', self.sonarr_series_dict, self.inherited_series_dict)
 		self.series_id = self.inherited_series_dict.get("Series ID") if not series_id else series_id
