@@ -201,7 +201,7 @@ class Show(Movie, Globals):
 		self.seasonCount = None
 		self.seasonFolder = True
 		self.seasons = None
-		self.seriesType = None
+		self.seriesType = str()
 		self.sortTitle = None
 		self.status = None
 		self.tags = None
