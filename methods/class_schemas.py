@@ -10,7 +10,7 @@ class ShowLookupSchema(Schema):
 	added = fields.Raw(required = False, default = str())
 	airTime = fields.Str(required = False, default = str())
 	certification = fields.Str(required = False, default = str())
-	cleanTitle = fields.Str(required = False, default = str())
+	cleanTitle = fields.Raw(required = False, default = str())
 	firstAired = fields.Str(required = False, default = str())
 	genres = fields.List(fields.Str(required = False, default = str()))
 	id = fields.Int(required = True)

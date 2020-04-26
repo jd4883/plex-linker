@@ -194,7 +194,7 @@ class Show(Movie, Globals):
 		self.airTime = str
 		self.anime_status = bool
 		self.certification = str
-		self.cleanTitle = str
+		self.cleanTitle = None
 		self.cleanup_input_data()
 		self.episode_dict = None
 		self.episode_file_dict = None
