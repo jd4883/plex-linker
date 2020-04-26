@@ -188,7 +188,7 @@ class Show(Movie, Globals):
 		self.episode = self.inherited_series_dict.get('Episode')
 		self.movie_dictionary = fetch_series.parent_dict(g, movie_dict)
 		self.absoluteEpisodeNumber = int
-		self.added = str
+		self.added = None
 		self.airDate = str
 		self.airDateUtc = str
 		self.airTime = str

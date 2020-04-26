@@ -7,7 +7,7 @@ TODO:
 update all raw entries to be typed with defaults
 """
 class ShowLookupSchema(Schema):
-	added = fields.Str(required = False)
+	added = fields.Raw(required = False)
 	airTime = fields.Str(required = False)
 	certification = fields.Str(required = False, default = str())
 	cleanTitle = fields.Str(required = False, default = str())
