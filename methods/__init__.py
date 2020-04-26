@@ -253,7 +253,7 @@ class Show(Movie, Globals):
 		self.year = datetime.datetime.year
 		self.cleanup_input_data()
 	
-	def init_show(self, g):
+	def init(self, g):
 		self.anime_status = bool("anime" in self.seriesType)
 		self.padding = 3 if self.anime_status else int(os.environ['EPISODE_PADDING'])
 		parse_series.padded_episode_number(self, g)
