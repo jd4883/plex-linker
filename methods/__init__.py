@@ -1,4 +1,3 @@
-import datetime
 from os.path import abspath
 
 import methods.sonarr_api
@@ -252,7 +251,9 @@ class Show(Movie, Globals):
 		self.tvMazeId = None
 		self.tvRageId = None
 		self.useSceneNumbering = False
-		self.year = datetime.datetime.year
+		self.year = None
+	
+	# datetime.datetime.year
 	
 	def init(self, g):
 		self.anime_status = bool("anime" in self.seriesType)

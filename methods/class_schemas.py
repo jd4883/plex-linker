@@ -37,7 +37,7 @@ class ShowLookupSchema(Schema):
 	tvMazeId = fields.Int(required = False)
 	tvRageId = fields.Int(required = False)
 	useSceneNumbering = fields.Bool(required = False)
-	year = fields.DateTime(required = True)
+	year = fields.Raw(required = True)
 	
 	@post_load
 	def make_show(self, data, **kwargs):
