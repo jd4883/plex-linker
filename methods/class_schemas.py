@@ -1,4 +1,4 @@
-from marshmallow import fields, Schema
+from marshmallow import fields, Schema, post_load
 from methods import Show
 
 class ShowLookupSchema(Schema):
