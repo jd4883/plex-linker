@@ -19,7 +19,7 @@ class ShowLookupSchema(Schema):
 	network = fields.Raw(required = False)
 	overview = fields.Str(required = False)
 	path = fields.Str(required = True)
-	profileId = fields.Raw()
+	profileId = fields.Int()
 	qualityProfileId = fields.Int()
 	ratings = fields.Raw(required = False)
 	remotePoster = fields.Url(required = False)
