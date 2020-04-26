@@ -4,7 +4,7 @@ from methods import Show
 
 
 class ShowLookupSchema(Schema):
-	def __init__(self, show, many = False, partial = False):
+	def __init__(self, show):
 		self.added = fields.Str()
 		self.airTime = fields.Str(required = False)
 		self.certification = fields.Raw(required = False)
