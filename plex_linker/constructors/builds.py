@@ -22,10 +22,10 @@ def init_show_object(movie, series, g):
 
 def init_show(show, g):
 	print("TESTING HERE")
-	lookup = iter(g.sonarr.lookup_series(show.show, g)).__next__()
-	# lookup = g.sonarr.lookup_series(show.title, g)[0]
+	# lookup = iter(g.sonarr.lookup_series(show.show, g)).__next__()
+	lookup = g.sonarr.lookup_series(show.title, g)[0]
 	print(lookup)
-	ShowLookupSchema().load(lookup, many = True, partial = True)
+	ShowLookupSchema().load(lookup, many = True, partial = True, unknown = EXCLUDE)
 	# schema.dump(lookup)
 	# show.id = show.seriesId = lookup["id"]
 	print(show.id)
