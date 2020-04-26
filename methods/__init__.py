@@ -234,7 +234,7 @@ class Show(Movie, Globals):
 		self.show = series
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
 		schema = ShowParentLookupSchema()
-		parsed_version = schema.from_dict(self.sonarr_series_dict)
+		parsed_version = schema.loads(self.sonarr_series_dict, many = True)
 		from pprint import pprint
 		pprint(parsed_version)
 		breakpoint()
