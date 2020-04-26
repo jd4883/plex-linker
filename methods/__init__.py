@@ -173,7 +173,7 @@ class Show(Movie, Globals):
 	             series = str(),
 	             show_dict = dict(),
 	             movie_dict = dict()):
-		super().__init__(g)
+		super().__init__(movie_dict, g)
 		self.movie_dictionary = fetch_series.parent_dict(g, movie_dict)
 		self.inherited_series_dict = show_dict
 		self.cleanup_input_data()
