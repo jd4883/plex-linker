@@ -33,7 +33,7 @@ class RadarrAPI(object):
 	def lookup_movie(self, movie_lookup, g):
 		movie_lookup = self.radarr_api_request(f"{self.host_url}/movie/lookup?term={movie_lookup}")
 		for i in g.full_radarr_dict:
-			if 'tmdbId' in movie_lookup and i['tmdbId'] == movie_lookup[0]['tmdbId']:
+			if 'tmdbId' in movie_lookup and i['tmdbId'] == iter(movie_lookup).__next__()['tmdbId']:
 				movie_lookup[0] = i
 				break
 		return movie_lookup

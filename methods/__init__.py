@@ -49,7 +49,8 @@ class Globals:
 
 class Movies:
 	def __init__(self, absolute_movies_path = abspath("/".join((str(environ['DOCKER_MEDIA_PATH']),
-	                                                            get_variable_from_yaml("Movie Directories")[0])))):
+	                                                            get_variable_from_yaml(
+			                                                            "Movie Directories").__iter__().__next__())))):
 		self.start_time = time.time()
 		self.absolute_movies_path = absolute_movies_path
 		self.relative_movies_path = get_relative_movies_path(self)
