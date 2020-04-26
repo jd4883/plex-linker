@@ -1,5 +1,6 @@
 import datetime
 from os.path import abspath
+from pprint import pprint
 
 from marshmallow import fields, Schema
 
@@ -72,41 +73,41 @@ class RatingsSchema(Schema):
 
 
 class ShowLookupSchema(Schema):
-	title = fields.Str()
-	sortTitle = fields.Str()
-	id = fields.Int()
-	status = fields.Str()
-	overview = fields.Str()
-	network = fields.Str()
-	airTime = fields.Str()
-	images = fields.List(fields.Nested(ImageSchema()))
-	remotePoster = fields.Url()
-	seasons = fields.List(fields.Nested(SeasonsListSchema()))
-	year = fields.Int()
-	profileId = fields.Int()
-	seasonFolder = fields.Bool()
-	monitored = fields.Bool()
-	useSceneNumbering = fields.Bool()
-	runtime = fields.Int()
-	tvdbId = fields.Int()
-	tvRageId = fields.Int()
-	tvMazeId = fields.Int()
-	firstAired = fields.DateTime()
-	seriesType = fields.Str()
-	cleanTitle = fields.Str()
-	imdbId = fields.Str()
-	titleSlug = fields.Str()
-	genres = fields.List(fields.Str())
-	tags = fields.List(fields.Str())
 	added = fields.Str()
-	ratings = fields.Nested(RatingsSchema())
-	qualityProfileId = fields.Int()
-	seasonCount = fields.Int()
-	lastInfoSync = fields.Str()
+	airTime = fields.Str()
 	certification = fields.Raw()
-	tags = fields.List(fields.Raw())
-	path = fields.Str()
+	cleanTitle = fields.Str()
+	firstAired = fields.DateTime()
+	genres = fields.List(fields.Str())
+	id = fields.Int()
+	images = fields.List(fields.Nested(ImageSchema()))
+	imdbId = fields.Str()
 	languageProfileId = fields.Int()
+	lastInfoSync = fields.Str()
+	monitored = fields.Bool()
+	network = fields.Str()
+	overview = fields.Str()
+	path = fields.Str()
+	profileId = fields.Int()
+	qualityProfileId = fields.Int()
+	ratings = fields.Nested(RatingsSchema())
+	remotePoster = fields.Url()
+	runtime = fields.Int()
+	seasonCount = fields.Int()
+	seasonFolder = fields.Bool()
+	seasons = fields.List(fields.Nested(SeasonsListSchema()))
+	seriesType = fields.Str()
+	sortTitle = fields.Str()
+	status = fields.Str()
+	tags = fields.List(fields.Raw())
+	tags = fields.List(fields.Str())
+	title = fields.Str()
+	titleSlug = fields.Str()
+	tvdbId = fields.Int()
+	tvMazeId = fields.Int()
+	tvRageId = fields.Int()
+	useSceneNumbering = fields.Bool()
+	year = fields.Int()
 
 
 class Movie(Movies, Globals):
@@ -235,57 +236,45 @@ class Show(Movie, Globals):
 		self.cleanup_input_data()
 		self.show = series
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
-		from pprint import pprint
-		self.title = series
-		self.sortTitle = None
-		self.id = None
-		self.certification = None
-		self.status = "continuing"
-		self.overview = None
-		self.lastInfoSync = None
-		self.path = None
-		self.tags = None
-		self.network = None
+		self.added = None
 		self.airTime = None
+		self.certification = None
+		self.cleanTitle = series
+		self.firstAired = None
+		self.genres = None
+		self.id = None
 		self.images = None
-		self.remotePoster = None
-		self.seasons = None
-		self.year = datetime.datetime.year
+		self.imdbId = None
+		self.lastInfoSync = None
+		self.monitored = False
+		self.network = None
+		self.overview = None
+		self.path = None
 		self.profileId = None
+		self.qualityProfileId = None
+		self.ratings = None
+		self.remotePoster = None
+		self.runtime = 20
 		self.seasonCount = None
 		self.seasonFolder = True
-		self.monitored = False
-		self.useSceneNumbering = False
-		self.runtime = 20
-		self.tvdbId = None
-		self.tvRageId = None
-		self.tvMazeId = None
-		self.firstAired = None
+		self.seasons = None
 		self.seriesType = "standard"
-		self.cleanTitle = series
-		self.imdbId = None
-		self.titleSlug = None
-		self.genres = None
+		self.sortTitle = None
+		self.status = "continuing"
 		self.tags = None
-		self.added = None
-		self.ratings = None
-		self.qualityProfileId = None
+		self.tags = None
+		self.title = series
+		self.titleSlug = None
+		self.tvdbId = None
+		self.tvMazeId = None
+		self.tvRageId = None
+		self.useSceneNumbering = False
+		self.year = datetime.datetime.year
 		data = self.sonarr_series_dict[0]
 		schema = ShowLookupSchema()
-		
-		pprint(f"SCHEMA:\t{schema}")
-		# dump = schema.dump(data)
-		# pprint(f"DUMP VERSION:\t{dump}")
 		load = schema.load(data)
-		pprint(f"LOAD VERSION:\t{load}")
-		
+		pprint(load)
 		breakpoint()
-		series_id = parse_item_out_of_series_dict('seriesId', self.sonarr_series_dict, self.inherited_series_dict)
-		self.series_id = self.inherited_series_dict.get("Series ID") if not series_id else series_id
-		self.tvdbId = parse_item_out_of_series_dict('tvdbId', self.sonarr_series_dict, self.inherited_series_dict)
-		self.imdb_id = parse_item_out_of_series_dict('imdbId', self.sonarr_series_dict,
-		                                             self.inherited_series_dict)
-		self.show_genres = parse_item_out_of_series_dict('genres', self.sonarr_series_dict, self.inherited_series_dict)
 		self.sonarr_api_query = parse_series.episode_dict_from_lookup(self, g)
 		self.anime_status = \
 			self.inherited_series_dict["Anime"] = \
@@ -318,7 +307,7 @@ class Show(Movie, Globals):
 		# * do a string concat of all components so its easier to read
 		# * general ease of readability cleanup
 		# * DB integration will make a world of a difference here
-		g.LOG.info(backend.debug_message(618, g, self.series_id))
+		g.LOG.info(backend.debug_message(618, g, self.id))
 		
 		self.has_link = self.inherited_series_dict['Has Link'] = self.inherited_series_dict.get('Has Link', bool())
 		

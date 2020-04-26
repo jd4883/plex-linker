@@ -50,7 +50,7 @@ def episode_id(self, g):
 
 
 def parse_episode_id_from_series_query(g, show):
-	base = g.sonarr.get_episodes_by_series_id(show.series_id)
+	base = g.sonarr.get_episodes_by_series_id(show.id)
 	if not base:
 		return str()
 	for i in base:
@@ -63,7 +63,7 @@ def parse_episode_id_from_series_query(g, show):
 					show.episode_file_id = show.inherited_series_dict["episodeFileId"] = str(i["episodeFileId"])
 					show.season = show.inherited_series_dict["Season"] = str(i["seasonNumber"]).zfill(2)
 					break
-			if show.series_id:
+			if show.id:
 				break
 		except AttributeError:
 			show.episode_id = int()
