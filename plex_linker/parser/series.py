@@ -1,5 +1,6 @@
 import os
 import re
+from pprint import pprint
 
 from marshmallow import fields, Schema
 
@@ -41,10 +42,10 @@ def episode_id(self, g):
 
 def parse_episode_id_from_series_query(g, show):
 	base = g.sonarr.get_episodes_by_series_id(show.id)
+	pprint(base)
+	
+	breakpoint()
 	episode_dict = None
-	if not show.episode:
-		print(f"Episode not set here erroring out for {show.name} linking to {show.movie_title}")
-		raise
 	if not base:
 		return str()
 	for i in base:
@@ -52,7 +53,6 @@ def parse_episode_id_from_series_query(g, show):
 			for k, v in base[i].items():
 				if season(k, v):
 					# TODO: maybe try this each time and check the parsed out values?
-					from pprint import pprint
 					pprint(EpisodeBySeriesIdSchema().load(i, id = show.episode_id))
 					breakpoint()
 					show.episode = str(show.inherited_series_dict["Episode"]).zfill(
@@ -63,7 +63,7 @@ def parse_episode_id_from_series_query(g, show):
 					break
 			break
 		except AttributeError:
-			show.episode_id = int()
+			pass
 	return show.episode_id
 
 
