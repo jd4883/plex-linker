@@ -18,7 +18,7 @@ class ShowLookupSchema(Schema):
 	imdbId = fields.Str(required = True)
 	languageProfileId = fields.Int(required = False, default = 0)
 	lastInfoSync = fields.Str(required = False, default = str())
-	monitored = fields.Bool(required = False)
+	monitored = fields.Bool(required = False, default = False)
 	network = fields.Str(required = False)
 	overview = fields.Str(required = False)
 	path = fields.Str(required = False, default = str())  # could make this an API call?
