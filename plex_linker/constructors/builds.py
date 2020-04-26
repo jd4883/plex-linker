@@ -24,7 +24,9 @@ def init_show(show, g):
 	print("TESTING HERE")
 	# lookup = iter(g.sonarr.lookup_series(show.show, g)).__next__()
 	lookup = g.sonarr.lookup_series(show.title, g)[0]
+	print(lookup)
 	schema = ShowLookupSchema()
+	print(schema)
 	schema.load(lookup)
 	schema.dump(show)
 	show.init(g)
