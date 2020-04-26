@@ -32,10 +32,10 @@ class ShowLookupSchema(Schema):
 	status = fields.Raw(required = False)
 	tags = fields.Raw(required = False)
 	title = fields.Raw(required = True)
-	titleSlug = fields.Str(required = False)
+	titleSlug = fields.Raw(required = False)
 	tvdbId = fields.Raw(required = True)
-	tvMazeId = fields.Int(required = False)
-	tvRageId = fields.Int(required = False)
+	tvMazeId = fields.Raw(required = False)
+	tvRageId = fields.Raw(required = False)
 	useSceneNumbering = fields.Bool(required = False)
 	year = fields.Raw(required = True)
 	
