@@ -215,6 +215,9 @@ class Movie(Movies, Globals):
 
 
 class Show(Movie, Globals):
+	def __repr__(self):
+		return "<Show(name={self.name!r})>".format(self = self)
+	
 	def __init__(self,
 	             g,
 	             series = str(),
@@ -265,7 +268,7 @@ class Show(Movie, Globals):
 		pprint(f"SCHEMA:\t{schema}")
 		# dump = schema.dump(data)
 		# pprint(f"DUMP VERSION:\t{dump}")
-		load = lookup_schema.load(data)
+		load = lookup_schema.dump(data)
 		pprint(f"LOAD VERSION:\t{load}")
 		
 		breakpoint()
