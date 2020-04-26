@@ -1,5 +1,5 @@
 from marshmallow import fields, Schema
-
+from methods import Show
 
 class ShowLookupSchema(Schema):
 	added = fields.Str()
@@ -36,3 +36,7 @@ class ShowLookupSchema(Schema):
 	tvRageId = fields.Int()
 	useSceneNumbering = fields.Bool()
 	year = fields.Raw()
+
+	@post_load
+    def make_user(self, data, **kwargs):
+        return Show(**data)
