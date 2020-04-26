@@ -240,8 +240,9 @@ class Show(Movie, Globals):
 		self.useSceneNumbering = False
 		self.year = datetime.datetime.year
 		self.episode = self.inherited_series_dict.get('Episode')
-		print(self.sonarr_series_dict)
-		ShowLookupSchema().load(self.sonarr_series_dict[0])
+		print(self.sonarr_series_dict[0])
+		print("TESTING HERE")
+		ShowLookupSchema().load(iter(self.sonarr_series_dict).__next__())
 		## UPDATE HERE, NEED TO INIT THE OBJECT AS THE LAST STATEMENT AND HAVE BASE VALUES BE BLANKED, THIS CURRENT
 		# WAYS KIND OF CLUNKY
 		
