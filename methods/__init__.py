@@ -70,7 +70,7 @@ class RatingsSchema(Schema):
 	value = fields.Int()
 
 
-class ShowChildLookupSchema(Schema):
+class ShowLookupSchema(Schema):
 	name = fields.Str()
 	sortTitle = fields.Str()
 	id = fields.Int()
@@ -101,13 +101,6 @@ class ShowChildLookupSchema(Schema):
 	added = fields.Str()
 	ratings = fields.Nested(RatingsSchema())
 	qualityProfileId = fields.Int()
-
-
-class ShowParentLookupSchema(Schema):
-	parent = fields.List(fields.Nested(ShowChildLookupSchema()))
-
-
-# parent_dict = fields.Movie.parent_dict()
 
 
 class Movie(Movies, Globals):
@@ -233,10 +226,11 @@ class Show(Movie, Globals):
 		self.cleanup_input_data()
 		self.show = series
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
-		schema = ShowParentLookupSchema()
-		parsed_version = schema.loads(self.sonarr_series_dict, many = True)
+		schema = ShowLookupSchema()
 		from pprint import pprint
-		pprint(parsed_version)
+		for i in self.sonarr_series_dict:
+			parsed_version = schema.loads(i, many = True)
+			pprint(parsed_version)
 		breakpoint()
 		series_id = parse_item_out_of_series_dict('seriesId', self.sonarr_series_dict, self.inherited_series_dict)
 		self.series_id = self.inherited_series_dict.get("Series ID") if not series_id else series_id
