@@ -197,6 +197,7 @@ class Show(Movie, Globals):
 		self.anime_status = bool()
 		self.certification = None
 		self.cleanTitle = None
+		self.cleanup_input_data()
 		self.episode_dict = None
 		self.episode_file_dict = None
 		self.episode_file_id = None
@@ -240,6 +241,7 @@ class Show(Movie, Globals):
 		self.show = series
 		self.show_root_path = None
 		self.sonarr_api_query = None
+		self.sonarr_series_dict = None
 		self.sortTitle = None
 		self.status = None
 		self.tags = None
@@ -251,7 +253,6 @@ class Show(Movie, Globals):
 		self.tvRageId = None
 		self.useSceneNumbering = False
 		self.year = datetime.datetime.year
-		self.cleanup_input_data()
 	
 	def init(self, g):
 		self.anime_status = bool("anime" in self.seriesType)
