@@ -70,10 +70,6 @@ class RatingsSchema(Schema):
 	value = fields.Int()
 
 
-class ShowParentLookupSchema(Schema):
-	parent = fields.List(fields.Nested(ShowChildLookupSchema()))
-
-
 class ShowChildLookupSchema(Schema):
 	name = fields.Str()
 	sortTitle = fields.Str()
@@ -105,6 +101,10 @@ class ShowChildLookupSchema(Schema):
 	added = fields.Str()
 	ratings = fields.Nested(RatingsSchema())
 	qualityProfileId = fields.Int()
+
+
+class ShowParentLookupSchema(Schema):
+	parent = fields.List(fields.Nested(ShowChildLookupSchema()))
 
 
 # parent_dict = fields.Movie.parent_dict()
