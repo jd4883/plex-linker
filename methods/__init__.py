@@ -105,6 +105,9 @@ class ShowLookupSchema(Schema):
 	seasonCount = fields.Int()
 	lastInfoSync = fields.Str()
 	tags = fields.List(fields.Str())
+	path = fields.Str()
+	languageProfileId = fields.Str()
+
 
 class Movie(Movies, Globals):
 	def __init__(self,
