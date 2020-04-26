@@ -31,7 +31,7 @@ class ShowLookupSchema(Schema):
 	sortTitle = fields.Str()
 	status = fields.Str(required = False)
 	tags = fields.Raw(required = False)
-	title = fields.Str(required = True)
+	title = str(fields.Raw(required = True))
 	titleSlug = fields.Str()
 	tvdbId = fields.Raw(required = True)
 	tvMazeId = fields.Int()
