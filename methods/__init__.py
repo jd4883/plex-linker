@@ -82,7 +82,7 @@ class ShowLookupSchema(Schema):
 	images = fields.List(fields.Nested(ImageSchema()))
 	remotePoster = fields.Url()
 	seasons = fields.List(fields.Nested(SeasonsListSchema()))
-	year = fields.Int()  # datetime object for year instead
+	year = fields.DateTime()  # datetime object for year instead
 	profileId = fields.Int()
 	seasonFolder = fields.Bool()
 	monitored = fields.Bool()
@@ -268,7 +268,7 @@ class Show(Movie, Globals):
 		pprint(f"SCHEMA:\t{schema}")
 		# dump = schema.dump(data)
 		# pprint(f"DUMP VERSION:\t{dump}")
-		load = lookup_schema.dump(data)
+		load = lookup_schema.from_dict(data)
 		pprint(f"LOAD VERSION:\t{load}")
 		
 		breakpoint()
