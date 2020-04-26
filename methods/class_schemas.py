@@ -12,7 +12,7 @@ class ShowLookupSchema(Schema):
 	id = fields.Raw(required = True)
 	imdbId = fields.Raw(required = True)
 	languageProfileId = fields.Raw(required = False)
-	lastInfoSync = fields.Raw(required = False)
+	lastInfoSync = fields.Str(required = False, default = str())
 	monitored = fields.Raw(required = False)
 	network = fields.Raw(required = False)
 	overview = fields.Raw(required = False)

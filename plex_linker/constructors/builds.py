@@ -14,12 +14,15 @@ def init_show_object(movie, series, g):
 
 
 def init_show(show, g):
-	print("TESTING HERE")
 	lookup = g.sonarr.lookup_series(show.show, g)[0]
+	print("PRINTING LOOKUP")
+	print(lookup)
+	print("PRINTING RESULT")
 	result = ShowLookupSchema(many = False, partial = True).load(lookup)
 	print(result)
 	# show.id = show.seriesId = lookup["id"]
 	print(f"SERIES ID RAW: {show.id}")
 	print(f"SERIES ID: {show.seriesId}")
 	print(f"TITLE: {show.title}")
+	# del lookup
 	show.init(g)
