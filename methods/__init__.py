@@ -194,7 +194,6 @@ class Show(Movie, Globals):
 		self.anime_status = bool()
 		self.certification = None
 		self.cleanTitle = None
-		self.cleanup_input_data()
 		self.episode = self.inherited_series_dict.get('Episode')
 		self.episode_dict = None
 		self.episode_file_dict = None
@@ -205,12 +204,12 @@ class Show(Movie, Globals):
 		self.episodeNumber = None
 		self.firstAired = None
 		self.genres = None
-		self.has_link = None
+		self.has_link = str()
 		self.hasFile = False
-		self.id = None
+		self.id = int()
 		self.images = None
-		self.inherited_series_dict = None
-		self.imdbId = None
+		self.inherited_series_dict = dict()
+		self.imdbId = int()
 		self.inherited_series_dict = show_dict
 		self.lastInfoSync = None
 		self.monitored = False
@@ -253,6 +252,7 @@ class Show(Movie, Globals):
 		self.tvRageId = None
 		self.useSceneNumbering = False
 		self.year = datetime.datetime.year
+		self.cleanup_input_data()
 	
 	def init_show(self, g):
 		self.anime_status = bool("anime" in self.seriesType)
