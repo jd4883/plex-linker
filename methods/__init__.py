@@ -213,7 +213,7 @@ class Show(Movie, Globals):
 		self.images = None
 		self.imdbId = int()
 		self.lastInfoSync = None
-		self.monitored = False
+		self.monitored = None
 		self.network = None
 		self.overview = None
 		self.padding = None
