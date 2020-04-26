@@ -206,7 +206,7 @@ class Show(Movie, Globals):
 		self.genres = list
 		self.has_link = str
 		self.hasFile = bool
-		self.id = int
+		self.id = None
 		self.images = None
 		self.imdbId = str
 		self.languageProfileId = int
