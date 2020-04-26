@@ -1,5 +1,3 @@
-import datetime
-
 from marshmallow import fields, post_load, Schema
 
 from methods import Show
@@ -47,7 +45,7 @@ class ShowLookupSchema(Schema):
 		self.tvMazeId = fields.Int(required = False)
 		self.tvRageId = fields.Int(required = False)
 		self.useSceneNumbering = fields.Bool(required = False, default = False)
-		self.year = fields.Int(required = False, default = int(datetime.datetime.year))
+		self.year = fields.Int(required = False)  # , default = int(datetime.datetime.year)
 	
 	@post_load
 	def make_show(self, data, **kwargs):
