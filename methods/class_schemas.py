@@ -18,7 +18,7 @@ class ShowLookupSchema(Schema):
 	monitored = fields.Bool(required = True)
 	network = fields.Raw(required = False)
 	overview = fields.Str(required = False)
-	path = fields.Str(required = True)
+	path = fields.Raw(required = True)
 	profileId = fields.Int()
 	qualityProfileId = fields.Int()
 	ratings = fields.Raw(required = False)
