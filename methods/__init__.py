@@ -252,7 +252,7 @@ class Show(Movie, Globals):
 		self.tvMazeId = int
 		self.tvRageId = int
 		self.useSceneNumbering = None
-		self.year = None
+		self.year = int
 	
 	# datetime.datetime.year
 	
