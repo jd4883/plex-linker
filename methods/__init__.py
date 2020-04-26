@@ -208,7 +208,7 @@ class Show(Movie, Globals):
 		self.hasFile = False
 		self.id = int
 		self.images = None
-		self.imdbId = int
+		self.imdbId = str
 		self.languageProfileId = int
 		self.lastInfoSync = None
 		self.monitored = bool
