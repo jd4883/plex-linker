@@ -233,9 +233,6 @@ class Show(Movie, Globals):
 		self.cleanup_input_data()
 		self.show = series
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
-		from pprint import pprint
-		import marshmallow
-		pprint(self.sonarr_series_dict)
 		schema = ShowParentLookupSchema()
 		parsed_version = schema.load(self.sonarr_series_dict)
 		marshmallow.pprint(parsed_version)
