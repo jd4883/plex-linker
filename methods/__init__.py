@@ -182,7 +182,7 @@ class Show(Movie, Globals):
 		self.added = None
 		self.airTime = None
 		self.certification = None
-		self.cleanTitle = series
+		self.cleanTitle = None
 		self.firstAired = None
 		self.genres = None
 		self.id = None
@@ -201,9 +201,9 @@ class Show(Movie, Globals):
 		self.seasonCount = None
 		self.seasonFolder = True
 		self.seasons = None
-		self.seriesType = "standard"
+		self.seriesType = None
 		self.sortTitle = None
-		self.status = "continuing"
+		self.status = None
 		self.tags = None
 		self.title = series
 		self.titleSlug = None
