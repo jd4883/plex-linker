@@ -189,8 +189,6 @@ class Show(Movie, Globals):
 		self.movie_dictionary = fetch_series.parent_dict(g, movie_dict)
 		self.inherited_series_dict = show_dict
 		self.cleanup_input_data()
-		self.show = series
-		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
 		self.absoluteEpisodeNumber = None
 		self.added = None
 		self.airDate = None
@@ -240,6 +238,8 @@ class Show(Movie, Globals):
 		self.useSceneNumbering = False
 		self.year = datetime.datetime.year
 		self.episode = self.inherited_series_dict.get('Episode')
+		self.show = series
+		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
 		print(self.sonarr_series_dict[0])
 		print("TESTING HERE")
 		ShowLookupSchema().load(iter(self.sonarr_series_dict).__next__())
