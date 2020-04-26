@@ -239,7 +239,7 @@ class Show(Movie, Globals):
 		self.year = datetime.datetime.year
 		self.episode = self.inherited_series_dict.get('Episode')
 		self.show = series
-		self = self.init_show(g)
+		init_show(self, g)
 		## UPDATE HERE, NEED TO INIT THE OBJECT AS THE LAST STATEMENT AND HAVE BASE VALUES BE BLANKED, THIS CURRENT
 		# WAYS KIND OF CLUNKY
 		
@@ -293,11 +293,6 @@ class Show(Movie, Globals):
 		g.sonarr.rescan_series(self.tvdbId)  # rescan movie in case it was picked up since last scan
 		g.sonarr.refresh_series(self.tvdbId)  # to ensure metadata is up to date
 	
-	def init_show(self, g):
-		print("TESTING HERE")
-		self = ShowLookupSchema().load(iter(g.sonarr.lookup_series(self.show, g)[0]).__next__())
-		return self
-	
 	def cleanup_input_data(self):
 		"""
 			PROTOTYPE CLEANUP METHOD FOR EMPTY KEYS
@@ -336,3 +331,8 @@ class Show(Movie, Globals):
 		if 'path' in self.sonarr_series_dict and self.path:
 			payload = self.path
 		return payload
+
+
+def init_show(show, g):
+	print("TESTING HERE")
+	show = ShowLookupSchema().load(iter(g.sonarr.lookup_series(show.show, g)[0]).__next__())
