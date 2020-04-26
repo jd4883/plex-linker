@@ -239,8 +239,7 @@ class Show(Movie, Globals):
 		self.year = datetime.datetime.year
 		self.episode = self.inherited_series_dict.get('Episode')
 		self.show = series
-		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
-		print(self.sonarr_series_dict[0])
+		self = print(g.sonarr.lookup_series(self.show, g)[0])
 		print("TESTING HERE")
 		ShowLookupSchema().load(iter(self.sonarr_series_dict).__next__())
 		## UPDATE HERE, NEED TO INIT THE OBJECT AS THE LAST STATEMENT AND HAVE BASE VALUES BE BLANKED, THIS CURRENT
