@@ -7,12 +7,12 @@ TODO:
 update all raw entries to be typed with defaults
 """
 class ShowLookupSchema(Schema):
-	added = fields.Raw(required = False)
-	airTime = fields.Str(required = False)
+	added = fields.Raw(required = False, default = str())
+	airTime = fields.Str(required = False, default = str())
 	certification = fields.Str(required = False, default = str())
 	cleanTitle = fields.Str(required = False, default = str())
-	firstAired = fields.Str(required = False)
-	genres = fields.List(fields.Str(required = False))
+	firstAired = fields.Str(required = False, default = str())
+	genres = fields.List(fields.Str(required = False, default = str()))
 	id = fields.Int(required = True)
 	images = fields.List(fields.Dict(required = False))
 	imdbId = fields.Str(required = True)
@@ -25,7 +25,7 @@ class ShowLookupSchema(Schema):
 	profileId = fields.Int(required = False, default = 0)
 	qualityProfileId = fields.Int(required = False, default = 0)
 	ratings = fields.Raw(required = False)
-	remotePoster = fields.Url(required = False, default = str())
+	remotePoster = fields.Str(required = False, default = str())
 	runtime = fields.Int(required = False, default = 20)
 	seasonCount = fields.Int(required = False, default = 1)
 	seasonFolder = fields.Bool(required = False, default = True)
