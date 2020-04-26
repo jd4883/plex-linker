@@ -82,7 +82,7 @@ class ShowLookupSchema(Schema):
 	images = fields.List(fields.Nested(ImageSchema()))
 	remotePoster = fields.Url()
 	seasons = fields.List(fields.Nested(SeasonsListSchema()))
-	year = fields.DateTime()  # datetime object for year instead
+	year = fields.Int()  # datetime object for year instead
 	profileId = fields.Int()
 	seasonFolder = fields.Bool()
 	monitored = fields.Bool()
@@ -231,11 +231,15 @@ class Show(Movie, Globals):
 		self.show = series
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
 		from pprint import pprint
-		self.name = series
+		self.title = series
 		self.sortTitle = None
 		self.id = None
+		self.certification = None
 		self.status = "continuing"
 		self.overview = None
+		self.lastInfoSync = None
+		self.path = None
+		self.tags = None
 		self.network = None
 		self.airTime = None
 		self.images = None
@@ -243,6 +247,7 @@ class Show(Movie, Globals):
 		self.seasons = None
 		self.year = datetime.datetime.year
 		self.profileId = None
+		self.seasonCount = None
 		self.seasonFolder = True
 		self.monitored = False
 		self.useSceneNumbering = False
