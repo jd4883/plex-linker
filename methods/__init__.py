@@ -209,6 +209,7 @@ class Show(Movie, Globals):
 		self.hasFile = False
 		self.id = None
 		self.images = None
+		self.inherited_series_dict = None
 		self.imdbId = None
 		self.inherited_series_dict = show_dict
 		self.lastInfoSync = None
