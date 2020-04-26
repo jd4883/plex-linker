@@ -37,13 +37,13 @@ class SonarrAPI(object):
 		return series
 	
 	def refresh_series(self, series_id, data = dict()):
-		rescan_series = self.sonarr_api_request(f"{self.host_url}/command/RefreshSeries&seriesId={series_id}", data,
-		                                        "post")
+		rescan_series = self.sonarr_api_request(f"{self.host_url}/command/RefreshSeries&seriesId={series_id}", "post",
+		                                        data)
 		return rescan_series
 	
 	def rescan_series(self, series_id, data = dict()):
-		series_scan = self.sonarr_api_request(f"{self.host_url}/command/RescanSeries&seriesId={series_id}", data,
-		                                      "post")
+		series_scan = self.sonarr_api_request(f"{self.host_url}/command/RescanSeries&seriesId={series_id}", "post",
+		                                      data)
 		return series_scan
 	
 	def lookup_series(self, series, g):

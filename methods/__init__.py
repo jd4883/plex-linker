@@ -1,8 +1,6 @@
 import datetime
 from os.path import abspath
 
-from marshmallow import fields, Schema
-
 import methods.sonarr_api
 import methods.sonarr_class_methods
 import plex_linker.cleanup.movie as cleanup_movie
@@ -11,6 +9,7 @@ import plex_linker.parser.series as parse_series
 from IO.YAML.yaml_to_object import (get_variable_from_yaml)
 from logs.bin.get_parameters import (get_log_name, get_logger, get_method_main)
 from messaging import backend as backend
+from methods.class_schemas import ShowLookupSchema
 from methods.misc_get_methods import (
 	get_docker_media_path,
 	get_host_media_path,
@@ -56,61 +55,8 @@ class Movies:
 		self.relative_movies_path = get_relative_movies_path(self)
 
 
-class ImageSchema(Schema):
-	coverType = fields.Str()
-	url = fields.Url()
-
-
-class SeasonsListSchema(Schema):
-	seasonNumber = fields.Int()
-	monitored = fields.Bool()
-
-
-class RatingsSchema(Schema):
-	votes = fields.Int()
-	value = fields.Int()
-
-
-class ShowLookupSchema(Schema):
-	added = fields.Str()
-	airTime = fields.Str()
-	certification = fields.Raw()
-	cleanTitle = fields.Str()
-	firstAired = fields.DateTime()
-	genres = fields.List(fields.Str())
-	id = fields.Int()
-	images = fields.List(fields.Nested(ImageSchema()))
-	imdbId = fields.Str()
-	languageProfileId = fields.Int()
-	lastInfoSync = fields.Str()
-	monitored = fields.Bool()
-	network = fields.Str()
-	overview = fields.Str()
-	path = fields.Str()
-	profileId = fields.Int()
-	qualityProfileId = fields.Int()
-	ratings = fields.Nested(RatingsSchema())
-	remotePoster = fields.Url()
-	runtime = fields.Int()
-	seasonCount = fields.Int()
-	seasonFolder = fields.Bool()
-	seasons = fields.Raw()  # fields.List(fields.Nested(SeasonsListSchema()))
-	seriesType = fields.Str()
-	sortTitle = fields.Str()
-	status = fields.Str()
-	tags = fields.Raw()
-	title = fields.Str()
-	titleSlug = fields.Str()
-	tvdbId = fields.Int()
-	tvMazeId = fields.Int()
-	tvRageId = fields.Int()
-	useSceneNumbering = fields.Bool()
-	year = fields.Int()
-
-
 class Movie(Movies, Globals):
 	def __init__(self,
-	             movie,
 	             movie_dict,
 	             g):
 		super().__init__()
@@ -225,10 +171,9 @@ class Show(Movie, Globals):
 	def __init__(self,
 	             g,
 	             series = str(),
-	             film = str(),
 	             show_dict = dict(),
 	             movie_dict = dict()):
-		super().__init__(film, movie_dict, g)
+		super().__init__(g)
 		self.movie_dictionary = fetch_series.parent_dict(g, movie_dict)
 		self.inherited_series_dict = show_dict
 		self.cleanup_input_data()

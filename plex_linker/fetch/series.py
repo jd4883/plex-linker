@@ -5,13 +5,6 @@ import re
 from messaging import backend as backend
 
 
-def symlink_status(self, g, result = str()):
-	if ('Symlinked' in self.inherited_series_dict) and self.inherited_series_dict['Symlinked']:
-		result = str(self.inherited_series_dict['Symlinked'])
-		g.LOG.info(backend.debug_message(651, g, result))
-	return result
-
-
 def show_path_string(string):
 	result = re.sub('//', '/', string)
 	result = re.sub(str(os.environ['SONARR_ROOT_PATH_PREFIX']), str(), result)

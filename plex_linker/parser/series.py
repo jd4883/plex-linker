@@ -5,13 +5,6 @@ from messaging import backend as backend
 from plex_linker.fetch import series as fetch_series
 
 
-def parse_item_out_of_series_dict(environ, sonarr_series_dict, series_dict):
-	for index, i in enumerate(sonarr_series_dict):
-		if str(i).lower() == str(environ).lower():
-			series_dict[environ] = sonarr_series_dict[index][i]
-			return series_dict[environ]
-
-
 def episode_dict_from_lookup(self, g):
 	query = episode_index(self, self.sonarr_series_dict)
 	g.LOG.info(backend.debug_message(626, g, query))
@@ -19,14 +12,14 @@ def episode_dict_from_lookup(self, g):
 
 
 def root_folder(self, g):
-	root_folder = f"{os.environ['SONARR_DEFAULT_ROOT']}/{self.show}"
+	folder_root = f"{os.environ['SONARR_DEFAULT_ROOT']}/{self.show}"
 	for item in g.sonarr_root_folders:
 		item = fetch_series.show_path_string(str(item['path']))
 		potential = fetch_series.show_path_string(f"{item}{self.show}/{self.season_folder}")
 		if os.path.exists(potential) and os.path.isdir(potential):
-			root_folder = fetch_series.show_path_string(f"{item}{self.show}")
+			folder_root = fetch_series.show_path_string(f"{item}{self.show}")
 			break
-	return root_folder
+	return folder_root
 
 
 def episode_index(self, query = dict()):
@@ -38,9 +31,9 @@ def episode_index(self, query = dict()):
 
 
 def episode_id(self, g):
-	episode_id = parse_episode_id_from_series_query(g, self) if str(self.episode).isdigit() else 0
-	g.LOG.info(backend.debug_message(619, g, episode_id))
-	return episode_id
+	sonarr_episode_id = parse_episode_id_from_series_query(g, self) if str(self.episode).isdigit() else 0
+	g.LOG.info(backend.debug_message(619, g, sonarr_episode_id))
+	return sonarr_episode_id
 
 
 def parse_episode_id_from_series_query(g, show):
@@ -93,28 +86,10 @@ def episode_file_id(self, g):
 	return result
 
 
-def episode_number(self, g):
-	result = dict()
-	try:
-		result = self.inherited_series_dict[
-			'Episode'] if 'Episode' in self.inherited_series_dict else self.inherited_series_dict.update(
-				{ 'Episode': self.episode_dict.get('episodeNumber', str()) })
-	except KeyError or AttributeError:
-		pass
-	g.LOG.info(backend.debug_message(622, g, result))
-	return result
-
-
 def absolute_episode_number(self, g):
 	# need handling for multi part absolute episodes
 	result = self.inherited_series_dict['Absolute Episode'] = self.episode_dict.get('absoluteEpisodeNumber', str())
 	g.LOG.info(backend.debug_message(628, g, result))
-	return result
-
-
-def season_from_sonarr(self, g):
-	result = self.inherited_series_dict['Season'] = str(self.episode_dict.get('seasonNumber', str())).zfill(2)
-	g.LOG.info(backend.debug_message(630, g, result))
 	return result
 
 

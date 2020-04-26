@@ -26,5 +26,5 @@ if __name__ == "__main__":
 		"""
 		
 		postExecutionCleanup()
-		sleep(900)
+		sleep(900)  # 15 minutes
 		os.remove(lock_path)
