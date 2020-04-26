@@ -96,7 +96,6 @@ class ShowLookupSchema(Schema):
 	cleanTitle = fields.Str()
 	imdbId = fields.Str()
 	titleSlug = fields.Str()
-	certification: fields.Str()
 	genres = fields.List(fields.Str())
 	tags = fields.List(fields.Str())
 	added = fields.Str()
@@ -104,9 +103,9 @@ class ShowLookupSchema(Schema):
 	qualityProfileId = fields.Int()
 	seasonCount = fields.Int()
 	lastInfoSync = fields.Str()
-	tags = fields.List(fields.Str())
+	tags = fields.List(fields.__all__())
 	path = fields.Str()
-	languageProfileId = fields.Str()
+	languageProfileId = fields.Int()
 
 
 class Movie(Movies, Globals):
@@ -265,7 +264,6 @@ class Show(Movie, Globals):
 		self.cleanTitle = series
 		self.imdbId = None
 		self.titleSlug = None
-		self.certification: None
 		self.genres = None
 		self.tags = None
 		self.added = None
