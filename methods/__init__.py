@@ -244,7 +244,7 @@ class Show(Movie, Globals):
 		self.sonarr_api_query = None
 		self.sonarr_series_dict = None
 		self.sortTitle = None
-		self.status = None
+		self.status = str
 		self.tags = None
 		self.title = series
 		self.titleSlug = None
