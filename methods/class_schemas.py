@@ -12,7 +12,7 @@ class ShowLookupSchema(Schema):
 	genres = fields.List(fields.Str(required = False))
 	id = fields.Raw(required = True)
 	images = fields.List(fields.Dict(required = False))
-	imdbId = fields.Str(required = True)
+	imdbId = fields.Int(required = True)
 	languageProfileId = fields.Int(required = False)
 	lastInfoSync = fields.Str(required = False)
 	monitored = fields.Raw(required = False)
