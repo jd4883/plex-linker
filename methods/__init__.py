@@ -103,6 +103,7 @@ class ShowLookupSchema(Schema):
 	qualityProfileId = fields.Int()
 	seasonCount = fields.Int()
 	lastInfoSync = fields.Str()
+	certification = fields.Raw()
 	tags = fields.List(fields.Raw())
 	path = fields.Str()
 	languageProfileId = fields.Int()
