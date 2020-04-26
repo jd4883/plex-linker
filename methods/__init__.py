@@ -267,7 +267,7 @@ class Show(Movie, Globals):
 		pprint(f"SCHEMA:\t{schema}")
 		# dump = schema.dump(data)
 		# pprint(f"DUMP VERSION:\t{dump}")
-		load = schema.from_dict(data)
+		load = schema.load(data)
 		pprint(f"LOAD VERSION:\t{load}")
 		
 		breakpoint()
