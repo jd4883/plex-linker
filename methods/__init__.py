@@ -9,7 +9,6 @@ import plex_linker.parser.series as parse_series
 from IO.YAML.yaml_to_object import (get_variable_from_yaml)
 from logs.bin.get_parameters import (get_log_name, get_logger, get_method_main)
 from messaging import backend as backend
-from methods.class_schemas import ShowLookupSchema
 from methods.misc_get_methods import (
 	get_docker_media_path,
 	get_host_media_path,
@@ -186,49 +185,65 @@ class Show(Movie, Globals):
 	             show_dict = dict(),
 	             movie_dict = dict()):
 		super().__init__(movie_dict, g)
-		self.movie_dictionary = fetch_series.parent_dict(g, movie_dict)
-		self.inherited_series_dict = show_dict
-		self.cleanup_input_data()
+		self.absolute_episode = None
 		self.absoluteEpisodeNumber = None
 		self.added = None
 		self.airDate = None
 		self.airDateUtc = None
 		self.airTime = None
+		self.anime_status = bool()
 		self.certification = None
 		self.cleanTitle = None
+		self.cleanup_input_data()
+		self.episode = self.inherited_series_dict.get('Episode')
+		self.episode_dict = None
+		self.episode_file_dict = None
+		self.episode_file_id = None
 		self.episode_id = None
+		self.episode_title = None
 		self.episodeFileId = None
 		self.episodeNumber = None
 		self.firstAired = None
 		self.genres = None
+		self.has_link = None
 		self.hasFile = False
 		self.id = None
 		self.images = None
 		self.imdbId = None
+		self.inherited_series_dict = show_dict
 		self.lastInfoSync = None
 		self.monitored = False
-		self.monitored = False
+		self.movie_dictionary = fetch_series.parent_dict(g, movie_dict)
 		self.network = None
-		self.overview = None
 		self.overview = str()
+		self.padding = None
+		self.parsed_absolute_episode = None
+		self.parsed_episode = None
+		self.parsed_episode_title = None
 		self.path = None
 		self.profileId = None
 		self.qualityProfileId = None
 		self.ratings = None
+		self.relative_show_file_path = None
+		self.relative_show_path = None
 		self.remotePoster = None
 		self.runtime = 20
 		self.sceneEpisodeNumber = None
 		self.sceneSeasonNumber = None
+		self.season = None
+		self.season_folder = None
 		self.seasonCount = None
 		self.seasonFolder = True
 		self.seasonNumber = 0
 		self.seasons = None
 		self.seriesId = None
 		self.seriesType = "anime"
+		self.show = series
+		self.show_root_path = None
+		self.sonarr_api_query = None
 		self.sortTitle = None
 		self.status = None
 		self.tags = None
-		self.title = None
 		self.title = series
 		self.titleSlug = None
 		self.tvDbEpisodeId = None
@@ -237,17 +252,11 @@ class Show(Movie, Globals):
 		self.tvRageId = None
 		self.useSceneNumbering = False
 		self.year = datetime.datetime.year
-		self.episode = self.inherited_series_dict.get('Episode')
-		self.show = series
-		init_show(self, g)
-		## UPDATE HERE, NEED TO INIT THE OBJECT AS THE LAST STATEMENT AND HAVE BASE VALUES BE BLANKED, THIS CURRENT
-		# WAYS KIND OF CLUNKY
-		
-		print(f"ID SET: {self.id}")
+	
+	def init_show(self, g):
 		self.anime_status = bool("anime" in self.seriesType)
 		self.padding = 3 if self.anime_status else int(os.environ['EPISODE_PADDING'])
 		parse_series.padded_episode_number(self, g)
-		
 		self.sonarr_api_query = parse_series.episode_dict_from_lookup(self, g)
 		self.episode_id = \
 			self.inherited_series_dict['Episode ID'] = \
@@ -260,7 +269,6 @@ class Show(Movie, Globals):
 			self.inherited_series_dict['Parsed Episode'] = \
 			str(self.inherited_series_dict.get("Parsed Episode", self.episode)).zfill(self.padding)
 		self.season = str(self.inherited_series_dict.get("Season", str(0))).zfill(2)
-		
 		self.episode_title = self.inherited_series_dict['Title'] = str(self.inherited_series_dict.get("Title",
 		                                                                                              re.sub('\('
 		                                                                                                     '\d+\)$',
@@ -271,9 +279,7 @@ class Show(Movie, Globals):
 		# * general ease of readability cleanup
 		# * DB integration will make a world of a difference here
 		g.LOG.info(backend.debug_message(618, g, self.tvdbId))
-		
 		self.has_link = self.inherited_series_dict['Has Link'] = self.inherited_series_dict.get('Has Link', bool())
-		
 		self.season_folder = parse_series.season_folder_from_api(self, g)
 		self.show_root_path = self.inherited_series_dict['Show Root Path'] = self.setShowRootPath(g)
 		self.relative_show_path = self.inherited_series_dict['Relative Show Path'] = parse_series.relative_show_path(
@@ -331,10 +337,3 @@ class Show(Movie, Globals):
 		if 'path' in self.sonarr_series_dict and self.path:
 			payload = self.path
 		return payload
-
-
-def init_show(show, g):
-	print("TESTING HERE")
-	lookup = g.sonarr.lookup_series(show.show, g)[0]
-	ShowLookupSchema().load(lookup)
-	ShowLookupSchema().dump(show)

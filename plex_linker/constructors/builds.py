@@ -1,3 +1,6 @@
+from methods.class_schemas import ShowLookupSchema
+
+
 #
 # def build_movie_name_from_lookup(radarr_dictionary, movie_title):
 # 	title = str(radarr_dictionary[0].get('title', str(movie_title)))
@@ -13,4 +16,13 @@ def init_show_object(movie, series, g):
 	            series,
 	            movie.shows_dictionary[series],
 	            movie.movie_dictionary)
+	init_show(show, g)
 	return show
+
+
+def init_show(show, g):
+	print("TESTING HERE")
+	lookup = g.sonarr.lookup_series(show.show, g)[0]
+	ShowLookupSchema().load(lookup)
+	ShowLookupSchema().dump(show)
+	show.init_show()
