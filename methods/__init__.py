@@ -70,7 +70,11 @@ class RatingsSchema(Schema):
 	value = fields.Int()
 
 
-class ShowLookupSchema(Schema):
+class ShowParentLookupSchema(Schema):
+	parent = fields.List(fields.Nested(ShowChildLookupSchema()))
+
+
+class ShowChildLookupSchema(Schema):
 	name = fields.Str()
 	sortTitle = fields.Str()
 	id = fields.Int()
@@ -232,7 +236,7 @@ class Show(Movie, Globals):
 		from pprint import pprint
 		import marshmallow
 		pprint(self.sonarr_series_dict)
-		schema = ShowLookupSchema()
+		schema = ShowParentLookupSchema()
 		marshmallow.pprint(f"SCHEMA DUMP TEST: {schema.dump(self.sonarr_series_dict)}")
 		breakpoint()
 		series_id = parse_item_out_of_series_dict('seriesId', self.sonarr_series_dict, self.inherited_series_dict)
