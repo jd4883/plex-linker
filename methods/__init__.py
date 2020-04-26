@@ -186,6 +186,8 @@ class Show(Movie, Globals):
 	             movie_dict = dict()):
 		super().__init__(movie_dict, g)
 		self.inherited_series_dict = show_dict
+		self.episode = self.inherited_series_dict.get('Episode')
+		self.movie_dictionary = fetch_series.parent_dict(g, movie_dict)
 		self.absolute_episode = None
 		self.absoluteEpisodeNumber = None
 		self.added = None
@@ -195,7 +197,6 @@ class Show(Movie, Globals):
 		self.anime_status = bool()
 		self.certification = None
 		self.cleanTitle = None
-		self.episode = self.inherited_series_dict.get('Episode')
 		self.episode_dict = None
 		self.episode_file_dict = None
 		self.episode_file_id = None
@@ -212,7 +213,6 @@ class Show(Movie, Globals):
 		self.imdbId = int()
 		self.lastInfoSync = None
 		self.monitored = False
-		self.movie_dictionary = fetch_series.parent_dict(g, movie_dict)
 		self.network = None
 		self.overview = str()
 		self.padding = None

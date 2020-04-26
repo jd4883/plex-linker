@@ -35,4 +35,4 @@ class ShowLookupSchema(Schema):
 	tvMazeId = fields.Int()
 	tvRageId = fields.Int()
 	useSceneNumbering = fields.Bool()
-	year = fields.Int()
+	year = fields.Raw()

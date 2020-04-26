@@ -26,7 +26,7 @@ def parse_shows_dictionary_object(movie, g):
 		return
 	for series in movie.shows_dictionary.keys():
 		try:
-			show = init_show_object(movie, str(series), g)
+			show = init_show_object(movie, series, g)
 		except json.decoder.JSONDecodeError:
 			continue
 		parse_show_to_link(show, g)
