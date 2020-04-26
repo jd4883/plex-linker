@@ -34,7 +34,7 @@ def episode_index(self, query = dict()):
 
 
 def episode_id(self, g):
-	sonarr_episode_id = parse_episode_id_from_series_query(g, self) if str(self.episode).isdigit() else 0
+	sonarr_episode_id = parse_episode_id_from_series_query(g, self)
 	g.LOG.info(backend.debug_message(619, g, sonarr_episode_id))
 	return sonarr_episode_id
 
@@ -42,6 +42,9 @@ def episode_id(self, g):
 def parse_episode_id_from_series_query(g, show):
 	base = g.sonarr.get_episodes_by_series_id(show.id)
 	episode_dict = None
+	if not show.episode:
+		print(f"Episode not set here erroring out for {show.name} linking to {show.movie_title}")
+		raise
 	if not base:
 		return str()
 	for i in base:
