@@ -29,7 +29,7 @@ class ShowLookupSchema(Schema):
 	seasons = fields.Raw(required = False)
 	seriesType = fields.Raw(required = True)
 	sortTitle = fields.Str(required = False)
-	status = fields.Str(required = False)
+	status = fields.Raw(required = False)
 	tags = fields.Raw(required = False)
 	title = fields.Raw(required = True)
 	titleSlug = fields.Str(required = False)
