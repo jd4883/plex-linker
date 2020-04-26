@@ -230,7 +230,7 @@ class Show(Movie, Globals):
 		from pprint import pprint
 		for i in self.sonarr_series_dict:
 			parsed_version = schema.from_dict(i)
-			pprint(parsed_version)
+			pprint(parsed_version.dump(i))
 		breakpoint()
 		series_id = parse_item_out_of_series_dict('seriesId', self.sonarr_series_dict, self.inherited_series_dict)
 		self.series_id = self.inherited_series_dict.get("Series ID") if not series_id else series_id
