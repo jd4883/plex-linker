@@ -22,8 +22,8 @@ class ShowLookupSchema(Schema):
 	network = fields.Str(required = False)
 	overview = fields.Str(required = False)
 	path = fields.Str(required = False, default = str())  # could make this an API call?
-	profileId = fields.Int(required = False, default = 0)
-	qualityProfileId = fields.Int(required = False, default = 0)
+	profileId = fields.Int(required = False)
+	qualityProfileId = fields.Int(required = False)
 	ratings = fields.Raw(required = False)
 	remotePoster = fields.Str(required = False, default = str())
 	runtime = fields.Int(required = False, default = 20)
