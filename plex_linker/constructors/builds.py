@@ -29,4 +29,6 @@ def init_show(show, g):
 	print(schema)
 	schema.load(lookup)
 	schema.dump(show)
+	print(show.id)
+	print(show.title)
 	show.init(g)
