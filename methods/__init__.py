@@ -226,7 +226,7 @@ class Show(Movie, Globals):
 		self.ratings = None
 		self.relative_show_file_path = None
 		self.relative_show_path = None
-		self.remotePoster = None
+		self.remotePoster = str
 		self.runtime = None
 		self.sceneEpisodeNumber = None
 		self.sceneSeasonNumber = None
