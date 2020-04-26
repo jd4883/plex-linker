@@ -26,8 +26,8 @@ def init_show(show, g):
 	# lookup = g.sonarr.lookup_series(show.title, g)[0]
 	print(lookup)
 	schema = ShowLookupSchema()
-	print(schema)
-	schema.from_dict(lookup)
+	# print(schema)
+	schema.load(lookup)
 	# schema.dump(show)
 	# show.id = show.seriesId = lookup["id"]
 	print(show.id)
