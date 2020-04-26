@@ -27,7 +27,7 @@ class ShowLookupSchema(Schema):
 	seasonCount = fields.Int()
 	seasonFolder = fields.Bool()
 	seasons = fields.Raw(required = False)
-	seriesType = fields.Str(required = True)
+	seriesType = fields.Raw(required = True)
 	sortTitle = fields.Str()
 	status = fields.Str(required = False)
 	tags = fields.Raw(required = False)
