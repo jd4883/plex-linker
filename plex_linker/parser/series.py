@@ -16,12 +16,12 @@ def episode_dict_from_lookup(self, g):
 
 
 def root_folder(self, g):
-	folder_root = f"{os.environ['SONARR_DEFAULT_ROOT']}/{self.show}"
+	folder_root = f"{os.environ['SONARR_DEFAULT_ROOT']}/{self.title}"
 	for item in g.sonarr_root_folders:
 		item = fetch_series.show_path_string(str(item['path']))
-		potential = fetch_series.show_path_string(f"{item}{self.show}/{self.seasonFolder}")
+		potential = fetch_series.show_path_string(f"{item}{self.title}/{self.seasonFolder}")
 		if os.path.exists(potential) and os.path.isdir(potential):
-			folder_root = fetch_series.show_path_string(f"{item}{self.show}")
+			folder_root = fetch_series.show_path_string(f"{item}{self.title}")
 			break
 	return folder_root
 
@@ -138,10 +138,10 @@ def padded_episode_number(self, g, result = str()):
 
 def padded_absolute_episode(self, g):
 	result = str()
-	if isinstance(self.absolute_episode, list):
-		result = "-".join([str(i).zfill(self.padding) for i in self.absolute_episode])
-	elif isinstance(self.absolute_episode, int):
-		result = str(self.absolute_episode).zfill(self.padding)
+	if isinstance(self.absoluteEpisodeNumber, list):
+		result = "-".join([str(i).zfill(self.padding) for i in self.absoluteEpisodeNumber])
+	elif isinstance(self.absoluteEpisodeNumber, int):
+		result = str(self.absoluteEpisodeNumber).zfill(self.padding)
 	elif 'Parsed Absolute Episode' in self.inherited_series_dict:
 		del self.inherited_series_dict['Parsed Absolute Episode']
 		result = str()
@@ -152,7 +152,7 @@ def padded_absolute_episode(self, g):
 
 
 def compiled_episode_title(self, g):
-	root = "/".join([self.show_root_path, self.seasonFolder, self.show])
+	root = "/".join([self.show_root_path, self.seasonFolder, self.title])
 	parsed_title = f"{root} - S{self.season}E{self.parsed_episode} - {self.episode_title}"
 	result = self.inherited_series_dict['Parsed Episode Title'] = re.sub('\(\d+\)$', "",
 	                                                                     fetch_series.show_path_string(parsed_title))
