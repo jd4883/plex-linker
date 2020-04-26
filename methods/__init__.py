@@ -229,7 +229,7 @@ class Show(Movie, Globals):
 		# schema = ShowLookupSchema()
 		from pprint import pprint
 		data = self.sonarr_series_dict[0]
-		schema = Schema.from_dict(data, many = True)
+		schema = Schema.from_dict({ "title": fields.Str(), "monitored": fields.Bool() })
 		pprint(f"SCHEMA:\t{schema}")
 		# dump = schema.dump(data)
 		# pprint(f"DUMP VERSION:\t{dump}")
