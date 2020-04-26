@@ -251,7 +251,7 @@ class Show(Movie, Globals):
 		self.tvdbId = None
 		self.tvMazeId = None
 		self.tvRageId = None
-		self.useSceneNumbering = False
+		self.useSceneNumbering = None
 		self.year = None
 	
 	# datetime.datetime.year
