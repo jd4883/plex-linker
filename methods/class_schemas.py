@@ -2,7 +2,10 @@ from marshmallow import fields, post_load, Schema
 
 from methods import Show
 
-
+"""
+TODO:
+update all raw entries to be typed with defaults
+"""
 class ShowLookupSchema(Schema):
 	certification = fields.Raw(required = False)
 	cleanTitle = fields.Raw(required = False)
@@ -39,6 +42,6 @@ class ShowLookupSchema(Schema):
 	useSceneNumbering = fields.Bool(required = False, default = False)
 	year = fields.Int(required = False)
 	
-	@post_load()
+	@post_load
 	def make_show(data, **kwargs):
 		return Show(**data)
