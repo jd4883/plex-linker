@@ -29,7 +29,7 @@ def init_show(show, g):
 	print(schema)
 	schema().load(lookup)
 	# schema.dump(lookup)
-	show.id = show.seriesId = lookup["id"]
+	# show.id = show.seriesId = lookup["id"]
 	print(show.id)
 	print(show.seriesId)
 	print(show.title)
