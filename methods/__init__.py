@@ -240,7 +240,7 @@ class Show(Movie, Globals):
 		self.useSceneNumbering = False
 		self.year = datetime.datetime.year
 		self.episode = self.inherited_series_dict.get('Episode')
-		print(ShowLookupSchema().load(self.sonarr_series_dict[0]))
+		self = ShowLookupSchema().load(self.sonarr_series_dict[0])
 		print(f"ID SET: {self.id}")
 		self.anime_status = bool("anime" in self.seriesType)
 		self.padding = 3 if self.anime_status else int(os.environ['EPISODE_PADDING'])
