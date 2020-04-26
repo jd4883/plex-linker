@@ -11,7 +11,7 @@ class ShowLookupSchema(Schema):
 	firstAired = fields.DateTime()
 	genres = fields.List(fields.Str())
 	id = fields.Int(required = True)
-	images = fields.Raw(required = False)
+	images = fields.List(fields.Nested(required = False))
 	imdbId = fields.Str(required = True)
 	languageProfileId = fields.Int()
 	lastInfoSync = fields.Str(required = False)
