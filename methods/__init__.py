@@ -226,10 +226,10 @@ class Show(Movie, Globals):
 		self.cleanup_input_data()
 		self.show = series
 		self.sonarr_series_dict = g.sonarr.lookup_series(self.show, g)
-		schema = ShowLookupSchema()
+		# schema = ShowLookupSchema()
 		from pprint import pprint
 		for index, i in enumerate(self.sonarr_series_dict):
-			schema = schema.from_dict(i)
+			schema = Schema.from_dict(i)
 			parsed_version = schema.load(self.sonarr_series_dict[index])
 			pprint(schema)
 			pprint(parsed_version)
