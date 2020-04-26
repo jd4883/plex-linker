@@ -1,6 +1,5 @@
 import datetime
 from os.path import abspath
-from pprint import pprint
 
 from marshmallow import fields, Schema
 
@@ -27,7 +26,7 @@ from plex_linker.compare.ids import validate_tmdbId
 from plex_linker.fetch.series import fetch_link_status
 from plex_linker.gets.movie import get_relative_movies_path
 from plex_linker.gets.path import get_absolute_movie_file_path, get_relative_movie_file_path
-from plex_linker.parser.series import padded_absolute_episode, parse_item_out_of_series_dict
+from plex_linker.parser.series import padded_absolute_episode
 
 
 class Globals:
@@ -95,7 +94,7 @@ class ShowLookupSchema(Schema):
 	runtime = fields.Int()
 	seasonCount = fields.Int()
 	seasonFolder = fields.Bool()
-	seasons = fields.List(fields.Nested(SeasonsListSchema()))
+	seasons = fields.Raw()  # fields.List(fields.Nested(SeasonsListSchema()))
 	seriesType = fields.Str()
 	sortTitle = fields.Str()
 	status = fields.Str()
@@ -269,25 +268,17 @@ class Show(Movie, Globals):
 		self.tvRageId = None
 		self.useSceneNumbering = False
 		self.year = datetime.datetime.year
-		data = self.sonarr_series_dict[0]
-		schema = ShowLookupSchema()
-		load = schema.load(data)
-		pprint(load)
-		breakpoint()
+		ShowLookupSchema().load(self.sonarr_series_dict[0])
+		self.anime_status = bool(self.seriesType.lower() == "anime")
+		self.padding = \
+			self.inherited_series_dict['Padding'] = 3 if self.anime_status else int(os.environ['EPISODE_PADDING'])
+		
 		self.sonarr_api_query = parse_series.episode_dict_from_lookup(self, g)
-		self.anime_status = \
-			self.inherited_series_dict["Anime"] = \
-			(str(parse_item_out_of_series_dict('seriesType',
-			                                   self.sonarr_series_dict,
-			                                   self.inherited_series_dict)).lower() == "anime")
-		self.padding = self.inherited_series_dict['Padding'] = 3 \
-			if self.anime_status else int(os.environ['EPISODE_PADDING'])
 		self.episode = self.inherited_series_dict.get('Episode')
 		parse_series.padded_episode_number(self, g)
 		self.episode_id = \
 			self.inherited_series_dict['Episode ID'] = \
 			self.inherited_series_dict.get("Episode ID", parse_series.episode_id(self, g))
-		
 		self.episode_dict = parse_series.parse_episode_dict(self, g)
 		if self.episode_dict:
 			self.absolute_episode = parse_series.absolute_episode_number(self, g)
@@ -364,6 +355,6 @@ class Show(Movie, Globals):
 	
 	def setShowRootPath(self, g):
 		payload = parse_series.show_root_folder(self, g)
-		if 'path' in self.sonarr_series_dict and self.sonarr_series_dict["path"]:
-			payload = self.sonarr_series_dict["path"]
+		if 'path' in self.sonarr_series_dict and self.path:
+			payload = self.path
 		return payload
