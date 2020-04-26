@@ -24,7 +24,7 @@ class ShowLookupSchema(Schema):
 	ratings = fields.Raw(required = False)
 	remotePoster = fields.Url(required = False)
 	runtime = fields.Int(required = False)
-	seasonCount = fields.Raw(required = False)
+	seasonCount = fields.Int(required = False)
 	seasonFolder = fields.Bool(required = False)
 	seasons = fields.Raw(required = False)
 	seriesType = fields.Raw(required = True)
