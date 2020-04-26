@@ -38,5 +38,5 @@ class ShowLookupSchema(Schema):
 	year = fields.Raw()
 
 	@post_load
-    def make_user(self, data, **kwargs):
+    def make_show(self, data, **kwargs):
         return Show(**data)
