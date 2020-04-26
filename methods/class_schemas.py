@@ -10,7 +10,7 @@ class ShowLookupSchema(Schema):
 	cleanTitle = fields.Str(required = False)
 	firstAired = fields.DateTime()
 	genres = fields.List(fields.Str())
-	id = fields.Int(required = True)
+	id = fields.Raw(required = True)
 	images = fields.List(fields.Dict(required = False))
 	imdbId = fields.Str(required = True)
 	languageProfileId = fields.Int()

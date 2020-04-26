@@ -209,7 +209,7 @@ class Show(Movie, Globals):
 		self.genres = None
 		self.has_link = str()
 		self.hasFile = False
-		self.id = int()
+		self.id = None
 		self.images = None
 		self.imdbId = int()
 		self.lastInfoSync = None
