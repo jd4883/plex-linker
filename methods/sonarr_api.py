@@ -71,11 +71,11 @@ class SonarrAPI(object):
 			parseEpisode = bool(int(i["episodeNumber"]) == show.inherited_series_dict["Episode"])
 			parseSeason = bool(int(i["seasonNumber"]) == (0 or show.seasonNumber))
 			if parseEpisode and parseSeason:
+				print(f"PARSING OUT DATA FROM {i}")
 				show.absoluteEpisodeNumber = i.get("absoluteEpisodeNumber", 0)
 				show.episodeId = i.pop("id")
 				show.episodeTitle = self.inherited_series_dict['Title'] = i.pop("title")  # re.sub('\(''\d+\)$',
 				print(f"EPISODE TITLE: {show.episodeTitle}")
-				# str(),
 				show.hasFile = i.pop("hasFile")
 				show.monitored = False
 				show.unverifiedSceneNumbering = i.pop("unverifiedSceneNumbering")
@@ -89,6 +89,13 @@ class SonarrAPI(object):
 					show.languageDict = episodeFileDict.pop("language", 0)
 					show.qualityCutoffNotMet = episodeFileDict.pop("qualityCutoffNotMet")
 					show.relativeEpisodePath = episodeFileDict.pop("relativePath", 0)
+					show.relative_show_file_path = '/'.join([show.path, show.seasonFolder, show.title]) \
+					                               + " - S" \
+					                               + show.season \
+					                               + "E" \
+					                               + show.parsed_episode \
+					                               + " - " \
+					                               + show.episodeTitle
 				break
 	
 	def get_episode_by_episode_id(self, episode_id):

@@ -84,8 +84,13 @@ def padded_absolute_episode(self, g):
 
 
 def compiled_episode_title(self, g):
-	root = "/".join([self.path, self.seasonFolder, self.title])
-	parsed_title = f"{root} - S{self.season}E{self.parsed_episode} - {self.episodeTitle}"
+	parsed_title = '/'.join([self.path, self.seasonFolder, self.title]) \
+	               + " - S" \
+	               + self.season \
+	               + "E" \
+	               + self.parsed_episode \
+	               + " - " \
+	               + self.episodeTitle
 	print(f"PARSED TITLE: {parsed_title}")
 	result = self.inherited_series_dict['Parsed Episode Title'] = re.sub('\(\d+\)$', "",
 	                                                                     fetch_series.show_path_string(parsed_title))
