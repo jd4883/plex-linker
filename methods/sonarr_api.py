@@ -68,10 +68,7 @@ class SonarrAPI(object):
 	
 	def get_episodes_by_series_id(self, show):
 		raw_episodes_from_series_id = self.sonarr_api_request(f"{self.host_url}/episode?seriesId={show.seriesId}")
-		episode_found = bool()
-		i = iter(raw_episodes_from_series_id)
-		while not episode_found:
-			iter(i).__next__()
+		for i in raw_episodes_from_series_id:
 			parseEpisode = bool(int(i["episodeNumber"]) == int(show.inherited_series_dict["Episode"]))
 			parseSeason = bool(int(i["seasonNumber"]) == (0 or show.seasonNumber))
 			if parseEpisode and parseSeason:
@@ -91,7 +88,6 @@ class SonarrAPI(object):
 					show.languageDict = episodeFileDict.pop("language", 0)
 					show.qualityCutoffNotMet = episodeFileDict.pop("qualityCutoffNotMet")
 					show.relativeEpisodePath = episodeFileDict.pop("relativePath", 0)
-				episode_found = True
 				break
 		print(i)
 		breakpoint()
