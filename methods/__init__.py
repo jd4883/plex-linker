@@ -219,7 +219,7 @@ class Show(Movie, Globals):
 		self.parsed_episode = str
 		self.parsed_episode_title = str
 		self.path = str
-		self.profileId = int
+		self.profileId = None
 		self.qualityProfileId = int
 		self.ratings = None
 		self.relative_show_file_path = str
