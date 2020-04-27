@@ -1,4 +1,4 @@
-from marshmallow import INCLUDE, pprint, ValidationError
+from marshmallow import pprint, ValidationError
 
 from methods.class_schemas import ShowLookupSchema
 
@@ -33,7 +33,7 @@ def init_show(show, g):
 				"overview",
 				"remotePoster",
 				]
-		result = ShowLookupSchema(many = False, partial = True, exclude = exclude_list).load(lookup, unknown = INCLUDE)
+		result = ShowLookupSchema(many = False, partial = True, exclude = list(exclude_list)).load(lookup)
 		print(result)
 	except ValidationError as err:
 		pprint(err.messages)
