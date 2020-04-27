@@ -245,10 +245,15 @@ class Show(Movie, Globals):
 		self.sonarr_series_dict = dict
 	
 	def init(self, g):
-		g.LOG.info(backend.debug_message(618, g, self.tvdbId))
+		g.LOG.debug(backend.debug_message(618, g, self.tvdbId))
 		
 		self.padding = 3 if self.anime_status else int(os.environ['EPISODE_PADDING'])
 		parse_series.padded_episode_number(self, g)
+		print(padded_absolute_episode())
+		
+		## TODO: this is where episode parsing should get revised
+		breakpoint()
+		
 		self.sonarr_api_query = parse_series.episode_dict_from_lookup(self, g)
 		self.episode_id = \
 			self.inherited_series_dict['Episode ID'] = \
