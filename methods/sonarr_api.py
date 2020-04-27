@@ -77,11 +77,9 @@ class SonarrAPI(object):
 			parseEpisode = bool(int(i["episodeNumber"]) == show.inherited_series_dict["Episode"])
 			parseSeason = bool(int(i["seasonNumber"]) == 0)
 			if parseEpisode and parseSeason:
-				print(f"PARSING OUT DATA FROM {i}")
 				show.absoluteEpisodeNumber = i.get("absoluteEpisodeNumber", 0)
 				show.episodeId = i.pop("id")
 				show.episodeTitle = show.inherited_series_dict['Title'] = re.sub('\(''\d+\)$', "", i.pop("title"))
-				print(f"EPISODE TITLE: {show.episodeTitle}")
 				show.hasFile = i.pop("hasFile")
 				show.monitored = False
 				show.unverifiedSceneNumbering = i.pop("unverifiedSceneNumbering")
@@ -105,7 +103,9 @@ class SonarrAPI(object):
 				break
 	
 	def get_episode_by_episode_id(self, episode_id):
-		return self.sonarr_api_request(f"{self.host_url}/episode/{episode_id}")
+		# TODO: this is one of the next areas to improve; ensure all properties are parsing correctly
+		if episode_id
+			return self.sonarr_api_request(f"{self.host_url}/episode/{episode_id}")
 	
 	def get_episode_file_by_episode_id(self, episode_id):
 		return self.sonarr_api_request(f"{self.host_url}/episodefile/{episode_id}")
