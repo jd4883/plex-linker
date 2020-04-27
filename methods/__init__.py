@@ -210,7 +210,7 @@ class Show(Movie, Globals):
 		self.images = None
 		self.imdbId = str
 		self.languageProfileId = int
-		self.lastInfoSync = str
+		self.lastInfoSync = None
 		self.monitored = None
 		self.network = None
 		self.overview = None
