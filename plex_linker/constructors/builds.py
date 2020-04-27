@@ -15,8 +15,8 @@ def init_show_object(movie, series, g):
 
 def init_show(show, g):
 	lookup = g.sonarr.lookup_series(show.title, g)[0]
-	print("PRINTING LOOKUP")
-	print(lookup)
+	# print("PRINTING LOOKUP")
+	# print(lookup)
 	print("PRINTING RESULT")
 	exclude_list = [
 			"added",
@@ -30,7 +30,9 @@ def init_show(show, g):
 			"overview",
 			"remotePoster",
 			]
-	{ lookup.pop(k, None) for k, v in lookup.items() if k in exclude_list }
+	temp = lookup
+	{ lookup.pop(k, None) for k, v in temp.items() if k in exclude_list }
+	del temp
 	print("PARSED OUT LOOKUP")
 	print(lookup)
 	result = ShowLookupSchema(many = False, partial = True).load(lookup)
