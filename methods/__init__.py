@@ -244,8 +244,8 @@ class Show(Movie, Globals):
 		self.tags = list
 		self.titleSlug = None
 		self.tvdbId = int
-		self.tvMazeId = int
-		self.tvRageId = int
+		self.tvMazeId = None
+		self.tvRageId = None
 		self.useSceneNumbering = bool
 		self.year = int
 	
