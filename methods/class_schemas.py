@@ -11,7 +11,7 @@ update all raw entries to be typed with defaults
 
 
 class ShowLookupSchema(Schema):
-	added = fields.Raw()
+	added = fields.Raw(default = str())
 	airTime = fields.Str(default = str())
 	certification = fields.Str(default = str())
 	cleanTitle = fields.Raw()
