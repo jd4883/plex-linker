@@ -43,8 +43,7 @@ class SonarrAPI(object):
 		show.id = show.seriesId = int(base.pop("id"))
 		show.imdbId = base.pop("imdbId")
 		show.languageProfileId = int(base.pop("languageProfileId"))
-		show.path = show.inherited_series_dict['Show Root Path'] = \
-			str(base.pop("path")).replace(prefix, "")
+		show.path = show.inherited_series_dict['Show Root Path'] = str(base.pop("path")).replace(prefix, "")
 		show.profileId = int(base.pop("profileId"))
 		show.qualityProfileId = int(base.pop("qualityProfileId"))
 		show.ratings = base.pop("ratings")
@@ -65,7 +64,7 @@ class SonarrAPI(object):
 		show.year = base.pop("year")
 		del base
 		show.anime_status = bool("anime" in show.seriesType)
-		os.makedirs(self.path, exist_ok = True)
+		os.makedirs(show.path, exist_ok = True)
 	
 	def get_episodes_by_series_id(self, show):
 		for i in self.sonarr_api_request(f"{self.host_url}/episode?seriesId={show.seriesId}"):
