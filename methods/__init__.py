@@ -203,7 +203,7 @@ class Show(Movie, Globals):
 		self.episode_title = str
 		self.episodeNumber = int
 		self.firstAired = str
-		self.genres = list
+		self.genres = None
 		self.has_link = str
 		self.hasFile = bool
 		self.id = None

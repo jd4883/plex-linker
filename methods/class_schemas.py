@@ -14,7 +14,7 @@ class ShowLookupSchema(Schema):
 	certification = fields.Str(default = str())
 	cleanTitle = fields.Raw()
 	firstAired = fields.Str(default = str())
-	genres = fields.List(fields.Str(default = str()))
+	genres = fields.Raw(default = list())
 	id = fields.Raw(required = True)
 	images = fields.Raw(default = dict())
 	imdbId = fields.Str(required = True)
