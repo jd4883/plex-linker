@@ -50,22 +50,36 @@ class SonarrAPI(object):
 		:param show: The show to lookup and fill in values for the API
 		:type show: class object
 		:param g: globals object
-		:type g:
-		:return:
-		:rtype:
+		:type g: Globals object
+		:return: None
 		"""
+		
 		base = self.sonarr_api_request(f"{self.host_url}/series/lookup?term={show.title}")[0]
-		show.title = base.pop("title")
 		show.cleanTitle = base.pop("cleanTitle")
-		show.titleSlug = base.pop("titleSlug")
-		show.year = base.pop("year")
+		show.firstAired = base.pop("firstAired")
 		show.genres = base.pop("genres")
-		show.status = base.pop("status")
-		show.sortTitle = base.pop("sortTitle")
-		show.seasonCount = base.pop("seasonCount")
+		show.id = show.seriesId = int(base.pop("id"))
+		show.languageProfileId = int(base.pop("languageProfileId"))
+		show.path = str(base.pop("path"))
+		show.profileId = int(base.pop("profileId"))
+		show.qualityProfileId = int(base.pop("qualityProfileId"))
 		show.runtime = base.pop("runtime")
-		show.qualityProfileId = base.pop("qualityProfileId")
-		show.id = show.seriesId = base.pop("id")
+		show.seasonCount = base.pop("seasonCount")
+		show.seasonFolder = base.pop("seasonFolder")
+		show.seasons = base.pop("seasons")
+		show.seriesType = base.pop("seriesType")
+		show.sortTitle = base.pop("sortTitle")
+		show.status = base.pop("status")
+		show.title = base.pop("title")
+		show.titleSlug = base.pop("titleSlug")
+		show.tvdbId = base.pop("tvdbId")
+		show.tvMazeId = base.pop("tvMazeId")
+		show.tvRageId = base.pop("tvRageId")
+		show.useSceneNumbering = base.pop("useSceneNumbering")
+		show.year = base.pop("year")
+		show.tags = base.pop("tags")
+		show.imdbId = base.pop("imdbId")
+		
 		print(base)
 		breakpoint()
 	
