@@ -223,7 +223,7 @@ class Show(Movie, Globals):
 		# TODO: add in options to feed in other seasons from read in data (i.e Gintama has a special that spans 3
 		# episodes in a later season, would be nice to be able to map this statically)
 		self.absolute_episode_path = int
-		self.episode_id = int
+		self.episodeId = int
 		self.episode_size = int
 		self.episode_title = str
 		self.episodeFileId = int
@@ -259,22 +259,20 @@ class Show(Movie, Globals):
 		self.sceneSeasonNumber = bool
 		
 		self.show_root_path = str
-		self.sonarr_api_query = None
 		self.sonarr_series_dict = dict
 	
 	def init(self, g):
 		g.LOG.debug(backend.debug_message(618, g, self.tvdbId))
-		
 		self.padding = 3 if self.anime_status else int(os.environ['EPISODE_PADDING'])
 		parse_series.padded_episode_number(self, g)
-		print(self.padding)
+		print(f"PADDING FOR {self.title} IS:\t{self.padding}")
 		g.sonarr.get_episodes_by_series_id(self)
 		
 		## TODO: this is where episode parsing should get revised
+		print(self.episodeId)
 		breakpoint()
 		
-		self.sonarr_api_query = parse_series.episode_dict_from_lookup(self, g)
-		self.episode_id = \
+		self.episodeId = \
 			self.inherited_series_dict['Episode ID'] = \
 			self.inherited_series_dict.get("Episode ID", parse_series.episode_id(self, g))
 		self.episode_dict = parse_series.parse_episode_dict(self, g)

@@ -8,17 +8,6 @@ from messaging import backend as backend
 from plex_linker.fetch import series as fetch_series
 
 
-def episode_dict_from_lookup(show, g):
-	# TODO: should get a new API call here instead of series_dict
-	query = episode_index(show, show.sonarr_series_dict)
-	from pprint import pprint
-	pprint(type(query))
-	pprint(query)
-	breakpoint()
-	g.LOG.info(backend.debug_message(626, g, query))
-	return query
-
-
 def root_folder(self, g):
 	folder_root = f"{os.environ['SONARR_DEFAULT_ROOT']}/{self.title}"
 	for item in g.sonarr_root_folders:
@@ -28,14 +17,6 @@ def root_folder(self, g):
 			folder_root = fetch_series.show_path_string(f"{item}{self.title}")
 			break
 	return folder_root
-
-
-def episode_index(self, query = dict()):
-	if self.sonarr_series_dict:
-		e = ('episodeNumber' in query)
-		query = [query[x] for x in query if
-		         e and (query[x]['episodeNumber'] == self.episode) and (self.season == query[x]['seasonNumber'])]
-	return query
 
 
 def episode_id(self, g):
