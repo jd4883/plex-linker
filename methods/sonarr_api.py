@@ -69,27 +69,30 @@ class SonarrAPI(object):
 	def get_episodes_by_series_id(self, show):
 		raw_episodes_from_series_id = self.sonarr_api_request(f"{self.host_url}/episode?seriesId={show.seriesId}")
 		episode_found = bool()
-		i = None
+		i = iter(raw_episodes_from_series_id)
 		while not episode_found:
-			i = iter(raw_episodes_from_series_id).__next__()
+			iter(i).__next__()
 			parseEpisode = bool(int(i["episodeNumber"]) == int(show.inherited_series_dict["Episode"]))
 			parseSeason = bool(int(i["seasonNumber"]) == (0 or show.seasonNumber))
 			if parseEpisode and parseSeason:
+				print(i)
 				show.absoluteEpisodeNumber = i.get("absoluteEpisodeNumber", 0)
 				show.episodeId = i.pop("id")
 				show.episodeTitle = i.pop("title")
 				show.hasFile = i.pop("hasFile")
 				show.monitored = False
 				show.unverifiedSceneNumbering = i.pop("unverifiedSceneNumbering")
+				show.episodeSize = i.get("size", 0)
+				show.qualityDict = i.pop("quality")
 				if show.hasFile:
-					show.absolute_episode_path = i["episodeFile"].pop("path", 0)
-					show.episodeSize = i.get("size", 0)
-					show.episodeFileId = i["episodeFile"].pop("id", 0)
-					show.languageDict = i["episodeFile"].pop("language", 0)
-					show.qualityDict = i.pop("quality")
-					show.qualityCutoffNotMet = i["episodeFile"].pop("qualityCutoffNotMet")
-					show.relativeEpisodePath = i["episodeFile"].pop("relativePath", 0)
+					episodeFileDict = i["episodeFile"]
+					show.absolute_episode_path = episodeFileDict.pop("path", 0)
+					show.episodeFileId = episodeFileDict.pop("id", 0)
+					show.languageDict = episodeFileDict.pop("language", 0)
+					show.qualityCutoffNotMet = episodeFileDict.pop("qualityCutoffNotMet")
+					show.relativeEpisodePath = episodeFileDict.pop("relativePath", 0)
 				episode_found = True
+				break
 		print(i)
 		breakpoint()
 		
