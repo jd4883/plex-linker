@@ -32,8 +32,12 @@ def init_show(show, g):
 			"overview",
 			"remotePoster",
 			]
+	for k, v in lookup.items():
+		if k in exclude_list:
+			del k
+	
 	try:
-		result = ShowLookupSchema(exclude = exclude_list, many = False, partial = True).load(lookup)
+		result = ShowLookupSchema(many = False, partial = True).load(lookup)
 		print(result)
 	except ValidationError as err:
 		pprint(err.messages)
