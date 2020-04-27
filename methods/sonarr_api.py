@@ -104,7 +104,7 @@ class SonarrAPI(object):
 	
 	def get_episode_by_episode_id(self, episode_id):
 		# TODO: this is one of the next areas to improve; ensure all properties are parsing correctly
-		if episode_id
+		if episode_id:
 			return self.sonarr_api_request(f"{self.host_url}/episode/{episode_id}")
 	
 	def get_episode_file_by_episode_id(self, episode_id):
