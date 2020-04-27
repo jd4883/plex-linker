@@ -93,13 +93,13 @@ class SonarrAPI(object):
 					show.languageDict = episodeFileDict.pop("language", 0)
 					show.qualityCutoffNotMet = episodeFileDict.pop("qualityCutoffNotMet")
 					show.relativeEpisodePath = episodeFileDict.pop("relativePath", 0)
-					show.relative_show_file_path = str('/'.join([show.path, show.seasonFolder, show.title])) \
-					                               + " - S" \
-					                               + str(show.season) \
-					                               + "E" \
-					                               + str(show.parsed_episode) \
-					                               + " - " \
-					                               + str(show.episodeTitle)
+				# show.relative_show_file_path = str('/'.join([show.path, show.seasonFolder, show.title])) \
+				#                                + " - S" \
+				#                                + str(show.season) \
+				#                                + "E" \
+				#                                + str(show.parsed_episode) \
+				#                                + " - " \
+				#                                + str(show.episodeTitle)
 				break
 	
 	def get_episode_by_episode_id(self, episode_id):
