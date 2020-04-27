@@ -47,8 +47,23 @@ class SonarrAPI(object):
 		return series_scan
 	
 	def lookup_series(self, series, g):
-		sonarr_series = self.sonarr_api_request(f"{self.host_url}/series/lookup?term={series}")
-		g.LOG.debug(messaging.backend.debug_message(625, g, sonarr_series))
+		sonarr_series = self.sonarr_api_request(f"{self.host_url}/series/lookup?term={series}")[0]
+		exclude_list = [
+				"added",
+				"airTime",
+				"certification",
+				"firstAired",
+				"images",
+				"lastInfoSync",
+				"monitored",
+				"network",
+				"overview",
+				"remotePoster",
+				]
+		temp = sonarr_series
+		{ sonarr_series.pop(k, None) for k, v in temp.items() if k in exclude_list }
+		del temp
+		g.LOG.info(messaging.backend.debug_message(625, g, sonarr_series))
 		return sonarr_series
 	
 	def sonarr_api_request(self, url, request_type = "get", data = dict()):
