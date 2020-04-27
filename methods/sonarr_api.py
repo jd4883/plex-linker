@@ -62,8 +62,9 @@ class SonarrAPI(object):
 				]
 		print(type(base))
 		print(len(base))
+		print(len(base[0]))
 		print(base[0])
-		final = { { k: v } for k, v in base[0].items() if k not in exclude_list }
+		final = { k.items() for k in base[0] if k not in exclude_list }
 		g.LOG.info(messaging.backend.debug_message(625, g, final))
 		breakpoint()
 		return final
