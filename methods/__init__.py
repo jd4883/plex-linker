@@ -235,9 +235,9 @@ class Show(Movie, Globals):
 		self.relativePath = str
 		self.qualityCutoffNotMet = bool
 		self.quality_dict = dict
-		self.absolute_episode_path
-		self.relative_episode_path
-		self.language_dict
+		self.absolute_episode_path = int
+		self.relative_episode_path = int
+		self.language_dict = dict
 		self.episodeNumber = int
 		self.episode_title = str
 		self.episodeFileId = int
