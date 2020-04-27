@@ -34,7 +34,7 @@ class ShowLookupSchema(Schema):
 	seasons = fields.Raw(default = list())
 	seriesType = fields.Str(required = True, default = "anime")
 	sortTitle = fields.Str(default = str())
-	status = fields.Raw(default = "continuing")
+	status = fields.Raw()
 	tags = fields.Raw(default = list())
 	title = fields.Str(required = True)
 	titleSlug = fields.Raw(default = str())
