@@ -68,6 +68,10 @@ class SonarrAPI(object):
 	
 	def get_episodes_by_series_id(self, series_id):
 		episode_by_series_id = self.sonarr_api_request(f"{self.host_url}/episode?seriesId={series_id}")
+		from pprint import pprint
+		pprint(episode_by_series_id)
+		breakpoint()
+		
 		return episode_by_series_id
 	
 	def get_episode_by_episode_id(self, episode_id):

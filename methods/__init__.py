@@ -249,7 +249,8 @@ class Show(Movie, Globals):
 		
 		self.padding = 3 if self.anime_status else int(os.environ['EPISODE_PADDING'])
 		parse_series.padded_episode_number(self, g)
-		print(padded_absolute_episode())
+		print(self.padding)
+		g.sonarr.get_episodes_by_series_id(self.seriesId)
 		
 		## TODO: this is where episode parsing should get revised
 		breakpoint()
