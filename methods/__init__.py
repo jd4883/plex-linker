@@ -278,8 +278,8 @@ class Show(Movie, Globals):
 		                                          self.relative_movie_file_path) if self.episode_file_dict else bool()
 		# TODO: this spot seems to not parse out link status correctly
 		self.has_link = self.inherited_series_dict['Has Link'] = relativeMovieFilePath
-		g.sonarr.rescan_series(self.tvdbId)  # rescan movie in case it was picked up since last scan
-		g.sonarr.refresh_series(self.tvdbId)  # to ensure metadata is up to date
+		g.sonarr.rescan_series(self.tvdbId)
+		g.sonarr.refresh_series(self.tvdbId)
 	
 	def cleanup_input_data(self):
 		"""
@@ -309,10 +309,3 @@ class Show(Movie, Globals):
 					del self.inherited_series_dict[i]
 				except KeyError:
 					pass
-	
-	def get_title(self):
-		payload = fetch_series.show_path_string(self.episode_dict.get('title', str()))
-		return payload
-	
-	def setShowRootPath(self, g):
-		return payload

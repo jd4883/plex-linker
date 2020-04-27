@@ -73,7 +73,8 @@ class SonarrAPI(object):
 			if parseEpisode and parseSeason:
 				show.absoluteEpisodeNumber = i.get("absoluteEpisodeNumber", 0)
 				show.episodeId = i.pop("id")
-				show.episodeTitle = self.inherited_series_dict['Title'] = re.sub('\(''\d+\)$', str(), i.pop("title"))
+				show.episodeTitle = self.inherited_series_dict['Title'] = i.pop("title")  # re.sub('\(''\d+\)$',
+				# str(), 
 				show.hasFile = i.pop("hasFile")
 				show.monitored = False
 				show.unverifiedSceneNumbering = i.pop("unverifiedSceneNumbering")
