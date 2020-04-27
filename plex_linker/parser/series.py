@@ -1,8 +1,5 @@
 import os
 import re
-from pprint import pprint
-
-from marshmallow import fields, Schema
 
 from messaging import backend as backend
 from plex_linker.fetch import series as fetch_series
@@ -17,42 +14,6 @@ def root_folder(self, g):
 			folder_root = fetch_series.show_path_string(f"{item}{self.title}")
 			break
 	return folder_root
-
-
-def episode_id(self, g):
-	sonarr_episode_id = parse_episode_id_from_series_query(g, self)
-	g.LOG.info(backend.debug_message(619, g, sonarr_episode_id))
-	return sonarr_episode_id
-
-
-def parse_episode_id_from_series_query(g, show):
-	base = g.sonarr.get_episodes_by_series_id(show.seriesId)
-	pprint(base)
-	breakpoint()
-	episode_dict = None
-	if not base:
-		return str()
-	for i in base:
-		try:
-			for k, v in base[i].items():
-				if season(k, v):
-					# TODO: maybe try this each time and check the parsed out values?
-					pprint(EpisodeBySeriesIdSchema().load(i, id = show.episodeId))
-					breakpoint()
-					show.episode = str(show.inherited_series_dict["Episode"]).zfill(
-							show.padding)
-					show.episodeId = show.inherited_series_dict["Episode ID"] = str(i["id"])
-					show.episodeFileId = show.inherited_series_dict["episodeFileId"] = str(i["episodeFileId"])
-					show.season = show.inherited_series_dict["Season"] = str(i["seasonNumber"]).zfill(2)
-					break
-			break
-		except AttributeError:
-			pass
-	return show.episodeId
-
-
-def season(k, v):
-	return (k == "seasonNumber") and (str(v) == str(0))
 
 
 def parse_episode_file_id_dict(self, g):
@@ -140,25 +101,3 @@ def compiled_episode_title(self, g):
 	                                                                     fetch_series.show_path_string(parsed_title))
 	g.LOG.info(backend.debug_message(637, g, result))
 	return result
-
-# def episode_title(show, g):
-# 	show.episode_title = re.sub('\(\d+\)$', "", fetch_series.show_path_string(show.episode_dict['title']  # if 'title'
-# 	# in show.episode_dict else str()))
-# 	g.LOG.info(backend.debug_message(636, g, show.episode_title))
-class EpisodeBySeriesIdSchema(Schema):
-	def __init__(self):
-		seriesId = fields.Int()
-		episodeFileId = fields.Int()
-		seasonNumber = fields.Int()
-		episodeNumber = fields.Int()
-		title = fields.Str()
-		airDate = fields.DateTime()
-		airDateUtc = fields.DateTime()
-		overview = fields.Str()
-		hasFile = fields.Bool()
-		monitored = fields.Bool()
-		sceneEpisodeNumber = fields.Int()
-		sceneSeasonNumber = fields.Int()
-		tvDbEpisodeId = fields.Int()
-		absoluteEpisodeNumber = fields.Int()
-		id = fields.Int()

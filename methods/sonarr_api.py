@@ -25,13 +25,11 @@ class SonarrAPI(object):
 		time.sleep(backoff_timer)
 		return request_payload.json()
 	
-	def lookup_series(self, show, g):
+	def lookup_series(self, show):
 		"""
 		Lookup series Method
 		:param show: The show to lookup and fill in values for the API
 		:type show: class object
-		:param g: globals object
-		:type g: Globals object
 		:return: None
 		:description: This method calls Sonarr's API and sets class object values seen below. Some of these are
 		subject to be prioritized by other API calls later on but can use these as starting points

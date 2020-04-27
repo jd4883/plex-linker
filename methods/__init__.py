@@ -267,14 +267,7 @@ class Show(Movie, Globals):
 		parse_series.padded_episode_number(self, g)
 		print(f"PADDING FOR {self.title} IS:\t{self.padding}")
 		g.sonarr.get_episodes_by_series_id(self)
-		
-		## TODO: this is where episode parsing should get revised
-		print(self.episodeId)
-		breakpoint()
-		
-		self.episodeId = \
-			self.inherited_series_dict['Episode ID'] = \
-			self.inherited_series_dict.get("Episode ID", parse_series.episode_id(self, g))
+		self.inherited_series_dict['Episode ID'] = self.episodeId
 		self.episode_dict = parse_series.parse_episode_dict(self, g)
 		if self.episode_dict:
 			self.absoluteEpisodeNumber = parse_series.absolute_episode_number(self, g)
