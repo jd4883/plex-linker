@@ -37,16 +37,3 @@ class ShowLookupSchema(Schema):
 	@post_load
 	def make_show(self, data, **kwargs):
 		return Show(**data)
-	
-	exclude_list = [
-			"added",
-			"airTime",
-			"certification",
-			"firstAired",
-			"images",
-			"lastInfoSync",
-			"monitored",
-			"network",
-			"overview",
-			"remotePoster",
-			]
