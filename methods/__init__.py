@@ -211,7 +211,7 @@ class Show(Movie, Globals):
 		self.imdbId = str
 		self.languageProfileId = int
 		self.lastInfoSync = str
-		self.monitored = bool
+		self.monitored = None
 		self.network = None
 		self.overview = None
 		self.padding = int
