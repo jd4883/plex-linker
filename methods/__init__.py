@@ -243,7 +243,7 @@ class Show(Movie, Globals):
 		self.status = None
 		self.tags = list
 		self.titleSlug = None
-		self.tvdbId = None
+		self.tvdbId = int
 		self.tvMazeId = None
 		self.tvRageId = None
 		self.useSceneNumbering = None
