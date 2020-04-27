@@ -145,21 +145,6 @@ class Movie(Movies, Globals):
 		g.LOG.debug(backend.debug_message(617, g, result))
 		return result
 	
-	# def parse_tmdbid(self, g):
-	# 	tmdbID = str()
-	# 	if 'tmdbId' in self.radarr_dictionary:
-	# 		if 'Movie DB ID' in self.movie_dictionary and self.movie_dictionary['Movie DB ID']:
-	# 			tmdbID = self.movie_dictionary['Movie DB ID']
-	# 		elif 'tmdbId' in self.radarr_dictionary[0] and int(self.radarr_dictionary[0]['tmdbId']) > 0:
-	# 			tmdbID = int(self.radarr_dictionary[0]['tmdbId'])
-	# 		g.radarr.rescan_movie(int(tmdbID)) if len(self.radarr_dictionary) > 0 else str()
-	# 		# rescan movie in case it was picked up since last scan
-	# 		g.radarr.refresh_movie(int(tmdbID)) if len(self.radarr_dictionary) > 0 else str()
-	# 		# to ensure metadata is up to date
-	# 		if len(self.radarr_dictionary) > 0 and self.radarr_dictionary[0]['monitored']:
-	# 			g.radarr.movie_search(int(tmdbID))
-	# 	return tmdbID
-	
 	def parse_dict_from_radarr(self, g):
 		if validate_tmdbId(self.tmbdid):
 			try:
@@ -235,7 +220,7 @@ class Show(Movie, Globals):
 		self.qualityCutoffNotMet = bool
 		self.relative_episode_path = int
 		self.relativePath = str
-		self.seasonNumber = 0
+		self.season = self.seasonNumber = 0
 		self.unverifiedSceneNumbering = bool
 		#######################################
 		
@@ -246,10 +231,9 @@ class Show(Movie, Globals):
 		### THIS SEGMENT MAYBE CAN BE FACTORED OUT
 		#######################################
 		
-		self.season = None
 		self.episode_dict = None
 		self.episode_file_dict = None
-		self.has_link = str
+		self.has_link = bool
 		self.parsed_absolute_episode = str
 		self.parsed_episode = str
 		self.parsed_episode_title = str
