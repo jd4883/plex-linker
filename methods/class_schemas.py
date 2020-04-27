@@ -23,7 +23,7 @@ class ShowLookupSchema(Schema):
 	languageProfileId = fields.Int()
 	lastInfoSync = fields.Str(default = str())
 	monitored = fields.Bool(default = False)
-	network = fields.Str(default = str())
+	network = fields.Raw()
 	overview = fields.Str(default = str())
 	path = fields.Str(default = str())
 	profileId = fields.Int(default = 0)
