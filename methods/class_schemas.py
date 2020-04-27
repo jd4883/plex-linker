@@ -26,7 +26,7 @@ class ShowLookupSchema(Schema):
 	path = fields.Str(default = str())
 	profileId = fields.Int()
 	qualityProfileId = fields.Raw()
-	ratings = fields.Raw()
+	ratings = fields.Raw(default = str())
 	remotePoster = fields.Str(default = str())
 	runtime = fields.Int(default = 20)
 	seasonCount = fields.Int(default = 1)
