@@ -43,7 +43,7 @@ class ShowLookupSchema(Schema):
 	tvdbId = fields.Int(required = True)
 	tvMazeId = fields.Raw(default = str())
 	tvRageId = fields.Raw(default = str())
-	useSceneNumbering = fields.Bool(default = False)
+	useSceneNumbering = fields.Raw(default = False)
 	year = fields.Int(default = datetime.datetime.year)
 	
 	@post_load

@@ -246,7 +246,7 @@ class Show(Movie, Globals):
 		self.tvdbId = int
 		self.tvMazeId = None
 		self.tvRageId = None
-		self.useSceneNumbering = bool
+		self.useSceneNumbering = None
 		self.year = int
 	
 	def init(self, g):
