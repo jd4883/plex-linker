@@ -218,19 +218,36 @@ class Show(Movie, Globals):
 		self.tvRageId = int
 		self.useSceneNumbering = bool
 		self.year = int
+		
+		### PARSED OUTSIDE OF API CALLS
+		self.padding = int
+		#######################################
+		
+		### FIELDS PULLED GET EPISODES FROM SERIES ID ###
+		# TODO: add in options to feed in other seasons from read in data (i.e Gintama has a special that spans 3
+		# episodes in a later season, would be nice to be able to map this statically)
+		self.seasonNumber = 0
+		self.unverifiedSceneNumbering = bool
+		self.episode_id = int
+		self.monitored = bool
+		self.hasFile = bool
+		self.episode_size = int
+		self.relativePath = str
+		self.qualityCutoffNotMet = bool
+		self.quality_dict = dict
+		self.absolute_episode_path
+		self.relative_episode_path
+		self.language_dict
 		#######################################
 		
 		self.season = None
 		self.episode_dict = None
 		self.episode_file_dict = None
 		self.episodeFileId = int
-		self.episode_id = int
 		self.episode_title = str
 		self.episodeNumber = int
 		self.has_link = str
-		self.hasFile = bool
-		self.monitored = None
-		self.padding = int
+		
 		self.parsed_absolute_episode = str
 		self.parsed_episode = str
 		self.parsed_episode_title = str
@@ -238,7 +255,6 @@ class Show(Movie, Globals):
 		self.relative_show_path = str
 		self.sceneEpisodeNumber = bool
 		self.sceneSeasonNumber = bool
-		self.seasonNumber = 0
 		
 		self.show_root_path = str
 		self.sonarr_api_query = None
@@ -250,7 +266,7 @@ class Show(Movie, Globals):
 		self.padding = 3 if self.anime_status else int(os.environ['EPISODE_PADDING'])
 		parse_series.padded_episode_number(self, g)
 		print(self.padding)
-		g.sonarr.get_episodes_by_series_id(self.seriesId)
+		g.sonarr.get_episodes_by_series_id(self)
 		
 		## TODO: this is where episode parsing should get revised
 		breakpoint()

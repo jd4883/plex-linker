@@ -66,13 +66,31 @@ class SonarrAPI(object):
 		del base
 		show.anime_status = bool("anime" in show.seriesType)
 	
-	def get_episodes_by_series_id(self, series_id):
-		episode_by_series_id = self.sonarr_api_request(f"{self.host_url}/episode?seriesId={series_id}")
+	def get_episodes_by_series_id(self, show):
+		raw_episodes_from_series_id = self.sonarr_api_request(f"{self.host_url}/episode?seriesId={show.seriesId}")
 		from pprint import pprint
-		pprint(episode_by_series_id)
+		for i in raw_episodes_from_series_id.items():
+			if (int(i["episodeNumber"]) == int(show.inherited_series_dict["Episode"])) \
+					and (int(i["seasonNumber"]) == (0 or show.seasonNumber)):
+				pprint(i)
+				show.absoluteEpisodeNumber = i.get("absoluteEpisodeNumber", 0)
+				show.episode_id = i.pop("id")
+				show.episode_title = i.pop("title")
+				show.hasFile = i.pop("hasFile")
+				show.monitored = False
+				show.unverifiedSceneNumbering = i.pop("unverifiedSceneNumbering")
+				if show.hasFile:
+					show.absolute_episode_path = i["episodeFile"].pop("path", 0)
+					show.episode_size = i.get("size", 0)
+					show.episodeFileId = i["episodeFile"].pop("id", 0)
+					show.language_dict = i["episodeFile"].pop("language", 0)
+					show.quality_dict = i.pop("quality")
+					show.qualityCutoffNotMet = i["episodeFile"].pop("qualityCutoffNotMet")
+					show.relative_episode_path = i["episodeFile"].pop("relativePath", 0)
+				break
 		breakpoint()
 		
-		return episode_by_series_id
+		return raw_episodes_from_series_id
 	
 	def get_episode_by_episode_id(self, episode_id):
 		episode_by_episode_id = self.sonarr_api_request(f"{self.host_url}/episode/{episode_id}")
