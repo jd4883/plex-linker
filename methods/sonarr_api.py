@@ -95,11 +95,11 @@ class SonarrAPI(object):
 					show.relativeEpisodePath = episodeFileDict.pop("relativePath", 0)
 					show.relative_show_file_path = '/'.join([show.path, show.seasonFolder, show.title]) \
 					                               + " - S" \
-					                               + show.season \
+					                               + str(show.season) \
 					                               + "E" \
-					                               + show.parsed_episode \
+					                               + str(show.parsed_episode) \
 					                               + " - " \
-					                               + show.episodeTitle
+					                               + str(show.episodeTitle)
 				break
 	
 	def get_episode_by_episode_id(self, episode_id):
