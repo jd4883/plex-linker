@@ -1,5 +1,3 @@
-from marshmallow import pprint, ValidationError
-
 from methods.class_schemas import ShowLookupSchema
 
 
@@ -34,13 +32,9 @@ def init_show(show, g):
 			]
 	for k, v in lookup.items():
 		if k in exclude_list:
-			del k
-	
-	try:
-		result = ShowLookupSchema(many = False, partial = True).load(lookup)
-		print(result)
-	except ValidationError as err:
-		pprint(err.messages)
+			lookup.pop(k, None)
+	result = ShowLookupSchema(many = False, partial = True).load(lookup)
+	print(result)
 	
 	# show.id = show.seriesId = lookup["id"]
 	print(f"SERIES ID RAW: {show.id}")
