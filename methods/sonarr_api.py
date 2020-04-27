@@ -37,16 +37,16 @@ class SonarrAPI(object):
 		
 		prefix = os.environ["SONARR_ROOT_PATH_PREFIX"]
 		base = self.sonarr_api_request(f"{self.host_url}/series/lookup?term={show.title}")[0]
-		show.cleanTitle = base.pop("cleanTitle")
-		show.firstAired = base.pop("firstAired")
-		show.genres = base.pop("genres")
+		show.cleanTitle = base.get("cleanTitle", str())
+		show.firstAired = base.get("firstAired", str())
+		show.genres = base.get("genres", list())
 		show.id = show.seriesId = int(base.pop("id"))
 		show.imdbId = base.get("imdbId", str())
-		show.languageProfileId = int(base.pop("languageProfileId"))
+		show.languageProfileId = int(base.get("languageProfileId", 0))
 		show.path = show.inherited_series_dict['Show Root Path'] = str(base.pop("path")).replace(prefix, "")
-		show.profileId = int(base.pop("profileId"))
-		show.qualityProfileId = int(base.pop("qualityProfileId"))
-		show.ratings = base.pop("ratings")
+		show.profileId = int(base.get("profileId", 0))
+		show.qualityProfileId = int(base.get("qualityProfileId", 0))
+		show.ratings = base.get("ratings", dict())
 		show.runtime = base.pop("runtime")
 		show.seasonCount = base.pop("seasonCount")
 		show.seasonFolder = base.pop("seasonFolder")
