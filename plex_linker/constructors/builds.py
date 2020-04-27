@@ -20,20 +20,20 @@ def init_show(show, g):
 	print("PRINTING LOOKUP")
 	print(lookup)
 	print("PRINTING RESULT")
+	exclude_list = [
+			"added",
+			"airTime",
+			"certification",
+			"firstAired",
+			"images",
+			"lastInfoSync",
+			"monitored",
+			"network",
+			"overview",
+			"remotePoster",
+			]
 	try:
-		exclude_list = [
-				"added",
-				"airTime",
-				"certification",
-				"firstAired",
-				"images",
-				"lastInfoSync",
-				"monitored",
-				"network",
-				"overview",
-				"remotePoster",
-				]
-		result = ShowLookupSchema(many = False, partial = True, exclude = list(exclude_list)).load(lookup)
+		result = ShowLookupSchema(exclude = exclude_list, many = False, partial = True).load(lookup)
 		print(result)
 	except ValidationError as err:
 		pprint(err.messages)
