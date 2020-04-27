@@ -41,7 +41,7 @@ class SonarrAPI(object):
 		show.firstAired = base.pop("firstAired")
 		show.genres = base.pop("genres")
 		show.id = show.seriesId = int(base.pop("id"))
-		show.imdbId = base.pop("imdbId")
+		show.imdbId = base.get("imdbId", str())
 		show.languageProfileId = int(base.pop("languageProfileId"))
 		show.path = show.inherited_series_dict['Show Root Path'] = str(base.pop("path")).replace(prefix, "")
 		show.profileId = int(base.pop("profileId"))
