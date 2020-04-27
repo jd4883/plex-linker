@@ -31,7 +31,6 @@ def fetch_link_status(self, episode_file_dict, relative_movie_file_path):
 		return result
 	except OSError as err:
 		print(err)
-		print(f"EPISODE FILE DICT {episode_file_dict}")
 		print(f"RELATIVE MOVIE FILE PATH: {relative_movie_file_path}")
 		return bool()
 
