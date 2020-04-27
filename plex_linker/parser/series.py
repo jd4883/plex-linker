@@ -8,9 +8,9 @@ from messaging import backend as backend
 from plex_linker.fetch import series as fetch_series
 
 
-def episode_dict_from_lookup(self, g):
+def episode_dict_from_lookup(show, g):
 	# TODO: should get a new API call here instead of series_dict
-	query = episode_index(self, self.sonarr_series_dict)
+	query = episode_index(show, show.sonarr_series_dict)
 	from pprint import pprint
 	pprint(type(query))
 	pprint(query)

@@ -2,9 +2,9 @@ import json.decoder
 
 import messaging.backend as backend
 import messaging.frontend as message
+import methods
 from jobs.set_path_permissions import (set_permissions)
 from jobs.symlinking import (symlink_force)
-from plex_linker.constructors.builds import init_show_object
 
 
 def parse_show_to_link(show, g):
@@ -25,8 +25,16 @@ def parse_shows_dictionary_object(movie, g):
 	if not movie.shows_dictionary:
 		return
 	for series in movie.shows_dictionary.keys():
+		if not isinstance(movie.shows_dictionary[series], dict):
+			continue
 		try:
-			show = init_show_object(movie, series, g)
+			# show = init_show_object(movie, series, g)
+			show = methods.Show(g,
+			                    series,
+			                    movie.shows_dictionary[series],
+			                    movie.movie_dictionary)
+			g.sonarr.lookup_series(show, g)
+			show.init(g)
 		except json.decoder.JSONDecodeError:
 			continue
 		parse_show_to_link(show, g)
