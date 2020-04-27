@@ -80,7 +80,6 @@ class SonarrAPI(object):
 				print(f"PARSING OUT DATA FROM {i}")
 				show.absoluteEpisodeNumber = i.get("absoluteEpisodeNumber", 0)
 				show.episodeId = i.pop("id")
-				print(f"SET EID TO {show.episodeId}")
 				show.episodeTitle = show.inherited_series_dict['Title'] = re.sub('\(''\d+\)$', "", i.pop("title"))
 				print(f"EPISODE TITLE: {show.episodeTitle}")
 				show.hasFile = i.pop("hasFile")
@@ -90,7 +89,7 @@ class SonarrAPI(object):
 				if show.hasFile or ("episodeFile" in i and i["episodeFile"]):
 					episodeFileDict = i["episodeFile"]
 					show.hasFile = True
-					show.qualityDict = i.pop("quality")
+					show.qualityDict = i.get("quality", dict())
 					show.absolute_episode_path = episodeFileDict.pop("path", 0)
 					show.episodeFileId = show.inherited_series_dict['episodeFileId'] = episodeFileDict.pop("id", 0)
 					show.languageDict = episodeFileDict.pop("language", 0)
