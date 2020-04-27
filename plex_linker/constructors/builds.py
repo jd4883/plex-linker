@@ -14,7 +14,7 @@ def init_show_object(movie, series, g):
 
 
 def init_show(show, g):
-	lookup = g.sonarr.lookup_series(show.title, g)
+	lookup = g.sonarr.lookup_series(show, g)
 	result = ShowLookupSchema(many = False, partial = True).load(lookup)
 	print(result)
 	# suspect I am not feeding in the class object?

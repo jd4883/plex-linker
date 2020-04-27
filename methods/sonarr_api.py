@@ -5,8 +5,6 @@ import time
 
 import requests
 
-import messaging.backend
-
 
 class SonarrAPI(object):
 	def __init__(self):
@@ -46,40 +44,28 @@ class SonarrAPI(object):
 		                                      data)
 		return series_scan
 	
-	def lookup_series(self, series, g):
+	def lookup_series(self, show, g):
 		"""
 		Lookup series Method
-		:param series: The show to lookup
-		:type series: string
+		:param show: The show to lookup and fill in values for the API
+		:type show: class object
 		:param g: globals object
 		:type g:
 		:return:
 		:rtype:
 		"""
-		api_base = self.sonarr_api_request(f"{self.host_url}/series/lookup?term={series}")
-		exclude_list = [
-				"added",
-				"airTime",
-				"certification",
-				"firstAired",
-				"images",
-				"lastInfoSync",
-				"monitored",
-				"network",
-				"overview",
-				"remotePoster",
-				]
-		
-		base = api_base[0]
-		del api_base
-		print(len(base))
-		print(type(base))
+		base = self.sonarr_api_request(f"{self.host_url}/series/lookup?term={show.title}")[0]
+		show.title = base.pop("title")
+		show.cleanTitle = base.pop("cleanTitle")
+		show.titleSlug = base.pop("titleSlug")
+		show.year = base.pop("year")
+		show.genres = base.pop("genres")
+		show.status = base.pop("status")
+		show.sortTitle = base.pop("sortTitle")
+		show.seasonCount = base.pop("seasonCount")
+		show.runtime = base.pop("runtime")
 		print(base)
-		final = { { k: v } for k, v in base.items() if k not in exclude_list }
-		del base
-		g.LOG.info(messaging.backend.debug_message(625, g, final))
 		breakpoint()
-		return final
 	
 	def sonarr_api_request(self, url, request_type = "get", data = dict()):
 		backoff_timer = 2
