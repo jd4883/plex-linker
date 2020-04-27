@@ -52,6 +52,8 @@ class SonarrAPI(object):
 		:param g: globals object
 		:type g: Globals object
 		:return: None
+		:description: This method calls Sonarr's API and sets class object values seen below. Some of these are
+		subject to be prioritized by other API calls later on but can use these as starting points
 		"""
 		
 		base = self.sonarr_api_request(f"{self.host_url}/series/lookup?term={show.title}")[0]
@@ -59,10 +61,12 @@ class SonarrAPI(object):
 		show.firstAired = base.pop("firstAired")
 		show.genres = base.pop("genres")
 		show.id = show.seriesId = int(base.pop("id"))
+		show.imdbId = base.pop("imdbId")
 		show.languageProfileId = int(base.pop("languageProfileId"))
 		show.path = str(base.pop("path"))
 		show.profileId = int(base.pop("profileId"))
 		show.qualityProfileId = int(base.pop("qualityProfileId"))
+		show.ratings = base.pop("ratings")
 		show.runtime = base.pop("runtime")
 		show.seasonCount = base.pop("seasonCount")
 		show.seasonFolder = base.pop("seasonFolder")
@@ -70,6 +74,7 @@ class SonarrAPI(object):
 		show.seriesType = base.pop("seriesType")
 		show.sortTitle = base.pop("sortTitle")
 		show.status = base.pop("status")
+		show.tags = base.pop("tags")
 		show.title = base.pop("title")
 		show.titleSlug = base.pop("titleSlug")
 		show.tvdbId = base.pop("tvdbId")
@@ -77,11 +82,8 @@ class SonarrAPI(object):
 		show.tvRageId = base.pop("tvRageId")
 		show.useSceneNumbering = base.pop("useSceneNumbering")
 		show.year = base.pop("year")
-		show.tags = base.pop("tags")
-		show.imdbId = base.pop("imdbId")
-		
-		print(base)
-		breakpoint()
+		del base
+		show.anime_status = bool("anime" in self.seriesType)
 	
 	def sonarr_api_request(self, url, request_type = "get", data = dict()):
 		backoff_timer = 2

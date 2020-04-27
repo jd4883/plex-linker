@@ -187,59 +187,66 @@ class Show(Movie, Globals):
 		self.inherited_series_dict = show_dict
 		self.episode = self.inherited_series_dict.get('Episode')
 		self.movie_dictionary = fetch_series.parent_dict(g, movie_dict)
-		self.absoluteEpisodeNumber = int
-		self.anime_status = bool
-		self.cleanTitle = None
 		self.cleanup_input_data()
+		self.absoluteEpisodeNumber = int
+		
+		### SET BY LOOKUP SERIES METHOD ###
+		self.anime_status = bool
+		self.cleanTitle = str
+		self.firstAired = str
+		self.genres = list
+		self.id = int
+		self.imdbId = str
+		self.languageProfileId = int
+		self.path = str
+		self.profileId = int
+		self.qualityProfileId = int
+		self.ratings = list
+		self.runtime = int
+		self.seasonCount = int
+		self.seasonFolder = bool
+		self.seasons = list
+		self.seriesId = int
+		self.seriesType = str
+		self.sortTitle = str
+		self.status = str
+		self.tags = list
+		self.title = str(series)
+		self.titleSlug = str
+		self.tvdbId = int
+		self.tvMazeId = int
+		self.tvRageId = int
+		self.useSceneNumbering = bool
+		self.year = int
+		#######################################
+		
+		self.season = None
 		self.episode_dict = None
 		self.episode_file_dict = None
 		self.episodeFileId = int
 		self.episode_id = int
 		self.episode_title = str
 		self.episodeNumber = int
-		self.genres = None
 		self.has_link = str
 		self.hasFile = bool
-		self.id = None
-		self.imdbId = str
-		self.languageProfileId = int
 		self.monitored = None
 		self.padding = int
 		self.parsed_absolute_episode = str
 		self.parsed_episode = str
 		self.parsed_episode_title = str
-		self.path = str
-		self.profileId = None
-		self.qualityProfileId = int
-		self.ratings = None
 		self.relative_show_file_path = str
 		self.relative_show_path = str
-		self.runtime = int
 		self.sceneEpisodeNumber = bool
 		self.sceneSeasonNumber = bool
-		self.season = None
-		self.seasonCount = int
-		self.seasonFolder = None
 		self.seasonNumber = 0
-		self.seasons = None
-		self.seriesId = int
-		self.seriesType = str
-		self.title = series
+		
 		self.show_root_path = str
 		self.sonarr_api_query = None
 		self.sonarr_series_dict = dict
-		self.sortTitle = str
-		self.status = None
-		self.tags = None
-		self.titleSlug = None
-		self.tvdbId = int
-		self.tvMazeId = None
-		self.tvRageId = None
-		self.useSceneNumbering = None
-		self.year = int
 	
 	def init(self, g):
-		self.anime_status = bool("anime" in self.seriesType)
+		g.LOG.info(backend.debug_message(618, g, self.tvdbId))
+		
 		self.padding = 3 if self.anime_status else int(os.environ['EPISODE_PADDING'])
 		parse_series.padded_episode_number(self, g)
 		self.sonarr_api_query = parse_series.episode_dict_from_lookup(self, g)
@@ -263,7 +270,7 @@ class Show(Movie, Globals):
 		# * do a string concat of all components so its easier to read
 		# * general ease of readability cleanup
 		# * DB integration will make a world of a difference here
-		g.LOG.info(backend.debug_message(618, g, self.tvdbId))
+		
 		self.has_link = self.inherited_series_dict['Has Link'] = self.inherited_series_dict.get('Has Link', bool())
 		self.seasonFolder = parse_series.season_folder_from_api(self, g)
 		self.show_root_path = self.inherited_series_dict['Show Root Path'] = self.setShowRootPath(g)

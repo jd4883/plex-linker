@@ -41,11 +41,8 @@ def episode_id(self, g):
 
 
 def parse_episode_id_from_series_query(g, show):
-	print(show.id)
-	print(show.seriesId)
 	base = g.sonarr.get_episodes_by_series_id(show.seriesId)
 	pprint(base)
-	
 	breakpoint()
 	episode_dict = None
 	if not base:
