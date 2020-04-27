@@ -30,7 +30,7 @@ class ShowLookupSchema(Schema):
 	remotePoster = fields.Str(default = str())
 	runtime = fields.Int(default = 20)
 	seasonCount = fields.Int(default = 1)
-	seasonFolder = fields.Bool(default = True)
+	seasonFolder = fields.Raw(default = True)
 	seasons = fields.Raw()
 	seriesType = fields.Str(required = True, default = "anime")
 	sortTitle = fields.Str(default = str())
