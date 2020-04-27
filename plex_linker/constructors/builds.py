@@ -1,4 +1,4 @@
-from marshmallow import EXCLUDE
+from marshmallow import INCLUDE
 
 from methods.class_schemas import ShowLookupSchema
 
@@ -20,7 +20,7 @@ def init_show(show, g):
 	print("PRINTING LOOKUP")
 	print(lookup)
 	print("PRINTING RESULT")
-	result = ShowLookupSchema(many = False, partial = True).load(lookup, unknown = EXCLUDE)
+	result = ShowLookupSchema(many = False, partial = True).load(lookup, unknown = INCLUDE)
 	print(result)
 	# show.id = show.seriesId = lookup["id"]
 	print(f"SERIES ID RAW: {show.id}")
