@@ -60,11 +60,9 @@ class SonarrAPI(object):
 				"overview",
 				"remotePoster",
 				]
-		print(type(base))
-		print(len(base))
 		print(len(base[0]))
 		print(base[0])
-		final = { base[k].items() for k in base[0] if k not in exclude_list }
+		final = { base[0][k].items() for k in base[0] if k not in exclude_list }
 		g.LOG.info(messaging.backend.debug_message(625, g, final))
 		breakpoint()
 		return final
