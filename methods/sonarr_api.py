@@ -68,8 +68,11 @@ class SonarrAPI(object):
 	
 	def get_episodes_by_series_id(self, show):
 		for i in self.sonarr_api_request(f"{self.host_url}/episode?seriesId={show.seriesId}"):
-			if len(show.episode) > 1:
-				print("MULTI PART EPISODE HANDLING NEEDS TO BE DONE BETTER HERE")
+			try:
+				if len(show.episode) > 1:
+					print("MULTI PART EPISODE HANDLING NEEDS TO BE DONE BETTER HERE")
+			except TypeError:
+				pass  # single episode should parse normally
 			parseEpisode = bool(int(i["episodeNumber"]) == show.inherited_series_dict["Episode"])
 			print(f"BOOL - SHOULD THIS EPISODE BE PARSED: {parseEpisode}")
 			parseSeason = bool(int(i["seasonNumber"]) == (0 or show.seasonNumber))
