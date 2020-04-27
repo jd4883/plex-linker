@@ -80,7 +80,7 @@ class SonarrAPI(object):
 				show.monitored = False
 				show.unverifiedSceneNumbering = i.pop("unverifiedSceneNumbering")
 				show.episodeSize = i.get("size", 0)
-				if show.hasFile or "episodeFile" in i and i["episodeFile"]:
+				if show.hasFile or ("episodeFile" in i and i["episodeFile"]):
 					episodeFileDict = i["episodeFile"]
 					show.hasFile = True
 					show.qualityDict = i.pop("quality")
