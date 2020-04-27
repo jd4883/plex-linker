@@ -47,7 +47,16 @@ class SonarrAPI(object):
 		return series_scan
 	
 	def lookup_series(self, series, g):
-		base = self.sonarr_api_request(f"{self.host_url}/series/lookup?term={series}")
+		"""
+		Lookup series Method
+		:param series: The show to lookup
+		:type series: string
+		:param g: globals object
+		:type g:
+		:return:
+		:rtype:
+		"""
+		api_base = self.sonarr_api_request(f"{self.host_url}/series/lookup?term={series}")
 		exclude_list = [
 				"added",
 				"airTime",
@@ -60,9 +69,14 @@ class SonarrAPI(object):
 				"overview",
 				"remotePoster",
 				]
-		print(len(base[0]))
-		print(base[0])
-		final = { base[0][k].items() for k in base[0] if k not in exclude_list }
+		
+		base = api_base[0]
+		del api_base
+		print(len(base))
+		print(type(base))
+		print(base)
+		final = { { k: v } for k, v in base.items() if k not in exclude_list }
+		del base
 		g.LOG.info(messaging.backend.debug_message(625, g, final))
 		breakpoint()
 		return final
