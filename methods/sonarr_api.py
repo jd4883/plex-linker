@@ -60,8 +60,12 @@ class SonarrAPI(object):
 				"overview",
 				"remotePoster",
 				]
-		final = { { k: v } for k, v in base[0].items() if k not in exclude_list }
+		print(type(base))
+		print(base)
+		final = { { k: v } for k, v in base.items() if k not in exclude_list }
+		print(final)
 		g.LOG.info(messaging.backend.debug_message(625, g, final))
+		breakpoint()
 		return final
 	
 	def sonarr_api_request(self, url, request_type = "get", data = dict()):
