@@ -11,6 +11,10 @@ from plex_linker.fetch import series as fetch_series
 def episode_dict_from_lookup(self, g):
 	# TODO: should get a new API call here instead of series_dict
 	query = episode_index(self, self.sonarr_series_dict)
+	from pprint import pprint
+	pprint(type(query))
+	pprint(query)
+	breakpoint()
 	g.LOG.info(backend.debug_message(626, g, query))
 	return query
 
@@ -28,7 +32,7 @@ def root_folder(self, g):
 
 def episode_index(self, query = dict()):
 	if self.sonarr_series_dict:
-		e = 'episodeNumber' in query
+		e = ('episodeNumber' in query)
 		query = [query[x] for x in query if
 		         e and (query[x]['episodeNumber'] == self.episode) and (self.season == query[x]['seasonNumber'])]
 	return query
