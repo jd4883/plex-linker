@@ -56,18 +56,18 @@ def parse_episode_id_from_series_query(g, show):
 			for k, v in base[i].items():
 				if season(k, v):
 					# TODO: maybe try this each time and check the parsed out values?
-					pprint(EpisodeBySeriesIdSchema().load(i, id = show.episode_id))
+					pprint(EpisodeBySeriesIdSchema().load(i, id = show.episodeId))
 					breakpoint()
 					show.episode = str(show.inherited_series_dict["Episode"]).zfill(
 							show.padding)
-					show.episode_id = show.inherited_series_dict["Episode ID"] = str(i["id"])
+					show.episodeId = show.inherited_series_dict["Episode ID"] = str(i["id"])
 					show.episodeFileId = show.inherited_series_dict["episodeFileId"] = str(i["episodeFileId"])
 					show.season = show.inherited_series_dict["Season"] = str(i["seasonNumber"]).zfill(2)
 					break
 			break
 		except AttributeError:
 			pass
-	return show.episode_id
+	return show.episodeId
 
 
 def season(k, v):
@@ -84,7 +84,7 @@ def parse_episode_file_id_dict(self, g):
 
 def parse_episode_dict(self, g):
 	try:
-		result = g.sonarr.get_episode_by_episode_id(self.episode_id)
+		result = g.sonarr.get_episode_by_episode_id(self.episodeId)
 		g.LOG.info(backend.debug_message(623, g, result))
 	except KeyError or AttributeError:
 		result = dict()
@@ -154,7 +154,7 @@ def padded_absolute_episode(self, g):
 
 def compiled_episode_title(self, g):
 	root = "/".join([self.show_root_path, self.seasonFolder, self.title])
-	parsed_title = f"{root} - S{self.season}E{self.parsed_episode} - {self.episode_title}"
+	parsed_title = f"{root} - S{self.season}E{self.parsed_episode} - {self.episodeTitle}"
 	result = self.inherited_series_dict['Parsed Episode Title'] = re.sub('\(\d+\)$', "",
 	                                                                     fetch_series.show_path_string(parsed_title))
 	g.LOG.info(backend.debug_message(637, g, result))

@@ -226,29 +226,27 @@ class Show(Movie, Globals):
 		### FIELDS PULLED GET EPISODES FROM SERIES ID ###
 		# TODO: add in options to feed in other seasons from read in data (i.e Gintama has a special that spans 3
 		# episodes in a later season, would be nice to be able to map this statically)
-		self.seasonNumber = 0
-		self.unverifiedSceneNumbering = bool
-		self.episode_id = int
-		self.monitored = bool
-		self.hasFile = bool
-		self.episode_size = int
-		self.relativePath = str
-		self.qualityCutoffNotMet = bool
-		self.quality_dict = dict
 		self.absolute_episode_path = int
-		self.relative_episode_path = int
-		self.language_dict = dict
-		self.episodeNumber = int
+		self.episode_id = int
+		self.episode_size = int
 		self.episode_title = str
 		self.episodeFileId = int
+		self.episodeNumber = int
+		self.hasFile = bool
+		self.language_dict = dict
+		self.monitored = bool
+		self.quality_dict = dict
+		self.qualityCutoffNotMet = bool
+		self.relative_episode_path = int
+		self.relativePath = str
+		self.seasonNumber = 0
+		self.unverifiedSceneNumbering = bool
 		#######################################
 		
 		self.season = None
 		self.episode_dict = None
 		self.episode_file_dict = None
-		
 		self.has_link = str
-		
 		self.parsed_absolute_episode = str
 		self.parsed_episode = str
 		self.parsed_episode_title = str
