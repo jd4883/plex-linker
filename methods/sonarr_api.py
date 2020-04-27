@@ -81,7 +81,7 @@ class SonarrAPI(object):
 				show.absoluteEpisodeNumber = i.get("absoluteEpisodeNumber", 0)
 				show.episodeId = i.pop("id")
 				print(f"SET EID TO {show.episodeId}")
-				show.episodeTitle = self.inherited_series_dict['Title'] = i.pop("title")  # re.sub('\(''\d+\)$',
+				show.episodeTitle = show.inherited_series_dict['Title'] = re.sub('\(''\d+\)$', i.pop("title"))
 				print(f"EPISODE TITLE: {show.episodeTitle}")
 				show.hasFile = i.pop("hasFile")
 				show.monitored = False
