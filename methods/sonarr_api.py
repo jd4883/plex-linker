@@ -68,7 +68,7 @@ class SonarrAPI(object):
 	
 	def get_episodes_by_series_id(self, show):
 		for i in self.sonarr_api_request(f"{self.host_url}/episode?seriesId={show.seriesId}"):
-			parseEpisode = bool(int(i["episodeNumber"]) == int(show.inherited_series_dict["Episode"]))
+			parseEpisode = bool(int(i["episodeNumber"]) == show.inherited_series_dict["Episode"])
 			parseSeason = bool(int(i["seasonNumber"]) == (0 or show.seasonNumber))
 			if parseEpisode and parseSeason:
 				show.absoluteEpisodeNumber = i.get("absoluteEpisodeNumber", 0)

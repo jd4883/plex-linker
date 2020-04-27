@@ -248,7 +248,6 @@ class Show(Movie, Globals):
 		g.LOG.debug(backend.debug_message(618, g, self.tvdbId))
 		self.padding = 3 if self.anime_status else int(os.environ['EPISODE_PADDING'])
 		parse_series.padded_episode_number(self, g)
-		print(f"PADDING FOR {self.title} IS:\t{self.padding}")
 		g.sonarr.get_episodes_by_series_id(self)
 		self.inherited_series_dict['Episode ID'] = self.episodeId
 		self.episode_dict = parse_series.parse_episode_dict(self, g)
