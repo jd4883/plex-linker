@@ -21,7 +21,7 @@ def init_show(show, g):
 	print(lookup)
 	print("PRINTING RESULT")
 	try:
-		result = ShowLookupSchema(many = False, partial = True).load(lookup, unknown = INCLUDE)
+		result = ShowLookupSchema(many = False, partial = True, exclude = "overview").load(lookup, unknown = INCLUDE)
 		print(result)
 	except ValidationError as err:
 		pprint(err.messages)

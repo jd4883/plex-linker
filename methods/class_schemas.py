@@ -22,7 +22,7 @@ class ShowLookupSchema(Schema):
 	lastInfoSync = fields.Raw()
 	monitored = fields.Raw(default = False)
 	network = fields.Raw()
-	overview = fields.Raw()
+	# overview = fields.Raw()
 	path = fields.Str(default = str())
 	profileId = fields.Int()
 	qualityProfileId = fields.Raw()
