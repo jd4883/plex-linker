@@ -241,7 +241,7 @@ class Show(Movie, Globals):
 		self.sonarr_series_dict = dict
 		self.sortTitle = str
 		self.status = None
-		self.tags = list
+		self.tags = None
 		self.titleSlug = None
 		self.tvdbId = int
 		self.tvMazeId = None

@@ -1,4 +1,4 @@
-from marshmallow import INCLUDE
+from marshmallow import INCLUDE, pprint, ValidationError
 
 from methods.class_schemas import ShowLookupSchema
 
@@ -20,8 +20,12 @@ def init_show(show, g):
 	print("PRINTING LOOKUP")
 	print(lookup)
 	print("PRINTING RESULT")
-	result = ShowLookupSchema(many = False, partial = True).load(lookup, unknown = INCLUDE)
-	print(result)
+	try:
+		result = ShowLookupSchema(many = False, partial = True).load(lookup, unknown = INCLUDE)
+		print(result)
+	except ValidationError as err:
+		pprint(err.messages)
+	
 	# show.id = show.seriesId = lookup["id"]
 	print(f"SERIES ID RAW: {show.id}")
 	print(f"SERIES ID: {show.seriesId}")
