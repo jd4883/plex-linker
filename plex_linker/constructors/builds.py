@@ -30,9 +30,9 @@ def init_show(show, g):
 			"overview",
 			"remotePoster",
 			]
-	for k, v in lookup.items():
-		if k in exclude_list:
-			lookup.pop(k, None)
+	{ lookup.pop(k, None) for k, v in lookup.items() if k in exclude_list }
+	print("PARSED OUT LOOKUP")
+	print(lookup)
 	result = ShowLookupSchema(many = False, partial = True).load(lookup)
 	print(result)
 	
