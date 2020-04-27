@@ -31,7 +31,7 @@ class ShowLookupSchema(Schema):
 	runtime = fields.Int(default = 20)
 	seasonCount = fields.Int(default = 1)
 	seasonFolder = fields.Bool(default = True)
-	seasons = fields.Raw)
+	seasons = fields.Raw()
 	seriesType = fields.Str(required = True, default = "anime")
 	sortTitle = fields.Str(default = str())
 	status = fields.Raw()
