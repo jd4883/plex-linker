@@ -28,7 +28,6 @@ def parse_shows_dictionary_object(movie, g):
 		if not isinstance(movie.shows_dictionary[series], dict):
 			continue
 		try:
-			# show = init_show_object(movie, series, g)
 			show = methods.Show(g,
 			                    series,
 			                    movie.shows_dictionary[series],

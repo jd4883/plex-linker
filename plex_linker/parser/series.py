@@ -62,6 +62,9 @@ def show_root_folder(self, g):
 	path = os.path.join(fetch_series.show_path_string(os.environ['DOCKER_MEDIA_PATH']), result, self.seasonFolder)
 	os.makedirs(path, exist_ok = True)
 	g.LOG.debug(backend.debug_message(632, g, result))
+	print(path)
+	print(result)
+	breakpoint()
 	return result
 
 
