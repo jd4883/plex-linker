@@ -230,7 +230,7 @@ class Show(Movie, Globals):
 		self.sceneSeasonNumber = bool
 		self.season = None
 		self.seasonCount = int
-		self.seasonFolder = Raw
+		self.seasonFolder = None
 		self.seasonNumber = 0
 		self.seasons = None
 		self.seriesId = int
