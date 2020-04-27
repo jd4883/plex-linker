@@ -35,6 +35,7 @@ class SonarrAPI(object):
 		subject to be prioritized by other API calls later on but can use these as starting points
 		"""
 		
+		prefix = os.environ["SONARR_ROOT_PATH_PREFIX"]
 		base = self.sonarr_api_request(f"{self.host_url}/series/lookup?term={show.title}")[0]
 		show.cleanTitle = base.pop("cleanTitle")
 		show.firstAired = base.pop("firstAired")
@@ -43,7 +44,7 @@ class SonarrAPI(object):
 		show.imdbId = base.pop("imdbId")
 		show.languageProfileId = int(base.pop("languageProfileId"))
 		show.path = show.inherited_series_dict['Show Root Path'] = \
-			str(base.pop("path")).replace(str(os.environ["SONARR_ROOT_PATH_PREFIX"], str()))
+			str(base.pop("path")).replace(prefix, "")
 		show.profileId = int(base.pop("profileId"))
 		show.qualityProfileId = int(base.pop("qualityProfileId"))
 		show.ratings = base.pop("ratings")
@@ -67,8 +68,7 @@ class SonarrAPI(object):
 		os.makedirs(self.path, exist_ok = True)
 	
 	def get_episodes_by_series_id(self, show):
-		dictOfEpisodesFromSeriesId = self.sonarr_api_request(f"{self.host_url}/episode?seriesId={show.seriesId}")
-		for i in dictOfEpisodesFromSeriesId:
+		for i in self.sonarr_api_request(f"{self.host_url}/episode?seriesId={show.seriesId}"):
 			parseEpisode = bool(int(i["episodeNumber"]) == int(show.inherited_series_dict["Episode"]))
 			parseSeason = bool(int(i["seasonNumber"]) == (0 or show.seasonNumber))
 			if parseEpisode and parseSeason:
