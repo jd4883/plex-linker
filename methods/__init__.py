@@ -219,10 +219,6 @@ class Show(Movie, Globals):
 		self.useSceneNumbering = bool
 		self.year = int
 		
-		### PARSED OUTSIDE OF API CALLS
-		self.padding = int
-		#######################################
-		
 		### FIELDS PULLED GET EPISODES FROM SERIES ID ###
 		# TODO: add in options to feed in other seasons from read in data (i.e Gintama has a special that spans 3
 		# episodes in a later season, would be nice to be able to map this statically)
@@ -241,6 +237,13 @@ class Show(Movie, Globals):
 		self.relativePath = str
 		self.seasonNumber = 0
 		self.unverifiedSceneNumbering = bool
+		#######################################
+		
+		### PARSED OUTSIDE OF API CALLS
+		self.padding = int
+		#######################################
+		
+		### THIS SEGMENT MAYBE CAN BE FACTORED OUT
 		#######################################
 		
 		self.season = None
