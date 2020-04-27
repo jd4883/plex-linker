@@ -213,7 +213,7 @@ class Show(Movie, Globals):
 		self.lastInfoSync = str
 		self.monitored = bool
 		self.network = None
-		self.overview = str
+		self.overview = None
 		self.padding = int
 		self.parsed_absolute_episode = str
 		self.parsed_episode = str
