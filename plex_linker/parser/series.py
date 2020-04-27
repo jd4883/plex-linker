@@ -54,23 +54,8 @@ def season_folder_from_api(self, g):
 	return result
 
 
-def show_root_folder(self, g):
-	result = \
-		self.inherited_series_dict['Show Root Path'] = \
-		fetch_series.show_path_string(self.episode_dict.get('path',
-		                                                    fetch_series.show_path_string(root_folder(self, g))))
-	path = os.path.join(fetch_series.show_path_string(os.environ['DOCKER_MEDIA_PATH']), result, self.seasonFolder)
-	os.makedirs(path, exist_ok = True)
-	g.LOG.debug(backend.debug_message(632, g, result))
-	print(self.path)
-	print(path)
-	print(result)
-	breakpoint()
-	return result
-
-
 def relative_show_path(self, g):
-	result = self.inherited_series_dict['Relative Show Path'] = f"{self.show_root_path}/{self.seasonFolder}"
+	result = self.inherited_series_dict['Relative Show Path'] = f"{self.path}/{self.seasonFolder}"
 	g.LOG.debug(backend.debug_message(633, g, result))
 	return str(result)
 
@@ -99,7 +84,7 @@ def padded_absolute_episode(self, g):
 
 
 def compiled_episode_title(self, g):
-	root = "/".join([self.show_root_path, self.seasonFolder, self.title])
+	root = "/".join([self.path, self.seasonFolder, self.title])
 	parsed_title = f"{root} - S{self.season}E{self.parsed_episode} - {self.episodeTitle}"
 	result = self.inherited_series_dict['Parsed Episode Title'] = re.sub('\(\d+\)$', "",
 	                                                                     fetch_series.show_path_string(parsed_title))

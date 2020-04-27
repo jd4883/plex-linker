@@ -42,7 +42,8 @@ class SonarrAPI(object):
 		show.id = show.seriesId = int(base.pop("id"))
 		show.imdbId = base.pop("imdbId")
 		show.languageProfileId = int(base.pop("languageProfileId"))
-		show.path = str(base.pop("path"))
+		show.path = show.inherited_series_dict['Show Root Path'] = \
+			str(base.pop("path")).replace(str(os.environ["SONARR_ROOT_PATH_PREFIX"], str()))
 		show.profileId = int(base.pop("profileId"))
 		show.qualityProfileId = int(base.pop("qualityProfileId"))
 		show.ratings = base.pop("ratings")
@@ -63,6 +64,7 @@ class SonarrAPI(object):
 		show.year = base.pop("year")
 		del base
 		show.anime_status = bool("anime" in show.seriesType)
+		os.makedirs(self.path, exist_ok = True)
 	
 	def get_episodes_by_series_id(self, show):
 		dictOfEpisodesFromSeriesId = self.sonarr_api_request(f"{self.host_url}/episode?seriesId={show.seriesId}")
@@ -70,10 +72,9 @@ class SonarrAPI(object):
 			parseEpisode = bool(int(i["episodeNumber"]) == int(show.inherited_series_dict["Episode"]))
 			parseSeason = bool(int(i["seasonNumber"]) == (0 or show.seasonNumber))
 			if parseEpisode and parseSeason:
-				print(i)
 				show.absoluteEpisodeNumber = i.get("absoluteEpisodeNumber", 0)
 				show.episodeId = i.pop("id")
-				show.episodeTitle = i.pop("title")
+				show.episodeTitle = self.inherited_series_dict['Title'] = re.sub('\(''\d+\)$', str(), i.pop("title"))
 				show.hasFile = i.pop("hasFile")
 				show.monitored = False
 				show.unverifiedSceneNumbering = i.pop("unverifiedSceneNumbering")
@@ -83,7 +84,7 @@ class SonarrAPI(object):
 					show.hasFile = True
 					show.qualityDict = i.pop("quality")
 					show.absolute_episode_path = episodeFileDict.pop("path", 0)
-					show.episodeFileId = episodeFileDict.pop("id", 0)
+					show.episodeFileId = show.inherited_series_dict['episodeFileId'] = episodeFileDict.pop("id", 0)
 					show.languageDict = episodeFileDict.pop("language", 0)
 					show.qualityCutoffNotMet = episodeFileDict.pop("qualityCutoffNotMet")
 					show.relativeEpisodePath = episodeFileDict.pop("relativePath", 0)

@@ -218,7 +218,8 @@ class Show(Movie, Globals):
 		self.qualityCutoffNotMet = bool
 		self.relative_episode_path = int
 		self.relativePath = str
-		self.season = self.seasonNumber = 0  # TODO: this should be dynamic to handle unusual edge cases
+		self.season = self.seasonNumber = str(int()).zfill(
+				2)  # TODO: this should be dynamic to handle unusual edge cases
 		self.unverifiedSceneNumbering = bool
 		#######################################
 		
@@ -238,7 +239,7 @@ class Show(Movie, Globals):
 		self.sceneEpisodeNumber = bool
 		self.sceneSeasonNumber = bool
 		
-		self.show_root_path = str
+		self.path = str
 		self.sonarr_series_dict = dict
 	
 	#######################################
@@ -257,12 +258,6 @@ class Show(Movie, Globals):
 		self.parsed_episode = \
 			self.inherited_series_dict['Parsed Episode'] = \
 			str(self.inherited_series_dict.get("Parsed Episode", self.episode)).zfill(self.padding)
-		self.season = str(self.inherited_series_dict.get("Season", str(0))).zfill(2)
-		self.episode_title = self.inherited_series_dict['Title'] = str(self.inherited_series_dict.get("Title",
-		                                                                                              re.sub('\('
-		                                                                                                     '\d+\)$',
-		                                                                                                     "",
-		                                                                                                     self.get_title())))
 		### TODO: fix title parsing so its consistent
 		# * do a string concat of all components so its easier to read
 		# * general ease of readability cleanup
@@ -270,10 +265,8 @@ class Show(Movie, Globals):
 		
 		self.has_link = self.inherited_series_dict['Has Link'] = self.inherited_series_dict.get('Has Link', bool())
 		self.seasonFolder = parse_series.season_folder_from_api(self, g)
-		self.show_root_path = self.inherited_series_dict['Show Root Path'] = self.setShowRootPath(g)
 		self.relative_show_path = self.inherited_series_dict['Relative Show Path'] = parse_series.relative_show_path(
 				self, g)
-		self.episodeFileId = self.inherited_series_dict['episodeFileId'] = parse_series.episode_file_id(self, g)
 		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)
 		self.parsed_episode_title = self.inherited_series_dict['Parsed Episode Title'] = \
 			parse_series.compiled_episode_title(self, g)
@@ -322,7 +315,4 @@ class Show(Movie, Globals):
 		return payload
 	
 	def setShowRootPath(self, g):
-		payload = parse_series.show_root_folder(self, g)
-		if 'path' in self.sonarr_series_dict and self.path:
-			payload = self.path
 		return payload
