@@ -238,14 +238,15 @@ class Show(Movie, Globals):
 		self.absolute_episode_path
 		self.relative_episode_path
 		self.language_dict
+		self.episodeNumber = int
+		self.episode_title = str
+		self.episodeFileId = int
 		#######################################
 		
 		self.season = None
 		self.episode_dict = None
 		self.episode_file_dict = None
-		self.episodeFileId = int
-		self.episode_title = str
-		self.episodeNumber = int
+		
 		self.has_link = str
 		
 		self.parsed_absolute_episode = str
