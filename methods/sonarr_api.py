@@ -90,30 +90,21 @@ class SonarrAPI(object):
 				break
 	
 	def get_episode_by_episode_id(self, episode_id):
-		episode_by_episode_id = self.sonarr_api_request(f"{self.host_url}/episode/{episode_id}")
-		return episode_by_episode_id
+		return self.sonarr_api_request(f"{self.host_url}/episode/{episode_id}")
 	
 	def get_episode_file_by_episode_id(self, episode_id):
-		episode_file_by_id = self.sonarr_api_request(f"{self.host_url}/episodefile/{episode_id}")
-		return episode_file_by_id
+		return self.sonarr_api_request(f"{self.host_url}/episodefile/{episode_id}")
 	
 	def get_root_folder(self):
-		try:
-			get_request = self.sonarr_api_request(f"{self.host_url}/rootfolder")
-			return get_request
-		except AttributeError as a:
-			print(a)
+		return self.sonarr_api_request(f"{self.host_url}/rootfolder")
 	
 	def get_series(self):
-		series = self.sonarr_api_request(f"{self.host_url}/series")
-		return series
+		return self.sonarr_api_request(f"{self.host_url}/series")
 	
 	def refresh_series(self, series_id, data = dict()):
-		rescan_series = self.sonarr_api_request(f"{self.host_url}/command/RefreshSeries&seriesId={series_id}", "post",
-		                                        data)
-		return rescan_series
+		return self.sonarr_api_request(f"{self.host_url}/command/RefreshSeries&seriesId={series_id}", "post",
+		                               data)
 	
 	def rescan_series(self, series_id, data = dict()):
-		series_scan = self.sonarr_api_request(f"{self.host_url}/command/RescanSeries&seriesId={series_id}", "post",
-		                                      data)
-		return series_scan
+		return self.sonarr_api_request(f"{self.host_url}/command/RescanSeries&seriesId={series_id}", "post",
+		                               data)

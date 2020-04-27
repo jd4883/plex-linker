@@ -208,7 +208,7 @@ class Show(Movie, Globals):
 		self.absolute_episode_path = int
 		self.episodeId = int
 		self.episode_size = int
-		self.episode_title = str
+		self.episodeTitle = str
 		self.episodeFileId = int
 		self.episodeNumber = int
 		self.hasFile = bool
