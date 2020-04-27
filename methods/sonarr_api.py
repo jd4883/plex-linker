@@ -74,7 +74,11 @@ class SonarrAPI(object):
 					break
 			except TypeError:
 				pass  # single episode should parse normally
-			parseEpisode = bool(int(i["episodeNumber"]) == show.inherited_series_dict["Episode"])
+			try:
+				parseEpisode = bool(int(i["episodeNumber"]) == show.inherited_series_dict["Episode"])
+			except KeyError:
+				print(f"KEY ERROR FOR {show.title} TO {show.movie_title}")
+				break
 			parseSeason = bool(int(i["seasonNumber"]) == 0)
 			if parseEpisode and parseSeason:
 				show.absoluteEpisodeNumber = i.get("absoluteEpisodeNumber", 0)
