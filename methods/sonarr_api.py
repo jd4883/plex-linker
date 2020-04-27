@@ -68,12 +68,17 @@ class SonarrAPI(object):
 	
 	def get_episodes_by_series_id(self, show):
 		for i in self.sonarr_api_request(f"{self.host_url}/episode?seriesId={show.seriesId}"):
+			if len(show.episode) > 1:
+				print("MULTI PART EPISODE HANDLING NEEDS TO BE DONE BETTER HERE")
 			parseEpisode = bool(int(i["episodeNumber"]) == show.inherited_series_dict["Episode"])
+			print(f"BOOL - SHOULD THIS EPISODE BE PARSED: {parseEpisode}")
 			parseSeason = bool(int(i["seasonNumber"]) == (0 or show.seasonNumber))
+			print(f"BOOL - SHOULD THIS SEASON BE PARSED: {parseSeason}")
 			if parseEpisode and parseSeason:
 				print(f"PARSING OUT DATA FROM {i}")
 				show.absoluteEpisodeNumber = i.get("absoluteEpisodeNumber", 0)
 				show.episodeId = i.pop("id")
+				print(f"SET EID TO {show.episodeId}")
 				show.episodeTitle = self.inherited_series_dict['Title'] = i.pop("title")  # re.sub('\(''\d+\)$',
 				print(f"EPISODE TITLE: {show.episodeTitle}")
 				show.hasFile = i.pop("hasFile")
