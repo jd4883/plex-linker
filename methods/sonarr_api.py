@@ -64,6 +64,8 @@ class SonarrAPI(object):
 		show.sortTitle = base.pop("sortTitle")
 		show.seasonCount = base.pop("seasonCount")
 		show.runtime = base.pop("runtime")
+		show.qualityProfileId = base.pop("qualityProfileId")
+		show.id = show.seriesId = base.pop("id")
 		print(base)
 		breakpoint()
 	
