@@ -205,8 +205,6 @@ class Show(Movie, Globals):
 		self.year = int
 		
 		### FIELDS PULLED GET EPISODES FROM SERIES ID ###
-		# TODO: add in options to feed in other seasons from read in data (i.e Gintama has a special that spans 3
-		# episodes in a later season, would be nice to be able to map this statically)
 		self.absolute_episode_path = int
 		self.episodeId = int
 		self.episode_size = int
@@ -220,7 +218,7 @@ class Show(Movie, Globals):
 		self.qualityCutoffNotMet = bool
 		self.relative_episode_path = int
 		self.relativePath = str
-		self.season = self.seasonNumber = 0
+		self.season = self.seasonNumber = 0  # TODO: this should be dynamic to handle unusual edge cases
 		self.unverifiedSceneNumbering = bool
 		#######################################
 		
@@ -229,8 +227,6 @@ class Show(Movie, Globals):
 		#######################################
 		
 		### THIS SEGMENT MAYBE CAN BE FACTORED OUT
-		#######################################
-		
 		self.episode_dict = None
 		self.episode_file_dict = None
 		self.has_link = bool
@@ -244,6 +240,8 @@ class Show(Movie, Globals):
 		
 		self.show_root_path = str
 		self.sonarr_series_dict = dict
+	
+	#######################################
 	
 	def init(self, g):
 		g.LOG.debug(backend.debug_message(618, g, self.tvdbId))

@@ -33,7 +33,7 @@ def parse_shows_dictionary_object(movie, g):
 			                    series,
 			                    movie.shows_dictionary[series],
 			                    movie.movie_dictionary)
-			g.sonarr.lookup_series(show, g)
+			g.sonarr.lookup_series(show)
 			show.init(g)
 		except json.decoder.JSONDecodeError:
 			continue
