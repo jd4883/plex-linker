@@ -188,12 +188,7 @@ class Show(Movie, Globals):
 		self.episode = self.inherited_series_dict.get('Episode')
 		self.movie_dictionary = fetch_series.parent_dict(g, movie_dict)
 		self.absoluteEpisodeNumber = int
-		self.added = None
-		self.airDate = str
-		self.airDateUtc = str
-		self.airTime = str
 		self.anime_status = bool
-		self.certification = str
 		self.cleanTitle = None
 		self.cleanup_input_data()
 		self.episode_dict = None
@@ -202,18 +197,13 @@ class Show(Movie, Globals):
 		self.episode_id = int
 		self.episode_title = str
 		self.episodeNumber = int
-		self.firstAired = str
 		self.genres = None
 		self.has_link = str
 		self.hasFile = bool
 		self.id = None
-		self.images = None
 		self.imdbId = str
 		self.languageProfileId = int
-		self.lastInfoSync = None
 		self.monitored = None
-		self.network = None
-		# self.overview = None
 		self.padding = int
 		self.parsed_absolute_episode = str
 		self.parsed_episode = str
@@ -224,7 +214,6 @@ class Show(Movie, Globals):
 		self.ratings = None
 		self.relative_show_file_path = str
 		self.relative_show_path = str
-		self.remotePoster = str
 		self.runtime = int
 		self.sceneEpisodeNumber = bool
 		self.sceneSeasonNumber = bool
