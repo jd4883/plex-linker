@@ -105,8 +105,8 @@ class Movie(Movies, Globals):
 		g.LOG.debug(backend.debug_message(643, g, self.unparsed_title))
 		self.relative_movie_path = self.init_relative_movie_path(g)
 		self.absolute_movie_path = self.init_absolute_movie_path(g)
-		if self.movieFile:
-			file_dict = self.radarr_dictionary['movieFile']
+		file_dict = self.radarr_dictionary.get('movieFile', False)
+		if file_dict:
 			self.movieFile = self.movie_dictionary['Movie File'] = str(file_dict['relativePath'])
 			self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(file_dict['quality']['quality']['name'])
 			baseQuality = re.sub(self.quality, str(), str(self.movieFile.split().pop()))
