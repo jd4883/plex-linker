@@ -218,15 +218,13 @@ class Show(Movie, Globals):
 		self.qualityCutoffNotMet = bool
 		self.relative_episode_path = int
 		self.relativePath = str
-		self.season = self.seasonNumber = str(int()).zfill(
-				2)  # TODO: this should be dynamic to handle unusual edge cases
+		self.season = self.seasonNumber = str(int()).zfill(2)
+		# TODO: this should be dynamic to handle unusual edge cases
 		self.unverifiedSceneNumbering = bool
-		#######################################
-		
-		### PARSED OUTSIDE OF API CALLS
 		self.padding = int
 		#######################################
 		
+		### PARSED OUTSIDE OF API CALLS
 		### THIS SEGMENT MAYBE CAN BE FACTORED OUT
 		self.episode_dict = None
 		self.episode_file_dict = None
@@ -246,7 +244,7 @@ class Show(Movie, Globals):
 	
 	def init(self, g):
 		g.LOG.debug(backend.debug_message(618, g, self.tvdbId))
-		self.padding = 3 if self.anime_status else int(os.environ['EPISODE_PADDING'])
+		
 		parse_series.padded_episode_number(self, g)
 		g.sonarr.get_episodes_by_series_id(self)
 		self.inherited_series_dict['Episode ID'] = self.episodeId
@@ -254,11 +252,6 @@ class Show(Movie, Globals):
 		if self.episode_dict:
 			self.absoluteEpisodeNumber = parse_series.absolute_episode_number(self, g)
 			self.parsed_absolute_episode = padded_absolute_episode(self, g)
-		self.parsed_episode = \
-			self.inherited_series_dict['Parsed Episode'] = \
-			str(self.inherited_series_dict.get("Parsed Episode", self.episode)).zfill(self.padding)
-		### TODO: fix title parsing so its consistent
-		# * do a string concat of all components so its easier to read
 		# * general ease of readability cleanup
 		# * DB integration will make a world of a difference here
 		

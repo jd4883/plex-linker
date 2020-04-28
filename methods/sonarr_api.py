@@ -65,11 +65,18 @@ class SonarrAPI(object):
 			show.useSceneNumbering = base.pop("useSceneNumbering")
 			show.year = base.pop("year")
 			del base
+			show.parsed_episode = \
+				show.inherited_series_dict['Parsed Episode'] = \
+				"-".join([str(e).zfill(show.padding) for e in show.episode])
+			# TODO: this segment should also apply to absolute episodes
+			#show.parsed_absolute_episode = "-".join([e.zfill(show.padding) for e in show.absolute_ep])
+			show.anime_status = bool("anime" in show.seriesType)
+			show.padding = 3 if self.anime_status else int(os.environ['EPISODE_PADDING'])
+			os.makedirs(show.path, exist_ok = True)
 		except KeyError:
 			print(f"TROUBLE FINDING SHOW LOOKUP DATA FOR {show.title}")
 			breakpoint()
-		show.anime_status = bool("anime" in show.seriesType)
-		os.makedirs(show.path, exist_ok = True)
+		
 	
 	def get_episodes_by_series_id(self, show):
 		for i in self.sonarr_api_request(f"{self.host_url}/episode?seriesId={show.seriesId}"):
