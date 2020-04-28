@@ -206,14 +206,16 @@ class Show(Movie, Globals):
 		
 		### FIELDS PULLED GET EPISODES FROM SERIES ID ###
 		self.absolute_episode_path = int
-		self.episodeId = int
 		self.episode_size = int
-		self.episodeTitle = str()
 		self.episodeFileId = int
+		self.episodeId = int
 		self.episodeNumber = int
+		self.episodeTitle = str()
 		self.hasFile = bool
 		self.language_dict = dict
 		self.monitored = bool
+		self.padding = int
+		self.parsedEpisode = str
 		self.quality_dict = dict
 		self.qualityCutoffNotMet = bool
 		self.relative_episode_path = int
@@ -221,7 +223,6 @@ class Show(Movie, Globals):
 		self.season = self.seasonNumber = str(int()).zfill(2)
 		# TODO: this should be dynamic to handle unusual edge cases
 		self.unverifiedSceneNumbering = bool
-		self.padding = int
 		#######################################
 		
 		### PARSED OUTSIDE OF API CALLS
@@ -230,7 +231,6 @@ class Show(Movie, Globals):
 		self.episode_file_dict = None
 		self.has_link = bool
 		self.parsed_absolute_episode = str
-		self.parsed_episode = str
 		self.parsed_episode_title = str
 		self.relative_show_file_path = str
 		self.relative_show_path = str
@@ -244,8 +244,6 @@ class Show(Movie, Globals):
 	
 	def init(self, g):
 		g.LOG.debug(backend.debug_message(618, g, self.tvdbId))
-		
-		parse_series.padded_episode_number(self, g)
 		g.sonarr.get_episodes_by_series_id(self)
 		self.inherited_series_dict['Episode ID'] = self.episodeId
 		self.episode_dict = parse_series.parse_episode_dict(self, g)
@@ -272,6 +270,14 @@ class Show(Movie, Globals):
 		self.has_link = self.inherited_series_dict['Has Link'] = relativeMovieFilePath
 		g.sonarr.rescan_series(self.tvdbId)
 		g.sonarr.refresh_series(self.tvdbId)
+	
+	def parseEpisode(self):
+		if str(self.episode) == "<class 'int'>":
+			self.episode = list(self.episode)
+		result = "-".join([str(e).zfill(self.padding) for e in self.episode])
+		self.parsedEpisode = self.inherited_series_dict['Parsed Episode'] = result
+		print(f"EPISODE PARSED OUT: {self.parsedEpisode}")
+		
 	
 	def cleanup_input_data(self):
 		"""

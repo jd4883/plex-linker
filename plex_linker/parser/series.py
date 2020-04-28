@@ -59,15 +59,6 @@ def relative_show_path(self, g):
 	g.LOG.debug(backend.debug_message(633, g, result))
 	return str(result)
 
-
-def padded_episode_number(self, g, result = str()):
-	if str(self.episode) == "<class 'list'>":
-		self.parsed_episode = "-".join([str(i).zfill(self.padding) for i in self.episode])
-	elif str(self.episode) == "<class 'int'>":
-		self.parsed_episode = str(self.episode).zfill(self.padding)
-	g.LOG.info(backend.debug_message(634, g, result))
-
-
 def padded_absolute_episode(self, g):
 	result = str()
 	if isinstance(self.absoluteEpisodeNumber, list):
@@ -88,7 +79,7 @@ def compiled_episode_title(self, g):
 	               + " - S" \
 	               + self.season \
 	               + "E" \
-	               + self.parsed_episode \
+	               + self.parsedEpisode \
 	               + " - " \
 	               + self.episodeTitle
 	result = self.inherited_series_dict['Parsed Episode Title'] = re.sub('\(\d+\)$', "",
