@@ -272,12 +272,10 @@ class Show(Movie, Globals):
 		g.sonarr.refresh_series(self.tvdbId)
 	
 	def parseEpisode(self):
-		try:
-			base = self.episode
-			if isinstance(self.episode, int):
-				base = list(self.episode)
-		except TypeError:
-			base = self.episode
+		base = self.episode
+		base = self.episode
+		if not isinstance(self.episode, list):
+			base = list(self.episode)
 		result = "-".join([str(e).zfill(self.padding) for e in base])
 		self.parsedEpisode = self.inherited_series_dict['Parsed Episode'] = result
 		print(f"EPISODE PARSED OUT: {self.parsedEpisode}")
