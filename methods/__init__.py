@@ -96,7 +96,7 @@ class Movie(Movies, Globals):
 		self.relative_movie_path = str
 		self.unparsed_title = str
 		################################################
-		self.radarr_dictionary = self.parse_dict_from_radarr(g)
+		self.parse_dict_from_radarr(g)
 		self.init(g)
 	
 	def init(self, g):
@@ -144,10 +144,10 @@ class Movie(Movies, Globals):
 				self.hasFile = items.get("hasFile", False)
 				self.monitored = items.get("monitored", False)
 				self.year = items.get('year', 0)# if 'inCinemas' not in items else items.pop('inCinemas')[0:4]
-				pprint(self.radarr_dictionary)
 				g.LOG.debug(backend.debug_message(646, g, self.hasFile))
 				g.LOG.debug(backend.debug_message(647, g, self.monitored))
 				self.radarr_dictionary = items
+				pprint(self.radarr_dictionary)
 			except IndexError:
 				pass
 		return dict()
