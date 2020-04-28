@@ -100,21 +100,22 @@ class Movie(Movies, Globals):
 		self.init(g)
 	
 	def init(self, g):
-		self.unparsed_title = re.sub("\s+\(0\)\s?", str(), self.radarr_dictionary.get('title', str()))
-		self.movie_title = re.sub("\s+\(0\)\s?", str(), re.sub("/", "+", re.sub(":", "-", f"{self.unparsed_title} ({self.year})")))
-		g.LOG.debug(backend.debug_message(643, g, self.unparsed_title))
-		self.relative_movie_path = self.init_relative_movie_path(g)
-		self.absolute_movie_path = self.init_absolute_movie_path(g)
-		file_dict = self.radarr_dictionary.get('movieFile', False)
-		if file_dict:
-			self.movieFile = self.movie_dictionary['Movie File'] = str(file_dict['relativePath'])
-			self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(file_dict['quality']['quality']['name'])
-			baseQuality = re.sub(self.quality, str(), str(self.movieFile.split().pop()))
-			self.extension = self.movie_dictionary['Parsed Extension'] = re.sub("\s+REAL\.\W+$", "", baseQuality)
-			self.absolute_movie_file_path = str(get_absolute_movie_file_path(self, g))
-			self.relative_movie_file_path = str(get_relative_movie_file_path(self, g))
-		g.LOG.debug(backend.debug_message(610, g, self.movieFile))
-		g.LOG.debug(backend.debug_message(612, g, self.quality))
+		if self.radarr_dictionary:
+			self.unparsed_title = re.sub("\s+\(0\)\s?", str(), self.radarr_dictionary.get('title', str()))
+			self.movie_title = re.sub("\s+\(0\)\s?", str(), re.sub("/", "+", re.sub(":", "-", f"{self.unparsed_title} ({self.year})")))
+			g.LOG.debug(backend.debug_message(643, g, self.unparsed_title))
+			self.relative_movie_path = self.init_relative_movie_path(g)
+			self.absolute_movie_path = self.init_absolute_movie_path(g)
+			file_dict = self.radarr_dictionary.get('movieFile', False)
+			if file_dict:
+				self.movieFile = self.movie_dictionary['Movie File'] = str(file_dict['relativePath'])
+				self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(file_dict['quality']['quality']['name'])
+				baseQuality = re.sub(self.quality, str(), str(self.movieFile.split().pop()))
+				self.extension = self.movie_dictionary['Parsed Extension'] = re.sub("\s+REAL\.\W+$", "", baseQuality)
+				self.absolute_movie_file_path = str(get_absolute_movie_file_path(self, g))
+				self.relative_movie_file_path = str(get_relative_movie_file_path(self, g))
+			g.LOG.debug(backend.debug_message(610, g, self.movieFile))
+			g.LOG.debug(backend.debug_message(612, g, self.quality))
 	
 	def __repr__(self):
 		return "<Movie(name={self.movie_title!r})>".format(self = self)
