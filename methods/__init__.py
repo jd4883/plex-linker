@@ -83,7 +83,6 @@ class Movie(Movies, Globals):
 		self.year = int
 		
 		################################################
-		self.radarr_dictionary = self.parse_dict_from_radarr(g)
 		
 		### NOT BY API CALL FOR NOW
 		self.absolute_movie_file_path = str
@@ -101,7 +100,7 @@ class Movie(Movies, Globals):
 		self.relative_movie_path = str
 		self.unparsed_title = str
 		################################################
-		
+		self.radarr_dictionary = self.parse_dict_from_radarr(g)
 		self.init(g)
 	
 	def init(self, g):
