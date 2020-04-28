@@ -86,14 +86,10 @@ class Movie(Movies, Globals):
 		
 		### NOT BY API CALL FOR NOW
 		self.absolute_movie_file_path = str
-		self.absolute_movie_file_path = str
 		self.absolute_movie_path = str
 		self.extension = str
-		self.extension = str
-		self.movieFile = str
 		self.movieFile = str
 		self.movie_title = str
-		self.quality = str
 		self.quality = str
 		self.relative_movie_file_path = str
 		self.relative_movie_file_path = str
@@ -145,13 +141,13 @@ class Movie(Movies, Globals):
 				g.LOG.debug(backend.debug_message(644, g, g.full_radarr_dict[index]))
 				
 				items = g.full_radarr_dict[index]
-				self.hasFile = items.pop("hasFile")
-				self.monitored = items.pop("monitored")
-				self.year = items.get('year', 0) if 'inCinemas' not in items else items.pop('inCinemas')[0:4]
+				self.hasFile = items.get("hasFile", False)
+				self.monitored = items.get("monitored", False)
+				self.year = items.get('year', 0)# if 'inCinemas' not in items else items.pop('inCinemas')[0:4]
 				pprint(self.radarr_dictionary)
 				g.LOG.debug(backend.debug_message(646, g, self.hasFile))
 				g.LOG.debug(backend.debug_message(647, g, self.monitored))
-				return items
+				self.radarr_dictionary = items
 			except IndexError:
 				pass
 		return dict()
