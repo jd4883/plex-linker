@@ -36,47 +36,42 @@ class SonarrAPI(object):
 		"""
 		
 		prefix = os.environ["SONARR_ROOT_PATH_PREFIX"]
-		
-		try:
-			base = self.sonarr_api_request(f"{self.host_url}/series/lookup?term={show.title}")[0]
-			show.cleanTitle = base.get("cleanTitle", str())
-			show.firstAired = base.get("firstAired", str())
-			show.genres = base.get("genres", list())
-			show.id = show.seriesId = int(base.pop("id"))
-			show.imdbId = base.get("imdbId", str())
-			show.languageProfileId = int(base.get("languageProfileId", 0))
-			show.path = show.inherited_series_dict['Show Root Path'] = str(base.pop("path")).replace(prefix, "")
-			show.profileId = int(base.get("profileId", 0))
-			show.qualityProfileId = int(base.get("qualityProfileId", 0))
-			show.ratings = base.get("ratings", dict())
-			show.runtime = base.pop("runtime")
-			show.seasonCount = base.pop("seasonCount")
-			show.seasonFolder = base.pop("seasonFolder")
-			show.seasons = base.pop("seasons")
-			show.seriesType = base.pop("seriesType")
-			show.sortTitle = base.pop("sortTitle")
-			show.status = base.pop("status")
-			show.tags = base.pop("tags")
-			show.title = base.pop("title")
-			show.titleSlug = base.pop("titleSlug")
-			show.tvdbId = base.pop("tvdbId")
-			show.tvMazeId = base.pop("tvMazeId")
-			show.tvRageId = base.pop("tvRageId")
-			show.useSceneNumbering = base.pop("useSceneNumbering")
-			show.year = base.pop("year")
-			del base
-			# TODO: this segment should also apply to absolute episodes
-			#show.parsed_absolute_episode = "-".join([e.zfill(show.padding) for e in show.absolute_ep])
-			show.anime_status = bool("anime" in show.seriesType)
-			show.padding = 3 if show.anime_status else int(os.environ['EPISODE_PADDING'])
-			show.parseEpisode()
-			os.makedirs(show.path, exist_ok = True)
-		except KeyError:
-			print(f"TROUBLE FINDING SHOW LOOKUP DATA FOR {show.title}")
-			breakpoint()
+		base = self.sonarr_api_request(f"{self.host_url}/series/lookup?term={show.title}")[0]
+		show.cleanTitle = base.get("cleanTitle", str())
+		show.firstAired = base.get("firstAired", str())
+		show.genres = base.get("genres", list())
+		show.id = show.seriesId = int(base.pop("id"))
+		show.imdbId = base.get("imdbId", str())
+		show.languageProfileId = int(base.get("languageProfileId", 0))
+		show.path = show.inherited_series_dict['Show Root Path'] = str(base.pop("path")).replace(prefix, "")
+		show.profileId = int(base.get("profileId", 0))
+		show.qualityProfileId = int(base.get("qualityProfileId", 0))
+		show.ratings = base.get("ratings", dict())
+		show.runtime = base.pop("runtime")
+		show.seasonCount = base.pop("seasonCount")
+		show.seasonFolder = base.pop("seasonFolder")
+		show.seasons = base.pop("seasons")
+		show.seriesType = base.pop("seriesType")
+		show.sortTitle = base.pop("sortTitle")
+		show.status = base.pop("status")
+		show.tags = base.pop("tags")
+		show.title = base.pop("title")
+		show.titleSlug = base.pop("titleSlug")
+		show.tvdbId = base.pop("tvdbId")
+		show.tvMazeId = base.pop("tvMazeId")
+		show.tvRageId = base.pop("tvRageId")
+		show.useSceneNumbering = base.pop("useSceneNumbering")
+		show.year = base.pop("year")
+		del base
+		# TODO: this segment should also apply to absolute episodes
+		#show.parsed_absolute_episode = "-".join([e.zfill(show.padding) for e in show.absolute_ep])
+		show.anime_status = bool("anime" in show.seriesType)
+		show.padding = 3 if show.anime_status else int(os.environ['EPISODE_PADDING'])
+		show.parseEpisode()
+		os.makedirs(show.path, exist_ok = True)
 		
 	def get_episodes_by_series_id(self, show):
-		request = self.sonarr_api_request(f"{self.host_url}/episode?seriesId={show.id}")
+		request = self.sonarr_api_request(f"{self.host_url}/episode?seriesId={show.seriesId}")
 		if request:
 			for i in request:
 				try:

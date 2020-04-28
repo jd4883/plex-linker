@@ -237,7 +237,7 @@ class Show(Movie, Globals):
 	
 	#######################################
 	
-	def init(self, g):
+	def initShow(self, g):
 		g.sonarr.get_episodes_by_series_id(self)
 		self.inherited_series_dict['Episode ID'] = self.episodeId
 		self.episode_dict = parse_series.parse_episode_dict(self, g)
