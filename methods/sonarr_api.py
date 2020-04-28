@@ -40,7 +40,10 @@ class SonarrAPI(object):
 		show.cleanTitle = base.get("cleanTitle", str())
 		show.firstAired = base.get("firstAired", str())
 		show.genres = base.get("genres", list())
-		show.id = show.seriesId = int(base.pop("id"))
+		try:
+			show.id = show.seriesId = int(base.pop("id"))
+		except KeyError:
+			print(f"TROUBLE FINDING SHOW ID FOR {show.title}")
 		show.imdbId = base.get("imdbId", str())
 		show.languageProfileId = int(base.get("languageProfileId", 0))
 		show.path = show.inherited_series_dict['Show Root Path'] = str(base.pop("path")).replace(prefix, "")
