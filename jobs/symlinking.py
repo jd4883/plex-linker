@@ -30,7 +30,7 @@ def symlink_force(show, g):
 		print(f'Link not created for {show.absolute_movie_file_path}')
 		show.link_status = str()
 		show.relative_show_path = str()
-		show.movie_file = str()
+		show.movieFile = str()
 	message.method_exit(g)
 
 

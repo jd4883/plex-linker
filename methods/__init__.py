@@ -16,6 +16,7 @@ from methods.misc_get_methods import (
 	get_movies_path,
 	get_shows_path,
 	)
+from pprint import pprint
 from methods.radarr_api import *
 from methods.radarr_class_methods import get_parsed_movie_title, parse_relpath
 from methods.sonarr_api import *
@@ -69,70 +70,60 @@ class Movie(Movies, Globals):
 		super().__init__()
 		# schema = MovieSchema()
 		self.movie_dictionary = movie_dict
-		"""
-		PROTOTYPE CLEANUP METHOD FOR EMPTY KEYS
-		"""
-		for i in self.movie_dictionary:
-			if not i:
-				try:
-					del self.movie_dictionary[i]
-				except KeyError:
-					pass
-		g.LOG.debug(backend.debug_message(627, g, self.movie_dictionary))
-		cleanup_movie.cleanup_dict(self.movie_dictionary)
 		self.shows_dictionary = self.movie_dictionary['Shows']
-		g.LOG.debug(backend.debug_message(645, g, self.shows_dictionary))
+		cleanup_movie.cleanup_dict(self.movie_dictionary)
 		self.tmbdid = self.movie_dictionary['Movie DB ID']
+		g.LOG.debug(backend.debug_message(627, g, self.movie_dictionary))
+		g.LOG.debug(backend.debug_message(645, g, self.shows_dictionary))
 		g.LOG.debug(backend.debug_message(648, g, self.tmbdid))
+		### FROM RADARR API FULL DICT
+		self.hasFile = bool
+		self.monitored = bool
+		self.year = int
 		
 		self.radarr_dictionary = self.parse_dict_from_radarr(g)
-		try:
-			self.hasFile = \
-				self.movie_dictionary['Has File'] = \
-				bool(self.radarr_dictionary['hasFile']) if 'hasFile' in self.radarr_dictionary else False
-		except TypeError:
-			self.hasFile = self.movie_dictionary['Has File'] = bool()
-		g.LOG.debug(backend.debug_message(646, g, self.hasFile))
-		try:
-			self.monitored = \
-				self.movie_dictionary['Monitored'] = \
-				bool(self.radarr_dictionary['monitored']) if 'monitored' in self.radarr_dictionary else True
-		except TypeError:
-			self.monitored = self.movie_dictionary['Monitored'] = bool(True)
-		g.LOG.debug(backend.debug_message(647, g, self.monitored))
+		################################################
+		breakpoint()
 		
-		self.year = self.movie_dictionary['Year'] = \
-			int(self.radarr_dictionary['inCinemas'][0:4]) if 'inCinemas' in self.radarr_dictionary \
-				else int(self.radarr_dictionary.get('year', 0))
-		self.unparsed_title = re.sub("\s+\(0\)\s?", "", self.get_unparsed_movie_title(g))
-		self.movie_title = re.sub("\s+\(0\)\s?", str(), get_parsed_movie_title(self, g))
+		### NOT BY API CALL FOR NOW
+		self.absolute_movie_file_path = str
+		self.absolute_movie_file_path = str
+		self.absolute_movie_path = str
+		self.extension = str
+		self.extension = str
+		self.movieFile = str
+		self.movieFile = str
+		self.movie_title = str
+		self.quality = str
+		self.quality = str
+		self.relative_movie_file_path = str
+		self.relative_movie_file_path = str
+		self.relative_movie_path = str
+		self.unparsed_title = str
+		################################################
+		
+		self.init(g)
+	
+	def init(self, g):
+		self.unparsed_title = re.sub("\s+\(0\)\s?", str(), self.radarr_dictionary.get('title', str()))
+		self.movie_title = re.sub("\s+\(0\)\s?", str(), re.sub("/", "+", re.sub(":", "-", f"{self.unparsed_title} ({self.year})")))
+		g.LOG.debug(backend.debug_message(643, g, self.unparsed_title))
 		self.relative_movie_path = self.init_relative_movie_path(g)
 		self.absolute_movie_path = self.init_absolute_movie_path(g)
-		if "movieFile" not in self.radarr_dictionary or not self.relative_movie_path:
-			self.movie_file = self.movie_dictionary['Movie File'] = str()
-			self.quality = self.movie_dictionary['Parsed Quality'] = str()
-			self.extension = self.movie_dictionary['Parsed Extension'] = str()
-			self.absolute_movie_file_path = self.movie_dictionary['Absolute Movie File Path'] = str()
-			self.relative_movie_file_path = self.movie_dictionary['Relative Movie File Path'] = str()
-			return
-		file_dict = self.radarr_dictionary['movieFile']
-		self.movie_file = self.movie_dictionary['Movie File'] = str(file_dict['relativePath'])
-		g.LOG.debug(backend.debug_message(610, g, self.movie_file))
-		self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(file_dict['quality']['quality']['name'])
+		if self.movieFile:
+			file_dict = self.radarr_dictionary['movieFile']
+			self.movieFile = self.movie_dictionary['Movie File'] = str(file_dict['relativePath'])
+			self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(file_dict['quality']['quality']['name'])
+			baseQuality = re.sub(self.quality, str(), str(self.movieFile.split().pop()))
+			self.extension = self.movie_dictionary['Parsed Extension'] = re.sub("\s+REAL\.\W+$", "", baseQuality)
+			self.absolute_movie_file_path = str(get_absolute_movie_file_path(self, g))
+			self.relative_movie_file_path = str(get_relative_movie_file_path(self, g))
+		g.LOG.debug(backend.debug_message(610, g, self.movieFile))
 		g.LOG.debug(backend.debug_message(612, g, self.quality))
-		baseQuality = re.sub(self.quality, str(), str(self.movie_file.split().pop()))
-		self.extension = self.movie_dictionary['Parsed Extension'] = re.sub("\s+REAL\.\W+$", "", baseQuality)
-		self.absolute_movie_file_path = str(get_absolute_movie_file_path(self, g))
-		self.relative_movie_file_path = str(get_relative_movie_file_path(self, g))
 	
 	def __repr__(self):
 		return "<Movie(name={self.movie_title!r})>".format(self = self)
-	
-	def get_unparsed_movie_title(self, g):
-		result = self.radarr_dictionary.get('title', str())
-		g.LOG.debug(backend.debug_message(643, g, result))
-		return result
-	
+		
 	def init_absolute_movie_path(self, g):
 		result = self.movie_dictionary['Absolute Movie Path'] = "/".join((os.environ['DOCKER_MEDIA_PATH'],
 		                                                                  self.relative_movie_path))
@@ -153,7 +144,15 @@ class Movie(Movies, Globals):
 					 (self.movie_dictionary['Movie DB ID'] in d.values()) and (
 							 "tmdbId" in d.keys() and d['tmdbId'] == self.movie_dictionary['Movie DB ID'])][0]
 				g.LOG.debug(backend.debug_message(644, g, g.full_radarr_dict[index]))
-				return g.full_radarr_dict[index]
+				
+				items = g.full_radarr_dict[index]
+				self.hasFile = items.pop("hasFile")
+				self.monitored = items.pop("monitored")
+				self.year = items.get('year', 0) if 'inCinemas' not in items else items.pop('inCinemas')[0:4]
+				pprint(self.radarr_dictionary)
+				g.LOG.debug(backend.debug_message(646, g, self.hasFile))
+				g.LOG.debug(backend.debug_message(647, g, self.monitored))
+				return items
 			except IndexError:
 				pass
 		return dict()
