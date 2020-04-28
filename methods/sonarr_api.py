@@ -76,44 +76,46 @@ class SonarrAPI(object):
 			breakpoint()
 		
 	def get_episodes_by_series_id(self, show):
-		for i in self.sonarr_api_request(f"{self.host_url}/episode?seriesId={show.seriesId}"):
-			try:
-				if len(show.episode) > 1:
-					print("MULTI PART EPISODE HANDLING NEEDS TO BE DONE BETTER HERE")
+		request = self.sonarr_api_request(f"{self.host_url}/episode?seriesId={show.id}")
+		if request:
+			for i in request:
+				try:
+					if len(show.episode) > 1:
+						print("MULTI PART EPISODE HANDLING NEEDS TO BE DONE BETTER HERE")
+						break
+				except TypeError:
+					pass  # single episode should parse normally
+				try:
+					parseEpisode = bool(int(i["episodeNumber"]) == show.inherited_series_dict["Episode"])
+				except KeyError:
+					print(f"KEY ERROR FOR {show.title} TO {show.movie_title}")
 					break
-			except TypeError:
-				pass  # single episode should parse normally
-			try:
-				parseEpisode = bool(int(i["episodeNumber"]) == show.inherited_series_dict["Episode"])
-			except KeyError:
-				print(f"KEY ERROR FOR {show.title} TO {show.movie_title}")
-				break
-			parseSeason = bool(int(i["seasonNumber"]) == 0)
-			if parseEpisode and parseSeason:
-				show.absoluteEpisodeNumber = i.get("absoluteEpisodeNumber", 0)
-				show.episodeId = i.pop("id")
-				show.episodeTitle = show.inherited_series_dict['Title'] = re.sub('\(''\d+\)$', "", i.pop("title"))
-				show.hasFile = i.pop("hasFile")
-				show.monitored = False
-				show.unverifiedSceneNumbering = i.pop("unverifiedSceneNumbering")
-				show.episodeSize = i.get("size", 0)
-				if show.hasFile or ("episodeFile" in i and i["episodeFile"]):
-					episodeFileDict = i["episodeFile"]
-					show.hasFile = True
-					show.qualityDict = i.get("quality", dict())
-					show.absolute_episode_path = episodeFileDict.pop("path", 0)
-					show.episodeFileId = show.inherited_series_dict['episodeFileId'] = episodeFileDict.pop("id", 0)
-					show.languageDict = episodeFileDict.pop("language", 0)
-					show.qualityCutoffNotMet = episodeFileDict.pop("qualityCutoffNotMet")
-					show.relativeEpisodePath = episodeFileDict.pop("relativePath", 0)
-				# show.relative_show_file_path = str('/'.join([show.path, show.seasonFolder, show.title])) \
-				#                                + " - S" \
-				#                                + str(show.season) \
-				#                                + "E" \
-				#                                + str(show.parsed_episode) \
-				#                                + " - " \
-				#                                + str(show.episodeTitle)
-				break
+				parseSeason = bool(int(i["seasonNumber"]) == 0)
+				if parseEpisode and parseSeason:
+					show.absoluteEpisodeNumber = i.get("absoluteEpisodeNumber", 0)
+					show.episodeId = i.pop("id")
+					show.episodeTitle = show.inherited_series_dict['Title'] = re.sub('\(''\d+\)$', "", i.pop("title"))
+					show.hasFile = i.pop("hasFile")
+					show.monitored = False
+					show.unverifiedSceneNumbering = i.pop("unverifiedSceneNumbering")
+					show.episodeSize = i.get("size", 0)
+					if show.hasFile or ("episodeFile" in i and i["episodeFile"]):
+						episodeFileDict = i["episodeFile"]
+						show.hasFile = True
+						show.qualityDict = i.get("quality", dict())
+						show.absolute_episode_path = episodeFileDict.pop("path", 0)
+						show.episodeFileId = show.inherited_series_dict['episodeFileId'] = episodeFileDict.pop("id", 0)
+						show.languageDict = episodeFileDict.pop("language", 0)
+						show.qualityCutoffNotMet = episodeFileDict.pop("qualityCutoffNotMet")
+						show.relativeEpisodePath = episodeFileDict.pop("relativePath", 0)
+					# show.relative_show_file_path = str('/'.join([show.path, show.seasonFolder, show.title])) \
+					#                                + " - S" \
+					#                                + str(show.season) \
+					#                                + "E" \
+					#                                + str(show.parsed_episode) \
+					#                                + " - " \
+					#                                + str(show.episodeTitle)
+					break
 	
 	def get_episode_by_episode_id(self, episode_id):
 		# TODO: this is one of the next areas to improve; ensure all properties are parsing correctly

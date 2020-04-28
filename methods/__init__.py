@@ -147,6 +147,7 @@ class Movie(Movies, Globals):
 				g.LOG.debug(backend.debug_message(646, g, self.hasFile))
 				g.LOG.debug(backend.debug_message(647, g, self.monitored))
 				self.radarr_dictionary = items
+				print("PPRINTING BASE RADARR DICT FOR TESTING. WILL BE THINNING THIS DIRECTLY INTO CLASS OBJECTS")
 				pprint(self.radarr_dictionary)
 			except IndexError:
 				pass
