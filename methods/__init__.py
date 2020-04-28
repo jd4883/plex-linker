@@ -77,13 +77,13 @@ class Movie(Movies, Globals):
 		g.LOG.debug(backend.debug_message(645, g, self.shows_dictionary))
 		g.LOG.debug(backend.debug_message(648, g, self.tmbdid))
 		### FROM RADARR API FULL DICT
+		self.radarr_dictionary = None
 		self.hasFile = bool
 		self.monitored = bool
 		self.year = int
 		
-		self.radarr_dictionary = self.parse_dict_from_radarr(g)
 		################################################
-		breakpoint()
+		self.radarr_dictionary = self.parse_dict_from_radarr(g)
 		
 		### NOT BY API CALL FOR NOW
 		self.absolute_movie_file_path = str
