@@ -65,11 +65,11 @@ class SonarrAPI(object):
 			show.useSceneNumbering = base.pop("useSceneNumbering")
 			show.year = base.pop("year")
 			del base
-			show.parseEpisode()
 			# TODO: this segment should also apply to absolute episodes
 			#show.parsed_absolute_episode = "-".join([e.zfill(show.padding) for e in show.absolute_ep])
 			show.anime_status = bool("anime" in show.seriesType)
 			show.padding = 3 if self.anime_status else int(os.environ['EPISODE_PADDING'])
+			show.parseEpisode()
 			os.makedirs(show.path, exist_ok = True)
 		except KeyError:
 			print(f"TROUBLE FINDING SHOW LOOKUP DATA FOR {show.title}")
