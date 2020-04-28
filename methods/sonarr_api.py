@@ -63,10 +63,11 @@ class SonarrAPI(object):
 			show.tvMazeId = base.pop("tvMazeId")
 			show.tvRageId = base.pop("tvRageId")
 			show.useSceneNumbering = base.pop("useSceneNumbering")
-			show.year = base.pop("year")`
+			show.year = base.pop("year")
 			del base
 		except KeyError:
 			print(f"TROUBLE FINDING SHOW LOOKUP DATA FOR {show.title}")
+			breakpoint()
 		show.anime_status = bool("anime" in show.seriesType)
 		os.makedirs(show.path, exist_ok = True)
 	
