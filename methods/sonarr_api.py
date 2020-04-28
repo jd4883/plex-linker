@@ -36,7 +36,11 @@ class SonarrAPI(object):
 		"""
 		
 		prefix = os.environ["SONARR_ROOT_PATH_PREFIX"]
-		base = self.sonarr_api_request(f"{self.host_url}/series/lookup?term={show.title}")[0]
+		
+		try:
+			base = self.sonarr_api_request(f"{self.host_url}/series/lookup?term={show.title}")[0]
+		except KeyError:
+			print(f"TROUBLE FINDING SHOW LOOKUP DATA FOR {show.title}")
 		show.cleanTitle = base.get("cleanTitle", str())
 		show.firstAired = base.get("firstAired", str())
 		show.genres = base.get("genres", list())
