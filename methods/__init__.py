@@ -70,7 +70,7 @@ class Movie(Movies, Globals):
 		super().__init__()
 		# schema = MovieSchema()
 		self.movie_dictionary = movie_dict
-		self.shows_dictionary = self.movie_dictionary['Shows']
+		self.shows_dictionary = self.movie_dictionary.get('Shows', dict())
 		cleanup_movie.cleanup_dict(self.movie_dictionary)
 		self.tmbdid = self.movie_dictionary['Movie DB ID']
 		g.LOG.debug(backend.debug_message(627, g, self.movie_dictionary))
