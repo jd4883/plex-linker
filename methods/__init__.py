@@ -140,7 +140,7 @@ class Movie(Movies, Globals):
 				except KeyError:
 					pass
 				self.moviePath = items.pop("path")
-				self.inCinemas = items.pop("inCinemas")
+				self.inCinemas = items.get("inCinemas", str())
 				self.radarrProfileId = items.pop("profileId")
 				self.cleanMovieTitle = items.pop("cleanTitle")
 				self.movieRuntime = items.pop("runtime")  # TODO: can use this to compare to sonarr
