@@ -133,7 +133,7 @@ class Movie(Movies, Globals):
 				self.hasFile = items.pop("hasFile")
 				self.monitored = items.pop("monitored")
 				self.year = items.get('year', 0) # if 'inCinemas' not in items else items.pop('inCinemas')[0:4]
-				self.movieId = items.pop("id")
+				self.movieId = items.get("id", 0)
 				self.downloaded = items.pop("downloaded")
 				try:
 					self.imdbid = items.pop("imdbId")
