@@ -135,7 +135,10 @@ class Movie(Movies, Globals):
 				self.year = items.get('year', 0) # if 'inCinemas' not in items else items.pop('inCinemas')[0:4]
 				self.movieId = items.pop("id")
 				self.downloaded = items.pop("downloaded")
-				self.imdbid = items.pop("imdbId")
+				try:
+					self.imdbid = items.pop("imdbId")
+				except KeyError:
+					pass
 				self.moviePath = items.pop("path")
 				self.inCinemas = items.pop("inCinemas")
 				self.radarrProfileId = items.pop("profileId")
