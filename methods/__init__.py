@@ -83,7 +83,7 @@ class Movie(Movies, Globals):
 		self.genres = str()
 		self.hasFile = bool()
 		self.imdbid = int()
-		self.inCinemas = datetime()
+		self.inCinemas = datetime
 		self.isAvailable = bool()
 		self.monitored = bool()
 		self.movieFileId = int()
