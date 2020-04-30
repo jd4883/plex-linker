@@ -86,7 +86,6 @@ class Movie(Movies, Globals):
 		self.inCinemas = datetime
 		self.isAvailable = bool
 		self.monitored = bool
-		self.movieFile = str
 		self.movieFileId = int
 		self.movieId = int
 		self.movieTitle = str
@@ -156,7 +155,7 @@ class Movie(Movies, Globals):
 			self.movieQuality = items["movieFile"].pop("quality")   # placeholder may use this at
 			self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(self.movieQuality['quality'][
 				                                                                   'name'])
-			baseQuality = re.sub(self.quality, str(), str(self.movieFile).split().pop())
+			baseQuality = re.sub(self.quality, str(), str(self.relativePath.split().pop()))
 			self.extension = self.movie_dictionary['Parsed Extension'] = re.sub("\s+REAL\.\W+$", "", baseQuality)
 			self.mediaInfo = items["movieFile"].pop("mediaInfo")    # placeholder may use this at
 			self.relativePath = self.movie_dictionary['Movie File'] = items["movieFile"].pop("relativePath")    #
@@ -167,16 +166,16 @@ class Movie(Movies, Globals):
 				self.movie_dictionary['Absolute Movie Path'] = "/".join((os.environ['DOCKER_MEDIA_PATH'],
 				                                                         self.relative_movie_path))
 			self.absolute_movie_file_path = self.movie_dictionary['Absolute Movie File Path'] = \
-				"/".join((self.absolute_movie_path, self.movieFile))
+				"/".join((self.absolute_movie_path, self.relativePath))
 			self.relative_movie_file_path = self.movie_dictionary['Relative Movie File Path'] = \
-				"/".join((self.relative_movie_path, self.movieFile))
+				"/".join((self.relative_movie_path, self.relativePath))
 		g.LOG.debug(backend.debug_message(615, g, self.absolute_movie_file_path))
 		g.LOG.debug(backend.debug_message(616, g, self.relative_movie_file_path))
 		g.LOG.debug(backend.debug_message(646, g, self.hasFile))
 		g.LOG.debug(backend.debug_message(647, g, self.monitored))
 		g.LOG.debug(backend.debug_message(617, g, self.moviePath))
 		g.LOG.debug(backend.debug_message(614, g, str(self.absolute_movie_path)))
-		g.LOG.debug(backend.debug_message(610, g, self.movieFile))
+		g.LOG.debug(backend.debug_message(610, g, self.relativePath))
 		g.LOG.debug(backend.debug_message(612, g, self.quality))
 		del items
 		del g.full_radarr_dict[index]
