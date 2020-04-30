@@ -126,9 +126,9 @@ class Movie(Movies, Globals):
 			return
 		index = [i for i, d in enumerate(g.full_radarr_dict) if
 			 (self.movie_dictionary['Movie DB ID'] in d.values()) and
-			     ("tmdbId" in d.keys() and d['tmdbId'] == self.movie_dictionary['Movie DB ID'])][0]
+			     ("tmdbId" in d.keys() and d['tmdbId'] == self.movie_dictionary['Movie DB ID'])]
 		g.LOG.debug(backend.debug_message(644, g, g.full_radarr_dict[index]))
-		items = g.full_radarr_dict[index]
+		items = g.full_radarr_dict[index] #[0]
 		
 		title = re.sub("\s+\(0\)\s?", str(), items.pop("title"))
 		self.movieTitle = re.sub("\s+\(0\)\s?", "", re.sub("/", "+", re.sub(":", "-", f"{title} ("f"{self.year})")))
