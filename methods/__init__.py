@@ -153,12 +153,13 @@ class Movie(Movies, Globals):
 			self.movieFileId = items["movieFile"].pop("id")
 			self.movieId = items["movieFile"].pop("movieId")
 			self.movieQuality = items["movieFile"].pop("quality")   # placeholder may use this at
+			self.relativePath = self.movie_dictionary['Movie File'] = items["movieFile"].pop("relativePath")
 			self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(self.movieQuality['quality'][
 				                                                                   'name'])
 			baseQuality = re.sub(self.quality, str(), str(self.relativePath.split().pop()))
 			self.extension = self.movie_dictionary['Parsed Extension'] = re.sub("\s+REAL\.\W+$", "", baseQuality)
 			self.mediaInfo = items["movieFile"].pop("mediaInfo")    # placeholder may use this at
-			self.relativePath = self.movie_dictionary['Movie File'] = items["movieFile"].pop("relativePath")    #
+			
 			self.sizeonDisk = items["movieFile"].pop("size")
 			self.audioLanguages = self.mediaInfo.get("audioLanguages", str())
 			self.relative_movie_path = self.movie_dictionary['Relative Movie Path'] = str(self.moviePath)[1:]
