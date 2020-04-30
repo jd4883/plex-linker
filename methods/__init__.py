@@ -76,38 +76,38 @@ class Movie(Movies, Globals):
 		g.LOG.debug(backend.debug_message(645, g, self.shows_dictionary))
 		g.LOG.debug(backend.debug_message(648, g, self.tmbdid))
 		### FROM RADARR API FULL DICT
-		self.alternativeTitles = list
-		self.audioLanguages = str # should parse out multi language info here
-		self.cleanMovieTitle = str
-		self.downloaded = bool
-		self.genres = str
-		self.hasFile = bool
-		self.imdbid = int
-		self.inCinemas = datetime
-		self.isAvailable = bool
-		self.monitored = bool
-		self.movieFileId = int
-		self.movieId = int
-		self.movieTitle = str
-		self.path = str
-		self.qualityProfileId = int
-		self.radarrProfileId = int
-		self.relativePath = str
-		self.runtime = int # TODO: can use this to compare to sonarr
-		self.sizeonDisk = int
-		self.sortTitle = str
-		self.titleslug = str
-		self.year = int
+		self.alternativeTitles = list()
+		self.audioLanguages = str() # should parse out multi language info here
+		self.cleanMovieTitle = str()
+		self.downloaded = bool()
+		self.genres = str()
+		self.hasFile = bool()
+		self.imdbid = int()
+		self.inCinemas = datetime()
+		self.isAvailable = bool()
+		self.monitored = bool()
+		self.movieFileId = int()
+		self.movieId = int()
+		self.movieTitle = str()
+		self.path = str()
+		self.qualityProfileId = int()
+		self.radarrProfileId = int()
+		self.relativePath = str()
+		self.runtime = int() # TODO: can use this to compare to sonarr
+		self.sizeonDisk = int()
+		self.sortTitle = str()
+		self.titleslug = str()
+		self.year = int()
 		################################################
 		
 		### NOT BY API CALL FOR NOW
-		self.absolute_movie_file_path = str
-		self.absolute_movie_path = str
-		self.extension = str
-		self.quality = str
-		self.relative_movie_file_path = str
-		self.relative_movie_file_path = str
-		self.relative_movie_path = str
+		self.absolute_movie_file_path = str()
+		self.absolute_movie_path = str()
+		self.extension = str()
+		self.quality = str()
+		self.relative_movie_file_path = str()
+		self.relative_movie_file_path = str()
+		self.relative_movie_path = str()
 		################################################
 		self.parse_dict_from_radarr(g)
 	
