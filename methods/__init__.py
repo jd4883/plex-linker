@@ -99,10 +99,6 @@ class Movie(Movies, Globals):
 		self.sortTitle = str
 		self.titleslug = str
 		self.year = int
-		
-		
-		
-		
 		################################################
 		
 		### NOT BY API CALL FOR NOW
@@ -160,7 +156,7 @@ class Movie(Movies, Globals):
 			self.movieQuality = items["movieFile"].pop("quality")   # placeholder may use this at
 			self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(self.movieQuality['quality'][
 				                                                                   'name'])
-			baseQuality = re.sub(self.quality, str(), str(self.movieFile.split().pop()))
+			baseQuality = re.sub(self.quality, str(), str(self.movieFile).split().pop())
 			self.extension = self.movie_dictionary['Parsed Extension'] = re.sub("\s+REAL\.\W+$", "", baseQuality)
 			self.mediaInfo = items["movieFile"].pop("mediaInfo")    # placeholder may use this at
 			self.relativePath = self.movie_dictionary['Movie File'] = items["movieFile"].pop("relativePath")    #
