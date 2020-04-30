@@ -202,72 +202,72 @@ class Show(Movie, Globals):
 		self.episode = self.inherited_series_dict.get('Episode')
 		self.movie_dictionary = fetch_series.parent_dict(g, movie_dict)
 		self.cleanup_input_data()
-		self.absoluteEpisodeNumber = int
+		self.absoluteEpisodeNumber = int()
 		
 		### SET BY LOOKUP SERIES METHOD ###
-		self.anime_status = bool
-		self.cleanTitle = str
-		self.firstAired = str
-		self.genres = list
-		self.id = int
-		self.imdbId = str
-		self.languageProfileId = int
-		self.path = str
-		self.profileId = int
-		self.qualityProfileId = int
-		self.ratings = list
-		self.runtime = int
-		self.seasonCount = int
-		self.seasonFolder = bool
-		self.seasons = list
-		self.seriesId = int
-		self.seriesType = str
-		self.sortTitle = str
-		self.status = str
-		self.tags = list
+		self.anime_status = bool()
+		self.cleanTitle = str()
+		self.firstAired = str()
+		self.genres = list()
+		self.id = int()
+		self.imdbId = str()
+		self.languageProfileId = int()
+		self.path = str()
+		self.profileId = int()
+		self.qualityProfileId = int()
+		self.ratings = list()
+		self.runtime = int()
+		self.seasonCount = int()
+		self.seasonFolder = bool()
+		self.seasons = list()
+		self.seriesId = int()
+		self.seriesType = str()
+		self.sortTitle = str()
+		self.status = str()
+		self.tags = list()
 		self.title = str(series)
-		self.titleSlug = str
-		self.tvdbId = int
-		self.tvMazeId = int
-		self.tvRageId = int
-		self.useSceneNumbering = bool
-		self.year = int
+		self.titleSlug = str()
+		self.tvdbId = int()
+		self.tvMazeId = int()
+		self.tvRageId = int()
+		self.useSceneNumbering = bool()
+		self.year = int()
 		
 		### FIELDS PULLED GET EPISODES FROM SERIES ID ###
-		self.absolute_episode_path = int
-		self.episode_size = int
-		self.episodeFileId = int
-		self.episodeId = int
-		self.episodeNumber = int
+		self.absolute_episode_path = str()
+		self.episode_size = int()
+		self.episodeFileId = int()
+		self.episodeId = int()
+		self.episodeNumber = int()
 		self.episodeTitle = str()
-		self.hasFile = bool
+		self.hasFile = bool()
 		self.language_dict = dict
-		self.monitored = bool
-		self.padding = int
-		self.parsedEpisode = str
-		self.quality_dict = dict
-		self.qualityCutoffNotMet = bool
-		self.relative_episode_path = int
-		self.relativePath = str
+		self.monitored = bool()
+		self.padding = int()
+		self.parsedEpisode = str()
+		self.quality_dict = dict()
+		self.qualityCutoffNotMet = bool()
+		self.relative_episode_path = int()
+		self.relativePath = str()
 		self.season = self.seasonNumber = str(int()).zfill(2)
 		# TODO: this should be dynamic to handle unusual edge cases
-		self.unverifiedSceneNumbering = bool
+		self.unverifiedSceneNumbering = bool()
 		#######################################
 		
 		### PARSED OUTSIDE OF API CALLS
 		### THIS SEGMENT MAYBE CAN BE FACTORED OUT
 		self.episode_dict = None
 		self.episode_file_dict = None
-		self.has_link = bool
-		self.parsed_absolute_episode = str
-		self.parsed_episode_title = str
-		self.relative_show_file_path = str
-		self.relative_show_path = str
-		self.sceneEpisodeNumber = bool
-		self.sceneSeasonNumber = bool
+		self.has_link = bool()
+		self.parsed_absolute_episode = str()
+		self.parsed_episode_title = str()
+		self.relative_show_file_path = str()
+		self.relative_show_path = str()
+		self.sceneEpisodeNumber = bool()
+		self.sceneSeasonNumber = bool()
 		
-		self.path = str
-		self.sonarr_series_dict = dict
+		self.path = str()
+		self.sonarr_series_dict = dict()
 	
 	#######################################
 	
