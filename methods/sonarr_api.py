@@ -83,7 +83,7 @@ class SonarrAPI(object):
 				try:
 					parseEpisode = bool(int(i["episodeNumber"]) == show.inherited_series_dict["Episode"])
 				except KeyError:
-					print(f"KEY ERROR FOR {show.title} TO {show.movie_title}")
+					print(f"KEY ERROR FOR {show.title} TO {show.movieTitle}")
 					break
 				parseSeason = bool(int(i["seasonNumber"]) == 0)
 				if parseEpisode and parseSeason:
