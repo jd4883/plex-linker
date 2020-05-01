@@ -21,4 +21,6 @@ def symlink_force(movie, show, g):
 def cleanString(string):
 	string = string.replace('..', '.')
 	string = string.replace(':', '-')
+	if string.startswith("/"):
+		string = string[1:]
 	return string
