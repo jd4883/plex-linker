@@ -281,8 +281,7 @@ class Show(Movie, Globals):
 			'/'.join([self.path, self.seasonFolder, self.title]) + \
 			f" - S{self.season}E{self.parsedEpisode} - {self.episodeTitle}"
 		self.relative_show_file_path = self.inherited_series_dict['Parsed Relative Show File Path'] = \
-			(f"{self.parsed_episode_title} {self.quality}.{self.extension}" \
-				 if (self.hasFile and self.parsed_episode_title) else str()).replace("..", ".")
+			f"{self.parsed_episode_title} {self.quality}.{self.extension}"
 		g.sonarr.rescan_series(self.tvdbId)
 		g.sonarr.refresh_series(self.tvdbId)
 	
