@@ -36,18 +36,3 @@ def padded_absolute_episode(self, g):
 		return str()
 	g.LOG.info(backend.debug_message(635, g, result))
 	return result
-
-
-def compiled_episode_title(self, g):
-	parsed_title = '/'.join([self.path, self.seasonFolder, self.title]) \
-	               + " - S" \
-	               + self.season \
-	               + "E" \
-	               + self.parsedEpisode \
-	               + " - " \
-	               + self.episodeTitle
-	print(parsed_title)
-	result = self.inherited_series_dict['Parsed Episode Title'] = re.sub('\(\d+\)$', "",
-	                                                                     fetch_series.show_path_string(parsed_title))
-	g.LOG.info(backend.debug_message(637, g, result))
-	return result

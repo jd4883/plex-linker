@@ -12,7 +12,6 @@ def show_path_string(string):
 	return result
 
 
-# continue testing this seems right but may need more tweaks to properly handle everything
 def fetch_link_status(self, episode_file_dict, relative_movie_file_path):
 	try:
 		root = str(os.environ['DOCKER_MEDIA_PATH'])

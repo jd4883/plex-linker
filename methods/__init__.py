@@ -276,16 +276,13 @@ class Show(Movie, Globals):
 		self.relative_show_path = self.inherited_series_dict['Relative Show Path'] = parse_series.relative_show_path(
 				self, g)
 		self.episode_file_dict = g.sonarr.get_episode_file_by_episode_id(self.episodeFileId)
-		self.parsed_episode_title = self.inherited_series_dict['Parsed Episode Title'] = \
-			parse_series.compiled_episode_title(self, g)
+		self.parsed_episode_title = \
+			self.inherited_series_dict['Parsed Episode Title'] = \
+			'/'.join([self.path, self.seasonFolder, self.title]) + \
+			f" - S{self.season}E{self.parsedEpisode} - {self.episodeTitle}"
 		self.relative_show_file_path = self.inherited_series_dict['Parsed Relative Show File Path'] = \
 			(f"{self.parsed_episode_title} {self.quality}.{self.extension}" \
 				 if (self.hasFile and self.parsed_episode_title) else str()).replace("..", ".")
-		relativeMovieFilePath = fetch_link_status(self,
-		                                          self.episode_file_dict,
-		                                          self.absolute_movie_file_path) if self.episode_file_dict else bool()
-		# TODO: this spot seems to not parse out link status correctly
-		self.has_link = self.inherited_series_dict['Has Link'] = relativeMovieFilePath
 		g.sonarr.rescan_series(self.tvdbId)
 		g.sonarr.refresh_series(self.tvdbId)
 	
