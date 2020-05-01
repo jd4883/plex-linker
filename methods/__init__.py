@@ -37,7 +37,7 @@ class Globals:
 		self.SHOWS_PATH = get_shows_path()
 		self.movies_dict = get_movies_dictionary_object()
 		self.method = self.parent_method = get_method_main()
-
+	
 	def __repr__(self):
 		return "<Globals()>".format(self = self)
 
@@ -92,7 +92,6 @@ class Movie(Movies, Globals):
 		self.relativePath = str()
 		self.runtime = int()  # TODO: can use this to compare to sonarr
 		self.sizeonDisk = int()
-		self.sizeonDisk = str()
 		self.sortTitle = str()
 		self.titleslug = str()
 		self.year = int()
@@ -157,7 +156,7 @@ class Movie(Movies, Globals):
 						self.sizeonDisk = items["movieFile"].pop("size")
 						self.audioLanguages = self.mediaInfo.get("audioLanguages", str())
 						self.absolute_movie_file_path = self.movie_dictionary['Absolute Movie File Path'] = \
-							"/".join((self.moviePath, self.relativePath))
+							"/".join((self.moviePath, self.relativePath)).replace(":", "-")
 				except KeyError:
 					pass
 				g.LOG.debug(backend.debug_message(615, g, self.absolute_movie_file_path))
@@ -274,7 +273,7 @@ class Show(Movie, Globals):
 			'/'.join([self.path, self.seasonFolder, self.title]) + \
 			f" - S{self.season}E{self.parsedEpisode} - {self.episodeTitle}"
 		self.relative_show_file_path = self.inherited_series_dict['Parsed Relative Show File Path'] = \
-			f"{self.parsed_episode_title} {movie.quality}.{movie.extension}".replace("..", ".")
+			str(f"{self.parsed_episode_title} {movie.quality}.{movie.extension}".replace("..", ".")).replace(":", "-")
 		g.sonarr.rescan_series(self.tvdbId)
 		g.sonarr.refresh_series(self.tvdbId)
 	

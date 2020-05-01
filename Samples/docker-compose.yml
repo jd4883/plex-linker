@@ -24,7 +24,7 @@ services:
         image:       plex_linker:latest
         hostname:    plex-linker
         env_file:
-            - plex-linker.env   # this is where I define all my ENVAR's I want within the container
+            - plex-linker.env   # this is where I define all my environmental variables I want within the container
         volumes:
             - media:/media
             - plex_linker:/config

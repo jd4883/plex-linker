@@ -1,13 +1,11 @@
 #!/usr/bin/env python3.7
 # using https://github.com/pkkid/python-plexapi to mess with watch status
-# -*- coding: utf-8 -*-
 import pathlib
 from os import environ
 
 from plexapi.server import PlexServer
 
 
-# noinspection PyUnusedClass
 class PlexAPI(object):
 	
 	def __init__(self):
