@@ -8,9 +8,6 @@ import messaging.frontend as message
 
 def symlink_force(movie, show, g):
 	message.method_launch(g)
-	print(f"SYMLINK FORCE PRE PROCESS")
-	print(f"MOVIE PATH: {movie.absolute_movie_file_path}")
-	print(f"SHOW PATH: {show.relative_show_file_path}")
 	os.chdir(str(os.environ['HOST_MEDIA_PATH']))
 	process = subprocess.Popen(["ln", "-fsvr", f"{movie.absolute_movie_file_path}", f"{show.relative_show_file_path}"],
 	                           stderr = subprocess.DEVNULL,
@@ -18,8 +15,6 @@ def symlink_force(movie, show, g):
 	process = re.sub("'", "", str(process.communicate()[0])[3:-4])
 	
 	g.LOG.info(backend.debug_message(654, g, process))
-	print(f"HIT BREAKPOINT")
-	breakpoint()
 	message.method_exit(g)
 
 # # cleanup this method along with others and try to segment where they are stored
