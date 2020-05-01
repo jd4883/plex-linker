@@ -6,11 +6,14 @@ import messaging.backend as backend
 import messaging.frontend as message
 
 
-def symlink_force(show, g):
+def symlink_force(movie, show, g):
 	message.method_launch(g)
 	print(f"SYMLINK FORCE PRE PROCESS")
+	print(f"MOVIE PATH: {movie.absolute_movie_file_path}")
+	print(f"SHOW PATH: {show.relative_show_file_path}")
 	os.chdir(str(os.environ['HOST_MEDIA_PATH']))
-	process = subprocess.Popen(get_symlink_command_string(show), stderr = subprocess.DEVNULL,
+	process = subprocess.Popen(["ln", "-fsvr", f"{movie.absolute_movie_file_path}", f"{show.relative_show_file_path}"],
+	                           stderr = subprocess.DEVNULL,
 	                           stdout = subprocess.PIPE)
 	process = re.sub("'", "", str(process.communicate()[0])[3:-4])
 	
@@ -18,13 +21,6 @@ def symlink_force(show, g):
 	print(f"HIT BREAKPOINT")
 	breakpoint()
 	message.method_exit(g)
-
-
-def get_symlink_command_string(show):
-	print(f"MOVIE PATH: {show.absolute_movie_file_path}")
-	print(f"SHOW PATH: {show.relative_show_file_path}")
-	return ["ln", "-fsvr", f"{show.absolute_movie_file_path}", f"{show.relative_show_file_path}"]
-
 
 # # cleanup this method along with others and try to segment where they are stored
 # def validate_link_ready(show):

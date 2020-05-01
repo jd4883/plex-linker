@@ -1,15 +1,11 @@
-import messaging.frontend as message
+import os
 import methods
-from jobs.set_path_permissions import (set_permissions)
+from jobs.set_path_permissions import (
+	set_file_mask_with_chmod_on_files_and_links,
+	set_ownership_on_files_and_links,
+	)
 from jobs.symlinking import (symlink_force)
-
-
-def parse_show_to_link(show, g):
-	message.method_launch(g)
-	map(symlink_force(show, g), show.shows_dictionary.items())
-	map(set_permissions(show, g), show.shows_dictionary.items())
-	message.method_exit(g)
-
+from messaging import frontend as message
 
 def parse_shows_dictionary_object(movie, g):
 	message.method_launch(g)
@@ -24,4 +20,12 @@ def parse_shows_dictionary_object(movie, g):
 		                    movie.movie_dictionary)
 		g.sonarr.lookup_series(show)
 		show.initShow(g)
-		parse_show_to_link(show, g)
+		map(symlink_force(movie, show, g), show.shows_dictionary.items())
+		message.method_launch(g)
+		directory = str(os.environ['DOCKER_MEDIA_PATH'])
+		os.chdir(directory)
+		try:
+			set_file_mask_with_chmod_on_files_and_links(movie.absolute_movie_file_path, g)
+			set_ownership_on_files_and_links(movie.absolute_movie_file_path)
+		except (FileNotFoundError, NotADirectoryError, OSError):
+			pass
