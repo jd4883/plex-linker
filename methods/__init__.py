@@ -19,7 +19,6 @@ from methods.misc_get_methods import (
 from methods.radarr_api import *
 from methods.sonarr_api import *
 from plex_linker.compare.ids import validate_tmdbId
-from plex_linker.fetch.series import fetch_link_status
 from plex_linker.gets.movie import get_relative_movies_path
 from plex_linker.parser.series import padded_absolute_episode
 
@@ -29,22 +28,18 @@ class Globals:
 		self.sonarr = SonarrAPI()
 		self.radarr = RadarrAPI()
 		self.sonarr_root_folders = self.sonarr.get_root_folder()
-		# self.radarr_root_folders = self.radarr.get_root_folder()  # fairly sure this isnt a radarr endpoint
 		self.full_sonarr_dict = self.sonarr.get_series()
 		self.full_radarr_dict = self.radarr.get_movie_library()
 		self.MEDIA_PATH = str(get_docker_media_path())
 		self.MEDIA_DIRECTORY = str(get_host_media_path())
 		self.LOG = get_logger(get_log_name())
 		self.MOVIES_PATH = get_movies_path()
-		self.MOVIE_EXTENSIONS = get_movie_extensions()
 		self.SHOWS_PATH = get_shows_path()
 		self.movies_dict = get_movies_dictionary_object()
 		self.method = self.parent_method = get_method_main()
-		pass
 
-
-# def __repr__(self):
-# 	return "<Globals(name={self.name!r})>".format(self = self)
+	def __repr__(self):
+		return "<Globals()>".format(self = self)
 
 
 class Movies:
@@ -145,33 +140,31 @@ class Movie(Movies, Globals):
 				self.alternativeTitles = items.pop("alternativeTitles")
 				self.sortTitle = items.pop("sortTitle")
 				self.qualityProfileId = items.pop("qualityProfileId")
-				try:
-					if self.hasFile:
-						self.movieFileId = items["movieFile"].pop("id")
-						self.movieId = items["movieFile"].pop("movieId")
-						self.movieQuality = items["movieFile"].pop("quality")  # placeholder may use this at
-						self.relativePath = self.movie_dictionary['Movie File'] = items["movieFile"].pop(
-								"relativePath")
-						self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(self.movieQuality[
-							                                                                   'quality'][
-							                                                                   'name'])
-						baseQuality = re.sub(self.quality, str(), str(self.relativePath.split().pop()))
-						self.extension = self.movie_dictionary['Parsed Extension'] = re.sub("\s+REAL\.\W+$", "",
-						                                                                    baseQuality)
-						self.mediaInfo = items["movieFile"].pop("mediaInfo")  # placeholder may use this at
-						
-						self.sizeonDisk = items["movieFile"].pop("size")
-						self.audioLanguages = self.mediaInfo.get("audioLanguages", str())
-						self.absolute_movie_file_path = self.movie_dictionary['Absolute Movie File Path'] = \
-							"/".join((self.moviePath, self.relativePath))
-				except KeyError:
-					pass
+				if self.hasFile:
+					self.movieFileId = items["movieFile"].pop("id")
+					self.movieId = items["movieFile"].pop("movieId")
+					self.movieQuality = items["movieFile"].pop("quality")  # placeholder may use this at
+					self.relativePath = self.movie_dictionary['Movie File'] = items["movieFile"].pop(
+							"relativePath")
+					self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(self.movieQuality[
+						                                                                   'quality'][
+						                                                                   'name'])
+					baseQuality = re.sub(self.quality, str(), str(self.relativePath.split().pop()))
+					self.extension = self.movie_dictionary['Parsed Extension'] = re.sub("\s+REAL\.\W+$", "",
+					                                                                    baseQuality)
+					self.mediaInfo = items["movieFile"].pop("mediaInfo")  # placeholder may use this at
+					
+					self.sizeonDisk = items["movieFile"].pop("size")
+					self.audioLanguages = self.mediaInfo.get("audioLanguages", str())
+					self.absolute_movie_file_path = self.movie_dictionary['Absolute Movie File Path'] = \
+						"/".join((self.moviePath, self.relativePath))
 				g.LOG.info(backend.debug_message(615, g, self.absolute_movie_file_path))
 				g.LOG.debug(backend.debug_message(646, g, self.hasFile))
 				g.LOG.debug(backend.debug_message(647, g, self.monitored))
 				g.LOG.debug(backend.debug_message(617, g, self.moviePath))
 				g.LOG.debug(backend.debug_message(610, g, self.relativePath))
-				g.LOG.debug(backend.debug_message(612, g, self.quality))
+				g.LOG.info(backend.debug_message(612, g, self.quality))
+				print(f"EXTENSION {self.extension}")
 				del items
 				del g.full_radarr_dict[index]
 			except IndexError:
