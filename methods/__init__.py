@@ -167,12 +167,12 @@ class Movie(Movies, Globals):
 							"/".join((self.moviePath, self.relativePath))
 				except KeyError:
 					pass
-				g.LOG.debug(backend.debug_message(615, g, self.absolute_movie_file_path))
-				g.LOG.debug(backend.debug_message(646, g, self.hasFile))
+				g.LOG.info(backend.debug_message(615, g, self.absolute_movie_file_path))
+				g.LOG.info(backend.debug_message(646, g, self.hasFile))
 				g.LOG.debug(backend.debug_message(647, g, self.monitored))
-				g.LOG.debug(backend.debug_message(617, g, self.moviePath))
-				g.LOG.debug(backend.debug_message(610, g, self.relativePath))
-				g.LOG.debug(backend.debug_message(612, g, self.quality))
+				g.LOG.info(backend.debug_message(617, g, self.moviePath))
+				g.LOG.info(backend.debug_message(610, g, self.relativePath))
+				g.LOG.info(backend.debug_message(612, g, self.quality))
 				del items
 				del g.full_radarr_dict[index]
 			except IndexError:
