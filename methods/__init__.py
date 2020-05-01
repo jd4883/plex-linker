@@ -168,11 +168,11 @@ class Movie(Movies, Globals):
 				except KeyError:
 					pass
 				g.LOG.info(backend.debug_message(615, g, self.absolute_movie_file_path))
-				g.LOG.info(backend.debug_message(646, g, self.hasFile))
+				g.LOG.debug(backend.debug_message(646, g, self.hasFile))
 				g.LOG.debug(backend.debug_message(647, g, self.monitored))
-				g.LOG.info(backend.debug_message(617, g, self.moviePath))
-				g.LOG.info(backend.debug_message(610, g, self.relativePath))
-				g.LOG.info(backend.debug_message(612, g, self.quality))
+				g.LOG.debug(backend.debug_message(617, g, self.moviePath))
+				g.LOG.debug(backend.debug_message(610, g, self.relativePath))
+				g.LOG.debug(backend.debug_message(612, g, self.quality))
 				del items
 				del g.full_radarr_dict[index]
 			except IndexError:
@@ -266,7 +266,7 @@ class Show(Movie, Globals):
 	def initShow(self, g):
 		g.sonarr.get_episodes_by_series_id(self)
 		self.inherited_series_dict['Episode ID'] = self.episodeId
-		self.episode_dict = parse_series.parse_episode_dict(self, g)
+		self.episode_dict = g.sonarr.get_episode_by_episode_id(self.episodeId)
 		if self.episode_dict:
 			self.absoluteEpisodeNumber = parse_series.absolute_episode_number(self, g)
 			self.parsed_absolute_episode = padded_absolute_episode(self, g)
@@ -277,7 +277,7 @@ class Show(Movie, Globals):
 		self.seasonFolder = parse_series.season_folder_from_api(self, g)
 		self.relative_show_path = self.inherited_series_dict['Relative Show Path'] = parse_series.relative_show_path(
 				self, g)
-		self.episode_file_dict = parse_series.parse_episode_file_id_dict(self, g)
+		self.episode_file_dict = g.sonarr.get_episode_file_by_episode_id(self.episodeFileId)
 		self.parsed_episode_title = self.inherited_series_dict['Parsed Episode Title'] = \
 			parse_series.compiled_episode_title(self, g)
 		self.relative_show_file_path = self.inherited_series_dict['Parsed Relative Show File Path'] = \

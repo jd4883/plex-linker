@@ -4,23 +4,6 @@ from messaging import backend as backend
 from plex_linker.fetch import series as fetch_series
 
 
-def parse_episode_file_id_dict(self, g):
-	try:
-		return g.sonarr.get_episode_file_by_episode_id(self.episodeFileId)
-	except TypeError:
-		g.LOG.error(backend.debug_message(605, g, 0, self.episodeFileId))
-		return dict()
-
-
-def parse_episode_dict(self, g):
-	try:
-		result = g.sonarr.get_episode_by_episode_id(self.episodeId)
-		g.LOG.info(backend.debug_message(623, g, result))
-	except KeyError or AttributeError:
-		result = dict()
-	return result
-
-
 def absolute_episode_number(self, g):
 	# need handling for multi part absolute episodes
 	result = self.inherited_series_dict['Absolute Episode'] = self.episode_dict.get('absoluteEpisodeNumber', str())
