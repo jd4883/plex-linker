@@ -8,16 +8,13 @@ from jobs.symlinking import (symlink_force)
 
 
 def parse_show_to_link(show, g):
-	try:
-		message.method_launch(g)
-		map(symlink_force(show, g), show.shows_dictionary.items())
-		map(set_permissions(show, g), show.shows_dictionary.items())
-		# for _ in show.shows_dictionary.items():
-		# 	symlink_force(show, g), show.shows_dictionary.items()
-		# 	set_permissions(show, g)
-		message.method_exit(g)
-	except AttributeError:
-		pass
+	message.method_launch(g)
+	map(symlink_force(show, g), show.shows_dictionary.items())
+	map(set_permissions(show, g), show.shows_dictionary.items())
+	# for _ in show.shows_dictionary.items():
+	# 	symlink_force(show, g), show.shows_dictionary.items()
+	# 	set_permissions(show, g)
+	message.method_exit(g)
 
 
 def parse_shows_dictionary_object(movie, g):
