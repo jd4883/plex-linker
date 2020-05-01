@@ -46,6 +46,7 @@ def compiled_episode_title(self, g):
 	               + self.parsedEpisode \
 	               + " - " \
 	               + self.episodeTitle
+	print(parsed_title)
 	result = self.inherited_series_dict['Parsed Episode Title'] = re.sub('\(\d+\)$', "",
 	                                                                     fetch_series.show_path_string(parsed_title))
 	g.LOG.info(backend.debug_message(637, g, result))

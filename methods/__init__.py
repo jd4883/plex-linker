@@ -92,7 +92,6 @@ class Movie(Movies, Globals):
 		self.movieQuality = str()
 		self.movieRuntime = int()
 		self.movieTitle = str()
-		self.path = str()
 		self.qualityProfileId = int()
 		self.radarrProfileId = int()
 		self.relativePath = str()
@@ -259,7 +258,6 @@ class Show(Movie, Globals):
 		self.sceneSeasonNumber = bool()
 		
 		self.path = str()
-		self.sonarr_series_dict = dict()
 	
 	#######################################
 	
