@@ -3,13 +3,13 @@ from messaging import backend as backend
 
 def absolute_episode_number(self, g):
 	result = self.inherited_series_dict['Absolute Episode'] = self.episode_dict.get('absoluteEpisodeNumber', str())
-	g.LOG.info(backend.debug_message(628, g, result))
+	g.LOG.debug(backend.debug_message(628, g, result))
 	return result
 
 
 def season_folder_from_api(self, g):
 	result = self.inherited_series_dict['Parsed Season Folder'] = f"Season {self.season}"
-	g.LOG.info(backend.debug_message(631, g, result))
+	g.LOG.debug(backend.debug_message(631, g, result))
 	return result
 
 
