@@ -140,23 +140,26 @@ class Movie(Movies, Globals):
 				self.alternativeTitles = items.pop("alternativeTitles")
 				self.sortTitle = items.pop("sortTitle")
 				self.qualityProfileId = items.pop("qualityProfileId")
-				if self.hasFile:
-					self.movieFileId = items["movieFile"].pop("id")
-					self.movieId = items["movieFile"].pop("movieId")
-					self.movieQuality = items["movieFile"].pop("quality")  # placeholder may use this at
-					self.relativePath = self.movie_dictionary['Movie File'] = items["movieFile"].pop(
-							"relativePath")
-					self.quality = \
-						self.movie_dictionary['Parsed Movie Quality'] = \
-						str(self.movieQuality['quality']['name'])
-					baseQuality = re.sub(self.quality, str(), str(self.relativePath.split().pop()))
-					self.extension = re.sub("\s+REAL\.\W+$", "", baseQuality)
-					self.mediaInfo = items["movieFile"].pop("mediaInfo")  # placeholder may use this at
-					
-					self.sizeonDisk = items["movieFile"].pop("size")
-					self.audioLanguages = self.mediaInfo.get("audioLanguages", str())
-					self.absolute_movie_file_path = self.movie_dictionary['Absolute Movie File Path'] = \
-						"/".join((self.moviePath, self.relativePath))
+				try:
+					if self.hasFile:
+						self.movieFileId = items["movieFile"].pop("id")
+						self.movieId = items["movieFile"].pop("movieId")
+						self.movieQuality = items["movieFile"].pop("quality")  # placeholder may use this at
+						self.relativePath = self.movie_dictionary['Movie File'] = items["movieFile"].pop(
+								"relativePath")
+						self.quality = \
+							self.movie_dictionary['Parsed Movie Quality'] = \
+							str(self.movieQuality['quality']['name'])
+						baseQuality = re.sub(self.quality, str(), str(self.relativePath.split().pop()))
+						self.extension = re.sub("\s+REAL\.\W+$", "", baseQuality)
+						self.mediaInfo = items["movieFile"].pop("mediaInfo")  # placeholder may use this at
+						
+						self.sizeonDisk = items["movieFile"].pop("size")
+						self.audioLanguages = self.mediaInfo.get("audioLanguages", str())
+						self.absolute_movie_file_path = self.movie_dictionary['Absolute Movie File Path'] = \
+							"/".join((self.moviePath, self.relativePath))
+				except KeyError:
+					pass
 				g.LOG.info(backend.debug_message(615, g, self.absolute_movie_file_path))
 				g.LOG.debug(backend.debug_message(646, g, self.hasFile))
 				g.LOG.debug(backend.debug_message(647, g, self.monitored))
