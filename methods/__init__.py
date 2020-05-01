@@ -150,7 +150,7 @@ class Movie(Movies, Globals):
 							self.movie_dictionary['Parsed Movie Quality'] = \
 							str(self.movieQuality['quality']['name'])
 						baseQuality = re.sub(self.quality, str(), str(self.relativePath.split().pop()))
-						self.extension = re.sub("\s+REAL\.\W+$", "", baseQuality)
+						self.extension = re.sub("\s+REAL\.\W+$", "", baseQuality).replace(".","")
 						self.mediaInfo = items["movieFile"].pop("mediaInfo")  # placeholder may use this at
 						
 						self.sizeonDisk = items["movieFile"].pop("size")
