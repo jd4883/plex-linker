@@ -19,7 +19,7 @@ def parse_shows_dictionary_object(movie, g):
 		                    movie.shows_dictionary[series],
 		                    movie.movie_dictionary)
 		g.sonarr.lookup_series(show)
-		show.initShow(g)
+		show.initShow(movie, g)
 		print(show.relative_show_file_path)
 		map(symlink_force(movie, show, g), show.shows_dictionary.items())
 		message.method_launch(g)

@@ -146,12 +146,11 @@ class Movie(Movies, Globals):
 					self.movieQuality = items["movieFile"].pop("quality")  # placeholder may use this at
 					self.relativePath = self.movie_dictionary['Movie File'] = items["movieFile"].pop(
 							"relativePath")
-					self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(self.movieQuality[
-						                                                                   'quality'][
-						                                                                   'name'])
+					self.quality = \
+						self.movie_dictionary['Parsed Movie Quality'] = \
+						str(self.movieQuality['quality']['name'])
 					baseQuality = re.sub(self.quality, str(), str(self.relativePath.split().pop()))
-					self.extension = self.movie_dictionary['Parsed Extension'] = re.sub("\s+REAL\.\W+$", "",
-					                                                                    baseQuality)
+					self.extension = re.sub("\s+REAL\.\W+$", "", baseQuality)
 					self.mediaInfo = items["movieFile"].pop("mediaInfo")  # placeholder may use this at
 					
 					self.sizeonDisk = items["movieFile"].pop("size")
@@ -164,12 +163,10 @@ class Movie(Movies, Globals):
 				g.LOG.debug(backend.debug_message(617, g, self.moviePath))
 				g.LOG.debug(backend.debug_message(610, g, self.relativePath))
 				g.LOG.info(backend.debug_message(612, g, self.quality))
-				print(f"EXTENSION {self.extension}")
 				del items
 				del g.full_radarr_dict[index]
 			except IndexError:
 				pass
-		return dict()
 
 
 class Show(Movie, Globals):
@@ -254,7 +251,7 @@ class Show(Movie, Globals):
 	
 	#######################################
 	
-	def initShow(self, g):
+	def initShow(self, movie, g):
 		g.sonarr.get_episodes_by_series_id(self)
 		self.inherited_series_dict['Episode ID'] = self.episodeId
 		self.episode_dict = g.sonarr.get_episode_by_episode_id(self.episodeId)
@@ -274,7 +271,7 @@ class Show(Movie, Globals):
 			'/'.join([self.path, self.seasonFolder, self.title]) + \
 			f" - S{self.season}E{self.parsedEpisode} - {self.episodeTitle}"
 		self.relative_show_file_path = self.inherited_series_dict['Parsed Relative Show File Path'] = \
-			f"{self.parsed_episode_title} {self.quality}.{self.extension}"
+			f"{self.parsed_episode_title} {movie.quality}.{movie.extension}"
 		g.sonarr.rescan_series(self.tvdbId)
 		g.sonarr.refresh_series(self.tvdbId)
 	
