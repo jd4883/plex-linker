@@ -160,12 +160,12 @@ class Movie(Movies, Globals):
 							"/".join((self.moviePath, self.relativePath))
 				except KeyError:
 					pass
-				g.LOG.info(backend.debug_message(615, g, self.absolute_movie_file_path))
+				g.LOG.debug(backend.debug_message(615, g, self.absolute_movie_file_path))
 				g.LOG.debug(backend.debug_message(646, g, self.hasFile))
 				g.LOG.debug(backend.debug_message(647, g, self.monitored))
 				g.LOG.debug(backend.debug_message(617, g, self.moviePath))
 				g.LOG.debug(backend.debug_message(610, g, self.relativePath))
-				g.LOG.info(backend.debug_message(612, g, self.quality))
+				g.LOG.debug(backend.debug_message(612, g, self.quality))
 				del items
 				del g.full_radarr_dict[index]
 			except IndexError:
@@ -274,7 +274,7 @@ class Show(Movie, Globals):
 			'/'.join([self.path, self.seasonFolder, self.title]) + \
 			f" - S{self.season}E{self.parsedEpisode} - {self.episodeTitle}"
 		self.relative_show_file_path = self.inherited_series_dict['Parsed Relative Show File Path'] = \
-			f"{self.parsed_episode_title} {movie.quality}.{movie.extension}"
+			f"{self.parsed_episode_title} {movie.quality}.{movie.extension}".replace("..", ".")
 		g.sonarr.rescan_series(self.tvdbId)
 		g.sonarr.refresh_series(self.tvdbId)
 	

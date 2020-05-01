@@ -1,11 +1,7 @@
-import re
-
 from messaging import backend as backend
-from plex_linker.fetch import series as fetch_series
 
 
 def absolute_episode_number(self, g):
-	# need handling for multi part absolute episodes
 	result = self.inherited_series_dict['Absolute Episode'] = self.episode_dict.get('absoluteEpisodeNumber', str())
 	g.LOG.info(backend.debug_message(628, g, result))
 	return result
@@ -34,5 +30,5 @@ def padded_absolute_episode(self, g):
 		result = str()
 	elif result in [0, 00, '00', '000', None]:
 		return str()
-	g.LOG.info(backend.debug_message(635, g, result))
+	g.LOG.debug(backend.debug_message(635, g, result))
 	return result
