@@ -17,7 +17,6 @@ from methods.misc_get_methods import (
 	get_shows_path,
 	)
 from methods.radarr_api import *
-from methods.radarr_class_methods import parse_relpath
 from methods.sonarr_api import *
 from plex_linker.compare.ids import validate_tmdbId
 from plex_linker.fetch.series import fetch_link_status
@@ -70,14 +69,14 @@ class Movie(Movies, Globals):
 		self.movie_dictionary = movie_dict
 		self.shows_dictionary = self.movie_dictionary.get('Shows', dict())
 		cleanup_movie.cleanup_dict(self.movie_dictionary)
-		self.tmbdid = self.movie_dictionary['Movie DB ID'] # TODO: upgrade to be dynamic if missing by title if its a
+		self.tmbdid = self.movie_dictionary['Movie DB ID']  # TODO: upgrade to be dynamic if missing by title if its a
 		# single result
 		g.LOG.debug(backend.debug_message(627, g, self.movie_dictionary))
 		g.LOG.debug(backend.debug_message(645, g, self.shows_dictionary))
 		g.LOG.debug(backend.debug_message(648, g, self.tmbdid))
 		### FROM RADARR API FULL DICT
 		self.alternativeTitles = list()
-		self.audioLanguages = str() # should parse out multi language info here
+		self.audioLanguages = str()  # should parse out multi language info here
 		self.cleanMovieTitle = str()
 		self.downloaded = bool()
 		self.genres = str()
@@ -85,16 +84,21 @@ class Movie(Movies, Globals):
 		self.imdbid = int()
 		self.inCinemas = datetime
 		self.isAvailable = bool()
+		self.mediaInfo = str()
 		self.monitored = bool()
 		self.movieFileId = int()
 		self.movieId = int()
+		self.moviePath = str()
+		self.movieQuality = str()
+		self.movieRuntime = int()
 		self.movieTitle = str()
 		self.path = str()
 		self.qualityProfileId = int()
 		self.radarrProfileId = int()
 		self.relativePath = str()
-		self.runtime = int() # TODO: can use this to compare to sonarr
+		self.runtime = int()  # TODO: can use this to compare to sonarr
 		self.sizeonDisk = int()
+		self.sizeonDisk = str()
 		self.sortTitle = str()
 		self.titleslug = str()
 		self.year = int()
@@ -102,37 +106,29 @@ class Movie(Movies, Globals):
 		
 		### NOT BY API CALL FOR NOW
 		self.absolute_movie_file_path = str()
-		self.absolute_movie_path = str()
 		self.extension = str()
 		self.quality = str()
-		self.relative_movie_file_path = str()
-		self.relative_movie_file_path = str()
 		self.relative_movie_path = str()
 		################################################
 		self.parse_dict_from_radarr(g)
 	
 	def __repr__(self):
 		return "<Movie(name={self.movie_title!r})>".format(self = self)
-		
-	def init_absolute_movie_path(self, g):
-		result = self.movie_dictionary['Absolute Movie Path'] = "/".join((os.environ['DOCKER_MEDIA_PATH'],
-		                                                                  self.relative_movie_path))
-		g.LOG.debug(backend.debug_message(614, g, str(result)))
-		return result
 	
 	def parse_dict_from_radarr(self, g):
 		if validate_tmdbId(self.tmbdid):
 			try:
 				index = [i for i, d in enumerate(g.full_radarr_dict) if
-					 (self.movie_dictionary['Movie DB ID'] in d.values()) and
-					     ("tmdbId" in d.keys() and d['tmdbId'] == self.movie_dictionary['Movie DB ID'])][0]
+				         (self.movie_dictionary['Movie DB ID'] in d.values()) and
+				         ("tmdbId" in d.keys() and d['tmdbId'] == self.movie_dictionary['Movie DB ID'])][0]
 				g.LOG.debug(backend.debug_message(644, g, g.full_radarr_dict[index]))
 				items = g.full_radarr_dict[index]
 				title = re.sub("\s+\(0\)\s?", str(), items.pop("title"))
-				self.movieTitle = re.sub("\s+\(0\)\s?", "", re.sub("/", "+", re.sub(":", "-", f"{title} ("f"{self.year})")))
+				self.movieTitle = re.sub("\s+\(0\)\s?", "",
+				                         re.sub("/", "+", re.sub(":", "-", f"{title} ("f"{self.year})")))
 				self.hasFile = items.pop("hasFile")
 				self.monitored = items.pop("monitored")
-				self.year = items.get('year', 0) # if 'inCinemas' not in items else items.pop('inCinemas')[0:4]
+				self.year = items.get('year', 0)  # if 'inCinemas' not in items else items.pop('inCinemas')[0:4]
 				self.movieId = items.get("id", 0)
 				self.downloaded = items.pop("downloaded")
 				try:
@@ -154,32 +150,27 @@ class Movie(Movies, Globals):
 					if self.hasFile:
 						self.movieFileId = items["movieFile"].pop("id")
 						self.movieId = items["movieFile"].pop("movieId")
-						self.movieQuality = items["movieFile"].pop("quality")   # placeholder may use this at
-						self.relativePath = self.movie_dictionary['Movie File'] = items["movieFile"].pop("relativePath")
-						self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(self.movieQuality['quality'][
+						self.movieQuality = items["movieFile"].pop("quality")  # placeholder may use this at
+						self.relativePath = self.movie_dictionary['Movie File'] = items["movieFile"].pop(
+								"relativePath")
+						self.quality = self.movie_dictionary['Parsed Movie Quality'] = str(self.movieQuality[
+							                                                                   'quality'][
 							                                                                   'name'])
 						baseQuality = re.sub(self.quality, str(), str(self.relativePath.split().pop()))
-						self.extension = self.movie_dictionary['Parsed Extension'] = re.sub("\s+REAL\.\W+$", "", baseQuality)
-						self.mediaInfo = items["movieFile"].pop("mediaInfo")    # placeholder may use this at
+						self.extension = self.movie_dictionary['Parsed Extension'] = re.sub("\s+REAL\.\W+$", "",
+						                                                                    baseQuality)
+						self.mediaInfo = items["movieFile"].pop("mediaInfo")  # placeholder may use this at
 						
 						self.sizeonDisk = items["movieFile"].pop("size")
 						self.audioLanguages = self.mediaInfo.get("audioLanguages", str())
-						self.relative_movie_path = self.movie_dictionary['Relative Movie Path'] = str(self.moviePath)[1:]
-						self.absolute_movie_path = \
-							self.movie_dictionary['Absolute Movie Path'] = "/".join((os.environ['DOCKER_MEDIA_PATH'],
-							                                                         self.relative_movie_path))
 						self.absolute_movie_file_path = self.movie_dictionary['Absolute Movie File Path'] = \
-							"/".join((self.absolute_movie_path, self.relativePath))
-						self.relative_movie_file_path = self.movie_dictionary['Relative Movie File Path'] = \
-							"/".join((self.relative_movie_path, self.relativePath))
+							"/".join((self.moviePath, self.relativePath))
 				except KeyError:
 					pass
 				g.LOG.debug(backend.debug_message(615, g, self.absolute_movie_file_path))
-				g.LOG.debug(backend.debug_message(616, g, self.relative_movie_file_path))
 				g.LOG.debug(backend.debug_message(646, g, self.hasFile))
 				g.LOG.debug(backend.debug_message(647, g, self.monitored))
 				g.LOG.debug(backend.debug_message(617, g, self.moviePath))
-				g.LOG.debug(backend.debug_message(614, g, str(self.absolute_movie_path)))
 				g.LOG.debug(backend.debug_message(610, g, self.relativePath))
 				g.LOG.debug(backend.debug_message(612, g, self.quality))
 				del items
@@ -187,6 +178,7 @@ class Movie(Movies, Globals):
 			except IndexError:
 				pass
 		return dict()
+
 
 class Show(Movie, Globals):
 	def __repr__(self):
@@ -293,7 +285,7 @@ class Show(Movie, Globals):
 				 if (self.hasFile and self.parsed_episode_title) else str()).replace("..", ".")
 		relativeMovieFilePath = fetch_link_status(self,
 		                                          self.episode_file_dict,
-		                                          self.relative_movie_file_path) if self.episode_file_dict else bool()
+		                                          self.absolute_movie_file_path) if self.episode_file_dict else bool()
 		# TODO: this spot seems to not parse out link status correctly
 		self.has_link = self.inherited_series_dict['Has Link'] = relativeMovieFilePath
 		g.sonarr.rescan_series(self.tvdbId)
@@ -306,7 +298,6 @@ class Show(Movie, Globals):
 			result = str(self.episode).zfill(self.padding)
 		self.parsedEpisode = self.inherited_series_dict['Parsed Episode'] = result
 		print(f"EPISODE PARSED OUT: {self.parsedEpisode}")
-		
 	
 	def cleanup_input_data(self):
 		"""

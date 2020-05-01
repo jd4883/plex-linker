@@ -64,12 +64,12 @@ class SonarrAPI(object):
 		show.year = base.pop("year")
 		del base
 		# TODO: this segment should also apply to absolute episodes
-		#show.parsed_absolute_episode = "-".join([e.zfill(show.padding) for e in show.absolute_ep])
+		# show.parsed_absolute_episode = "-".join([e.zfill(show.padding) for e in show.absolute_ep])
 		show.anime_status = bool("anime" in show.seriesType)
 		show.padding = 3 if show.anime_status else int(os.environ['EPISODE_PADDING'])
 		show.parseEpisode()
 		os.makedirs(show.path, exist_ok = True)
-		
+	
 	def get_episodes_by_series_id(self, show):
 		request = self.sonarr_api_request(f"{self.host_url}/episode?seriesId={show.seriesId}")
 		if request:

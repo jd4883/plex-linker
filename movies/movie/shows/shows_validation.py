@@ -8,7 +8,7 @@ def symlink_destination_exists(show):
 	return False
 
 def symlink_destination_in_dictionary(movie):
-	if os.path.exists(movie.relative_movie_file_path) and os.path.isfile(movie.relative_movie_file_path):
+	if os.path.exists(movie.absolute_movie_file_path) and os.path.isfile(movie.absolute_movie_file_path):
 		return True
 	return False
 

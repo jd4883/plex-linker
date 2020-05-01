@@ -9,8 +9,8 @@ import messaging.frontend as message
 def symlink_force(show, g):
 	message.method_launch(g)
 	# TODO: add method to handle deleting dead links and files instead of links
-	if (show.absolute_movie_path or show.absolute_movie_file_path) in ["/'", str(), None, "/"] \
-			or str(show.absolute_movie_path or show.absolute_movie_file_path).endswith("/'" or "" or None or "/") or \
+	if show.absolute_movie_file_path in ["/'", str(), None, "/"] \
+			or str(show.absolute_movie_file_path).endswith("/'" or "" or None or "/") or \
 			not show.episode:
 		# really primitive way to indicate if the movie value is blank we do not link
 		# also checks if the episode is unset
