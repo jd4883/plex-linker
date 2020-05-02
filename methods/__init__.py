@@ -1,8 +1,8 @@
+import datetime
 import logging
-import os as os1
 from os import environ as environ1
 from os.path import abspath
-import datetime
+
 import methods.sonarr_api
 import methods.sonarr_class_methods
 import plex_linker.cleanup.movie as cleanup_movie
