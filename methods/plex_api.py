@@ -12,7 +12,7 @@ class PlexAPI:
 		self.serverName = str(environ['PLEX_SERVER'])
 		self.api_key = pathlib.Path('/run/secrets/plex_api_key').read_text().strip()
 		self.username = str(environ['PLEX_USERNAME'])
-		self.password = pathlib.Path('/run/secrets/plex_password').read_text().strip()
+		self.password = str(environ['PLEX_PASSWORD'])
 		# make a method to handle either secrets or envars
 		self.account = MyPlexAccount(self.username, self.password)
 		self.plex = self.account.resource(self.serverName).connect()
