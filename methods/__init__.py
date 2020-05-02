@@ -158,10 +158,9 @@ class Movie(Movies, Globals):
 				except KeyError as e:
 					print(f"KEY ERROR FOR {self.movieTitle} when looking for a file")
 					pass
-				self.absolute_movie_file_path = self.movie_dictionary['Absolute Movie File Path'] = \
-					str("/".join((self.moviePath,
-					              self.relativePath)).replace(":", "-")).replace("Remux-1080p.Remuxmkv",
-					                                                             "Remux-1080p.mkv")
+				self.absolute_movie_file_path = \
+					self.movie_dictionary['Absolute Movie File Path'] = \
+					"/".join((self.moviePath, self.relativePath)).replace(":", "-")
 				g.LOG.info(backend.debug_message(615, g, self.absolute_movie_file_path))
 				g.LOG.info(backend.debug_message(646, g, self.hasFile))
 				g.LOG.debug(backend.debug_message(647, g, self.monitored))

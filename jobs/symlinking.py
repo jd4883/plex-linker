@@ -19,8 +19,12 @@ def symlink_force(movie, show, g):
 	message.method_exit(g)
 
 def cleanString(string):
+	# TODO: make a fancier method, this is really really basic
 	string = string.replace('..', '.')
 	string = string.replace(':', '-')
+	if string[:-4] != ".":
+		string = string[:-4] + "." + string[-3:]
+	string = string.replace('mkv', '-')
 	if string.startswith("/"):
 		string = string[1:]
 	return string
