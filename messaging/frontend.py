@@ -6,7 +6,7 @@ from messaging.backend import debug_message
 
 
 def message_exiting_function(g):
-	os.chdir(g.MEDIA_DIRECTORY)
+	os.chdir(g.MEDIA_PATH)
 	g.LOG.debug(debug_message(601, g))
 
 
@@ -17,5 +17,5 @@ def method_launch(g):
 
 
 def method_exit(g):
-	os.chdir(g.MEDIA_DIRECTORY)
+	os.chdir(g.MEDIA_PATH)
 	message_exiting_function(g)

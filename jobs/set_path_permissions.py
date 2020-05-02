@@ -8,7 +8,6 @@ def set_file_mask_with_chmod_on_files_and_links(path, g):
 	try:
 		
 		path = str(path)
-		# Path(str(path)).touch()
 		os.chmod(path, 0o775)
 	except NotADirectoryError:
 		pass
