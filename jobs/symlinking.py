@@ -23,6 +23,7 @@ def cleanString(string):
 	string = string.replace('..', '.')
 	string = string.replace(':', '-')
 	if string[:-4] != ".":
+		string = string.replace(".", " ")
 		string = string[:-4] + "." + string[-3:]
 	string = string.replace('mkv', '-')
 	if string.startswith("/"):
