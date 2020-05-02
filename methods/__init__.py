@@ -136,8 +136,8 @@ class Movie(Movies, Globals):
 				self.alternativeTitles = items.pop("alternativeTitles")
 				self.sortTitle = items.pop("sortTitle")
 				self.qualityProfileId = items.pop("qualityProfileId")
-				if self.hasFile:
-					self.movieFileId = items["movieFile"].pop("id")
+				if self.hasFile and "movieFile" in items and items["movieFile"]:
+					self.movieFileId = items["movieFile"].get("id")
 					self.movieId = items["movieFile"].pop("movieId")
 					self.movieQuality = items["movieFile"].pop("quality")  # placeholder may use this at
 					self.relativePath = self.movie_dictionary['Movie File'] = items["movieFile"].pop(
