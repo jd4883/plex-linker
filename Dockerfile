@@ -30,7 +30,6 @@ ENV \
 	CONFIG_ARCHIVES /config/config_files/archives \
 	DOCKER_MEDIA_PATH /media/video \
 	ENV	RADARR_API_KEY "" \
-	EPISODE_PADDING 2 \
 	GIT_BRANCH master \
 	GIT_REPO "https://github.com/jd4883/plex-linker-beta.git" \
 	HOST_MEDIA_PATH /media/video \
