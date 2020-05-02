@@ -24,7 +24,6 @@ def cleanString(string, movie):
 	string = string.replace(':', '-')
 	if string[:-4] != ".":
 		string = string[:-4] + "." + movie.extension.replace(".", "")
-	string = string.replace('mkv', '-')
 	if string.startswith("/"):
 		string = string[1:]
 	return string
