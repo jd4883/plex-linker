@@ -146,13 +146,9 @@ class Movie(Movies, Globals):
 						self.movie_dictionary['Parsed Movie Quality'] = \
 						str(self.movieQuality['quality']['name'])
 					
-					baseQuality = re.sub(self.quality, str(), str(self.relativePath.split().pop()))
 					self.extension = re.sub(self.quality, str(), str(self.relativePath.split().pop()))
-					print(self.quality)
-					print(baseQuality)
 					print(self.movieQuality)
 					print(self.extension)
-					breakpoint()
 					self.mediaInfo = items["movieFile"].pop("mediaInfo")  # placeholder may use this at
 					
 					self.sizeonDisk = items["movieFile"].pop("size")
@@ -271,9 +267,10 @@ class Show(Movie, Globals):
 			self.inherited_series_dict['Parsed Episode Title'] = \
 			'/'.join([self.path, self.seasonFolder, self.title]) + \
 			f" - S{self.season}E{self.parsedEpisode} - {self.episodeTitle}"
-		self.inherited_series_dict['Parsed Relative Show File Path'] = \
-			f"{self.parsed_episode_title} {movie.quality + movie.extension}".replace(":", "-")
-		self.relative_show_file_path = str(self.inherited_series_dict['Parsed Relative Show File Path']).replace("..", ".")
+		self.relative_show_file_path = \
+			self.inherited_series_dict['Parsed Relative Show File Path'] = \
+			f"{self.parsed_episode_title} {movie.quality + movie.extension}"
+		
 		g.sonarr.rescan_series(self.tvdbId)
 		g.sonarr.refresh_series(self.tvdbId)
 	
