@@ -34,7 +34,6 @@ ENV \
 	GIT_BRANCH master \
 	GIT_REPO "https://github.com/jd4883/plex-linker-beta.git" \
 	HOST_MEDIA_PATH /media/video \
-	LOG_NAME plex_linker \
 	LOGS /config/logs \
 	PLEX_ANIME Anime \
 	PLEX_API_KEY "" \
