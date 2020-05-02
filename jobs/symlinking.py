@@ -4,7 +4,6 @@ import os
 
 import messaging.backend as backend
 import messaging.frontend as message
-from methods.plex_api import PlexAPI
 
 def symlink_force(movie, show, g):
 	message.method_launch(g)

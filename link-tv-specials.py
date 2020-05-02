@@ -2,7 +2,7 @@
 import os
 from pathlib import Path
 from time import sleep
-
+from methods.plex_api import PlexAPI
 import methods as media
 from IO.YAML.object_to_yaml import write_python_dictionary_object_to_yaml_file as dict_to_yaml
 from jobs.cleanup.cleanup import postExecutionCleanup
@@ -25,6 +25,13 @@ if __name__ == "__main__":
 		** would like to remove all non-tracked links present in the media directories
 		"""
 		
+		plex = PlexAPI()
 		postExecutionCleanup()
+		print("PLEX: MOVIES")
+		[print(video.title) for video in plex.movieLibrary]
+		print("PLEX: TV")
+		[print(video.title) for video in plex.tv]
+		print("PLEX: ANIME")
+		[print(video.title) for video in plex.anime]
 		sleep(900)  # 15 minutes
 		os.remove(lock_path)
