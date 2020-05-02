@@ -156,8 +156,8 @@ class Movie(Movies, Globals):
 				self.absolute_movie_file_path = \
 					self.movie_dictionary['Absolute Movie File Path'] = \
 					"/".join((self.moviePath, self.relativePath)).replace(":", "-")
-				g.LOG.info(backend.debug_message(615, g, self.absolute_movie_file_path))
-				g.LOG.info(backend.debug_message(646, g, self.hasFile))
+				g.LOG.debug(backend.debug_message(615, g, self.absolute_movie_file_path))
+				g.LOG.debug(backend.debug_message(646, g, self.hasFile))
 				g.LOG.debug(backend.debug_message(647, g, self.monitored))
 				g.LOG.debug(backend.debug_message(617, g, self.moviePath))
 				g.LOG.debug(backend.debug_message(610, g, self.relativePath))

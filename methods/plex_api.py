@@ -13,6 +13,10 @@ class PlexAPI(object):
 		self.api_key = token = pathlib.Path('/run/secrets/plex_api_key').read_text().strip()
 		# make a method to handle either secrets or envars
 		self.plex = PlexServer(baseurl, token)
+		
+	def setWatched(self):
+		print(self.library.section('TV Shows').movies_gets('Game of Thrones'))
+		print(self.library.section('Movies: All').movies_gets('Game of Thrones'))
 
 # going to add some combination of example 2 and example 4 or example #6
 # Example 2: Mark all Game of Thrones episodes watched.
