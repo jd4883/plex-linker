@@ -50,9 +50,8 @@ class Movies:
 		self.absolute_movies_path = absolute_movies_path
 		self.relative_movies_path = get_relative_movies_path(self)
 
-
-# def __repr__(self):
-# 	return "<Show(name={self.name!r})>".format(self = self)
+	def __repr__(self):
+		return "<Movies()>".format(self = self)
 
 
 class Movie(Movies, Globals):

@@ -6,7 +6,7 @@ from os import environ
 from plexapi.server import PlexServer
 
 
-class PlexAPI(object):
+class PlexAPI:
 	
 	def __init__(self):
 		self.host_url = baseurl = str(environ['PLEX_URL'])
@@ -14,9 +14,9 @@ class PlexAPI(object):
 		# make a method to handle either secrets or envars
 		self.plex = PlexServer(baseurl, token)
 		
-	def setWatched(self, movie, show):
-		print(self.library.section('TV Shows').movies_gets(movie.movieTitle))
-		print(self.library.section('Movies: All').movies_gets(show.episodeTitle))
+	def setWatched(self):
+		print(self.library.section('TV Shows').movies_gets("Game of Thrones"))
+		print(self.library.section('Movies: All').movies_gets("Game of Thrones"))
 
 # going to add some combination of example 2 and example 4 or example #6
 # Example 2: Mark all Game of Thrones episodes watched.
