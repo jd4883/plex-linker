@@ -146,8 +146,6 @@ class Movie(Movies, Globals):
 						str(self.movieQuality['quality']['name'])
 					
 					self.extension = re.sub(self.quality, str(), str(self.relativePath.split().pop()))
-					print(self.movieQuality)
-					print(self.extension)
 					self.mediaInfo = items["movieFile"].pop("mediaInfo")  # placeholder may use this at
 					
 					self.sizeonDisk = items["movieFile"].pop("size")
