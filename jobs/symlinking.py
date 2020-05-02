@@ -13,7 +13,7 @@ def symlink_force(movie, show, g):
 	                            f"{cleanString(show.relative_show_file_path, movie)}"],
 	                           stderr = subprocess.DEVNULL,
 	                           stdout = subprocess.PIPE)
-	process = re.sub("'", "", str(process.communicate()[0])[3:-4])
+	process = re.sub("'", "", str(iter(process.communicate()).__next__())[3:-4])
 	
 	g.LOG.info(backend.debug_message(654, g, process))
 	message.method_exit(g)
