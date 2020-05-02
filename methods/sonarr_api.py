@@ -36,7 +36,7 @@ class SonarrAPI(object):
 		"""
 		
 		prefix = os.environ["SONARR_ROOT_PATH_PREFIX"]
-		base = iter(self.sonarr_api_request(f"{self.host_url}/series/lookup?term={show.title}")).__next__()
+		base = self.sonarr_api_request(f"{self.host_url}/series/lookup?term={show.title}")[0]
 		show.cleanTitle = base.get("cleanTitle", str())
 		show.firstAired = base.get("firstAired", str())
 		show.genres = base.get("genres", list())
