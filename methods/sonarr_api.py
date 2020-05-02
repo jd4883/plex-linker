@@ -75,12 +75,6 @@ class SonarrAPI(object):
 		if request:
 			for i in request:
 				try:
-					if len(show.episode) > 1:
-						print("MULTI PART EPISODE HANDLING NEEDS TO BE DONE BETTER HERE")
-						break
-				except TypeError:
-					pass  # single episode should parse normally
-				try:
 					parseEpisode = bool(int(i["episodeNumber"]) == show.inherited_series_dict["Episode"])
 				except KeyError:
 					print(f"KEY ERROR FOR {show.title} TO {show.movieTitle}")

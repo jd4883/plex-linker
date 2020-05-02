@@ -20,7 +20,6 @@ def parse_shows_dictionary_object(movie, g):
 		                    movie.movie_dictionary)
 		g.sonarr.lookup_series(show)
 		show.initShow(movie, g)
-		print(show.relative_show_file_path)
 		map(symlink_force(movie, show, g), show.shows_dictionary.items())
 		message.method_launch(g)
 		directory = str(os.environ['DOCKER_MEDIA_PATH'])

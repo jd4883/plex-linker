@@ -155,12 +155,13 @@ class Movie(Movies, Globals):
 						
 						self.sizeonDisk = items["movieFile"].pop("size")
 						self.audioLanguages = self.mediaInfo.get("audioLanguages", str())
-						self.absolute_movie_file_path = self.movie_dictionary['Absolute Movie File Path'] = \
-							"/".join((self.moviePath, self.relativePath)).replace(":", "-")
-				except KeyError:
+				except KeyError as e:
+					print(f"KEY ERROR FOR {self.movieTitle} when looking for a file")
 					pass
-				g.LOG.debug(backend.debug_message(615, g, self.absolute_movie_file_path))
-				g.LOG.debug(backend.debug_message(646, g, self.hasFile))
+				self.absolute_movie_file_path = self.movie_dictionary['Absolute Movie File Path'] = \
+					"/".join((self.moviePath, self.relativePath)).replace(":", "-")
+				g.LOG.info(backend.debug_message(615, g, self.absolute_movie_file_path))
+				g.LOG.info(backend.debug_message(646, g, self.hasFile))
 				g.LOG.debug(backend.debug_message(647, g, self.monitored))
 				g.LOG.debug(backend.debug_message(617, g, self.moviePath))
 				g.LOG.debug(backend.debug_message(610, g, self.relativePath))
@@ -284,7 +285,6 @@ class Show(Movie, Globals):
 		except TypeError:
 			result = str(self.episode).zfill(self.padding)
 		self.parsedEpisode = self.inherited_series_dict['Parsed Episode'] = result
-		print(f"EPISODE PARSED OUT: {self.parsedEpisode}")
 	
 	def cleanup_input_data(self):
 		"""
