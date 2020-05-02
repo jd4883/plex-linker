@@ -24,9 +24,9 @@ class PlexAPI:
 		self.anime = self.plex.library.section(str(environ['PLEX_ANIME']))
 		self.tv = self.plex.library.section(str(environ['PLEX_SHOWS']))
 		print("THIS SEGMENTS FOR TESTING ONLY")
-		print(self.plex._token)
-		print(self.plex._baseurl)
-		print(self.plex._session)
+		# print(self.plex._token)
+		# print(self.plex._baseurl)
+		# print(self.plex._session)
 		self.setWatched()
 	
 	def getMovies(self):
