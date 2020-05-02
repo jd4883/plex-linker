@@ -22,8 +22,6 @@ def cleanString(string, movie):
 	# TODO: make a fancier method, this is really really basic
 	string = string.replace('..', '.')
 	string = string.replace(':', '-')
-	if string[:-4] != ".":
-		string = string[:-4] + "." + movie.extension.replace(".", "")
 	if string.startswith("/"):
 		string = string[1:]
 	return string

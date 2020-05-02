@@ -99,7 +99,7 @@ class Movie(Movies, Globals):
 		
 		### NOT BY API CALL FOR NOW
 		self.absolute_movie_file_path = str()
-		self.extension = str()
+		self.extension = ".mkv"
 		self.quality = str()
 		self.relative_movie_path = str()
 		################################################
@@ -124,10 +124,7 @@ class Movie(Movies, Globals):
 				self.year = items.get('year', 0)  # if 'inCinemas' not in items else items.pop('inCinemas')[0:4]
 				self.movieId = items.get("id", 0)
 				self.downloaded = items.pop("downloaded")
-				try:
-					self.imdbid = items.pop("imdbId")
-				except KeyError:
-					pass
+				self.imdbid = items.get("imdbId", 0)
 				self.moviePath = items.pop("path")
 				self.inCinemas = items.get("inCinemas", str())
 				self.radarrProfileId = items.pop("profileId")
@@ -139,31 +136,27 @@ class Movie(Movies, Globals):
 				self.alternativeTitles = items.pop("alternativeTitles")
 				self.sortTitle = items.pop("sortTitle")
 				self.qualityProfileId = items.pop("qualityProfileId")
-				try:
-					if self.hasFile:
-						self.movieFileId = items["movieFile"].pop("id")
-						self.movieId = items["movieFile"].pop("movieId")
-						self.movieQuality = items["movieFile"].pop("quality")  # placeholder may use this at
-						self.relativePath = self.movie_dictionary['Movie File'] = items["movieFile"].pop(
-								"relativePath")
-						self.quality = \
-							self.movie_dictionary['Parsed Movie Quality'] = \
-							str(self.movieQuality['quality']['name'])
-						
-						baseQuality = re.sub(self.quality, str(), str(self.relativePath.split().pop()))
-						self.extension = re.sub("\s+REAL\.\W+$", "", baseQuality).replace(".", "")
-						print(self.quality)
-						print(baseQuality)
-						print(self.movieQuality)
-						print(self.extension)
-						breakpoint()
-						self.mediaInfo = items["movieFile"].pop("mediaInfo")  # placeholder may use this at
-						
-						self.sizeonDisk = items["movieFile"].pop("size")
-						self.audioLanguages = self.mediaInfo.get("audioLanguages", str())
-				except KeyError as e:
-					print(f"KEY ERROR FOR {self.movieTitle} when looking for a file")
-					pass
+				if self.hasFile:
+					self.movieFileId = items["movieFile"].pop("id")
+					self.movieId = items["movieFile"].pop("movieId")
+					self.movieQuality = items["movieFile"].pop("quality")  # placeholder may use this at
+					self.relativePath = self.movie_dictionary['Movie File'] = items["movieFile"].pop(
+							"relativePath")
+					self.quality = \
+						self.movie_dictionary['Parsed Movie Quality'] = \
+						str(self.movieQuality['quality']['name'])
+					
+					baseQuality = re.sub(self.quality, str(), str(self.relativePath.split().pop()))
+					self.extension = re.sub(self.quality, str(), str(self.relativePath.split().pop()))
+					print(self.quality)
+					print(baseQuality)
+					print(self.movieQuality)
+					print(self.extension)
+					breakpoint()
+					self.mediaInfo = items["movieFile"].pop("mediaInfo")  # placeholder may use this at
+					
+					self.sizeonDisk = items["movieFile"].pop("size")
+					self.audioLanguages = self.mediaInfo.get("audioLanguages", str())
 				self.absolute_movie_file_path = \
 					self.movie_dictionary['Absolute Movie File Path'] = \
 					"/".join((self.moviePath, self.relativePath)).replace(":", "-")
@@ -249,7 +242,6 @@ class Show(Movie, Globals):
 		### THIS SEGMENT MAYBE CAN BE FACTORED OUT
 		self.episode_dict = None
 		self.episode_file_dict = None
-		self.has_link = bool()
 		self.parsed_absolute_episode = str()
 		self.parsed_episode_title = str()
 		self.relative_show_file_path = str()
@@ -266,12 +258,11 @@ class Show(Movie, Globals):
 		self.inherited_series_dict['Episode ID'] = self.episodeId
 		self.episode_dict = g.sonarr.get_episode_by_episode_id(self.episodeId)
 		if self.episode_dict:
-			self.absoluteEpisodeNumber = parse_series.absolute_episode_number(self, g)
+			self.absoluteEpisodeNumber = self.episode_dict.get('absoluteEpisodeNumber', str())
 			self.parsed_absolute_episode = padded_absolute_episode(self, g)
 		# * general ease of readability cleanup
 		# * DB integration will make a world of a difference here
 		
-		self.has_link = self.inherited_series_dict['Has Link'] = self.inherited_series_dict.get('Has Link', bool())
 		self.seasonFolder = parse_series.season_folder_from_api(self, g)
 		self.relative_show_path = self.inherited_series_dict['Relative Show Path'] = parse_series.relative_show_path(
 				self, g)
@@ -281,7 +272,7 @@ class Show(Movie, Globals):
 			'/'.join([self.path, self.seasonFolder, self.title]) + \
 			f" - S{self.season}E{self.parsedEpisode} - {self.episodeTitle}"
 		self.inherited_series_dict['Parsed Relative Show File Path'] = \
-			f"{self.parsed_episode_title} {movie.quality}.{movie.extension}".replace(":", "-")
+			f"{self.parsed_episode_title} {movie.quality + movie.extension}".replace(":", "-")
 		self.relative_show_file_path = str(self.inherited_series_dict['Parsed Relative Show File Path']).replace("..", ".")
 		g.sonarr.rescan_series(self.tvdbId)
 		g.sonarr.refresh_series(self.tvdbId)
