@@ -7,7 +7,7 @@ import messaging.frontend as message
 
 def symlink_force(movie, show, g):
 	message.method_launch(g)
-	os.chdir(str(os.environ['HOST_MEDIA_PATH']))
+	os.chdir(g.MEDIA_PATH)
 	if os.path.isfile(f"{cleanString(movie.absolute_movie_file_path)}"):
 		process = subprocess.Popen(["ln", "-fsvr", f"{cleanString(movie.absolute_movie_file_path)}",
 		                            f"{cleanString(show.relative_show_file_path)}"],

@@ -1,3 +1,4 @@
+from os import environ as environ1
 from os.path import abspath
 import datetime
 import methods.sonarr_api
@@ -9,8 +10,6 @@ from IO.YAML.yaml_to_object import (get_variable_from_yaml)
 from logs.bin.get_parameters import (get_log_name, get_logger, get_method_main)
 from messaging import backend as backend
 from methods.misc_get_methods import (
-	get_docker_media_path,
-	get_host_media_path,
 	get_movie_extensions,
 	get_movies_dictionary_object,
 	get_movies_path,
@@ -30,8 +29,8 @@ class Globals:
 		self.sonarr_root_folders = self.sonarr.get_root_folder()
 		self.full_sonarr_dict = self.sonarr.get_series()
 		self.full_radarr_dict = self.radarr.get_movie_library()
-		self.MEDIA_PATH = str(get_docker_media_path())
-		self.MEDIA_DIRECTORY = str(get_host_media_path())
+		self.MEDIA_PATH = str(environ1['DOCKER_MEDIA_PATH'])
+		self.MEDIA_DIRECTORY = str(environ["HOST_MEDIA_PATH"])
 		self.LOG = get_logger(get_log_name())
 		self.MOVIES_PATH = get_movies_path()
 		self.SHOWS_PATH = get_shows_path()

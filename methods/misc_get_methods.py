@@ -17,13 +17,3 @@ def get_movie_extensions():
 
 def get_movies_path():
 	return get_variable_from_yaml("Movie Directories")
-
-
-def get_host_media_path():
-	return environ["HOST_MEDIA_PATH"]
-
-
-def get_docker_media_path():
-	return environ['DOCKER_MEDIA_PATH']
-
-
