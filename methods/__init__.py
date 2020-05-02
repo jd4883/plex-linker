@@ -33,8 +33,7 @@ class Globals:
 		self.full_radarr_dict = self.radarr.get_movie_library()
 		self.MEDIA_PATH = str(environ1['DOCKER_MEDIA_PATH'])
 		self.MEDIA_DIRECTORY = str(environ["HOST_MEDIA_PATH"])
-		file = str(os.environ['LOG_NAME'])
-		filename = f"{os.environ['LOGS']}/{file}.log"
+		filename = f"{os.environ['LOGS']}/plex_linker.log"
 		mode = 'a+' if os.path.exists(filename) else 'w+'
 		logging.basicConfig(level = logging.DEBUG, format = '%(asctime)s\t%(name)-12s\t%(levelname)-8s\t%(message)s',
 		                    datefmt = '%m-%d %H:%M', filename = filename, filemode = mode)
@@ -43,7 +42,7 @@ class Globals:
 		formatter = logging.Formatter(f'%(name)-12s:\t%(levelname)-8s\t%(message)s')
 		console.setFormatter(formatter)
 		logging.getLogger(str()).addHandler(console)
-		self.LOG = logging.getLogger(str(file))
+		self.LOG = logging.getLogger(str("plex_linker"))
 		self.MOVIES_PATH = get_movies_path()
 		self.SHOWS_PATH = get_shows_path()
 		self.movies_dict = get_movies_dictionary_object()
