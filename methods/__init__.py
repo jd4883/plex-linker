@@ -1,3 +1,5 @@
+import logging
+import os as os1
 from os import environ as environ1
 from os.path import abspath
 import datetime
@@ -7,7 +9,7 @@ import plex_linker.cleanup.movie as cleanup_movie
 import plex_linker.fetch.series as fetch_series
 import plex_linker.parser.series as parse_series
 from IO.YAML.yaml_to_object import (get_variable_from_yaml)
-from logs.bin.get_parameters import (get_log_name, get_logger, get_method_main)
+from logs.bin.get_parameters import (get_method_main)
 from messaging import backend as backend
 from methods.misc_get_methods import (
 	get_movie_extensions,
@@ -31,7 +33,17 @@ class Globals:
 		self.full_radarr_dict = self.radarr.get_movie_library()
 		self.MEDIA_PATH = str(environ1['DOCKER_MEDIA_PATH'])
 		self.MEDIA_DIRECTORY = str(environ["HOST_MEDIA_PATH"])
-		self.LOG = get_logger(get_log_name())
+		file = str(os.environ['LOG_NAME'])
+		filename = f"{os.environ['LOGS']}/{file}.log"
+		mode = 'a+' if os.path.exists(filename) else 'w+'
+		logging.basicConfig(level = logging.DEBUG, format = '%(asctime)s\t%(name)-12s\t%(levelname)-8s\t%(message)s',
+		                    datefmt = '%m-%d %H:%M', filename = filename, filemode = mode)
+		console = logging.StreamHandler()
+		console.setLevel(logging.INFO)
+		formatter = logging.Formatter(f'%(name)-12s:\t%(levelname)-8s\t%(message)s')
+		console.setFormatter(formatter)
+		logging.getLogger(str()).addHandler(console)
+		self.LOG = logging.getLogger(str(file))
 		self.MOVIES_PATH = get_movies_path()
 		self.SHOWS_PATH = get_shows_path()
 		self.movies_dict = get_movies_dictionary_object()

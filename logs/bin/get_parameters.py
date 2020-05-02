@@ -1,5 +1,3 @@
-import logging
-import os
 import sys
 import re
 
@@ -31,19 +29,3 @@ def get_child_method_string(depth = 2):
 	return format_string(f"{sys._getframe(depth).f_code.co_name}")
 
 
-def get_logger(file):
-	filename = f"{os.environ['LOGS']}/{file}.log"
-	mode = 'a+' if os.path.exists(filename) else 'w+'
-	logging.basicConfig(level = logging.DEBUG, format = '%(asctime)s\t%(name)-12s\t%(levelname)-8s\t%(message)s',
-	                    datefmt = '%m-%d %H:%M', filename = filename, filemode = mode)
-	
-	console = logging.StreamHandler()
-	console.setLevel(logging.INFO)
-	formatter = logging.Formatter(f'%(name)-12s:\t%(levelname)-8s\t%(message)s')
-	console.setFormatter(formatter)
-	logging.getLogger(str()).addHandler(console)
-	return logging.getLogger(str(file))  # for now disabling method since it does not dynamically change nicely
-
-
-def get_log_name():
-	return str(os.environ['LOG_NAME'])
