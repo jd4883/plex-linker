@@ -16,7 +16,7 @@ class PlexAPI(object):
 		
 	def setWatched(self, movie, show):
 		print(self.library.section('TV Shows').movies_gets(movie.movieTitle))
-		print(self.library.section('Movies: All').movies_gets(show.title))
+		print(self.library.section('Movies: All').movies_gets(show.episodeTitle))
 
 # going to add some combination of example 2 and example 4 or example #6
 # Example 2: Mark all Game of Thrones episodes watched.
