@@ -13,7 +13,7 @@ tag: build
 	docker tag $(IMAGE_NAME):$(VERSION) $(REGISTRY_ADDR)/$(IMAGE_NAME):$(VERSION)
 
 build: Dockerfile
-	docker build --rm -t $(IMAGE_NAME):$(VERSION) -f Dockerfile .
+	docker build --no-cache --rm -t $(IMAGE_NAME):$(VERSION) -f Dockerfile .
 
 clean:
 	find logs/ -type f -not -name "*.py" -delete &wait
