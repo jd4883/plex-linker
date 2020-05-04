@@ -36,7 +36,10 @@ class SonarrAPI(object):
 		"""
 		
 		prefix = os.environ["SONARR_ROOT_PATH_PREFIX"]
-		base = self.sonarr_api_request(f"{self.host_url}/series/lookup?term={show.title}")[0]
+		try:
+			base = self.sonarr_api_request(f"{self.host_url}/series/lookup?term={show.title}")[0]
+		except IndexError:
+			return False
 		show.cleanTitle = base.get("cleanTitle", str())
 		show.firstAired = base.get("firstAired", str())
 		show.genres = base.get("genres", list())
@@ -69,6 +72,7 @@ class SonarrAPI(object):
 		show.padding = 3 if show.anime_status else 2
 		show.parseEpisode()
 		os.makedirs(show.path, exist_ok = True)
+		return True
 	
 	def get_episodes_by_series_id(self, show):
 		request = self.sonarr_api_request(f"{self.host_url}/episode?seriesId={show.seriesId}")
