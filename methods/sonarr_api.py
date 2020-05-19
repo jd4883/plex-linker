@@ -38,8 +38,10 @@ class SonarrAPI(object):
 		prefix = os.environ["SONARR_ROOT_PATH_PREFIX"]
 		try:
 			base = self.sonarr_api_request(f"{self.host_url}/series/lookup?term={show.title}")[0]
-			show.id = show.seriesId = int(base.get("id"))
-		except KeyError or IndexError:
+			show.id = show.inherited_series_dict['Series ID'] = show.seriesId = int(base.get("id", 0))
+		except KeyError or IndexError or TypeError:
+			return False
+		if not show.id:
 			return False
 		show.cleanTitle = base.get("cleanTitle", str())
 		show.firstAired = base.get("firstAired", str())
