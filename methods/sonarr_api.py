@@ -39,7 +39,7 @@ class SonarrAPI(object):
 		try:
 			base = self.sonarr_api_request(f"{self.host_url}/series/lookup?term={show.title}")[0]
 			show.id = show.inherited_series_dict['Series ID'] = show.seriesId = int(base.get("id", 0))
-		except KeyError or IndexError or TypeError:
+		except (KeyError, IndexError, TypeError):
 			return False
 		if not show.id:
 			return False
