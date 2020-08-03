@@ -29,13 +29,13 @@ if __name__ == "__main__":
 		** would like to remove all non-tracked links present in the media directories
 		"""
 		
-		plex = PlexAPI()
+		#plex = PlexAPI()
 		postExecutionCleanup()
-		print("PLEX: MOVIES")
-		[print(video.title) for video in plex.movieLibrary]
-		print("PLEX: TV")
-		[print(video.title) for video in plex.tv]
-		print("PLEX: ANIME")
-		[print(video.title) for video in plex.anime]
+		#print("PLEX: MOVIES")
+		#[print(video.title) for video in plex.movieLibrary]
+		#print("PLEX: TV")
+		#[print(video.title) for video in plex.tv]
+		#print("PLEX: ANIME")
+		#[print(video.title) for video in plex.anime]
 		sleep(900)  # 15 minutes
 		os.remove(lock_path)
