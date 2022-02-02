@@ -1,12 +1,12 @@
-FROM python:alpine3.7
+FROM 	python:alpine3.7
 MAINTAINER 'Jacob Dresdale'
-LABEL name=plex_linker version=1.6
-USER root
+LABEL 	name=plex_linker version=1.6
+USER 	root
 
-VOLUME /config /media
+VOLUME 	/config /media
 WORKDIR /config
-COPY requirements.txt /config/
-RUN pip install --upgrade pip && \
+COPY 	requirements.txt /config/
+RUN 	pip install --upgrade pip && \
 	pip install -r requirements.txt && \
 	apk add --no-cache bash \
 		openssh \
@@ -56,10 +56,11 @@ ENV \
 	YAML_FILE_CURRENT=/config/config_files/media_collection_parsed_this_run.yaml \
 	YAML_FILE_PREVIOUS=/config/config_files/media_collection_parsed_last_run.yaml
 
-COPY . /config/
+COPY 	. /config/
 
-RUN echo "*/${FREQUENCY} *  *  *  * python /config/link-tv-specials.py "${APPEND_TO_CRON_END}" > /etc/crontabs/root; cat /etc/crontabs/root
+RUN 	echo "*/${FREQUENCY} *  *  *  * python /config/link-tv-specials.py ${APPEND_TO_CRON_END}" > /etc/crontabs/root && \
+	cat /etc/crontabs/root
 
-RUN ["chmod", "+x", "/config/link-tv-specials.py", "/config/launcher.sh"]
+RUN 	["chmod", "+x", "/config/link-tv-specials.py", "/config/launcher.sh"]
 
-CMD ["/usr/sbin/crond", "-f", "-d", "8"]
+CMD 	["/usr/sbin/crond", "-f", "-d", "8"]
