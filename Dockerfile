@@ -19,17 +19,17 @@ RUN pip install --upgrade pip && \
 		findutils \
 		grep
 
-ARG FREQUENCY=15
-ARG APPEND_TO_CRON_END=""
-
-ENV FREQUENCY=${FREQUENCY}
-ENV APPEND_TO_CRON_END=${APPEND_TO_CRON_END}
-ENV SCRIPTS=${SCRIPTS}/bin
+ARG \
+	FREQUENCY=15 \
+	APPEND_TO_CRON_END=""
 
 ENV \
+	FREQUENCY=${FREQUENCY} \
+	APPEND_TO_CRON_END=${APPEND_TO_CRON_END} \
+	SCRIPTS=${SCRIPTS}/bin \
 	CONFIG_ARCHIVES /config/config_files/archives \
 	DOCKER_MEDIA_PATH /media/video \
-	ENV	RADARR_API_KEY "" \
+	RADARR_API_KEY "" \
 	GIT_BRANCH master \
 	GIT_REPO "https://github.com/jd4883/plex-linker-beta.git" \
 	HOST_MEDIA_PATH /media/video \
@@ -58,7 +58,7 @@ ENV \
 
 COPY . /config/
 
-RUN echo "*/1 *  *  *  * python /config/link-tv-specials.py" > /etc/crontabs/root; cat /etc/crontabs/root
+RUN echo "*/${FREQUENCY} *  *  *  * python /config/link-tv-specials.py "${APPEND_TO_CRON_END}" > /etc/crontabs/root; cat /etc/crontabs/root
 
 RUN ["chmod", "+x", "/config/link-tv-specials.py", "/config/launcher.sh"]
 
