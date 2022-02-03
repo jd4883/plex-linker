@@ -9,7 +9,7 @@ import requests
 class SonarrAPI(object):
 	def __init__(self):
 		self.host_url = str(os.environ['SONARR_URL'])
-		self.api_key = re.sub('\n', '', pathlib.Path('/run/secrets/sonarr_api_key').read_text())
+		self.api_key = str(os.environ['SONARR_API_KEY'])
 	
 	def sonarr_api_request(self, url, request_type = "get", data = dict()):
 		backoff_timer = 2

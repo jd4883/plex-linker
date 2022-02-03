@@ -10,7 +10,7 @@ class PlexAPI:
 	def __init__(self):
 		#self.host_url = str(environ['PLEX_URL'])
 		self.serverName = str(environ['PLEX_SERVER'])
-		self.api_key = pathlib.Path('/run/secrets/plex_api_key').read_text().strip()
+		self.api_key = str(environ['PLEX_API_KEY'])
 		self.username = str(environ['PLEX_USERNAME'])
 		self.password = str(environ['PLEX_PASSWORD'])
 		# make a method to handle either secrets or envars
