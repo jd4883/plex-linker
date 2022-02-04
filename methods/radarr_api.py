@@ -12,7 +12,7 @@ class RadarrAPI(object):
 	
 	def __init__(self):
 		self.host_url = str(environ['RADARR_URL'])
-		self.api_key = str(os.environ['RADARR_API_KEY'])
+		self.api_key = str(environ['RADARR_API_KEY'])
 	
 	def refresh_movie(self, movie_id):
 		update_movie = self.radarr_api_request(f"{self.host_url}/command/RefreshMovie&seriesId={movie_id}", "post")
