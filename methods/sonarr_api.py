@@ -12,15 +12,16 @@ class SonarrAPI(object):
 	
 	def sonarr_api_request(self, url, request_type = "get", data = dict()):
 		backoff_timer = 2
+		payload = json.dumps(data)
 		request_payload = dict()
 		if request_type not in ["post", "put", "delete"]:
-			request_payload = requests.get(url, headers = { 'X-Api-Key': self.api_key }, data = json.dumps(data))
+			request_payload = requests.get(url, headers = { 'X-Api-Key': self.api_key }, data = payload)
 		elif request_type == "put":
-			request_payload = requests.put(url, headers = { 'X-Api-Key': self.api_key }, data = json.dumps(data))
+			request_payload = requests.put(url, headers = { 'X-Api-Key': self.api_key }, data = payload)
 		elif request_type == "post":
-			request_payload = requests.post(url, headers = { 'X-Api-Key': self.api_key }, data = json.dumps(data))
+			request_payload = requests.post(url, headers = { 'X-Api-Key': self.api_key }, data = payload)
 		elif request_type == "delete":
-			request_payload = requests.delete(url, headers = { 'X-Api-Key': self.api_key }, data = json.dumps(data))
+			request_payload = requests.delete(url, headers = { 'X-Api-Key': self.api_key }, data = payload)
 		time.sleep(backoff_timer)
 		return request_payload.json()
 	
