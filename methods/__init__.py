@@ -132,7 +132,7 @@ class Movie(Movies, Globals):
 				self.monitored = items.pop("monitored")
 				self.year = items.get('year', 0)  # if 'inCinemas' not in items else items.pop('inCinemas')[0:4]
 				self.movieId = items.get("id", 0)
-				self.downloaded = items.pop("downloaded")
+				self.downloaded = items.get("downloaded", False)
 				self.imdbid = items.get("imdbId", 0)
 				self.moviePath = items.pop("path")
 				self.inCinemas = items.get("inCinemas", str())

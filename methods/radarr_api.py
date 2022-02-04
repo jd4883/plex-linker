@@ -9,34 +9,9 @@ import time
 
 # noinspection PyUnusedFunction,PyUnusedFunction,PyUnusedFunction
 class RadarrAPI(object):
-	
 	def __init__(self):
 		self.host_url = str(environ['RADARR_URL'])
 		self.api_key = str(environ['RADARR_API_KEY'])
-	
-	def refresh_movie(self, movie_id):
-		update_movie = self.radarr_api_request(f"{self.host_url}/command/RefreshMovie&seriesId={movie_id}", "post")
-		return update_movie
-	
-	def rescan_movie(self, movie_id):
-		rescanned_movie = self.radarr_api_request(f"{self.host_url}/command/RescanMovie&seriesId={movie_id}", "post")
-		return rescanned_movie
-	
-	def movie_search(self, movie_id):
-		movie_search = self.radarr_api_request(f"{self.host_url}/command/MoviesSearch&seriesId={movie_id}", "post")
-		return movie_search
-	
-	def get_movie_library(self):
-		full_movie_library = self.radarr_api_request(f"{self.host_url}/movie")
-		return full_movie_library
-	
-	def lookup_movie(self, movie_lookup, g):
-		movie_lookup = self.radarr_api_request(f"{self.host_url}/movie/lookup?term={movie_lookup}")
-		for i in g.full_radarr_dict:
-			if 'tmdbId' in movie_lookup and i['tmdbId'] == iter(movie_lookup).__next__()['tmdbId']:
-				movie_lookup[0] = i
-				break
-		return movie_lookup
 	
 	def radarr_api_request(self, url, request_type = "get", data = dict()):
 		backoff_timer = 2
@@ -52,3 +27,23 @@ class RadarrAPI(object):
 			request_payload = requests.delete(url, headers = { 'X-Api-Key': self.api_key }, data = payload)
 		time.sleep(backoff_timer)
 		return request_payload.json()
+	
+	def refresh_movie(self, movie_id):
+		return self.radarr_api_request(f"{self.host_url}/command/RefreshMovie&seriesId={movie_id}", "post")
+	
+	def rescan_movie(self, movie_id):
+		return self.radarr_api_request(f"{self.host_url}/command/RescanMovie&seriesId={movie_id}", "post")
+	
+	def movie_search(self, movie_id):
+		return self.radarr_api_request(f"{self.host_url}/command/MoviesSearch&seriesId={movie_id}", "post")
+	
+	def get_movie_library(self):
+		return self.radarr_api_request(f"{self.host_url}/movie")
+	
+	def lookup_movie(self, movie_lookup, g):
+		movie_lookup = self.radarr_api_request(f"{self.host_url}/movie/lookup?term={movie_lookup}")
+		for i in g.full_radarr_dict:
+			if 'tmdbId' in movie_lookup and i['tmdbId'] == iter(movie_lookup).__next__()['tmdbId']:
+				movie_lookup[0] = i
+				break
+		return movie_lookup
