@@ -1,10 +1,10 @@
 #!/usr/bin/env python3.7
+from os import environ
+import json
 import pathlib
 import re
-import time
-from os import environ
-
 import requests
+import time
 
 
 # noinspection PyUnusedFunction,PyUnusedFunction,PyUnusedFunction
@@ -42,12 +42,12 @@ class RadarrAPI(object):
 		backoff_timer = 2
 		request_payload = dict()
 		if request_type not in ["post", "put", "delete"]:
-			request_payload = requests.get(url, headers = { 'X-Api-Key': self.api_key }, json = data)
+			request_payload = requests.get(url, headers = { 'X-Api-Key': self.api_key }, data = json.dumps(data))
 		elif request_type == "put":
-			request_payload = requests.put(url, headers = { 'X-Api-Key': self.api_key }, json = data)
+			request_payload = requests.put(url, headers = { 'X-Api-Key': self.api_key }, data = json.dumps(data))
 		elif request_type == "post":
-			request_payload = requests.post(url, headers = { 'X-Api-Key': self.api_key }, json = data)
+			request_payload = requests.post(url, headers = { 'X-Api-Key': self.api_key }, data = json.dumps(data))
 		elif request_type == "delete":
-			request_payload = requests.delete(url, headers = { 'X-Api-Key': self.api_key }, json = data)
+			request_payload = requests.delete(url, headers = { 'X-Api-Key': self.api_key }, data = json.dumps(data))
 		time.sleep(backoff_timer)
 		return request_payload.json()

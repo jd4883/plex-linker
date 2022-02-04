@@ -8,7 +8,7 @@ from plexapi.myplex import MyPlexAccount
 class PlexAPI:
 	
 	def __init__(self):
-		#self.host_url = str(environ['PLEX_URL'])
+		self.host_url = str(environ['PLEX_URL'])
 		self.serverName = str(environ['PLEX_SERVER'])
 		self.api_key = str(environ['PLEX_API_KEY'])
 		self.username = str(environ['PLEX_USERNAME'])
