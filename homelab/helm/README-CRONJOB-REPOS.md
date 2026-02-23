@@ -19,35 +19,24 @@ See `plex/README.md` section **“Design: secrets and CronJob subcharts”**.
 
 ---
 
-## Create the two repos and open PRs (after re-auth)
+## Create the two repos and open PRs (1Password prompts for creds)
 
-1. **Re-authenticate GitHub CLI**
-   ```bash
-   gh auth login -h github.com
-   ```
-   Then confirm: `gh auth status`
+No need to be logged in to `gh`. Use 1Password CLI so it prompts you for credentials each time:
 
-2. **Create repos and push chart content + open PRs**
-   ```bash
-   cd homelab/helm
-   chmod +x create-cronjob-chart-repos.sh
-   ./create-cronjob-chart-repos.sh
-   ```
-   This will:
-   - Create `jd4883/one-pace-plex-assistant-helm-chart` and `jd4883/plex-prefer-non-forced-subs-helm-chart` (if they don’t exist).
-   - Clone each, copy the chart from `one-pace-plex-assistant/` or `plex-prefer-non-forced-subs/`, push to branch `feature/initial-helm-chart`, and open a PR into `main`.
+**From repo root:**
+```bash
+GH_HOST=github.com op run --env-file=homelab/.env.gh -- ./homelab/helm/create-cronjob-chart-repos.sh
+```
 
-3. **Commit and PR in the home repo** (new charts + Plex changes)
-   ```bash
-   git checkout -b feature/plex-cronjob-charts   # or use your current branch
-   git add homelab/helm/one-pace-plex-assistant homelab/helm/plex-prefer-non-forced-subs homelab/helm/plex homelab/helm/create-cronjob-chart-repos.sh homelab/helm/README-CRONJOB-REPOS.md
-   git status
-   git commit -m "feat(plex): extract CronJob charts, instantiate secrets via 1Password in plex"
-   git push -u origin feature/plex-cronjob-charts
-   gh pr create --base main --head feature/plex-cronjob-charts --title "Plex: CronJob subcharts + secret design" --body "Two generic CronJob charts (one-pace-plex-assistant, plex-prefer-non-forced-subs); Plex instantiates secrets via onepassworditem; script to create their GitHub repos and PRs."
-   ```
+- **homelab/.env.gh** must contain: `GH_TOKEN=op://VaultName/ItemName/field_name` (1Password reference). When you run the command, 1Password will prompt you to sign in if needed and inject the token.
+- The script will: create the two GitHub repos (if missing), clone via HTTPS using the token, copy the chart files, push to branch `feature/initial-helm-chart`, and open a PR in each repo.
 
 Override owner or branch if needed:
 ```bash
-GITHUB_OWNER=yourorg BRANCH=feature/initial ./create-cronjob-chart-repos.sh
+GITHUB_OWNER=yourorg BRANCH=feature/initial GH_HOST=github.com op run --env-file=homelab/.env.gh -- ./homelab/helm/create-cronjob-chart-repos.sh
+```
+
+**Commit and PR in the home repo** (after pushing your branch and creating the two chart repos):
+```bash
+GH_HOST=github.com op run --env-file=homelab/.env.gh -- gh pr create --base main --head feature/secrets-immich-harbor-longhorn --title "Plex CronJob charts + repo script" --body "Add one-pace-plex-assistant and plex-prefer-non-forced-subs charts; script uses op run for creds; design doc."
 ```
