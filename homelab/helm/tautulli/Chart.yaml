@@ -21,4 +21,5 @@ dependencies:
   - name: app-template
     version: "4.6.2"
     repository: https://bjw-s-labs.github.io/helm-charts
+    alias: tautulli
     # Alternative OCI: oci://ghcr.io/bjw-s/helm
