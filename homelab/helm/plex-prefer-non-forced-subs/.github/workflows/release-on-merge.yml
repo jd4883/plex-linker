@@ -1,3 +1,7 @@
+# Auto-release on merge to main: bump patch version, create tag and release.
+# Triggers Helm publish (helm-publish.yml).
+# Uses reusable action from github-actions repo. Requires: default branch is main; tags exist as v* (e.g. v0.1.0).
+
 name: Release on merge to main
 
 on:

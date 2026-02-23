@@ -1,0 +1,41 @@
+# Package the Helm chart and attach to GitHub Release; publish index to GitHub Pages (Helm repo).
+# Uses reusable action from github-actions repo. Chart root = repo root.
+
+name: Helm chart publish
+
+on:
+  release:
+    types: [published]
+  workflow_run:
+    workflows: ["Release on merge to main"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: 'Release tag (e.g. v0.1.0). Default: latest release.'
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  package-and-upload:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'release' || github.event_name == 'workflow_dispatch' || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Package and upload Helm chart
+        id: helm-publish
+        uses: expectedbehaviors/github-actions/.github/actions/helm-publish@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          chart_path: .
+          chart_name: one-pace-plex-assistant
+          values_image_tag_key: image.tag
+          release_tag: ${{ github.event.inputs.release_tag }}
