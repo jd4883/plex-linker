@@ -2,7 +2,7 @@
 # Create or update PRs using PR_DESCRIPTION.md bodies and 1Password for GH_TOKEN.
 # Usage: from repo root, with homelab/.env.gh containing GH_TOKEN=op://Vault/Item/field
 #   GH_HOST=github.com op run --env-file=homelab/.env.gh -- ./homelab/helm/create-or-update-prs.sh
-# Optional: set HOMELAB_REPO=owner/repo if this repo has no remote (e.g. jd4883/home).
+# Optional: set HOMELAB_REPO=owner/repo if this repo has no remote (e.g. jd4883/homelab-plex).
 
 set -e
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -20,7 +20,7 @@ if [[ -z "$REPO" ]]; then
   fi
 fi
 if [[ -z "$REPO" ]]; then
-  echo "Could not resolve repo. Set HOMELAB_REPO=owner/repo (e.g. jd4883/homelab) or add git remote origin."
+  echo "Could not resolve repo. Set HOMELAB_REPO=owner/repo (e.g. jd4883/homelab-plex) or add git remote origin."
   exit 1
 fi
 

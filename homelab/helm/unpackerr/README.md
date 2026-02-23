@@ -55,10 +55,10 @@ Chart lints and templates successfully. Run from the chart directory (`homelab/h
 
 ## Argo CD
 
-The **unpackerr** project is defined in `homelab/helm/core/argocd/terraform/argocd-config/configs/config.yaml` (home repo):
+The **unpackerr** project is defined in `homelab/helm/core/argocd/terraform/argocd-config/configs/config.yaml` (monorepo):
 
 - **path:** `homelab/helm/unpackerr`
-- **sourceRepo:** `git@github.com:jd4883/home.git`
+- **sourceRepo:** `git@github.com:jd4883/home.git` (or the repo that contains homelab/)
 - **namespace:** `unpackerr` (project name = destination namespace)
 
 Ensure the **`unpackerr`** secret (from 1Password) and download PVCs exist in namespace **unpackerr** before sync. Add **unpackerr** to **onepassword-secrets** values so the secret is synced into the unpackerr namespace.
