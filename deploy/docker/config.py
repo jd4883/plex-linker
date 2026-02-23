@@ -1,67 +1,62 @@
-"""
-Single source of truth for env-based config. API base URL = host URL + API path
-so Sonarr/Radarr v3 work without hardcoding /api/v3.
-"""
+"""Environment-based configuration. Single source of truth for all settings."""
+from __future__ import annotations
+
 import os
+from dataclasses import dataclass, field
+from functools import lru_cache
 
 
-def _get(key: str, default: str = "") -> str:
+def _env(key: str, default: str = "") -> str:
     return (os.environ.get(key) or default).strip()
 
 
-def _api_base(prefix: str, default_path: str = "/api/v3") -> str:
-    """Build full API base URL: SONARR_0_URL + SONARR_0_API_PATH (default /api/v3)."""
-    url = _get(f"{prefix}_0_URL") or _get(f"{prefix}_URL")
-    if not url:
-        return ""
-    path = _get(f"{prefix}_0_API_PATH") or _get(f"{prefix}_API_PATH") or default_path
-    path = path if path.startswith("/") else f"/{path}"
-    return f"{url.rstrip('/')}{path}"
+@dataclass(frozen=True)
+class Settings:
+    app_root: str = field(default_factory=lambda: _env("PLEX_LINKER", ""))
+    config_archives: str = field(default_factory=lambda: _env("CONFIG_ARCHIVES", ""))
+    media_root: str = field(
+        default_factory=lambda: _env("MEDIA_ROOT") or _env("DOCKER_MEDIA_PATH") or _env("HOST_MEDIA_PATH", "")
+    )
+    docker_media_path: str = field(default_factory=lambda: _env("DOCKER_MEDIA_PATH", ""))
+
+    database_url: str = field(default_factory=lambda: _env("DATABASE_URL", ""))
+
+    sonarr_url: str = field(default_factory=lambda: _env("SONARR_0_URL") or _env("SONARR_URL"))
+    sonarr_api_path: str = field(
+        default_factory=lambda: _env("SONARR_0_API_PATH") or _env("SONARR_API_PATH") or "/api/v3"
+    )
+    sonarr_api_key: str = field(default_factory=lambda: _env("SONARR_0_API_KEY") or _env("SONARR_API_KEY"))
+    sonarr_root_path_prefix: str = field(default_factory=lambda: _env("SONARR_ROOT_PATH_PREFIX", "/"))
+
+    radarr_url: str = field(default_factory=lambda: _env("RADARR_0_URL") or _env("RADARR_URL"))
+    radarr_api_path: str = field(
+        default_factory=lambda: _env("RADARR_0_API_PATH") or _env("RADARR_API_PATH") or "/api/v3"
+    )
+    radarr_api_key: str = field(default_factory=lambda: _env("RADARR_0_API_KEY") or _env("RADARR_API_KEY"))
+
+    scan_interval_minutes: int = field(
+        default_factory=lambda: int(_env("PLEX_LINKER_SCAN_INTERVAL_MINUTES", "15"))
+    )
+
+    @property
+    def sonarr_api_base(self) -> str:
+        if not self.sonarr_url:
+            return ""
+        path = self.sonarr_api_path if self.sonarr_api_path.startswith("/") else f"/{self.sonarr_api_path}"
+        return f"{self.sonarr_url.rstrip('/')}{path}"
+
+    @property
+    def radarr_api_base(self) -> str:
+        if not self.radarr_url:
+            return ""
+        path = self.radarr_api_path if self.radarr_api_path.startswith("/") else f"/{self.radarr_api_path}"
+        return f"{self.radarr_url.rstrip('/')}{path}"
+
+    @property
+    def use_db(self) -> bool:
+        return bool(self.database_url)
 
 
-# --- App paths ---
-def config_root() -> str:
-    return _get("PLEX_LINKER", "")
-
-
-def logs_dir() -> str:
-    return _get("LOGS", "")
-
-
-def config_archives() -> str:
-    return _get("CONFIG_ARCHIVES", "")
-
-
-def media_root() -> str:
-    return _get("MEDIA_ROOT") or _get("DOCKER_MEDIA_PATH") or _get("HOST_MEDIA_PATH", "")
-
-
-def docker_media_path() -> str:
-    return _get("DOCKER_MEDIA_PATH", "")
-
-
-# --- Sonarr (index 0 or legacy) ---
-def sonarr_api_base() -> str:
-    return _api_base("SONARR")
-
-
-def sonarr_api_key() -> str:
-    return _get("SONARR_0_API_KEY") or _get("SONARR_API_KEY")
-
-
-def sonarr_root_path_prefix() -> str:
-    return _get("SONARR_ROOT_PATH_PREFIX", "/")
-
-
-# --- Radarr ---
-def radarr_api_base() -> str:
-    return _api_base("RADARR")
-
-
-def radarr_api_key() -> str:
-    return _get("RADARR_0_API_KEY") or _get("RADARR_API_KEY")
-
-
-def database_url() -> str:
-    """When set, app uses DB for rules/settings and serves the web UI."""
-    return _get("DATABASE_URL", "")
+@lru_cache(maxsize=1)
+def get_settings() -> Settings:
+    return Settings()

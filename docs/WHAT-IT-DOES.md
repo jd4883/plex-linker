@@ -4,58 +4,60 @@
 
 Sync **TV specials** that live as **movies** in Radarr into **show** paths that Sonarr and Plex expect, by creating **symlinks** so one file is shared instead of duplicating data.
 
-Typical use: anime (or other) specials are easier to find in Radarr/TMDB; you want them to appear under the right show in Sonarr and Plex. The linker creates the symlink from the movie file to the show’s specials path and tells Sonarr/Radarr to refresh.
+Typical use: anime (or other) specials are easier to find in Radarr/TMDB; you want them to appear under the right show in Sonarr and Plex. The linker creates the symlink from the movie file to the show's specials path and tells Sonarr/Radarr to refresh.
+
+## Architecture (v3 — flat module layout)
+
+All Python lives in `deploy/docker/` as flat modules:
+
+| Module | Role |
+|--------|------|
+| `main.py` | CLI entrypoint: `serve` (web + background job) or one-shot |
+| `app.py` | FastAPI app: health, web UI, REST API for rules/settings |
+| `config.py` | `Settings` frozen dataclass — reads all env vars once |
+| `db.py` | SQLite CRUD for link rules and settings |
+| `api_clients.py` | `SonarrClient` and `RadarrClient` with shared `_ArrClient` base |
+| `linker.py` | Core link job: iterate rules, match Radarr movies, create symlinks, refresh Sonarr/Radarr |
+| `yaml_config.py` | Legacy YAML config (when `DATABASE_URL` is unset) |
 
 ## Config: UI + database (default) or YAML (legacy)
 
 - **Database (default):** Set `DATABASE_URL` (e.g. `sqlite:////app/data/plex_linker.db`). The app serves a **web UI** at `/` to manage link rules and uses the DB for rules and settings. No YAML files needed.
 - **YAML (legacy):** Unset `DATABASE_URL` and provide `config_files/media_collection_parsed_last_run.yaml` and `config_files/variables.yaml` (Movie Directories, Show Directories, Movie Extensions).
 
-## Current flow (single link job run)
+## Link job flow (one run)
 
-1. **Config**
-   - **Media path:** `MEDIA_ROOT` / `DOCKER_MEDIA_PATH` must be set and point at a directory. If not set or not a directory, the link job **no-ops** and exits.
-   - **Link rules:** From DB (when `DATABASE_URL` is set) or from YAML file.
+1. **Guard**: If `MEDIA_ROOT` is not set or not a directory, no-op.
+2. **Lock**: Create `pid.lock`; skip if already locked.
+3. **Clean**: Remove broken symlinks under the media root.
+4. **Load data**: From DB or YAML — get `movies_dict` and settings.
+5. **Fetch Radarr library**: `GET /api/v3/movie` — full movie list.
+6. **Per movie rule**:
+   - Find matching Radarr movie by TMDB ID.
+   - Extract file path, quality, and extension from Radarr metadata.
+   - **Per show** in the rule's `Shows`:
+     - Sonarr lookup series by title → series ID, path, type (anime detection).
+     - Find matching Season 0 episode → episode title.
+     - Build destination path: `{show_path}/Season {season}/{title} - S{season}E{ep} - {episode_title} {quality}{ext}`.
+     - Create relative symlink from movie file to show episode path (`os.symlink` with `os.path.relpath`).
+     - Sonarr `RescanSeries` + `RefreshSeries`.
+   - Radarr `RescanMovie`.
+7. **YAML persist** (legacy only): Archive previous YAML, write updated dict.
+8. **Unlock**: Remove `pid.lock`.
 
-2. **Load state**
-   - Build **movies_dict**: map of movie display name → `{ "Movie DB ID": tmdb_id, "Shows": { show_name: { "Episode", "Season", "Episode ID", "seriesId", "tvdbId", ... } } }`.
-   - Load **paths:** Movie Directories, Show Directories, Movie Extensions (from YAML or DB settings).
+## Serve mode
 
-3. **APIs**
-   - **Sonarr:** Base URL = `SONARR_0_URL` + `SONARR_0_API_PATH` (e.g. `/api/v3`). Used to: lookup series, get episodes by series id, get episode file, then **RescanSeries** and **RefreshSeries** after linking.
-   - **Radarr:** Base URL = `RADARR_0_URL` + `RADARR_0_API_PATH`. Used to: get movie library, then **RescanMovie** after linking.
+FastAPI on port **8080** (uvicorn):
 
-4. **Per-movie / per-show**
-   - For each movie in **movies_dict**, build a **Movie** (Radarr metadata) and for each show in its **Shows**:
-     - **Sonarr** lookup series by title → get series id and paths.
-     - Get episodes for that series (season 0 specials).
-     - Match episode/season to the rule → get target path and episode file id.
-     - **Symlink** the movie file to the show’s special path (e.g. `Show Name/Season 00/Show Name - S00E01 - Title.mkv`).
-     - Call Sonarr **RescanSeries** and **RefreshSeries** for that series.
-   - After processing all shows for that movie, call Radarr **RescanMovie** for that movie.
+- **GET /health** — `200 ok`
+- **GET /** — web UI (when `DATABASE_URL` set) or info page
+- **GET/POST/DELETE /api/rules** — link rules CRUD
+- **GET/PUT /api/settings/{key}** — settings CRUD
 
-5. **Cleanup**
-   - Remove broken symlinks under media root (`find . -xtype l -delete`).
-   - **YAML mode only:** Write updated **movies_dict** back to `media_collection_parsed_last_run.yaml`. **DB mode:** No YAML write; rules stay in the DB.
-
-6. **Serve mode**
-   - Process listens on port **8080** (FastAPI + uvicorn):
-     - **GET /health** — returns 200 for liveness/readiness.
-     - **GET /** — when `DATABASE_URL` is set: web UI to list/add/delete link rules; otherwise a short message.
-     - **GET/POST/DELETE /api/rules** — when DB is set: list, add, delete link rules.
-     - **GET/PUT /api/settings/{key}** — when DB is set: read/write settings (e.g. Movie Directories, Show Directories, Movie Extensions).
-   - A **background thread** runs the link job on an interval (default 15 minutes).
+A background thread runs the link job on an interval (default 15 min).
 
 ## What it does *not* do
 
 - Does not move or copy files; only creates symlinks.
 - Does not scrape or discover rules automatically; rules come from YAML or the DB/UI.
-- Plex API is stubbed; no Plex library refresh or watch-state sync yet (Sonarr/Radarr refresh is what makes new links visible).
-
-## Config summary
-
-| Source | Purpose |
-|--------|--------|
-| Env / Secret | `SONARR_0_URL`, `SONARR_0_API_PATH`, `SONARR_0_API_KEY`, same for Radarr; `PLEX_URL`, `PLEX_API_KEY`; `MEDIA_ROOT`/`DOCKER_MEDIA_PATH`; `DATABASE_URL` (default in image: SQLite at `/app/data/plex_linker.db`). |
-| Database (default) | Link rules and settings; web UI at `/` and REST API at `/api/rules`, `/api/settings/{key}`. When using DB, add settings "Movie Directories", "Show Directories", "Movie Extensions" (lists) via API or seed manually. |
-| YAML (legacy) | When `DATABASE_URL` is unset: `variables.yaml` and `media_collection_parsed_last_run.yaml` as before. |
+- Plex API is not integrated; Sonarr/Radarr refresh is what makes new links visible.
