@@ -1,0 +1,21 @@
+apiVersion: v2
+name: prometheus
+description: "Prometheus + Grafana stack via Prometheus Operator (kube-prometheus-stack). HA: multiple replicas, PDB, soft anti-affinity, Longhorn storage."
+type: application
+version: 0.1.0
+appVersion: "v0.88.1"
+kubeVersion: ">=1.25.0-0"
+keywords:
+  - prometheus
+  - grafana
+  - monitoring
+  - alertmanager
+  - prometheus-operator
+home: https://github.com/prometheus-operator/kube-prometheus
+sources:
+  - https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack
+  - https://github.com/prometheus-operator/kube-prometheus
+dependencies:
+  - name: kube-prometheus-stack
+    version: "81.6.9"
+    repository: https://prometheus-community.github.io/helm-charts

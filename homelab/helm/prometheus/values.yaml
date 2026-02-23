@@ -1,0 +1,183 @@
+# Prometheus + Grafana via Prometheus Operator (kube-prometheus-stack). HA: 2 replicas; PDB; soft anti-affinity; Longhorn HDD (metrics do not need SSD). See README for setup.
+# Values are passed to the kube-prometheus-stack dependency under the chart alias.
+# Namespace: observability (or override at install). Node exporter & kube-state-metrics enabled.
+#
+# Grafana admin (for Terraform/API): from 1Password via External Secrets. Create 1Password item "grafana"
+# with fields "username" and "password"; enable externalSecrets.grafana below.
+
+# -----------------------------------------------------------------------------
+# External Secrets — Grafana admin (1Password → secret grafana-admin)
+# -----------------------------------------------------------------------------
+externalSecrets:
+  grafana:
+    enabled: true
+    secretName: grafana-admin
+    refreshInterval: 1h
+    secretStoreRef:
+      name: onepassword-connect
+      kind: ClusterSecretStore
+    itemTitle: grafana
+    usernameProperty: username
+    passwordProperty: password
+
+kube-prometheus-stack:
+  fullnameOverride: prometheus
+
+  # -----------------------------------------------------------------------------
+  # Alertmanager — HA: 2 replicas, PDB, per-replica services, soft anti-affinity
+  # Storage: Longhorn HDD (mechanical fine for metrics/alert state).
+  # -----------------------------------------------------------------------------
+  alertmanager:
+    enabled: true
+    podDisruptionBudget:
+      enabled: true
+      minAvailable: 1
+    service:
+      servicePerReplica:
+        enabled: true  # Required for Alertmanager HA cluster communication
+    alertmanagerSpec:
+      replicas: 2
+      storage:
+        volumeClaimTemplate:
+          spec:
+            storageClassName: hdd
+            accessModes: ["ReadWriteOnce"]
+            resources:
+              requests:
+                storage: 10Gi
+      affinity:
+        nodeAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+            - weight: 100
+              preference:
+                matchExpressions:
+                  - key: node-role.kubernetes.io/control-plane
+                    operator: DoesNotExist
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+            - weight: 100
+              podAffinityTerm:
+                labelSelector:
+                  matchLabels:
+                    app.kubernetes.io/name: alertmanager
+                topologyKey: kubernetes.io/hostname
+
+  # -----------------------------------------------------------------------------
+  # Prometheus — HA: 2 replicas, PDB, Longhorn HDD (TSDB; mechanical is fine)
+  # Capacity aligned with homelab patterns (e.g. Harbor 30Gi, Postgres 25Gi); 50Gi for 15d retention.
+  # -----------------------------------------------------------------------------
+  prometheus:
+    enabled: true
+    prometheusSpec:
+      replicas: 2
+      retention: 15d
+      storageSpec:
+        volumeClaimTemplate:
+          spec:
+            storageClassName: hdd
+            accessModes: ["ReadWriteOnce"]
+            resources:
+              requests:
+                storage: 50Gi
+      affinity:
+        nodeAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+            - weight: 100
+              preference:
+                matchExpressions:
+                  - key: node-role.kubernetes.io/control-plane
+                    operator: DoesNotExist
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+            - weight: 100
+              podAffinityTerm:
+                labelSelector:
+                  matchLabels:
+                    app.kubernetes.io/name: prometheus
+                topologyKey: kubernetes.io/hostname
+    podDisruptionBudget:
+      enabled: true
+      minAvailable: 1
+
+  # -----------------------------------------------------------------------------
+  # Prometheus Operator — single replica (controller); prefer workers + soft spread
+  # -----------------------------------------------------------------------------
+  prometheusOperator:
+    affinity:
+      nodeAffinity:
+        preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100
+            preference:
+              matchExpressions:
+                - key: node-role.kubernetes.io/control-plane
+                  operator: DoesNotExist
+      podAntiAffinity:
+        preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100
+            podAffinityTerm:
+              labelSelector:
+                matchLabels:
+                  app.kubernetes.io/name: prometheus-operator
+              topologyKey: kubernetes.io/hostname
+
+  # -----------------------------------------------------------------------------
+  # Grafana — HA: 2 replicas, Longhorn HDD, ingress (cert-manager TLS), anonymous auth (nginx global auth)
+  # -----------------------------------------------------------------------------
+  grafana:
+    enabled: true
+    replicas: 2
+    persistence:
+      enabled: true
+      type: pvc
+      storageClassName: hdd
+      size: 10Gi
+    affinity:
+      nodeAffinity:
+        preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100
+            preference:
+              matchExpressions:
+                - key: node-role.kubernetes.io/control-plane
+                  operator: DoesNotExist
+      podAntiAffinity:
+        preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100
+            podAffinityTerm:
+              labelSelector:
+                matchLabels:
+                  app.kubernetes.io/name: grafana
+              topologyKey: kubernetes.io/hostname
+    # Admin: from 1Password (External Secret grafana-admin) for Terraform/API; UI stays anonymous.
+    admin:
+      existingSecret: grafana-admin
+      userKey: admin-user
+      passwordKey: admin-password
+    podAnnotations:
+      secret.reloader.stakater.com/reload: "grafana-admin"
+    # Auth: anonymous enabled; nginx global auth protects the UI. No Grafana login required.
+    grafana.ini:
+      auth.anonymous:
+        enabled: true
+        org_name: Main Org.
+        org_role: Viewer
+      auth:
+        disable_login_form: true
+        disable_signout_menu: true
+    ingress:
+      enabled: true
+      ingressClassName: nginx
+      annotations:
+        cert-manager.io/cluster-issuer: letsencrypt-prod
+      hosts:
+        - grafana.expectedbehaviors.com
+      tls:
+        - secretName: grafana-tls
+          hosts:
+            - grafana.expectedbehaviors.com
+  # -----------------------------------------------------------------------------
+  # Node exporter & kube-state-metrics — keep defaults (DaemonSet / single deploy)
+  # -----------------------------------------------------------------------------
+  nodeExporter:
+    enabled: true
+  kubeStateMetrics:
+    enabled: true
