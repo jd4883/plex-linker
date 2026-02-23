@@ -1,4 +1,4 @@
-"""FastAPI app: health endpoint (always), web UI and REST API for link rules when DATABASE_URL is set."""
+"""FastAPI app: health, web UI, and REST API for link rules and settings."""
 from __future__ import annotations
 
 from typing import Any, Optional
@@ -16,14 +16,14 @@ _settings = get_settings()
 
 @app.on_event("startup")
 def _init_database() -> None:
-    if _settings.use_db:
+    if _settings.database_url:
         db.init_db(_settings.database_url)
 
 
-def _require_db() -> str:
-    """Return the database URL or raise 503 when the DB is not configured."""
-    if not _settings.use_db:
-        raise HTTPException(503, "Database not configured (set DATABASE_URL)")
+def _db_url() -> str:
+    """Return the database URL or raise 503 when not configured."""
+    if not _settings.database_url:
+        raise HTTPException(503, "DATABASE_URL is not set")
     return _settings.database_url
 
 
@@ -37,7 +37,7 @@ def health() -> str:
 
 @app.get("/", response_class=HTMLResponse)
 def root() -> HTMLResponse:
-    if _settings.use_db:
+    if _settings.database_url:
         return HTMLResponse(_UI_HTML)
     return HTMLResponse(
         "<!DOCTYPE html><html><head><title>Plex Linker</title></head>"
@@ -62,12 +62,12 @@ class LinkRuleIn(BaseModel):
 
 @app.get("/api/rules")
 def list_rules() -> list[dict]:
-    return db.list_rules(_require_db())
+    return db.list_rules(_db_url())
 
 
 @app.post("/api/rules", status_code=201)
 def add_rule(rule: LinkRuleIn) -> dict:
-    url = _require_db()
+    url = _db_url()
     rid = db.add_rule(
         url,
         movie_title=rule.movie_title,
@@ -86,7 +86,7 @@ def add_rule(rule: LinkRuleIn) -> dict:
 
 @app.delete("/api/rules/{rule_id}")
 def delete_rule_endpoint(rule_id: int) -> dict:
-    if not db.delete_rule(_require_db(), rule_id):
+    if not db.delete_rule(_db_url(), rule_id):
         raise HTTPException(404, "Rule not found")
     return {"deleted": rule_id}
 
@@ -100,7 +100,7 @@ class SettingIn(BaseModel):
 
 @app.get("/api/settings/{key}")
 def get_setting(key: str) -> dict:
-    v = db.get_setting(_require_db(), key)
+    v = db.get_setting(_db_url(), key)
     if v is None:
         raise HTTPException(404, "Setting not found")
     return {"key": key, "value": v}
@@ -108,7 +108,7 @@ def get_setting(key: str) -> dict:
 
 @app.put("/api/settings/{key}")
 def put_setting(key: str, body: SettingIn) -> dict:
-    db.set_setting(_require_db(), key, body.value)
+    db.set_setting(_db_url(), key, body.value)
     return {"key": key, "value": body.value}
 
 

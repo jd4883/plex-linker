@@ -7,6 +7,7 @@ import re
 from pathlib import Path
 from typing import Any, Optional
 
+import db
 from api_clients import RadarrClient, SonarrClient
 from config import Settings
 
@@ -153,31 +154,19 @@ def _process_show_link(
         log.exception("Failed to refresh Sonarr series %d", series_id)
 
 
-def _load_data(settings: Settings) -> dict[str, Any]:
-    """Return movies_dict, a get_setting callable, and whether to persist back to YAML."""
-    if settings.use_db:
-        import db
-
-        if db.init_db(settings.database_url):
-            return {
-                "movies_dict": db.get_movies_dict(settings.database_url),
-                "get_setting": lambda key: db.get_setting(settings.database_url, key),
-                "persist_yaml": False,
-            }
-    import yaml_config
-
-    return {
-        "movies_dict": yaml_config.read_movies_dict(settings.app_root),
-        "get_setting": lambda key: yaml_config.read_setting(settings.app_root, key),
-        "persist_yaml": True,
-    }
-
-
 def run_link_job(settings: Settings) -> None:
     """Execute one link-job run. No-op when the media path is missing or invalid."""
     media_root = settings.media_root
     if not media_root or not os.path.isdir(media_root):
         log.info("No valid media root configured, skipping link job")
+        return
+
+    if not settings.database_url:
+        log.error("DATABASE_URL is not set, cannot load link rules")
+        return
+
+    if not db.init_db(settings.database_url):
+        log.error("Failed to initialize database")
         return
 
     lock_path = Path(__file__).parent / "pid.lock"
@@ -202,8 +191,7 @@ def _run(settings: Settings, media_root: str) -> None:
     )
     radarr = RadarrClient(settings.radarr_api_base, settings.radarr_api_key)
 
-    provider = _load_data(settings)
-    movies_dict: dict[str, Any] = provider["movies_dict"]
+    movies_dict = db.get_movies_dict(settings.database_url)
     if not movies_dict:
         log.info("No link rules found")
         return
@@ -247,8 +235,3 @@ def _run(settings: Settings, media_root: str) -> None:
                 radarr.rescan_movie(movie_id)
             except Exception:
                 log.exception("Failed to rescan Radarr movie %d", movie_id)
-
-    if provider["persist_yaml"]:
-        import yaml_config
-
-        yaml_config.write_movies_dict(settings.app_root, movies_dict, settings.config_archives)

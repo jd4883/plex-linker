@@ -14,7 +14,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
-RUN mkdir -p data config_files config_files/archives \
+RUN mkdir -p data \
     && chown -R 65532:65532 /app
 
 # --- Runtime: minimal Chainguard Python (no shell, no pip) ---
@@ -25,9 +25,7 @@ WORKDIR /app
 ENV PYTHONUNBUFFERED=1
 ENV PATH="/app/venv/bin:$PATH"
 
-ENV PLEX_LINKER=/app \
-    CONFIG_ARCHIVES=/app/config_files/archives \
-    DATABASE_URL=sqlite:////app/data/plex_linker.db \
+ENV DATABASE_URL=sqlite:////app/data/plex_linker.db \
     MEDIA_ROOT= \
     DOCKER_MEDIA_PATH= \
     HOST_MEDIA_PATH= \

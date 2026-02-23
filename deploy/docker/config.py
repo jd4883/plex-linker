@@ -12,14 +12,10 @@ def _env(key: str, default: str = "") -> str:
 
 @dataclass(frozen=True)
 class Settings:
-    app_root: str = field(default_factory=lambda: _env("PLEX_LINKER", ""))
-    config_archives: str = field(default_factory=lambda: _env("CONFIG_ARCHIVES", ""))
+    database_url: str = field(default_factory=lambda: _env("DATABASE_URL", ""))
     media_root: str = field(
         default_factory=lambda: _env("MEDIA_ROOT") or _env("DOCKER_MEDIA_PATH") or _env("HOST_MEDIA_PATH", "")
     )
-    docker_media_path: str = field(default_factory=lambda: _env("DOCKER_MEDIA_PATH", ""))
-
-    database_url: str = field(default_factory=lambda: _env("DATABASE_URL", ""))
 
     sonarr_url: str = field(default_factory=lambda: _env("SONARR_0_URL") or _env("SONARR_URL"))
     sonarr_api_path: str = field(
@@ -51,10 +47,6 @@ class Settings:
             return ""
         path = self.radarr_api_path if self.radarr_api_path.startswith("/") else f"/{self.radarr_api_path}"
         return f"{self.radarr_url.rstrip('/')}{path}"
-
-    @property
-    def use_db(self) -> bool:
-        return bool(self.database_url)
 
 
 @lru_cache(maxsize=1)

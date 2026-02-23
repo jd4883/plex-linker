@@ -6,9 +6,10 @@ alwaysApply: true
 
 # Plex Linker project rules
 
-- **Flat layout**: All Python modules are flat files in deploy/docker/ — no sub-packages. Files: main.py, app.py, config.py, db.py, api_clients.py, linker.py, yaml_config.py.
+- **Flat layout**: All Python modules are flat files in deploy/docker/ — no sub-packages. Files: main.py, app.py, config.py, db.py, api_clients.py, linker.py.
 - **Entrypoint**: One Python entrypoint (`main.py`). No shell wrappers; run as `python3 main.py serve` or `python3 main.py`.
 - **Config**: `config.py` defines a frozen `Settings` dataclass; use `get_settings()` to access. All env vars default in the Dockerfile and in the dataclass.
+- **Database**: All state is in a database (SQLite or PostgreSQL via SQLAlchemy + pg8000). No YAML config files. `DATABASE_URL` is required.
 - **Containers**: Chainguard Python base image. Run as non-root (UID 65532); no `USER root` in production.
 - **No dead code**: No forwarding stubs, no empty __init__.py packages, no no-op functions. Every module has a clear purpose.
 - **Logging**: Use `logging.getLogger(__name__)` — no custom messaging layers.
