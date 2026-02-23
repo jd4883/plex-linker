@@ -8,10 +8,10 @@
 
 ### Cursor rules and “home” wording
 
-- **New rule:** `homelab/.cursor/rules/workspace-home-is-folder-not-repo.mdc` — Workspace path may be named “home”; that is a folder name only. Do not refer to a GitHub repo named “home”; use the actual repo (e.g. chart repo or monorepo) for context.
-- **Updated rules:** `skip-repo-automation-home-homelab.mdc`, `pr-via-onepassword-gh.mdc` — Replaced “home repo” with “workspace / monorepo that contains homelab/”.
+- **New rule:** `homelab/.cursor/rules/workspace-home-is-folder-not-repo.mdc` — Workspace path may be named “home”; that is a folder name only. Do not refer to a GitHub repo named “home”; use the actual repo (e.g. jd4883/homelab-<chart>). homelab/helm/core = one repo with submodules.
+- **Updated rules:** `skip-repo-automation-home-homelab.mdc`, `pr-via-onepassword-gh.mdc` — Replaced “home repo” with “workspace / each chart is its own repo”.
 - **Script:** `create-or-update-prs.sh` — Example repo in comments/errors now `jd4883/homelab-plex` (not “home”).
-- **Docs:** `prometheus/README.md`, `unpackerr/README.md`, `unpackerr/CHANGELOG.md`, `unpackerr/PR_DESCRIPTION.md`, `github-actions/README.md`, `README-CRONJOB-REPOS.md` — “home repo” → “monorepo” or “workspace root” / “repo that contains homelab/”.
+- **Docs:** `prometheus/README.md`, `unpackerr/README.md`, `unpackerr/CHANGELOG.md`, `unpackerr/PR_DESCRIPTION.md`, `github-actions/README.md`, `README-CRONJOB-REPOS.md` — “home repo” → “monorepo” or “chart repo” / “repo that contains homelab/”.
 
 ### Release automation
 
@@ -54,7 +54,7 @@ Suggested descriptions (from Argo CD `config.yaml` or chart purpose):
 | jd4883/homelab-immich | Immich photo/video backup (official chart + external Postgres). |
 | jd4883/homelab-nextcloud | Nextcloud (official chart + external Postgres/Redis). |
 | jd4883/homelab-kubernetes-dashboard | Kubernetes Dashboard Helm chart. |
-| (monorepo) | If the repo that contains homelab/ is a single repo, set its description to something like: Homelab config: Helm charts, Argo CD, Terraform, GitHub Actions. |
+| (core repo) | homelab/helm/core: set description e.g. Core homelab charts: Argo CD, cert-manager, external-dns, nginx, 1Password Connect, PureLB. |
 
 Add rows for other `sourceRepo` values from `config.yaml` (homelab-qbittorrent, homelab-sabnzbd, homelab-minio, homelab-organizr, homelab-komga, homelab-mylar, homelab-prowlarr, homelab-portainer, homelab-nginx, homelab-external-dns, homelab-cert-manager, homelab-purelb, homelab-onepassword-connect, homelab-onepassword-secrets, homelab-external-secrets, homelab-kubernetes-replicator, homelab-home-assistant, homelab-tunnel-interface, homelab-ipmi-fan-control, homelab-external-services, jd4883/postgresql, jd4883/redis, jd4883/longhorn, jd4883/nvidia-k8s-device-plugin) and set descriptions accordingly.
 
@@ -64,7 +64,7 @@ Add rows for other `sourceRepo` values from `config.yaml` (homelab-qbittorrent, 
 
 - **Charts with release-on-merge + release-notes workflows (in this workspace):** atlantis, audiobookshelf, harbor, immich, kubernetes-dashboard, longhorn, nextcloud, oauth2-proxy, plex, postgresql, redis, unpackerr. (Plus plex-autoskip.)
 - **create-initial-releases.sh** was updated to include **unpackerr** in the chart list. The script lives in `homelab/github-actions/scripts/`; if that directory is not yet tracked, when you add it ensure the unpackerr line is present in the `CHARTS` array.
-- **Separate chart repos** (e.g. homelab-prometheus, homelab-plex): Each should have its own `.github/workflows/` for release-on-merge and release-notes if they are the source of truth for that chart. The monorepo workflows apply only to charts whose code lives in this repo.
+- **Each chart repo** (e.g. homelab-prometheus, homelab-unpackerr) has its own `.github/workflows/` for release-on-merge and release-notes in that repo.
 
 **Recommendation:** For any chart that has a workflow here but no release yet, run (from repo root, with 1Password):  
 `GH_HOST=github.com op run --env-file=homelab/.env.gh -- ./homelab/github-actions/scripts/create-initial-releases.sh`  

@@ -136,9 +136,7 @@ So: **no login form for users**, but **API auth for Terraform**. If you prefer z
 | **Grafana auth** | Anonymous + no login form for UI. For Terraform: set admin via `existingSecret` (API-only). |
 | **1Password** | **grafana** item (username + password) required; synced to **grafana-admin** for Terraform/API. |
 
-If the chart lives in a **monorepo** (the repo that contains `homelab/`) instead of `homelab-prometheus`, set the Argo CD application `sourceRepo` to that repo and `path: homelab/helm/prometheus`.
-
-**To create the separate repo** so Argo CD can use `sourceRepo: git@github.com:jd4883/homelab-prometheus.git` and `path: "."`, run from the **workspace root** (with `GH_TOKEN` from 1Password):
+**To create the chart repo** so Argo CD can use `sourceRepo: git@github.com:jd4883/homelab-prometheus.git` and `path: "."`, run from the **workspace root** (with `GH_TOKEN` from 1Password):
 
 ```bash
 GH_HOST=github.com op run --env-file=homelab/.env.gh -- ./homelab/helm/create-prometheus-chart-repo.sh

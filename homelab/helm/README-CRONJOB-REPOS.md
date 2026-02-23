@@ -14,7 +14,7 @@ See `plex/README.md` section **“Design: secrets and CronJob subcharts”**.
 
 ## Are the new chart dirs committed / in their own repos?
 
-- **In the monorepo (workspace that contains homelab/):** The directories `homelab/helm/one-pace-plex-assistant` and `homelab/helm/plex-prefer-non-forced-subs` exist but are **untracked** until you add and commit them. Plex chart changes (deps, values, README) are also uncommitted while you’re on your branch.
+- **In the workspace:** The directories `homelab/helm/one-pace-plex-assistant` and `homelab/helm/plex-prefer-non-forced-subs` exist but are **untracked** until you add and commit them. Plex chart changes (deps, values, README) are also uncommitted while you’re on your branch.
 - **Separate GitHub repos:** The two charts are **not** yet in their own repos. Use the script below to create the repos and open PRs.
 
 ---

@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **onepassworditem** dependency: 1Password item `vaults/Kubernetes/items/unpackerr` → secret **unpackerr** (envFrom).
 - *arr URLs default to in-cluster DNS by project namespace: `lidarr.lidarr.svc.cluster.local`, `radarr.radarr.svc.cluster.local`, etc.
 - Reloader annotation for secret changes; config PVC; webserver metrics on port 5656 for startup probe.
-- Argo CD project **unpackerr** in central config (path `homelab/helm/unpackerr`, sourceRepo monorepo).
+- Argo CD project **unpackerr** in central config (path `"."`, sourceRepo `jd4883/homelab-unpackerr`).
 - **onepassword-secrets** values updated to include **unpackerr** namespace for central 1Password sync.
 - GitHub Actions: `release-on-merge-unpackerr` and `release-notes-unpackerr` for automated releases and release notes.
 
