@@ -1,0 +1,13 @@
+---
+description: Plex Linker Python and container standards
+globs: "**/*.py"
+alwaysApply: true
+---
+
+# Plex Linker project rules
+
+- **Entrypoint**: One Python entrypoint only (`main.py`). No shell wrappers (e.g. no `plex-linker` script); run as `python3 main.py serve` or `python3 main.py`.
+- **Containers**: Use a hardened/slim Python base image. Run as non-root; no `USER root` in production.
+- **Env**: Document and default all env vars in the Dockerfile so one place defines behavior; app reads from `os.environ` with same defaults.
+- **Purpose**: Every module and function must have a clear purpose. Remove cruft: no forwarding stubs, no dead code, no commented-out blocks.
+- **Python**: Use type hints for public functions and module boundaries. Docstrings for public APIs. Prefer standard library and a minimal dependency set.
