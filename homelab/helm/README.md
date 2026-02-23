@@ -15,3 +15,14 @@ Helm charts and Argo CD–deployed applications for the homelab.
 New or updated charts should meet CHART_STANDARD.md and use the pre-merge checklist there before merge.
 
 **Conventions for chart READMEs:** Each chart README should include (1) an **Argo CD** section with an example `Application` manifest (repo/path/namespace adjusted for that chart), and (2) where the chart uses persistent volumes, a note that **volumes are defined in Longhorn** (PVCs are created in Longhorn or via bootstrap, not necessarily by the chart).
+
+---
+
+## Scripts and automation
+
+- **Repo descriptions:** `./set-repo-descriptions.sh` (run with `GH_HOST=github.com op run --env-file=homelab/.env.gh -- ./homelab/helm/set-repo-descriptions.sh`).
+- **Create new chart repo + PR:** `./create-chart-repo.sh <chart_name>` (e.g. `mealie`). Uses existing `jd4883/onepassword-secrets`; do **not** create `homelab-onepassword-secrets`.
+- **Duplicate repo:** Argo config points **onepassword-secrets** to `jd4883/onepassword-secrets`. If `jd4883/homelab-onepassword-secrets` was created by mistake, delete it manually (GitHub → Settings → Delete repository); the API requires `delete_repo` scope.
+- **GitHub Actions (workflows):** Release-on-merge and release-notes workflows live under each chart’s `.github/workflows/` in the workspace. To add them to the chart repo: use a token with **workflow** scope and push, or copy the files into the repo via the GitHub UI. `update-open-prs-and-push-workflows.sh` updates open PR bodies from `PR_DESCRIPTION.md` and can push workflows when the token has workflow scope.
+- **PR_DESCRIPTION.md:** Used only as the PR body (do not commit). Charts are gitignored for `PR_DESCRIPTION*.md`; create scripts exclude them when copying into a new repo.
+- **Chart.lock:** Never committed. Run `helm dependency update` locally or in CI; `homelab/.gitignore` and create scripts exclude `Chart.lock`.

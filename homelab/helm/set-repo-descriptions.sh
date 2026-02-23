@@ -54,6 +54,11 @@ declare -A DESC=(
   ["jd4883/ArgoCD"]="Argo CD app-of-apps and core. Argo CD."
   ["jd4883/homelab-unpackerr"]="Unpackerr for *arr stack. FLAC+CUE splitting (unstable). 1Password, Argo CD."
   ["jd4883/homelab-prometheus"]="Prometheus + Grafana (kube-prometheus-stack). HA; observability namespace; 1Password Grafana admin."
+  # Repos created from homelab/helm (config points here)
+  ["jd4883/homelab-mealie"]="Mealie recipe manager. Argo CD."
+  ["jd4883/homelab-paperless-ngx"]="Paperless-ngx document management. Argo CD."
+  ["jd4883/homelab-gotify"]="Gotify push notifications. Argo CD."
+  ["jd4883/homelab-postgresql-backup-to-minio"]="PostgreSQL backup to MinIO (CronJob). Argo CD."
 )
 
 for repo in "${!DESC[@]}"; do

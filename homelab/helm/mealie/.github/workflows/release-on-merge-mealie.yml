@@ -1,4 +1,4 @@
-name: Release unpackerr chart on merge to main
+name: Release mealie chart on merge to main
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
       - '.helmignore'
       - 'templates/**'
 
-concurrency: release-unpackerr
+concurrency: release-mealie
 
 jobs:
   lint:
@@ -24,7 +24,6 @@ jobs:
       - name: Lint chart
         run: |
           helm repo add bjw-s https://bjw-s-labs.github.io/helm-charts
-          helm repo add vquie https://vquie.github.io/helm-charts
           helm dependency update .
           helm lint .
 
@@ -41,4 +40,4 @@ jobs:
         uses: expectedbehaviors/github-actions/.github/actions/release-on-merge@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          tag_prefix: "unpackerr-v"
+          tag_prefix: "mealie-v"

@@ -37,7 +37,6 @@ on:
     branches: [main]
     paths:
       - 'Chart.yaml'
-      - 'Chart.lock'
       - 'values.yaml'
       - 'README.md'
       - '.helmignore'
@@ -147,7 +146,13 @@ git clone "$(_gh_url "$REPO_FULL")" "$tmpdir"
   git config user.name "${REPO_OWNER}"
   git fetch origin "$BRANCH" 2>/dev/null && git checkout -b "$BRANCH" "origin/$BRANCH" 2>/dev/null || git checkout -b "$BRANCH"
   rm -f README.md
-  cp -r "$CHART_SOURCE"/. .
+  if command -v rsync &>/dev/null; then
+    rsync -a --exclude='.git' --exclude='PR_DESCRIPTION*.md' --exclude='Chart.lock' "$CHART_SOURCE"/ .
+  else
+    tar cf - -C "$CHART_SOURCE" . | tar xf -
+    rm -rf .git 2>/dev/null || true
+    rm -f PR_DESCRIPTION.md PR_DESCRIPTION*.md Chart.lock 2>/dev/null || true
+  fi
   mkdir -p .github/workflows
   # Add workflows only if GH_TOKEN has workflow scope (else push chart first, add workflows in follow-up)
   if [ "${SKIP_WORKFLOWS:-}" != "1" ] && [ -n "$WORKFLOWS_DIR" ]; then

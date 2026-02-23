@@ -7,5 +7,11 @@ helm/PR_DESCRIPTION*.md
 helm/**/PR_DESCRIPTION*.md
 # Temp dir created by create-unpackerr-chart-repo.sh (removed on exit; do not commit)
 helm/.unpackerr-repo-workflows
+# Lock file — never commit; run helm dependency update locally or in CI
+helm/**/Chart.lock
+helm/**/helm/Chart.lock
+# Local / accidental — do not commit
+helm/talosconfig
+helm/cps.yaml
 # macOS
 .DS_Store
