@@ -1,0 +1,27 @@
+# Create tag and GitHub Release on merge to main. Then docker-build-push runs on release; release-notes fills the body.
+name: Release on merge to main
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'README.md'
+      - 'deploy/docker/**'
+      - 'deploy/helm/**'
+
+concurrency: release-on-merge
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Release on merge (create tag and release)
+        uses: expectedbehaviors/github-actions/.github/actions/release-on-merge@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          initial_version: "3.0.0"
