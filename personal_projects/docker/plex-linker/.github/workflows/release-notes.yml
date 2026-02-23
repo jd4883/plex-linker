@@ -1,0 +1,38 @@
+# Update GitHub Release body from merged PR summary (OpenAI). Run on release or manually.
+# Secret: OPENAI_API_KEY.
+
+name: Release notes
+
+on:
+  release:
+    types: [published]
+  workflow_run:
+    workflows: ["Release on merge to main", "Docker build and push"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: 'Release tag (e.g. v3.0.0). Default: latest.'
+        required: false
+
+jobs:
+  update-release-notes:
+    runs-on: ubuntu-latest
+    if: |
+      github.event_name == 'workflow_dispatch' ||
+      github.event_name == 'release' ||
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' && (github.event.workflow_run.name == 'Release on merge to main' || github.event.workflow_run.name == 'Docker build and push'))
+    permissions:
+      contents: write   # edit release body
+      pull-requests: read   # list PRs for commit (gh api .../commits/SHA/pulls)
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Update release notes from PR (OpenAI)
+        uses: expectedbehaviors/github-actions/.github/actions/release-notes@main
+        with:
+          openai_api_key: ${{ secrets.OPENAI_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          release_tag: ${{ github.event.inputs.release_tag }}
