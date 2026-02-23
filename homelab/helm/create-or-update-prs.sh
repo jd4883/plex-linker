@@ -43,8 +43,8 @@ case "$BRANCH" in
     PR_TITLE="📋 organizr-tab-controller chart in homelab/helm"
     ;;
   feature/secrets-immich-harbor-longhorn)
-    PR_BODY_FILE="$REPO_ROOT/.github/PULL_REQUEST_TEMPLATE.md"
-    PR_TITLE="🔐 Helm: secrets alignment, cronjob charts, postgresql-backup-to-minio, standards"
+    PR_BODY_FILE="$HELM_DIR/PR_DESCRIPTION-secrets-helm-standards.md"
+    PR_TITLE="🔐 Helm: removals, README standards, Mealie/Paperless-ngx/Gotify, Argo CD"
     ;;
   *)
     # Default: try kubernetes-dashboard if file exists (current branch often has dashboard changes)
@@ -72,8 +72,8 @@ else
   echo "Created. Run: gh pr view --repo $REPO --web"
 fi
 
-# Cleanup ephemeral files only (do not remove shared template)
-if [[ "$PR_BODY_FILE" != *"PULL_REQUEST_TEMPLATE.md" ]]; then
+# Cleanup ephemeral files only (do not remove shared template or branch-specific PR body)
+if [[ "$PR_BODY_FILE" != *"PULL_REQUEST_TEMPLATE.md" && "$PR_BODY_FILE" != *"PR_DESCRIPTION-secrets-helm-standards.md" ]]; then
   rm -f "$PR_BODY_FILE"
   echo "Removed $PR_BODY_FILE (ephemeral)."
 fi

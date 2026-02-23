@@ -1,0 +1,151 @@
+# Paperless-ngx — document management with OCR and tagging. bjw-s app-template.
+# Requires external PostgreSQL (e.g. postgresql-rw.postgresql.svc.cluster.local); optional Redis.
+# DB credentials from 1Password/External Secrets → secret paperless-db-credentials (see README).
+# Auth: OIDC at ingress (nginx + oauth2-proxy). See README for setup.
+
+paperless:
+  global:
+    fullnameOverride: paperless-ngx
+  defaultPodOptions:
+    annotations:
+      secret.reloader.stakater.com/reload: "paperless-db-credentials"
+    securityContext:
+      runAsNonRoot: true
+      runAsUser: 1000
+      runAsGroup: 1000
+      fsGroup: 1000
+      fsGroupChangePolicy: "OnRootMismatch"
+  controllers:
+    main:
+      enabled: true
+      type: deployment
+      replicas: 1
+      containers:
+        main:
+          image:
+            repository: ghcr.io/paperless-ngx/paperless-ngx
+            tag: 2.9.0
+            pullPolicy: IfNotPresent
+          env:
+            USERMAP_UID: "1000"
+            USERMAP_GID: "1000"
+            TZ: America/Los_Angeles
+            # DB: use secret (create from 1Password or External Secrets with keys: hostname, port, username, password, dbname)
+            PAPERLESS_DBHOST:
+              secretKeyRef:
+                name: paperless-db-credentials
+                key: hostname
+            PAPERLESS_DBPORT:
+              secretKeyRef:
+                name: paperless-db-credentials
+                key: port
+            PAPERLESS_DBNAME:
+              secretKeyRef:
+                name: paperless-db-credentials
+                key: dbname
+            PAPERLESS_DBUSER:
+              secretKeyRef:
+                name: paperless-db-credentials
+                key: username
+            PAPERLESS_DBPASS:
+              secretKeyRef:
+                name: paperless-db-credentials
+                key: password
+            # Optional: Redis (uncomment and set if using Redis for Celery broker/cache)
+            # PAPERLESS_REDIS: "redis://redis-master.redis.svc.cluster.local:6379/0"
+          probes:
+            liveness:
+              enabled: true
+              custom: true
+              spec:
+                httpGet:
+                  path: /
+                  port: 8000
+                initialDelaySeconds: 60
+                periodSeconds: 15
+                timeoutSeconds: 5
+                failureThreshold: 3
+            readiness:
+              enabled: true
+              custom: true
+              spec:
+                httpGet:
+                  path: /
+                  port: 8000
+                initialDelaySeconds: 30
+                periodSeconds: 10
+                timeoutSeconds: 3
+                failureThreshold: 3
+            startup:
+              enabled: true
+              custom: true
+              spec:
+                httpGet:
+                  path: /
+                  port: 8000
+                initialDelaySeconds: 30
+                periodSeconds: 5
+                timeoutSeconds: 5
+                failureThreshold: 24
+          resources:
+            requests:
+              cpu: 100m
+              memory: 1Gi
+            limits:
+              cpu: "2"
+              memory: 4Gi
+  service:
+    main:
+      enabled: true
+      controller: main
+      primary: true
+      ports:
+        http:
+          enabled: true
+          primary: true
+          port: 8000
+          protocol: HTTP
+  ingress:
+    main:
+      enabled: true
+      annotations:
+        external-dns.alpha.kubernetes.io/target: expectedbehaviors.com
+        # OIDC at ingress: enable nginx auth (oauth2-proxy) for this host.
+        # nginx.ingress.kubernetes.io/enable-global-auth: "true"
+      hosts:
+        - host: paperless.expectedbehaviors.com
+          paths:
+            - path: /
+              pathType: Prefix
+      tls:
+        - hosts:
+            - paperless.expectedbehaviors.com
+          secretName: expectedbehaviors.com-tls
+  persistence:
+    data:
+      enabled: true
+      type: persistentVolumeClaim
+      accessMode: ReadWriteOnce
+      storageClass: ""
+      size: 20Gi
+      globalMounts:
+        - path: /usr/src/paperless/data
+          readOnly: false
+    media:
+      enabled: true
+      type: persistentVolumeClaim
+      accessMode: ReadWriteOnce
+      storageClass: ""
+      size: 50Gi
+      globalMounts:
+        - path: /usr/src/paperless/media
+          readOnly: false
+    consume:
+      enabled: true
+      type: persistentVolumeClaim
+      accessMode: ReadWriteOnce
+      storageClass: ""
+      size: 5Gi
+      globalMounts:
+        - path: /usr/src/paperless/consume
+          readOnly: false

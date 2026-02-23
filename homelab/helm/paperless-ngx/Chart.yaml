@@ -1,0 +1,21 @@
+apiVersion: v2
+name: paperless-ngx
+description: Paperless-ngx document management (OCR, tagging). bjw-s app-template; external PostgreSQL; OIDC via nginx.
+version: 0.1.0
+appVersion: "2.9.0"
+kubeVersion: ">=1.22.0-0"
+keywords:
+  - paperless
+  - document-management
+  - ocr
+  - bjw-s
+  - app-template
+home: https://docs.paperless-ngx.com
+sources:
+  - https://github.com/paperless-ngx/paperless-ngx
+maintainers: []
+dependencies:
+  - name: app-template
+    version: "4.6.2"
+    repository: https://bjw-s-labs.github.io/helm-charts
+    alias: paperless

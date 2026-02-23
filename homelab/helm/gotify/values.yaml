@@ -1,0 +1,107 @@
+# Gotify — self-hosted push notification server. bjw-s app-template.
+# Auth: use OIDC at ingress (nginx + oauth2-proxy) so the app is not exposed without login. See README.
+# Default admin user created on first run; change password in app or set GOTIFY_DEFAULTUSER_PASS via secret if needed.
+
+gotify:
+  global:
+    fullnameOverride: gotify
+  defaultPodOptions:
+    securityContext:
+      runAsNonRoot: true
+      runAsUser: 1000
+      runAsGroup: 1000
+      fsGroup: 1000
+      fsGroupChangePolicy: "OnRootMismatch"
+  controllers:
+    main:
+      enabled: true
+      type: deployment
+      replicas: 1
+      containers:
+        main:
+          image:
+            repository: gotify/server
+            tag: "v2.4.4"
+            pullPolicy: IfNotPresent
+          env:
+            TZ: America/Los_Angeles
+            # Optional: set default admin password via secret (create secret with key GOTIFY_DEFAULTUSER_PASS)
+            # envFrom: - secretRef: name: gotify-secrets
+          probes:
+            liveness:
+              enabled: true
+              custom: true
+              spec:
+                httpGet:
+                  path: /health
+                  port: 80
+                initialDelaySeconds: 15
+                periodSeconds: 15
+                timeoutSeconds: 3
+                failureThreshold: 3
+            readiness:
+              enabled: true
+              custom: true
+              spec:
+                httpGet:
+                  path: /health
+                  port: 80
+                initialDelaySeconds: 5
+                periodSeconds: 10
+                timeoutSeconds: 2
+                failureThreshold: 3
+            startup:
+              enabled: true
+              custom: true
+              spec:
+                httpGet:
+                  path: /health
+                  port: 80
+                initialDelaySeconds: 5
+                periodSeconds: 5
+                timeoutSeconds: 2
+                failureThreshold: 15
+          resources:
+            requests:
+              cpu: 10m
+              memory: 64Mi
+            limits:
+              cpu: 200m
+              memory: 256Mi
+  service:
+    main:
+      enabled: true
+      controller: main
+      primary: true
+      ports:
+        http:
+          enabled: true
+          primary: true
+          port: 80
+          protocol: HTTP
+  ingress:
+    main:
+      enabled: true
+      annotations:
+        external-dns.alpha.kubernetes.io/target: expectedbehaviors.com
+        # OIDC at ingress: enable nginx auth (oauth2-proxy) for this host.
+        # nginx.ingress.kubernetes.io/enable-global-auth: "true"
+      hosts:
+        - host: gotify.expectedbehaviors.com
+          paths:
+            - path: /
+              pathType: Prefix
+      tls:
+        - hosts:
+            - gotify.expectedbehaviors.com
+          secretName: expectedbehaviors.com-tls
+  persistence:
+    data:
+      enabled: true
+      type: persistentVolumeClaim
+      accessMode: ReadWriteOnce
+      storageClass: ""
+      size: 1Gi
+      globalMounts:
+        - path: /app/data
+          readOnly: false

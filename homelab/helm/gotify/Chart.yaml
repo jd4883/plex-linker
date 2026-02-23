@@ -1,0 +1,21 @@
+apiVersion: v2
+name: gotify
+description: Gotify — self-hosted push notification server (REST API, WebSocket). bjw-s app-template; OIDC via nginx.
+version: 0.1.0
+appVersion: "2.4.4"
+kubeVersion: ">=1.22.0-0"
+keywords:
+  - gotify
+  - notifications
+  - push
+  - bjw-s
+  - app-template
+home: https://gotify.net
+sources:
+  - https://github.com/gotify/server
+maintainers: []
+dependencies:
+  - name: app-template
+    version: "4.6.2"
+    repository: https://bjw-s-labs.github.io/helm-charts
+    alias: gotify

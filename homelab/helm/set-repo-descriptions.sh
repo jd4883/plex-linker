@@ -1,0 +1,61 @@
+#!/usr/bin/env bash
+# Set GitHub repo descriptions for helm chart repos. Run with: GH_HOST=github.com op run --env-file=homelab/.env.gh -- ./homelab/helm/set-repo-descriptions.sh
+set -e
+GH=${GH:-gh}
+
+declare -A DESC=(
+  ["jd4883/tanzu-bazarr"]="Bazarr subtitle manager for *arr stack. bjw-s app-template; existingClaim-only. Argo CD."
+  ["jd4883/homelab-core"]="Core homelab charts: Argo CD, cert-manager, external-dns, nginx, 1Password Connect, PureLB. Argo CD."
+  ["jd4883/harbor"]="Harbor registry wrapper. DockerHub from 1Password; PVC for artifacts. Argo CD."
+  ["jd4883/homelab-immich"]="Immich photo/video backup. Official chart + external DB, 1Password. Argo CD."
+  ["jd4883/longhorn"]="Longhorn storage volumes for homelab. Argo CD."
+  ["jd4883/homelab-atlantis"]="Atlantis for Terraform PR automation. 1Password. Argo CD."
+  ["jd4883/homelab-audiobookshelf"]="Audiobookshelf via bjw-s app-template. Argo CD."
+  ["jd4883/homelab-external-secrets"]="External Secrets Operator wrapper. 1Password Connect. Argo CD."
+  ["jd4883/homelab-external-services"]="External services (iDRAC, IPMI, Pi-hole, ESXi) via t3n. Argo CD."
+  ["jd4883/homelab-gaps"]="GAPS (missing Plex movies) via bjw-s app-template. Argo CD."
+  ["expectedbehaviors/plex-autoskip-helm-chart"]="PlexAutoSkip Helm chart. Auto-skip intros/credits. bjw-s app-template."
+  ["jd4883/homelab-home-assistant"]="Home Assistant on Kubernetes. Argo CD."
+  ["jd4883/homelab-ipmi-fan-control"]="IPMI fan control CronJob. 1Password. Argo CD."
+  ["jd4883/homelab-kavita"]="Kavita ebook/comic server via bjw-s app-template. Argo CD."
+  ["jd4883/homelab-komga"]="Komga comics/manga server. Argo CD."
+  ["jd4883/homelab-k8s-dashboard"]="Kubernetes Dashboard wrapper. Argo CD."
+  ["jd4883/tanzu-lidarr"]="Lidarr (music) via bjw-s app-template. PostgreSQL, 1Password. Argo CD."
+  ["jd4883/homelab-minio"]="MinIO object storage. Argo CD."
+  ["jd4883/homelab-mylar"]="Mylar comic downloader. Argo CD."
+  ["jd4883/homelab-nextcloud"]="Nextcloud. Official chart + External Secrets, external DB/Redis. Argo CD."
+  ["jd4883/nvidia-k8s-device-plugin"]="NVIDIA device plugin for Kubernetes. Argo CD."
+  ["jd4883/tanzu-oauth2-proxy"]="OAuth2-Proxy. GitHub OAuth, 1Password. Argo CD."
+  ["jd4883/homelab-ombi"]="Ombi request manager. bjw-s app-template, Theme.Park. Argo CD."
+  ["jd4883/onepassword-secrets"]="1Password Secrets sync. Argo CD."
+  ["jd4883/homelab-organizr"]="Organizr HTPC dashboard. bjw-s app-template. Argo CD."
+  ["jd4883/tanzu-plex-linker"]="Plex linker. Argo CD."
+  ["jd4883/tanzu-plex"]="Plex Media Server. Argo CD."
+  ["jd4883/homelab-portainer"]="Portainer. Argo CD."
+  ["jd4883/postgresql"]="PostgreSQL (CloudNativePG). Argo CD."
+  ["jd4883/prometheus"]="Prometheus + Grafana stack. Argo CD."
+  ["jd4883/tanzu-prowlarr"]="Prowlarr via bjw-s app-template. Argo CD."
+  ["jd4883/homelab-qbittorrent"]="qBittorrent. Argo CD."
+  ["jd4883/tanzu-radarr"]="Radarr (movies) via bjw-s app-template. PostgreSQL, 1Password. Argo CD."
+  ["jd4883/tanzu-readarr"]="Readarr (books/audiobooks) via bjw-s app-template. Argo CD."
+  ["jd4883/redis"]="Redis HA (Spotahome). Argo CD."
+  ["jd4883/homelab-reloader"]="Reloader for ConfigMaps/Secrets. Argo CD."
+  ["jd4883/homelab-sabnzbd"]="SABnzbd newsreader. bjw-s app-template. Argo CD."
+  ["jd4883/tanzu-sonarr"]="Sonarr (TV) via bjw-s app-template. PostgreSQL, 1Password. Argo CD."
+  ["jd4883/homelab-tautulli"]="Tautulli Plex stats. bjw-s app-template. Argo CD."
+  ["jd4883/homelab-tunnel-interface"]="DaemonSet for /dev/net/tun (VPN/tunnels). Argo CD."
+  # Core submodules (homelab/helm/core)
+  ["jd4883/homelab-cert-manager"]="cert-manager for TLS. Argo CD."
+  ["jd4883/homelab-external-dns"]="ExternalDNS for public DNS from K8s services. Argo CD."
+  ["jd4883/homelab-kubernetes-replicator"]="Replicate secrets/configmaps across namespaces. Argo CD."
+  ["jd4883/homelab-nginx"]="NGINX ingress. Argo CD."
+  ["jd4883/homelab-onepassword-connect"]="1Password Connect Server and Operator. Argo CD."
+  ["jd4883/homelab-purelb"]="PureLB load-balancer. Argo CD."
+  ["jd4883/ArgoCD"]="Argo CD app-of-apps and core. Argo CD."
+)
+
+for repo in "${!DESC[@]}"; do
+  echo "Setting description for $repo..."
+  $GH repo edit "$repo" --description "${DESC[$repo]}" || echo "  (failed)"
+done
+echo "Done."

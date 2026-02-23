@@ -1,0 +1,21 @@
+apiVersion: v2
+name: mealie
+description: Mealie recipe manager — recipes, meal planning, shopping lists. bjw-s app-template; OIDC via nginx.
+version: 0.1.0
+appVersion: "1.4.0"
+kubeVersion: ">=1.22.0-0"
+keywords:
+  - mealie
+  - recipe
+  - meal-planning
+  - bjw-s
+  - app-template
+home: https://mealie.io
+sources:
+  - https://github.com/mealie-recipes/mealie
+maintainers: []
+dependencies:
+  - name: app-template
+    version: "4.6.2"
+    repository: https://bjw-s-labs.github.io/helm-charts
+    alias: mealie
