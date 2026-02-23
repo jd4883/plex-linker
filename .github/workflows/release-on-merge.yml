@@ -21,7 +21,14 @@ jobs:
         with:
           fetch-depth: 0
       - name: Release on merge (create tag and release)
+        id: release
         uses: expectedbehaviors/github-actions/.github/actions/release-on-merge@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          initial_version: "3.0.0"
+      - name: Set release title to version (3.0.0 format)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG="${{ steps.release.outputs.tag }}"
+          TITLE="${TAG#v}"
+          gh release edit "$TAG" --title "$TITLE"
