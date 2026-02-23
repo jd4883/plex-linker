@@ -1,0 +1,86 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ include "one-pace-plex-assistant.fullname" . }}
+  labels:
+    app.kubernetes.io/name: {{ include "one-pace-plex-assistant.name" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+spec:
+  schedule: {{ .Values.schedule | quote }}
+  concurrencyPolicy: {{ .Values.concurrencyPolicy }}
+  successfulJobsHistoryLimit: {{ .Values.successfulJobsHistoryLimit }}
+  failedJobsHistoryLimit: {{ .Values.failedJobsHistoryLimit }}
+  startingDeadlineSeconds: {{ .Values.startingDeadlineSeconds }}
+  suspend: {{ .Values.suspend }}
+  jobTemplate:
+    spec:
+      ttlSecondsAfterFinished: {{ .Values.ttlSecondsAfterFinished }}
+      backoffLimit: 2
+      template:
+        metadata:
+          annotations:
+            {{- if .Values.reloaderSecretAnnotation }}
+            secret.reloader.stakater.com/reload: {{ .Values.existingSecret | quote }}
+            {{- end }}
+        spec:
+          restartPolicy: OnFailure
+          securityContext:
+            fsGroup: {{ .Values.env.pgid | int }}
+          containers:
+            - name: one-pace-plex-assistant
+              image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+              imagePullPolicy: {{ .Values.image.pullPolicy }}
+              command:
+                - /bin/bash
+                - -c
+                - |
+                  git clone https://github.com/JakeLunn/one-pace-plex-assistant
+                  cd one-pace-plex-assistant
+                  pip install -r requirements.txt > /dev/null 2>&1
+                  mv -v /downloads/\[One\ Pace\]*/*.mkv /downloads/ 2>/dev/null || true
+                  python main.py setup-media --source-dir /downloads/ --target-dir /one-pace/
+                  echo "Scanning Plex Library $PLEX_LIBRARY"
+                  LIBRARY_ID=$(curl -s -X GET "$PLEX_URL/library/sections/?X-Plex-Token=$PLEX_API" | grep "$PLEX_LIBRARY" | awk '{print $8}' | cut -d "=" -f2 | tr -d '"')
+                  curl -s -X GET "$PLEX_URL/library/sections/$LIBRARY_ID/refresh?X-Plex-Token=$PLEX_API" || true
+                  echo "Sleeping for 2.5 minutes"
+                  sleep 150
+                  python main.py setup-plex --plex-token "$PLEX_API" --plex-host "$PLEX_URL" --plex-library "$PLEX_LIBRARY" --one-piece-show-name "$PLEX_SHOW_NAME" --change-show-name
+                  echo "Work complete!!"
+              env:
+                - name: PLEX_URL
+                  value: {{ .Values.env.plexUrl | quote }}
+                - name: PLEX_LIBRARY
+                  value: {{ .Values.env.plexLibrary | quote }}
+                - name: PLEX_SHOW_NAME
+                  value: {{ .Values.env.plexShowName | quote }}
+                - name: PUID
+                  value: {{ .Values.env.puid | quote }}
+                - name: PGID
+                  value: {{ .Values.env.pgid | quote }}
+              envFrom:
+                - secretRef:
+                    name: {{ .Values.existingSecret | quote }}
+                    optional: false
+              volumeMounts:
+                - name: one-pace
+                  mountPath: /one-pace
+                  subPath: {{ .Values.persistence.onePace.subPath | quote }}
+                - name: downloads
+                  mountPath: /downloads
+                  subPath: {{ .Values.persistence.downloads.subPath | quote }}
+              workingDir: /home
+              resources: {{ toJson .Values.resources }}
+          volumes:
+            - name: one-pace
+              persistentVolumeClaim:
+                claimName: {{ .Values.persistence.onePace.existingClaim | quote }}
+            - name: downloads
+              persistentVolumeClaim:
+                claimName: {{ .Values.persistence.downloads.existingClaim | quote }}
+---
+{{- define "one-pace-plex-assistant.name" -}}
+{{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
+{{- end }}
+{{- define "one-pace-plex-assistant.fullname" -}}
+{{- default .Release.Name .Values.fullnameOverride | default (include "one-pace-plex-assistant.name" .) | trunc 63 | trimSuffix "-" }}
+{{- end }}

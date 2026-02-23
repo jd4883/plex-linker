@@ -1,0 +1,28 @@
+# Plex prefer non-forced subs — generic CronJob. Deploy in a namespace that already has the Secret.
+# Secret contents are app-specific (Plex token etc.). See README.
+#
+# Instantiate when you have the secret in a common namespace (e.g. plex namespace).
+
+nameOverride: ""
+fullnameOverride: ""
+
+schedule: "15 */3 * * *"
+concurrencyPolicy: Replace
+successfulJobsHistoryLimit: 10
+failedJobsHistoryLimit: 5
+startingDeadlineSeconds: 10
+ttlSecondsAfterFinished: 10
+suspend: false
+
+existingSecret: plex-prefer-non-forced-subs
+reloaderSecretAnnotation: true
+
+env:
+  plexUrl: "http://plex.plex:32400"
+
+image:
+  repository: docker.io/jb6magic/plex-prefer-non-forced-subs
+  tag: latest
+  pullPolicy: Always
+
+resources: {}

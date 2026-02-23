@@ -1,0 +1,42 @@
+# One Pace Plex Assistant — generic CronJob. Deploy in a namespace that already has the Secret (e.g. created by plex chart's onepassworditem).
+# Secret must contain PLEX_API (Plex token). See README.
+#
+# Instantiate this chart when you have the secret in a common namespace (e.g. plex namespace with onepassworditem creating one-pace-plex-assistant).
+
+nameOverride: ""
+fullnameOverride: ""
+
+schedule: "*/15 * * * *"
+concurrencyPolicy: Replace
+successfulJobsHistoryLimit: 10
+failedJobsHistoryLimit: 5
+startingDeadlineSeconds: 10
+ttlSecondsAfterFinished: 10
+suspend: false
+
+# Secret created by the consumer (e.g. plex onepassworditem). Must have at least PLEX_API.
+existingSecret: one-pace-plex-assistant
+reloaderSecretAnnotation: true
+
+env:
+  plexUrl: "http://plex.plex:32400"   # override in parent: e.g. "http://plex.{{ .Release.Namespace }}:32400"
+  plexLibrary: "One Pace"
+  plexShowName: "One Pace"
+  puid: "1000"
+  pgid: "1000"
+
+# PVCs: override in parent to match your namespace's claims (e.g. plex-anime-one-pace, sabnzbd-downloads).
+persistence:
+  onePace:
+    existingClaim: plex-anime-one-pace
+    subPath: "One Piece [tvdb4-81797]"
+  downloads:
+    existingClaim: sabnzbd-downloads
+    subPath: complete/sonarr
+
+image:
+  repository: python
+  tag: latest
+  pullPolicy: Always
+
+resources: {}

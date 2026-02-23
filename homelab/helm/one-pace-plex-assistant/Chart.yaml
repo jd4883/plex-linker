@@ -1,0 +1,15 @@
+apiVersion: v2
+name: one-pace-plex-assistant
+description: Generic CronJob chart for One Pace Plex Assistant. Expects existing Secret (e.g. from 1Password); deploy in namespace that has the secret.
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
+kubeVersion: ">=1.22.0-0"
+keywords:
+  - plex
+  - one-pace
+  - cronjob
+home: https://github.com/JakeLunn/one-pace-plex-assistant
+sources:
+  - https://github.com/JakeLunn/one-pace-plex-assistant
+maintainers: []

@@ -1,0 +1,45 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ include "plex-prefer-non-forced-subs.fullname" . }}
+  labels:
+    app.kubernetes.io/name: {{ include "plex-prefer-non-forced-subs.name" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+spec:
+  schedule: {{ .Values.schedule | quote }}
+  concurrencyPolicy: {{ .Values.concurrencyPolicy }}
+  successfulJobsHistoryLimit: {{ .Values.successfulJobsHistoryLimit }}
+  failedJobsHistoryLimit: {{ .Values.failedJobsHistoryLimit }}
+  startingDeadlineSeconds: {{ .Values.startingDeadlineSeconds }}
+  suspend: {{ .Values.suspend }}
+  jobTemplate:
+    spec:
+      ttlSecondsAfterFinished: {{ .Values.ttlSecondsAfterFinished }}
+      backoffLimit: 2
+      template:
+        metadata:
+          annotations:
+            {{- if .Values.reloaderSecretAnnotation }}
+            secret.reloader.stakater.com/reload: {{ .Values.existingSecret | quote }}
+            {{- end }}
+        spec:
+          restartPolicy: OnFailure
+          containers:
+            - name: plex-prefer-non-forced-subs
+              image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+              imagePullPolicy: {{ .Values.image.pullPolicy }}
+              env:
+                - name: PLEX_URL
+                  value: {{ .Values.env.plexUrl | quote }}
+              envFrom:
+                - secretRef:
+                    name: {{ .Values.existingSecret | quote }}
+                    optional: false
+              resources: {{ toJson .Values.resources }}
+---
+{{- define "plex-prefer-non-forced-subs.name" -}}
+{{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
+{{- end }}
+{{- define "plex-prefer-non-forced-subs.fullname" -}}
+{{- default .Release.Name .Values.fullnameOverride | default (include "plex-prefer-non-forced-subs.name" .) | trunc 63 | trimSuffix "-" }}
+{{- end }}
