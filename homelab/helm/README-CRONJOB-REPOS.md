@@ -28,7 +28,7 @@ No need to be logged in to `gh`. Use 1Password CLI so it prompts you for credent
 GH_HOST=github.com op run --env-file=homelab/.env.gh -- ./homelab/helm/create-cronjob-chart-repos.sh
 ```
 
-- **homelab/.env.gh** must contain: `GH_TOKEN=op://VaultName/ItemName/field_name` (1Password reference). When you run the command, 1Password will prompt you to sign in if needed and inject the token.
+- **homelab/.env.gh** must contain: `GH_TOKEN=op://VaultName/ItemName/field_name` (1Password reference). When you run the command, 1Password will prompt you to sign in if needed and inject the token. The token must include the **workflow** scope if you are pushing workflow files (e.g. `.github/workflows/*`); otherwise GitHub rejects the push.
 - The script will: create the two GitHub repos (if missing), clone via HTTPS using the token, copy the chart files, push to branch `feature/initial-helm-chart`, and open a PR in each repo.
 
 Override owner or branch if needed:
@@ -47,7 +47,7 @@ After you add or change files in `one-pace-plex-assistant` or `plex-prefer-non-f
 GH_HOST=github.com op run --env-file=homelab/.env.gh -- ./homelab/helm/sync-cronjob-chart-prs.sh
 ```
 
-- Copies each chart dir from home into the corresponding GitHub repo on branch `feature/initial-helm-chart`, commits and pushes.
+- Copies each chart dir from home into the corresponding GitHub repo on branch `feature/initial-helm-chart`, commits and pushes. Your `GH_TOKEN` must have the **workflow** scope to push workflow files.
 - Updates the open PR’s description so it’s clear that **after merge**, GitHub Actions will: release on merge (tag + GitHub Release), then helm-publish (package, upload to release, publish Helm index to `gh-pages`).
 
 ---

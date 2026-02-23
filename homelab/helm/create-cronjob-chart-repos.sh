@@ -31,7 +31,7 @@ _push_chart() {
     git config user.name "${REPO_OWNER}"
     git fetch origin "$BRANCH" 2>/dev/null && git checkout -b "$BRANCH" "origin/$BRANCH" 2>/dev/null || git checkout -b "$BRANCH"
     rm -f README.md
-    cp -r "$HELM_DIR/$chart_name"/* .
+    cp -r "$HELM_DIR/$chart_name"/. .
     git add -A
     if git diff --staged --quiet; then
       echo "No changes for $chart_name."
