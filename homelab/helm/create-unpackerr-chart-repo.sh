@@ -22,9 +22,14 @@ fi
 
 _gh_url() { echo "https://x-access-token:${GH_TOKEN}@github.com/${1}.git"; }
 
-# Workflows for chart repo (paths = repo root)
-mkdir -p "$HELM_DIR/.unpackerr-repo-workflows"
-cat > "$HELM_DIR/.unpackerr-repo-workflows/release-on-merge-unpackerr.yml" << 'WORKFLOW'
+# Workflows: use committed files from chart source if present; else generate into temp dir
+WORKFLOWS_DIR=""
+if [ -f "$CHART_SOURCE/.github/workflows/release-on-merge-unpackerr.yml" ] && [ -f "$CHART_SOURCE/.github/workflows/release-notes-unpackerr.yml" ]; then
+  WORKFLOWS_DIR="$CHART_SOURCE/.github/workflows"
+else
+  mkdir -p "$HELM_DIR/.unpackerr-repo-workflows"
+  WORKFLOWS_DIR="$HELM_DIR/.unpackerr-repo-workflows"
+  cat > "$WORKFLOWS_DIR/release-on-merge-unpackerr.yml" << 'WORKFLOW'
 name: Release unpackerr chart on merge to main
 
 on:
@@ -72,7 +77,7 @@ jobs:
           tag_prefix: "unpackerr-v"
 WORKFLOW
 
-cat > "$HELM_DIR/.unpackerr-repo-workflows/release-notes-unpackerr.yml" << 'WORKFLOW'
+cat > "$WORKFLOWS_DIR/release-notes-unpackerr.yml" << 'WORKFLOW'
 name: Release notes (unpackerr)
 
 on:
@@ -123,9 +128,10 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           release_tag: ${{ steps.tag.outputs.tag }}
 WORKFLOW
+fi
 
 tmpdir=$(mktemp -d)
-trap 'rm -rf "$tmpdir" "$HELM_DIR/.unpackerr-repo-workflows"' EXIT
+trap 'rm -rf "$tmpdir"; [ -d "$HELM_DIR/.unpackerr-repo-workflows" ] && rm -rf "$HELM_DIR/.unpackerr-repo-workflows"' EXIT
 
 if ! gh repo view "$REPO_FULL" &>/dev/null; then
   echo "Creating repo $REPO_FULL..."
@@ -144,9 +150,9 @@ git clone "$(_gh_url "$REPO_FULL")" "$tmpdir"
   cp -r "$CHART_SOURCE"/. .
   mkdir -p .github/workflows
   # Add workflows only if GH_TOKEN has workflow scope (else push chart first, add workflows in follow-up)
-  if [ "${SKIP_WORKFLOWS:-}" != "1" ]; then
-    cp "$HELM_DIR/.unpackerr-repo-workflows"/release-on-merge-unpackerr.yml .github/workflows/
-    cp "$HELM_DIR/.unpackerr-repo-workflows"/release-notes-unpackerr.yml .github/workflows/
+  if [ "${SKIP_WORKFLOWS:-}" != "1" ] && [ -n "$WORKFLOWS_DIR" ]; then
+    mkdir -p .github/workflows
+    cp "$WORKFLOWS_DIR"/release-on-merge-unpackerr.yml "$WORKFLOWS_DIR"/release-notes-unpackerr.yml .github/workflows/ 2>/dev/null || true
   fi
   git add -A
   if git diff --staged --quiet; then

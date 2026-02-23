@@ -5,5 +5,7 @@ helm/REVIEW_CONSISTENCY.md
 # PR body files — use as PR description only; do not commit (CHART_STANDARD)
 helm/PR_DESCRIPTION*.md
 helm/**/PR_DESCRIPTION*.md
+# Temp dir created by create-unpackerr-chart-repo.sh (removed on exit; do not commit)
+helm/.unpackerr-repo-workflows
 # macOS
 .DS_Store
