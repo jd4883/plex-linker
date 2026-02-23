@@ -36,6 +36,22 @@ Override owner or branch if needed:
 GITHUB_OWNER=yourorg BRANCH=feature/initial GH_HOST=github.com op run --env-file=homelab/.env.gh -- ./homelab/helm/create-cronjob-chart-repos.sh
 ```
 
+---
+
+## Sync chart updates into the chart repo PRs (e.g. after adding workflows)
+
+After you add or change files in `one-pace-plex-assistant` or `plex-prefer-non-forced-subs` in the home repo (e.g. `helm-publish.yml`), push those changes into the existing PR branches and refresh PR descriptions:
+
+**From repo root:**
+```bash
+GH_HOST=github.com op run --env-file=homelab/.env.gh -- ./homelab/helm/sync-cronjob-chart-prs.sh
+```
+
+- Copies each chart dir from home into the corresponding GitHub repo on branch `feature/initial-helm-chart`, commits and pushes.
+- Updates the open PR’s description so it’s clear that **after merge**, GitHub Actions will: release on merge (tag + GitHub Release), then helm-publish (package, upload to release, publish Helm index to `gh-pages`).
+
+---
+
 **Commit and PR in the home repo** (after pushing your branch and creating the two chart repos):
 ```bash
 GH_HOST=github.com op run --env-file=homelab/.env.gh -- gh pr create --base main --head feature/secrets-immich-harbor-longhorn --title "Plex CronJob charts + repo script" --body "Add one-pace-plex-assistant and plex-prefer-non-forced-subs charts; script uses op run for creds; design doc."
