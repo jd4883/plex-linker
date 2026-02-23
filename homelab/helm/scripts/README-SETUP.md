@@ -24,6 +24,8 @@ This runs:
 | `ensure-gitignore-consistency.sh` | Standard .gitignore entries across all charts |
 | `set-openai-secrets-in-repos.sh` | `gh secret set OPENAI_API_KEY` for repos with release-notes |
 | `sync-repos-cruft-and-prs.sh` | Switch to main when merged; create chore PR for cruft + workflows |
+| `update-when-merged.sh` | Switch to main and pull when current branch is merged (no PR) |
+| `remove-cruft-local.sh` | Remove Chart.lock, requirements.lock, charts/*.tgz, PR_DESCRIPTION from tracking; ensure .gitignore |
 
 ## Prerequisites
 

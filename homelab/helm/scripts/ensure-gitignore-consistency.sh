@@ -11,9 +11,9 @@ ensure_entries() {
   local gi="$dir/.gitignore"
   mkdir -p "$dir"
   [[ -f "$gi" ]] || touch "$gi"
-  local entries=(".DS_Store" "charts/" "Chart.lock" "PR_DESCRIPTION*.md")
+  local entries=(".DS_Store" "charts/" "Chart.lock" "PR_DESCRIPTION*.md" "requirements.lock")
   if [[ "$has_helm" == "1" ]]; then
-    entries+=("helm/charts/" "helm/Chart.lock")
+    entries+=("helm/charts/" "helm/Chart.lock" "helm/requirements.lock")
   fi
   for entry in "${entries[@]}"; do
     grep -qF "$entry" "$gi" 2>/dev/null || echo "$entry" >> "$gi"
