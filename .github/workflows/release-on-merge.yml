@@ -25,7 +25,6 @@ jobs:
         uses: expectedbehaviors/github-actions/.github/actions/release-on-merge@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          initial_version: "3.0.0"
       - name: Set release title to version (3.0.0 format)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
