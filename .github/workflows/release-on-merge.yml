@@ -5,11 +5,8 @@ on:
   push:
     branches: [main]
     paths:
-      - 'Dockerfile'
-      - 'requirements.txt'
       - 'README.md'
-      - 'link-tv-specials.py'
-      - 'methods/**'
+      - 'deploy/docker/**'
       - 'deploy/helm/**'
 
 concurrency: release-on-merge

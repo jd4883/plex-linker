@@ -32,12 +32,13 @@ secrets:
 
 env:
   tz: US/Pacific
+  # API path is separate so the app always builds base URL as url + apiPath (e.g. /api/v3).
   sonarrInstances:
     - url: "http://sonarr.sonarr:8989"
-      apiVersion: "v3"
+      apiPath: "/api/v3"
   radarrInstances:
     - url: "http://radarr.radarr:7878"
-      apiVersion: "v3"
+      apiPath: "/api/v3"
   plexUrl: "http://plex.plex:32400"
   plexWatchSyncUserMap: ""
   scanIntervalMinutes: "15"

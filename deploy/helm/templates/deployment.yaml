@@ -21,12 +21,16 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
     spec:
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 65532
       containers:
         - name: plex-linker
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           command:
-            - plex-linker
+            - python3
+            - main.py
             - serve
             - "--host"
             - "0.0.0.0"
@@ -50,14 +54,14 @@ spec:
             {{- range $i, $inst := .Values.env.sonarrInstances }}
             - name: SONARR_{{ $i }}_URL
               value: {{ $inst.url | quote }}
-            - name: SONARR_{{ $i }}_API_VERSION
-              value: {{ $inst.apiVersion | default "v3" | quote }}
+            - name: SONARR_{{ $i }}_API_PATH
+              value: {{ $inst.apiPath | default "/api/v3" | quote }}
             {{- end }}
             {{- range $i, $inst := .Values.env.radarrInstances }}
             - name: RADARR_{{ $i }}_URL
               value: {{ $inst.url | quote }}
-            - name: RADARR_{{ $i }}_API_VERSION
-              value: {{ $inst.apiVersion | default "v3" | quote }}
+            - name: RADARR_{{ $i }}_API_PATH
+              value: {{ $inst.apiPath | default "/api/v3" | quote }}
             {{- end }}
             - name: PLEX_URL
               value: {{ .Values.env.plexUrl | quote }}
