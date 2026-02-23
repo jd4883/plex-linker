@@ -52,6 +52,8 @@ declare -A DESC=(
   ["jd4883/homelab-onepassword-connect"]="1Password Connect Server and Operator. Argo CD."
   ["jd4883/homelab-purelb"]="PureLB load-balancer. Argo CD."
   ["jd4883/ArgoCD"]="Argo CD app-of-apps and core. Argo CD."
+  ["jd4883/homelab-unpackerr"]="Unpackerr for *arr stack. FLAC+CUE splitting (unstable). 1Password, Argo CD."
+  ["jd4883/homelab-prometheus"]="Prometheus + Grafana (kube-prometheus-stack). HA; observability namespace; 1Password Grafana admin."
 )
 
 for repo in "${!DESC[@]}"; do
