@@ -1,0 +1,24 @@
+apiVersion: v2
+name: tautulli
+description: Tautulli - Plex statistics and monitoring. Wrapper around bjw-s app-template with sensible defaults for this homelab.
+type: application
+version: 0.1.0
+appVersion: "2.16.0"
+kubeVersion: ">=1.28.0-0"
+home: https://github.com/Tautulli/Tautulli
+keywords:
+  - tautulli
+  - plex
+  - monitoring
+  - statistics
+  - bjw-s
+  - app-template
+maintainers: []
+sources:
+  - https://github.com/Tautulli/Tautulli
+  - https://github.com/bjw-s/helm-charts
+dependencies:
+  - name: app-template
+    version: "4.6.2"
+    repository: https://bjw-s-labs.github.io/helm-charts
+    # Alternative OCI: oci://ghcr.io/bjw-s/helm

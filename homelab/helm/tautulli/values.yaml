@@ -1,0 +1,122 @@
+# Tautulli – values for bjw-s app-template subchart
+#
+# Usage:
+#   helm install tautulli ./tautulli -n media-server
+#
+# Enhancements applied (and why):
+# - strategy: Recreate          → Avoids stuck replicas when config/DB changes; single-instance app.
+# - custom probes on /status    → Correct health check for Tautulli; default probes don't match.
+# - runAsUser/fsGroup 568       → Plex ecosystem standard; keeps permissions consistent with Plex.
+# - readOnlyRootFilesystem + drop ALL → Hardens container; Tautulli only needs /config writable.
+# - persistence.config PVC      → Config and DB survive restarts; cache/logs as emptyDir is enough for most.
+# - storageClassName            → Matches homelab (ceph-block-cluster-wide); override if your cluster differs.
+# - Optional: supplementalGroups, Reloader annotation → See comments below when needed.
+
+app-template:
+  global:
+    fullnameOverride: tautulli
+  controllers:
+    tautulli:
+      strategy: Recreate
+      annotations: {}
+      # Optional: if using Stakater Reloader, uncomment to roll pods on ConfigMap/Secret changes:
+      # "reloader.stakater.com/auto": "true"
+
+  containers:
+    app:
+      image:
+        repository: ghcr.io/tautulli/tautulli
+        tag: v2.16.0
+        pullPolicy: IfNotPresent
+      env:
+        TZ: America/New_York
+      probes:
+        liveness:
+          enabled: true
+          custom: true
+          spec:
+            httpGet:
+              path: /status
+              port: http
+            initialDelaySeconds: 0
+            periodSeconds: 10
+            timeoutSeconds: 1
+            failureThreshold: 3
+        readiness:
+          enabled: true
+          custom: true
+          spec:
+            httpGet:
+              path: /status
+              port: http
+            initialDelaySeconds: 0
+            periodSeconds: 10
+            timeoutSeconds: 1
+            failureThreshold: 3
+        startup:
+          enabled: true
+      resources:
+        limits:
+          memory: 1Gi
+        requests:
+          cpu: 10m
+          memory: 128Mi
+      securityContext:
+        allowPrivilegeEscalation: false
+        readOnlyRootFilesystem: true
+        capabilities:
+          drop:
+            - ALL
+
+  defaultPodOptions:
+    securityContext:
+      runAsUser: 568
+      runAsGroup: 568
+      fsGroup: 568
+      fsGroupChangePolicy: OnRootMismatch
+      # Optional: if your media/NFS store uses a specific GID, add it so Tautulli can read:
+      # supplementalGroups: [ 65539 ]
+
+  service:
+    app:
+      controller: tautulli
+      ports:
+        http:
+          port: 8181
+
+  ingress:
+    main:
+      enabled: true
+      className: nginx
+      annotations:
+        external-dns.alpha.kubernetes.io/target: expectedbehaviors.com
+        nginx.ingress.kubernetes.io/enable-global-auth: "false"
+      # First host defines &ingress_host; add hosts with: - <<: *ingress_host then host: <fqdn>
+      hosts:
+        - &ingress_host
+          host: stats.expectedbehaviors.com
+          paths:
+            - path: /
+              pathType: Prefix
+              service:
+                identifier: app
+                port: http
+        - <<: *ingress_host
+          host: tautulli.expectedbehaviors.com
+
+  persistence:
+    config:
+      type: persistentVolumeClaim
+      accessMode: ReadWriteOnce
+      size: 1Gi
+      storageClassName: ceph-block-cluster-wide
+      globalMounts:
+        - path: /config
+    cache:
+      type: emptyDir
+      globalMounts:
+        - path: /config/cache
+    logs:
+      type: emptyDir
+      globalMounts:
+        - path: /config/logs
