@@ -1,0 +1,92 @@
+# organizr-tab-controller – security-hardened defaults.
+# Only the resources the controller needs; no ingress, no persistence, no root.
+# Parent chart (bjw-s app-template) features we do not use are disabled below.
+
+fullnameOverride: organizr-tab-controller
+
+rbac:
+  create: true
+
+# Horizontal Pod Autoscaler; off by default. Set enabled: true for multiple replicas (e.g. HA).
+hpa:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 3
+
+organizr-tab-controller:
+  global:
+    fullnameOverride: organizr-tab-controller
+
+  ingress:
+    main:
+      enabled: false
+
+  persistence: {}
+
+  # Security baseline: non-root, no privilege escalation, no extra capabilities.
+  defaultPodOptions:
+    securityContext:
+      runAsNonRoot: true
+      runAsUser: 65532
+      runAsGroup: 65532
+
+  controllers:
+    main:
+      enabled: true
+      type: deployment
+      replicas: 1
+      serviceAccount:
+        name: organizr-tab-controller
+      containers:
+        main:
+          image:
+            # Align with Docker workflow (publishes to Docker Hub). Override if using GHCR or different registry.
+            repository: docker.io/expectedbehaviors/organizr-tab-controller
+            # Default for dev (Git installs). Released chart tarballs get tag = chart version in CI.
+            tag: latest
+            pullPolicy: IfNotPresent
+          # All supported env vars (ORGANIZR_*). Override any via values or --set.
+          # Required: ORGANIZR_API_URL (set on install). API key: from Secret below or ORGANIZR_API_KEY / ORGANIZR_API_KEY_FILE.
+          # Optional (app defaults): ORGANIZR_API_VERSION=v2, ORGANIZR_API_TIMEOUT=30, ORGANIZR_SYNC_POLICY=upsert,
+          #   ORGANIZR_RECONCILE_INTERVAL=60, ORGANIZR_WATCH_NAMESPACES="" (all), ORGANIZR_WATCH_RESOURCE_TYPES=ingresses,services,deployments,statefulsets,daemonsets,
+          #   ORGANIZR_ENABLE_LEADER_ELECTION=false, ORGANIZR_LEADER_ELECTION_NAMESPACE=default, ORGANIZR_LEADER_ELECTION_NAME=organizr-tab-controller-leader,
+          #   ORGANIZR_LOG_LEVEL=INFO, ORGANIZR_LOG_FORMAT=json.
+          env:
+            ORGANIZR_API_URL: ""
+            ORGANIZR_SYNC_POLICY: upsert
+            ORGANIZR_LOG_LEVEL: INFO
+            ORGANIZR_API_KEY:
+              valueFrom:
+                secretKeyRef:
+                  name: organizr-api-key
+                  key: api-key
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities:
+              drop: ["ALL"]
+          # Requests are modest; limits allow headroom so the controller won't OOM under load (e.g. many watched resources).
+          resources:
+            requests:
+              cpu: 50m
+              memory: 128Mi
+            limits:
+              cpu: 500m
+              memory: 256Mi
+          probes:
+            startup:
+              enabled: false
+            liveness:
+              enabled: false
+            readiness:
+              enabled: false
+
+  service:
+    main:
+      enabled: true
+      controller: main
+      primary: true
+      ports:
+        http:
+          enabled: true
+          port: 8080

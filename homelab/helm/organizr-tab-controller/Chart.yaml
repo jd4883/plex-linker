@@ -1,0 +1,20 @@
+apiVersion: v2
+name: organizr-tab-controller
+description: Kubernetes controller that manages Organizr tabs from annotated resources. Wrapper around bjw-s app-template; no ingress, HPA supported.
+type: application
+version: 0.0.1
+appVersion: "0.1.0"
+kubeVersion: ">=1.28.0-0"
+keywords:
+  - organizr
+  - kubernetes
+  - controller
+  - bjw-s
+  - app-template
+maintainers:
+  - name: Expected Behaviors
+dependencies:
+  - name: app-template
+    version: "4.6.2"
+    repository: https://bjw-s-labs.github.io/helm-charts
+    alias: organizr-tab-controller
