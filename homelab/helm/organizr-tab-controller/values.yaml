@@ -1,8 +1,6 @@
-# organizr-tab-controller – security-hardened defaults.
-# Only the resources the controller needs; no ingress, no persistence, no root.
-# Parent chart (bjw-s app-template) features we do not use are disabled below.
-
-fullnameOverride: organizr-tab-controller
+# organizr-tab-controller – security-hardened defaults; no ingress, no persistence, no root.
+# Only the resources the controller needs; parent (bjw-s app-template) extras disabled. See README for setup.
+# fullnameOverride is set under organizr-tab-controller.global below.
 
 rbac:
   create: true

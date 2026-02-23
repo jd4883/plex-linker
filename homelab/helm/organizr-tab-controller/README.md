@@ -1,6 +1,17 @@
 # Helm chart (organizr-tab-controller)
 
-Kubernetes deployment for **organizr-tab-controller**. Security-hardened defaults: non-root, no ingress, minimal surface. Based on [bjw-s app-template](https://bjw-s-labs.github.io/helm-charts/docs/app-template/); only the resources the controller needs are enabled.
+Kubernetes deployment for **organizr-tab-controller**. Security-hardened defaults: non-root, no ingress, minimal surface. Based on [bjw-s app-template](https://bjw-s-labs.github.io/helm-charts/docs/app-template/). **Managed by Argo CD** when deployed from repo.
+
+---
+
+## Chart contents
+
+- **App:** Single controller container (image, env, API key from Secret).
+- **Secrets:** Organizr API key from Secret `organizr-api-key` (key `api-key`); no creds in values.
+- **RBAC:** ServiceAccount, ClusterRole, ClusterRoleBinding (watch Ingresses, Services, Deployments, StatefulSets, DaemonSets, Leases).
+- **HPA:** Optional (default off); no ingress, no persistence.
+
+---
 
 ## What this chart does
 
@@ -8,13 +19,38 @@ Kubernetes deployment for **organizr-tab-controller**. Security-hardened default
 - **Service** – for pod selector/labels (controller does not serve HTTP).
 - **RBAC** – ServiceAccount, ClusterRole, ClusterRoleBinding (watch Ingresses, Services, Deployments, StatefulSets, DaemonSets, Leases).
 - **HPA** – optional horizontal pod autoscaling (default: **off**; set `hpa.enabled: true` for min 1, max 3).
-- **No ingress, no persistence** – controller is cluster-internal and stateless.
+- **No ingress, no persistence** – controller is cluster-internal and stateless. No persistent volumes; nothing to define in Longhorn.
+
+## Argo CD
+
+Deploy via Argo CD. Example Application (adjust repo/path/namespace):
+
+```yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: organizr-tab-controller
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/jd4883/homelab-organizr-tab-controller
+    path: .
+    targetRevision: main
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: organizr
+  syncPolicy:
+    automated: { prune: true, selfHeal: true }
+```
 
 ## Requirements
 
-- Kubernetes 1.28+
-- **Organizr API URL** – set via values or `--set`.
-- **Organizr API key** – in a Secret named `organizr-api-key` in the release namespace, with key `api-key` (or override env to use a different secret/key).
+| Dependency | Notes |
+|------------|--------|
+| Kubernetes | 1.28+ |
+| **Organizr API URL** | Set via values or `--set`. |
+| **Secret** `organizr-api-key` | Key `api-key` in release namespace (or override env). |
 
 ---
 
@@ -76,6 +112,14 @@ With a values file (e.g. `my-values.yaml` that sets `organizr-tab-controller.con
 ```bash
 helm install organizr-tab-controller ./helm -n organizr --create-namespace -f my-values.yaml
 ```
+
+---
+
+## Render & validation
+
+> `helm template organizr-tab-controller . -f values.yaml -n organizr`
+
+Chart lints and templates successfully.
 
 ---
 
@@ -216,6 +260,14 @@ kubectl apply -f argocd-organizr-tab-controller-helm-repo.yaml
 ```
 
 Replace `repoURL` and `targetRevision` with your actual Helm repo URL and chart version. The API key still comes from the `organizr-api-key` Secret (default values); ensure that Secret exists in the `organizr` namespace.
+
+---
+
+## Next steps
+
+- [ ] Create namespace and Secret `organizr-api-key` with key `api-key`.
+- [ ] Set `ORGANIZR_API_URL` in values or Argo CD parameters.
+- [ ] Deploy via Argo CD or `helm install`; confirm controller pod runs and can reach Organizr API.
 
 ---
 

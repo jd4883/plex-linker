@@ -1,8 +1,14 @@
 # one-pace-plex-assistant (Helm chart)
 
-Generic CronJob chart for [One Pace Plex Assistant](https://github.com/JakeLunn/one-pace-plex-assistant). **Does not create secrets** — deploy in a namespace that already has the Secret (e.g. created by the Plex chart's onepassworditem or ExternalSecret).
+Generic CronJob chart for [One Pace Plex Assistant](https://github.com/JakeLunn/one-pace-plex-assistant). **Does not create secrets** — deploy in a namespace that already has the Secret (e.g. from Plex chart's onepassworditem or ExternalSecret).
 
-**Instantiation:** Use this chart when you have the secret in a common namespace (e.g. Plex namespace); pass `existingSecret` and PVC claims via values.
+---
+
+## Chart contents
+
+- **App:** CronJob (schedule, image, env from Secret).
+- **Secrets:** Uses **existingSecret** (e.g. `one-pace-plex-assistant` with `PLEX_API`); no creds in values.
+- **Persistence:** Optional PVCs for one-pace and downloads (existingClaim).
 
 ---
 
@@ -50,3 +56,11 @@ one-pace-plex-assistant:
       existingClaim: sabnzbd-downloads
       subPath: complete/sonarr
 ```
+
+---
+
+## Next steps
+
+- [ ] Create Secret (e.g. via 1Password/onepassworditem) with `PLEX_API` in target namespace.
+- [ ] Create PVCs for one-pace and downloads if using persistence; set `existingClaim` in values.
+- [ ] Install as standalone or add as Plex subchart dependency; set `existingSecret` and `env.plexUrl`.

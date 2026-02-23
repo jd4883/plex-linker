@@ -1,4 +1,4 @@
-# Tautulli – values for bjw-s app-template subchart (alias: tautulli).
+# Tautulli – values for bjw-s app-template subchart (alias: tautulli). See README for setup.
 #
 # Usage:
 #   helm install tautulli . -n media-server
@@ -8,8 +8,7 @@
 # - custom probes on /status    → Correct health check for Tautulli; default probes don't match.
 # - runAsUser/fsGroup 568       → Plex ecosystem standard; keeps permissions consistent with Plex.
 # - readOnlyRootFilesystem + drop ALL → Hardens container; Tautulli only needs /config writable.
-# - persistence.config PVC      → Config and DB survive restarts; cache/logs as emptyDir is enough for most.
-# - storageClassName            → Matches homelab (ceph-block-cluster-wide); override if your cluster differs.
+# - persistence.config          → existingClaim tautulli-config (create PVC in Longhorn); cache/logs emptyDir.
 # - Optional: supplementalGroups, Reloader annotation → See comments below when needed.
 
 tautulli:
@@ -29,7 +28,7 @@ tautulli:
         tag: v2.16.0
         pullPolicy: IfNotPresent
       env:
-        TZ: America/New_York
+        TZ: US/Pacific
       probes:
         liveness:
           enabled: true
@@ -107,9 +106,7 @@ tautulli:
   persistence:
     config:
       type: persistentVolumeClaim
-      accessMode: ReadWriteOnce
-      size: 1Gi
-      storageClassName: ceph-block-cluster-wide
+      existingClaim: tautulli-config
       globalMounts:
         - path: /config
     cache:

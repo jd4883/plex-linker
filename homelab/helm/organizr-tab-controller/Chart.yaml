@@ -1,6 +1,6 @@
 apiVersion: v2
 name: organizr-tab-controller
-description: Kubernetes controller that manages Organizr tabs from annotated resources. Wrapper around bjw-s app-template; no ingress, HPA supported.
+description: Kubernetes controller that manages Organizr tabs from annotated resources. bjw-s app-template; no ingress, HPA. Argo CD.
 type: application
 version: 0.0.1
 appVersion: "0.1.0"

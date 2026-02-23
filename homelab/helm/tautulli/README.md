@@ -1,24 +1,54 @@
 # Tautulli Helm Chart
 
-Tautulli (Plex statistics and monitoring) deployed via the [bjw-s app-template](https://bjw-s-labs.github.io/helm-charts/docs/app-template/) chart. This chart is a thin wrapper that pins the app-template version and provides Tautulli-specific defaults aligned with this homelab.
-
-**Why bjw-s app-template:** It is the de facto standard for single-container apps in home-lab Kubernetes; no dedicated Tautulli chart is more specific or better maintained (see [Kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-helm-app-template-tautulli)).
+Tautulli (Plex statistics and monitoring) deployed via the [bjw-s app-template](https://bjw-s-labs.github.io/helm-charts/docs/app-template/) chart. Thin wrapper with Tautulli-specific defaults. **Managed by Argo CD** when deployed from repo.
 
 ---
 
-## Prerequisites
+## Chart contents
 
-- Helm 3
-- Kubernetes 1.28+
-- `media-server` namespace (or use `--create-namespace`)
-- bjw-s repo added (for dependency resolution):
+- **App:** Tautulli container (strategy Recreate, custom probes on `/status`, runAsUser/fsGroup 568).
+- **Secrets:** None in chart; optional Reloader annotation for ConfigMap/Secret roll.
+- **Persistence:** Config via **existingClaim** `tautulli-config`; cache/logs emptyDir.
+- **Ingress:** Optional; values include host examples and external-dns annotation.
 
-```bash
-helm repo add bjw-s https://bjw-s-labs.github.io/helm-charts/
-helm repo update
+---
+
+## Requirements
+
+| Dependency | Notes |
+|------------|--------|
+| **PVC** `tautulli-config` | Create in Longhorn (e.g. 1Gi, RWO); config volume. |
+| **Namespace** | e.g. `media-server` (or `--create-namespace`). |
+| bjw-s Helm repo | For dependency; `helm repo add bjw-s https://bjw-s-labs.github.io/helm-charts`. |
+
+---
+
+## Persistence
+
+Config uses **existingClaim** `tautulli-config`. **Volumes are defined in Longhorn** — create the PVC `tautulli-config` there (e.g. 1Gi, RWO). Cache and logs use emptyDir.
+
+## Argo CD
+
+Deploy via Argo CD. Example Application (adjust repo/path/namespace to your layout):
+
+```yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: tautulli
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/jd4883/homelab-tautulli
+    path: .
+    targetRevision: main
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: media-server
+  syncPolicy:
+    automated: { prune: true, selfHeal: true }
 ```
-
----
 
 ## Usage
 
@@ -28,6 +58,16 @@ From this directory:
 helm dependency update
 helm install tautulli . -n media-server --create-namespace
 ```
+
+---
+
+## Render & validation
+
+> `helm template tautulli . -f values.yaml -n media-server`
+
+*(Note: app-template 4.6.2 may report "No containers enabled" for `helm template` with alias layout; `helm install` / Argo CD work correctly.)*
+
+---
 
 ### Upgrade
 
@@ -62,6 +102,14 @@ Override with `-f my-values.yaml` or `--set` when installing/upgrading.
 
 ---
 
+## Next steps
+
+- [ ] Create PVC `tautulli-config` in Longhorn (namespace `media-server` or target ns).
+- [ ] Run `helm dependency update` then install or deploy via Argo CD.
+- [ ] Set ingress host and TLS if exposing; override TZ if needed.
+
+---
+
 ## Upgrading the bjw-s app-template
 
 The chart pins app-template in `Chart.yaml` (e.g. `4.6.2`). To upgrade:
@@ -79,3 +127,4 @@ The chart pins app-template in `Chart.yaml` (e.g. `4.6.2`). To upgrade:
 - **Dependency update fails:** Run `helm repo add bjw-s https://bjw-s-labs.github.io/helm-charts/` and `helm repo update`.
 - **Probe failures:** Tautulli serves `/status` on port 8181. If you change port or path, adjust `probes.*.spec.httpGet` in `values.yaml`.
 - **Permission errors on volumes:** Values use runAsUser/fsGroup 568. For NFS/media GID (e.g. 65539), add `supplementalGroups` under `defaultPodOptions.securityContext` (see comments in `values.yaml`).
+- **TZ:** Set to `US/Pacific` in values; override to match your homelab.

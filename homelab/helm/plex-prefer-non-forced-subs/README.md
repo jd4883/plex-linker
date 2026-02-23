@@ -2,7 +2,13 @@
 
 Generic CronJob chart for [plex-prefer-non-forced-subs](https://github.com/jb6magic/plex-prefer-non-forced-subs). **Does not create secrets** — deploy in a namespace that already has the Secret.
 
-**Instantiation:** Use this chart when you have the secret in a common namespace (e.g. Plex namespace); pass `existingSecret` and `env.plexUrl` via values.
+---
+
+## Chart contents
+
+- **App:** CronJob (schedule, image, env from Secret).
+- **Secrets:** Uses **existingSecret** (e.g. `plex-prefer-non-forced-subs`); no creds in values.
+- **Persistence:** None by default.
 
 ---
 
@@ -27,3 +33,10 @@ Generic CronJob chart for [plex-prefer-non-forced-subs](https://github.com/jb6ma
 ## Render & validation
 
 > `helm template plex-prefer-non-forced-subs . -f values.yaml -n plex`
+
+---
+
+## Next steps
+
+- [ ] Create Secret in target namespace (e.g. via 1Password/onepassworditem) with app-required keys.
+- [ ] Set `existingSecret` and `env.plexUrl`; install as standalone or as Plex subchart dependency.
