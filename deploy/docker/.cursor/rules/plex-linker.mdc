@@ -1,0 +1,18 @@
+---
+description: Plex Linker Python and container standards
+globs: "**/*.py"
+alwaysApply: true
+---
+
+# Plex Linker project rules
+
+- **Flat layout**: All Python modules are flat files in deploy/docker/. Non-Python assets (HTML, CSS, JS) go in subdirectories like `templates/`.
+- **Entrypoint**: `main.py` runs directly — no `main()` wrapper function, no `if __name__ == "__main__":` guard. Serve-mode imports (FastAPI, uvicorn) are lazy so one-shot runs stay lightweight.
+- **Config**: `config.py` defines a frozen `Settings` dataclass; use `get_settings()` to access. Env vars accept both `_0_` and non-`_0` forms (e.g. `SONARR_0_API_KEY` and `SONARR_API_KEY`).
+- **Database**: All state is in a database (SQLite or PostgreSQL via SQLAlchemy + pg8000). `DATABASE_URL` is required.
+- **Containers**: Chainguard Python base image. Run as non-root (UID 65532); no `USER root` in production.
+- **No dead code**: No forwarding stubs, no empty __init__.py packages, no no-op functions. Inline non-Python content belongs in real files, not Python strings.
+- **Logging**: Use `logging.getLogger(__name__)` — no custom messaging layers.
+- **Symlinks**: Use `os.symlink` with `os.path.relpath` for relative links — never shell out to `ln`.
+- **No os.chdir**: Always use absolute/explicit paths.
+- **Python**: Type hints on all public functions. Docstrings for public APIs. Prefer standard library and a minimal dependency set.

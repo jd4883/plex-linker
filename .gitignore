@@ -53,3 +53,6 @@ __pycache__
 
 # python
 *.pyc
+
+# PR body only — do not commit (use for gh pr create --body-file)
+PR_DESCRIPTION*.md
