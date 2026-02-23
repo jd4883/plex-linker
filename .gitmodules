@@ -1,0 +1,16 @@
+[submodule "homelab/helm/plex/subcharts/plex-autoskip"]
+	path = homelab/helm/plex/subcharts/plex-autoskip
+	url = git@github.com:expectedbehaviors/plex-autoskip-helm-chart.git
+	branch = main
+[submodule "homelab/helm/plex/subcharts/gabe565-charts"]
+	path = homelab/helm/plex/subcharts/gabe565-charts
+	url = https://github.com/gabe565/charts.git
+	branch = main
+[submodule "homelab/helm/plex/subcharts/vquie-helm-charts"]
+	path = homelab/helm/plex/subcharts/vquie-helm-charts
+	url = https://github.com/vquie/helm-charts.git
+	branch = master
+[submodule "homelab/helm/plex/subcharts/bjw-s-helm-charts"]
+	path = homelab/helm/plex/subcharts/bjw-s-helm-charts
+	url = https://github.com/bjw-s-labs/helm-charts.git
+	branch = main
