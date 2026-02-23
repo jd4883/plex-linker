@@ -1,0 +1,9 @@
+# Local env for gh CLI (1Password); never commit
+.env.gh
+# Local review reference; not merged
+helm/REVIEW_CONSISTENCY.md
+# PR body files — use as PR description only; do not commit (CHART_STANDARD)
+helm/PR_DESCRIPTION*.md
+helm/**/PR_DESCRIPTION*.md
+# macOS
+.DS_Store

@@ -72,8 +72,8 @@ else
   echo "Created. Run: gh pr view --repo $REPO --web"
 fi
 
-# Cleanup ephemeral files only (do not remove shared template or branch-specific PR body)
-if [[ "$PR_BODY_FILE" != *"PULL_REQUEST_TEMPLATE.md" && "$PR_BODY_FILE" != *"PR_DESCRIPTION-secrets-helm-standards.md" ]]; then
+# Cleanup ephemeral PR body files (per CHART_STANDARD: do not commit — use as PR body only)
+if [[ "$PR_BODY_FILE" != *"PULL_REQUEST_TEMPLATE.md" ]]; then
   rm -f "$PR_BODY_FILE"
   echo "Removed $PR_BODY_FILE (ephemeral)."
 fi
