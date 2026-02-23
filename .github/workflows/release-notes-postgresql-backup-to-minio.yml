@@ -1,19 +1,18 @@
-# Release notes (OpenAI) for unpackerr. Requires OPENAI_API_KEY.
-# See homelab/github-actions/README.md.
+# Release notes (OpenAI) for postgresql-backup-to-minio. Requires OPENAI_API_KEY.
 
-name: Release notes (unpackerr)
+name: Release notes (postgresql-backup-to-minio)
 
 on:
   release:
     types: [published]
   workflow_run:
-    workflows: ["Release unpackerr chart on merge to main"]
+    workflows: ["Release postgresql-backup-to-minio chart on merge to main"]
     types: [completed]
     branches: [main]
   workflow_dispatch:
     inputs:
       release_tag:
-        description: 'Release tag (e.g. unpackerr-v1.0.0). Default: latest.'
+        description: 'Release tag (e.g. postgresql-backup-to-minio-v1.0.0). Default: latest.'
         required: false
 
 jobs:
@@ -21,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     if: |
       github.event_name == 'workflow_dispatch' ||
-      (github.event_name == 'release' && startsWith(github.event.release.tag_name, 'unpackerr-v')) ||
+      (github.event_name == 'release' && startsWith(github.event.release.tag_name, 'postgresql-backup-to-minio-v')) ||
       (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
     permissions:
       contents: write
@@ -30,7 +29,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Resolve release tag (unpackerr-v*)
+      - name: Resolve release tag (postgresql-backup-to-minio-v*)
         id: tag
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -40,7 +39,7 @@ jobs:
           elif [ -n "${{ github.event.inputs.release_tag }}" ]; then
             echo "tag=${{ github.event.inputs.release_tag }}" >> $GITHUB_OUTPUT
           else
-            TAG=$(gh api "repos/${{ github.repository }}/releases?per_page=20" -q '[.[] | select(.tag_name | startswith("unpackerr-v")) | .tag_name][0]')
+            TAG=$(gh api "repos/${{ github.repository }}/releases?per_page=20" -q '[.[] | select(.tag_name | startswith("postgresql-backup-to-minio-v")) | .tag_name][0]')
             [ -z "$TAG" ] || [ "$TAG" = "null" ] && exit 1
             echo "tag=$TAG" >> $GITHUB_OUTPUT
           fi
