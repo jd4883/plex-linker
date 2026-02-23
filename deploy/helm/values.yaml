@@ -1,0 +1,70 @@
+# Plex Linker v3 — web UI + API + scheduler. External Postgres required.
+#
+# Secrets (choose one):
+#   - existingSecret: name of a Secret you create (e.g. from 1Password manually, or from CI).
+#   - onepassworditem: enable the subchart and list the 1Password item so the secret is created.
+#   - externalSecrets: enable and configure to sync from 1Password (or other backend) via External Secrets Operator.
+# Secret keys expected: SONARR_0_API_KEY, RADARR_0_API_KEY, PLEX_API_KEY, DATABASE_URL (and SONARR_1_API_KEY etc. for extra instances).
+# See README for PRs welcome for additional secret backends.
+
+nameOverride: ""
+fullnameOverride: ""
+
+replicas: 1
+
+image:
+  repository: docker.io/jb6magic/plex-linker
+  tag: "3.0"
+  pullPolicy: IfNotPresent
+
+# Secret from which env is loaded (envFrom). Must contain API keys and DATABASE_URL.
+secrets:
+  existingSecret: plex-linker
+  onepassworditem:
+    enabled: false
+  externalSecrets:
+    enabled: false
+    refreshInterval: 1h
+    secretStoreRef:
+      name: onepassword-connect
+      kind: ClusterSecretStore
+    data: []
+
+env:
+  tz: US/Pacific
+  sonarrInstances:
+    - url: "http://sonarr.sonarr:8989"
+      apiVersion: "v3"
+  radarrInstances:
+    - url: "http://radarr.radarr:7878"
+      apiVersion: "v3"
+  plexUrl: "http://plex.plex:32400"
+  plexWatchSyncUserMap: ""
+  scanIntervalMinutes: "15"
+  linkValidationIntervalMinutes: "5"
+
+# Media is optional. Leave empty (persistence: {}) to run the app without a media mount; the link job will no-op until you add a mount.
+# When set, mountPath is used as MEDIA_ROOT and the volume is mounted.
+media:
+  mountPath: ""   # e.g. /media — leave empty for no media volume
+  existingClaim: ""
+  volumeSpec: {}
+  # Example with NFS:
+  # volumeSpec:
+  #   nfs:
+  #     server: 172.16.11.246
+  #     path: /mnt/media
+
+service:
+  type: ClusterIP
+  port: 8080
+
+podAnnotations: {}
+
+resources:
+  requests:
+    memory: 256Mi
+    cpu: 100m
+  limits:
+    memory: 512Mi
+    cpu: 500m

@@ -127,7 +127,7 @@ class SonarrAPI(object):
 		return self.sonarr_api_request(f"{self.host_url}/series")
 	
 	def refresh_series(self, series_id, data = dict()):
-		return self.sonarr_api_request(f"{self.host_url}/command/RefreshSeries&seriesId={series_id}", "post", data)
+		return self.sonarr_api_request(f"{self.host_url}/command/RefreshSeries?seriesId={series_id}", "post", data)
 	
 	def rescan_series(self, series_id, data = dict()):
-		return self.sonarr_api_request(f"{self.host_url}/command/RescanSeries&seriesId={series_id}", "post", data)
+		return self.sonarr_api_request(f"{self.host_url}/command/RescanSeries?seriesId={series_id}", "post", data)

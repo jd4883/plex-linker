@@ -1,0 +1,14 @@
+apiVersion: v2
+name: plex-linker
+description: Plex Linker v3 — web app to symlink Radarr movies to Sonarr TV specials and sync Plex watch state. External Postgres.
+type: application
+version: 3.0.0
+appVersion: "3.0.0"
+kubeVersion: ">=1.22.0-0"
+keywords:
+  - plex
+  - sonarr
+  - radarr
+  - symlink
+  - web
+maintainers: []

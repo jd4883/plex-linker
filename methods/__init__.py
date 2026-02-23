@@ -31,8 +31,11 @@ class Globals:
 		self.sonarr_root_folders = self.sonarr.get_root_folder()
 		self.full_sonarr_dict = self.sonarr.get_series()
 		self.full_radarr_dict = self.radarr.get_movie_library()
-		self.MEDIA_PATH = str(environ1['DOCKER_MEDIA_PATH'])
-		self.MEDIA_DIRECTORY = str(environ["HOST_MEDIA_PATH"])
+		media_root = environ1.get("MEDIA_ROOT") or environ1.get("DOCKER_MEDIA_PATH")
+		if not media_root:
+			media_root = environ1.get("HOST_MEDIA_PATH", "")
+		self.MEDIA_PATH = str(media_root)
+		self.MEDIA_DIRECTORY = str(environ1.get("HOST_MEDIA_PATH", self.MEDIA_PATH))
 		filename = f"{os.environ['LOGS']}/plex_linker.log"
 		mode = 'a+' if os.path.exists(filename) else 'w+'
 		logging.basicConfig(level = logging.DEBUG, format = '%(asctime)s\t%(name)-12s\t%(levelname)-8s\t%(message)s',
@@ -53,7 +56,7 @@ class Globals:
 
 
 class Movies:
-	def __init__(self, absolute_movies_path = abspath("/".join((str(environ['DOCKER_MEDIA_PATH']),
+	def __init__(self, absolute_movies_path = abspath("/".join((str(environ1.get('DOCKER_MEDIA_PATH', '')),
 	                                                            get_variable_from_yaml(
 			                                                            "Movie Directories").__iter__().__next__())))):
 		self.start_time = time.time()
@@ -278,8 +281,8 @@ class Show(Movie, Globals):
 			self.inherited_series_dict['Parsed Relative Show File Path'] = \
 			f"{self.parsed_episode_title} {movie.quality + movie.extension}"
 		
-		g.sonarr.rescan_series(self.tvdbId)
-		g.sonarr.refresh_series(self.tvdbId)
+		g.sonarr.rescan_series(self.seriesId)
+		g.sonarr.refresh_series(self.seriesId)
 	
 	def parseEpisode(self):
 		try:
