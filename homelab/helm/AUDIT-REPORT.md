@@ -97,3 +97,15 @@ Then trigger the corresponding release-notes workflow from the Actions tab or by
 | Release notes + GH Actions | Workflows present for 12+ charts; unpackerr added to create-initial-releases.sh |
 | Per-chart documentation | Standard defined; audit each chart README against CHART_STANDARD / README-STANDARD |
 | Functionally broken code | No chart logic changed this session |
+
+---
+
+## Task list status (latest)
+
+| Task | Status |
+|------|--------|
+| **Unpackerr PR** | **Done.** [jd4883/homelab-unpackerr PR #1](https://github.com/jd4883/homelab-unpackerr/pull/1) open with chart, CHANGELOG, README. Merge to create first release. |
+| **Release workflows in chart repo** | Workflows live in `homelab/helm/unpackerr/.github/workflows/`. Push to homelab-unpackerr requires GH_TOKEN with **workflow** scope; re-run `create-unpackerr-chart-repo.sh` or add in a follow-up PR. |
+| **Release notes** | After merging PR #1, create release unpackerr-v1.0.0 (or use Actions). Run release-notes workflow (needs OPENAI_API_KEY) to fill notes. |
+| **Repo descriptions** | **Done.** `set-repo-descriptions.sh` run with 1Password; homelab-unpackerr and homelab-prometheus added to script and descriptions set. |
+| **config.yaml (core)** | sourceRepo for unpackerr, mealie, paperless-ngx, gotify, postgresql-backup-to-minio set to jd4883/homelab-&lt;chart&gt;, path `"."`. Commit in **core** repo when you update it. |
