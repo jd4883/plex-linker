@@ -6,12 +6,12 @@ Sync TV specials from movies into show paths so Sonarr/Radarr and Plex share one
 
 ## v3 highlights
 
-- **Flat module layout** — 7 Python files, no sub-packages. See **`docs/WHAT-IT-DOES.md`** for the full architecture.
-- **Web UI + database** — SQLite DB by default; web UI at `/` to manage link rules. Unset `DATABASE_URL` to fall back to legacy YAML.
+- **Database-backed** — SQLite by default (like Sonarr/Radarr); switch to PostgreSQL by changing `DATABASE_URL`. Web UI at `/` to manage link rules. No YAML config files.
+- **Flat module layout** — 6 Python files, no sub-packages. See **`docs/WHAT-IT-DOES.md`** for the full architecture.
 - **`os.symlink`** — pure-Python relative symlinks; no shelling out to `ln`.
 - **`Settings` dataclass** — frozen, `@lru_cache`d config from env vars; single source of truth.
 - **Shared API client base** — `SonarrClient` and `RadarrClient` extend `_ArrClient`; no duplicated HTTP code.
-- **Proper logging** — `logging.getLogger(__name__)` throughout; no custom messaging layers.
+- **SQLAlchemy** — same schema works on SQLite and PostgreSQL; `pg8000` pure-Python driver for Postgres.
 
 ## Deploy
 
@@ -30,7 +30,7 @@ See **`deploy/README.md`** for a short overview.
 | `RADARR_0_API_KEY` | `your-key` |
 | `MEDIA_ROOT` | `/media` |
 
-Optional: `DATABASE_URL` (default `sqlite:////app/data/plex_linker.db`), `PLEX_URL`, `PLEX_API_KEY`, `SONARR_ROOT_PATH_PREFIX`, `PLEX_LINKER_SCAN_INTERVAL_MINUTES`. Full list in **`deploy/docker/README.md`**.
+Optional: `DATABASE_URL` (default `sqlite:////app/data/plex_linker.db`; set `postgresql://user:pass@host/db` for Postgres), `PLEX_URL`, `PLEX_API_KEY`, `SONARR_ROOT_PATH_PREFIX`, `PLEX_LINKER_SCAN_INTERVAL_MINUTES`. Full list in **`deploy/docker/README.md`**.
 
 ## One-shot / cron
 
@@ -57,8 +57,4 @@ python3 main.py
 python3 main.py serve --host 0.0.0.0 --port 8080
 ```
 
-Set `DATABASE_URL=sqlite:////tmp/plex_linker.db` (or unset for YAML). Set `MEDIA_ROOT` and Sonarr/Radarr env for the link job.
-
-## Config (legacy YAML)
-
-When `DATABASE_URL` is unset, link rules and settings come from YAML files under `config_files/`. See **`docs/WHAT-IT-DOES.md`** for the format.
+Set `DATABASE_URL=sqlite:////tmp/plex_linker.db` and `MEDIA_ROOT` plus Sonarr/Radarr env for the link job.
