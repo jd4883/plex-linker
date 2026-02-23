@@ -29,13 +29,13 @@ class RadarrAPI(object):
 		return request_payload.json()
 	
 	def refresh_movie(self, movie_id):
-		return self.radarr_api_request(f"{self.host_url}/command/RefreshMovie&seriesId={movie_id}", "post")
+		return self.radarr_api_request(f"{self.host_url}/command?name=RefreshMovie&movieId={movie_id}", "post")
 	
 	def rescan_movie(self, movie_id):
-		return self.radarr_api_request(f"{self.host_url}/command/RescanMovie&seriesId={movie_id}", "post")
+		return self.radarr_api_request(f"{self.host_url}/command?name=RescanMovie&movieId={movie_id}", "post")
 	
 	def movie_search(self, movie_id):
-		return self.radarr_api_request(f"{self.host_url}/command/MoviesSearch&seriesId={movie_id}", "post")
+		return self.radarr_api_request(f"{self.host_url}/command?name=MoviesSearch&movieIds={movie_id}", "post")
 	
 	def get_movie_library(self):
 		return self.radarr_api_request(f"{self.host_url}/movie")

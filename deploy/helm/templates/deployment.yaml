@@ -1,0 +1,110 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "plex-linker.fullname" . }}
+  labels:
+    app.kubernetes.io/name: {{ include "plex-linker.name" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+spec:
+  replicas: {{ .Values.replicas }}
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: {{ include "plex-linker.name" . }}
+      app.kubernetes.io/instance: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: {{ include "plex-linker.name" . }}
+        app.kubernetes.io/instance: {{ .Release.Name }}
+      {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+    spec:
+      containers:
+        - name: plex-linker
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          command:
+            - plex-linker
+            - serve
+            - "--host"
+            - "0.0.0.0"
+            - "--port"
+            - "8080"
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+          env:
+            {{- if .Values.media.mountPath }}
+            - name: MEDIA_ROOT
+              value: {{ .Values.media.mountPath | quote }}
+            {{- end }}
+            {{- if .Values.media.mountPath }}
+            - name: DOCKER_MEDIA_PATH
+              value: {{ .Values.media.mountPath | quote }}
+            {{- end }}
+            - name: TZ
+              value: {{ .Values.env.tz | default "US/Pacific" | quote }}
+            {{- range $i, $inst := .Values.env.sonarrInstances }}
+            - name: SONARR_{{ $i }}_URL
+              value: {{ $inst.url | quote }}
+            - name: SONARR_{{ $i }}_API_VERSION
+              value: {{ $inst.apiVersion | default "v3" | quote }}
+            {{- end }}
+            {{- range $i, $inst := .Values.env.radarrInstances }}
+            - name: RADARR_{{ $i }}_URL
+              value: {{ $inst.url | quote }}
+            - name: RADARR_{{ $i }}_API_VERSION
+              value: {{ $inst.apiVersion | default "v3" | quote }}
+            {{- end }}
+            - name: PLEX_URL
+              value: {{ .Values.env.plexUrl | quote }}
+            {{- if .Values.env.plexWatchSyncUserMap }}
+            - name: PLEX_WATCH_SYNC_USER_MAP
+              value: {{ .Values.env.plexWatchSyncUserMap | quote }}
+            {{- end }}
+            {{- if .Values.env.scanIntervalMinutes }}
+            - name: PLEX_LINKER_SCAN_INTERVAL_MINUTES
+              value: {{ .Values.env.scanIntervalMinutes | quote }}
+            {{- end }}
+            {{- if .Values.env.linkValidationIntervalMinutes }}
+            - name: PLEX_LINKER_LINK_VALIDATION_INTERVAL_MINUTES
+              value: {{ .Values.env.linkValidationIntervalMinutes | quote }}
+            {{- end }}
+          envFrom:
+            - secretRef:
+                name: {{ .Values.secrets.existingSecret | quote }}
+                optional: false
+          {{- if .Values.media.mountPath }}
+          volumeMounts:
+            - name: media
+              mountPath: {{ .Values.media.mountPath }}
+              readOnly: false
+          {{- end }}
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: http
+            initialDelaySeconds: 10
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: http
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          resources: {{ toJson .Values.resources }}
+      {{- if .Values.media.mountPath }}
+      volumes:
+        - name: media
+          {{- if .Values.media.existingClaim }}
+          persistentVolumeClaim:
+            claimName: {{ .Values.media.existingClaim }}
+          {{- else if .Values.media.volumeSpec }}
+          {{- toYaml .Values.media.volumeSpec | nindent 10 }}
+          {{- else }}
+          emptyDir: {}
+          {{- end }}
+      {{- end }}

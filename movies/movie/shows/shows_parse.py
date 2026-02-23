@@ -21,8 +21,13 @@ def parse_shows_dictionary_object(movie, g):
 		if g.sonarr.lookup_series(show):
 			show.initShow(movie, g)
 			map(symlink_force(movie, show, g), show.shows_dictionary.items())
+			# Post-link refresh: Sonarr/Radarr rescan so libraries see the new link; Plex partial refresh by path if implemented.
+			try:
+				g.radarr.rescan_movie(movie.movieId)
+			except Exception:
+				pass
 			message.method_launch(g)
-			directory = str(os.environ['DOCKER_MEDIA_PATH'])
+			directory = str(os.environ.get('DOCKER_MEDIA_PATH', g.MEDIA_PATH))
 			os.chdir(directory)
 			try:
 				set_file_mask_with_chmod_on_files_and_links(movie.absolute_movie_file_path, g)

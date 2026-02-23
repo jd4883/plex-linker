@@ -11,11 +11,15 @@ from plex_linker.gets.path import get_docker_media_path
 from plex_linker.parser.movies import parse_all_movies_in_yaml_dictionary as parse_movies
 
 if __name__ == "__main__":
-	
+	# No media path configured — link job no-ops until user adds a mount (e.g. in Helm values).
+	media_root = os.environ.get("MEDIA_ROOT") or os.environ.get("DOCKER_MEDIA_PATH")
+	if not media_root or not os.path.isdir(media_root):
+		raise SystemExit(0)
+
 	# TODO: improve how we look at items not in the library and make more efficient in calculations
 	lock_path = f"{os.path.dirname(os.path.realpath(__file__))}/pid.lock"
 	if not os.path.exists(lock_path):
-		os.chdir(str(os.environ['DOCKER_MEDIA_PATH']))
+		os.chdir(str(os.environ.get("DOCKER_MEDIA_PATH", media_root)))
 		# used to clean dead links each run
 		subprocess.Popen(["find", ".", "-xtype", "l",  "-delete"], stderr = subprocess.DEVNULL, stdout = subprocess.PIPE)
 		Path(lock_path).touch()
