@@ -52,6 +52,16 @@ REPOS_WITH_RELEASE_NOTES=(
   "jd4883/homelab-tunnel-interface"
   "jd4883/nvidia-k8s-device-plugin"
   "jd4883/onepassword-secrets"
+  "jd4883/tanzu-oauth2-proxy"
+  "jd4883/tanzu-plex"
+  "jd4883/homelab-organizr-tab-controller"
+  "jd4883/one-pace-plex-assistant-helm-chart"
+  "jd4883/plex-prefer-non-forced-subs-helm-chart"
+  "jd4883/tanzu-lidarr"
+  "jd4883/tanzu-prowlarr"
+  "jd4883/tanzu-radarr"
+  "jd4883/tanzu-readarr"
+  "jd4883/tanzu-sonarr"
 )
 
 # Optional: expectedbehaviors/plex-autoskip-helm-chart (different org; skip if no access)
