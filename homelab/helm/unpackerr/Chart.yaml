@@ -1,0 +1,25 @@
+apiVersion: v2
+name: unpackerr
+description: Unpackerr daemon for *arr stack — extracts completed downloads and (for Lidarr) splits FLAC+CUE single-file albums. Uses bjw-s app-template. See README for setup.
+version: 1.0.0
+appVersion: "0.14.0"
+kubeVersion: ">=1.28.0-0"
+keywords:
+  - unpackerr
+  - lidarr
+  - radarr
+  - sonarr
+  - readarr
+  - extraction
+  - cue-splitting
+home: https://unpackerr.zip
+sources:
+  - https://github.com/Unpackerr/unpackerr
+dependencies:
+  - name: app-template
+    alias: unpackerr
+    version: "4.6.2"
+    repository: https://bjw-s-labs.github.io/helm-charts
+  - name: onepassworditem
+    version: v1.0.2
+    repository: https://vquie.github.io/helm-charts

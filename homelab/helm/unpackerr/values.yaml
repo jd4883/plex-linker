@@ -1,0 +1,123 @@
+# Unpackerr: extracts downloads for Radarr, Sonarr, Lidarr, Readarr; supports FLAC+CUE splitting for Lidarr (unstable image).
+# Secret "unpackerr" from 1Password via onepassworditem (or onepassword-secrets). *arr URLs use in-cluster DNS (project namespace = service name).
+# See README and https://unpackerr.zip/docs/install/configuration/
+#
+unpackerr:
+  global:
+    fullnameOverride: unpackerr
+  defaultPodOptions:
+    securityContext:
+      fsGroup: 1000
+      fsGroupChangePolicy: Always
+    annotations:
+      secret.reloader.stakater.com/reload: "unpackerr"
+  controllers:
+    main:
+      enabled: true
+      type: deployment
+      replicas: 1
+      strategy: Recreate
+      defaultContainerOptions:
+        image:
+          repository: golift/unpackerr
+          tag: unstable   # Use "unstable" for FLAC+CUE splitting (Unpackerr #141); use a version tag for stable
+          pullPolicy: Always
+      containers:
+        main:
+          envFrom:
+            - secretRef:
+                name: unpackerr   # From 1Password item (onepassworditem); keys = UN_LIDARR_0_API_KEY, etc.
+          env:
+            TZ: US/Pacific
+            UN_INTERVAL: "2m"
+            UN_START_DELAY: "1m"
+            # *arr URLs: Argo CD project = namespace (lidarr.lidarr, radarr.radarr, …)
+            UN_LIDARR_0_URL: "http://lidarr.lidarr.svc.cluster.local:8686"
+            UN_LIDARR_0_PATHS_0: "/downloads"
+            UN_LIDARR_0_SPLIT_FLAC: "true"
+            UN_WEBSERVER_METRICS: "true"
+            # Uncomment and add API keys to secret when using Radarr/Sonarr/Readarr
+            # UN_RADARR_0_URL: "http://radarr.radarr.svc.cluster.local:7878"
+            # UN_SONARR_0_URL: "http://sonarr.sonarr.svc.cluster.local:8989"
+            # UN_READARR_0_URL: "http://readarr.readarr.svc.cluster.local:8787"
+          probes:
+            startup:
+              enabled: true
+              custom: true
+              spec:
+                failureThreshold: 30
+                periodSeconds: 5
+                successThreshold: 1
+                tcpSocket:
+                  port: 5656   # Unpackerr webserver (metrics); set UN_WEBSERVER_METRICS=true to enable
+                timeoutSeconds: 1
+                initialDelaySeconds: 5
+          resources:
+            requests:
+              cpu: 50m
+              memory: 64Mi
+  service:
+    main:
+      enabled: true
+      ports:
+        http:
+          enabled: true
+          port: 5656
+          protocol: HTTP
+  ingress:
+    main:
+      enabled: false
+  persistence:
+    config:
+      enabled: true
+      type: persistentVolumeClaim
+      globalMounts:
+        - path: /config
+      accessMode: ReadWriteOnce
+      size: 1Gi
+      storageClass: ssd-nvme-gen3
+    # Same layout as Lidarr so Unpackerr sees the same download paths
+    downloads:
+      enabled: true
+      type: emptyDir
+      globalMounts:
+        - path: /downloads
+    downloads-torrents-anime-public:
+      enabled: true
+      type: persistentVolumeClaim
+      existingClaim: qbittorrent-anime-public-downloads
+      globalMounts:
+        - path: /downloads/torrents/anime-public
+    downloads-torrents-anime-private:
+      enabled: true
+      type: persistentVolumeClaim
+      existingClaim: qbittorrent-anime-private-downloads
+      globalMounts:
+        - path: /downloads/torrents/anime-private
+    downloads-torrents-private:
+      enabled: true
+      type: persistentVolumeClaim
+      existingClaim: qbittorrent-private-downloads
+      globalMounts:
+        - path: /downloads/torrents/private
+    downloads-torrents-public:
+      enabled: true
+      type: persistentVolumeClaim
+      existingClaim: qbittorrent-public-downloads
+      globalMounts:
+        - path: /downloads/torrents/public
+    downloads-usenet:
+      enabled: true
+      type: persistentVolumeClaim
+      existingClaim: sabnzbd-downloads
+      globalMounts:
+        - path: /downloads/usenet
+
+# 1Password item synced to Kubernetes secret "unpackerr" (envFrom). Item fields become secret keys — use UN_LIDARR_0_API_KEY, UN_RADARR_0_API_KEY, etc.
+# Also add unpackerr to onepassword-secrets values if using central sync; or rely on this chart when deploying to namespace unpackerr.
+onepassworditem:
+  secrets:
+    unpackerr:
+      - item: vaults/Kubernetes/items/unpackerr
+        name: unpackerr
+        type: Opaque
