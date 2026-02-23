@@ -7,7 +7,7 @@ on:
   release:
     types: [published]
   workflow_run:
-    workflows: ["Release on merge to main", "Docker build and push"]
+    workflows: ["Release on merge to main", "Docker build and push", "Helm chart publish"]
     types: [completed]
     branches: [main]
   workflow_dispatch:
@@ -22,7 +22,7 @@ jobs:
     if: |
       github.event_name == 'workflow_dispatch' ||
       github.event_name == 'release' ||
-      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' && (github.event.workflow_run.name == 'Release on merge to main' || github.event.workflow_run.name == 'Docker build and push'))
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' && (github.event.workflow_run.name == 'Release on merge to main' || github.event.workflow_run.name == 'Docker build and push' || github.event.workflow_run.name == 'Helm chart publish'))
     permissions:
       contents: write
       pull-requests: read
