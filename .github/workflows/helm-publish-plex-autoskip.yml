@@ -1,0 +1,109 @@
+# Package the plex-auto-skip Helm chart and attach to GitHub Release.
+# Runs on release published (tag plex-autoskip-v*) or when release-on-merge-plex-autoskip completes.
+# Tag format: plex-autoskip-vX.Y.Z → chart version X.Y.Z.
+
+name: Helm chart publish (plex-auto-skip)
+
+on:
+  release:
+    types: [published]
+  workflow_run:
+    workflows: ["Release plex-auto-skip chart on merge to main"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: 'Release tag (e.g. plex-autoskip-v0.1.3). Default: latest plex-autoskip-v* release.'
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  package-and-upload:
+    runs-on: ubuntu-latest
+    if: |
+      github.event_name == 'workflow_dispatch' ||
+      github.event_name == 'workflow_run' ||
+      (github.event_name == 'release' && startsWith(github.event.release.tag_name, 'plex-autoskip-v'))
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set version from release tag
+        id: version
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ "${{ github.event_name }}" = "release" ]; then
+            TAG="${{ github.event.release.tag_name }}"
+          elif [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ github.event.inputs.release_tag }}" ]; then
+            TAG="${{ github.event.inputs.release_tag }}"
+          elif [ "${{ github.event_name }}" = "workflow_run" ]; then
+            TAG=$(gh api "repos/${{ github.repository }}/releases?per_page=20" | jq -r '[.[] | select(.tag_name | startswith("plex-autoskip-v")) | .tag_name][0]')
+          else
+            TAG=$(gh api "repos/${{ github.repository }}/releases?per_page=20" | jq -r '[.[] | select(.tag_name | startswith("plex-autoskip-v")) | .tag_name][0]')
+          fi
+          if [ -z "$TAG" ] || [ "$TAG" = "null" ]; then
+            echo "No plex-autoskip-v* release found"
+            exit 1
+          fi
+          VERSION="${TAG#plex-autoskip-v}"
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+          echo "Version: $VERSION (tag: $TAG)"
+        shell: bash
+
+      - name: Install Helm
+        uses: azure/setup-helm@v4
+        with:
+          version: 'v3.14.0'
+
+      - name: Install yq
+        run: sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 && sudo chmod +x /usr/local/bin/yq
+        shell: bash
+
+      - name: Prepare chart for release (image tag = chart version)
+        run: |
+          mkdir -p build
+          cp -r homelab/helm/plex/subcharts/plex-autoskip build/chart
+          cd build/chart
+          yq e '.skip.controllers.main.containers.main.image.tag = strenv(VERSION)' -i values.yaml
+          cd ../..
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+        shell: bash
+
+      - name: Add dependency and package
+        run: |
+          helm repo add bjw-s https://bjw-s-labs.github.io/helm-charts
+          helm dependency update build/chart
+          helm package build/chart --version "${{ steps.version.outputs.version }}" --app-version "${{ steps.version.outputs.version }}"
+        shell: bash
+
+      - name: Upload chart to GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release upload "${{ steps.version.outputs.tag }}" plex-auto-skip-${{ steps.version.outputs.version }}.tgz --clobber
+        shell: bash
+
+      - name: Sync Chart.yaml to released version (keep git in sync)
+        run: |
+          CHART_YAML="homelab/helm/plex/subcharts/plex-autoskip/Chart.yaml"
+          VERSION="${{ steps.version.outputs.version }}"
+          yq e ".version = \"$VERSION\" | .appVersion = \"$VERSION\"" -i "$CHART_YAML"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$CHART_YAML"
+          if git diff --staged --quiet; then
+            echo "Chart.yaml already at $VERSION"
+          else
+            git commit -m "chore(helm): set plex-autoskip Chart.yaml version to $VERSION"
+            git push origin HEAD
+          fi
+        shell: bash
