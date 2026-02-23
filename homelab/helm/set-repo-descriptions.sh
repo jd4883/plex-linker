@@ -59,6 +59,9 @@ declare -A DESC=(
   ["jd4883/homelab-paperless-ngx"]="Paperless-ngx document management. Argo CD."
   ["jd4883/homelab-gotify"]="Gotify push notifications. Argo CD."
   ["jd4883/homelab-postgresql-backup-to-minio"]="PostgreSQL backup to MinIO (CronJob). Argo CD."
+  ["jd4883/homelab-organizr-tab-controller"]="Organizr tab controller. bjw-s app-template. Argo CD."
+  ["jd4883/one-pace-plex-assistant-helm-chart"]="One Pace Plex Assistant CronJob. Argo CD."
+  ["jd4883/plex-prefer-non-forced-subs-helm-chart"]="Plex prefer non-forced subs CronJob. Argo CD."
 )
 
 for repo in "${!DESC[@]}"; do

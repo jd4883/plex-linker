@@ -54,7 +54,7 @@ REPOS_WITH_RELEASE_NOTES=(
   "jd4883/onepassword-secrets"
   "jd4883/tanzu-oauth2-proxy"
   "jd4883/tanzu-plex"
-  "jd4883/homelab-organizr-tab-controller"
+  # "jd4883/homelab-organizr-tab-controller"  # 404 - repo may not exist yet
   "jd4883/one-pace-plex-assistant-helm-chart"
   "jd4883/plex-prefer-non-forced-subs-helm-chart"
   "jd4883/tanzu-lidarr"

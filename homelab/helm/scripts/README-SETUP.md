@@ -19,7 +19,8 @@ This runs:
 
 | Script | Purpose |
 |--------|---------|
-| `add-workflows-to-chart-dir.sh <chart_name>` | Add release-on-merge + release-notes workflows to a chart dir |
+| `add-workflows-to-chart-dir.sh <chart_name>` | Add release-on-merge + release-notes workflows to a flat chart dir |
+| `add-workflows-helm-subdir.sh <chart_name>` | Add workflows for charts with `helm/` subdir (lidarr, prowlarr, radarr, readarr, sonarr) |
 | `ensure-gitignore-consistency.sh` | Standard .gitignore entries across all charts |
 | `set-openai-secrets-in-repos.sh` | `gh secret set OPENAI_API_KEY` for repos with release-notes |
 | `sync-repos-cruft-and-prs.sh` | Switch to main when merged; create chore PR for cruft + workflows |
