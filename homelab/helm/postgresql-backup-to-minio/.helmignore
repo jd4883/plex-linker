@@ -1,0 +1,3 @@
+# Keep chart lean when packaging
+.git
+*.md

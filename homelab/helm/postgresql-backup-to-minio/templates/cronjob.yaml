@@ -1,0 +1,66 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: postgresql-backup-to-minio
+  labels:
+    app.kubernetes.io/name: {{ include "postgresql-backup-to-minio.name" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+spec:
+  schedule: {{ .Values.schedule | quote }}
+  successfulJobsHistoryLimit: {{ .Values.successfulJobsHistoryLimit }}
+  failedJobsHistoryLimit: {{ .Values.failedJobsHistoryLimit }}
+  concurrencyPolicy: Forbid
+  jobTemplate:
+    spec:
+      backoffLimit: 2
+      template:
+        metadata:
+          labels:
+            app.kubernetes.io/name: {{ include "postgresql-backup-to-minio.name" . }}
+        spec:
+          restartPolicy: OnFailure
+          containers:
+            - name: backup
+              image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+              imagePullPolicy: {{ .Values.image.pullPolicy }}
+              command:
+                - /bin/sh
+                - -c
+                - |
+                  set -e
+                  apk add --no-cache curl
+                  curl -sSL -o /usr/local/bin/mc https://dl.min.io/client/mc/release/linux-amd64/mc && chmod +x /usr/local/bin/mc
+                  export PGPASSWORD="$$(cat /etc/postgres/pgpassword)"
+                  pg_dumpall -h {{ .Values.postgresql.host }} -p {{ .Values.postgresql.port }} -U {{ .Values.postgresql.user }} --no-password -f /tmp/dump.sql
+                  mc alias set backup {{ .Values.minio.endpoint }} "$$(cat /etc/minio/rootuser)" "$$(cat /etc/minio/rootpassword)"
+                  mc cp /tmp/dump.sql "backup/{{ .Values.minio.bucket }}/postgresql/postgresql-$$(date +%Y-%m-%d-%H%M).sql"
+              env:
+                - name: TZ
+                  value: US/Pacific
+              volumeMounts:
+                - name: postgres-password
+                  mountPath: /etc/postgres
+                  readOnly: true
+                - name: minio-credentials
+                  mountPath: /etc/minio
+                  readOnly: true
+              resources: {{ toJson .Values.resources }}
+          volumes:
+            - name: postgres-password
+              secret:
+                secretName: {{ .Values.postgresql.existingSecret }}
+                items:
+                  - key: {{ .Values.postgresql.passwordKey }}
+                    path: pgpassword
+            - name: minio-credentials
+              secret:
+                secretName: {{ .Values.minio.existingSecret }}
+                items:
+                  - key: {{ .Values.minio.rootUserKey }}
+                    path: rootuser
+                  - key: {{ .Values.minio.rootPasswordKey }}
+                    path: rootpassword
+---
+{{- define "postgresql-backup-to-minio.name" -}}
+postgresql-backup-to-minio
+{{- end }}

@@ -1,0 +1,17 @@
+apiVersion: v2
+name: postgresql-backup-to-minio
+description: CronJob that runs pg_dumpall against the shared PostgreSQL cluster and uploads to MinIO (HDD/backups tier).
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
+kubeVersion: ">=1.21.0-0"
+keywords:
+  - postgresql
+  - backup
+  - minio
+  - s3
+  - cronjob
+home: https://www.postgresql.org/
+sources:
+  - https://github.com/postgres/postgres
+maintainers: []

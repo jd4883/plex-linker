@@ -1,0 +1,36 @@
+# postgresql-backup-to-minio – CronJob runs pg_dumpall and uploads to MinIO (HDD/backups tier). See README for setup.
+# Deploy in namespace postgresql. Secrets: postgresql-superuser (password) and minio-backups-credentials (rootUser, rootPassword) in postgresql ns.
+
+schedule: "0 2 * * *"  # 02:00 daily
+successfulJobsHistoryLimit: 3
+failedJobsHistoryLimit: 2
+
+postgresql:
+  host: postgresql-rw.postgresql.svc.cluster.local
+  port: "5432"
+  user: postgres
+  # Password from existing secret in postgresql namespace (same as cluster).
+  existingSecret: postgresql-superuser
+  passwordKey: password
+
+minio:
+  # MinIO backups tier (HDD). Use HTTPS endpoint; bucket created on first upload.
+  endpoint: https://s3-backups.expectedbehaviors.com
+  bucket: db-backups
+  # Secret in postgresql namespace with keys rootUser and rootPassword (same as MinIO chart; replicate from minio ns or 1Password).
+  existingSecret: minio-backups-credentials
+  rootUserKey: rootUser
+  rootPasswordKey: rootPassword
+
+image:
+  repository: postgres
+  tag: "16-alpine"
+  pullPolicy: IfNotPresent
+
+resources:
+  requests:
+    memory: 256Mi
+    cpu: 100m
+  limits:
+    memory: 512Mi
+    cpu: 500m
