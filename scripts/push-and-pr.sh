@@ -11,7 +11,7 @@ if [[ "$BRANCH" = "main" ]]; then
 fi
 echo "Branch: $BRANCH | Repo root: $(pwd)"
 if [[ -z "${GH_TOKEN:-}" ]]; then
-  echo "GH_TOKEN not set. Run with: GH_HOST=github.com op run --env-file=homelab/.env.gh -- bash $0"
+  echo "GH_TOKEN not set. Run with: GH_HOST=github.com op run --env-file=<path-to-.env.gh> -- bash $0"
   exit 1
 fi
 echo "Pushing to origin/$BRANCH..."
