@@ -93,6 +93,7 @@ homelab/helm/portainer/
 homelab/helm/postgresql/
 homelab/helm/prowlarr/
 homelab/helm/qbittorrent/
+homelab/helm/qbittorrent-jobs/
 homelab/helm/radarr/
 homelab/helm/readarr/
 homelab/helm/redis/

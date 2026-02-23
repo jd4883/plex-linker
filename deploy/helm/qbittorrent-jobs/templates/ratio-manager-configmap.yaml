@@ -1,0 +1,14 @@
+{{- if .Values.ratioManager.enable }}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "qbittorrent-jobs.fullname" . }}-ratio-manager
+  labels:
+    app.kubernetes.io/name: qbittorrent-jobs
+    app.kubernetes.io/instance: {{ .Release.Name }}
+data:
+{{- range $k, $v := .Values.ratioManager.configMaps.ratioManager.data }}
+  {{ $k | quote }}: {{ $v | quote }}
+{{- end }}
+{{- end }}

@@ -1,0 +1,112 @@
+# qbittorrent-jobs — CronJobs for qBittorrent instances.
+# Each job has enable true by default; override in parent chart values.
+# Host/API URL derived from Release.Name and Release.Namespace (service DNS).
+# Override qbittorrentHost / qbittorrentApiUrl only when service name differs from release name.
+
+global:
+  fullnameOverride: ""
+
+# -- Override qBittorrent hostname. Default: Release.Name.Release.Namespace (e.g. qbittorrent-public.media-server)
+qbittorrentHost: ""
+# -- Override qBittorrent API URL. Default: http://Release.Name.Release.Namespace:8080/api/v2/
+qbittorrentApiUrl: ""
+# -- qBittorrent port for cleanup script.
+qbittorrentPort: "8080"
+
+# -- Default image for jobs
+image:
+  pullPolicy: IfNotPresent
+  repository: docker.io/python
+  tag: latest
+
+# -- Default security context for job pods
+securityContext:
+  allowPrivilegeEscalation: false
+  privileged: false
+  readOnlyRootFilesystem: false
+  runAsGroup: 0
+  runAsNonRoot: false
+  runAsUser: 0
+
+# -- Cleanup job: removes unregistered torrents, reannounces, etc.
+cleanup:
+  enable: true
+  schedule: "*/5 * * * *"
+  timeZone: "US/Pacific"
+  concurrencyPolicy: Replace
+  successfulJobsHistoryLimit: 10
+  failedJobsHistoryLimit: 5
+  startingDeadlineSeconds: 10
+  suspend: false
+  ttlSecondsAfterFinished: 10
+  backoffLimit: 2
+  configMaps:
+    cleanup:
+      data:
+        cleanup.py: |
+          from qbittorrentapi import Client
+          from os import getenv
+          import logging
+
+          logging.basicConfig(level=logging.INFO, format="[%(asctime)s] %(levelname)s [%(name)s.%(funcName)s:%(lineno)d] %(message)s")
+          logging.Formatter("[%(asctime)s] %(levelname)s [%(name)s.%(funcName)s:%(lineno)d] %(message)s")
+
+          def authenticate():
+              logging.debug(f"Authenticating qBittorrent")
+              return Client(
+                  host=getenv("QBITTORRENT_HOST","localhost"),
+                  port=getenv("QBITTORRENT_PORT", 8080),
+                  username=getenv("QBITTORRENT_USERNAME", None),
+                  password=getenv("QBITTORRENT_PASSWORD", None)
+              )
+
+          def is_stuck(status):
+              return (status.num_downloaded and status.num_peers and status.num_seeds and status.num_leeches) == 0
+
+          def is_unregistered(status):
+              return ('Unregistered torrent' in status.msg)
+
+          def parse_torrents(client):
+              logging.info(f"Parsing all active torrents from qBittorrent")
+              client.torrents.resume.all()
+              client.torrents_reannounce(torrent_hashes="all")
+              [parse_torrent_status(torrent) for torrent in client.torrents.info()]
+
+          def parse_torrent(torrent, status):
+              logging.info(f"Parsing status {status} from {torrent}")
+              if is_stuck(status):
+                  logging.info(f"Handling not implemented correctly for stuck torrents: {torrent}")
+              if is_unregistered(status):
+                  logging.debug(f"Removing unregistered torrent {torrent}")
+                  prune_torrent(torrent, status, True)
+
+          def parse_torrent_status(torrent):
+              logging.debug(f"Parsing status from {torrent}")
+              [parse_torrent(torrent, status) for status in torrent.trackers]
+
+          def prune_torrent(torrent, status, cleanup):
+              logging.debug(status)
+              logging.info(torrent.name,' ',status.msg)
+              torrent.delete(hash=(torrent.hash),delete_files=cleanup)
+
+          if __name__ == '__main__':
+              parse_torrents(authenticate())
+        requirements.txt: |
+          qbittorrent-api>=2024.1.58
+
+# -- Ratio-manager job: manages seeding ratios per tracker.
+ratioManager:
+  enable: true
+  schedule: "@daily"
+  timeZone: "US/Pacific"
+  concurrencyPolicy: Replace
+  successfulJobsHistoryLimit: 10
+  failedJobsHistoryLimit: 5
+  startingDeadlineSeconds: 10
+  suspend: false
+  ttlSecondsAfterFinished: 10
+  backoffLimit: 2
+  configMaps:
+    # Override data in parent with instance-specific .qman files
+    ratioManager:
+      data: {}

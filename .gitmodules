@@ -14,3 +14,6 @@
 	path = homelab/helm/plex/subcharts/bjw-s-helm-charts
 	url = https://github.com/bjw-s-labs/helm-charts.git
 	branch = main
+[submodule "deploy/helm/qbittorrent-vpn"]
+	path = deploy/helm/qbittorrent-vpn
+	url = git@github.com:jd4883/qbittorrent-vpn-helm.git

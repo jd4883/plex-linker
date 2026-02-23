@@ -1,0 +1,50 @@
+{{- if .Values.cleanup.enable }}
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ include "qbittorrent-jobs.fullname" . }}-cleanup
+  labels:
+    app.kubernetes.io/name: qbittorrent-jobs
+    app.kubernetes.io/instance: {{ .Release.Name }}
+spec:
+  schedule: {{ .Values.cleanup.schedule | quote }}
+  timeZone: {{ .Values.cleanup.timeZone | default "US/Pacific" }}
+  concurrencyPolicy: {{ .Values.cleanup.concurrencyPolicy | default "Replace" }}
+  successfulJobsHistoryLimit: {{ .Values.cleanup.successfulJobsHistoryLimit | default 10 }}
+  failedJobsHistoryLimit: {{ .Values.cleanup.failedJobsHistoryLimit | default 5 }}
+  startingDeadlineSeconds: {{ .Values.cleanup.startingDeadlineSeconds | default 10 }}
+  suspend: {{ .Values.cleanup.suspend | default false }}
+  jobTemplate:
+    spec:
+      ttlSecondsAfterFinished: {{ .Values.cleanup.ttlSecondsAfterFinished | default 10 }}
+      backoffLimit: {{ .Values.cleanup.backoffLimit | default 2 }}
+      template:
+        spec:
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          restartPolicy: OnFailure
+          containers:
+            - name: cleanup
+              image: {{ .Values.image.repository }}:{{ .Values.image.tag | default "latest" }}
+              imagePullPolicy: {{ .Values.image.pullPolicy | default "IfNotPresent" }}
+              command:
+                - /bin/sh
+                - -c
+                - |
+                  pip install --no-cache-dir -r /configMaps/cleanup/requirements.txt > /dev/null 2>&1
+                  python /configMaps/cleanup/cleanup.py
+              env:
+                - name: QBITTORRENT_HOST
+                  value: {{ (.Values.qbittorrentHost | default (printf "%s.%s" .Release.Name .Release.Namespace)) | quote }}
+                - name: QBITTORRENT_PORT
+                  value: {{ .Values.qbittorrentPort | default "8080" | quote }}
+              volumeMounts:
+                - name: cleanup
+                  mountPath: /configMaps/cleanup
+                  readOnly: true
+          volumes:
+            - name: cleanup
+              configMap:
+                name: {{ include "qbittorrent-jobs.fullname" . }}-cleanup
+{{- end }}
