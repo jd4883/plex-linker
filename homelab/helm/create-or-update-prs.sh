@@ -46,6 +46,10 @@ case "$BRANCH" in
     PR_BODY_FILE="$HELM_DIR/PR_DESCRIPTION-secrets-helm-standards.md"
     PR_TITLE="🔐 Helm: removals, README standards, Mealie/Paperless-ngx/Gotify, Argo CD"
     ;;
+  feature/unpackerr-chart-cue-splitting)
+    PR_BODY_FILE="$HELM_DIR/unpackerr/PR_DESCRIPTION.md"
+    PR_TITLE="📦 Unpackerr chart — CUE splitting, 1Password, Argo CD, release automation"
+    ;;
   *)
     # Default: try kubernetes-dashboard if file exists (current branch often has dashboard changes)
     if [[ -f "$HELM_DIR/kubernetes-dashboard/PR_DESCRIPTION.md" ]]; then
