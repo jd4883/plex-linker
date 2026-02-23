@@ -1,3 +1,8 @@
+# macOS
+.DS_Store
+# Cursor IDE
+.cursor
+
 *.log
 # Windows image file caches
 Thumbs.db
@@ -25,7 +30,6 @@ $RECYCLE.BIN/
 # OSX
 # =========================
 
-.DS_Store
 .AppleDouble
 .LSOverride
 
