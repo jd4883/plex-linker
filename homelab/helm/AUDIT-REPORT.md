@@ -63,7 +63,7 @@ Add rows for other `sourceRepo` values from `config.yaml` (homelab-qbittorrent, 
 ## 4. Release notes and GitHub Actions
 
 - **Charts with release-on-merge + release-notes workflows (in this workspace):** atlantis, audiobookshelf, harbor, immich, kubernetes-dashboard, longhorn, nextcloud, oauth2-proxy, plex, postgresql, redis, unpackerr. (Plus plex-autoskip.)
-- **create-initial-releases.sh** now includes **unpackerr** so an initial release can be created for that chart.
+- **create-initial-releases.sh** was updated to include **unpackerr** in the chart list. The script lives in `homelab/github-actions/scripts/`; if that directory is not yet tracked, when you add it ensure the unpackerr line is present in the `CHARTS` array.
 - **Separate chart repos** (e.g. homelab-prometheus, homelab-plex): Each should have its own `.github/workflows/` for release-on-merge and release-notes if they are the source of truth for that chart. The monorepo workflows apply only to charts whose code lives in this repo.
 
 **Recommendation:** For any chart that has a workflow here but no release yet, run (from repo root, with 1Password):  
