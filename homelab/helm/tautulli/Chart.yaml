@@ -1,25 +1,7 @@
-apiVersion: v2
+apiVersion: v1
 name: tautulli
-description: Tautulli - Plex statistics and monitoring. bjw-s app-template; existingClaim. Argo CD.
-type: application
-version: 0.1.0
-appVersion: "2.16.0"
-kubeVersion: ">=1.28.0-0"
-home: https://github.com/Tautulli/Tautulli
-keywords:
-  - tautulli
-  - plex
-  - monitoring
-  - statistics
-  - bjw-s
-  - app-template
-maintainers: []
-sources:
-  - https://github.com/Tautulli/Tautulli
-  - https://github.com/bjw-s/helm-charts
+version: v11.4.2
 dependencies:
-  - name: app-template
-    version: "4.6.2"
-    repository: https://bjw-s-labs.github.io/helm-charts
-    alias: tautulli
-    # Alternative OCI: oci://ghcr.io/bjw-s/helm
+  - name: tautulli
+    version: v11.4.2
+    repository: https://k8s-at-home.com/charts

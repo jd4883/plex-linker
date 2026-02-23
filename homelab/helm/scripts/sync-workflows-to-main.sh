@@ -28,7 +28,7 @@ for entry in "${REPOS[@]}"; do
   (
     cd "$tmpdir"
     git config user.email "jd4883@users.noreply.github.com"
-    git config user.name "jd4883"
+    git config user.name "Jacob Dresdale"
     default_branch=$(git remote show origin 2>/dev/null | awk '/HEAD branch/ { print $3 }') || default_branch=main
     git checkout "$default_branch"
     git pull origin "$default_branch"

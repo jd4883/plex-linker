@@ -40,7 +40,7 @@ for entry in "${REPOS[@]}"; do
   git clone "https://x-access-token:${GH_TOKEN}@github.com/${repo}.git" "$TMPD/clone"
   cd "$TMPD/clone"
   git config user.email "jd4883@users.noreply.github.com"
-  git config user.name "jd4883"
+  git config user.name "Jacob Dresdale"
   default_branch=$(git remote show origin | awk '/HEAD branch/ { print $3 }')
   [ -z "$default_branch" ] && default_branch=main
   git checkout "$default_branch"

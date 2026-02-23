@@ -1,1 +1,4 @@
 charts/
+.DS_Store
+Chart.lock
+PR_DESCRIPTION*.md

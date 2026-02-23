@@ -1,3 +1,8 @@
-# Dependencies from helm dependency update
-charts/*.tgz
+**/.terraform
+**/.terraform.lock.hcl
+**/charts
+**/*.lock.DS_Store
+.DS_Store
+charts/
 Chart.lock
+PR_DESCRIPTION*.md

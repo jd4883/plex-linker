@@ -1,120 +1,39 @@
-# Tautulli – values for bjw-s app-template subchart (alias: tautulli). See README for setup.
-#
-# Usage:
-#   helm install tautulli . -n media-server
-#
-# Enhancements applied (and why):
-# - strategy: Recreate          → Avoids stuck replicas when config/DB changes; single-instance app.
-# - custom probes on /status    → Correct health check for Tautulli; default probes don't match.
-# - runAsUser/fsGroup 568       → Plex ecosystem standard; keeps permissions consistent with Plex.
-# - readOnlyRootFilesystem + drop ALL → Hardens container; Tautulli only needs /config writable.
-# - persistence.config          → existingClaim tautulli-config (create PVC in Longhorn); cache/logs emptyDir.
-# - Optional: supplementalGroups, Reloader annotation → See comments below when needed.
-
 tautulli:
-  global:
-    fullnameOverride: tautulli
-  controllers:
-    tautulli:
-      strategy: Recreate
-      annotations: {}
-      # Optional: if using Stakater Reloader, uncomment to roll pods on ConfigMap/Secret changes:
-      # "reloader.stakater.com/auto": "true"
-
-  containers:
-    app:
-      image:
-        repository: ghcr.io/tautulli/tautulli
-        tag: v2.16.0
-        pullPolicy: IfNotPresent
-      env:
-        TZ: US/Pacific
-      probes:
-        liveness:
-          enabled: true
-          custom: true
-          spec:
-            httpGet:
-              path: /status
-              port: http
-            initialDelaySeconds: 0
-            periodSeconds: 10
-            timeoutSeconds: 1
-            failureThreshold: 3
-        readiness:
-          enabled: true
-          custom: true
-          spec:
-            httpGet:
-              path: /status
-              port: http
-            initialDelaySeconds: 0
-            periodSeconds: 10
-            timeoutSeconds: 1
-            failureThreshold: 3
-        startup:
-          enabled: true
-      resources:
-        limits:
-          memory: 1Gi
-        requests:
-          cpu: 10m
-          memory: 128Mi
-      securityContext:
-        allowPrivilegeEscalation: false
-        readOnlyRootFilesystem: true
-        capabilities:
-          drop:
-            - ALL
-
-  defaultPodOptions:
-    securityContext:
-      runAsUser: 568
-      runAsGroup: 568
-      fsGroup: 568
-      fsGroupChangePolicy: OnRootMismatch
-      # Optional: if your media/NFS store uses a specific GID, add it so Tautulli can read:
-      # supplementalGroups: [ 65539 ]
-
-  service:
-    app:
-      controller: tautulli
-      ports:
-        http:
-          port: 8181
-
+  env:
+    DOCKER_MODS: 'ghcr.io/themepark-dev/theme.park:tautulli'
+    TP_HOTIO: false
+    TP_SCHEME: HTTPS
+    TP_THEME: aquamarine
+    TZ: US/Pacific
+    UMASK: 2
+  image:
+    pullPolicy: Always
+    repository: linuxserver/tautulli
+    tag: latest
   ingress:
     main:
-      enabled: true
-      className: nginx
       annotations:
         external-dns.alpha.kubernetes.io/target: expectedbehaviors.com
         nginx.ingress.kubernetes.io/enable-global-auth: "false"
-      # First host defines &ingress_host; add hosts with: - <<: *ingress_host then host: <fqdn>
+      enabled: true
       hosts:
-        - &ingress_host
-          host: stats.expectedbehaviors.com
-          paths:
-            - path: /
-              pathType: Prefix
-              service:
-                identifier: app
-                port: http
-        - <<: *ingress_host
-          host: tautulli.expectedbehaviors.com
-
+        - {host: plexstatistics.expectedbehaviors.com, paths: [path: /]}
+        - {host: plexstats.expectedbehaviors.com, paths: [path: /]}
+        - {host: statistics.expectedbehaviors.com, paths: [path: /]}
+        - {host: stats.expectedbehaviors.com, paths: [path: /]}
+        - {host: tautulli.expectedbehaviors.com, paths: [path: /]}
   persistence:
     config:
-      type: persistentVolumeClaim
-      existingClaim: tautulli-config
-      globalMounts:
-        - path: /config
-    cache:
-      type: emptyDir
-      globalMounts:
-        - path: /config/cache
-    logs:
-      type: emptyDir
-      globalMounts:
-        - path: /config/logs
-
+      accessMode: ReadWriteOnce
+      enabled: true
+      size: 1Gi
+      storageClass: ssd
+  resources:
+    requests:
+      cpu: 5m
+      memory: 200Mi
+  # podDnsConfig:
+  #   nameservers:
+  #     - 172.16.11.200
+  #     - 172.16.11.201
+  #   searches: [expectedbehaviors.com]

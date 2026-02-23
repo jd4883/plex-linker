@@ -57,3 +57,46 @@ __pycache__
 
 # python
 *.pyc
+
+# homelab/helm chart repos (each is its own git repo; managed separately)
+homelab/helm/audiobookshelf/
+homelab/helm/bazarr/
+homelab/helm/core/argocd/
+homelab/helm/core/cert-manager/
+homelab/helm/core/external-dns/
+homelab/helm/core/kubernetes-replicator/
+homelab/helm/core/nginx/
+homelab/helm/core/onepassword-connect/
+homelab/helm/core/purelb/
+homelab/helm/external-secrets/
+homelab/helm/external-services/
+homelab/helm/gaps/
+homelab/helm/harbor/
+homelab/helm/home-assistant/
+homelab/helm/immich/
+homelab/helm/ipmi-fan-control/
+homelab/helm/kavita/
+homelab/helm/komga/
+homelab/helm/kubernetes-dashboard/
+homelab/helm/lidarr/
+homelab/helm/longhorn/
+homelab/helm/minio/
+homelab/helm/mylar/
+homelab/helm/nextcloud/
+homelab/helm/nvidia-device-plugin/
+homelab/helm/ombi/
+homelab/helm/onepassword-secrets/
+homelab/helm/organizr/
+homelab/helm/plex-autoskip/
+homelab/helm/plex-linker/
+homelab/helm/portainer/
+homelab/helm/postgresql/
+homelab/helm/prowlarr/
+homelab/helm/qbittorrent/
+homelab/helm/radarr/
+homelab/helm/readarr/
+homelab/helm/redis/
+homelab/helm/reloader/
+homelab/helm/sabnzbd/
+homelab/helm/sonarr/
+homelab/helm/tunnel-interface/

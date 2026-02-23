@@ -43,7 +43,7 @@ for entry in "${CHARTS[@]}"; do
   (
     cd "$tmpdir"
     git config user.email "jd4883@users.noreply.github.com"
-    git config user.name "jd4883"
+    git config user.name "Jacob Dresdale"
     git fetch origin "$BRANCH" 2>/dev/null && git checkout "$BRANCH" 2>/dev/null || { echo "  Branch $BRANCH not found"; exit 1; }
     rsync -a --exclude='.git' --exclude='PR_DESCRIPTION*.md' --exclude='Chart.lock' "$CHART_SOURCE"/ .
     if [[ -d "$CHART_SOURCE/.github/workflows" ]]; then

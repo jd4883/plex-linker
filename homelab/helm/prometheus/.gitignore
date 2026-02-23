@@ -2,3 +2,4 @@ charts/
 Chart.lock
 # PR body only — do not commit (use for gh pr create --body-file)
 PR_DESCRIPTION*.md
+.DS_Store
