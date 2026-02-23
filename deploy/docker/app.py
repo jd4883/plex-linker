@@ -1,43 +1,52 @@
-"""FastAPI app: health, web UI and API for link rules and settings when DATABASE_URL is set."""
-import os
-from typing import Any, List, Optional
+"""FastAPI app: health endpoint (always), web UI and REST API for link rules when DATABASE_URL is set."""
+from __future__ import annotations
+
+from typing import Any, Optional
 
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import HTMLResponse, PlainTextResponse
 from pydantic import BaseModel
 
-from config import database_url
+import db
+from config import get_settings
 
 app = FastAPI(title="Plex Linker", version="3.0")
+_settings = get_settings()
 
-# --- Health (always) ---
+
+@app.on_event("startup")
+def _init_database() -> None:
+    if _settings.use_db:
+        db.init_db(_settings.database_url)
+
+
+def _require_db() -> str:
+    """Return the database URL or raise 503 when the DB is not configured."""
+    if not _settings.use_db:
+        raise HTTPException(503, "Database not configured (set DATABASE_URL)")
+    return _settings.database_url
+
+
+# --- Health ---
 
 
 @app.get("/health", response_class=PlainTextResponse)
-def health():
+def health() -> str:
     return "ok"
 
 
 @app.get("/", response_class=HTMLResponse)
-def root():
-    if database_url():
-        return HTMLResponse(UI_HTML)
+def root() -> HTMLResponse:
+    if _settings.use_db:
+        return HTMLResponse(_UI_HTML)
     return HTMLResponse(
-        "<!DOCTYPE html><html><head><title>Plex Linker</title></head><body><h1>Plex Linker</h1><p>Health: <a href='/health'>/health</a></p><p>Set DATABASE_URL to use the web UI for link rules.</p></body></html>",
-        status_code=200,
+        "<!DOCTYPE html><html><head><title>Plex Linker</title></head>"
+        "<body><h1>Plex Linker</h1><p>Health: <a href='/health'>/health</a></p>"
+        "<p>Set DATABASE_URL to enable the web UI for link rules.</p></body></html>"
     )
 
 
-# --- DB-backed API and UI (when DATABASE_URL is set) ---
-
-
-def _db():
-    if not database_url():
-        return None
-    from db.schema import init_db
-    if not init_db():
-        return None
-    return __import__("db.schema", fromlist=["db"])
+# --- Link Rules API ---
 
 
 class LinkRuleIn(BaseModel):
@@ -51,24 +60,16 @@ class LinkRuleIn(BaseModel):
     tvdb_id: Optional[int] = None
 
 
-class SettingIn(BaseModel):
-    value: Any
-
-
 @app.get("/api/rules")
-def list_rules() -> List[dict]:
-    db = _db()
-    if db is None:
-        raise HTTPException(503, "Database not configured (set DATABASE_URL)")
-    return db.list_link_rules()
+def list_rules() -> list[dict]:
+    return db.list_rules(_require_db())
 
 
 @app.post("/api/rules", status_code=201)
 def add_rule(rule: LinkRuleIn) -> dict:
-    db = _db()
-    if db is None:
-        raise HTTPException(503, "Database not configured")
-    rid = db.add_link_rule(
+    url = _require_db()
+    rid = db.add_rule(
+        url,
         movie_title=rule.movie_title,
         tmdb_id=rule.tmdb_id,
         show_name=rule.show_name,
@@ -84,21 +85,22 @@ def add_rule(rule: LinkRuleIn) -> dict:
 
 
 @app.delete("/api/rules/{rule_id}")
-def delete_rule(rule_id: int) -> dict:
-    db = _db()
-    if db is None:
-        raise HTTPException(503, "Database not configured")
-    if not db.delete_link_rule(rule_id):
+def delete_rule_endpoint(rule_id: int) -> dict:
+    if not db.delete_rule(_require_db(), rule_id):
         raise HTTPException(404, "Rule not found")
     return {"deleted": rule_id}
 
 
+# --- Settings API ---
+
+
+class SettingIn(BaseModel):
+    value: Any
+
+
 @app.get("/api/settings/{key}")
-def get_setting(key: str) -> Any:
-    db = _db()
-    if db is None:
-        raise HTTPException(503, "Database not configured")
-    v = db.get_setting(key)
+def get_setting(key: str) -> dict:
+    v = db.get_setting(_require_db(), key)
     if v is None:
         raise HTTPException(404, "Setting not found")
     return {"key": key, "value": v}
@@ -106,16 +108,13 @@ def get_setting(key: str) -> Any:
 
 @app.put("/api/settings/{key}")
 def put_setting(key: str, body: SettingIn) -> dict:
-    db = _db()
-    if db is None:
-        raise HTTPException(503, "Database not configured")
-    db.set_setting(key, body.value)
+    db.set_setting(_require_db(), key, body.value)
     return {"key": key, "value": body.value}
 
 
-# --- Simple HTML UI ---
+# --- Web UI ---
 
-UI_HTML = """
+_UI_HTML = """\
 <!DOCTYPE html>
 <html>
 <head>
@@ -137,7 +136,6 @@ UI_HTML = """
 <body>
   <h1>Plex Linker — Link Rules</h1>
   <p>Map movies (Radarr) to show specials (Sonarr). Add rules below; the link job runs on a schedule.</p>
-
   <form id="addForm">
     <input name="movie_title" placeholder="Movie title" required size="20">
     <input name="tmdb_id" type="number" placeholder="TMDB ID" required min="1" size="8">
@@ -148,30 +146,27 @@ UI_HTML = """
   </form>
   <div id="msg" class="msg"></div>
   <div id="err" class="err"></div>
-
   <table>
     <thead><tr><th>Movie</th><th>TMDB ID</th><th>Show</th><th>Episode</th><th>Season</th><th></th></tr></thead>
     <tbody id="rules"></tbody>
   </table>
-
   <script>
     const api = (path, opts = {}) => fetch(path, { ...opts, headers: { "Content-Type": "application/json", ...opts.headers } });
     function err(e) { document.getElementById("err").textContent = e; document.getElementById("msg").textContent = ""; }
     function msg(m) { document.getElementById("msg").textContent = m; document.getElementById("err").textContent = ""; }
-
     function load() {
       api("/api/rules").then(r => {
-        if (!r.ok) { err("Database not configured (set DATABASE_URL) or API error"); return r.json().catch(() => ({})); }
+        if (!r.ok) { err("Database not configured or API error"); return r.json().catch(() => ({})); }
         return r.json();
       }).then(data => {
         if (!Array.isArray(data)) return;
         const tbody = document.getElementById("rules");
         tbody.innerHTML = data.map(r =>
-          `<tr><td>${escapeHtml(r.movie_title)}</td><td>${r.tmdb_id}</td><td>${escapeHtml(r.show_name)}</td><td>${r.episode ?? ""}</td><td>${r.season ?? ""}</td><td><button class="danger" onclick="del(${r.id})">Delete</button></td></tr>`
+          `<tr><td>${esc(r.movie_title)}</td><td>${r.tmdb_id}</td><td>${esc(r.show_name)}</td><td>${r.episode ?? ""}</td><td>${r.season ?? ""}</td><td><button class="danger" onclick="del(${r.id})">Delete</button></td></tr>`
         ).join("");
       }).catch(() => err("Failed to load rules"));
     }
-    function escapeHtml(s) { const d = document.createElement("div"); d.textContent = s; return d.innerHTML; }
+    function esc(s) { const d = document.createElement("div"); d.textContent = s; return d.innerHTML; }
     function del(id) {
       api("/api/rules/" + id, { method: "DELETE" }).then(r => { if (r.ok) { msg("Deleted"); load(); } else err("Delete failed"); });
     }
@@ -190,5 +185,3 @@ UI_HTML = """
 </body>
 </html>
 """
-
-

@@ -6,8 +6,12 @@ alwaysApply: true
 
 # Plex Linker project rules
 
-- **Entrypoint**: One Python entrypoint only (`main.py`). No shell wrappers (e.g. no `plex-linker` script); run as `python3 main.py serve` or `python3 main.py`.
-- **Containers**: Use a hardened/slim Python base image. Run as non-root; no `USER root` in production.
-- **Env**: Document and default all env vars in the Dockerfile so one place defines behavior; app reads from `os.environ` with same defaults.
-- **Purpose**: Every module and function must have a clear purpose. Remove cruft: no forwarding stubs, no dead code, no commented-out blocks.
-- **Python**: Use type hints for public functions and module boundaries. Docstrings for public APIs. Prefer standard library and a minimal dependency set.
+- **Flat layout**: All Python modules are flat files in deploy/docker/ — no sub-packages. Files: main.py, app.py, config.py, db.py, api_clients.py, linker.py, yaml_config.py.
+- **Entrypoint**: One Python entrypoint (`main.py`). No shell wrappers; run as `python3 main.py serve` or `python3 main.py`.
+- **Config**: `config.py` defines a frozen `Settings` dataclass; use `get_settings()` to access. All env vars default in the Dockerfile and in the dataclass.
+- **Containers**: Chainguard Python base image. Run as non-root (UID 65532); no `USER root` in production.
+- **No dead code**: No forwarding stubs, no empty __init__.py packages, no no-op functions. Every module has a clear purpose.
+- **Logging**: Use `logging.getLogger(__name__)` — no custom messaging layers.
+- **Symlinks**: Use `os.symlink` with `os.path.relpath` for relative links — never shell out to `ln`.
+- **No os.chdir**: Always use absolute/explicit paths.
+- **Python**: Type hints on all public functions. Docstrings for public APIs. Prefer standard library and a minimal dependency set.
