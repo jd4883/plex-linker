@@ -32,3 +32,5 @@ The `qbittorrent-jobs` chart is in this directory. To convert to a submodule onc
 ## qbittorrent-vpn
 
 Chart content is in the submodule. After pushing updates to `qbittorrent-vpn-helm`, run `git submodule update --remote deploy/helm/qbittorrent-vpn` in the home repo.
+
+**GitHub email**: Use `15719920+jd4883@users.noreply.github.com` for commits to avoid GH007 (private email) when pushing.
