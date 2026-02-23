@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Ensure we're on a dev branch (not main), commit any changes, then push and create PR.
-# Run with: GH_HOST=github.com op run --env-file=/path/to/homelab/.env.gh -- bash scripts/ensure-dev-branch-and-push-pr.sh
+# Run with: GH_HOST=github.com op run --env-file=<path-to-.env.gh> -- bash scripts/ensure-dev-branch-and-push-pr.sh
 set -euo pipefail
 cd "$(git rev-parse --show-toplevel)"
 DEV_BRANCH="${PLEX_LINKER_DEV_BRANCH:-feature/plex-linker-v3}"
