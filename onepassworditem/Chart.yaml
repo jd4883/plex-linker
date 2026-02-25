@@ -1,0 +1,16 @@
+apiVersion: v2
+name: onepassworditem
+description: 1Password items as Kubernetes Secrets. Fork with simplified schema and namespace from release (see README). Original by vquie.
+type: application
+version: 1.1.0
+appVersion: "1"
+keywords:
+  - 1password
+  - secrets
+  - kubernetes
+maintainers:
+  - name: expectedbehaviors
+    url: https://github.com/expectedbehaviors
+sources:
+  - https://github.com/expectedbehaviors/onepassworditem
+  - https://github.com/vquie/helm-charts
