@@ -18,10 +18,12 @@ image:
   pullPolicy: IfNotPresent
 
 # Secret from which env is loaded (envFrom). Must contain API keys and DATABASE_URL.
+# When onepassworditem.enabled, set onepassworditem.items to create secret(s); use name matching existingSecret (e.g. plex-linker).
+onepassworditem:
+  enabled: false
+  items: []
 secrets:
   existingSecret: plex-linker
-  onepassworditem:
-    enabled: false
   externalSecrets:
     enabled: false
     refreshInterval: 1h

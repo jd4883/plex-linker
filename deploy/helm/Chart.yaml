@@ -12,3 +12,7 @@ keywords:
   - symlink
   - web
 maintainers: []
+dependencies:
+  - name: onepassworditem
+    version: "1.0.0"
+    repository: https://expectedbehaviors.github.io/OnePasswordItem-helm
