@@ -18,10 +18,13 @@ image:
   pullPolicy: IfNotPresent
 
 # Secret from which env is loaded (envFrom). Must contain API keys and DATABASE_URL.
+# When onepassworditem.enabled, set defaultVault and items; secret name must match existingSecret (e.g. plex-linker). Vault/item accept ID or title.
+onepassworditem:
+  enabled: false
+  defaultVault: Kubernetes
+  items: []
 secrets:
   existingSecret: plex-linker
-  onepassworditem:
-    enabled: false
   externalSecrets:
     enabled: false
     refreshInterval: 1h

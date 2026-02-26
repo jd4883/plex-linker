@@ -1,0 +1,6 @@
+dependencies:
+- name: onepassworditem
+  repository: https://expectedbehaviors.github.io/OnePasswordItem-helm
+  version: 1.1.1
+digest: sha256:cb5638b3a9ee664d259a813f9b4183511b6ce747c0394c12220f6c6c7f8ba4d6
+generated: "2026-02-25T17:52:58.174601-08:00"
