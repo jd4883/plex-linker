@@ -19,17 +19,23 @@ concurrency: docker-build-plex-linker
 
 jobs:
   build:
-    if: ${{ secrets.DOCKERHUB_TOKEN != '' }}
     runs-on: ubuntu-latest
+    env:
+      DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+      DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
+      - name: Skip Docker publish when secrets are missing
+        if: ${{ env.DOCKERHUB_USERNAME == '' || env.DOCKERHUB_TOKEN == '' }}
+        run: echo "Skipping Docker publish because DOCKERHUB_USERNAME or DOCKERHUB_TOKEN is not configured."
       - name: Build and push
+        if: ${{ env.DOCKERHUB_USERNAME != '' && env.DOCKERHUB_TOKEN != '' }}
         uses: expectedbehaviors/github-actions/.github/actions/docker-publish@main
         with:
           image_name: plex-linker
           repo_prefix: jb6magic
-          docker_username: ${{ secrets.DOCKERHUB_USERNAME }}
-          docker_token: ${{ secrets.DOCKERHUB_TOKEN }}
+          docker_username: ${{ env.DOCKERHUB_USERNAME }}
+          docker_token: ${{ env.DOCKERHUB_TOKEN }}
           dockerfile_path: deploy/docker/Dockerfile
           context: deploy/docker
           image_tag: ${{ github.event.inputs.image_tag }}
